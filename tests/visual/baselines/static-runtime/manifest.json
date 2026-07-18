@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "sourceRuntime": "original static Phase 11.6C.3 runtime",
+  "sourceTag": "teoyube-original-upload-2026-07-18",
+  "branch": "recovery/visual-source-of-truth",
+  "capturePolicy": "Immutable. Updating or deleting a baseline requires explicit current-task owner approval.",
+  "captureEnvironment": {
+    "browser": "system Chromium via Playwright",
+    "deviceScaleFactor": 1,
+    "colorScheme": "light",
+    "locale": "en-US"
+  },
+  "viewports": {
+    "desktop-wide": {
+      "width": 1440,
+      "height": 900
+    },
+    "desktop-standard": {
+      "width": 1280,
+      "height": 800
+    },
+    "tablet-landscape": {
+      "width": 1024,
+      "height": 768
+    },
+    "tablet-portrait": {
+      "width": 768,
+      "height": 1024
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    },
+    "mobile-small": {
+      "width": 360,
+      "height": 800
+    }
+  },
+  "views": [
+    "today",
+    "search",
+    "canon",
+    "table",
+    "calling",
+    "book",
+    "lexicon",
+    "testimony",
+    "guide",
+    "ui-elements",
+    "teoyube-tables",
+    "roadmap"
+  ],
+  "artifacts": [
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/today.png",
+      "bytes": 1116063,
+      "sha256": "155c7e3009368b1099a400319b485575382fa0dea84069995abb8d8b629864ed"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/today.dom.json",
+      "bytes": 286961,
+      "sha256": "fb2a1cc2956445e00f1bd6b856ab319733e9068245a4fb7bee65e90fc7ccdc78"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/search.png",
+      "bytes": 1002740,
+      "sha256": "f37c1310f9eff98f17f4d7f9d27d89389f4107ec83942031b1ca8cc87814be4d"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/search.dom.json",
+      "bytes": 91927,
+      "sha256": "9e2a1d85088e71e3c326fc35e16ec50312390cc17c709b87aad2d6f723bc351d"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/canon.png",
+      "bytes": 846375,
+      "sha256": "fcbc33401f3e406537fd954278dc69dbbdd40f55bf6f73aa7f76792c28600162"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/canon.dom.json",
+      "bytes": 295256,
+      "sha256": "a46a67195e3f7344852119ccc43c0705cdf5dad659de25431741615b610acca1"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/table.png",
+      "bytes": 618669,
+      "sha256": "3bf788d83742161b41991f3b26c34a3514ecfddcd53dfc03bfa8cbef50ea5378"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/table.dom.json",
+      "bytes": 435469,
+      "sha256": "ac44f03de83ef7d922e015a29fac72ff0fa5f79bbe681c7227ca2df71617e70f"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/calling.png",
+      "bytes": 988177,
+      "sha256": "d4408436391b44591118bc9ff0a50637d82c7ac5f572b34ee8a37ac8f938935f"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/calling.dom.json",
+      "bytes": 95534,
+      "sha256": "1f5e22c8671aea70044eddde684aa9bc82bed3dbe92a5b3541fa4a079c7df621"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/book.png",
+      "bytes": 752174,
+      "sha256": "60680371eb49de9cb9f8674d89da6acecb23b78df2d00e2578432446e5fd166a"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/book.dom.json",
+      "bytes": 87875,
+      "sha256": "834ef91ff5530e1a0a029b2a436cff6db3ec4a37af1d990c9395c69691b9b287"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/lexicon.png",
+      "bytes": 550026,
+      "sha256": "b76f399465e78d6ab4b8b406673cbe38f582aea04067d5f3f7ca69b8d3006b67"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/lexicon.dom.json",
+      "bytes": 629935,
+      "sha256": "5474832944464495bd969f2306e6f78c1495d1d3096b83462f5a522da8fd2bab"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/testimony.png",
+      "bytes": 632612,
+      "sha256": "3419065551c6efda8c4f6e06d857ec2cca7d53bd3d622b63a7c940e679056980"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/testimony.dom.json",
+      "bytes": 57243,
+      "sha256": "1e89bf322485e3b5205c77dbb6683911d180f5548587df532a254836a9d2e67a"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/guide.png",
+      "bytes": 568855,
+      "sha256": "4a02a84d178ad79ec932f7281bc49eabd1a08c7baa428c2f9b903c056b2cdfac"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/guide.dom.json",
+      "bytes": 50845,
+      "sha256": "9396a3f50d2bb3bd0d2723e4823c50232aa3e4b4ff4213db000f04449df003f3"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/ui-elements.png",
+      "bytes": 760956,
+      "sha256": "0c2e3fd403f2fd822f34704b0b32a70464e981b47e3d38cf43aeafa56a471422"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/ui-elements.dom.json",
+      "bytes": 57142,
+      "sha256": "89e4817d04b2b45096331350611ee29b2f9880d6c8b0cbe40dc13fb5e58155b6"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png",
+      "bytes": 668228,
+      "sha256": "db2568c91e8ac03d1d37aef3ee8ddf486784f6e5563953780ba4caa50bd41812"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.dom.json",
+      "bytes": 177353,
+      "sha256": "94d72d643da27db39c10b296caccce6f3330aee0d6bb3c05ad35cb8faff4cdaf"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-wide",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/roadmap.png",
+      "bytes": 1035914,
+      "sha256": "3108de03b2e3b961632ac15b1afbdf065440b6d73316eff826c288d41341ec7e"
+    },
+    {
+      "kind": "dom",
+      "viewport": "desktop-wide",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/desktop-wide/roadmap.dom.json",
+      "bytes": 376899,
+      "sha256": "a16d61c0da00f8a61e2f834de2eefc2e524df086619e715e5706a27bd6ed3304"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/today.png",
+      "bytes": 912828,
+      "sha256": "3d8983fd2dd56f63c6712d95c2db4bb84c6fea70de3b9ee71e76866cef38c8cb"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/search.png",
+      "bytes": 738941,
+      "sha256": "c7b254cba7aa208d83c66a33d5766778430e20763643ba8b8302acc510c9e639"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/canon.png",
+      "bytes": 691910,
+      "sha256": "014cf83968e1ad95d73a2166501254badc16502b2d8041d447594c6dc6ff3033"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/table.png",
+      "bytes": 545894,
+      "sha256": "4c338f5f95c8349f52b8de13ebb5165d33fa09e8cf7c9e26aa102b0947846625"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/calling.png",
+      "bytes": 798871,
+      "sha256": "93be4a5f5d2dbc1af4b2b189487899d7b7a544b6d94ed5ae97154c2399429032"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/book.png",
+      "bytes": 726550,
+      "sha256": "f5e125fe90b4e51876b88184059e96dc7959decb6632d2a016d516d8bb0e5a10"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/lexicon.png",
+      "bytes": 459949,
+      "sha256": "11e4dcc8a3d07d4e4dad3c757d3ccff33aa0ce02376e33b450fa1811530e54dd"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/testimony.png",
+      "bytes": 530728,
+      "sha256": "f91ba52eaff75642288bca03a66b2beec03bcf5a67b9921ebcce7351e9a39a4c"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/guide.png",
+      "bytes": 475841,
+      "sha256": "3078bde9cd4827af91f867df2148c0ffc62b2436cd8259fe5e0f38d15b1f2a5b"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/ui-elements.png",
+      "bytes": 501128,
+      "sha256": "9e07a6449d2ae5c5fcbfab09a82878512481a804944e8e06a6c5e59da5510cf9"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/teoyube-tables.png",
+      "bytes": 473128,
+      "sha256": "98c89ab2af03a1a2a900312d4fb5462e95df3acc16ea3c8dd1c7c9a093a01666"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "desktop-standard",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/desktop-standard/roadmap.png",
+      "bytes": 881421,
+      "sha256": "dfb25eb0f8cee918444b48e21667d64aeb1ebc0883f12b0164fce0fb8e2735f5"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/today.png",
+      "bytes": 656778,
+      "sha256": "d95585fd0b43f3a598c0a718605bb57a941f18904650200241ab8f3fd5495787"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/search.png",
+      "bytes": 530830,
+      "sha256": "f799503f944aeb714fbe94b26d26cf863a4c55dfd245d17c7215bc6ae5dbffb1"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/canon.png",
+      "bytes": 554490,
+      "sha256": "7ca60427265f8dc126a44e7d7bd73fb9cb329744dc2919494b551adae35f7abe"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/table.png",
+      "bytes": 516175,
+      "sha256": "0d89c94eb5c67764483cdbe8c2da55a7ab1079af9186f206a66c7496e6a34fc1"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/calling.png",
+      "bytes": 595545,
+      "sha256": "8095a264ec2c2953d533eb92e7f48ee6b24604439a3eb6c4bf1645f31c1d9431"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/book.png",
+      "bytes": 486435,
+      "sha256": "21bba7083618bee8ef6c9f2873e7cbc9259caea53e82575abadb090f0808804b"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/lexicon.png",
+      "bytes": 322612,
+      "sha256": "bc3574801d828b69ac721b2b01ec274fbe94905fb270794ac8140a74bf1bd756"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/testimony.png",
+      "bytes": 324997,
+      "sha256": "5e971353b02e522a7be929160356f12ac1b1228ca3105f38aee370b13e7c31c5"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/guide.png",
+      "bytes": 391291,
+      "sha256": "46a33a2987ef6cbd8ac0ccc627752cba2f52c2999041e643284d468c5383760b"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/ui-elements.png",
+      "bytes": 371421,
+      "sha256": "af12c96b1e957fb0dc678ebcd0b6c87d8f0be670bda5d4db2c0d0f8e367553e4"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/teoyube-tables.png",
+      "bytes": 424501,
+      "sha256": "29524d30b35e2949d4151eeaa82454a8bc1b05e7167563d9b31f0b6b689b73fd"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-landscape",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/tablet-landscape/roadmap.png",
+      "bytes": 643858,
+      "sha256": "5fbed80bcf1868f56845688b668b3413a00fd8df2f4729b94c92bc8f526951d7"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/today.png",
+      "bytes": 588235,
+      "sha256": "e65b564fcf10b17b3158dc3da9695adb8f221c22865c8770897311a1dadacf94"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/search.png",
+      "bytes": 625650,
+      "sha256": "a0665d044d914be29cc7c25a3b731af5f0c3e810d0547f9ce4dd46cce7f532f2"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/canon.png",
+      "bytes": 480227,
+      "sha256": "fe88ff8bb1830757a458595bb0ce59108f1b2df5ad7716b029b02465ebfc589a"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/table.png",
+      "bytes": 625273,
+      "sha256": "9cb75f41edf8678bae08328aa037e5affb19f86725363a28d7d113dfff309b2f"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/calling.png",
+      "bytes": 557523,
+      "sha256": "ccf3bbe157a027c258fbc184ca3e98a518d2db4bd10f129643f43600900cfdae"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/book.png",
+      "bytes": 463952,
+      "sha256": "3e4060785e064f6e600a53bb4b553e4041f9277c4c6f1fe0593dd3c79ecdc913"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/lexicon.png",
+      "bytes": 258510,
+      "sha256": "bd45e5a5be41de8cf0bb2ca058c192dd927d8a9e68f90de93dbf9a8c5fd61f02"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/testimony.png",
+      "bytes": 297695,
+      "sha256": "9e700949d3ad3ad474f383b22a3954773cb1e5e2642badf727cf12b71ff3df6a"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/guide.png",
+      "bytes": 404482,
+      "sha256": "7804fa3a871a9c917b32c0504ce8f8a09ddea7d9ce34fe18a7c7c160d5f7be6f"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/ui-elements.png",
+      "bytes": 336181,
+      "sha256": "0e8be61b352f9de0a3bce6ee994f94c90f877811030d691844b5b68b90835cbb"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/teoyube-tables.png",
+      "bytes": 346616,
+      "sha256": "4a673aca404701f69a9985934625a867c3bd10290107e7d7a08450bd4e36e274"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "tablet-portrait",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/tablet-portrait/roadmap.png",
+      "bytes": 384963,
+      "sha256": "a9d7f7827b812a0b7cabe071557c8409d833dc944b836e510e6c049baa65f631"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/mobile/today.png",
+      "bytes": 270864,
+      "sha256": "572c05fb223cfadf5d5a267446ece7989893989c7a411d5aac9afa436ac66756"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/mobile/search.png",
+      "bytes": 222395,
+      "sha256": "05c138d1b3b7a51d967e835ce46d0c10cfff33df663ef71a67b79175aca0f26b"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/mobile/canon.png",
+      "bytes": 253903,
+      "sha256": "c931227f2afd5ba5885e59c2e7556427b5aacec5cce8167eb90dcbb7ca33bb74"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/mobile/table.png",
+      "bytes": 266155,
+      "sha256": "65fb79bb0ad12444093838ee6d300a336b7d82dc4b29f14d98b9c197225e7932"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/mobile/calling.png",
+      "bytes": 243647,
+      "sha256": "2f6d28c01c58de06578bfb25dc08ce46d5cb4ed1c0b5914efe5122673d3514d1"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/mobile/book.png",
+      "bytes": 217334,
+      "sha256": "1b0e61150338ab55f19b08c2f1c63314db0a0beec9d312966f5fe3ea3f77cb3e"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/mobile/lexicon.png",
+      "bytes": 144195,
+      "sha256": "a647a5c0192a796a4866cc9dedd25068f1f35fcb761c9682df0946629e0db435"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/mobile/testimony.png",
+      "bytes": 184297,
+      "sha256": "a17c8f626ed04483cf5cd601f8fdc506dbce406721a7adf6b37d9cae4f9bef7c"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/mobile/guide.png",
+      "bytes": 207934,
+      "sha256": "e187d9f88eba444df5585a9d99fd10e330419648a27cb78b0645986af14bb5be"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/mobile/ui-elements.png",
+      "bytes": 208899,
+      "sha256": "dce7d3c06768d32421b2eb7c6543be972fb7e9b97040b2038dcfc12e64947bb2"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/mobile/teoyube-tables.png",
+      "bytes": 188834,
+      "sha256": "26c3c8267bd0c2332c1fc5a81730f7f370aa441141b09809598a9a4bafba8fe8"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/mobile/roadmap.png",
+      "bytes": 274386,
+      "sha256": "0608ff90ff62591b47504817da8f1e2b5169ebb85f59ce640d54f63d0e2dbabc"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "today",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/today.png",
+      "bytes": 231655,
+      "sha256": "20d5e8a2be693fd547754247b3fc5f225ad582569006e786ca7edc3ae06d3239"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "search",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/search.png",
+      "bytes": 216350,
+      "sha256": "8699fdbc6feb79c46b2d47210300c14b8475686927162355234c2044c1a1b8e5"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "canon",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/canon.png",
+      "bytes": 214038,
+      "sha256": "645bde4e322fd13726cbeedd4b9c9f990da3b6783e5fdb14e4736e2946da2166"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "table",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/table.png",
+      "bytes": 231780,
+      "sha256": "70115eb61cdb933e885670dcf0aef29b5b20ec3567c7ee06584777c35b40e061"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "calling",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/calling.png",
+      "bytes": 218558,
+      "sha256": "e8d1fb12071356b90412c26b65faec136c9924d3d688a42acb5eb0afc470e637"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "book",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/book.png",
+      "bytes": 191763,
+      "sha256": "324468c4b130b4060bf32dbc119b7ee80d29c4120bc79c3de4f93bdeebf57ea0"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "lexicon",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/lexicon.png",
+      "bytes": 136048,
+      "sha256": "72ab8a3587f1d5c9c35c2ced2c720fcdd31481894a834e8c9df2f2f059cb456e"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "testimony",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/testimony.png",
+      "bytes": 174589,
+      "sha256": "4106b375a6b0d351b6e1841de1731f5579c9eadb0e4d98d28d71d8f817b3f2a6"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "guide",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/guide.png",
+      "bytes": 191731,
+      "sha256": "60ca9cdd20176fee44d72f27784f2048c40c53218fcf8b0773d2ff63f28b3f8d"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "ui-elements",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/ui-elements.png",
+      "bytes": 205932,
+      "sha256": "6051fe2ab71fc5745945c22d95cd40ef39e85fa2a42e0877fcd9f8f04776e697"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "teoyube-tables",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/teoyube-tables.png",
+      "bytes": 179891,
+      "sha256": "24cc2dec6d6d2d041ece006d44962265018c3eefd2f0c48303dcae414d030208"
+    },
+    {
+      "kind": "screenshot",
+      "viewport": "mobile-small",
+      "view": "roadmap",
+      "path": "tests/visual/baselines/static-runtime/mobile-small/roadmap.png",
+      "bytes": 232696,
+      "sha256": "c220c86575848625b451db46bb53596de3e96497a8f31055b956c01953540b01"
+    }
+  ]
+}

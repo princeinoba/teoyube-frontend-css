@@ -1,0 +1,4760 @@
+{
+  "view": "book",
+  "bodyView": "book",
+  "root": {
+    "tag": "section",
+    "id": "book",
+    "classes": [
+      "view",
+      "page-container",
+      "book-saint-view",
+      "active"
+    ]
+  },
+  "elements": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": "book",
+      "classes": [
+        "view",
+        "page-container",
+        "book-saint-view",
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-saint-shell"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": "",
+      "classes": [
+        "book-saint-main"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "book-saint-hero"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 4,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-hero-content"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 5,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Living Spiritual Record",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 6,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 7,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "📖",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 8,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your walk. Your reflections. His faithfulness.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 9,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This is your spiritual journey recorded in obedience, direction, worship, and divine encounters.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 10,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-encouragement-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 11,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-card-top"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 12,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Today's Encouragement",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 13,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "♡",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 14,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "“Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to Him, and He will make your paths straight.”",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 15,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Proverbs 3:5-6",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 16,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-stat-grid"
+      ],
+      "role": "",
+      "ariaLabel": "Book of the Saint summary",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 17,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 18,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "T",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 19,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "126",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 20,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Total Reflections",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 21,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "+12 this month",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 22,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card",
+        "amber"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 23,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "✓",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 24,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "18",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 25,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Divine Assignments",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 26,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "+4 this month",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 27,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card",
+        "gold"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 28,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "*",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 29,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "7",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 30,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise Discoveries",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 31,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "+3 this month",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 32,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card",
+        "mint"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 33,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "#",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 34,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "32",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 35,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Days Consistent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 36,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Current streak",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 37,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "book-toolbar"
+      ],
+      "role": "",
+      "ariaLabel": "Book filters",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 38,
+      "tag": "label",
+      "id": "",
+      "classes": [
+        "book-search-field"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 39,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Q",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 40,
+      "tag": "input",
+      "id": "bookSearchInput",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 41,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 42,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 43,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 44,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Smart Search Suggestions",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 45,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Session-only, sanitized, local suggestions.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 46,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 47,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 48,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "reflection",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 49,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "saved promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 50,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "completed action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 51,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "testimony",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 52,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 53,
+      "tag": "select",
+      "id": "bookTypeFilter",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Filter by type",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 54,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "All Types",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 55,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Generated Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 56,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Daily Assignment",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 57,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reflection",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 58,
+      "tag": "select",
+      "id": "bookDateFilter",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Filter by date",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 59,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "All Dates",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 60,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This Week",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 61,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This Month",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 62,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "book-filter-button"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Filters",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 63,
+      "tag": "section",
+      "id": "phase115BookMemory",
+      "classes": [
+        "phase115-book-memory"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 64,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase114-section-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 65,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 66,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Journey Memory Timeline",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 67,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Saved Journey Memory",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Visible local/session memory only. Raw private text is not included in safe exports.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 69,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-control-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 70,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Export Memory",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 71,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear Memory",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 72,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-memory-filters"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 73,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "All",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 74,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Today",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 75,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This Week",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 76,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 77,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 78,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 79,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 80,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 81,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 82,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Testimony",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 83,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-memory-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 84,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-empty-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 85,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "No journey memory yet. Start a journey from the Canon or Calling Compass.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 86,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Generate today's journey, search a promise, or save a Scripture to start visible memory.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 87,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "phase115-data-controls"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 88,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your Teoyube Data Controls",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 89,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Off / Standard Scripture Path",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 90,
+      "tag": "dl",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 91,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 92,
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Raw text storage",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 93,
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Disabled",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 94,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 95,
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Data mode",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 96,
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Memory-only session",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 97,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 98,
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Signal storage",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 99,
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Visible session only",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 100,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 101,
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Database",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 102,
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not connected",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 103,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 104,
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Analytics",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 105,
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Disabled",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 106,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 107,
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Live AI",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 108,
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not connected",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 109,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-control-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 110,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Data Controls",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 111,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Export safe data",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 112,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Delete session data",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 113,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reset preferences",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 114,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Disable personalization",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 115,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase117-backup-reminder"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 116,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Beta backup reminder",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 117,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Before closing this local beta, download a safe JSON backup or Markdown summary if you want to keep Book, Promise Table, testimony, journey memory, or personali",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 118,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-control-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 119,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Download Safe JSON",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 120,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Download Markdown",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 121,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Dismiss",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 122,
+      "tag": "section",
+      "id": "phase116bBookJournalControls",
+      "classes": [
+        "phase116b-functional-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 123,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 124,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 125,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Book, Journal, Testimony Memory",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 126,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "1 Book / 0 Journal / 3 Testimony",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 127,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Saved items from Today, Search, Promise Table, Calling, Guide, Graph, and Lexicon appear here.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 128,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Export Book",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 129,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-control-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 130,
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 131,
+      "tag": "input",
+      "id": "phase116bJournalTitle",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 132,
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 133,
+      "tag": "input",
+      "id": "phase116bJournalContent",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 134,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Journal Entry",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 135,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116b-detail-drawer"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open memory",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 137,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "First Promise Cluster: Divine Direction",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 138,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "The journey begins with a promise cluster for direction, wisdom, and faithful next steps.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 139,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 140,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Proverbs 3:5-6",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 141,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Psalm 32:8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 142,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Isaiah 30:21",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 143,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "James 1:5",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 144,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "John 10:27",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 145,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 146,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Remove Item",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 147,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 148,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-mini-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 149,
+      "tag": "div",
+      "id": "bookTimeline",
+      "classes": [
+        "timeline",
+        "book-timeline"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 150,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "timeline-entry",
+        "book-entry-discovery"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 151,
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Jul 18, 2026, 3:19 AM",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 152,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "First Promise Cluster: Divine Direction",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 153,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "The journey begins with a promise cluster for direction, wisdom, and faithful next steps.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 154,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 155,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Proverbs 3:5-6",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 156,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Psalm 32:8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 157,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Isaiah 30:21",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 158,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "James 1:5",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 159,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "John 10:27",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 160,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-card-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 161,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Detail",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 162,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Remove",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 163,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 164,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-pagination"
+      ],
+      "role": "",
+      "ariaLabel": "Book pagination",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 165,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "←",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 166,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "1",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 167,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "2",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 168,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "3",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 169,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "...",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 170,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "12",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 171,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "→",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 172,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "book-saint-rail"
+      ],
+      "role": "",
+      "ariaLabel": "Book insights",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 173,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-rail-card",
+        "book-overview-card",
+        "book-journey-overview"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 174,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-journey-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 175,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 176,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 177,
+      "tag": "h4",
+      "id": "bookJourneyOverviewTitle",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Journey Overview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 178,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your walk with God. Documented by grace.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 179,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-heart"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 180,
+      "tag": "div",
+      "id": "bookJourneyMetrics",
+      "classes": [
+        "book-journey-metrics"
+      ],
+      "role": "",
+      "ariaLabel": "Journey reflection summary",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 181,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 182,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 183,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 184,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This Week Reflections",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 185,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 186,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 187,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "24",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 188,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This Month Reflections",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 189,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 190,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 191,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "32",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 192,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Streak Days",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 193,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 194,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 195,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "3",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 196,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Milestones Unlocked",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 197,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "book-week-journey"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 198,
+      "tag": "h5",
+      "id": "bookWeekJourneyTitle",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your Journey This Week",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 199,
+      "tag": "div",
+      "id": "bookWeekTimeline",
+      "classes": [
+        "book-week-timeline"
+      ],
+      "role": "",
+      "ariaLabel": "Weekly spiritual progress",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 200,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 201,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 202,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "MON",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 203,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Completed",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 204,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 205,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 206,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 207,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TUE",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 208,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Completed",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 209,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reflection",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 210,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 211,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 212,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "WED",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 213,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Completed",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 214,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 215,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 216,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 217,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "THU",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 218,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Completed",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 219,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 220,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 221,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 222,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "FRI",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 223,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Completed",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 224,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Wisdom",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 225,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "current"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 226,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 227,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "SAT",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 228,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reflecting",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 229,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 230,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "upcoming"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 231,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 232,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "SUN",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 233,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Waiting",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 234,
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Grace",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 235,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-journey-scripture"
+      ],
+      "role": "",
+      "ariaLabel": "Journey scripture encouragement",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 236,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 237,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 238,
+      "tag": "br",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 239,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Psalm 77:11",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 240,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-rail-card",
+        "book-topics-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 241,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Top Topics",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 242,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 243,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Obedience & Direction",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 244,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "12",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 245,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 246,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Hearing God's Voice",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 247,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "9",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 248,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 249,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer & Surrender",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 250,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "7",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 251,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 252,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture Meditation",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 253,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "6",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 254,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 255,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Walking in Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 256,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "4",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 257,
+      "tag": "a",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View All Topics →",
+      "src": "",
+      "href": "#book"
+    },
+    {
+      "index": 258,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-lantern-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 259,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Stay faithful in the little, God will entrust you with much.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 260,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Luke 16:10",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 261,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-rail-card",
+        "book-actions-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 262,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Quick Actions",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 263,
+      "tag": "button",
+      "id": "addManualEntry",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Reflection",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 264,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Calendar",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 265,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Export Journal",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 266,
+      "tag": "section",
+      "id": "phase116b1Continuation-book",
+      "classes": [
+        "phase116b-functional-panel",
+        "phase116b1-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 267,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 268,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 269,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Continue Where You Left Off",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 270,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Purpose: TIDUILOVP",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 271,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Session-only context. Nothing here is stored in browser persistence.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 272,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "phase116b-score"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "today",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 273,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-continuation-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 274,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 275,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 276,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Purpose: TIDUILOVP",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 277,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 278,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 279,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 1:18",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 280,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 281,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 282,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TIDUILOVP",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 283,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 284,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 285,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "None",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 286,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 287,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Next action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 288,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Available",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 289,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 290,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 291,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "None",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 292,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 293,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Continue Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 294,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Complete Next Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 295,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reopen Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 296,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reopen Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 297,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Continue Guided Workflow",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 298,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Book Timeline",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 299,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear Continuation State",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 300,
+      "tag": "section",
+      "id": "phase116b1SmartCollections",
+      "classes": [
+        "phase116b-functional-panel",
+        "phase116b1-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 301,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 302,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 303,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Smart Collections",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 304,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Organize saved references",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 305,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Collections contain record references and safe labels, not generic copies of private journal or testimony text.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 306,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "phase116b-score"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "7",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 307,
+      "tag": "form",
+      "id": "phase116b1CollectionCreateForm",
+      "classes": [
+        "phase116b1-inline-form"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 308,
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 309,
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 310,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Create",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 311,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-collection-tabs"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 312,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 313,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 314,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 315,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 316,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 317,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 318,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 319,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 320,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 321,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 322,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 323,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 324,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 325,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "0",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 326,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-collection-detail"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 327,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-inline-form"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 328,
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 329,
+      "tag": "input",
+      "id": "phase116b1CollectionRename",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 330,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Rename",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 331,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Delete",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 332,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Export",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 333,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 334,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Current Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 335,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Current Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 336,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Current Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 337,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Current Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 338,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Future Media",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 339,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-collection-items"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 340,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "No items in this collection yet.",
+      "src": "",
+      "href": ""
+    }
+  ]
+}

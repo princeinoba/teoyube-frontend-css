@@ -1,0 +1,4847 @@
+{
+  "view": "search",
+  "bodyView": "search",
+  "root": {
+    "tag": "section",
+    "id": "search",
+    "classes": [
+      "view",
+      "page-container",
+      "active"
+    ]
+  },
+  "elements": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": "search",
+      "classes": [
+        "view",
+        "page-container",
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 1,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "search-jumbotron"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 2,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeSearch",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 3,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 4,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 5,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promises.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 6,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "search-hero-copy"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Search your situation, promise, Scripture, prayer, calling, Teoyube word, journey, assignment, canon, or Kingdom principle.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 7,
+      "tag": "form",
+      "id": "teoyubeSearchForm",
+      "classes": [
+        "search-form"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 8,
+      "tag": "input",
+      "id": "teoyubeSearchInput",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 9,
+      "tag": "select",
+      "id": "teoyubeSearchCategory",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Search category",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 10,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "All",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 11,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 12,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 13,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 14,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 15,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 16,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teoyube Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 17,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Testimony",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 18,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Search Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 19,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 20,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 21,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 22,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Smart Search Suggestions",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 23,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Session-only, sanitized, local suggestions.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 24,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 25,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 26,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need direction",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 27,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need healing",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 28,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need wisdom",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 29,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "calling clarity",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 30,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 31,
+      "tag": "div",
+      "id": "promiseClusterNavigation",
+      "classes": [
+        "quick-prompts"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 32,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need direction",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 33,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need healing",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 34,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need peace",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 35,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need wisdom",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 36,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need strength",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 37,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need identity",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 38,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need breakthrough",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 39,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip",
+        "cluster-nav-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I need increase",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 40,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "search-results-shell"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 41,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "search-results-toolbar"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 42,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 43,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Suggested Journeys for You",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 44,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalized guidance based on your search",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 45,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "search-view-actions"
+      ],
+      "role": "",
+      "ariaLabel": "Search result view controls",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 46,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "Grid view",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▦",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 47,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "List view",
+      "dataView": "",
+      "dataAction": "",
+      "text": "☰",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 48,
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Sort search results",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 49,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Most Relevant",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 50,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Newest",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 51,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling Match",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 52,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Journey Level",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 53,
+      "tag": "div",
+      "id": "teoyubeSearchResults",
+      "classes": [
+        "search-results"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 54,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "search-result-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 55,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "thumbnail"
+      ],
+      "role": "",
+      "ariaLabel": "Promise animation preview",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 56,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "search-bookmark"
+      ],
+      "role": "",
+      "ariaLabel": "Bookmark TEOYUBE - The Eyes Of Your Understanding Being Enlightened",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▱",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 57,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling + Calling + Level A + B + C",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 58,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TEOYUBE - The Eyes Of Your Understanding Being Enlightened",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 59,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 60,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise category:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 61,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 62,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 1:18",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 63,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 64,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Based on Scripture and your profile, this may guide your next step. Words connected to divine calling, assignment, direction, and destiny.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 65,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-result-metrics"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 66,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Relevance 81",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 67,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Quality 99",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 68,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 69,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase114-explanation-path"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 70,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 71,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This connects to Creative Digital Ministry through Calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context -> Life Problem + Calling -> confusion -> TEOYUBE -> Calling -> Ephesians 1:18 -> Write down three gifts, three burdens, and one step yo",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 73,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence label: Excellent. Fallback reason: No fallback used",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 74,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 75,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 76,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 77,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 78,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 79,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 80,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 81,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I feel confused about my purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 82,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 83,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Intent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 84,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 85,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 86,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Need",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 87,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 88,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 89,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 90,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TEOYUBE",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 91,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 92,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 93,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 94,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 95,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 96,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 1:18",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 97,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 98,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 99,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Father, according to Your Word, guide me through the eyes of your understanding being enlightened with humility, wisdom, and obedience.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 100,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 101,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 102,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Write down three gifts, three burdens, and one step you can take today toward your calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 103,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 104,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 105,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 106,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 107,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TEOYUBE",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 108,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 109,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 1:18",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 110,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Write down three gifts, three burdens, and one step you can take today toward your calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 111,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture anchors stay visible and remain the authority; Teoyube words, prayers, and actions are devotional aids only.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 112,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 113,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 114,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Fallback:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 115,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 116,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalization:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 117,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "role": "",
+      "ariaLabel": "Recommendation Quality Score",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 118,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 119,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "100",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 120,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 121,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 122,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Recommendation Quality",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 123,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Strong Scripture, promise, word, prayer, and action alignment.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 124,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "You can continue with prayer, counsel, and one faithful action.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 125,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 126,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 127,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 128,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "search-progress"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 129,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 130,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "result-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 131,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-save-book",
+        "icon-only"
+      ],
+      "role": "",
+      "ariaLabel": "Save to Book",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▱",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 132,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-add-table"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add to Promise Table",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 133,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-generate-prayer"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Explore Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 134,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-open-graph"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 135,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 136,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "role": "",
+      "ariaLabel": "Personalization feedback controls",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 137,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "More like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 138,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Less like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 139,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not relevant",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 140,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 141,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 142,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 143,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Complete Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 144,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reset this preference",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 145,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "search-result-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 146,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "thumbnail"
+      ],
+      "role": "",
+      "ariaLabel": "Promise animation preview",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 147,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "search-bookmark"
+      ],
+      "role": "",
+      "ariaLabel": "Bookmark ASSIGNA - Divine Assignment",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▱",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 148,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling + Calling + Level B + C",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 149,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "ASSIGNA - Divine Assignment",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 150,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 151,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise category:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 152,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 153,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 2:10",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 154,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 155,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Based on Scripture and your profile, this may guide your next step. Words connected to divine calling, assignment, direction, and destiny.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 156,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-result-metrics"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 157,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Relevance 85",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 158,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Quality 99",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 159,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 160,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase114-explanation-path"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 161,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 162,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This connects to Creative Digital Ministry through Purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 163,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context -> Life Problem + Calling -> confusion -> ASSIGNA -> Purpose -> Ephesians 2:10 -> Write down three gifts, three burdens, and one step yo",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 164,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence label: Excellent. Fallback reason: No fallback used",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 165,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 166,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 167,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 168,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 169,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 170,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 171,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 172,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I feel confused about my purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 173,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 174,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Intent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 175,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 176,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 177,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Need",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 178,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 179,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 180,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 181,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "ASSIGNA",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 182,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 183,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 184,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 185,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 186,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 187,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 2:10",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 188,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 189,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 190,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Father, according to Your Word, guide me through divine assignment with humility, wisdom, and obedience.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 191,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 192,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 193,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Write down three gifts, three burdens, and one step you can take today toward your calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 194,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 195,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 196,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 197,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 198,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "ASSIGNA",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 199,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 200,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ephesians 2:10",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 201,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Write down three gifts, three burdens, and one step you can take today toward your calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 202,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture anchors stay visible and remain the authority; Teoyube words, prayers, and actions are devotional aids only.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 203,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 204,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 205,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Fallback:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 206,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 207,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalization:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 208,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "role": "",
+      "ariaLabel": "Recommendation Quality Score",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 209,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 210,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "100",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 211,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 212,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 213,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Recommendation Quality",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 214,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Strong Scripture, promise, word, prayer, and action alignment.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 215,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "You can continue with prayer, counsel, and one faithful action.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 216,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 217,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 218,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 219,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "search-progress"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 220,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 221,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "result-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 222,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-save-book",
+        "icon-only"
+      ],
+      "role": "",
+      "ariaLabel": "Save to Book",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▱",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 223,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-add-table"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add to Promise Table",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 224,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-generate-prayer"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Explore Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 225,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-open-graph"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 226,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 227,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "role": "",
+      "ariaLabel": "Personalization feedback controls",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 228,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "More like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 229,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Less like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 230,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not relevant",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 231,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 232,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 233,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 234,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Complete Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 235,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reset this preference",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 236,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "search-result-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 237,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "thumbnail"
+      ],
+      "role": "",
+      "ariaLabel": "Promise animation preview",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 238,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "search-bookmark"
+      ],
+      "role": "",
+      "ariaLabel": "Bookmark MISSIONA - Sent With Purpose",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▱",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 239,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling + Calling + Level C",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 240,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "MISSIONA - Sent With Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 241,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 242,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise category:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 243,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 244,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Matthew 28:19",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 245,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 246,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Based on Scripture and your profile, this may guide your next step. Words connected to divine calling, assignment, direction, and destiny.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 247,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-result-metrics"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 248,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Relevance 89",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 249,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Quality 99",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 250,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 251,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase114-explanation-path"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 252,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 253,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This connects to Creative Digital Ministry through Mission.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 254,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context -> Life Problem + Calling -> confusion -> MISSIONA -> Mission -> Matthew 28:19 -> Write down three gifts, three burdens, and one step yo",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 255,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence label: Excellent. Fallback reason: No fallback used",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 256,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 257,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 258,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 259,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 260,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 261,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 262,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 263,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I feel confused about my purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 264,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 265,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Intent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 266,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 267,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 268,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Need",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 269,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 270,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 271,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 272,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "MISSIONA",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 273,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 274,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 275,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Mission",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 276,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 277,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 278,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Matthew 28:19",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 279,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 280,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 281,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Father, according to Your Word, guide me through sent with purpose with humility, wisdom, and obedience.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 282,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 283,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 284,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Write down three gifts, three burdens, and one step you can take today toward your calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 285,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 286,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 287,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Life Problem + Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 288,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 289,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "MISSIONA",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 290,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Mission",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 291,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Matthew 28:19",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 292,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Write down three gifts, three burdens, and one step you can take today toward your calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 293,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture anchors stay visible and remain the authority; Teoyube words, prayers, and actions are devotional aids only.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 294,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 295,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 296,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Fallback:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 297,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 298,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalization:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 299,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "role": "",
+      "ariaLabel": "Recommendation Quality Score",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 300,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 301,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "100",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 302,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 303,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 304,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Recommendation Quality",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 305,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Strong Scripture, promise, word, prayer, and action alignment.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 306,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "You can continue with prayer, counsel, and one faithful action.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 307,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 308,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 309,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 310,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "search-progress"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 311,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 312,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "result-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 313,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-save-book",
+        "icon-only"
+      ],
+      "role": "",
+      "ariaLabel": "Save to Book",
+      "dataView": "",
+      "dataAction": "",
+      "text": "▱",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 314,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-add-table"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add to Promise Table",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 315,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-generate-prayer"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Explore Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 316,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "search-open-graph"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 317,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 318,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "role": "",
+      "ariaLabel": "Personalization feedback controls",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 319,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "More like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 320,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Less like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 321,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not relevant",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 322,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 323,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 324,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 325,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Complete Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 326,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reset this preference",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 327,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "search-feature-row"
+      ],
+      "role": "",
+      "ariaLabel": "TeoyubeSearch benefits",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 328,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 329,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "search-feature-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 330,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 331,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture Rooted",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 332,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Every result is anchored in God's Word.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 333,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 334,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "search-feature-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 335,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 336,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalized Guidance",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 337,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Tailored to your profile, calling, and current season.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 338,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 339,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "search-feature-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 340,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 341,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Take Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 342,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save, pray, and walk forward with clarity.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 343,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 344,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "search-feature-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 345,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 346,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Grow Daily",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 347,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Generate a daily journey and stay aligned with purpose.",
+      "src": "",
+      "href": ""
+    }
+  ]
+}

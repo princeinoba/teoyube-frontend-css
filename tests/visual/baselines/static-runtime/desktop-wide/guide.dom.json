@@ -1,0 +1,2711 @@
+{
+  "view": "guide",
+  "bodyView": "guide",
+  "root": {
+    "tag": "section",
+    "id": "guide",
+    "classes": [
+      "view",
+      "page-container",
+      "guide-view",
+      "active"
+    ]
+  },
+  "elements": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": "guide",
+      "classes": [
+        "view",
+        "page-container",
+        "guide-view",
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-layout"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 2,
+      "tag": "main",
+      "id": "",
+      "classes": [
+        "guide-main"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 3,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-hero"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 4,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 5,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Where God's Promises Meet Your Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 6,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 7,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 8,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your Biblical Scholar, Mentor, and Calling Navigator.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 9,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Rooted in Scripture. Guided by Wisdom. Led by Purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 10,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-feature-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 11,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "guide-feature-orb"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 12,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-feature-copy"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 13,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your Divine Guide",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 14,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teo Guide uses Scripture, Promise Clusters, and your Calling Profile to provide biblical wisdom for every step you take.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 15,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-feature-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 16,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 17,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 18,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture-Grounded",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 19,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Every response is anchored in God's Word.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 20,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 21,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 22,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalized for You",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 23,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Guidance based on your profile and calling.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 24,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 25,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 26,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Always Accessible",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 27,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ask anytime, anywhere for divine wisdom.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 28,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-help-section"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 29,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "How Teo Guide Helps You",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 30,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-help-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 31,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 32,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 33,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Understand God's Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 34,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Get clear, scripture-backed insights for your questions.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 35,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 36,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 37,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Navigate Your Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 38,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Receive direction and clarity for your purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 39,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 40,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 41,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Make Wise Decisions",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 42,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Discern God's will in every situation you face.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 43,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 44,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 45,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Grow Spiritually",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 46,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Practical steps to strengthen your walk with God.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 47,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-topics-section"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 48,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Popular Guidance Topics",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 49,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "quick-prompts",
+        "guide-topic-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 50,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Overcome Confusion",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 51,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Decision Wisdom",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 52,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Purpose Clarity",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 53,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Serve While Preparing",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 54,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Faith & Trust",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 55,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Relationships",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 56,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Assignment",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 57,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer & Direction",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 58,
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-wisdom-banner"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 59,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 60,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 61,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Your word is a lamp to my feet and a light to my path.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 62,
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Psalm 119:105",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 63,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "guide-chat-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 64,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-chat-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 65,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 66,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 67,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Chat with Teo Guide",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 68,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "AI-powered biblical guidance",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 69,
+      "tag": "section",
+      "id": "phase116bTeoGuideTools",
+      "classes": [
+        "phase116b-functional-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 70,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 71,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 72,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Contextual Teo Guide",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 73,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 74,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Uses selected word, promise, Scripture, journey, and fallback reason from app state.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 75,
+      "tag": "strong",
+      "id": "",
+      "classes": [
+        "phase116b-score"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "100",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 76,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-command-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 77,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 78,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 79,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TIDUILOVP",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 80,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 81,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 82,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 83,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 84,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 85,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 86,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 87,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Fallback",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 88,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture anchors available.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 89,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 90,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Response",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 91,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 92,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Add Reflection",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 93,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Copy Response",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 94,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear Chat",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 95,
+      "tag": "div",
+      "id": "chatLog",
+      "classes": [
+        "chat-log"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 96,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "message-row",
+        "teo"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 97,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "message-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 98,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "message",
+        "teo"
+      ],
+      "role": "",
+      "ariaLabel": "Teo Guide response",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Welcome. Based on the Teoyube guardrails, I will keep guidance rooted in Scripture, cautious in calling language, and connected to one faithful next step.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 99,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 100,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 101,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Why this?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 102,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 103,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 104,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 105,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 106,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Welcome. Based on the Teoyube guardrails, I will keep guidance rooted in Scripture, cautious in",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 107,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 108,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Intent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 109,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise Search",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 110,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 111,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Need",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 112,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "general guidance",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 113,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 114,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 115,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TIDUILOVP",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 116,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 117,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 118,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 119,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 120,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 121,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 122,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 123,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 124,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Father, make me chosen, called, and sent into divine purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 125,
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 126,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 127,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Pray through Benor -> Arion -> Luma -> Taviel and journal one reflection connected to Calling & Purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 128,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 129,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sanitized local context",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 130,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise Search",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 131,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "general guidance",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 132,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TIDUILOVP",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 133,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling & Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 134,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 135,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Pray through Benor -> Arion -> Luma -> Taviel and journal one reflection connected to Calling & Purpose.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 136,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture anchors stay visible and remain the authority; Teoyube words, prayers, and actions are devotional aids only.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 137,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 138,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Confidence:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 139,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Fallback:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 140,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 141,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Personalization:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 142,
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "role": "",
+      "ariaLabel": "Recommendation Quality Score",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 143,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 144,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "99",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 145,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Excellent",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 146,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 147,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Recommendation Quality",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 148,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Strong Scripture, promise, word, prayer, and action alignment.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 149,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "You can continue with prayer, counsel, and one faithful action.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 150,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 151,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "View Graph",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 152,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Compare Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 153,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "role": "",
+      "ariaLabel": "Personalization feedback controls",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 154,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "More like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 155,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Less like this",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 156,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not relevant",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 157,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 158,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 159,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 160,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Complete Action",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 161,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reset this preference",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 162,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-suggested-prompts"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 163,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Suggested Prompts",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 164,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-teo-groups"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 165,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 166,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 167,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 168,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 169,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 170,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Reflection",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 171,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Testimony",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 172,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-teo-prompts"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 173,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I feel stuck and need a promise.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 174,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Help me reflect on this promise.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 175,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "prompt-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "What promise cluster fits this season?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 176,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 177,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 178,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Smart Search Suggestions",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 179,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Session-only, sanitized, local suggestions.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 180,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 181,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 182,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "I feel stuck and need a promise.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 183,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Help me reflect on this promise.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 184,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "What promise cluster fits this season?",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 185,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Help me pray through discouragement.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 186,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Give me a prayer for clarity and direction.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 187,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 188,
+      "tag": "form",
+      "id": "chatForm",
+      "classes": [
+        "chat-form"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 189,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "guide-attach-button"
+      ],
+      "role": "",
+      "ariaLabel": "Attach future context",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 190,
+      "tag": "input",
+      "id": "chatInput",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 191,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Ask",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 192,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "guide-mic-button"
+      ],
+      "role": "",
+      "ariaLabel": "Voice input",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 193,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "guide-chat-note"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teo Guide provides general biblical guidance. Always pray and seek counsel for major decisions.",
+      "src": "",
+      "href": ""
+    }
+  ]
+}

@@ -1,0 +1,3038 @@
+{
+  "view": "ui-elements",
+  "bodyView": "ui-elements",
+  "root": {
+    "tag": "section",
+    "id": "ui-elements",
+    "classes": [
+      "view",
+      "page-container",
+      "active"
+    ]
+  },
+  "elements": [
+    {
+      "index": 0,
+      "tag": "section",
+      "id": "ui-elements",
+      "classes": [
+        "view",
+        "page-container",
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 1,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-page"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 2,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-hero"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 3,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 4,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "God's Promises Meet Your Calling",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 5,
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 6,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-title-icon"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 7,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Browse the original local video library or open the approved TeoyubeWorld Scripture collection for reflection.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 8,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-hero-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 9,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 10,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-guardrails"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 11,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Guardrails",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 12,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 13,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-journey"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 14,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Generate Today's Journey",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 15,
+      "tag": "button",
+      "id": "refreshUiVideos",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Refresh Videos",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 16,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-library"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 17,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-toolbar"
+      ],
+      "role": "",
+      "ariaLabel": "Video categories and filters",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 18,
+      "tag": "div",
+      "id": "uiVideoCategoryTabs",
+      "classes": [
+        "embedded-category-tabs"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 19,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "All Videos",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 20,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teachings",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 21,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Worship",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 22,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Messages",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 23,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Documentaries",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 24,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Shorts",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 25,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld Media",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 26,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-filter-controls"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 27,
+      "tag": "select",
+      "id": "uiVideoCategorySelect",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Filter video category",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 28,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "All Categories",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 29,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teachings",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 30,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Worship",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 31,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Messages",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 32,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Documentaries",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 33,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Shorts",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 34,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld Media",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 35,
+      "tag": "select",
+      "id": "uiVideoSort",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Sort videos",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 36,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sort by: Latest",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 37,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sort by: Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 38,
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Sort by: Shortest",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 39,
+      "tag": "button",
+      "id": "uiVideoFiltersButton",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Filters",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 40,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-stats-search"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 41,
+      "tag": "div",
+      "id": "uiVideoStats",
+      "classes": [
+        "embedded-video-stats"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 42,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "embedded-stat-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 43,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-stat-icon",
+        "library"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 44,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 45,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Total Videos",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 46,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 47,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Original local preview library",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 48,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "embedded-stat-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 49,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-stat-icon",
+        "views"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 50,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 51,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Total Views",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 52,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not tracked",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 53,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "No analytics connected",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 54,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "embedded-stat-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 55,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-stat-icon",
+        "time"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 56,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 57,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Watch Time",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 58,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Not tracked",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 59,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Session-only experience",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 60,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "embedded-stat-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 61,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-stat-icon",
+        "updated"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 62,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 63,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Last Updated",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 64,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Local",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 65,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Bundled preview data",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 66,
+      "tag": "label",
+      "id": "",
+      "classes": [
+        "embedded-search-field"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 67,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 68,
+      "tag": "input",
+      "id": "uiVideoSearch",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 69,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 70,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 71,
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 72,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Smart Search Suggestions",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 73,
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Session-only, sanitized, local suggestions.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 74,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 75,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28-30",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 76,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 77,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture teaching",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 78,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "prayer video",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 79,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "calling video",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 80,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Clear",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 81,
+      "tag": "div",
+      "id": "uiVideoGrid",
+      "classes": [
+        "ui-video-grid"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 82,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "ui-video-card",
+        "embedded-video-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 83,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-poster"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 84,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-backdrop"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/embed/embedded-videos-hero-bg.png",
+      "href": ""
+    },
+    {
+      "index": 85,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-image"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/embed/embedded-videos-hero-bg.png",
+      "href": ""
+    },
+    {
+      "index": 86,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-badge"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teaching",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 87,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "embedded-video-play"
+      ],
+      "role": "",
+      "ariaLabel": "Preview The Seed of Promise",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 88,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 89,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-duration"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "21:09",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 90,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-nav"
+      ],
+      "role": "",
+      "ariaLabel": "Carousel controls for The Seed of Promise",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 91,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show previous video in panel 1",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 92,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-video-position"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "1 / 8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 93,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show next video in panel 1",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 94,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-body"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 95,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-summary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 96,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "The Seed of Promise",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 97,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "ui-video-meta"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 98,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "channel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 99,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview record",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 100,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "2 Corinthians 5:17",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 101,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "embedded-video-menu"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 102,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "More actions for The Seed of Promise",
+      "dataView": "",
+      "dataAction": "",
+      "text": "...",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 103,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "ui-video-actions",
+        "embedded-video-menu-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 104,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 105,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Details",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 106,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save to Book",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 107,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 108,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-detail"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 109,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 110,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 111,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "A local TeoyubeWorld preview about tending promise language through Scripture and faithful action.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 112,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This is an original local preview record; a playable source has not been connected.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 113,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "embedded-video-boundary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Video supports reflection; Scripture remains primary.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 114,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "ui-video-card",
+        "embedded-video-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 115,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-poster"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 116,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-backdrop"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/today/teoyubeworld-search-bg.png",
+      "href": ""
+    },
+    {
+      "index": 117,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-image"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/today/teoyubeworld-search-bg.png",
+      "href": ""
+    },
+    {
+      "index": 118,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-badge"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Message",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 119,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "embedded-video-play"
+      ],
+      "role": "",
+      "ariaLabel": "Preview The Power of Prayer",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 120,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 121,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-duration"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "16:09",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 122,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-nav"
+      ],
+      "role": "",
+      "ariaLabel": "Carousel controls for The Power of Prayer",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 123,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show previous video in panel 2",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 124,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-video-position"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "2 / 8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 125,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show next video in panel 2",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 126,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-body"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 127,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-summary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 128,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "The Power of Prayer",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 129,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "ui-video-meta"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 130,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "channel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 131,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview record",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 132,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Proverbs 3:5-6",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 133,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "embedded-video-menu"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 134,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "More actions for The Power of Prayer",
+      "dataView": "",
+      "dataAction": "",
+      "text": "...",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 135,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "ui-video-actions",
+        "embedded-video-menu-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 136,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 137,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Details",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 138,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save to Book",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 139,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 140,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-detail"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 141,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 142,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 143,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "A Scripture-rooted local preview for prayer, surrender, wisdom, and one faithful next step.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 144,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This is an original local preview record; a playable source has not been connected.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 145,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "embedded-video-boundary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Video supports reflection; Scripture remains primary.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 146,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "ui-video-card",
+        "embedded-video-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 147,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-poster"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 148,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-backdrop"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/table/calling-compass-panel-bg.png",
+      "href": ""
+    },
+    {
+      "index": 149,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-image"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/table/calling-compass-panel-bg.png",
+      "href": ""
+    },
+    {
+      "index": 150,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-badge"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Teaching",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 151,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "embedded-video-play"
+      ],
+      "role": "",
+      "ariaLabel": "Preview Walk in Divine Purpose",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 152,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 153,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-duration"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "1:12",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 154,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-nav"
+      ],
+      "role": "",
+      "ariaLabel": "Carousel controls for Walk in Divine Purpose",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 155,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show previous video in panel 3",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 156,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-video-position"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "3 / 8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 157,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show next video in panel 3",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 158,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-body"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 159,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-summary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 160,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Walk in Divine Purpose",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 161,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "ui-video-meta"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 162,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "channel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 163,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview record",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 164,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Romans 8:28",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 165,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "embedded-video-menu"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 166,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "More actions for Walk in Divine Purpose",
+      "dataView": "",
+      "dataAction": "",
+      "text": "...",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 167,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "ui-video-actions",
+        "embedded-video-menu-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 168,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 169,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Details",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 170,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save to Book",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 171,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 172,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-detail"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 173,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 174,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 175,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "A cautious calling preview that connects purpose, courage, and Scripture without claiming certainty.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 176,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This is an original local preview record; a playable source has not been connected.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 177,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "embedded-video-boundary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Video supports reflection; Scripture remains primary.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 178,
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "ui-video-card",
+        "embedded-video-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 179,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-poster"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 180,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-backdrop"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/search/search-purpose-hero.png",
+      "href": ""
+    },
+    {
+      "index": 181,
+      "tag": "img",
+      "id": "",
+      "classes": [
+        "embedded-video-poster-image"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "public/images/search/search-purpose-hero.png",
+      "href": ""
+    },
+    {
+      "index": 182,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-badge"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Documentary",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 183,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "embedded-video-play"
+      ],
+      "role": "",
+      "ariaLabel": "Preview Rooted in His Word",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 184,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 185,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "ui-video-duration"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "4:03",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 186,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-nav"
+      ],
+      "role": "",
+      "ariaLabel": "Carousel controls for Rooted in His Word",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 187,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show previous video in panel 4",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 188,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "embedded-video-position"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "4 / 8",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 189,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "Show next video in panel 4",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 190,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-card-body"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 191,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-summary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 192,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Rooted in His Word",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 193,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "ui-video-meta"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 194,
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "channel"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "TeoyubeWorld",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 195,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview record",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 196,
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Psalm 119:105",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 197,
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "embedded-video-menu"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 198,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "More actions for Rooted in His Word",
+      "dataView": "",
+      "dataAction": "",
+      "text": "...",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 199,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "ui-video-actions",
+        "embedded-video-menu-actions"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 200,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Preview",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 201,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Details",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 202,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Save to Book",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 203,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Open Scripture",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 204,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-video-detail"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 205,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 206,
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Scripture:",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 207,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "A local preview about Scripture as the highest authority over Teoyube language aids.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 208,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "This is an original local preview record; a playable source has not been connected.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 209,
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "embedded-video-boundary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Video supports reflection; Scripture remains primary.",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 210,
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "embedded-load-more"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "",
+      "src": "",
+      "href": ""
+    },
+    {
+      "index": 211,
+      "tag": "button",
+      "id": "uiVideoLoadMore",
+      "classes": [
+        "secondary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "dataView": "",
+      "dataAction": "",
+      "text": "Load More Videos",
+      "src": "",
+      "href": ""
+    }
+  ]
+}

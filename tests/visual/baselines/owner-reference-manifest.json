@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "baselineTag": "teoyube-original-upload-2026-07-18",
+  "views": [
+    {
+      "viewId": "today",
+      "legacyUrl": "/#today",
+      "nextTarget": "/",
+      "ownerReference": "Asset/ChatGPT Image page (Today).png"
+    },
+    {
+      "viewId": "search",
+      "legacyUrl": "/#search",
+      "nextTarget": "/search",
+      "ownerReference": "Asset/ChatGPT Image page (TeoyubeSearch).png"
+    },
+    {
+      "viewId": "canon",
+      "legacyUrl": "/#canon",
+      "nextTarget": "/canon",
+      "ownerReference": "Asset/ChatGPT Image page (TeoyubeCanon Page).png"
+    },
+    {
+      "viewId": "table",
+      "legacyUrl": "/#table",
+      "nextTarget": "/promise-table",
+      "ownerReference": "Asset/ChatGPT Image page (TeoyubePromise table Page).png"
+    },
+    {
+      "viewId": "calling",
+      "legacyUrl": "/#calling",
+      "nextTarget": "/calling-compass",
+      "ownerReference": "Asset/ChatGPT Image (Calling Compass).png"
+    },
+    {
+      "viewId": "book",
+      "legacyUrl": "/#book",
+      "nextTarget": "/book",
+      "ownerReference": "Asset/ChatGPT Image (Book of Saints).png"
+    },
+    {
+      "viewId": "lexicon",
+      "legacyUrl": "/#lexicon",
+      "nextTarget": "/lexicon",
+      "ownerReference": "Asset/ChatGPT Image (Teoyube Lexicon Page).png"
+    },
+    {
+      "viewId": "testimony",
+      "legacyUrl": "/#testimony",
+      "nextTarget": "/testimony",
+      "ownerReference": "Asset/ChatGPT Image (Testimony Page).png"
+    },
+    {
+      "viewId": "guide",
+      "legacyUrl": "/#guide",
+      "nextTarget": "/teo-guide",
+      "ownerReference": "Asset/ChatGPT Image (Teo Guide Page).png"
+    },
+    {
+      "viewId": "ui-elements",
+      "legacyUrl": "/#ui-elements",
+      "nextTarget": "/embedded-videos",
+      "ownerReference": "Asset/ChatGPT Image (Embed Video Page).png"
+    },
+    {
+      "viewId": "teoyube-tables",
+      "legacyUrl": "/#teoyube-tables",
+      "nextTarget": "/tables",
+      "ownerReference": "Asset/ChatGPT Image (Teoyube Tables Page).png"
+    },
+    {
+      "viewId": "roadmap",
+      "legacyUrl": "/#roadmap",
+      "nextTarget": "/roadmap",
+      "ownerReference": "Asset/ChatGPT Image page (Roadmap).png"
+    }
+  ],
+  "requiredViewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ]
+}

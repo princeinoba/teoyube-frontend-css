@@ -1,10 +1,7 @@
 import kingdomArchetypesData from "../../../data/kingdomArchetypes.json";
-import {
-  detectCallingMatches,
-  getScripturesFromCallings,
-  TIG_CALLING_SEEDS,
-  type CallingProfileNode
-} from "../../tig";
+import { detectCallingMatches, getScripturesFromCallings } from "../../tig/calling-compass";
+import { TIG_CALLING_SEEDS } from "../../tig/seed/callings.seed";
+import type { CallingProfileNode } from "../../tig/types";
 import { findPromiseClustersByTheme, type TeoyubePromiseCluster } from "../promises/promise-engine";
 import { findTeoyubeWordsByTheme, type TeoyubeVocabularyWord } from "../language/teoyube-language-engine";
 import { validateTheologyBoundaries } from "../theology/theology-framework";

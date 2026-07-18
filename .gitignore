@@ -13,3 +13,7 @@ node_modules/
 
 # Temporary media processing
 /.media-tmp/
+
+# Python recovery tooling
+__pycache__/
+*.pyc

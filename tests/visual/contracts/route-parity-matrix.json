@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sourceRuntime": "original static Phase 11.6C.3 runtime",
+  "policy": "Next may not become public until every retained public capability is functionally and visually approved by the owner.",
+  "routes": [
+    { "capability": "today", "staticView": "today", "nextRoute": "/", "status": "not-verified", "ownerApproved": false },
+    { "capability": "search", "staticView": "search", "nextRoute": "/search", "status": "not-verified", "ownerApproved": false },
+    { "capability": "canon", "staticView": "canon", "nextRoute": "/canon", "status": "not-verified", "ownerApproved": false },
+    { "capability": "promise-table", "staticView": "table", "nextRoute": "/promise-table", "status": "not-verified", "ownerApproved": false },
+    { "capability": "calling-compass", "staticView": "calling", "nextRoute": "/calling-compass", "status": "not-verified", "ownerApproved": false },
+    { "capability": "book-of-the-saint", "staticView": "book", "nextRoute": "/book", "status": "not-verified", "ownerApproved": false },
+    { "capability": "lexicon", "staticView": "lexicon", "nextRoute": "/lexicon", "status": "not-verified", "ownerApproved": false },
+    { "capability": "testimony", "staticView": "testimony", "nextRoute": "/testimony", "status": "not-verified", "ownerApproved": false },
+    { "capability": "teo-guide", "staticView": "guide", "nextRoute": "/teo-guide", "status": "not-verified", "ownerApproved": false },
+    { "capability": "embedded-videos", "staticView": "ui-elements", "nextRoute": "/embedded-videos", "status": "not-verified", "ownerApproved": false },
+    { "capability": "tables", "staticView": "teoyube-tables", "nextRoute": "/tables", "status": "not-verified", "ownerApproved": false },
+    { "capability": "roadmap-owner-tool", "staticView": "roadmap", "nextRoute": "/roadmap", "status": "owner-only", "ownerApproved": false }
+  ],
+  "nextOnlyCapabilitiesRequiringOwnerPlacementApproval": [
+    { "capability": "prayer", "nextRoute": "/prayer" },
+    { "capability": "daily-journey", "nextRoute": "/journey" },
+    { "capability": "journal", "nextRoute": "/journal" },
+    { "capability": "consent", "nextRoute": "/consent" },
+    { "capability": "privacy", "nextRoute": "/privacy" },
+    { "capability": "settings", "nextRoute": "/settings" }
+  ]
+}
