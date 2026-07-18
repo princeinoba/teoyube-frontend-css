@@ -28,6 +28,9 @@ jobs:
       - name: Install the locked dependency graph
         run: npm ci
 
+      - name: Install the locked Playwright Chromium runtime
+        run: npx playwright install --with-deps chromium
+
       - name: Verify protected static source and TIG contracts
         run: npm run recovery:verify
 
@@ -45,6 +48,17 @@ jobs:
 
       - name: Exercise the secret-safe health route
         run: npm run test:e2e
+
+      - name: Enforce the 72-cell Next parity status gate
+        run: npm run visual:parity:status
+
+      - name: Exercise the owner-gated Next comparison runner
+        run: npm run visual:parity:next
+
+      - name: Reproduce the immutable static visual contract
+        env:
+          TEOYUBE_ALLOW_CROSS_PLATFORM_STATIC: "1"
+        run: npm run visual:parity:verify
 
       - name: Confirm verification did not rewrite tracked evidence
         run: git diff --exit-code

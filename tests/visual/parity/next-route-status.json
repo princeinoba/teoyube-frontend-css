@@ -1,0 +1,14 @@
+[
+  { "viewId": "today", "nextRoute": "/", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "search", "nextRoute": "/search", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "canon", "nextRoute": "/canon", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "table", "nextRoute": "/promise-table", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "calling", "nextRoute": "/calling-compass", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "book", "nextRoute": "/book", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "lexicon", "nextRoute": "/lexicon", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "testimony", "nextRoute": "/testimony", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "guide", "nextRoute": "/teo-guide", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "ui-elements", "nextRoute": "/embedded-videos", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "teoyube-tables", "nextRoute": "/tables", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null },
+  { "viewId": "roadmap", "nextRoute": "/roadmap", "status": "NOT_VERIFIED", "ownerApproved": false, "ownerApprovalId": null }
+]
