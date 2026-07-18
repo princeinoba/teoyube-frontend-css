@@ -34,6 +34,9 @@ jobs:
       - name: Verify protected static source and TIG contracts
         run: npm run recovery:verify
 
+      - name: Enforce feature dependency boundaries and cycle freedom
+        run: npm run architecture:verify
+
       - name: Type-check the strict Next preview boundary
         run: npm run typecheck
 
