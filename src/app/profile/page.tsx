@@ -37,7 +37,7 @@ export default function ProfilePage() {
         <DashboardCard title="Primary Path">
           <h3>{path.name}</h3>
           <p>{path.sequence.join(" -> ")}</p>
-          <p className="muted">{path.scriptureFlow.join(", ")}</p>
+          <p className="muted">{(path.scriptureFlow || []).join(", ")}</p>
         </DashboardCard>
 
         <DashboardCard title="Archetype Words">

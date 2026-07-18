@@ -17,3 +17,12 @@ node_modules/
 # Python recovery tooling
 __pycache__/
 *.pyc
+
+# Independently generated Next preview and test output
+/.next/
+/.tmp/
+/coverage/
+/playwright-report/
+/test-results/
+/next-env.d.ts
+*.tsbuildinfo

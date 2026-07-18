@@ -1,7 +1,7 @@
 "use client";
 
-import { ConsentControlsPanel, KnownLimitationsNotice, SafetyNotice } from "@/components/productization/Phase112ScreenshotApp";
-import { TeoyubeProductCard } from "@/components/productization/Phase11ProductPanels";
+import { ConsentControlsPanel, SafetyNotice } from "@/components/productization/Phase112ScreenshotApp";
+import { KnownLimitationsNotice, TeoyubeProductCard } from "@/components/productization/Phase11ProductPanels";
 
 export function TIGPrivacyPanel() {
   return (

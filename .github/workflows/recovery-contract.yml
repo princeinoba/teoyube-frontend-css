@@ -22,7 +22,7 @@ jobs:
       - name: Use the recovery Node baseline
         uses: actions/setup-node@v4
         with:
-          node-version: 20.11.0
+          node-version: 22.20.0
 
       - name: Report toolchain
         run: |

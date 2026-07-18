@@ -3,10 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "description": "TEOYUBE vision prototype built from the phase 1 product briefs.",
+  "packageManager": "npm@10.2.4",
+  "engines": {
+    "node": ">=22.13.0 <25",
+    "npm": ">=10.2.4 <11"
+  },
   "scripts": {
     "start": "node --preserve-symlinks-main server.js",
     "dev": "node --preserve-symlinks-main server.js",
     "prototype:start": "node --preserve-symlinks-main server.js",
+    "app:dev": "next dev",
+    "app:build": "next build",
+    "app:start": "next start",
+    "typecheck": "next typegen && tsc -p tsconfig.next.json --noEmit",
+    "lint": "eslint eslint.config.mjs vitest.config.mts playwright.config.ts src/config src/app/api/health tests/build-foundation tests/e2e --max-warnings=0",
+    "test": "vitest run",
+    "test:e2e": "node scripts/runNextPreviewE2E.cjs",
     "check:imports": "node --preserve-symlinks-main scripts/checkImports.cjs",
     "phase11:smoke": "node --preserve-symlinks-main scripts/phase11Smoke.cjs",
     "phase114:smoke": "node --preserve-symlinks-main scripts/phase114Smoke.cjs",
@@ -65,5 +77,24 @@
     "recovery:visual-contract:verify": "npm run recovery:visual:verify",
     "recovery:tig-contract:verify": "npm run recovery:tig:verify",
     "recovery:runtime-baselines:verify": "node scripts/recovery/verifyRuntimeBaselines.cjs"
+  },
+  "dependencies": {
+    "next": "16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "zod": "4.4.3"
+  },
+  "overrides": {
+    "postcss": "8.5.19"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "@types/node": "20.19.43",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.2.10",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
   }
 }

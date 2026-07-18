@@ -1,0 +1,50 @@
+name: Teoyube Next Preview Foundation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  next-preview-foundation:
+    name: Install, verify, test, and build the private Next preview
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out complete history and baseline tags
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use the declared Node runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.20.0
+          cache: npm
+
+      - name: Install the locked dependency graph
+        run: npm ci
+
+      - name: Verify protected static source and TIG contracts
+        run: npm run recovery:verify
+
+      - name: Type-check the strict Next preview boundary
+        run: npm run typecheck
+
+      - name: Lint the Next preview foundation
+        run: npm run lint
+
+      - name: Run foundation unit tests
+        run: npm run test
+
+      - name: Build the private Next preview
+        run: npm run app:build
+
+      - name: Exercise the secret-safe health route
+        run: npm run test:e2e
+
+      - name: Confirm verification did not rewrite tracked evidence
+        run: git diff --exit-code
