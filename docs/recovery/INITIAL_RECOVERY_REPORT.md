@@ -25,6 +25,8 @@ The three uploaded ZIP copies, `Teoyube Phase 1(2).zip`, `Teoyube Phase 1(3).zip
 10. Fixed the `TIG_CALLING_SEEDS` build regression in isolation by importing the seed, functions, and type from their owning modules rather than the broad TIG barrel.
 11. Added recovery verification commands to `package.json`.
 12. Rewrote the Codex execution pack as a gated visual-source-of-truth migration program.
+13. Added a CI contract that verifies the protected visual source, runtime baselines, TIG import boundary, and repository imports without updating evidence.
+14. Added a pull-request template that requires an explicit visual-preservation declaration and owner approval ID for any exception.
 
 ## Visual changes
 

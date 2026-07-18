@@ -44,3 +44,10 @@ For each candidate file:
 8. Commit separately with an exact rollback command.
 
 A prior green report is not sufficient. The file must pass in the clean recovery branch.
+
+## Already established safely on this branch
+
+- recovery-only CI for visual, DOM, asset, runtime-baseline, TIG, and import contracts
+- pull-request declaration requiring zero protected visual changes or a narrowly scoped owner approval ID
+
+This recovery CI is not the future Next application build pipeline. That pipeline remains a Prompt 2 deliverable and must be recreated from verified source in this clean branch.

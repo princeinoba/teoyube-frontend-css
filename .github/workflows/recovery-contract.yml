@@ -1,0 +1,36 @@
+name: Teoyube Recovery Contract
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  visual-source-of-truth:
+    name: Visual source-of-truth and TIG contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out complete history and baseline tags
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use the recovery Node baseline
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.0
+
+      - name: Report toolchain
+        run: |
+          node --version
+          npm --version
+
+      - name: Verify protected UI, DOM, assets, runtime baselines, TIG import, and imports
+        run: npm run recovery:verify
+
+      - name: Confirm verification did not rewrite tracked evidence
+        run: git diff --exit-code
