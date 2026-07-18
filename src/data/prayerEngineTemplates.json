@@ -1,0 +1,90 @@
+[
+  {
+    "id": "PR001",
+    "name": "Chosen Identity",
+    "category": "Identity",
+    "sequence": ["Benor", "Luma", "Taviel"],
+    "scriptureAnchor": "Ephesians 1:4",
+    "declaration": "I am chosen by God and called into purpose.",
+    "prayer": "Father, thank You for choosing me before the foundation of the world. Fill me with Your light and guide me into the purpose You prepared for me.",
+    "duration": "3 minutes",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "PR002",
+    "name": "Sonship",
+    "category": "Identity",
+    "sequence": ["Abion", "Elior", "Beniel"],
+    "scriptureAnchor": "Romans 8:15",
+    "declaration": "I am a beloved child of God.",
+    "prayer": "Father, establish me in Your love. Let me walk in confidence as Your son and heir.",
+    "duration": "3 minutes",
+    "difficulty": "Beginner"
+  },
+  {
+    "id": "PR003",
+    "name": "Healing and Restoration",
+    "category": "Healing",
+    "sequence": ["Zephan", "Renar", "Velor", "Auren"],
+    "scriptureAnchor": "1 Peter 5:10",
+    "declaration": "God heals, renews, restores, and strengthens me.",
+    "prayer": "Lord, heal every wound, renew my mind, restore what was lost, and produce fruit through my life.",
+    "duration": "5 minutes",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "PR004",
+    "name": "Light and Wisdom",
+    "category": "Wisdom",
+    "sequence": ["Luma", "Solen", "Emeth", "Hazon"],
+    "scriptureAnchor": "James 1:5",
+    "declaration": "God grants wisdom and understanding.",
+    "prayer": "Lord, illuminate my path, give me wisdom, reveal truth, and show me Your vision.",
+    "duration": "5 minutes",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "PR005",
+    "name": "Protection and Victory",
+    "category": "Protection",
+    "sequence": ["Nethar", "Shalem", "Koriel", "Kethor"],
+    "scriptureAnchor": "Psalm 91",
+    "declaration": "The Lord protects, strengthens, and gives victory.",
+    "prayer": "Father, surround me with Your protection, establish Your peace within me, strengthen me, and lead me into victory.",
+    "duration": "5 minutes",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "PR006",
+    "name": "Kingdom Authority",
+    "category": "Authority",
+    "sequence": ["Orimon", "Korion", "Elvar", "Theron"],
+    "scriptureAnchor": "Luke 10:19",
+    "declaration": "Christ gives authority for Kingdom assignment.",
+    "prayer": "Lord, teach me to exercise authority with humility, wisdom, and righteousness.",
+    "duration": "7 minutes",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "PR007",
+    "name": "Faithful Steward",
+    "category": "Stewardship",
+    "sequence": ["Selion", "Maviel", "Talion", "Verath"],
+    "scriptureAnchor": "1 Peter 4:10",
+    "declaration": "I faithfully steward what God has entrusted to me.",
+    "prayer": "Lord, make me faithful with every gift, resource, relationship, and opportunity You place in my hands.",
+    "duration": "6 minutes",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": "PR008",
+    "name": "Generational Legacy",
+    "category": "Legacy",
+    "sequence": ["Nachalah", "Sariel", "Doriel", "Valion"],
+    "scriptureAnchor": "Psalm 112:1-2",
+    "declaration": "God establishes a righteous legacy through my life.",
+    "prayer": "Father, let my life bless future generations and leave a testimony of faithfulness.",
+    "duration": "7 minutes",
+    "difficulty": "Advanced"
+  }
+]

@@ -1,0 +1,758 @@
+[
+  {
+    "id": "D01",
+    "name": "The Chosen Calling Journey",
+    "archetype": "A01",
+    "archetypeName": "The Chosen",
+    "path": "P01",
+    "pathName": "Calling",
+    "destination": "Purpose",
+    "sequence": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "meaning": [
+      "Chosen One",
+      "Called One",
+      "Light",
+      "Purpose"
+    ]
+  },
+  {
+    "id": "D02",
+    "name": "The Chosen Sonship Journey",
+    "archetype": "A01",
+    "archetypeName": "The Chosen",
+    "path": "P05",
+    "pathName": "Sonship",
+    "destination": "Sonship",
+    "sequence": [
+      "Abion",
+      "Elior",
+      "Arielon",
+      "Beniel"
+    ],
+    "meaning": [
+      "Adopted Son",
+      "Beloved Child",
+      "Son of Light",
+      "True Son"
+    ]
+  },
+  {
+    "id": "D03",
+    "name": "The Chosen Leadership Journey",
+    "archetype": "A01",
+    "archetypeName": "The Chosen",
+    "path": "P09",
+    "pathName": "Leadership",
+    "destination": "Legacy",
+    "sequence": [
+      "Karion",
+      "Marion",
+      "Sarion",
+      "Valdor"
+    ],
+    "meaning": [
+      "Leadership",
+      "Influence",
+      "Responsibility",
+      "Government"
+    ]
+  },
+  {
+    "id": "D04",
+    "name": "The Builder Stewardship Journey",
+    "archetype": "A02",
+    "archetypeName": "The Builder",
+    "path": "P04",
+    "pathName": "Stewardship",
+    "destination": "Restoration",
+    "sequence": [
+      "Selion",
+      "Maviel",
+      "Tharon",
+      "Velian"
+    ],
+    "meaning": [
+      "Steward",
+      "Faithful Management",
+      "Cultivation",
+      "Multiplication"
+    ]
+  },
+  {
+    "id": "D05",
+    "name": "The Builder Legacy Journey",
+    "archetype": "A02",
+    "archetypeName": "The Builder",
+    "path": "P08",
+    "pathName": "Legacy",
+    "destination": "Influence",
+    "sequence": [
+      "Themar",
+      "Sariel",
+      "Aldor",
+      "Valion"
+    ],
+    "meaning": [
+      "Heir",
+      "Legacy",
+      "Custodian",
+      "Reward"
+    ]
+  },
+  {
+    "id": "D06",
+    "name": "The Builder Kingdom Maturity Journey",
+    "archetype": "A02",
+    "archetypeName": "The Builder",
+    "path": "P12",
+    "pathName": "Kingdom Maturity",
+    "destination": "Fruitfulness",
+    "sequence": [
+      "Beniel",
+      "Solen",
+      "Orimon",
+      "Sariel"
+    ],
+    "meaning": [
+      "True Son",
+      "Wisdom",
+      "Authority",
+      "Legacy"
+    ]
+  },
+  {
+    "id": "D07",
+    "name": "The Lightbearer Wisdom Journey",
+    "archetype": "A03",
+    "archetypeName": "The Lightbearer",
+    "path": "P03",
+    "pathName": "Wisdom",
+    "destination": "Authority",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "D08",
+    "name": "The Lightbearer Protection Journey",
+    "archetype": "A03",
+    "archetypeName": "The Lightbearer",
+    "path": "P07",
+    "pathName": "Protection",
+    "destination": "Victory",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "D09",
+    "name": "The Lightbearer Dominion Journey",
+    "archetype": "A03",
+    "archetypeName": "The Lightbearer",
+    "path": "P11",
+    "pathName": "Dominion",
+    "destination": "Service",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "D10",
+    "name": "The Healer Healing Journey",
+    "archetype": "A04",
+    "archetypeName": "The Healer",
+    "path": "P02",
+    "pathName": "Healing",
+    "destination": "Dominion",
+    "sequence": [
+      "Zephan",
+      "Renar",
+      "Velor",
+      "Auren"
+    ],
+    "meaning": [
+      "Healing",
+      "Renewal",
+      "Restoration",
+      "Fruitfulness"
+    ]
+  },
+  {
+    "id": "D11",
+    "name": "The Healer Authority Journey",
+    "archetype": "A04",
+    "archetypeName": "The Healer",
+    "path": "P06",
+    "pathName": "Authority",
+    "destination": "Wisdom",
+    "sequence": [
+      "Orimon",
+      "Korion",
+      "Elvar",
+      "Theron"
+    ],
+    "meaning": [
+      "Authority",
+      "Command",
+      "Decree",
+      "Kingdom Rule"
+    ]
+  },
+  {
+    "id": "D12",
+    "name": "The Healer Service Journey",
+    "archetype": "A04",
+    "archetypeName": "The Healer",
+    "path": "P10",
+    "pathName": "Service",
+    "destination": "Kingdom Maturity",
+    "sequence": [
+      "Talion",
+      "Orel",
+      "Maviel",
+      "Auren"
+    ],
+    "meaning": [
+      "Service",
+      "Trust",
+      "Faithful Management",
+      "Fruitfulness"
+    ]
+  },
+  {
+    "id": "D13",
+    "name": "The Watchman Protection Journey",
+    "archetype": "A05",
+    "archetypeName": "The Watchman",
+    "path": "P07",
+    "pathName": "Protection",
+    "destination": "Purpose",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "D14",
+    "name": "The Watchman Dominion Journey",
+    "archetype": "A05",
+    "archetypeName": "The Watchman",
+    "path": "P11",
+    "pathName": "Dominion",
+    "destination": "Sonship",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "D15",
+    "name": "The Watchman Wisdom Journey",
+    "archetype": "A05",
+    "archetypeName": "The Watchman",
+    "path": "P03",
+    "pathName": "Wisdom",
+    "destination": "Legacy",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "D16",
+    "name": "The Shepherd Protection Journey",
+    "archetype": "A06",
+    "archetypeName": "The Shepherd",
+    "path": "P07",
+    "pathName": "Protection",
+    "destination": "Restoration",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "D17",
+    "name": "The Shepherd Dominion Journey",
+    "archetype": "A06",
+    "archetypeName": "The Shepherd",
+    "path": "P11",
+    "pathName": "Dominion",
+    "destination": "Influence",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "D18",
+    "name": "The Shepherd Wisdom Journey",
+    "archetype": "A06",
+    "archetypeName": "The Shepherd",
+    "path": "P03",
+    "pathName": "Wisdom",
+    "destination": "Fruitfulness",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "D19",
+    "name": "The Steward Stewardship Journey",
+    "archetype": "A07",
+    "archetypeName": "The Steward",
+    "path": "P04",
+    "pathName": "Stewardship",
+    "destination": "Authority",
+    "sequence": [
+      "Selion",
+      "Maviel",
+      "Tharon",
+      "Velian"
+    ],
+    "meaning": [
+      "Steward",
+      "Faithful Management",
+      "Cultivation",
+      "Multiplication"
+    ]
+  },
+  {
+    "id": "D20",
+    "name": "The Steward Legacy Journey",
+    "archetype": "A07",
+    "archetypeName": "The Steward",
+    "path": "P08",
+    "pathName": "Legacy",
+    "destination": "Victory",
+    "sequence": [
+      "Themar",
+      "Sariel",
+      "Aldor",
+      "Valion"
+    ],
+    "meaning": [
+      "Heir",
+      "Legacy",
+      "Custodian",
+      "Reward"
+    ]
+  },
+  {
+    "id": "D21",
+    "name": "The Steward Kingdom Maturity Journey",
+    "archetype": "A07",
+    "archetypeName": "The Steward",
+    "path": "P12",
+    "pathName": "Kingdom Maturity",
+    "destination": "Service",
+    "sequence": [
+      "Beniel",
+      "Solen",
+      "Orimon",
+      "Sariel"
+    ],
+    "meaning": [
+      "True Son",
+      "Wisdom",
+      "Authority",
+      "Legacy"
+    ]
+  },
+  {
+    "id": "D22",
+    "name": "The Sower Stewardship Journey",
+    "archetype": "A08",
+    "archetypeName": "The Sower",
+    "path": "P04",
+    "pathName": "Stewardship",
+    "destination": "Dominion",
+    "sequence": [
+      "Selion",
+      "Maviel",
+      "Tharon",
+      "Velian"
+    ],
+    "meaning": [
+      "Steward",
+      "Faithful Management",
+      "Cultivation",
+      "Multiplication"
+    ]
+  },
+  {
+    "id": "D23",
+    "name": "The Sower Legacy Journey",
+    "archetype": "A08",
+    "archetypeName": "The Sower",
+    "path": "P08",
+    "pathName": "Legacy",
+    "destination": "Wisdom",
+    "sequence": [
+      "Themar",
+      "Sariel",
+      "Aldor",
+      "Valion"
+    ],
+    "meaning": [
+      "Heir",
+      "Legacy",
+      "Custodian",
+      "Reward"
+    ]
+  },
+  {
+    "id": "D24",
+    "name": "The Sower Kingdom Maturity Journey",
+    "archetype": "A08",
+    "archetypeName": "The Sower",
+    "path": "P12",
+    "pathName": "Kingdom Maturity",
+    "destination": "Kingdom Maturity",
+    "sequence": [
+      "Beniel",
+      "Solen",
+      "Orimon",
+      "Sariel"
+    ],
+    "meaning": [
+      "True Son",
+      "Wisdom",
+      "Authority",
+      "Legacy"
+    ]
+  },
+  {
+    "id": "D25",
+    "name": "The Teacher Wisdom Journey",
+    "archetype": "A09",
+    "archetypeName": "The Teacher",
+    "path": "P03",
+    "pathName": "Wisdom",
+    "destination": "Purpose",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "D26",
+    "name": "The Teacher Protection Journey",
+    "archetype": "A09",
+    "archetypeName": "The Teacher",
+    "path": "P07",
+    "pathName": "Protection",
+    "destination": "Sonship",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "D27",
+    "name": "The Teacher Dominion Journey",
+    "archetype": "A09",
+    "archetypeName": "The Teacher",
+    "path": "P11",
+    "pathName": "Dominion",
+    "destination": "Legacy",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "D28",
+    "name": "The Counselor Wisdom Journey",
+    "archetype": "A10",
+    "archetypeName": "The Counselor",
+    "path": "P03",
+    "pathName": "Wisdom",
+    "destination": "Restoration",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "D29",
+    "name": "The Counselor Protection Journey",
+    "archetype": "A10",
+    "archetypeName": "The Counselor",
+    "path": "P07",
+    "pathName": "Protection",
+    "destination": "Influence",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "D30",
+    "name": "The Counselor Dominion Journey",
+    "archetype": "A10",
+    "archetypeName": "The Counselor",
+    "path": "P11",
+    "pathName": "Dominion",
+    "destination": "Fruitfulness",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "D31",
+    "name": "The Intercessor Protection Journey",
+    "archetype": "A11",
+    "archetypeName": "The Intercessor",
+    "path": "P07",
+    "pathName": "Protection",
+    "destination": "Authority",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "D32",
+    "name": "The Intercessor Dominion Journey",
+    "archetype": "A11",
+    "archetypeName": "The Intercessor",
+    "path": "P11",
+    "pathName": "Dominion",
+    "destination": "Victory",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "D33",
+    "name": "The Intercessor Wisdom Journey",
+    "archetype": "A11",
+    "archetypeName": "The Intercessor",
+    "path": "P03",
+    "pathName": "Wisdom",
+    "destination": "Service",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "D34",
+    "name": "The Messenger Calling Journey",
+    "archetype": "A12",
+    "archetypeName": "The Messenger",
+    "path": "P01",
+    "pathName": "Calling",
+    "destination": "Dominion",
+    "sequence": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "meaning": [
+      "Chosen One",
+      "Called One",
+      "Light",
+      "Purpose"
+    ]
+  },
+  {
+    "id": "D35",
+    "name": "The Messenger Sonship Journey",
+    "archetype": "A12",
+    "archetypeName": "The Messenger",
+    "path": "P05",
+    "pathName": "Sonship",
+    "destination": "Wisdom",
+    "sequence": [
+      "Abion",
+      "Elior",
+      "Arielon",
+      "Beniel"
+    ],
+    "meaning": [
+      "Adopted Son",
+      "Beloved Child",
+      "Son of Light",
+      "True Son"
+    ]
+  },
+  {
+    "id": "D36",
+    "name": "The Messenger Leadership Journey",
+    "archetype": "A12",
+    "archetypeName": "The Messenger",
+    "path": "P09",
+    "pathName": "Leadership",
+    "destination": "Kingdom Maturity",
+    "sequence": [
+      "Karion",
+      "Marion",
+      "Sarion",
+      "Valdor"
+    ],
+    "meaning": [
+      "Leadership",
+      "Influence",
+      "Responsibility",
+      "Government"
+    ]
+  }
+]

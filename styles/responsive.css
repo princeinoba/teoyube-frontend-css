@@ -1,0 +1,66 @@
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 14rem;
+  }
+
+  .app-main {
+    padding: var(--space-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    position: sticky;
+    top: var(--space-2);
+    z-index: var(--z-sticky);
+    width: fit-content;
+    min-width: 7rem;
+    min-height: 2.75rem;
+    margin: var(--space-2) var(--space-3) 0;
+    justify-content: center;
+    background: var(--surface-raised);
+    box-shadow: var(--shadow-control);
+  }
+
+  .app-main {
+    width: 100%;
+    padding: var(--space-3);
+  }
+
+  .app-header {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .app-sidebar {
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  .page-container {
+    width: 100%;
+  }
+
+  .phase113-insight-rail {
+    z-index: var(--z-rail);
+  }
+}
+
+@media (max-width: 430px) {
+  .app-main {
+    padding: var(--space-2);
+  }
+
+  .topbar-actions > button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

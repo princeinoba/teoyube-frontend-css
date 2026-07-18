@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Identity",
+    "description": "Who the Saint is in Christ.",
+    "examples": ["New Creation", "Child of God", "Redeemed", "Chosen", "Beloved"]
+  },
+  {
+    "name": "Calling",
+    "description": "Purpose, gifts, and assignment.",
+    "examples": ["Calling", "Guidance", "Wisdom", "Service", "Leadership"]
+  },
+  {
+    "name": "Presence",
+    "description": "God's nearness.",
+    "examples": ["Comfort", "Peace", "Never forsaken", "Fellowship"]
+  },
+  {
+    "name": "Protection",
+    "description": "God's covering and deliverance.",
+    "examples": ["Refuge", "Safety", "Preservation", "Escape"]
+  },
+  {
+    "name": "Provision",
+    "description": "God's supply.",
+    "examples": ["Daily needs", "Open doors", "Resources", "Favor"]
+  },
+  {
+    "name": "Healing",
+    "description": "Restoration and renewal.",
+    "examples": ["Healing", "Strength", "Recovery", "Renewal"]
+  },
+  {
+    "name": "Wisdom",
+    "description": "Guidance and discernment.",
+    "examples": ["Understanding", "Counsel", "Direction", "Insight"]
+  },
+  {
+    "name": "Transformation",
+    "description": "Becoming new.",
+    "examples": ["Renewal", "Sanctification", "Freedom", "Growth"]
+  },
+  {
+    "name": "Kingdom",
+    "description": "Mission and impact.",
+    "examples": ["Evangelism", "Discipleship", "Fruitfulness", "Witness"]
+  },
+  {
+    "name": "Inheritance",
+    "description": "Eternal and spiritual inheritance.",
+    "examples": ["Eternal life", "Glory", "Reward", "Kingdom inheritance"]
+  }
+]

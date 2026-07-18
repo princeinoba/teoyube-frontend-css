@@ -1,0 +1,17 @@
+[
+  {
+    "journeyId": "J001",
+    "name": "Calling Journey",
+    "days": ["Benor", "Arion", "Luma", "Solen", "Hazon", "Derek", "Taviel"]
+  },
+  {
+    "journeyId": "J002",
+    "name": "Healing Journey",
+    "days": ["Zephan", "Rapha", "Renar", "Nacham", "Velor", "Chayah", "Auren"]
+  },
+  {
+    "journeyId": "J003",
+    "name": "Sonship Journey",
+    "days": ["Abion", "Elior", "Nareth", "Oren", "Arielon", "Themar", "Beniel"]
+  }
+]

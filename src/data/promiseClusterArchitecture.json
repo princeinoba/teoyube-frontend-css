@@ -1,0 +1,34 @@
+{
+  "phase": "2E",
+  "name": "Teoyube Promise Cluster Architecture",
+  "purpose": "A Promise Cluster groups scriptures around one spiritual theme, life situation, calling direction, or prayer need.",
+  "bridge": "Search -> Scripture -> Promise -> Teoyube Word -> Prayer -> Assignment -> Testimony",
+  "record_contract": [
+    "cluster_id",
+    "title",
+    "theme",
+    "promise_category",
+    "promise_level",
+    "scripture_references",
+    "summary",
+    "keywords",
+    "related_teoyube_words",
+    "prayer_framework",
+    "divine_assignment",
+    "calling_connection",
+    "animation_prompt",
+    "book_entry_template",
+    "journey_status_options"
+  ],
+  "promise_levels": {
+    "A": "Direct biblical promise applicable to believers.",
+    "B": "Biblical pattern or principle.",
+    "C": "Application based on Scripture and user profile."
+  },
+  "foundational_cluster_count": 12,
+  "long_term_targets": {
+    "foundational_clusters": 100,
+    "long_term_clusters": 1000,
+    "next_systems": ["Search-to-cluster mapping", "TeoyubeSearch API", "Promise Table integration"]
+  }
+}

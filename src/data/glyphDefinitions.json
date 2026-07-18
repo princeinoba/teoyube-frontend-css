@@ -1,0 +1,758 @@
+[
+  {
+    "word": "TEOYUBE",
+    "glyph": "light",
+    "glyphName": "Golden eyes opening with heavenly light.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "EPHPHATHA",
+    "glyph": "water",
+    "glyphName": "A closed gate opening as light breaks through.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "SOPHIA",
+    "glyph": "fire",
+    "glyphName": "A lamp glowing over an open Bible.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "APOKALU",
+    "glyph": "wind",
+    "glyphName": "A veil lifting from a radiant scroll.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "LUMENAI",
+    "glyph": "tree",
+    "glyphName": "Light entering a dark room through an open doorway.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "KNOHOPA",
+    "glyph": "crown",
+    "glyphName": "A compass needle pointing toward a bright horizon.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "INHERA",
+    "glyph": "shield",
+    "glyphName": "A sealed chest opening with warm golden light.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "DISCERNA",
+    "glyph": "path",
+    "glyphName": "Two paths becoming one clear illuminated road.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "TRUTHEN",
+    "glyph": "star",
+    "glyphName": "A foundation stone engraved with Scripture.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "FAITHRA",
+    "glyph": "light",
+    "glyphName": "A sunrise lifting over an open Bible.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "VISONA",
+    "glyph": "water",
+    "glyphName": "A vision scroll being written beside a watchtower.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "WISDORA",
+    "glyph": "fire",
+    "glyphName": "A quiet voice guiding footsteps on a lit path.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "KLESIS",
+    "glyph": "wind",
+    "glyphName": "A trumpet call echoing across a valley.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "CHARISMA",
+    "glyph": "tree",
+    "glyphName": "Many distinct lights forming one body.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "ASSIGNA",
+    "glyph": "crown",
+    "glyphName": "A sealed scroll marked with a path and footsteps.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "SERVIA",
+    "glyph": "shield",
+    "glyphName": "Hands washing feet beside a basin of light.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "MISSIONA",
+    "glyph": "path",
+    "glyphName": "A map lighting up from one city to many nations.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "DIREKTA",
+    "glyph": "star",
+    "glyphName": "Crooked roads aligning into a clear path.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "TALENTA",
+    "glyph": "light",
+    "glyphName": "Talents of gold multiplying as they are invested.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "PASSIONA",
+    "glyph": "water",
+    "glyphName": "Broken walls becoming visible beneath moonlight.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "LEADERA",
+    "glyph": "fire",
+    "glyphName": "A staff planted beside a gathering of people.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "TEACHA",
+    "glyph": "wind",
+    "glyphName": "One flame lighting many smaller lamps.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "CREATIVA",
+    "glyph": "tree",
+    "glyphName": "Skilled hands shaping a sacred pattern in gold and blue.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "PATHORA",
+    "glyph": "crown",
+    "glyphName": "Footsteps glowing one step at a time.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "SHALOM",
+    "glyph": "shield",
+    "glyphName": "Storm water becoming calm around a lit path.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "JIREH",
+    "glyph": "path",
+    "glyphName": "A ram appearing on a mountain as dawn rises.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "RAPHA",
+    "glyph": "star",
+    "glyphName": "Bitter waters becoming clear and life-giving.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "ELPIS",
+    "glyph": "light",
+    "glyphName": "An anchor holding firm beneath a bright horizon.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "GRACIA",
+    "glyph": "water",
+    "glyphName": "Rain falling over dry ground until new life appears.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "MERCIA",
+    "glyph": "fire",
+    "glyphName": "Morning light covering a weary traveler.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "FAVORI",
+    "glyph": "wind",
+    "glyphName": "A shield of light surrounding a walking path.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "STRONDA",
+    "glyph": "tree",
+    "glyphName": "An eagle rising on wind above a mountain.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "PROTEKA",
+    "glyph": "crown",
+    "glyphName": "Sheltering wings covering a small flame.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "RESTORA",
+    "glyph": "shield",
+    "glyphName": "A barren field becoming green again.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "VICTORA",
+    "glyph": "path",
+    "glyphName": "A banner rising over a completed climb.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "JOYARA",
+    "glyph": "star",
+    "glyphName": "A joyful feast table glowing with strength and gratitude.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "AGAPE",
+    "glyph": "light",
+    "glyphName": "Light flowing from a cross into joined hands.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "DUNAMIS",
+    "glyph": "water",
+    "glyphName": "A flame rising inside a faithful witness.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "BASILEIA",
+    "glyph": "fire",
+    "glyphName": "A crown of light over a city on a hill.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "MARTURIA",
+    "glyph": "wind",
+    "glyphName": "A scroll of testimony becoming a bright torch.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "DISCIPLA",
+    "glyph": "tree",
+    "glyphName": "One path becoming many paths of light.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "EVANGELA",
+    "glyph": "crown",
+    "glyphName": "A messenger carrying light across dark hills.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "PRAYERA",
+    "glyph": "shield",
+    "glyphName": "Words of Scripture rising like incense.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "COMPASSIA",
+    "glyph": "path",
+    "glyphName": "Hands lifting a wounded traveler into light.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "HOLIA",
+    "glyph": "star",
+    "glyphName": "A clean white garment placed over shoulders.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "RIGHTEA",
+    "glyph": "light",
+    "glyphName": "A straight path lined with living trees.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "FRUITA",
+    "glyph": "water",
+    "glyphName": "A branch heavy with fruit beside running water.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "AUTHORIA",
+    "glyph": "fire",
+    "glyphName": "A signet ring reflecting the name of Christ.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "KAINOS",
+    "glyph": "wind",
+    "glyphName": "Old pages turning into a new illuminated scroll.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "RENEWA",
+    "glyph": "tree",
+    "glyphName": "Dark thoughts washing into clear water.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "SANCTA",
+    "glyph": "crown",
+    "glyphName": "A vessel being cleansed and filled with light.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "GROWTHA",
+    "glyph": "shield",
+    "glyphName": "A small seed becoming a strong tree.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "MATURA",
+    "glyph": "path",
+    "glyphName": "A tree with deep roots standing through wind.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "HUMILIA",
+    "glyph": "star",
+    "glyphName": "A crown laid down before a cross.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "PATIENA",
+    "glyph": "light",
+    "glyphName": "A candle burning steadily through a long night.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "PERSEVA",
+    "glyph": "water",
+    "glyphName": "A runner moving toward a bright finish line.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "COURAGA",
+    "glyph": "fire",
+    "glyphName": "A Saint stepping forward while fear falls behind.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "FREEDOMA",
+    "glyph": "wind",
+    "glyphName": "Broken chains falling from open hands.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "PURITA",
+    "glyph": "tree",
+    "glyphName": "Clear water washing over a heart of light.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "TRANSFORMA",
+    "glyph": "crown",
+    "glyphName": "A mirror reflecting Christlike light.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "HERITA",
+    "glyph": "shield",
+    "glyphName": "A scroll of inheritance sealed with golden light.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "REWARDA",
+    "glyph": "path",
+    "glyphName": "A faithful servant receiving a crown of light.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "IMPACTA",
+    "glyph": "star",
+    "glyphName": "Ripples of light moving from one act of obedience.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "LEGACIA",
+    "glyph": "light",
+    "glyphName": "A book passing light from one generation to another.",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "MULTIPLA",
+    "glyph": "water",
+    "glyphName": "One lamp lighting rows of lamps.",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "BLESSIA",
+    "glyph": "fire",
+    "glyphName": "Open hands receiving and releasing light.",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "GENERA",
+    "glyph": "wind",
+    "glyphName": "A family tree glowing from root to branches.",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "TESTIMA",
+    "glyph": "tree",
+    "glyphName": "A testimony entry becoming a bright memorial stone.",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "FULFILLA",
+    "glyph": "crown",
+    "glyphName": "A completed path ending at a radiant altar.",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "COMPLETA",
+    "glyph": "shield",
+    "glyphName": "A final stone placed on a finished wall.",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "ZOE",
+    "glyph": "path",
+    "glyphName": "Living water flowing through a bright garden.",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "GLORIA",
+    "glyph": "star",
+    "glyphName": "A hidden radiance breaking through clouds.",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "Abion",
+    "glyph": "light",
+    "glyphName": "Open Arms",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "Elior",
+    "glyph": "water",
+    "glyphName": "Heart Flame",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "Themar",
+    "glyph": "fire",
+    "glyphName": "Crown Ring",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "Zaviel",
+    "glyph": "wind",
+    "glyphName": "Open Gate",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "Oren",
+    "glyph": "tree",
+    "glyphName": "Joined Rings",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "Avaron",
+    "glyph": "crown",
+    "glyphName": "Royal Crest",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "Melion",
+    "glyph": "shield",
+    "glyphName": "Prince Crown",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "Thalion",
+    "glyph": "path",
+    "glyphName": "Inner Chamber",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "Ruviel",
+    "glyph": "star",
+    "glyphName": "Scroll",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "Nareth",
+    "glyph": "light",
+    "glyphName": "House",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "Arielon",
+    "glyph": "water",
+    "glyphName": "Radiant Crown",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "Beniel",
+    "glyph": "fire",
+    "glyphName": "Living Seal",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "Orimon",
+    "glyph": "wind",
+    "glyphName": "Crown",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "Valdor",
+    "glyph": "tree",
+    "glyphName": "Scepter",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "Karion",
+    "glyph": "crown",
+    "glyphName": "Banner",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "Theron",
+    "glyph": "shield",
+    "glyphName": "Throne",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "Zorath",
+    "glyph": "path",
+    "glyphName": "Scales",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "Marion",
+    "glyph": "star",
+    "glyphName": "Wave",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "Korion",
+    "glyph": "light",
+    "glyphName": "Staff",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "Elvar",
+    "glyph": "water",
+    "glyphName": "Royal Scroll",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "Rethor",
+    "glyph": "fire",
+    "glyphName": "Lion",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "Sarion",
+    "glyph": "wind",
+    "glyphName": "Shield",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "Tavor",
+    "glyph": "tree",
+    "glyphName": "Columns",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "Arkel",
+    "glyph": "crown",
+    "glyphName": "Gate",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "Selion",
+    "glyph": "shield",
+    "glyphName": "Key",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "Maviel",
+    "glyph": "path",
+    "glyphName": "Ledger",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "Tharon",
+    "glyph": "star",
+    "glyphName": "Field",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  },
+  {
+    "word": "Koriel",
+    "glyph": "light",
+    "glyphName": "Hammer",
+    "element": "Light",
+    "animation": "Expanding Rays"
+  },
+  {
+    "word": "Velian",
+    "glyph": "water",
+    "glyphName": "Harvest",
+    "element": "Water",
+    "animation": "Flowing Stream"
+  },
+  {
+    "word": "Noriel",
+    "glyph": "fire",
+    "glyphName": "Basket",
+    "element": "Fire",
+    "animation": "Rising Flame"
+  },
+  {
+    "word": "Talion",
+    "glyph": "wind",
+    "glyphName": "Towel",
+    "element": "Wind",
+    "animation": "Moving Breath"
+  },
+  {
+    "word": "Verath",
+    "glyph": "tree",
+    "glyphName": "Balance",
+    "element": "Tree",
+    "animation": "Growing Branches"
+  },
+  {
+    "word": "Orel",
+    "glyph": "crown",
+    "glyphName": "Seal",
+    "element": "Crown",
+    "animation": "Crowning Light"
+  },
+  {
+    "word": "Kavion",
+    "glyph": "shield",
+    "glyphName": "Growing Tree",
+    "element": "Shield",
+    "animation": "Protective Glow"
+  },
+  {
+    "word": "Aldor",
+    "glyph": "path",
+    "glyphName": "Watchtower",
+    "element": "Path",
+    "animation": "Illuminated Steps"
+  },
+  {
+    "word": "Sariel",
+    "glyph": "star",
+    "glyphName": "Ancient Tree",
+    "element": "Star",
+    "animation": "Guiding Spark"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "phase": "5A",
+  "name": "Full Launch 1 Static MVP Code Package",
+  "goal": "Build the first working Teoyube prototype without database, login, or AI complexity.",
+  "includes": [
+    "Homepage",
+    "Dashboard",
+    "Daily Word",
+    "Lexicon",
+    "Prayer Library",
+    "Promise Clusters",
+    "Journal Form",
+    "Static data files",
+    "Brand styling"
+  ],
+  "projectRoot": "teoyube-app",
+  "folders": ["app", "components", "data", "lib"],
+  "pages": [
+    "teoyube-app/app/page.tsx",
+    "teoyube-app/app/dashboard/page.tsx",
+    "teoyube-app/app/daily-word/page.tsx",
+    "teoyube-app/app/words/page.tsx",
+    "teoyube-app/app/prayer/page.tsx",
+    "teoyube-app/app/clusters/page.tsx",
+    "teoyube-app/app/journal/page.tsx"
+  ],
+  "components": [
+    "teoyube-app/components/TeoyubeCard.tsx",
+    "teoyube-app/components/NavBar.tsx"
+  ],
+  "dataFiles": [
+    "teoyube-app/data/teoyubeWords.json",
+    "teoyube-app/data/prayers.json",
+    "teoyube-app/data/promiseClusters.json",
+    "teoyube-app/data/covenantPaths.json",
+    "teoyube-app/data/archetypes.json"
+  ],
+  "utilityFiles": ["teoyube-app/lib/dailyWord.ts"],
+  "stylingFiles": [
+    "teoyube-app/app/globals.css",
+    "teoyube-app/app/layout.tsx"
+  ],
+  "completionStandard": [
+    "All pages load without errors",
+    "Navigation works",
+    "Daily Word displays",
+    "Lexicon displays words",
+    "Prayer Library displays prayers",
+    "Promise Clusters display correctly",
+    "Journal form appears",
+    "Brand styling applies globally"
+  ],
+  "status": {
+    "staticPackageCreated": true,
+    "dependenciesInstalled": false,
+    "nextBuildRun": false,
+    "prototypeManifestVisible": true
+  }
+}

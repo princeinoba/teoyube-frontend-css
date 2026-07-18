@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TeoyubeWorld Media Review Responsive QA</title>
+    <style>
+      :root { font-family: Inter, system-ui, sans-serif; color: #10231f; background: #e8f0ed; }
+      body { margin: 0; padding: 1rem; }
+      h1 { font-size: 1.35rem; }
+      .views { display: flex; align-items: start; gap: 1rem; overflow: auto; }
+      figure { margin: 0; flex: 0 0 auto; }
+      figcaption { font-weight: 700; margin-bottom: .35rem; }
+      iframe { display: block; height: 844px; border: 2px solid #087660; background: #fff; }
+      .w390 { width: 390px; } .w430 { width: 430px; } .w768 { width: 768px; } .w1024 { width: 1024px; }
+    </style>
+  </head>
+  <body>
+    <h1>Local responsive QA harness</h1>
+    <p>Each frame loads the same loopback-only review workspace. No source path is exposed.</p>
+    <div class="views">
+      <figure><figcaption>390 px</figcaption><iframe class="w390" title="390 pixel review" src="media-review.html?qa=1"></iframe></figure>
+      <figure><figcaption>430 px</figcaption><iframe class="w430" title="430 pixel review" src="media-review.html?qa=1"></iframe></figure>
+      <figure><figcaption>768 px</figcaption><iframe class="w768" title="768 pixel review" src="media-review.html?qa=1"></iframe></figure>
+      <figure><figcaption>1024 px</figcaption><iframe class="w1024" title="1024 pixel review" src="media-review.html?qa=1"></iframe></figure>
+    </div>
+  </body>
+</html>

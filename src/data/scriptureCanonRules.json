@@ -1,0 +1,25 @@
+{
+  "wordMinimum": {
+    "minimumReferences": 3,
+    "requiredTypes": [
+      "identityReference",
+      "promiseReference",
+      "applicationReference"
+    ]
+  },
+  "pathMinimum": {
+    "openingVerse": "Identity foundation",
+    "middleVerse": "Transformation process",
+    "closingVerse": "Manifestation promise"
+  },
+  "archetypeMinimum": {
+    "minimumModels": 2,
+    "recommendedModels": 3,
+    "modelPattern": "What this person reveals about the archetype"
+  },
+  "promiseClusterMinimum": {
+    "anchorVerse": "Main covenant promise",
+    "supportingVerses": 3,
+    "clusterDeclaration": "First-person promise statement"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "free": ["Daily Word", "Basic Prayer Library", "Basic Journal"],
+  "premium": [
+    "AI Spiritual Companion",
+    "Personalized Prayer Generation",
+    "Archetype Discovery",
+    "Growth Tracking",
+    "Advanced Journaling",
+    "Full Promise Cluster Library"
+  ],
+  "community": [
+    "Group prayer journeys",
+    "Shared devotionals",
+    "Mentor groups",
+    "Church/ministry dashboards"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "phase": "4C",
+  "name": "Teoyube Project Structure & Implementation Roadmap",
+  "recommendedProjectName": "teoyube-app",
+  "projectStructure": [
+    {
+      "path": "app/",
+      "purpose": "Next.js App Router pages and API routes.",
+      "children": [
+        "page.tsx",
+        "dashboard/page.tsx",
+        "daily-word/page.tsx",
+        "prayer/page.tsx",
+        "journal/page.tsx",
+        "companion/page.tsx",
+        "api/words",
+        "api/prayers",
+        "api/clusters",
+        "api/daily-word",
+        "api/journal",
+        "api/ai"
+      ]
+    },
+    {
+      "path": "components/",
+      "purpose": "Reusable interface blocks for the product experience.",
+      "children": [
+        "DashboardCard.tsx",
+        "DailyWordCard.tsx",
+        "PrayerCard.tsx",
+        "ClusterCard.tsx",
+        "JournalEntry.tsx",
+        "CompanionChat.tsx"
+      ]
+    },
+    {
+      "path": "data/",
+      "purpose": "Seed files for the MVP and future database imports.",
+      "children": [
+        "teoyubeWords.json",
+        "scriptureLinks.json",
+        "promiseClusters.json",
+        "prayers.json",
+        "archetypes.json",
+        "covenantPaths.json"
+      ]
+    },
+    {
+      "path": "lib/",
+      "purpose": "Core application services and recommendation logic.",
+      "children": [
+        "db.ts",
+        "openai.ts",
+        "recommendations.ts",
+        "prayerEngine.ts",
+        "dailyWord.ts"
+      ]
+    },
+    {
+      "path": "prisma/",
+      "purpose": "Database schema and seed entrypoint.",
+      "children": ["schema.prisma", "seed.ts"]
+    },
+    {
+      "path": "public/glyphs/",
+      "purpose": "Visual glyph assets for Teoyube words and promise clusters.",
+      "children": []
+    }
+  ],
+  "seedFilePlan": [
+    {
+      "file": "data/teoyubeWords.json",
+      "description": "Stores all 108 Teoyube words.",
+      "example": {
+        "word": "Luma",
+        "meaning": "Light",
+        "category": "Kingdom",
+        "scriptureReferences": ["John 8:12", "Matthew 5:14", "Psalm 119:105"],
+        "promiseStatement": "God's light guides me and shines through me."
+      }
+    },
+    {
+      "file": "data/promiseClusters.json",
+      "description": "Stores the 12 Promise Clusters.",
+      "example": {
+        "id": "PC02",
+        "name": "Light & Revelation",
+        "coreWords": ["Luma", "Mizrah", "Solen", "Emeth", "Rhema", "Hazon"],
+        "anchorScripture": "Psalm 119:105",
+        "declaration": "God's light reveals truth and guides my steps."
+      }
+    },
+    {
+      "file": "data/prayers.json",
+      "description": "Stores prayer templates.",
+      "example": {
+        "id": "PR004",
+        "name": "Light and Wisdom",
+        "category": "Wisdom",
+        "sequence": ["Luma", "Solen", "Emeth", "Hazon"],
+        "scriptureAnchor": "James 1:5",
+        "prayer": "Lord, illuminate my path, give me wisdom, reveal truth, and show me Your vision."
+      }
+    }
+  ],
+  "apiRoutePlan": [
+    { "method": "GET", "path": "/api/words", "purpose": "List Teoyube words." },
+    { "method": "GET", "path": "/api/words/[word]", "purpose": "Fetch one Teoyube word." },
+    { "method": "GET", "path": "/api/clusters", "purpose": "List Promise Clusters." },
+    { "method": "GET", "path": "/api/clusters/[id]", "purpose": "Fetch one Promise Cluster." },
+    { "method": "GET", "path": "/api/prayers", "purpose": "List prayer templates." },
+    { "method": "GET", "path": "/api/prayers/[id]", "purpose": "Fetch one prayer template." },
+    { "method": "GET", "path": "/api/daily-word", "purpose": "Return the daily focus word." },
+    { "method": "POST", "path": "/api/journal", "purpose": "Create a journal entry." },
+    { "method": "GET", "path": "/api/journal", "purpose": "List journal entries." },
+    { "method": "POST", "path": "/api/ai/companion", "purpose": "Generate companion response." },
+    { "method": "POST", "path": "/api/ai/prayer", "purpose": "Generate prayer response." },
+    { "method": "POST", "path": "/api/assessment", "purpose": "Submit profile or archetype assessment." }
+  ],
+  "coreUtilityFunctions": [
+    {
+      "file": "lib/dailyWord.ts",
+      "name": "getDailyWord",
+      "code": "export function getDailyWord(words: any[]) {\n  const today = new Date().toISOString().slice(0, 10);\n  const index =\n    today.split(\"\").reduce((sum, char) => sum + char.charCodeAt(0), 0) %\n    words.length;\n\n  return words[index];\n}"
+    },
+    {
+      "file": "lib/prayerEngine.ts",
+      "name": "buildPrayer",
+      "code": "export function buildPrayer(words: any[]) {\n  const meanings = words.map((w) => w.meaning).join(\" -> \");\n\n  return {\n    sequence: words.map((w) => w.word),\n    meaningFlow: meanings,\n    prayer: `Father, lead me through ${meanings.toLowerCase()} according to Your promise.`\n  };\n}"
+    },
+    {
+      "file": "lib/recommendations.ts",
+      "name": "recommendCluster",
+      "code": "export function recommendCluster(userNeed: string) {\n  const need = userNeed.toLowerCase();\n\n  if (need.includes(\"peace\")) return \"Peace & Protection\";\n  if (need.includes(\"healing\")) return \"Healing & Restoration\";\n  if (need.includes(\"wisdom\")) return \"Light & Revelation\";\n  if (need.includes(\"purpose\")) return \"Calling & Purpose\";\n  if (need.includes(\"identity\")) return \"Sonship & Belonging\";\n\n  return \"Calling & Purpose\";\n}"
+    }
+  ],
+  "implementationRoadmap": [
+    {
+      "week": "Week 1",
+      "theme": "Foundation",
+      "tasks": [
+        "Create Next.js project",
+        "Set up database",
+        "Add 108-word seed file",
+        "Build Home page",
+        "Build Daily Word feature"
+      ]
+    },
+    {
+      "week": "Week 2",
+      "theme": "Prayer & Clusters",
+      "tasks": [
+        "Build Promise Cluster pages",
+        "Build Prayer Library",
+        "Add Prayer Engine",
+        "Add Scripture-linked word pages"
+      ]
+    },
+    {
+      "week": "Week 3",
+      "theme": "Journal & Profile",
+      "tasks": [
+        "Add user authentication",
+        "Create Journal feature",
+        "Create user profile",
+        "Track favorite words and prayers"
+      ]
+    },
+    {
+      "week": "Week 4",
+      "theme": "AI Companion",
+      "tasks": [
+        "Connect OpenAI API",
+        "Build companion chat",
+        "Add prayer generation",
+        "Add recommendation logic",
+        "Add safety disclaimer for medical/legal/financial topics"
+      ]
+    }
+  ],
+  "mvpFeatures": [
+    "Daily Word",
+    "108-word Lexicon",
+    "Scripture-linked word pages",
+    "Promise Clusters",
+    "Prayer Library",
+    "Journal",
+    "AI Spiritual Companion",
+    "Basic user profile"
+  ]
+}

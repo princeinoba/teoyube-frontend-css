@@ -1,0 +1,4 @@
+body[data-view="roadmap"] .roadmap-dashboard {
+  max-width: 100%;
+  overflow: clip;
+}

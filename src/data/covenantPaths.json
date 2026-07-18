@@ -1,0 +1,194 @@
+[
+  {
+    "id": "P01",
+    "name": "Calling",
+    "sequence": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "meaning": [
+      "Chosen One",
+      "Called One",
+      "Light",
+      "Purpose"
+    ]
+  },
+  {
+    "id": "P02",
+    "name": "Healing",
+    "sequence": [
+      "Zephan",
+      "Renar",
+      "Velor",
+      "Auren"
+    ],
+    "meaning": [
+      "Healing",
+      "Renewal",
+      "Restoration",
+      "Fruitfulness"
+    ]
+  },
+  {
+    "id": "P03",
+    "name": "Wisdom",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "meaning": [
+      "Light",
+      "Wisdom",
+      "Intimacy",
+      "Influence"
+    ]
+  },
+  {
+    "id": "P04",
+    "name": "Stewardship",
+    "sequence": [
+      "Selion",
+      "Maviel",
+      "Tharon",
+      "Velian"
+    ],
+    "meaning": [
+      "Steward",
+      "Faithful Management",
+      "Cultivation",
+      "Multiplication"
+    ]
+  },
+  {
+    "id": "P05",
+    "name": "Sonship",
+    "sequence": [
+      "Abion",
+      "Elior",
+      "Arielon",
+      "Beniel"
+    ],
+    "meaning": [
+      "Adopted Son",
+      "Beloved Child",
+      "Son of Light",
+      "True Son"
+    ]
+  },
+  {
+    "id": "P06",
+    "name": "Authority",
+    "sequence": [
+      "Orimon",
+      "Korion",
+      "Elvar",
+      "Theron"
+    ],
+    "meaning": [
+      "Authority",
+      "Command",
+      "Decree",
+      "Kingdom Rule"
+    ]
+  },
+  {
+    "id": "P07",
+    "name": "Protection",
+    "sequence": [
+      "Nethar",
+      "Koriel",
+      "Shalem",
+      "Kethor"
+    ],
+    "meaning": [
+      "Protection",
+      "Strengthening",
+      "Peace",
+      "Victory"
+    ]
+  },
+  {
+    "id": "P08",
+    "name": "Legacy",
+    "sequence": [
+      "Themar",
+      "Sariel",
+      "Aldor",
+      "Valion"
+    ],
+    "meaning": [
+      "Heir",
+      "Legacy",
+      "Custodian",
+      "Reward"
+    ]
+  },
+  {
+    "id": "P09",
+    "name": "Leadership",
+    "sequence": [
+      "Karion",
+      "Marion",
+      "Sarion",
+      "Valdor"
+    ],
+    "meaning": [
+      "Leadership",
+      "Influence",
+      "Responsibility",
+      "Government"
+    ]
+  },
+  {
+    "id": "P10",
+    "name": "Service",
+    "sequence": [
+      "Talion",
+      "Orel",
+      "Maviel",
+      "Auren"
+    ],
+    "meaning": [
+      "Service",
+      "Trust",
+      "Faithful Management",
+      "Fruitfulness"
+    ]
+  },
+  {
+    "id": "P11",
+    "name": "Dominion",
+    "sequence": [
+      "Orimon",
+      "Rethor",
+      "Theron",
+      "Tavor"
+    ],
+    "meaning": [
+      "Authority",
+      "Dominion",
+      "Kingdom Rule",
+      "Kingdom Order"
+    ]
+  },
+  {
+    "id": "P12",
+    "name": "Kingdom Maturity",
+    "sequence": [
+      "Beniel",
+      "Solen",
+      "Orimon",
+      "Sariel"
+    ],
+    "meaning": [
+      "True Son",
+      "Wisdom",
+      "Authority",
+      "Legacy"
+    ]
+  }
+]

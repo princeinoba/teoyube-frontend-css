@@ -1,0 +1,647 @@
+[
+  {
+    "word": "AGAPE",
+    "pronunciation": "Ah-Gah-Pay",
+    "meaning": "Divine Love",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "John 13:34-35",
+      "1 Corinthians 13:4-8"
+    ],
+    "promise_category": "Love",
+    "prayer_use": "Used when praying to receive and practice the love of Christ.",
+    "animation_symbol": "Light flowing from a cross into joined hands.",
+    "related_words": [
+      "COMPASSIA",
+      "DISCIPLA",
+      "FRUITA"
+    ]
+  },
+  {
+    "word": "DUNAMIS",
+    "pronunciation": "Doo-Nah-Mis",
+    "meaning": "Power",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Acts 1:8",
+      "2 Timothy 1:7"
+    ],
+    "promise_category": "Spiritual Power",
+    "prayer_use": "Used when praying for Spirit-empowered witness, courage, and endurance.",
+    "animation_symbol": "A flame rising inside a faithful witness.",
+    "related_words": [
+      "AUTHORIA",
+      "COURAGA",
+      "MARTURIA"
+    ]
+  },
+  {
+    "word": "BASILEIA",
+    "pronunciation": "Bah-Sih-Lay-Ah",
+    "meaning": "Kingdom",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Matthew 6:33",
+      "Luke 17:21"
+    ],
+    "promise_category": "Kingdom",
+    "prayer_use": "Used when praying to seek first God's kingdom and righteousness.",
+    "animation_symbol": "A crown of light over a city on a hill.",
+    "related_words": [
+      "RIGHTEA",
+      "AUTHORIA",
+      "LEGACIA"
+    ]
+  },
+  {
+    "word": "MARTURIA",
+    "pronunciation": "Mar-Too-Ree-Ah",
+    "meaning": "Testimony / Witness",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Acts 1:8",
+      "Revelation 12:11"
+    ],
+    "promise_category": "Witness",
+    "prayer_use": "Used when praying to bear faithful witness through testimony.",
+    "animation_symbol": "A scroll of testimony becoming a bright torch.",
+    "related_words": [
+      "TESTIMA",
+      "EVANGELA",
+      "DUNAMIS"
+    ]
+  },
+  {
+    "word": "DISCIPLA",
+    "pronunciation": "Dis-Sip-Lah",
+    "meaning": "Disciple Formation",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Matthew 28:19-20",
+      "2 Timothy 2:2"
+    ],
+    "promise_category": "Discipleship",
+    "prayer_use": "Used when praying to become and make faithful disciples.",
+    "animation_symbol": "One path becoming many paths of light.",
+    "related_words": [
+      "TEACHA",
+      "EVANGELA",
+      "FRUITA"
+    ]
+  },
+  {
+    "word": "EVANGELA",
+    "pronunciation": "Ee-Van-Jel-Ah",
+    "meaning": "Good News Mission",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Mark 16:15",
+      "Romans 10:15"
+    ],
+    "promise_category": "Evangelism",
+    "prayer_use": "Used when praying for courage and clarity to share the good news.",
+    "animation_symbol": "A messenger carrying light across dark hills.",
+    "related_words": [
+      "MISSIONA",
+      "MARTURIA",
+      "DISCIPLA"
+    ]
+  },
+  {
+    "word": "PRAYERA",
+    "pronunciation": "Pray-Er-Ah",
+    "meaning": "Scripture-Based Prayer",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Matthew 6:9-13",
+      "1 John 5:14"
+    ],
+    "promise_category": "Prayer",
+    "prayer_use": "Used when praying God's promises with humility and faith.",
+    "animation_symbol": "Words of Scripture rising like incense.",
+    "related_words": [
+      "TEOYUBE",
+      "SOPHIA",
+      "SHALOM"
+    ]
+  },
+  {
+    "word": "COMPASSIA",
+    "pronunciation": "Com-Pash-Ee-Ah",
+    "meaning": "Compassion In Action",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Colossians 3:12",
+      "Luke 10:33-37"
+    ],
+    "promise_category": "Compassion",
+    "prayer_use": "Used when praying for mercy that becomes practical love.",
+    "animation_symbol": "Hands lifting a wounded traveler into light.",
+    "related_words": [
+      "AGAPE",
+      "SERVIA",
+      "MERCIA"
+    ]
+  },
+  {
+    "word": "HOLIA",
+    "pronunciation": "Ho-Lee-Ah",
+    "meaning": "Set Apart",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "1 Peter 1:15-16",
+      "Romans 12:1"
+    ],
+    "promise_category": "Holiness",
+    "prayer_use": "Used when praying to live set apart for God.",
+    "animation_symbol": "A clean white garment placed over shoulders.",
+    "related_words": [
+      "SANCTA",
+      "PURITA",
+      "RIGHTEA"
+    ]
+  },
+  {
+    "word": "RIGHTEA",
+    "pronunciation": "Rye-Chee-Ah",
+    "meaning": "Righteous Walk",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Matthew 6:33",
+      "Psalm 23:3"
+    ],
+    "promise_category": "Righteousness",
+    "prayer_use": "Used when praying to walk rightly before God.",
+    "animation_symbol": "A straight path lined with living trees.",
+    "related_words": [
+      "HOLIA",
+      "BASILEIA",
+      "DIREKTA"
+    ]
+  },
+  {
+    "word": "FRUITA",
+    "pronunciation": "Froo-Ee-Tah",
+    "meaning": "Bearing Fruit",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "John 15:5",
+      "Galatians 5:22-23"
+    ],
+    "promise_category": "Fruitfulness",
+    "prayer_use": "Used when praying for abiding life and visible fruit.",
+    "animation_symbol": "A branch heavy with fruit beside running water.",
+    "related_words": [
+      "DISCIPLA",
+      "AGAPE",
+      "IMPACTA"
+    ]
+  },
+  {
+    "word": "AUTHORIA",
+    "pronunciation": "Aw-Thor-Ee-Ah",
+    "meaning": "Authority In Christ",
+    "category": "Kingdom",
+    "scripture_sources": [
+      "Luke 10:19",
+      "Ephesians 1:20-23"
+    ],
+    "promise_category": "Authority",
+    "prayer_use": "Used when praying to walk humbly in Christ's authority.",
+    "animation_symbol": "A signet ring reflecting the name of Christ.",
+    "related_words": [
+      "DUNAMIS",
+      "BASILEIA",
+      "VICTORA"
+    ]
+  },
+  {
+    "word": "KAINOS",
+    "pronunciation": "Kai-Nos",
+    "meaning": "New Creation",
+    "category": "Transformation",
+    "scripture_sources": [
+      "2 Corinthians 5:17"
+    ],
+    "promise_category": "Newness",
+    "prayer_use": "Used when praying to live from new identity in Christ.",
+    "animation_symbol": "Old pages turning into a new illuminated scroll.",
+    "related_words": [
+      "RENEWA",
+      "TRANSFORMA",
+      "FREEDOMA"
+    ]
+  },
+  {
+    "word": "RENEWA",
+    "pronunciation": "Re-New-Ah",
+    "meaning": "Renewed Mind",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Romans 12:2"
+    ],
+    "promise_category": "Renewal",
+    "prayer_use": "Used when praying for renewed thoughts, desires, and discernment.",
+    "animation_symbol": "Dark thoughts washing into clear water.",
+    "related_words": [
+      "KAINOS",
+      "SOPHIA",
+      "DISCERNA"
+    ]
+  },
+  {
+    "word": "SANCTA",
+    "pronunciation": "Sank-Tah",
+    "meaning": "Sanctified Life",
+    "category": "Transformation",
+    "scripture_sources": [
+      "John 17:17",
+      "1 Thessalonians 5:23"
+    ],
+    "promise_category": "Sanctification",
+    "prayer_use": "Used when praying to be sanctified by truth and formed in holiness.",
+    "animation_symbol": "A vessel being cleansed and filled with light.",
+    "related_words": [
+      "HOLIA",
+      "PURITA",
+      "TRUTHEN"
+    ]
+  },
+  {
+    "word": "GROWTHA",
+    "pronunciation": "Growth-Ah",
+    "meaning": "Growing In Purpose",
+    "category": "Transformation",
+    "scripture_sources": [
+      "2 Peter 3:18",
+      "Ephesians 4:15"
+    ],
+    "promise_category": "Growth",
+    "prayer_use": "Used when praying for steady maturity and purpose development.",
+    "animation_symbol": "A small seed becoming a strong tree.",
+    "related_words": [
+      "MATURA",
+      "FRUITA",
+      "PATHORA"
+    ]
+  },
+  {
+    "word": "MATURA",
+    "pronunciation": "Mah-Too-Rah",
+    "meaning": "Maturity In Christ",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Colossians 1:28",
+      "Hebrews 5:14"
+    ],
+    "promise_category": "Maturity",
+    "prayer_use": "Used when praying to become mature, stable, and discerning.",
+    "animation_symbol": "A tree with deep roots standing through wind.",
+    "related_words": [
+      "GROWTHA",
+      "PATIENA",
+      "PERSEVA"
+    ]
+  },
+  {
+    "word": "HUMILIA",
+    "pronunciation": "Hoo-Mil-Ee-Ah",
+    "meaning": "Humility Before God",
+    "category": "Transformation",
+    "scripture_sources": [
+      "James 4:10",
+      "Philippians 2:3-8"
+    ],
+    "promise_category": "Humility",
+    "prayer_use": "Used when praying for humility, obedience, and servant-heartedness.",
+    "animation_symbol": "A crown laid down before a cross.",
+    "related_words": [
+      "SERVIA",
+      "PATIENA",
+      "SANCTA"
+    ]
+  },
+  {
+    "word": "PATIENA",
+    "pronunciation": "Pay-Shee-En-Ah",
+    "meaning": "Patient Endurance",
+    "category": "Transformation",
+    "scripture_sources": [
+      "James 1:4",
+      "Romans 5:3-4"
+    ],
+    "promise_category": "Patience",
+    "prayer_use": "Used when praying for patience during preparation and testing.",
+    "animation_symbol": "A candle burning steadily through a long night.",
+    "related_words": [
+      "PERSEVA",
+      "STRONDA",
+      "MATURA"
+    ]
+  },
+  {
+    "word": "PERSEVA",
+    "pronunciation": "Per-Seh-Vah",
+    "meaning": "Persevering Faith",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Hebrews 12:1-2",
+      "James 1:12"
+    ],
+    "promise_category": "Perseverance",
+    "prayer_use": "Used when praying to endure faithfully and keep eyes on Christ.",
+    "animation_symbol": "A runner moving toward a bright finish line.",
+    "related_words": [
+      "PATIENA",
+      "COURAGA",
+      "VICTORA"
+    ]
+  },
+  {
+    "word": "COURAGA",
+    "pronunciation": "Kur-Ah-Gah",
+    "meaning": "Courage In Calling",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Joshua 1:9",
+      "2 Timothy 1:7"
+    ],
+    "promise_category": "Courage",
+    "prayer_use": "Used when praying for courage to obey God's call with wisdom.",
+    "animation_symbol": "A Saint stepping forward while fear falls behind.",
+    "related_words": [
+      "DUNAMIS",
+      "PERSEVA",
+      "LEADERA"
+    ]
+  },
+  {
+    "word": "FREEDOMA",
+    "pronunciation": "Free-Dom-Ah",
+    "meaning": "Freedom In Christ",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Galatians 5:1",
+      "John 8:36"
+    ],
+    "promise_category": "Freedom",
+    "prayer_use": "Used when praying to walk free from bondage and false identity.",
+    "animation_symbol": "Broken chains falling from open hands.",
+    "related_words": [
+      "KAINOS",
+      "VICTORA",
+      "PURITA"
+    ]
+  },
+  {
+    "word": "PURITA",
+    "pronunciation": "Pure-Ee-Tah",
+    "meaning": "Purified Heart",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Psalm 51:10",
+      "Matthew 5:8"
+    ],
+    "promise_category": "Purity",
+    "prayer_use": "Used when praying for a clean heart and renewed spirit.",
+    "animation_symbol": "Clear water washing over a heart of light.",
+    "related_words": [
+      "SANCTA",
+      "HOLIA",
+      "RENEWA"
+    ]
+  },
+  {
+    "word": "TRANSFORMA",
+    "pronunciation": "Trans-For-Mah",
+    "meaning": "Changed Into Purpose",
+    "category": "Transformation",
+    "scripture_sources": [
+      "Romans 12:2",
+      "2 Corinthians 3:18"
+    ],
+    "promise_category": "Transformation",
+    "prayer_use": "Used when praying for God to transform character, mind, and purpose.",
+    "animation_symbol": "A mirror reflecting Christlike light.",
+    "related_words": [
+      "KAINOS",
+      "RENEWA",
+      "GROWTHA"
+    ]
+  },
+  {
+    "word": "HERITA",
+    "pronunciation": "Heh-Rit-Ah",
+    "meaning": "Inheritance In The Saints",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Ephesians 1:18"
+    ],
+    "promise_category": "Inheritance",
+    "prayer_use": "Used when praying to understand spiritual inheritance in Christ.",
+    "animation_symbol": "A scroll of inheritance sealed with golden light.",
+    "related_words": [
+      "INHERA",
+      "REWARDA",
+      "GLORIA"
+    ]
+  },
+  {
+    "word": "REWARDA",
+    "pronunciation": "Re-Ward-Ah",
+    "meaning": "Reward Of Faithfulness",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Hebrews 11:6",
+      "Matthew 25:21"
+    ],
+    "promise_category": "Reward",
+    "prayer_use": "Used when praying for faithfulness rather than applause.",
+    "animation_symbol": "A faithful servant receiving a crown of light.",
+    "related_words": [
+      "HERITA",
+      "COMPLETA",
+      "LEGACIA"
+    ]
+  },
+  {
+    "word": "IMPACTA",
+    "pronunciation": "Im-Pact-Ah",
+    "meaning": "Purpose Touching Others",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Matthew 5:16",
+      "Ephesians 2:10"
+    ],
+    "promise_category": "Impact",
+    "prayer_use": "Used when praying for purpose that blesses and strengthens others.",
+    "animation_symbol": "Ripples of light moving from one act of obedience.",
+    "related_words": [
+      "FRUITA",
+      "BLESSIA",
+      "MISSIONA"
+    ]
+  },
+  {
+    "word": "LEGACIA",
+    "pronunciation": "Leh-Gah-See-Ah",
+    "meaning": "Legacy In God",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Psalm 78:4",
+      "2 Timothy 2:2"
+    ],
+    "promise_category": "Legacy",
+    "prayer_use": "Used when praying to leave testimony, wisdom, and faithfulness behind.",
+    "animation_symbol": "A book passing light from one generation to another.",
+    "related_words": [
+      "TESTIMA",
+      "GENERA",
+      "MULTIPLA"
+    ]
+  },
+  {
+    "word": "MULTIPLA",
+    "pronunciation": "Mul-Tee-Plah",
+    "meaning": "Multiplication Of Purpose",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "2 Timothy 2:2",
+      "John 15:8"
+    ],
+    "promise_category": "Multiplication",
+    "prayer_use": "Used when praying for purpose to multiply through discipleship and fruit.",
+    "animation_symbol": "One lamp lighting rows of lamps.",
+    "related_words": [
+      "DISCIPLA",
+      "LEGACIA",
+      "FRUITA"
+    ]
+  },
+  {
+    "word": "BLESSIA",
+    "pronunciation": "Bless-Ee-Ah",
+    "meaning": "Blessed To Bless",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Genesis 12:2-3",
+      "2 Corinthians 9:8"
+    ],
+    "promise_category": "Blessing",
+    "prayer_use": "Used when praying to steward blessing for the good of others.",
+    "animation_symbol": "Open hands receiving and releasing light.",
+    "related_words": [
+      "IMPACTA",
+      "JIREH",
+      "FAVORI"
+    ]
+  },
+  {
+    "word": "GENERA",
+    "pronunciation": "Jen-Er-Ah",
+    "meaning": "Generational Promise",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Psalm 145:4",
+      "Acts 2:39"
+    ],
+    "promise_category": "Generations",
+    "prayer_use": "Used when praying for faithfulness across generations.",
+    "animation_symbol": "A family tree glowing from root to branches.",
+    "related_words": [
+      "LEGACIA",
+      "BLESSIA",
+      "TESTIMA"
+    ]
+  },
+  {
+    "word": "TESTIMA",
+    "pronunciation": "Tes-Tee-Mah",
+    "meaning": "Testimony Recorded",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Psalm 77:11",
+      "Revelation 12:11"
+    ],
+    "promise_category": "Testimony",
+    "prayer_use": "Used when recording and praying from remembered works of God.",
+    "animation_symbol": "A testimony entry becoming a bright memorial stone.",
+    "related_words": [
+      "MARTURIA",
+      "LEGACIA",
+      "COMPLETA"
+    ]
+  },
+  {
+    "word": "FULFILLA",
+    "pronunciation": "Ful-Fil-Ah",
+    "meaning": "Purpose Fulfilled",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Acts 13:36",
+      "Philippians 1:6"
+    ],
+    "promise_category": "Fulfillment",
+    "prayer_use": "Used when praying to complete God-given purpose with faithfulness.",
+    "animation_symbol": "A completed path ending at a radiant altar.",
+    "related_words": [
+      "COMPLETA",
+      "PATHORA",
+      "REWARDA"
+    ]
+  },
+  {
+    "word": "COMPLETA",
+    "pronunciation": "Com-Pleet-Ah",
+    "meaning": "Finished Assignment",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "2 Timothy 4:7",
+      "John 17:4"
+    ],
+    "promise_category": "Completion",
+    "prayer_use": "Used when praying to finish the assignment entrusted by God.",
+    "animation_symbol": "A final stone placed on a finished wall.",
+    "related_words": [
+      "FULFILLA",
+      "REWARDA",
+      "ASSIGNA"
+    ]
+  },
+  {
+    "word": "ZOE",
+    "pronunciation": "Zo-Ay",
+    "meaning": "Life",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "John 10:10",
+      "John 17:3"
+    ],
+    "promise_category": "Eternal Life",
+    "prayer_use": "Used when praying to live in the abundant life Christ gives.",
+    "animation_symbol": "Living water flowing through a bright garden.",
+    "related_words": [
+      "GLORIA",
+      "KAINOS",
+      "ELPIS"
+    ]
+  },
+  {
+    "word": "GLORIA",
+    "pronunciation": "Glo-Ree-Ah",
+    "meaning": "Glory Revealed",
+    "category": "Inheritance & Legacy",
+    "scripture_sources": [
+      "Romans 8:18",
+      "2 Corinthians 3:18"
+    ],
+    "promise_category": "Glory",
+    "prayer_use": "Used when praying with hope for God's glory to be revealed and reflected.",
+    "animation_symbol": "A hidden radiance breaking through clouds.",
+    "related_words": [
+      "HERITA",
+      "ZOE",
+      "TRANSFORMA"
+    ]
+  }
+]

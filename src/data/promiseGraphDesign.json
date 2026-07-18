@@ -1,0 +1,45 @@
+{
+  "node_types": [
+    "Word",
+    "Promise",
+    "Scripture",
+    "Archetype",
+    "Path",
+    "Prayer",
+    "Manifestation",
+    "Calling"
+  ],
+  "relationship_types": [
+    "belongs_to",
+    "unlocks",
+    "transforms_into",
+    "associated_with",
+    "fulfills",
+    "manifests",
+    "inherits",
+    "reveals",
+    "governs",
+    "multiplies"
+  ],
+  "relationship_count": 132,
+  "example": {
+    "source": "Benor",
+    "edges": [
+      {
+        "source": "Benor",
+        "relationship": "belongs_to",
+        "target": "P01"
+      },
+      {
+        "source": "Benor",
+        "relationship": "unlocks",
+        "target": "Arion"
+      },
+      {
+        "source": "Benor",
+        "relationship": "associated_with",
+        "target": "A01"
+      }
+    ]
+  }
+}

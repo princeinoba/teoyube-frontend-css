@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TeoyubeWorld Owner Media Review</title>
+    <link rel="stylesheet" href="styles/owner/media-review.css?recovery=1" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Phase 11.6C.2A · Local owner workspace</p>
+        <h1>TeoyubeWorld Media Review</h1>
+        <p>Review protected masters by media ID. Edits are staged as local patches; originals and the runtime manifest remain unchanged.</p>
+      </div>
+      <div class="header-actions">
+        <button id="load-draft" class="primary" type="button">Load local draft</button>
+        <button id="save-owner-patch" type="button" disabled>Save review patch</button>
+        <a href="index.html?qa=1#today">Return to app</a>
+      </div>
+    </header>
+
+    <main id="workspace">
+      <p id="gate" class="notice danger" hidden>This workspace requires loopback access and <code>?qa=1</code>.</p>
+      <section id="derivative-review-workspace" class="derivative-review-workspace" aria-labelledby="derivative-review-title" hidden>
+        <header class="derivative-review-header">
+          <div>
+            <p class="eyebrow">Phase 11.6C.2B.2 · Owner-only local QA</p>
+            <h2 id="derivative-review-title">Published Pilot Derivatives</h2>
+            <p>Review the exact 12-record Scripture sequence published from the checksum-bound owner plan.</p>
+          </div>
+          <div class="derivative-gate-state">
+            <strong id="derivative-lifecycle">Loading validation</strong>
+            <span id="derivative-publication-state">Publication receipt loading</span>
+          </div>
+        </header>
+
+        <p id="derivative-status" class="notice" role="status">Loading validated derivative records.</p>
+        <div id="derivative-summary" class="dashboard" aria-label="Derivative validation summary"></div>
+
+        <section class="derivative-sequence-panel" aria-labelledby="derivative-sequence-title">
+          <div class="derivative-sequence-heading">
+            <div>
+              <p class="eyebrow">Owner-initiated Scripture sequence preview</p>
+              <h3 id="derivative-sequence-title">Approved Sequence</h3>
+              <p id="derivative-sequence-scripture">Loading Scripture reference.</p>
+            </div>
+            <div class="sequence-count"><strong id="derivative-segment-number">0</strong><span>/ <span id="derivative-segment-total">12</span></span></div>
+          </div>
+
+          <div class="derivative-player-layout">
+            <div class="derivative-player-column">
+              <div class="variant-control" role="group" aria-label="Derivative preview variant">
+                <button id="derivative-card-mode" class="active" type="button" aria-pressed="true">Card preview</button>
+                <button id="derivative-mobile-mode" type="button" aria-pressed="false">Mobile preview</button>
+              </div>
+              <video id="derivative-player" controls playsinline muted preload="metadata"></video>
+              <label class="derivative-timeline">Sequence timeline<input id="derivative-timeline" type="range" min="0" max="100" value="0" step="0.1" /></label>
+              <div class="button-row derivative-playback-controls">
+                <button id="derivative-play-selected" class="primary" type="button">Play Selected</button>
+                <button id="derivative-play-sequence" type="button">Play Entire Sequence</button>
+                <button id="derivative-previous" type="button">Previous</button>
+                <button id="derivative-next" type="button">Next</button>
+                <button id="derivative-pause" type="button">Pause</button>
+                <button id="derivative-restart-segment" type="button">Restart Segment</button>
+                <button id="derivative-restart-sequence" type="button">Restart Sequence</button>
+              </div>
+              <div class="derivative-progress" aria-label="Sequence progress"><span id="derivative-progress-bar"></span></div>
+              <p id="derivative-active-title" class="active-segment-title">Select a validated segment.</p>
+            </div>
+
+            <aside class="derivative-image-previews" aria-label="Generated image previews">
+              <figure><img id="derivative-poster" alt="Validated poster preview" /><figcaption>Poster</figcaption></figure>
+              <figure><img id="derivative-thumbnail" alt="Validated thumbnail preview" /><figcaption>Thumbnail</figcaption></figure>
+            </aside>
+          </div>
+        </section>
+
+        <div class="derivative-review-grid">
+          <section aria-labelledby="derivative-records-title">
+            <div class="derivative-section-heading"><h3 id="derivative-records-title">Approved Record Sequence</h3><span>12 validated records</span></div>
+            <div id="derivative-record-list" class="derivative-record-list"></div>
+          </section>
+
+          <aside class="derivative-evidence" aria-labelledby="derivative-evidence-title">
+            <h3 id="derivative-evidence-title">Technical and QA Evidence</h3>
+            <dl id="derivative-technical-comparison" class="derivative-comparison"></dl>
+            <h4>Derivative checks</h4>
+            <ul id="derivative-qa-list" class="derivative-qa-list"></ul>
+            <details><summary>Operation log</summary><div id="derivative-operation-log" class="derivative-operation-log"></div></details>
+          </aside>
+        </div>
+
+        <div class="notice derivative-publication-boundary">
+          <strong>Published boundary</strong>
+          <span>Only the 48 approved derivatives and their checksum-bound runtime manifest were copied into public/media/teoyubeworld/pilot-v1. No publication control is exposed here.</span>
+        </div>
+      </section>
+      <section id="assisted-pilot-wizard" class="pilot-wizard" aria-labelledby="wizard-title" hidden>
+        <header class="wizard-progress-header">
+          <div>
+            <p class="eyebrow">Phase 11.6C.2A.4</p>
+            <h2 id="wizard-title">Assisted Pilot Review Wizard</h2>
+            <p id="wizard-state">Loading the 12-record technical candidate.</p>
+            <p id="wizard-authority" class="wizard-authority">Revision pending | validation pending | authoritative port pending</p>
+          </div>
+          <div class="wizard-header-actions">
+            <span id="wizard-blocker-badge" class="blocker-badge" aria-live="polite">Validation pending</span>
+            <button id="wizard-fix-next" type="button">Fix Next Blocker</button>
+            <button id="wizard-fix-technical" type="button">Fix All Technical Blockers</button>
+            <a href="/media-review.html?qa=1">Full Review Workspace</a>
+          </div>
+          <nav aria-label="Pilot review steps">
+            <ol id="wizard-step-list" class="wizard-steps">
+              <li><button type="button" data-wizard-step="1">Overview</button></li>
+              <li><button type="button" data-wizard-step="2">Sequence</button></li>
+              <li><button type="button" data-wizard-step="3">Records</button></li>
+              <li><button type="button" data-wizard-step="4">Standalone</button></li>
+              <li><button type="button" data-wizard-step="5">Rights</button></li>
+              <li><button type="button" data-wizard-step="6">Scripture</button></li>
+              <li><button type="button" data-wizard-step="7">Safety</button></li>
+              <li><button type="button" data-wizard-step="8">Validate</button></li>
+            </ol>
+          </nav>
+        </header>
+
+        <p id="wizard-status" class="notice" role="status">Preparing guided review.</p>
+
+        <section id="wizard-approved-state" class="wizard-approved-state" aria-labelledby="wizard-approved-title" hidden>
+          <div class="approved-state-heading">
+            <div>
+              <p class="eyebrow">Checksum-bound pilot definition</p>
+              <h3 id="wizard-approved-title">Pilot Approved</h3>
+              <p>The selected Scripture-media pilot is owner-approved. Derivative execution and publication remain separately gated.</p>
+            </div>
+            <span class="approved-state-badge">Owner approved</span>
+          </div>
+          <div id="wizard-approved-metrics" class="dashboard" aria-label="Approved pilot metrics"></div>
+          <dl class="approved-state-details">
+            <div><dt>Approval artifact</dt><dd id="wizard-approved-artifact">Pending</dd></div>
+            <div><dt>Approval timestamp</dt><dd id="wizard-approved-timestamp">Pending</dd></div>
+            <div><dt>Source integrity</dt><dd id="wizard-approved-integrity">Pending</dd></div>
+            <div><dt>Lifecycle state</dt><dd id="wizard-approved-lifecycle">Pending</dd></div>
+          </dl>
+          <div class="button-row approved-state-actions">
+            <a class="primary" href="/__qa/teoyubeworld/approved-pilot?qa=1" target="_blank" rel="noopener">View Approved Pilot</a>
+            <a href="/__qa/teoyubeworld/approved-pilot?qa=1" download="teoyubeworld-approved-pilot-summary.json">Download Approval Summary</a>
+            <a href="/__qa/teoyubeworld/derivative-plan?qa=1" target="_blank" rel="noopener">Open Derivative Plan</a>
+            <a href="/media-review.html?qa=1">Return to Media Review</a>
+          </div>
+          <p class="notice">No execution or publication control is exposed here. The derivative plan is dry-run only.</p>
+        </section>
+
+        <section class="wizard-step" data-step-panel="1" aria-labelledby="wizard-overview-title">
+          <h3 id="wizard-overview-title">Pilot Overview</h3>
+          <div id="wizard-overview-metrics" class="dashboard"></div>
+          <div class="wizard-overview-grid">
+            <div>
+              <h4>Technical recommendation</h4>
+              <p id="wizard-recommendation"></p>
+              <div class="button-row">
+                <button id="wizard-start" class="primary" type="button">Start Guided Review</button>
+                <button id="wizard-change-sequence" type="button">Change Candidate Sequence</button>
+                <button id="wizard-show-reasons" type="button" aria-expanded="false">View Technical Selection Reasons</button>
+                <a href="/media-review.html?qa=1">Cancel Assisted Pilot</a>
+              </div>
+            </div>
+            <div id="wizard-selection-reasons" class="notice" hidden></div>
+          </div>
+        </section>
+
+        <section class="wizard-step" data-step-panel="2" aria-labelledby="wizard-sequence-title" hidden>
+          <h3 id="wizard-sequence-title">Review the Sequence</h3>
+          <p class="notice warning">The detected source families are suggestions only. Choose one candidate and explicitly define which selected clips form one complete sequence.</p>
+          <div id="wizard-sequence-candidates" class="sequence-candidate-grid"></div>
+          <div class="sequence-review-grid">
+            <div>
+              <img id="wizard-sequence-sheet" class="review-artifact" alt="Contact sheet for the selected pilot clips" />
+              <div class="button-row">
+                <button id="wizard-play-all" type="button">Play All</button>
+                <button id="wizard-previous-segment" type="button">Previous Segment</button>
+                <button id="wizard-next-segment" type="button">Next Segment</button>
+              </div>
+            </div>
+            <form id="wizard-sequence-form" autocomplete="off">
+              <label>Sequence title<input id="wizard-sequence-name" required /></label>
+              <label>Owner-reviewed Scripture reference<input id="wizard-sequence-scripture" placeholder="Galatians 1:6-9" required /></label>
+              <div id="wizard-segment-list" class="segment-order-list" aria-label="Sequence segment order"></div>
+              <label class="explicit-confirm"><input id="wizard-confirm-sequence" type="checkbox" /> I confirm this is one complete sequence and the displayed order is correct.</label>
+              <button class="primary" type="submit">Save Owner-Confirmed Sequence</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="wizard-step" data-step-panel="3" aria-labelledby="wizard-record-title" hidden>
+          <div class="record-review-heading">
+            <div><p id="wizard-record-count" class="eyebrow"></p><h3 id="wizard-record-title">Review Each Record</h3></div>
+            <div class="button-row"><button id="wizard-record-previous" type="button">Previous</button><button id="wizard-record-next" type="button">Next</button></div>
+          </div>
+          <div class="wizard-record-grid">
+            <div class="wizard-media-column">
+              <video id="wizard-player" controls preload="metadata" playsinline aria-label="Protected assisted-pilot source preview"></video>
+              <div class="review-artifact-pair">
+                <img id="wizard-poster" class="review-artifact" alt="Poster review image" />
+                <img id="wizard-contact-sheet" class="review-artifact" alt="Three-frame contact sheet" />
+              </div>
+              <div id="wizard-technical" class="compact-list"></div>
+            </div>
+            <form id="wizard-record-form" class="form-panel" autocomplete="off">
+              <input id="wizard-media-id" type="hidden" />
+              <div id="wizard-record-progress" class="record-completion" aria-live="polite"></div>
+              <label>Accepted title<input id="wizard-record-name" required /></label>
+              <p id="wizard-title-suggestion" class="suggestion"></p>
+              <button id="wizard-accept-title" type="button">Accept Suggested Title</button>
+              <label>Accepted description<textarea id="wizard-record-description" rows="3" required></textarea></label>
+              <p id="wizard-description-suggestion" class="suggestion"></p>
+              <button id="wizard-accept-description" type="button">Accept Suggested Description</button>
+              <label>Accepted Scripture reference<input id="wizard-record-scripture" placeholder="Needs owner confirmation" /></label>
+              <p id="wizard-scripture-suggestion" class="suggestion"></p>
+              <button id="wizard-accept-scripture" type="button">Accept Suggested Scripture</button>
+              <label>Translation<select id="wizard-record-translation"><option value="Unknown">Unknown</option><option>KJV</option><option>NKJV</option><option>NIV</option><option>ESV</option><option>NASB</option><option>NLT</option><option>CSB</option><option>NRSV</option><option>AMP</option><option>WEB</option></select></label>
+              <label>Source channel<input id="wizard-source-channel" required /></label>
+              <label>Rights status<select id="wizard-rights-status"><option value="not_approved">Choose status</option><option value="owner_created">Owner-created</option><option value="owner_controlled">Owner-controlled</option><option value="licensed">Licensed for Teoyube</option><option value="permission_granted">Permission granted</option><option value="public_domain">Public domain</option></select></label>
+              <label>Safety status<select id="wizard-record-safety"><option value="unknown">Unknown</option><option value="approved_for_pilot">Approved for pilot</option><option value="needs_revision">Needs revision</option><option value="blocked">Blocked</option></select></label>
+              <label>Owner notes<textarea id="wizard-owner-notes" rows="2"></textarea></label>
+              <div id="wizard-record-warnings" class="notice warning"></div>
+              <fieldset class="confirmation-list">
+                <legend>Explicit owner confirmations</legend>
+                <label><input id="wizard-confirm-scripture-record" type="checkbox" /> Confirm Scripture and translation reviewed</label>
+                <label><input id="wizard-confirm-source" type="checkbox" /> Confirm owner/source channel</label>
+                <label><input id="wizard-confirm-rights-record" type="checkbox" /> Confirm rights status</label>
+                <label><input id="wizard-confirm-safety-record" type="checkbox" /> Confirm safety status</label>
+                <label><input id="wizard-confirm-record" type="checkbox" /> Confirm record reviewed</label>
+              </fieldset>
+              <div class="button-row">
+                <button id="wizard-save-record" type="submit">Save Record</button>
+                <button id="wizard-save-next" class="primary" type="submit">Save and Next</button>
+                <button id="wizard-revert-record" type="button">Revert Changes</button>
+                <button id="wizard-exclude-record" type="button">Exclude Record</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="wizard-step" data-step-panel="4" aria-labelledby="wizard-standalone-title" hidden>
+          <h3 id="wizard-standalone-title">Standalone Shorts</h3>
+          <p>These selected records are outside the owner-confirmed sequence. They use the same explicit record review.</p>
+          <div id="wizard-standalone-list" class="standalone-list"></div>
+        </section>
+
+        <section class="wizard-step declaration-step" data-step-panel="5" aria-labelledby="wizard-rights-title" hidden>
+          <h3 id="wizard-rights-title">Rights and Ownership Declaration</h3>
+          <p>Select a shared status for eligible records. This selection is not the final owner declaration.</p>
+          <label>Shared rights status<select id="wizard-bulk-rights"><option value="not_approved">Choose status</option><option value="owner_created">Owner-created</option><option value="owner_controlled">Owner-controlled</option><option value="licensed">Licensed for Teoyube</option><option value="permission_granted">Permission granted</option><option value="public_domain">Public domain</option></select></label>
+          <label class="explicit-confirm"><input id="wizard-include-audio-rights" type="checkbox" /> Include records with audio after reviewing the audio-rights warning.</label>
+          <div id="wizard-rights-preview" class="notice"></div>
+          <div class="button-row"><button id="wizard-preview-rights" type="button">Preview Rights Update</button><button id="wizard-apply-rights" class="primary" type="button" disabled>Apply Previewed Rights Status</button></div>
+        </section>
+
+        <section class="wizard-step declaration-step" data-step-panel="6" aria-labelledby="wizard-scripture-declaration-title" hidden>
+          <h3 id="wizard-scripture-declaration-title">Scripture Suggestions</h3>
+          <p>Local evidence suggests an opening Galatians 1 sequence. Suggestions remain unconfirmed until the final owner reconfirmation.</p>
+          <div id="wizard-scripture-preview" class="reconfirmation-records"></div>
+          <div class="button-row"><button id="wizard-preview-scripture" type="button">Preview Suggested Scripture</button><button id="wizard-apply-scripture" class="primary" type="button" disabled>Accept Selected Scripture Suggestions</button></div>
+        </section>
+
+        <section class="wizard-step declaration-step" data-step-panel="7" aria-labelledby="wizard-safety-title" hidden>
+          <h3 id="wizard-safety-title">Safety Review</h3>
+          <label>Shared safety status<select id="wizard-bulk-safety"><option value="unknown">Unknown</option><option value="approved_for_pilot">Approved for pilot</option><option value="needs_revision">Needs revision</option><option value="blocked">Blocked</option></select></label>
+          <div class="safety-checklist"><span>No private information</span><span>No dangerous spiritual claim</span><span>No misleading guarantee</span><span>No professional-advice claim</span><span>No inappropriate content</span><span>No unsafe flashing</span><span>Scripture text reviewed</span><span>Suitable for intended surfaces</span></div>
+          <div id="wizard-safety-preview" class="notice"></div>
+          <div class="button-row"><button id="wizard-preview-safety" type="button">Preview Safety Update</button><button id="wizard-apply-safety" class="primary" type="button" disabled>Apply Previewed Safety Status</button></div>
+        </section>
+
+        <section class="wizard-step" data-step-panel="8" aria-labelledby="wizard-validation-title" hidden>
+          <h3 id="wizard-validation-title">Final Validation</h3>
+          <div id="wizard-validation-metrics" class="dashboard"></div>
+          <div id="wizard-blocker-categories" class="blocker-categories"></div>
+          <div id="wizard-blockers" class="notice warning"></div>
+          <div class="button-row">
+            <button id="wizard-rerun-validation" type="button">Re-run Validation</button>
+            <button id="wizard-final-fix" type="button">Fix Next Blocker</button>
+            <button id="wizard-go-blocker" type="button">Go to Blocking Record</button>
+            <button id="wizard-final-summary" type="button" aria-expanded="false">Review Final Pilot Summary</button>
+          </div>
+          <div id="wizard-summary" class="notice" hidden></div>
+          <section class="owner-reconfirmation" aria-labelledby="wizard-reconfirmation-title">
+            <h4 id="wizard-reconfirmation-title">Final Owner Reconfirmation</h4>
+            <div id="wizard-reconfirmation-records" class="reconfirmation-records"></div>
+            <label class="owner-declaration"><input id="wizard-reconfirm-watched" type="checkbox" /> I confirm I watched and reviewed all 12 selected records.</label>
+            <label class="owner-declaration"><input id="wizard-rights-declaration" type="checkbox" /> I confirm the selected rights status is accurate for these records.</label>
+            <label class="owner-declaration"><input id="wizard-scripture-declaration" type="checkbox" /> I confirm the Scripture references, visible Scripture text, sequence title, and sequence order are accurate to the best of my knowledge.</label>
+            <label class="owner-declaration"><input id="wizard-safety-declaration" type="checkbox" /> I confirm these records are safe for the intended Teoyube pilot surfaces.</label>
+            <button id="wizard-apply-reconfirmation" class="primary" type="button">Apply Owner Reconfirmation</button>
+          </section>
+          <div id="wizard-approval-control" aria-live="polite"></div>
+          <p id="wizard-approval-notice">No approval control is rendered while blockers remain.</p>
+        </section>
+
+        <div class="wizard-footer-nav">
+          <button id="wizard-back" type="button">Back</button>
+          <span id="wizard-step-status">Step 1 of 8</span>
+          <button id="wizard-continue" class="primary" type="button">Continue</button>
+        </div>
+      </section>
+      <section id="progress-dashboard" class="dashboard" aria-label="Owner review progress"></section>
+      <div class="statusbar">
+        <span id="status" role="status">Load the generated local draft to begin.</span>
+        <span id="probe-progress">Metadata probe idle</span>
+      </div>
+
+      <section class="review-layout" aria-label="Media review workspace">
+        <aside class="rail left-rail">
+          <h2>Review queue</h2>
+          <label for="search">Search</label>
+          <input id="search" type="search" placeholder="Filename, ID, title, folder, Scripture…" />
+          <label for="queue-filter">Saved review filter</label>
+          <select id="queue-filter">
+            <option value="all">All records</option><option value="unreviewed">Unreviewed</option>
+            <option value="approved">Approved</option><option value="rejected">Rejected</option>
+            <option value="needs_edit">Needs edit</option><option value="scripture_unknown">Scripture unknown</option>
+            <option value="book_hint">Bible book hint only</option><option value="exact_duplicate">Exact duplicate</option>
+            <option value="sequence">Sequence member</option><option value="short">Short</option>
+            <option value="long">Long-form</option><option value="browser_playable">Browser playable</option>
+            <option value="browser_unplayable">Browser unplayable</option><option value="owner_thumbnail">Has owner thumbnail</option>
+            <option value="missing_thumbnail">Missing thumbnail</option><option value="pilot_selected">Pilot selected</option>
+            <option value="pilot_ineligible">Pilot ineligible</option>
+          </select>
+          <div id="queue-counts" class="compact-list"></div>
+          <label for="duplicate-groups">Duplicate groups</label>
+          <select id="duplicate-groups"><option value="">Choose exact duplicate group</option></select>
+          <label for="sequence-groups">Sequence groups</label>
+          <select id="sequence-groups"><option value="">Choose sequence</option></select>
+          <div class="button-grid">
+            <button id="probe-selected" type="button" disabled>Probe selected</button>
+            <button id="probe-page" type="button" disabled>Probe page</button>
+            <button id="probe-pilot" type="button" disabled>Probe pilot</button>
+            <button id="pause-probe" type="button" disabled>Pause</button>
+            <button id="resume-probe" type="button" disabled>Resume</button>
+            <button id="export-technical" type="button" disabled>Export metadata patch</button>
+          </div>
+        </aside>
+
+        <section class="center-panel">
+          <div class="player-shell">
+            <div class="player-heading">
+              <div><span class="badge warning">Source Review Preview</span><h2 id="current-title">No media selected</h2></div>
+              <span id="current-scripture" class="scripture-label">Scripture unconfirmed</span>
+            </div>
+            <video id="review-player" controls preload="metadata" playsinline aria-label="Protected source review player"></video>
+            <canvas id="capture-canvas" hidden></canvas>
+            <p id="player-state" class="notice">Protected media is loaded only after you select a known media ID.</p>
+            <div class="button-row">
+              <button id="capture-thumbnail" type="button" disabled>Capture review thumbnail</button>
+              <button id="capture-poster" type="button" disabled>Capture review poster</button>
+              <button id="why-media" type="button" disabled>Why this media?</button>
+            </div>
+          </div>
+
+          <form id="metadata-form" class="form-panel" autocomplete="off">
+            <fieldset disabled>
+              <legend>Owner metadata</legend>
+              <input id="media-id" type="hidden" />
+              <div class="form-grid">
+                <label>Reviewed title<input id="title" data-field="title" /></label>
+                <label>Media kind<select id="media-kind" data-field="mediaKind"><option>short</option><option>long_form</option><option>background_visual</option><option>unknown</option></select></label>
+                <label class="span-2">Reviewed description<textarea id="description" data-field="description" rows="3"></textarea></label>
+                <label>Bible book<select id="bible-book" data-field="BibleBook"><option value="">Unmapped</option></select></label>
+                <label>Local Scripture<select id="scripture-selector"><option value="">Choose local anchor</option></select></label>
+                <label>Chapter<input id="chapter" data-field="chapter" inputmode="numeric" /></label>
+                <label>Verse start<input id="verse-start" data-field="verseStart" inputmode="numeric" /></label>
+                <label>Verse end<input id="verse-end" data-field="verseEnd" inputmode="numeric" /></label>
+                <label>Translation<input id="translation" data-field="translation" placeholder="Unknown" /></label>
+                <label class="span-2">Scripture reference<input id="scripture-reference" data-field="ScriptureReferences" placeholder="Owner-confirmed reference" /></label>
+                <label>Theme<select id="theme-selector"><option value="">Suggested themes</option></select></label>
+                <label>Teoyube word<select id="word-selector"><option value="">Suggested words</option></select></label>
+                <label>Promise cluster<select id="promise-selector"><option value="">Suggested clusters</option></select></label>
+                <label>Journey<select id="journey-selector"><option value="">Suggested journeys</option></select></label>
+                <label>Calling<select id="calling-selector"><option value="">Suggested callings</option></select></label>
+                <label>Prayer sequence<select id="prayer-selector"><option value="">Suggested prayers</option></select></label>
+                <label>Recommended surface<select id="surface-selector"><option value="">Choose surface</option></select></label>
+                <label>Review status<select id="review-status" data-field="reviewStatus"><option>needs_review</option><option>approved</option><option>rejected</option><option>needs_edit</option><option>duplicate</option></select></label>
+                <label>Mapping confidence<select id="mapping-confidence" data-field="mappingConfidence"><option>unknown</option><option>needs_review</option><option>probable</option><option>confirmed</option></select></label>
+                <label>Safety status<select id="safety-status" data-field="safetyStatus"><option>needs_review</option><option>approved</option><option>rejected</option></select></label>
+                <label>Copyright status<select id="copyright-status" data-field="copyrightStatus"><option>unknown</option><option>owner_owned</option><option>confirmed</option><option>licensed</option><option>rejected</option></select></label>
+                <label>Source channel<input id="source-channel" data-field="sourceChannel" placeholder="Owner-confirmed source" /></label>
+                <label class="span-2">Owner notes (never public)<textarea id="owner-notes" data-field="ownerNotes" rows="2"></textarea></label>
+              </div>
+              <div class="button-row"><button id="stage-metadata" class="primary" type="button">Stage current changes</button><button id="toggle-pilot" type="button">Add to pilot</button></div>
+            </fieldset>
+          </form>
+
+          <section class="form-panel" aria-labelledby="sequence-title">
+            <h2 id="sequence-title">Sequence curator</h2>
+            <p id="sequence-summary">Choose a sequence group. Timestamp order is never treated as confirmed.</p>
+            <div id="sequence-members" class="sequence-members"></div>
+            <div class="form-grid">
+              <label>Sequence title<input id="sequence-name" /></label>
+              <label>Passage<input id="sequence-scripture" /></label>
+              <label>Segment title<input id="segment-title" /></label>
+              <label>Transition<select id="transition-type"><option>cut</option><option>fade</option><option>pause</option></select></label>
+            </div>
+            <div class="button-row">
+              <button id="sequence-up" type="button" disabled>Move up</button><button id="sequence-down" type="button" disabled>Move down</button>
+              <button id="confirm-sequence" type="button" disabled>Confirm Scripture sequence</button><button id="reject-sequence" type="button" disabled>Reject sequence</button>
+            </div>
+          </section>
+
+          <section class="form-panel" aria-labelledby="qa-player-title">
+            <h2 id="qa-player-title">QA Scripture Sequence Player</h2>
+            <p>Local source review only. No sequence is approved for the app.</p>
+            <div class="button-row"><button id="qa-previous" type="button" disabled>Previous segment</button><button id="qa-next" type="button" disabled>Next segment</button><button id="save-reference" type="button" disabled>Save media reference to Book</button><button id="add-promise" type="button" disabled>Add Scripture to Promise Table</button></div>
+            <div id="qa-context" class="related-panel"></div>
+          </section>
+        </section>
+
+        <aside class="rail right-rail">
+          <h2>Review evidence</h2>
+          <div id="technical-metadata" class="compact-list"></div>
+          <h3>Duplicate decision</h3>
+          <div id="duplicate-details" class="compact-list"><p>No duplicate group selected.</p></div>
+          <div class="button-grid">
+            <button id="choose-canonical" type="button" disabled>Choose current as canonical</button>
+            <button id="defer-duplicate" type="button" disabled>Defer group</button>
+            <button id="intentional-copy" type="button" disabled>Mark intentional copies</button>
+          </div>
+          <h3>Related local data</h3><div id="related-data" class="related-panel"></div>
+          <h3>Validation warnings</h3><div id="warnings" class="compact-list"></div>
+          <h3>Pilot eligibility</h3><div id="pilot-eligibility" class="compact-list"></div>
+        </aside>
+      </section>
+
+      <section class="batch-panel" aria-labelledby="batch-title">
+        <div><h2 id="batch-title">Safe batch actions</h2><p id="selection-count">0 records selected</p></div>
+        <select id="batch-action" aria-label="Batch action">
+          <option value="">Choose action</option><option value="BibleBook">Apply Bible book</option><option value="ScriptureReferences">Apply Scripture reference</option>
+          <option value="titlePrefix">Apply title prefix</option><option value="themes">Apply theme</option><option value="TeoyubeWordIds">Apply Teoyube word</option>
+          <option value="promiseClusterIds">Apply promise cluster</option><option value="sequenceId">Apply sequence ID</option><option value="recommendedSurfaces">Apply recommended surface</option>
+          <option value="needs_review">Mark needs review</option><option value="rejected">Mark rejected</option><option value="pilot_add">Add to pilot</option><option value="pilot_remove">Remove from pilot</option>
+        </select>
+        <input id="batch-value" aria-label="Batch value" placeholder="Value" />
+        <button id="preview-batch" type="button" disabled>Preview batch</button>
+        <button id="undo" type="button" disabled>Undo last action</button>
+        <button id="reset-unsaved" type="button" disabled>Reset unsaved changes</button>
+        <label class="file-button">Import patch<input id="import-patch" type="file" accept="application/json,.json" /></label>
+        <button id="validate-patch" type="button" disabled>Validate patch</button>
+        <button id="preview-patch" type="button" disabled>Apply patch preview</button>
+      </section>
+
+      <section class="pilot-panel" aria-labelledby="pilot-title">
+        <div><p class="eyebrow">Controlled pilot gate</p><h2 id="pilot-title">Pilot Selection</h2></div>
+        <div id="pilot-summary" class="dashboard"></div>
+        <div id="pilot-blockers" class="notice warning"></div>
+        <div class="button-row">
+          <button id="rerun-owner-gate" type="button">Re-run validation</button>
+          <button id="preview-derivative-plan" type="button">Preview derivative plan</button>
+          <span id="owner-gate-control" aria-live="polite"></span>
+        </div>
+        <p id="owner-gate-notice">No approval control is rendered while blockers remain. Planning creates reports only and never probes tools, copies, transcodes, or publishes media.</p>
+      </section>
+
+      <section aria-labelledby="records-title">
+        <div class="records-heading"><div><h2 id="records-title">Review records</h2><p id="page-status"></p></div><div><button id="select-page" type="button" disabled>Select page</button><button id="clear-selection" type="button" disabled>Clear selection</button></div></div>
+        <div id="records" class="records"></div>
+        <div class="pagination"><button id="previous-page" type="button" disabled>Previous</button><button id="next-page" type="button" disabled>Next</button></div>
+      </section>
+    </main>
+
+    <dialog id="confirm-dialog"><form method="dialog"><h2>Confirm batch action</h2><div id="batch-preview"></div><div class="button-row"><button value="cancel">Cancel</button><button id="confirm-batch" class="primary" value="default">Confirm staged patch</button></div></form></dialog>
+    <dialog id="why-dialog"><form method="dialog"><h2>Why this media?</h2><div id="why-content"></div><button value="cancel">Close</button></form></dialog>
+    <script src="teoyubeworld-media-runtime.js"></script>
+    <script src="media-review.js"></script>
+    <script src="media-review-wizard.js?v=116c2a3"></script>
+    <script src="media-review-derivatives.js?v=116c2b1"></script>
+    <script src="media-review-runtime-acceptance.js?phase116c3=1"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A01",
+    "name": "The Chosen",
+    "teoyubeWord": "Benor",
+    "scripturalModels": [
+      {
+        "name": "Jeremiah",
+        "reference": "Jeremiah 1:5",
+        "pattern": "Called before birth"
+      },
+      {
+        "name": "David",
+        "reference": "1 Samuel 16:12-13",
+        "pattern": "Chosen while hidden"
+      },
+      {
+        "name": "Paul",
+        "reference": "Acts 9:15",
+        "pattern": "Chosen vessel"
+      }
+    ]
+  },
+  {
+    "id": "A02",
+    "name": "The Builder",
+    "teoyubeWord": "Selion",
+    "scripturalModels": [
+      {
+        "name": "Noah",
+        "reference": "Genesis 6:14",
+        "pattern": "Builds by divine instruction"
+      },
+      {
+        "name": "Nehemiah",
+        "reference": "Nehemiah 2:17-18",
+        "pattern": "Restores broken walls"
+      },
+      {
+        "name": "Solomon",
+        "reference": "1 Kings 6:1",
+        "pattern": "Builds the house of the Lord"
+      }
+    ]
+  },
+  {
+    "id": "A03",
+    "name": "The Lightbearer",
+    "teoyubeWord": "Luma",
+    "scripturalModels": [
+      {
+        "name": "Daniel",
+        "reference": "Daniel 5:14",
+        "pattern": "Carries light, wisdom, and understanding"
+      },
+      {
+        "name": "John",
+        "reference": "John 1:6-8",
+        "pattern": "Bears witness to the Light"
+      },
+      {
+        "name": "Stephen",
+        "reference": "Acts 6:15",
+        "pattern": "Radiates Spirit-filled glory"
+      }
+    ]
+  }
+]

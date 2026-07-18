@@ -1,0 +1,82 @@
+[
+  {
+    "label": "I need direction",
+    "recommendedCluster": "Calling & Purpose",
+    "recommendedWords": [
+      "Benor",
+      "Arion",
+      "Taviel",
+      "Derek"
+    ]
+  },
+  {
+    "label": "I need healing",
+    "recommendedCluster": "Healing & Restoration",
+    "recommendedWords": [
+      "Zephan",
+      "Rapha",
+      "Velor",
+      "Nacham"
+    ]
+  },
+  {
+    "label": "I need peace",
+    "recommendedCluster": "Peace & Protection",
+    "recommendedWords": [
+      "Shalem",
+      "Nethar",
+      "Koriel",
+      "Tsuriel"
+    ]
+  },
+  {
+    "label": "I need wisdom",
+    "recommendedCluster": "Light & Revelation",
+    "recommendedWords": [
+      "Luma",
+      "Solen",
+      "Emeth",
+      "Rhema"
+    ]
+  },
+  {
+    "label": "I need strength",
+    "recommendedCluster": "Peace & Protection",
+    "recommendedWords": [
+      "Koriel",
+      "Tsuriel",
+      "Azar",
+      "Kethor"
+    ]
+  },
+  {
+    "label": "I need identity",
+    "recommendedCluster": "Sonship & Belonging",
+    "recommendedWords": [
+      "Abion",
+      "Elior",
+      "Beniel",
+      "Nareth"
+    ]
+  },
+  {
+    "label": "I need breakthrough",
+    "recommendedCluster": "Grace & Mercy",
+    "recommendedWords": [
+      "Yovel",
+      "Galal",
+      "Qum",
+      "Kethor"
+    ]
+  },
+  {
+    "label": "I need increase",
+    "recommendedCluster": "Fruitfulness & Increase",
+    "recommendedWords": [
+      "Auren",
+      "Mirath",
+      "Velian",
+      "Kavion"
+    ]
+  }
+]

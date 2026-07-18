@@ -1,0 +1,103 @@
+{
+  "phase": "4D",
+  "name": "Teoyube MVP Code Starter Files",
+  "projectRoot": "teoyube-app",
+  "description": "A Next.js MVP starter with pages, API routes, utility functions, package metadata, and seed JSON for the Teoyube app.",
+  "files": [
+    {
+      "path": "teoyube-app/package.json",
+      "type": "config",
+      "purpose": "Defines the Next.js, React, Prisma, OpenAI, and TypeScript starter dependencies."
+    },
+    {
+      "path": "teoyube-app/lib/dailyWord.ts",
+      "type": "utility",
+      "purpose": "Selects a deterministic daily word from the seed word list."
+    },
+    {
+      "path": "teoyube-app/lib/recommendations.ts",
+      "type": "utility",
+      "purpose": "Maps user needs to Promise Clusters."
+    },
+    {
+      "path": "teoyube-app/lib/prayerEngine.ts",
+      "type": "utility",
+      "purpose": "Builds prayer sequences, meaning flow, prayer text, and declaration text."
+    },
+    {
+      "path": "teoyube-app/app/page.tsx",
+      "type": "page",
+      "purpose": "Home page linking to dashboard, daily word, prayer, journal, and companion routes."
+    },
+    {
+      "path": "teoyube-app/app/daily-word/page.tsx",
+      "type": "page",
+      "purpose": "Daily Word page backed by the word seed file and daily word utility."
+    },
+    {
+      "path": "teoyube-app/app/prayer/page.tsx",
+      "type": "page",
+      "purpose": "Prayer Library page backed by prayer seed JSON."
+    },
+    {
+      "path": "teoyube-app/app/clusters/page.tsx",
+      "type": "page",
+      "purpose": "Promise Clusters page backed by full cluster seed JSON."
+    },
+    {
+      "path": "teoyube-app/app/words/page.tsx",
+      "type": "page",
+      "purpose": "Teoyube Lexicon page backed by word seed JSON."
+    },
+    {
+      "path": "teoyube-app/app/api/daily-word/route.ts",
+      "type": "api",
+      "purpose": "Returns the daily word as JSON."
+    },
+    {
+      "path": "teoyube-app/app/api/ai/companion/route.ts",
+      "type": "api",
+      "purpose": "Returns a starter AI companion response using the recommendation utility."
+    },
+    {
+      "path": "teoyube-app/data/teoyubeWords.json",
+      "type": "seed",
+      "purpose": "Starter Teoyube word seed data."
+    },
+    {
+      "path": "teoyube-app/data/prayers.json",
+      "type": "seed",
+      "purpose": "Full MVP prayer seed data."
+    },
+    {
+      "path": "teoyube-app/data/promiseClusters.json",
+      "type": "seed",
+      "purpose": "Full MVP Promise Cluster seed data."
+    },
+    {
+      "path": "teoyube-app/data/covenantPaths.json",
+      "type": "seed",
+      "purpose": "Full MVP Covenant Path seed data."
+    },
+    {
+      "path": "teoyube-app/data/archetypes.json",
+      "type": "seed",
+      "purpose": "Full MVP Archetype seed data."
+    }
+  ],
+  "starterStats": {
+    "pages": 8,
+    "apiRoutes": 2,
+    "utilities": 3,
+    "seedFiles": 5,
+    "starterWords": 2,
+    "starterPrayers": 12
+  },
+  "nextSteps": [
+    "Install dependencies inside teoyube-app.",
+    "Run npm run dev from teoyube-app.",
+    "Replace starter word data with the full 108-word Teoyube canon.",
+    "Add Prisma schema and seed script.",
+    "Connect the AI companion route to the OpenAI API when environment variables are ready."
+  ]
+}

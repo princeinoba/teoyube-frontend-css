@@ -1,0 +1,35 @@
+[
+  {
+    "step": 1,
+    "screen": "Welcome",
+    "question": "What are you seeking today?",
+    "options": ["Direction", "Healing", "Peace", "Wisdom", "Identity", "Growth"]
+  },
+  {
+    "step": 2,
+    "screen": "Spiritual Focus",
+    "question": "Which area do you want to grow in?",
+    "options": ["Prayer", "Purpose", "Service", "Leadership", "Scripture", "Legacy"]
+  },
+  {
+    "step": 3,
+    "screen": "Archetype Discovery",
+    "question": "Which statement feels most true?",
+    "options": [
+      "I build and organize things",
+      "I teach and explain truth",
+      "I protect and support others",
+      "I encourage healing and restoration",
+      "I lead and influence others"
+    ]
+  },
+  {
+    "step": 4,
+    "screen": "Profile Result",
+    "output": {
+      "archetype": "The Builder",
+      "primaryPath": "Stewardship",
+      "recommendedJourney": "Calling Journey"
+    }
+  }
+]

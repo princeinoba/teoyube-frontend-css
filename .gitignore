@@ -1,0 +1,15 @@
+.env
+.env.local
+.env.*.local
+/config/local-media-path.json
+node_modules/
+
+# TeoyubeWorld immutable local master media
+/media-source/teoyubeworld/originals/
+
+# Generated TeoyubeWorld media analysis and derivatives
+/generated/teoyubeworld-media/
+/generated/workspace-rescue/
+
+# Temporary media processing
+/.media-tmp/

@@ -1,0 +1,10 @@
+{
+  "canonVersion": "1.0",
+  "lexiconWords": 108,
+  "archetypes": 24,
+  "covenantPaths": 12,
+  "destinyMaps": 36,
+  "promiseClusters": 12,
+  "glyphs": 108,
+  "relationships": "graph-enabled"
+}

@@ -1,0 +1,662 @@
+[
+  {
+    "source": "Benor",
+    "relationship": "belongs_to",
+    "target": "P01"
+  },
+  {
+    "source": "Benor",
+    "relationship": "unlocks",
+    "target": "Arion"
+  },
+  {
+    "source": "Arion",
+    "relationship": "belongs_to",
+    "target": "P01"
+  },
+  {
+    "source": "Arion",
+    "relationship": "unlocks",
+    "target": "Luma"
+  },
+  {
+    "source": "Luma",
+    "relationship": "belongs_to",
+    "target": "P01"
+  },
+  {
+    "source": "Luma",
+    "relationship": "unlocks",
+    "target": "Taviel"
+  },
+  {
+    "source": "Taviel",
+    "relationship": "belongs_to",
+    "target": "P01"
+  },
+  {
+    "source": "Zephan",
+    "relationship": "belongs_to",
+    "target": "P02"
+  },
+  {
+    "source": "Zephan",
+    "relationship": "unlocks",
+    "target": "Renar"
+  },
+  {
+    "source": "Renar",
+    "relationship": "belongs_to",
+    "target": "P02"
+  },
+  {
+    "source": "Renar",
+    "relationship": "unlocks",
+    "target": "Velor"
+  },
+  {
+    "source": "Velor",
+    "relationship": "belongs_to",
+    "target": "P02"
+  },
+  {
+    "source": "Velor",
+    "relationship": "unlocks",
+    "target": "Auren"
+  },
+  {
+    "source": "Auren",
+    "relationship": "belongs_to",
+    "target": "P02"
+  },
+  {
+    "source": "Luma",
+    "relationship": "belongs_to",
+    "target": "P03"
+  },
+  {
+    "source": "Luma",
+    "relationship": "unlocks",
+    "target": "Solen"
+  },
+  {
+    "source": "Solen",
+    "relationship": "belongs_to",
+    "target": "P03"
+  },
+  {
+    "source": "Solen",
+    "relationship": "unlocks",
+    "target": "Thalion"
+  },
+  {
+    "source": "Thalion",
+    "relationship": "belongs_to",
+    "target": "P03"
+  },
+  {
+    "source": "Thalion",
+    "relationship": "unlocks",
+    "target": "Marion"
+  },
+  {
+    "source": "Marion",
+    "relationship": "belongs_to",
+    "target": "P03"
+  },
+  {
+    "source": "Selion",
+    "relationship": "belongs_to",
+    "target": "P04"
+  },
+  {
+    "source": "Selion",
+    "relationship": "unlocks",
+    "target": "Maviel"
+  },
+  {
+    "source": "Maviel",
+    "relationship": "belongs_to",
+    "target": "P04"
+  },
+  {
+    "source": "Maviel",
+    "relationship": "unlocks",
+    "target": "Tharon"
+  },
+  {
+    "source": "Tharon",
+    "relationship": "belongs_to",
+    "target": "P04"
+  },
+  {
+    "source": "Tharon",
+    "relationship": "unlocks",
+    "target": "Velian"
+  },
+  {
+    "source": "Velian",
+    "relationship": "belongs_to",
+    "target": "P04"
+  },
+  {
+    "source": "Abion",
+    "relationship": "belongs_to",
+    "target": "P05"
+  },
+  {
+    "source": "Abion",
+    "relationship": "unlocks",
+    "target": "Elior"
+  },
+  {
+    "source": "Elior",
+    "relationship": "belongs_to",
+    "target": "P05"
+  },
+  {
+    "source": "Elior",
+    "relationship": "unlocks",
+    "target": "Arielon"
+  },
+  {
+    "source": "Arielon",
+    "relationship": "belongs_to",
+    "target": "P05"
+  },
+  {
+    "source": "Arielon",
+    "relationship": "unlocks",
+    "target": "Beniel"
+  },
+  {
+    "source": "Beniel",
+    "relationship": "belongs_to",
+    "target": "P05"
+  },
+  {
+    "source": "Orimon",
+    "relationship": "belongs_to",
+    "target": "P06"
+  },
+  {
+    "source": "Orimon",
+    "relationship": "unlocks",
+    "target": "Korion"
+  },
+  {
+    "source": "Korion",
+    "relationship": "belongs_to",
+    "target": "P06"
+  },
+  {
+    "source": "Korion",
+    "relationship": "unlocks",
+    "target": "Elvar"
+  },
+  {
+    "source": "Elvar",
+    "relationship": "belongs_to",
+    "target": "P06"
+  },
+  {
+    "source": "Elvar",
+    "relationship": "unlocks",
+    "target": "Theron"
+  },
+  {
+    "source": "Theron",
+    "relationship": "belongs_to",
+    "target": "P06"
+  },
+  {
+    "source": "Nethar",
+    "relationship": "belongs_to",
+    "target": "P07"
+  },
+  {
+    "source": "Nethar",
+    "relationship": "unlocks",
+    "target": "Koriel"
+  },
+  {
+    "source": "Koriel",
+    "relationship": "belongs_to",
+    "target": "P07"
+  },
+  {
+    "source": "Koriel",
+    "relationship": "unlocks",
+    "target": "Shalem"
+  },
+  {
+    "source": "Shalem",
+    "relationship": "belongs_to",
+    "target": "P07"
+  },
+  {
+    "source": "Shalem",
+    "relationship": "unlocks",
+    "target": "Kethor"
+  },
+  {
+    "source": "Kethor",
+    "relationship": "belongs_to",
+    "target": "P07"
+  },
+  {
+    "source": "Themar",
+    "relationship": "belongs_to",
+    "target": "P08"
+  },
+  {
+    "source": "Themar",
+    "relationship": "unlocks",
+    "target": "Sariel"
+  },
+  {
+    "source": "Sariel",
+    "relationship": "belongs_to",
+    "target": "P08"
+  },
+  {
+    "source": "Sariel",
+    "relationship": "unlocks",
+    "target": "Aldor"
+  },
+  {
+    "source": "Aldor",
+    "relationship": "belongs_to",
+    "target": "P08"
+  },
+  {
+    "source": "Aldor",
+    "relationship": "unlocks",
+    "target": "Valion"
+  },
+  {
+    "source": "Valion",
+    "relationship": "belongs_to",
+    "target": "P08"
+  },
+  {
+    "source": "Karion",
+    "relationship": "belongs_to",
+    "target": "P09"
+  },
+  {
+    "source": "Karion",
+    "relationship": "unlocks",
+    "target": "Marion"
+  },
+  {
+    "source": "Marion",
+    "relationship": "belongs_to",
+    "target": "P09"
+  },
+  {
+    "source": "Marion",
+    "relationship": "unlocks",
+    "target": "Sarion"
+  },
+  {
+    "source": "Sarion",
+    "relationship": "belongs_to",
+    "target": "P09"
+  },
+  {
+    "source": "Sarion",
+    "relationship": "unlocks",
+    "target": "Valdor"
+  },
+  {
+    "source": "Valdor",
+    "relationship": "belongs_to",
+    "target": "P09"
+  },
+  {
+    "source": "Talion",
+    "relationship": "belongs_to",
+    "target": "P10"
+  },
+  {
+    "source": "Talion",
+    "relationship": "unlocks",
+    "target": "Orel"
+  },
+  {
+    "source": "Orel",
+    "relationship": "belongs_to",
+    "target": "P10"
+  },
+  {
+    "source": "Orel",
+    "relationship": "unlocks",
+    "target": "Maviel"
+  },
+  {
+    "source": "Maviel",
+    "relationship": "belongs_to",
+    "target": "P10"
+  },
+  {
+    "source": "Maviel",
+    "relationship": "unlocks",
+    "target": "Auren"
+  },
+  {
+    "source": "Auren",
+    "relationship": "belongs_to",
+    "target": "P10"
+  },
+  {
+    "source": "Orimon",
+    "relationship": "belongs_to",
+    "target": "P11"
+  },
+  {
+    "source": "Orimon",
+    "relationship": "unlocks",
+    "target": "Rethor"
+  },
+  {
+    "source": "Rethor",
+    "relationship": "belongs_to",
+    "target": "P11"
+  },
+  {
+    "source": "Rethor",
+    "relationship": "unlocks",
+    "target": "Theron"
+  },
+  {
+    "source": "Theron",
+    "relationship": "belongs_to",
+    "target": "P11"
+  },
+  {
+    "source": "Theron",
+    "relationship": "unlocks",
+    "target": "Tavor"
+  },
+  {
+    "source": "Tavor",
+    "relationship": "belongs_to",
+    "target": "P11"
+  },
+  {
+    "source": "Beniel",
+    "relationship": "belongs_to",
+    "target": "P12"
+  },
+  {
+    "source": "Beniel",
+    "relationship": "unlocks",
+    "target": "Solen"
+  },
+  {
+    "source": "Solen",
+    "relationship": "belongs_to",
+    "target": "P12"
+  },
+  {
+    "source": "Solen",
+    "relationship": "unlocks",
+    "target": "Orimon"
+  },
+  {
+    "source": "Orimon",
+    "relationship": "belongs_to",
+    "target": "P12"
+  },
+  {
+    "source": "Orimon",
+    "relationship": "unlocks",
+    "target": "Sariel"
+  },
+  {
+    "source": "Sariel",
+    "relationship": "belongs_to",
+    "target": "P12"
+  },
+  {
+    "source": "Benor",
+    "relationship": "associated_with",
+    "target": "A01"
+  },
+  {
+    "source": "A01",
+    "relationship": "belongs_to",
+    "target": "Calling"
+  },
+  {
+    "source": "Selion",
+    "relationship": "associated_with",
+    "target": "A02"
+  },
+  {
+    "source": "A02",
+    "relationship": "belongs_to",
+    "target": "Stewardship"
+  },
+  {
+    "source": "Luma",
+    "relationship": "associated_with",
+    "target": "A03"
+  },
+  {
+    "source": "A03",
+    "relationship": "belongs_to",
+    "target": "Wisdom"
+  },
+  {
+    "source": "Zephan",
+    "relationship": "associated_with",
+    "target": "A04"
+  },
+  {
+    "source": "A04",
+    "relationship": "belongs_to",
+    "target": "Healing"
+  },
+  {
+    "source": "Arkel",
+    "relationship": "associated_with",
+    "target": "A05"
+  },
+  {
+    "source": "A05",
+    "relationship": "belongs_to",
+    "target": "Protection"
+  },
+  {
+    "source": "Shalem",
+    "relationship": "associated_with",
+    "target": "A06"
+  },
+  {
+    "source": "A06",
+    "relationship": "belongs_to",
+    "target": "Protection"
+  },
+  {
+    "source": "Maviel",
+    "relationship": "associated_with",
+    "target": "A07"
+  },
+  {
+    "source": "A07",
+    "relationship": "belongs_to",
+    "target": "Stewardship"
+  },
+  {
+    "source": "Tharon",
+    "relationship": "associated_with",
+    "target": "A08"
+  },
+  {
+    "source": "A08",
+    "relationship": "belongs_to",
+    "target": "Stewardship"
+  },
+  {
+    "source": "Solen",
+    "relationship": "associated_with",
+    "target": "A09"
+  },
+  {
+    "source": "A09",
+    "relationship": "belongs_to",
+    "target": "Wisdom"
+  },
+  {
+    "source": "Thalion",
+    "relationship": "associated_with",
+    "target": "A10"
+  },
+  {
+    "source": "A10",
+    "relationship": "belongs_to",
+    "target": "Wisdom"
+  },
+  {
+    "source": "Nethar",
+    "relationship": "associated_with",
+    "target": "A11"
+  },
+  {
+    "source": "A11",
+    "relationship": "belongs_to",
+    "target": "Protection"
+  },
+  {
+    "source": "Arion",
+    "relationship": "associated_with",
+    "target": "A12"
+  },
+  {
+    "source": "A12",
+    "relationship": "belongs_to",
+    "target": "Calling"
+  },
+  {
+    "source": "Velor",
+    "relationship": "associated_with",
+    "target": "A13"
+  },
+  {
+    "source": "A13",
+    "relationship": "belongs_to",
+    "target": "Healing"
+  },
+  {
+    "source": "Korion",
+    "relationship": "associated_with",
+    "target": "A14"
+  },
+  {
+    "source": "A14",
+    "relationship": "belongs_to",
+    "target": "Authority"
+  },
+  {
+    "source": "Kethor",
+    "relationship": "associated_with",
+    "target": "A15"
+  },
+  {
+    "source": "A15",
+    "relationship": "belongs_to",
+    "target": "Protection"
+  },
+  {
+    "source": "Talion",
+    "relationship": "associated_with",
+    "target": "A16"
+  },
+  {
+    "source": "A16",
+    "relationship": "belongs_to",
+    "target": "Service"
+  },
+  {
+    "source": "Theron",
+    "relationship": "associated_with",
+    "target": "A17"
+  },
+  {
+    "source": "A17",
+    "relationship": "belongs_to",
+    "target": "Dominion"
+  },
+  {
+    "source": "Beniel",
+    "relationship": "associated_with",
+    "target": "A18"
+  },
+  {
+    "source": "A18",
+    "relationship": "belongs_to",
+    "target": "Sonship"
+  },
+  {
+    "source": "Auren",
+    "relationship": "associated_with",
+    "target": "A19"
+  },
+  {
+    "source": "A19",
+    "relationship": "belongs_to",
+    "target": "Kingdom Maturity"
+  },
+  {
+    "source": "Renar",
+    "relationship": "associated_with",
+    "target": "A20"
+  },
+  {
+    "source": "A20",
+    "relationship": "belongs_to",
+    "target": "Healing"
+  },
+  {
+    "source": "Kethor",
+    "relationship": "associated_with",
+    "target": "A21"
+  },
+  {
+    "source": "A21",
+    "relationship": "belongs_to",
+    "target": "Dominion"
+  },
+  {
+    "source": "Themar",
+    "relationship": "associated_with",
+    "target": "A22"
+  },
+  {
+    "source": "A22",
+    "relationship": "belongs_to",
+    "target": "Legacy"
+  },
+  {
+    "source": "Arielon",
+    "relationship": "associated_with",
+    "target": "A23"
+  },
+  {
+    "source": "A23",
+    "relationship": "belongs_to",
+    "target": "Sonship"
+  },
+  {
+    "source": "Marion",
+    "relationship": "associated_with",
+    "target": "A24"
+  },
+  {
+    "source": "A24",
+    "relationship": "belongs_to",
+    "target": "Leadership"
+  }
+]

@@ -1,0 +1,3 @@
+body[data-view="book"] :where(.book-saint-page, .book-layout, .book-main) {
+  max-width: 100%;
+}

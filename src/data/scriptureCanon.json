@@ -1,0 +1,3372 @@
+[
+  {
+    "id": "SC001",
+    "teoyubeWord": "Benor",
+    "word": "Benor",
+    "meaning": "Chosen One",
+    "category": "Identity",
+    "scriptureReferences": [
+      "Ephesians 1:4",
+      "1 Peter 2:9",
+      "Jeremiah 1:5"
+    ],
+    "scriptureThemes": [
+      "Chosen",
+      "Identity",
+      "Calling"
+    ],
+    "promiseStatement": "I am chosen by God for divine purpose.",
+    "archetypeLinks": [
+      "A01"
+    ],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Identity"
+    ],
+    "prayerUse": "Identity Prayer",
+    "graphTags": [
+      "chosen",
+      "identity",
+      "calling"
+    ]
+  },
+  {
+    "id": "SC002",
+    "teoyubeWord": "Arion",
+    "word": "Arion",
+    "meaning": "Called One",
+    "category": "Identity",
+    "scriptureReferences": [
+      "Romans 8:30",
+      "2 Timothy 1:9",
+      "1 Corinthians 1:9"
+    ],
+    "scriptureThemes": [
+      "Called",
+      "Grace",
+      "Purpose"
+    ],
+    "promiseStatement": "I am called by grace into God’s purpose.",
+    "archetypeLinks": [
+      "A12"
+    ],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Identity"
+    ],
+    "prayerUse": "Identity Prayer",
+    "graphTags": [
+      "called",
+      "grace",
+      "purpose"
+    ]
+  },
+  {
+    "id": "SC003",
+    "teoyubeWord": "Zareth",
+    "word": "Zareth",
+    "meaning": "Covenant Child",
+    "category": "Identity",
+    "scriptureReferences": [
+      "Genesis 17:7",
+      "Galatians 3:29",
+      "Hebrews 8:10"
+    ],
+    "scriptureThemes": [
+      "Covenant",
+      "Promise",
+      "Belonging"
+    ],
+    "promiseStatement": "I belong to the covenant promises of God.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Identity"
+    ],
+    "prayerUse": "Identity Prayer",
+    "graphTags": [
+      "covenant",
+      "promise",
+      "belonging"
+    ]
+  },
+  {
+    "id": "SC004",
+    "teoyubeWord": "Elion",
+    "word": "Elion",
+    "meaning": "Son of Promise",
+    "category": "Identity",
+    "scriptureReferences": [
+      "Galatians 4:28",
+      "Romans 9:8",
+      "John 1:12"
+    ],
+    "scriptureThemes": [
+      "Sonship",
+      "Promise",
+      "Identity"
+    ],
+    "promiseStatement": "I am a child of promise through God.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Identity"
+    ],
+    "prayerUse": "Identity Prayer",
+    "graphTags": [
+      "sonship",
+      "promise",
+      "identity"
+    ]
+  },
+  {
+    "id": "SC005",
+    "teoyubeWord": "Theon",
+    "word": "Theon",
+    "meaning": "Beloved",
+    "category": "Identity",
+    "scriptureReferences": [
+      "Ephesians 1:6",
+      "Colossians 3:12",
+      "1 John 3:1"
+    ],
+    "scriptureThemes": [
+      "Beloved",
+      "Accepted",
+      "Love"
+    ],
+    "promiseStatement": "I am loved and accepted by God.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Identity"
+    ],
+    "prayerUse": "Identity Prayer",
+    "graphTags": [
+      "beloved",
+      "accepted",
+      "love"
+    ]
+  },
+  {
+    "id": "SC006",
+    "teoyubeWord": "Luma",
+    "word": "Luma",
+    "meaning": "Light",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "John 8:12",
+      "Matthew 5:14",
+      "Psalm 119:105"
+    ],
+    "scriptureThemes": [
+      "Light",
+      "Guidance",
+      "Truth"
+    ],
+    "promiseStatement": "God’s light guides me and shines through me.",
+    "archetypeLinks": [
+      "A03"
+    ],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "light",
+      "guidance",
+      "truth"
+    ]
+  },
+  {
+    "id": "SC007",
+    "teoyubeWord": "Kairo",
+    "word": "Kairo",
+    "meaning": "Divine Timing",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Ecclesiastes 3:1",
+      "Galatians 4:4",
+      "Habakkuk 2:3"
+    ],
+    "scriptureThemes": [
+      "Timing",
+      "Season",
+      "Promise"
+    ],
+    "promiseStatement": "God appoints the right time for every promise.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "timing",
+      "season",
+      "promise"
+    ]
+  },
+  {
+    "id": "SC008",
+    "teoyubeWord": "Shalem",
+    "word": "Shalem",
+    "meaning": "Peace",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "John 14:27",
+      "Philippians 4:7",
+      "Isaiah 26:3"
+    ],
+    "scriptureThemes": [
+      "Peace",
+      "Rest",
+      "Security"
+    ],
+    "promiseStatement": "The peace of God guards my heart and mind.",
+    "archetypeLinks": [
+      "A06"
+    ],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "peace",
+      "rest",
+      "security"
+    ]
+  },
+  {
+    "id": "SC009",
+    "teoyubeWord": "Nethar",
+    "word": "Nethar",
+    "meaning": "Protection",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Psalm 91:1-2",
+      "Psalm 121:7-8",
+      "2 Thessalonians 3:3"
+    ],
+    "scriptureThemes": [
+      "Protection",
+      "Refuge",
+      "Covering"
+    ],
+    "promiseStatement": "The Lord is my refuge and protector.",
+    "archetypeLinks": [
+      "A11"
+    ],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "protection",
+      "refuge",
+      "covering"
+    ]
+  },
+  {
+    "id": "SC010",
+    "teoyubeWord": "Solen",
+    "word": "Solen",
+    "meaning": "Wisdom",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "James 1:5",
+      "Proverbs 2:6",
+      "Colossians 2:3"
+    ],
+    "scriptureThemes": [
+      "Wisdom",
+      "Understanding",
+      "Guidance"
+    ],
+    "promiseStatement": "God gives me wisdom for every path.",
+    "archetypeLinks": [
+      "A09"
+    ],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "wisdom",
+      "understanding",
+      "guidance"
+    ]
+  },
+  {
+    "id": "SC011",
+    "teoyubeWord": "Renar",
+    "word": "Renar",
+    "meaning": "Renewal",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Romans 12:2",
+      "2 Corinthians 4:16",
+      "Titus 3:5"
+    ],
+    "scriptureThemes": [
+      "Renewal",
+      "Mind",
+      "Transformation"
+    ],
+    "promiseStatement": "God renews my mind, spirit, and life.",
+    "archetypeLinks": [
+      "A20"
+    ],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "renewal",
+      "mind",
+      "transformation"
+    ]
+  },
+  {
+    "id": "SC012",
+    "teoyubeWord": "Thavon",
+    "word": "Thavon",
+    "meaning": "Refinement",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Malachi 3:3",
+      "Zechariah 13:9",
+      "1 Peter 1:7"
+    ],
+    "scriptureThemes": [
+      "Refinement",
+      "Purity",
+      "Growth"
+    ],
+    "promiseStatement": "God refines me for purity and purpose.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "refinement",
+      "purity",
+      "growth"
+    ]
+  },
+  {
+    "id": "SC013",
+    "teoyubeWord": "Velor",
+    "word": "Velor",
+    "meaning": "Restoration",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Joel 2:25",
+      "Psalm 23:3",
+      "1 Peter 5:10"
+    ],
+    "scriptureThemes": [
+      "Restoration",
+      "Healing",
+      "Wholeness"
+    ],
+    "promiseStatement": "God restores what was broken and lost.",
+    "archetypeLinks": [
+      "A13"
+    ],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "restoration",
+      "healing",
+      "wholeness"
+    ]
+  },
+  {
+    "id": "SC014",
+    "teoyubeWord": "Zephan",
+    "word": "Zephan",
+    "meaning": "Healing",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Isaiah 53:5",
+      "Psalm 147:3",
+      "Jeremiah 30:17"
+    ],
+    "scriptureThemes": [
+      "Healing",
+      "Restoration",
+      "Comfort"
+    ],
+    "promiseStatement": "The Lord heals my wounds and restores my strength.",
+    "archetypeLinks": [
+      "A04"
+    ],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "healing",
+      "restoration",
+      "comfort"
+    ]
+  },
+  {
+    "id": "SC015",
+    "teoyubeWord": "Koriel",
+    "word": "Koriel",
+    "meaning": "Strengthening",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Isaiah 40:31",
+      "Philippians 4:13",
+      "Ephesians 3:16"
+    ],
+    "scriptureThemes": [
+      "Strength",
+      "Endurance",
+      "Power"
+    ],
+    "promiseStatement": "God strengthens me by His Spirit.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "strength",
+      "endurance",
+      "power"
+    ]
+  },
+  {
+    "id": "SC016",
+    "teoyubeWord": "Taviel",
+    "word": "Taviel",
+    "meaning": "Purpose",
+    "category": "Inheritance",
+    "scriptureReferences": [
+      "Romans 8:28",
+      "Ephesians 2:10",
+      "Proverbs 19:21"
+    ],
+    "scriptureThemes": [
+      "Purpose",
+      "Destiny",
+      "Calling"
+    ],
+    "promiseStatement": "My life is shaped by God’s purpose.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P08"
+    ],
+    "clusterLinks": [
+      "Inheritance"
+    ],
+    "prayerUse": "Inheritance Prayer",
+    "graphTags": [
+      "purpose",
+      "destiny",
+      "calling"
+    ]
+  },
+  {
+    "id": "SC017",
+    "teoyubeWord": "Eldor",
+    "word": "Eldor",
+    "meaning": "Dominion",
+    "category": "Inheritance",
+    "scriptureReferences": [
+      "Genesis 1:28",
+      "Psalm 8:6",
+      "Revelation 5:10"
+    ],
+    "scriptureThemes": [
+      "Dominion",
+      "Authority",
+      "Assignment"
+    ],
+    "promiseStatement": "God entrusts me with righteous dominion.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P08"
+    ],
+    "clusterLinks": [
+      "Inheritance"
+    ],
+    "prayerUse": "Inheritance Prayer",
+    "graphTags": [
+      "dominion",
+      "authority",
+      "assignment"
+    ]
+  },
+  {
+    "id": "SC018",
+    "teoyubeWord": "Valion",
+    "word": "Valion",
+    "meaning": "Reward",
+    "category": "Inheritance",
+    "scriptureReferences": [
+      "Hebrews 11:6",
+      "Colossians 3:24",
+      "Revelation 22:12"
+    ],
+    "scriptureThemes": [
+      "Reward",
+      "Faithfulness",
+      "Inheritance"
+    ],
+    "promiseStatement": "God rewards faithful obedience.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P08"
+    ],
+    "clusterLinks": [
+      "Inheritance"
+    ],
+    "prayerUse": "Inheritance Prayer",
+    "graphTags": [
+      "reward",
+      "faithfulness",
+      "inheritance"
+    ]
+  },
+  {
+    "id": "SC019",
+    "teoyubeWord": "Auren",
+    "word": "Auren",
+    "meaning": "Fruitfulness",
+    "category": "Manifestation",
+    "scriptureReferences": [
+      "John 15:5",
+      "Psalm 1:3",
+      "Galatians 5:22"
+    ],
+    "scriptureThemes": [
+      "Fruitfulness",
+      "Growth",
+      "Manifestation"
+    ],
+    "promiseStatement": "My life bears fruit through God’s grace.",
+    "archetypeLinks": [
+      "A19"
+    ],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Manifestation"
+    ],
+    "prayerUse": "Manifestation Prayer",
+    "graphTags": [
+      "fruitfulness",
+      "growth",
+      "manifestation"
+    ]
+  },
+  {
+    "id": "SC020",
+    "teoyubeWord": "Mirath",
+    "word": "Mirath",
+    "meaning": "Increase",
+    "category": "Manifestation",
+    "scriptureReferences": [
+      "Isaiah 54:2-3",
+      "2 Corinthians 9:10",
+      "Genesis 26:12"
+    ],
+    "scriptureThemes": [
+      "Increase",
+      "Growth",
+      "Multiplication"
+    ],
+    "promiseStatement": "God brings increase according to His will.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Manifestation"
+    ],
+    "prayerUse": "Manifestation Prayer",
+    "graphTags": [
+      "increase",
+      "growth",
+      "multiplication"
+    ]
+  },
+  {
+    "id": "SC021",
+    "teoyubeWord": "Kethor",
+    "word": "Kethor",
+    "meaning": "Victory",
+    "category": "Manifestation",
+    "scriptureReferences": [
+      "1 Corinthians 15:57",
+      "Romans 8:37",
+      "1 John 5:4"
+    ],
+    "scriptureThemes": [
+      "Victory",
+      "Overcoming",
+      "Faith"
+    ],
+    "promiseStatement": "God leads me into victory through faith.",
+    "archetypeLinks": [
+      "A15"
+    ],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Manifestation"
+    ],
+    "prayerUse": "Manifestation Prayer",
+    "graphTags": [
+      "victory",
+      "overcoming",
+      "faith"
+    ]
+  },
+  {
+    "id": "SC022",
+    "teoyubeWord": "Solion",
+    "word": "Solion",
+    "meaning": "Overflow",
+    "category": "Manifestation",
+    "scriptureReferences": [
+      "Psalm 23:5",
+      "John 7:38",
+      "2 Corinthians 9:8"
+    ],
+    "scriptureThemes": [
+      "Overflow",
+      "Abundance",
+      "Grace"
+    ],
+    "promiseStatement": "God’s grace causes overflow in my life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Manifestation"
+    ],
+    "prayerUse": "Manifestation Prayer",
+    "graphTags": [
+      "overflow",
+      "abundance",
+      "grace"
+    ]
+  },
+  {
+    "id": "SC023",
+    "teoyubeWord": "Vareth",
+    "word": "Vareth",
+    "meaning": "Completion",
+    "category": "Manifestation",
+    "scriptureReferences": [
+      "Philippians 1:6",
+      "Hebrews 12:2",
+      "James 1:4"
+    ],
+    "scriptureThemes": [
+      "Completion",
+      "Maturity",
+      "Fulfillment"
+    ],
+    "promiseStatement": "God completes the good work He began in me.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Manifestation"
+    ],
+    "prayerUse": "Manifestation Prayer",
+    "graphTags": [
+      "completion",
+      "maturity",
+      "fulfillment"
+    ]
+  },
+  {
+    "id": "SC024",
+    "teoyubeWord": "Abion",
+    "word": "Abion",
+    "meaning": "Adopted Son",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Romans 8:15",
+      "Galatians 4:5",
+      "Ephesians 1:5"
+    ],
+    "scriptureThemes": [
+      "Adoption",
+      "Sonship",
+      "Father"
+    ],
+    "promiseStatement": "I have received the spirit of adoption.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "adoption",
+      "sonship",
+      "father"
+    ]
+  },
+  {
+    "id": "SC025",
+    "teoyubeWord": "Elior",
+    "word": "Elior",
+    "meaning": "Beloved Child",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "1 John 3:1",
+      "Ephesians 5:1",
+      "Matthew 3:17"
+    ],
+    "scriptureThemes": [
+      "Beloved",
+      "Child",
+      "Love"
+    ],
+    "promiseStatement": "I am loved as a child of God.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "beloved",
+      "child",
+      "love"
+    ]
+  },
+  {
+    "id": "SC026",
+    "teoyubeWord": "Themar",
+    "word": "Themar",
+    "meaning": "Heir",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Romans 8:17",
+      "Galatians 4:7",
+      "Titus 3:7"
+    ],
+    "scriptureThemes": [
+      "Heir",
+      "Inheritance",
+      "Promise"
+    ],
+    "promiseStatement": "I am an heir of God’s promises.",
+    "archetypeLinks": [
+      "A22"
+    ],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "heir",
+      "inheritance",
+      "promise"
+    ]
+  },
+  {
+    "id": "SC027",
+    "teoyubeWord": "Zaviel",
+    "word": "Zaviel",
+    "meaning": "Accepted One",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Ephesians 1:6",
+      "Romans 15:7",
+      "Colossians 1:22"
+    ],
+    "scriptureThemes": [
+      "Accepted",
+      "Grace",
+      "Belonging"
+    ],
+    "promiseStatement": "I am accepted in God’s beloved Son.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "accepted",
+      "grace",
+      "belonging"
+    ]
+  },
+  {
+    "id": "SC028",
+    "teoyubeWord": "Oren",
+    "word": "Oren",
+    "meaning": "Family Covenant",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Ephesians 2:19",
+      "Hebrews 8:10",
+      "2 Corinthians 6:18"
+    ],
+    "scriptureThemes": [
+      "Family",
+      "Covenant",
+      "Household"
+    ],
+    "promiseStatement": "I belong to the household of God.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "family",
+      "covenant",
+      "household"
+    ]
+  },
+  {
+    "id": "SC029",
+    "teoyubeWord": "Avaron",
+    "word": "Avaron",
+    "meaning": "Firstborn",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Romans 8:29",
+      "Colossians 1:18",
+      "Hebrews 12:23"
+    ],
+    "scriptureThemes": [
+      "Firstborn",
+      "Inheritance",
+      "Christ"
+    ],
+    "promiseStatement": "I share in the inheritance of Christ the Firstborn.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "firstborn",
+      "inheritance",
+      "christ"
+    ]
+  },
+  {
+    "id": "SC030",
+    "teoyubeWord": "Melion",
+    "word": "Melion",
+    "meaning": "Royal Child",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "1 Peter 2:9",
+      "Revelation 1:6",
+      "Psalm 45:13"
+    ],
+    "scriptureThemes": [
+      "Royal",
+      "Kingdom",
+      "Identity"
+    ],
+    "promiseStatement": "I carry royal identity in God’s Kingdom.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "royal",
+      "kingdom",
+      "identity"
+    ]
+  },
+  {
+    "id": "SC031",
+    "teoyubeWord": "Thalion",
+    "word": "Thalion",
+    "meaning": "Intimacy",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "John 15:15",
+      "James 4:8",
+      "Psalm 27:4"
+    ],
+    "scriptureThemes": [
+      "Intimacy",
+      "Friendship",
+      "Presence"
+    ],
+    "promiseStatement": "God draws me near into friendship and intimacy.",
+    "archetypeLinks": [
+      "A10"
+    ],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "intimacy",
+      "friendship",
+      "presence"
+    ]
+  },
+  {
+    "id": "SC032",
+    "teoyubeWord": "Ruviel",
+    "word": "Ruviel",
+    "meaning": "Known by Name",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Isaiah 43:1",
+      "John 10:3",
+      "Exodus 33:17"
+    ],
+    "scriptureThemes": [
+      "Known",
+      "Name",
+      "Identity"
+    ],
+    "promiseStatement": "God knows me by name.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "known",
+      "name",
+      "identity"
+    ]
+  },
+  {
+    "id": "SC033",
+    "teoyubeWord": "Nareth",
+    "word": "Nareth",
+    "meaning": "Belonging",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Romans 14:8",
+      "1 Corinthians 6:19-20",
+      "Ephesians 2:19"
+    ],
+    "scriptureThemes": [
+      "Belonging",
+      "Family",
+      "Identity"
+    ],
+    "promiseStatement": "I belong to the Lord.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "belonging",
+      "family",
+      "identity"
+    ]
+  },
+  {
+    "id": "SC034",
+    "teoyubeWord": "Arielon",
+    "word": "Arielon",
+    "meaning": "Son of Light",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "1 Thessalonians 5:5",
+      "Ephesians 5:8",
+      "John 12:36"
+    ],
+    "scriptureThemes": [
+      "Light",
+      "Sonship",
+      "Walk"
+    ],
+    "promiseStatement": "I walk as a child of light.",
+    "archetypeLinks": [
+      "A23"
+    ],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "light",
+      "sonship",
+      "walk"
+    ]
+  },
+  {
+    "id": "SC035",
+    "teoyubeWord": "Beniel",
+    "word": "Beniel",
+    "meaning": "True Son",
+    "category": "Sonship",
+    "scriptureReferences": [
+      "Romans 8:14",
+      "Hebrews 12:7",
+      "Galatians 3:26"
+    ],
+    "scriptureThemes": [
+      "Sonship",
+      "Spirit",
+      "Identity"
+    ],
+    "promiseStatement": "I am led by the Spirit as a true son of God.",
+    "archetypeLinks": [
+      "A18"
+    ],
+    "pathLinks": [
+      "P05"
+    ],
+    "clusterLinks": [
+      "Sonship"
+    ],
+    "prayerUse": "Sonship Prayer",
+    "graphTags": [
+      "sonship",
+      "spirit",
+      "identity"
+    ]
+  },
+  {
+    "id": "SC036",
+    "teoyubeWord": "Orimon",
+    "word": "Orimon",
+    "meaning": "Authority",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Luke 10:19",
+      "Matthew 28:18-19",
+      "Ephesians 1:21"
+    ],
+    "scriptureThemes": [
+      "Authority",
+      "Commission",
+      "Kingdom"
+    ],
+    "promiseStatement": "Christ gives authority for Kingdom assignment.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "authority",
+      "commission",
+      "kingdom"
+    ]
+  },
+  {
+    "id": "SC037",
+    "teoyubeWord": "Valdor",
+    "word": "Valdor",
+    "meaning": "Government",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Isaiah 9:6-7",
+      "Daniel 7:14",
+      "Revelation 11:15"
+    ],
+    "scriptureThemes": [
+      "Government",
+      "Kingdom",
+      "Rule"
+    ],
+    "promiseStatement": "God’s government is righteous and everlasting.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "government",
+      "kingdom",
+      "rule"
+    ]
+  },
+  {
+    "id": "SC038",
+    "teoyubeWord": "Karion",
+    "word": "Karion",
+    "meaning": "Leadership",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Romans 12:8",
+      "1 Timothy 3:1-2",
+      "Proverbs 11:14"
+    ],
+    "scriptureThemes": [
+      "Leadership",
+      "Service",
+      "Wisdom"
+    ],
+    "promiseStatement": "God equips leaders to serve with wisdom.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "leadership",
+      "service",
+      "wisdom"
+    ]
+  },
+  {
+    "id": "SC039",
+    "teoyubeWord": "Theron",
+    "word": "Theron",
+    "meaning": "Kingdom Rule",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Revelation 5:10",
+      "Psalm 110:2",
+      "Daniel 7:27"
+    ],
+    "scriptureThemes": [
+      "Kingdom",
+      "Rule",
+      "Dominion"
+    ],
+    "promiseStatement": "God establishes righteous Kingdom rule.",
+    "archetypeLinks": [
+      "A17"
+    ],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "kingdom",
+      "rule",
+      "dominion"
+    ]
+  },
+  {
+    "id": "SC040",
+    "teoyubeWord": "Zorath",
+    "word": "Zorath",
+    "meaning": "Judgment",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Isaiah 11:3-4",
+      "Psalm 89:14",
+      "John 7:24"
+    ],
+    "scriptureThemes": [
+      "Judgment",
+      "Justice",
+      "Truth"
+    ],
+    "promiseStatement": "God teaches me righteous judgment.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "judgment",
+      "justice",
+      "truth"
+    ]
+  },
+  {
+    "id": "SC041",
+    "teoyubeWord": "Marion",
+    "word": "Marion",
+    "meaning": "Influence",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Matthew 5:16",
+      "Daniel 6:3",
+      "1 Timothy 4:12"
+    ],
+    "scriptureThemes": [
+      "Influence",
+      "Witness",
+      "Glory"
+    ],
+    "promiseStatement": "My life influences others for God’s glory.",
+    "archetypeLinks": [
+      "A24"
+    ],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "influence",
+      "witness",
+      "glory"
+    ]
+  },
+  {
+    "id": "SC042",
+    "teoyubeWord": "Korion",
+    "word": "Korion",
+    "meaning": "Command",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Mark 11:23",
+      "Matthew 8:8-10",
+      "Joshua 10:12"
+    ],
+    "scriptureThemes": [
+      "Command",
+      "Faith",
+      "Authority"
+    ],
+    "promiseStatement": "Faith-filled obedience carries Kingdom command.",
+    "archetypeLinks": [
+      "A14"
+    ],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "command",
+      "faith",
+      "authority"
+    ]
+  },
+  {
+    "id": "SC043",
+    "teoyubeWord": "Elvar",
+    "word": "Elvar",
+    "meaning": "Decree",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Job 22:28",
+      "Esther 8:8",
+      "Psalm 2:7"
+    ],
+    "scriptureThemes": [
+      "Decree",
+      "Word",
+      "Authority"
+    ],
+    "promiseStatement": "God establishes righteous decrees according to His word.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "decree",
+      "word",
+      "authority"
+    ]
+  },
+  {
+    "id": "SC044",
+    "teoyubeWord": "Rethor",
+    "word": "Rethor",
+    "meaning": "Dominion",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Genesis 1:28",
+      "Psalm 8:6",
+      "Luke 19:17"
+    ],
+    "scriptureThemes": [
+      "Dominion",
+      "Stewardship",
+      "Rule"
+    ],
+    "promiseStatement": "God entrusts dominion to faithful servants.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "dominion",
+      "stewardship",
+      "rule"
+    ]
+  },
+  {
+    "id": "SC045",
+    "teoyubeWord": "Sarion",
+    "word": "Sarion",
+    "meaning": "Responsibility",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Luke 12:48",
+      "1 Corinthians 4:2",
+      "James 3:1"
+    ],
+    "scriptureThemes": [
+      "Responsibility",
+      "Faithfulness",
+      "Leadership"
+    ],
+    "promiseStatement": "Authority requires faithful responsibility.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "responsibility",
+      "faithfulness",
+      "leadership"
+    ]
+  },
+  {
+    "id": "SC046",
+    "teoyubeWord": "Tavor",
+    "word": "Tavor",
+    "meaning": "Kingdom Order",
+    "category": "Authority",
+    "scriptureReferences": [
+      "1 Corinthians 14:40",
+      "Colossians 1:16-17",
+      "Titus 1:5"
+    ],
+    "scriptureThemes": [
+      "Order",
+      "Structure",
+      "Kingdom"
+    ],
+    "promiseStatement": "God brings order, structure, and peace.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "order",
+      "structure",
+      "kingdom"
+    ]
+  },
+  {
+    "id": "SC047",
+    "teoyubeWord": "Arkel",
+    "word": "Arkel",
+    "meaning": "Gatekeeper",
+    "category": "Authority",
+    "scriptureReferences": [
+      "Nehemiah 7:1",
+      "Isaiah 62:6",
+      "Psalm 84:10"
+    ],
+    "scriptureThemes": [
+      "Gatekeeper",
+      "Watchman",
+      "Protection"
+    ],
+    "promiseStatement": "God appoints watchmen and gatekeepers for His house.",
+    "archetypeLinks": [
+      "A05"
+    ],
+    "pathLinks": [
+      "P06"
+    ],
+    "clusterLinks": [
+      "Authority"
+    ],
+    "prayerUse": "Authority Prayer",
+    "graphTags": [
+      "gatekeeper",
+      "watchman",
+      "protection"
+    ]
+  },
+  {
+    "id": "SC048",
+    "teoyubeWord": "Selion",
+    "word": "Selion",
+    "meaning": "Steward",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "1 Peter 4:10",
+      "1 Corinthians 4:2",
+      "Genesis 2:15"
+    ],
+    "scriptureThemes": [
+      "Stewardship",
+      "Faithfulness",
+      "Service"
+    ],
+    "promiseStatement": "I steward what God has entrusted to me.",
+    "archetypeLinks": [
+      "A02"
+    ],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "stewardship",
+      "faithfulness",
+      "service"
+    ]
+  },
+  {
+    "id": "SC049",
+    "teoyubeWord": "Maviel",
+    "word": "Maviel",
+    "meaning": "Faithful Management",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Luke 16:10",
+      "Matthew 25:21",
+      "Proverbs 27:23"
+    ],
+    "scriptureThemes": [
+      "Management",
+      "Faithfulness",
+      "Trust"
+    ],
+    "promiseStatement": "God makes me faithful in what He gives.",
+    "archetypeLinks": [
+      "A07"
+    ],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "management",
+      "faithfulness",
+      "trust"
+    ]
+  },
+  {
+    "id": "SC050",
+    "teoyubeWord": "Tharon",
+    "word": "Tharon",
+    "meaning": "Cultivation",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Galatians 6:9",
+      "Genesis 2:15",
+      "Mark 4:20"
+    ],
+    "scriptureThemes": [
+      "Cultivation",
+      "Growth",
+      "Seed"
+    ],
+    "promiseStatement": "I cultivate what God plants in my life.",
+    "archetypeLinks": [
+      "A08"
+    ],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "cultivation",
+      "growth",
+      "seed"
+    ]
+  },
+  {
+    "id": "SC051",
+    "teoyubeWord": "Velian",
+    "word": "Velian",
+    "meaning": "Multiplication",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Matthew 25:20-21",
+      "Genesis 1:28",
+      "2 Corinthians 9:10"
+    ],
+    "scriptureThemes": [
+      "Multiplication",
+      "Fruitfulness",
+      "Increase"
+    ],
+    "promiseStatement": "God multiplies faithful stewardship.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "multiplication",
+      "fruitfulness",
+      "increase"
+    ]
+  },
+  {
+    "id": "SC052",
+    "teoyubeWord": "Noriel",
+    "word": "Noriel",
+    "meaning": "Provision",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Philippians 4:19",
+      "Psalm 23:1",
+      "Matthew 6:31-33"
+    ],
+    "scriptureThemes": [
+      "Provision",
+      "Supply",
+      "Trust"
+    ],
+    "promiseStatement": "God supplies all I need according to His riches.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "provision",
+      "supply",
+      "trust"
+    ]
+  },
+  {
+    "id": "SC053",
+    "teoyubeWord": "Talion",
+    "word": "Talion",
+    "meaning": "Service",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Mark 10:45",
+      "Galatians 5:13",
+      "1 Peter 4:10"
+    ],
+    "scriptureThemes": [
+      "Service",
+      "Humility",
+      "Grace"
+    ],
+    "promiseStatement": "I serve others with the grace God gives.",
+    "archetypeLinks": [
+      "A16"
+    ],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "service",
+      "humility",
+      "grace"
+    ]
+  },
+  {
+    "id": "SC054",
+    "teoyubeWord": "Verath",
+    "word": "Verath",
+    "meaning": "Accountability",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Romans 14:12",
+      "2 Corinthians 5:10",
+      "Luke 16:2"
+    ],
+    "scriptureThemes": [
+      "Accountability",
+      "Faithfulness",
+      "Judgment"
+    ],
+    "promiseStatement": "I live faithfully before God who sees all.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "accountability",
+      "faithfulness",
+      "judgment"
+    ]
+  },
+  {
+    "id": "SC055",
+    "teoyubeWord": "Orel",
+    "word": "Orel",
+    "meaning": "Trust",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Proverbs 3:5-6",
+      "Psalm 37:5",
+      "Isaiah 26:4"
+    ],
+    "scriptureThemes": [
+      "Trust",
+      "Faith",
+      "Surrender"
+    ],
+    "promiseStatement": "I trust the Lord with all my heart.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "trust",
+      "faith",
+      "surrender"
+    ]
+  },
+  {
+    "id": "SC056",
+    "teoyubeWord": "Kavion",
+    "word": "Kavion",
+    "meaning": "Increase",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Psalm 115:14",
+      "Isaiah 54:2-3",
+      "1 Corinthians 3:6"
+    ],
+    "scriptureThemes": [
+      "Increase",
+      "Growth",
+      "Blessing"
+    ],
+    "promiseStatement": "God gives increase in His appointed way.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "increase",
+      "growth",
+      "blessing"
+    ]
+  },
+  {
+    "id": "SC057",
+    "teoyubeWord": "Aldor",
+    "word": "Aldor",
+    "meaning": "Custodian",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Genesis 2:15",
+      "Numbers 3:7-8",
+      "1 Chronicles 9:26"
+    ],
+    "scriptureThemes": [
+      "Custodian",
+      "Care",
+      "Assignment"
+    ],
+    "promiseStatement": "I guard and care for what God assigns to me.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "custodian",
+      "care",
+      "assignment"
+    ]
+  },
+  {
+    "id": "SC058",
+    "teoyubeWord": "Sariel",
+    "word": "Sariel",
+    "meaning": "Legacy",
+    "category": "Stewardship",
+    "scriptureReferences": [
+      "Psalm 112:1-2",
+      "Proverbs 13:22",
+      "2 Timothy 2:2"
+    ],
+    "scriptureThemes": [
+      "Legacy",
+      "Generations",
+      "Inheritance"
+    ],
+    "promiseStatement": "God establishes a righteous legacy through my life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P04"
+    ],
+    "clusterLinks": [
+      "Stewardship"
+    ],
+    "prayerUse": "Stewardship Prayer",
+    "graphTags": [
+      "legacy",
+      "generations",
+      "inheritance"
+    ]
+  },
+  {
+    "id": "SC059",
+    "teoyubeWord": "Norah",
+    "word": "Norah",
+    "meaning": "Grace",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Ephesians 2:8",
+      "2 Corinthians 12:9",
+      "John 1:16"
+    ],
+    "scriptureThemes": [
+      "Grace",
+      "Strength",
+      "Salvation"
+    ],
+    "promiseStatement": "God’s grace is sufficient for me.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "grace",
+      "strength",
+      "salvation"
+    ]
+  },
+  {
+    "id": "SC060",
+    "teoyubeWord": "Emeth",
+    "word": "Emeth",
+    "meaning": "Truth",
+    "category": "Promise",
+    "scriptureReferences": [
+      "John 8:32",
+      "John 14:6",
+      "Psalm 25:5"
+    ],
+    "scriptureThemes": [
+      "Truth",
+      "Freedom",
+      "Guidance"
+    ],
+    "promiseStatement": "God leads me in truth.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "truth",
+      "freedom",
+      "guidance"
+    ]
+  },
+  {
+    "id": "SC061",
+    "teoyubeWord": "Rhema",
+    "word": "Rhema",
+    "meaning": "Living Word",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Matthew 4:4",
+      "Hebrews 4:12",
+      "Romans 10:17"
+    ],
+    "scriptureThemes": [
+      "Word",
+      "Faith",
+      "Life"
+    ],
+    "promiseStatement": "God’s living word strengthens my faith.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "word",
+      "faith",
+      "life"
+    ]
+  },
+  {
+    "id": "SC062",
+    "teoyubeWord": "Chesed",
+    "word": "Chesed",
+    "meaning": "Covenant Mercy",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Lamentations 3:22-23",
+      "Psalm 136:1",
+      "Micah 7:18"
+    ],
+    "scriptureThemes": [
+      "Mercy",
+      "Covenant",
+      "Faithfulness"
+    ],
+    "promiseStatement": "God’s covenant mercy never fails.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "mercy",
+      "covenant",
+      "faithfulness"
+    ]
+  },
+  {
+    "id": "SC063",
+    "teoyubeWord": "Pneuma",
+    "word": "Pneuma",
+    "meaning": "Spirit Breath",
+    "category": "Promise",
+    "scriptureReferences": [
+      "John 20:22",
+      "Ezekiel 37:5",
+      "Acts 2:2"
+    ],
+    "scriptureThemes": [
+      "Spirit",
+      "Breath",
+      "Life"
+    ],
+    "promiseStatement": "The Spirit gives life and breath.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "spirit",
+      "breath",
+      "life"
+    ]
+  },
+  {
+    "id": "SC064",
+    "teoyubeWord": "Doxa",
+    "word": "Doxa",
+    "meaning": "Glory",
+    "category": "Promise",
+    "scriptureReferences": [
+      "2 Corinthians 3:18",
+      "Romans 8:18",
+      "Isaiah 60:1"
+    ],
+    "scriptureThemes": [
+      "Glory",
+      "Transformation",
+      "Light"
+    ],
+    "promiseStatement": "God transforms me from glory to glory.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "glory",
+      "transformation",
+      "light"
+    ]
+  },
+  {
+    "id": "SC065",
+    "teoyubeWord": "Charon",
+    "word": "Charon",
+    "meaning": "Gift",
+    "category": "Promise",
+    "scriptureReferences": [
+      "James 1:17",
+      "Romans 12:6",
+      "1 Peter 4:10"
+    ],
+    "scriptureThemes": [
+      "Gift",
+      "Grace",
+      "Calling"
+    ],
+    "promiseStatement": "Every good gift comes from God.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "gift",
+      "grace",
+      "calling"
+    ]
+  },
+  {
+    "id": "SC066",
+    "teoyubeWord": "Melek",
+    "word": "Melek",
+    "meaning": "Kingdom",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Matthew 6:33",
+      "Luke 12:32",
+      "Colossians 1:13"
+    ],
+    "scriptureThemes": [
+      "Kingdom",
+      "Seek",
+      "Purpose"
+    ],
+    "promiseStatement": "God brings me into His Kingdom purpose.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "kingdom",
+      "seek",
+      "purpose"
+    ]
+  },
+  {
+    "id": "SC067",
+    "teoyubeWord": "Yarah",
+    "word": "Yarah",
+    "meaning": "Instruction",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Psalm 32:8",
+      "Proverbs 4:11",
+      "Isaiah 30:21"
+    ],
+    "scriptureThemes": [
+      "Instruction",
+      "Guidance",
+      "Wisdom"
+    ],
+    "promiseStatement": "God instructs me in the way I should go.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "instruction",
+      "guidance",
+      "wisdom"
+    ]
+  },
+  {
+    "id": "SC068",
+    "teoyubeWord": "Hazon",
+    "word": "Hazon",
+    "meaning": "Vision",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Habakkuk 2:2",
+      "Proverbs 29:18",
+      "Acts 2:17"
+    ],
+    "scriptureThemes": [
+      "Vision",
+      "Purpose",
+      "Revelation"
+    ],
+    "promiseStatement": "God gives vision for His appointed purpose.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "vision",
+      "purpose",
+      "revelation"
+    ]
+  },
+  {
+    "id": "SC069",
+    "teoyubeWord": "Ezer",
+    "word": "Ezer",
+    "meaning": "Divine Help",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Psalm 121:1-2",
+      "Hebrews 13:6",
+      "Isaiah 41:10"
+    ],
+    "scriptureThemes": [
+      "Help",
+      "Strength",
+      "Presence"
+    ],
+    "promiseStatement": "The Lord is my helper.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "help",
+      "strength",
+      "presence"
+    ]
+  },
+  {
+    "id": "SC070",
+    "teoyubeWord": "Yovel",
+    "word": "Yovel",
+    "meaning": "Release",
+    "category": "Promise",
+    "scriptureReferences": [
+      "Luke 4:18",
+      "Leviticus 25:10",
+      "Isaiah 61:1"
+    ],
+    "scriptureThemes": [
+      "Release",
+      "Freedom",
+      "Deliverance"
+    ],
+    "promiseStatement": "God releases captives into freedom.",
+    "archetypeLinks": [],
+    "pathLinks": [],
+    "clusterLinks": [
+      "Promise"
+    ],
+    "prayerUse": "Promise Prayer",
+    "graphTags": [
+      "release",
+      "freedom",
+      "deliverance"
+    ]
+  },
+  {
+    "id": "SC071",
+    "teoyubeWord": "Zionel",
+    "word": "Zionel",
+    "meaning": "Dwelling Place",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Psalm 84:1-2",
+      "John 15:4",
+      "Ephesians 2:22"
+    ],
+    "scriptureThemes": [
+      "Dwelling",
+      "Presence",
+      "Abiding"
+    ],
+    "promiseStatement": "God makes me His dwelling place.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "dwelling",
+      "presence",
+      "abiding"
+    ]
+  },
+  {
+    "id": "SC072",
+    "teoyubeWord": "Hadriel",
+    "word": "Hadriel",
+    "meaning": "Majesty",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Psalm 145:5",
+      "Hebrews 1:3",
+      "Jude 1:25"
+    ],
+    "scriptureThemes": [
+      "Majesty",
+      "Glory",
+      "Worship"
+    ],
+    "promiseStatement": "God’s majesty covers all creation.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "majesty",
+      "glory",
+      "worship"
+    ]
+  },
+  {
+    "id": "SC073",
+    "teoyubeWord": "Mizrah",
+    "word": "Mizrah",
+    "meaning": "Rising Light",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Malachi 4:2",
+      "Isaiah 60:1",
+      "Luke 1:78"
+    ],
+    "scriptureThemes": [
+      "Light",
+      "Rising",
+      "Hope"
+    ],
+    "promiseStatement": "God causes light to rise over my life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "light",
+      "rising",
+      "hope"
+    ]
+  },
+  {
+    "id": "SC074",
+    "teoyubeWord": "Eshon",
+    "word": "Eshon",
+    "meaning": "Holy Fire",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Hebrews 12:29",
+      "Acts 2:3",
+      "Exodus 3:2"
+    ],
+    "scriptureThemes": [
+      "Fire",
+      "Purity",
+      "Spirit"
+    ],
+    "promiseStatement": "God’s holy fire purifies and empowers.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "fire",
+      "purity",
+      "spirit"
+    ]
+  },
+  {
+    "id": "SC075",
+    "teoyubeWord": "Mayim",
+    "word": "Mayim",
+    "meaning": "Living Water",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "John 4:14",
+      "John 7:38",
+      "Isaiah 55:1"
+    ],
+    "scriptureThemes": [
+      "Water",
+      "Life",
+      "Refreshing"
+    ],
+    "promiseStatement": "God fills me with living water.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "water",
+      "life",
+      "refreshing"
+    ]
+  },
+  {
+    "id": "SC076",
+    "teoyubeWord": "Ruval",
+    "word": "Ruval",
+    "meaning": "Divine Wind",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "John 3:8",
+      "Acts 2:2",
+      "Ezekiel 37:9"
+    ],
+    "scriptureThemes": [
+      "Wind",
+      "Spirit",
+      "Movement"
+    ],
+    "promiseStatement": "The Spirit moves with power and life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "wind",
+      "spirit",
+      "movement"
+    ]
+  },
+  {
+    "id": "SC077",
+    "teoyubeWord": "Shachar",
+    "word": "Shachar",
+    "meaning": "Dawn",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Psalm 30:5",
+      "Isaiah 58:8",
+      "2 Peter 1:19"
+    ],
+    "scriptureThemes": [
+      "Dawn",
+      "Hope",
+      "Newness"
+    ],
+    "promiseStatement": "God brings a new dawn after the night.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "dawn",
+      "hope",
+      "newness"
+    ]
+  },
+  {
+    "id": "SC078",
+    "teoyubeWord": "Ophir",
+    "word": "Ophir",
+    "meaning": "Treasure",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Matthew 6:20",
+      "2 Corinthians 4:7",
+      "Proverbs 2:4"
+    ],
+    "scriptureThemes": [
+      "Treasure",
+      "Value",
+      "Eternal"
+    ],
+    "promiseStatement": "God places eternal treasure within me.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "treasure",
+      "value",
+      "eternal"
+    ]
+  },
+  {
+    "id": "SC079",
+    "teoyubeWord": "Edenor",
+    "word": "Edenor",
+    "meaning": "Delight",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Psalm 37:4",
+      "Psalm 16:11",
+      "Isaiah 58:14"
+    ],
+    "scriptureThemes": [
+      "Delight",
+      "Joy",
+      "Presence"
+    ],
+    "promiseStatement": "I delight in the Lord and His presence.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "delight",
+      "joy",
+      "presence"
+    ]
+  },
+  {
+    "id": "SC080",
+    "teoyubeWord": "Kavod",
+    "word": "Kavod",
+    "meaning": "Weight of Glory",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "2 Corinthians 4:17",
+      "Exodus 40:34",
+      "Isaiah 6:3"
+    ],
+    "scriptureThemes": [
+      "Glory",
+      "Presence",
+      "Eternal"
+    ],
+    "promiseStatement": "God’s glory gives eternal weight to my life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "glory",
+      "presence",
+      "eternal"
+    ]
+  },
+  {
+    "id": "SC081",
+    "teoyubeWord": "Maran",
+    "word": "Maran",
+    "meaning": "Lordship",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "Romans 10:9",
+      "Philippians 2:11",
+      "Colossians 1:18"
+    ],
+    "scriptureThemes": [
+      "Lordship",
+      "Christ",
+      "Obedience"
+    ],
+    "promiseStatement": "Jesus is Lord over my life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "lordship",
+      "christ",
+      "obedience"
+    ]
+  },
+  {
+    "id": "SC082",
+    "teoyubeWord": "Qadosh",
+    "word": "Qadosh",
+    "meaning": "Holiness",
+    "category": "Kingdom",
+    "scriptureReferences": [
+      "1 Peter 1:16",
+      "Hebrews 12:14",
+      "Isaiah 6:3"
+    ],
+    "scriptureThemes": [
+      "Holiness",
+      "Purity",
+      "Calling"
+    ],
+    "promiseStatement": "God calls me into holiness.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P12"
+    ],
+    "clusterLinks": [
+      "Kingdom"
+    ],
+    "prayerUse": "Kingdom Prayer",
+    "graphTags": [
+      "holiness",
+      "purity",
+      "calling"
+    ]
+  },
+  {
+    "id": "SC083",
+    "teoyubeWord": "Yashar",
+    "word": "Yashar",
+    "meaning": "Straight Path",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Proverbs 3:6",
+      "Isaiah 45:2",
+      "Psalm 5:8"
+    ],
+    "scriptureThemes": [
+      "Path",
+      "Guidance",
+      "Direction"
+    ],
+    "promiseStatement": "God makes my path straight.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "path",
+      "guidance",
+      "direction"
+    ]
+  },
+  {
+    "id": "SC084",
+    "teoyubeWord": "Shema",
+    "word": "Shema",
+    "meaning": "Hearing Heart",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Deuteronomy 6:4",
+      "John 10:27",
+      "Romans 10:17"
+    ],
+    "scriptureThemes": [
+      "Hearing",
+      "Obedience",
+      "Voice"
+    ],
+    "promiseStatement": "I hear and follow the voice of God.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "hearing",
+      "obedience",
+      "voice"
+    ]
+  },
+  {
+    "id": "SC085",
+    "teoyubeWord": "Hineni",
+    "word": "Hineni",
+    "meaning": "Available One",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Isaiah 6:8",
+      "Genesis 22:1",
+      "1 Samuel 3:10"
+    ],
+    "scriptureThemes": [
+      "Availability",
+      "Calling",
+      "Obedience"
+    ],
+    "promiseStatement": "I make myself available to God’s call.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "availability",
+      "calling",
+      "obedience"
+    ]
+  },
+  {
+    "id": "SC086",
+    "teoyubeWord": "Shaliah",
+    "word": "Shaliah",
+    "meaning": "Sent One",
+    "category": "Calling",
+    "scriptureReferences": [
+      "John 20:21",
+      "Matthew 28:19",
+      "Romans 10:15"
+    ],
+    "scriptureThemes": [
+      "Sent",
+      "Mission",
+      "Purpose"
+    ],
+    "promiseStatement": "God sends me with purpose and authority.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "sent",
+      "mission",
+      "purpose"
+    ]
+  },
+  {
+    "id": "SC087",
+    "teoyubeWord": "Navi",
+    "word": "Navi",
+    "meaning": "Messenger Voice",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Jeremiah 1:7",
+      "Amos 3:8",
+      "Acts 4:20"
+    ],
+    "scriptureThemes": [
+      "Voice",
+      "Message",
+      "Truth"
+    ],
+    "promiseStatement": "God gives me a voice to speak truth.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "voice",
+      "message",
+      "truth"
+    ]
+  },
+  {
+    "id": "SC088",
+    "teoyubeWord": "Saphar",
+    "word": "Saphar",
+    "meaning": "Witness",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Acts 1:8",
+      "Isaiah 43:10",
+      "Revelation 12:11"
+    ],
+    "scriptureThemes": [
+      "Witness",
+      "Testimony",
+      "Spirit"
+    ],
+    "promiseStatement": "I bear witness to God’s works.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "witness",
+      "testimony",
+      "spirit"
+    ]
+  },
+  {
+    "id": "SC089",
+    "teoyubeWord": "Avad",
+    "word": "Avad",
+    "meaning": "Servant Calling",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Joshua 24:15",
+      "Romans 12:11",
+      "Colossians 3:23"
+    ],
+    "scriptureThemes": [
+      "Service",
+      "Calling",
+      "Faithfulness"
+    ],
+    "promiseStatement": "I serve the Lord with a faithful heart.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "service",
+      "calling",
+      "faithfulness"
+    ]
+  },
+  {
+    "id": "SC090",
+    "teoyubeWord": "Paqar",
+    "word": "Paqar",
+    "meaning": "Oversight",
+    "category": "Calling",
+    "scriptureReferences": [
+      "1 Peter 5:2",
+      "Acts 20:28",
+      "Proverbs 27:23"
+    ],
+    "scriptureThemes": [
+      "Oversight",
+      "Leadership",
+      "Care"
+    ],
+    "promiseStatement": "God gives grace for careful oversight.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "oversight",
+      "leadership",
+      "care"
+    ]
+  },
+  {
+    "id": "SC091",
+    "teoyubeWord": "Tsuriel",
+    "word": "Tsuriel",
+    "meaning": "Rock Strength",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Psalm 18:2",
+      "Isaiah 26:4",
+      "Matthew 7:24"
+    ],
+    "scriptureThemes": [
+      "Rock",
+      "Strength",
+      "Foundation"
+    ],
+    "promiseStatement": "The Lord is my rock and strength.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "rock",
+      "strength",
+      "foundation"
+    ]
+  },
+  {
+    "id": "SC092",
+    "teoyubeWord": "Yadiel",
+    "word": "Yadiel",
+    "meaning": "Hand of God",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Ezra 7:6",
+      "Psalm 37:24",
+      "Isaiah 41:10"
+    ],
+    "scriptureThemes": [
+      "Hand",
+      "Help",
+      "Guidance"
+    ],
+    "promiseStatement": "God’s hand upholds and guides me.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "hand",
+      "help",
+      "guidance"
+    ]
+  },
+  {
+    "id": "SC093",
+    "teoyubeWord": "Derek",
+    "word": "Derek",
+    "meaning": "Way",
+    "category": "Calling",
+    "scriptureReferences": [
+      "John 14:6",
+      "Psalm 37:23",
+      "Isaiah 35:8"
+    ],
+    "scriptureThemes": [
+      "Way",
+      "Path",
+      "Truth"
+    ],
+    "promiseStatement": "The Lord leads me in His way.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "way",
+      "path",
+      "truth"
+    ]
+  },
+  {
+    "id": "SC094",
+    "teoyubeWord": "Malkiel",
+    "word": "Malkiel",
+    "meaning": "Kingdom Assignment",
+    "category": "Calling",
+    "scriptureReferences": [
+      "Matthew 6:33",
+      "Ephesians 2:10",
+      "Colossians 4:17"
+    ],
+    "scriptureThemes": [
+      "Assignment",
+      "Kingdom",
+      "Purpose"
+    ],
+    "promiseStatement": "God assigns me work in His Kingdom.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P01"
+    ],
+    "clusterLinks": [
+      "Calling"
+    ],
+    "prayerUse": "Calling Prayer",
+    "graphTags": [
+      "assignment",
+      "kingdom",
+      "purpose"
+    ]
+  },
+  {
+    "id": "SC095",
+    "teoyubeWord": "Nitzan",
+    "word": "Nitzan",
+    "meaning": "New Growth",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Isaiah 43:19",
+      "2 Corinthians 5:17",
+      "Song of Solomon 2:12"
+    ],
+    "scriptureThemes": [
+      "Newness",
+      "Growth",
+      "Renewal"
+    ],
+    "promiseStatement": "God brings new growth in my life.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "newness",
+      "growth",
+      "renewal"
+    ]
+  },
+  {
+    "id": "SC096",
+    "teoyubeWord": "Rapha",
+    "word": "Rapha",
+    "meaning": "Divine Healing",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Exodus 15:26",
+      "Psalm 103:3",
+      "Matthew 8:17"
+    ],
+    "scriptureThemes": [
+      "Healing",
+      "Rapha",
+      "Restoration"
+    ],
+    "promiseStatement": "The Lord is my healer.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "healing",
+      "rapha",
+      "restoration"
+    ]
+  },
+  {
+    "id": "SC097",
+    "teoyubeWord": "Nakah",
+    "word": "Nakah",
+    "meaning": "Brokenness Restored",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Psalm 51:17",
+      "Isaiah 57:15",
+      "Psalm 34:18"
+    ],
+    "scriptureThemes": [
+      "Brokenness",
+      "Restoration",
+      "Comfort"
+    ],
+    "promiseStatement": "God is near to the brokenhearted.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "brokenness",
+      "restoration",
+      "comfort"
+    ]
+  },
+  {
+    "id": "SC098",
+    "teoyubeWord": "Tahor",
+    "word": "Tahor",
+    "meaning": "Cleansed",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "1 John 1:9",
+      "Psalm 51:10",
+      "Ezekiel 36:25"
+    ],
+    "scriptureThemes": [
+      "Cleansing",
+      "Purity",
+      "Renewal"
+    ],
+    "promiseStatement": "God cleanses and renews my heart.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "cleansing",
+      "purity",
+      "renewal"
+    ]
+  },
+  {
+    "id": "SC099",
+    "teoyubeWord": "Chayah",
+    "word": "Chayah",
+    "meaning": "Revival Life",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Psalm 85:6",
+      "Ezekiel 37:5",
+      "John 11:25"
+    ],
+    "scriptureThemes": [
+      "Revival",
+      "Life",
+      "Spirit"
+    ],
+    "promiseStatement": "God revives my life by His Spirit.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "revival",
+      "life",
+      "spirit"
+    ]
+  },
+  {
+    "id": "SC100",
+    "teoyubeWord": "Nacham",
+    "word": "Nacham",
+    "meaning": "Comfort",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "2 Corinthians 1:3-4",
+      "Isaiah 40:1",
+      "Matthew 5:4"
+    ],
+    "scriptureThemes": [
+      "Comfort",
+      "Healing",
+      "Mercy"
+    ],
+    "promiseStatement": "God comforts me and makes me a comfort to others.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "comfort",
+      "healing",
+      "mercy"
+    ]
+  },
+  {
+    "id": "SC101",
+    "teoyubeWord": "Yasad",
+    "word": "Yasad",
+    "meaning": "Established",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "1 Peter 5:10",
+      "Psalm 90:17",
+      "Proverbs 16:3"
+    ],
+    "scriptureThemes": [
+      "Established",
+      "Foundation",
+      "Purpose"
+    ],
+    "promiseStatement": "God establishes the work of my hands.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "established",
+      "foundation",
+      "purpose"
+    ]
+  },
+  {
+    "id": "SC102",
+    "teoyubeWord": "Qum",
+    "word": "Qum",
+    "meaning": "Arise",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Isaiah 60:1",
+      "Mark 5:41",
+      "Ephesians 5:14"
+    ],
+    "scriptureThemes": [
+      "Arise",
+      "Light",
+      "Awakening"
+    ],
+    "promiseStatement": "God calls me to arise in His light.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "arise",
+      "light",
+      "awakening"
+    ]
+  },
+  {
+    "id": "SC103",
+    "teoyubeWord": "Azar",
+    "word": "Azar",
+    "meaning": "Strengthened Help",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Isaiah 41:10",
+      "Psalm 46:1",
+      "Hebrews 4:16"
+    ],
+    "scriptureThemes": [
+      "Help",
+      "Strength",
+      "Grace"
+    ],
+    "promiseStatement": "God helps and strengthens me in need.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "help",
+      "strength",
+      "grace"
+    ]
+  },
+  {
+    "id": "SC104",
+    "teoyubeWord": "Shuv",
+    "word": "Shuv",
+    "meaning": "Return",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Joel 2:12",
+      "Zechariah 1:3",
+      "Luke 15:20"
+    ],
+    "scriptureThemes": [
+      "Return",
+      "Repentance",
+      "Mercy"
+    ],
+    "promiseStatement": "God welcomes my return with mercy.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "return",
+      "repentance",
+      "mercy"
+    ]
+  },
+  {
+    "id": "SC105",
+    "teoyubeWord": "Galal",
+    "word": "Galal",
+    "meaning": "Rolled Away",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Joshua 5:9",
+      "Psalm 55:22",
+      "Matthew 28:2"
+    ],
+    "scriptureThemes": [
+      "Freedom",
+      "Burden",
+      "Shame"
+    ],
+    "promiseStatement": "God rolls away shame, burden, and fear.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "freedom",
+      "burden",
+      "shame"
+    ]
+  },
+  {
+    "id": "SC106",
+    "teoyubeWord": "Ranan",
+    "word": "Ranan",
+    "meaning": "Joyful Shout",
+    "category": "Transformation",
+    "scriptureReferences": [
+      "Psalm 32:11",
+      "Isaiah 35:10",
+      "Zephaniah 3:17"
+    ],
+    "scriptureThemes": [
+      "Joy",
+      "Praise",
+      "Restoration"
+    ],
+    "promiseStatement": "God restores my song and joy.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P02"
+    ],
+    "clusterLinks": [
+      "Transformation"
+    ],
+    "prayerUse": "Transformation Prayer",
+    "graphTags": [
+      "joy",
+      "praise",
+      "restoration"
+    ]
+  },
+  {
+    "id": "SC107",
+    "teoyubeWord": "Nachalah",
+    "word": "Nachalah",
+    "meaning": "Inheritance Portion",
+    "category": "Inheritance",
+    "scriptureReferences": [
+      "Psalm 16:5",
+      "Ephesians 1:11",
+      "Colossians 1:12"
+    ],
+    "scriptureThemes": [
+      "Inheritance",
+      "Portion",
+      "Promise"
+    ],
+    "promiseStatement": "The Lord is my portion and inheritance.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P08"
+    ],
+    "clusterLinks": [
+      "Inheritance"
+    ],
+    "prayerUse": "Inheritance Prayer",
+    "graphTags": [
+      "inheritance",
+      "portion",
+      "promise"
+    ]
+  },
+  {
+    "id": "SC108",
+    "teoyubeWord": "Doriel",
+    "word": "Doriel",
+    "meaning": "Generational Blessing",
+    "category": "Inheritance",
+    "scriptureReferences": [
+      "Psalm 145:4",
+      "Deuteronomy 7:9",
+      "Acts 2:39"
+    ],
+    "scriptureThemes": [
+      "Generation",
+      "Legacy",
+      "Blessing"
+    ],
+    "promiseStatement": "God’s promises extend to generations.",
+    "archetypeLinks": [],
+    "pathLinks": [
+      "P08"
+    ],
+    "clusterLinks": [
+      "Inheritance"
+    ],
+    "prayerUse": "Inheritance Prayer",
+    "graphTags": [
+      "generation",
+      "legacy",
+      "blessing"
+    ]
+  }
+]

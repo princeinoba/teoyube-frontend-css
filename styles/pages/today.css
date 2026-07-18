@@ -1,0 +1,3 @@
+body[data-view="today"] :where(.today-premium-shell, .today-layout, .today-integrations) {
+  max-width: 100%;
+}

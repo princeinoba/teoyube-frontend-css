@@ -1,0 +1,53 @@
+[
+  {
+    "id": "PC01",
+    "name": "Calling & Purpose",
+    "coreWords": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "scriptureAnchor": "Romans 8:28-30",
+    "supportingReferences": [
+      "Jeremiah 1:5",
+      "Ephesians 2:10",
+      "2 Timothy 1:9"
+    ],
+    "clusterDeclaration": "I am chosen, called, enlightened, and sent into divine purpose."
+  },
+  {
+    "id": "PC02",
+    "name": "Healing & Restoration",
+    "coreWords": [
+      "Zephan",
+      "Renar",
+      "Velor",
+      "Auren"
+    ],
+    "scriptureAnchor": "1 Peter 5:10",
+    "supportingReferences": [
+      "Psalm 147:3",
+      "Joel 2:25",
+      "Romans 12:2"
+    ],
+    "clusterDeclaration": "God heals, renews, restores, and makes my life fruitful."
+  },
+  {
+    "id": "PC03",
+    "name": "Protection & Refuge",
+    "coreWords": [
+      "Nethar",
+      "Shalem",
+      "Koriel",
+      "Kethor"
+    ],
+    "scriptureAnchor": "Psalm 91:1-2",
+    "supportingReferences": [
+      "Psalm 121:7-8",
+      "John 14:27",
+      "2 Thessalonians 3:3"
+    ],
+    "clusterDeclaration": "The Lord protects me, strengthens me, gives me peace, and leads me in victory."
+  }
+]

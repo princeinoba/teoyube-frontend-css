@@ -1,0 +1,115 @@
+{
+  "phase": "2D",
+  "name": "Teoyube Language Grammar Architecture",
+  "core_principle": "Teoyube is not a spoken language. It is a Promise Language.",
+  "word_represents": [
+    "A Kingdom Reality",
+    "A Spiritual Position",
+    "A Covenant Promise",
+    "A Transformation State",
+    "A Divine Function"
+  ],
+  "grammar_basis": [
+    "Identity",
+    "Promise",
+    "Transformation",
+    "Inheritance",
+    "Manifestation"
+  ],
+  "traditional_language_structure": "Subject -> Verb -> Object",
+  "teoyube_sentence_structure": "Identity -> Promise -> Manifestation",
+  "example_sentence": {
+    "teoyube": "Benor Luma Taviel",
+    "meaning": "The Chosen One receives Light and walks in Purpose."
+  },
+  "formulas": [
+    {
+      "name": "Promise Declaration",
+      "structure": "Identity + Promise",
+      "example": "Benor Luma",
+      "meaning": "I am chosen and filled with light."
+    },
+    {
+      "name": "Transformation Statement",
+      "structure": "Identity + Transformation",
+      "example": "Benor Renar",
+      "meaning": "I am being renewed."
+    },
+    {
+      "name": "Destiny Statement",
+      "structure": "Identity + Promise + Inheritance",
+      "example": "Benor Luma Taviel",
+      "meaning": "The chosen one receives light and fulfills purpose."
+    },
+    {
+      "name": "Kingdom Manifestation",
+      "structure": "Identity + Promise + Manifestation",
+      "example": "Elion Shalem Solion",
+      "meaning": "The son of promise receives peace and lives in abundance."
+    }
+  ],
+  "levels": [
+    {
+      "level": "Beginner",
+      "description": "Foundation words.",
+      "examples": ["Light", "Peace", "Wisdom", "Strength"]
+    },
+    {
+      "level": "Intermediate",
+      "description": "Growth words.",
+      "examples": ["Calling", "Purpose", "Renewal", "Healing"]
+    },
+    {
+      "level": "Advanced",
+      "description": "Kingdom operation words.",
+      "examples": ["Authority", "Dominion", "Legacy", "Stewardship"]
+    },
+    {
+      "level": "Master",
+      "description": "Highest spiritual concepts.",
+      "examples": ["Sonship", "Eternal Inheritance", "Divine Union", "Kingdom Governance"]
+    }
+  ],
+  "ranks": [
+    {
+      "rank": "C",
+      "meaning": "Common"
+    },
+    {
+      "rank": "B",
+      "meaning": "Core"
+    },
+    {
+      "rank": "A",
+      "meaning": "Strategic"
+    },
+    {
+      "rank": "S",
+      "meaning": "Foundational Kingdom Word"
+    },
+    {
+      "rank": "SS",
+      "meaning": "Governing Kingdom Word"
+    }
+  ],
+  "promise_cluster_integration": {
+    "semantic_network": "The 12 foundational Promise Clusters become the primary semantic network.",
+    "example_cluster": "Protection and Refuge",
+    "example_progression": ["Nethar", "Shalem", "Koriel", "Kethor"],
+    "meaning": "Protection -> Peace -> Strength -> Victory"
+  },
+  "resulting_system": [
+    "108 Foundational Teoyube Words",
+    "9 Kingdom Domains",
+    "Promise Clusters",
+    "Identity Grammar",
+    "Kingdom Grammar",
+    "Word Levels",
+    "Word Ranks",
+    "Calling Associations",
+    "Symbol System",
+    "Manifestation Structure"
+  ],
+  "source_of_truth": "src/data/coreTeoyubeVocabulary.json",
+  "promise_language_lexicon": "src/data/teoyubePromiseLanguageLexicon.json"
+}

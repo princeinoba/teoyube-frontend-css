@@ -1,0 +1,64 @@
+.app-shell {
+  display: grid;
+  isolation: isolate;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-sidebar {
+  z-index: var(--z-sidebar);
+  width: var(--sidebar-width);
+}
+
+.app-main {
+  min-width: 0;
+  width: 100%;
+  max-width: none;
+  overflow-x: clip;
+}
+
+.app-header {
+  position: relative;
+  z-index: var(--z-sticky);
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.page-container {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  overflow: visible;
+}
+
+.page-container > * {
+  max-width: 100%;
+}
+
+.page-header,
+.page-content {
+  width: 100%;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.right-insight-rail,
+.phase113-insight-rail {
+  z-index: var(--z-rail);
+}
+
+.modal-layer,
+dialog[open] {
+  z-index: var(--z-modal);
+}
+
+.drawer-layer,
+.phase113-save-drawer {
+  z-index: var(--z-drawer);
+}

@@ -1,0 +1,108 @@
+{
+  "phase": "4H",
+  "name": "Teoyube MVP Build Checklist & Launch Plan",
+  "checklist": [
+    "Create Next.js project",
+    "Install TypeScript",
+    "Add Teoyube folder structure",
+    "Add global styling",
+    "Add 108-word seed file",
+    "Add promise clusters seed file",
+    "Add prayers seed file",
+    "Add covenant paths seed file",
+    "Add archetypes seed file",
+    "Build homepage",
+    "Build dashboard",
+    "Build daily word page",
+    "Build lexicon page",
+    "Build prayer page",
+    "Build cluster page",
+    "Build journal page",
+    "Build AI companion page",
+    "Create API routes",
+    "Connect OpenAI API",
+    "Add user authentication",
+    "Add database",
+    "Add journal saving",
+    "Add user profile",
+    "Test all pages",
+    "Deploy to Vercel"
+  ],
+  "launchOrder": [
+    {
+      "launch": "Launch 1",
+      "name": "Static Teoyube MVP",
+      "features": [
+        "Homepage",
+        "Dashboard",
+        "Daily Word",
+        "Lexicon",
+        "Prayer Library",
+        "Promise Clusters",
+        "Basic Journal Form"
+      ]
+    },
+    {
+      "launch": "Launch 2",
+      "name": "AI Companion",
+      "features": [
+        "Need detection",
+        "Cluster recommendation",
+        "Prayer generation",
+        "Journal prompt generation",
+        "Scripture anchor suggestions"
+      ]
+    },
+    {
+      "launch": "Launch 3",
+      "name": "User Accounts",
+      "features": [
+        "Authentication",
+        "Saved journals",
+        "Favorite words",
+        "Favorite prayers",
+        "Daily progress"
+      ]
+    },
+    {
+      "launch": "Launch 4",
+      "name": "Growth System",
+      "features": [
+        "Archetype discovery",
+        "Covenant path progress",
+        "Spiritual growth level",
+        "Personal recommendations"
+      ]
+    }
+  ],
+  "status": {
+    "completedNow": [
+      "Create Next.js project structure",
+      "Install TypeScript config",
+      "Add Teoyube folder structure",
+      "Add global styling",
+      "Add promise clusters seed file",
+      "Add prayers seed file",
+      "Add covenant paths seed file",
+      "Add archetypes seed file",
+      "Build homepage",
+      "Build dashboard",
+      "Build daily word page",
+      "Build lexicon page",
+      "Build prayer page",
+      "Build cluster page",
+      "Build journal page",
+      "Build AI companion page",
+      "Create starter API routes"
+    ],
+    "pendingLater": [
+      "Replace starter 2-word seed with full 108-word seed in teoyube-app/data/teoyubeWords.json",
+      "Connect OpenAI API",
+      "Add user authentication",
+      "Add database",
+      "Add journal saving",
+      "Add user profile",
+      "Deploy to Vercel"
+    ]
+  }
+}

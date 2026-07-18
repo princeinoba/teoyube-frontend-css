@@ -1,0 +1,104 @@
+[
+  {
+    "id": "P01",
+    "name": "Calling",
+    "sequence": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "scriptureFlow": [
+      "Jeremiah 1:5",
+      "Romans 8:30",
+      "Psalm 119:105",
+      "Ephesians 2:10"
+    ],
+    "pathPrayer": "Lord, reveal my calling, fill me with light, and guide me into purpose."
+  },
+  {
+    "id": "P02",
+    "name": "Healing",
+    "sequence": [
+      "Zephan",
+      "Renar",
+      "Velor",
+      "Auren"
+    ],
+    "scriptureFlow": [
+      "Psalm 147:3",
+      "Romans 12:2",
+      "Joel 2:25",
+      "John 15:5"
+    ],
+    "pathPrayer": "Lord, heal me, renew me, restore me, and make my life fruitful."
+  },
+  {
+    "id": "P03",
+    "name": "Wisdom",
+    "sequence": [
+      "Luma",
+      "Solen",
+      "Thalion",
+      "Marion"
+    ],
+    "scriptureFlow": [
+      "Psalm 119:105",
+      "James 1:5",
+      "John 15:15",
+      "Matthew 5:16"
+    ],
+    "pathPrayer": "Lord, give me light, wisdom, intimacy, and influence for Your glory."
+  },
+  {
+    "id": "P04",
+    "name": "Stewardship",
+    "sequence": [
+      "Selion",
+      "Maviel",
+      "Tharon",
+      "Velian"
+    ],
+    "scriptureFlow": [
+      "1 Peter 4:10",
+      "Luke 16:10",
+      "Galatians 6:9",
+      "Matthew 25:21"
+    ],
+    "pathPrayer": "Lord, make me a faithful steward who cultivates and multiplies what You give."
+  },
+  {
+    "id": "P05",
+    "name": "Sonship",
+    "sequence": [
+      "Abion",
+      "Elior",
+      "Arielon",
+      "Beniel"
+    ],
+    "scriptureFlow": [
+      "Romans 8:15",
+      "Ephesians 1:6",
+      "1 Thessalonians 5:5",
+      "Romans 8:14"
+    ],
+    "pathPrayer": "Father, establish me in adoption, love, light, and true sonship."
+  },
+  {
+    "id": "P06",
+    "name": "Authority",
+    "sequence": [
+      "Orimon",
+      "Korion",
+      "Elvar",
+      "Theron"
+    ],
+    "scriptureFlow": [
+      "Luke 10:19",
+      "Mark 11:23",
+      "Job 22:28",
+      "Revelation 5:10"
+    ],
+    "pathPrayer": "Lord, teach me to carry authority with humility, obedience, and righteousness."
+  }
+]

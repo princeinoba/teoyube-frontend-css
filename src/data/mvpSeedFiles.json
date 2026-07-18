@@ -1,0 +1,64 @@
+{
+  "phase": "4E",
+  "name": "Full Seed Files for Teoyube MVP",
+  "projectRoot": "teoyube-app",
+  "description": "Full MVP seed layer for Promise Clusters, Covenant Paths, Archetypes, and Prayer templates.",
+  "seedFiles": [
+    {
+      "path": "teoyube-app/data/promiseClusters.json",
+      "label": "Promise Clusters",
+      "count": 12,
+      "primaryKey": "id",
+      "sampleIds": ["PC01", "PC02", "PC12"],
+      "purpose": "Defines the 12 semantic Promise Clusters used by recommendations, prayer generation, and journey navigation."
+    },
+    {
+      "path": "teoyube-app/data/covenantPaths.json",
+      "label": "Covenant Paths",
+      "count": 12,
+      "primaryKey": "id",
+      "sampleIds": ["P01", "P06", "P12"],
+      "purpose": "Defines the 12 user journey paths with Teoyube word sequences and Scripture flow."
+    },
+    {
+      "path": "teoyube-app/data/archetypes.json",
+      "label": "Archetypes",
+      "count": 24,
+      "primaryKey": "id",
+      "sampleIds": ["A01", "A12", "A24"],
+      "purpose": "Defines Kingdom archetypes for onboarding, profile discovery, and recommendation personalization."
+    },
+    {
+      "path": "teoyube-app/data/prayers.json",
+      "label": "Prayers",
+      "count": 12,
+      "primaryKey": "id",
+      "sampleIds": ["PR001", "PR004", "PR012"],
+      "purpose": "Defines Scripture-anchored prayer templates linked to Teoyube word sequences."
+    }
+  ],
+  "totals": {
+    "seedFiles": 4,
+    "promiseClusters": 12,
+    "covenantPaths": 12,
+    "archetypes": 24,
+    "prayers": 12,
+    "totalRecords": 60
+  },
+  "integrationTargets": [
+    "Daily Word",
+    "Promise Clusters",
+    "Prayer Library",
+    "Covenant Paths",
+    "Archetype Discovery",
+    "AI Companion",
+    "Recommendation Engine"
+  ],
+  "nextSteps": [
+    "Connect Promise Cluster pages to data/promiseClusters.json.",
+    "Connect Prayer Library to the expanded data/prayers.json.",
+    "Use covenantPaths.json for user journey progress.",
+    "Use archetypes.json during onboarding and assessment.",
+    "Map the full 108-word canon into teoyubeWords.json."
+  ]
+}

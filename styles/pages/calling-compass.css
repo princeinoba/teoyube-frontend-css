@@ -1,0 +1,3 @@
+body[data-view="calling"] :where(.calling-premium-page, .calling-layout, .calling-main) {
+  max-width: 100%;
+}

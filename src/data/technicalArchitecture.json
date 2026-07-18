@@ -1,0 +1,69 @@
+{
+  "phase": "4B",
+  "name": "Teoyube App & AI Technical Architecture",
+  "productDirection": "Teoyube should be built as a spiritual growth app, AI companion, and Scripture-linked promise language database.",
+  "recommendedStack": {
+    "frontend": "Next.js / React",
+    "backend": "Node.js / Next.js API Routes",
+    "database": "PostgreSQL",
+    "graphLayer": "Neo4j or PostgreSQL relationship tables",
+    "aiLayer": "OpenAI API",
+    "auth": ["Clerk", "Supabase Auth", "NextAuth"],
+    "hosting": "Vercel"
+  },
+  "coreAppModules": [
+    "User Onboarding",
+    "Daily Word",
+    "Prayer Engine",
+    "Promise Clusters",
+    "Covenant Paths",
+    "Archetype Discovery",
+    "Journal",
+    "AI Spiritual Companion",
+    "Dashboard",
+    "Progress Tracking"
+  ],
+  "apiRoutes": [
+    "GET /api/words",
+    "GET /api/words/:word",
+    "GET /api/clusters",
+    "GET /api/prayers",
+    "GET /api/daily-word",
+    "POST /api/journal",
+    "GET /api/user/progress",
+    "POST /api/assessment",
+    "POST /api/ai/companion",
+    "POST /api/ai/prayer",
+    "POST /api/ai/declaration"
+  ],
+  "aiCompanionFlow": {
+    "userMessage": "I need peace and direction today.",
+    "systemProcess": [
+      "Detect emotional/spiritual need",
+      "Match to Promise Cluster",
+      "Recommend Teoyube words",
+      "Select scripture anchor",
+      "Generate prayer",
+      "Suggest journal prompt"
+    ],
+    "output": {
+      "cluster": "Peace & Protection",
+      "words": ["Shalem", "Nethar", "Derek"],
+      "scripture": "John 14:27",
+      "prayer": "Father, establish Your peace in me and guide my steps today.",
+      "journalPrompt": "Where do I need to receive God's peace today?"
+    }
+  },
+  "aiPromptTemplate": "You are the Teoyube AI Spiritual Companion. Use only the Teoyube canon dataset, Scripture-linked words, promise clusters, prayers, and covenant paths. When the user shares a need: identify the need, match it to a Promise Cluster, recommend 3-5 Teoyube words, provide a Scripture anchor, generate a short prayer, and provide one journal prompt. Do not replace professional, medical, financial, or legal advice.",
+  "mobileScreens": [
+    "Home",
+    "Daily Word",
+    "Prayer",
+    "Journal",
+    "AI Companion",
+    "Promise Clusters",
+    "Covenant Paths",
+    "Profile",
+    "Progress"
+  ]
+}

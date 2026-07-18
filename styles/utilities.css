@@ -1,0 +1,12 @@
+.u-scroll-x {
+  overflow-x: auto;
+}
+
+.u-contained {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.owner-qa-view:not(.active) {
+  display: none;
+}

@@ -1,0 +1,20 @@
+{
+  "clusterRules": [
+    {
+      "rule": "Every Teoyube word may belong to more than one cluster.",
+      "example": "Luma belongs to Light & Revelation, Calling & Purpose, and Presence & Glory."
+    },
+    {
+      "rule": "Every cluster must contain at least 4 prayer-ready words.",
+      "example": "Protection sequence: Nethar → Shalem → Koriel → Kethor."
+    },
+    {
+      "rule": "Every cluster must have one anchor scripture.",
+      "example": "Healing & Restoration uses 1 Peter 5:10."
+    },
+    {
+      "rule": "Every cluster must generate a declaration.",
+      "example": "God heals, renews, restores, and strengthens me."
+    }
+  ]
+}

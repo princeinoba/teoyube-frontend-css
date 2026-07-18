@@ -1,0 +1,36 @@
+{
+  "purpose": "TeoyubeSearch is the spiritual search engine of the platform. It guides the Saint from Search -> Promise -> Meaning -> Prayer -> Teoyube Word -> Assignment -> Book of the Saint.",
+  "placeholder": "Search your situation, promise, scripture, prayer, calling, or Teoyube word...",
+  "categories": ["All", "Promise", "Scripture", "Life Problem", "Calling", "Prayer", "Teoyube Word", "Testimony"],
+  "result_fields": [
+    "Search Intent",
+    "Promise Category",
+    "Scripture References",
+    "Promise Level",
+    "Short Explanation",
+    "Calling Connection",
+    "Teoyube Word",
+    "Pronunciation",
+    "Meaning",
+    "Scripture-Based Prayer",
+    "Daily Divine Assignment",
+    "Animation / Storyboard Prompt"
+  ],
+  "actions": [
+    "Search Promise",
+    "Generate Prayer",
+    "Watch Animation",
+    "Save to Book",
+    "Add to Promise Table"
+  ],
+  "example": {
+    "query": "I feel confused about my purpose.",
+    "search_intent": "Life Problem + Calling",
+    "promise_category": "Calling / Wisdom / Revelation",
+    "scripture_references": ["Ephesians 1:18", "James 1:5", "Proverbs 3:5-6", "Isaiah 30:21"],
+    "promise_level": "A + B + C",
+    "teoyube_word": "WISDORA",
+    "meaning": "Wisdom and direction from God.",
+    "daily_divine_assignment": "Write down three gifts, three burdens, and one step you can take today toward your calling."
+  }
+}

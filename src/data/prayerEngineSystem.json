@@ -1,0 +1,48 @@
+{
+  "phase": "3F",
+  "name": "Teoyube Prayer Engine Dataset",
+  "version": "1.0",
+  "purpose": "Transforms Teoyube from a lexicon and knowledge graph into an interactive prayer system.",
+  "capabilities": [
+    "Dynamic prayer generation",
+    "Guided prayer journeys",
+    "Daily declarations",
+    "AI-generated devotionals",
+    "Personalized spiritual growth paths",
+    "Voice prayer assistants",
+    "Prayer recommendation engines"
+  ],
+  "architecture": ["Identity", "Promise", "Transformation", "Manifestation"],
+  "example": {
+    "sequence": ["Benor", "Luma", "Renar", "Taviel"],
+    "meaning": ["Chosen One", "Light", "Renewal", "Purpose"],
+    "prayer": "Father, as Your chosen one, fill me with light, renew my mind, and lead me into Your purpose."
+  },
+  "recordSchema": [
+    "id",
+    "name",
+    "category",
+    "sequence",
+    "scriptureAnchor",
+    "declaration",
+    "prayer",
+    "duration",
+    "difficulty"
+  ],
+  "generationFormula": ["Identity", "Promise", "Transformation", "Manifestation"],
+  "declarationExample": {
+    "sequence": ["Abion", "Luma", "Orimon", "Sariel"],
+    "declaration": "I am a child of God, filled with light, entrusted with authority, and destined to leave a righteous legacy."
+  },
+  "status": [
+    "Prayer Record Schema",
+    "8 Core Prayer Collections",
+    "Daily Recommendation Engine",
+    "Prayer Journeys",
+    "AI Prayer Formula System",
+    "Declaration Generator",
+    "Scripture Anchors",
+    "User-State Mapping"
+  ],
+  "nextRecommendedPhase": "Phase 4A - Teoyube Kingdom Operating System (TKOS)"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "phase": "3C",
+  "canonizedCoreWords": 108,
+  "scriptureLinkedPaths": 6,
+  "scriptureLinkedArchetypes": 3,
+  "promiseClusterCanonizations": 3,
+  "scriptureGraphRelationships": 767,
+  "searchTags": 170,
+  "coverage": "full-108-scripture-canon"
+}

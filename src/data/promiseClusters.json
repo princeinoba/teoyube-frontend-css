@@ -1,0 +1,930 @@
+[
+  {
+    "cluster_id": "PC01",
+    "id": "PC01",
+    "title": "Calling & Purpose",
+    "name": "Calling & Purpose",
+    "theme": "Calling & Purpose",
+    "description": "Words connected to divine calling, assignment, direction, and destiny.",
+    "promise_category": "Calling",
+    "promise_level": "A",
+    "scripture_references": [
+      "Romans 8:28-30"
+    ],
+    "anchorScripture": "Romans 8:28-30",
+    "anchor_scripture": "Romans 8:28-30",
+    "summary": "Words connected to divine calling, assignment, direction, and destiny.",
+    "keywords": [
+      "Benor",
+      "Arion",
+      "Taviel",
+      "Hineni",
+      "Shaliah",
+      "Malkiel",
+      "Luma",
+      "Calling",
+      "Purpose"
+    ],
+    "coreWords": [
+      "Benor",
+      "Arion",
+      "Taviel",
+      "Hineni",
+      "Shaliah",
+      "Malkiel"
+    ],
+    "core_words": [
+      "Benor",
+      "Arion",
+      "Taviel",
+      "Hineni",
+      "Shaliah",
+      "Malkiel"
+    ],
+    "related_teoyube_words": [
+      "Benor",
+      "Arion",
+      "Taviel",
+      "Hineni",
+      "Shaliah",
+      "Malkiel"
+    ],
+    "prayerSequence": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "prayer_sequence": [
+      "Benor",
+      "Arion",
+      "Luma",
+      "Taviel"
+    ],
+    "prayer_framework": "Father, make me chosen, called, and sent into divine purpose.",
+    "declaration": "I am chosen, called, and sent into divine purpose.",
+    "divine_assignment": "Pray through Benor -> Arion -> Luma -> Taviel and journal one reflection connected to Calling & Purpose.",
+    "calling_connection": "Supports calling & purpose through Benor, Arion, Taviel, Hineni, Shaliah, Malkiel.",
+    "animation_prompt": "A Promise Cluster scene for Calling & Purpose: Benor, Arion, Taviel, Hineni, Shaliah, Malkiel appear as connected lights around Romans 8:28-30.",
+    "book_entry_template": "Today I prayed the Calling & Purpose cluster: I am chosen, called, and sent into divine purpose.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC02",
+    "id": "PC02",
+    "title": "Light & Revelation",
+    "name": "Light & Revelation",
+    "theme": "Light & Revelation",
+    "description": "Words connected to spiritual light, truth, wisdom, and understanding.",
+    "promise_category": "Wisdom",
+    "promise_level": "A",
+    "scripture_references": [
+      "Psalm 119:105"
+    ],
+    "anchorScripture": "Psalm 119:105",
+    "anchor_scripture": "Psalm 119:105",
+    "summary": "Words connected to spiritual light, truth, wisdom, and understanding.",
+    "keywords": [
+      "Luma",
+      "Mizrah",
+      "Solen",
+      "Emeth",
+      "Rhema",
+      "Hazon",
+      "Light",
+      "Revelation"
+    ],
+    "coreWords": [
+      "Luma",
+      "Mizrah",
+      "Solen",
+      "Emeth",
+      "Rhema",
+      "Hazon"
+    ],
+    "core_words": [
+      "Luma",
+      "Mizrah",
+      "Solen",
+      "Emeth",
+      "Rhema",
+      "Hazon"
+    ],
+    "related_teoyube_words": [
+      "Luma",
+      "Mizrah",
+      "Solen",
+      "Emeth",
+      "Rhema",
+      "Hazon"
+    ],
+    "prayerSequence": [
+      "Luma",
+      "Solen",
+      "Emeth",
+      "Hazon"
+    ],
+    "prayer_sequence": [
+      "Luma",
+      "Solen",
+      "Emeth",
+      "Hazon"
+    ],
+    "prayer_framework": "Father, God’s light reveals truth and guides my steps.",
+    "declaration": "God’s light reveals truth and guides my steps.",
+    "divine_assignment": "Pray through Luma -> Solen -> Emeth -> Hazon and journal one reflection connected to Light & Revelation.",
+    "calling_connection": "Supports light & revelation through Luma, Mizrah, Solen, Emeth, Rhema, Hazon.",
+    "animation_prompt": "A Promise Cluster scene for Light & Revelation: Luma, Mizrah, Solen, Emeth, Rhema, Hazon appear as connected lights around Psalm 119:105.",
+    "book_entry_template": "Today I prayed the Light & Revelation cluster: God’s light reveals truth and guides my steps.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC03",
+    "id": "PC03",
+    "title": "Peace & Protection",
+    "name": "Peace & Protection",
+    "theme": "Peace & Protection",
+    "description": "Words connected to refuge, covering, strength, safety, and peace.",
+    "promise_category": "Protection",
+    "promise_level": "A",
+    "scripture_references": [
+      "Psalm 91:1-2"
+    ],
+    "anchorScripture": "Psalm 91:1-2",
+    "anchor_scripture": "Psalm 91:1-2",
+    "summary": "Words connected to refuge, covering, strength, safety, and peace.",
+    "keywords": [
+      "Shalem",
+      "Nethar",
+      "Koriel",
+      "Tsuriel",
+      "Azar",
+      "Kethor",
+      "Peace",
+      "Protection"
+    ],
+    "coreWords": [
+      "Shalem",
+      "Nethar",
+      "Koriel",
+      "Tsuriel",
+      "Azar",
+      "Kethor"
+    ],
+    "core_words": [
+      "Shalem",
+      "Nethar",
+      "Koriel",
+      "Tsuriel",
+      "Azar",
+      "Kethor"
+    ],
+    "related_teoyube_words": [
+      "Shalem",
+      "Nethar",
+      "Koriel",
+      "Tsuriel",
+      "Azar",
+      "Kethor"
+    ],
+    "prayerSequence": [
+      "Nethar",
+      "Shalem",
+      "Koriel",
+      "Kethor"
+    ],
+    "prayer_sequence": [
+      "Nethar",
+      "Shalem",
+      "Koriel",
+      "Kethor"
+    ],
+    "prayer_framework": "Father, The Lord protects me, strengthens me, and gives me peace.",
+    "declaration": "The Lord protects me, strengthens me, and gives me peace.",
+    "divine_assignment": "Pray through Nethar -> Shalem -> Koriel -> Kethor and journal one reflection connected to Peace & Protection.",
+    "calling_connection": "Supports peace & protection through Shalem, Nethar, Koriel, Tsuriel, Azar, Kethor.",
+    "animation_prompt": "A Promise Cluster scene for Peace & Protection: Shalem, Nethar, Koriel, Tsuriel, Azar, Kethor appear as connected lights around Psalm 91:1-2.",
+    "book_entry_template": "Today I prayed the Peace & Protection cluster: The Lord protects me, strengthens me, and gives me peace.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC04",
+    "id": "PC04",
+    "title": "Healing & Restoration",
+    "name": "Healing & Restoration",
+    "theme": "Healing & Restoration",
+    "description": "Words connected to healing, renewal, comfort, cleansing, and restored life.",
+    "promise_category": "Healing",
+    "promise_level": "A",
+    "scripture_references": [
+      "1 Peter 5:10"
+    ],
+    "anchorScripture": "1 Peter 5:10",
+    "anchor_scripture": "1 Peter 5:10",
+    "summary": "Words connected to healing, renewal, comfort, cleansing, and restored life.",
+    "keywords": [
+      "Zephan",
+      "Rapha",
+      "Velor",
+      "Renar",
+      "Nacham",
+      "Chayah",
+      "Auren",
+      "Healing",
+      "Restoration"
+    ],
+    "coreWords": [
+      "Zephan",
+      "Rapha",
+      "Velor",
+      "Renar",
+      "Nacham",
+      "Chayah"
+    ],
+    "core_words": [
+      "Zephan",
+      "Rapha",
+      "Velor",
+      "Renar",
+      "Nacham",
+      "Chayah"
+    ],
+    "related_teoyube_words": [
+      "Zephan",
+      "Rapha",
+      "Velor",
+      "Renar",
+      "Nacham",
+      "Chayah"
+    ],
+    "prayerSequence": [
+      "Zephan",
+      "Renar",
+      "Velor",
+      "Auren"
+    ],
+    "prayer_sequence": [
+      "Zephan",
+      "Renar",
+      "Velor",
+      "Auren"
+    ],
+    "prayer_framework": "Father, God heals, renews, restores, and strengthens me.",
+    "declaration": "God heals, renews, restores, and strengthens me.",
+    "divine_assignment": "Pray through Zephan -> Renar -> Velor -> Auren and journal one reflection connected to Healing & Restoration.",
+    "calling_connection": "Supports healing & restoration through Zephan, Rapha, Velor, Renar, Nacham, Chayah.",
+    "animation_prompt": "A Promise Cluster scene for Healing & Restoration: Zephan, Rapha, Velor, Renar, Nacham, Chayah appear as connected lights around 1 Peter 5:10.",
+    "book_entry_template": "Today I prayed the Healing & Restoration cluster: God heals, renews, restores, and strengthens me.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC05",
+    "id": "PC05",
+    "title": "Sonship & Belonging",
+    "name": "Sonship & Belonging",
+    "theme": "Sonship & Belonging",
+    "description": "Words connected to adoption, beloved identity, family, and divine belonging.",
+    "promise_category": "Sonship",
+    "promise_level": "A",
+    "scripture_references": [
+      "Romans 8:15-17"
+    ],
+    "anchorScripture": "Romans 8:15-17",
+    "anchor_scripture": "Romans 8:15-17",
+    "summary": "Words connected to adoption, beloved identity, family, and divine belonging.",
+    "keywords": [
+      "Abion",
+      "Elior",
+      "Themar",
+      "Oren",
+      "Nareth",
+      "Beniel",
+      "Arielon",
+      "Sonship",
+      "Belonging"
+    ],
+    "coreWords": [
+      "Abion",
+      "Elior",
+      "Themar",
+      "Oren",
+      "Nareth",
+      "Beniel"
+    ],
+    "core_words": [
+      "Abion",
+      "Elior",
+      "Themar",
+      "Oren",
+      "Nareth",
+      "Beniel"
+    ],
+    "related_teoyube_words": [
+      "Abion",
+      "Elior",
+      "Themar",
+      "Oren",
+      "Nareth",
+      "Beniel"
+    ],
+    "prayerSequence": [
+      "Abion",
+      "Elior",
+      "Arielon",
+      "Beniel"
+    ],
+    "prayer_sequence": [
+      "Abion",
+      "Elior",
+      "Arielon",
+      "Beniel"
+    ],
+    "prayer_framework": "Father, make me adopted, beloved, and established as a child of God.",
+    "declaration": "I am adopted, beloved, and established as a child of God.",
+    "divine_assignment": "Pray through Abion -> Elior -> Arielon -> Beniel and journal one reflection connected to Sonship & Belonging.",
+    "calling_connection": "Supports sonship & belonging through Abion, Elior, Themar, Oren, Nareth, Beniel.",
+    "animation_prompt": "A Promise Cluster scene for Sonship & Belonging: Abion, Elior, Themar, Oren, Nareth, Beniel appear as connected lights around Romans 8:15-17.",
+    "book_entry_template": "Today I prayed the Sonship & Belonging cluster: I am adopted, beloved, and established as a child of God.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC06",
+    "id": "PC06",
+    "title": "Authority & Dominion",
+    "name": "Authority & Dominion",
+    "theme": "Authority & Dominion",
+    "description": "Words connected to Kingdom authority, righteous rule, leadership, and decree.",
+    "promise_category": "Authority",
+    "promise_level": "A",
+    "scripture_references": [
+      "Luke 10:19"
+    ],
+    "anchorScripture": "Luke 10:19",
+    "anchor_scripture": "Luke 10:19",
+    "summary": "Words connected to Kingdom authority, righteous rule, leadership, and decree.",
+    "keywords": [
+      "Orimon",
+      "Valdor",
+      "Theron",
+      "Rethor",
+      "Elvar",
+      "Tavor",
+      "Korion",
+      "Authority",
+      "Dominion"
+    ],
+    "coreWords": [
+      "Orimon",
+      "Valdor",
+      "Theron",
+      "Rethor",
+      "Elvar",
+      "Tavor"
+    ],
+    "core_words": [
+      "Orimon",
+      "Valdor",
+      "Theron",
+      "Rethor",
+      "Elvar",
+      "Tavor"
+    ],
+    "related_teoyube_words": [
+      "Orimon",
+      "Valdor",
+      "Theron",
+      "Rethor",
+      "Elvar",
+      "Tavor"
+    ],
+    "prayerSequence": [
+      "Orimon",
+      "Korion",
+      "Elvar",
+      "Theron"
+    ],
+    "prayer_sequence": [
+      "Orimon",
+      "Korion",
+      "Elvar",
+      "Theron"
+    ],
+    "prayer_framework": "Father, Christ gives authority for Kingdom assignment and righteous service.",
+    "declaration": "Christ gives authority for Kingdom assignment and righteous service.",
+    "divine_assignment": "Pray through Orimon -> Korion -> Elvar -> Theron and journal one reflection connected to Authority & Dominion.",
+    "calling_connection": "Supports authority & dominion through Orimon, Valdor, Theron, Rethor, Elvar, Tavor.",
+    "animation_prompt": "A Promise Cluster scene for Authority & Dominion: Orimon, Valdor, Theron, Rethor, Elvar, Tavor appear as connected lights around Luke 10:19.",
+    "book_entry_template": "Today I prayed the Authority & Dominion cluster: Christ gives authority for Kingdom assignment and righteous service.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC07",
+    "id": "PC07",
+    "title": "Stewardship & Service",
+    "name": "Stewardship & Service",
+    "theme": "Stewardship & Service",
+    "description": "Words connected to faithful management, responsibility, service, and care.",
+    "promise_category": "Stewardship",
+    "promise_level": "A",
+    "scripture_references": [
+      "1 Peter 4:10"
+    ],
+    "anchorScripture": "1 Peter 4:10",
+    "anchor_scripture": "1 Peter 4:10",
+    "summary": "Words connected to faithful management, responsibility, service, and care.",
+    "keywords": [
+      "Selion",
+      "Maviel",
+      "Talion",
+      "Verath",
+      "Aldor",
+      "Paqar",
+      "Stewardship",
+      "Service"
+    ],
+    "coreWords": [
+      "Selion",
+      "Maviel",
+      "Talion",
+      "Verath",
+      "Aldor",
+      "Paqar"
+    ],
+    "core_words": [
+      "Selion",
+      "Maviel",
+      "Talion",
+      "Verath",
+      "Aldor",
+      "Paqar"
+    ],
+    "related_teoyube_words": [
+      "Selion",
+      "Maviel",
+      "Talion",
+      "Verath",
+      "Aldor",
+      "Paqar"
+    ],
+    "prayerSequence": [
+      "Selion",
+      "Maviel",
+      "Talion",
+      "Verath"
+    ],
+    "prayer_sequence": [
+      "Selion",
+      "Maviel",
+      "Talion",
+      "Verath"
+    ],
+    "prayer_framework": "Father, I faithfully steward what God has entrusted to me.",
+    "declaration": "I faithfully steward what God has entrusted to me.",
+    "divine_assignment": "Pray through Selion -> Maviel -> Talion -> Verath and journal one reflection connected to Stewardship & Service.",
+    "calling_connection": "Supports stewardship & service through Selion, Maviel, Talion, Verath, Aldor, Paqar.",
+    "animation_prompt": "A Promise Cluster scene for Stewardship & Service: Selion, Maviel, Talion, Verath, Aldor, Paqar appear as connected lights around 1 Peter 4:10.",
+    "book_entry_template": "Today I prayed the Stewardship & Service cluster: I faithfully steward what God has entrusted to me.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC08",
+    "id": "PC08",
+    "title": "Fruitfulness & Increase",
+    "name": "Fruitfulness & Increase",
+    "theme": "Fruitfulness & Increase",
+    "description": "Words connected to harvest, multiplication, overflow, and visible growth.",
+    "promise_category": "Fruitfulness",
+    "promise_level": "A",
+    "scripture_references": [
+      "John 15:5"
+    ],
+    "anchorScripture": "John 15:5",
+    "anchor_scripture": "John 15:5",
+    "summary": "Words connected to harvest, multiplication, overflow, and visible growth.",
+    "keywords": [
+      "Auren",
+      "Mirath",
+      "Solion",
+      "Velian",
+      "Kavion",
+      "Nitzan",
+      "Fruitfulness",
+      "Increase"
+    ],
+    "coreWords": [
+      "Auren",
+      "Mirath",
+      "Solion",
+      "Velian",
+      "Kavion",
+      "Nitzan"
+    ],
+    "core_words": [
+      "Auren",
+      "Mirath",
+      "Solion",
+      "Velian",
+      "Kavion",
+      "Nitzan"
+    ],
+    "related_teoyube_words": [
+      "Auren",
+      "Mirath",
+      "Solion",
+      "Velian",
+      "Kavion",
+      "Nitzan"
+    ],
+    "prayerSequence": [
+      "Auren",
+      "Mirath",
+      "Velian",
+      "Solion"
+    ],
+    "prayer_sequence": [
+      "Auren",
+      "Mirath",
+      "Velian",
+      "Solion"
+    ],
+    "prayer_framework": "Father, let my life bears fruit through God’s grace and power.",
+    "declaration": "My life bears fruit through God’s grace and power.",
+    "divine_assignment": "Pray through Auren -> Mirath -> Velian -> Solion and journal one reflection connected to Fruitfulness & Increase.",
+    "calling_connection": "Supports fruitfulness & increase through Auren, Mirath, Solion, Velian, Kavion, Nitzan.",
+    "animation_prompt": "A Promise Cluster scene for Fruitfulness & Increase: Auren, Mirath, Solion, Velian, Kavion, Nitzan appear as connected lights around John 15:5.",
+    "book_entry_template": "Today I prayed the Fruitfulness & Increase cluster: My life bears fruit through God’s grace and power.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC09",
+    "id": "PC09",
+    "title": "Grace & Mercy",
+    "name": "Grace & Mercy",
+    "theme": "Grace & Mercy",
+    "description": "Words connected to grace, mercy, forgiveness, release, and divine help.",
+    "promise_category": "Grace",
+    "promise_level": "A",
+    "scripture_references": [
+      "Lamentations 3:22-23"
+    ],
+    "anchorScripture": "Lamentations 3:22-23",
+    "anchor_scripture": "Lamentations 3:22-23",
+    "summary": "Words connected to grace, mercy, forgiveness, release, and divine help.",
+    "keywords": [
+      "Norah",
+      "Chesed",
+      "Ezer",
+      "Yovel",
+      "Shuv",
+      "Galal",
+      "Grace",
+      "Mercy"
+    ],
+    "coreWords": [
+      "Norah",
+      "Chesed",
+      "Ezer",
+      "Yovel",
+      "Shuv",
+      "Galal"
+    ],
+    "core_words": [
+      "Norah",
+      "Chesed",
+      "Ezer",
+      "Yovel",
+      "Shuv",
+      "Galal"
+    ],
+    "related_teoyube_words": [
+      "Norah",
+      "Chesed",
+      "Ezer",
+      "Yovel",
+      "Shuv",
+      "Galal"
+    ],
+    "prayerSequence": [
+      "Norah",
+      "Chesed",
+      "Ezer",
+      "Yovel"
+    ],
+    "prayer_sequence": [
+      "Norah",
+      "Chesed",
+      "Ezer",
+      "Yovel"
+    ],
+    "prayer_framework": "Father, God’s grace and mercy cover, help, and restore me.",
+    "declaration": "God’s grace and mercy cover, help, and restore me.",
+    "divine_assignment": "Pray through Norah -> Chesed -> Ezer -> Yovel and journal one reflection connected to Grace & Mercy.",
+    "calling_connection": "Supports grace & mercy through Norah, Chesed, Ezer, Yovel, Shuv, Galal.",
+    "animation_prompt": "A Promise Cluster scene for Grace & Mercy: Norah, Chesed, Ezer, Yovel, Shuv, Galal appear as connected lights around Lamentations 3:22-23.",
+    "book_entry_template": "Today I prayed the Grace & Mercy cluster: God’s grace and mercy cover, help, and restore me.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC10",
+    "id": "PC10",
+    "title": "Presence & Glory",
+    "name": "Presence & Glory",
+    "theme": "Presence & Glory",
+    "description": "Words connected to God’s presence, glory, holiness, majesty, and dwelling.",
+    "promise_category": "Presence",
+    "promise_level": "A",
+    "scripture_references": [
+      "2 Corinthians 3:18"
+    ],
+    "anchorScripture": "2 Corinthians 3:18",
+    "anchor_scripture": "2 Corinthians 3:18",
+    "summary": "Words connected to God’s presence, glory, holiness, majesty, and dwelling.",
+    "keywords": [
+      "Zionel",
+      "Hadriel",
+      "Doxa",
+      "Kavod",
+      "Qadosh",
+      "Maran",
+      "Presence",
+      "Glory"
+    ],
+    "coreWords": [
+      "Zionel",
+      "Hadriel",
+      "Doxa",
+      "Kavod",
+      "Qadosh",
+      "Maran"
+    ],
+    "core_words": [
+      "Zionel",
+      "Hadriel",
+      "Doxa",
+      "Kavod",
+      "Qadosh",
+      "Maran"
+    ],
+    "related_teoyube_words": [
+      "Zionel",
+      "Hadriel",
+      "Doxa",
+      "Kavod",
+      "Qadosh",
+      "Maran"
+    ],
+    "prayerSequence": [
+      "Zionel",
+      "Doxa",
+      "Kavod",
+      "Qadosh"
+    ],
+    "prayer_sequence": [
+      "Zionel",
+      "Doxa",
+      "Kavod",
+      "Qadosh"
+    ],
+    "prayer_framework": "Father, God’s presence transforms me from glory to glory.",
+    "declaration": "God’s presence transforms me from glory to glory.",
+    "divine_assignment": "Pray through Zionel -> Doxa -> Kavod -> Qadosh and journal one reflection connected to Presence & Glory.",
+    "calling_connection": "Supports presence & glory through Zionel, Hadriel, Doxa, Kavod, Qadosh, Maran.",
+    "animation_prompt": "A Promise Cluster scene for Presence & Glory: Zionel, Hadriel, Doxa, Kavod, Qadosh, Maran appear as connected lights around 2 Corinthians 3:18.",
+    "book_entry_template": "Today I prayed the Presence & Glory cluster: God’s presence transforms me from glory to glory.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC11",
+    "id": "PC11",
+    "title": "Obedience & Direction",
+    "name": "Obedience & Direction",
+    "theme": "Obedience & Direction",
+    "description": "Words connected to hearing, walking, instruction, surrender, and divine path.",
+    "promise_category": "Direction",
+    "promise_level": "A",
+    "scripture_references": [
+      "Proverbs 3:5-6"
+    ],
+    "anchorScripture": "Proverbs 3:5-6",
+    "anchor_scripture": "Proverbs 3:5-6",
+    "summary": "Words connected to hearing, walking, instruction, surrender, and divine path.",
+    "keywords": [
+      "Shema",
+      "Yarah",
+      "Yashar",
+      "Derek",
+      "Orel",
+      "Yadiel",
+      "Obedience",
+      "Direction"
+    ],
+    "coreWords": [
+      "Shema",
+      "Yarah",
+      "Yashar",
+      "Derek",
+      "Orel",
+      "Yadiel"
+    ],
+    "core_words": [
+      "Shema",
+      "Yarah",
+      "Yashar",
+      "Derek",
+      "Orel",
+      "Yadiel"
+    ],
+    "related_teoyube_words": [
+      "Shema",
+      "Yarah",
+      "Yashar",
+      "Derek",
+      "Orel",
+      "Yadiel"
+    ],
+    "prayerSequence": [
+      "Shema",
+      "Yarah",
+      "Yashar",
+      "Derek"
+    ],
+    "prayer_sequence": [
+      "Shema",
+      "Yarah",
+      "Yashar",
+      "Derek"
+    ],
+    "prayer_framework": "Father, I hear God’s voice and walk in His way.",
+    "declaration": "I hear God’s voice and walk in His way.",
+    "divine_assignment": "Pray through Shema -> Yarah -> Yashar -> Derek and journal one reflection connected to Obedience & Direction.",
+    "calling_connection": "Supports obedience & direction through Shema, Yarah, Yashar, Derek, Orel, Yadiel.",
+    "animation_prompt": "A Promise Cluster scene for Obedience & Direction: Shema, Yarah, Yashar, Derek, Orel, Yadiel appear as connected lights around Proverbs 3:5-6.",
+    "book_entry_template": "Today I prayed the Obedience & Direction cluster: I hear God’s voice and walk in His way.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  },
+  {
+    "cluster_id": "PC12",
+    "id": "PC12",
+    "title": "Legacy & Inheritance",
+    "name": "Legacy & Inheritance",
+    "theme": "Legacy & Inheritance",
+    "description": "Words connected to inheritance, reward, generations, legacy, and completion.",
+    "promise_category": "Inheritance & Legacy",
+    "promise_level": "A",
+    "scripture_references": [
+      "Psalm 112:1-2"
+    ],
+    "anchorScripture": "Psalm 112:1-2",
+    "anchor_scripture": "Psalm 112:1-2",
+    "summary": "Words connected to inheritance, reward, generations, legacy, and completion.",
+    "keywords": [
+      "Sariel",
+      "Nachalah",
+      "Doriel",
+      "Valion",
+      "Vareth",
+      "Themar",
+      "Legacy",
+      "Inheritance"
+    ],
+    "coreWords": [
+      "Sariel",
+      "Nachalah",
+      "Doriel",
+      "Valion",
+      "Vareth",
+      "Themar"
+    ],
+    "core_words": [
+      "Sariel",
+      "Nachalah",
+      "Doriel",
+      "Valion",
+      "Vareth",
+      "Themar"
+    ],
+    "related_teoyube_words": [
+      "Sariel",
+      "Nachalah",
+      "Doriel",
+      "Valion",
+      "Vareth",
+      "Themar"
+    ],
+    "prayerSequence": [
+      "Nachalah",
+      "Sariel",
+      "Doriel",
+      "Vareth"
+    ],
+    "prayer_sequence": [
+      "Nachalah",
+      "Sariel",
+      "Doriel",
+      "Vareth"
+    ],
+    "prayer_framework": "Father, God establishes a righteous legacy and inheritance through my life.",
+    "declaration": "God establishes a righteous legacy and inheritance through my life.",
+    "divine_assignment": "Pray through Nachalah -> Sariel -> Doriel -> Vareth and journal one reflection connected to Legacy & Inheritance.",
+    "calling_connection": "Supports legacy & inheritance through Sariel, Nachalah, Doriel, Valion, Vareth, Themar.",
+    "animation_prompt": "A Promise Cluster scene for Legacy & Inheritance: Sariel, Nachalah, Doriel, Valion, Vareth, Themar appear as connected lights around Psalm 112:1-2.",
+    "book_entry_template": "Today I prayed the Legacy & Inheritance cluster: God establishes a righteous legacy and inheritance through my life.",
+    "journey_status_options": [
+      "Discovered",
+      "Studying",
+      "Praying",
+      "Acting",
+      "Witnessing Progress",
+      "Testified",
+      "Remembered"
+    ]
+  }
+]

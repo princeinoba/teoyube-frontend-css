@@ -1,0 +1,8 @@
+[
+  { "id": "duplicate_id", "mutation": "duplicate_id", "expectedValid": false },
+  { "id": "absolute_path", "mutation": "absolute_path", "expectedValid": false },
+  { "id": "path_traversal", "mutation": "path_traversal", "expectedValid": false },
+  { "id": "html_injection", "mutation": "html_injection", "expectedValid": false },
+  { "id": "unknown_extension", "mutation": "unknown_extension", "expectedValid": false },
+  { "id": "missing_technical_metadata", "mutation": "missing_technical_metadata", "expectedWarning": true }
+]

@@ -1,0 +1,3 @@
+body[data-view="guide"] :where(.guide-layout, .guide-main, .guide-chat-panel) {
+  max-width: 100%;
+}

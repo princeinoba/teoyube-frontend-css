@@ -1,0 +1,48 @@
+{
+  "phase": "4A",
+  "name": "Teoyube Kingdom Operating System",
+  "version": "1.0",
+  "visionQuestions": {
+    "identity": "Who am I becoming?",
+    "calling": "What is God calling me to do?",
+    "growth": "Where am I in my spiritual journey?",
+    "stewardship": "What has God entrusted to me?",
+    "legacy": "What impact will my life leave behind?"
+  },
+  "systemFlow": [
+    "Scripture Canon",
+    "Teoyube Lexicon",
+    "Promise Clusters",
+    "Prayer Engine",
+    "User Profile",
+    "Growth Engine",
+    "Destiny Engine",
+    "AI Spiritual Companion"
+  ],
+  "modules": [
+    "User Profile System",
+    "Growth Level System",
+    "Archetype Discovery Engine",
+    "Covenant Path Engine",
+    "Daily Word Recommendation Engine",
+    "Destiny Assessment Engine",
+    "Journal System",
+    "Prayer Analytics",
+    "AI Spiritual Companion",
+    "Teoyube Kingdom Dashboard"
+  ],
+  "databaseCollections": [
+    "users",
+    "words",
+    "scriptures",
+    "archetypes",
+    "paths",
+    "clusters",
+    "prayers",
+    "journeys",
+    "journals",
+    "assessments",
+    "recommendations",
+    "analytics"
+  ]
+}

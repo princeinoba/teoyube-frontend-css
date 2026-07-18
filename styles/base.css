@@ -1,0 +1,17 @@
+body {
+  color: var(--color-ink);
+  background: var(--color-canvas);
+}
+
+:where(h1, h2, h3, h4, p) {
+  overflow-wrap: anywhere;
+}
+
+:where(button, a, input, select, textarea):focus-visible {
+  outline: 3px solid rgba(8, 117, 111, 0.34);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none;
+}

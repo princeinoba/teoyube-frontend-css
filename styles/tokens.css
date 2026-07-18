@@ -1,0 +1,31 @@
+:root {
+  --color-ink: #10211f;
+  --color-muted: #5d6f6a;
+  --color-line: #dbe7e2;
+  --color-canvas: #f4faf7;
+  --color-panel: #ffffff;
+  --color-teal: #08756f;
+  --color-teal-strong: #045d58;
+  --color-green: #247a45;
+  --color-gold: #d7b75f;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --radius-control: 6px;
+  --radius-panel: 8px;
+  --sidebar-width: 15rem;
+  --z-base: 0;
+  --z-sticky: 20;
+  --z-sidebar: 30;
+  --z-rail: 40;
+  --z-overlay: 100;
+  --z-drawer: 110;
+  --z-modal-backdrop: 200;
+  --z-modal: 210;
+  --z-toast: 300;
+  --z-command: 400;
+  --z-qa: 500;
+}

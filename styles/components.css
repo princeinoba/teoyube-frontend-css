@@ -1,0 +1,18 @@
+:where(.module-card, .canon-card, .promise-card, .search-result-card, .embedded-video-card) {
+  border-radius: var(--radius-panel);
+}
+
+:where(.primary, .secondary, .icon-button, .nav-item) {
+  border-radius: var(--radius-control);
+}
+
+:where(.phase114-table-wrap, .teoyube-table-wrap, .promise-search-scroll-wrapper) {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+:where(dialog, .phase113-command-card, .phase115-personalization-dialog) {
+  max-width: min(56rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 2rem);
+}

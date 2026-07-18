@@ -1,0 +1,94 @@
+{
+  "archetypeDiscovery": {
+    "assessmentAreas": [
+      "Identity",
+      "Service",
+      "Leadership",
+      "Teaching",
+      "Prayer",
+      "Healing",
+      "Stewardship",
+      "Influence"
+    ],
+    "exampleResult": {
+      "archetype": "The Builder",
+      "confidence": 89,
+      "supportingWords": ["Selion", "Maviel", "Tharon", "Velian"]
+    }
+  },
+  "covenantPathProgress": {
+    "path": "Calling",
+    "completion": 42,
+    "completedWords": ["Benor", "Arion"],
+    "nextWord": "Luma",
+    "stages": ["Discovery", "Development", "Activation", "Manifestation", "Legacy"]
+  },
+  "dailyWordRecommendation": {
+    "date": "2026-06-21",
+    "word": "Luma",
+    "cluster": "Light & Revelation",
+    "scripture": "John 8:12",
+    "reflectionPrompt": "Where do I need God's light today?",
+    "logic": {
+      "if": "NeedWisdom",
+      "recommend": ["Luma", "Solen", "Emeth", "Hazon"]
+    }
+  },
+  "destinyAssessment": {
+    "identity": 85,
+    "prayer": 70,
+    "wisdom": 81,
+    "stewardship": 90,
+    "service": 88,
+    "influence": 62,
+    "legacy": 55
+  },
+  "journalExample": {
+    "entryId": "JNL001",
+    "word": "Taviel",
+    "scripture": "Ephesians 2:10",
+    "reflection": "Today I sensed God directing me toward my purpose.",
+    "tags": ["calling", "purpose"]
+  },
+  "prayerAnalytics": {
+    "record": {
+      "prayerId": "PR004",
+      "timesPrayed": 17,
+      "lastPrayed": "2026-06-20",
+      "favorite": true
+    },
+    "insights": {
+      "topCluster": "Light & Revelation",
+      "topWord": "Luma",
+      "mostUsedPrayer": "PR004"
+    }
+  },
+  "aiSpiritualCompanion": {
+    "roles": ["Teacher", "Guide", "Encourager", "Companion"],
+    "exampleRequest": {
+      "user": "USR001",
+      "request": "I need wisdom for a decision."
+    },
+    "responseLogic": {
+      "recommendedCluster": "Light & Revelation",
+      "recommendedWords": ["Luma", "Solen", "Emeth"],
+      "recommendedPrayer": "PR004"
+    }
+  },
+  "kingdomDashboard": {
+    "dailyWord": "Luma",
+    "currentJourney": "Calling Journey",
+    "growthLevel": "Established",
+    "activePrayer": "PR004",
+    "widgets": [
+      "Daily Word",
+      "Prayer Tracker",
+      "Journey Progress",
+      "Archetype Profile",
+      "Growth Score",
+      "Recent Journal Entries",
+      "Recommended Scripture",
+      "Promise Cluster Focus"
+    ]
+  }
+}

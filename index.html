@@ -1,0 +1,1595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TEOYUBE helps Saints discover biblical promises, understand calling, receive daily divine assignments, and build the Book of the Saint."
+    />
+    <title>TEOYUBE App</title>
+    <link rel="preload" as="image" href="public/images/today-carousel/today-carousel-01-welcome.png" />
+    <link rel="stylesheet" href="styles/legacy.css?recovery=1" />
+    <link rel="stylesheet" href="styles/tokens.css?recovery=1" />
+    <link rel="stylesheet" href="styles/reset.css?recovery=1" />
+    <link rel="stylesheet" href="styles/base.css?recovery=1" />
+    <link rel="stylesheet" href="styles/layout.css?recovery=1" />
+    <link rel="stylesheet" href="styles/components.css?recovery=1" />
+    <link rel="stylesheet" href="styles/pages/index.css?recovery=1" />
+    <link rel="stylesheet" href="styles/utilities.css?recovery=1" />
+    <link rel="stylesheet" href="styles/responsive.css?recovery=1" />
+  </head>
+  <body>
+    <a class="skip-link" href="#appMain">Skip to main content</a>
+    <div class="app-shell">
+      <aside class="sidebar app-sidebar" id="primarySidebar" aria-label="Primary">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <p class="eyebrow">Ephesians 1:18</p>
+            <h1>TEOYUBE</h1>
+            <p class="brand-subtitle">Creative Digital Ministry</p>
+          </div>
+        </div>
+
+        <nav class="nav-list">
+          <button class="nav-item active" data-view="today">Today</button>
+          <button class="nav-item" data-view="search">TeoyubeSearch</button>
+          <button class="nav-item" data-view="canon">Canon</button>
+          <button class="nav-item" data-view="table">Promise Table</button>
+          <button class="nav-item" data-view="calling">Calling Compass</button>
+          <button class="nav-item" data-view="book">Book of the Saint</button>
+          <button class="nav-item" data-view="lexicon">Lexicon</button>
+          <button class="nav-item" data-view="testimony">Testimony</button>
+          <button class="nav-item" data-view="guide">Teo Guide</button>
+          <button class="nav-item" data-view="ui-elements">Embedded Videos</button>
+          <button class="nav-item" data-view="teoyube-tables">Tables</button>
+        </nav>
+
+        <section class="saint-card" aria-label="Saint profile">
+          <div class="saint-profile-head">
+            <span class="saint-avatar" aria-hidden="true"></span>
+            <div>
+              <p>Welcome back,</p>
+              <h2 id="sidebarName">Saint</h2>
+            </div>
+            <span class="active-badge">Active</span>
+          </div>
+          <p id="sidebarCalling">Creative Digital Ministry Active Assignment</p>
+          <button class="secondary full" id="openAssessment" type="button">Purpose Assessment</button>
+          <button class="secondary full" id="openPersonalizationCenter" type="button">Personalization Center</button>
+        </section>
+      </aside>
+      <button class="mobile-nav-backdrop" id="mobileNavBackdrop" type="button" aria-label="Close navigation" hidden></button>
+      <button class="secondary action-icon-button mobile-nav-toggle" id="mobileNavToggle" type="button" aria-controls="primarySidebar" aria-expanded="false"><span class="button-icon button-icon-menu" aria-hidden="true"></span><span>Menu</span></button>
+
+      <main class="app-main" id="appMain" tabindex="-1">
+        <header class="topbar app-header">
+          <div>
+            <p class="eyebrow">Where God's Promises Meet Your Calling</p>
+            <h2 id="viewTitle">Today's Promise Animation</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="secondary action-icon-button" id="privacyBtn"><span class="button-icon button-icon-guardrails" aria-hidden="true"></span><span>Guardrails</span></button>
+            <button class="primary action-icon-button" id="generateBtn"><span class="button-icon button-icon-journey" aria-hidden="true"></span><span>Generate Today's Journey</span></button>
+          </div>
+        </header>
+
+        <section class="view page-container active" id="today" aria-labelledby="viewTitle">
+          <div class="today-premium-shell">
+            <section class="promise-carousel" id="todayPromiseCarousel" aria-label="Automated Today's Promise carousel" tabindex="0">
+              <button class="carousel-arrow prev" id="carouselPrev" type="button" aria-label="Previous promise slide">←</button>
+              <div class="carousel-viewport">
+                <div class="carousel-track" id="promiseCarouselTrack"></div>
+              </div>
+              <button class="carousel-arrow next" id="carouselNext" type="button" aria-label="Next promise slide">→</button>
+              <div class="carousel-dots" id="promiseCarouselDots" aria-label="Promise slide pagination"></div>
+            </section>
+
+            <section class="today-insight-row" aria-label="Today's promise summary">
+            <article class="promise-detail-card">
+              <p class="eyebrow">Today's Promise Animation</p>
+              <h3 id="dailyTheme">Divine Direction</h3>
+              <p id="dailySummary">
+                A storyboard experience that connects your current challenge to Scripture, prayer, calling, and one faithful action.
+              </p>
+              <div class="scripture-strip" id="dailyScriptures"></div>
+            </article>
+            <article class="daily-inspiration-card">
+              <p class="eyebrow">Daily Inspiration</p>
+              <blockquote>The Lord will keep you from all harm; He will watch over your life.</blockquote>
+              <strong>Psalm 121:7</strong>
+            </article>
+            <article class="daily-progress-card">
+              <p class="eyebrow">Daily Progress</p>
+              <div class="progress-widget">
+                <div class="progress-ring" aria-label="72 percent complete"><span>72%</span></div>
+                <ul>
+                  <li>Prayer <span>✓</span></li>
+                  <li>Scripture <span>✓</span></li>
+                  <li>Reflection <span>✓</span></li>
+                  <li>Assignment <span>□</span></li>
+                </ul>
+              </div>
+            </article>
+            <article class="streak-card">
+              <p class="eyebrow">Streak</p>
+              <div class="streak-number"><span>🔥</span><strong>12</strong></div>
+              <p>Days</p>
+              <small>Keep going, Saint!</small>
+            </article>
+            </section>
+
+            <section class="today-action-grid">
+              <div class="word-card">
+                <p class="eyebrow">Teoyube Word of the Day</p>
+                <h3 id="dailyWord">TIDOVAP</h3>
+                <p id="dailyMeaning">Trust In Divine Order, Voice, And Path.</p>
+                <button class="secondary" id="prayBtn">Pray Framework</button>
+              </div>
+              <div class="assignment-card">
+                <p class="eyebrow">Daily Divine Assignment</p>
+                <ul id="assignmentList"></ul>
+                <textarea id="reflectionInput" placeholder="Record today's reflection for the Book of the Saint"></textarea>
+                <button class="primary full" id="completeAssignment">Complete Assignment</button>
+              </div>
+              <article class="integration-card search-promise-card teoyubeworld-featured-panel" aria-labelledby="teoyubeworldFeaturedTitle">
+                <div class="featured-story-panel-inner">
+                  <div class="featured-story-search-shell">
+                    <div class="featured-story-heading">
+                      <span class="featured-story-brand-icon" aria-hidden="true"></span>
+                      <div>
+                        <p class="eyebrow">TeoyubeWorld Search</p>
+                        <h3 id="teoyubeworldFeaturedTitle">Featured Stories</h3>
+                      </div>
+                    </div>
+                    <p class="featured-story-lede">Search videos, teachings, devotionals, articles, and featured updates from TeoyubeWorld.</p>
+                    <form id="promiseMovieForm" class="promise-search-form">
+                      <label for="promiseMovieInput">Search TeoyubeWorld:</label>
+                      <input id="promiseMovieInput" name="search" type="text" placeholder="Search TeoyubeWorld..." value="TeoyubeWorld" />
+                      <button class="primary" type="submit" aria-label="Search TeoyubeWorld">Search</button>
+                    </form>
+                    <div class="search-chip-row" aria-label="TeoyubeWorld search filters">
+                      <button class="active" type="button" data-world-query="TeoyubeWorld">Videos</button>
+                      <button type="button" data-world-query="TeoyubeWorld teachings">Teachings</button>
+                      <button type="button" data-world-query="TeoyubeWorld devotionals">Devotionals</button>
+                      <button type="button" data-world-query="TeoyubeWorld articles">Articles</button>
+                    </div>
+                    <p class="muted small" id="promiseMovieStatus">Loading TeoyubeWorld videos.</p>
+                  </div>
+                  <div class="featured-story-carousel" id="featuredStoryCarousel" tabindex="0" aria-label="Featured TeoyubeWorld stories"></div>
+                </div>
+              </article>
+            </section>
+          </div>
+          <div class="today-integrations">
+            <section class="teoyube-promise-panel">
+              <article class="integration-card promise-movie-card" id="promiseMovieResult"></article>
+            </section>
+
+            <section class="integration-card clients-promise-card">
+              <div class="clients-card-header">
+                <h3>TeoyubeWorld Feed</h3>
+                <button class="icon-menu" type="button" aria-label="Promise table menu">...</button>
+              </div>
+              <div class="clients-table-wrap">
+                <table class="clients-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Title</th>
+                      <th>Description</th>
+                      <th>Video</th>
+                      <th>Channel</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody id="clientsPromiseRows"></tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view page-container owner-qa-view" id="roadmap">
+          <div class="roadmap-dashboard">
+            <header class="roadmap-dashboard-header">
+              <div>
+                <button class="roadmap-back" type="button" data-view-shortcut="today">&lt; Back</button>
+                <h3>Implementation Roadmap</h3>
+                <p>Your complete roadmap to build, launch, and scale the Teoyube App &amp; AI Ministry Ecosystem.</p>
+              </div>
+              <div class="roadmap-dashboard-actions">
+                <button class="secondary" type="button">Export</button>
+                <button class="primary action-icon-button" type="button" data-view-shortcut="today"><span class="button-icon button-icon-journey" aria-hidden="true"></span><span>Generate Today's Journey</span></button>
+                <button class="roadmap-icon-action" type="button" aria-label="Search roadmap">⌕</button>
+                <button class="roadmap-icon-action notification" type="button" aria-label="Notifications">♧<span>3</span></button>
+                <span class="roadmap-avatar" aria-hidden="true"></span>
+              </div>
+            </header>
+
+            <div class="roadmap-kpi-grid" id="roadmapKpiGrid"></div>
+
+            <div class="roadmap-command-grid">
+            <section class="roadmap-phase roadmap-system-panel">
+              <div class="roadmap-panel-menu">...</div>
+              <p class="eyebrow">Phase 01</p>
+              <h3>Teoyube Kingdom Operating System</h3>
+              <p id="tkosSummary">A complete spiritual growth platform built on Scripture Canon, Lexicon, Promise Clusters, Prayer Engine, User Profile, Growth Engine, Destiny Engine, and AI Spiritual Companion.</p>
+              <div class="canon-grid roadmap-module-grid" id="tkosGrid"></div>
+            </section>
+
+            <section class="roadmap-phase roadmap-ministry-panel">
+              <div class="roadmap-panel-menu">...</div>
+              <p class="eyebrow">Phase 01</p>
+              <h3>North - Creative Digital Ministry</h3>
+              <p>Ministry vision, departments, and strategic structure.</p>
+              <div class="canon-wide roadmap-north-layout" id="tkosDetails"></div>
+            </section>
+            </div>
+
+            <section class="roadmap-phase roadmap-journey-phase">
+              <p class="eyebrow">Phase 02</p>
+              <h3>Automated Journey Cards</h3>
+              <section class="teoyube-ad-carousel" id="teoyubeAdCarousel" aria-label="Teoyube promotional promise carousel" tabindex="0">
+                <div class="ad-carousel-head">
+                  <div>
+                    <p class="eyebrow">Promise Journey</p>
+                    <h4>Automated Journey Cards</h4>
+                  </div>
+                  <div class="ad-carousel-controls">
+                    <button class="ad-arrow" id="adCarouselPrev" type="button" aria-label="Previous Teoyube ad">‹</button>
+                    <button class="ad-arrow" id="adCarouselNext" type="button" aria-label="Next Teoyube ad">›</button>
+                  </div>
+                </div>
+                <div class="ad-carousel-viewport">
+                  <div class="ad-carousel-track" id="teoyubeAdTrack"></div>
+                </div>
+                <div class="ad-carousel-dots" id="teoyubeAdDots"></div>
+              </section>
+            </section>
+
+            <div class="roadmap-bottom-grid">
+            <section class="roadmap-phase roadmap-tech-panel">
+              <div class="roadmap-panel-menu">⌘</div>
+              <p class="eyebrow">Phase 03</p>
+              <h3>Teoyube App & AI Technical Architecture</h3>
+              <p id="techSummary">Spiritual growth app, AI companion, and Scripture-linked promise language database.</p>
+              <div class="canon-grid roadmap-module-grid" id="techGrid"></div>
+              <div class="canon-wide roadmap-compact-details" id="techDetails"></div>
+              <button class="roadmap-link-button" type="button">View Full Architecture →</button>
+            </section>
+
+            <section class="roadmap-phase roadmap-archive">
+              <p class="eyebrow">Phase 04</p>
+              <h3>Project Structure, Seeds, Pages, Brand, Launch</h3>
+              <p>Complete project structure, database seeds, AI prompts, branding, and launch strategy.</p>
+              <div class="roadmap-project-widget-grid">
+                <article><span class="phase4-widget-icon" data-icon="structure"></span><div><strong>Project Structure</strong><small>320+ Files</small><p>Complete folder structure and file organization.</p></div><button type="button" aria-label="Open Project Structure">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="pages"></span><div><strong>Core Pages</strong><small>150+ Pages</small><p>All essential pages and their information architecture.</p></div><button type="button" aria-label="Open Core Pages">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="components"></span><div><strong>Components</strong><small>1500+</small><p>Reusable UI components and design system.</p></div><button type="button" aria-label="Open Components">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="brand"></span><div><strong>Branding</strong><small>Faith Driven</small><p>Brand identity, color system, typography, and guidelines.</p></div><button type="button" aria-label="Open Branding">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="database"></span><div><strong>Database Seeds</strong><small>200+ Seeds</small><p>Structured seed data for database population.</p></div><button type="button" aria-label="Open Database Seeds">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="prompts"></span><div><strong>AI Prompts</strong><small>175+ Prompts</small><p>Curated AI prompts for content, features, and automation.</p></div><button type="button" aria-label="Open AI Prompts">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="launch"></span><div><strong>Launch Strategy</strong><small>6 Phases</small><p>Step-by-step go-to-market strategy and execution plan.</p></div><button type="button" aria-label="Open Launch Strategy">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="deploy"></span><div><strong>Deployment</strong><small>CI / CD Ready</small><p>Production-ready deployment and DevOps configuration.</p></div><button type="button" aria-label="Open Deployment">-&gt;</button></article>
+                <article><span class="phase4-widget-icon" data-icon="docs"></span><div><strong>Documentation</strong><small>Complete</small><p>Technical documentation and developer guides.</p></div><button type="button" aria-label="Open Documentation">-&gt;</button></article>
+              </div>
+              <button class="roadmap-link-button" type="button">View Project Details</button>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 4C</p>
+                  <h4>Teoyube Project Structure & Implementation Roadmap</h4>
+                  <p id="roadmapSummary">Recommended project name, folder structure, seed file plan, API routes, utilities, MVP features, and four-week build roadmap.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="roadmapGrid"></div>
+                <div class="canon-wide roadmap-compact-details" id="roadmapDetails"></div>
+              </article>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 4D</p>
+                  <h4>Teoyube MVP Code Starter Files</h4>
+                  <p id="starterSummary">Next.js starter package, pages, API routes, utilities, and seed JSON for the Teoyube MVP.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="starterGrid"></div>
+                <div class="canon-wide roadmap-compact-details" id="starterDetails"></div>
+              </article>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 4E</p>
+                  <h4>Full Seed Files for Teoyube MVP</h4>
+                  <p id="seedsSummary">Promise Clusters, Covenant Paths, Archetypes, and Prayer templates for the MVP data layer.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="seedsGrid"></div>
+                <div class="canon-wide roadmap-compact-details" id="seedsDetails"></div>
+              </article>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 4F</p>
+                  <h4>Teoyube MVP User Interface Pages</h4>
+                  <p id="pagesSummary">Dashboard, Promise Clusters, Journal, AI Companion, and Word Lexicon pages for the Next.js MVP.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="pagesGrid"></div>
+                <div class="canon-wide roadmap-compact-details" id="pagesDetails"></div>
+              </article>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 4G</p>
+                  <h4>Teoyube MVP Styling System & Brand Identity UI</h4>
+                  <p id="brandSummary">Sacred, peaceful, modern brand system with Kingdom light, soft gradients, elegant cards, and Scripture-inspired minimalism.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="brandGrid"></div>
+                <div class="canon-wide roadmap-compact-details" id="brandDetails"></div>
+              </article>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 4H</p>
+                  <h4>Teoyube MVP Build Checklist & Launch Plan</h4>
+                  <p id="launchSummary">Build checklist and launch order from Static MVP through Growth System.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="launchGrid"></div>
+                <div class="canon-wide roadmap-compact-details" id="launchDetails"></div>
+              </article>
+
+              <article class="roadmap-subphase">
+                <div>
+                  <p class="eyebrow">Phase 5A</p>
+                  <h4>Full Launch 1 Static MVP Code Package</h4>
+                  <p id="launch1Summary">First working Teoyube prototype without database, login, or AI complexity.</p>
+                </div>
+                <div class="canon-grid roadmap-module-grid" id="launch1Grid"></div>
+                <div class="canon-wide roadmap-compact-details" id="launch1Details"></div>
+              </article>
+            </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="view page-container" id="search">
+          <article class="search-jumbotron">
+            <p class="eyebrow">TeoyubeSearch</p>
+            <h3>Search with <span>Purpose.</span> Walk in His <span>Promises.</span></h3>
+            <p class="search-hero-copy">Search your situation, promise, Scripture, prayer, calling, Teoyube word, journey, assignment, canon, or Kingdom principle.</p>
+            <form class="search-form" id="teoyubeSearchForm">
+              <input
+                id="teoyubeSearchInput"
+                placeholder="I feel confused about my purpose"
+                value="I feel confused about my purpose"
+              />
+              <select id="teoyubeSearchCategory" aria-label="Search category">
+                <option>All</option>
+                <option>Promise</option>
+                <option>Scripture</option>
+                <option>Life Problem</option>
+                <option>Calling</option>
+                <option>Prayer</option>
+                <option>Teoyube Word</option>
+                <option>Testimony</option>
+              </select>
+              <button class="primary" type="submit">Search Promise</button>
+            </form>
+            <div class="quick-prompts" id="promiseClusterNavigation"></div>
+          </article>
+          <section class="search-results-shell">
+            <div class="search-results-toolbar">
+              <div>
+                <p class="eyebrow">Suggested Journeys for You</p>
+                <h3>Personalized guidance based on your search</h3>
+              </div>
+              <div class="search-view-actions" aria-label="Search result view controls">
+                <button class="active" type="button" aria-label="Grid view">▦</button>
+                <button type="button" aria-label="List view">☰</button>
+                <select aria-label="Sort search results">
+                  <option>Most Relevant</option>
+                  <option>Newest</option>
+                  <option>Calling Match</option>
+                  <option>Journey Level</option>
+                </select>
+              </div>
+            </div>
+          <div class="search-results" id="teoyubeSearchResults"></div>
+          </section>
+          <section class="search-feature-row" aria-label="TeoyubeSearch benefits">
+            <article><span class="search-feature-icon" data-icon="book"></span><div><h3>Scripture Rooted</h3><p>Every result is anchored in God's Word.</p></div></article>
+            <article><span class="search-feature-icon" data-icon="person"></span><div><h3>Personalized Guidance</h3><p>Tailored to your profile, calling, and current season.</p></div></article>
+            <article><span class="search-feature-icon" data-icon="check"></span><div><h3>Take Action</h3><p>Save, pray, and walk forward with clarity.</p></div></article>
+            <article><span class="search-feature-icon" data-icon="leaf"></span><div><h3>Grow Daily</h3><p>Generate a daily journey and stay aligned with purpose.</p></div></article>
+          </section>
+        </section>
+
+        <section class="view page-container" id="canon">
+          <div class="canon-premium-layout">
+            <div class="canon-main-column">
+              <section class="canon-kingdom-hero">
+                <div class="canon-hero-copy">
+                  <h3>Every <span>Journey</span><br />Reveals His Promise.<br />Every <span>Promise</span><br />Shapes Your Calling.</h3>
+                  <p id="canonSummary">Walk daily through Scripture, Calling, Purpose, Canon Journeys, Wisdom and Legacy.</p>
+                </div>
+                <form class="canon-hero-search" role="search">
+                  <span aria-hidden="true">⌕</span>
+                  <input type="search" placeholder="Search journeys, promises, scriptures, or your calling..." />
+                  <select aria-label="Canon category">
+                    <option>All Categories</option>
+                    <option>Canon Maps</option>
+                    <option>Archetypes</option>
+                    <option>Promise Clusters</option>
+                  </select>
+                  <button class="primary" type="button">Search</button>
+                </form>
+                <div class="canon-quick-chips" aria-label="Canon search suggestions">
+                  <button type="button">I need direction</button>
+                  <button type="button">I need healing</button>
+                  <button type="button">I need wisdom</button>
+                  <button type="button">I need peace</button>
+                  <button type="button">I need identity</button>
+                  <button type="button">I need breakthrough</button>
+                  <button type="button">I need increase</button>
+                </div>
+              </section>
+
+              <div class="canon-kpi-grid" id="canonKpiGrid"></div>
+              <div class="canon-tabs" id="canonTabs"></div>
+
+              <section class="canon-section-block">
+                <div class="canon-section-title">
+                  <h3>Featured Journeys</h3>
+                  <span>View all →</span>
+                </div>
+                <div class="canon-project-grid" id="canonGrid"></div>
+              </section>
+
+              <section class="canon-section-block">
+                <div class="canon-section-title">
+                  <h3>Journey Categories</h3>
+                  <span>View all →</span>
+                </div>
+                <div class="canon-category-grid canon-category-carousel" id="canonCategoryGrid" aria-label="Journey categories carousel"></div>
+              </section>
+
+              <section class="canon-section-block">
+                <div class="canon-section-title">
+                  <h3>Recently Updated</h3>
+                  <span>View all →</span>
+                </div>
+                <div class="canon-recent-grid" id="canonRecentGrid"></div>
+              </section>
+
+              <section class="canon-section-block canon-explore-section" aria-labelledby="canonExploreTitle">
+                <div class="canon-section-title canon-section-title-stacked">
+                  <div>
+                    <h3 id="canonExploreTitle">Explore More Canon Paths</h3>
+                    <p>Continue through Scripture, prayer, promise language, worship, growth, identity, testimony, and kingdom calling.</p>
+                  </div>
+                </div>
+                <div class="canon-explore-grid" id="canonExploreGrid"></div>
+              </section>
+
+              <nav class="canon-pagination" id="canonPagination" aria-label="Canon card pagination"></nav>
+            </div>
+            <aside class="canon-detail-panel" id="canonPaths"></aside>
+          </div>
+        </section>
+
+        <section class="view page-container" id="table">
+          <div class="promise-table-grid">
+            <article class="module-card span-two promise-scrolls-panel">
+              <p class="eyebrow">Promise Scrolls</p>
+              <h3 id="clusterTitle">Promise Cluster</h3>
+              <p id="clusterSummary"></p>
+              <div class="status-rail" id="journeyStatuses"></div>
+            </article>
+            <article class="module-card promise-calling-compass-card" aria-label="Calling Compass">
+              <div class="promise-compass-heading">
+                <span class="promise-compass-heading-icon" aria-hidden="true"></span>
+                <div>
+                  <p class="eyebrow">Calling Compass</p>
+                  <p>Discover the core of your God-given calling</p>
+                </div>
+              </div>
+              <div class="mini-compass promise-calling-compass" role="img" aria-label="Calling Compass with Primary, Burdens, Gifts, and Growth">
+                <svg class="promise-compass-lines" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                  <circle class="promise-compass-ring outer" cx="50" cy="50" r="36"></circle>
+                  <circle class="promise-compass-ring middle" cx="50" cy="50" r="27"></circle>
+                  <circle class="promise-compass-ring inner" cx="50" cy="50" r="18"></circle>
+                  <path class="promise-compass-axis vertical" d="M50 14 L50 86"></path>
+                  <path class="promise-compass-axis horizontal" d="M14 50 L86 50"></path>
+                  <circle class="promise-compass-spark" cx="50" cy="14" r="1.35"></circle>
+                  <circle class="promise-compass-spark" cx="86" cy="50" r="1.35"></circle>
+                  <circle class="promise-compass-spark" cx="50" cy="86" r="1.35"></circle>
+                  <circle class="promise-compass-spark" cx="14" cy="50" r="1.35"></circle>
+                </svg>
+                <span class="promise-compass-node primary-node" tabindex="0">
+                  <i aria-hidden="true"></i>
+                  <em>Primary</em>
+                  <small>Your central calling and assignment</small>
+                </span>
+                <span class="promise-compass-node burdens-node" tabindex="0">
+                  <i aria-hidden="true"></i>
+                  <em>Burdens</em>
+                  <small>The needs that break your heart</small>
+                </span>
+                <strong class="promise-compass-core">
+                  <i aria-hidden="true"></i>
+                  <span id="compassCenter">Assignment</span>
+                </strong>
+                <span class="promise-compass-node gifts-node" tabindex="0">
+                  <i aria-hidden="true"></i>
+                  <em>Gifts</em>
+                  <small>The abilities the Holy Spirit empowers</small>
+                </span>
+                <span class="promise-compass-node growth-node" tabindex="0">
+                  <i aria-hidden="true"></i>
+                  <em>Growth</em>
+                  <small>The continuous journey to maturity</small>
+                </span>
+              </div>
+            </article>
+            <article class="module-card">
+              <p class="eyebrow">Purpose Progression</p>
+              <h3 id="purposeStage">Awakening</h3>
+              <progress id="purposeProgress" value="14" max="100"></progress>
+              <p id="purposeDescription"></p>
+            </article>
+            <article class="module-card">
+              <p class="eyebrow">Book Snapshot</p>
+              <h3 id="bookCount">0 entries</h3>
+              <p>Promises, prayers, assignments, testimonies, and milestones are recorded here.</p>
+            </article>
+            <article class="module-card">
+              <p class="eyebrow">Testimony Archive</p>
+              <h3 id="testimonyCount">0 testimonies</h3>
+              <p>TEOYUBE never marks a promise fulfilled automatically. The Saint records testimony.</p>
+            </article>
+          </div>
+          <section class="phase114-promise-table-panel" id="phase114PromiseTablePanel" aria-labelledby="phase114PromiseTableTitle">
+            <div class="phase114-section-head">
+              <div>
+                <p class="eyebrow">Local Promise Table</p>
+                <h3 id="phase114PromiseTableTitle">Saved Promise Rows</h3>
+                <p>Session-only rows from TeoyubeSearch and Today. Scripture anchors stay visible and fulfillment remains user-recorded testimony only.</p>
+              </div>
+              <button class="secondary" type="button" data-phase114-action="export-safe">Export Safe Table</button>
+            </div>
+            <div class="phase114-table-wrap">
+              <table class="phase114-promise-table">
+                <thead>
+                  <tr>
+                    <th>Promise</th>
+                    <th>Scripture</th>
+                    <th>Status</th>
+                    <th>Source</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="savedPromiseTableRows"></tbody>
+              </table>
+            </div>
+          </section>
+          <section class="promise-search-feed">
+            <form class="promise-feed-search" id="promiseTableSearchForm">
+              <input id="promiseTableSearchInput" type="text" placeholder="Search For Promises" value="" />
+              <button class="primary" type="submit">Search</button>
+            </form>
+            <article class="promise-video-panel" id="promiseTableVideoPanel">
+              <h3>TeoyubeWorld Video Feed</h3>
+              <p>Select a promise row and click Watch Video to load TeoyubeWorld video content.</p>
+            </article>
+            <div class="promise-search-scroll-wrapper" role="region" aria-label="TeoyubeWorld video feed scroll area">
+              <div class="promise-search-list" id="promiseTableSearchResults"></div>
+            </div>
+          </section>
+        </section>
+
+        <section class="view page-container" id="ui-elements">
+          <div class="embedded-video-page">
+            <div class="embedded-video-hero">
+              <div>
+                <p class="eyebrow">God's Promises Meet Your Calling</p>
+                <h3>Embedded Videos <span class="embedded-title-icon" aria-hidden="true"></span></h3>
+                <p>Browse the original local video library or open the approved TeoyubeWorld Scripture collection for reflection.</p>
+              </div>
+              <div class="embedded-hero-actions">
+                <button class="secondary action-icon-button" type="button"><span class="button-icon button-icon-guardrails" aria-hidden="true"></span><span>Guardrails</span></button>
+                <button class="primary action-icon-button" type="button" data-view-shortcut="today"><span class="button-icon button-icon-journey" aria-hidden="true"></span><span>Generate Today's Journey</span></button>
+                <button class="secondary" id="refreshUiVideos" type="button">Refresh Videos</button>
+              </div>
+            </div>
+
+            <div class="embedded-video-library">
+              <div class="embedded-toolbar" aria-label="Video categories and filters">
+                <div class="embedded-category-tabs" id="uiVideoCategoryTabs">
+                  <button class="active" type="button" data-video-category="All Videos">All Videos</button>
+                  <button type="button" data-video-category="Teachings">Teachings</button>
+                  <button type="button" data-video-category="Worship">Worship</button>
+                  <button type="button" data-video-category="Messages">Messages</button>
+                  <button type="button" data-video-category="Documentaries">Documentaries</button>
+                  <button type="button" data-video-category="Shorts">Shorts</button>
+                  <button type="button" data-video-category="TeoyubeWorld Media">TeoyubeWorld Media</button>
+                </div>
+                <div class="embedded-filter-controls">
+                  <select id="uiVideoCategorySelect" aria-label="Filter video category">
+                    <option>All Categories</option>
+                    <option>Teachings</option>
+                    <option>Worship</option>
+                    <option>Messages</option>
+                    <option>Documentaries</option>
+                    <option>Shorts</option>
+                    <option>TeoyubeWorld Media</option>
+                  </select>
+                  <select id="uiVideoSort" aria-label="Sort videos">
+                    <option>Sort by: Latest</option>
+                    <option>Sort by: Scripture</option>
+                    <option>Sort by: Shortest</option>
+                  </select>
+                  <button class="secondary" id="uiVideoFiltersButton" type="button">Filters</button>
+                </div>
+              </div>
+
+              <div class="embedded-stats-search">
+                <div class="embedded-video-stats" id="uiVideoStats"></div>
+                <label class="embedded-search-field" for="uiVideoSearch">
+                  <span aria-hidden="true"></span>
+                  <input id="uiVideoSearch" type="search" placeholder="Search videos..." autocomplete="off" />
+                </label>
+              </div>
+
+              <div class="ui-video-grid" id="uiVideoGrid"></div>
+              <div class="embedded-load-more">
+                <button class="secondary" id="uiVideoLoadMore" type="button">Load More Videos</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view page-container tables-page" id="teoyube-tables">
+          <div class="teoyube-table-page table-demo-section">
+            <div class="teoyube-tables-hero">
+              <div>
+                <p class="eyebrow">God's Promises Meet Your Calling</p>
+                <h3>Teoyube Tables <span class="tables-title-icon" aria-hidden="true"></span></h3>
+                <p>Organized declarations, promises, teachings, Scripture references, and multimedia resources. Search, explore, and engage with Spirit-filled content.</p>
+              </div>
+              <div class="tables-hero-actions">
+                <button class="secondary action-icon-button" type="button"><span class="button-icon button-icon-guardrails" aria-hidden="true"></span><span>Guardrails</span></button>
+                <button class="primary action-icon-button" type="button" data-view-shortcut="today"><span class="button-icon button-icon-journey" aria-hidden="true"></span><span>Generate Today's Journey</span></button>
+              </div>
+            </div>
+            <article class="teoyube-table-card">
+              <div class="table-card-head">
+                <div class="tables-card-title">
+                  <span class="tables-card-icon" aria-hidden="true"></span>
+                  <h4>UI Table Demonstrations</h4>
+                  <p>Searchable, sortable, expandable, paginated, and responsive table patterns.</p>
+                </div>
+                <div class="tables-toolbar" aria-label="Table search and filters">
+                  <label class="tables-search-field" for="teoyubeTableSearch">
+                    <input id="teoyubeTableSearch" type="search" placeholder="Search tables, scriptures, or keywords..." autocomplete="off" />
+                    <span aria-hidden="true"></span>
+                  </label>
+                  <select id="teoyubeTableCategory" aria-label="Filter table category">
+                    <option>All Categories</option>
+                    <option>Scripture</option>
+                    <option>Promise</option>
+                    <option>Audio</option>
+                    <option>Video</option>
+                  </select>
+                  <select id="teoyubeTableSort" aria-label="Sort table rows">
+                    <option>Sort by: Position</option>
+                    <option>Sort by: Name</option>
+                    <option>Sort by: Latest</option>
+                  </select>
+                  <button class="secondary" id="teoyubeTableFiltersButton" type="button">Filters</button>
+                </div>
+              </div>
+              <div class="tables-stat-grid" id="teoyubeTableStats"></div>
+              <div class="teoyube-table-scroll">
+                <table class="teoyube-reference-table">
+                  <thead>
+                    <tr>
+                      <th><span class="table-toggle-icon">-</span></th>
+                      <th>Name &uarr;&darr;</th>
+                      <th>Description &uarr;&darr;</th>
+                      <th>Position &uarr;&darr;</th>
+                      <th>Audio &uarr;&darr;</th>
+                      <th>Period &uarr;&darr;</th>
+                      <th>Airplay &uarr;&darr;</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="teoyubeTablesRows"></tbody>
+                </table>
+              </div>
+              <div class="teoyube-table-footer">
+                <p id="teoyubeTableEntryStatus">Showing 1 to 10 of 128 entries</p>
+                <label class="tables-page-size" for="teoyubeTablePageSize">
+                  Rows per page:
+                  <select id="teoyubeTablePageSize">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                  </select>
+                </label>
+                <div class="table-pagination" id="teoyubeTablePagination" aria-label="Table pagination"></div>
+              </div>
+            </article>
+
+            <section class="teoyube-data-tables" aria-labelledby="teoyubeDataTablesTitle">
+              <div class="teoyube-data-tables-head">
+                <div>
+                  <p class="eyebrow">Current Local App Data</p>
+                  <h4 id="teoyubeDataTablesTitle">Teoyube Data Management</h4>
+                  <p>Work with the same session and bundled data used throughout Teoyube. No external database is connected.</p>
+                </div>
+                <div class="data-table-source" id="teoyubeDataVideoSourceWrap" hidden>
+                  <label for="teoyubeDataVideoSource">Video source</label>
+                  <select id="teoyubeDataVideoSource">
+                    <option value="original">Original Embedded Videos</option>
+                    <option value="approved">Approved TeoyubeWorld Media</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="data-table-tabs" id="teoyubeDataTableTabs" role="tablist" aria-label="Teoyube data tables">
+                <button class="active" type="button" role="tab" aria-selected="true" data-data-table-tab="promises">Promises</button>
+                <button type="button" role="tab" aria-selected="false" data-data-table-tab="scriptures">Scriptures</button>
+                <button type="button" role="tab" aria-selected="false" data-data-table-tab="journeys">Journeys</button>
+                <button type="button" role="tab" aria-selected="false" data-data-table-tab="videos">Videos</button>
+                <button type="button" role="tab" aria-selected="false" data-data-table-tab="book">Saved Book Entries</button>
+              </div>
+
+              <div class="data-table-toolbar">
+                <label class="data-table-search" for="teoyubeDataTableSearch">
+                  <span>Search current table</span>
+                  <input id="teoyubeDataTableSearch" type="search" placeholder="Search current local data..." autocomplete="off" />
+                </label>
+                <label for="teoyubeDataTableSort">
+                  Sort
+                  <select id="teoyubeDataTableSort">
+                    <option value="title-asc">Title: A to Z</option>
+                    <option value="title-desc">Title: Z to A</option>
+                    <option value="latest">Latest first</option>
+                  </select>
+                </label>
+                <label for="teoyubeDataTablePageSize">
+                  Rows
+                  <select id="teoyubeDataTablePageSize">
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                    <option value="32">32</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="data-table-shell">
+                <div class="data-table-scroll" role="region" aria-label="Teoyube local data table" tabindex="0">
+                  <table class="teoyube-management-table">
+                    <thead id="teoyubeDataTableHead"></thead>
+                    <tbody id="teoyubeDataTableRows"></tbody>
+                  </table>
+                </div>
+                <div class="data-table-empty" id="teoyubeDataTableEmpty" hidden>
+                  <strong>No matching local records</strong>
+                  <p>Try a different search or create a record in its primary Teoyube page.</p>
+                </div>
+              </div>
+
+              <div class="data-table-pagination">
+                <p id="teoyubeDataTableStatus" aria-live="polite"></p>
+                <div id="teoyubeDataTablePagination" aria-label="Data table pagination"></div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view page-container" id="calling">
+          <div class="calling-premium-page">
+            <div class="calling-premium-head">
+              <div>
+                <p class="eyebrow">Where God's Promises Meet Your Calling</p>
+                <h3>Calling Compass <span aria-hidden="true">+</span></h3>
+              </div>
+              <div class="calling-premium-actions">
+                <button class="secondary action-icon-button" type="button"><span class="button-icon button-icon-guardrails" aria-hidden="true"></span><span>Guardrails</span></button>
+                <button class="primary action-icon-button" type="button" data-view-shortcut="today"><span class="button-icon button-icon-journey" aria-hidden="true"></span><span>Generate Today's Journey</span></button>
+              </div>
+            </div>
+
+            <div class="calling-premium-grid">
+              <main class="calling-main-column">
+                <article class="calling-hero-panel">
+                  <div class="calling-hero-copy">
+                    <p class="eyebrow">TeoyubeWorld</p>
+                    <h3>Discover God's Voice Through Scripture, Video, Prayer &amp; Calling</h3>
+                    <p>
+                      Search and explore TeoyubeWorld videos for Scripture, prayer, promise language, and calling direction.
+                    </p>
+                  </div>
+                  <form class="calling-search-form search-form" id="compassVideoForm">
+                    <span class="calling-search-icon" aria-hidden="true"></span>
+                    <input
+                      id="compassVideoInput"
+                      placeholder="Search Scripture, Promise, Calling, Prayer, Journey, Canon..."
+                      value="TeoyubeWorld"
+                    />
+                    <button class="calling-voice-button" type="button" aria-label="Voice search"></button>
+                    <button class="primary" type="submit" aria-label="Search YouTube"></button>
+                  </form>
+                  <div class="quick-prompts compass-video-prompts">
+                    <span>Popular Searches:</span>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube calling">Calling</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube purpose">Purpose</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube healing">Healing</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube wisdom">Wisdom</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube identity">Identity</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube faith">Faith</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube kingdom">Kingdom</button>
+                    <button class="cluster-nav-chip" type="button" data-query="Teoyube grace">Grace</button>
+                    <button class="cluster-nav-chip" type="button" data-query="TeoyubeWorld">More</button>
+                  </div>
+                  <aside class="calling-daily-inspiration">
+                    <h4>Daily Inspiration</h4>
+                    <p>
+                      "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you."
+                    </p>
+                    <strong>Ephesians 1:18</strong>
+                    <button class="secondary" type="button">View Today's Scripture</button>
+                  </aside>
+                </article>
+
+                <p class="compass-video-status" id="compassVideoStatus">Ready to search TeoyubeWorld YouTube videos.</p>
+
+                <div class="calling-content-grid">
+                  <article class="calling-featured-video">
+                    <p class="eyebrow">Featured Video</p>
+                    <section class="compass-video-player" id="compassVideoPlayer">
+                      <h4>TeoyubeWorld Compass</h4>
+                      <p>Select a video to begin.</p>
+                    </section>
+                  </article>
+
+                  <article class="calling-assistant-panel">
+                    <div>
+                      <p class="eyebrow">AI Calling Assistant <span>Beta</span></p>
+                      <h4>Ask anything about Scripture, promises, calling, or your journey.</h4>
+                      <button class="primary" type="button">Ask the Assistant</button>
+                    </div>
+                    <div class="calling-assistant-actions">
+                      <button type="button">Summarize Video</button>
+                      <button type="button">Related Promises</button>
+                      <button type="button">Next Teaching</button>
+                      <button type="button">Prayer Guide</button>
+                    </div>
+                  </article>
+
+                  <article class="calling-compass-panel" aria-label="Your Calling Compass">
+                    <div class="calling-compass-head">
+                      <span class="calling-compass-head-icon" aria-hidden="true"></span>
+                      <div>
+                        <h4>Your <span>Calling</span> Compass</h4>
+                        <p>Discover your God-given direction and walk in purpose.</p>
+                      </div>
+                    </div>
+                    <div class="calling-radar" role="img" aria-label="Calling compass with purpose, identity, giftings, service, prayer, leadership, and wisdom">
+                      <span class="compass-node purpose" tabindex="0" data-tooltip="Purpose Score: 82%. Walking in alignment.">
+                        <i aria-hidden="true"></i>
+                        <em>Purpose</em>
+                        <small>Discover your God-given direction.</small>
+                      </span>
+                      <span class="compass-node identity" tabindex="0" data-tooltip="Identity Score: 78%. Rooted in Christ.">
+                        <i aria-hidden="true"></i>
+                        <em>Identity</em>
+                        <small>Know who you are in Christ.</small>
+                      </span>
+                      <span class="compass-node giftings" tabindex="0" data-tooltip="Giftings Score: 80%. Activate what God placed in you.">
+                        <i aria-hidden="true"></i>
+                        <em>Giftings</em>
+                        <small>Activate your gifts for His Kingdom.</small>
+                      </span>
+                      <span class="compass-node service" tabindex="0" data-tooltip="Service Score: 76%. Serving with purpose.">
+                        <i aria-hidden="true"></i>
+                        <em>Service</em>
+                        <small>Serve with purpose and impact.</small>
+                      </span>
+                      <strong class="compass-center">
+                        <i aria-hidden="true"></i>
+                        <span>Calling</span>
+                        <small>Your purpose is found in His plan.</small>
+                      </strong>
+                      <span class="compass-node prayer" tabindex="0" data-tooltip="Prayer Score: 84%. Staying connected.">
+                        <i aria-hidden="true"></i>
+                        <em>Prayer</em>
+                        <small>Stay connected through prayer.</small>
+                      </span>
+                      <span class="compass-node leadership" tabindex="0" data-tooltip="Leadership Score: 74%. Influence with integrity.">
+                        <i aria-hidden="true"></i>
+                        <em>Leadership</em>
+                        <small>Lead with integrity and love.</small>
+                      </span>
+                      <span class="compass-node wisdom" tabindex="0" data-tooltip="Wisdom Score: 86%. Seeking divine insight.">
+                        <i aria-hidden="true"></i>
+                        <em>Wisdom</em>
+                        <small>Seek divine insight for decisions.</small>
+                      </span>
+                    </div>
+                    <button class="secondary" type="button">
+                      <span class="compass-button-icon" aria-hidden="true"></span>
+                      <span>View Full Compass</span>
+                      <span class="compass-button-arrow" aria-hidden="true"></span>
+                    </button>
+                  </article>
+                </div>
+
+                <section class="calling-recommended-section">
+                  <div class="calling-section-title">
+                    <h4>Recommended For You</h4>
+                    <button class="text-link" type="button">View All</button>
+                  </div>
+                  <div class="calling-recommendation-grid calling-recommendation-carousel" aria-label="Recommended Calling Compass videos carousel">
+                    <div class="calling-recommendation-track">
+                      <article style="--media: url('public/images/canon/canon-card-01.png')">
+                        <span>22:15</span>
+                        <h5>Walking in Purpose</h5>
+                        <p>Ephesians 2:10</p>
+                        <progress max="100" value="75"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-04.png')">
+                        <span>19:45</span>
+                        <h5>Overcoming Fear</h5>
+                        <p>Joshua 1:9</p>
+                        <progress max="100" value="60"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-02.png')">
+                        <span>28:35</span>
+                        <h5>God's Plan for Your Life</h5>
+                        <p>Jeremiah 29:11</p>
+                        <progress max="100" value="90"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-05.png')">
+                        <span>20:15</span>
+                        <h5>Trusting God's Timing</h5>
+                        <p>Ecclesiastes 3:1</p>
+                        <progress max="100" value="70"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-01.png')" aria-hidden="true">
+                        <span>22:15</span>
+                        <h5>Walking in Purpose</h5>
+                        <p>Ephesians 2:10</p>
+                        <progress max="100" value="75"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-04.png')" aria-hidden="true">
+                        <span>19:45</span>
+                        <h5>Overcoming Fear</h5>
+                        <p>Joshua 1:9</p>
+                        <progress max="100" value="60"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-02.png')" aria-hidden="true">
+                        <span>28:35</span>
+                        <h5>God's Plan for Your Life</h5>
+                        <p>Jeremiah 29:11</p>
+                        <progress max="100" value="90"></progress>
+                      </article>
+                      <article style="--media: url('public/images/canon/canon-card-05.png')" aria-hidden="true">
+                        <span>20:15</span>
+                        <h5>Trusting God's Timing</h5>
+                        <p>Ecclesiastes 3:1</p>
+                        <progress max="100" value="70"></progress>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="calling-category-section">
+                  <h4>Explore by Category</h4>
+                  <div class="calling-category-grid">
+                    <button type="button">Scripture <small>Explore Videos</small></button>
+                    <button type="button">Prayer <small>Deepen Intimacy</small></button>
+                    <button type="button">Teachings <small>Grow in Wisdom</small></button>
+                    <button type="button">Canon Journeys <small>Walk Your Calling</small></button>
+                    <button type="button">Promise Language <small>Speak Life</small></button>
+                    <button type="button">+2 <small>More Options</small></button>
+                  </div>
+                </section>
+              </main>
+
+              <aside class="calling-right-rail">
+                <article class="calling-playlist-card">
+                  <div class="calling-section-title">
+                    <div>
+                      <h4>Up Next Playlist</h4>
+                      <p>12 videos</p>
+                    </div>
+                    <button class="icon-only" type="button" aria-label="Playlist options">...</button>
+                  </div>
+                  <section class="compass-video-list" id="compassVideoList"></section>
+                </article>
+
+                <article class="calling-continue-card" aria-label="Continue Watching">
+                  <div class="calling-premium-card-head">
+                    <span class="calling-panel-icon calling-play-icon" aria-hidden="true"></span>
+                    <div>
+                      <h4>Continue <span>Watching</span></h4>
+                      <p>3 in progress</p>
+                    </div>
+                  </div>
+                  <div class="calling-continue-row" style="--watch-progress: 75%; --thumb: url('public/images/canon/canon-card-01.png')">
+                    <span class="calling-continue-thumb" aria-hidden="true"></span>
+                    <div>
+                      <strong>Walking in Purpose</strong>
+                      <small>Ephesians 2:10</small>
+                      <span class="calling-watch-bar" aria-hidden="true"><span></span></span>
+                    </div>
+                    <b>75%</b>
+                  </div>
+                  <div class="calling-continue-row" style="--watch-progress: 30%; --thumb: url('public/images/canon/canon-card-04.png')">
+                    <span class="calling-continue-thumb" aria-hidden="true"></span>
+                    <div>
+                      <strong>Called for More</strong>
+                      <small>Isaiah 6:8</small>
+                      <span class="calling-watch-bar" aria-hidden="true"><span></span></span>
+                    </div>
+                    <b>30%</b>
+                  </div>
+                  <div class="calling-continue-row" style="--watch-progress: 80%; --thumb: url('public/images/canon/canon-card-02.png')">
+                    <span class="calling-continue-thumb" aria-hidden="true"></span>
+                    <div>
+                      <strong>Identity in Christ</strong>
+                      <small>2 Corinthians 5:17</small>
+                      <span class="calling-watch-bar" aria-hidden="true"><span></span></span>
+                    </div>
+                    <b>80%</b>
+                  </div>
+                  <button class="secondary" type="button">
+                    <span class="calling-button-grid" aria-hidden="true"></span>
+                    <span>View All</span>
+                    <span class="calling-button-arrow" aria-hidden="true"></span>
+                  </button>
+                </article>
+
+                <article class="calling-progress-card" aria-label="Kingdom Progress">
+                  <div class="calling-section-title calling-progress-title">
+                    <div class="calling-progress-heading">
+                      <span class="calling-panel-icon calling-crown-icon" aria-hidden="true"></span>
+                      <h4>Kingdom <span>Progress</span></h4>
+                    </div>
+                    <span class="calling-progress-period">This Week</span>
+                  </div>
+                  <div class="calling-progress-grid">
+                    <div class="calling-progress-metric metric-videos">
+                      <span class="calling-metric-icon" aria-hidden="true"></span>
+                      <strong>14</strong>
+                      <span>Videos Watched</span>
+                      <small>+20% <span aria-hidden="true"></span></small>
+                      <i class="calling-sparkline sparkline-a" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></i>
+                    </div>
+                    <div class="calling-progress-metric metric-prayers">
+                      <span class="calling-metric-icon" aria-hidden="true"></span>
+                      <strong>7</strong>
+                      <span>Prayers</span>
+                      <small>+15% <span aria-hidden="true"></span></small>
+                      <i class="calling-sparkline sparkline-b" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></i>
+                    </div>
+                    <div class="calling-progress-metric metric-scriptures">
+                      <span class="calling-metric-icon" aria-hidden="true"></span>
+                      <strong>23</strong>
+                      <span>Scriptures</span>
+                      <small>+10% <span aria-hidden="true"></span></small>
+                      <i class="calling-sparkline sparkline-c" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></i>
+                    </div>
+                  </div>
+                  <button class="primary" type="button">
+                    <span class="calling-progress-button-icon" aria-hidden="true"></span>
+                    <span>View Full Progress</span>
+                    <span class="calling-button-arrow" aria-hidden="true"></span>
+                  </button>
+                </article>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="view page-container book-saint-view" id="book">
+          <div class="book-saint-shell">
+            <main class="book-saint-main">
+              <section class="book-saint-hero">
+                <div class="book-hero-content">
+                  <p class="eyebrow">Living Spiritual Record</p>
+                  <h3>Book of the Saint <span aria-hidden="true">&#128214;</span></h3>
+                  <h4>Your walk. Your reflections. His faithfulness.</h4>
+                  <p>This is your spiritual journey recorded in obedience, direction, worship, and divine encounters.</p>
+                </div>
+
+                <article class="book-encouragement-card">
+                  <div class="book-card-top">
+                    <strong>Today's Encouragement</strong>
+                    <span aria-hidden="true">&#9825;</span>
+                  </div>
+                  <p>&ldquo;Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to Him, and He will make your paths straight.&rdquo;</p>
+                  <b>Proverbs 3:5-6</b>
+                </article>
+
+                <div class="book-stat-grid" aria-label="Book of the Saint summary">
+                  <article class="book-stat-card">
+                    <span class="book-stat-icon">T</span>
+                    <strong>126</strong>
+                    <small>Total Reflections</small>
+                    <em>+12 this month</em>
+                  </article>
+                  <article class="book-stat-card amber">
+                    <span class="book-stat-icon">&#10003;</span>
+                    <strong>18</strong>
+                    <small>Divine Assignments</small>
+                    <em>+4 this month</em>
+                  </article>
+                  <article class="book-stat-card gold">
+                    <span class="book-stat-icon">*</span>
+                    <strong>7</strong>
+                    <small>Promise Discoveries</small>
+                    <em>+3 this month</em>
+                  </article>
+                  <article class="book-stat-card mint">
+                    <span class="book-stat-icon">#</span>
+                    <strong>32</strong>
+                    <small>Days Consistent</small>
+                    <em>Current streak</em>
+                  </article>
+                </div>
+              </section>
+
+              <section class="book-toolbar" aria-label="Book filters">
+                <label class="book-search-field">
+                  <span aria-hidden="true">Q</span>
+                  <input id="bookSearchInput" type="search" placeholder="Search reflections, topics, or keywords..." />
+                </label>
+                <select id="bookTypeFilter" aria-label="Filter by type">
+                  <option value="all">All Types</option>
+                  <option value="journey">Generated Journey</option>
+                  <option value="assignment">Daily Assignment</option>
+                  <option value="reflection">Reflection</option>
+                </select>
+                <select id="bookDateFilter" aria-label="Filter by date">
+                  <option value="all">All Dates</option>
+                  <option value="week">This Week</option>
+                  <option value="month">This Month</option>
+                </select>
+                <button class="secondary book-filter-button" type="button">Filters</button>
+              </section>
+
+              <div class="timeline book-timeline" id="bookTimeline"></div>
+
+              <div class="book-pagination" aria-label="Book pagination">
+                <button type="button">&larr;</button>
+                <button class="active" type="button">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <span>...</span>
+                <button type="button">12</button>
+                <button type="button">&rarr;</button>
+              </div>
+            </main>
+
+            <aside class="book-saint-rail" aria-label="Book insights">
+              <article class="book-rail-card book-overview-card book-journey-overview" aria-labelledby="bookJourneyOverviewTitle">
+                <div class="book-journey-head">
+                  <span class="book-journey-icon" aria-hidden="true"></span>
+                  <div>
+                    <h4 id="bookJourneyOverviewTitle">Journey Overview</h4>
+                    <p>Your walk with God. Documented by grace.</p>
+                  </div>
+                  <span class="book-journey-heart" aria-hidden="true"></span>
+                </div>
+
+                <div class="book-journey-metrics" id="bookJourneyMetrics" aria-label="Journey reflection summary"></div>
+
+                <section class="book-week-journey" aria-labelledby="bookWeekJourneyTitle">
+                  <h5 id="bookWeekJourneyTitle">Your Journey This Week</h5>
+                  <div class="book-week-timeline" id="bookWeekTimeline" aria-label="Weekly spiritual progress"></div>
+                </section>
+
+                <div class="book-journey-scripture" aria-label="Journey scripture encouragement">
+                  <span aria-hidden="true"></span>
+                  <p>&ldquo;I will remember the deeds of the Lord;<br />yes, I will remember your miracles of long ago.&rdquo;</p>
+                  <b>Psalm 77:11</b>
+                </div>
+              </article>
+
+              <article class="book-rail-card book-topics-card">
+                <h4>Top Topics</h4>
+                <p><span>Obedience &amp; Direction</span><b>12</b></p>
+                <p><span>Hearing God's Voice</span><b>9</b></p>
+                <p><span>Prayer &amp; Surrender</span><b>7</b></p>
+                <p><span>Scripture Meditation</span><b>6</b></p>
+                <p><span>Walking in Purpose</span><b>4</b></p>
+                <a href="#book">View All Topics &rarr;</a>
+              </article>
+
+              <article class="book-lantern-card">
+                <h4>Stay faithful in the little, God will entrust you with much.</h4>
+                <b>Luke 16:10</b>
+              </article>
+
+              <article class="book-rail-card book-actions-card">
+                <h4>Quick Actions</h4>
+                <button type="button" id="addManualEntry">Add Reflection</button>
+                <button type="button">View Calendar</button>
+                <button type="button">Export Journal</button>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view page-container lexicon-view" id="lexicon">
+          <div class="lexicon-shell">
+            <main class="lexicon-main">
+              <section class="lexicon-hero">
+                <div class="lexicon-hero-copy">
+                  <p class="eyebrow">God's Language. Eternal Truth.</p>
+                  <h3><span aria-hidden="true">T</span> Lexicon</h3>
+                  <p>Explore the divine words that shape our calling, strengthen our faith, and illuminate our walk with God.</p>
+                </div>
+              </section>
+
+              <section class="lexicon-toolbar" aria-label="Lexicon search and filters">
+                <label class="lexicon-search-field">
+                  <span aria-hidden="true"></span>
+                  <input id="lexiconSearchInput" type="search" placeholder="Search words, meanings, scriptures, or concepts..." />
+                </label>
+                <select id="lexiconCategoryFilter" aria-label="Filter Lexicon by category">
+                  <option value="all">All Categories</option>
+                </select>
+                <select id="lexiconSpeechFilter" aria-label="Filter Lexicon by part of speech">
+                  <option value="all">All Parts of Speech</option>
+                </select>
+                <button class="secondary lexicon-filter-button" type="button">Filters</button>
+              </section>
+
+              <section class="lexicon-stats-grid" id="lexiconStatsGrid" aria-label="Lexicon summary"></section>
+
+              <section class="lexicon-feature-grid" aria-label="Lexicon featured words">
+                <article class="lexicon-word-day" id="lexiconWordDay"></article>
+                <article class="lexicon-inspiration-card">
+                  <div>
+                    <p class="eyebrow">Daily Inspiration</p>
+                    <span aria-hidden="true">"</span>
+                    <p>"Let the word of Christ dwell in you richly in all wisdom."</p>
+                    <b>Colossians 3:16</b>
+                  </div>
+                  <button class="secondary lexicon-action-button lexicon-reflection-button" type="button" data-view-shortcut="book">
+                    <span aria-hidden="true"></span>
+                    Read Reflection
+                    <span aria-hidden="true"></span>
+                  </button>
+                </article>
+              </section>
+
+              <section class="lexicon-alpha-card" aria-label="Lexicon word navigation">
+                <div class="lexicon-alpha-tabs" id="lexiconAlphaTabs"></div>
+                <div class="lexicon-view-toggle" aria-label="Lexicon display controls">
+                  <button class="active" type="button" aria-label="Show word cards as a grid"></button>
+                  <button type="button" aria-label="Show word cards as a list"></button>
+                </div>
+              </section>
+
+              <div class="lexicon-grid" id="lexiconGrid"></div>
+              <button class="secondary lexicon-load-more" type="button">Load More Words</button>
+
+              <section class="lexicon-footer-features" aria-label="Lexicon features">
+                <article><span data-icon="rooted"></span><div><h4>Rooted in Scripture</h4><p>Every word is backed by God's Word.</p></div></article>
+                <article><span data-icon="language"></span><div><h4>Multi-Language</h4><p>Hebrew, Greek, and Aramaic origins.</p></div></article>
+                <article><span data-icon="audio"></span><div><h4>Audio Pronunciation</h4><p>Hear the true sound of each word.</p></div></article>
+                <article><span data-icon="collection"></span><div><h4>Personal Collection</h4><p>Save words that speak to you.</p></div></article>
+              </section>
+
+              <section class="lexicon-language-lab">
+                <div class="grammar-panel" id="grammarPanel"></div>
+                <div class="language-layer-grid" id="languageLayerGrid"></div>
+              </section>
+            </main>
+
+            <aside class="lexicon-rail" aria-label="Lexicon insights">
+              <article class="lexicon-rail-card lexicon-overview-card" id="lexiconOverviewCard"></article>
+              <article class="lexicon-rail-card" id="lexiconTopCategories"></article>
+              <article class="lexicon-rail-card" id="lexiconRecentlyViewed"></article>
+              <article class="lexicon-challenge-card">
+                <div class="lexicon-challenge-head">
+                  <span class="lexicon-challenge-icon" aria-hidden="true"></span>
+                  <h4>Lexicon Challenge</h4>
+                  <span>This Week</span>
+                </div>
+                <p>Expand your understanding. Learn 5 new words.</p>
+                <strong>3 / 5</strong>
+                <progress value="3" max="5"></progress>
+                <button class="primary" type="button">Continue Learning &rarr;</button>
+              </article>
+              <article class="lexicon-rail-card lexicon-tools-card">
+                <h4>Interactive Tools</h4>
+                <button type="button">Word Explorer <small>Visualize connections</small></button>
+                <button type="button">Compare Words <small>Side by side analysis</small></button>
+                <button type="button">Word Builder <small>Build your vocabulary</small></button>
+                <button type="button">Memory Verse Link <small>See related scriptures</small></button>
+                <a href="#lexicon">View All Tools &rarr;</a>
+              </article>
+              <article class="lexicon-scripture-art">
+                <p>The fear of the Lord is the beginning of wisdom.</p>
+                <b>Proverbs 9:10</b>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view page-container testimony-view" id="testimony">
+          <section class="testimony-hero">
+            <div>
+              <p class="eyebrow">God's Promises Meet Your Calling</p>
+              <h3>Testimony Archive <span aria-hidden="true"></span></h3>
+              <h4>Your story. God's glory.</h4>
+              <p>Share how God has worked in your life. Your story can inspire faith, strengthen others, and glorify Him.</p>
+            </div>
+          </section>
+
+          <div class="testimony-dashboard">
+            <main class="testimony-main">
+              <form class="module-card testimony-form-card" id="testimonyForm">
+                <div class="testimony-card-head">
+                  <span class="testimony-card-icon" aria-hidden="true"></span>
+                  <div>
+                    <h3>Share Your Testimony</h3>
+                    <p>Every testimony is a seed of faith for someone else.</p>
+                  </div>
+                  <div class="testimony-media-actions" aria-label="Add media optional">
+                    <small>Add Media (Optional)</small>
+                    <button type="button" aria-label="Add image"></button>
+                    <button type="button" aria-label="Add video"></button>
+                    <button type="button" aria-label="Record audio"></button>
+                    <button type="button" aria-label="Add link"></button>
+                  </div>
+                </div>
+                <label>
+                  Title of Your Testimony
+                  <input id="testimonyTitle" required placeholder="Example: Peace during a hard decision" />
+                </label>
+                <label>
+                  Testimony Category
+                  <select id="testimonyCategory">
+                    <option value="Faith">Faith</option>
+                    <option value="Grace">Grace</option>
+                    <option value="Healing">Healing</option>
+                    <option value="Obedience">Obedience</option>
+                    <option value="Provision">Provision</option>
+                    <option value="Purpose">Purpose</option>
+                  </select>
+                </label>
+                <label>
+                  Your Testimony
+                  <textarea id="testimonyBody" required placeholder="Share what you believe God has done and which promise it connects to."></textarea>
+                </label>
+                <button class="primary full" type="submit">Save Testimony</button>
+              </form>
+
+              <section class="testimony-archive-card">
+                <div class="testimony-section-head">
+                  <div>
+                    <h3>My Testimonies</h3>
+                    <p>Recorded stories of God's faithfulness.</p>
+                  </div>
+                  <div class="testimony-list-tools">
+                    <select aria-label="Sort testimonies">
+                      <option>Latest First</option>
+                    </select>
+                    <button class="secondary" type="button">Filters</button>
+                  </div>
+                </div>
+                <div class="testimony-tabs" aria-label="Testimony filters">
+                  <button class="active" type="button">All</button>
+                  <button type="button">Public</button>
+                  <button type="button">Private</button>
+                  <button type="button">Drafts</button>
+                </div>
+                <div class="testimony-list" id="testimonyList"></div>
+                <button class="secondary testimony-load-more" type="button">Load More</button>
+              </section>
+            </main>
+
+            <aside class="testimony-rail" aria-label="Testimony insights">
+              <article class="testimony-insights-card">
+                <div class="testimony-section-head">
+                  <h3>Testimony Insights</h3>
+                  <select aria-label="Testimony insight period">
+                    <option>This Month</option>
+                  </select>
+                </div>
+                <div class="testimony-insight-grid">
+                  <article><span data-icon="new"></span><strong>12</strong><small>New Testimonies</small><em>+20%</em></article>
+                  <article><span data-icon="share"></span><strong>8</strong><small>Shared Publicly</small><em>+33%</em></article>
+                  <article><span data-icon="encourage"></span><strong>23</strong><small>Encouragements</small><em>+15%</em></article>
+                  <article><span data-icon="impact"></span><strong>45</strong><small>Lives Impacted</small><em>+25%</em></article>
+                </div>
+              </article>
+
+              <article class="testimony-milestones-card">
+                <h3>Testimony Milestones</h3>
+                <div class="testimony-milestones">
+                  <span class="active" data-icon="first-step"><b></b><strong>First Step</strong><small>Write your first testimony</small></span>
+                  <span data-icon="light"><b></b><strong>Be a Light</strong><small>Encourage 5 people</small></span>
+                  <span data-icon="share"><b></b><strong>Share Hope</strong><small>Share your story publicly</small></span>
+                  <span data-icon="impact"><b></b><strong>Impact Lives</strong><small>Reach 50 encouragements</small></span>
+                  <span data-icon="legacy"><b></b><strong>Legacy Builder</strong><small>Impact 100+ lives</small></span>
+                </div>
+                <progress value="25" max="100"></progress>
+                <div class="testimony-milestone-footer"><strong>25% Completed</strong><a href="#testimony">View All Milestones &rarr;</a></div>
+              </article>
+
+              <article class="testimony-wall-card">
+                <h3>Encouragement Wall</h3>
+                <p>Be the first to encourage a testimony today.</p>
+                <div class="testimony-avatar-row"><span></span><span></span><span></span><span></span><span></span><b>+12</b></div>
+                <button class="primary" type="button">Encourage Someone</button>
+              </article>
+
+              <article class="testimony-impact-card">
+                <h3>Your Testimony Impact</h3>
+                <div>
+                  <span data-icon="views"><strong>128</strong><small>Views</small></span>
+                  <span data-icon="heart"><strong>86</strong><small>Encouragements</small></span>
+                  <span data-icon="share"><strong>42</strong><small>Shares</small></span>
+                  <span data-icon="prayer"><strong>31</strong><small>Prayers</small></span>
+                </div>
+                <button class="secondary" type="button">View Impact Analytics &rarr;</button>
+              </article>
+
+              <article class="testimony-quick-card">
+                <h3>Quick Actions</h3>
+                <button type="button" data-icon="write">Write Testimony</button>
+                <button type="button" data-icon="invite">Invite Encouragement</button>
+                <button type="button" data-icon="export">Export Archive</button>
+              </article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view page-container guide-view" id="guide">
+          <div class="guide-layout">
+            <main class="guide-main">
+              <section class="guide-hero">
+                <div>
+                  <p class="eyebrow">Where God's Promises Meet Your Calling</p>
+                  <h3>Teo Guide <span aria-hidden="true"></span></h3>
+                  <h4>Your Biblical Scholar, Mentor, and Calling Navigator.</h4>
+                  <p>Rooted in Scripture. Guided by Wisdom. Led by Purpose.</p>
+                </div>
+              </section>
+
+              <section class="guide-feature-panel">
+                <span class="guide-feature-orb" aria-hidden="true"></span>
+                <div class="guide-feature-copy">
+                  <h3>Your Divine Guide</h3>
+                  <p>Teo Guide uses Scripture, Promise Clusters, and your Calling Profile to provide biblical wisdom for every step you take.</p>
+                </div>
+                <div class="guide-feature-list">
+                  <article><span data-icon="scripture"></span><strong>Scripture-Grounded</strong><small>Every response is anchored in God's Word.</small></article>
+                  <article><span data-icon="personal"></span><strong>Personalized for You</strong><small>Guidance based on your profile and calling.</small></article>
+                  <article><span data-icon="access"></span><strong>Always Accessible</strong><small>Ask anytime, anywhere for divine wisdom.</small></article>
+                </div>
+              </section>
+
+              <section class="guide-help-section">
+                <h3>How Teo Guide Helps You</h3>
+                <div class="guide-help-grid">
+                  <article><span data-icon="word"></span><h4>Understand God's Word</h4><p>Get clear, scripture-backed insights for your questions.</p></article>
+                  <article><span data-icon="calling"></span><h4>Navigate Your Calling</h4><p>Receive direction and clarity for your purpose.</p></article>
+                  <article><span data-icon="decision"></span><h4>Make Wise Decisions</h4><p>Discern God's will in every situation you face.</p></article>
+                  <article><span data-icon="growth"></span><h4>Grow Spiritually</h4><p>Practical steps to strengthen your walk with God.</p></article>
+                </div>
+              </section>
+
+              <section class="guide-topics-section">
+                <h3>Popular Guidance Topics</h3>
+                <div class="quick-prompts guide-topic-grid">
+                  <button class="secondary prompt-chip" data-prompt="Help me overcome confusion with Scripture.">Overcome Confusion</button>
+                  <button class="secondary prompt-chip" data-prompt="I need wisdom for a decision.">Decision Wisdom</button>
+                  <button class="secondary prompt-chip" data-prompt="I feel confused about my purpose.">Purpose Clarity</button>
+                  <button class="secondary prompt-chip" data-prompt="I want to serve but feel unprepared.">Serve While Preparing</button>
+                  <button class="secondary prompt-chip" data-prompt="Help me trust God in this season.">Faith & Trust</button>
+                  <button class="secondary prompt-chip" data-prompt="What does God say about relationships and wisdom?">Relationships</button>
+                  <button class="secondary prompt-chip" data-prompt="Help me understand my calling and assignment.">Calling & Assignment</button>
+                  <button class="secondary prompt-chip" data-prompt="Give me a prayer for clarity and direction.">Prayer & Direction</button>
+                </div>
+              </section>
+
+              <section class="guide-wisdom-banner">
+                <span aria-hidden="true"></span>
+                <div>
+                  <p>Your word is a lamp to my feet and a light to my path.</p>
+                  <b>Psalm 119:105</b>
+                </div>
+              </section>
+            </main>
+
+            <aside class="guide-chat-panel">
+              <div class="guide-chat-head">
+                <span aria-hidden="true"></span>
+                <div>
+                  <h3>Chat with Teo Guide</h3>
+                  <p>AI-powered biblical guidance</p>
+                </div>
+              </div>
+              <div class="chat-log" id="chatLog"></div>
+              <div class="guide-suggested-prompts">
+                <p>Suggested Prompts</p>
+                <div>
+                  <button class="prompt-chip" data-prompt="Help me understand God's plan for me.">Help me understand God's plan for me.</button>
+                  <button class="prompt-chip" data-prompt="What does God say about this situation?">What does God say about this situation?</button>
+                  <button class="prompt-chip" data-prompt="Give me a prayer for clarity and direction.">Give me a prayer for clarity and direction.</button>
+                </div>
+              </div>
+              <form class="chat-form" id="chatForm">
+                <button type="button" class="guide-attach-button" aria-label="Attach future context"></button>
+                <input id="chatInput" placeholder="Ask Teo for a Scripture-grounded next step..." />
+                <button class="primary" type="submit">Ask</button>
+                <button type="button" class="guide-mic-button" aria-label="Voice input"></button>
+              </form>
+              <p class="guide-chat-note">Teo Guide provides general biblical guidance. Always pray and seek counsel for major decisions.</p>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="assessmentDialog">
+      <form method="dialog" class="assessment-form" id="assessmentForm">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Purpose Assessment</p>
+            <h3>Tell TEOYUBE what patterns to discern</h3>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </div>
+        <div class="form-grid">
+          <label>Name<input id="nameInput" placeholder="Your name" /></label>
+          <label>Age<input id="ageInput" type="number" min="8" max="120" placeholder="32" /></label>
+          <label>Gifts<input id="giftsInput" placeholder="Teaching, mercy, leadership" /></label>
+          <label>Talents<input id="talentsInput" placeholder="Writing, design, strategy" /></label>
+          <label>Passions<input id="passionsInput" placeholder="Discipleship, youth, missions" /></label>
+          <label>Life burdens<input id="burdensInput" placeholder="People or problems you keep noticing" /></label>
+          <label>Current challenge<textarea id="challengeInput" placeholder="What are you praying through right now?"></textarea></label>
+          <label>Prayer need<textarea id="prayerInput" placeholder="What should today's promise speak into?"></textarea></label>
+        </div>
+        <menu>
+          <button class="secondary" value="cancel">Cancel</button>
+          <button class="primary" id="saveAssessment" value="default">Generate Profile</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="guardrailDialog">
+      <div class="guardrail-content">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Theology & Safety Guardrails</p>
+            <h3>Built into this prototype</h3>
+          </div>
+          <button class="icon-button" id="closeGuardrails" aria-label="Close">×</button>
+        </div>
+        <ul>
+          <li>Every promise card shows Scripture references and keeps Teoyube words as memory aids, not replacements for Scripture.</li>
+          <li>Scripture remains the highest authority in this prototype.</li>
+          <li>Calling language stays provisional: patterns may point toward a direction, but the app does not declare final destiny.</li>
+          <li>Major decisions should include prayer, Scripture, wise counsel, fruit, time, and user agency.</li>
+          <li>Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support.</li>
+          <li>Promises are never marked fulfilled automatically. Testimony belongs to the Saint.</li>
+          <li>Personalization is local preview only; raw private text browser persistence, analytics, live AI orchestration, and automatic contact are disabled.</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <script src="app.js?phase116=11-6a&phase116b=11-6b13&phase117=11-7&phase116b1=11-6b1-final"></script>
+    <script src="phase116b1.js?phase116b1=11-6b1-final"></script>
+    <script src="teoyubeworld-media-runtime.js?phase116c3=1"></script>
+    <script src="embedded-videos.js?recovery=1"></script>
+  </body>
+</html>

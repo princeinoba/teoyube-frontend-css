@@ -1,0 +1,5371 @@
+[
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 1:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 2:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Jeremiah 1:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "chosen"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "identity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "calling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Benor",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:30"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Timothy 1:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 1:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "called"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arion",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 17:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 3:29"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 8:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "covenant"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "promise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "belonging"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zareth",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 4:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 9:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 1:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "sonship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "promise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "identity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 1:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 3:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 John 3:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "beloved"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "accepted"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "love"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theon",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 8:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 5:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 119:105"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "light"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "guidance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "truth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Luma",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A03"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ecclesiastes 3:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 4:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Habakkuk 2:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "timing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "season"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "promise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kairo",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 14:27"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Philippians 4:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 26:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "peace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rest"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "security"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shalem",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 91:1-2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 121:7-8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Thessalonians 3:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "protection"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "refuge"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "covering"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nethar",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "James 1:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 2:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 2:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "wisdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "understanding"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "guidance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solen",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A09"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 12:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 4:16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Titus 3:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "renewal"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "mind"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "transformation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Renar",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A20"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Malachi 3:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Zechariah 13:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 1:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "refinement"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "growth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thavon",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Joel 2:25"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 23:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 5:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "restoration"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "healing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "wholeness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velor",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A13"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 53:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 147:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Jeremiah 30:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "healing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "restoration"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "comfort"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zephan",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 40:31"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Philippians 4:13"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 3:16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "strength"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "endurance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "power"
+  },
+  {
+    "sourceType": "word",
+    "source": "Koriel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 2:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 19:21"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "destiny"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "calling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Taviel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P08"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 1:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 8:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Revelation 5:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "dominion"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "authority"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "assignment"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eldor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P08"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 11:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 3:24"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Revelation 22:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "reward"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "inheritance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P08"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 15:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 1:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 5:22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "fruitfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "growth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "manifestation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Auren",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 54:2-3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 9:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 26:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "increase"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "growth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "multiplication"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mirath",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 15:57"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:37"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 John 5:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "victory"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "overcoming"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faith"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kethor",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 23:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 7:38"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 9:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "overflow"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "abundance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Solion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Philippians 1:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 12:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "James 1:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "completion"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "maturity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "fulfillment"
+  },
+  {
+    "sourceType": "word",
+    "source": "Vareth",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 4:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 1:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "adoption"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "sonship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "father"
+  },
+  {
+    "sourceType": "word",
+    "source": "Abion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 John 3:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 5:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 3:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "beloved"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "child"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "love"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elior",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 4:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Titus 3:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "heir"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "inheritance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "promise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Themar",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 1:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 15:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 1:22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "accepted"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "belonging"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zaviel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 2:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 8:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 6:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "family"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "covenant"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "household"
+  },
+  {
+    "sourceType": "word",
+    "source": "Oren",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:29"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 1:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 12:23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "firstborn"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "inheritance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "christ"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avaron",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 2:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Revelation 1:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 45:13"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "royal"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "identity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 15:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "James 4:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 27:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "intimacy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "friendship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "presence"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Thalion",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 43:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 10:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Exodus 33:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "known"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "name"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "identity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruviel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 14:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 6:19-20"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 2:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "belonging"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "family"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "identity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nareth",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Thessalonians 5:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 5:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 12:36"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "light"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "sonship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "walk"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arielon",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 12:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 3:26"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "sonship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "spirit"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "identity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Beniel",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 10:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 28:18-19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 1:21"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "authority"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "commission"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orimon",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 9:6-7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Daniel 7:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Revelation 11:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "government"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rule"
+  },
+  {
+    "sourceType": "word",
+    "source": "Valdor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 12:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Timothy 3:1-2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 11:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "leadership"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "service"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "wisdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Karion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Revelation 5:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 110:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Daniel 7:27"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rule"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "dominion"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Theron",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 11:3-4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 89:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 7:24"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "judgment"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "justice"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "truth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zorath",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 5:16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Daniel 6:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Timothy 4:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "influence"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "witness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "glory"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Marion",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A24"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Mark 11:23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 8:8-10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Joshua 10:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "command"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faith"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "authority"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Korion",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Job 22:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Esther 8:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 2:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "decree"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "word"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "authority"
+  },
+  {
+    "sourceType": "word",
+    "source": "Elvar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 1:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 8:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 19:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "dominion"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "stewardship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rule"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rethor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 12:48"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 4:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "James 3:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "responsibility"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "leadership"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sarion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 14:40"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 1:16-17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Titus 1:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "order"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "structure"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tavor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Nehemiah 7:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 62:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 84:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "gatekeeper"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "watchman"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "protection"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P06"
+  },
+  {
+    "sourceType": "word",
+    "source": "Arkel",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A05"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 4:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 4:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 2:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "stewardship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "service"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Selion",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 16:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 25:21"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 27:23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "management"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "trust"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maviel",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A07"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 6:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 2:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Mark 4:20"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "cultivation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "growth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "seed"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tharon",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A08"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 25:20-21"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 1:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 9:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "multiplication"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "fruitfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "increase"
+  },
+  {
+    "sourceType": "word",
+    "source": "Velian",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Philippians 4:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 23:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 6:31-33"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "provision"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "supply"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "trust"
+  },
+  {
+    "sourceType": "word",
+    "source": "Noriel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Mark 10:45"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Galatians 5:13"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 4:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "service"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "humility"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Talion",
+    "relationship": "associated_with",
+    "targetType": "archetype",
+    "target": "A16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 14:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 5:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 16:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "accountability"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "judgment"
+  },
+  {
+    "sourceType": "word",
+    "source": "Verath",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 3:5-6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 37:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 26:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "trust"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faith"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "surrender"
+  },
+  {
+    "sourceType": "word",
+    "source": "Orel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 115:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 54:2-3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Corinthians 3:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "increase"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "growth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "blessing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavion",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 2:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Numbers 3:7-8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Chronicles 9:26"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "custodian"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "care"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "assignment"
+  },
+  {
+    "sourceType": "word",
+    "source": "Aldor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 112:1-2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 13:22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Timothy 2:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "legacy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "generations"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "inheritance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Sariel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P04"
+  },
+  {
+    "sourceType": "word",
+    "source": "Norah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 2:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Norah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 12:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Norah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 1:16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Norah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Norah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "strength"
+  },
+  {
+    "sourceType": "word",
+    "source": "Norah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "salvation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Emeth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 8:32"
+  },
+  {
+    "sourceType": "word",
+    "source": "Emeth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 14:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Emeth",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 25:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Emeth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "truth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Emeth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "freedom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Emeth",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "guidance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rhema",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 4:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rhema",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 4:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rhema",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 10:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rhema",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "word"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rhema",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faith"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rhema",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "life"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chesed",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Lamentations 3:22-23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chesed",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 136:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chesed",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Micah 7:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chesed",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "mercy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chesed",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "covenant"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chesed",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Pneuma",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 20:22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Pneuma",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ezekiel 37:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Pneuma",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 2:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Pneuma",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "spirit"
+  },
+  {
+    "sourceType": "word",
+    "source": "Pneuma",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "breath"
+  },
+  {
+    "sourceType": "word",
+    "source": "Pneuma",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "life"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doxa",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 3:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doxa",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 8:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doxa",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 60:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doxa",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "glory"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doxa",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "transformation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doxa",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "light"
+  },
+  {
+    "sourceType": "word",
+    "source": "Charon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "James 1:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Charon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 12:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Charon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 4:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Charon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "gift"
+  },
+  {
+    "sourceType": "word",
+    "source": "Charon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Charon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "calling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melek",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 6:33"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melek",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 12:32"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melek",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 1:13"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melek",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melek",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "seek"
+  },
+  {
+    "sourceType": "word",
+    "source": "Melek",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yarah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 32:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yarah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 4:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yarah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 30:21"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yarah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "instruction"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yarah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "guidance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yarah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "wisdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hazon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Habakkuk 2:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hazon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 29:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hazon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 2:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hazon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "vision"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hazon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hazon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "revelation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ezer",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 121:1-2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ezer",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 13:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ezer",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 41:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ezer",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "help"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ezer",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "strength"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ezer",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "presence"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yovel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 4:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yovel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Leviticus 25:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yovel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 61:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yovel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "release"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yovel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "freedom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yovel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "deliverance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 84:1-2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 15:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 2:22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "dwelling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "presence"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "abiding"
+  },
+  {
+    "sourceType": "word",
+    "source": "Zionel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 145:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 1:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Jude 1:25"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "majesty"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "glory"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "worship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hadriel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Malachi 4:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 60:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 1:78"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "light"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rising"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "hope"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mizrah",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 12:29"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 2:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Exodus 3:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "fire"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "spirit"
+  },
+  {
+    "sourceType": "word",
+    "source": "Eshon",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 4:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 7:38"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 55:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "water"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "life"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "refreshing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Mayim",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 3:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 2:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ezekiel 37:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "wind"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "spirit"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "movement"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ruval",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 30:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 58:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Peter 1:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "dawn"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "hope"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "newness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shachar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 6:20"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 4:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 2:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "treasure"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "value"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "eternal"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ophir",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 37:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 16:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 58:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "delight"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "joy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "presence"
+  },
+  {
+    "sourceType": "word",
+    "source": "Edenor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 4:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Exodus 40:34"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 6:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "glory"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "presence"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "eternal"
+  },
+  {
+    "sourceType": "word",
+    "source": "Kavod",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 10:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Philippians 2:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 1:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "lordship"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "christ"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "obedience"
+  },
+  {
+    "sourceType": "word",
+    "source": "Maran",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 1:16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 12:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 6:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "holiness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "calling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qadosh",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 3:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 45:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 5:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "path"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "guidance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "direction"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yashar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Deuteronomy 6:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 10:27"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 10:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "hearing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "obedience"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "voice"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shema",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 6:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Genesis 22:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Samuel 3:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "availability"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "calling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "obedience"
+  },
+  {
+    "sourceType": "word",
+    "source": "Hineni",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 20:21"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 28:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 10:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "sent"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "mission"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shaliah",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Jeremiah 1:7"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Amos 3:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 4:20"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "voice"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "message"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "truth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Navi",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 1:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 43:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Revelation 12:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "witness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "testimony"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "spirit"
+  },
+  {
+    "sourceType": "word",
+    "source": "Saphar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Joshua 24:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Romans 12:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 3:23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "service"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "calling"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "faithfulness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Avad",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 5:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 20:28"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 27:23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "oversight"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "leadership"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "care"
+  },
+  {
+    "sourceType": "word",
+    "source": "Paqar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 18:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 26:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 7:24"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rock"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "strength"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "foundation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tsuriel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ezra 7:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 37:24"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 41:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "hand"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "help"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "guidance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yadiel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 14:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 37:23"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 35:8"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "way"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "path"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "truth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Derek",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 6:33"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 2:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 4:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "assignment"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "kingdom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Malkiel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P01"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 43:19"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 5:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Song of Solomon 2:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "newness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "growth"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "renewal"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nitzan",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Exodus 15:26"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 103:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 8:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "healing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "rapha"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "restoration"
+  },
+  {
+    "sourceType": "word",
+    "source": "Rapha",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 51:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 57:15"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 34:18"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "brokenness"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "restoration"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "comfort"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nakah",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 John 1:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 51:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ezekiel 36:25"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "cleansing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purity"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "renewal"
+  },
+  {
+    "sourceType": "word",
+    "source": "Tahor",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 85:6"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ezekiel 37:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "John 11:25"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "revival"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "life"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "spirit"
+  },
+  {
+    "sourceType": "word",
+    "source": "Chayah",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "2 Corinthians 1:3-4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 40:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 5:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "comfort"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "healing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "mercy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nacham",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "1 Peter 5:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 90:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Proverbs 16:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "established"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "foundation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "purpose"
+  },
+  {
+    "sourceType": "word",
+    "source": "Yasad",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 60:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Mark 5:41"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 5:14"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "arise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "light"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "awakening"
+  },
+  {
+    "sourceType": "word",
+    "source": "Qum",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 41:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 46:1"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Hebrews 4:16"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "help"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "strength"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "grace"
+  },
+  {
+    "sourceType": "word",
+    "source": "Azar",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Joel 2:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Zechariah 1:3"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Luke 15:20"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "return"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "repentance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "mercy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Shuv",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Joshua 5:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 55:22"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Matthew 28:2"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "freedom"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "burden"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "shame"
+  },
+  {
+    "sourceType": "word",
+    "source": "Galal",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 32:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Isaiah 35:10"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Zephaniah 3:17"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "joy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "praise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "restoration"
+  },
+  {
+    "sourceType": "word",
+    "source": "Ranan",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P02"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 16:5"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Ephesians 1:11"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Colossians 1:12"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "inheritance"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "portion"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "promise"
+  },
+  {
+    "sourceType": "word",
+    "source": "Nachalah",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P08"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Psalm 145:4"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Deuteronomy 7:9"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "anchored_in",
+    "targetType": "scripture",
+    "target": "Acts 2:39"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "generation"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "legacy"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "tagged_with",
+    "targetType": "tag",
+    "target": "blessing"
+  },
+  {
+    "sourceType": "word",
+    "source": "Doriel",
+    "relationship": "belongs_to_path",
+    "targetType": "path",
+    "target": "P08"
+  }
+]

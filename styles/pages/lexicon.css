@@ -1,0 +1,3 @@
+body[data-view="lexicon"] :where(.lexicon-page, .lexicon-layout, .lexicon-grid) {
+  max-width: 100%;
+}

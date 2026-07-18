@@ -1,0 +1,7 @@
+body[data-view="table"] :where(.promise-table-page, .promise-table-layout, .promise-search-feed) {
+  max-width: 100%;
+}
+
+body[data-view="table"] table {
+  min-width: 42rem;
+}

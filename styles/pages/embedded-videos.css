@@ -1,0 +1,306 @@
+body[data-view="ui-elements"] .embedded-video-page {
+  display: grid;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+body[data-view="ui-elements"] .embedded-video-library {
+  width: 100%;
+}
+
+body[data-view="ui-elements"] .ui-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+body[data-view="ui-elements"] .embedded-video-card {
+  display: grid;
+  grid-template-rows: auto minmax(4.85rem, auto);
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  background: var(--color-panel);
+  box-shadow: 0 10px 30px rgba(16, 33, 31, 0.08);
+}
+
+body[data-view="ui-elements"] .embedded-video-poster {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 21 / 7.35;
+  overflow: hidden;
+  background: #092d27;
+}
+
+body[data-view="ui-elements"] .embedded-video-poster > img,
+body[data-view="ui-elements"] .embedded-video-poster > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body[data-view="ui-elements"] .embedded-video-poster > video,
+body[data-view="ui-elements"] .embedded-video-poster-image {
+  z-index: 1;
+  object-fit: contain;
+  object-position: center;
+}
+
+body[data-view="ui-elements"] .embedded-video-poster-backdrop {
+  z-index: 0;
+  object-fit: cover;
+  filter: blur(16px) brightness(0.62) saturate(0.92);
+  opacity: 0.78;
+  transform: scale(1.08);
+}
+
+body[data-view="ui-elements"] .embedded-video-play {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.78);
+  border-radius: 50%;
+  background: var(--color-teal);
+  z-index: 4;
+}
+
+body[data-view="ui-elements"] .embedded-video-play span {
+  width: 0;
+  height: 0;
+  margin-left: 0.2rem;
+  border-block: 0.48rem solid transparent;
+  border-left: 0.78rem solid #fff;
+}
+
+body[data-view="ui-elements"] .embedded-video-card-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-content: center;
+  align-items: center;
+  gap: 0.45rem 0.85rem;
+  min-height: 4.85rem;
+  padding: 0.85rem 1rem;
+  position: relative;
+}
+
+body[data-view="ui-elements"] .ui-video-badge {
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 4;
+}
+
+body[data-view="ui-elements"] .ui-video-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem 0.65rem;
+  min-height: 0;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+body[data-view="ui-elements"] .embedded-video-summary {
+  min-width: 0;
+}
+
+body[data-view="ui-elements"] .embedded-video-summary h4 {
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-view="ui-elements"] .embedded-video-menu {
+  position: relative;
+  z-index: 7;
+}
+
+body[data-view="ui-elements"] .embedded-video-menu > summary {
+  display: grid;
+  place-items: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  color: var(--color-ink);
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 900;
+  list-style: none;
+}
+
+body[data-view="ui-elements"] .embedded-video-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+body[data-view="ui-elements"] .embedded-video-menu > summary:hover,
+body[data-view="ui-elements"] .embedded-video-menu > summary:focus-visible {
+  background: var(--color-mint-soft);
+}
+
+body[data-view="ui-elements"] .embedded-video-menu-actions {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 0.45rem);
+  display: grid;
+  width: min(14rem, 70vw);
+  gap: 0.4rem;
+  padding: 0.65rem;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  background: var(--color-panel);
+  box-shadow: 0 14px 36px rgba(7, 43, 37, 0.2);
+}
+
+body[data-view="ui-elements"] .embedded-video-menu-actions button {
+  width: 100%;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.65rem;
+}
+
+body[data-view="ui-elements"] .embedded-video-card-nav {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem;
+  pointer-events: none;
+}
+
+body[data-view="ui-elements"] .embedded-video-card-nav button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 50%;
+  background: rgba(5, 54, 46, 0.76);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+body[data-view="ui-elements"] .embedded-video-card-nav button::before {
+  width: 0.58rem;
+  height: 0.58rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  content: "";
+}
+
+body[data-view="ui-elements"] .embedded-video-card-nav [data-ui-video-nav="previous"]::before {
+  transform: rotate(-135deg) translate(-1px, 1px);
+}
+
+body[data-view="ui-elements"] .embedded-video-card-nav [data-ui-video-nav="next"]::before {
+  transform: rotate(45deg) translate(-1px, 1px);
+}
+
+body[data-view="ui-elements"] .embedded-video-card-nav button:hover,
+body[data-view="ui-elements"] .embedded-video-card-nav button:focus-visible {
+  background: var(--color-teal);
+  transform: scale(1.06);
+}
+
+body[data-view="ui-elements"] .embedded-video-position {
+  position: absolute;
+  left: 50%;
+  bottom: 0.55rem;
+  padding: 0.22rem 0.46rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: rgba(5, 38, 33, 0.72);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+body[data-view="ui-elements"] .embedded-video-card-kicker span {
+  padding: 0.28rem 0.5rem;
+  border-radius: 999px;
+  background: #e9f6ef;
+  color: #075f51;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+body[data-view="ui-elements"] .embedded-video-card h4,
+body[data-view="ui-elements"] .embedded-video-card p {
+  margin: 0;
+}
+
+body[data-view="ui-elements"] .embedded-video-detail {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: var(--space-2);
+  border-top: 1px solid var(--color-line);
+  padding-top: var(--space-3);
+  color: var(--color-muted);
+}
+
+body[data-view="ui-elements"] .embedded-video-detail[hidden] {
+  display: none;
+}
+
+body[data-view="ui-elements"] .embedded-video-boundary {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+body[data-view="ui-elements"] .ui-video-empty {
+  grid-column: 1 / -1;
+  padding: var(--space-6);
+  text-align: center;
+}
+
+@media (max-width: 1180px) {
+  body[data-view="ui-elements"] .ui-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  body[data-view="ui-elements"] .ui-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-view="ui-elements"] .embedded-toolbar,
+  body[data-view="ui-elements"] .embedded-stats-search {
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 560px) {
+  body[data-view="ui-elements"] .embedded-video-poster {
+    aspect-ratio: 16 / 9;
+  }
+
+  body[data-view="ui-elements"] .embedded-video-card-nav {
+    padding: 0.45rem;
+  }
+}
+
+@media (max-width: 720px) {
+  body[data-view="ui-elements"] .embedded-video-library {
+    margin-inline: 0;
+  }
+
+  body[data-view="ui-elements"] .embedded-video-hero {
+    padding-inline: 1rem;
+  }
+
+  body[data-view="ui-elements"] .embedded-video-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

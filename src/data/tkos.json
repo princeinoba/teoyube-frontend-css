@@ -1,0 +1,233 @@
+{
+  "architecture": {
+    "phase": "4A",
+    "name": "Teoyube Kingdom Operating System",
+    "version": "1.0",
+    "visionQuestions": {
+      "identity": "Who am I becoming?",
+      "calling": "What is God calling me to do?",
+      "growth": "Where am I in my spiritual journey?",
+      "stewardship": "What has God entrusted to me?",
+      "legacy": "What impact will my life leave behind?"
+    },
+    "systemFlow": [
+      "Scripture Canon",
+      "Teoyube Lexicon",
+      "Promise Clusters",
+      "Prayer Engine",
+      "User Profile",
+      "Growth Engine",
+      "Destiny Engine",
+      "AI Spiritual Companion"
+    ],
+    "modules": [
+      "User Profile System",
+      "Growth Level System",
+      "Archetype Discovery Engine",
+      "Covenant Path Engine",
+      "Daily Word Recommendation Engine",
+      "Destiny Assessment Engine",
+      "Journal System",
+      "Prayer Analytics",
+      "AI Spiritual Companion",
+      "Teoyube Kingdom Dashboard"
+    ],
+    "databaseCollections": [
+      "users",
+      "words",
+      "scriptures",
+      "archetypes",
+      "paths",
+      "clusters",
+      "prayers",
+      "journeys",
+      "journals",
+      "assessments",
+      "recommendations",
+      "analytics"
+    ]
+  },
+  "engines": {
+    "archetypeDiscovery": {
+      "assessmentAreas": [
+        "Identity",
+        "Service",
+        "Leadership",
+        "Teaching",
+        "Prayer",
+        "Healing",
+        "Stewardship",
+        "Influence"
+      ],
+      "exampleResult": {
+        "archetype": "The Builder",
+        "confidence": 89,
+        "supportingWords": [
+          "Selion",
+          "Maviel",
+          "Tharon",
+          "Velian"
+        ]
+      }
+    },
+    "covenantPathProgress": {
+      "path": "Calling",
+      "completion": 42,
+      "completedWords": [
+        "Benor",
+        "Arion"
+      ],
+      "nextWord": "Luma",
+      "stages": [
+        "Discovery",
+        "Development",
+        "Activation",
+        "Manifestation",
+        "Legacy"
+      ]
+    },
+    "dailyWordRecommendation": {
+      "date": "2026-06-21",
+      "word": "Luma",
+      "cluster": "Light & Revelation",
+      "scripture": "John 8:12",
+      "reflectionPrompt": "Where do I need God's light today?",
+      "logic": {
+        "if": "NeedWisdom",
+        "recommend": [
+          "Luma",
+          "Solen",
+          "Emeth",
+          "Hazon"
+        ]
+      }
+    },
+    "destinyAssessment": {
+      "identity": 85,
+      "prayer": 70,
+      "wisdom": 81,
+      "stewardship": 90,
+      "service": 88,
+      "influence": 62,
+      "legacy": 55
+    },
+    "journalExample": {
+      "entryId": "JNL001",
+      "word": "Taviel",
+      "scripture": "Ephesians 2:10",
+      "reflection": "Today I sensed God directing me toward my purpose.",
+      "tags": [
+        "calling",
+        "purpose"
+      ]
+    },
+    "prayerAnalytics": {
+      "record": {
+        "prayerId": "PR004",
+        "timesPrayed": 17,
+        "lastPrayed": "2026-06-20",
+        "favorite": true
+      },
+      "insights": {
+        "topCluster": "Light & Revelation",
+        "topWord": "Luma",
+        "mostUsedPrayer": "PR004"
+      }
+    },
+    "aiSpiritualCompanion": {
+      "roles": [
+        "Teacher",
+        "Guide",
+        "Encourager",
+        "Companion"
+      ],
+      "exampleRequest": {
+        "user": "USR001",
+        "request": "I need wisdom for a decision."
+      },
+      "responseLogic": {
+        "recommendedCluster": "Light & Revelation",
+        "recommendedWords": [
+          "Luma",
+          "Solen",
+          "Emeth"
+        ],
+        "recommendedPrayer": "PR004"
+      }
+    },
+    "kingdomDashboard": {
+      "dailyWord": "Luma",
+      "currentJourney": "Calling Journey",
+      "growthLevel": "Established",
+      "activePrayer": "PR004",
+      "widgets": [
+        "Daily Word",
+        "Prayer Tracker",
+        "Journey Progress",
+        "Archetype Profile",
+        "Growth Score",
+        "Recent Journal Entries",
+        "Recommended Scripture",
+        "Promise Cluster Focus"
+      ]
+    }
+  },
+  "growthLevels": [
+    {
+      "level": 1,
+      "name": "Seed",
+      "description": "Learning Identity",
+      "scoreMin": 0,
+      "scoreMax": 20
+    },
+    {
+      "level": 2,
+      "name": "Rooted",
+      "description": "Developing Spiritual Habits",
+      "scoreMin": 21,
+      "scoreMax": 40
+    },
+    {
+      "level": 3,
+      "name": "Established",
+      "description": "Walking Consistently",
+      "scoreMin": 41,
+      "scoreMax": 65
+    },
+    {
+      "level": 4,
+      "name": "Fruitful",
+      "description": "Multiplying Influence",
+      "scoreMin": 66,
+      "scoreMax": 84
+    },
+    {
+      "level": 5,
+      "name": "Legacy",
+      "description": "Mentoring Others",
+      "scoreMin": 85,
+      "scoreMax": 100
+    }
+  ],
+  "sampleProfile": {
+    "userId": "USR001",
+    "displayName": "Prince",
+    "createdAt": "2026-06-21",
+    "archetype": "The Builder",
+    "primaryPath": "Stewardship",
+    "secondaryPath": "Calling",
+    "growthLevel": "Developing",
+    "currentJourney": "Calling Journey",
+    "recommendedWords": [
+      "Selion",
+      "Maviel",
+      "Taviel",
+      "Hazon"
+    ],
+    "recommendedPrayers": [
+      "PR001",
+      "PR004",
+      "PR007"
+    ]
+  }
+}

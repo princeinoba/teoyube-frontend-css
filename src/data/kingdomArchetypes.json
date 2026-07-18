@@ -1,0 +1,461 @@
+[
+  {
+    "id": "A01",
+    "name": "The Chosen",
+    "teoyubeWord": "Benor",
+    "category": "Identity",
+    "identityStatement": "Called before formation",
+    "primaryCluster": "Calling",
+    "primaryPath": "Calling",
+    "scripturalModels": [
+      "Jeremiah",
+      "David",
+      "Paul"
+    ],
+    "coreWords": [
+      "Benor",
+      "Arion",
+      "Taviel"
+    ],
+    "manifestationGoal": "Purpose"
+  },
+  {
+    "id": "A02",
+    "name": "The Builder",
+    "teoyubeWord": "Selion",
+    "category": "Stewardship",
+    "identityStatement": "Constructs Kingdom structures",
+    "primaryCluster": "Stewardship",
+    "primaryPath": "Stewardship",
+    "scripturalModels": [
+      "Noah",
+      "Nehemiah",
+      "Solomon"
+    ],
+    "coreWords": [
+      "Selion",
+      "Maviel",
+      "Tharon"
+    ],
+    "manifestationGoal": "Kingdom structures"
+  },
+  {
+    "id": "A03",
+    "name": "The Lightbearer",
+    "teoyubeWord": "Luma",
+    "category": "Wisdom",
+    "identityStatement": "Reveals truth",
+    "primaryCluster": "Wisdom",
+    "primaryPath": "Wisdom",
+    "scripturalModels": [
+      "Daniel",
+      "John",
+      "Stephen"
+    ],
+    "coreWords": [
+      "Luma",
+      "Solen",
+      "Marion"
+    ],
+    "manifestationGoal": "Influence"
+  },
+  {
+    "id": "A04",
+    "name": "The Healer",
+    "teoyubeWord": "Zephan",
+    "category": "Healing",
+    "identityStatement": "Carries restoration",
+    "primaryCluster": "Healing",
+    "primaryPath": "Healing",
+    "scripturalModels": [
+      "Luke",
+      "Elisha"
+    ],
+    "coreWords": [
+      "Zephan",
+      "Renar",
+      "Velor"
+    ],
+    "manifestationGoal": "Restoration"
+  },
+  {
+    "id": "A05",
+    "name": "The Watchman",
+    "teoyubeWord": "Arkel",
+    "category": "Protection",
+    "identityStatement": "Protects gates",
+    "primaryCluster": "Protection",
+    "primaryPath": "Protection",
+    "scripturalModels": [
+      "Ezekiel",
+      "Nehemiah"
+    ],
+    "coreWords": [
+      "Arkel",
+      "Nethar",
+      "Sarion"
+    ],
+    "manifestationGoal": "Guarded gates"
+  },
+  {
+    "id": "A06",
+    "name": "The Shepherd",
+    "teoyubeWord": "Shalem",
+    "category": "Peace",
+    "identityStatement": "Guides and guards",
+    "primaryCluster": "Peace",
+    "primaryPath": "Protection",
+    "scripturalModels": [
+      "David",
+      "Peter"
+    ],
+    "coreWords": [
+      "Shalem",
+      "Talion",
+      "Theon"
+    ],
+    "manifestationGoal": "Guidance and care"
+  },
+  {
+    "id": "A07",
+    "name": "The Steward",
+    "teoyubeWord": "Maviel",
+    "category": "Stewardship",
+    "identityStatement": "Manages entrusted resources faithfully",
+    "primaryCluster": "Stewardship",
+    "primaryPath": "Stewardship",
+    "scripturalModels": [
+      "Joseph",
+      "Daniel"
+    ],
+    "coreWords": [
+      "Selion",
+      "Maviel",
+      "Verath"
+    ],
+    "manifestationGoal": "Faithful management"
+  },
+  {
+    "id": "A08",
+    "name": "The Sower",
+    "teoyubeWord": "Tharon",
+    "category": "Multiplication",
+    "identityStatement": "Plants and cultivates Kingdom seed",
+    "primaryCluster": "Stewardship",
+    "primaryPath": "Stewardship",
+    "scripturalModels": [
+      "Isaac",
+      "Paul"
+    ],
+    "coreWords": [
+      "Tharon",
+      "Auren",
+      "Velian"
+    ],
+    "manifestationGoal": "Cultivated increase"
+  },
+  {
+    "id": "A09",
+    "name": "The Teacher",
+    "teoyubeWord": "Solen",
+    "category": "Wisdom",
+    "identityStatement": "Forms others through wisdom and truth",
+    "primaryCluster": "Wisdom",
+    "primaryPath": "Wisdom",
+    "scripturalModels": [
+      "Ezra",
+      "Paul"
+    ],
+    "coreWords": [
+      "Solen",
+      "Luma",
+      "TEACHA"
+    ],
+    "manifestationGoal": "Formed disciples"
+  },
+  {
+    "id": "A10",
+    "name": "The Counselor",
+    "teoyubeWord": "Thalion",
+    "category": "Guidance",
+    "identityStatement": "Applies wisdom to restore hearts",
+    "primaryCluster": "Wisdom",
+    "primaryPath": "Wisdom",
+    "scripturalModels": [
+      "Barnabas",
+      "Deborah"
+    ],
+    "coreWords": [
+      "Solen",
+      "Shalem",
+      "Velor"
+    ],
+    "manifestationGoal": "Wise counsel"
+  },
+  {
+    "id": "A11",
+    "name": "The Intercessor",
+    "teoyubeWord": "Nethar",
+    "category": "Prayer",
+    "identityStatement": "Stands in prayer for others",
+    "primaryCluster": "Protection",
+    "primaryPath": "Protection",
+    "scripturalModels": [
+      "Moses",
+      "Anna"
+    ],
+    "coreWords": [
+      "PRAYERA",
+      "Nethar",
+      "Koriel"
+    ],
+    "manifestationGoal": "Prayer covering"
+  },
+  {
+    "id": "A12",
+    "name": "The Messenger",
+    "teoyubeWord": "Arion",
+    "category": "Calling",
+    "identityStatement": "Carries good news with clarity",
+    "primaryCluster": "Kingdom",
+    "primaryPath": "Calling",
+    "scripturalModels": [
+      "John the Baptist",
+      "Philip"
+    ],
+    "coreWords": [
+      "EVANGELA",
+      "MARTURIA",
+      "Luma"
+    ],
+    "manifestationGoal": "Kingdom message"
+  },
+  {
+    "id": "A13",
+    "name": "The Restorer",
+    "teoyubeWord": "Velor",
+    "category": "Transformation",
+    "identityStatement": "Rebuilds what was broken",
+    "primaryCluster": "Transformation",
+    "primaryPath": "Healing",
+    "scripturalModels": [
+      "Nehemiah",
+      "Elisha"
+    ],
+    "coreWords": [
+      "Velor",
+      "RESTORA",
+      "Renar"
+    ],
+    "manifestationGoal": "Restoration"
+  },
+  {
+    "id": "A14",
+    "name": "The Gatekeeper",
+    "teoyubeWord": "Korion",
+    "category": "Authority",
+    "identityStatement": "Discerns access and protects thresholds",
+    "primaryCluster": "Authority",
+    "primaryPath": "Authority",
+    "scripturalModels": [
+      "Nehemiah",
+      "Ezekiel"
+    ],
+    "coreWords": [
+      "Arkel",
+      "Tavor",
+      "Nethar"
+    ],
+    "manifestationGoal": "Guarded access"
+  },
+  {
+    "id": "A15",
+    "name": "The Warrior",
+    "teoyubeWord": "Kethor",
+    "category": "Victory",
+    "identityStatement": "Overcomes through faith",
+    "primaryCluster": "Protection",
+    "primaryPath": "Protection",
+    "scripturalModels": [
+      "Joshua",
+      "David"
+    ],
+    "coreWords": [
+      "Kethor",
+      "Koriel",
+      "VICTORA"
+    ],
+    "manifestationGoal": "Victory"
+  },
+  {
+    "id": "A16",
+    "name": "The Servant",
+    "teoyubeWord": "Talion",
+    "category": "Service",
+    "identityStatement": "Serves with humility and faithfulness",
+    "primaryCluster": "Calling",
+    "primaryPath": "Service",
+    "scripturalModels": [
+      "Ruth",
+      "Timothy"
+    ],
+    "coreWords": [
+      "Talion",
+      "SERVIA",
+      "HUMILIA"
+    ],
+    "manifestationGoal": "Faithful service"
+  },
+  {
+    "id": "A17",
+    "name": "The King",
+    "teoyubeWord": "Theron",
+    "category": "Authority",
+    "identityStatement": "Exercises kingdom responsibility",
+    "primaryCluster": "Authority",
+    "primaryPath": "Dominion",
+    "scripturalModels": [
+      "David",
+      "Solomon"
+    ],
+    "coreWords": [
+      "Theron",
+      "Valdor",
+      "Orimon"
+    ],
+    "manifestationGoal": "Kingdom rule"
+  },
+  {
+    "id": "A18",
+    "name": "The Priest",
+    "teoyubeWord": "Beniel",
+    "category": "Sonship",
+    "identityStatement": "Ministers before God and people",
+    "primaryCluster": "Kingdom",
+    "primaryPath": "Sonship",
+    "scripturalModels": [
+      "Aaron",
+      "Samuel"
+    ],
+    "coreWords": [
+      "HOLIA",
+      "PRAYERA",
+      "SANCTA"
+    ],
+    "manifestationGoal": "Holy sonship"
+  },
+  {
+    "id": "A19",
+    "name": "The Witness",
+    "teoyubeWord": "Auren",
+    "category": "Manifestation",
+    "identityStatement": "Testifies to what God has done",
+    "primaryCluster": "Kingdom",
+    "primaryPath": "Kingdom Maturity",
+    "scripturalModels": [
+      "Stephen",
+      "John"
+    ],
+    "coreWords": [
+      "MARTURIA",
+      "TESTIMA",
+      "DUNAMIS"
+    ],
+    "manifestationGoal": "Fruitful witness"
+  },
+  {
+    "id": "A20",
+    "name": "The Redeemer",
+    "teoyubeWord": "Renar",
+    "category": "Transformation",
+    "identityStatement": "Carries redemptive restoration",
+    "primaryCluster": "Transformation",
+    "primaryPath": "Healing",
+    "scripturalModels": [
+      "Boaz",
+      "Joseph"
+    ],
+    "coreWords": [
+      "Velor",
+      "RAPHA",
+      "GRACIA"
+    ],
+    "manifestationGoal": "Renewal"
+  },
+  {
+    "id": "A21",
+    "name": "The Overcomer",
+    "teoyubeWord": "Kethor",
+    "category": "Victory",
+    "identityStatement": "Endures and conquers through faith",
+    "primaryCluster": "Transformation",
+    "primaryPath": "Dominion",
+    "scripturalModels": [
+      "Job",
+      "Paul"
+    ],
+    "coreWords": [
+      "Kethor",
+      "PERSEVA",
+      "COURAGA"
+    ],
+    "manifestationGoal": "Overcoming faith"
+  },
+  {
+    "id": "A22",
+    "name": "The Inheritor",
+    "teoyubeWord": "Themar",
+    "category": "Inheritance",
+    "identityStatement": "Receives and stewards inheritance",
+    "primaryCluster": "Inheritance",
+    "primaryPath": "Legacy",
+    "scripturalModels": [
+      "Joshua",
+      "Caleb"
+    ],
+    "coreWords": [
+      "Themar",
+      "HERITA",
+      "Valion"
+    ],
+    "manifestationGoal": "Inheritance"
+  },
+  {
+    "id": "A23",
+    "name": "The Son",
+    "teoyubeWord": "Arielon",
+    "category": "Sonship",
+    "identityStatement": "Lives from true sonship",
+    "primaryCluster": "Sonship",
+    "primaryPath": "Sonship",
+    "scripturalModels": [
+      "John",
+      "Timothy"
+    ],
+    "coreWords": [
+      "Beniel",
+      "Abion",
+      "Thalion"
+    ],
+    "manifestationGoal": "True sonship"
+  },
+  {
+    "id": "A24",
+    "name": "The Ambassador",
+    "teoyubeWord": "Marion",
+    "category": "Influence",
+    "identityStatement": "Represents the Kingdom faithfully",
+    "primaryCluster": "Kingdom",
+    "primaryPath": "Leadership",
+    "scripturalModels": [
+      "Paul",
+      "Barnabas"
+    ],
+    "coreWords": [
+      "MISSIONA",
+      "EVANGELA",
+      "BASILEIA"
+    ],
+    "manifestationGoal": "Kingdom representation"
+  }
+]

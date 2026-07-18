@@ -1,0 +1,13 @@
+[
+  { "fileName": "John 3 16.mp4", "book": "John", "chapter": 3, "verseStart": 16, "verseEnd": null, "confidence": "probable" },
+  { "fileName": "1 John 4 8.mp4", "book": "1 John", "chapter": 4, "verseStart": 8, "verseEnd": null, "confidence": "probable" },
+  { "fileName": "First John 4 8.mp4", "book": "1 John", "chapter": 4, "verseStart": 8, "verseEnd": null, "confidence": "probable" },
+  { "fileName": "2 Corinthians 5 17.mp4", "book": "2 Corinthians", "chapter": 5, "verseStart": 17, "verseEnd": null, "confidence": "probable" },
+  { "fileName": "Galatians 3 25-28.mp4", "book": "Galatians", "chapter": 3, "verseStart": 25, "verseEnd": 28, "confidence": "probable" },
+  { "fileName": "John 3 16 to 18.mp4", "book": "John", "chapter": 3, "verseStart": 16, "verseEnd": 18, "confidence": "probable" },
+  { "fileName": "Isaiah_40_31_audio.mp4", "book": "Isaiah", "chapter": 40, "verseStart": 31, "verseEnd": null, "confidence": "probable" },
+  { "fileName": "Psalm 23.mp4", "book": "Psalms", "chapter": 23, "verseStart": null, "verseEnd": null, "confidence": "needs_review" },
+  { "fileName": "Long Form Teaching.mp4", "book": "", "chapter": null, "verseStart": null, "verseEnd": null, "confidence": "unknown" },
+  { "fileName": "Ambiguous 4 8.mp4", "book": "", "chapter": null, "verseStart": null, "verseEnd": null, "confidence": "unknown" },
+  { "fileName": "John 3 16.vtt", "book": "John", "chapter": 3, "verseStart": 16, "verseEnd": null, "confidence": "probable" }
+]

@@ -1,0 +1,60 @@
+{
+  "phase": "4G",
+  "name": "Teoyube MVP Styling System & Brand Identity UI",
+  "brandIdentity": {
+    "brandName": "Teoyube",
+    "tagline": "A Scripture-linked promise language for prayer, purpose, and spiritual growth.",
+    "tone": "sacred, peaceful, modern, hopeful",
+    "visualStyle": "Kingdom light, soft gradients, elegant cards, scripture-inspired minimalism"
+  },
+  "colorPalette": {
+    "teoyubeBg": "#0f172a",
+    "teoyubeCard": "#111827",
+    "teoyubeGold": "#f5c542",
+    "teoyubeBlue": "#38bdf8",
+    "teoyubeWhite": "#f8fafc",
+    "teoyubeMuted": "#94a3b8",
+    "teoyubeBorder": "#334155"
+  },
+  "globalStyles": {
+    "file": "teoyube-app/app/globals.css",
+    "features": [
+      "Radial Kingdom-light background",
+      "Dark premium card surface",
+      "Gold and blue accent system",
+      "Global navigation styling",
+      "Reusable card, button, muted, and gold classes"
+    ]
+  },
+  "components": [
+    {
+      "path": "teoyube-app/components/TeoyubeCard.tsx",
+      "name": "TeoyubeCard",
+      "purpose": "Reusable sacred card component for Launch 1 pages."
+    },
+    {
+      "path": "teoyube-app/components/NavBar.tsx",
+      "name": "NavBar",
+      "purpose": "Reusable navigation across the static MVP."
+    }
+  ],
+  "brandedPages": [
+    "teoyube-app/app/page.tsx",
+    "teoyube-app/app/dashboard/page.tsx",
+    "teoyube-app/app/daily-word/page.tsx",
+    "teoyube-app/app/words/page.tsx",
+    "teoyube-app/app/prayer/page.tsx",
+    "teoyube-app/app/clusters/page.tsx",
+    "teoyube-app/app/journal/page.tsx",
+    "teoyube-app/app/companion/page.tsx"
+  ],
+  "directionWords": [
+    "Calm",
+    "Sacred",
+    "Modern",
+    "Scripture-rooted",
+    "Prayerful",
+    "Light-filled",
+    "Premium"
+  ]
+}

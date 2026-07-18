@@ -1,0 +1,10 @@
+{
+  "NeedDirection": ["PR001", "PR004"],
+  "NeedHealing": ["PR003"],
+  "NeedProtection": ["PR005"],
+  "NeedWisdom": ["PR004"],
+  "NeedIdentity": ["PR001", "PR002"],
+  "NeedAuthority": ["PR006"],
+  "NeedGrowth": ["PR007"],
+  "NeedLegacy": ["PR008"]
+}

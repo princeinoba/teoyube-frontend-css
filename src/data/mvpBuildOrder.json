@@ -1,0 +1,22 @@
+[
+  {
+    "id": "MVP1",
+    "name": "Foundation",
+    "features": ["User auth", "108-word database", "Daily Word", "Promise Clusters", "Prayer Library", "Journal"]
+  },
+  {
+    "id": "MVP2",
+    "name": "AI Companion",
+    "features": ["Need detection", "Prayer generation", "Scripture recommendation", "Journal prompt generation"]
+  },
+  {
+    "id": "MVP3",
+    "name": "Growth System",
+    "features": ["Onboarding", "Archetype discovery", "Covenant path progress", "Dashboard analytics"]
+  },
+  {
+    "id": "MVP4",
+    "name": "Community",
+    "features": ["Group journeys", "Shared prayer boards", "Mentor/church dashboards"]
+  }
+]

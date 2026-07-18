@@ -1,0 +1,12 @@
+{
+  "userId": "USR001",
+  "displayName": "Prince",
+  "createdAt": "2026-06-21",
+  "archetype": "The Builder",
+  "primaryPath": "Stewardship",
+  "secondaryPath": "Calling",
+  "growthLevel": "Developing",
+  "currentJourney": "Calling Journey",
+  "recommendedWords": ["Selion", "Maviel", "Taviel", "Hazon"],
+  "recommendedPrayers": ["PR001", "PR004", "PR007"]
+}

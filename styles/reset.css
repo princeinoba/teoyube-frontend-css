@@ -1,0 +1,30 @@
+html {
+  min-width: 0;
+  overflow-x: clip;
+}
+
+body,
+main,
+section,
+article,
+aside,
+div,
+form,
+table {
+  min-width: 0;
+}
+
+img,
+video,
+iframe,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  letter-spacing: 0;
+}

@@ -1,0 +1,3 @@
+body[data-view="canon"] :where(.canon-layout, .canon-dashboard, .canon-grid) {
+  max-width: 100%;
+}

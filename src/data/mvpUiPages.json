@@ -1,0 +1,57 @@
+{
+  "phase": "4F",
+  "name": "Teoyube MVP User Interface Pages",
+  "projectRoot": "teoyube-app",
+  "description": "MVP Next.js UI pages for dashboard, promise clusters, journal, AI companion, and word lexicon.",
+  "pages": [
+    {
+      "path": "teoyube-app/app/dashboard/page.tsx",
+      "name": "Dashboard Page",
+      "route": "/dashboard",
+      "purpose": "Daily spiritual growth center with Daily Word, Prayer, Promise Cluster, and AI Companion cards.",
+      "dataSources": ["static dashboard copy", "starter links"]
+    },
+    {
+      "path": "teoyube-app/app/clusters/page.tsx",
+      "name": "Promise Clusters Page",
+      "route": "/clusters",
+      "purpose": "Lists Promise Clusters with core words, anchor Scripture, and declaration.",
+      "dataSources": ["data/promiseClusters.json"]
+    },
+    {
+      "path": "teoyube-app/app/journal/page.tsx",
+      "name": "Journal Page",
+      "route": "/journal",
+      "purpose": "Provides a simple reflection form for Teoyube word, Scripture, and journal reflection.",
+      "dataSources": ["user input"]
+    },
+    {
+      "path": "teoyube-app/app/companion/page.tsx",
+      "name": "AI Companion Page",
+      "route": "/companion",
+      "purpose": "Client-side companion form that posts user need to the AI companion API route.",
+      "dataSources": ["/api/ai/companion"]
+    },
+    {
+      "path": "teoyube-app/app/words/page.tsx",
+      "name": "Word Lexicon Page",
+      "route": "/words",
+      "purpose": "Lists Teoyube words with meaning, category, promise statement, and Scripture references.",
+      "dataSources": ["data/teoyubeWords.json"]
+    }
+  ],
+  "totals": {
+    "newOrUpdatedPages": 5,
+    "totalStarterPages": 8,
+    "dataBackedPages": 3,
+    "clientPages": 1,
+    "forms": 2
+  },
+  "nextSteps": [
+    "Connect dashboard cards to real Daily Word and Prayer data.",
+    "Persist journal entries through /api/journal.",
+    "Add dynamic word detail pages at /words/[word].",
+    "Add dynamic cluster detail pages at /clusters/[id].",
+    "Connect companion responses to the full canon and OpenAI API."
+  ]
+}
