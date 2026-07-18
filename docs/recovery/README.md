@@ -40,3 +40,7 @@ Each hunk must be inspected. Do not copy page components, feature pages, layouts
 ## Current isolated source repair
 
 `src/lib/teoyube/calling/calling-engine.ts` uses narrow imports for `TIG_CALLING_SEEDS`, calling functions, and `CallingProfileNode`. This prevents the missing barrel-export regression without changing behavior or appearance.
+
+## Evidence
+
+See [`INITIAL_RECOVERY_REPORT.md`](./INITIAL_RECOVERY_REPORT.md) for the branch source, completed recovery controls, validation counts, and deliberately deferred selective ports.
