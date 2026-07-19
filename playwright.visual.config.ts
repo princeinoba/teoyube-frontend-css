@@ -55,6 +55,10 @@ export default defineConfig({
     {
       name: "prayer-calling-journey-parity",
       testMatch: /prayer-calling-journey-parity\.spec\.ts/
+    },
+    {
+      name: "journal-testimony-book-parity",
+      testMatch: /journal-testimony-book-parity\.spec\.ts/
     }
   ]
 });

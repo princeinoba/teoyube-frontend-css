@@ -4,6 +4,8 @@ import { createCapabilityService } from "../../shared/utilities/create-capabilit
 export type BookEvent = CapabilityEvent<"book">;
 export type BookViewModel = CapabilityViewModel<"book">;
 export { createBookLegacyAdapter } from "./legacy-adapter";
+export { createBookPageViewModel } from "./application/book-page-service";
+export type { BookPageViewModel } from "./application/book-page-service";
 
 export function createBookFeature(port: CapabilityPort<"book">) {
   return createCapabilityService("book", port);

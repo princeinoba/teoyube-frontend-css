@@ -1,6 +1,6 @@
-import { BookOfTheSaintScreenshotPage } from "@/components/productization/Phase112ScreenshotApp";
+import { BookPageController } from "../_book/BookPageController";
+import { createBookPageViewModel } from "../../features/book/application/book-page-service";
 
 export default function BookPage() {
-  return <BookOfTheSaintScreenshotPage />;
+  return <BookPageController initialViewModel={createBookPageViewModel()} />;
 }
-

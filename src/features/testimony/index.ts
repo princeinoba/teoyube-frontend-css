@@ -4,6 +4,8 @@ import { createCapabilityService } from "../../shared/utilities/create-capabilit
 export type TestimonyEvent = CapabilityEvent<"testimony">;
 export type TestimonyViewModel = CapabilityViewModel<"testimony">;
 export { createTestimonyLegacyAdapter } from "./legacy-adapter";
+export { createTestimonyPageViewModel } from "./application/testimony-page-service";
+export type { TestimonyDisplayDto, TestimonyPageViewModel } from "./application/testimony-page-service";
 
 export function createTestimonyFeature(port: CapabilityPort<"testimony">) {
   return createCapabilityService("testimony", port);

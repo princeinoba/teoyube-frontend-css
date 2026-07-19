@@ -95,6 +95,16 @@ async function captureCalling(page) {
   return { initial: await innerHtml(page, "#calling") };
 }
 
+async function captureBook(page) {
+  await openView(page, "book");
+  return { initial: await innerHtml(page, "#book") };
+}
+
+async function captureTestimony(page) {
+  await openView(page, "testimony");
+  return { initial: await innerHtml(page, "#testimony") };
+}
+
 function approvedSourceDigest() {
   const hash = crypto.createHash("sha256");
   for (const relativePath of ["index.html", "app.js", "phase116b1.js"]) {
@@ -115,7 +125,9 @@ async function main() {
       capturedAt: "2026-07-18T12:00:00.000Z",
       canon: await captureCanon(page),
       table: await captureTable(page),
-      calling: await captureCalling(page)
+      calling: await captureCalling(page),
+      book: await captureBook(page),
+      testimony: await captureTestimony(page)
     };
     const source = [
       "// Generated only from the protected static runtime. Do not hand-edit or use as a baseline update.",
@@ -124,7 +136,7 @@ async function main() {
     ].join("\n");
     fs.mkdirSync(path.dirname(outputFile), { recursive: true });
     fs.writeFileSync(outputFile, source, "utf8");
-    console.log(`Captured approved Canon, Promise Table, and Calling Compass markup to ${path.relative(workspaceRoot, outputFile)}.`);
+    console.log(`Captured approved Canon, Promise Table, Calling Compass, Book, and Testimony markup to ${path.relative(workspaceRoot, outputFile)}.`);
   } finally {
     await context.close();
     await browser.close();
