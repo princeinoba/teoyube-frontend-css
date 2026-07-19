@@ -1,22 +1,6 @@
-import {
-  GrowthJourneyPanel,
-  KnownLimitationsNotice,
-  PageHeader,
-  SafetyNotice
-} from "@/components/productization/Phase11ProductPanels";
-import { getGrowthLevels, getPrayerJourneys } from "../../../src/lib/teoyube/data-access";
+import { ApprovedJourneyView } from "../_journey/ApprovedJourneyView";
+import { createJourneyPageViewModel } from "../../features/journey/application/journey-service";
 
 export default function JourneyPage() {
-  return (
-    <main>
-      <PageHeader eyebrow="Growth Journey" title="Session Journey Progress">
-        Start a local growth journey, complete stages, reflections, actions, and milestones without accounts or persistence.
-      </PageHeader>
-      <GrowthJourneyPanel journeys={getPrayerJourneys()} levels={getGrowthLevels()} />
-      <section className="grid two">
-        <SafetyNotice />
-        <KnownLimitationsNotice />
-      </section>
-    </main>
-  );
+  return <ApprovedJourneyView viewModel={createJourneyPageViewModel()} />;
 }

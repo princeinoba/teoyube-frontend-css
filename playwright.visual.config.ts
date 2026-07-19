@@ -51,6 +51,10 @@ export default defineConfig({
     {
       name: "canon-promise-parity",
       testMatch: /canon-promise-parity\.spec\.ts/
+    },
+    {
+      name: "prayer-calling-journey-parity",
+      testMatch: /prayer-calling-journey-parity\.spec\.ts/
     }
   ]
 });

@@ -13,8 +13,8 @@ if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
   process.exit(2);
 }
-if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise"]).has(mode)) {
-  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise>");
+if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey"]).has(mode)) {
+  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey>");
   process.exit(2);
 }
 
@@ -38,6 +38,15 @@ async function waitForUrl(child, url, timeoutMs = 120_000) {
     await new Promise((resolve) => setTimeout(resolve, 250));
   }
   throw new Error(`Timed out waiting for ${url}.`);
+}
+
+async function urlIsReady(url) {
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    return response.ok;
+  } catch {
+    return false;
+  }
 }
 
 async function stopServer(child) {
@@ -74,11 +83,14 @@ async function main() {
   const servers = [];
   try {
     if (mode !== "status") {
-      const staticServer = startStaticServer();
-      servers.push(staticServer);
-      await waitForUrl(staticServer, "http://127.0.0.1:4173/index.html");
+      const staticUrl = "http://127.0.0.1:4173/index.html";
+      if (!(await urlIsReady(staticUrl))) {
+        const staticServer = startStaticServer();
+        servers.push(staticServer);
+        await waitForUrl(staticServer, staticUrl);
+      }
     }
-    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise") {
+    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey") {
       const nextServer = startNextServer();
       servers.push(nextServer);
       await waitForUrl(nextServer, "http://127.0.0.1:3100/api/health");
@@ -94,6 +106,8 @@ async function main() {
           ? "search-parity"
         : mode === "canon-promise"
           ? "canon-promise-parity"
+        : mode === "prayer-calling-journey"
+          ? "prayer-calling-journey-parity"
         : "next-candidate-contract";
     const tests = spawn(
       process.execPath,
