@@ -1,6 +1,6 @@
-import { TodayScreenshotPage } from "@/components/productization/Phase112ScreenshotApp";
+import { TodayPageController } from "./_today/TodayPageController";
+import { createApprovedTodayViewModel } from "@/features/today/legacy-adapter";
 
 export default function HomePage() {
-  return <TodayScreenshotPage />;
+  return <TodayPageController initialViewModel={createApprovedTodayViewModel()} />;
 }
-

@@ -13,8 +13,8 @@ if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
   process.exit(2);
 }
-if (!new Set(["static", "next", "status", "shell"]).has(mode)) {
-  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell>");
+if (!new Set(["static", "next", "status", "shell", "today"]).has(mode)) {
+  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today>");
   process.exit(2);
 }
 
@@ -78,7 +78,7 @@ async function main() {
       servers.push(staticServer);
       await waitForUrl(staticServer, "http://127.0.0.1:4173/index.html");
     }
-    if (mode === "next" || mode === "shell") {
+    if (mode === "next" || mode === "shell" || mode === "today") {
       const nextServer = startNextServer();
       servers.push(nextServer);
       await waitForUrl(nextServer, "http://127.0.0.1:3100/api/health");
@@ -88,6 +88,8 @@ async function main() {
       ? "static-reproducibility"
       : mode === "shell"
         ? "shell-parity"
+        : mode === "today"
+          ? "today-parity"
         : "next-candidate-contract";
     const tests = spawn(
       process.execPath,

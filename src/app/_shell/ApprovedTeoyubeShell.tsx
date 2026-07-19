@@ -148,7 +148,7 @@ export function ApprovedTeoyubeShell({ children }: { children: ReactNode }) {
             </div>
             <div className="topbar-actions">
               <button className="secondary action-icon-button" id="privacyBtn" onClick={() => router.push("/consent")}><span className="button-icon button-icon-guardrails" aria-hidden="true"></span><span>Guardrails</span></button>
-              <button className="primary action-icon-button" id="generateBtn" onClick={() => navigate("/")}><span className="button-icon button-icon-journey" aria-hidden="true"></span><span>{"Generate Today's Journey"}</span></button>
+              <button className="primary action-icon-button" id="generateBtn" onClick={() => view === "today" ? document.dispatchEvent(new CustomEvent("teoyube:generate-today")) : navigate("/")}><span className="button-icon button-icon-journey" aria-hidden="true"></span><span>{"Generate Today's Journey"}</span></button>
             </div>
           </header>
           {children}
