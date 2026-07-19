@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-07-19",
+  "branch": "recovery/visual-source-of-truth",
+  "commitBeforeWork": "93c014eb682369279acbf4b9937e7a9dd7753c0a",
+  "staticRuntimeCanonical": true,
+  "immutableBaselineChanged": false,
+  "protectedVisualSourceChanged": false,
+  "allowedDecisionValues": [
+    "REJECT_NEXT_MUST_MATCH",
+    "ACCEPT_NONVISUAL_RENDERING_VARIANCE",
+    "APPROVE_INTENTIONAL_VISUAL_CHANGE",
+    "PENDING_OWNER_DECISION"
+  ],
+  "differences": [
+    {
+      "id": "V-01",
+      "route": "/",
+      "view": "today",
+      "viewport": { "name": "tablet-landscape", "width": 1024, "height": 768 },
+      "state": "Default Today state; promise slide 1 active; deterministic animations frozen by the test harness.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/today-owner-review/tablet-landscape/today.static.png",
+        "nextScreenshot": ".tmp/visual-parity/today-owner-review/tablet-landscape/today.next.png",
+        "sideBySide": ".tmp/visual-parity/today-owner-review/tablet-landscape/today.side-by-side.png",
+        "overlay": ".tmp/visual-parity/today-owner-review/tablet-landscape/today.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/today-owner-review/tablet-landscape/today.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 43,
+        "differentPixelRatio": 0.000054677327473958336,
+        "similarityPercent": 99.994532,
+        "maxChannelDelta": 41,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 345, "y": 250, "width": 8, "height": 9, "right": 352, "bottom": 258 }
+      },
+      "target": ".slide-number text: 01 / 12",
+      "diagnosis": "The target span has identical text, 328.34375 x 238.5 position, 71.1875 x 32 size, font family, 11.52 px font size, weight 1000, color, border, and shadow in static and Next. The 43 pixels form one 8 x 9 numeral-edge component. Repeated isolated capture reproduced the same count. No CSS, DOM, asset, state, or geometry cause was found; this is browser text-raster/compositor variance.",
+      "humanVisibility": "Not discernible at 1:1 in the paired screenshots; visible only in the diff or magnified crop.",
+      "recommendedDecision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": false
+    },
+    {
+      "id": "V-02-DW",
+      "route": "/search",
+      "view": "search",
+      "viewport": { "name": "desktop-wide", "width": 1440, "height": 900 },
+      "state": "Default deterministic Search state with Smart Search Suggestions visible.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-wide/search.static.png",
+        "nextScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-wide/search.next.png",
+        "sideBySide": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-wide/search.side-by-side.png",
+        "overlay": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-wide/search.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-wide/search.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 1462,
+        "differentPixelRatio": 0.0011280864197530864,
+        "similarityPercent": 99.887191,
+        "maxChannelDelta": 213,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 565, "y": 473, "width": 247, "height": 13, "right": 811, "bottom": 485 }
+      },
+      "target": "Smart Search Suggestions explanatory small text",
+      "diagnosis": "The static HTML contains an inline whitespace text node between the label span and small element. The React projection omitted it, shifting the small element from x=568.796875 to x=564.40625, exactly 4.390625 px left. The parent, font, text, and remaining styles matched.",
+      "humanVisibility": "Subtle but technically visible as a horizontal text-position shift when overlaid.",
+      "recommendedDecision": "REJECT_NEXT_MUST_MATCH",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": true,
+      "resolution": "Restored the original inline whitespace in the Next Search projection; post-remediation screenshot is pixel-identical."
+    },
+    {
+      "id": "V-02-DS",
+      "route": "/search",
+      "view": "search",
+      "viewport": { "name": "desktop-standard", "width": 1280, "height": 800 },
+      "state": "Default deterministic Search state with Smart Search Suggestions visible.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-standard/search.static.png",
+        "nextScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-standard/search.next.png",
+        "sideBySide": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-standard/search.side-by-side.png",
+        "overlay": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-standard/search.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/desktop-standard/search.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 1462,
+        "differentPixelRatio": 0.001427734375,
+        "similarityPercent": 99.857227,
+        "maxChannelDelta": 214,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 565, "y": 464, "width": 247, "height": 13, "right": 811, "bottom": 476 }
+      },
+      "target": "Smart Search Suggestions explanatory small text",
+      "diagnosis": "Same omitted inline whitespace and 4.390625 px horizontal shift as V-02-DW.",
+      "humanVisibility": "Subtle but technically visible as a horizontal text-position shift when overlaid.",
+      "recommendedDecision": "REJECT_NEXT_MUST_MATCH",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": true,
+      "resolution": "Restored the original inline whitespace; post-remediation screenshot is pixel-identical."
+    },
+    {
+      "id": "V-02-TL",
+      "route": "/search",
+      "view": "search",
+      "viewport": { "name": "tablet-landscape", "width": 1024, "height": 768 },
+      "state": "Default deterministic Search state with Smart Search Suggestions visible.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-landscape/search.static.png",
+        "nextScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-landscape/search.next.png",
+        "sideBySide": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-landscape/search.side-by-side.png",
+        "overlay": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-landscape/search.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-landscape/search.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 1466,
+        "differentPixelRatio": 0.0018641153971354167,
+        "similarityPercent": 99.813588,
+        "maxChannelDelta": 214,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 561, "y": 500, "width": 247, "height": 13, "right": 807, "bottom": 512 }
+      },
+      "target": "Smart Search Suggestions explanatory small text",
+      "diagnosis": "Same omitted inline whitespace and 4.390625 px horizontal shift as V-02-DW.",
+      "humanVisibility": "Subtle but technically visible as a horizontal text-position shift when overlaid.",
+      "recommendedDecision": "REJECT_NEXT_MUST_MATCH",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": true,
+      "resolution": "Restored the original inline whitespace; post-remediation screenshot is pixel-identical."
+    },
+    {
+      "id": "V-02-TP",
+      "route": "/search",
+      "view": "search",
+      "viewport": { "name": "tablet-portrait", "width": 768, "height": 1024 },
+      "state": "Default deterministic Search state with Smart Search Suggestions visible.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-portrait/search.static.png",
+        "nextScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-portrait/search.next.png",
+        "sideBySide": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-portrait/search.side-by-side.png",
+        "overlay": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-portrait/search.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/tablet-portrait/search.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 1467,
+        "differentPixelRatio": 0.001865386962890625,
+        "similarityPercent": 99.813461,
+        "maxChannelDelta": 214,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 297, "y": 509, "width": 247, "height": 13, "right": 543, "bottom": 521 }
+      },
+      "target": "Smart Search Suggestions explanatory small text",
+      "diagnosis": "Same omitted inline whitespace and 4.390625 px horizontal shift as V-02-DW.",
+      "humanVisibility": "Subtle but technically visible as a horizontal text-position shift when overlaid.",
+      "recommendedDecision": "REJECT_NEXT_MUST_MATCH",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": true,
+      "resolution": "Restored the original inline whitespace; post-remediation screenshot is pixel-identical."
+    },
+    {
+      "id": "V-02-M",
+      "route": "/search",
+      "view": "search",
+      "viewport": { "name": "mobile", "width": 390, "height": 844 },
+      "state": "Default deterministic Search state with Smart Search Suggestions visible and text clipped by the approved responsive composition.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/mobile/search.static.png",
+        "nextScreenshot": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/mobile/search.next.png",
+        "sideBySide": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/mobile/search.side-by-side.png",
+        "overlay": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/mobile/search.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/mobile/search.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 258,
+        "differentPixelRatio": 0.0007838133430550492,
+        "similarityPercent": 99.921619,
+        "maxChannelDelta": 219,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 281, "y": 751, "width": 52, "height": 10, "right": 332, "bottom": 760 }
+      },
+      "target": "Visible responsive fragment of the Smart Search Suggestions explanatory small text",
+      "diagnosis": "Same omitted inline whitespace and 4.390625 px horizontal shift as V-02-DW; only the visible responsive fragment contributed differing pixels.",
+      "humanVisibility": "Subtle but technically visible as a horizontal text-position shift when overlaid.",
+      "recommendedDecision": "REJECT_NEXT_MUST_MATCH",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": true,
+      "resolution": "Restored the original inline whitespace; post-remediation screenshot is pixel-identical."
+    },
+    {
+      "id": "V-03",
+      "route": "/canon",
+      "view": "canon",
+      "viewport": { "name": "desktop-wide", "width": 1440, "height": 900 },
+      "state": "Default Canon Maps tab; featured journey slide 1 active; deterministic animations frozen by the test harness.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/canon-owner-review/desktop-wide/canon.static.png",
+        "nextScreenshot": ".tmp/visual-parity/canon-owner-review/desktop-wide/canon.next.png",
+        "sideBySide": ".tmp/visual-parity/canon-owner-review/desktop-wide/canon.side-by-side.png",
+        "overlay": ".tmp/visual-parity/canon-owner-review/desktop-wide/canon.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/canon-owner-review/desktop-wide/canon.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 692,
+        "differentPixelRatio": 0.0005339506172839506,
+        "similarityPercent": 99.946605,
+        "maxChannelDelta": 52,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 301, "y": 658, "width": 953, "height": 242, "right": 1253, "bottom": 899 },
+        "largestComponent": { "x": 303, "y": 897, "width": 183, "height": 3, "differentPixels": 350 }
+      },
+      "target": "Canon Overview Calling dimension glyph/text edges and the viewport-clipped first Featured Journey image edge",
+      "diagnosis": "The Canon target elements have identical DOM, geometry, transforms, fonts, gradients, borders, shadows, background sizing/position, and normalized asset URLs. The largest component is a 3 px-high viewport-edge strip; the remaining changes are small antialiased glyph/decorative clusters. The isolated rerun reproduced 692 pixels exactly. No correctable CSS, state, timing, or asset difference was found; this is browser clipping/compositor raster variance.",
+      "humanVisibility": "Not discernible at 1:1 in the paired screenshots; visible only in the diff or magnified crop.",
+      "recommendedDecision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": false
+    },
+    {
+      "id": "V-04",
+      "route": "GLOBAL_SHELL",
+      "view": "shell",
+      "viewport": { "name": "tablet-portrait", "width": 768, "height": 1024 },
+      "state": "Today route with the responsive sidebar opened from the mobile navigation toggle; shell-only paint isolation; sidebar transition disabled only for deterministic capture.",
+      "artifacts": {
+        "staticScreenshot": ".tmp/visual-parity/shell-owner-review/tablet-portrait/mobile-sidebar-open.static.png",
+        "nextScreenshot": ".tmp/visual-parity/shell-owner-review/tablet-portrait/mobile-sidebar-open.next.png",
+        "sideBySide": ".tmp/visual-parity/shell-owner-review/tablet-portrait/mobile-sidebar-open.side-by-side.png",
+        "overlay": ".tmp/visual-parity/shell-owner-review/tablet-portrait/mobile-sidebar-open.overlay-difference.png",
+        "pixelDiff": ".tmp/visual-parity/shell-owner-review/tablet-portrait/mobile-sidebar-open.diff.png"
+      },
+      "metrics": {
+        "differentPixels": 130,
+        "differentPixelRatio": 0.0003970435526235416,
+        "similarityPercent": 99.960296,
+        "maxChannelDelta": 47,
+        "strictThresholdPassed": true,
+        "changedBoundingBox": { "x": 36, "y": 705, "width": 46, "height": 46, "right": 81, "bottom": 750 }
+      },
+      "target": ".saint-avatar image/gradient edge inside the open drawer",
+      "diagnosis": "Static and Next have the same 37.65625 x 705.34375 position, 51.1875 square size, normalized avatar asset URL, gradients, cover sizing, center position, border, and shadows. The 130 pixels are disconnected image-edge antialias clusters. The isolated rerun reproduced the same count. No drawer-state, CSS, geometry, transition, or asset mismatch was found; this is browser image/compositor raster variance.",
+      "humanVisibility": "Not discernible at 1:1 in the paired screenshots; visible only in the diff or magnified crop.",
+      "recommendedDecision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE",
+      "ownerDecision": "PENDING_OWNER_DECISION",
+      "resolved": false
+    }
+  ],
+  "currentUnresolvedDifferenceIds": ["V-01", "V-03", "V-04"],
+  "resolvedDifferenceIds": ["V-02-DW", "V-02-DS", "V-02-TL", "V-02-TP", "V-02-M"],
+  "prompt13Unlocked": false
+}

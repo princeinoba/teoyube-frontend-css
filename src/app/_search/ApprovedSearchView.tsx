@@ -114,7 +114,7 @@ function EmptySearchState({ suggestions, actions }: { suggestions: readonly stri
       <div className="scripture-strip"><span className="scripture-pill">Ephesians 1:18</span></div>
       <div className="result-actions"><button className="secondary" type="button" data-phase114-action="focus-search" onClick={() => document.querySelector<HTMLInputElement>("#teoyubeSearchInput")?.focus()}>Refine Search</button><button className="primary" type="button" data-phase114-action="generate-journey">Generate Journey</button></div>
       <div className="phase116-search-suggestions" data-phase116-search-surface="search">
-        <div><span className="eyebrow">Smart Search Suggestions</span><small>Session-only, sanitized, local suggestions.</small></div>
+        <div><span className="eyebrow">Smart Search Suggestions</span>{" "}<small>Session-only, sanitized, local suggestions.</small></div>
         <div className="phase116-chip-row">{suggestions.map((suggestion) => <button type="button" className="phase116-chip" data-phase116-action="use-search-suggestion" data-phase116-query={suggestion} data-phase116-input="teoyubeSearchInput" onClick={() => actions.loadSuggestion(suggestion)} key={suggestion}>{suggestion}</button>)}<button type="button" className="phase116-chip subtle" data-phase116-action="clear-search-suggestions" onClick={actions.clearSuggestions}>Clear</button></div>
       </div>
     </article>
@@ -139,7 +139,7 @@ export function ApprovedSearchView({ model, actions }: { model: SearchViewModel;
         </form>
         <div data-phase116-mounted="teoyubeSearchForm">
           <div className="phase116-search-suggestions" data-phase116-search-surface="search">
-            <div><span className="eyebrow">Smart Search Suggestions</span><small>Session-only, sanitized, local suggestions.</small></div>
+            <div><span className="eyebrow">Smart Search Suggestions</span>{" "}<small>Session-only, sanitized, local suggestions.</small></div>
             <div className="phase116-chip-row">
               {model.suggestions.map((suggestion) => <button type="button" className="phase116-chip" data-phase116-action="use-search-suggestion" data-phase116-query={suggestion} data-phase116-input="teoyubeSearchInput" onClick={() => actions.loadSuggestion(suggestion)} key={suggestion}>{suggestion}</button>)}
               <button type="button" className="phase116-chip subtle" data-phase116-action="clear-search-suggestions" onClick={actions.clearSuggestions}>Clear</button>

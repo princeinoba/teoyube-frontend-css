@@ -46,7 +46,13 @@ interface OwnerReferenceManifest {
 export interface NextRouteStatus {
   viewId: ViewId;
   nextRoute: string;
-  status: "NOT_VERIFIED" | "CANDIDATE" | "VERIFIED";
+  status:
+    | "PASS"
+    | "BLOCKED_VISUAL_DIFFERENCE"
+    | "BLOCKED_MISSING_STATIC_COUNTERPART"
+    | "BLOCKED_FUNCTIONAL_DIFFERENCE"
+    | "BLOCKED_OWNER_DECISION"
+    | "NOT_APPLICABLE_INTERNAL_ROUTE";
   ownerApproved: boolean;
   ownerApprovalId: string | null;
 }
@@ -115,9 +121,23 @@ export function assertParityMatrixIntegrity(): void {
   if (expectedViewports.length !== 6 || expectedViews.length !== 12) {
     throw new Error(`Expected 12 views and 6 viewports; found ${expectedViews.length} and ${expectedViewports.length}.`);
   }
+  const allowedStatuses = new Set<NextRouteStatus["status"]>([
+    "PASS",
+    "BLOCKED_VISUAL_DIFFERENCE",
+    "BLOCKED_MISSING_STATIC_COUNTERPART",
+    "BLOCKED_FUNCTIONAL_DIFFERENCE",
+    "BLOCKED_OWNER_DECISION",
+    "NOT_APPLICABLE_INTERNAL_ROUTE"
+  ]);
   for (const status of nextRouteStatuses) {
-    if (status.status === "VERIFIED" && (!status.ownerApproved || !status.ownerApprovalId)) {
-      throw new Error(`${status.viewId} cannot be VERIFIED without an owner approval ID.`);
+    if (!allowedStatuses.has(status.status)) {
+      throw new Error(`${status.viewId} has unsupported parity status ${status.status}.`);
+    }
+    if (status.ownerApproved !== Boolean(status.ownerApprovalId)) {
+      throw new Error(`${status.viewId} owner approval flag and approval ID must change together.`);
+    }
+    if (status.status === "BLOCKED_OWNER_DECISION" && status.ownerApproved) {
+      throw new Error(`${status.viewId} cannot remain BLOCKED_OWNER_DECISION after owner approval.`);
     }
   }
 }

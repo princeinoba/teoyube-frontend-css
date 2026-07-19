@@ -2,33 +2,33 @@
 
 ## Gate status
 
-The original static runtime remains canonical. Every Next route is `NOT VERIFIED`; a successful build does not change this status. Moving a cell to `CANDIDATE` activates blocking screenshot, ordered DOM, ID/class, parent path, asset/background, computed geometry, visible-label, control/focus, responsive-navigation, and functional comparisons. Moving a route to `VERIFIED` additionally requires `ownerApproved: true` and a current owner approval ID in `tests/visual/parity/next-route-status.json`.
+The original static runtime remains canonical. Every Next route now has an explicit evidence status in `tests/visual/parity/next-route-status.json`; a successful build alone never produces `PASS`. `PASS` records complete automated screenshot, DOM/class, asset, geometry, label, control/focus, responsive, and functional evidence. `BLOCKED_OWNER_DECISION` records passing automated evidence with unresolved human visual review. `NOT_APPLICABLE_INTERNAL_ROUTE` prevents an owner-only route from being treated as a public cutover candidate. No status in this matrix authorizes runtime cutover without the separate owner sign-off required by `AGENTS.md`.
 
-The global Next shell is a separate `CANDIDATE — AWAITING OWNER REVIEW`. `npm run visual:parity:shell` compares the approved sidebar, top bar, mobile navigation, DOM/classes, asset URLs, geometry, focus order, keyboard behavior, and responsive state at all six required viewports. Side-by-side and overlay evidence is written to `.tmp/visual-parity/shell-owner-review/`. This shell candidate does not mark any feature route or matrix cell verified.
+The global Next shell is `BLOCKED_OWNER_DECISION`. `npm run visual:parity:shell` compares the approved sidebar, top bar, mobile navigation, DOM/classes, asset URLs, geometry, focus order, keyboard behavior, and responsive state at all six required viewports. Side-by-side and overlay evidence is written to `.tmp/visual-parity/shell-owner-review/`. This shell status does not mark any feature route or matrix cell approved.
 
 The shell contract scopes its three direct shell controls to the semantic parent `body > div.app-shell`. Next App Router emits one hidden, empty streaming sibling before the shell; it has no classes, labels, geometry, focusability, or rendered pixels and is not part of the approved shell. No shell descendant or visible region is excluded.
 
-The Today Next preview is a `CANDIDATE — AWAITING OWNER REVIEW`, while its six matrix cells remain `NOT VERIFIED` until owner review. `npm run visual:parity:today` compares the complete approved Today surface at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/today-owner-review/`. The passing 2026-07-18 run produced zero differing pixels at five viewports and 43 differing pixels (0.0055%) at tablet-landscape, within the unchanged 0.5% strict same-environment threshold.
+The Today Next preview is `BLOCKED_OWNER_DECISION` at all six matrix cells. `npm run visual:parity:today` compares the complete approved Today surface at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/today-owner-review/`. The reproducible run produced zero differing pixels at five viewports and 43 differing pixels (0.0055%) at tablet-landscape, within the unchanged 0.5% strict same-environment threshold but still awaiting human review.
 
-The TeoyubeSearch Next preview is a `CANDIDATE — AWAITING OWNER REVIEW`, while its six matrix cells remain `NOT VERIFIED` until owner review. `npm run visual:parity:search` compares the complete approved Search surface at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/search-owner-review/`. The passing 2026-07-18 run produced 0–1,467 differing pixels (0–0.1865%), within the unchanged 0.5% strict same-environment threshold; mobile-small 360×800 produced zero differing pixels. Ordered DOM, IDs/classes, parent paths, assets/backgrounds, computed geometry, visible labels, controls, focus order, and responsive navigation matched at every viewport.
+The TeoyubeSearch Next preview is `PASS` at all six matrix cells. `npm run visual:parity:search` compares the complete approved Search surface at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/search-owner-review/`. Prompt 12A found that React had omitted the original inline whitespace between the Smart Search Suggestions label and its explanatory sentence, producing a 4.390625 px shift. Restoring that text-node whitespace made all six current screenshots pixel-identical while retaining exact ordered DOM, IDs/classes, parent paths, assets/backgrounds, computed geometry, visible labels, controls, focus order, responsive navigation, and behavior. Pre-remediation evidence remains separate under `.tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/`.
 
 The Search comparison excludes and masks no page region. It includes the approved hero and background artwork, Input/Button/Grid structure, Smart Search Suggestions, category filter, eight promise-cluster prompts, result thumbnails and cards, both explanation paths, progress bars, every result action and feedback control, benefits panel, shell, responsive composition, and offline status. The typed result model adds source, confidence, limitation, and disabled-provider facts behind the view; those facts do not add or change approved markup. Browser coverage exercises all seven categories and every distinct visible action type while external models and vector databases remain disconnected.
 
-The Canon and Promise Table Next previews are `CANDIDATE - AWAITING OWNER REVIEW`, while their twelve matrix cells remain `NOT VERIFIED` until owner review. `npm run visual:parity:canon-promise` compares both complete approved pages at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/canon-owner-review/` and `.tmp/visual-parity/promise-table-owner-review/`. The passing 2026-07-19 run produced zero differing pixels for Promise Table at every viewport and for Canon at five viewports. Canon desktop-wide produced 692 differing pixels (0.0534%), within the unchanged 0.5% strict same-environment threshold.
+The Canon Next preview is `BLOCKED_OWNER_DECISION`; Promise Table is `PASS`. `npm run visual:parity:canon-promise` compares both complete approved pages at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/canon-owner-review/` and `.tmp/visual-parity/promise-table-owner-review/`. Promise Table produced zero differing pixels at every viewport, while Canon produced zero at five viewports and 692 pixels (0.0534%) at desktop-wide. The Canon result remains within the unchanged threshold but awaits human review.
 
 The Canon and Promise Table comparisons exclude and mask no page region. Ordered DOM, IDs/classes, parent paths, assets/backgrounds, computed geometry, visible labels, controls, focus order, and responsive navigation matched at all twelve route/viewport combinations. Browser coverage exercises Canon tabs, pagination, search, featured carousel buttons, and keyboard controls, plus Promise Table status transitions and filtering, sourced search suggestions, media selection, Level C manual entry, removal, and undo. The repository adapters retain exact Scripture references, promise level, explanation, source provenance, stable IDs, and reversible status history without connecting external storage.
 
-The Calling Compass Next preview is a `CANDIDATE - AWAITING OWNER REVIEW`, while its six matrix cells remain `NOT VERIFIED` until owner review. `npm run visual:parity:prayer-calling-journey` compares the complete approved Calling surface against the immutable static runtime at all six required viewports. Static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts are written only to `.tmp/visual-parity/calling-owner-review/`. The passing 2026-07-19 run produced zero differing pixels and exact rich-contract parity at all six viewports.
+The Calling Compass Next preview is `PASS` at all six matrix cells. `npm run visual:parity:prayer-calling-journey` compares the complete approved Calling surface against the immutable static runtime at all six required viewports. Static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts are written only to `.tmp/visual-parity/calling-owner-review/`. The passing run produced zero differing pixels and exact rich-contract parity at all six viewports.
 
 Prayer and Journey are existing internal preview surfaces rather than members of the 12-view immutable static baseline. Their pre-migration renders were captured before the typed migration, and the blocking harness exercises their responsive output at all six required viewports. The same command enforces their exact pre-migration ordered DOM, IDs, classes, attributes, and visible-label digests at every viewport and writes disposable owner-review captures under `.tmp/visual-parity/prayer-journey-owner-review/`. The task-level pre/post screenshot and geometry comparison remains under `.tmp/visual-parity/prompt9-preservation/`; it does not create or replace an owner baseline. The 2026-07-19 structural runs matched all twelve Prayer/Journey viewport combinations. The Journey view model explicitly leaves the final unified daily loop disabled.
 
 Functional coverage exercises Calling media search/navigation and the cautious three-question discernment flow, checks visible Scripture/evidence and rejects final-destiny language, submits Prayer Companion input and verifies Scripture, prayer, confidence, explanation, and devotional boundaries, and confirms the existing Journey seeds, levels, guardrails, limitations, and absence of a ten-step or unified-loop UI. TIG engines and seed datasets remain outside client components.
 
-The Book of the Saint and Testimony Next previews are `CANDIDATE - AWAITING OWNER REVIEW`, while their twelve matrix cells remain `NOT VERIFIED` until owner review. `npm run visual:parity:journal-testimony-book` compares both complete approved pages at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/journal-testimony-book-owner-review/`. The passing 2026-07-19 run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for both pages at every viewport.
+The Book of the Saint and Testimony Next previews are `PASS` at all twelve matrix cells. `npm run visual:parity:journal-testimony-book` compares both complete approved pages at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/journal-testimony-book-owner-review/`. The passing run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for both pages at every viewport.
 
 Journal is an existing internal preview surface rather than one of the 12 immutable static views. The same command enforces its exact pre-migration 39-element structural digest at all six viewports and stores disposable review captures beside the Book and Testimony evidence. Functional coverage verifies redacted session-only reflection summaries, editable/reviewable/reversible testimony records, explicit user status actions, removal and undo, and the absence of silent Book promotion or browser persistence. The domain contract rejects Book promotion unless a testimony is user-reviewed and the user explicitly confirms that promotion; Teoyube never declares promise fulfillment or divine action for the user.
 
-Lexicon, Teo Guide, Embedded Videos, Teoyube Tables, and the owner-only Roadmap Next previews are `CANDIDATE - AWAITING OWNER REVIEW`; their thirty matrix cells remain `NOT VERIFIED` until owner review. `npm run visual:parity:remaining-retained` compares all five complete approved surfaces at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/remaining-retained-owner-review/`. The passing 2026-07-19 run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for all thirty route/viewport combinations. The Roadmap evidence includes the owner QA overlay; Roadmap, TIG, development health, and media-review controls remain absent from normal navigation.
+Lexicon, Teo Guide, Embedded Videos, and Teoyube Tables are `PASS` at all twenty-four public matrix cells. The owner-only Roadmap is `NOT_APPLICABLE_INTERNAL_ROUTE`. `npm run visual:parity:remaining-retained` compares all five complete approved surfaces at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/remaining-retained-owner-review/`. The passing run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for all thirty route/viewport combinations. The Roadmap evidence includes the owner QA overlay; Roadmap, TIG, development health, and media-review controls remain absent from normal navigation.
 
 The same command records the approved shell and unchanged responsive treatment for settings, privacy, consent, terms, profile, daily word, dashboard, explore, graph, personalization, promise search, and compass at all six viewports. Functional coverage exercises Lexicon search/category filtering and explicit Scripture-subordinate semantics, deterministic local Teo Guide messages and source distinctions, the currently gated TeoyubeWorld tab plus all eight original local video records, MP4 MIME and byte ranges, immutable asset caching, no-store manifest caching, protected-path denial, Tables pagination and management tabs, and owner/development navigation boundaries. The separate Phase 11.6C.3 publication-integrity blocker is not modified or represented as complete.
 
@@ -68,81 +68,81 @@ On 2026-07-18, the required second capture used Windows Chrome against the Linux
 
 | View | Next route | Viewport | Immutable screenshot | Status |
 | --- | --- | --- | --- | --- |
-| today | `/` | desktop-wide 1440×900 | `desktop-wide/today.png` | NOT VERIFIED |
-| today | `/` | desktop-standard 1280×800 | `desktop-standard/today.png` | NOT VERIFIED |
-| today | `/` | tablet-landscape 1024×768 | `tablet-landscape/today.png` | NOT VERIFIED |
-| today | `/` | tablet-portrait 768×1024 | `tablet-portrait/today.png` | NOT VERIFIED |
-| today | `/` | mobile 390×844 | `mobile/today.png` | NOT VERIFIED |
-| today | `/` | mobile-small 360×800 | `mobile-small/today.png` | NOT VERIFIED |
-| search | `/search` | desktop-wide 1440×900 | `desktop-wide/search.png` | NOT VERIFIED |
-| search | `/search` | desktop-standard 1280×800 | `desktop-standard/search.png` | NOT VERIFIED |
-| search | `/search` | tablet-landscape 1024×768 | `tablet-landscape/search.png` | NOT VERIFIED |
-| search | `/search` | tablet-portrait 768×1024 | `tablet-portrait/search.png` | NOT VERIFIED |
-| search | `/search` | mobile 390×844 | `mobile/search.png` | NOT VERIFIED |
-| search | `/search` | mobile-small 360×800 | `mobile-small/search.png` | NOT VERIFIED |
-| canon | `/canon` | desktop-wide 1440×900 | `desktop-wide/canon.png` | NOT VERIFIED |
-| canon | `/canon` | desktop-standard 1280×800 | `desktop-standard/canon.png` | NOT VERIFIED |
-| canon | `/canon` | tablet-landscape 1024×768 | `tablet-landscape/canon.png` | NOT VERIFIED |
-| canon | `/canon` | tablet-portrait 768×1024 | `tablet-portrait/canon.png` | NOT VERIFIED |
-| canon | `/canon` | mobile 390×844 | `mobile/canon.png` | NOT VERIFIED |
-| canon | `/canon` | mobile-small 360×800 | `mobile-small/canon.png` | NOT VERIFIED |
-| table | `/promise-table` | desktop-wide 1440×900 | `desktop-wide/table.png` | NOT VERIFIED |
-| table | `/promise-table` | desktop-standard 1280×800 | `desktop-standard/table.png` | NOT VERIFIED |
-| table | `/promise-table` | tablet-landscape 1024×768 | `tablet-landscape/table.png` | NOT VERIFIED |
-| table | `/promise-table` | tablet-portrait 768×1024 | `tablet-portrait/table.png` | NOT VERIFIED |
-| table | `/promise-table` | mobile 390×844 | `mobile/table.png` | NOT VERIFIED |
-| table | `/promise-table` | mobile-small 360×800 | `mobile-small/table.png` | NOT VERIFIED |
-| calling | `/calling-compass` | desktop-wide 1440×900 | `desktop-wide/calling.png` | NOT VERIFIED |
-| calling | `/calling-compass` | desktop-standard 1280×800 | `desktop-standard/calling.png` | NOT VERIFIED |
-| calling | `/calling-compass` | tablet-landscape 1024×768 | `tablet-landscape/calling.png` | NOT VERIFIED |
-| calling | `/calling-compass` | tablet-portrait 768×1024 | `tablet-portrait/calling.png` | NOT VERIFIED |
-| calling | `/calling-compass` | mobile 390×844 | `mobile/calling.png` | NOT VERIFIED |
-| calling | `/calling-compass` | mobile-small 360×800 | `mobile-small/calling.png` | NOT VERIFIED |
-| book | `/book` | desktop-wide 1440×900 | `desktop-wide/book.png` | NOT VERIFIED |
-| book | `/book` | desktop-standard 1280×800 | `desktop-standard/book.png` | NOT VERIFIED |
-| book | `/book` | tablet-landscape 1024×768 | `tablet-landscape/book.png` | NOT VERIFIED |
-| book | `/book` | tablet-portrait 768×1024 | `tablet-portrait/book.png` | NOT VERIFIED |
-| book | `/book` | mobile 390×844 | `mobile/book.png` | NOT VERIFIED |
-| book | `/book` | mobile-small 360×800 | `mobile-small/book.png` | NOT VERIFIED |
-| lexicon | `/lexicon` | desktop-wide 1440×900 | `desktop-wide/lexicon.png` | NOT VERIFIED |
-| lexicon | `/lexicon` | desktop-standard 1280×800 | `desktop-standard/lexicon.png` | NOT VERIFIED |
-| lexicon | `/lexicon` | tablet-landscape 1024×768 | `tablet-landscape/lexicon.png` | NOT VERIFIED |
-| lexicon | `/lexicon` | tablet-portrait 768×1024 | `tablet-portrait/lexicon.png` | NOT VERIFIED |
-| lexicon | `/lexicon` | mobile 390×844 | `mobile/lexicon.png` | NOT VERIFIED |
-| lexicon | `/lexicon` | mobile-small 360×800 | `mobile-small/lexicon.png` | NOT VERIFIED |
-| testimony | `/testimony` | desktop-wide 1440×900 | `desktop-wide/testimony.png` | NOT VERIFIED |
-| testimony | `/testimony` | desktop-standard 1280×800 | `desktop-standard/testimony.png` | NOT VERIFIED |
-| testimony | `/testimony` | tablet-landscape 1024×768 | `tablet-landscape/testimony.png` | NOT VERIFIED |
-| testimony | `/testimony` | tablet-portrait 768×1024 | `tablet-portrait/testimony.png` | NOT VERIFIED |
-| testimony | `/testimony` | mobile 390×844 | `mobile/testimony.png` | NOT VERIFIED |
-| testimony | `/testimony` | mobile-small 360×800 | `mobile-small/testimony.png` | NOT VERIFIED |
-| guide | `/teo-guide` | desktop-wide 1440×900 | `desktop-wide/guide.png` | NOT VERIFIED |
-| guide | `/teo-guide` | desktop-standard 1280×800 | `desktop-standard/guide.png` | NOT VERIFIED |
-| guide | `/teo-guide` | tablet-landscape 1024×768 | `tablet-landscape/guide.png` | NOT VERIFIED |
-| guide | `/teo-guide` | tablet-portrait 768×1024 | `tablet-portrait/guide.png` | NOT VERIFIED |
-| guide | `/teo-guide` | mobile 390×844 | `mobile/guide.png` | NOT VERIFIED |
-| guide | `/teo-guide` | mobile-small 360×800 | `mobile-small/guide.png` | NOT VERIFIED |
-| ui-elements | `/embedded-videos` | desktop-wide 1440×900 | `desktop-wide/ui-elements.png` | NOT VERIFIED |
-| ui-elements | `/embedded-videos` | desktop-standard 1280×800 | `desktop-standard/ui-elements.png` | NOT VERIFIED |
-| ui-elements | `/embedded-videos` | tablet-landscape 1024×768 | `tablet-landscape/ui-elements.png` | NOT VERIFIED |
-| ui-elements | `/embedded-videos` | tablet-portrait 768×1024 | `tablet-portrait/ui-elements.png` | NOT VERIFIED |
-| ui-elements | `/embedded-videos` | mobile 390×844 | `mobile/ui-elements.png` | NOT VERIFIED |
-| ui-elements | `/embedded-videos` | mobile-small 360×800 | `mobile-small/ui-elements.png` | NOT VERIFIED |
-| teoyube-tables | `/tables` | desktop-wide 1440×900 | `desktop-wide/teoyube-tables.png` | NOT VERIFIED |
-| teoyube-tables | `/tables` | desktop-standard 1280×800 | `desktop-standard/teoyube-tables.png` | NOT VERIFIED |
-| teoyube-tables | `/tables` | tablet-landscape 1024×768 | `tablet-landscape/teoyube-tables.png` | NOT VERIFIED |
-| teoyube-tables | `/tables` | tablet-portrait 768×1024 | `tablet-portrait/teoyube-tables.png` | NOT VERIFIED |
-| teoyube-tables | `/tables` | mobile 390×844 | `mobile/teoyube-tables.png` | NOT VERIFIED |
-| teoyube-tables | `/tables` | mobile-small 360×800 | `mobile-small/teoyube-tables.png` | NOT VERIFIED |
-| roadmap | `/roadmap` | desktop-wide 1440×900 | `desktop-wide/roadmap.png` | NOT VERIFIED |
-| roadmap | `/roadmap` | desktop-standard 1280×800 | `desktop-standard/roadmap.png` | NOT VERIFIED |
-| roadmap | `/roadmap` | tablet-landscape 1024×768 | `tablet-landscape/roadmap.png` | NOT VERIFIED |
-| roadmap | `/roadmap` | tablet-portrait 768×1024 | `tablet-portrait/roadmap.png` | NOT VERIFIED |
-| roadmap | `/roadmap` | mobile 390×844 | `mobile/roadmap.png` | NOT VERIFIED |
-| roadmap | `/roadmap` | mobile-small 360×800 | `mobile-small/roadmap.png` | NOT VERIFIED |
+| today | `/` | desktop-wide 1440×900 | `desktop-wide/today.png` | BLOCKED_OWNER_DECISION |
+| today | `/` | desktop-standard 1280×800 | `desktop-standard/today.png` | BLOCKED_OWNER_DECISION |
+| today | `/` | tablet-landscape 1024×768 | `tablet-landscape/today.png` | BLOCKED_OWNER_DECISION |
+| today | `/` | tablet-portrait 768×1024 | `tablet-portrait/today.png` | BLOCKED_OWNER_DECISION |
+| today | `/` | mobile 390×844 | `mobile/today.png` | BLOCKED_OWNER_DECISION |
+| today | `/` | mobile-small 360×800 | `mobile-small/today.png` | BLOCKED_OWNER_DECISION |
+| search | `/search` | desktop-wide 1440×900 | `desktop-wide/search.png` | PASS |
+| search | `/search` | desktop-standard 1280×800 | `desktop-standard/search.png` | PASS |
+| search | `/search` | tablet-landscape 1024×768 | `tablet-landscape/search.png` | PASS |
+| search | `/search` | tablet-portrait 768×1024 | `tablet-portrait/search.png` | PASS |
+| search | `/search` | mobile 390×844 | `mobile/search.png` | PASS |
+| search | `/search` | mobile-small 360×800 | `mobile-small/search.png` | PASS |
+| canon | `/canon` | desktop-wide 1440×900 | `desktop-wide/canon.png` | BLOCKED_OWNER_DECISION |
+| canon | `/canon` | desktop-standard 1280×800 | `desktop-standard/canon.png` | BLOCKED_OWNER_DECISION |
+| canon | `/canon` | tablet-landscape 1024×768 | `tablet-landscape/canon.png` | BLOCKED_OWNER_DECISION |
+| canon | `/canon` | tablet-portrait 768×1024 | `tablet-portrait/canon.png` | BLOCKED_OWNER_DECISION |
+| canon | `/canon` | mobile 390×844 | `mobile/canon.png` | BLOCKED_OWNER_DECISION |
+| canon | `/canon` | mobile-small 360×800 | `mobile-small/canon.png` | BLOCKED_OWNER_DECISION |
+| table | `/promise-table` | desktop-wide 1440×900 | `desktop-wide/table.png` | PASS |
+| table | `/promise-table` | desktop-standard 1280×800 | `desktop-standard/table.png` | PASS |
+| table | `/promise-table` | tablet-landscape 1024×768 | `tablet-landscape/table.png` | PASS |
+| table | `/promise-table` | tablet-portrait 768×1024 | `tablet-portrait/table.png` | PASS |
+| table | `/promise-table` | mobile 390×844 | `mobile/table.png` | PASS |
+| table | `/promise-table` | mobile-small 360×800 | `mobile-small/table.png` | PASS |
+| calling | `/calling-compass` | desktop-wide 1440×900 | `desktop-wide/calling.png` | PASS |
+| calling | `/calling-compass` | desktop-standard 1280×800 | `desktop-standard/calling.png` | PASS |
+| calling | `/calling-compass` | tablet-landscape 1024×768 | `tablet-landscape/calling.png` | PASS |
+| calling | `/calling-compass` | tablet-portrait 768×1024 | `tablet-portrait/calling.png` | PASS |
+| calling | `/calling-compass` | mobile 390×844 | `mobile/calling.png` | PASS |
+| calling | `/calling-compass` | mobile-small 360×800 | `mobile-small/calling.png` | PASS |
+| book | `/book` | desktop-wide 1440×900 | `desktop-wide/book.png` | PASS |
+| book | `/book` | desktop-standard 1280×800 | `desktop-standard/book.png` | PASS |
+| book | `/book` | tablet-landscape 1024×768 | `tablet-landscape/book.png` | PASS |
+| book | `/book` | tablet-portrait 768×1024 | `tablet-portrait/book.png` | PASS |
+| book | `/book` | mobile 390×844 | `mobile/book.png` | PASS |
+| book | `/book` | mobile-small 360×800 | `mobile-small/book.png` | PASS |
+| lexicon | `/lexicon` | desktop-wide 1440×900 | `desktop-wide/lexicon.png` | PASS |
+| lexicon | `/lexicon` | desktop-standard 1280×800 | `desktop-standard/lexicon.png` | PASS |
+| lexicon | `/lexicon` | tablet-landscape 1024×768 | `tablet-landscape/lexicon.png` | PASS |
+| lexicon | `/lexicon` | tablet-portrait 768×1024 | `tablet-portrait/lexicon.png` | PASS |
+| lexicon | `/lexicon` | mobile 390×844 | `mobile/lexicon.png` | PASS |
+| lexicon | `/lexicon` | mobile-small 360×800 | `mobile-small/lexicon.png` | PASS |
+| testimony | `/testimony` | desktop-wide 1440×900 | `desktop-wide/testimony.png` | PASS |
+| testimony | `/testimony` | desktop-standard 1280×800 | `desktop-standard/testimony.png` | PASS |
+| testimony | `/testimony` | tablet-landscape 1024×768 | `tablet-landscape/testimony.png` | PASS |
+| testimony | `/testimony` | tablet-portrait 768×1024 | `tablet-portrait/testimony.png` | PASS |
+| testimony | `/testimony` | mobile 390×844 | `mobile/testimony.png` | PASS |
+| testimony | `/testimony` | mobile-small 360×800 | `mobile-small/testimony.png` | PASS |
+| guide | `/teo-guide` | desktop-wide 1440×900 | `desktop-wide/guide.png` | PASS |
+| guide | `/teo-guide` | desktop-standard 1280×800 | `desktop-standard/guide.png` | PASS |
+| guide | `/teo-guide` | tablet-landscape 1024×768 | `tablet-landscape/guide.png` | PASS |
+| guide | `/teo-guide` | tablet-portrait 768×1024 | `tablet-portrait/guide.png` | PASS |
+| guide | `/teo-guide` | mobile 390×844 | `mobile/guide.png` | PASS |
+| guide | `/teo-guide` | mobile-small 360×800 | `mobile-small/guide.png` | PASS |
+| ui-elements | `/embedded-videos` | desktop-wide 1440×900 | `desktop-wide/ui-elements.png` | PASS |
+| ui-elements | `/embedded-videos` | desktop-standard 1280×800 | `desktop-standard/ui-elements.png` | PASS |
+| ui-elements | `/embedded-videos` | tablet-landscape 1024×768 | `tablet-landscape/ui-elements.png` | PASS |
+| ui-elements | `/embedded-videos` | tablet-portrait 768×1024 | `tablet-portrait/ui-elements.png` | PASS |
+| ui-elements | `/embedded-videos` | mobile 390×844 | `mobile/ui-elements.png` | PASS |
+| ui-elements | `/embedded-videos` | mobile-small 360×800 | `mobile-small/ui-elements.png` | PASS |
+| teoyube-tables | `/tables` | desktop-wide 1440×900 | `desktop-wide/teoyube-tables.png` | PASS |
+| teoyube-tables | `/tables` | desktop-standard 1280×800 | `desktop-standard/teoyube-tables.png` | PASS |
+| teoyube-tables | `/tables` | tablet-landscape 1024×768 | `tablet-landscape/teoyube-tables.png` | PASS |
+| teoyube-tables | `/tables` | tablet-portrait 768×1024 | `tablet-portrait/teoyube-tables.png` | PASS |
+| teoyube-tables | `/tables` | mobile 390×844 | `mobile/teoyube-tables.png` | PASS |
+| teoyube-tables | `/tables` | mobile-small 360×800 | `mobile-small/teoyube-tables.png` | PASS |
+| roadmap | `/roadmap` | desktop-wide 1440×900 | `desktop-wide/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
+| roadmap | `/roadmap` | desktop-standard 1280×800 | `desktop-standard/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
+| roadmap | `/roadmap` | tablet-landscape 1024×768 | `tablet-landscape/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
+| roadmap | `/roadmap` | tablet-portrait 768×1024 | `tablet-portrait/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
+| roadmap | `/roadmap` | mobile 390×844 | `mobile/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
+| roadmap | `/roadmap` | mobile-small 360×800 | `mobile-small/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
 
 ## Functional activation contract
 
-`tests/visual/parity/functional-scenarios.ts` defines blocking scenarios for primary navigation, carousel buttons, search submission, filters, tabs, pagination, modal and drawer behavior, primary actions, media preview controls, keyboard carousel control, and responsive mobile navigation. The static and Next pages execute the same actions and their resulting observable state must match. These scenarios are not reported as passed while their route is `NOT VERIFIED`.
+`tests/visual/parity/functional-scenarios.ts` defines blocking scenarios for primary navigation, carousel buttons, search submission, filters, tabs, pagination, modal and drawer behavior, primary actions, media preview controls, keyboard carousel control, and responsive mobile navigation. The static and Next pages execute the same actions and their resulting observable state must match. A route cannot be `PASS` when any scenario differs.
 
 Baseline update commands are deliberately refused. `npm run visual:baselines:update` always exits with an error, and both the runner and Playwright configuration reject `--update-snapshots`. A baseline change requires a separate owner-approved task and is outside R3.
