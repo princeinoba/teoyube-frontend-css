@@ -43,6 +43,10 @@ export default defineConfig({
     {
       name: "today-parity",
       testMatch: /today-parity\.spec\.ts/
+    },
+    {
+      name: "search-parity",
+      testMatch: /search-parity\.spec\.ts/
     }
   ]
 });
