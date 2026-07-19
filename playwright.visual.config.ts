@@ -59,6 +59,10 @@ export default defineConfig({
     {
       name: "journal-testimony-book-parity",
       testMatch: /journal-testimony-book-parity\.spec\.ts/
+    },
+    {
+      name: "remaining-retained-parity",
+      testMatch: /remaining-retained-parity\.spec\.ts/
     }
   ]
 });

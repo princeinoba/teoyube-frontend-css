@@ -8,6 +8,24 @@ const nextConfig = {
   typescript: {
     tsconfigPath: "./tsconfig.next.json"
   },
+  async headers() {
+    return [
+      {
+        source: "/media/teoyubeworld/pilot-v1/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          { key: "X-Content-Type-Options", value: "nosniff" }
+        ]
+      },
+      {
+        source: "/media/teoyubeworld/pilot-v1/runtime-manifest.json",
+        headers: [
+          { key: "Cache-Control", value: "no-store" },
+          { key: "X-Content-Type-Options", value: "nosniff" }
+        ]
+      }
+    ];
+  },
   async rewrites() {
     return [
       { source: "/styles.css", destination: "/approved-static/styles.css" },

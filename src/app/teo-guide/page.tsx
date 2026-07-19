@@ -1,6 +1,6 @@
-import { TeoGuideScreenshotPage } from "@/components/productization/Phase112ScreenshotApp";
+import { TeoGuidePageController } from "../_teo-guide/TeoGuidePageController";
+import { createTeoGuidePageViewModel } from "../../features/teo-guide/application/teo-guide-page-service";
 
 export default function TeoGuidePage() {
-  return <TeoGuideScreenshotPage />;
+  return <TeoGuidePageController initialViewModel={createTeoGuidePageViewModel()} />;
 }
-

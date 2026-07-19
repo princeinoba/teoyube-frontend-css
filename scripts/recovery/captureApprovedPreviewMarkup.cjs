@@ -105,6 +105,79 @@ async function captureTestimony(page) {
   return { initial: await innerHtml(page, "#testimony") };
 }
 
+async function captureLexicon(page) {
+  await openView(page, "lexicon");
+  return { initial: await innerHtml(page, "#lexicon") };
+}
+
+async function captureGuide(page) {
+  await openView(page, "guide");
+  return { initial: await innerHtml(page, "#guide") };
+}
+
+async function captureEmbeddedVideos(page) {
+  await openView(page, "ui-elements");
+  const initial = await innerHtml(page, "#ui-elements");
+  const tabs = {};
+  const tabIds = await page.locator("#uiVideoCategoryTabs [data-video-category]").evaluateAll((buttons) =>
+    buttons.map((button) => button.getAttribute("data-video-category")).filter(Boolean)
+  );
+  for (const tabId of tabIds) {
+    await page.locator(`#uiVideoCategoryTabs [data-video-category="${tabId}"]`).click();
+    await settle(page);
+    tabs[tabId] = {
+      grid: await innerHtml(page, "#uiVideoGrid"),
+      stats: await innerHtml(page, "#uiVideoStats")
+    };
+  }
+  return { initial, tabs };
+}
+
+async function captureTables(page) {
+  await openView(page, "teoyube-tables");
+  const initial = await innerHtml(page, "#teoyube-tables");
+  const pages = {};
+  const pageNumbers = await page.locator("#teoyubeTablePagination [data-table-page]").evaluateAll((buttons) =>
+    [...new Set(buttons.map((button) => Number(button.getAttribute("data-table-page"))).filter((value) => Number.isFinite(value)))]
+  );
+  for (const pageNumber of pageNumbers) {
+    await page.locator(`#teoyubeTablePagination [data-table-page="${pageNumber}"]`).last().click();
+    await settle(page);
+    pages[String(pageNumber)] = await innerHtml(page, "#teoyube-tables");
+  }
+
+  await openView(page, "teoyube-tables");
+  const managementTabs = {};
+  const managementTabIds = await page.locator("#teoyubeDataTableTabs [data-data-table-tab]").evaluateAll((buttons) =>
+    buttons.map((button) => button.getAttribute("data-data-table-tab")).filter(Boolean)
+  );
+  for (const tabId of managementTabIds) {
+    await page.locator(`#teoyubeDataTableTabs [data-data-table-tab="${tabId}"]`).click();
+    await settle(page);
+    managementTabs[tabId] = {
+      rows: await innerHtml(page, "#teoyubeDataTableRows"),
+      pagination: await innerHtml(page, "#teoyubeDataTablePagination"),
+      status: await page.locator("#teoyubeDataTableStatus").textContent(),
+      videoSourceHidden: await page.locator("#teoyubeDataVideoSourceWrap").getAttribute("hidden") !== null
+    };
+  }
+  return { initial, pages, managementTabs };
+}
+
+async function captureRoadmap(page) {
+  await page.goto(`${baseUrl}/index.html?qa=1#roadmap`, { waitUntil: "domcontentloaded" });
+  await page.waitForFunction(() => typeof window.setView === "function");
+  await page.evaluate(() => {
+    window.setView("roadmap", { updateHash: false });
+    window.scrollTo(0, 0);
+  });
+  await settle(page);
+  return {
+    initial: await innerHtml(page, "#roadmap"),
+    qaPanel: await innerHtml(page, "#phase114QaPanel")
+  };
+}
+
 function approvedSourceDigest() {
   const hash = crypto.createHash("sha256");
   for (const relativePath of ["index.html", "app.js", "phase116b1.js"]) {
@@ -127,7 +200,12 @@ async function main() {
       table: await captureTable(page),
       calling: await captureCalling(page),
       book: await captureBook(page),
-      testimony: await captureTestimony(page)
+      testimony: await captureTestimony(page),
+      lexicon: await captureLexicon(page),
+      guide: await captureGuide(page),
+      embeddedVideos: await captureEmbeddedVideos(page),
+      tables: await captureTables(page),
+      roadmap: await captureRoadmap(page)
     };
     const source = [
       "// Generated only from the protected static runtime. Do not hand-edit or use as a baseline update.",
@@ -136,7 +214,7 @@ async function main() {
     ].join("\n");
     fs.mkdirSync(path.dirname(outputFile), { recursive: true });
     fs.writeFileSync(outputFile, source, "utf8");
-    console.log(`Captured approved Canon, Promise Table, Calling Compass, Book, and Testimony markup to ${path.relative(workspaceRoot, outputFile)}.`);
+    console.log(`Captured approved retained-route markup to ${path.relative(workspaceRoot, outputFile)}.`);
   } finally {
     await context.close();
     await browser.close();

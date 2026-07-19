@@ -13,8 +13,8 @@ if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
   process.exit(2);
 }
-if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book"]).has(mode)) {
-  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey|journal-testimony-book>");
+if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book", "remaining-retained"]).has(mode)) {
+  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey|journal-testimony-book|remaining-retained>");
   process.exit(2);
 }
 
@@ -90,7 +90,7 @@ async function main() {
         await waitForUrl(staticServer, staticUrl);
       }
     }
-    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book") {
+    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book" || mode === "remaining-retained") {
       const nextServer = startNextServer();
       servers.push(nextServer);
       await waitForUrl(nextServer, "http://127.0.0.1:3100/api/health");
@@ -110,6 +110,8 @@ async function main() {
           ? "prayer-calling-journey-parity"
         : mode === "journal-testimony-book"
           ? "journal-testimony-book-parity"
+        : mode === "remaining-retained"
+          ? "remaining-retained-parity"
         : "next-candidate-contract";
     const tests = spawn(
       process.execPath,

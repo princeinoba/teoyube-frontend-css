@@ -1,6 +1,6 @@
-import { EmbeddedVideosScreenshotPage } from "@/components/productization/Phase112ScreenshotApp";
+import { EmbeddedVideosPageController } from "../_media/EmbeddedVideosPageController";
+import { createEmbeddedVideosPageViewModel } from "../../features/media/application/retained-media-page-service";
 
 export default function EmbeddedVideosPage() {
-  return <EmbeddedVideosScreenshotPage />;
+  return <EmbeddedVideosPageController initialViewModel={createEmbeddedVideosPageViewModel()} />;
 }
-
