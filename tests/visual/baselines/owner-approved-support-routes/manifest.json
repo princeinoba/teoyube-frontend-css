@@ -1,0 +1,2712 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8",
+  "approvalDate": "2026-07-19",
+  "approvedCommit": "4c3aaba00b72bdad99ff376a0a23a0718e9dfc7b",
+  "sourceRuntime": "next-preview",
+  "canonicalRuntime": "static-node-app",
+  "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+  "captureEnvironment": {
+    "runtime": "next-preview-production-build",
+    "browser": "Google Chrome via Playwright",
+    "platform": "win32",
+    "colorScheme": "light",
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "fixedTime": "2026-07-18T12:00:00.000Z",
+    "externalNetwork": "blocked"
+  },
+  "screenshotTolerance": {
+    "channelDelta": 16,
+    "maxDifferentPixelRatio": 0.005
+  },
+  "sourceDefinition": {
+    "path": "tests/visual/parity/support-route-baseline-source.json",
+    "sha256": "8382c6306e117f5eaff77fcfe66217c09d720859a42914afbf59a5bdf9648d51",
+    "bytes": 2060
+  },
+  "approvalRecords": {
+    "markdown": {
+      "path": "docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.md",
+      "sha256": "6a063d8c84e2fd5f7f01a0ed95121668e3755f020d1348e01064736ddf1514bc",
+      "bytes": 1890
+    },
+    "json": {
+      "path": "docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.json",
+      "sha256": "0c021d49436e0c25306900ee4bfae46d3e015b18f4fc312b6488a251e39f1d6f",
+      "bytes": 10378
+    }
+  },
+  "routes": [
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "captures": [
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/desktop-wide/screenshot.png",
+        "sha256": "0c6957f61909f86e55423d2436d8942a802483735294a30a4b7702a6d841fc7f",
+        "bytes": 161179
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/desktop-wide/prompt12a-contract.json",
+        "sha256": "3899b98476edf2bfd0d276dd240f19ca9a4c81842419498fc9c35b31d1860eac",
+        "bytes": 19066
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/desktop-wide/contract.json",
+        "sha256": "dfabdb81c53cff65477f9b3c110a98ebd3667b68ac5574a476d2c9f574051f85",
+        "bytes": 98533
+      },
+      "contractSummary": {
+        "prompt12aElements": 91,
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "assets": 3,
+        "controls": 16,
+        "focusOrder": 16
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/settings/desktop-wide/screenshot.png",
+        "sha256": "0c6957f61909f86e55423d2436d8942a802483735294a30a4b7702a6d841fc7f",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/desktop-standard/screenshot.png",
+        "sha256": "a3989cb89c378823282fb6b5a5450c1e4e043834559decea89e1f2e5abd620f8",
+        "bytes": 137467
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/desktop-standard/prompt12a-contract.json",
+        "sha256": "3899b98476edf2bfd0d276dd240f19ca9a4c81842419498fc9c35b31d1860eac",
+        "bytes": 19066
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/desktop-standard/contract.json",
+        "sha256": "8b9d49568818af35a0967484f0af8abd767a172473ac0e17208def33ca0b4bc3",
+        "bytes": 98511
+      },
+      "contractSummary": {
+        "prompt12aElements": 91,
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "assets": 3,
+        "controls": 16,
+        "focusOrder": 16
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/settings/desktop-standard/screenshot.png",
+        "sha256": "a3989cb89c378823282fb6b5a5450c1e4e043834559decea89e1f2e5abd620f8",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/tablet-landscape/screenshot.png",
+        "sha256": "ef28d5c287d11f7eee14fc7c1cb2ce5c9adce9ba937f646549223d26be743f89",
+        "bytes": 135505
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/tablet-landscape/prompt12a-contract.json",
+        "sha256": "3899b98476edf2bfd0d276dd240f19ca9a4c81842419498fc9c35b31d1860eac",
+        "bytes": 19066
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/tablet-landscape/contract.json",
+        "sha256": "76ecf1e3e3c47655589de12aa2cf4d757c2dccedc9e424c56267a21c704d36b1",
+        "bytes": 98461
+      },
+      "contractSummary": {
+        "prompt12aElements": 91,
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "assets": 3,
+        "controls": 16,
+        "focusOrder": 16
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/settings/tablet-landscape/screenshot.png",
+        "sha256": "ef28d5c287d11f7eee14fc7c1cb2ce5c9adce9ba937f646549223d26be743f89",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/tablet-portrait/screenshot.png",
+        "sha256": "63664780358e6ec9ff50c21625f239e68e6d4f5dcacde4bb453bea6dfa222d78",
+        "bytes": 104200
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/tablet-portrait/prompt12a-contract.json",
+        "sha256": "3899b98476edf2bfd0d276dd240f19ca9a4c81842419498fc9c35b31d1860eac",
+        "bytes": 19066
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/tablet-portrait/contract.json",
+        "sha256": "1d4c2187fc5b1b8609e64eeec1711b0b2f8367ddae132e9a3c01205cd05b7328",
+        "bytes": 99168
+      },
+      "contractSummary": {
+        "prompt12aElements": 91,
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "assets": 3,
+        "controls": 17,
+        "focusOrder": 17
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/settings/tablet-portrait/screenshot.png",
+        "sha256": "63664780358e6ec9ff50c21625f239e68e6d4f5dcacde4bb453bea6dfa222d78",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/mobile/screenshot.png",
+        "sha256": "510020fcb57a4bb23de8576c4b343dea7ace55b80ffb2c6e8939873f440a34b3",
+        "bytes": 54852
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/mobile/prompt12a-contract.json",
+        "sha256": "3899b98476edf2bfd0d276dd240f19ca9a4c81842419498fc9c35b31d1860eac",
+        "bytes": 19066
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/mobile/contract.json",
+        "sha256": "7aa269a1dc999e627c0501bf8612ddaf71b98364492198d7dbd2027fb88fd848",
+        "bytes": 99206
+      },
+      "contractSummary": {
+        "prompt12aElements": 91,
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "assets": 3,
+        "controls": 17,
+        "focusOrder": 17
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/settings/mobile/screenshot.png",
+        "sha256": "510020fcb57a4bb23de8576c4b343dea7ace55b80ffb2c6e8939873f440a34b3",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/mobile-small/screenshot.png",
+        "sha256": "09c2c62e047b4fa63587146f7aeaf7be2e592aaac0ad97a5973df189070dcfa8",
+        "bytes": 51063
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/mobile-small/prompt12a-contract.json",
+        "sha256": "3899b98476edf2bfd0d276dd240f19ca9a4c81842419498fc9c35b31d1860eac",
+        "bytes": 19066
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/settings/mobile-small/contract.json",
+        "sha256": "615677c6a176988c8d98fb65d521938d430eff7fbc73b5a1b923672e3c7eb3be",
+        "bytes": 99208
+      },
+      "contractSummary": {
+        "prompt12aElements": 91,
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "assets": 3,
+        "controls": 17,
+        "focusOrder": 17
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/settings/mobile-small/screenshot.png",
+        "sha256": "09c2c62e047b4fa63587146f7aeaf7be2e592aaac0ad97a5973df189070dcfa8",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/desktop-wide/screenshot.png",
+        "sha256": "ddd606cab3cd71f75621d9c3fb121517960f99f5d38bd70d137481225b3f7cac",
+        "bytes": 111450
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/desktop-wide/prompt12a-contract.json",
+        "sha256": "b91b1ed694593d0c036bd051928db5fd41fc6587e08bb9db05e1a69935f2f8b8",
+        "bytes": 3545
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/desktop-wide/contract.json",
+        "sha256": "edd2fa3be4095c1dcc4369be0ce28914db80ff3e7893dd02576e8b3e0d8a90c9",
+        "bytes": 44712
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/privacy/desktop-wide/screenshot.png",
+        "sha256": "a5ae144eb16bb8bed11fa4d207cb7f206435240de983f9687607d65436250a61",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 1,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/desktop-standard/screenshot.png",
+        "sha256": "b04fd0fa84d65e0e62e59d1cdff6754b86a4b6cf047d6be046ef75317a1908c0",
+        "bytes": 98833
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/desktop-standard/prompt12a-contract.json",
+        "sha256": "b91b1ed694593d0c036bd051928db5fd41fc6587e08bb9db05e1a69935f2f8b8",
+        "bytes": 3545
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/desktop-standard/contract.json",
+        "sha256": "e09f6f324c00c11ba763ada8fab2ac55911b486c4fe9fc3bb12a8e2fab43a968",
+        "bytes": 44708
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/privacy/desktop-standard/screenshot.png",
+        "sha256": "b04fd0fa84d65e0e62e59d1cdff6754b86a4b6cf047d6be046ef75317a1908c0",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/tablet-landscape/screenshot.png",
+        "sha256": "07a37190e43629829fe3cbdce368bbf9da6470d5a71e94d1783c22cea6d0e63f",
+        "bytes": 108378
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/tablet-landscape/prompt12a-contract.json",
+        "sha256": "b91b1ed694593d0c036bd051928db5fd41fc6587e08bb9db05e1a69935f2f8b8",
+        "bytes": 3545
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/tablet-landscape/contract.json",
+        "sha256": "20b50c203f8efd316ce3def3f45ad4938521b5201faf802afa225891dc774a1b",
+        "bytes": 44659
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/privacy/tablet-landscape/screenshot.png",
+        "sha256": "07a37190e43629829fe3cbdce368bbf9da6470d5a71e94d1783c22cea6d0e63f",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/tablet-portrait/screenshot.png",
+        "sha256": "356d8fc193fa7d796938b7efe88d04a70d4ff980d7ff4f477b0a8a4081d23587",
+        "bytes": 57410
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/tablet-portrait/prompt12a-contract.json",
+        "sha256": "b91b1ed694593d0c036bd051928db5fd41fc6587e08bb9db05e1a69935f2f8b8",
+        "bytes": 3545
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/tablet-portrait/contract.json",
+        "sha256": "defbce216b800ab2c6c017a88b14e9cda8acadfab741ef891812f48942f406e1",
+        "bytes": 45419
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/privacy/tablet-portrait/screenshot.png",
+        "sha256": "356d8fc193fa7d796938b7efe88d04a70d4ff980d7ff4f477b0a8a4081d23587",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/mobile/screenshot.png",
+        "sha256": "f9d844bd5e1dd168f8ab7be712b3f4486d4e6e9a77857e7cf1f1274809d20c5f",
+        "bytes": 54065
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/mobile/prompt12a-contract.json",
+        "sha256": "b91b1ed694593d0c036bd051928db5fd41fc6587e08bb9db05e1a69935f2f8b8",
+        "bytes": 3545
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/mobile/contract.json",
+        "sha256": "8a344aef287583de100f3fb284f3c2f7d3b33bcc4d6bd67955ba69aab3540005",
+        "bytes": 45420
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/privacy/mobile/screenshot.png",
+        "sha256": "f9d844bd5e1dd168f8ab7be712b3f4486d4e6e9a77857e7cf1f1274809d20c5f",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/mobile-small/screenshot.png",
+        "sha256": "7f77ea563ded6f0b23174e5e6a7a395fab5e98e1f629efd4fc04ca151efd17a2",
+        "bytes": 53951
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/mobile-small/prompt12a-contract.json",
+        "sha256": "b91b1ed694593d0c036bd051928db5fd41fc6587e08bb9db05e1a69935f2f8b8",
+        "bytes": 3545
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/privacy/mobile-small/contract.json",
+        "sha256": "343c29b0403dd465c3e1d440983bba14956e404c6e05d3b99154ab5c3e100a22",
+        "bytes": 45420
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/privacy/mobile-small/screenshot.png",
+        "sha256": "7f77ea563ded6f0b23174e5e6a7a395fab5e98e1f629efd4fc04ca151efd17a2",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/desktop-wide/screenshot.png",
+        "sha256": "1e16ad90b5552826fbcd4e2b506a4978b7273014be9ba159eb50d2af16317ca5",
+        "bytes": 131921
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/desktop-wide/prompt12a-contract.json",
+        "sha256": "9ee4f94d14eb774a08c383ff61410972d46d2d4973afc92177cc174cfc31b689",
+        "bytes": 5040
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/desktop-wide/contract.json",
+        "sha256": "8e33875ad83f6959acb4ac9c32a2fe55b99036a3818a54ef582de08381594268",
+        "bytes": 49702
+      },
+      "contractSummary": {
+        "prompt12aElements": 25,
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/consent/desktop-wide/screenshot.png",
+        "sha256": "1e16ad90b5552826fbcd4e2b506a4978b7273014be9ba159eb50d2af16317ca5",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/desktop-standard/screenshot.png",
+        "sha256": "37991c16be58752306461a5f85c23d16263d8bdd009bc760b08a12a3e98bb1bc",
+        "bytes": 118991
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/desktop-standard/prompt12a-contract.json",
+        "sha256": "9ee4f94d14eb774a08c383ff61410972d46d2d4973afc92177cc174cfc31b689",
+        "bytes": 5040
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/desktop-standard/contract.json",
+        "sha256": "8cc282d4d1510679540524ad6d689f514fe0402acb3a883fa8bb00a094421cd9",
+        "bytes": 49697
+      },
+      "contractSummary": {
+        "prompt12aElements": 25,
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/consent/desktop-standard/screenshot.png",
+        "sha256": "7daeef855ef573f0b48884da557f474dfce2733aa7239ddc7005c9037d3e7226",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 1,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/tablet-landscape/screenshot.png",
+        "sha256": "b341e7d8faa081fc3c3ba02ec5615013e743f2cb1ced1fad8aaaf29f5134b578",
+        "bytes": 128301
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/tablet-landscape/prompt12a-contract.json",
+        "sha256": "9ee4f94d14eb774a08c383ff61410972d46d2d4973afc92177cc174cfc31b689",
+        "bytes": 5040
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/tablet-landscape/contract.json",
+        "sha256": "675b32e372e8bf9279171c31a88f31a6096b629d4aed1ab25f33f8b33875af43",
+        "bytes": 49648
+      },
+      "contractSummary": {
+        "prompt12aElements": 25,
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/consent/tablet-landscape/screenshot.png",
+        "sha256": "b341e7d8faa081fc3c3ba02ec5615013e743f2cb1ced1fad8aaaf29f5134b578",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/tablet-portrait/screenshot.png",
+        "sha256": "3a50c588904a77a02e1d7449eafcfab95b24de44606043262509145aafd8862f",
+        "bytes": 77955
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/tablet-portrait/prompt12a-contract.json",
+        "sha256": "9ee4f94d14eb774a08c383ff61410972d46d2d4973afc92177cc174cfc31b689",
+        "bytes": 5040
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/tablet-portrait/contract.json",
+        "sha256": "1cb13cf232bdec9e71c50785aef3a4a00f36f0324e44ed363adb01d099238e86",
+        "bytes": 50407
+      },
+      "contractSummary": {
+        "prompt12aElements": 25,
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/consent/tablet-portrait/screenshot.png",
+        "sha256": "3a50c588904a77a02e1d7449eafcfab95b24de44606043262509145aafd8862f",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/mobile/screenshot.png",
+        "sha256": "2c91576f58dde5b746e25d6a8580a6dcc37b39e12bff40d994003e6b4dceba41",
+        "bytes": 55972
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/mobile/prompt12a-contract.json",
+        "sha256": "9ee4f94d14eb774a08c383ff61410972d46d2d4973afc92177cc174cfc31b689",
+        "bytes": 5040
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/mobile/contract.json",
+        "sha256": "0b79d0a7e9a4597538a9033c0ea3f1c8e0ac530eca93c5fa4b2cfa242b12baa8",
+        "bytes": 50408
+      },
+      "contractSummary": {
+        "prompt12aElements": 25,
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/consent/mobile/screenshot.png",
+        "sha256": "2c91576f58dde5b746e25d6a8580a6dcc37b39e12bff40d994003e6b4dceba41",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/mobile-small/screenshot.png",
+        "sha256": "15d198a11b44da14ea970f414c85bbe64fffec82be48cd1482b49a6daf3d394e",
+        "bytes": 52305
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/mobile-small/prompt12a-contract.json",
+        "sha256": "9ee4f94d14eb774a08c383ff61410972d46d2d4973afc92177cc174cfc31b689",
+        "bytes": 5040
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/consent/mobile-small/contract.json",
+        "sha256": "ba8fff343bf9c505d13bffe552ac7985eb2f6a51a84288ab0557c3fd13740426",
+        "bytes": 50409
+      },
+      "contractSummary": {
+        "prompt12aElements": 25,
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/consent/mobile-small/screenshot.png",
+        "sha256": "15d198a11b44da14ea970f414c85bbe64fffec82be48cd1482b49a6daf3d394e",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/desktop-wide/screenshot.png",
+        "sha256": "1e193fb689869f71450995db8d2649ae59ac240b2bc0defa82b4ae10b96964a3",
+        "bytes": 110997
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/desktop-wide/prompt12a-contract.json",
+        "sha256": "12f85e67925accf7c054d730eedf82818b31b2af5be9a4d716aeb23712dac3a9",
+        "bytes": 3510
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/desktop-wide/contract.json",
+        "sha256": "eabfe2de639c78c8a294aad2b944cba8e9e5a59ee42bd921e4414849000bb447",
+        "bytes": 44592
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/terms/desktop-wide/screenshot.png",
+        "sha256": "1e193fb689869f71450995db8d2649ae59ac240b2bc0defa82b4ae10b96964a3",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/desktop-standard/screenshot.png",
+        "sha256": "a4ae4018578da9ae080ba13d0e35a0dda0d4cc3c8921115fb958c8696fd55458",
+        "bytes": 98479
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/desktop-standard/prompt12a-contract.json",
+        "sha256": "12f85e67925accf7c054d730eedf82818b31b2af5be9a4d716aeb23712dac3a9",
+        "bytes": 3510
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/desktop-standard/contract.json",
+        "sha256": "0305fa32df78028f1864997646f6a8d1d1e0956ec5c5842639ebf454ca136c3c",
+        "bytes": 44588
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/terms/desktop-standard/screenshot.png",
+        "sha256": "a4ae4018578da9ae080ba13d0e35a0dda0d4cc3c8921115fb958c8696fd55458",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/tablet-landscape/screenshot.png",
+        "sha256": "2dd86265b2c3469e0f5988d78f4481626aed17695287599999d498ac1df39779",
+        "bytes": 108664
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/tablet-landscape/prompt12a-contract.json",
+        "sha256": "12f85e67925accf7c054d730eedf82818b31b2af5be9a4d716aeb23712dac3a9",
+        "bytes": 3510
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/tablet-landscape/contract.json",
+        "sha256": "4988f5956c776a1f85f4322bb9e74d4259b3caa811313f896745f2ae267c58a1",
+        "bytes": 44539
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/terms/tablet-landscape/screenshot.png",
+        "sha256": "2dd86265b2c3469e0f5988d78f4481626aed17695287599999d498ac1df39779",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/tablet-portrait/screenshot.png",
+        "sha256": "7ec4b0edac1245491bf1d91c41c4ec9a5cc31c3f93810d120a0f870889851302",
+        "bytes": 57910
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/tablet-portrait/prompt12a-contract.json",
+        "sha256": "12f85e67925accf7c054d730eedf82818b31b2af5be9a4d716aeb23712dac3a9",
+        "bytes": 3510
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/tablet-portrait/contract.json",
+        "sha256": "39aea79975007f983680bee13e17d62158dc820e15820592465549f5e9085ae0",
+        "bytes": 45299
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/terms/tablet-portrait/screenshot.png",
+        "sha256": "7ec4b0edac1245491bf1d91c41c4ec9a5cc31c3f93810d120a0f870889851302",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/mobile/screenshot.png",
+        "sha256": "28b82154abd1494669b6633969e15700d0a86d0ae2f8ef03075292c4e93077e6",
+        "bytes": 54276
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/mobile/prompt12a-contract.json",
+        "sha256": "12f85e67925accf7c054d730eedf82818b31b2af5be9a4d716aeb23712dac3a9",
+        "bytes": 3510
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/mobile/contract.json",
+        "sha256": "b66ff2d56518d87ff6224b3395614388abeac5f127fe3e31ce71373d57fd258b",
+        "bytes": 45299
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/terms/mobile/screenshot.png",
+        "sha256": "28b82154abd1494669b6633969e15700d0a86d0ae2f8ef03075292c4e93077e6",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/mobile-small/screenshot.png",
+        "sha256": "d99fc17bd686c572a776c1276b37f39687942d05fbe3920f35532efc2d1f3fe1",
+        "bytes": 53257
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/mobile-small/prompt12a-contract.json",
+        "sha256": "12f85e67925accf7c054d730eedf82818b31b2af5be9a4d716aeb23712dac3a9",
+        "bytes": 3510
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/terms/mobile-small/contract.json",
+        "sha256": "d3b5afb2de525eb8fbc5bfc99ed938338cf45e04b88b31ae431508693d74b8c0",
+        "bytes": 45300
+      },
+      "contractSummary": {
+        "prompt12aElements": 16,
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/terms/mobile-small/screenshot.png",
+        "sha256": "d99fc17bd686c572a776c1276b37f39687942d05fbe3920f35532efc2d1f3fe1",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/desktop-wide/screenshot.png",
+        "sha256": "76a98fd8d33bb57fbea74f1db8375696c8cdbbad3d2619a12739863103ed6bfc",
+        "bytes": 112865
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/desktop-wide/prompt12a-contract.json",
+        "sha256": "16881a9535bf9d477707c75815ccc00c2b985fa82de046ff8930eab087f4018f",
+        "bytes": 5083
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/desktop-wide/contract.json",
+        "sha256": "ee00c13b97dfffcaef46995562f98062911e503751b509019a38548c097da153",
+        "bytes": 52303
+      },
+      "contractSummary": {
+        "prompt12aElements": 35,
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/profile/desktop-wide/screenshot.png",
+        "sha256": "84d49d722bd01f1f129b42e7b4a77ff51fe6f8cb53396cb0105d38b65a8097c1",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 1,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/desktop-standard/screenshot.png",
+        "sha256": "82277c6f39e3f1614e38ccad5cf20ef7f4060aa4ee286160778b36a3fc37dbb3",
+        "bytes": 99830
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/desktop-standard/prompt12a-contract.json",
+        "sha256": "16881a9535bf9d477707c75815ccc00c2b985fa82de046ff8930eab087f4018f",
+        "bytes": 5083
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/desktop-standard/contract.json",
+        "sha256": "83a6c28edce4d34a599e9795e92ece0d6e39e2f2ba6255d8a0ac36a3453408cf",
+        "bytes": 52297
+      },
+      "contractSummary": {
+        "prompt12aElements": 35,
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/profile/desktop-standard/screenshot.png",
+        "sha256": "82277c6f39e3f1614e38ccad5cf20ef7f4060aa4ee286160778b36a3fc37dbb3",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/tablet-landscape/screenshot.png",
+        "sha256": "78269176b76d63d676125510de47cdf007bc5686b5b2588584aacc8c60fc1c1c",
+        "bytes": 105657
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/tablet-landscape/prompt12a-contract.json",
+        "sha256": "16881a9535bf9d477707c75815ccc00c2b985fa82de046ff8930eab087f4018f",
+        "bytes": 5083
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/tablet-landscape/contract.json",
+        "sha256": "c32e436283272e414881b9866f4c1930a25dbd18de7ea43b8f8b14d711158658",
+        "bytes": 52246
+      },
+      "contractSummary": {
+        "prompt12aElements": 35,
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "assets": 3,
+        "controls": 13,
+        "focusOrder": 13
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/profile/tablet-landscape/screenshot.png",
+        "sha256": "78269176b76d63d676125510de47cdf007bc5686b5b2588584aacc8c60fc1c1c",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/tablet-portrait/screenshot.png",
+        "sha256": "beeae468622c7b865842cc20524134b34e9fba0443dbb8d9281c84631be6e656",
+        "bytes": 55143
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/tablet-portrait/prompt12a-contract.json",
+        "sha256": "16881a9535bf9d477707c75815ccc00c2b985fa82de046ff8930eab087f4018f",
+        "bytes": 5083
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/tablet-portrait/contract.json",
+        "sha256": "d4e6c2c0a3f15b9187e9cf30c3d59407d2e74194230635aac5e44629aa605932",
+        "bytes": 53004
+      },
+      "contractSummary": {
+        "prompt12aElements": 35,
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/profile/tablet-portrait/screenshot.png",
+        "sha256": "beeae468622c7b865842cc20524134b34e9fba0443dbb8d9281c84631be6e656",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/mobile/screenshot.png",
+        "sha256": "bc7c53ca562031adc15c99f1cc4ff2f8345ae2ff338b5fb645238ec51464e009",
+        "bytes": 50302
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/mobile/prompt12a-contract.json",
+        "sha256": "16881a9535bf9d477707c75815ccc00c2b985fa82de046ff8930eab087f4018f",
+        "bytes": 5083
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/mobile/contract.json",
+        "sha256": "868164b9b42659b1c779561337bc70e1178aae699bb41c6ef52584483ead33af",
+        "bytes": 53005
+      },
+      "contractSummary": {
+        "prompt12aElements": 35,
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/profile/mobile/screenshot.png",
+        "sha256": "bc7c53ca562031adc15c99f1cc4ff2f8345ae2ff338b5fb645238ec51464e009",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/mobile-small/screenshot.png",
+        "sha256": "ca12675e92b5dd484c934ece95abc59c81297320c01cc0f03c0418d1aa66874b",
+        "bytes": 50015
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/mobile-small/prompt12a-contract.json",
+        "sha256": "16881a9535bf9d477707c75815ccc00c2b985fa82de046ff8930eab087f4018f",
+        "bytes": 5083
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/profile/mobile-small/contract.json",
+        "sha256": "a6d942a259ce1b33d08e8b6636f7197ce0d612b4e1f3afb808c20c6550c5b024",
+        "bytes": 53005
+      },
+      "contractSummary": {
+        "prompt12aElements": 35,
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/profile/mobile-small/screenshot.png",
+        "sha256": "ca12675e92b5dd484c934ece95abc59c81297320c01cc0f03c0418d1aa66874b",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/desktop-wide/screenshot.png",
+        "sha256": "43fb5d7b9e5a145819f0dff70aec05b44fcde8d1fe9a8edb393b6403cb27d570",
+        "bytes": 149874
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/desktop-wide/prompt12a-contract.json",
+        "sha256": "2c748f9cc5bc505610e240ee5d39c4b4c23186990d0c4bf555b849d2f5ae4225",
+        "bytes": 8207
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/desktop-wide/contract.json",
+        "sha256": "f9d06110d052dc34c2a803e08ab2069d02400490ca3f71e1cd52dd81bb2401a8",
+        "bytes": 62073
+      },
+      "contractSummary": {
+        "prompt12aElements": 48,
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/daily-word/desktop-wide/screenshot.png",
+        "sha256": "43fb5d7b9e5a145819f0dff70aec05b44fcde8d1fe9a8edb393b6403cb27d570",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/desktop-standard/screenshot.png",
+        "sha256": "b5aaddedf20abf3c3a41d9b0c94b03e83503058cf3215e1dc6ebacc241108b4a",
+        "bytes": 128590
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/desktop-standard/prompt12a-contract.json",
+        "sha256": "2c748f9cc5bc505610e240ee5d39c4b4c23186990d0c4bf555b849d2f5ae4225",
+        "bytes": 8207
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/desktop-standard/contract.json",
+        "sha256": "d47f7a739231e263f9c0891ba5e025775933c6a517560099248c3cb074b4c6da",
+        "bytes": 62066
+      },
+      "contractSummary": {
+        "prompt12aElements": 48,
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/daily-word/desktop-standard/screenshot.png",
+        "sha256": "b5aaddedf20abf3c3a41d9b0c94b03e83503058cf3215e1dc6ebacc241108b4a",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/tablet-landscape/screenshot.png",
+        "sha256": "f521ae0788a1949e17738582c630593747049830ca977411d273be4b8577dc7a",
+        "bytes": 124156
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/tablet-landscape/prompt12a-contract.json",
+        "sha256": "2c748f9cc5bc505610e240ee5d39c4b4c23186990d0c4bf555b849d2f5ae4225",
+        "bytes": 8207
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/tablet-landscape/contract.json",
+        "sha256": "fa4040ed2d27c29efe7e21772408e3475e341c250cd12afebe8389ef7b587cee",
+        "bytes": 62016
+      },
+      "contractSummary": {
+        "prompt12aElements": 48,
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/daily-word/tablet-landscape/screenshot.png",
+        "sha256": "f521ae0788a1949e17738582c630593747049830ca977411d273be4b8577dc7a",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/tablet-portrait/screenshot.png",
+        "sha256": "64299bf402d872d3a43742ffcfba3886093ab599b0934c01c02b93c11949ae55",
+        "bytes": 90813
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/tablet-portrait/prompt12a-contract.json",
+        "sha256": "2c748f9cc5bc505610e240ee5d39c4b4c23186990d0c4bf555b849d2f5ae4225",
+        "bytes": 8207
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/tablet-portrait/contract.json",
+        "sha256": "8d382d7ae765bd39d5d65921a9d6febd50f499e6cb2bd071402a7b578394ed65",
+        "bytes": 62766
+      },
+      "contractSummary": {
+        "prompt12aElements": 48,
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "assets": 3,
+        "controls": 15,
+        "focusOrder": 15
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/daily-word/tablet-portrait/screenshot.png",
+        "sha256": "64299bf402d872d3a43742ffcfba3886093ab599b0934c01c02b93c11949ae55",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/mobile/screenshot.png",
+        "sha256": "91506404d10ff0f3c16dcaf4720e6f5f22222fa9320bbec28474e32058f24324",
+        "bytes": 55877
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/mobile/prompt12a-contract.json",
+        "sha256": "2c748f9cc5bc505610e240ee5d39c4b4c23186990d0c4bf555b849d2f5ae4225",
+        "bytes": 8207
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/mobile/contract.json",
+        "sha256": "dc36ede461f5b0175fd093289382f62153001ebad44a5a7b9bca4741f8f0b32b",
+        "bytes": 62777
+      },
+      "contractSummary": {
+        "prompt12aElements": 48,
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "assets": 3,
+        "controls": 15,
+        "focusOrder": 15
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/daily-word/mobile/screenshot.png",
+        "sha256": "91506404d10ff0f3c16dcaf4720e6f5f22222fa9320bbec28474e32058f24324",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/mobile-small/screenshot.png",
+        "sha256": "9ca85131faaab089abb2f594dd7f8ebaaa85cff2bd218ca2e614cff01e2801dd",
+        "bytes": 50751
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/mobile-small/prompt12a-contract.json",
+        "sha256": "2c748f9cc5bc505610e240ee5d39c4b4c23186990d0c4bf555b849d2f5ae4225",
+        "bytes": 8207
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/daily-word/mobile-small/contract.json",
+        "sha256": "d15474cc5bd05c20952d2362fd2f46afd4cfa2bf46c7f8deebfe55fbbfa79367",
+        "bytes": 62777
+      },
+      "contractSummary": {
+        "prompt12aElements": 48,
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "assets": 3,
+        "controls": 15,
+        "focusOrder": 15
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/daily-word/mobile-small/screenshot.png",
+        "sha256": "9ca85131faaab089abb2f594dd7f8ebaaa85cff2bd218ca2e614cff01e2801dd",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/desktop-wide/screenshot.png",
+        "sha256": "07a3e3a088f9efd09fe13e4a52032e29f145a6c7da9bc5cbd1f159a96f15ec45",
+        "bytes": 143734
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/desktop-wide/prompt12a-contract.json",
+        "sha256": "76cb177dc7a0d8868dc0cb7fbcf0c26d1a2162ad935e0bc227e89a37f2890d20",
+        "bytes": 12338
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/desktop-wide/contract.json",
+        "sha256": "57264bca817b5e84fe6882c87586395f0dab713c925930b3ca9c4d7d6b6dab25",
+        "bytes": 81975
+      },
+      "contractSummary": {
+        "prompt12aElements": 69,
+        "orderedDom": 102,
+        "ids": 7,
+        "classLists": 72,
+        "assets": 3,
+        "controls": 18,
+        "focusOrder": 18
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/dashboard/desktop-wide/screenshot.png",
+        "sha256": "07a3e3a088f9efd09fe13e4a52032e29f145a6c7da9bc5cbd1f159a96f15ec45",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/desktop-standard/screenshot.png",
+        "sha256": "612d5a23f7522faf72be9a10c62fffff34433749526d75f0d52f8cc1bebf88e8",
+        "bytes": 123462
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/desktop-standard/prompt12a-contract.json",
+        "sha256": "76cb177dc7a0d8868dc0cb7fbcf0c26d1a2162ad935e0bc227e89a37f2890d20",
+        "bytes": 12338
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/desktop-standard/contract.json",
+        "sha256": "439a80fd42041c11c0e8c98a7a409172265d8e96cb0493cb027f8d1c0225bd94",
+        "bytes": 81963
+      },
+      "contractSummary": {
+        "prompt12aElements": 69,
+        "orderedDom": 102,
+        "ids": 7,
+        "classLists": 72,
+        "assets": 3,
+        "controls": 18,
+        "focusOrder": 18
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/dashboard/desktop-standard/screenshot.png",
+        "sha256": "612d5a23f7522faf72be9a10c62fffff34433749526d75f0d52f8cc1bebf88e8",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/tablet-landscape/screenshot.png",
+        "sha256": "c9db5cff56398703392ebfd20c897f04d8aea3a6b18fb291a2c4bd7300d13dd5",
+        "bytes": 125874
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/tablet-landscape/prompt12a-contract.json",
+        "sha256": "76cb177dc7a0d8868dc0cb7fbcf0c26d1a2162ad935e0bc227e89a37f2890d20",
+        "bytes": 12338
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/tablet-landscape/contract.json",
+        "sha256": "6c10bd85218358261c75d4a57ed739a853e13952573eea72b14158a1379f88d6",
+        "bytes": 81912
+      },
+      "contractSummary": {
+        "prompt12aElements": 69,
+        "orderedDom": 102,
+        "ids": 7,
+        "classLists": 72,
+        "assets": 3,
+        "controls": 18,
+        "focusOrder": 18
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/dashboard/tablet-landscape/screenshot.png",
+        "sha256": "c9db5cff56398703392ebfd20c897f04d8aea3a6b18fb291a2c4bd7300d13dd5",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/tablet-portrait/screenshot.png",
+        "sha256": "8df453e22cc694571258ad332373d1b9265ae7f8c6de56de78fefe7c14facf26",
+        "bytes": 90674
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/tablet-portrait/prompt12a-contract.json",
+        "sha256": "76cb177dc7a0d8868dc0cb7fbcf0c26d1a2162ad935e0bc227e89a37f2890d20",
+        "bytes": 12338
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/tablet-portrait/contract.json",
+        "sha256": "152218fce956811fcf28046935016551881686b7b5cad577c2c39e6d16bfd56d",
+        "bytes": 82654
+      },
+      "contractSummary": {
+        "prompt12aElements": 69,
+        "orderedDom": 102,
+        "ids": 7,
+        "classLists": 72,
+        "assets": 3,
+        "controls": 19,
+        "focusOrder": 19
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/dashboard/tablet-portrait/screenshot.png",
+        "sha256": "8df453e22cc694571258ad332373d1b9265ae7f8c6de56de78fefe7c14facf26",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/mobile/screenshot.png",
+        "sha256": "bb32f5cb32b82d17c32de7e22e16d2c02b5763a71a6d5ab5e76545115aa61603",
+        "bytes": 55723
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/mobile/prompt12a-contract.json",
+        "sha256": "76cb177dc7a0d8868dc0cb7fbcf0c26d1a2162ad935e0bc227e89a37f2890d20",
+        "bytes": 12338
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/mobile/contract.json",
+        "sha256": "3587f4e1ec3e2dc94d4830b1b2d084903051d549c4960163c90a4a7f2db8457e",
+        "bytes": 82667
+      },
+      "contractSummary": {
+        "prompt12aElements": 69,
+        "orderedDom": 102,
+        "ids": 7,
+        "classLists": 72,
+        "assets": 3,
+        "controls": 19,
+        "focusOrder": 19
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/dashboard/mobile/screenshot.png",
+        "sha256": "bb32f5cb32b82d17c32de7e22e16d2c02b5763a71a6d5ab5e76545115aa61603",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/dashboard",
+      "slug": "dashboard",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/mobile-small/screenshot.png",
+        "sha256": "538b3a5d7e98d98f29b76521932d460a37aaeb1045b3a53e2a8c614eea1a2e9e",
+        "bytes": 53842
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/mobile-small/prompt12a-contract.json",
+        "sha256": "76cb177dc7a0d8868dc0cb7fbcf0c26d1a2162ad935e0bc227e89a37f2890d20",
+        "bytes": 12338
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/dashboard/mobile-small/contract.json",
+        "sha256": "0d463878456321d68405c85166ab5da65c7a7a4291e2993daea51da8b63e828e",
+        "bytes": 82667
+      },
+      "contractSummary": {
+        "prompt12aElements": 69,
+        "orderedDom": 102,
+        "ids": 7,
+        "classLists": 72,
+        "assets": 3,
+        "controls": 19,
+        "focusOrder": 19
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/dashboard/mobile-small/screenshot.png",
+        "sha256": "538b3a5d7e98d98f29b76521932d460a37aaeb1045b3a53e2a8c614eea1a2e9e",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/desktop-wide/screenshot.png",
+        "sha256": "2926a2cd7e347744d6cbf67405bd04bc89c7ab57adf573f3c8ec237b51b6b12f",
+        "bytes": 138462
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/desktop-wide/prompt12a-contract.json",
+        "sha256": "53fa4b258fd80e7826103612baab3d6dc197a30c93940748acc0dc57488706e4",
+        "bytes": 291332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/desktop-wide/contract.json",
+        "sha256": "4c4fe68920fb9efb602960be4e1006efcccfaf963da603d26a7ccdcf4849e636",
+        "bytes": 1116781
+      },
+      "contractSummary": {
+        "prompt12aElements": 1656,
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "assets": 3,
+        "controls": 23,
+        "focusOrder": 23
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/explore/desktop-wide/screenshot.png",
+        "sha256": "3a414b9ea1c522f943cec1709aba57bef5867d0b54531905befc5884bbc0dea8",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 1,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/desktop-standard/screenshot.png",
+        "sha256": "4207b10b1bdc7b60f8dbb0a945f825be6df94b44f91723e6e3cdc035d4ac0407",
+        "bytes": 122080
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/desktop-standard/prompt12a-contract.json",
+        "sha256": "53fa4b258fd80e7826103612baab3d6dc197a30c93940748acc0dc57488706e4",
+        "bytes": 291332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/desktop-standard/contract.json",
+        "sha256": "aebfd2bfaa50080db9ee4d8ebe27f8f97b90762c39f38d98fe2b590930857536",
+        "bytes": 1116643
+      },
+      "contractSummary": {
+        "prompt12aElements": 1656,
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "assets": 3,
+        "controls": 23,
+        "focusOrder": 23
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/explore/desktop-standard/screenshot.png",
+        "sha256": "2f9856becd3ac4784cab3114bb972e77ed172196dcc5e719465d37d95b2e65fb",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 1,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/tablet-landscape/screenshot.png",
+        "sha256": "5bccfc7eb4529d3fb660ea3418447fa2f73e081496194fb76164a3bf3cd6b4cc",
+        "bytes": 127729
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/tablet-landscape/prompt12a-contract.json",
+        "sha256": "53fa4b258fd80e7826103612baab3d6dc197a30c93940748acc0dc57488706e4",
+        "bytes": 291332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/tablet-landscape/contract.json",
+        "sha256": "f869fb3e4e1429ab6ddd9f2e4e1da52493f8ec31b8c5bcc035a540d1c225ee3d",
+        "bytes": 1116599
+      },
+      "contractSummary": {
+        "prompt12aElements": 1656,
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "assets": 3,
+        "controls": 23,
+        "focusOrder": 23
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/explore/tablet-landscape/screenshot.png",
+        "sha256": "5bccfc7eb4529d3fb660ea3418447fa2f73e081496194fb76164a3bf3cd6b4cc",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/tablet-portrait/screenshot.png",
+        "sha256": "d1a94d8f52ce793e84113a4c399b57b246a8ce5cca6c539783c0d00e86dd8f71",
+        "bytes": 85527
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/tablet-portrait/prompt12a-contract.json",
+        "sha256": "53fa4b258fd80e7826103612baab3d6dc197a30c93940748acc0dc57488706e4",
+        "bytes": 291332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/tablet-portrait/contract.json",
+        "sha256": "463e3769196f72e5e78d8b5f466a42627db2aad5bc4a47fd7ec5861b886084cd",
+        "bytes": 1117224
+      },
+      "contractSummary": {
+        "prompt12aElements": 1656,
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "assets": 3,
+        "controls": 24,
+        "focusOrder": 24
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/explore/tablet-portrait/screenshot.png",
+        "sha256": "d1a94d8f52ce793e84113a4c399b57b246a8ce5cca6c539783c0d00e86dd8f71",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/mobile/screenshot.png",
+        "sha256": "684e94ed942a375d8d75c1c78d69bfe0e778ab110d43f78a88f836dd771986f6",
+        "bytes": 60202
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/mobile/prompt12a-contract.json",
+        "sha256": "53fa4b258fd80e7826103612baab3d6dc197a30c93940748acc0dc57488706e4",
+        "bytes": 291332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/mobile/contract.json",
+        "sha256": "97f68d9dce2a77bf367d71017524e7ca04a382b7d11e31e5e751c5b68e2c5867",
+        "bytes": 1117251
+      },
+      "contractSummary": {
+        "prompt12aElements": 1656,
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "assets": 3,
+        "controls": 24,
+        "focusOrder": 24
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/explore/mobile/screenshot.png",
+        "sha256": "684e94ed942a375d8d75c1c78d69bfe0e778ab110d43f78a88f836dd771986f6",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/mobile-small/screenshot.png",
+        "sha256": "04cbabe1beba4416698df08cbc2ca7ea05cedb322cfeaba2ecf82a79e24a677c",
+        "bytes": 54720
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/mobile-small/prompt12a-contract.json",
+        "sha256": "53fa4b258fd80e7826103612baab3d6dc197a30c93940748acc0dc57488706e4",
+        "bytes": 291332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/explore/mobile-small/contract.json",
+        "sha256": "23a009f397712d861e3b077b1e35d5554e35d57d279302df44121c77922c8fa8",
+        "bytes": 1117254
+      },
+      "contractSummary": {
+        "prompt12aElements": 1656,
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "assets": 3,
+        "controls": 24,
+        "focusOrder": 24
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/explore/mobile-small/screenshot.png",
+        "sha256": "04cbabe1beba4416698df08cbc2ca7ea05cedb322cfeaba2ecf82a79e24a677c",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/desktop-wide/screenshot.png",
+        "sha256": "5da098b7bf5005567d7686011ad93a57614e5618db7e8f03d5aaf5d2fd323d55",
+        "bytes": 111842
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/desktop-wide/prompt12a-contract.json",
+        "sha256": "5d4be72f695f3f5b156fab847832c9948e98d946960f7fe2be11392b4331a727",
+        "bytes": 4277
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/desktop-wide/contract.json",
+        "sha256": "2a55c19ee831552cccab93df06a94e822349bb47176fbb11cf0a0826bf2c3f8a",
+        "bytes": 53031
+      },
+      "contractSummary": {
+        "prompt12aElements": 23,
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "assets": 3,
+        "controls": 18,
+        "focusOrder": 18
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/personalization/desktop-wide/screenshot.png",
+        "sha256": "5da098b7bf5005567d7686011ad93a57614e5618db7e8f03d5aaf5d2fd323d55",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/desktop-standard/screenshot.png",
+        "sha256": "0df693d3bbd85bd40bdb27f3d1c89aad0719f4c154b677a57f90b17caefb6efb",
+        "bytes": 98332
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/desktop-standard/prompt12a-contract.json",
+        "sha256": "5d4be72f695f3f5b156fab847832c9948e98d946960f7fe2be11392b4331a727",
+        "bytes": 4277
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/desktop-standard/contract.json",
+        "sha256": "01aa39a10aa275a0d8c8af30ce1842cbe82e6e1e1a319f39b305a156fde74b67",
+        "bytes": 53026
+      },
+      "contractSummary": {
+        "prompt12aElements": 23,
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "assets": 3,
+        "controls": 18,
+        "focusOrder": 18
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/personalization/desktop-standard/screenshot.png",
+        "sha256": "0df693d3bbd85bd40bdb27f3d1c89aad0719f4c154b677a57f90b17caefb6efb",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/tablet-landscape/screenshot.png",
+        "sha256": "4c12451a254cc0d228b776d305eff69367b71a58440ce3179f53e740dba85d28",
+        "bytes": 106897
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/tablet-landscape/prompt12a-contract.json",
+        "sha256": "5d4be72f695f3f5b156fab847832c9948e98d946960f7fe2be11392b4331a727",
+        "bytes": 4277
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/tablet-landscape/contract.json",
+        "sha256": "13138cdb3f783a2efe7b0d3775a064f3632815cffc03d919702850a539870c0a",
+        "bytes": 52975
+      },
+      "contractSummary": {
+        "prompt12aElements": 23,
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "assets": 3,
+        "controls": 18,
+        "focusOrder": 18
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/personalization/tablet-landscape/screenshot.png",
+        "sha256": "4c12451a254cc0d228b776d305eff69367b71a58440ce3179f53e740dba85d28",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/tablet-portrait/screenshot.png",
+        "sha256": "7f7ca6025806c458a260388d441a1cf7b93773c8b3e3587a687bef9d61767a34",
+        "bytes": 55641
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/tablet-portrait/prompt12a-contract.json",
+        "sha256": "5d4be72f695f3f5b156fab847832c9948e98d946960f7fe2be11392b4331a727",
+        "bytes": 4277
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/tablet-portrait/contract.json",
+        "sha256": "496895e291d6554ccc6966dbafc41b89515dc5f428a3b773c2d673cc3a6a94bf",
+        "bytes": 53726
+      },
+      "contractSummary": {
+        "prompt12aElements": 23,
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "assets": 3,
+        "controls": 19,
+        "focusOrder": 19
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/personalization/tablet-portrait/screenshot.png",
+        "sha256": "7f7ca6025806c458a260388d441a1cf7b93773c8b3e3587a687bef9d61767a34",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/mobile/screenshot.png",
+        "sha256": "f2359b3c1546504d97f80872fbe1cd634953d8f401412750edb2a16372aea1a1",
+        "bytes": 52960
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/mobile/prompt12a-contract.json",
+        "sha256": "5d4be72f695f3f5b156fab847832c9948e98d946960f7fe2be11392b4331a727",
+        "bytes": 4277
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/mobile/contract.json",
+        "sha256": "3cdcd9ea246db3df0fdbba036a73f927d58cd8224ae6828035f0ef3151187c73",
+        "bytes": 53732
+      },
+      "contractSummary": {
+        "prompt12aElements": 23,
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "assets": 3,
+        "controls": 19,
+        "focusOrder": 19
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/personalization/mobile/screenshot.png",
+        "sha256": "f2359b3c1546504d97f80872fbe1cd634953d8f401412750edb2a16372aea1a1",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/mobile-small/screenshot.png",
+        "sha256": "464be670a68e4d8fd92e87bbd1b354a45b07d6ec78f24b341d02b7e2b9a79378",
+        "bytes": 50479
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/mobile-small/prompt12a-contract.json",
+        "sha256": "5d4be72f695f3f5b156fab847832c9948e98d946960f7fe2be11392b4331a727",
+        "bytes": 4277
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/personalization/mobile-small/contract.json",
+        "sha256": "34d65ebf259abcfd664a26912a1f49dac56345f264f517a6a6351ec7e2449f09",
+        "bytes": 53731
+      },
+      "contractSummary": {
+        "prompt12aElements": 23,
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "assets": 3,
+        "controls": 19,
+        "focusOrder": 19
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/personalization/mobile-small/screenshot.png",
+        "sha256": "464be670a68e4d8fd92e87bbd1b354a45b07d6ec78f24b341d02b7e2b9a79378",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/desktop-wide/screenshot.png",
+        "sha256": "1b61ff80f7c96213c9b8fd7a14c215146c8026d91b4d4ced165b6e84a3894db3",
+        "bytes": 263867
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/desktop-wide/prompt12a-contract.json",
+        "sha256": "a68221f6a46b7fb8e7af922239c8c7e7d398027314a2994a36824cf0c004d171",
+        "bytes": 5237
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/desktop-wide/contract.json",
+        "sha256": "22032f6cb5b608ea797d63294628b1aadc5994ffda58b69f76173afa324d8a47",
+        "bytes": 55261
+      },
+      "contractSummary": {
+        "prompt12aElements": 32,
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/promise-search/desktop-wide/screenshot.png",
+        "sha256": "99800e14f974561b6f151c0fb0bacd8e7a8c72a5b3957c4713cbfe8663779d58",
+        "width": 1440,
+        "height": 900,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 1,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/desktop-standard/screenshot.png",
+        "sha256": "a4cb6e5e556559d90fbe54153a3cf08ff8e296fb269d2fb48160203d773659a9",
+        "bytes": 239788
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/desktop-standard/prompt12a-contract.json",
+        "sha256": "a68221f6a46b7fb8e7af922239c8c7e7d398027314a2994a36824cf0c004d171",
+        "bytes": 5237
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/desktop-standard/contract.json",
+        "sha256": "ca06169c25dc9d9a238ab8176e9086f1280fe23a7c25fce44f30fa52ed7a8914",
+        "bytes": 55252
+      },
+      "contractSummary": {
+        "prompt12aElements": 32,
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/promise-search/desktop-standard/screenshot.png",
+        "sha256": "a4cb6e5e556559d90fbe54153a3cf08ff8e296fb269d2fb48160203d773659a9",
+        "width": 1280,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/tablet-landscape/screenshot.png",
+        "sha256": "b34cefb3c1598d5958158d6c46588452b1a36f23a494c8bcec7836e8bbf6ebcd",
+        "bytes": 245846
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/tablet-landscape/prompt12a-contract.json",
+        "sha256": "a68221f6a46b7fb8e7af922239c8c7e7d398027314a2994a36824cf0c004d171",
+        "bytes": 5237
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/tablet-landscape/contract.json",
+        "sha256": "25b663e433b51233a1065aa9511a1d22e244935db8838a5e162536ff467d04b0",
+        "bytes": 55221
+      },
+      "contractSummary": {
+        "prompt12aElements": 32,
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "assets": 3,
+        "controls": 14,
+        "focusOrder": 14
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/promise-search/tablet-landscape/screenshot.png",
+        "sha256": "b34cefb3c1598d5958158d6c46588452b1a36f23a494c8bcec7836e8bbf6ebcd",
+        "width": 1024,
+        "height": 768,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/tablet-portrait/screenshot.png",
+        "sha256": "1157fb4f757ecdc8fb336ebc7a2b1267452bea614292a541bd3f9d8220355ef8",
+        "bytes": 188747
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/tablet-portrait/prompt12a-contract.json",
+        "sha256": "a68221f6a46b7fb8e7af922239c8c7e7d398027314a2994a36824cf0c004d171",
+        "bytes": 5237
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/tablet-portrait/contract.json",
+        "sha256": "82c98d2766d277b36d57491c069686538484583c029da5f1d4853431e12396b4",
+        "bytes": 55976
+      },
+      "contractSummary": {
+        "prompt12aElements": 32,
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "assets": 3,
+        "controls": 15,
+        "focusOrder": 15
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/promise-search/tablet-portrait/screenshot.png",
+        "sha256": "1157fb4f757ecdc8fb336ebc7a2b1267452bea614292a541bd3f9d8220355ef8",
+        "width": 768,
+        "height": 1024,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/mobile/screenshot.png",
+        "sha256": "d12c23f753d983588fed235a19d7939543a1db88dd7cc2a5ae6b93ea486940d2",
+        "bytes": 162821
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/mobile/prompt12a-contract.json",
+        "sha256": "a68221f6a46b7fb8e7af922239c8c7e7d398027314a2994a36824cf0c004d171",
+        "bytes": 5237
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/mobile/contract.json",
+        "sha256": "349dc31e6f1d9f9f9fcf0718b28935fa930a581cee2c0e8d810c720f4fb6931d",
+        "bytes": 56010
+      },
+      "contractSummary": {
+        "prompt12aElements": 32,
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "assets": 3,
+        "controls": 15,
+        "focusOrder": 15
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/promise-search/mobile/screenshot.png",
+        "sha256": "d12c23f753d983588fed235a19d7939543a1db88dd7cc2a5ae6b93ea486940d2",
+        "width": 390,
+        "height": 844,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "status": "OWNER_APPROVED_SOURCE_BASELINE",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/mobile-small/screenshot.png",
+        "sha256": "0173c09bb4330281c0c3c3089b9a850272168cd4b8db77efe1ae014db3a55552",
+        "bytes": 152577
+      },
+      "prompt12aContract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/mobile-small/prompt12a-contract.json",
+        "sha256": "a68221f6a46b7fb8e7af922239c8c7e7d398027314a2994a36824cf0c004d171",
+        "bytes": 5237
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-support-routes/promise-search/mobile-small/contract.json",
+        "sha256": "c4b5dff380a71184fab688aeb9dc8b1dcfb34cda41761513f739bd65ab379c4c",
+        "bytes": 56010
+      },
+      "contractSummary": {
+        "prompt12aElements": 32,
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "assets": 3,
+        "controls": 15,
+        "focusOrder": 15
+      },
+      "prompt12bRecapture": {
+        "sourcePath": ".tmp/visual-parity/prompt-12b-support-route-capture/promise-search/mobile-small/screenshot.png",
+        "sha256": "0173c09bb4330281c0c3c3089b9a850272168cd4b8db77efe1ae014db3a55552",
+        "width": 360,
+        "height": 800,
+        "differentPixels": 0,
+        "differentPixelRatio": 0,
+        "maxChannelDelta": 0,
+        "strictPassed": true
+      }
+    }
+  ],
+  "immutableRules": [
+    "Do not overwrite, regenerate, move, or update these artifacts without a newer scoped owner approval.",
+    "Do not merge these artifacts into tests/visual/baselines/static-runtime/.",
+    "A build result alone cannot update an owner-approved support-route status.",
+    "Candidate outputs must remain under .tmp/visual-parity/."
+  ]
+}

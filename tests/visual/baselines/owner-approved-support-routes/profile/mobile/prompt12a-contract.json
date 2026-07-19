@@ -1,0 +1,332 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "page-hero profile-hero compact-hero",
+    "attributes": [
+      [
+        "class",
+        "page-hero profile-hero compact-hero"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Saint Profile"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Prince"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "User archetype, journey, growth level, recommended words, and saved spiritual focus."
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "grid two",
+    "attributes": [
+      [
+        "class",
+        "grid two"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Kingdom Profile"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "h3",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Prince"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The Builder"
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Archetype:"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Developing"
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Growth Level:"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Calling Journey"
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Current Journey:"
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Primary Path"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "h3",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Stewardship"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Selion -> Maviel -> Tharon -> Velian"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Archetype Words"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "h3",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The Builder"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Selion, Maviel, Tharon"
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Saved Focus"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "pill-row",
+    "attributes": [
+      [
+        "class",
+        "pill-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "span",
+    "id": "",
+    "className": "pill",
+    "attributes": [
+      [
+        "class",
+        "pill"
+      ]
+    ],
+    "directText": "Selion"
+  },
+  {
+    "tag": "span",
+    "id": "",
+    "className": "pill",
+    "attributes": [
+      [
+        "class",
+        "pill"
+      ]
+    ],
+    "directText": "Maviel"
+  },
+  {
+    "tag": "span",
+    "id": "",
+    "className": "pill",
+    "attributes": [
+      [
+        "class",
+        "pill"
+      ]
+    ],
+    "directText": "Taviel"
+  },
+  {
+    "tag": "span",
+    "id": "",
+    "className": "pill",
+    "attributes": [
+      [
+        "class",
+        "pill"
+      ]
+    ],
+    "directText": "Hazon"
+  }
+]

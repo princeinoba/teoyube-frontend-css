@@ -1,0 +1,335 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "page-hero compact-hero",
+    "attributes": [
+      [
+        "class",
+        "page-hero compact-hero"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "TeoyubeSearch"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Search with Purpose. Walk in His Promises."
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Search local Teoyube words, Scripture anchors, promise clusters, and cautious next steps."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "input",
+    "id": "",
+    "className": "",
+    "attributes": [
+      [
+        "aria-label",
+        "Search Teoyube"
+      ],
+      [
+        "value",
+        "I feel confused about my purpose"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "grid three",
+    "attributes": [
+      [
+        "class",
+        "grid three"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Calling"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "TEOYUBE"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The Eyes Of Your Understanding Being Enlightened"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Ephesians 1:18"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "High confidence - Scripture anchor present"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Transformation"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "EPHPHATHA"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Be Opened"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Mark 7:34"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "High confidence - Scripture anchor present"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Wisdom"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "SOPHIA"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Divine Wisdom"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "James 1:5"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "High confidence - Scripture anchor present"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Revelation"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "APOKALU"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Revelation Unveiled"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Ephesians 1:17"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "High confidence - Scripture anchor present"
+  }
+]

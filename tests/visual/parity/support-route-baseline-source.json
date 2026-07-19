@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8",
+  "approvalDate": "2026-07-19",
+  "approvedCommit": "4c3aaba00b72bdad99ff376a0a23a0718e9dfc7b",
+  "state": "Initial route render with fixed time and random values, external network blocked, fonts and visible images settled, animations paused, media paused at time zero, and scroll position zero.",
+  "captureEnvironment": {
+    "runtime": "next-preview-production-build",
+    "browser": "Google Chrome via Playwright",
+    "platform": "win32",
+    "colorScheme": "light",
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "fixedTime": "2026-07-18T12:00:00.000Z",
+    "externalNetwork": "blocked"
+  },
+  "viewports": [
+    { "name": "desktop-wide", "width": 1440, "height": 900 },
+    { "name": "desktop-standard", "width": 1280, "height": 800 },
+    { "name": "tablet-landscape", "width": 1024, "height": 768 },
+    { "name": "tablet-portrait", "width": 768, "height": 1024 },
+    { "name": "mobile", "width": 390, "height": 844 },
+    { "name": "mobile-small", "width": 360, "height": 800 }
+  ],
+  "routes": [
+    { "route": "/settings", "slug": "settings", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/privacy", "slug": "privacy", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/consent", "slug": "consent", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/terms", "slug": "terms", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/profile", "slug": "profile", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/daily-word", "slug": "daily-word", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/dashboard", "slug": "dashboard", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/explore", "slug": "explore", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/personalization", "slug": "personalization", "status": "OWNER_APPROVED_SOURCE_BASELINE" },
+    { "route": "/promise-search", "slug": "promise-search", "status": "OWNER_APPROVED_SOURCE_BASELINE" }
+  ]
+}

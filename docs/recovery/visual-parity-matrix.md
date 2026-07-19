@@ -2,19 +2,19 @@
 
 ## Gate status
 
-The original static runtime remains canonical. Every Next route now has an explicit evidence status in `tests/visual/parity/next-route-status.json`; a successful build alone never produces `PASS`. `PASS` records complete automated screenshot, DOM/class, asset, geometry, label, control/focus, responsive, and functional evidence. `BLOCKED_OWNER_DECISION` records passing automated evidence with unresolved human visual review. `NOT_APPLICABLE_INTERNAL_ROUTE` prevents an owner-only route from being treated as a public cutover candidate. No status in this matrix authorizes runtime cutover without the separate owner sign-off required by `AGENTS.md`.
+The original static runtime remains canonical. Every Next route now has an explicit evidence status in `tests/visual/parity/next-route-status.json`; a successful build alone never produces `PASS`. `PASS` records complete automated screenshot, DOM/class, asset, geometry, label, control/focus, responsive, and functional evidence plus the owner decision recorded as `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8`. `NOT_APPLICABLE_INTERNAL_ROUTE` prevents an owner-only route from being treated as a public cutover candidate. No status in this matrix authorizes runtime cutover.
 
-The global Next shell is `BLOCKED_OWNER_DECISION`. `npm run visual:parity:shell` compares the approved sidebar, top bar, mobile navigation, DOM/classes, asset URLs, geometry, focus order, keyboard behavior, and responsive state at all six required viewports. Side-by-side and overlay evidence is written to `.tmp/visual-parity/shell-owner-review/`. This shell status does not mark any feature route or matrix cell approved.
+The global Next shell is owner-approved. `npm run visual:parity:shell` compares the approved sidebar, top bar, mobile navigation, DOM/classes, asset URLs, geometry, focus order, keyboard behavior, and responsive state at all six required viewports. The owner accepted V-04, the tablet-portrait open-drawer raster result, as `ACCEPT_NONVISUAL_RENDERING_VARIANCE`. Durable owner evidence is under `docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-04/`; disposable current evidence remains under `.tmp/visual-parity/shell-owner-review/`.
 
 The shell contract scopes its three direct shell controls to the semantic parent `body > div.app-shell`. Next App Router emits one hidden, empty streaming sibling before the shell; it has no classes, labels, geometry, focusability, or rendered pixels and is not part of the approved shell. No shell descendant or visible region is excluded.
 
-The Today Next preview is `BLOCKED_OWNER_DECISION` at all six matrix cells. `npm run visual:parity:today` compares the complete approved Today surface at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/today-owner-review/`. The reproducible run produced zero differing pixels at five viewports and 43 differing pixels (0.0055%) at tablet-landscape, within the unchanged 0.5% strict same-environment threshold but still awaiting human review.
+The Today Next preview is `PASS` at all six matrix cells under approval `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8`. `npm run visual:parity:today` compares the complete approved Today surface at all six required viewports. The owner accepted V-01, the 43-pixel (0.0055%) tablet-landscape compositor result, as `ACCEPT_NONVISUAL_RENDERING_VARIANCE`; the other five screenshots were pixel-identical. Durable V-01 evidence is stored with the approval record.
 
-The TeoyubeSearch Next preview is `PASS` at all six matrix cells. `npm run visual:parity:search` compares the complete approved Search surface at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/search-owner-review/`. Prompt 12A found that React had omitted the original inline whitespace between the Smart Search Suggestions label and its explanatory sentence, producing a 4.390625 px shift. Restoring that text-node whitespace made all six current screenshots pixel-identical while retaining exact ordered DOM, IDs/classes, parent paths, assets/backgrounds, computed geometry, visible labels, controls, focus order, responsive navigation, and behavior. Pre-remediation evidence remains separate under `.tmp/visual-parity/prompt-12a-pre-remediation/search-owner-review/`.
+The TeoyubeSearch Next preview is `PASS` at all six matrix cells under the same approval. `npm run visual:parity:search` compares the complete approved Search surface at all six required viewports. Prompt 12A restored one omitted inline whitespace node between the Smart Search Suggestions label and its explanatory sentence. The owner accepted the reviewed V-02 before-state evidence as nonvisual rendering variance, while the corrected current state is pixel-identical at all six viewports and retains exact ordered DOM, IDs/classes, parent paths, assets/backgrounds, computed geometry, visible labels, controls, focus order, responsive navigation, and behavior.
 
 The Search comparison excludes and masks no page region. It includes the approved hero and background artwork, Input/Button/Grid structure, Smart Search Suggestions, category filter, eight promise-cluster prompts, result thumbnails and cards, both explanation paths, progress bars, every result action and feedback control, benefits panel, shell, responsive composition, and offline status. The typed result model adds source, confidence, limitation, and disabled-provider facts behind the view; those facts do not add or change approved markup. Browser coverage exercises all seven categories and every distinct visible action type while external models and vector databases remain disconnected.
 
-The Canon Next preview is `BLOCKED_OWNER_DECISION`; Promise Table is `PASS`. `npm run visual:parity:canon-promise` compares both complete approved pages at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts to `.tmp/visual-parity/canon-owner-review/` and `.tmp/visual-parity/promise-table-owner-review/`. Promise Table produced zero differing pixels at every viewport, while Canon produced zero at five viewports and 692 pixels (0.0534%) at desktop-wide. The Canon result remains within the unchanged threshold but awaits human review.
+Canon and Promise Table are `PASS` under the owner approval. `npm run visual:parity:canon-promise` compares both complete approved pages at all six required viewports. Promise Table produced zero differing pixels at every viewport. The owner accepted V-03, Canon's 692-pixel (0.0534%) desktop-wide compositor result, as `ACCEPT_NONVISUAL_RENDERING_VARIANCE`; Canon's other five screenshots were pixel-identical. Durable V-03 evidence is stored with the approval record.
 
 The Canon and Promise Table comparisons exclude and mask no page region. Ordered DOM, IDs/classes, parent paths, assets/backgrounds, computed geometry, visible labels, controls, focus order, and responsive navigation matched at all twelve route/viewport combinations. Browser coverage exercises Canon tabs, pagination, search, featured carousel buttons, and keyboard controls, plus Promise Table status transitions and filtering, sourced search suggestions, media selection, Level C manual entry, removal, and undo. The repository adapters retain exact Scripture references, promise level, explanation, source provenance, stable IDs, and reversible status history without connecting external storage.
 
@@ -30,7 +30,7 @@ Journal is an existing internal preview surface rather than one of the 12 immuta
 
 Lexicon, Teo Guide, Embedded Videos, and Teoyube Tables are `PASS` at all twenty-four public matrix cells. The owner-only Roadmap is `NOT_APPLICABLE_INTERNAL_ROUTE`. `npm run visual:parity:remaining-retained` compares all five complete approved surfaces at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/remaining-retained-owner-review/`. The passing run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for all thirty route/viewport combinations. The Roadmap evidence includes the owner QA overlay; Roadmap, TIG, development health, and media-review controls remain absent from normal navigation.
 
-The same command records the approved shell and unchanged responsive treatment for settings, privacy, consent, terms, profile, daily word, dashboard, explore, graph, personalization, promise search, and compass at all six viewports. Functional coverage exercises Lexicon search/category filtering and explicit Scripture-subordinate semantics, deterministic local Teo Guide messages and source distinctions, the currently gated TeoyubeWorld tab plus all eight original local video records, MP4 MIME and byte ranges, immutable asset caching, no-store manifest caching, protected-path denial, Tables pagination and management tabs, and owner/development navigation boundaries. The separate Phase 11.6C.3 publication-integrity blocker is not modified or represented as complete.
+The same command records the approved shell and unchanged responsive treatment for retained support routes. The owner approved the exact Prompt 12A render of `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/daily-word`, `/dashboard`, `/explore`, `/personalization`, and `/promise-search` as their initial source of truth. Their 60 screenshot cells and 120 DOM/asset contracts are frozen separately under `tests/visual/baselines/owner-approved-support-routes/`; they do not replace or modify the original static-runtime baseline. `/graph` is internal-only and absent from normal navigation. `/compass` permanently redirects to `/calling-compass`. The separate Phase 11.6C.3 publication-integrity blocker is not modified or represented as complete.
 
 Prompt 6 explicitly excludes the full daily journey UI. The Today harness therefore removes only the three separately injected legacy journey/recommendation nodes (`#phase116bTodayCommandCenter`, `#phase116b1Continuation-today`, and `#phase115SmartRecommendations-today`) from the static comparison. It does not exclude or mask the promise carousel, summary cards, Word of the Day, Daily Divine Assignment, reflection controls, Smart Search Suggestions, TeoyubeWorld featured-story search/carousel, highlight, feed table, shell, imagery, icons, assets, or responsive containers. Finite CSS animations are finished and infinite animations are set to time zero symmetrically in the test harness; production CSS and behavior are unchanged.
 
@@ -68,24 +68,24 @@ On 2026-07-18, the required second capture used Windows Chrome against the Linux
 
 | View | Next route | Viewport | Immutable screenshot | Status |
 | --- | --- | --- | --- | --- |
-| today | `/` | desktop-wide 1440×900 | `desktop-wide/today.png` | BLOCKED_OWNER_DECISION |
-| today | `/` | desktop-standard 1280×800 | `desktop-standard/today.png` | BLOCKED_OWNER_DECISION |
-| today | `/` | tablet-landscape 1024×768 | `tablet-landscape/today.png` | BLOCKED_OWNER_DECISION |
-| today | `/` | tablet-portrait 768×1024 | `tablet-portrait/today.png` | BLOCKED_OWNER_DECISION |
-| today | `/` | mobile 390×844 | `mobile/today.png` | BLOCKED_OWNER_DECISION |
-| today | `/` | mobile-small 360×800 | `mobile-small/today.png` | BLOCKED_OWNER_DECISION |
+| today | `/` | desktop-wide 1440×900 | `desktop-wide/today.png` | PASS |
+| today | `/` | desktop-standard 1280×800 | `desktop-standard/today.png` | PASS |
+| today | `/` | tablet-landscape 1024×768 | `tablet-landscape/today.png` | PASS |
+| today | `/` | tablet-portrait 768×1024 | `tablet-portrait/today.png` | PASS |
+| today | `/` | mobile 390×844 | `mobile/today.png` | PASS |
+| today | `/` | mobile-small 360×800 | `mobile-small/today.png` | PASS |
 | search | `/search` | desktop-wide 1440×900 | `desktop-wide/search.png` | PASS |
 | search | `/search` | desktop-standard 1280×800 | `desktop-standard/search.png` | PASS |
 | search | `/search` | tablet-landscape 1024×768 | `tablet-landscape/search.png` | PASS |
 | search | `/search` | tablet-portrait 768×1024 | `tablet-portrait/search.png` | PASS |
 | search | `/search` | mobile 390×844 | `mobile/search.png` | PASS |
 | search | `/search` | mobile-small 360×800 | `mobile-small/search.png` | PASS |
-| canon | `/canon` | desktop-wide 1440×900 | `desktop-wide/canon.png` | BLOCKED_OWNER_DECISION |
-| canon | `/canon` | desktop-standard 1280×800 | `desktop-standard/canon.png` | BLOCKED_OWNER_DECISION |
-| canon | `/canon` | tablet-landscape 1024×768 | `tablet-landscape/canon.png` | BLOCKED_OWNER_DECISION |
-| canon | `/canon` | tablet-portrait 768×1024 | `tablet-portrait/canon.png` | BLOCKED_OWNER_DECISION |
-| canon | `/canon` | mobile 390×844 | `mobile/canon.png` | BLOCKED_OWNER_DECISION |
-| canon | `/canon` | mobile-small 360×800 | `mobile-small/canon.png` | BLOCKED_OWNER_DECISION |
+| canon | `/canon` | desktop-wide 1440×900 | `desktop-wide/canon.png` | PASS |
+| canon | `/canon` | desktop-standard 1280×800 | `desktop-standard/canon.png` | PASS |
+| canon | `/canon` | tablet-landscape 1024×768 | `tablet-landscape/canon.png` | PASS |
+| canon | `/canon` | tablet-portrait 768×1024 | `tablet-portrait/canon.png` | PASS |
+| canon | `/canon` | mobile 390×844 | `mobile/canon.png` | PASS |
+| canon | `/canon` | mobile-small 360×800 | `mobile-small/canon.png` | PASS |
 | table | `/promise-table` | desktop-wide 1440×900 | `desktop-wide/table.png` | PASS |
 | table | `/promise-table` | desktop-standard 1280×800 | `desktop-standard/table.png` | PASS |
 | table | `/promise-table` | tablet-landscape 1024×768 | `tablet-landscape/table.png` | PASS |
@@ -140,6 +140,20 @@ On 2026-07-18, the required second capture used Windows Chrome against the Linux
 | roadmap | `/roadmap` | tablet-portrait 768×1024 | `tablet-portrait/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
 | roadmap | `/roadmap` | mobile 390×844 | `mobile/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
 | roadmap | `/roadmap` | mobile-small 360×800 | `mobile-small/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
+
+## Owner-approved support-route matrix
+
+Approval `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8` establishes a separate initial visual source for these exact Next renders. `npm run recovery:support-routes:verify` verifies 60 screenshots and 120 DOM/asset contracts across the same six viewports. The verifier binds the approval record, source definition, manifest, evidence hashes, route classifications, internal navigation boundary, and `/compass` redirect. Candidate output remains disposable and never writes to either baseline tree.
+
+| Route(s) | Classification | Status |
+| --- | --- | --- |
+| `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/daily-word`, `/dashboard`, `/explore`, `/personalization`, `/promise-search` | `OWNER_APPROVED_PUBLIC_ROUTE` | `OWNER_APPROVED_SOURCE_BASELINE` |
+| `/compass` → `/calling-compass` | `REDIRECT_TO_CANONICAL_PUBLIC_ROUTE` | `REDIRECT_TO_CANONICAL_PUBLIC_ROUTE` |
+| `/graph`, `/tig`, `/tig/data`, `/tig/graph`, `/tig/journal`, `/tig/journey`, `/tig/onboarding`, `/tig/privacy`, `/tig/progress`, `/tig/traversal` | `INTERNAL_ONLY` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
+| `/dev/teoyube-health`, `/tig/debug` | `DEVELOPMENT_ONLY` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
+| `/prayer`, `/journey`, `/journal` | `RETAINED_PUBLIC_ROUTE_REQUIRES_SOURCE_BASELINE` | `BLOCKED_MISSING_STATIC_COUNTERPART` |
+
+The owner approval does not identify `/prayer`, `/journey`, or `/journal` as initial visual sources and does not classify them as internal. Their Prompt 12A classifications therefore remain blocked; the approval is not broadened by inference.
 
 ## Functional activation contract
 

@@ -82,7 +82,7 @@ describe("remaining retained preview contracts", () => {
     expect(roadmap.normalNavigation).toBe(false);
   });
 
-  it("keeps retained support views source-identical and internal routes out of normal navigation", () => {
+  it("keeps approved support views source-identical, redirects Compass, and hides internal routes", () => {
     const expectedHashes: Readonly<Record<string, string>> = {
       settings: "2abec0f8653601d308f0248cd999375efc1b384ed3791be3cd98734cfed7cfc8",
       privacy: "fea268e279efda0ff5a2882840be790dc981fc522ee6b2404d9ddf7a7be17e10",
@@ -95,7 +95,7 @@ describe("remaining retained preview contracts", () => {
       graph: "3571c2955c7e7d1d4ee4b26cfbc35d8c5b8c3447df0d6def7ce364ffccff4086",
       personalization: "bd5d0dcdfdedfe6a115797fe7bd404c15dbcc6e2a08aa8d6512298af9b7e4686",
       "promise-search": "f28a8c4642476c4df0d2e691b6fb07387034a54b9b6f8cea4fd35b4558158348",
-      compass: "fcce816837b959714392745e05eb21793747c60eb49da8ddcb0c5b20331e07a8"
+      compass: "2363abfb37580341fc7bd6eb2bc745ebac5e17ca12be25958fcdac53a79a6341"
     };
     for (const [route, digest] of Object.entries(expectedHashes)) {
       expect(crypto.createHash("sha256").update(read(`src/app/${route}/page.tsx`)).digest("hex"), route).toBe(digest);
@@ -106,6 +106,7 @@ describe("remaining retained preview contracts", () => {
     expect(shell).not.toContain('href: "/roadmap"');
     expect(shell).not.toContain('href: "/tig"');
     expect(shell).not.toContain('href: "/dev"');
+    expect(read("src/app/compass/page.tsx")).toContain('permanentRedirect("/calling-compass")');
   });
 
   it("uses owning feature services rather than the discarded generic screenshot pages", () => {

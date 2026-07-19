@@ -13,8 +13,8 @@ if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
   process.exit(2);
 }
-if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book", "remaining-retained", "gate-audit"]).has(mode)) {
-  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey|journal-testimony-book|remaining-retained|gate-audit>");
+if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book", "remaining-retained", "gate-audit", "support-capture", "support-baseline"]).has(mode)) {
+  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey|journal-testimony-book|remaining-retained|gate-audit|support-capture|support-baseline>");
   process.exit(2);
 }
 
@@ -86,7 +86,7 @@ async function main() {
   const staticOrigin = `http://127.0.0.1:${staticPort}`;
   const nextOrigin = `http://127.0.0.1:${nextPort}`;
   try {
-    if (mode !== "status") {
+    if (!new Set(["status", "support-capture", "support-baseline"]).has(mode)) {
       const staticUrl = `${staticOrigin}/index.html`;
       if (!(await urlIsReady(staticUrl))) {
         const staticServer = startStaticServer(staticPort);
@@ -94,7 +94,7 @@ async function main() {
         await waitForUrl(staticServer, staticUrl);
       }
     }
-    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book" || mode === "remaining-retained" || mode === "gate-audit") {
+    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book" || mode === "remaining-retained" || mode === "gate-audit" || mode === "support-capture" || mode === "support-baseline") {
       const nextServer = startNextServer(nextPort);
       servers.push(nextServer);
       await waitForUrl(nextServer, `${nextOrigin}/api/health`);
@@ -118,6 +118,10 @@ async function main() {
           ? "remaining-retained-parity"
         : mode === "gate-audit"
           ? "full-gate-audit"
+        : mode === "support-capture"
+          ? "support-route-baseline-capture"
+        : mode === "support-baseline"
+          ? "support-route-baseline-parity"
         : "next-candidate-contract";
     const tests = spawn(
       process.execPath,

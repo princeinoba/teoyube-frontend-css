@@ -19,7 +19,7 @@ const approvedRoutes = [
 
 const supportRoutes = [
   "/settings", "/privacy", "/consent", "/terms", "/profile", "/daily-word",
-  "/dashboard", "/explore", "/graph", "/personalization", "/promise-search", "/compass"
+  "/dashboard", "/explore", "/personalization", "/promise-search"
 ] as const;
 
 function normalizeStyle(value: string): string {
@@ -121,7 +121,7 @@ for (const definition of approvedRoutes) {
   });
 }
 
-test("retained support routes keep the approved shell and current responsive treatment", async ({ browser }) => {
+test("owner-approved support routes keep their approved shell and responsive treatment", async ({ browser }) => {
   test.setTimeout(600_000);
   const evidenceRoot = path.join(candidateRoot, "remaining-retained-owner-review", "support-views");
   const desktopDigests = new Map<string, string>();
@@ -226,4 +226,8 @@ test("owner and development routes remain absent from normal navigation", async 
   await expect(nav).not.toContainText("Roadmap");
   await expect(nav).not.toContainText("TIG");
   await expect(nav).not.toContainText("Teoyube Health");
+  await expect(nav).not.toContainText("Graph");
+  await page.goto(`${nextBaseUrl}/compass`, { waitUntil: "domcontentloaded", timeout: 30_000 });
+  expect(new URL(page.url()).pathname).toBe("/calling-compass");
+  await expect(page.locator("#calling")).toBeAttached();
 });

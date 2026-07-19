@@ -1,14 +1,14 @@
 [
-  { "viewId": "today", "nextRoute": "/", "status": "BLOCKED_OWNER_DECISION", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "search", "nextRoute": "/search", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "canon", "nextRoute": "/canon", "status": "BLOCKED_OWNER_DECISION", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "table", "nextRoute": "/promise-table", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "calling", "nextRoute": "/calling-compass", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "book", "nextRoute": "/book", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "lexicon", "nextRoute": "/lexicon", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "testimony", "nextRoute": "/testimony", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "guide", "nextRoute": "/teo-guide", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "ui-elements", "nextRoute": "/embedded-videos", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "teoyube-tables", "nextRoute": "/tables", "status": "PASS", "ownerApproved": false, "ownerApprovalId": null },
-  { "viewId": "roadmap", "nextRoute": "/roadmap", "status": "NOT_APPLICABLE_INTERNAL_ROUTE", "ownerApproved": false, "ownerApprovalId": null }
+  { "viewId": "today", "nextRoute": "/", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "search", "nextRoute": "/search", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "canon", "nextRoute": "/canon", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "table", "nextRoute": "/promise-table", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "calling", "nextRoute": "/calling-compass", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "book", "nextRoute": "/book", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "lexicon", "nextRoute": "/lexicon", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "testimony", "nextRoute": "/testimony", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "guide", "nextRoute": "/teo-guide", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "ui-elements", "nextRoute": "/embedded-videos", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "teoyube-tables", "nextRoute": "/tables", "status": "PASS", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" },
+  { "viewId": "roadmap", "nextRoute": "/roadmap", "status": "NOT_APPLICABLE_INTERNAL_ROUTE", "ownerApproved": true, "ownerApprovalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8" }
 ]

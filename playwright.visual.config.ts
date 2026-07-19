@@ -67,6 +67,14 @@ export default defineConfig({
     {
       name: "full-gate-audit",
       testMatch: /full-gate-audit\.spec\.ts/
+    },
+    {
+      name: "support-route-baseline-capture",
+      testMatch: /support-route-baseline-capture\.spec\.ts/
+    },
+    {
+      name: "support-route-baseline-parity",
+      testMatch: /support-route-baseline-parity\.spec\.ts/
     }
   ]
 });

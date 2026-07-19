@@ -1,0 +1,273 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "page-title-row",
+    "attributes": [
+      [
+        "class",
+        "page-title-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Personalization"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Explainable Session Personalization"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Personalization signals are session-only, sanitized, and user-controllable."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "grid two",
+    "attributes": [
+      [
+        "class",
+        "grid two"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Consent"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Session Personalization"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Current mode: session_only . Raw private text storage, analytics, live AI, and automatic contact remain disabled."
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "button-row",
+    "attributes": [
+      [
+        "class",
+        "button-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Session Only"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Disable"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Clear Signals"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Preview"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Scripture Anchor Preserved"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "true"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Signal count: 0"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "button-row",
+    "attributes": [
+      [
+        "class",
+        "button-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Add Wisdom Signal"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Reset"
+  }
+]

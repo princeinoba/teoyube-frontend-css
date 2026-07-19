@@ -1,0 +1,164 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "min-h-screen bg-gradient-to-b from-emerald-50 via-white to-white px-4 py-10 text-slate-900 sm:px-6 lg:px-8",
+    "attributes": [
+      [
+        "class",
+        "min-h-screen bg-gradient-to-b from-emerald-50 via-white to-white px-4 py-10 text-slate-900 sm:px-6 lg:px-8"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "mx-auto max-w-5xl space-y-6",
+    "attributes": [
+      [
+        "class",
+        "mx-auto max-w-5xl space-y-6"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "rounded-3xl border border-emerald-100 bg-white/80 p-6 shadow-sm shadow-emerald-950/5 sm:p-8",
+    "attributes": [
+      [
+        "class",
+        "rounded-3xl border border-emerald-100 bg-white/80 p-6 shadow-sm shadow-emerald-950/5 sm:p-8"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "text-xs font-semibold uppercase text-emerald-700",
+    "attributes": [
+      [
+        "class",
+        "text-xs font-semibold uppercase text-emerald-700"
+      ]
+    ],
+    "directText": "Teoyube Public Copy"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "mt-3 text-3xl font-semibold text-slate-950 sm:text-4xl",
+    "attributes": [
+      [
+        "class",
+        "mt-3 text-3xl font-semibold text-slate-950 sm:text-4xl"
+      ]
+    ],
+    "directText": "Privacy Notice"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "mt-3 max-w-3xl text-base leading-7 text-slate-600",
+    "attributes": [
+      [
+        "class",
+        "mt-3 max-w-3xl text-base leading-7 text-slate-600"
+      ]
+    ],
+    "directText": "Draft public privacy copy for owner/legal review before any public launch."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel",
+    "attributes": [
+      [
+        "class",
+        "panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Privacy"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Privacy Boundary"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The repaired runtime keeps sensitive personalization in memory only. No localStorage, cookies, IndexedDB, external analytics, database writes, or automatic user contact are required."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel compact-panel",
+    "attributes": [
+      [
+        "class",
+        "panel compact-panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Limitations"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Public Preview Limitations"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "This local app preview is not a production service connection. External media sources, analytics, accounts, payments, database persistence, automatic feedback collection, and live AI remain disabled."
+  }
+]

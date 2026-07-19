@@ -1,6 +1,5 @@
-import { CallingCompassScreenshotPage } from "@/components/productization/Phase112ScreenshotApp";
+import { permanentRedirect } from "next/navigation";
 
 export default function CompassAliasPage() {
-  return <CallingCompassScreenshotPage />;
+  permanentRedirect("/calling-compass");
 }
-

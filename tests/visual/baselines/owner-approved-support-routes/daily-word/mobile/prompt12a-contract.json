@@ -1,0 +1,467 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "page-title-row",
+    "attributes": [
+      [
+        "class",
+        "page-title-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Daily Word"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Today's Formation Path"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Generate a local daily Teoyube word, keep Scripture visible, pray from it, add a reflection, and save session activity."
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Daily Word"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Hadriel"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Majesty"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "activity-list",
+    "attributes": [
+      [
+        "class",
+        "activity-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Scripture"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Psalm 145:5"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Promise Cluster"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Presence & Glory"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Action"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Write the Delay"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Father, root this step in Psalm 145:5. Give humility, wisdom, and courage to respond faithfully without presuming certainty."
+  },
+  {
+    "tag": "span",
+    "id": "",
+    "className": "status-pill",
+    "attributes": [
+      [
+        "class",
+        "status-pill"
+      ]
+    ],
+    "directText": "High confidence - Scripture anchor present"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Explanation"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Why This Was Suggested"
+  },
+  {
+    "tag": "ol",
+    "id": "",
+    "className": "check-list",
+    "attributes": [
+      [
+        "class",
+        "check-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Daily word selected from local Teoyube vocabulary: Hadriel."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Promise cluster matched locally: Presence & Glory."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Scripture anchor preserved: Psalm 145:5."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Prayer and action are generated from local rules and remain devotional, not directive."
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button primary",
+    "attributes": [
+      [
+        "class",
+        "button primary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Generate Today's Journey"
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "grid two",
+    "attributes": [
+      [
+        "class",
+        "grid two"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Guardrails"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Teoyube Guardrails"
+  },
+  {
+    "tag": "ul",
+    "id": "",
+    "className": "check-list",
+    "attributes": [
+      [
+        "class",
+        "check-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Scripture is the highest authority; Teoyube words are aids, not Scripture."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The local engine does not claim divine certainty or say God told the app something."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Major decisions should be tested through prayer, Scripture, wise counsel, fruit, and time."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Testimony is user-recorded only and is never automatically certified as promise fulfillment."
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Limitations"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Local Preview Boundaries"
+  },
+  {
+    "tag": "ul",
+    "id": "",
+    "className": "check-list",
+    "attributes": [
+      [
+        "class",
+        "check-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "No live AI orchestration, analytics, accounts, payments, automatic contact, or database persistence is connected."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Personalization is session-only and explainable; raw private text is not exported or stored in browser persistence."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Calling and prayer language remains devotional, cautious, and Scripture-reviewable."
+  }
+]

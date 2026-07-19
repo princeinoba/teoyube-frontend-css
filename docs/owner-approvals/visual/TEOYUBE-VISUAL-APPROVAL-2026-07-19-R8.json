@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8",
+  "approvalDate": "2026-07-19",
+  "currentCommit": "4c3aaba00b72bdad99ff376a0a23a0718e9dfc7b",
+  "ownerIdentity": "Teoyube Project Owner",
+  "staticRuntimeCanonical": true,
+  "nextRuntimePreviewOnly": true,
+  "prompt12aReports": [
+    "docs/recovery/owner-review/prompt-12a-visual-review.md",
+    "docs/recovery/owner-review/prompt-12a-visual-review.json",
+    "docs/recovery/prompt-12a-remediation-report.md",
+    "docs/recovery/next-preview-parity-gate.md"
+  ],
+  "supportBaselineManifest": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+  "rasterDecisions": [
+    { "id": "V-01", "state": "Today, tablet-landscape", "decision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE" },
+    { "id": "V-02", "state": "Search, listed desktop/tablet/mobile states", "decision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE" },
+    { "id": "V-03", "state": "Canon, desktop-wide", "decision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE" },
+    { "id": "V-04", "state": "Shell mobile sidebar open, tablet-portrait", "decision": "ACCEPT_NONVISUAL_RENDERING_VARIANCE" }
+  ],
+  "approvedArtifacts": [
+    { "decisionGroup": "V-01", "state": "today-tablet-landscape", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-01/today-tablet-landscape.side-by-side.png", "sha256": "d479148420867966adfe99cccf39bac7bf5e6a9454c52759d7e758df7dee1607", "bytes": 1001792 },
+    { "decisionGroup": "V-01", "state": "today-tablet-landscape", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-01/today-tablet-landscape.overlay-difference.png", "sha256": "8b3b8b58beba1577c6e3bd57965794380120d1b563d44cc9fd1bfb98ba727d23", "bytes": 16778 },
+    { "decisionGroup": "V-01", "state": "today-tablet-landscape", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-01/today-tablet-landscape.diff.png", "sha256": "8e45963416b76fdf01df7626a58752f774aed16a81394ce710c41f4868c0691d", "bytes": 16738 },
+    { "decisionGroup": "V-02", "state": "search-desktop-wide", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-desktop-wide.side-by-side.png", "sha256": "f7bcc5c1532fd6e900c7ba98ea2e4230d4cd06fdfc5e7c973d1598123ffd6185", "bytes": 1403202 },
+    { "decisionGroup": "V-02", "state": "search-desktop-wide", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-desktop-wide.overlay-difference.png", "sha256": "f3b4c65ae2d8f4a2a4e160cfa7c01bf0dcdce086a21d97b5edb79ba14a31802e", "bytes": 31504 },
+    { "decisionGroup": "V-02", "state": "search-desktop-wide", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-desktop-wide.diff.png", "sha256": "fe87111fc64fa646bd59d3d9c3f5fb6ce83d8247424d26eb9b5e5f7655205133", "bytes": 30049 },
+    { "decisionGroup": "V-02", "state": "search-desktop-standard", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-desktop-standard.side-by-side.png", "sha256": "1f2d5eb8a1eeca981532dd91a0684ff3c1965b82887aa6a27390f4c2bfd43816", "bytes": 943682 },
+    { "decisionGroup": "V-02", "state": "search-desktop-standard", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-desktop-standard.overlay-difference.png", "sha256": "8ef34afc051b31d356c2abea7d9527b6830c4dcfc3582b1444818cfb0db78510", "bytes": 25578 },
+    { "decisionGroup": "V-02", "state": "search-desktop-standard", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-desktop-standard.diff.png", "sha256": "1a6a6377cf17705a79e905d3ff0b24d403cf37109dc40c740c7258580a4c1d43", "bytes": 24070 },
+    { "decisionGroup": "V-02", "state": "search-tablet-landscape", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-tablet-landscape.side-by-side.png", "sha256": "fa941e4be595a0759427eed6906b8d3b6aa9cf06e370d8f2479e25cf1f070c4f", "bytes": 674153 },
+    { "decisionGroup": "V-02", "state": "search-tablet-landscape", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-tablet-landscape.overlay-difference.png", "sha256": "8bc0873e4ffe24a453ac15e0e0d306c413885de0569fa53faffeac9a0da63427", "bytes": 20826 },
+    { "decisionGroup": "V-02", "state": "search-tablet-landscape", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-tablet-landscape.diff.png", "sha256": "11ff872589db0f1fea7959857803a01eb730805b749dcf52e935fe0e9edf9ce0", "bytes": 19376 },
+    { "decisionGroup": "V-02", "state": "search-tablet-portrait", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-tablet-portrait.side-by-side.png", "sha256": "7ef0939da81dca0ba7e818d5052de8ddc2265d692192561c9b8f7f4ba5792d6e", "bytes": 882073 },
+    { "decisionGroup": "V-02", "state": "search-tablet-portrait", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-tablet-portrait.overlay-difference.png", "sha256": "c4ab6943ac380f55500e95ec6e11e21dfcbc7e62d2a4b58c38c1f0b03cfdf0ee", "bytes": 21309 },
+    { "decisionGroup": "V-02", "state": "search-tablet-portrait", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-tablet-portrait.diff.png", "sha256": "084ef56587110f981d7cd64259cc53f05b09999ec89f21c63aa929a5d97a4db1", "bytes": 19962 },
+    { "decisionGroup": "V-02", "state": "search-mobile", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-mobile.side-by-side.png", "sha256": "0dd13caa208c8a87a4791e3279792c76b600de76e1c8402dfe1bd3706139ea72", "bytes": 293231 },
+    { "decisionGroup": "V-02", "state": "search-mobile", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-mobile.overlay-difference.png", "sha256": "05756e3745873537e605e4f2067f477cf2de166129b61f24765a43168ff793c9", "bytes": 9981 },
+    { "decisionGroup": "V-02", "state": "search-mobile", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-02/search-mobile.diff.png", "sha256": "6a4769ec324347169b42a7a8b94b4cfadf47acd75afa643b8ae267183d0bce61", "bytes": 9416 },
+    { "decisionGroup": "V-03", "state": "canon-desktop-wide", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-03/canon-desktop-wide.side-by-side.png", "sha256": "f971833f4082f23ee982e1d583586adf9c76e6852aa0f66d484ceb6134742ced", "bytes": 1054994 },
+    { "decisionGroup": "V-03", "state": "canon-desktop-wide", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-03/canon-desktop-wide.overlay-difference.png", "sha256": "8db6f887374b7825c63103539358a6ab7b830efe38b696b57f7d371cc5971df2", "bytes": 33031 },
+    { "decisionGroup": "V-03", "state": "canon-desktop-wide", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-03/canon-desktop-wide.diff.png", "sha256": "9ae25d3905974fc4d7b74addd6a447e73f4c818b3a111459a3e4b65a7002ebf0", "bytes": 33494 },
+    { "decisionGroup": "V-04", "state": "shell-tablet-portrait-open", "kind": "side-by-side", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-04/shell-tablet-portrait-open.side-by-side.png", "sha256": "c6275caa24a77d08c9263164f38f1b3c71fbc14b5585e38719d54292aace27dc", "bytes": 78022 },
+    { "decisionGroup": "V-04", "state": "shell-tablet-portrait-open", "kind": "overlay-difference", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-04/shell-tablet-portrait-open.overlay-difference.png", "sha256": "37325599a805de7152b458335a9abae032edaa5dc9a1cf3276ce5f89862d4219", "bytes": 11630 },
+    { "decisionGroup": "V-04", "state": "shell-tablet-portrait-open", "kind": "diff", "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-04/shell-tablet-portrait-open.diff.png", "sha256": "8649d50da19eb7d0348f594c5b67801918991dbe07aca144b8610b17051793ad", "bytes": 13454 }
+  ],
+  "supportRouteDecisions": [
+    { "route": "/settings", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/privacy", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/consent", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/terms", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/profile", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/daily-word", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/dashboard", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/explore", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/personalization", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/promise-search", "decision": "APPROVE_CURRENT_NEXT_PREVIEW_AS_INITIAL_SOURCE_OF_TRUTH" },
+    { "route": "/graph", "decision": "INTERNAL_ONLY" },
+    { "route": "/compass", "decision": "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE", "canonicalTarget": "/calling-compass" },
+    { "route": "/roadmap", "decision": "OWNER_ONLY" }
+  ],
+  "explicitProhibitions": [
+    "increase global raster tolerances",
+    "replace or regenerate immutable static baselines",
+    "ignore changed page regions",
+    "approve a future visual difference",
+    "change a stylesheet, class, image, icon, hero, card, rail, drawer, animation, breakpoint, or page composition",
+    "perform runtime cutover",
+    "treat a build result as visual approval"
+  ]
+}

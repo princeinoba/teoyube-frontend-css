@@ -1,0 +1,164 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "min-h-screen bg-gradient-to-b from-slate-50 via-white to-white px-4 py-10 text-slate-900 sm:px-6 lg:px-8",
+    "attributes": [
+      [
+        "class",
+        "min-h-screen bg-gradient-to-b from-slate-50 via-white to-white px-4 py-10 text-slate-900 sm:px-6 lg:px-8"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "mx-auto max-w-5xl space-y-6",
+    "attributes": [
+      [
+        "class",
+        "mx-auto max-w-5xl space-y-6"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-sm sm:p-8",
+    "attributes": [
+      [
+        "class",
+        "rounded-3xl border border-slate-200 bg-white/85 p-6 shadow-sm sm:p-8"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "text-xs font-semibold uppercase text-slate-600",
+    "attributes": [
+      [
+        "class",
+        "text-xs font-semibold uppercase text-slate-600"
+      ]
+    ],
+    "directText": "Teoyube Public Copy"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "mt-3 text-3xl font-semibold text-slate-950 sm:text-4xl",
+    "attributes": [
+      [
+        "class",
+        "mt-3 text-3xl font-semibold text-slate-950 sm:text-4xl"
+      ]
+    ],
+    "directText": "Terms of Use"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "mt-3 max-w-3xl text-base leading-7 text-slate-600",
+    "attributes": [
+      [
+        "class",
+        "mt-3 max-w-3xl text-base leading-7 text-slate-600"
+      ]
+    ],
+    "directText": "Draft public terms copy for owner/legal review before any public launch."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel",
+    "attributes": [
+      [
+        "class",
+        "panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Terms"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Faithful Use Boundary"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Teoyube words and recommendations are devotional aids, not Scripture and not claims of divine certainty. Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel compact-panel",
+    "attributes": [
+      [
+        "class",
+        "panel compact-panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Limitations"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Public Preview Limitations"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "This local app preview is not a production service connection. External media sources, analytics, accounts, payments, database persistence, automatic feedback collection, and live AI remain disabled."
+  }
+]

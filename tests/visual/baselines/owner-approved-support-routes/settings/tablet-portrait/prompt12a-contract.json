@@ -1,0 +1,841 @@
+[
+  {
+    "tag": "main",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "page-title-row",
+    "attributes": [
+      [
+        "class",
+        "page-title-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Settings"
+  },
+  {
+    "tag": "h1",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Local App Settings and Service Status"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Review disabled services, route readiness, consent controls, and safety boundaries."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "grid two",
+    "attributes": [
+      [
+        "class",
+        "grid two"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Guardrails"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Teoyube Guardrails"
+  },
+  {
+    "tag": "ul",
+    "id": "",
+    "className": "check-list",
+    "attributes": [
+      [
+        "class",
+        "check-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Scripture is the highest authority; Teoyube words are aids, not Scripture."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The local engine does not claim divine certainty or say God told the app something."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Major decisions should be tested through prayer, Scripture, wise counsel, fruit, and time."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Testimony is user-recorded only and is never automatically certified as promise fulfillment."
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Consent"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Session Personalization"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "muted",
+    "attributes": [
+      [
+        "class",
+        "muted"
+      ]
+    ],
+    "directText": "Current mode: session_only . Raw private text storage, analytics, live AI, and automatic contact remain disabled."
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "button-row",
+    "attributes": [
+      [
+        "class",
+        "button-row"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Session Only"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Disable"
+  },
+  {
+    "tag": "button",
+    "id": "",
+    "className": "button secondary",
+    "attributes": [
+      [
+        "class",
+        "button secondary"
+      ],
+      [
+        "type",
+        "button"
+      ]
+    ],
+    "directText": "Clear Signals"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "card",
+    "attributes": [
+      [
+        "class",
+        "card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "eyebrow",
+    "attributes": [
+      [
+        "class",
+        "eyebrow"
+      ]
+    ],
+    "directText": "Feedback"
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "gold",
+    "attributes": [
+      [
+        "class",
+        "gold"
+      ]
+    ],
+    "directText": "Manual Feedback Only"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Feedback is not sent, stored, or automatically collected. The local app can prepare a sanitized note for user-controlled review in a later approved workflow."
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "notice",
+    "attributes": [
+      [
+        "class",
+        "notice"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Fallback ready"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Automatic feedback intake and user contact remain disabled."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel",
+    "attributes": [
+      [
+        "class",
+        "panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Disabled Services"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "External services required: false"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Database persistence enabled: false"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Analytics enabled: false"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Live AI orchestration enabled: false"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Raw private text storage enabled: false"
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel",
+    "attributes": [
+      [
+        "class",
+        "panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Guardrails"
+  },
+  {
+    "tag": "ul",
+    "id": "",
+    "className": "check-list",
+    "attributes": [
+      [
+        "class",
+        "check-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Scripture is the highest authority; Teoyube words are aids, not Scripture."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "The local engine does not claim divine certainty or say God told the app something."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Major decisions should be tested through prayer, Scripture, wise counsel, fruit, and time."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Testimony is user-recorded only and is never automatically certified as promise fulfillment."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Personalization is session-only/local preview unless the user explicitly enables more later."
+  },
+  {
+    "tag": "li",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Raw private text storage, analytics, database persistence, automatic contact, and external AI calls are disabled."
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel",
+    "attributes": [
+      [
+        "class",
+        "panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Route Inventory"
+  },
+  {
+    "tag": "div",
+    "id": "",
+    "className": "activity-list",
+    "attributes": [
+      [
+        "class",
+        "activity-list"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Today"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#today - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Roadmap"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#roadmap - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "TeoyubeSearch"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#search - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Canon"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#canon - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Promise Table"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#table - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Calling Compass"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#calling - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Book of the Saint"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#book - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Lexicon"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#lexicon - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Testimony"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#testimony - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Teo Guide"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#guide - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Embedded Videos"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#ui-elements - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "article",
+    "id": "",
+    "className": "mini-card",
+    "attributes": [
+      [
+        "class",
+        "mini-card"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "strong",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Tables"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "#teoyube-tables - local data-access, static app state, and Phase 11.2 adapters"
+  },
+  {
+    "tag": "section",
+    "id": "",
+    "className": "panel",
+    "attributes": [
+      [
+        "class",
+        "panel"
+      ]
+    ],
+    "directText": ""
+  },
+  {
+    "tag": "h2",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "Button Inventory"
+  },
+  {
+    "tag": "p",
+    "id": "",
+    "className": "",
+    "attributes": [],
+    "directText": "15 visible/global actions mapped for Phase 11.2."
+  },
+  {
+    "tag": "pre",
+    "id": "",
+    "className": "export-box",
+    "attributes": [
+      [
+        "class",
+        "export-box"
+      ]
+    ],
+    "directText": "[ { \"page\": \"Global\", \"label\": \"Guardrails\", \"handler\": \"openGuardrailsModal\", \"expectedBehavior\": \"Open safety and theology boundary modal.\", \"dataSource\": \"theology guardrails/local copy\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"No external service required.\" }, { \"page\": \"Global\", \"label\": \"Generate Today's Journey\", \"handler\": \"generateTodayJourney\", \"expectedBehavior\": \"Create a local daily word, promise, Scripture, prayer, and action step.\", \"dataSource\": \"data-access/local TIG-compatible adapter\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Uses Scripture fallback when anchors are missing.\" }, { \"page\": \"Today\", \"label\": \"Start Today's Journey\", \"handler\": \"startTodayJourney\", \"expectedBehavior\": \"Select today's local journey state and scroll to the assignment.\", \"dataSource\": \"generateTodayJourney\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Shows local status toast.\" }, { \"page\": \"Today\", \"label\": \"View My Journey\", \"handler\": \"navigateBook\", \"expectedBehavior\": \"Navigate to Book of the Saint.\", \"dataSource\": \"session activity/book entries\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Falls back to Book view.\" }, { \"page\": \"TeoyubeSearch\", \"label\": \"Search Promise\", \"handler\": \"runTeoyubeSearch\", \"expectedBehavior\": \"Search local words, promises, Scripture, and journeys.\", \"dataSource\": \"data-access search\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Shows suggestions on empty result.\" }, { \"page\": \"TeoyubeSearch\", \"label\": \"Add to Promise Table\", \"handler\": \"createPromiseTableRowFromSearch\", \"expectedBehavior\": \"Add a session-only promise row.\", \"dataSource\": \"promise clusters/search result\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Testimony remains user-recorded only.\" }, { \"page\": \"Canon\", \"label\": \"Create New Journey\", \"handler\": \"createLocalJourneyPreview\", \"expectedBehavior\": \"Prepare a local journey preview from selected canon item.\", \"dataSource\": \"journey seeds/canon search\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"No database write.\" }, { \"page\": \"Promise Table\", \"label\": \"Watch Video\", \"handler\": \"showLocalMediaNotice\", \"expectedBehavior\": \"Show source-not-connected status.\", \"dataSource\": \"local media records\", \"implemented\": true, \"disabled\": true, \"fallbackBehavior\": \"External embeds disabled.\" }, { \"page\": \"Calling Compass\", \"label\": \"Ask the Assistant\", \"handler\": \"runCallingCompassPreview\", \"expectedBehavior\": \"Run local cautious calling preview.\", \"dataSource\": \"words/promises/scripture/action steps\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Uses cautious language.\" }, { \"page\": \"Book of the Saint\", \"label\": \"Export Journal\", \"handler\": \"exportSessionJournal\", \"expectedBehavior\": \"Export safe JSON/Markdown from session entries.\", \"dataSource\": \"session book entries\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"No raw private hidden persistence.\" }, { \"page\": \"Lexicon\", \"label\": \"Pray Framework\", \"handler\": \"openWordPrayerFramework\", \"expectedBehavior\": \"Open word detail prayer framework.\", \"dataSource\": \"core vocabulary\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Shows Scripture anchor fallback.\" }, { \"page\": \"Testimony\", \"label\": \"Save Testimony\", \"handler\": \"saveSessionTestimony\", \"expectedBehavior\": \"Save local user-recorded testimony draft.\", \"dataSource\": \"session testimony list\", \"implemented\": true, \"disabled\": false, \"fallbackBehavior\": \"Never auto-certifies fulfillment.\" } ]"
+  }
+]

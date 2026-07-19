@@ -48,11 +48,13 @@ export interface NextRouteStatus {
   nextRoute: string;
   status:
     | "PASS"
+    | "OWNER_APPROVED_SOURCE_BASELINE"
     | "BLOCKED_VISUAL_DIFFERENCE"
     | "BLOCKED_MISSING_STATIC_COUNTERPART"
     | "BLOCKED_FUNCTIONAL_DIFFERENCE"
     | "BLOCKED_OWNER_DECISION"
-    | "NOT_APPLICABLE_INTERNAL_ROUTE";
+    | "NOT_APPLICABLE_INTERNAL_ROUTE"
+    | "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE";
   ownerApproved: boolean;
   ownerApprovalId: string | null;
 }
@@ -123,11 +125,13 @@ export function assertParityMatrixIntegrity(): void {
   }
   const allowedStatuses = new Set<NextRouteStatus["status"]>([
     "PASS",
+    "OWNER_APPROVED_SOURCE_BASELINE",
     "BLOCKED_VISUAL_DIFFERENCE",
     "BLOCKED_MISSING_STATIC_COUNTERPART",
     "BLOCKED_FUNCTIONAL_DIFFERENCE",
     "BLOCKED_OWNER_DECISION",
-    "NOT_APPLICABLE_INTERNAL_ROUTE"
+    "NOT_APPLICABLE_INTERNAL_ROUTE",
+    "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE"
   ]);
   for (const status of nextRouteStatuses) {
     if (!allowedStatuses.has(status.status)) {
