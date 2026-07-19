@@ -7,6 +7,13 @@ const nextConfig = {
   },
   typescript: {
     tsconfigPath: "./tsconfig.next.json"
+  },
+  async rewrites() {
+    return [
+      { source: "/styles.css", destination: "/approved-static/styles.css" },
+      { source: "/styles/:path*", destination: "/approved-static/styles/:path*" },
+      { source: "/public/:path*", destination: "/:path*" }
+    ];
   }
 };
 

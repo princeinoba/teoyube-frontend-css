@@ -58,6 +58,9 @@ jobs:
       - name: Exercise the owner-gated Next comparison runner
         run: npm run visual:parity:next
 
+      - name: Enforce approved global shell parity
+        run: npm run visual:parity:shell
+
       - name: Reproduce the immutable static visual contract
         env:
           TEOYUBE_ALLOW_CROSS_PLATFORM_STATIC: "1"

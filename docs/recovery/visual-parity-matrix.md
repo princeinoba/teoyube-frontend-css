@@ -4,6 +4,12 @@
 
 The original static runtime remains canonical. Every Next route is `NOT VERIFIED`; a successful build does not change this status. Moving a cell to `CANDIDATE` activates blocking screenshot, ordered DOM, ID/class, parent path, asset/background, computed geometry, visible-label, control/focus, responsive-navigation, and functional comparisons. Moving a route to `VERIFIED` additionally requires `ownerApproved: true` and a current owner approval ID in `tests/visual/parity/next-route-status.json`.
 
+The global Next shell is a separate `CANDIDATE — AWAITING OWNER REVIEW`. `npm run visual:parity:shell` compares the approved sidebar, top bar, mobile navigation, DOM/classes, asset URLs, geometry, focus order, keyboard behavior, and responsive state at all six required viewports. Side-by-side and overlay evidence is written to `.tmp/visual-parity/shell-owner-review/`. This shell candidate does not mark any feature route or matrix cell verified.
+
+The shell contract scopes its three direct shell controls to the semantic parent `body > div.app-shell`. Next App Router emits one hidden, empty streaming sibling before the shell; it has no classes, labels, geometry, focusability, or rendered pixels and is not part of the approved shell. No shell descendant or visible region is excluded.
+
+Shell element screenshots hide only `#appMain` children other than `.topbar` and the static-only `#phase113Shell` feature-infrastructure overlay in both runtimes. Those elements are feature-page or legacy infrastructure content outside this shell phase and otherwise paint above the header or Saint card before their migration prompts. The harness disables the sidebar transition symmetrically while capturing deterministic open-drawer evidence. No pixel inside the sidebar, header, navigation, mobile controls, backdrop, or Saint card is masked.
+
 Candidate files are written only under `.tmp/visual-parity/`. Successful static reproducibility runs delete their temporary candidates. Failed runs retain candidate, diff, side-by-side, overlay-difference, report, and trace artifacts for diagnosis. Nothing writes to `tests/visual/baselines/static-runtime/`.
 
 ## Rendering tolerance

@@ -35,6 +35,10 @@ export default defineConfig({
     {
       name: "next-candidate-contract",
       testMatch: /next-preview\.spec\.ts/
+    },
+    {
+      name: "shell-parity",
+      testMatch: /shell-parity\.spec\.ts/
     }
   ]
 });

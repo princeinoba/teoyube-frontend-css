@@ -13,8 +13,8 @@ if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
   process.exit(2);
 }
-if (!new Set(["static", "next", "status"]).has(mode)) {
-  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status>");
+if (!new Set(["static", "next", "status", "shell"]).has(mode)) {
+  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell>");
   process.exit(2);
 }
 
@@ -78,13 +78,17 @@ async function main() {
       servers.push(staticServer);
       await waitForUrl(staticServer, "http://127.0.0.1:4173/index.html");
     }
-    if (mode === "next") {
+    if (mode === "next" || mode === "shell") {
       const nextServer = startNextServer();
       servers.push(nextServer);
       await waitForUrl(nextServer, "http://127.0.0.1:3100/api/health");
     }
 
-    const project = mode === "static" ? "static-reproducibility" : "next-candidate-contract";
+    const project = mode === "static"
+      ? "static-reproducibility"
+      : mode === "shell"
+        ? "shell-parity"
+        : "next-candidate-contract";
     const tests = spawn(
       process.execPath,
       [playwrightCli, "test", "--config=playwright.visual.config.ts", `--project=${project}`],
