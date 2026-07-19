@@ -63,6 +63,10 @@ export default defineConfig({
     {
       name: "remaining-retained-parity",
       testMatch: /remaining-retained-parity\.spec\.ts/
+    },
+    {
+      name: "full-gate-audit",
+      testMatch: /full-gate-audit\.spec\.ts/
     }
   ]
 });
