@@ -47,6 +47,10 @@ export default defineConfig({
     {
       name: "search-parity",
       testMatch: /search-parity\.spec\.ts/
+    },
+    {
+      name: "canon-promise-parity",
+      testMatch: /canon-promise-parity\.spec\.ts/
     }
   ]
 });

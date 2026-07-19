@@ -171,31 +171,52 @@ export async function captureRichContract(page: Page, rootSelector: string): Pro
     const elements = [...new Set(composedRoots.flatMap((element) => [element, ...element.querySelectorAll("*")]))];
     const normalize = (value: unknown) => String(value || "").replace(/\s+/g, " ").trim();
     const round = (value: number) => Math.round(value * 10) / 10;
-    const visible = (element: Element) => {
+    const styleCache = new Map<Element, CSSStyleDeclaration>();
+    const rectCache = new Map<Element, DOMRect>();
+    const visibilityCache = new Map<Element, boolean>();
+    const styleFor = (element: Element) => {
+      const cached = styleCache.get(element);
+      if (cached) return cached;
       const style = getComputedStyle(element);
-      const rect = element.getBoundingClientRect();
-      return style.display !== "none" && style.visibility !== "hidden" && rect.width > 0 && rect.height > 0;
+      styleCache.set(element, style);
+      return style;
     };
+    const rectFor = (element: Element) => {
+      const cached = rectCache.get(element);
+      if (cached) return cached;
+      const rect = element.getBoundingClientRect();
+      rectCache.set(element, rect);
+      return rect;
+    };
+    const visible = (element: Element) => {
+      const cached = visibilityCache.get(element);
+      if (cached !== undefined) return cached;
+      const style = styleFor(element);
+      const rect = rectFor(element);
+      const result = style.display !== "none" && style.visibility !== "hidden" && rect.width > 0 && rect.height > 0;
+      visibilityCache.set(element, result);
+      return result;
+    };
+    const pathCache = new Map<Element, string>();
     const elementPath = (element: Element | null): string => {
       if (!element) return "";
-      const parts: string[] = [];
-      let current: Element | null = element;
-      while (current && current !== document.documentElement) {
-        let part = current.tagName.toLowerCase();
-        if (current.id) {
-          part += `#${current.id}`;
-          parts.unshift(part);
-          break;
-        }
-        const parent = current.parentElement;
-        if (parent) {
-          const sameTag = [...parent.children].filter((child) => child.tagName === current?.tagName);
-          if (sameTag.length > 1) part += `:nth-of-type(${sameTag.indexOf(current) + 1})`;
-        }
-        parts.unshift(part);
-        current = parent;
+      const cached = pathCache.get(element);
+      if (cached !== undefined) return cached;
+      let part = element.tagName.toLowerCase();
+      if (element.id) {
+        const result = `${part}#${element.id}`;
+        pathCache.set(element, result);
+        return result;
       }
-      return parts.join(" > ");
+      const parent = element.parentElement;
+      if (parent) {
+        const sameTag = [...parent.children].filter((child) => child.tagName === element.tagName);
+        if (sameTag.length > 1) part += `:nth-of-type(${sameTag.indexOf(element) + 1})`;
+      }
+      const parentPath = parent && parent !== document.documentElement ? elementPath(parent) : "";
+      const result = parentPath ? `${parentPath} > ${part}` : part;
+      pathCache.set(element, result);
+      return result;
     };
     const normalizeUrl = (value: string) => {
       if (!value || value === "none") return "";
@@ -209,7 +230,7 @@ export async function captureRichContract(page: Page, rootSelector: string): Pro
       });
     };
     const geometry = (element: Element) => {
-      const rect = element.getBoundingClientRect();
+      const rect = rectFor(element);
       return { x: round(rect.x), y: round(rect.y), width: round(rect.width), height: round(rect.height) };
     };
     const controlSelector =
@@ -227,7 +248,7 @@ export async function captureRichContract(page: Page, rootSelector: string): Pro
       /^(data-)?(timestamp|generated-at)$/i.test(name);
     const assetRows: Array<Record<string, unknown>> = [];
     for (const element of elements) {
-      const style = getComputedStyle(element);
+      const style = styleFor(element);
       const attributes = ["src", "srcset", "poster", "href", "xlink:href"]
         .map((name) => [name, element.getAttribute(name) || ""] as const)
         .filter(([, value]) => value && /\.(png|jpe?g|webp|gif|svg|mp4|webm|mov|ico)(\?|#|$)/i.test(value));
