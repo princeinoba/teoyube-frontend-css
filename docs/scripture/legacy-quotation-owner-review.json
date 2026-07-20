@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "status": "BLOCKED_OWNER_CONTENT_DECISION",
+  "ownerCorpusDecisionId": "TEOYUBE-OWNER-SCRIPTURE-CORPUS-2026-07-20-WEBP",
+  "authorizedStartingCommit": "792b37a5995bbf4621edcac2e3da6e11710612a5",
+  "auditedAt": "2026-07-20",
+  "corpusEvidence": {
+    "corpusId": "engwebp",
+    "translation": "World English Bible",
+    "edition": "Protestant Edition",
+    "language": "en-US",
+    "canon": "66-book Protestant Old and New Testaments",
+    "archive": "owner-input/scripture/engwebp_usfm.zip",
+    "archiveSha256": "4253589697DC6B5E92695655F2F28792D50E7BE7B9C8E212AF4F4BD18E866C3B",
+    "archiveBytes": 2907330
+  },
+  "classificationDefinitions": {
+    "EXACT_WEB_MATCH": "The displayed quotation matches the owner-selected WEB source text exactly for the stated span.",
+    "REFERENCE_ONLY_NO_QUOTE": "A Scripture reference is displayed without presenting associated prose as verse text.",
+    "LEGACY_NON_WEB_WORDING": "The prose is presented or stored as Scripture-associated wording but does not exactly match the selected WEB passage.",
+    "UNRESOLVED_REFERENCE": "The claimed reference cannot be mapped to a source passage without guessing.",
+    "NOT_SCRIPTURE_QUOTATION": "The prose is prayer, interpretation, application, or devotional language and must not be treated as verse text."
+  },
+  "summary": {
+    "visibleProductRecords": 17,
+    "visibleExactWebMatch": 0,
+    "visibleLegacyNonWebWording": 17,
+    "visibleUnresolvedReference": 0,
+    "nonVisibleLegacySourceRecords": 20,
+    "notScriptureQuotationRecords": 5,
+    "prompt15aBlocked": true,
+    "prompt16Unlocked": false
+  },
+  "visibleProductRecords": [
+    {
+      "id": "UI-TODAY-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Psalm 121:7",
+      "currentText": "The Lord will keep you from all harm; He will watch over your life.",
+      "exactWebText": "The LORD will keep you from all evil. He will keep your soul.",
+      "routes": ["static:#today", "next:/"],
+      "states": ["default"],
+      "selector": ".daily-inspiration-card blockquote",
+      "sourceLocations": [
+        "index.html:100",
+        "src/app/_today/ApprovedTodayView.tsx:276"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/today.png"
+    },
+    {
+      "id": "UI-CANON-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Ephesians 1:18",
+      "currentText": "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.",
+      "exactWebText": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "routes": ["static:#canon", "next:/canon"],
+      "states": ["default"],
+      "selector": ".canon-profile-widget blockquote",
+      "sourceLocations": [
+        "app.js:6557",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/canon.png"
+    },
+    {
+      "id": "UI-CALLING-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Ephesians 1:18",
+      "currentText": "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.",
+      "exactWebText": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "routes": ["static:#calling", "next:/calling-compass"],
+      "states": ["default"],
+      "selector": ".calling-daily-inspiration p",
+      "sourceLocations": [
+        "index.html:838",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/calling.png"
+    },
+    {
+      "id": "UI-BOOK-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Proverbs 3:5-6",
+      "currentText": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to Him, and He will make your paths straight.",
+      "exactWebText": "Trust in the LORD with all your heart, and don’t lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.",
+      "routes": ["static:#book", "next:/book"],
+      "states": ["default"],
+      "selector": ".book-encouragement-card p",
+      "sourceLocations": [
+        "index.html:1112",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/book.png"
+    },
+    {
+      "id": "UI-BOOK-002",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Psalm 77:11",
+      "currentText": "I will remember the deeds of the Lord; yes, I will remember your miracles of long ago.",
+      "exactWebText": "I will remember the LORD’s deeds; for I will remember your wonders of old.",
+      "routes": ["static:#book", "next:/book"],
+      "states": ["default"],
+      "selector": ".book-journey-scripture p",
+      "sourceLocations": [
+        "index.html:1196",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/book.png"
+    },
+    {
+      "id": "UI-BOOK-003",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Luke 16:10",
+      "currentText": "Stay faithful in the little, God will entrust you with much.",
+      "exactWebText": "He who is faithful in a very little is faithful also in much. He who is dishonest in a very little is also dishonest in much.",
+      "routes": ["static:#book", "next:/book"],
+      "states": ["default"],
+      "selector": ".book-lantern-card h4",
+      "sourceLocations": [
+        "index.html:1212",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/book.png"
+    },
+    {
+      "id": "UI-LEXICON-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Colossians 3:16",
+      "currentText": "Let the word of Christ dwell in you richly in all wisdom.",
+      "exactWebText": "Let the word of Christ dwell in you richly; in all wisdom teaching and admonishing one another with psalms, hymns, and spiritual songs, singing with grace in your heart to the Lord.",
+      "routes": ["static:#lexicon", "next:/lexicon"],
+      "states": ["default"],
+      "selector": ".lexicon-inspiration-card p:not(.eyebrow)",
+      "sourceLocations": [
+        "index.html:1259",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/lexicon.png"
+    },
+    {
+      "id": "UI-LEXICON-002",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Proverbs 9:10",
+      "currentText": "The fear of the Lord is the beginning of wisdom.",
+      "exactWebText": "The fear of the LORD is the beginning of wisdom. The knowledge of the Holy One is understanding.",
+      "routes": ["static:#lexicon", "next:/lexicon"],
+      "states": ["default"],
+      "selector": ".lexicon-scripture-art p",
+      "sourceLocations": [
+        "index.html:1318",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/lexicon.png"
+    },
+    {
+      "id": "UI-GUIDE-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Psalm 119:105",
+      "currentText": "Your word is a lamp to my feet and a light to my path.",
+      "exactWebText": "Your word is a lamp to my feet, and a light for my path.",
+      "routes": ["static:#guide", "next:/teo-guide"],
+      "states": ["default"],
+      "selector": ".guide-wisdom-banner p",
+      "sourceLocations": [
+        "index.html:1507",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/guide.png"
+    },
+    {
+      "id": "UI-PROMISE-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Ephesians 1:18",
+      "currentText": "The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,",
+      "exactWebText": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "routes": ["static:#table", "static:#teoyube-tables", "next:/promise-table", "next:/tables"],
+      "states": ["api-success", "local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["scripts/seedDB.js:6-9", "app.js:590"],
+      "beforeEvidence": [
+        "tests/visual/baselines/static-runtime/desktop-wide/table.png",
+        "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+      ]
+    },
+    {
+      "id": "UI-PROMISE-002",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:1",
+      "currentText": "We then, as workers together with him, beseech you also that ye receive not the grace of God in vain.",
+      "exactWebText": "Working together, we entreat also that you do not receive the grace of God in vain.",
+      "routes": ["static:#table", "static:#teoyube-tables", "next:/promise-table", "next:/tables"],
+      "states": ["api-success", "local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["scripts/seedDB.js:17-20", "app.js:596"],
+      "beforeEvidence": [
+        "tests/visual/baselines/static-runtime/desktop-wide/table.png",
+        "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+      ]
+    },
+    {
+      "id": "UI-PROMISE-003",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:2",
+      "currentText": "(For he saith, I have heard thee in a time accepted, and in the day of salvation have I succored thee: behold, now is the day of salvation.)",
+      "exactWebText": "For he says, “At an acceptable time I listened to you. In a day of salvation I helped you.” Behold, now is the acceptable time. Behold, now is the day of salvation.",
+      "routes": ["static:#table", "static:#teoyube-tables", "next:/promise-table", "next:/tables"],
+      "states": ["api-success", "local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["scripts/seedDB.js:27-32", "app.js:603"],
+      "beforeEvidence": [
+        "tests/visual/baselines/static-runtime/desktop-wide/table.png",
+        "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+      ]
+    },
+    {
+      "id": "UI-PROMISE-004",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:3",
+      "currentText": "Giving no offense in any thing, that the mininstry be not blamed:",
+      "exactWebText": "We give no occasion of stumbling in anything, that our service may not be blamed,",
+      "routes": ["static:#table", "static:#teoyube-tables"],
+      "states": ["local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["app.js:609"],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+    },
+    {
+      "id": "UI-PROMISE-005",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:4",
+      "currentText": "But in all things approving ourselves as the misnisters of God, in much patience, in afflictions, in necessities, in distresses,",
+      "exactWebText": "but in everything commending ourselves as servants of God: in great endurance, in afflictions, in hardships, in distresses,",
+      "routes": ["static:#table", "static:#teoyube-tables"],
+      "states": ["local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["app.js:616"],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+    },
+    {
+      "id": "UI-PROMISE-006",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:5",
+      "currentText": "In stripes, in imprisonments, in tum-ults, in labours, in watchings, in fastings,",
+      "exactWebText": "in beatings, in imprisonments, in riots, in labors, in watchings, in fastings,",
+      "routes": ["static:#table", "static:#teoyube-tables"],
+      "states": ["local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["app.js:622"],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+    },
+    {
+      "id": "UI-PROMISE-007",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:6",
+      "currentText": "By pureness, by knowledge, by long-suffering, by kindness, by the Holy Ghost, by love unfeigned,",
+      "exactWebText": "in pureness, in knowledge, in perseverance, in kindness, in the Holy Spirit, in sincere love,",
+      "routes": ["static:#table", "static:#teoyube-tables"],
+      "states": ["local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["app.js:628"],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+    },
+    {
+      "id": "UI-PROMISE-008",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:7",
+      "currentText": "By the word of truth, by the power of God, by the armour of righteousness on the right hand and on the left,",
+      "exactWebText": "in the word of truth, in the power of God, by the armor of righteousness on the right hand and on the left,",
+      "routes": ["static:#table", "static:#teoyube-tables"],
+      "states": ["local-fallback", "expanded-row"],
+      "selectors": [".promise-search-item p", ".table-detail-copy p"],
+      "sourceLocations": ["app.js:635"],
+      "beforeEvidence": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png"
+    }
+  ],
+  "nonVisibleLegacySourceRecords": [
+    {
+      "id": "LEGACY-CLIENT-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Ephesians 1:18",
+      "sourceLocation": "app.js:644",
+      "currentText": "The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,",
+      "exactWebText": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-002",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:1",
+      "sourceLocation": "app.js:651",
+      "currentText": "We then, as workers together with him, beseech you also that ye receive not the grace of God in vain.",
+      "exactWebText": "Working together, we entreat also that you do not receive the grace of God in vain.",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-003",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:2",
+      "sourceLocation": "app.js:659",
+      "currentText": "(For he saith, I have heard thee in a time accepted, and in the day of salvation have I succored thee: behold, now is the day of salvation.)",
+      "exactWebText": "For he says, “At an acceptable time I listened to you. In a day of salvation I helped you.” Behold, now is the acceptable time. Behold, now is the day of salvation.",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-004",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:3",
+      "sourceLocation": "app.js:666",
+      "currentText": "Giving no offense in any thing, that the mininstry be not blamed:",
+      "exactWebText": "We give no occasion of stumbling in anything, that our service may not be blamed,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-005",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:4",
+      "sourceLocation": "app.js:674",
+      "currentText": "But in all things approving ourselves as the misnisters of God, in much patience, in afflictions, in necessities, in distresses,",
+      "exactWebText": "but in everything commending ourselves as servants of God: in great endurance, in afflictions, in hardships, in distresses,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-006",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:5",
+      "sourceLocation": "app.js:680",
+      "currentText": "In stripes, in imprisonments, in tum-ults, in labours, in watchings, in fastings,",
+      "exactWebText": "in beatings, in imprisonments, in riots, in labors, in watchings, in fastings,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-007",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:6",
+      "sourceLocation": "app.js:686",
+      "currentText": "By pureness, by knowledge, by long-suffering, by kindness, by the Holy Ghost, by love unfeigned,",
+      "exactWebText": "in pureness, in knowledge, in perseverance, in kindness, in the Holy Spirit, in sincere love,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-008",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:7",
+      "sourceLocation": "app.js:692",
+      "currentText": "By the word of truth, by the power of God, by the armour of righteousness on the right hand and on the left,",
+      "exactWebText": "in the word of truth, in the power of God, by the armor of righteousness on the right hand and on the left,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-009",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:8",
+      "sourceLocation": "app.js:698",
+      "currentText": "By honour and dishonour, by evil report and good report: as deceivers, and yet true;",
+      "exactWebText": "by glory and dishonor, by evil report and good report, as deceivers and yet true,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-010",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:9",
+      "sourceLocation": "app.js:704",
+      "currentText": "As unknown, and yet wellknown; as dying, and behold, we live; as chastened, and not killed,",
+      "exactWebText": "as unknown and yet well known, as dying and behold—we live, as punished and not killed,",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-011",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:10",
+      "sourceLocation": "app.js:710",
+      "currentText": "As sorrowful, yet always rejoicing; as poor, yet making many rich; as having nothing, and yet possessing all things.",
+      "exactWebText": "as sorrowful yet always rejoicing, as poor yet making many rich, as having nothing and yet possessing all things.",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-012",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:11",
+      "sourceLocation": "app.js:716",
+      "currentText": "O ye Prince, our mouth is open unto you, our heart is enlarged.",
+      "exactWebText": "Our mouth is open to you, Corinthians. Our heart is enlarged.",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-013",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:13",
+      "sourceLocation": "app.js:722",
+      "currentText": "Now for a recompense in the same, (I speak as unto my children,) be ye also enlarged.",
+      "exactWebText": "Now in return—I speak as to my children—you also open your hearts.",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-014",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:14",
+      "sourceLocation": "app.js:728",
+      "currentText": "Be ye not unequally yoked together with believers: for what fellowship hath righteousness with unrighteouness? and what communion hath light with darkness?",
+      "exactWebText": "Don’t be unequally yoked with unbelievers, for what fellowship do righteousness and iniquity have? Or what fellowship does light have with darkness?",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-CLIENT-015",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "2 Corinthians 6:18",
+      "sourceLocation": "app.js:735",
+      "currentText": "And will be a Father unto you, and ye shall be my sons and daughters, saith the Lord Almighty.",
+      "exactWebText": "I will be to you a Father. You will be to me sons and daughters,’ says the Lord Almighty.”",
+      "visibility": "unreachable_after_unconditional_return"
+    },
+    {
+      "id": "LEGACY-TIG-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Romans 8:28",
+      "sourceLocation": "src/lib/tig/seed/scriptures.seed.ts:34",
+      "currentText": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+      "exactWebText": "We know that all things work together for good for those who love God, for those who are called according to his purpose.",
+      "visibility": "blocked_legacy_seed_internal_or_development_only"
+    },
+    {
+      "id": "LEGACY-TIG-002",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Isaiah 40:31",
+      "sourceLocation": "src/lib/tig/seed/scriptures.seed.ts:78",
+      "currentText": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+      "exactWebText": "but those who wait for the LORD will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint.",
+      "visibility": "blocked_legacy_seed_internal_or_development_only"
+    },
+    {
+      "id": "LEGACY-TIG-003",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Joshua 1:9",
+      "sourceLocation": "src/lib/tig/seed/scriptures.seed.ts:122",
+      "currentText": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.",
+      "exactWebText": "Haven’t I commanded you? Be strong and courageous. Don’t be afraid. Don’t be dismayed, for the LORD your God is with you wherever you go.”",
+      "visibility": "blocked_legacy_seed_internal_or_development_only"
+    },
+    {
+      "id": "LEGACY-OFFLINE-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Isaiah 40:31",
+      "sourceLocation": "src/lib/teoyube/mobile-scale/offline-readonly-strategy.ts:110-111",
+      "currentText": "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
+      "exactWebText": "but those who wait for the LORD will renew their strength. They will mount up with wings like eagles. They will run, and not be weary. They will walk, and not faint.",
+      "visibility": "noncanonical_offline_fallback"
+    },
+    {
+      "id": "LEGACY-PHASE112-001",
+      "classification": "LEGACY_NON_WEB_WORDING",
+      "reference": "Psalm 119:105",
+      "sourceLocation": "src/lib/teoyube/phase-11-2-screenshot-guided-functionality.ts:221",
+      "currentText": "Your word is a lamp to my feet and a light to my path.",
+      "exactWebText": "Your word is a lamp to my feet, and a light for my path.",
+      "visibility": "dormant_reference_fallback_record"
+    }
+  ],
+  "notScriptureQuotationRecords": [
+    {
+      "id": "PRAYER-PARAPHRASE-001",
+      "classification": "NOT_SCRIPTURE_QUOTATION",
+      "relatedReferences": ["Isaiah 40:31", "Romans 8:28"],
+      "sourceLocation": "src/lib/tig/seed/prayer-sequences.seed.ts:121",
+      "text": "Your Word says that they that wait upon the Lord shall renew their strength.",
+      "boundary": "Typed TIG prayer step; retain as prayer/paraphrase and never label it WEB verse text."
+    },
+    {
+      "id": "PRAYER-PARAPHRASE-002",
+      "classification": "NOT_SCRIPTURE_QUOTATION",
+      "relatedReferences": ["Joshua 1:9"],
+      "sourceLocation": "src/lib/tig/seed/prayer-sequences.seed.ts:147-148",
+      "text": "Your Word says, Be strong and of a good courage, for You are with me wherever I go.",
+      "boundary": "Typed TIG prayer step; retain as prayer/paraphrase and never label it WEB verse text."
+    },
+    {
+      "id": "PRAYER-PARAPHRASE-003",
+      "classification": "NOT_SCRIPTURE_QUOTATION",
+      "relatedReferences": ["Isaiah 40:31", "Romans 8:28"],
+      "sourceLocation": "src/lib/tig/seed/prayer-sequences.seed.ts:175",
+      "text": "Your Word promises renewal and strength to those who wait upon You.",
+      "boundary": "Typed TIG prayer step; retain as prayer/paraphrase and never label it WEB verse text."
+    },
+    {
+      "id": "PRAYER-PARAPHRASE-004",
+      "classification": "NOT_SCRIPTURE_QUOTATION",
+      "relatedReferences": ["Romans 8:28"],
+      "sourceLocation": "src/lib/tig/seed/prayer-sequences.seed.ts:201-202",
+      "text": "Your Word says that all things work together for good to them who love You and are called according to Your purpose.",
+      "boundary": "Typed TIG prayer step; retain as prayer/paraphrase and never label it WEB verse text."
+    },
+    {
+      "id": "PRAYER-PARAPHRASE-005",
+      "classification": "NOT_SCRIPTURE_QUOTATION",
+      "relatedReferences": ["Joshua 1:9", "Romans 8:28"],
+      "sourceLocation": "src/lib/tig/seed/prayer-sequences.seed.ts:231-232",
+      "text": "Your Word shows that courage and obedience grow when I trust Your presence.",
+      "boundary": "Typed TIG prayer step; retain as prayer/paraphrase and never label it WEB verse text."
+    }
+  ],
+  "moduleAudit": [
+    { "module": "Today", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-TODAY-001"] },
+    { "module": "Search", "result": "REFERENCE_ONLY_NO_QUOTE", "recordIds": [] },
+    { "module": "Promise Search", "result": "REFERENCE_ONLY_NO_QUOTE", "recordIds": [], "note": "The retained /promise-search support route is reference-only; Promise/Table legacy seed records are audited separately." },
+    { "module": "Canon", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-CANON-001"] },
+    { "module": "Promise Table", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-PROMISE-001", "UI-PROMISE-002", "UI-PROMISE-003", "UI-PROMISE-004", "UI-PROMISE-005", "UI-PROMISE-006", "UI-PROMISE-007", "UI-PROMISE-008"] },
+    { "module": "Prayer", "result": "NOT_SCRIPTURE_QUOTATION", "recordIds": ["PRAYER-PARAPHRASE-001", "PRAYER-PARAPHRASE-002", "PRAYER-PARAPHRASE-003", "PRAYER-PARAPHRASE-004", "PRAYER-PARAPHRASE-005"] },
+    { "module": "Calling Compass", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-CALLING-001"] },
+    { "module": "Journey", "result": "REFERENCE_ONLY_NO_QUOTE", "recordIds": [] },
+    { "module": "Journal", "result": "REFERENCE_ONLY_NO_QUOTE", "recordIds": [] },
+    { "module": "Testimony", "result": "REFERENCE_ONLY_NO_QUOTE", "recordIds": [] },
+    { "module": "Book of the Saint", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-BOOK-001", "UI-BOOK-002", "UI-BOOK-003"] },
+    { "module": "Lexicon", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-LEXICON-001", "UI-LEXICON-002"] },
+    { "module": "Teo Guide", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-GUIDE-001"] },
+    { "module": "TIG", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["LEGACY-TIG-001", "LEGACY-TIG-002", "LEGACY-TIG-003"], "note": "Existing registry remains display-blocked; the prayer generator may only inherit these blocked texts on internal/development paths." },
+    { "module": "API fixtures and tests", "result": "LEGACY_NON_WEB_WORDING", "recordIds": ["UI-PROMISE-001", "UI-PROMISE-002", "UI-PROMISE-003"], "note": "scripts/seedDB.js feeds the local static API. Test boundary patterns are detection evidence, not approved quotation fixtures." }
+  ],
+  "ownerDecision": {
+    "required": true,
+    "allowedReviewChoices": [
+      "REPLACE_WITH_EXACT_WEB",
+      "REFERENCE_ONLY",
+      "RETAIN_AS_NON_SCRIPTURE_COPY",
+      "RETAIN_UNCHANGED"
+    ],
+    "implementationAuthorized": false,
+    "visualBaselineUpdateAuthorized": false,
+    "prompt16Unlocked": false
+  }
+}
