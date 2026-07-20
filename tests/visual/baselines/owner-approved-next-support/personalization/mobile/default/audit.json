@@ -1,0 +1,20 @@
+{
+  "issues": [],
+  "focusOrder": [
+    "button|0|Session Only",
+    "button|0|Disable",
+    "button|0|Clear Signals",
+    "button|0|Add Wisdom Signal",
+    "button|0|Reset"
+  ],
+  "lang": "en",
+  "performance": {
+    "domInteractiveMs": 1176.8,
+    "loadMs": 1177.4,
+    "resourceCount": 34
+  },
+  "storage": {
+    "local": 0,
+    "session": 0
+  }
+}

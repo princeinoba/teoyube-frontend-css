@@ -1,0 +1,2759 @@
+{
+  "schemaVersion": 1,
+  "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+  "approvalDate": "2026-07-20",
+  "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+  "sourceRuntime": "next-preview",
+  "canonicalRuntime": "static-node-app",
+  "state": "Exact Next preview render with fixed time and random values, external network blocked, fonts and visible images settled, animations and media paused, and scroll position zero.",
+  "captureEnvironment": {
+    "runtime": "next-preview-production-build",
+    "browser": "Google Chrome via Playwright",
+    "platform": "win32",
+    "colorScheme": "light",
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "fixedTime": "2026-07-18T12:00:00.000Z",
+    "externalNetwork": "blocked"
+  },
+  "sourceDefinition": {
+    "path": "tests/visual/parity/owner-approved-next-support-source.json",
+    "sha256": "c8a9aed390d6fa8f5c789e3fc3af61e345dd3563e72000fae95f8f840333da48",
+    "bytes": 3870
+  },
+  "ownerAmendment": {
+    "path": "docs/owner-approvals/visual/TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D.md",
+    "sha256": "fdd9c3946ab0ac3dbd5a6c38f6ecc451468f7c5fd4982d9f86fa1916898d1d17",
+    "bytes": 3722
+  },
+  "routes": [
+    {
+      "route": "/settings",
+      "slug": "settings",
+      "sourceSha256": "2abec0f8653601d308f0248cd999375efc1b384ed3791be3cd98734cfed7cfc8",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        },
+        {
+          "name": "personalization-disabled",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/privacy",
+      "slug": "privacy",
+      "sourceSha256": "fea268e279efda0ff5a2882840be790dc981fc522ee6b2404d9ddf7a7be17e10",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        }
+      ]
+    },
+    {
+      "route": "/consent",
+      "slug": "consent",
+      "sourceSha256": "98d8357dcecdef4b3543c8d7a5b9238b0f8a4fc532ec204cc18894383f7a049b",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        }
+      ]
+    },
+    {
+      "route": "/terms",
+      "slug": "terms",
+      "sourceSha256": "f5ee919642b9318ca932ae9a31983e977a66c42da8220732f5ddc2360c3aaeab",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        }
+      ]
+    },
+    {
+      "route": "/profile",
+      "slug": "profile",
+      "sourceSha256": "69c255fa57cbaac6338e4868e2214ed36ae39f80650aefd0ad551c3659476845",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        }
+      ]
+    },
+    {
+      "route": "/personalization",
+      "slug": "personalization",
+      "sourceSha256": "bd5d0dcdfdedfe6a115797fe7bd404c15dbcc6e2a08aa8d6512298af9b7e4686",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        },
+        {
+          "name": "wisdom-signal",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "sourceSha256": "bfe625ce8a5e0849c7d4e6ca7274066e1941edf618bd095d7a93519b4b954e6e",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        },
+        {
+          "name": "generated-session",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/explore",
+      "slug": "explore",
+      "sourceSha256": "4aef660f788d59f0cd533d09fd107965998ce74287aff328b3e3632c5de5ff54",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        },
+        {
+          "name": "clusters-tab",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        },
+        {
+          "name": "promise-table-tab",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        },
+        {
+          "name": "filtered-wisdom",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "sourceSha256": "f28a8c4642476c4df0d2e691b6fb07387034a54b9b6f8cea4fd35b4558158348",
+      "states": [
+        {
+          "name": "default",
+          "viewports": "all"
+        },
+        {
+          "name": "query-wisdom",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        },
+        {
+          "name": "keyboard-query",
+          "viewports": [
+            "desktop-wide",
+            "mobile"
+          ]
+        }
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "unsupportedCurrentStates": {
+    "/daily-word": [
+      "reflection-entry control is not present on this approved route; reflection remains on /journal",
+      "no separate loading or empty state"
+    ],
+    "/promise-search": [
+      "no submit form or loading state; query results update on input change",
+      "no empty state because deterministic local fallback always returns rows"
+    ],
+    "/explore": [
+      "journey summary is rendered read-only; tabs and filtering are the current interactions"
+    ]
+  },
+  "captures": [
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-wide/default/screenshot.png",
+        "sha256": "0c6957f61909f86e55423d2436d8942a802483735294a30a4b7702a6d841fc7f",
+        "bytes": 161179
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-wide/default/contract.json",
+        "sha256": "dfabdb81c53cff65477f9b3c110a98ebd3667b68ac5574a476d2c9f574051f85",
+        "bytes": 98533
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-wide/default/audit.json",
+        "sha256": "0a86352cb1f73b0d3fa31d612e520037b2deecd526f121684165c2c5291d5a90",
+        "bytes": 295
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 83,
+        "controls": 16,
+        "focusOrder": 16,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "personalization-disabled",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-wide/personalization-disabled/screenshot.png",
+        "sha256": "5d520f8528727969ebbb215db6711ab38ba2386c8e5b8b49678730c280eaad74",
+        "bytes": 161197
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-wide/personalization-disabled/contract.json",
+        "sha256": "fac7118255f5875a20bdd2f90358d4ed10e1b801b61564e1247886041a461b94",
+        "bytes": 98529
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-wide/personalization-disabled/audit.json",
+        "sha256": "f4c3de6223a4db78db2ce9496ab78ee995fa1710fdc67f536eff8695f4faba7f",
+        "bytes": 291
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 83,
+        "controls": 16,
+        "focusOrder": 16,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/privacy",
+      "slug": "privacy",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/desktop-wide/default/screenshot.png",
+        "sha256": "ddd606cab3cd71f75621d9c3fb121517960f99f5d38bd70d137481225b3f7cac",
+        "bytes": 111450
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/desktop-wide/default/contract.json",
+        "sha256": "edd2fa3be4095c1dcc4369be0ce28914db80ff3e7893dd02576e8b3e0d8a90c9",
+        "bytes": 44712
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/desktop-wide/default/audit.json",
+        "sha256": "d7432f4fca511460b3ff90d9f4ad806df6a7744b1ad1238360c135ba48a55a3a",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 29,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/consent",
+      "slug": "consent",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/desktop-wide/default/screenshot.png",
+        "sha256": "1e16ad90b5552826fbcd4e2b506a4978b7273014be9ba159eb50d2af16317ca5",
+        "bytes": 131921
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/desktop-wide/default/contract.json",
+        "sha256": "8e33875ad83f6959acb4ac9c32a2fe55b99036a3818a54ef582de08381594268",
+        "bytes": 49702
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/desktop-wide/default/audit.json",
+        "sha256": "d0215b5709d7dc20141582c87c05c84352bf442ef9964e9568e35e9033e595f9",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/terms",
+      "slug": "terms",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/desktop-wide/default/screenshot.png",
+        "sha256": "1e193fb689869f71450995db8d2649ae59ac240b2bc0defa82b4ae10b96964a3",
+        "bytes": 110997
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/desktop-wide/default/contract.json",
+        "sha256": "eabfe2de639c78c8a294aad2b944cba8e9e5a59ee42bd921e4414849000bb447",
+        "bytes": 44592
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/desktop-wide/default/audit.json",
+        "sha256": "332d142ef1b16902586ad1a75ac6c52b28a4182afb3a0881e3f2030a3ea3d47a",
+        "bytes": 206
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 29,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/profile",
+      "slug": "profile",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/desktop-wide/default/screenshot.png",
+        "sha256": "76a98fd8d33bb57fbea74f1db8375696c8cdbbad3d2619a12739863103ed6bfc",
+        "bytes": 112865
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/desktop-wide/default/contract.json",
+        "sha256": "ee00c13b97dfffcaef46995562f98062911e503751b509019a38548c097da153",
+        "bytes": 52303
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/desktop-wide/default/audit.json",
+        "sha256": "46fef77ed539c7cfa70f4419ebb1a29419e4221d45b8fc70eb0eb92816b8c2c0",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "majorRegions": 9,
+        "assets": 3,
+        "labels": 39,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-wide/default/screenshot.png",
+        "sha256": "5da098b7bf5005567d7686011ad93a57614e5618db7e8f03d5aaf5d2fd323d55",
+        "bytes": 111842
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-wide/default/contract.json",
+        "sha256": "2a55c19ee831552cccab93df06a94e822349bb47176fbb11cf0a0826bf2c3f8a",
+        "bytes": 53031
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-wide/default/audit.json",
+        "sha256": "34996dc76c7638374a2615a95d2d6941b80445634b164af74be9172bd977119f",
+        "bytes": 345
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 18,
+        "focusOrder": 18,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "wisdom-signal",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-wide/wisdom-signal/screenshot.png",
+        "sha256": "d524f5f5b4184fa5e832540129aa883b1f8c536bffdab009969b273657fed9e8",
+        "bytes": 111767
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-wide/wisdom-signal/contract.json",
+        "sha256": "ed822f2dd25fb5102c1bba56c281d9b87e296c235a8fa624ea1a200f1db6fa20",
+        "bytes": 53031
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-wide/wisdom-signal/audit.json",
+        "sha256": "545cb3054cefcf74432e254497b719adcba0d24fb68871c48e9d616f148124e4",
+        "bytes": 347
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 18,
+        "focusOrder": 18,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-wide/default/screenshot.png",
+        "sha256": "b649e55e7354f4e4f74e0c1eea21f3b86fdecd233e5955c813588dc5f4d696e9",
+        "bytes": 150581
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-wide/default/contract.json",
+        "sha256": "777107bc6e8d4fcba223f07b709c38df27d3ed48c7cecf023890e85abb4291b3",
+        "bytes": 62086
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-wide/default/audit.json",
+        "sha256": "dea1b2a0295f2ad2f342a5a0bc7e18d5acaf77ab5199e8c1d648e73ba3e3d027",
+        "bytes": 251
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 53,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "generated-session",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-wide/generated-session/screenshot.png",
+        "sha256": "4da1acb9c04556b73c986b635811e79eb920e40c68a7c8242d12e5072827a016",
+        "bytes": 150385
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-wide/generated-session/contract.json",
+        "sha256": "fd0e013a44af46c929e9c9260fdbe7a779ad8c1d91ff4228eb6fc24468d85e17",
+        "bytes": 62081
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-wide/generated-session/audit.json",
+        "sha256": "12cfdaa8871bbbfc72678bad5da1417f1307c714fd65924fdfb5117cf7ab02ad",
+        "bytes": 253
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 53,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/default/screenshot.png",
+        "sha256": "2926a2cd7e347744d6cbf67405bd04bc89c7ab57adf573f3c8ec237b51b6b12f",
+        "bytes": 138462
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/default/contract.json",
+        "sha256": "4c4fe68920fb9efb602960be4e1006efcccfaf963da603d26a7ccdcf4849e636",
+        "bytes": 1116781
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/default/audit.json",
+        "sha256": "0deaa6121a9ed7d35ba1b1c5b92314db75b80273e63724dc21dbf2943b6aaf28",
+        "bytes": 453
+      },
+      "contractSummary": {
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "majorRegions": 141,
+        "assets": 3,
+        "labels": 874,
+        "controls": 23,
+        "focusOrder": 23,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "clusters-tab",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/clusters-tab/screenshot.png",
+        "sha256": "2926a2cd7e347744d6cbf67405bd04bc89c7ab57adf573f3c8ec237b51b6b12f",
+        "bytes": 138462
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/clusters-tab/contract.json",
+        "sha256": "6c380c3cf92e3b092ed3c20a7bd5902ea40af2585afa47174883dbb53c3d74c0",
+        "bytes": 201065
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/clusters-tab/audit.json",
+        "sha256": "408322bb61f8eef2435926680ffb8ac9c1d3d27711b1ee45489f352c0884eeba",
+        "bytes": 453
+      },
+      "contractSummary": {
+        "orderedDom": 273,
+        "ids": 7,
+        "classLists": 128,
+        "majorRegions": 45,
+        "assets": 3,
+        "labels": 166,
+        "controls": 23,
+        "focusOrder": 23,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "promise-table-tab",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/promise-table-tab/screenshot.png",
+        "sha256": "2926a2cd7e347744d6cbf67405bd04bc89c7ab57adf573f3c8ec237b51b6b12f",
+        "bytes": 138462
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/promise-table-tab/contract.json",
+        "sha256": "c9eff6d8562f37fa964365b953b2909d2895cca61841c60f63511a712ef8a177",
+        "bytes": 200367
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/promise-table-tab/audit.json",
+        "sha256": "9fb488a0c1c16ff8ead1f57f209b8844e8f32698e49fb8979fafc66a1273c8fa",
+        "bytes": 518
+      },
+      "contractSummary": {
+        "orderedDom": 265,
+        "ids": 7,
+        "classLists": 134,
+        "majorRegions": 42,
+        "assets": 3,
+        "labels": 162,
+        "controls": 24,
+        "focusOrder": 24,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "filtered-wisdom",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/filtered-wisdom/screenshot.png",
+        "sha256": "2926a2cd7e347744d6cbf67405bd04bc89c7ab57adf573f3c8ec237b51b6b12f",
+        "bytes": 138462
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/filtered-wisdom/contract.json",
+        "sha256": "cad83a9b3707016c3264625a26811343627ac0912ca69e0fab357e6c324cc9fe",
+        "bytes": 168109
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-wide/filtered-wisdom/audit.json",
+        "sha256": "0a18df70d40a7d5b223064c225ec47c3528bb97cb17cf27d52ccb5f913810fb0",
+        "bytes": 453
+      },
+      "contractSummary": {
+        "orderedDom": 219,
+        "ids": 7,
+        "classLists": 119,
+        "majorRegions": 36,
+        "assets": 3,
+        "labels": 139,
+        "controls": 23,
+        "focusOrder": 23,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/default/screenshot.png",
+        "sha256": "99800e14f974561b6f151c0fb0bacd8e7a8c72a5b3957c4713cbfe8663779d58",
+        "bytes": 263874
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/default/contract.json",
+        "sha256": "22032f6cb5b608ea797d63294628b1aadc5994ffda58b69f76173afa324d8a47",
+        "bytes": 55261
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/default/audit.json",
+        "sha256": "2a2cd62a4dfeac6b7e1f5f456a08b2008f669a3efceac17bf7276331793d277b",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "majorRegions": 11,
+        "assets": 3,
+        "labels": 43,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "query-wisdom",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/query-wisdom/screenshot.png",
+        "sha256": "ba6a9bd0a6c864bd34627b68851304281654e8addb7867d9ca373904cbb30193",
+        "bytes": 291522
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/query-wisdom/contract.json",
+        "sha256": "c0e526ae923f748a8946f76de1ac327f4c4befca9766b9801b0e9e04b7c3bea2",
+        "bytes": 63640
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/query-wisdom/audit.json",
+        "sha256": "c584ed61c818dcbe4f08bb983bd6bb11f0a216e2c571f89559734664be2a66b6",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 77,
+        "ids": 7,
+        "classLists": 54,
+        "majorRegions": 13,
+        "assets": 3,
+        "labels": 53,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "state": "keyboard-query",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/keyboard-query/screenshot.png",
+        "sha256": "3b8e800ed1a59403ba0594209f2f8ad05a8704ab5f55f74f631f381482260392",
+        "bytes": 289658
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/keyboard-query/contract.json",
+        "sha256": "f513ce0ee1be7ee335a59844674a675de984f74ac95afbf81977129ba7db118a",
+        "bytes": 63634
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-wide/keyboard-query/audit.json",
+        "sha256": "fa3ae5d48e8bebe03050345fa984511e3599bf9b23a8190b656362c697b45bc3",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 77,
+        "ids": 7,
+        "classLists": 54,
+        "majorRegions": 13,
+        "assets": 3,
+        "labels": 53,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-standard/default/screenshot.png",
+        "sha256": "a3989cb89c378823282fb6b5a5450c1e4e043834559decea89e1f2e5abd620f8",
+        "bytes": 137467
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-standard/default/contract.json",
+        "sha256": "8b9d49568818af35a0967484f0af8abd767a172473ac0e17208def33ca0b4bc3",
+        "bytes": 98511
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/desktop-standard/default/audit.json",
+        "sha256": "56090cbc2bf7672ca27e25f341739eb6949852eae68f44daa436f762ec7e8ede",
+        "bytes": 293
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 83,
+        "controls": 16,
+        "focusOrder": 16,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/privacy",
+      "slug": "privacy",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/desktop-standard/default/screenshot.png",
+        "sha256": "b04fd0fa84d65e0e62e59d1cdff6754b86a4b6cf047d6be046ef75317a1908c0",
+        "bytes": 98833
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/desktop-standard/default/contract.json",
+        "sha256": "e09f6f324c00c11ba763ada8fab2ac55911b486c4fe9fc3bb12a8e2fab43a968",
+        "bytes": 44708
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/desktop-standard/default/audit.json",
+        "sha256": "481337c7c55bbe41ef4333b3d1d34f4bd77f680321bec720699a7ba8f13630c5",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 29,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/consent",
+      "slug": "consent",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/desktop-standard/default/screenshot.png",
+        "sha256": "37991c16be58752306461a5f85c23d16263d8bdd009bc760b08a12a3e98bb1bc",
+        "bytes": 118991
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/desktop-standard/default/contract.json",
+        "sha256": "8cc282d4d1510679540524ad6d689f514fe0402acb3a883fa8bb00a094421cd9",
+        "bytes": 49697
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/desktop-standard/default/audit.json",
+        "sha256": "d33d8bce83f3b3eeecdc04ac1e4414ed3b994b7b0957e25a6911512ccf2ce713",
+        "bytes": 210
+      },
+      "contractSummary": {
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/terms",
+      "slug": "terms",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/desktop-standard/default/screenshot.png",
+        "sha256": "bd993b959202486b389ac4864c1ab898f458f8ad6f7a061f96a3697ba3603279",
+        "bytes": 98475
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/desktop-standard/default/contract.json",
+        "sha256": "0305fa32df78028f1864997646f6a8d1d1e0956ec5c5842639ebf454ca136c3c",
+        "bytes": 44588
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/desktop-standard/default/audit.json",
+        "sha256": "e80ace03e8292e1503150aca572c4e188033d7fdebbe0e3c9ebabc9f7bbd1f70",
+        "bytes": 210
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 29,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/profile",
+      "slug": "profile",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/desktop-standard/default/screenshot.png",
+        "sha256": "82277c6f39e3f1614e38ccad5cf20ef7f4060aa4ee286160778b36a3fc37dbb3",
+        "bytes": 99830
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/desktop-standard/default/contract.json",
+        "sha256": "83a6c28edce4d34a599e9795e92ece0d6e39e2f2ba6255d8a0ac36a3453408cf",
+        "bytes": 52297
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/desktop-standard/default/audit.json",
+        "sha256": "38f1c7c9f2aad2fd137d2209ede62da9874119a6f706b91db2bc705a9d7d1173",
+        "bytes": 206
+      },
+      "contractSummary": {
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "majorRegions": 9,
+        "assets": 3,
+        "labels": 39,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-standard/default/screenshot.png",
+        "sha256": "0df693d3bbd85bd40bdb27f3d1c89aad0719f4c154b677a57f90b17caefb6efb",
+        "bytes": 98332
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-standard/default/contract.json",
+        "sha256": "01aa39a10aa275a0d8c8af30ce1842cbe82e6e1e1a319f39b305a156fde74b67",
+        "bytes": 53026
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/desktop-standard/default/audit.json",
+        "sha256": "50b8bb0997030ddb771b2b9e4e8a49fe7c658e707bf8e61afe9acab70a4e13e5",
+        "bytes": 349
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 18,
+        "focusOrder": 18,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-standard/default/screenshot.png",
+        "sha256": "d3fa88da79d6b84c1629bd7e608276e685bd6570f1602c0d051ea578fc0fe242",
+        "bytes": 129227
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-standard/default/contract.json",
+        "sha256": "523080ed6c34e471f48cfc30e9094baaee5b605d7bb8e183d89c724b159cd0a0",
+        "bytes": 62079
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/desktop-standard/default/audit.json",
+        "sha256": "be266eb149629fb75dd8c042430d882807f7b1fb44ca2e52efa7bc2f50fda39b",
+        "bytes": 251
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 53,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-standard/default/screenshot.png",
+        "sha256": "2f9856becd3ac4784cab3114bb972e77ed172196dcc5e719465d37d95b2e65fb",
+        "bytes": 122077
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-standard/default/contract.json",
+        "sha256": "aebfd2bfaa50080db9ee4d8ebe27f8f97b90762c39f38d98fe2b590930857536",
+        "bytes": 1116643
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/desktop-standard/default/audit.json",
+        "sha256": "6cef69c75c90693120453be8f64e80f87b7b31fd44c27a465d2f7cf9c2f7e6ff",
+        "bytes": 451
+      },
+      "contractSummary": {
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "majorRegions": 141,
+        "assets": 3,
+        "labels": 874,
+        "controls": 23,
+        "focusOrder": 23,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-standard/default/screenshot.png",
+        "sha256": "a4cb6e5e556559d90fbe54153a3cf08ff8e296fb269d2fb48160203d773659a9",
+        "bytes": 239788
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-standard/default/contract.json",
+        "sha256": "ca06169c25dc9d9a238ab8176e9086f1280fe23a7c25fce44f30fa52ed7a8914",
+        "bytes": 55252
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/desktop-standard/default/audit.json",
+        "sha256": "315cdcc3fe7d0bf7e7a21ff7d46fbe8ac47e4117b0966b688ea87f4faa53c657",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "majorRegions": 11,
+        "assets": 3,
+        "labels": 43,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/tablet-landscape/default/screenshot.png",
+        "sha256": "ef28d5c287d11f7eee14fc7c1cb2ce5c9adce9ba937f646549223d26be743f89",
+        "bytes": 135505
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/tablet-landscape/default/contract.json",
+        "sha256": "76ecf1e3e3c47655589de12aa2cf4d757c2dccedc9e424c56267a21c704d36b1",
+        "bytes": 98461
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/tablet-landscape/default/audit.json",
+        "sha256": "7e386b8991195399090bdc176316eaa8410916e44d735507688e762efe34d7b2",
+        "bytes": 291
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 83,
+        "controls": 16,
+        "focusOrder": 16,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/privacy",
+      "slug": "privacy",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/tablet-landscape/default/screenshot.png",
+        "sha256": "07a37190e43629829fe3cbdce368bbf9da6470d5a71e94d1783c22cea6d0e63f",
+        "bytes": 108378
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/tablet-landscape/default/contract.json",
+        "sha256": "20b50c203f8efd316ce3def3f45ad4938521b5201faf802afa225891dc774a1b",
+        "bytes": 44659
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/tablet-landscape/default/audit.json",
+        "sha256": "549236405824f804816d38cb18ae5f7b48991ba8bdbd1b696ae17425f74aecf3",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 29,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/consent",
+      "slug": "consent",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/tablet-landscape/default/screenshot.png",
+        "sha256": "b341e7d8faa081fc3c3ba02ec5615013e743f2cb1ced1fad8aaaf29f5134b578",
+        "bytes": 128301
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/tablet-landscape/default/contract.json",
+        "sha256": "675b32e372e8bf9279171c31a88f31a6096b629d4aed1ab25f33f8b33875af43",
+        "bytes": 49648
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/tablet-landscape/default/audit.json",
+        "sha256": "094b3b3f88a0a529c0e9b3da00867c496a0202650115bcd0012adf4b28eb7ffc",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/terms",
+      "slug": "terms",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/tablet-landscape/default/screenshot.png",
+        "sha256": "2dd86265b2c3469e0f5988d78f4481626aed17695287599999d498ac1df39779",
+        "bytes": 108664
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/tablet-landscape/default/contract.json",
+        "sha256": "4988f5956c776a1f85f4322bb9e74d4259b3caa811313f896745f2ae267c58a1",
+        "bytes": 44539
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/tablet-landscape/default/audit.json",
+        "sha256": "8ab4e3522cb3dd50b21a706eb50d75b577afd56fbd0e2d57cb5cffaab2337e64",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 29,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/profile",
+      "slug": "profile",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/tablet-landscape/default/screenshot.png",
+        "sha256": "78269176b76d63d676125510de47cdf007bc5686b5b2588584aacc8c60fc1c1c",
+        "bytes": 105657
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/tablet-landscape/default/contract.json",
+        "sha256": "c32e436283272e414881b9866f4c1930a25dbd18de7ea43b8f8b14d711158658",
+        "bytes": 52246
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/tablet-landscape/default/audit.json",
+        "sha256": "5cf3f4978ace5b76b53923932a2e63e5bc953d06cd4171c41ae9f289101f1fee",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "majorRegions": 9,
+        "assets": 3,
+        "labels": 39,
+        "controls": 13,
+        "focusOrder": 13,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/tablet-landscape/default/screenshot.png",
+        "sha256": "4c12451a254cc0d228b776d305eff69367b71a58440ce3179f53e740dba85d28",
+        "bytes": 106897
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/tablet-landscape/default/contract.json",
+        "sha256": "13138cdb3f783a2efe7b0d3775a064f3632815cffc03d919702850a539870c0a",
+        "bytes": 52975
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/tablet-landscape/default/audit.json",
+        "sha256": "bf19f29b308d8997e657963cfc2c92f0b0847d78c942b457b9655eb485fad3f8",
+        "bytes": 351
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 35,
+        "controls": 18,
+        "focusOrder": 18,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/tablet-landscape/default/screenshot.png",
+        "sha256": "507a7dbca83137a075b7a829d7d4ee6e071b2effdb6cf26b03fee12db698b0b3",
+        "bytes": 124607
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/tablet-landscape/default/contract.json",
+        "sha256": "d61a8e6c7eed030fb53cbe547dcd34a282ebc78d74b0ff39e1407a77858e22dd",
+        "bytes": 62029
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/tablet-landscape/default/audit.json",
+        "sha256": "39264b66ee1a6bc390b524c297de173f28c5698efe4188f14dc6e3bb243cdaab",
+        "bytes": 253
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 53,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/tablet-landscape/default/screenshot.png",
+        "sha256": "5bccfc7eb4529d3fb660ea3418447fa2f73e081496194fb76164a3bf3cd6b4cc",
+        "bytes": 127729
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/tablet-landscape/default/contract.json",
+        "sha256": "f869fb3e4e1429ab6ddd9f2e4e1da52493f8ec31b8c5bcc035a540d1c225ee3d",
+        "bytes": 1116599
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/tablet-landscape/default/audit.json",
+        "sha256": "a766d0283acd972d4661b8b00b72c2a4ac6dcd1a70c8bf0baa8540366facd6b6",
+        "bytes": 453
+      },
+      "contractSummary": {
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "majorRegions": 141,
+        "assets": 3,
+        "labels": 874,
+        "controls": 23,
+        "focusOrder": 23,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/tablet-landscape/default/screenshot.png",
+        "sha256": "b34cefb3c1598d5958158d6c46588452b1a36f23a494c8bcec7836e8bbf6ebcd",
+        "bytes": 245846
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/tablet-landscape/default/contract.json",
+        "sha256": "25b663e433b51233a1065aa9511a1d22e244935db8838a5e162536ff467d04b0",
+        "bytes": 55221
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/tablet-landscape/default/audit.json",
+        "sha256": "f95e1c72bd8d5f6aac48d1b66ce2968a488e23fc8aef65c898f55eb2f127d306",
+        "bytes": 238
+      },
+      "contractSummary": {
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "majorRegions": 11,
+        "assets": 3,
+        "labels": 43,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/tablet-portrait/default/screenshot.png",
+        "sha256": "63664780358e6ec9ff50c21625f239e68e6d4f5dcacde4bb453bea6dfa222d78",
+        "bytes": 104200
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/tablet-portrait/default/contract.json",
+        "sha256": "1d4c2187fc5b1b8609e64eeec1711b0b2f8367ddae132e9a3c01205cd05b7328",
+        "bytes": 99168
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/tablet-portrait/default/audit.json",
+        "sha256": "245331e5066296542b4970cbfcbef574705f516cc068cd3f43ce8f86ebe9acb6",
+        "bytes": 293
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 84,
+        "controls": 17,
+        "focusOrder": 17,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/privacy",
+      "slug": "privacy",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/tablet-portrait/default/screenshot.png",
+        "sha256": "356d8fc193fa7d796938b7efe88d04a70d4ff980d7ff4f477b0a8a4081d23587",
+        "bytes": 57410
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/tablet-portrait/default/contract.json",
+        "sha256": "defbce216b800ab2c6c017a88b14e9cda8acadfab741ef891812f48942f406e1",
+        "bytes": 45419
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/tablet-portrait/default/audit.json",
+        "sha256": "2607f994626ed106a10f3edf289eab7d8d51994516392f660d7be4f4b4daa567",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 30,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/consent",
+      "slug": "consent",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/tablet-portrait/default/screenshot.png",
+        "sha256": "3a50c588904a77a02e1d7449eafcfab95b24de44606043262509145aafd8862f",
+        "bytes": 77955
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/tablet-portrait/default/contract.json",
+        "sha256": "1cb13cf232bdec9e71c50785aef3a4a00f36f0324e44ed363adb01d099238e86",
+        "bytes": 50407
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/tablet-portrait/default/audit.json",
+        "sha256": "959222f7c09506601730595948514d62c26664a5edab2ffc2ce710209a6d24fe",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/terms",
+      "slug": "terms",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/tablet-portrait/default/screenshot.png",
+        "sha256": "7ec4b0edac1245491bf1d91c41c4ec9a5cc31c3f93810d120a0f870889851302",
+        "bytes": 57910
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/tablet-portrait/default/contract.json",
+        "sha256": "39aea79975007f983680bee13e17d62158dc820e15820592465549f5e9085ae0",
+        "bytes": 45299
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/tablet-portrait/default/audit.json",
+        "sha256": "3255e538463abb569296b07277611ed0674f32289fee3c1494645adfc19863ff",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 30,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/profile",
+      "slug": "profile",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/tablet-portrait/default/screenshot.png",
+        "sha256": "beeae468622c7b865842cc20524134b34e9fba0443dbb8d9281c84631be6e656",
+        "bytes": 55143
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/tablet-portrait/default/contract.json",
+        "sha256": "d4e6c2c0a3f15b9187e9cf30c3d59407d2e74194230635aac5e44629aa605932",
+        "bytes": 53004
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/tablet-portrait/default/audit.json",
+        "sha256": "b3023196c00566d48d9920b044d9d57b2d49e99416905f74d802331853ac0c16",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "majorRegions": 9,
+        "assets": 3,
+        "labels": 40,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/tablet-portrait/default/screenshot.png",
+        "sha256": "7f7ca6025806c458a260388d441a1cf7b93773c8b3e3587a687bef9d61767a34",
+        "bytes": 55641
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/tablet-portrait/default/contract.json",
+        "sha256": "496895e291d6554ccc6966dbafc41b89515dc5f428a3b773c2d673cc3a6a94bf",
+        "bytes": 53726
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/tablet-portrait/default/audit.json",
+        "sha256": "44366bea770c93290a79f5ead61710378bc6e80f95d4f7fb5c74a4c82f7af00b",
+        "bytes": 349
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 19,
+        "focusOrder": 19,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/tablet-portrait/default/screenshot.png",
+        "sha256": "9edd1fc71a9636ed6576196d9b86e9a1fd2a6ebe31168496707f31fd3909e8cc",
+        "bytes": 91481
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/tablet-portrait/default/contract.json",
+        "sha256": "9777fe2dce65d53436367e090c569d6e41569ec5311f9cb2cb147067e1f265de",
+        "bytes": 62779
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/tablet-portrait/default/audit.json",
+        "sha256": "9bf310e12724cc9d348761039aabdeaf5ab3e679e33637cc98125c9139fdb3a3",
+        "bytes": 253
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 54,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/tablet-portrait/default/screenshot.png",
+        "sha256": "d1a94d8f52ce793e84113a4c399b57b246a8ce5cca6c539783c0d00e86dd8f71",
+        "bytes": 85527
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/tablet-portrait/default/contract.json",
+        "sha256": "463e3769196f72e5e78d8b5f466a42627db2aad5bc4a47fd7ec5861b886084cd",
+        "bytes": 1117224
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/tablet-portrait/default/audit.json",
+        "sha256": "2fdefb035c5bdc92c58ad41e55233ca1ba68cdc1638c531886f6cb816d7419cb",
+        "bytes": 455
+      },
+      "contractSummary": {
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "majorRegions": 141,
+        "assets": 3,
+        "labels": 875,
+        "controls": 24,
+        "focusOrder": 24,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/tablet-portrait/default/screenshot.png",
+        "sha256": "1157fb4f757ecdc8fb336ebc7a2b1267452bea614292a541bd3f9d8220355ef8",
+        "bytes": 188747
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/tablet-portrait/default/contract.json",
+        "sha256": "82c98d2766d277b36d57491c069686538484583c029da5f1d4853431e12396b4",
+        "bytes": 55976
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/tablet-portrait/default/audit.json",
+        "sha256": "1bda38595a48eb6c885e3bc030b6cad1d559e6bff49e490263c3636aae66cfee",
+        "bytes": 242
+      },
+      "contractSummary": {
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "majorRegions": 11,
+        "assets": 3,
+        "labels": 44,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile/default/screenshot.png",
+        "sha256": "510020fcb57a4bb23de8576c4b343dea7ace55b80ffb2c6e8939873f440a34b3",
+        "bytes": 54852
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile/default/contract.json",
+        "sha256": "7aa269a1dc999e627c0501bf8612ddaf71b98364492198d7dbd2027fb88fd848",
+        "bytes": 99206
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile/default/audit.json",
+        "sha256": "3e80b6cb0550d0e13b2ad72c1ec0971e6fb5b592c94102f4924a653ca3f651ab",
+        "bytes": 293
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 84,
+        "controls": 17,
+        "focusOrder": 17,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "personalization-disabled",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile/personalization-disabled/screenshot.png",
+        "sha256": "510020fcb57a4bb23de8576c4b343dea7ace55b80ffb2c6e8939873f440a34b3",
+        "bytes": 54852
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile/personalization-disabled/contract.json",
+        "sha256": "5a47e321f3961c6693e731fe66044e8bf219b43133d0f4483cb0299ab724ac52",
+        "bytes": 99202
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile/personalization-disabled/audit.json",
+        "sha256": "2b27dcc793af25bef363b1061c0700ff988e81724621c41591c472e5679b82e1",
+        "bytes": 293
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 84,
+        "controls": 17,
+        "focusOrder": 17,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/privacy",
+      "slug": "privacy",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/mobile/default/screenshot.png",
+        "sha256": "f9d844bd5e1dd168f8ab7be712b3f4486d4e6e9a77857e7cf1f1274809d20c5f",
+        "bytes": 54065
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/mobile/default/contract.json",
+        "sha256": "8a344aef287583de100f3fb284f3c2f7d3b33bcc4d6bd67955ba69aab3540005",
+        "bytes": 45420
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/mobile/default/audit.json",
+        "sha256": "2ad38913893170b5fa0bd3426127b46134af1e4ed3015e913d08863694217378",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 30,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/consent",
+      "slug": "consent",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/mobile/default/screenshot.png",
+        "sha256": "2c91576f58dde5b746e25d6a8580a6dcc37b39e12bff40d994003e6b4dceba41",
+        "bytes": 55972
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/mobile/default/contract.json",
+        "sha256": "0b79d0a7e9a4597538a9033c0ea3f1c8e0ac530eca93c5fa4b2cfa242b12baa8",
+        "bytes": 50408
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/mobile/default/audit.json",
+        "sha256": "e8c729162bc589d1484689c4a4df9cbe9f9c637d4535200f01fc22d81f183b7f",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/terms",
+      "slug": "terms",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/mobile/default/screenshot.png",
+        "sha256": "28b82154abd1494669b6633969e15700d0a86d0ae2f8ef03075292c4e93077e6",
+        "bytes": 54276
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/mobile/default/contract.json",
+        "sha256": "b66ff2d56518d87ff6224b3395614388abeac5f127fe3e31ce71373d57fd258b",
+        "bytes": 45299
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/mobile/default/audit.json",
+        "sha256": "672a6f3f1aebc1268c4da6e98a1d0c294d55cfb67c4eb127da36e1f8a5e6e494",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 30,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/profile",
+      "slug": "profile",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/mobile/default/screenshot.png",
+        "sha256": "bc7c53ca562031adc15c99f1cc4ff2f8345ae2ff338b5fb645238ec51464e009",
+        "bytes": 50302
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/mobile/default/contract.json",
+        "sha256": "868164b9b42659b1c779561337bc70e1178aae699bb41c6ef52584483ead33af",
+        "bytes": 53005
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/mobile/default/audit.json",
+        "sha256": "a5ad7e0de8fab1e32aef2640accc75b3d79c5564fc2198de2839a5526b16274e",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "majorRegions": 9,
+        "assets": 3,
+        "labels": 40,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile/default/screenshot.png",
+        "sha256": "f2359b3c1546504d97f80872fbe1cd634953d8f401412750edb2a16372aea1a1",
+        "bytes": 52960
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile/default/contract.json",
+        "sha256": "3cdcd9ea246db3df0fdbba036a73f927d58cd8224ae6828035f0ef3151187c73",
+        "bytes": 53732
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile/default/audit.json",
+        "sha256": "e23921569561bfe151fe43d6bf21ccc097ceab7898212293b0beb60df6ad14e0",
+        "bytes": 351
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 19,
+        "focusOrder": 19,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "wisdom-signal",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile/wisdom-signal/screenshot.png",
+        "sha256": "58dc22059159e3b291ddbd57f120b3df9ac34772a63cf01aa558ae983db92f16",
+        "bytes": 52865
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile/wisdom-signal/contract.json",
+        "sha256": "f10b4906bc478e8784676e41a62bb1f7b478da7c39b25235b9cefb69afa7c24f",
+        "bytes": 53732
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile/wisdom-signal/audit.json",
+        "sha256": "bb986694e5f29c0d7bffb561e04d665175a8caa05012fa894bd36e68ea2b898c",
+        "bytes": 349
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 19,
+        "focusOrder": 19,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile/default/screenshot.png",
+        "sha256": "2f28c7a9fdcb8c1be34854ded502def1f70e52eff0d10ac06787da39b086ce94",
+        "bytes": 56659
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile/default/contract.json",
+        "sha256": "956768226986ec9a03ad78b4fefdc575007d7f350da66a04e788b6eeb193e1f7",
+        "bytes": 62790
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile/default/audit.json",
+        "sha256": "bec6c4cbd1f746f15c72e9d950e45c6b26f1e5802c9c50b7c7b7efc9712876f1",
+        "bytes": 251
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 54,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "generated-session",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile/generated-session/screenshot.png",
+        "sha256": "ff1c59a520c4ac1e6fd20686881dc97a1bf90308180d4a7faf01d71384b70e74",
+        "bytes": 56258
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile/generated-session/contract.json",
+        "sha256": "bb669470aef808d6bcc09b33d0db10ed0375aa0dc26a7936018b07482ca0c331",
+        "bytes": 62785
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile/generated-session/audit.json",
+        "sha256": "32808abba19877011cf46f2805e60d52da93e68e54555b20b55a2e394edad962",
+        "bytes": 251
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 54,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/default/screenshot.png",
+        "sha256": "684e94ed942a375d8d75c1c78d69bfe0e778ab110d43f78a88f836dd771986f6",
+        "bytes": 60202
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/default/contract.json",
+        "sha256": "97f68d9dce2a77bf367d71017524e7ca04a382b7d11e31e5e751c5b68e2c5867",
+        "bytes": 1117251
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/default/audit.json",
+        "sha256": "38ec2e67c227333d8cd08273ac8f972e88a2afd1a3268998a5c57c4c42d027c3",
+        "bytes": 453
+      },
+      "contractSummary": {
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "majorRegions": 141,
+        "assets": 3,
+        "labels": 875,
+        "controls": 24,
+        "focusOrder": 24,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "clusters-tab",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/clusters-tab/screenshot.png",
+        "sha256": "684e94ed942a375d8d75c1c78d69bfe0e778ab110d43f78a88f836dd771986f6",
+        "bytes": 60202
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/clusters-tab/contract.json",
+        "sha256": "5bfd0c8e50eb132de9ae3dde664af80554b1d0df052786cd3b9c3bd155168635",
+        "bytes": 201704
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/clusters-tab/audit.json",
+        "sha256": "b7f5d97efd1525308075e446bfcab2437af9c70fe43b06ff9f82ff22dbf3793b",
+        "bytes": 451
+      },
+      "contractSummary": {
+        "orderedDom": 273,
+        "ids": 7,
+        "classLists": 128,
+        "majorRegions": 45,
+        "assets": 3,
+        "labels": 167,
+        "controls": 24,
+        "focusOrder": 24,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "promise-table-tab",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/promise-table-tab/screenshot.png",
+        "sha256": "684e94ed942a375d8d75c1c78d69bfe0e778ab110d43f78a88f836dd771986f6",
+        "bytes": 60202
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/promise-table-tab/contract.json",
+        "sha256": "2515abd8abaffd47001b1a1079cb1d82235edd519bd65fa540642e0fc9f32e05",
+        "bytes": 201012
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/promise-table-tab/audit.json",
+        "sha256": "f03a0e49abd871f0132c00b0a3b8dadcf3bea5f8cf73d3253ea93d6bfa5d41a0",
+        "bytes": 518
+      },
+      "contractSummary": {
+        "orderedDom": 265,
+        "ids": 7,
+        "classLists": 134,
+        "majorRegions": 42,
+        "assets": 3,
+        "labels": 163,
+        "controls": 25,
+        "focusOrder": 25,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "filtered-wisdom",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/filtered-wisdom/screenshot.png",
+        "sha256": "684e94ed942a375d8d75c1c78d69bfe0e778ab110d43f78a88f836dd771986f6",
+        "bytes": 60202
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/filtered-wisdom/contract.json",
+        "sha256": "2d65ac6fc4d2c4d33e2d8a87cfb6543495d925240f2497b1eb8dc46ece4daa4b",
+        "bytes": 168767
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile/filtered-wisdom/audit.json",
+        "sha256": "d1cdf296789a9744923075cdf648f8e551dfea39883edeab09ffdbc4dd277d8f",
+        "bytes": 451
+      },
+      "contractSummary": {
+        "orderedDom": 219,
+        "ids": 7,
+        "classLists": 119,
+        "majorRegions": 36,
+        "assets": 3,
+        "labels": 140,
+        "controls": 24,
+        "focusOrder": 24,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/default/screenshot.png",
+        "sha256": "d12c23f753d983588fed235a19d7939543a1db88dd7cc2a5ae6b93ea486940d2",
+        "bytes": 162821
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/default/contract.json",
+        "sha256": "349dc31e6f1d9f9f9fcf0718b28935fa930a581cee2c0e8d810c720f4fb6931d",
+        "bytes": 56010
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/default/audit.json",
+        "sha256": "522611e9f5865893a4285999486755609943f78815b5080ab43cd9bad063fb9d",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "majorRegions": 11,
+        "assets": 3,
+        "labels": 44,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "query-wisdom",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/query-wisdom/screenshot.png",
+        "sha256": "deab7f2dd6c7f3b4feeb89677fef2852927c738ef04168f3721b9039099fa396",
+        "bytes": 169142
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/query-wisdom/contract.json",
+        "sha256": "47463afec4431264521c3506cca0e3cb144eddef5a2580240a8464ed96e074bb",
+        "bytes": 64398
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/query-wisdom/audit.json",
+        "sha256": "acfd0be767072f4952a0ac54b3ffffae9ee78b39bb8d62d064d41ae81095e200",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 77,
+        "ids": 7,
+        "classLists": 54,
+        "majorRegions": 13,
+        "assets": 3,
+        "labels": 54,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "state": "keyboard-query",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/keyboard-query/screenshot.png",
+        "sha256": "3339db37658f6d5fc120647bf49405e5ba4cc2e5211572ebf7906778ed515f4f",
+        "bytes": 169369
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/keyboard-query/contract.json",
+        "sha256": "28e6e4bbf8d62ac23b1eb719440281f23b80ba91d24529a7a3f03625666df2ed",
+        "bytes": 64392
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile/keyboard-query/audit.json",
+        "sha256": "4ca5d7978c808caefa9978ca6a9500370b8f18d8116f26194c184db9471b860b",
+        "bytes": 240
+      },
+      "contractSummary": {
+        "orderedDom": 77,
+        "ids": 7,
+        "classLists": 54,
+        "majorRegions": 13,
+        "assets": 3,
+        "labels": 54,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/settings",
+      "slug": "settings",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile-small/default/screenshot.png",
+        "sha256": "09c2c62e047b4fa63587146f7aeaf7be2e592aaac0ad97a5973df189070dcfa8",
+        "bytes": 51063
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile-small/default/contract.json",
+        "sha256": "615677c6a176988c8d98fb65d521938d430eff7fbc73b5a1b923672e3c7eb3be",
+        "bytes": 99208
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/settings/mobile-small/default/audit.json",
+        "sha256": "e5b012dc23352e555745f44eceef9f100e5e05da3c1fdb3ddce747e9e20ee946",
+        "bytes": 295
+      },
+      "contractSummary": {
+        "orderedDom": 124,
+        "ids": 7,
+        "classLists": 64,
+        "majorRegions": 25,
+        "assets": 3,
+        "labels": 84,
+        "controls": 17,
+        "focusOrder": 17,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/privacy",
+      "slug": "privacy",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/mobile-small/default/screenshot.png",
+        "sha256": "7f77ea563ded6f0b23174e5e6a7a395fab5e98e1f629efd4fc04ca151efd17a2",
+        "bytes": 53951
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/mobile-small/default/contract.json",
+        "sha256": "343c29b0403dd465c3e1d440983bba14956e404c6e05d3b99154ab5c3e100a22",
+        "bytes": 45420
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/privacy/mobile-small/default/audit.json",
+        "sha256": "a5c05e50d5d527892913cd93b36a52217c4dea2e5274dd65f0a0af50b89566d6",
+        "bytes": 210
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 30,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/consent",
+      "slug": "consent",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/mobile-small/default/screenshot.png",
+        "sha256": "15d198a11b44da14ea970f414c85bbe64fffec82be48cd1482b49a6daf3d394e",
+        "bytes": 52305
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/mobile-small/default/contract.json",
+        "sha256": "ba8fff343bf9c505d13bffe552ac7985eb2f6a51a84288ab0557c3fd13740426",
+        "bytes": 50409
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/consent/mobile-small/default/audit.json",
+        "sha256": "c984a605748a98bfdc6a31ba7ebacc3ccb188c2ffd49b38992e92f2475663645",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 58,
+        "ids": 7,
+        "classLists": 39,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/terms",
+      "slug": "terms",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/mobile-small/default/screenshot.png",
+        "sha256": "d99fc17bd686c572a776c1276b37f39687942d05fbe3920f35532efc2d1f3fe1",
+        "bytes": 53257
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/mobile-small/default/contract.json",
+        "sha256": "d3b5afb2de525eb8fbc5bfc99ed938338cf45e04b88b31ae431508693d74b8c0",
+        "bytes": 45300
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/terms/mobile-small/default/audit.json",
+        "sha256": "b7fe0dfd3b505f9761a50d6e343db6919d32cd5864bc036c84a59e044400f17b",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 49,
+        "ids": 7,
+        "classLists": 36,
+        "majorRegions": 7,
+        "assets": 3,
+        "labels": 30,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/profile",
+      "slug": "profile",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/mobile-small/default/screenshot.png",
+        "sha256": "ca12675e92b5dd484c934ece95abc59c81297320c01cc0f03c0418d1aa66874b",
+        "bytes": 50015
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/mobile-small/default/contract.json",
+        "sha256": "a6d942a259ce1b33d08e8b6636f7197ce0d612b4e1f3afb808c20c6550c5b024",
+        "bytes": 53005
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/profile/mobile-small/default/audit.json",
+        "sha256": "355825fad826988a54d5fa94beba2e89941cd4bf1e629fe675568d3ceaff1032",
+        "bytes": 208
+      },
+      "contractSummary": {
+        "orderedDom": 68,
+        "ids": 7,
+        "classLists": 43,
+        "majorRegions": 9,
+        "assets": 3,
+        "labels": 40,
+        "controls": 14,
+        "focusOrder": 14,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/personalization",
+      "slug": "personalization",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile-small/default/screenshot.png",
+        "sha256": "464be670a68e4d8fd92e87bbd1b354a45b07d6ec78f24b341d02b7e2b9a79378",
+        "bytes": 50479
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile-small/default/contract.json",
+        "sha256": "34d65ebf259abcfd664a26912a1f49dac56345f264f517a6a6351ec7e2449f09",
+        "bytes": 53731
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/personalization/mobile-small/default/audit.json",
+        "sha256": "1dbfce72b44846b00b4fa34ddde2612c625ec8dafbbec9d0fcea8996e64c0177",
+        "bytes": 345
+      },
+      "contractSummary": {
+        "orderedDom": 56,
+        "ids": 7,
+        "classLists": 44,
+        "majorRegions": 8,
+        "assets": 3,
+        "labels": 36,
+        "controls": 19,
+        "focusOrder": 19,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/daily-word",
+      "slug": "daily-word",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile-small/default/screenshot.png",
+        "sha256": "5fc67846abb36d76c4d2bdf51f0e6c66af1049fed5414cd9c57d4bce04bd4099",
+        "bytes": 50554
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile-small/default/contract.json",
+        "sha256": "c1799d4372a0a4330cd8d768815982ae5f9f65ac507b31d0629f0485cf346630",
+        "bytes": 62790
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/daily-word/mobile-small/default/audit.json",
+        "sha256": "04fa44d97b226787423506ccdeb1dd27996f5086585f39fd58a790778da58376",
+        "bytes": 251
+      },
+      "contractSummary": {
+        "orderedDom": 81,
+        "ids": 7,
+        "classLists": 51,
+        "majorRegions": 10,
+        "assets": 3,
+        "labels": 54,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/explore",
+      "slug": "explore",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile-small/default/screenshot.png",
+        "sha256": "04cbabe1beba4416698df08cbc2ca7ea05cedb322cfeaba2ecf82a79e24a677c",
+        "bytes": 54720
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile-small/default/contract.json",
+        "sha256": "23a009f397712d861e3b077b1e35d5554e35d57d279302df44121c77922c8fa8",
+        "bytes": 1117254
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/explore/mobile-small/default/audit.json",
+        "sha256": "543aaf75b62961125e55e9232f21c76f49c7854cc8226000eb6da06a8597554e",
+        "bytes": 453
+      },
+      "contractSummary": {
+        "orderedDom": 1689,
+        "ids": 7,
+        "classLists": 644,
+        "majorRegions": 141,
+        "assets": 3,
+        "labels": 875,
+        "controls": 24,
+        "focusOrder": 24,
+        "accessibilityIssues": 0
+      }
+    },
+    {
+      "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+      "route": "/promise-search",
+      "slug": "promise-search",
+      "viewport": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "state": "default",
+      "screenshot": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile-small/default/screenshot.png",
+        "sha256": "0173c09bb4330281c0c3c3089b9a850272168cd4b8db77efe1ae014db3a55552",
+        "bytes": 152577
+      },
+      "contract": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile-small/default/contract.json",
+        "sha256": "c4b5dff380a71184fab688aeb9dc8b1dcfb34cda41761513f739bd65ab379c4c",
+        "bytes": 56010
+      },
+      "audit": {
+        "path": "tests/visual/baselines/owner-approved-next-support/promise-search/mobile-small/default/audit.json",
+        "sha256": "8171cff127f82b672a4a2f2fed60895227efa3819c6e34d038ac8144eec42c32",
+        "bytes": 242
+      },
+      "contractSummary": {
+        "orderedDom": 65,
+        "ids": 7,
+        "classLists": 46,
+        "majorRegions": 11,
+        "assets": 3,
+        "labels": 44,
+        "controls": 15,
+        "focusOrder": 15,
+        "accessibilityIssues": 0
+      }
+    }
+  ],
+  "immutableRules": [
+    "Do not overwrite, regenerate, move, or update these artifacts without a newer scoped owner approval.",
+    "Do not merge these artifacts into tests/visual/baselines/static-runtime/.",
+    "Do not add Dashboard or an internal route to this public support baseline.",
+    "Candidate outputs remain under .tmp/visual-parity/."
+  ]
+}

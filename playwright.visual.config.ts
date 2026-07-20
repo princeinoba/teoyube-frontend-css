@@ -75,6 +75,14 @@ export default defineConfig({
     {
       name: "support-route-baseline-parity",
       testMatch: /support-route-baseline-parity\.spec\.ts/
+    },
+    {
+      name: "owner-approved-next-support-capture",
+      testMatch: /owner-approved-next-support-capture\.spec\.ts/
+    },
+    {
+      name: "owner-approved-next-support-parity",
+      testMatch: /owner-approved-next-support-parity\.spec\.ts/
     }
   ]
 });

@@ -13,8 +13,8 @@ if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
   process.exit(2);
 }
-if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book", "remaining-retained", "gate-audit", "support-capture", "support-baseline"]).has(mode)) {
-  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey|journal-testimony-book|remaining-retained|gate-audit|support-capture|support-baseline>");
+if (!new Set(["static", "next", "status", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book", "remaining-retained", "gate-audit", "support-capture", "support-baseline", "next-support-capture", "next-support-baseline"]).has(mode)) {
+  console.error("Usage: node scripts/recovery/runVisualParitySuite.cjs <static|next|status|shell|today|search|canon-promise|prayer-calling-journey|journal-testimony-book|remaining-retained|gate-audit|support-capture|support-baseline|next-support-capture|next-support-baseline>");
   process.exit(2);
 }
 
@@ -86,7 +86,7 @@ async function main() {
   const staticOrigin = `http://127.0.0.1:${staticPort}`;
   const nextOrigin = `http://127.0.0.1:${nextPort}`;
   try {
-    if (!new Set(["status", "support-capture", "support-baseline"]).has(mode)) {
+    if (!new Set(["status", "support-capture", "support-baseline", "next-support-capture", "next-support-baseline"]).has(mode)) {
       const staticUrl = `${staticOrigin}/index.html`;
       if (!(await urlIsReady(staticUrl))) {
         const staticServer = startStaticServer(staticPort);
@@ -94,13 +94,22 @@ async function main() {
         await waitForUrl(staticServer, staticUrl);
       }
     }
-    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book" || mode === "remaining-retained" || mode === "gate-audit" || mode === "support-capture" || mode === "support-baseline") {
+    if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book" || mode === "remaining-retained" || mode === "gate-audit" || mode === "support-capture" || mode === "support-baseline" || mode === "next-support-capture" || mode === "next-support-baseline") {
       const nextServer = startNextServer(nextPort);
       servers.push(nextServer);
       await waitForUrl(nextServer, `${nextOrigin}/api/health`);
     }
 
-    const project = mode === "static"
+    const projects = mode === "next"
+      ? [
+          "today-parity",
+          "search-parity",
+          "canon-promise-parity",
+          "prayer-calling-journey-parity",
+          "journal-testimony-book-parity",
+          "remaining-retained-parity"
+        ]
+      : [mode === "static"
       ? "static-reproducibility"
       : mode === "shell"
         ? "shell-parity"
@@ -122,10 +131,19 @@ async function main() {
           ? "support-route-baseline-capture"
         : mode === "support-baseline"
           ? "support-route-baseline-parity"
-        : "next-candidate-contract";
+        : mode === "next-support-capture"
+          ? "owner-approved-next-support-capture"
+        : mode === "next-support-baseline"
+          ? "owner-approved-next-support-parity"
+        : "next-candidate-contract"];
     const tests = spawn(
       process.execPath,
-      [playwrightCli, "test", "--config=playwright.visual.config.ts", `--project=${project}`],
+      [
+        playwrightCli,
+        "test",
+        "--config=playwright.visual.config.ts",
+        ...projects.map((project) => `--project=${project}`)
+      ],
       {
         cwd: workspaceRoot,
         env: {

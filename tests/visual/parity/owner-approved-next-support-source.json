@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "amendmentId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+  "approvalDate": "2026-07-20",
+  "evidenceCommit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+  "state": "Exact Next preview render with fixed time and random values, external network blocked, fonts and visible images settled, animations and media paused, and scroll position zero.",
+  "captureEnvironment": {
+    "runtime": "next-preview-production-build",
+    "browser": "Google Chrome via Playwright",
+    "platform": "win32",
+    "colorScheme": "light",
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "fixedTime": "2026-07-18T12:00:00.000Z",
+    "externalNetwork": "blocked"
+  },
+  "viewports": [
+    { "name": "desktop-wide", "width": 1440, "height": 900 },
+    { "name": "desktop-standard", "width": 1280, "height": 800 },
+    { "name": "tablet-landscape", "width": 1024, "height": 768 },
+    { "name": "tablet-portrait", "width": 768, "height": 1024 },
+    { "name": "mobile", "width": 390, "height": 844 },
+    { "name": "mobile-small", "width": 360, "height": 800 }
+  ],
+  "routes": [
+    { "route": "/settings", "slug": "settings", "sourceSha256": "2abec0f8653601d308f0248cd999375efc1b384ed3791be3cd98734cfed7cfc8", "states": [{ "name": "default", "viewports": "all" }, { "name": "personalization-disabled", "viewports": ["desktop-wide", "mobile"] }] },
+    { "route": "/privacy", "slug": "privacy", "sourceSha256": "fea268e279efda0ff5a2882840be790dc981fc522ee6b2404d9ddf7a7be17e10", "states": [{ "name": "default", "viewports": "all" }] },
+    { "route": "/consent", "slug": "consent", "sourceSha256": "98d8357dcecdef4b3543c8d7a5b9238b0f8a4fc532ec204cc18894383f7a049b", "states": [{ "name": "default", "viewports": "all" }] },
+    { "route": "/terms", "slug": "terms", "sourceSha256": "f5ee919642b9318ca932ae9a31983e977a66c42da8220732f5ddc2360c3aaeab", "states": [{ "name": "default", "viewports": "all" }] },
+    { "route": "/profile", "slug": "profile", "sourceSha256": "69c255fa57cbaac6338e4868e2214ed36ae39f80650aefd0ad551c3659476845", "states": [{ "name": "default", "viewports": "all" }] },
+    { "route": "/personalization", "slug": "personalization", "sourceSha256": "bd5d0dcdfdedfe6a115797fe7bd404c15dbcc6e2a08aa8d6512298af9b7e4686", "states": [{ "name": "default", "viewports": "all" }, { "name": "wisdom-signal", "viewports": ["desktop-wide", "mobile"] }] },
+    { "route": "/daily-word", "slug": "daily-word", "sourceSha256": "bfe625ce8a5e0849c7d4e6ca7274066e1941edf618bd095d7a93519b4b954e6e", "states": [{ "name": "default", "viewports": "all" }, { "name": "generated-session", "viewports": ["desktop-wide", "mobile"] }] },
+    { "route": "/explore", "slug": "explore", "sourceSha256": "4aef660f788d59f0cd533d09fd107965998ce74287aff328b3e3632c5de5ff54", "states": [{ "name": "default", "viewports": "all" }, { "name": "clusters-tab", "viewports": ["desktop-wide", "mobile"] }, { "name": "promise-table-tab", "viewports": ["desktop-wide", "mobile"] }, { "name": "filtered-wisdom", "viewports": ["desktop-wide", "mobile"] }] },
+    { "route": "/promise-search", "slug": "promise-search", "sourceSha256": "f28a8c4642476c4df0d2e691b6fb07387034a54b9b6f8cea4fd35b4558158348", "states": [{ "name": "default", "viewports": "all" }, { "name": "query-wisdom", "viewports": ["desktop-wide", "mobile"] }, { "name": "keyboard-query", "viewports": ["desktop-wide", "mobile"] }] }
+  ],
+  "unsupportedCurrentStates": {
+    "/daily-word": ["reflection-entry control is not present on this approved route; reflection remains on /journal", "no separate loading or empty state"],
+    "/promise-search": ["no submit form or loading state; query results update on input change", "no empty state because deterministic local fallback always returns rows"],
+    "/explore": ["journey summary is rendered read-only; tabs and filtering are the current interactions"]
+  }
+}

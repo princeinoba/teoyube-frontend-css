@@ -1,0 +1,25 @@
+{
+  "issues": [],
+  "focusOrder": [
+    "input|0|Search",
+    "button|0|Words",
+    "button|0|Clusters",
+    "button|0|Promise Table",
+    "button|0|Paths",
+    "button|0|Archetypes",
+    "button|0|Scripture",
+    "button|0|Glyphs",
+    "button|0|Destiny",
+    "button|0|Graph"
+  ],
+  "lang": "en",
+  "performance": {
+    "domInteractiveMs": 217.7,
+    "loadMs": 347.7,
+    "resourceCount": 35
+  },
+  "storage": {
+    "local": 0,
+    "session": 0
+  }
+}

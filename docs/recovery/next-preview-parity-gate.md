@@ -12,11 +12,13 @@ Prompt 12B starting commit: `4c3aaba00b72bdad99ff376a0a23a0718e9dfc7b`
 
 Owner approval: `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8`
 
-Gate outcome: **BLOCKED — THREE RETAINED PUBLIC ROUTES STILL LACK AN APPROVED SOURCE BASELINE; NO RUNTIME CUTOVER**
+Prompt 12D amendment: `TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D`
 
-The owner accepted V-01 through V-04 as nonvisual rendering variance, approved the exact Prompt 12A render as the initial source of truth for ten named support routes, classified `/graph` as internal-only, and directed `/compass` to permanently redirect to `/calling-compass`. The approval is recorded verbatim and bound to machine-verifiable hashes. The eleven retained public views in the immutable 12-view matrix are now `PASS`; Roadmap remains owner-only. The approval did not identify `/prayer`, `/journey`, or `/journal` as approved visual sources or internal routes, so those three retain `BLOCKED_MISSING_STATIC_COUNTERPART`. `npm start` remains the static Node runtime.
+Gate outcome: **PASS — PARITY EVIDENCE COMPLETE; STATIC RUNTIME REMAINS CANONICAL**
 
-No original static baseline, protected static source, stylesheet, asset, or owner reference was regenerated or modified. The new support-route baseline is a separate owner-approved tree and does not supersede the original rendered static application outside its exact ten-route scope.
+The owner accepted the exact V-01, V-03, and V-04 nonvisual raster evidence; Search remains exact without an exception. Prompt 12D reconciles route visibility and parity source: Prayer, Journey, and Journal are retained public under unchanged frozen pre-migration contracts; nine named support routes use a separate owner-approved Next baseline; `/compass` is the sole canonical redirect; Dashboard is development-only. All retained public routes now have executable `PASS` evidence. Roadmap remains owner-only, and `npm start` remains the static Node runtime.
+
+No original static baseline, protected static source, stylesheet, asset, owner reference, or frozen pre-migration contract was regenerated or modified. The Prompt 12D support baseline is a separate owner-approved tree and does not supersede the original rendered static application outside its exact nine-route scope.
 
 ## Gate coverage
 
@@ -26,9 +28,9 @@ No original static baseline, protected static source, stylesheet, asset, or owne
 - Ordered DOM hierarchy, IDs, class ordering, parent paths, asset and background URLs, computed geometry, visible labels, interactive controls, focus order, and responsive navigation compared in every matrix cell.
 - Static reproducibility reran all 72 immutable screenshots and 12 desktop DOM snapshots.
 - Route-specific browser suites exercised carousels, keyboard controls, navigation, search categories, filters, tabs, pagination, status changes, remove/undo, drawers, local media, prayer, Calling discernment, Journal, Testimony, Book, Tables, Lexicon, and deterministic Teo Guide behavior.
-- Prayer, Journey, and Journal retained their frozen pre-migration responsive contracts at all six viewports.
-- Sixty owner-approved support-route screenshots and 120 DOM/asset contracts cover settings, privacy, consent, terms, profile, daily word, dashboard, explore, personalization, and promise search at all six viewports.
-- Graph remains internal-only and absent from normal navigation. `/compass` permanently redirects to `/calling-compass`.
+- Prayer, Journey, and Journal pass their unchanged frozen pre-migration responsive, DOM/class, functional, and safety contracts at all six viewports.
+- Fifty-four default and sixteen interaction-state captures cover settings, privacy, consent, terms, profile, personalization, daily word, explore, and promise search. Every capture includes a screenshot, rich DOM/class/asset/geometry contract, focus order, accessibility findings, performance fields, and storage evidence.
+- Dashboard is development-only. Graph remains internal-only and absent from normal navigation. `/compass` permanently redirects to `/calling-compass` while preserving safe relevant query parameters.
 - An isolated cold-context audit ran the 72 matrix cells again on dedicated static and Next ports for accessibility/focus parity and comparative performance.
 
 ## Immutable source verification
@@ -111,38 +113,38 @@ Changing those approved attributes or structures is outside this prompt. They re
 
 ## Performance comparison
 
-Method: one isolated cold browser context per runtime, view, and viewport; Chrome recycled per route; local loopback servers; fonts and visible images ready; 72 paired samples. A transient mismatch or ready time above 5,000 ms receives one same-threshold recapture; three cells used it. These numbers are comparative local evidence, not a production network benchmark.
+Method: one isolated cold browser context per runtime, view, and viewport; Chrome recycled per route; local loopback servers; fonts, visible images, and the approved route settle window ready; 72 paired samples. A transient mismatch or ready time above 5,000 ms receives one same-threshold recapture; two cells used it. These numbers are comparative local evidence, not a production network benchmark.
 
 | View | Static median ready | Next median ready | Static max | Next max |
 | --- | ---: | ---: | ---: | ---: |
-| Today | 2,580.5 ms | 2,198.5 ms | 3,153.6 ms | 2,335.3 ms |
-| Search | 1,893.8 ms | 1,010.7 ms | 2,325.2 ms | 1,209.9 ms |
-| Canon | 2,590.7 ms | 1,458.0 ms | 2,687.6 ms | 1,638.3 ms |
-| Promise Table | 1,982.7 ms | 1,054.1 ms | 2,368.2 ms | 1,096.8 ms |
-| Calling Compass | 2,029.0 ms | 1,194.8 ms | 2,543.4 ms | 1,691.6 ms |
-| Book | 1,578.9 ms | 789.4 ms | 2,157.2 ms | 893.6 ms |
-| Lexicon | 1,810.4 ms | 1,193.7 ms | 2,757.6 ms | 1,417.6 ms |
-| Testimony | 2,204.4 ms | 762.7 ms | 2,376.3 ms | 828.3 ms |
-| Teo Guide | 1,833.4 ms | 624.2 ms | 3,759.1 ms | 654.4 ms |
-| Embedded Videos | 2,291.3 ms | 821.6 ms | 3,585.4 ms | 2,262.4 ms |
-| Teoyube Tables | 2,219.2 ms | 1,123.2 ms | 2,408.9 ms | 1,836.3 ms |
-| Roadmap | 3,484.8 ms | 1,779.8 ms | 4,654.5 ms | 2,795.5 ms |
+| Today | 3,057.2 ms | 2,419.9 ms | 4,131.9 ms | 2,653.0 ms |
+| Search | 2,479.9 ms | 1,307.9 ms | 2,808.2 ms | 1,606.6 ms |
+| Canon | 3,141.8 ms | 1,511.4 ms | 4,097.4 ms | 1,940.3 ms |
+| Promise Table | 2,378.8 ms | 1,206.9 ms | 3,259.9 ms | 1,327.2 ms |
+| Calling Compass | 2,417.9 ms | 1,343.6 ms | 2,908.9 ms | 1,692.2 ms |
+| Book | 2,642.1 ms | 892.4 ms | 2,734.2 ms | 1,033.9 ms |
+| Lexicon | 2,079.9 ms | 1,376.5 ms | 2,817.3 ms | 1,525.0 ms |
+| Testimony | 2,639.3 ms | 943.1 ms | 2,825.1 ms | 1,009.4 ms |
+| Teo Guide | 2,168.2 ms | 769.0 ms | 3,253.3 ms | 827.8 ms |
+| Embedded Videos | 2,651.3 ms | 956.2 ms | 3,458.6 ms | 2,459.9 ms |
+| Teoyube Tables | 2,689.4 ms | 1,177.6 ms | 4,547.9 ms | 1,612.7 ms |
+| Roadmap | 4,234.1 ms | 2,632.5 ms | 4,401.7 ms | 2,790.6 ms |
 
-The maximum retained paired-cell values were 4,654.5 ms for static and 2,795.5 ms for Next. No final cell exceeded the 5,000 ms local gate, and accessibility/focus mismatches were zero.
+The maximum retained paired-cell values were 4,547.9 ms for static and 2,790.6 ms for Next. No final cell exceeded the 5,000 ms local gate, and accessibility/focus mismatches were zero.
 
-## Support-route source decisions
+## Route-source decisions
 
-The owner established the exact Prompt 12A Next render as the initial source of truth for ten named routes. Those captures are stored in the separate `tests/visual/baselines/owner-approved-support-routes/` tree with 60 screenshots and 120 DOM/asset contracts. The original static baseline remains untouched.
+Prompt 12D separates visibility, parity source, and gate status in `tests/visual/parity/support-route-status.json`.
 
-| Routes | Classification | Explicit status |
-| --- | --- | --- |
-| `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/daily-word`, `/dashboard`, `/explore`, `/personalization`, `/promise-search` | `OWNER_APPROVED_PUBLIC_ROUTE` | `OWNER_APPROVED_SOURCE_BASELINE` |
-| `/prayer`, `/journey`, `/journal` | `RETAINED_PUBLIC_ROUTE_REQUIRES_SOURCE_BASELINE` | `BLOCKED_MISSING_STATIC_COUNTERPART`; not named by the approval |
-| `/compass` → `/calling-compass` | `REDIRECT_TO_CANONICAL_PUBLIC_ROUTE` | `REDIRECT_TO_CANONICAL_PUBLIC_ROUTE`; permanent redirect implemented |
-| `/dev/teoyube-health`, `/tig/debug` | `DEVELOPMENT_ONLY` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
-| `/graph`, `/tig`, `/tig/data`, `/tig/graph`, `/tig/journal`, `/tig/journey`, `/tig/onboarding`, `/tig/privacy`, `/tig/progress`, `/tig/traversal` | `INTERNAL_ONLY` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
+| Routes | Visibility | Parity source | Gate status |
+| --- | --- | --- | --- |
+| `/prayer`, `/journey`, `/journal` | `RETAINED_PUBLIC` | `FROZEN_PRE_MIGRATION` | `PASS` |
+| `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/personalization`, `/daily-word`, `/explore`, `/promise-search` | `RETAINED_PUBLIC` | `OWNER_APPROVED_NEXT_SUPPORT` | `PASS` |
+| `/compass` → `/calling-compass` | `RETAINED_PUBLIC` alias | `CANONICAL_REDIRECT` | `PASS` |
+| `/dashboard`, `/dev/teoyube-health`, `/tig/debug` | `DEVELOPMENT_ONLY` | `NOT_APPLICABLE` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
+| `/graph`, `/tig`, `/tig/data`, `/tig/graph`, `/tig/journal`, `/tig/journey`, `/tig/onboarding`, `/tig/privacy`, `/tig/progress`, `/tig/traversal` | `INTERNAL_ONLY` | `NOT_APPLICABLE` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
 
-The complete machine-readable inventory is `tests/visual/parity/support-route-status.json`. Roadmap remains owner-only. Graph, Roadmap, development, and TIG routes remain absent from normal navigation. The omission of Prayer, Journey, and Journal from the approval cannot be treated as silence-based authorization, so Prompt 13 remains locked.
+Roadmap remains `OWNER_ONLY` in the immutable 12-view inventory. The historical R8 ten-route evidence remains hash-verified under its original tree, but its Dashboard/public grouping is superseded for current route taxonomy by Prompt 12D.
 
 ## Intentional nonvisual differences
 
@@ -154,14 +156,16 @@ The complete machine-readable inventory is `tests/visual/parity/support-route-st
 | Route addresses | Static `index.html#view` versus typed Next routes | Route mapping is explicit in the immutable matrix and status file |
 | Approved stylesheet serving | Static file URLs versus Next preview rewrites for the same protected styles/assets | Computed geometry, classes, stylesheet output, and asset URLs remain compared; source files unchanged |
 | Test determinism | Fixed time/randomness, paused animations and media, controlled carousel state, blocked external network | Applied symmetrically in the test harness only; production behavior unchanged |
-| Owner-approved support routes without static cells | 10 exact Next renders | Stored in a separate approval-bound baseline tree; never represented as original static parity |
-| Other internal/support views without static cells | 16 classified page routes | Redirect, internal/development, or blocked-source treatment is explicit and machine-checked |
+| Owner-approved support routes without static cells | 9 exact Next renders, 70 default/interaction captures | Stored in a separate amendment-bound baseline tree; never represented as original static parity |
+| Frozen pre-migration public routes | Prayer, Journey, Journal | Existing contracts remain unchanged and executable; no baseline regeneration |
+| Other internal/support views without static cells | Explicitly classified page routes | Redirect and internal/development treatment is machine-checked |
 
 ## Commands and results
 
 | Command | Result |
 | --- | --- |
 | `npm run recovery:verify` | PASS before work |
+| `npm run recovery:next-support:verify` | PASS — 9 routes, 54 default captures, 16 interaction captures, focused functional and redirect tests |
 | `npm run recovery:tig:verify` | PASS — direct seed-owner boundary intact |
 | `npm run check:imports` | PASS — 1,411 files, 0 missing imports |
 | `npm run visual:parity:verify` | PASS — static 72 screenshots / 12 DOM snapshots |
@@ -172,7 +176,8 @@ The complete machine-readable inventory is `tests/visual/parity/support-route-st
 | `npm run visual:parity:prayer-calling-journey` | PASS — 6 browser tests |
 | `npm run visual:parity:journal-testimony-book` | PASS — 6 browser tests |
 | `npm run visual:parity:remaining-retained` | PASS — 11 browser tests |
-| `npm run visual:parity:gate:audit` | PASS — 72 accessibility/focus/performance pairs, 0 violations; Chrome recycled per route; three unchanged-threshold retries |
+| `npm run visual:parity:next` | PASS — 35 scoped route tests in one fresh aggregate run |
+| `npm run visual:parity:gate:audit` | PASS — 72 accessibility/focus/performance pairs, 0 violations; Chrome recycled per route; two unchanged-threshold retries |
 | `npm run typecheck` | PASS |
 | `npm run lint` | PASS |
 | `npm run test` | PASS — 11 files, 59 tests |
@@ -192,7 +197,9 @@ Every Prompt 12A route-specific suite started the current built preview cleanly.
 - Immutable original static baselines: `tests/visual/baselines/static-runtime/` — read-only and unchanged
 - Owner approval record: `docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.md`
 - Durable owner-review artifacts: `docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/`
-- Owner-approved support-route baselines: `tests/visual/baselines/owner-approved-support-routes/`
+- Prompt 12D owner-approved support-route baselines: `tests/visual/baselines/owner-approved-next-support/`
+- Historical R8 support evidence: `tests/visual/baselines/owner-approved-support-routes/`
+- Prompt 12D amendment: `docs/owner-approvals/visual/TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D.md`
 
 ## Runtime and next gate
 
@@ -202,6 +209,6 @@ Every Prompt 12A route-specific suite started the current built preview cleanly.
 - Baseline update: forbidden and not performed.
 - Unified-journey expansion: not started.
 - Runtime cutover: not authorized and not performed.
-- Owner decisions applied: V-01 through V-04, ten exact support-route source baselines, Graph internal-only, and the Compass permanent redirect.
-- Remaining owner action: identify or approve the visual source for `/prayer`, `/journey`, and `/journal`, or explicitly reclassify each route.
-- Prompt 13 entry gate: **BLOCKED** because those three retained public routes still have `BLOCKED_MISSING_STATIC_COUNTERPART`.
+- Owner decisions applied: evidence-bound raster decisions, three frozen pre-migration public routes, nine exact support baselines, the Compass redirect, Dashboard development-only, Graph internal-only, and Roadmap owner-only.
+- Prompt 13 entry gate: **UNLOCKED** after every Prompt 12D executable check passes.
+- Prompt 14: not authorized.

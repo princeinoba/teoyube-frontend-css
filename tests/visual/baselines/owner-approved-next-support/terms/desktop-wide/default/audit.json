@@ -1,0 +1,14 @@
+{
+  "issues": [],
+  "focusOrder": [],
+  "lang": "en",
+  "performance": {
+    "domInteractiveMs": 266,
+    "loadMs": 368.4,
+    "resourceCount": 33
+  },
+  "storage": {
+    "local": 0,
+    "session": 0
+  }
+}

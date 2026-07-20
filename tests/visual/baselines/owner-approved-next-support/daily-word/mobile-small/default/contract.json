@@ -1,0 +1,2756 @@
+{
+  "orderedDom": [
+    {
+      "index": 0,
+      "path": "aside#primarySidebar",
+      "parentPath": "body > div:nth-of-type(2)",
+      "tag": "aside",
+      "id": "primarySidebar",
+      "classes": [
+        "sidebar",
+        "app-sidebar"
+      ],
+      "role": "",
+      "ariaLabel": "Primary",
+      "attributes": [
+        [
+          "class",
+          "sidebar app-sidebar"
+        ],
+        [
+          "id",
+          "primarySidebar"
+        ],
+        [
+          "aria-label",
+          "Primary"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 1,
+      "path": "aside#primarySidebar > div",
+      "parentPath": "aside#primarySidebar",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "brand-lockup"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "brand-lockup"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 2,
+      "path": "aside#primarySidebar > div > div:nth-of-type(1)",
+      "parentPath": "aside#primarySidebar > div",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "brand-mark"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "brand-mark"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 3,
+      "path": "aside#primarySidebar > div > div:nth-of-type(2)",
+      "parentPath": "aside#primarySidebar > div",
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 4,
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > p:nth-of-type(1)",
+      "parentPath": "aside#primarySidebar > div > div:nth-of-type(2)",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "eyebrow"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 5,
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > h1",
+      "parentPath": "aside#primarySidebar > div > div:nth-of-type(2)",
+      "tag": "h1",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 6,
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > p:nth-of-type(2)",
+      "parentPath": "aside#primarySidebar > div > div:nth-of-type(2)",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "brand-subtitle"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "brand-subtitle"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 7,
+      "path": "aside#primarySidebar > nav",
+      "parentPath": "aside#primarySidebar",
+      "tag": "nav",
+      "id": "",
+      "classes": [
+        "nav-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-list"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 8,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(1)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item",
+        "active"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item active"
+        ],
+        [
+          "data-view",
+          "today"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 9,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(2)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "search"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 10,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(3)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "canon"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 11,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(4)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "table"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 12,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(5)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "calling"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 13,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(6)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "book"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 14,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(7)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "lexicon"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 15,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(8)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "testimony"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 16,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(9)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "guide"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 17,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(10)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "ui-elements"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 18,
+      "path": "aside#primarySidebar > nav > button:nth-of-type(11)",
+      "parentPath": "aside#primarySidebar > nav",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "nav-item"
+        ],
+        [
+          "data-view",
+          "teoyube-tables"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 19,
+      "path": "aside#primarySidebar > section",
+      "parentPath": "aside#primarySidebar",
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "saint-card"
+      ],
+      "role": "",
+      "ariaLabel": "Saint profile",
+      "attributes": [
+        [
+          "class",
+          "saint-card"
+        ],
+        [
+          "aria-label",
+          "Saint profile"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 20,
+      "path": "aside#primarySidebar > section > div",
+      "parentPath": "aside#primarySidebar > section",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "saint-profile-head"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "saint-profile-head"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 21,
+      "path": "aside#primarySidebar > section > div > span:nth-of-type(1)",
+      "parentPath": "aside#primarySidebar > section > div",
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "saint-avatar"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "saint-avatar"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 22,
+      "path": "aside#primarySidebar > section > div > div",
+      "parentPath": "aside#primarySidebar > section > div",
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 23,
+      "path": "aside#primarySidebar > section > div > div > p",
+      "parentPath": "aside#primarySidebar > section > div > div",
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 24,
+      "path": "h2#sidebarName",
+      "parentPath": "aside#primarySidebar > section > div > div",
+      "tag": "h2",
+      "id": "sidebarName",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "id",
+          "sidebarName"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 25,
+      "path": "aside#primarySidebar > section > div > span:nth-of-type(2)",
+      "parentPath": "aside#primarySidebar > section > div",
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "active-badge"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "active-badge"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 26,
+      "path": "p#sidebarCalling",
+      "parentPath": "aside#primarySidebar > section",
+      "tag": "p",
+      "id": "sidebarCalling",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "id",
+          "sidebarCalling"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 27,
+      "path": "button#openAssessment",
+      "parentPath": "aside#primarySidebar > section",
+      "tag": "button",
+      "id": "openAssessment",
+      "classes": [
+        "secondary",
+        "full"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "secondary full"
+        ],
+        [
+          "id",
+          "openAssessment"
+        ],
+        [
+          "type",
+          "button"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 28,
+      "path": "button#openPersonalizationCenter",
+      "parentPath": "aside#primarySidebar > section",
+      "tag": "button",
+      "id": "openPersonalizationCenter",
+      "classes": [
+        "secondary",
+        "full"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "secondary full"
+        ],
+        [
+          "id",
+          "openPersonalizationCenter"
+        ],
+        [
+          "type",
+          "button"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 29,
+      "path": "button#mobileNavBackdrop",
+      "parentPath": "body > div:nth-of-type(2)",
+      "tag": "button",
+      "id": "mobileNavBackdrop",
+      "classes": [
+        "mobile-nav-backdrop"
+      ],
+      "role": "",
+      "ariaLabel": "Close navigation",
+      "attributes": [
+        [
+          "class",
+          "mobile-nav-backdrop"
+        ],
+        [
+          "id",
+          "mobileNavBackdrop"
+        ],
+        [
+          "type",
+          "button"
+        ],
+        [
+          "aria-label",
+          "Close navigation"
+        ],
+        [
+          "hidden",
+          ""
+        ]
+      ],
+      "hidden": true
+    },
+    {
+      "index": 30,
+      "path": "button#mobileNavToggle",
+      "parentPath": "body > div:nth-of-type(2)",
+      "tag": "button",
+      "id": "mobileNavToggle",
+      "classes": [
+        "secondary",
+        "action-icon-button",
+        "mobile-nav-toggle"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "secondary action-icon-button mobile-nav-toggle"
+        ],
+        [
+          "id",
+          "mobileNavToggle"
+        ],
+        [
+          "type",
+          "button"
+        ],
+        [
+          "aria-controls",
+          "primarySidebar"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 31,
+      "path": "button#mobileNavToggle > span:nth-of-type(1)",
+      "parentPath": "button#mobileNavToggle",
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-menu"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "button-icon button-icon-menu"
+        ],
+        [
+          "aria-hidden",
+          "true"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 32,
+      "path": "button#mobileNavToggle > span:nth-of-type(2)",
+      "parentPath": "button#mobileNavToggle",
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 33,
+      "path": "main#appMain > main",
+      "parentPath": "main#appMain",
+      "tag": "main",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 34,
+      "path": "main#appMain > main > section:nth-of-type(1)",
+      "parentPath": "main#appMain > main",
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "page-title-row"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "page-title-row"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 35,
+      "path": "main#appMain > main > section:nth-of-type(1) > div",
+      "parentPath": "main#appMain > main > section:nth-of-type(1)",
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 36,
+      "path": "main#appMain > main > section:nth-of-type(1) > div > p:nth-of-type(1)",
+      "parentPath": "main#appMain > main > section:nth-of-type(1) > div",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "eyebrow"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 37,
+      "path": "main#appMain > main > section:nth-of-type(1) > div > h1",
+      "parentPath": "main#appMain > main > section:nth-of-type(1) > div",
+      "tag": "h1",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 38,
+      "path": "main#appMain > main > section:nth-of-type(1) > div > p:nth-of-type(2)",
+      "parentPath": "main#appMain > main > section:nth-of-type(1) > div",
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 39,
+      "path": "main#appMain > main > article",
+      "parentPath": "main#appMain > main",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 40,
+      "path": "main#appMain > main > article > p:nth-of-type(1)",
+      "parentPath": "main#appMain > main > article",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "eyebrow"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 41,
+      "path": "main#appMain > main > article > h2",
+      "parentPath": "main#appMain > main > article",
+      "tag": "h2",
+      "id": "",
+      "classes": [
+        "gold"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "gold"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 42,
+      "path": "main#appMain > main > article > p:nth-of-type(2)",
+      "parentPath": "main#appMain > main > article",
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 43,
+      "path": "main#appMain > main > article > div",
+      "parentPath": "main#appMain > main > article",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "activity-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "activity-list"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 44,
+      "path": "main#appMain > main > article > div > div:nth-of-type(1)",
+      "parentPath": "main#appMain > main > article > div",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "mini-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "mini-card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 45,
+      "path": "main#appMain > main > article > div > div:nth-of-type(1) > strong",
+      "parentPath": "main#appMain > main > article > div > div:nth-of-type(1)",
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 46,
+      "path": "main#appMain > main > article > div > div:nth-of-type(1) > p",
+      "parentPath": "main#appMain > main > article > div > div:nth-of-type(1)",
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 47,
+      "path": "main#appMain > main > article > div > div:nth-of-type(2)",
+      "parentPath": "main#appMain > main > article > div",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "mini-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "mini-card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 48,
+      "path": "main#appMain > main > article > div > div:nth-of-type(2) > strong",
+      "parentPath": "main#appMain > main > article > div > div:nth-of-type(2)",
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 49,
+      "path": "main#appMain > main > article > div > div:nth-of-type(2) > p",
+      "parentPath": "main#appMain > main > article > div > div:nth-of-type(2)",
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 50,
+      "path": "main#appMain > main > article > div > div:nth-of-type(3)",
+      "parentPath": "main#appMain > main > article > div",
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "mini-card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "mini-card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 51,
+      "path": "main#appMain > main > article > div > div:nth-of-type(3) > strong",
+      "parentPath": "main#appMain > main > article > div > div:nth-of-type(3)",
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 52,
+      "path": "main#appMain > main > article > div > div:nth-of-type(3) > p",
+      "parentPath": "main#appMain > main > article > div > div:nth-of-type(3)",
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 53,
+      "path": "main#appMain > main > article > p:nth-of-type(3)",
+      "parentPath": "main#appMain > main > article",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "muted"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "muted"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 54,
+      "path": "main#appMain > main > article > span",
+      "parentPath": "main#appMain > main > article",
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "status-pill"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "status-pill"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 55,
+      "path": "main#appMain > main > article > article",
+      "parentPath": "main#appMain > main > article",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 56,
+      "path": "main#appMain > main > article > article > p",
+      "parentPath": "main#appMain > main > article > article",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "eyebrow"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 57,
+      "path": "main#appMain > main > article > article > h2",
+      "parentPath": "main#appMain > main > article > article",
+      "tag": "h2",
+      "id": "",
+      "classes": [
+        "gold"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "gold"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 58,
+      "path": "main#appMain > main > article > article > ol",
+      "parentPath": "main#appMain > main > article > article",
+      "tag": "ol",
+      "id": "",
+      "classes": [
+        "check-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "check-list"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 59,
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(1)",
+      "parentPath": "main#appMain > main > article > article > ol",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 60,
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(2)",
+      "parentPath": "main#appMain > main > article > article > ol",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 61,
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(3)",
+      "parentPath": "main#appMain > main > article > article > ol",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 62,
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(4)",
+      "parentPath": "main#appMain > main > article > article > ol",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 63,
+      "path": "main#appMain > main > article > button",
+      "parentPath": "main#appMain > main > article",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "button",
+        "primary"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "button primary"
+        ],
+        [
+          "type",
+          "button"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 64,
+      "path": "main#appMain > main > section:nth-of-type(2)",
+      "parentPath": "main#appMain > main",
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "grid",
+        "two"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "grid two"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 65,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2)",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 66,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > p",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1)",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "eyebrow"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 67,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > h2",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1)",
+      "tag": "h2",
+      "id": "",
+      "classes": [
+        "gold"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "gold"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 68,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1)",
+      "tag": "ul",
+      "id": "",
+      "classes": [
+        "check-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "check-list"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 69,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(1)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 70,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(2)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 71,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(3)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 72,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(4)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 73,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(5)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 74,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2)",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "card"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 75,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > p",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2)",
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "eyebrow"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 76,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > h2",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2)",
+      "tag": "h2",
+      "id": "",
+      "classes": [
+        "gold"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "gold"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 77,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2)",
+      "tag": "ul",
+      "id": "",
+      "classes": [
+        "check-list"
+      ],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [
+        [
+          "class",
+          "check-list"
+        ]
+      ],
+      "hidden": false
+    },
+    {
+      "index": 78,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul > li:nth-of-type(1)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 79,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul > li:nth-of-type(2)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    },
+    {
+      "index": 80,
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul > li:nth-of-type(3)",
+      "parentPath": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul",
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "role": "",
+      "ariaLabel": "",
+      "attributes": [],
+      "hidden": false
+    }
+  ],
+  "ids": [
+    "primarySidebar",
+    "sidebarName",
+    "sidebarCalling",
+    "openAssessment",
+    "openPersonalizationCenter",
+    "mobileNavBackdrop",
+    "mobileNavToggle"
+  ],
+  "classLists": [
+    {
+      "path": "aside#primarySidebar",
+      "classes": [
+        "sidebar",
+        "app-sidebar"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > div",
+      "classes": [
+        "brand-lockup"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(1)",
+      "classes": [
+        "brand-mark"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > p:nth-of-type(1)",
+      "classes": [
+        "eyebrow"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > p:nth-of-type(2)",
+      "classes": [
+        "brand-subtitle"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav",
+      "classes": [
+        "nav-list"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(1)",
+      "classes": [
+        "nav-item",
+        "active"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(2)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(3)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(4)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(5)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(6)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(7)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(8)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(9)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(10)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(11)",
+      "classes": [
+        "nav-item"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > section",
+      "classes": [
+        "saint-card"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > section > div",
+      "classes": [
+        "saint-profile-head"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > section > div > span:nth-of-type(1)",
+      "classes": [
+        "saint-avatar"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > section > div > span:nth-of-type(2)",
+      "classes": [
+        "active-badge"
+      ]
+    },
+    {
+      "path": "button#openAssessment",
+      "classes": [
+        "secondary",
+        "full"
+      ]
+    },
+    {
+      "path": "button#openPersonalizationCenter",
+      "classes": [
+        "secondary",
+        "full"
+      ]
+    },
+    {
+      "path": "button#mobileNavBackdrop",
+      "classes": [
+        "mobile-nav-backdrop"
+      ]
+    },
+    {
+      "path": "button#mobileNavToggle",
+      "classes": [
+        "secondary",
+        "action-icon-button",
+        "mobile-nav-toggle"
+      ]
+    },
+    {
+      "path": "button#mobileNavToggle > span:nth-of-type(1)",
+      "classes": [
+        "button-icon",
+        "button-icon-menu"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(1)",
+      "classes": [
+        "page-title-row"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(1) > div > p:nth-of-type(1)",
+      "classes": [
+        "eyebrow"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article",
+      "classes": [
+        "card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > p:nth-of-type(1)",
+      "classes": [
+        "eyebrow"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > h2",
+      "classes": [
+        "gold"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > div",
+      "classes": [
+        "activity-list"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(1)",
+      "classes": [
+        "mini-card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(2)",
+      "classes": [
+        "mini-card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(3)",
+      "classes": [
+        "mini-card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > p:nth-of-type(3)",
+      "classes": [
+        "muted"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > span",
+      "classes": [
+        "status-pill"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > article",
+      "classes": [
+        "card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > article > p",
+      "classes": [
+        "eyebrow"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > article > h2",
+      "classes": [
+        "gold"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > article > ol",
+      "classes": [
+        "check-list"
+      ]
+    },
+    {
+      "path": "main#appMain > main > article > button",
+      "classes": [
+        "button",
+        "primary"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2)",
+      "classes": [
+        "grid",
+        "two"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1)",
+      "classes": [
+        "card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > p",
+      "classes": [
+        "eyebrow"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > h2",
+      "classes": [
+        "gold"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul",
+      "classes": [
+        "check-list"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2)",
+      "classes": [
+        "card"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > p",
+      "classes": [
+        "eyebrow"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > h2",
+      "classes": [
+        "gold"
+      ]
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul",
+      "classes": [
+        "check-list"
+      ]
+    }
+  ],
+  "majorRegions": [
+    {
+      "path": "aside#primarySidebar",
+      "tag": "aside",
+      "id": "primarySidebar",
+      "classes": [
+        "sidebar",
+        "app-sidebar"
+      ],
+      "geometry": {
+        "x": -347.2,
+        "y": 4.8,
+        "width": 320,
+        "height": 800
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav",
+      "tag": "nav",
+      "id": "",
+      "classes": [
+        "nav-list"
+      ],
+      "geometry": {
+        "x": -327.8,
+        "y": 126.3,
+        "width": 266.2,
+        "height": 537.5
+      }
+    },
+    {
+      "path": "aside#primarySidebar > section",
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "saint-card"
+      ],
+      "geometry": {
+        "x": -327.8,
+        "y": 506.7,
+        "width": 266.2,
+        "height": 266.7
+      }
+    },
+    {
+      "path": "main#appMain > main",
+      "tag": "main",
+      "id": "",
+      "classes": [],
+      "geometry": {
+        "x": 26.4,
+        "y": 292.4,
+        "width": 307.2,
+        "height": 1703.4
+      }
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(1)",
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "page-title-row"
+      ],
+      "geometry": {
+        "x": 52.8,
+        "y": 316.4,
+        "width": 254.4,
+        "height": 128
+      }
+    },
+    {
+      "path": "main#appMain > main > article",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "geometry": {
+        "x": 52.8,
+        "y": 444.4,
+        "width": 254.4,
+        "height": 706.6
+      }
+    },
+    {
+      "path": "main#appMain > main > article > article",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "geometry": {
+        "x": 52.8,
+        "y": 789.5,
+        "width": 254.4,
+        "height": 302
+      }
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2)",
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "grid",
+        "two"
+      ],
+      "geometry": {
+        "x": 52.8,
+        "y": 1150.9,
+        "width": 254.4,
+        "height": 800
+      }
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1)",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "geometry": {
+        "x": 52.8,
+        "y": 1150.9,
+        "width": 254.4,
+        "height": 440
+      }
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2)",
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "card"
+      ],
+      "geometry": {
+        "x": 52.8,
+        "y": 1606.9,
+        "width": 254.4,
+        "height": 344
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(1)",
+      "tag": "div",
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "path": "aside#primarySidebar > section",
+      "tag": "section",
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 12% 12%, rgba(255, 246, 199, 0.4), rgba(0, 0, 0, 0) 112px), none"
+    },
+    {
+      "path": "aside#primarySidebar > section > div > span:nth-of-type(1)",
+      "tag": "span",
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgba(0, 79, 62, 0.08), rgba(245, 211, 106, 0.16)), url(/public/images/sidebar/saint-profile-avatar.png)"
+    }
+  ],
+  "visibleLabels": [
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > p:nth-of-type(1)",
+      "text": "Ephesians 1:18"
+    },
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > h1",
+      "text": "TEOYUBE"
+    },
+    {
+      "path": "aside#primarySidebar > div > div:nth-of-type(2) > p:nth-of-type(2)",
+      "text": "Creative Digital Ministry"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(1)",
+      "text": "Today"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(2)",
+      "text": "TeoyubeSearch"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(3)",
+      "text": "Canon"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(4)",
+      "text": "Promise Table"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(5)",
+      "text": "Calling Compass"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(6)",
+      "text": "Book of the Saint"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(7)",
+      "text": "Lexicon"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(8)",
+      "text": "Testimony"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(9)",
+      "text": "Teo Guide"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(10)",
+      "text": "Embedded Videos"
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(11)",
+      "text": "Tables"
+    },
+    {
+      "path": "aside#primarySidebar > section > div > div > p",
+      "text": "Welcome back,"
+    },
+    {
+      "path": "h2#sidebarName",
+      "text": "Saint"
+    },
+    {
+      "path": "aside#primarySidebar > section > div > span:nth-of-type(2)",
+      "text": "Active"
+    },
+    {
+      "path": "p#sidebarCalling",
+      "text": "Creative Digital Ministry - Active Assignment"
+    },
+    {
+      "path": "button#openAssessment",
+      "text": "Purpose Assessment"
+    },
+    {
+      "path": "button#openPersonalizationCenter",
+      "text": "Personalization Center"
+    },
+    {
+      "path": "button#mobileNavToggle > span:nth-of-type(2)",
+      "text": "Menu"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(1) > div > p:nth-of-type(1)",
+      "text": "Daily Word"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(1) > div > h1",
+      "text": "Today's Formation Path"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(1) > div > p:nth-of-type(2)",
+      "text": "Generate a local daily Teoyube word, keep Scripture visible, pray from it, add a reflection, and save session activity."
+    },
+    {
+      "path": "main#appMain > main > article > p:nth-of-type(1)",
+      "text": "Daily Word"
+    },
+    {
+      "path": "main#appMain > main > article > h2",
+      "text": "Doxa"
+    },
+    {
+      "path": "main#appMain > main > article > p:nth-of-type(2)",
+      "text": "Glory"
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(1) > strong",
+      "text": "Scripture"
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(1) > p",
+      "text": "2 Corinthians 3:18"
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(2) > strong",
+      "text": "Promise Cluster"
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(2) > p",
+      "text": "Presence & Glory"
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(3) > strong",
+      "text": "Action"
+    },
+    {
+      "path": "main#appMain > main > article > div > div:nth-of-type(3) > p",
+      "text": "Write the Delay"
+    },
+    {
+      "path": "main#appMain > main > article > p:nth-of-type(3)",
+      "text": "Father, root this step in 2 Corinthians 3:18. Give humility, wisdom, and courage to respond faithfully without presuming certainty."
+    },
+    {
+      "path": "main#appMain > main > article > span",
+      "text": "High confidence - Scripture anchor present"
+    },
+    {
+      "path": "main#appMain > main > article > article > p",
+      "text": "Explanation"
+    },
+    {
+      "path": "main#appMain > main > article > article > h2",
+      "text": "Why This Was Suggested"
+    },
+    {
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(1)",
+      "text": "Daily word selected from local Teoyube vocabulary: Doxa."
+    },
+    {
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(2)",
+      "text": "Promise cluster matched locally: Presence & Glory."
+    },
+    {
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(3)",
+      "text": "Scripture anchor preserved: 2 Corinthians 3:18."
+    },
+    {
+      "path": "main#appMain > main > article > article > ol > li:nth-of-type(4)",
+      "text": "Prayer and action are generated from local rules and remain devotional, not directive."
+    },
+    {
+      "path": "main#appMain > main > article > button",
+      "text": "Generate Today's Journey"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > p",
+      "text": "Guardrails"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > h2",
+      "text": "Teoyube Guardrails"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(1)",
+      "text": "Scripture is the highest authority; Teoyube words are aids, not Scripture."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(2)",
+      "text": "The local engine does not claim divine certainty or say God told the app something."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(3)",
+      "text": "Major decisions should be tested through prayer, Scripture, wise counsel, fruit, and time."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(4)",
+      "text": "Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(1) > ul > li:nth-of-type(5)",
+      "text": "Testimony is user-recorded only and is never automatically certified as promise fulfillment."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > p",
+      "text": "Limitations"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > h2",
+      "text": "Local Preview Boundaries"
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul > li:nth-of-type(1)",
+      "text": "No live AI orchestration, analytics, accounts, payments, automatic contact, or database persistence is connected."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul > li:nth-of-type(2)",
+      "text": "Personalization is session-only and explainable; raw private text is not exported or stored in browser persistence."
+    },
+    {
+      "path": "main#appMain > main > section:nth-of-type(2) > article:nth-of-type(2) > ul > li:nth-of-type(3)",
+      "text": "Calling and prayer language remains devotional, cautious, and Scripture-reviewable."
+    }
+  ],
+  "interactiveControls": [
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(1)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item",
+        "active"
+      ],
+      "role": "",
+      "name": "Today",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 126.3,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(2)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "TeoyubeSearch",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 175.6,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(3)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Canon",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 224.8,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(4)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Promise Table",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 274.1,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(5)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Calling Compass",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 323.4,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(6)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Book of the Saint",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 372.6,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(7)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Lexicon",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 421.9,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(8)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Testimony",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 471.2,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(9)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Teo Guide",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 520.4,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(10)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Embedded Videos",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 569.7,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(11)",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "nav-item"
+      ],
+      "role": "",
+      "name": "Tables",
+      "type": "",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -327.8,
+        "y": 619,
+        "width": 266.2,
+        "height": 44.8
+      }
+    },
+    {
+      "path": "button#openAssessment",
+      "tag": "button",
+      "id": "openAssessment",
+      "classes": [
+        "secondary",
+        "full"
+      ],
+      "role": "",
+      "name": "Purpose Assessment",
+      "type": "button",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -314.3,
+        "y": 656.4,
+        "width": 239.3,
+        "height": 49.4
+      }
+    },
+    {
+      "path": "button#openPersonalizationCenter",
+      "tag": "button",
+      "id": "openPersonalizationCenter",
+      "classes": [
+        "secondary",
+        "full"
+      ],
+      "role": "",
+      "name": "Personalization Center",
+      "type": "button",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": -314.3,
+        "y": 714.6,
+        "width": 239.3,
+        "height": 45.4
+      }
+    },
+    {
+      "path": "button#mobileNavToggle",
+      "tag": "button",
+      "id": "mobileNavToggle",
+      "classes": [
+        "secondary",
+        "action-icon-button",
+        "mobile-nav-toggle"
+      ],
+      "role": "",
+      "name": "Menu",
+      "type": "button",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": 12,
+        "y": 8,
+        "width": 112,
+        "height": 45.4
+      }
+    },
+    {
+      "path": "main#appMain > main > article > button",
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "button",
+        "primary"
+      ],
+      "role": "",
+      "name": "Generate Today's Journey",
+      "type": "button",
+      "href": "",
+      "disabled": false,
+      "tabIndex": 0,
+      "geometry": {
+        "x": 52.8,
+        "y": 1107.5,
+        "width": 237.5,
+        "height": 43.4
+      }
+    }
+  ],
+  "focusOrder": [
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(1)",
+      "tabIndex": 0,
+      "documentIndex": 0
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(2)",
+      "tabIndex": 0,
+      "documentIndex": 1
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(3)",
+      "tabIndex": 0,
+      "documentIndex": 2
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(4)",
+      "tabIndex": 0,
+      "documentIndex": 3
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(5)",
+      "tabIndex": 0,
+      "documentIndex": 4
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(6)",
+      "tabIndex": 0,
+      "documentIndex": 5
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(7)",
+      "tabIndex": 0,
+      "documentIndex": 6
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(8)",
+      "tabIndex": 0,
+      "documentIndex": 7
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(9)",
+      "tabIndex": 0,
+      "documentIndex": 8
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(10)",
+      "tabIndex": 0,
+      "documentIndex": 9
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(11)",
+      "tabIndex": 0,
+      "documentIndex": 10
+    },
+    {
+      "path": "button#openAssessment",
+      "tabIndex": 0,
+      "documentIndex": 11
+    },
+    {
+      "path": "button#openPersonalizationCenter",
+      "tabIndex": 0,
+      "documentIndex": 12
+    },
+    {
+      "path": "button#mobileNavToggle",
+      "tabIndex": 0,
+      "documentIndex": 13
+    },
+    {
+      "path": "main#appMain > main > article > button",
+      "tabIndex": 0,
+      "documentIndex": 14
+    }
+  ],
+  "responsiveNavigation": [
+    {
+      "path": "aside#primarySidebar",
+      "visible": true,
+      "geometry": {
+        "x": -347.2,
+        "y": 4.8,
+        "width": 320,
+        "height": 800
+      },
+      "labels": [
+        "Today",
+        "TeoyubeSearch",
+        "Canon",
+        "Promise Table",
+        "Calling Compass",
+        "Book of the Saint",
+        "Lexicon",
+        "Testimony",
+        "Teo Guide",
+        "Embedded Videos",
+        "Tables",
+        "Purpose Assessment",
+        "Personalization Center"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 126.3,
+        "width": 266.2,
+        "height": 537.5
+      },
+      "labels": [
+        "Today",
+        "TeoyubeSearch",
+        "Canon",
+        "Promise Table",
+        "Calling Compass",
+        "Book of the Saint",
+        "Lexicon",
+        "Testimony",
+        "Teo Guide",
+        "Embedded Videos",
+        "Tables"
+      ]
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(1)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 126.3,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(2)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 175.6,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(3)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 224.8,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(4)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 274.1,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(5)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 323.4,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(6)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 372.6,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(7)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 421.9,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(8)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 471.2,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(9)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 520.4,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(10)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 569.7,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "aside#primarySidebar > nav > button:nth-of-type(11)",
+      "visible": true,
+      "geometry": {
+        "x": -327.8,
+        "y": 619,
+        "width": 266.2,
+        "height": 44.8
+      },
+      "labels": []
+    },
+    {
+      "path": "button#mobileNavBackdrop",
+      "visible": false,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "labels": []
+    },
+    {
+      "path": "button#mobileNavToggle",
+      "visible": true,
+      "geometry": {
+        "x": 12,
+        "y": 8,
+        "width": 112,
+        "height": 45.4
+      },
+      "labels": []
+    }
+  ]
+}

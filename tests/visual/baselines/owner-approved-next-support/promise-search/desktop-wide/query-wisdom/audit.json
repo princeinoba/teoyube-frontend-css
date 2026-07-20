@@ -1,0 +1,16 @@
+{
+  "issues": [],
+  "focusOrder": [
+    "input|0|Search Teoyube"
+  ],
+  "lang": "en",
+  "performance": {
+    "domInteractiveMs": 171.1,
+    "loadMs": 248.4,
+    "resourceCount": 34
+  },
+  "storage": {
+    "local": 0,
+    "session": 0
+  }
+}

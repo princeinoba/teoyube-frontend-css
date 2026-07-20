@@ -1,0 +1,18 @@
+{
+  "issues": [],
+  "focusOrder": [
+    "button|0|Session Only",
+    "button|0|Disable",
+    "button|0|Clear Signals"
+  ],
+  "lang": "en",
+  "performance": {
+    "domInteractiveMs": 218.8,
+    "loadMs": 293,
+    "resourceCount": 34
+  },
+  "storage": {
+    "local": 0,
+    "session": 0
+  }
+}

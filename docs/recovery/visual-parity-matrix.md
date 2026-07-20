@@ -2,7 +2,7 @@
 
 ## Gate status
 
-The original static runtime remains canonical. Every Next route now has an explicit evidence status in `tests/visual/parity/next-route-status.json`; a successful build alone never produces `PASS`. `PASS` records complete automated screenshot, DOM/class, asset, geometry, label, control/focus, responsive, and functional evidence plus the owner decision recorded as `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8`. `NOT_APPLICABLE_INTERNAL_ROUTE` prevents an owner-only route from being treated as a public cutover candidate. No status in this matrix authorizes runtime cutover.
+The original static runtime remains canonical. Every route records visibility, parity source, and gate status separately; a successful build alone never produces `PASS`. Immutable-view parity remains bound to `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8`, while non-static route taxonomy and support baselines are bound to `TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D`. `NOT_APPLICABLE_INTERNAL_ROUTE` prevents owner-only, internal, and development routes from becoming public cutover candidates. No status authorizes runtime cutover.
 
 The global Next shell is owner-approved. `npm run visual:parity:shell` compares the approved sidebar, top bar, mobile navigation, DOM/classes, asset URLs, geometry, focus order, keyboard behavior, and responsive state at all six required viewports. The owner accepted V-04, the tablet-portrait open-drawer raster result, as `ACCEPT_NONVISUAL_RENDERING_VARIANCE`. Durable owner evidence is under `docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-04/`; disposable current evidence remains under `.tmp/visual-parity/shell-owner-review/`.
 
@@ -20,17 +20,17 @@ The Canon and Promise Table comparisons exclude and mask no page region. Ordered
 
 The Calling Compass Next preview is `PASS` at all six matrix cells. `npm run visual:parity:prayer-calling-journey` compares the complete approved Calling surface against the immutable static runtime at all six required viewports. Static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts are written only to `.tmp/visual-parity/calling-owner-review/`. The passing run produced zero differing pixels and exact rich-contract parity at all six viewports.
 
-Prayer and Journey are existing internal preview surfaces rather than members of the 12-view immutable static baseline. Their pre-migration renders were captured before the typed migration, and the blocking harness exercises their responsive output at all six required viewports. The same command enforces their exact pre-migration ordered DOM, IDs, classes, attributes, and visible-label digests at every viewport and writes disposable owner-review captures under `.tmp/visual-parity/prayer-journey-owner-review/`. The task-level pre/post screenshot and geometry comparison remains under `.tmp/visual-parity/prompt9-preservation/`; it does not create or replace an owner baseline. The 2026-07-19 structural runs matched all twelve Prayer/Journey viewport combinations. The Journey view model explicitly leaves the final unified daily loop disabled.
+Prayer and Journey are retained public surfaces governed by frozen pre-migration contracts rather than the 12-view immutable static baseline. The blocking harness exercises their responsive output at all six required viewports and enforces exact ordered DOM, IDs, classes, attributes, labels, functions, and safety behavior. Prompt 12D does not regenerate those contracts. The Journey view model continues to leave the final unified daily loop disabled.
 
 Functional coverage exercises Calling media search/navigation and the cautious three-question discernment flow, checks visible Scripture/evidence and rejects final-destiny language, submits Prayer Companion input and verifies Scripture, prayer, confidence, explanation, and devotional boundaries, and confirms the existing Journey seeds, levels, guardrails, limitations, and absence of a ten-step or unified-loop UI. TIG engines and seed datasets remain outside client components.
 
 The Book of the Saint and Testimony Next previews are `PASS` at all twelve matrix cells. `npm run visual:parity:journal-testimony-book` compares both complete approved pages at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/journal-testimony-book-owner-review/`. The passing run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for both pages at every viewport.
 
-Journal is an existing internal preview surface rather than one of the 12 immutable static views. The same command enforces its exact pre-migration 39-element structural digest at all six viewports and stores disposable review captures beside the Book and Testimony evidence. Functional coverage verifies redacted session-only reflection summaries, editable/reviewable/reversible testimony records, explicit user status actions, removal and undo, and the absence of silent Book promotion or browser persistence. The domain contract rejects Book promotion unless a testimony is user-reviewed and the user explicitly confirms that promotion; Teoyube never declares promise fulfillment or divine action for the user.
+Journal is a retained public surface governed by its frozen pre-migration contract. The same command enforces its exact 39-element structural digest at all six viewports without regenerating it. Functional coverage verifies redacted session-only reflection summaries, editable/reviewable/reversible testimony records, explicit user status actions, removal and undo, and the absence of silent Book promotion or browser persistence.
 
 Lexicon, Teo Guide, Embedded Videos, and Teoyube Tables are `PASS` at all twenty-four public matrix cells. The owner-only Roadmap is `NOT_APPLICABLE_INTERNAL_ROUTE`. `npm run visual:parity:remaining-retained` compares all five complete approved surfaces at all six required viewports and writes static/Next screenshots, strict diffs, side-by-side images, overlays, and rich DOM contracts only to `.tmp/visual-parity/remaining-retained-owner-review/`. The passing run produced zero differing pixels and exact ordered-DOM, ID/class, parent-path, asset/background, geometry, visible-label, control, focus-order, and responsive parity for all thirty route/viewport combinations. The Roadmap evidence includes the owner QA overlay; Roadmap, TIG, development health, and media-review controls remain absent from normal navigation.
 
-The same command records the approved shell and unchanged responsive treatment for retained support routes. The owner approved the exact Prompt 12A render of `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/daily-word`, `/dashboard`, `/explore`, `/personalization`, and `/promise-search` as their initial source of truth. Their 60 screenshot cells and 120 DOM/asset contracts are frozen separately under `tests/visual/baselines/owner-approved-support-routes/`; they do not replace or modify the original static-runtime baseline. `/graph` is internal-only and absent from normal navigation. `/compass` permanently redirects to `/calling-compass`. The separate Phase 11.6C.3 publication-integrity blocker is not modified or represented as complete.
+Prompt 12D approves exactly nine retained support routes: `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/personalization`, `/daily-word`, `/explore`, and `/promise-search`. Their 54 default viewport captures and 16 interaction-state captures are frozen separately under `tests/visual/baselines/owner-approved-next-support/`. Dashboard is development-only and excluded. `/graph` is internal-only and absent from normal navigation. `/compass` permanently redirects to `/calling-compass`. The separate Phase 11.6C.3 publication-integrity blocker is unchanged.
 
 Prompt 6 explicitly excludes the full daily journey UI. The Today harness therefore removes only the three separately injected legacy journey/recommendation nodes (`#phase116bTodayCommandCenter`, `#phase116b1Continuation-today`, and `#phase115SmartRecommendations-today`) from the static comparison. It does not exclude or mask the promise carousel, summary cards, Word of the Day, Daily Divine Assignment, reflection controls, Smart Search Suggestions, TeoyubeWorld featured-story search/carousel, highlight, feed table, shell, imagery, icons, assets, or responsive containers. Finite CSS animations are finished and infinite animations are set to time zero symmetrically in the test harness; production CSS and behavior are unchanged.
 
@@ -141,19 +141,19 @@ On 2026-07-18, the required second capture used Windows Chrome against the Linux
 | roadmap | `/roadmap` | mobile 390×844 | `mobile/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
 | roadmap | `/roadmap` | mobile-small 360×800 | `mobile-small/roadmap.png` | NOT_APPLICABLE_INTERNAL_ROUTE |
 
-## Owner-approved support-route matrix
+## Non-static route matrix
 
-Approval `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8` establishes a separate initial visual source for these exact Next renders. `npm run recovery:support-routes:verify` verifies 60 screenshots and 120 DOM/asset contracts across the same six viewports. The verifier binds the approval record, source definition, manifest, evidence hashes, route classifications, internal navigation boundary, and `/compass` redirect. Candidate output remains disposable and never writes to either baseline tree.
+Amendment `TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D` governs the current taxonomy. `npm run recovery:next-support:verify` validates the nine-route baseline, every default/interaction artifact, focused behaviors, navigation boundary, and Compass redirect.
 
-| Route(s) | Classification | Status |
-| --- | --- | --- |
-| `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/daily-word`, `/dashboard`, `/explore`, `/personalization`, `/promise-search` | `OWNER_APPROVED_PUBLIC_ROUTE` | `OWNER_APPROVED_SOURCE_BASELINE` |
-| `/compass` → `/calling-compass` | `REDIRECT_TO_CANONICAL_PUBLIC_ROUTE` | `REDIRECT_TO_CANONICAL_PUBLIC_ROUTE` |
-| `/graph`, `/tig`, `/tig/data`, `/tig/graph`, `/tig/journal`, `/tig/journey`, `/tig/onboarding`, `/tig/privacy`, `/tig/progress`, `/tig/traversal` | `INTERNAL_ONLY` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
-| `/dev/teoyube-health`, `/tig/debug` | `DEVELOPMENT_ONLY` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
-| `/prayer`, `/journey`, `/journal` | `RETAINED_PUBLIC_ROUTE_REQUIRES_SOURCE_BASELINE` | `BLOCKED_MISSING_STATIC_COUNTERPART` |
+| Route(s) | Visibility | Parity source | Gate status |
+| --- | --- | --- | --- |
+| `/prayer`, `/journey`, `/journal` | `RETAINED_PUBLIC` | `FROZEN_PRE_MIGRATION` | `PASS` |
+| `/settings`, `/privacy`, `/consent`, `/terms`, `/profile`, `/personalization`, `/daily-word`, `/explore`, `/promise-search` | `RETAINED_PUBLIC` | `OWNER_APPROVED_NEXT_SUPPORT` | `PASS` |
+| `/compass` → `/calling-compass` | `RETAINED_PUBLIC` alias | `CANONICAL_REDIRECT` | `PASS` |
+| `/dashboard`, `/dev/teoyube-health`, `/tig/debug` | `DEVELOPMENT_ONLY` | `NOT_APPLICABLE` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
+| `/graph`, `/tig`, `/tig/data`, `/tig/graph`, `/tig/journal`, `/tig/journey`, `/tig/onboarding`, `/tig/privacy`, `/tig/progress`, `/tig/traversal` | `INTERNAL_ONLY` | `NOT_APPLICABLE` | `NOT_APPLICABLE_INTERNAL_ROUTE` |
 
-The owner approval does not identify `/prayer`, `/journey`, or `/journal` as initial visual sources and does not classify them as internal. Their Prompt 12A classifications therefore remain blocked; the approval is not broadened by inference.
+Roadmap remains `OWNER_ONLY` in the immutable matrix. No route remains `NOT_VERIFIED`.
 
 ## Functional activation contract
 

@@ -14,8 +14,9 @@ describe("visual parity gate", () => {
   it("assigns an explicit evidence-backed status to all 72 Next cells", () => {
     assertParityMatrixIntegrity();
     expect(runtimeManifest.views.length * Object.keys(runtimeManifest.viewports).length).toBe(72);
-    expect(nextRouteStatuses.filter((status) => status.status === "PASS")).toHaveLength(11);
-    expect(nextRouteStatuses.filter((status) => status.status === "NOT_APPLICABLE_INTERNAL_ROUTE")).toHaveLength(1);
+    expect(nextRouteStatuses.filter((status) => status.gateStatus === "PASS")).toHaveLength(11);
+    expect(nextRouteStatuses.filter((status) => status.gateStatus === "NOT_APPLICABLE_INTERNAL_ROUTE")).toHaveLength(1);
+    expect(nextRouteStatuses.every((status) => status.paritySource === "IMMUTABLE_STATIC")).toBe(true);
     expect(
       nextRouteStatuses.every(
         (status) =>
@@ -43,43 +44,41 @@ describe("visual parity gate", () => {
     );
   });
 
-  it("classifies every Next-only support route without inventing a baseline", () => {
+  it("classifies every Next-only route with separate visibility, parity source, and gate status", () => {
     const supportStatuses = JSON.parse(
       fs.readFileSync(path.resolve("tests/visual/parity/support-route-status.json"), "utf8")
-    ) as Array<{ route: string; classification: string; status: string; canonicalTarget: string | null }>;
+    ) as Array<{ route: string; visibility: string; paritySource: string; gateStatus: string; canonicalTarget: string | null }>;
     expect(supportStatuses).toHaveLength(26);
-    expect(new Set(supportStatuses.map((entry) => entry.classification))).toEqual(
-      new Set([
-        "INTERNAL_ONLY",
-        "DEVELOPMENT_ONLY",
-        "OWNER_APPROVED_PUBLIC_ROUTE",
-        "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE",
-        "RETAINED_PUBLIC_ROUTE_REQUIRES_SOURCE_BASELINE"
-      ])
-    );
-    expect(supportStatuses.every((entry) => entry.status !== "NOT_VERIFIED")).toBe(true);
+    expect(new Set(supportStatuses.map((entry) => entry.visibility))).toEqual(new Set(["RETAINED_PUBLIC", "INTERNAL_ONLY", "DEVELOPMENT_ONLY"]));
+    expect(new Set(supportStatuses.map((entry) => entry.paritySource))).toEqual(new Set(["FROZEN_PRE_MIGRATION", "OWNER_APPROVED_NEXT_SUPPORT", "CANONICAL_REDIRECT", "NOT_APPLICABLE"]));
+    expect(supportStatuses.every((entry) => entry.gateStatus !== "NOT_VERIFIED")).toBe(true);
     expect(
       supportStatuses.filter(
         (entry) =>
-          entry.classification === "OWNER_APPROVED_PUBLIC_ROUTE" &&
-          entry.status === "OWNER_APPROVED_SOURCE_BASELINE"
+          entry.visibility === "RETAINED_PUBLIC" &&
+          entry.paritySource === "OWNER_APPROVED_NEXT_SUPPORT" &&
+          entry.gateStatus === "PASS"
       )
-    ).toHaveLength(10);
+    ).toHaveLength(9);
     expect(
       supportStatuses
-        .filter((entry) => entry.classification === "RETAINED_PUBLIC_ROUTE_REQUIRES_SOURCE_BASELINE")
-        .every((entry) => entry.status === "BLOCKED_MISSING_STATIC_COUNTERPART")
+        .filter((entry) => entry.paritySource === "FROZEN_PRE_MIGRATION")
+        .every((entry) => entry.visibility === "RETAINED_PUBLIC" && entry.gateStatus === "PASS")
     ).toBe(true);
     expect(
-      supportStatuses.filter(
-        (entry) => entry.classification === "RETAINED_PUBLIC_ROUTE_REQUIRES_SOURCE_BASELINE"
-      )
+      supportStatuses.filter((entry) => entry.paritySource === "FROZEN_PRE_MIGRATION")
     ).toHaveLength(3);
     expect(supportStatuses.find((entry) => entry.route === "/compass")).toEqual({
       route: "/compass",
-      classification: "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE",
-      status: "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE",
+      visibility: "RETAINED_PUBLIC",
+      paritySource: "CANONICAL_REDIRECT",
+      gateStatus: "PASS",
       canonicalTarget: "/calling-compass"
+    });
+    expect(supportStatuses.find((entry) => entry.route === "/dashboard")).toMatchObject({
+      visibility: "DEVELOPMENT_ONLY",
+      paritySource: "NOT_APPLICABLE",
+      gateStatus: "NOT_APPLICABLE_INTERNAL_ROUTE"
     });
   });
 

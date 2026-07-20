@@ -27,7 +27,7 @@ for (const status of nextRouteStatuses) {
     [ViewportName, { width: number; height: number }]
   >) {
     test(`${status.viewId}/${viewportName} Next candidate parity`, async ({ browser }) => {
-      test.skip(status.status !== "PASS", `Route gate is ${status.status}; automated PASS-only matrix cell is not promoted.`);
+      test.skip(status.gateStatus !== "PASS", `Route gate is ${status.gateStatus}; automated PASS-only matrix cell is not promoted.`);
       test.setTimeout(180_000);
       const staticContext = await browser.newContext({ viewport, colorScheme: "light", locale: "en-US" });
       const nextContext = await browser.newContext({ viewport, colorScheme: "light", locale: "en-US" });

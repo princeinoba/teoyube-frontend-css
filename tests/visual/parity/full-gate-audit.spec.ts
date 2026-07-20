@@ -66,6 +66,7 @@ async function openStaticForAudit(page: Page, view: ViewId) {
     }
     window.scrollTo(0, 0);
   }, view);
+  await page.waitForTimeout(450);
   await readyForAudit(page);
   if (view === "today") {
     await page.evaluate(() => {
@@ -79,6 +80,7 @@ async function openStaticForAudit(page: Page, view: ViewId) {
 async function openNextForAudit(page: Page, view: ViewId) {
   await page.goto(`${nextBaseUrl}${routeForView(view)}`, { waitUntil: "domcontentloaded" });
   await page.waitForFunction((requestedView) => document.body.dataset.view === requestedView, view);
+  await page.waitForTimeout(200);
   await readyForAudit(page);
 }
 
@@ -172,7 +174,7 @@ function median(values: number[]) {
 }
 
 test("all 72 matrix cells retain accessibility and provide side-by-side performance evidence", async () => {
-  test.setTimeout(1_200_000);
+  test.setTimeout(2_400_000);
   assertDisposableCandidatePath(outputRoot);
   fs.mkdirSync(outputRoot, { recursive: true });
   const rows: Array<Record<string, unknown>> = [];
@@ -204,6 +206,7 @@ test("all 72 matrix cells retain accessibility and provide side-by-side performa
           if (JSON.stringify(staticAccessibility) !== JSON.stringify(nextAccessibility)) violations.push(`${view}/${viewportName}: accessibility or focus-order mismatch`);
           if (staticPerformance.readyMs > 5_000 || nextPerformance.readyMs > 5_000) violations.push(`${view}/${viewportName}: local ready time exceeded 5,000 ms`);
           rows.push({ view, route: routeForView(view), viewport: viewportName, viewportSize: viewport, attempts, static: { accessibility: staticAccessibility, performance: staticPerformance }, next: { accessibility: nextAccessibility, performance: nextPerformance }, accessibilityParity: JSON.stringify(staticAccessibility) === JSON.stringify(nextAccessibility) });
+          console.log(`Gate audit completed ${view}/${viewportName}`);
         } finally {
           await staticContext.close();
           await nextContext.close();

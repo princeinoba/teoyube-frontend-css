@@ -1,0 +1,16 @@
+{
+  "issues": [],
+  "focusOrder": [
+    "button|0|Generate Today's Journey"
+  ],
+  "lang": "en",
+  "performance": {
+    "domInteractiveMs": 1201,
+    "loadMs": 1201.7,
+    "resourceCount": 34
+  },
+  "storage": {
+    "local": 0,
+    "session": 0
+  }
+}

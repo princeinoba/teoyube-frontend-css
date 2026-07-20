@@ -46,15 +46,15 @@ interface OwnerReferenceManifest {
 export interface NextRouteStatus {
   viewId: ViewId;
   nextRoute: string;
-  status:
+  visibility: "RETAINED_PUBLIC" | "OWNER_ONLY" | "INTERNAL_ONLY" | "DEVELOPMENT_ONLY";
+  paritySource: "IMMUTABLE_STATIC" | "FROZEN_PRE_MIGRATION" | "OWNER_APPROVED_NEXT_SUPPORT" | "CANONICAL_REDIRECT" | "NOT_APPLICABLE";
+  gateStatus:
     | "PASS"
-    | "OWNER_APPROVED_SOURCE_BASELINE"
     | "BLOCKED_VISUAL_DIFFERENCE"
-    | "BLOCKED_MISSING_STATIC_COUNTERPART"
+    | "BLOCKED_MISSING_SOURCE_BASELINE"
     | "BLOCKED_FUNCTIONAL_DIFFERENCE"
     | "BLOCKED_OWNER_DECISION"
-    | "NOT_APPLICABLE_INTERNAL_ROUTE"
-    | "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE";
+    | "NOT_APPLICABLE_INTERNAL_ROUTE";
   ownerApproved: boolean;
   ownerApprovalId: string | null;
 }
@@ -123,25 +123,26 @@ export function assertParityMatrixIntegrity(): void {
   if (expectedViewports.length !== 6 || expectedViews.length !== 12) {
     throw new Error(`Expected 12 views and 6 viewports; found ${expectedViews.length} and ${expectedViewports.length}.`);
   }
-  const allowedStatuses = new Set<NextRouteStatus["status"]>([
+  const allowedStatuses = new Set<NextRouteStatus["gateStatus"]>([
     "PASS",
-    "OWNER_APPROVED_SOURCE_BASELINE",
     "BLOCKED_VISUAL_DIFFERENCE",
-    "BLOCKED_MISSING_STATIC_COUNTERPART",
+    "BLOCKED_MISSING_SOURCE_BASELINE",
     "BLOCKED_FUNCTIONAL_DIFFERENCE",
     "BLOCKED_OWNER_DECISION",
-    "NOT_APPLICABLE_INTERNAL_ROUTE",
-    "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE"
+    "NOT_APPLICABLE_INTERNAL_ROUTE"
   ]);
   for (const status of nextRouteStatuses) {
-    if (!allowedStatuses.has(status.status)) {
-      throw new Error(`${status.viewId} has unsupported parity status ${status.status}.`);
+    if (!allowedStatuses.has(status.gateStatus)) {
+      throw new Error(`${status.viewId} has unsupported parity status ${status.gateStatus}.`);
     }
     if (status.ownerApproved !== Boolean(status.ownerApprovalId)) {
       throw new Error(`${status.viewId} owner approval flag and approval ID must change together.`);
     }
-    if (status.status === "BLOCKED_OWNER_DECISION" && status.ownerApproved) {
+    if (status.gateStatus === "BLOCKED_OWNER_DECISION" && status.ownerApproved) {
       throw new Error(`${status.viewId} cannot remain BLOCKED_OWNER_DECISION after owner approval.`);
+    }
+    if (status.paritySource !== "IMMUTABLE_STATIC") {
+      throw new Error(`${status.viewId} must remain bound to the immutable static parity source.`);
     }
   }
 }

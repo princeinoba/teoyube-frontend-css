@@ -19,7 +19,7 @@ const approvedRoutes = [
 
 const supportRoutes = [
   "/settings", "/privacy", "/consent", "/terms", "/profile", "/daily-word",
-  "/dashboard", "/explore", "/personalization", "/promise-search"
+  "/explore", "/personalization", "/promise-search"
 ] as const;
 
 function normalizeStyle(value: string): string {
@@ -227,6 +227,7 @@ test("owner and development routes remain absent from normal navigation", async 
   await expect(nav).not.toContainText("TIG");
   await expect(nav).not.toContainText("Teoyube Health");
   await expect(nav).not.toContainText("Graph");
+  await expect(nav).not.toContainText("Dashboard");
   await page.goto(`${nextBaseUrl}/compass`, { waitUntil: "domcontentloaded", timeout: 30_000 });
   expect(new URL(page.url()).pathname).toBe("/calling-compass");
   await expect(page.locator("#calling")).toBeAttached();

@@ -112,15 +112,20 @@ for (const record of approval.approvedArtifacts) {
 const supportStatuses = readJson(path.join(workspaceRoot, "tests/visual/parity/support-route-status.json"));
 for (const definition of source.routes) {
   const status = supportStatuses.find((entry) => entry.route === definition.route);
-  assert(status?.status === "OWNER_APPROVED_SOURCE_BASELINE", `${definition.route} lacks its owner-approved terminal status.`);
+  if (definition.route === "/dashboard") {
+    assert(status?.visibility === "DEVELOPMENT_ONLY" && status?.gateStatus === "NOT_APPLICABLE_INTERNAL_ROUTE", "/dashboard supersession differs.");
+  } else {
+    assert(status?.visibility === "RETAINED_PUBLIC" && status?.gateStatus === "PASS", `${definition.route} lacks its current terminal status.`);
+  }
 }
-assert(supportStatuses.find((entry) => entry.route === "/graph")?.status === "NOT_APPLICABLE_INTERNAL_ROUTE", "/graph is not internal-only.");
-assert(supportStatuses.find((entry) => entry.route === "/compass")?.status === "REDIRECT_TO_CANONICAL_PUBLIC_ROUTE", "/compass redirect status differs.");
+assert(supportStatuses.find((entry) => entry.route === "/graph")?.gateStatus === "NOT_APPLICABLE_INTERNAL_ROUTE", "/graph is not internal-only.");
+assert(supportStatuses.find((entry) => entry.route === "/compass")?.paritySource === "CANONICAL_REDIRECT", "/compass redirect source differs.");
+assert(supportStatuses.find((entry) => entry.route === "/compass")?.gateStatus === "PASS", "/compass redirect status differs.");
 
 const shellSource = fs.readFileSync(path.join(workspaceRoot, "src/app/_shell/ApprovedTeoyubeShell.tsx"), "utf8");
 assert(!/href:\s*["']\/graph["']/.test(shellSource), "/graph appears in normal public navigation.");
 const compassSource = fs.readFileSync(path.join(workspaceRoot, "src/app/compass/page.tsx"), "utf8");
-assert(/permanentRedirect\(["']\/calling-compass["']\)/.test(compassSource), "/compass is not a permanent canonical redirect.");
+assert(/permanentRedirect\(`\/calling-compass/.test(compassSource), "/compass is not a permanent canonical redirect.");
 assert(!/CallingCompassScreenshotPage/.test(compassSource), "/compass still maintains a duplicate visual surface.");
 
 console.log("OWNER-APPROVED SUPPORT ROUTE BASELINES: PASSED");

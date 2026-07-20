@@ -1,5 +1,7 @@
 # Prompt 12A Parity Remediation Report
 
+> Historical report. The final non-static route taxonomy is recorded by `TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D`; the Prompt 12A measurements below are unchanged.
+
 Date: 2026-07-19
 
 Branch: `recovery/visual-source-of-truth`

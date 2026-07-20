@@ -1,5 +1,7 @@
 # Prompt 12B Owner Approval Gate
 
+> Historical report. Its route-source blockers and ten-route grouping are superseded by `TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D`; measurements and original R8 artifacts below remain unchanged.
+
 Date: 2026-07-19
 
 Branch: `recovery/visual-source-of-truth`

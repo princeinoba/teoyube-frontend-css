@@ -95,7 +95,7 @@ describe("remaining retained preview contracts", () => {
       graph: "3571c2955c7e7d1d4ee4b26cfbc35d8c5b8c3447df0d6def7ce364ffccff4086",
       personalization: "bd5d0dcdfdedfe6a115797fe7bd404c15dbcc6e2a08aa8d6512298af9b7e4686",
       "promise-search": "f28a8c4642476c4df0d2e691b6fb07387034a54b9b6f8cea4fd35b4558158348",
-      compass: "2363abfb37580341fc7bd6eb2bc745ebac5e17ca12be25958fcdac53a79a6341"
+      compass: "e8449aad1225f0004d3d73efdf11993eaf9408851c0cc084bd224d6fb62fc626"
     };
     for (const [route, digest] of Object.entries(expectedHashes)) {
       expect(crypto.createHash("sha256").update(read(`src/app/${route}/page.tsx`)).digest("hex"), route).toBe(digest);
@@ -106,7 +106,7 @@ describe("remaining retained preview contracts", () => {
     expect(shell).not.toContain('href: "/roadmap"');
     expect(shell).not.toContain('href: "/tig"');
     expect(shell).not.toContain('href: "/dev"');
-    expect(read("src/app/compass/page.tsx")).toContain('permanentRedirect("/calling-compass")');
+    expect(read("src/app/compass/page.tsx")).toContain("permanentRedirect(`/calling-compass");
   });
 
   it("uses owning feature services rather than the discarded generic screenshot pages", () => {
