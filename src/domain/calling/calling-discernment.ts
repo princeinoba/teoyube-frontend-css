@@ -32,3 +32,20 @@ export type CallingCompassViewModel = Readonly<{
   media: readonly CallingMediaDto[];
   discernment: CallingDiscernmentDto;
 }>;
+
+export type CallingCompassClientContextDto = Readonly<{
+  initialSearchTerm: string;
+  callingPath: Readonly<{
+    archetype: Readonly<{ name: string; summary: string }>;
+    confidenceLabel: string;
+    scriptureAnchors: readonly string[];
+    promises: readonly Readonly<{ title: string }>[];
+    actionSteps: readonly string[];
+  }>;
+  explanationPath: readonly string[];
+  fallbackUsed: boolean;
+  warnings: readonly string[];
+  blockers: readonly string[];
+  noExternalServicesRequired: true;
+  noBrowserPersistenceRequired: true;
+}>;

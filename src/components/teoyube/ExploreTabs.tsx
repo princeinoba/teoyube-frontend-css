@@ -24,6 +24,10 @@ function matchesQuery(item: unknown, query: string) {
   return JSON.stringify(item).toLowerCase().includes(query.toLowerCase());
 }
 
+function wordContextKey(word: any): string {
+  return String(word?.id || word?.word || word?.teoyubeWord || "Benor");
+}
+
 export default function ExploreTabs({ data }: { data: any }) {
   const [activeTab, setActiveTab] = useState("Words");
   const [query, setQuery] = useState("");
@@ -64,7 +68,7 @@ export default function ExploreTabs({ data }: { data: any }) {
       {activeTab === "Words" && (
         <DataGrid>
           {filtered.words.map((word: any) => (
-            <WordCard key={word.id || word.word} word={word} />
+            <WordCard key={word.id || word.word} word={word} engineContext={data.wordContexts?.[wordContextKey(word)]} />
           ))}
         </DataGrid>
       )}
@@ -78,7 +82,7 @@ export default function ExploreTabs({ data }: { data: any }) {
       )}
 
       {activeTab === "Promise Table" && (
-        <PromiseTablePreview initialQuery={query} maxRows={8} />
+        <PromiseTablePreview initialQuery={query} initialTable={data.promiseTable} maxRows={8} />
       )}
 
       {activeTab === "Paths" && (
@@ -117,7 +121,7 @@ export default function ExploreTabs({ data }: { data: any }) {
       {activeTab === "Scripture" && (
         <DataGrid>
           {filtered.scriptureCanon.map((entry: any) => (
-            <WordCard key={entry.id} word={entry} />
+            <WordCard key={entry.id} word={entry} engineContext={data.wordContexts?.[wordContextKey(entry)]} />
           ))}
         </DataGrid>
       )}

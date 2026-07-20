@@ -2,7 +2,7 @@ import { createPrayerTigProductionInput } from "../../../lib/tig/production-surf
 import { createPrayerCompanionAdapterContext } from "../../../lib/teoyube/adapters/prayer-companion-adapter";
 import { createJourneyPageProps } from "../../../lib/teoyube/journey/journey-page-integration";
 import { getPrayers } from "../../../lib/teoyube/teoyubeData";
-import type { PrayerCardDto, PrayerPageViewModel, PrayerReplyDto } from "../../../domain/prayer/prayer-contracts";
+import type { PrayerCardDto, PrayerCompanionClientResponseDto, PrayerPageViewModel, PrayerReplyDto } from "../../../domain/prayer/prayer-contracts";
 import { createApprovedPrayerSafetyRows, runApprovedLegacyPrayerSurface } from "../legacy-adapter";
 
 type LegacyPrayer = Readonly<{
@@ -25,11 +25,11 @@ function normalizePrayerCard(prayer: LegacyPrayer, index: number): PrayerCardDto
   });
 }
 
-export function createPrayerReplyDto(message: string): PrayerReplyDto {
+export function createPrayerCompanionClientResponse(message: string): PrayerCompanionClientResponseDto {
   const safeMessage = message.trim().slice(0, 2_000) || "I need Scripture-grounded prayer and direction.";
   const context = createPrayerCompanionAdapterContext({ message: safeMessage });
   const reply = context.safeDisplayData;
-  return Object.freeze({
+  const replyDto: PrayerReplyDto = Object.freeze({
     cluster: reply.cluster,
     response: reply.response,
     scriptureAnchor: reply.scriptureAnchor || "",
@@ -41,6 +41,17 @@ export function createPrayerReplyDto(message: string): PrayerReplyDto {
     explanationPath: Object.freeze([...(reply.explanationPath || [])]),
     devotionalBoundary: "Prayer guidance is framed as Scripture-grounded encouragement, not divine certainty or professional advice."
   });
+  return Object.freeze({
+    reply: replyDto,
+    warnings: Object.freeze([...context.recommendation.warnings]),
+    blockers: Object.freeze([...context.recommendation.blockers]),
+    noExternalServicesRequired: true,
+    noPersistenceEnabled: true
+  });
+}
+
+export function createPrayerReplyDto(message: string): PrayerReplyDto {
+  return createPrayerCompanionClientResponse(message).reply;
 }
 
 export function createPrayerPageViewModel(): PrayerPageViewModel {

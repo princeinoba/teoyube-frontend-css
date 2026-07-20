@@ -1,34 +1,46 @@
 "use client";
 
 import { useMemo } from "react";
-import { createTigResponsePanelAdapterContext } from "../adapters/tig-response-panel-adapter";
 
-export function useTigResponsePanelContext(input: {
+export type TigResponsePanelClientContext = Readonly<{
+  panelData: Readonly<{
+    scriptureAnchors: readonly string[];
+    explanationPath: readonly string[];
+    confidenceLabel: string;
+    fallbackUsed: boolean;
+    fallbackReason?: string;
+    selectedCandidate: string;
+  }>;
+  fallbackUsed: boolean;
+  warnings: readonly string[];
+  blockers: readonly string[];
+  noExternalServicesRequired: true;
+  noBrowserPersistenceRequired: true;
+}>;
+
+const EMPTY_CONTEXT: TigResponsePanelClientContext = Object.freeze({
+  panelData: Object.freeze({
+    scriptureAnchors: Object.freeze([]),
+    explanationPath: Object.freeze(["A server-computed TIG response context is required before recommendation display."]),
+    confidenceLabel: "insufficient_data",
+    fallbackUsed: true,
+    fallbackReason: "No server-computed TIG context was supplied.",
+    selectedCandidate: "Scripture-grounded review required"
+  }),
+  fallbackUsed: true,
+  warnings: Object.freeze(["No server-computed TIG context was supplied."]),
+  blockers: Object.freeze([]),
+  noExternalServicesRequired: true,
+  noBrowserPersistenceRequired: true
+});
+
+export function useTigResponsePanelContext(input: Readonly<{
   query?: string;
   wordId?: string;
   clusterId?: string;
   mode?: "word" | "promise" | "calling";
-} = {}) {
-  const query = input.query;
-  const wordId = input.wordId;
-  const clusterId = input.clusterId;
-  const mode = input.mode;
-
-  return useMemo(() => {
-    const adapter = createTigResponsePanelAdapterContext({
-      query: query?.trim() || "Scripture-grounded Teoyube response",
-      wordId,
-      clusterId,
-      mode
-    });
-
-    return {
-      ...adapter,
-      fallbackUsed: adapter.panelData.fallbackUsed,
-      warnings: adapter.promiseContext.warnings,
-      blockers: adapter.promiseContext.blockers,
-      noExternalServicesRequired: true,
-      noBrowserPersistenceRequired: true
-    };
-  }, [query, wordId, clusterId, mode]);
+  initialContext?: TigResponsePanelClientContext;
+}> = {}) {
+  const initialContext = input.initialContext;
+  return useMemo(() => initialContext || EMPTY_CONTEXT, [initialContext]);
 }

@@ -1,68 +1,110 @@
 "use client";
 
-import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
-import {
-  addPersonalizationSignal,
-  addPromiseTableItem,
-  createInitialTeoyubeAppState,
-  createSafeExportBundle,
-  createTeoGuideTurn,
-  generateDailyJourney,
-  resetPersonalization,
-  saveBookEntry,
-  saveJournalEntry,
-  saveTestimony,
-  setActiveTigSurface,
-  setConsentState,
-  updatePromiseTableStatus,
-  type TeoyubeAppState,
-  type TeoyubeConsentChoice
+import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from "react";
+import type {
+  TeoyubeAppState,
+  TeoyubeConsentChoice,
+  TeoyubePersonalizationSignal
 } from "@/lib/teoyube/app-state";
-import type { Phase112PromiseTableStatus } from "@/lib/phase112Productization";
+import type {
+  Phase112BookEntry,
+  Phase112PromiseTableStatus,
+  Phase112TestimonyRecord
+} from "@/lib/phase112Productization";
 import type { Phase11ProductSurface } from "@/lib/phase11Productization";
 
 type TeoyubeAppStateContextValue = {
   state: TeoyubeAppState;
+  initialSearchResult: Record<string, unknown>;
   generateDailyJourney: (seedDate?: string) => void;
   addPromiseTableItem: (query?: string) => void;
   updatePromiseTableStatus: (id: string, status: Phase112PromiseTableStatus) => void;
-  saveBookEntry: (entry: Parameters<typeof saveBookEntry>[1]) => void;
+  saveBookEntry: (entry: Partial<Phase112BookEntry>) => void;
   saveJournalEntry: (text?: string, scriptureReferences?: string[]) => void;
-  saveTestimony: (testimony: Parameters<typeof saveTestimony>[1]) => void;
+  saveTestimony: (testimony: Partial<Phase112TestimonyRecord>) => void;
   createTeoGuideTurn: (prompt?: string) => void;
   setConsentState: (personalization: TeoyubeConsentChoice) => void;
-  addPersonalizationSignal: (label: string, source?: Parameters<typeof addPersonalizationSignal>[2]) => void;
+  addPersonalizationSignal: (label: string, source?: TeoyubePersonalizationSignal["source"]) => void;
   resetPersonalization: () => void;
   setActiveTigSurface: (surface: Phase11ProductSurface, input?: string) => void;
-  createSafeExportBundle: () => ReturnType<typeof createSafeExportBundle>;
+  createSafeExportBundle: () => Record<string, unknown>;
 };
 
 const TeoyubeAppStateContext = createContext<TeoyubeAppStateContextValue | undefined>(undefined);
 
-export function TeoyubeAppStateProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<TeoyubeAppState>(() => createInitialTeoyubeAppState());
+type LegacyAppStateAction =
+  | "generateDailyJourney"
+  | "addPromiseTableItem"
+  | "updatePromiseTableStatus"
+  | "saveBookEntry"
+  | "saveJournalEntry"
+  | "saveTestimony"
+  | "createTeoGuideTurn"
+  | "setConsentState"
+  | "addPersonalizationSignal"
+  | "resetPersonalization"
+  | "setActiveTigSurface";
+
+export function TeoyubeAppStateProvider({ children, initialSearchResult, initialState, safeExportBase }: {
+  children: ReactNode;
+  initialSearchResult: Record<string, unknown>;
+  initialState: TeoyubeAppState;
+  safeExportBase: Record<string, unknown>;
+}) {
+  const [state, setState] = useState<TeoyubeAppState>(initialState);
+  const stateRef = useRef(state);
+
+  const transition = useCallback(async (action: LegacyAppStateAction, payload: Record<string, unknown> = {}) => {
+    try {
+      const response = await fetch("/api/teoyube/app-state", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ action, state: stateRef.current, payload })
+      });
+      if (!response.ok) return;
+      const nextState = await response.json() as TeoyubeAppState;
+      stateRef.current = nextState;
+      setState(nextState);
+    } catch {
+      // Keep the existing in-memory state when the local preview route is unavailable.
+    }
+  }, []);
+
+  const clientSafeExportBundle = useCallback(() => ({
+    ...safeExportBase,
+    appState: {
+      selectedWord: state.selectedWord,
+      selectedScripture: state.selectedScripture,
+      promiseTable: state.savedPromiseTableItems,
+      bookEntries: state.bookEntries,
+      journalEntries: state.journalEntries,
+      testimonyEntries: state.testimonyEntries,
+      videoProgress: Object.values(state.videoProgress),
+      personalizationSignalCount: state.personalizationSignalStore.length,
+      rawPrivateTextIncluded: false,
+      browserPersistenceUsed: false,
+      externalServicesCalled: false
+    }
+  }), [safeExportBase, state]);
 
   const value = useMemo<TeoyubeAppStateContextValue>(
     () => ({
       state,
-      generateDailyJourney: (seedDate) => setState((current) => generateDailyJourney(current, seedDate)),
-      addPromiseTableItem: (query) => setState((current) => addPromiseTableItem(current, query)),
-      updatePromiseTableStatus: (id, status) =>
-        setState((current) => updatePromiseTableStatus(current, id, status)),
-      saveBookEntry: (entry) => setState((current) => saveBookEntry(current, entry)),
-      saveJournalEntry: (text, scriptureReferences) =>
-        setState((current) => saveJournalEntry(current, text, scriptureReferences)),
-      saveTestimony: (testimony) => setState((current) => saveTestimony(current, testimony)),
-      createTeoGuideTurn: (prompt) => setState((current) => createTeoGuideTurn(current, prompt)),
-      setConsentState: (personalization) => setState((current) => setConsentState(current, personalization)),
-      addPersonalizationSignal: (label, source) =>
-        setState((current) => addPersonalizationSignal(current, label, source)),
-      resetPersonalization: () => setState((current) => resetPersonalization(current)),
-      setActiveTigSurface: (surface, input) =>
-        setState((current) => setActiveTigSurface(current, surface, input)),
-      createSafeExportBundle: () => createSafeExportBundle(state)
+      initialSearchResult,
+      generateDailyJourney: (seedDate) => { void transition("generateDailyJourney", { seedDate }); },
+      addPromiseTableItem: (query) => { void transition("addPromiseTableItem", { query }); },
+      updatePromiseTableStatus: (id, status) => { void transition("updatePromiseTableStatus", { id, status }); },
+      saveBookEntry: (entry) => { void transition("saveBookEntry", { entry }); },
+      saveJournalEntry: (text, scriptureReferences) => { void transition("saveJournalEntry", { text, scriptureReferences }); },
+      saveTestimony: (testimony) => { void transition("saveTestimony", { testimony }); },
+      createTeoGuideTurn: (prompt) => { void transition("createTeoGuideTurn", { prompt }); },
+      setConsentState: (personalization) => { void transition("setConsentState", { personalization }); },
+      addPersonalizationSignal: (label, source) => { void transition("addPersonalizationSignal", { label, source }); },
+      resetPersonalization: () => { void transition("resetPersonalization"); },
+      setActiveTigSurface: (surface, input) => { void transition("setActiveTigSurface", { surface, input }); },
+      createSafeExportBundle: clientSafeExportBundle
     }),
-    [state]
+    [clientSafeExportBundle, initialSearchResult, state, transition]
   );
 
   return <TeoyubeAppStateContext.Provider value={value}>{children}</TeoyubeAppStateContext.Provider>;

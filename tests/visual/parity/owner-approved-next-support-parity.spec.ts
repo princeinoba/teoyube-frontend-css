@@ -36,7 +36,9 @@ test("current Next routes match every Prompt 12D support baseline artifact", asy
           assertDisposableCandidatePath(output);
           fs.mkdirSync(output, { recursive: true });
           const contract = await captureRichContract(page, "#appMain > main");
+          fs.writeFileSync(path.join(output, "contract.json"), `${JSON.stringify(contract, null, 2)}\n`, "utf8");
           const audit = await captureSupportAudit(page);
+          fs.writeFileSync(path.join(output, "audit.json"), `${JSON.stringify(audit, null, 2)}\n`, "utf8");
           expect(compareRichContracts(JSON.parse(fs.readFileSync(path.join(baseline, "contract.json"), "utf8")), contract), `${definition.route}/${viewport.name}/${state.name} contract`).toEqual([]);
           const baselineAudit = JSON.parse(fs.readFileSync(path.join(baseline, "audit.json"), "utf8"));
           expect({ issues: audit.issues, focusOrder: audit.focusOrder, lang: audit.lang, storage: audit.storage }, `${definition.route}/${viewport.name}/${state.name} accessibility/focus`).toEqual({

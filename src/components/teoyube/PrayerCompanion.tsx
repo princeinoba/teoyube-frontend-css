@@ -1,31 +1,26 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { useMemo, useState } from "react";
-import { createPrayerCompanionAdapterContext } from "@/lib/teoyube/adapters/prayer-companion-adapter";
+import { useState } from "react";
+import type { PrayerCompanionClientResponseDto, PrayerReplyDto } from "@/domain/prayer/prayer-contracts";
 
 export default function PrayerCompanion() {
   const [message, setMessage] = useState("");
-  const [submittedMessage, setSubmittedMessage] = useState("");
-  const companionContext = useMemo(() => {
-    const adapter = createPrayerCompanionAdapterContext({
-      message: submittedMessage || message || "I need Scripture-grounded prayer and direction."
-    });
+  const [reply, setReply] = useState<PrayerReplyDto | null>(null);
+  const [warnings, setWarnings] = useState<readonly string[]>([]);
 
-    return {
-      ...adapter,
-      fallbackUsed: adapter.safeDisplayData.fallbackUsed,
-      warnings: adapter.recommendation.warnings,
-      blockers: adapter.recommendation.blockers,
-      noExternalServicesRequired: true,
-      noBrowserPersistenceRequired: true
-    };
-  }, [message, submittedMessage]);
-  const reply = submittedMessage ? companionContext.safeDisplayData : null;
-
-  function handleSubmit(event: FormEvent) {
+  async function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    setSubmittedMessage(message.trim() || "I need Scripture-grounded prayer and direction.");
+    const input = message.trim() || "I need Scripture-grounded prayer and direction.";
+    const response = await fetch("/api/teoyube/prayer", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ input })
+    });
+    if (!response.ok) return;
+    const result = await response.json() as PrayerCompanionClientResponseDto;
+    setReply(result.reply);
+    setWarnings(result.warnings);
   }
 
   return (
@@ -72,9 +67,9 @@ export default function PrayerCompanion() {
           <p className="muted">
             <strong>Devotional boundary:</strong> Prayer guidance is framed as Scripture-grounded encouragement, not divine certainty or professional advice.
           </p>
-          {companionContext.warnings.length > 0 && (
+          {warnings.length > 0 && (
             <p className="muted">
-              <strong>Warnings:</strong> {companionContext.warnings.join("; ")}
+              <strong>Warnings:</strong> {warnings.join("; ")}
             </p>
           )}
           {Array.isArray(reply.explanationPath) && reply.explanationPath.length > 0 && (

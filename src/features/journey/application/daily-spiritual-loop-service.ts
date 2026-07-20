@@ -8,10 +8,18 @@ import {
   type DailySpiritualLoopSeed,
   type DailySpiritualLoopState
 } from "../../../domain/journey/daily-spiritual-loop";
+import type { TigService } from "../../../domain/tig/tig-service";
 import { createDailyLoopTigCompatibilitySeed } from "../legacy-adapter";
 
-export function createDeterministicDailySpiritualLoopSeed(): DailySpiritualLoopSeed {
-  return createDailyLoopTigCompatibilitySeed();
+export async function createDeterministicDailySpiritualLoopSeed(tigService: TigService): Promise<DailySpiritualLoopSeed> {
+  const recommendation = await tigService.recommend({
+    query: "calling purpose faithful next step",
+    intent: "daily_journey",
+    surface: "daily_word",
+    selectedWordId: "TIDUILOVP",
+    selectedPromiseClusterId: "calling-purpose"
+  });
+  return createDailyLoopTigCompatibilitySeed(recommendation);
 }
 
 export function startDailySpiritualLoop(seed: DailySpiritualLoopSeed, startedAt: string): DailySpiritualLoopState {

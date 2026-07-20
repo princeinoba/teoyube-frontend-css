@@ -1,10 +1,18 @@
 import TeoyubeCard from "@/components/TeoyubeCard";
-import { createWordCardAdapterProps } from "@/lib/teoyube/adapters/word-card-adapter";
+
+export type WordCardEngineContext = Readonly<{
+  word: Readonly<Record<string, any>>;
+  context: Readonly<{
+    scriptureAnchors: readonly string[];
+    promiseConnections: readonly Readonly<{ id: string; title: string; declaration?: string }>[];
+    explanationPath: readonly string[];
+  }>;
+}>;
 
 type WordCardProps = {
   word?: any;
   wordId?: string;
-  engineContext?: ReturnType<typeof createWordCardAdapterProps>;
+  engineContext?: WordCardEngineContext;
 };
 
 function unique(values: string[]): string[] {
@@ -20,7 +28,15 @@ function resolveWordLookup(word: any, wordId?: string): string {
 }
 
 export default function WordCard({ word = {}, wordId, engineContext }: WordCardProps) {
-  const engine = engineContext || createWordCardAdapterProps(resolveWordLookup(word, wordId));
+  const fallbackWord = resolveWordLookup(word, wordId);
+  const engine = engineContext || {
+    word: { ...word, id: word?.id || fallbackWord, word: word?.word || fallbackWord, teoyubeWord: word?.teoyubeWord || word?.word || fallbackWord },
+    context: {
+      scriptureAnchors: unique([...asStringArray(word.scriptureReferences), ...asStringArray(word.scripture_sources)]),
+      promiseConnections: [],
+      explanationPath: asStringArray(word.explanationPath)
+    }
+  };
   const displayWord = {
     ...engine.word,
     ...word,

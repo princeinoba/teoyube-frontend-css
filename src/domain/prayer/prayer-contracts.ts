@@ -42,6 +42,14 @@ export type PrayerReplyDto = Readonly<{
   devotionalBoundary: string;
 }>;
 
+export type PrayerCompanionClientResponseDto = Readonly<{
+  reply: PrayerReplyDto;
+  warnings: readonly string[];
+  blockers: readonly string[];
+  noExternalServicesRequired: true;
+  noPersistenceEnabled: true;
+}>;
+
 export type PrayerCardDto = Readonly<{
   id: string;
   name: string;

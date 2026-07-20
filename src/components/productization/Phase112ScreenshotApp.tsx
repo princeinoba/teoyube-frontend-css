@@ -1,22 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import {
-  createPhase112BookEntries,
-  createPhase112Testimonies,
-  createPromiseTableRows,
-  createTeoGuideResponse,
-  getPhase112Media,
-  runCallingCompassPreview,
-  runTeoyubeSearch
-} from "@/lib/phase112Productization";
-import {
-  createPhase11DailyWordContext,
-  createPhase11PersonalizationPreview,
-  createPhase11SafeExportBundle,
-  getPhase11RouteInventory,
-  runPhase11TigSurface
-} from "@/lib/phase11Productization";
+import { useEffect, useState } from "react";
 import {
   ExplanationPathPanel,
   FallbackNotice,
@@ -28,15 +12,27 @@ import {
   TeoyubeProductCard
 } from "./Phase11ProductPanels";
 import {
+  useBookOfTheSaint,
   useDailyJourney,
   usePersonalizationControls,
   usePromiseTable,
+  useTeoyubeAppState,
+  useTestimonies,
   useTeoGuide
 } from "./TeoyubeAppStateProvider";
-import { getAllTeoyubeWords, searchTeoyubeCanon } from "@/lib/teoyube/data-access";
+
+type AnyRecord = Record<string, any>;
+
+const EMPTY_SEARCH_RESULT = Object.freeze({ rows: Object.freeze([]) });
+const EMPTY_GUIDE_RESPONSE = Object.freeze({
+  confidenceLabel: "Cautious local preview",
+  promiseCluster: "Scripture-grounded guidance",
+  response: "Review the relevant Scripture in context before choosing a faithful next step.",
+  scriptureAnchor: "Ephesians 1:18",
+  explanationPath: Object.freeze(["Local deterministic guidance is prepared on the server."])
+});
 
 export function SidebarNav() {
-  const routes = getPhase11RouteInventory();
   const appRoutes = [
     ["/", "Today"],
     ["/roadmap", "Roadmap"],
@@ -69,7 +65,7 @@ export function SidebarNav() {
         ))}
       </nav>
       <div className="sidebar-card">
-        <strong>{routes.length} local routes</strong>
+        <strong>{appRoutes.length} local routes</strong>
         <p>No analytics, accounts, payments, external AI, or database persistence.</p>
       </div>
     </aside>
@@ -155,8 +151,9 @@ function Hero({
 }
 
 export function TodayScreenshotPage() {
-  const context = createPhase11DailyWordContext();
-  const tig = runPhase11TigSurface("daily_word", context.dailyWord.word);
+  const { state } = useTeoyubeAppState();
+  const context = state.generatedDailyJourney || {};
+  const tig = state.activeTigResponse;
 
   return (
     <main>
@@ -166,9 +163,9 @@ export function TodayScreenshotPage() {
         body="A local daily word, Scripture anchor, promise cluster, prayer, and action path for this session."
       />
       <section className="grid two">
-        <TeoyubeProductCard eyebrow="Word of the Day" title={context.dailyWord.word}>
-          <p>{context.dailyWord.meaning}</p>
-          <p className="muted">Scripture: {context.scripture.reference}</p>
+        <TeoyubeProductCard eyebrow="Word of the Day" title={context.dailyWord?.word || "Teoyube Word"}>
+          <p>{context.dailyWord?.meaning}</p>
+          <p className="muted">Scripture: {context.scripture?.reference}</p>
           <p>{context.prayer}</p>
         </TeoyubeProductCard>
         <TIGResponsePanel result={tig} />
@@ -179,7 +176,7 @@ export function TodayScreenshotPage() {
 }
 
 export function RoadmapScreenshotPage() {
-  const routes = getPhase11RouteInventory();
+  const routeCount = 12;
   return (
     <main>
       <PageHeader eyebrow="Implementation Roadmap" title="Phase 11 Runtime Consolidation">
@@ -192,7 +189,7 @@ export function RoadmapScreenshotPage() {
         <TeoyubeProductCard eyebrow="Migration Layer" title="Next Source Repaired">
           <p>Missing aliases, components, and local modules are restored for future Next migration.</p>
         </TeoyubeProductCard>
-        <TeoyubeProductCard eyebrow="Routes" title={`${routes.length} Routes`}>
+        <TeoyubeProductCard eyebrow="Routes" title={`${routeCount} Routes`}>
           <p>All route records point to local data and safe fallback behavior.</p>
         </TeoyubeProductCard>
       </section>
@@ -201,7 +198,7 @@ export function RoadmapScreenshotPage() {
 }
 
 export function CanonScreenshotPage() {
-  const canon = searchTeoyubeCanon("promise", { limit: 6 });
+  const canon = { words: [] as AnyRecord[] };
   return (
     <main>
       <Hero
@@ -223,7 +220,18 @@ export function CanonScreenshotPage() {
 
 export function TeoyubeSearchScreenshotPage() {
   const [query, setQuery] = useState("I feel confused about my purpose");
-  const result = runTeoyubeSearch(query);
+  const { initialSearchResult } = useTeoyubeAppState();
+  const [result, setResult] = useState<AnyRecord>(initialSearchResult);
+  useEffect(() => {
+    const controller = new AbortController();
+    void fetch("/api/teoyube/search-rows", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ input: query }),
+      signal: controller.signal
+    }).then((response) => response.ok ? response.json() : EMPTY_SEARCH_RESULT).then(setResult).catch(() => undefined);
+    return () => controller.abort();
+  }, [query]);
 
   return (
     <main>
@@ -250,7 +258,7 @@ export function TeoyubeSearchScreenshotPage() {
 
 export function PromiseTableScreenshotPage() {
   const { rows, addPromiseTableItem } = usePromiseTable();
-  const visibleRows = rows.length ? rows : createPromiseTableRows(6);
+  const visibleRows = rows;
 
   return (
     <main>
@@ -277,7 +285,21 @@ export function PromiseTableScreenshotPage() {
 
 export function CallingCompassScreenshotPage() {
   const [query, setQuery] = useState("calling purpose");
-  const preview = runCallingCompassPreview(query);
+  const [preview, setPreview] = useState<AnyRecord>({ suggestedCallingPattern: "A calling pattern may be emerging.", relatedPromiseCluster: "Calling & Purpose", scriptureAnchor: "Romans 8:28", relatedWord: "TEOYUBE", actionStep: "Take one faithful next step.", explanationPath: [] });
+  useEffect(() => {
+    const controller = new AbortController();
+    void fetch("/api/teoyube/calling-context", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ query }), signal: controller.signal })
+      .then((response) => response.ok ? response.json() : null)
+      .then((context) => context && setPreview({
+        suggestedCallingPattern: context.callingPath.archetype.name,
+        relatedPromiseCluster: context.callingPath.promises[0]?.title || "Calling & Purpose",
+        scriptureAnchor: context.callingPath.scriptureAnchors[0] || "Romans 8:28",
+        relatedWord: context.callingPath.archetype.name,
+        actionStep: context.callingPath.actionSteps[0] || "Take one faithful next step.",
+        explanationPath: context.explanationPath
+      })).catch(() => undefined);
+    return () => controller.abort();
+  }, [query]);
 
   return (
     <main>
@@ -303,7 +325,7 @@ export function CallingCompassScreenshotPage() {
 }
 
 export function BookOfTheSaintScreenshotPage() {
-  const entries = createPhase112BookEntries();
+  const { entries } = useBookOfTheSaint();
   return (
     <main>
       <Hero
@@ -326,7 +348,7 @@ export function BookOfTheSaintScreenshotPage() {
 }
 
 export function LexiconScreenshotPage() {
-  const words = getAllTeoyubeWords().slice(0, 24);
+  const words: AnyRecord[] = [];
   return (
     <main>
       <Hero
@@ -347,7 +369,7 @@ export function LexiconScreenshotPage() {
 }
 
 export function TestimonyArchiveScreenshotPage() {
-  const testimonies = createPhase112Testimonies();
+  const { entries: testimonies } = useTestimonies();
   return (
     <main>
       <Hero
@@ -370,7 +392,14 @@ export function TestimonyArchiveScreenshotPage() {
 export function TeoGuideScreenshotPage() {
   const { turns, createTeoGuideTurn } = useTeoGuide();
   const [prompt, setPrompt] = useState("Help me overcome confusion with Scripture.");
-  const preview = turns[0] || createTeoGuideResponse(prompt);
+  const [serverPreview, setServerPreview] = useState<AnyRecord>(EMPTY_GUIDE_RESPONSE);
+  useEffect(() => {
+    const controller = new AbortController();
+    void fetch("/api/teoyube/teo-guide", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ prompt }), signal: controller.signal })
+      .then((response) => response.ok ? response.json() : EMPTY_GUIDE_RESPONSE).then(setServerPreview).catch(() => undefined);
+    return () => controller.abort();
+  }, [prompt]);
+  const preview = turns[0] || serverPreview;
 
   return (
     <main>
@@ -397,7 +426,7 @@ export function TeoGuideScreenshotPage() {
 }
 
 export function EmbeddedVideosScreenshotPage() {
-  const media = getPhase112Media("promise", "all", 1);
+  const media = { items: [] as AnyRecord[] };
   return (
     <main>
       <Hero
@@ -419,7 +448,7 @@ export function EmbeddedVideosScreenshotPage() {
 
 export function PersonalizationScreenshotPage() {
   const { signals, addPersonalizationSignal, resetPersonalization } = usePersonalizationControls();
-  const preview = createPhase11PersonalizationPreview("I need direction.", true);
+  const preview = { scriptureAnchorPreserved: true };
 
   return (
     <main>

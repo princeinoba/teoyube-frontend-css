@@ -1,6 +1,7 @@
 import { APPROVED_VIEW_MARKUP } from "../../../app/_approved-source/approved-view-markup.generated";
 import type {
   CallingCompassQuestionDto,
+  CallingCompassClientContextDto,
   CallingCompassViewModel,
   CallingDiscernmentDto,
   CallingMediaDto
@@ -23,6 +24,26 @@ const MEDIA: readonly CallingMediaDto[] = Object.freeze([
   Object.freeze({ id: "local-promise-language", title: "Promise Language and Calling", description: "A local preview connecting promise language to visible Scripture evidence.", duration: "22:15", image: "public/images/carousel/growth-in-grace.png" }),
   Object.freeze({ id: "local-daily-assignment", title: "Daily Divine Assignment", description: "A local preview for translating Scripture and prayer into one faithful action.", duration: "20:15", image: "public/images/canon/canon-card-04.png" })
 ]);
+
+export function createCallingCompassClientContext(query = "calling purpose"): CallingCompassClientContextDto {
+  const adapter = createCompassExperienceAdapterContext({ query });
+  return Object.freeze({
+    initialSearchTerm: adapter.initialSearchTerm,
+    callingPath: Object.freeze({
+      archetype: Object.freeze({ name: adapter.callingPath.archetype.name, summary: adapter.callingPath.archetype.summary }),
+      confidenceLabel: adapter.callingPath.confidenceLabel,
+      scriptureAnchors: Object.freeze([...adapter.callingPath.scriptureAnchors]),
+      promises: Object.freeze(adapter.callingPath.promises.map((promise) => Object.freeze({ title: promise.title }))),
+      actionSteps: Object.freeze([...adapter.callingPath.actionSteps])
+    }),
+    explanationPath: Object.freeze([...adapter.explanationPath]),
+    fallbackUsed: adapter.callingPath.confidenceLabel === "fallback",
+    warnings: Object.freeze([...adapter.validation.warnings]),
+    blockers: Object.freeze([...adapter.validation.blockers]),
+    noExternalServicesRequired: true,
+    noBrowserPersistenceRequired: true
+  });
+}
 
 function confidenceLabel(value: string): CallingDiscernmentDto["confidenceLabel"] {
   if (value === "direct") return "Strongest indicators suggest";

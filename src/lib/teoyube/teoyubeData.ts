@@ -8,6 +8,8 @@ import glyphDefinitions from "@/data/glyphDefinitions.json";
 import graphRelationships from "@/data/graphRelationships.json";
 import prayers from "@/data/prayers.json";
 import tkos from "@/data/tkos.json";
+import { createWordCardAdapterProps } from "./adapters/word-card-adapter";
+import { createPromiseTable } from "./promises/promise-table";
 
 export function getWords() {
   return words;
@@ -31,6 +33,7 @@ export function getPrayers() {
 }
 
 export function getExploreData() {
+  const wordContextKey = (word: any) => String(word?.id || word?.word || word?.teoyubeWord || "Benor");
   return {
     words,
     scriptureCanon,
@@ -41,7 +44,11 @@ export function getExploreData() {
     glyphDefinitions,
     graphRelationships,
     prayers,
-    tkos
+    tkos,
+    wordContexts: Object.fromEntries(
+      [...words, ...scriptureCanon].map((word: any) => [wordContextKey(word), createWordCardAdapterProps(wordContextKey(word))])
+    ),
+    promiseTable: createPromiseTable()
   };
 }
 

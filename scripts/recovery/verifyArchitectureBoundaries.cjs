@@ -47,6 +47,25 @@ const files = ARCHITECTURE_ROOTS.flatMap((root) => walk(path.join(SOURCE_ROOT, r
 const fileSet = new Set(files);
 const graph = new Map(files.map((file) => [file, []]));
 
+const clientFiles = ["app", "components", "features"]
+  .flatMap((root) => walk(path.join(SOURCE_ROOT, root)))
+  .filter((file) => /^\s*["']use client["']/.test(fs.readFileSync(file, "utf8")));
+for (const importer of clientFiles) {
+  for (const specifier of importsFor(importer)) {
+    const target = resolveImport(importer, specifier);
+    const targetName = target ? normalize(target) : specifier.replaceAll("\\", "/");
+    if (/src\/server\/tig\//.test(targetName)) {
+      errors.push(`${normalize(importer)}: client code may not import the server TIG service or cache (${targetName})`);
+    }
+    if (/src\/lib\/tig\/(?:index|seed\/|intelligence-graph-seeds|traverse|graph-engine|intelligence-graph-engine|production-cache|production-intelligence-service)/.test(targetName)) {
+      errors.push(`${normalize(importer)}: client code may not import TIG seeds, graph traversal, cache, or implementation modules (${targetName})`);
+    }
+    if (/src\/lib\/teoyube\/tig\/(?!tig-recommendation-contracts)/.test(targetName)) {
+      errors.push(`${normalize(importer)}: client code may import only client-safe TIG contracts, not the legacy TIG implementation (${targetName})`);
+    }
+  }
+}
+
 for (const importer of files) {
   const importerName = normalize(importer);
   const importerRoot = importerName.split("/")[1];

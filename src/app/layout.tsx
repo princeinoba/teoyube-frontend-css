@@ -2,6 +2,9 @@ import { ApprovedTeoyubeShell } from "./_shell/ApprovedTeoyubeShell";
 import { TeoyubeAppStateProvider } from "@/components/productization/TeoyubeAppStateProvider";
 import { createDeterministicDailySpiritualLoopSeed } from "@/features/journey/application/daily-spiritual-loop-service";
 import { DailySpiritualLoopProvider } from "@/features/journey/ui/DailySpiritualLoopProvider";
+import { canonicalTigService } from "@/server/tig/canonical-tig-service";
+import { createInitialTeoyubeAppState, createSafeExportBundle } from "@/lib/teoyube/app-state";
+import { runTeoyubeSearch } from "@/lib/phase112Productization";
 import type { ReactNode } from "react";
 
 export const metadata = {
@@ -21,17 +24,20 @@ const approvedStylesheetImports = `
 @import url("/styles/responsive.css?recovery=1");
 `;
 
-export default function RootLayout({
+export default async function RootLayout({
   children
 }: {
   children: ReactNode;
 }) {
-  const dailySpiritualLoopSeed = createDeterministicDailySpiritualLoopSeed();
+  const dailySpiritualLoopSeed = await createDeterministicDailySpiritualLoopSeed(canonicalTigService);
+  const initialLegacyAppState = createInitialTeoyubeAppState();
+  const initialSafeExportBundle = createSafeExportBundle(initialLegacyAppState);
+  const initialLegacySearchResult = runTeoyubeSearch("I feel confused about my purpose");
   return (
     <html lang="en">
       <body data-view="today">
         <style>{approvedStylesheetImports}</style>
-        <TeoyubeAppStateProvider>
+        <TeoyubeAppStateProvider initialSearchResult={initialLegacySearchResult} initialState={initialLegacyAppState} safeExportBase={initialSafeExportBundle}>
           <DailySpiritualLoopProvider seed={dailySpiritualLoopSeed}>
             <ApprovedTeoyubeShell>{children}</ApprovedTeoyubeShell>
           </DailySpiritualLoopProvider>

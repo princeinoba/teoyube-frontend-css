@@ -1,19 +1,46 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
-import {
-  createPhase11DailyWordContext,
-  runPhase11TigSurface,
-  type Phase11ProductSurface
-} from "@/lib/phase11Productization";
-import {
-  createPromiseTableRows,
-  getGuardrailsContent,
-  type Phase112TodayJourney
-} from "@/lib/phase112Productization";
+import { useEffect, useState, type ReactNode } from "react";
+import type { Phase11ProductSurface } from "@/lib/phase11Productization";
+import type { Phase112TodayJourney } from "@/lib/phase112Productization";
 import { useJournal, useTeoyubeAppState } from "./TeoyubeAppStateProvider";
 
 type AnyRecord = Record<string, any>;
+
+const GUARDRAILS = Object.freeze({
+  title: "Teoyube Guardrails",
+  points: Object.freeze([
+    "Scripture is the highest authority; Teoyube words are aids, not Scripture.",
+    "The local engine does not claim divine certainty or say God told the app something.",
+    "Major decisions should be tested through prayer, Scripture, wise counsel, fruit, and time.",
+    "Teoyube does not replace pastoral, medical, legal, financial, emergency, or professional support.",
+    "Testimony is user-recorded only and is never automatically certified as promise fulfillment."
+  ])
+});
+
+function emptyTigResult(surface = "promise_search") {
+  return {
+    surface,
+    responsePanel: {
+      title: "Local response",
+      subtitle: "Local TIG-compatible preview. No live AI, analytics, or persistence required.",
+      selectionRows: [],
+      confidence: { label: "Cautious preview" },
+      fallback: { used: false, reason: "" }
+    },
+    graphPanel: { statistics: { totalNodes: 0 }, nodes: [], edges: [], listFallbackAvailable: true },
+    explanationPanel: { items: [], scriptureEvidence: [] }
+  };
+}
+
+async function requestTigResult(surface: Phase11ProductSurface, input: string) {
+  const response = await fetch("/api/teoyube/tig-production", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ surface, input })
+  });
+  return response.ok ? response.json() : emptyTigResult(surface);
+}
 
 export function PageHeader({
   eyebrow,
@@ -87,7 +114,7 @@ export function ExplanationPathPanel({ items = [] }: { items?: string[] }) {
 }
 
 export function TIGResponsePanel({ result }: { result?: AnyRecord }) {
-  const response = result || runPhase11TigSurface("promise_search", "I need direction.");
+  const response = result || emptyTigResult();
   const rows = response.responsePanel?.selectionRows || [];
 
   return (
@@ -114,7 +141,7 @@ export function TIGResponsePanel({ result }: { result?: AnyRecord }) {
 }
 
 export function TIGGraphExplorer({ result }: { result?: AnyRecord }) {
-  const response = result || runPhase11TigSurface("tig_graph", "Show purpose, promise, and Scripture.");
+  const response = result || emptyTigResult("tig_graph");
   const nodes = response.graphPanel?.nodes || [];
   const edges = response.graphPanel?.edges || [];
 
@@ -144,11 +171,10 @@ export function TIGGraphExplorer({ result }: { result?: AnyRecord }) {
 }
 
 export function SafetyNotice() {
-  const guardrails = getGuardrailsContent();
   return (
-    <TeoyubeProductCard eyebrow="Guardrails" title={guardrails.title}>
+    <TeoyubeProductCard eyebrow="Guardrails" title={GUARDRAILS.title}>
       <ul className="check-list">
-        {guardrails.points.slice(0, 5).map((point) => (
+        {GUARDRAILS.points.map((point) => (
           <li key={point}>{point}</li>
         ))}
       </ul>
@@ -205,12 +231,13 @@ export function LoadingState({ message = "Preparing local preview..." }: { messa
 }
 
 export function DailyWordPanel({ initialContext }: { initialContext?: Phase112TodayJourney | AnyRecord }) {
-  const [context, setContext] = useState<AnyRecord>(() => initialContext || createPhase11DailyWordContext());
+  const [context, setContext] = useState<AnyRecord>(() => initialContext || {});
   const { generateDailyJourney: generateSessionJourney } = useTeoyubeAppState();
 
-  function handleGenerate() {
-    const next = createPhase11DailyWordContext();
-    setContext(next);
+  async function handleGenerate() {
+    const seed = new Date().toISOString().slice(0, 10);
+    const response = await fetch(`/api/teoyube/daily-word?seed=${encodeURIComponent(seed)}`, { cache: "no-store" });
+    if (response.ok) setContext(await response.json());
     generateSessionJourney();
   }
 
@@ -244,12 +271,15 @@ export function Phase11TigFlowPanel({
   primaryActionLabel?: string;
 }) {
   const [input, setInput] = useState(initialInput);
-  const [result, setResult] = useState(() => runPhase11TigSurface(surface, initialInput));
+  const [result, setResult] = useState<AnyRecord>(() => emptyTigResult(surface));
   const { setActiveTigSurface } = useTeoyubeAppState();
 
-  function handleGenerate() {
-    const next = runPhase11TigSurface(surface, input);
-    setResult(next);
+  useEffect(() => {
+    void requestTigResult(surface, initialInput).then(setResult);
+  }, [initialInput, surface]);
+
+  async function handleGenerate() {
+    setResult(await requestTigResult(surface, input));
     setActiveTigSurface(surface, input);
   }
 
@@ -349,11 +379,11 @@ export function GrowthJourneyPanel({ journeys = [], levels = [] }: { journeys?: 
 }
 
 export function PrayerCompanionProductPanel() {
-  const result = useMemo(
-    () => runPhase11TigSurface("prayer", "I need prayer for wisdom and surrender."),
-    []
-  );
-  const rows = createPromiseTableRows(2);
+  const [result, setResult] = useState<AnyRecord>(() => emptyTigResult("prayer"));
+  useEffect(() => {
+    void requestTigResult("prayer", "I need prayer for wisdom and surrender.").then(setResult);
+  }, []);
+  const rows = result.responsePanel.selectionRows.filter((row: AnyRecord) => row.label === "Scripture").slice(0, 2);
 
   return (
     <section className="grid two">
@@ -366,7 +396,7 @@ export function PrayerCompanionProductPanel() {
         <ul className="check-list">
           {rows.map((row) => (
             <li key={row.id}>
-              {row.scripture}: {row.prayer}
+              {row.value}: Scripture-grounded prayer remains reviewable and non-directive.
             </li>
           ))}
         </ul>

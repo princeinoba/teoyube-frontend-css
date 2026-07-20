@@ -1,16 +1,28 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import {
-  createPromiseTable,
-  filterPromiseTableByScripture,
-  filterPromiseTableByTheme,
-  filterPromiseTableByWord,
-  type TeoyubePromiseTableRow
-} from "../../lib/teoyube/promises/promise-table";
+
+type TeoyubePromiseTableRow = Readonly<{
+  promiseId: string;
+  title: string;
+  theme: string;
+  scriptureAnchors: readonly string[];
+  relatedTeoyubeWords: readonly string[];
+  callingLinks: readonly string[];
+  prayerLinks: readonly string[];
+  tigEdges: readonly Readonly<{ id: string; sourceNodeId: string; targetNodeId: string; type: string }>[];
+  valid: boolean;
+  warnings: readonly string[];
+}>;
+
+type TeoyubePromiseTable = Readonly<{
+  rows: readonly TeoyubePromiseTableRow[];
+  rowCount: number;
+}>;
 
 export type PromiseTablePreviewProps = {
   initialQuery?: string;
+  initialTable?: TeoyubePromiseTable;
   maxRows?: number;
 };
 
@@ -18,24 +30,27 @@ function uniqueRows(rows: TeoyubePromiseTableRow[]): TeoyubePromiseTableRow[] {
   return [...new Map(rows.map((row) => [row.promiseId, row])).values()];
 }
 
-function getFilteredRows(query: string): TeoyubePromiseTableRow[] {
+function getFilteredRows(table: TeoyubePromiseTable, query: string): TeoyubePromiseTableRow[] {
   const normalizedQuery = query.trim();
-  if (!normalizedQuery) return createPromiseTable().rows;
-
-  return uniqueRows([
-    ...filterPromiseTableByTheme(normalizedQuery),
-    ...filterPromiseTableByWord(normalizedQuery),
-    ...filterPromiseTableByScripture(normalizedQuery)
-  ]);
+  if (!normalizedQuery) return [...table.rows];
+  const term = normalizedQuery.toLowerCase();
+  return uniqueRows(table.rows.filter((row) => [
+    row.theme,
+    row.title,
+    ...row.relatedTeoyubeWords,
+    ...row.callingLinks,
+    ...row.scriptureAnchors
+  ].join(" ").toLowerCase().includes(term)));
 }
 
 export default function PromiseTablePreview({
   initialQuery = "",
+  initialTable = { rows: [], rowCount: 0 },
   maxRows = 6
 }: PromiseTablePreviewProps) {
   const [query, setQuery] = useState(initialQuery);
-  const table = useMemo(() => createPromiseTable(), []);
-  const rows = useMemo(() => getFilteredRows(query).slice(0, maxRows), [maxRows, query]);
+  const table = initialTable;
+  const rows = useMemo(() => getFilteredRows(table, query).slice(0, maxRows), [maxRows, query, table]);
 
   return (
     <section className="card" aria-label="Promise Table Preview">

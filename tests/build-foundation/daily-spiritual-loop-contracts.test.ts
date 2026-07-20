@@ -11,6 +11,7 @@ import {
   type DailySpiritualLoopState
 } from "../../src/domain/journey/daily-spiritual-loop";
 import { createDeterministicDailySpiritualLoopSeed } from "../../src/features/journey/application/daily-spiritual-loop-service";
+import { canonicalTigService } from "../../src/server/tig/canonical-tig-service";
 
 const workspaceRoot = path.resolve(__dirname, "../..");
 
@@ -163,9 +164,9 @@ describe("guided daily spiritual loop", () => {
     expect(measureKeys.join(" ")).not.toMatch(/duration|streak|message|notification|engagement|score/i);
   });
 
-  it("maps deterministic TIG through the journey application service without importing seeds into UI code", () => {
-    const first = createDeterministicDailySpiritualLoopSeed();
-    const second = createDeterministicDailySpiritualLoopSeed();
+  it("maps deterministic TIG through the journey application service without importing seeds into UI code", async () => {
+    const first = await createDeterministicDailySpiritualLoopSeed(canonicalTigService);
+    const second = await createDeterministicDailySpiritualLoopSeed(canonicalTigService);
     expect(first).toEqual(second);
     expect(first.trace).toMatchObject({ deterministic: true, externalModelUsed: false });
     expect(first.scriptureReferences.length).toBeGreaterThan(0);
