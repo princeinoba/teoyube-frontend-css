@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopProvider";
 
 const NAVIGATION = [
   { view: "today", label: "Today", href: "/" },
@@ -50,6 +51,7 @@ export function ApprovedTeoyubeShell({ children }: { children: ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileToggle = useRef<HTMLButtonElement>(null);
   const view = getView(pathname);
+  const { state: dailySpiritualLoop } = useDailySpiritualLoop();
 
   useEffect(() => {
     document.body.dataset.view = view;
@@ -148,7 +150,16 @@ export function ApprovedTeoyubeShell({ children }: { children: ReactNode }) {
             </div>
             <div className="topbar-actions">
               <button className="secondary action-icon-button" id="privacyBtn" onClick={() => router.push("/consent")}><span className="button-icon button-icon-guardrails" aria-hidden="true"></span><span>Guardrails</span></button>
-              <button className="primary action-icon-button" id="generateBtn" onClick={() => view === "today" ? document.dispatchEvent(new CustomEvent("teoyube:generate-today")) : navigate("/")}><span className="button-icon button-icon-journey" aria-hidden="true"></span><span>{"Generate Today's Journey"}</span></button>
+              <button
+                className="primary action-icon-button"
+                id="generateBtn"
+                data-daily-journey-navigation={dailySpiritualLoop?.active ? "progress" : undefined}
+                onClick={() => dailySpiritualLoop?.active
+                  ? navigate("/journey")
+                  : view === "today"
+                    ? document.dispatchEvent(new CustomEvent("teoyube:generate-today"))
+                    : navigate("/")}
+              ><span className="button-icon button-icon-journey" aria-hidden="true"></span><span>{dailySpiritualLoop?.active ? "Journey Progress" : "Generate Today's Journey"}</span></button>
             </div>
           </header>
           {children}

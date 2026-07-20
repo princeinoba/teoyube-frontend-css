@@ -42,6 +42,6 @@ export function createJourneyPageViewModel(): JourneyPageViewModel {
       "Personalization is session-only and explainable; raw private text is not exported or stored in browser persistence.",
       "Calling and prayer language remains devotional, cautious, and Scripture-reviewable."
     ]),
-    finalUnifiedDailyLoopEnabled: false
+    finalUnifiedDailyLoopEnabled: true
   });
 }

@@ -1,5 +1,7 @@
 import { ApprovedTeoyubeShell } from "./_shell/ApprovedTeoyubeShell";
 import { TeoyubeAppStateProvider } from "@/components/productization/TeoyubeAppStateProvider";
+import { createDeterministicDailySpiritualLoopSeed } from "@/features/journey/application/daily-spiritual-loop-service";
+import { DailySpiritualLoopProvider } from "@/features/journey/ui/DailySpiritualLoopProvider";
 import type { ReactNode } from "react";
 
 export const metadata = {
@@ -24,12 +26,15 @@ export default function RootLayout({
 }: {
   children: ReactNode;
 }) {
+  const dailySpiritualLoopSeed = createDeterministicDailySpiritualLoopSeed();
   return (
     <html lang="en">
       <body data-view="today">
         <style>{approvedStylesheetImports}</style>
         <TeoyubeAppStateProvider>
-          <ApprovedTeoyubeShell>{children}</ApprovedTeoyubeShell>
+          <DailySpiritualLoopProvider seed={dailySpiritualLoopSeed}>
+            <ApprovedTeoyubeShell>{children}</ApprovedTeoyubeShell>
+          </DailySpiritualLoopProvider>
         </TeoyubeAppStateProvider>
       </body>
     </html>

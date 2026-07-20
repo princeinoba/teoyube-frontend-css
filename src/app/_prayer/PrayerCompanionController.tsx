@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "../../features/journey/ui/DailySpiritualLoopProvider";
 import type { PrayerReplyDto } from "../../domain/prayer/prayer-contracts";
 
 type PrayerApiResponse = Readonly<{
@@ -10,9 +12,17 @@ type PrayerApiResponse = Readonly<{
 export function PrayerCompanionController() {
   const [message, setMessage] = useState("");
   const [reply, setReply] = useState<PrayerReplyDto | null>(null);
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const prayerMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "prayer";
+  const callingContinuationReady = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "calling_discernment" && Boolean(reply);
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
+    if (callingContinuationReady) {
+      router.push("/calling-compass");
+      return;
+    }
     const input = message.trim() || "I need Scripture-grounded prayer and direction.";
     const response = await fetch("/api/teoyube/prayer", {
       method: "POST",
@@ -22,6 +32,7 @@ export function PrayerCompanionController() {
     if (!response.ok) return;
     const payload = await response.json() as PrayerApiResponse;
     setReply(payload.reply);
+    if (prayerMomentActive) actOnDailySpiritualLoop({ type: "accept", userInput: input });
   }
 
   return (
@@ -36,7 +47,7 @@ export function PrayerCompanionController() {
           placeholder="Example: I need peace and direction today."
           rows={5}
         />
-        <button className="button" type="submit">Ask Companion</button>
+        <button className="button" type="submit" data-daily-journey-action={prayerMomentActive ? "accept" : undefined} data-daily-journey-navigation={callingContinuationReady ? "calling_discernment" : undefined}>{callingContinuationReady ? "Continue to Calling Compass" : "Ask Companion"}</button>
       </form>
 
       {reply && (

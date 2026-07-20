@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useReducer, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopProvider";
+import { getDailySpiritualLoopProgress } from "@/domain/journey/daily-spiritual-loop";
 import type { TodayViewActions, TodayViewModel } from "@/features/today/contracts";
 import { reduceTodayViewModel } from "@/features/today/application/today-service";
 import { ApprovedTodayView } from "./ApprovedTodayView";
@@ -38,6 +40,7 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
   const promisePaused = useRef(false);
   const storyPaused = useRef(false);
   const router = useRouter();
+  const { state: dailySpiritualLoop, start: startDailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
 
   useEffect(() => {
     const promiseTimer = window.setInterval(() => {
@@ -50,10 +53,13 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
   }, []);
 
   useEffect(() => {
-    const generate = () => setNotice({ title: "Journey generated", detail: "Calling & Purpose connected to TIDUILOVP. Standard Scripture Path.", scripture: "Romans 8:28-30" });
+    const generate = () => {
+      if (!dailySpiritualLoop?.active) startDailySpiritualLoop();
+      setNotice({ title: "Journey generated", detail: "Begin with a private check-in in the existing Daily Divine Assignment field.", scripture: "Romans 8:28-30" });
+    };
     document.addEventListener("teoyube:generate-today", generate);
     return () => document.removeEventListener("teoyube:generate-today", generate);
-  }, []);
+  }, [dailySpiritualLoop?.active, startDailySpiritualLoop]);
 
   useEffect(() => {
     if (!notice) return;
@@ -81,6 +87,28 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
     },
     changeReflection: (value) => dispatch({ type: "reflection.change", value }),
     completeAssignment: () => {
+      if (dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "check_in") {
+        actOnDailySpiritualLoop({ type: "accept", userInput: model.reflection });
+        dispatch({ type: "assignment.complete" });
+        router.push("/canon");
+        return;
+      }
+      if (dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "daily_assignment") {
+        actOnDailySpiritualLoop({ type: "accept", userInput: model.assignmentItems.join(" ") });
+        dispatch({ type: "assignment.complete" });
+        router.push("/journal");
+        return;
+      }
+      if (dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "tomorrow") {
+        actOnDailySpiritualLoop({ type: "accept", userInput: model.reflection });
+        dispatch({ type: "assignment.complete" });
+        setNotice({
+          title: "Journey complete",
+          detail: "Tomorrow's carry-forward remains editable, session-only, and free of hidden profiling.",
+          scripture: dailySpiritualLoop.artifacts.scripture.payload.references[0] || "Ephesians 1:18"
+        });
+        return;
+      }
       dispatch({ type: "assignment.complete" });
       setNotice({ title: "Assignment recorded", detail: "Calling & Purpose", scripture: "Romans 8:28-30" });
     },
@@ -97,7 +125,35 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
     },
     setPromisePaused: (paused) => { promisePaused.current = paused; },
     setStoryPaused: (paused) => { storyPaused.current = paused; }
-  }), [router]);
+  }), [actOnDailySpiritualLoop, dailySpiritualLoop, model.assignmentItems, model.reflection, router]);
 
-  return <><ApprovedTodayView model={model} actions={actions} /><LegacyTodayOverlays model={model} notice={notice} clearNotice={() => setNotice(null)} /></>;
+  const approvedModel = useMemo<TodayViewModel>(() => {
+    if (!dailySpiritualLoop?.active || !["check_in", "daily_assignment", "tomorrow"].includes(dailySpiritualLoop.currentStage)) return model;
+    const stage = dailySpiritualLoop.currentStage as "check_in" | "daily_assignment" | "tomorrow";
+    return {
+      ...model,
+      journeyMoment: {
+        stage,
+        progressPercent: getDailySpiritualLoopProgress(dailySpiritualLoop),
+        reflectionPlaceholder: stage === "check_in"
+          ? "How are you arriving today? This remains in memory only."
+          : stage === "tomorrow"
+            ? "Optional note for tomorrow; no hidden profile is created."
+            : "Optional note for this voluntary, Scripture-consistent action.",
+        primaryLabel: stage === "check_in"
+          ? "Continue to Scripture"
+          : stage === "tomorrow"
+            ? "Carry Forward to Tomorrow"
+            : "Complete Assignment",
+        progressItems: [
+          { label: "Prayer", complete: dailySpiritualLoop.artifacts.prayer.status !== "pending" },
+          { label: "Scripture", complete: dailySpiritualLoop.artifacts.scripture.status !== "pending" },
+          { label: "Reflection", complete: dailySpiritualLoop.artifacts.reflection.status !== "pending" },
+          { label: "Assignment", complete: dailySpiritualLoop.artifacts.daily_assignment.status !== "pending" }
+        ]
+      }
+    };
+  }, [dailySpiritualLoop, model]);
+
+  return <><ApprovedTodayView model={approvedModel} actions={actions} /><LegacyTodayOverlays model={approvedModel} notice={notice} clearNotice={() => setNotice(null)} /></>;
 }

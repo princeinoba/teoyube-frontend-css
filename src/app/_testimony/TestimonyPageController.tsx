@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "../../features/journey/ui/DailySpiritualLoopProvider";
 import {
   createTestimonyDraft,
   finalizeTestimony,
@@ -43,10 +45,22 @@ export function TestimonyPageController({ initialViewModel }: { initialViewModel
   const lastCreatedTitleRef = useRef<string | null>(null);
   const removedRef = useRef<{ title: string; dto: TestimonyDisplayDto; node: HTMLElement; parent: HTMLElement; next: ChildNode | null } | null>(null);
   const [notice, setNotice] = useState<MigrationNotice>(null);
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const testimonyMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "testimony_candidate";
 
   useEffect(() => {
     const root = rootRef.current;
     if (!root) return;
+    if (testimonyMomentActive && dailySpiritualLoop) {
+      const candidate = dailySpiritualLoop.artifacts.testimony_candidate.payload;
+      const title = root.querySelector<HTMLInputElement>("#testimonyTitle");
+      const body = root.querySelector<HTMLTextAreaElement>("#testimonyBody");
+      const submit = root.querySelector<HTMLButtonElement>('#testimonyForm button[type="submit"]');
+      if (title && !title.value) title.value = candidate.title;
+      if (body && !body.value) body.value = candidate.bodySummary;
+      submit?.setAttribute("data-daily-journey-action", "accept");
+    }
 
     function applyFilter(label: string) {
       const wanted = label === "Drafts" ? "Draft" : label;
@@ -90,6 +104,10 @@ export function TestimonyPageController({ initialViewModel }: { initialViewModel
       root?.querySelector("#testimonyList")?.insertAdjacentHTML("afterbegin", renderTestimony(dto));
       form.reset();
       setNotice({ title: "Testimony draft saved", detail: "User-authored, editable, session-only, and not added to the Book.", undoLabel: "Undo" });
+      if (testimonyMomentActive) {
+        actOnDailySpiritualLoop({ type: "accept", userInput: body });
+        router.push("/book");
+      }
     }
 
     function onClick(event: MouseEvent) {
@@ -143,7 +161,7 @@ export function TestimonyPageController({ initialViewModel }: { initialViewModel
     root.addEventListener("submit", onSubmit);
     root.addEventListener("click", onClick);
     return () => { root.removeEventListener("submit", onSubmit); root.removeEventListener("click", onClick); };
-  }, [initialViewModel]);
+  }, [actOnDailySpiritualLoop, dailySpiritualLoop, initialViewModel, router, testimonyMomentActive]);
 
   function undoNotice() {
     const removed = removedRef.current;

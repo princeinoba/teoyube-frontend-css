@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "../../features/journey/ui/DailySpiritualLoopProvider";
 import { createJournalRecord } from "../../domain/journal/journal-record";
 import type { BookPageViewModel } from "../../features/book/application/book-page-service";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
@@ -10,6 +12,9 @@ export function BookPageController({ initialViewModel }: { initialViewModel: Boo
   const rootRef = useRef<HTMLElement>(null);
   const removedRef = useRef<{ node: HTMLElement; parent: HTMLElement; next: ChildNode | null } | null>(null);
   const [notice, setNotice] = useState<MigrationNotice>(null);
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const bookReviewMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "book_review";
 
   useEffect(() => {
     const currentRoot = rootRef.current;
@@ -17,6 +22,13 @@ export function BookPageController({ initialViewModel }: { initialViewModel: Boo
     const root: HTMLElement = currentRoot;
     const continuationScore = root.querySelector<HTMLElement>("#phase116b1Continuation-book .phase116b-score");
     if (continuationScore) continuationScore.textContent = "book";
+    if (bookReviewMomentActive) {
+      const promotionButton = root.querySelector<HTMLButtonElement>('[data-teoyube-action="continuation.journey"]');
+      if (promotionButton) {
+        promotionButton.textContent = "Add Reviewed Testimony to Book";
+        promotionButton.dataset.dailyJourneyAction = "accept";
+      }
+    }
 
     function filterTimeline() {
       const query = root.querySelector<HTMLInputElement>("#bookSearchInput")?.value.trim().toLowerCase() || "";
@@ -48,6 +60,11 @@ export function BookPageController({ initialViewModel }: { initialViewModel: Boo
       }
       const action = target.closest<HTMLElement>("[data-phase116-action], [data-phase116b-action], [data-phase117-action], [data-teoyube-action]");
       const actionId = action?.dataset.phase116Action || action?.dataset.phase116bAction || action?.dataset.phase117Action || action?.dataset.teoyubeAction;
+      if (actionId === "continuation.journey" && bookReviewMomentActive) {
+        actOnDailySpiritualLoop({ type: "accept", userInput: dailySpiritualLoop?.artifacts.testimony_candidate.payload.bodySummary || "Reviewed testimony promoted by explicit user confirmation." });
+        router.push("/");
+        return;
+      }
       if (actionId === "clear-search-suggestions") {
         const input = root.querySelector<HTMLInputElement>("#bookSearchInput");
         if (input) input.value = "";
@@ -83,7 +100,7 @@ export function BookPageController({ initialViewModel }: { initialViewModel: Boo
     root.addEventListener("change", onInput);
     root.addEventListener("click", onClick);
     return () => { root.removeEventListener("input", onInput); root.removeEventListener("change", onInput); root.removeEventListener("click", onClick); };
-  }, []);
+  }, [actOnDailySpiritualLoop, bookReviewMomentActive, dailySpiritualLoop, router]);
 
   function undoNotice() {
     const removed = removedRef.current;

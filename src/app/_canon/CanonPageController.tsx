@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopProvider";
 import type { CanonViewModel } from "@/features/scripture/canon-contracts";
 import { APPROVED_VIEW_MARKUP } from "../_approved-source/approved-view-markup.generated";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
@@ -38,14 +40,26 @@ export function CanonPageController({ initialViewModel }: { initialViewModel: Ca
   const [html, setHtml] = useState(initialViewModel.approvedHtml);
   const [notice, setNotice] = useState<MigrationNotice>(null);
   const rootRef = useRef<HTMLElement>(null);
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const scriptureMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "scripture";
 
   useEffect(() => {
     const currentRoot = rootRef.current;
     if (!currentRoot) return;
     const root: HTMLElement = currentRoot;
+    const continuationButton = [...root.querySelectorAll<HTMLButtonElement>("button")]
+      .find((button) => button.textContent?.includes("Continue Your Journey"));
+    if (scriptureMomentActive) continuationButton?.setAttribute("data-daily-journey-action", "accept");
 
     function onClick(event: MouseEvent) {
       const target = event.target as HTMLElement;
+      if (target.closest('[data-daily-journey-action="accept"]')) {
+        const selected = root.querySelector<HTMLElement>("[data-canon-item].active") || root.querySelector<HTMLElement>("[data-canon-item]");
+        actOnDailySpiritualLoop({ type: "accept", userInput: selected?.textContent?.trim() || "Scripture selection reviewed in Canon." });
+        router.push("/promise-table");
+        return;
+      }
       const tab = target.closest<HTMLElement>("[data-canon-tab]");
       if (tab) {
         const tabId = tab.dataset.canonTab || "";
@@ -128,7 +142,7 @@ export function CanonPageController({ initialViewModel }: { initialViewModel: Ca
       root.removeEventListener("submit", onSubmit);
       root.removeEventListener("keydown", onKeyDown);
     };
-  }, [html]);
+  }, [actOnDailySpiritualLoop, html, router, scriptureMomentActive]);
 
   return <><ApprovedCanonView html={html} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} /></>;
 }

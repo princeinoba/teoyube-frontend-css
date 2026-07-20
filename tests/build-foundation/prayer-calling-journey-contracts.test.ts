@@ -48,7 +48,7 @@ describe("Prayer, Calling Compass, and Journey typed contracts", () => {
     expect(model.levels).toHaveLength(4);
     expect(model.journeys.every((journey) => journey.explanationPath.length > 0)).toBe(true);
     expect(model.guardrails).toHaveLength(5);
-    expect(model.finalUnifiedDailyLoopEnabled).toBe(false);
+    expect(model.finalUnifiedDailyLoopEnabled).toBe(true);
   });
 });
 

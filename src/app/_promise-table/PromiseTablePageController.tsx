@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopProvider";
 import { PROMISE_STATUSES, type PromiseRecord, type PromiseStatus } from "@/domain/promises/promise-repository";
 import type { PromiseTableViewModel } from "@/features/promises/contracts";
 import { LocalPromiseRepository } from "@/features/promises/infrastructure/local-promise-repository";
@@ -51,6 +53,9 @@ export function PromiseTablePageController({ initialViewModel }: { initialViewMo
   const removedRef = useRef<PromiseRecord | null>(null);
   const [notice, setNotice] = useState<MigrationNotice>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const promiseMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "promise";
 
   function addRecord(record: PromiseRecord) {
     repositoryRef.current.save(record);
@@ -72,6 +77,9 @@ export function PromiseTablePageController({ initialViewModel }: { initialViewMo
     const currentRoot = rootRef.current;
     if (!currentRoot) return;
     const root: HTMLElement = currentRoot;
+    if (promiseMomentActive) {
+      root.querySelector<HTMLElement>('[data-phase116b-action="promise-prayer"]')?.setAttribute("data-daily-journey-action", "accept");
+    }
 
     function setVideo(index: number) {
       const dots = [...root.querySelectorAll<HTMLButtonElement>("[data-promise-table-video-index]")];
@@ -96,6 +104,13 @@ export function PromiseTablePageController({ initialViewModel }: { initialViewMo
 
     function onClick(event: MouseEvent) {
       const target = event.target as HTMLElement;
+      const journeyPrayer = target.closest<HTMLElement>('[data-phase116b-action="promise-prayer"][data-daily-journey-action="accept"]');
+      if (journeyPrayer) {
+        const record = repositoryRef.current.findSavedById(journeyPrayer.dataset.phase116bId || "") || repositoryRef.current.listSaved()[0];
+        actOnDailySpiritualLoop({ type: "accept", userInput: record ? `${record.title} · Level ${record.promiseLevel} · ${record.scriptureReference}` : "Promise reviewed with its Scripture source." });
+        router.push("/prayer");
+        return;
+      }
       if (target.closest('[data-teoyube-action="promise.add.open"]')) { setDialogOpen(true); return; }
       const filter = target.closest<HTMLElement>("[data-phase116b-promise-filter]");
       if (filter) { filterRows(filter.dataset.phase116bPromiseFilter || "all"); return; }
@@ -171,7 +186,7 @@ export function PromiseTablePageController({ initialViewModel }: { initialViewMo
       root.removeEventListener("change", onChange);
       root.removeEventListener("submit", onSubmit);
     };
-  }, []);
+  }, [actOnDailySpiritualLoop, promiseMomentActive, router]);
 
   return <><ApprovedPromiseTableView html={initialViewModel.approvedHtml} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} undoNotice={restoreRemoved} /><PromiseAddDialog open={dialogOpen} close={() => setDialogOpen(false)} add={addRecord} /></>;
 }

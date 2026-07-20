@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "../../features/journey/ui/DailySpiritualLoopProvider";
 import { createJournalRecord, type JournalRecord } from "../../domain/journal/journal-record";
 import type { JournalPageViewModel } from "../../features/journal/application/journal-page-service";
 
@@ -11,18 +13,25 @@ function Card({ eyebrow, title, children }: { eyebrow?: string; title: string; c
 function JournalEntryForm({ initialEntries }: { initialEntries: readonly JournalRecord[] }) {
   const [entries, setEntries] = useState<readonly JournalRecord[]>(initialEntries);
   const [text, setText] = useState("");
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const reflectionMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "reflection";
 
   function handleSave() {
     const entry = createJournalRecord({ text, createdAt: new Date().toISOString() });
     setEntries((current) => [entry, ...current]);
     setText("");
+    if (reflectionMomentActive) {
+      actOnDailySpiritualLoop({ type: "accept", userInput: entry.summary });
+      router.push("/testimony");
+    }
   }
 
   return (
     <Card eyebrow="Session Journal" title="Add Reflection">
       <textarea aria-label="Journal reflection" placeholder="Write a short reflection for this session..." rows={5} value={text} onChange={(event) => setText(event.target.value)} />
       <p className="muted">Saved as an in-memory sanitized summary. No browser persistence is used.</p>
-      <button className="button primary" type="button" onClick={handleSave}>Add Reflection</button>
+      <button className="button primary" type="button" data-daily-journey-action={reflectionMomentActive ? "accept" : undefined} onClick={handleSave}>Add Reflection</button>
       <div className="activity-list">
         {entries.length ? entries.map((entry) => <article className="mini-card" key={entry.id}><strong>{entry.createdAt.slice(0, 10)}</strong><p>{entry.summary}</p></article>) : <div className="notice"><strong>No reflections yet</strong><p>Write a reflection to add it to this local session.</p></div>}
       </div>

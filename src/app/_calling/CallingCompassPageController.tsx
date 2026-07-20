@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useDailySpiritualLoop } from "../../features/journey/ui/DailySpiritualLoopProvider";
 import type { CallingCompassViewModel } from "../../domain/calling/calling-discernment";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedCallingCompassView } from "./ApprovedCallingCompassView";
@@ -17,6 +19,9 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
   const selectedMediaRef = useRef(0);
   const resultVisibleRef = useRef(false);
   const [notice, setNotice] = useState<MigrationNotice>(null);
+  const router = useRouter();
+  const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
+  const callingMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "calling_discernment";
 
   useEffect(() => {
     const currentRoot = rootRef.current;
@@ -28,7 +33,7 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
       const question = initialViewModel.questions[stepRef.current];
       if (!panel || !question) return;
       const result = initialViewModel.discernment;
-      panel.innerHTML = `<div class="phase116b-panel-head"><div><p class="eyebrow">Guided Calling Compass</p><h3>${startedRef.current ? `Question ${stepRef.current + 1} of ${initialViewModel.questions.length}` : "Start a cautious calling flow"}</h3><p>Language stays suggestive, Scripture-tested, and counsel-aware.</p></div><button class="primary" type="button" data-phase116b-action="compass-start">Start Compass</button></div><div class="phase116b-compass-progress">${initialViewModel.questions.map((item, index) => `<span class="${startedRef.current && index <= stepRef.current ? "active" : ""}">${escapeHtml(item.id)}</span>`).join("")}</div><article class="phase116b-compass-card"><h4>${escapeHtml(question.prompt)}</h4><div class="phase116b-chip-row">${question.options.map((option) => `<button type="button" class="${answersRef.current[question.id] === option ? "active" : ""}" data-phase116b-compass-answer="${question.id}" data-phase116b-value="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join("")}</div><div class="phase116b-action-row"><button class="secondary" type="button" data-phase116b-action="compass-back" ${stepRef.current === 0 ? "disabled" : ""}>Back</button><button class="secondary" type="button" data-phase116b-action="compass-next">Next</button><button class="primary" type="button" data-phase116b-action="compass-result">Generate Result</button></div></article>${resultVisibleRef.current ? `<article class="phase116b-result-card"><p class="eyebrow">Calling result</p><h4>${escapeHtml(result.title)}</h4><p>${escapeHtml(result.summary)}</p><div class="scripture-strip"><span class="scripture-pill">${escapeHtml(result.scriptureReference)}</span>${result.relatedWords.map((word) => `<span class="scripture-pill">${escapeHtml(word)}</span>`).join("")}</div><p><strong>Prayer:</strong> ${escapeHtml(result.prayer)}</p><p><strong>Action:</strong> ${escapeHtml(result.actionStep)}</p><div class="phase116b-action-row"><button class="secondary" type="button" data-phase116b-action="compass-save-reflection">Save Reflection</button><button class="secondary" type="button" data-phase116b-action="compass-start-journey">Start Journey</button><button class="secondary" type="button" data-phase116b-action="open-current-graph">View Graph</button><button class="secondary" type="button" data-phase115-action="compare-recommendation">Compare Preview</button></div></article>` : ""}`;
+      panel.innerHTML = `<div class="phase116b-panel-head"><div><p class="eyebrow">Guided Calling Compass</p><h3>${startedRef.current ? `Question ${stepRef.current + 1} of ${initialViewModel.questions.length}` : "Start a cautious calling flow"}</h3><p>Language stays suggestive, Scripture-tested, and counsel-aware.</p></div><button class="primary" type="button" data-phase116b-action="compass-start">Start Compass</button></div><div class="phase116b-compass-progress">${initialViewModel.questions.map((item, index) => `<span class="${startedRef.current && index <= stepRef.current ? "active" : ""}">${escapeHtml(item.id)}</span>`).join("")}</div><article class="phase116b-compass-card"><h4>${escapeHtml(question.prompt)}</h4><div class="phase116b-chip-row">${question.options.map((option) => `<button type="button" class="${answersRef.current[question.id] === option ? "active" : ""}" data-phase116b-compass-answer="${question.id}" data-phase116b-value="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join("")}</div><div class="phase116b-action-row"><button class="secondary" type="button" data-phase116b-action="compass-back" ${stepRef.current === 0 ? "disabled" : ""}>Back</button><button class="secondary" type="button" data-phase116b-action="compass-next">Next</button><button class="primary" type="button" data-phase116b-action="compass-result">Generate Result</button></div></article>${resultVisibleRef.current ? `<article class="phase116b-result-card"><p class="eyebrow">Calling result</p><h4>${escapeHtml(result.title)}</h4><p>${escapeHtml(result.summary)}</p><div class="scripture-strip"><span class="scripture-pill">${escapeHtml(result.scriptureReference)}</span>${result.relatedWords.map((word) => `<span class="scripture-pill">${escapeHtml(word)}</span>`).join("")}</div><p><strong>Prayer:</strong> ${escapeHtml(result.prayer)}</p><p><strong>Action:</strong> ${escapeHtml(result.actionStep)}</p><div class="phase116b-action-row"><button class="secondary" type="button" data-phase116b-action="compass-save-reflection">Save Reflection</button><button class="secondary" type="button" data-phase116b-action="compass-start-journey"${callingMomentActive ? " data-daily-journey-action=\"accept\"" : ""}>Start Journey</button><button class="secondary" type="button" data-phase116b-action="open-current-graph">View Graph</button><button class="secondary" type="button" data-phase115-action="compare-recommendation">Compare Preview</button></div></article>` : ""}`;
     }
 
     function selectMedia(index: number) {
@@ -83,7 +88,15 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
       if (actionId === "compass-back" || actionId === "compass-next") { stepRef.current = Math.max(0, Math.min(initialViewModel.questions.length - 1, stepRef.current + (actionId === "compass-next" ? 1 : -1))); renderCompass(); return; }
       if (actionId === "compass-result") { resultVisibleRef.current = true; renderCompass(); setNotice({ title: "Calling Compass result ready", detail: initialViewModel.discernment.title, scripture: initialViewModel.discernment.scriptureReference }); return; }
       if (actionId === "compass-save-reflection") { setNotice({ title: "Calling reflection saved", detail: initialViewModel.discernment.title, scripture: initialViewModel.discernment.scriptureReference }); return; }
-      if (actionId === "compass-start-journey") { setNotice({ title: "Calling journey started", detail: initialViewModel.discernment.journeyRecommendation, scripture: initialViewModel.discernment.scriptureReference }); return; }
+      if (actionId === "compass-start-journey") {
+        if (callingMomentActive) {
+          actOnDailySpiritualLoop({ type: "accept", userInput: `${initialViewModel.discernment.summary} ${initialViewModel.discernment.explanationPath.join(" ")}` });
+          router.push("/");
+          return;
+        }
+        setNotice({ title: "Calling journey started", detail: initialViewModel.discernment.journeyRecommendation, scripture: initialViewModel.discernment.scriptureReference });
+        return;
+      }
       if (actionId === "open-current-graph") { setNotice({ title: "Calling explanation path", detail: initialViewModel.discernment.explanationPath.join(" -> "), scripture: initialViewModel.discernment.scriptureReference }); return; }
       if (target.closest(".calling-assistant-actions button, .calling-category-grid button, .calling-recommendation-grid article, [data-phase115-action]")) setNotice({ title: target.textContent?.trim() || "Calling action ready", detail: initialViewModel.discernment.limitation, scripture: initialViewModel.discernment.scriptureReference });
     }
@@ -91,7 +104,7 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
     root.addEventListener("submit", onSubmit);
     root.addEventListener("click", onClick);
     return () => { root.removeEventListener("submit", onSubmit); root.removeEventListener("click", onClick); };
-  }, [initialViewModel]);
+  }, [actOnDailySpiritualLoop, callingMomentActive, initialViewModel, router]);
 
   return <><ApprovedCallingCompassView html={initialViewModel.approvedHtml} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} /></>;
 }

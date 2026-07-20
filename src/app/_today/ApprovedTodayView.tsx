@@ -260,6 +260,13 @@ function TeoyubeWorldIntegrations({ model, actions }: { model: TodayViewModel; a
 
 export function ApprovedTodayView({ model, actions }: { model: TodayViewModel; actions: TodayViewActions }) {
   const activeSlide = model.promiseSlides[model.activePromiseSlide];
+  const progressPercent = model.journeyMoment?.progressPercent ?? 72;
+  const progressItems = model.journeyMoment?.progressItems ?? [
+    { label: "Prayer", complete: true },
+    { label: "Scripture", complete: true },
+    { label: "Reflection", complete: true },
+    { label: "Assignment", complete: false }
+  ];
   return (
     <section className="view page-container active" id="today" aria-labelledby="viewTitle">
       <div className="today-premium-shell">
@@ -267,12 +274,12 @@ export function ApprovedTodayView({ model, actions }: { model: TodayViewModel; a
         <section className="today-insight-row" aria-label="Today's promise summary">
           <article className="promise-detail-card"><p className="eyebrow">Today's Promise Animation</p><h3 id="dailyTheme">{activeSlide.title}</h3><p id="dailySummary">{activeSlide.theme}</p><div className="scripture-strip" id="dailyScriptures">{activeSlide.scriptures.map((scripture) => <span className="scripture-pill" key={scripture}>{scripture}</span>)}</div></article>
           <article className="daily-inspiration-card"><p className="eyebrow">Daily Inspiration</p><blockquote>The Lord will keep you from all harm; He will watch over your life.</blockquote><strong>Psalm 121:7</strong></article>
-          <article className="daily-progress-card"><p className="eyebrow">Daily Progress</p><div className="progress-widget"><div className="progress-ring" aria-label="72 percent complete"><span>72%</span></div><ul><li>Prayer <span>✓</span></li><li>Scripture <span>✓</span></li><li>Reflection <span>✓</span></li><li>Assignment <span>□</span></li></ul></div></article>
+          <article className="daily-progress-card"><p className="eyebrow">Daily Progress</p><div className="progress-widget"><div className="progress-ring" aria-label={`${progressPercent} percent complete`}><span>{progressPercent}%</span></div><ul>{progressItems.map((item) => <li key={item.label}>{item.label} <span>{item.complete ? "✓" : "□"}</span></li>)}</ul></div></article>
           <article className="streak-card"><p className="eyebrow">Streak</p><div className="streak-number"><span>🔥</span><strong>12</strong></div><p>Days</p><small>Keep going, Saint!</small></article>
         </section>
         <section className="today-action-grid">
           <div className="word-card"><p className="eyebrow">Teoyube Word of the Day</p><h3 id="dailyWord">{model.dailyWord.word}</h3><p id="dailyMeaning">{model.dailyWord.meaning}</p><button className="secondary" id="prayBtn" onClick={actions.openPrayerFramework}>Pray Framework</button></div>
-          <div className="assignment-card"><p className="eyebrow">Daily Divine Assignment</p><ul id="assignmentList">{model.assignmentItems.map((item) => <li key={item}>{item}</li>)}</ul><textarea id="reflectionInput" placeholder="Record today's reflection for the Book of the Saint" value={model.reflection} onChange={(event) => actions.changeReflection(event.target.value)}></textarea><button className="primary full" id="completeAssignment" onClick={actions.completeAssignment}>Complete Assignment</button></div>
+          <div className="assignment-card"><p className="eyebrow">Daily Divine Assignment</p><ul id="assignmentList">{model.assignmentItems.map((item) => <li key={item}>{item}</li>)}</ul><textarea id="reflectionInput" placeholder={model.journeyMoment?.reflectionPlaceholder || "Record today's reflection for the Book of the Saint"} value={model.reflection} onChange={(event) => actions.changeReflection(event.target.value)}></textarea><button className="primary full" id="completeAssignment" data-daily-journey-action={model.journeyMoment ? "accept" : undefined} onClick={actions.completeAssignment}>{model.journeyMoment?.primaryLabel || "Complete Assignment"}</button></div>
           <FeaturedStories model={model} actions={actions} />
         </section>
       </div>

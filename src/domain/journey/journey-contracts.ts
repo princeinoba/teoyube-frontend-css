@@ -17,5 +17,5 @@ export type JourneyPageViewModel = Readonly<{
   levels: readonly JourneyLevelDto[];
   guardrails: readonly string[];
   limitations: readonly string[];
-  finalUnifiedDailyLoopEnabled: false;
+  finalUnifiedDailyLoopEnabled: true;
 }>;

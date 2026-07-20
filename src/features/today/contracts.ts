@@ -29,6 +29,14 @@ export type TodayStory = Readonly<{
   secondaryCta: string;
 }>;
 
+export type TodayJourneyMoment = Readonly<{
+  stage: "check_in" | "daily_assignment" | "tomorrow";
+  progressPercent: number;
+  reflectionPlaceholder: string;
+  primaryLabel: string;
+  progressItems: readonly Readonly<{ label: string; complete: boolean }>[];
+}>;
+
 export type TodayViewModel = Readonly<{
   capability: "today";
   promiseSlides: readonly TodayPromiseSlide[];
@@ -45,6 +53,7 @@ export type TodayViewModel = Readonly<{
   reflection: string;
   assignmentCompleted: boolean;
   sourcePreviewOpened: boolean;
+  journeyMoment?: TodayJourneyMoment;
   tigCompatibility: Readonly<{
     source: "legacy-deterministic-tig";
     scriptureReference: string;
