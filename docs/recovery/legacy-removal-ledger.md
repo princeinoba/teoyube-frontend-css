@@ -22,3 +22,7 @@ Phase 11.7A-R establishes capability boundaries without removing, relocating, or
 | memory | `features/memory/legacy-adapter.ts` | TIG data manager; app-state provider | RETAIN | Explicit-write, edit/export/delete, and parity evidence |
 
 No removal is authorized by this ledger. A row may change only in the feature-specific parity task after executable evidence and owner sign-off.
+
+## Prompt 15 Scripture migration note
+
+`src/features/scripture/infrastructure/local-scripture-repository.ts` is now a compatibility export to the canonical server-owned repository. The approved Canon view still uses its original reference-only view model and output. Legacy Scripture anchors, hard-coded visible quotations, TIG seed excerpts, and interpretation datasets remain retained because no complete approved text corpus exists. No legacy consumer may be removed or promoted to corpus authority until exact-text, licensing, integration, and parity evidence passes.

@@ -1,0 +1,64 @@
+{
+  "registryVersion": "teoyube-scripture-registry-2026-07-20.1",
+  "readiness": "BLOCKED_NO_COMPLETE_APPROVED_FULL_TEXT_CORPUS",
+  "compositeChecksum": "45dbec709a49fd5fe8a0c115c451ecf56ec5b2b538b72e31563606faa823bdf6",
+  "referenceIndex": {
+    "id": "teoyube-local-reference-index",
+    "name": "Teoyube local Scripture reference index",
+    "translationId": "UNSPECIFIED_REFERENCE_ONLY",
+    "translationName": "No translation text attached",
+    "language": "en",
+    "corpusVersion": "teoyube-reference-index-2026-07-20.1",
+    "source": "Original Teoyube reference, promise, prayer, media-metadata, and graph datasets",
+    "sourceVersion": "715bd10a90abb0441c961f8d51166f7f89c74131",
+    "referenceCoverage": 356,
+    "verseCoverage": 0,
+    "canonCoverage": "356 normalized reference anchors across 53 of the approved 66 Protestant-canon books; no verse text corpus is present.",
+    "attributionRequirements": "Not applicable to bare reference metadata; downstream translations require their own explicit attribution.",
+    "copyrightStatus": "not_applicable_reference_only",
+    "displayPolicy": "REFERENCE_ONLY",
+    "fullTextDisplayApproved": false,
+    "assets": [
+      { "path": "src/data/coreTeoyubeVocabulary-part2.json", "sha256": "ac0fa14c85a609b65f53627502fd089f3804182c3c6dcd61056708f25c9db033", "bytes": 17378, "role": "interpretation_metadata" },
+      { "path": "src/data/coreTeoyubeVocabulary.json", "sha256": "0ef30991efc07ad19cf995aa39ee633ab0d3b6d1d7b1ed703362c7cb890ab4f6", "bytes": 31178, "role": "interpretation_metadata" },
+      { "path": "src/data/prayerEngineTemplates.json", "sha256": "a94437239eed567b78e5ff42d63d75151a9ee88301445252ca0b57f67022b218", "bytes": 3390, "role": "interpretation_metadata" },
+      { "path": "src/data/prayers.json", "sha256": "c4ca1b845c91d1e0f57de46c597370339839c701e49e9654574262128ab952e6", "bytes": 2977, "role": "interpretation_metadata" },
+      { "path": "src/data/projectStructureRoadmap.json", "sha256": "b654afc75d4757137bbc73062e52c179b10d38b1ff9139bcc8cba1eafd1f92d8", "bytes": 6654, "role": "interpretation_metadata" },
+      { "path": "src/data/promiseClusters.json", "sha256": "a65b247ec433e3e73a3754666191a1657035a1cc9d90494ab25722c71470da25", "bytes": 25890, "role": "interpretation_metadata" },
+      { "path": "src/data/scriptureCanon.json", "sha256": "3bb4157f9a022bc080f270e67e846ba92adccbe73ce362213606241a47457205", "bytes": 66166, "role": "reference_index" },
+      { "path": "src/data/scriptureGraphRelationships.json", "sha256": "4bc64d7eee31cceb5b3461d428cf9e455c0bb24138bddd5f79606668ba067c5a", "bytes": 113291, "role": "reference_index" },
+      { "path": "src/data/scriptureLinkedArchetypes.json", "sha256": "ed7244988b7b14c76eb59de8bb2eb6e2d382523b7fbce3a7e405523d18473011", "bytes": 1480, "role": "interpretation_metadata" },
+      { "path": "src/data/scriptureLinkedPaths.json", "sha256": "906680bac7764e4db5c36d24330b598dcdff5d160a92eae7873176fe69ff7f52", "bytes": 2060, "role": "interpretation_metadata" },
+      { "path": "src/data/scripturePromiseClusters.json", "sha256": "b9750b5657ac78bcda60dfee42ae6f5a9f49073c69ca0f21016c59068c04d9ff", "bytes": 1162, "role": "interpretation_metadata" },
+      { "path": "src/data/technicalArchitecture.json", "sha256": "97105906126b3967a326b76fe23468ab03272f7b0408e6e293b46e007f80b814", "bytes": 2303, "role": "interpretation_metadata" },
+      { "path": "src/data/teoyubeSearchFramework.json", "sha256": "02fac92419333664376a314d4b66cb5d4b3e394e82c2623b02fff1d603135c34", "bytes": 1378, "role": "interpretation_metadata" },
+      { "path": "src/data/teoyubeworld-media-manifest.sample.json", "sha256": "c38b2b5bc345b8dc360782da1ae71e69dda88e6f0a77ca6f6e62c327874a424a", "bytes": 3916, "role": "media_metadata_sample" },
+      { "path": "src/data/tkos.json", "sha256": "565111bb922fb71a11605c04dcba08c469ab07fd910b709a416b188d11b1c3f4", "bytes": 5233, "role": "interpretation_metadata" },
+      { "path": "src/data/tkosEngines.json", "sha256": "dabde9df77bc6cb9e9d2315845f08583d12ab623d59087a08d47d0dde3b13d10", "bytes": 2330, "role": "interpretation_metadata" },
+      { "path": "src/data/words.json", "sha256": "3bb4157f9a022bc080f270e67e846ba92adccbe73ce362213606241a47457205", "bytes": 66166, "role": "duplicate_reference_index" }
+    ]
+  },
+  "blockedTextSources": [
+    {
+      "id": "legacy-tig-kjv-excerpts",
+      "name": "Legacy TIG KJV excerpt seed",
+      "translationId": "KJV",
+      "translationName": "King James Version",
+      "language": "en",
+      "corpusVersion": "unknown",
+      "source": "Legacy TIG seed; upstream text source is not recorded",
+      "sourceVersion": "unknown",
+      "referenceCoverage": 3,
+      "verseCoverage": 3,
+      "canonCoverage": "Three isolated verses in Romans, Isaiah, and Joshua; not a corpus.",
+      "attributionRequirements": "Unknown",
+      "copyrightStatus": "unknown",
+      "displayPolicy": "DISPLAY_BLOCKED_LICENSE_UNKNOWN",
+      "fullTextDisplayApproved": false,
+      "assets": [
+        { "path": "src/lib/tig/seed/scriptures.seed.ts", "sha256": "71ef56b788fa7857c2c0a86e55859808d2ea391442705ba1e317786800e30977", "bytes": 6162, "role": "full_text_excerpt" }
+      ]
+    }
+  ],
+  "completeApprovedFullTextCorpus": null
+}

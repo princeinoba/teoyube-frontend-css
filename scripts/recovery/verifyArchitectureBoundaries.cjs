@@ -57,6 +57,12 @@ for (const importer of clientFiles) {
     if (/src\/server\/tig\//.test(targetName)) {
       errors.push(`${normalize(importer)}: client code may not import the server TIG service or cache (${targetName})`);
     }
+    if (/src\/server\/scripture\//.test(targetName)) {
+      errors.push(`${normalize(importer)}: client code may not import the server Scripture repository, corpus registry, or lexical index (${targetName})`);
+    }
+    if (/src\/lib\/tig\/seed\/scriptures\.seed/.test(targetName) || /src\/data\/(?:scriptureCanon|scriptureGraphRelationships|words)\.json/.test(targetName)) {
+      errors.push(`${normalize(importer)}: client code may not import Scripture corpus or reference-index source data (${targetName})`);
+    }
     if (/src\/lib\/tig\/(?:index|seed\/|intelligence-graph-seeds|traverse|graph-engine|intelligence-graph-engine|production-cache|production-intelligence-service)/.test(targetName)) {
       errors.push(`${normalize(importer)}: client code may not import TIG seeds, graph traversal, cache, or implementation modules (${targetName})`);
     }
