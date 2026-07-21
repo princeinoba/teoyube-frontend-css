@@ -29,3 +29,10 @@ __pycache__/
 /test-results/
 /next-env.d.ts
 *.tsbuildinfo
+
+# Local Prompt 16 relational stores and disposable user exports
+/.data/
+/exports/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
