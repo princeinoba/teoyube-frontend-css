@@ -587,52 +587,52 @@ const promiseSearchSeeds = [
     thumbnail: localMediaThumbnails[0],
     href: "#",
     description:
-      "The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints, -Ephesians 1:18-",
+      "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints, -Ephesians 1:18 · WEB-",
     title: "TEOYUBE; TYMAKWITHOHIS, CAWTROTGLOHINITS"
   },
   {
     thumbnail: localMediaThumbnails[1],
     href: "#",
-    description: "We then, as workers together with him, beseech you also that ye receive not the grace of God in vain. -2Corinthians 6:1-",
+    description: "Working together, we entreat also that you do not receive the grace of God in vain. -2 Corinthians 6:1 · WEB-",
     title: "WETAWTWHIBYATYRNTGOGODIV"
   },
   {
     thumbnail: localMediaThumbnails[2],
     href: "#",
     description:
-      "(For he saith, I have heard thee in a time accepted, and in the day of salvation have I succored thee: behold, now is the day of salvation.) -2Corinthians 6:2-",
+      "For he says, “At an acceptable time I listened to you. In a day of salvation I helped you.” Behold, now is the acceptable time. Behold, now is the day of salvation. -2 Corinthians 6:2 · WEB-",
     title: "FOHSIHAHTIATAAITDOSHISTBNITDOS"
   },
   {
     thumbnail: localMediaThumbnails[3],
     href: "#",
-    description: "Giving no offense in any thing, that the mininstry be not blamed: -2Corinthians 6:3-",
+    description: "We give no occasion of stumbling in anything, that our service may not be blamed, -2 Corinthians 6:3 · WEB-",
     title: "GNOIATTTMBNB"
   },
   {
     thumbnail: localMediaThumbnails[4],
     href: "#",
     description:
-      "But in all things approving ourselves as the misnisters of God, in much patience, in afflictions, in necessities, in distresses, -2Corinthians 6:4-",
+      "but in everything commending ourselves as servants of God: in great endurance, in afflictions, in hardships, in distresses, -2 Corinthians 6:4 · WEB-",
     title: "BIATAOATMOGODIMPIAINID"
   },
   {
     thumbnail: localMediaThumbnails[5],
     href: "#",
-    description: "In stripes, in imprisonments, in tum-ults, in labours, in watchings, in fastings, -2Corinthians 6:5-",
+    description: "in beatings, in imprisonments, in riots, in labors, in watchings, in fastings, -2 Corinthians 6:5 · WEB-",
     title: "ISIIMITILIWIF"
   },
   {
     thumbnail: localMediaThumbnails[6],
     href: "#",
-    description: "By pureness, by knowledge, by long-suffering, by kindness, by the Holy Ghost, by love unfeigned, -2Corinthians 6:6-",
+    description: "in pureness, in knowledge, in perseverance, in kindness, in the Holy Spirit, in sincere love, -2 Corinthians 6:6 · WEB-",
     title: "BPBKBLSBKBTHGBLU"
   },
   {
     thumbnail: localMediaThumbnails[7],
     href: "#",
     description:
-      "By the word of truth, by the power of God, by the armour of righteousness on the right hand and on the left, -2Corinthians 6:7-",
+      "in the word of truth, in the power of God, by the armor of righteousness on the right hand and on the left, -2 Corinthians 6:7 · WEB-",
     title: "BTWOTBTPOGODBTAOROTRHAOTL"
   }
 ];
@@ -6554,7 +6554,7 @@ function renderCanonPremium() {
             <button type="button" aria-label="Edit Saint profile">Edit</button>
           </div>
           <div class="canon-xp-row"><span></span><strong>2,450 / 5,000 XP</strong></div>
-          <blockquote>I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.<br><b>Ephesians 1:18</b></blockquote>
+          <blockquote>having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,<br><b>Ephesians 1:18 · WEB</b></blockquote>
         </article>
 
         <article class="canon-overview-widget canon-overview-premium" aria-labelledby="canonOverviewTitle">
@@ -7924,7 +7924,7 @@ function getFilteredTeoyubeTableRows() {
   } else if (teoyubeTableSortMode === "Sort by: Latest") {
     rows = rows.sort((a, b) => b.tableIndex - a.tableIndex);
   } else {
-    rows = rows.sort((a, b) => getPromisePosition(a.description).localeCompare(getPromisePosition(b.description)));
+    rows = rows.sort((a, b) => a.tableIndex - b.tableIndex);
   }
 
   return rows;
@@ -8143,12 +8143,12 @@ function bringPromiseTableVideoPanelIntoView() {
 }
 
 function getPromisePosition(description) {
-  const match = description.match(/-([A-Za-z0-9 ]+:\d+)-?$/);
-  return match ? `-${match[1]}-` : "-Ephesians 1:18-";
+  const match = description.match(/-([A-Za-z0-9 ]+:\d+)(?: · WEB)?-?\s*$/);
+  return match ? `-${match[1]} · WEB-` : "-Ephesians 1:18 · WEB-";
 }
 
 function getPromiseDescriptionBody(description) {
-  return description.replace(/\s*-[A-Za-z0-9 ]+:\d+-?\s*$/, "").trim();
+  return description.replace(/\s*-[A-Za-z0-9 ]+:\d+(?: · WEB)?-?\s*$/, "").trim();
 }
 
 const uiVideoDurations = ["21:09", "16:09", "1:12", "4:03", "0:58", "5:42", "12:18", "8:24"];

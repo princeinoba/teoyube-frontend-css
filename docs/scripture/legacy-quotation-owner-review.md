@@ -1,15 +1,19 @@
 # Legacy Scripture Quotation Owner Review
 
-Status: **BLOCKED — OWNER CONTENT DECISION REQUIRED**
+Status: **RESOLVED BY OWNER DECISION `TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B`**
 
 Prepared: 2026-07-20
 
 Owner corpus decision: `TEOYUBE-OWNER-SCRIPTURE-CORPUS-2026-07-20-WEBP`
 Authorized starting commit: `792b37a5995bbf4621edcac2e3da6e11710612a5`
 
-This is a review package, not an approval record. It does not authorize a copy change, alter a protected source, or update a baseline.
+This remains the immutable Prompt 15A review narrative. The formal approval and mandatory 17-row outcome table are recorded in `docs/owner-approvals/scripture/TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B.md`. The bound JSON inventory remains byte-identical at SHA-256 `F6108E8617786464888DCBABB3F48899ED5A113D4D3851AF947CED776D91D68C`.
 
-## Why work stopped
+## Resolution
+
+All 17 visible records were replaced with their exact selected WEB wording and labeled through the existing citation treatment. The separate source-delta contract replays those exact changes without weakening historical visual contracts. The 20 non-visible legacy records remain executable-quarantined, and the five prayer/paraphrase records remain non-Scripture content without WEB labels. Historical screenshots were not overwritten.
+
+## Why Prompt 15A stopped
 
 The owner-selected archive safely identifies itself as the World English Bible, 66-book Protestant edition. Comparing its exact text with existing product copy found visible canonical quotations that do not match WEB. Prompt 15A names this as a hard stop. The quotations remain unchanged and are not labeled WEB.
 

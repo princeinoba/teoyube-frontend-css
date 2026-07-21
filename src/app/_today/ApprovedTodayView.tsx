@@ -273,7 +273,7 @@ export function ApprovedTodayView({ model, actions }: { model: TodayViewModel; a
         <PromiseCarousel model={model} actions={actions} />
         <section className="today-insight-row" aria-label="Today's promise summary">
           <article className="promise-detail-card"><p className="eyebrow">Today's Promise Animation</p><h3 id="dailyTheme">{activeSlide.title}</h3><p id="dailySummary">{activeSlide.theme}</p><div className="scripture-strip" id="dailyScriptures">{activeSlide.scriptures.map((scripture) => <span className="scripture-pill" key={scripture}>{scripture}</span>)}</div></article>
-          <article className="daily-inspiration-card"><p className="eyebrow">Daily Inspiration</p><blockquote>The Lord will keep you from all harm; He will watch over your life.</blockquote><strong>Psalm 121:7</strong></article>
+          <article className="daily-inspiration-card"><p className="eyebrow">Daily Inspiration</p><blockquote>The LORD will keep you from all evil. He will keep your soul.</blockquote><strong>Psalm 121:7 · WEB</strong></article>
           <article className="daily-progress-card"><p className="eyebrow">Daily Progress</p><div className="progress-widget"><div className="progress-ring" aria-label={`${progressPercent} percent complete`}><span>{progressPercent}%</span></div><ul>{progressItems.map((item) => <li key={item.label}>{item.label} <span>{item.complete ? "✓" : "□"}</span></li>)}</ul></div></article>
           <article className="streak-card"><p className="eyebrow">Streak</p><div className="streak-number"><span>🔥</span><strong>12</strong></div><p>Days</p><small>Keep going, Saint!</small></article>
         </section>
