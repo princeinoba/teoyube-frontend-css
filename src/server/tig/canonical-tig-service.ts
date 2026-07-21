@@ -16,6 +16,7 @@ import type {
 } from "../../domain/tig/tig-service";
 import { runTigEndToEndRecommendation } from "../../lib/teoyube/tig/tig-end-to-end-recommendation-flow";
 import { scoreTigRecommendationCandidate } from "../../lib/teoyube/tig/tig-recommendation-scoring";
+import { getScriptureSeedById } from "../../lib/tig/seed/scriptures.seed";
 import type {
   TeoyubeTigRecommendationCandidate,
   TeoyubeTigRecommendationInput,
@@ -26,6 +27,7 @@ import {
   TigVersionedCache,
   type TigCacheDiagnostics
 } from "./tig-versioned-cache";
+import { canonicalScriptureRepository } from "../scripture/canonical-scripture-repository";
 
 export const TIG_DATASET_VERSION = "teoyube-local-dataset-2026-07-20.1";
 export const TIG_RULESET_VERSION = "teoyube-deterministic-ruleset-2026-07-20.1";
@@ -178,14 +180,18 @@ function confidenceFromLegacy(confidence: TeoyubeTigRecommendationResult["confid
   });
 }
 
-function anchorsFor(candidate: TeoyubeTigRecommendationCandidate, legacy: TeoyubeTigRecommendationResult): readonly TigScriptureAnchor[] {
+function canonicalAnchorValidation(reference: string): TigScriptureAnchor["validation"] {
+  const canonicalReference = getScriptureSeedById(reference)?.reference || reference;
+  const parsed = canonicalScriptureRepository.parseReferences(canonicalReference);
+  return parsed.length === 1 && parsed[0]?.valid && canonicalScriptureRepository.hasReference(parsed[0].canonicalLabel)
+    ? "verified"
+    : "missing";
+}
+
+function anchorsFor(candidate: TeoyubeTigRecommendationCandidate): readonly TigScriptureAnchor[] {
   return Object.freeze(candidate.scriptureAnchors.map((reference) => Object.freeze({
     reference,
-    validation: legacy.scriptureAnchorCheck.missingAnchors.includes(reference)
-      ? "missing" as const
-      : legacy.scriptureAnchorCheck.unsupportedAnchors.includes(reference)
-        ? "unsupported" as const
-        : "verified" as const,
+    validation: canonicalAnchorValidation(reference),
     primaryAuthority: true as const
   })));
 }
@@ -200,7 +206,7 @@ function candidateFromLegacy(candidate: TeoyubeTigRecommendationCandidate, legac
     label: candidate.label,
     description: candidate.description,
     source: candidate.source,
-    scriptureAnchors: anchorsFor(candidate, legacy),
+    scriptureAnchors: anchorsFor(candidate),
     relatedWordIds: Object.freeze([...candidate.relatedWordIds]),
     relatedPromiseClusterIds: Object.freeze([...candidate.relatedPromiseClusterIds]),
     relatedCallingIds: Object.freeze([...candidate.relatedCallingIds]),
@@ -222,11 +228,12 @@ function candidateFromLegacy(candidate: TeoyubeTigRecommendationCandidate, legac
 }
 
 function sourceValidationFromLegacy(recommendationId: string, legacy: TeoyubeTigRecommendationResult): SourceValidationResult {
-  const unsupported = unique(legacy.scriptureAnchorCheck.unsupportedAnchors);
-  const missing = unique(legacy.scriptureAnchorCheck.missingAnchors);
-  const verified = unique(legacy.scriptureAnchorCheck.scriptureAnchors.filter((reference) => !unsupported.includes(reference) && !missing.includes(reference)));
+  const all = unique(legacy.scriptureAnchorCheck.scriptureAnchors);
+  const missing = unique(all.filter((reference) => canonicalAnchorValidation(reference) !== "verified"));
+  const verified = unique(all.filter((reference) => canonicalAnchorValidation(reference) === "verified"));
+  const unsupported = Object.freeze([]) as readonly string[];
   return Object.freeze({
-    valid: legacy.scriptureAnchorCheck.valid,
+    valid: missing.length === 0,
     recommendationId,
     verified,
     unsupported,
@@ -237,7 +244,7 @@ function sourceValidationFromLegacy(recommendationId: string, legacy: TeoyubeTig
 }
 
 function fallbackAnchor(): TigScriptureAnchor {
-  return Object.freeze({ reference: "Ephesians 1:18", validation: "unverified", primaryAuthority: true });
+  return Object.freeze({ reference: "Ephesians 1:18", validation: "verified", primaryAuthority: true });
 }
 
 function limitFallback(params: {
@@ -320,10 +327,10 @@ function limitFallback(params: {
   const sourceValidation: SourceValidationResult = Object.freeze({
     valid: false,
     recommendationId,
-    verified: Object.freeze([]),
-    unsupported: Object.freeze([anchor.reference]),
+    verified: Object.freeze([anchor.reference]),
+    unsupported: Object.freeze([]),
     missing: Object.freeze([]),
-    warnings: Object.freeze(["The fallback Scripture reference requires ordinary source review before display."]),
+    warnings: Object.freeze(["The fallback uses a validated WEB reference, but the TIG recommendation remains limited and requires ordinary source review."]),
     blockers: Object.freeze([])
   });
   return Object.freeze({

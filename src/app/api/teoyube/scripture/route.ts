@@ -4,7 +4,8 @@ import { ScriptureRepositoryError, canonicalScriptureRepository } from "../../..
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const MAX_BODY_BYTES = 1_024;
+const MAX_BODY_BYTES = 4_096;
+const MAX_DISPLAYED_TEXT_LENGTH = 2_048;
 
 type RequestBody = Readonly<Record<string, unknown>>;
 
@@ -67,6 +68,52 @@ export async function POST(request: Request) {
         return errorResponse(caught.code === "query_too_large" ? 413 : 422, caught.code, caught.message);
       }
       return errorResponse(500, "scripture_service_unavailable", "The local Scripture reference service is unavailable.");
+    }
+  }
+
+  if (body.action === "get" || body.action === "context" || body.action === "validate") {
+    if (typeof body.reference !== "string") return errorResponse(400, "invalid_request", "A Scripture reference string is required.");
+    const parsed = canonicalScriptureRepository.parseReferences(body.reference);
+    if (parsed.length !== 1 || !parsed[0]?.valid) {
+      return errorResponse(422, "invalid_reference", "The Scripture reference is invalid or ambiguous.");
+    }
+    const reference = parsed[0].reference;
+    try {
+      if (body.action === "get") {
+        const passage = await canonicalScriptureRepository.getByReference(reference, {
+          ...(typeof body.translationId === "string" ? { translationId: body.translationId } : {})
+        });
+        if (!passage) return errorResponse(404, "missing_corpus_coverage", "No displayable WEB wording exists for that source span.");
+        return NextResponse.json({ ok: true, passage }, { headers: { "Cache-Control": "private, max-age=300" } });
+      }
+      if (body.action === "context") {
+        const context = await canonicalScriptureRepository.getContext(reference, {
+          ...(typeof body.translationId === "string" ? { translationId: body.translationId } : {}),
+          ...(typeof body.versesBefore === "number" ? { versesBefore: body.versesBefore } : {}),
+          ...(typeof body.versesAfter === "number" ? { versesAfter: body.versesAfter } : {})
+        });
+        if (!context) return errorResponse(404, "missing_corpus_coverage", "No displayable WEB context exists for that source span.");
+        return NextResponse.json({ ok: true, context }, { headers: { "Cache-Control": "private, max-age=300" } });
+      }
+
+      if (body.displayedText !== undefined && (typeof body.displayedText !== "string" || body.displayedText.length > MAX_DISPLAYED_TEXT_LENGTH)) {
+        return errorResponse(413, "query_too_large", "Displayed Scripture wording exceeds the validation limit.");
+      }
+      const corpus = await canonicalScriptureRepository.getCorpusInfo();
+      const validation = await canonicalScriptureRepository.validateCitation({
+        reference,
+        canonicalLabel: parsed[0].canonicalLabel,
+        translationId: typeof body.translationId === "string" ? body.translationId : corpus.translationId,
+        corpusVersion: typeof body.corpusVersion === "string" ? body.corpusVersion : corpus.corpusVersion,
+        sourceId: typeof body.sourceId === "string" ? body.sourceId : corpus.id,
+        validationStatus: "unresolved"
+      }, typeof body.displayedText === "string" ? body.displayedText : undefined);
+      return NextResponse.json({ ok: true, validation }, { headers: { "Cache-Control": "no-store" } });
+    } catch (caught) {
+      if (caught instanceof ScriptureRepositoryError) {
+        return errorResponse(caught.code === "query_too_large" ? 413 : 422, caught.code, caught.message);
+      }
+      return errorResponse(500, "scripture_service_unavailable", "The local Scripture service is unavailable.");
     }
   }
 

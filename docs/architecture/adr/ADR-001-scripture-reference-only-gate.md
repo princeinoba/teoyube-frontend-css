@@ -1,6 +1,6 @@
 # ADR-001: Keep Scripture retrieval reference-only until corpus rights are approved
 
-- Status: Accepted for the Prompt 15 blocker path
+- Status: Superseded for `engwebp` by the owner-approved Prompt 15B corpus; retained for unknown/unapproved sources
 - Date: 2026-07-20
 - Scope: Scripture domain and server infrastructure only
 
@@ -18,3 +18,7 @@ Create one typed repository and deterministic parser, register every local sourc
 - No result may be labeled a validated Scripture quotation.
 - Existing visible quotations remain legacy behavior protected by the visual source of truth and are recorded as an unresolved migration blocker.
 - Prompt 15 cannot pass and Prompt 16 cannot unlock until an approved complete corpus is supplied.
+
+## Prompt 15B superseding decision
+
+Decision `TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B` approved the exact owner-supplied WEB archive. `engwebp` is now the sole `FULL_TEXT_ALLOWED` corpus behind the same repository. Exact retrieval, bounded context, lexical search, and citation validation are active for that corpus only. The original reference-only and display-blocking rules continue to apply to every unregistered or unknown-provenance source, including the three legacy KJV excerpts. Static remains canonical; this ADR change does not authorize runtime cutover or UI redesign.

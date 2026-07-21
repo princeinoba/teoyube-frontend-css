@@ -1,23 +1,11 @@
 # Scripture corpus readiness
 
-Status: **BLOCKED_NO_COMPLETE_APPROVED_FULL_TEXT_CORPUS**
+Status: **READY**
 
-## Passing prerequisites
+The active `engwebp` corpus passes archive safety, embedded checksum, source/license evidence, 66-book canon, source-marker completeness, deterministic regeneration, zero-warning import, duplicate/empty-verse rejection, generated-artifact hash binding, fixed server-only paths, and 356/356 reference coverage.
 
-- The 66-book parser inventory and approved aliases are deterministic.
-- Local reference metadata is hash-bound and reference-only.
-- Corpus paths are fixed and cannot be selected by request input.
-- No external Scripture API, web scrape, model, embedding, vector store, or persistence was introduced.
-- Unknown-license text is explicitly blocked.
+The canonical repository provides exact verse, range, supported cross-chapter range, and chapter retrieval; deterministic same-chapter context windows with explicit limitations; lexical search; exact citation validation; typed limits/failures; and version-aware caching. It uses no network, model, embedding, vector store, database, or request-controlled source path.
 
-## Blocking prerequisites
+Five source markers contain only source footnotes and therefore have no displayable main text: Luke 17:36, Acts 8:37, Acts 15:34, Acts 24:7, and Romans 16:25. Requests for those standalone markers return typed missing-coverage results rather than invented text.
 
-- No complete local translation corpus exists.
-- No translation source/version is approved.
-- No full-text display-rights or attribution record exists.
-- Per-chapter verse bounds are unavailable.
-- Source-defined paragraph/pericope boundaries are unavailable.
-- Exact quotation validation and deterministic verse-text search cannot run.
-- Existing displayed quotations cannot be field-by-field checked against an approved corpus.
-
-Prompt 15 cannot be marked complete and Prompt 16 remains locked. Resolution requires a narrowly documented owner corpus/licensing decision and a separately verified local corpus import; an internet download or silent corpus replacement is forbidden.
+Prompt 15B readiness is separate from runtime cutover. Static remains canonical and Next remains preview-only.

@@ -1,28 +1,16 @@
 # Local Scripture corpus and reference inventory
 
-Inventory date: 2026-07-20
-Authorized starting commit: `715bd10a90abb0441c961f8d51166f7f89c74131`
+Verified: 2026-07-20  
+Owner decision: `TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B`
 
-## Finding
+The active corpus is the owner-supplied World English Bible archive registered as `engwebp`. The machine-readable source of truth is `src/server/scripture/corpus-registry.json`; its ordered asset composite checksum is `8f805bcedc37527099cd47f23fca4aed391c2721fd478349aab1945d960cddd4`.
 
-No complete local Scripture text corpus exists. The repository contains 356 normalized bare references across 53 of the approved 66 Protestant-canon books and three isolated KJV verse-text excerpts. Bare references carry no translation. The KJV excerpts do not record their upstream source, corpus version, attribution terms, or owner display approval.
+| Source | Coverage | Integrity | Rights/display |
+|---|---|---|---|
+| `engwebp` WEB, Protestant Edition, 2020 stable text | 66 books; 1,189 chapter markers; 31,103 source verse markers; 31,098 displayable verses; five source-footnote-only markers | Archive SHA-256 `4253589697dc6b5e92695655f2f28792d50e7be7b9c8e212af4f4bd18e866c3b`; 68 USFM source hashes; 70/70 embedded checksums; corpus checksum `6e6b3f95b5d61c83c06534ee4281f10b6e4e02c878b75141dcdd4403bf42d77f` | Public domain; `FULL_TEXT_ALLOWED`; identify quotations as WEB; preserve exact wording |
+| Teoyube local reference index | 356 normalized existing references | 17 hash-bound local metadata assets | `REFERENCE_ONLY`; Teoyube interpretation metadata is not Scripture |
+| Legacy TIG KJV excerpt seed | Three isolated verses | Upstream source/version unknown | `DISPLAY_BLOCKED_LICENSE_UNKNOWN`; quarantined; never relabeled WEB |
 
-The machine-readable source of truth is `src/server/scripture/corpus-registry.json`. Its composite checksum is `45dbec709a49fd5fe8a0c115c451ecf56ec5b2b538b72e31563606faa823bdf6`.
+The generated lexical index has 12,310 terms and checksum `544b67548c04a36e2445fa6601f07f6cdb7b8d044ae2691591629609b2eeeeb2`. The deterministic importer accounted for every source marker, rejected duplicate normalized keys, created no empty displayable verse, emitted zero warnings, and resolved all 356 Teoyube references.
 
-## Corpus-level inventory
-
-| Source | Translation | Language | Coverage | Source/version | Rights evidence | Display policy |
-| --- | --- | --- | --- | --- | --- | --- |
-| Teoyube local reference index | None; references only | English metadata | 356 normalized references, 53/66 books, 0 verse texts | Original Teoyube datasets at starting commit | Translation rights not applicable to bare references | `REFERENCE_ONLY` |
-| Legacy TIG excerpt seed | KJV label | English | Romans 8:28, Isaiah 40:31, Joshua 1:9 only | Upstream source/version unknown | Attribution, copyright status, and owner approval unknown | `DISPLAY_BLOCKED_LICENSE_UNKNOWN` |
-| Complete approved full-text corpus | None | None | 0 books, 0 chapters, 0 verses | Not present | Not present | Unavailable |
-
-## Reference-bearing local assets
-
-The registry hash-binds 17 local JSON sources. `scriptureCanon.json` and `words.json` are byte-identical (`3bb4157f9a022bc080f270e67e846ba92adccbe73ce362213606241a47457205`) and each contains 108 Teoyube records, 324 reference occurrences, and 292 unique raw references. Other prayer, promise, lexicon, graph, architecture, and media-sample files expand aggregate normalized coverage to 356 references. These files contain Teoyube interpretation or application metadata; they are not Scripture corpora.
-
-The only text-bearing candidate is `src/lib/tig/seed/scriptures.seed.ts`, SHA-256 `71ef56b788fa7857c2c0a86e55859808d2ea391442705ba1e317786800e30977`. It contains three KJV-labeled verses and is incomplete and display-blocked.
-
-## Exclusions
-
-Promise summaries, prayers, generated fixtures, PDF examples, screenshots, DOM baselines, Teoyube word meanings, user reflections, and static UI copy were not copied into the corpus. Their presence cannot establish translation provenance or display permission.
+Promise summaries, prayers, Teoyube words, assignments, user text, screenshots, and theology/product documents remain separate from the corpus.

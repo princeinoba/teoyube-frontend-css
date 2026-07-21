@@ -113,7 +113,16 @@ export type ScriptureCorpusAsset = Readonly<{
   path: string;
   sha256: string;
   bytes: number;
-  role: "reference_index" | "duplicate_reference_index" | "interpretation_metadata" | "media_metadata_sample" | "full_text_excerpt";
+  role:
+    | "reference_index"
+    | "duplicate_reference_index"
+    | "interpretation_metadata"
+    | "media_metadata_sample"
+    | "full_text_excerpt"
+    | "source_archive"
+    | "normalized_corpus"
+    | "lexical_index"
+    | "corpus_manifest";
 }>;
 
 export type ScriptureCorpusInfo = Readonly<{

@@ -1,7 +1,7 @@
 {
-  "registryVersion": "teoyube-scripture-registry-2026-07-20.1",
-  "readiness": "BLOCKED_NO_COMPLETE_APPROVED_FULL_TEXT_CORPUS",
-  "compositeChecksum": "45dbec709a49fd5fe8a0c115c451ecf56ec5b2b538b72e31563606faa823bdf6",
+  "registryVersion": "teoyube-scripture-registry-2026-07-20.2",
+  "readiness": "READY",
+  "compositeChecksum": "8f805bcedc37527099cd47f23fca4aed391c2721fd478349aab1945d960cddd4",
   "referenceIndex": {
     "id": "teoyube-local-reference-index",
     "name": "Teoyube local Scripture reference index",
@@ -38,6 +38,55 @@
       { "path": "src/data/words.json", "sha256": "3bb4157f9a022bc080f270e67e846ba92adccbe73ce362213606241a47457205", "bytes": 66166, "role": "duplicate_reference_index" }
     ]
   },
+  "activeCorpus": {
+    "id": "engwebp",
+    "name": "engwebp deterministic local corpus",
+    "translationId": "engwebp",
+    "translationName": "World English Bible",
+    "displayAbbreviation": "WEB",
+    "edition": "Protestant Edition, 2020 stable text",
+    "language": "en-US",
+    "corpusVersion": "engwebp-2020-stable-2026-07-10.p15b.1",
+    "source": "eBible.org owner-supplied engwebp USFM archive",
+    "sourceVersion": "source files dated 2026-07-10",
+    "archiveSha256": "4253589697dc6b5e92695655f2f28792d50e7be7b9c8e212af4f4bd18e866c3b",
+    "archiveBytes": 2907330,
+    "importerVersion": "teoyube-web-usfm-importer-1.0.0",
+    "corpusChecksum": "6e6b3f95b5d61c83c06534ee4281f10b6e4e02c878b75141dcdd4403bf42d77f",
+    "generatedChecksum": "91ed0e262462adc49b54fcb264a910d2753cb927538cf7968486961009fcb62f",
+    "canonCoverage": "66-book Protestant Old and New Testaments; 1,189 source chapter markers and 31,103 source verse markers accounted for according to the selected WEB source.",
+    "verseCoverage": 31098,
+    "sourceVerseMarkerCoverage": 31103,
+    "sourceFootnoteOnlyVerseMarkers": 5,
+    "referenceCoverage": 356,
+    "attributionRequirements": "Identify displayed quotations as World English Bible (WEB); preserve exact wording and the translation-name integrity requirement.",
+    "copyrightStatus": "public_domain",
+    "displayPolicy": "FULL_TEXT_ALLOWED",
+    "fullTextDisplayApproved": true,
+    "readiness": "READY",
+    "textIntegrityTrademarkNote": "World English Bible is a trademark reserved for faithful copies. Teoyube stores and displays the selected corpus wording without alteration.",
+    "pgpSignatureVerification": "NOT_PERFORMED",
+    "ownerResidualRiskDecisionId": "TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B",
+    "verificationDate": "2026-07-20",
+    "sourceHashes": {
+      "manifestPath": "src/server/scripture/corpora/engwebp/generated/manifest.json",
+      "manifestSha256": "e777cbf8c0dcebbb5093194025f1d4c788095d0c873ab4b5021fd238525ab8bd",
+      "sourceFileCount": 68,
+      "embeddedChecksumCount": 70,
+      "embeddedChecksumsVerified": 70
+    },
+    "assets": [
+      { "path": "src/server/scripture/third-party/engwebp/source/engwebp_usfm.zip", "sha256": "4253589697dc6b5e92695655f2f28792d50e7be7b9c8e212af4f4bd18e866c3b", "bytes": 2907330, "role": "source_archive" },
+      { "path": "src/server/scripture/corpora/engwebp/generated/corpus.json", "sha256": "6e6b3f95b5d61c83c06534ee4281f10b6e4e02c878b75141dcdd4403bf42d77f", "bytes": 8451436, "role": "normalized_corpus" },
+      { "path": "src/server/scripture/corpora/engwebp/generated/lexical-index.json", "sha256": "544b67548c04a36e2445fa6601f07f6cdb7b8d044ae2691591629609b2eeeeb2", "bytes": 3087339, "role": "lexical_index" },
+      { "path": "src/server/scripture/corpora/engwebp/generated/manifest.json", "sha256": "e777cbf8c0dcebbb5093194025f1d4c788095d0c873ab4b5021fd238525ab8bd", "bytes": 12467, "role": "corpus_manifest" }
+    ],
+    "limitations": [
+      "PGP signature verification was not performed because GPG was unavailable; the owner accepted that residual risk only for the exact registered archive SHA-256.",
+      "Five source verse markers contain only source footnotes and therefore have no main-text wording available for quotation.",
+      "Source paragraph markers are separated from verse wording; context retrieval reports deterministic same-chapter windows rather than inferred paragraphs."
+    ]
+  },
   "blockedTextSources": [
     {
       "id": "legacy-tig-kjv-excerpts",
@@ -60,5 +109,5 @@
       ]
     }
   ],
-  "completeApprovedFullTextCorpus": null
+  "completeApprovedFullTextCorpus": "engwebp"
 }
