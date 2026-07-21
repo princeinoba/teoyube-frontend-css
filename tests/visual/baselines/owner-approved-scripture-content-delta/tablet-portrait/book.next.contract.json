@@ -1,0 +1,2670 @@
+{
+  "structure": [
+    {
+      "tag": "section",
+      "id": "book",
+      "classes": [
+        "view",
+        "page-container",
+        "book-saint-view",
+        "active"
+      ],
+      "parent": -1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-saint-shell"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "main",
+      "id": "",
+      "classes": [
+        "book-saint-main"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "book-saint-hero"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-hero-content"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 4
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 6
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-encouragement-card"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-card-top"
+      ],
+      "parent": 10
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 11
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 11
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 10
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 10
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-stat-grid"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "parent": 17
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 17
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 17
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 17
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card",
+        "amber"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "parent": 22
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 22
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 22
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 22
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card",
+        "gold"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "parent": 27
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 27
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 27
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 27
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-stat-card",
+        "mint"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-stat-icon"
+      ],
+      "parent": 32
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 32
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 32
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 32
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "book-toolbar"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [
+        "book-search-field"
+      ],
+      "parent": 37
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 38
+    },
+    {
+      "tag": "input",
+      "id": "bookSearchInput",
+      "classes": [],
+      "parent": 38
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 37
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "parent": 41
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 42
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 43
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "parent": 42
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 46
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 46
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 46
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 46
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 46
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "parent": 46
+    },
+    {
+      "tag": "select",
+      "id": "bookTypeFilter",
+      "classes": [],
+      "parent": 37
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 53
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 53
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 53
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 53
+    },
+    {
+      "tag": "select",
+      "id": "bookDateFilter",
+      "classes": [],
+      "parent": 37
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 58
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 58
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 58
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "book-filter-button"
+      ],
+      "parent": 37
+    },
+    {
+      "tag": "section",
+      "id": "phase115BookMemory",
+      "classes": [
+        "phase115-book-memory"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase114-section-head"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 64
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 65
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 65
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 65
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-control-row"
+      ],
+      "parent": 64
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-memory-filters"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-memory-grid"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-empty-card"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 84
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 84
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "phase115-data-controls"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 87
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 87
+    },
+    {
+      "tag": "dl",
+      "id": "",
+      "classes": [],
+      "parent": 87
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "parent": 91
+    },
+    {
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "parent": 91
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "parent": 94
+    },
+    {
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "parent": 94
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "parent": 97
+    },
+    {
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "parent": 97
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "parent": 100
+    },
+    {
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "parent": 100
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "dt",
+      "id": "",
+      "classes": [],
+      "parent": 106
+    },
+    {
+      "tag": "dd",
+      "id": "",
+      "classes": [],
+      "parent": 106
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-control-row"
+      ],
+      "parent": 87
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase117-backup-reminder"
+      ],
+      "parent": 87
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 115
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 115
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-control-row"
+      ],
+      "parent": 115
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 118
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 118
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 118
+    },
+    {
+      "tag": "section",
+      "id": "phase116bBookJournalControls",
+      "classes": [
+        "phase116b-functional-panel"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "parent": 122
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 123
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 124
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 124
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 123
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-control-grid"
+      ],
+      "parent": 122
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 129
+    },
+    {
+      "tag": "input",
+      "id": "phase116bJournalTitle",
+      "classes": [],
+      "parent": 130
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 129
+    },
+    {
+      "tag": "input",
+      "id": "phase116bJournalContent",
+      "classes": [],
+      "parent": 132
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "parent": 129
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116b-detail-drawer"
+      ],
+      "parent": 122
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 135
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 135
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "parent": 135
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 145
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 145
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-mini-list"
+      ],
+      "parent": 122
+    },
+    {
+      "tag": "div",
+      "id": "bookTimeline",
+      "classes": [
+        "timeline",
+        "book-timeline"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "timeline-entry",
+        "book-entry-discovery"
+      ],
+      "parent": 149
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 150
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 150
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 150
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-card-actions"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 160
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 160
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 160
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-pagination"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "book-saint-rail"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-rail-card",
+        "book-overview-card",
+        "book-journey-overview"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-journey-head"
+      ],
+      "parent": 173
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-icon"
+      ],
+      "parent": 174
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 174
+    },
+    {
+      "tag": "h4",
+      "id": "bookJourneyOverviewTitle",
+      "classes": [],
+      "parent": 176
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 176
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-heart"
+      ],
+      "parent": 174
+    },
+    {
+      "tag": "div",
+      "id": "bookJourneyMetrics",
+      "classes": [
+        "book-journey-metrics"
+      ],
+      "parent": 173
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "parent": 181
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 181
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 181
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "parent": 185
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 185
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 185
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "parent": 189
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-journey-metric"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-journey-metric-icon"
+      ],
+      "parent": 193
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 193
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 193
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "book-week-journey"
+      ],
+      "parent": 173
+    },
+    {
+      "tag": "h5",
+      "id": "bookWeekJourneyTitle",
+      "classes": [],
+      "parent": 197
+    },
+    {
+      "tag": "div",
+      "id": "bookWeekTimeline",
+      "classes": [
+        "book-week-timeline"
+      ],
+      "parent": 197
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 200
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 200
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 200
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 200
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 205
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 205
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 205
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 205
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 210
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 210
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 210
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 210
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 215
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 215
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 215
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 215
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "completed"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 220
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 220
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 220
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 220
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "current"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 225
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 225
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 225
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 225
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "book-week-step",
+        "upcoming"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 230
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 230
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 230
+    },
+    {
+      "tag": "em",
+      "id": "",
+      "classes": [],
+      "parent": 230
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "book-journey-scripture"
+      ],
+      "parent": 173
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 235
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 235
+    },
+    {
+      "tag": "br",
+      "id": "",
+      "classes": [],
+      "parent": 237
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 235
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-rail-card",
+        "book-topics-card"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 242
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 242
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 245
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 245
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 251
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 251
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 254
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 254
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-lantern-card"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 258
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 258
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "book-rail-card",
+        "book-actions-card"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 261
+    },
+    {
+      "tag": "button",
+      "id": "addManualEntry",
+      "classes": [],
+      "parent": 261
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 261
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 261
+    },
+    {
+      "tag": "section",
+      "id": "phase116b1Continuation-book",
+      "classes": [
+        "phase116b-functional-panel",
+        "phase116b1-panel"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "parent": 266
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 267
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 268
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 268
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 268
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "phase116b-score"
+      ],
+      "parent": 267
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-continuation-grid"
+      ],
+      "parent": 266
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 274
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 274
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 277
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 277
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 280
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 280
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 283
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 283
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 286
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 286
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 289
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 289
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "parent": 266
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 292
+    },
+    {
+      "tag": "section",
+      "id": "phase116b1SmartCollections",
+      "classes": [
+        "phase116b-functional-panel",
+        "phase116b1-panel"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "parent": 300
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 301
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 302
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 302
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 302
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "phase116b-score"
+      ],
+      "parent": 301
+    },
+    {
+      "tag": "form",
+      "id": "phase116b1CollectionCreateForm",
+      "classes": [
+        "phase116b1-inline-form"
+      ],
+      "parent": 300
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 307
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 308
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 307
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-collection-tabs"
+      ],
+      "parent": 300
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 312
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 314
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 316
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 318
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 320
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 322
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 311
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 324
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-collection-detail"
+      ],
+      "parent": 300
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-inline-form"
+      ],
+      "parent": 326
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 327
+    },
+    {
+      "tag": "input",
+      "id": "phase116b1CollectionRename",
+      "classes": [],
+      "parent": 328
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "parent": 326
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 333
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 333
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 333
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 333
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 333
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b1-collection-items"
+      ],
+      "parent": 326
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 339
+    }
+  ],
+  "assets": [
+    {
+      "elementIndex": 3,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.74) 54%, rgba(0, 58, 44, 0.2) 100%), url(/public/images/book/book-saint-garden-hero-bg.png)"
+    },
+    {
+      "elementIndex": 10,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 100% 0%, rgba(255, 221, 117, 0.2), rgba(0, 0, 0, 0) 112px), linear-gradient(145deg, rgba(1, 66, 49, 0.93), rgba(2, 34, 26, 0.9))"
+    },
+    {
+      "elementIndex": 18,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 32% 25%, rgba(255, 231, 137, 0.82), rgba(0, 0, 0, 0) 33%), linear-gradient(145deg, rgb(0, 119, 93), rgb(0, 62, 49))"
+    },
+    {
+      "elementIndex": 23,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(226, 167, 35), rgb(151, 101, 0))"
+    },
+    {
+      "elementIndex": 28,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(240, 196, 77), rgb(183, 123, 5))"
+    },
+    {
+      "elementIndex": 33,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(11, 138, 106), rgb(4, 83, 67))"
+    },
+    {
+      "elementIndex": 166,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(8, 119, 95), rgb(0, 77, 61))"
+    },
+    {
+      "elementIndex": 173,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.9) 56%, rgba(247, 252, 249, 0.9) 100%), radial-gradient(circle at 80% 8%, rgba(255, 220, 130, 0.34), rgba(0, 0, 0, 0) 144px), url(/public/images/canon/canon-hero-journey.png)"
+    },
+    {
+      "elementIndex": 175,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(0, 118, 93), rgb(0, 71, 53))"
+    },
+    {
+      "elementIndex": 182,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgba(232, 239, 215, 0.98), rgba(255, 248, 229, 0.95))"
+    },
+    {
+      "elementIndex": 186,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgba(232, 239, 215, 0.98), rgba(255, 248, 229, 0.95))"
+    },
+    {
+      "elementIndex": 190,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgba(232, 239, 215, 0.98), rgba(255, 248, 229, 0.95))"
+    },
+    {
+      "elementIndex": 194,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgba(232, 239, 215, 0.98), rgba(255, 248, 229, 0.95))"
+    },
+    {
+      "elementIndex": 197,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(247, 252, 249, 0.96), rgba(255, 252, 239, 0.88)), radial-gradient(circle at 50% 70%, rgba(255, 224, 141, 0.28), rgba(0, 0, 0, 0) 352px)"
+    },
+    {
+      "elementIndex": 201,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(17, 145, 111), rgb(0, 102, 77))"
+    },
+    {
+      "elementIndex": 206,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(17, 145, 111), rgb(0, 102, 77))"
+    },
+    {
+      "elementIndex": 211,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(17, 145, 111), rgb(0, 102, 77))"
+    },
+    {
+      "elementIndex": 216,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(17, 145, 111), rgb(0, 102, 77))"
+    },
+    {
+      "elementIndex": 221,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(145deg, rgb(17, 145, 111), rgb(0, 102, 77))"
+    },
+    {
+      "elementIndex": 235,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 55, 39, 0.96), rgba(0, 70, 50, 0.72), rgba(0, 55, 39, 0.2)), url(/public/images/lexicon/lexicon-hero-bg.png)"
+    },
+    {
+      "elementIndex": 258,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(3, 60, 46, 0.92), rgba(3, 60, 46, 0.28)), url(/public/images/canon/canon-card-03.png)"
+    },
+    {
+      "elementIndex": 263,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(7, 118, 84, 0.11), rgba(7, 118, 84, 0.055))"
+    },
+    {
+      "elementIndex": 264,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(7, 118, 84, 0.11), rgba(7, 118, 84, 0.055))"
+    },
+    {
+      "elementIndex": 265,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(7, 118, 84, 0.11), rgba(7, 118, 84, 0.055))"
+    }
+  ],
+  "quotationRegions": [
+    {
+      "selector": ".book-encouragement-card p",
+      "elementIndex": 14,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "“Trust in the LORD with all your heart, and don’t lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.”",
+      "geometry": {
+        "x": 75.58,
+        "y": 484.86,
+        "width": 616.84,
+        "height": 90.45
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "lineHeight": "27.2px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    },
+    {
+      "selector": ".book-journey-scripture p",
+      "elementIndex": 237,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "“I will remember the LORD’s deeds; for I will remember your wonders of old.”",
+      "geometry": {
+        "x": 82.73,
+        "y": 3984.34,
+        "width": 576,
+        "height": 32.38
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "12px",
+        "lineHeight": "16.2px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    },
+    {
+      "selector": ".book-lantern-card h4",
+      "elementIndex": 259,
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "text": "He who is faithful in a very little is faithful also in much. He who is dishonest in a very little is also dishonest in much.",
+      "geometry": {
+        "x": 29,
+        "y": 4413.8,
+        "width": 272,
+        "height": 139.22
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "19.2px",
+        "lineHeight": "27.84px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    }
+  ],
+  "visibleControls": [
+    {
+      "elementIndex": 40,
+      "tag": "input",
+      "id": "bookSearchInput",
+      "classes": [],
+      "type": "search",
+      "name": "",
+      "geometry": {
+        "x": 78.8,
+        "y": 916.94,
+        "width": 634.41,
+        "height": 45.59
+      }
+    },
+    {
+      "elementIndex": 47,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "type": "button",
+      "name": "Romans 8:28-30",
+      "geometry": {
+        "x": 53.19,
+        "y": 1018.31,
+        "width": 113.25,
+        "height": 30.44
+      }
+    },
+    {
+      "elementIndex": 48,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "type": "button",
+      "name": "reflection",
+      "geometry": {
+        "x": 173.63,
+        "y": 1018.31,
+        "width": 76.83,
+        "height": 30.44
+      }
+    },
+    {
+      "elementIndex": 49,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "type": "button",
+      "name": "saved promise",
+      "geometry": {
+        "x": 257.64,
+        "y": 1018.31,
+        "width": 103.91,
+        "height": 30.44
+      }
+    },
+    {
+      "elementIndex": 50,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "type": "button",
+      "name": "completed action",
+      "geometry": {
+        "x": 368.73,
+        "y": 1018.31,
+        "width": 120.06,
+        "height": 30.44
+      }
+    },
+    {
+      "elementIndex": 51,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "type": "button",
+      "name": "testimony",
+      "geometry": {
+        "x": 495.98,
+        "y": 1018.31,
+        "width": 79.06,
+        "height": 30.44
+      }
+    },
+    {
+      "elementIndex": 52,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "type": "button",
+      "name": "Clear",
+      "geometry": {
+        "x": 582.23,
+        "y": 1018.31,
+        "width": 50.56,
+        "height": 30.44
+      }
+    }
+  ]
+}

@@ -1,0 +1,8591 @@
+{
+  "structure": [
+    {
+      "tag": "section",
+      "id": "canon",
+      "classes": [
+        "view",
+        "page-container",
+        "active"
+      ],
+      "parent": -1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-premium-layout"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-main-column"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "canon-kingdom-hero"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-hero-copy"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 5
+    },
+    {
+      "tag": "br",
+      "id": "",
+      "classes": [],
+      "parent": 5
+    },
+    {
+      "tag": "br",
+      "id": "",
+      "classes": [],
+      "parent": 5
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 5
+    },
+    {
+      "tag": "br",
+      "id": "",
+      "classes": [],
+      "parent": 5
+    },
+    {
+      "tag": "p",
+      "id": "canonSummary",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "form",
+      "id": "",
+      "classes": [
+        "canon-hero-search"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 12
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 12
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 12
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "parent": 12
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-quick-chips"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "div",
+      "id": "canonKpiGrid",
+      "classes": [
+        "canon-kpi-grid"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-kpi-card"
+      ],
+      "parent": 29
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-kpi-card"
+      ],
+      "parent": 29
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 34
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 34
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 34
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-kpi-card"
+      ],
+      "parent": 29
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 38
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 38
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 38
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-kpi-card"
+      ],
+      "parent": 29
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 42
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 42
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 42
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-kpi-card"
+      ],
+      "parent": 29
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 46
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 46
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 46
+    },
+    {
+      "tag": "div",
+      "id": "canonTabs",
+      "classes": [
+        "canon-tabs"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab",
+        "active"
+      ],
+      "parent": 50
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 51
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "parent": 50
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 53
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "parent": 50
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 55
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "parent": 50
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 57
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "parent": 50
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 59
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "parent": 50
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 61
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "canon-section-block"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-section-title"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 64
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 64
+    },
+    {
+      "tag": "div",
+      "id": "canonGrid",
+      "classes": [
+        "canon-project-grid"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-project-card",
+        "canon-featured-carousel-card",
+        "active"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-featured-carousel-stage"
+      ],
+      "parent": 68
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-featured-carousel-arrow",
+        "prev"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-featured-carousel-arrow",
+        "next"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-featured-carousel-dots"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 72
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-project-card"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-media"
+      ],
+      "parent": 81
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-body"
+      ],
+      "parent": 81
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-heading"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 84
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 85
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "in-progress"
+      ],
+      "parent": 85
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 84
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 83
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-avatar-row"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 90
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 94
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 94
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 83
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-project-card"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-media"
+      ],
+      "parent": 98
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-body"
+      ],
+      "parent": 98
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-heading"
+      ],
+      "parent": 100
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 101
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 102
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "completed"
+      ],
+      "parent": 102
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 101
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 100
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-avatar-row"
+      ],
+      "parent": 100
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 100
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 111
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 111
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 100
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-project-card"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-media"
+      ],
+      "parent": 115
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-body"
+      ],
+      "parent": 115
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-heading"
+      ],
+      "parent": 117
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 118
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "planning"
+      ],
+      "parent": 119
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 118
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 117
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-avatar-row"
+      ],
+      "parent": 117
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 124
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 124
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 124
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 117
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 117
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-project-card"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-media"
+      ],
+      "parent": 132
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-body"
+      ],
+      "parent": 132
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-heading"
+      ],
+      "parent": 134
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 136
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "in-progress"
+      ],
+      "parent": 136
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 134
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-avatar-row"
+      ],
+      "parent": 134
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 141
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 141
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 141
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 134
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 145
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 145
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 134
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "canon-section-block"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-section-title"
+      ],
+      "parent": 149
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 150
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 150
+    },
+    {
+      "tag": "div",
+      "id": "canonCategoryGrid",
+      "classes": [
+        "canon-category-grid",
+        "canon-category-carousel"
+      ],
+      "parent": 149
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-category-track"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 155
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 155
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 155
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 159
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 159
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 159
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 163
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 163
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 163
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 167
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 167
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 167
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 171
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 171
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 171
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 175
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 175
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 175
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 179
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 179
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 179
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 183
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 183
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 183
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 187
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 187
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 187
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 191
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 191
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 191
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 195
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 195
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 195
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 199
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 199
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 199
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 203
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 203
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 203
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-category-card"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 207
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 207
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 207
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "canon-section-block"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-section-title"
+      ],
+      "parent": 211
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 212
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 212
+    },
+    {
+      "tag": "div",
+      "id": "canonRecentGrid",
+      "classes": [
+        "canon-recent-grid"
+      ],
+      "parent": 211
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 216
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 216
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "review"
+      ],
+      "parent": 218
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 218
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 222
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 222
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 226
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 226
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "completed"
+      ],
+      "parent": 228
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 228
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 232
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 232
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 236
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 236
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "on-hold"
+      ],
+      "parent": 238
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 238
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 238
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 238
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 242
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 242
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 238
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 246
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 246
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "in-progress"
+      ],
+      "parent": 248
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 248
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 252
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 252
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 256
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 256
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "planning"
+      ],
+      "parent": 258
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 258
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 258
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 258
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 262
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 262
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 258
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 266
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 266
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "review"
+      ],
+      "parent": 268
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 268
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 268
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 268
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 272
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 272
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 268
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-media"
+      ],
+      "parent": 276
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 276
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "in-progress"
+      ],
+      "parent": 278
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 278
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 278
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-project-footer"
+      ],
+      "parent": 278
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 282
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 282
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 278
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recent-card",
+        "canon-recent-merged-card",
+        "canon-watchman-story-card"
+      ],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-watchman-story-stage"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-watchman-story-copy"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recent-merged-list"
+      ],
+      "parent": 288
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-recent-merged-row"
+      ],
+      "parent": 289
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 290
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 291
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 291
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 290
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 290
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-recent-merged-row"
+      ],
+      "parent": 289
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 296
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 296
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 296
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-recent-merged-row"
+      ],
+      "parent": 289
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 302
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 303
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 303
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 302
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 302
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-watchman-video-controls"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 308
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-watchman-video-dots"
+      ],
+      "parent": 308
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 308
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "canon-section-block",
+        "canon-explore-section"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-section-title",
+        "canon-section-title-stacked"
+      ],
+      "parent": 319
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 320
+    },
+    {
+      "tag": "h3",
+      "id": "canonExploreTitle",
+      "classes": [],
+      "parent": 321
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 321
+    },
+    {
+      "tag": "div",
+      "id": "canonExploreGrid",
+      "classes": [
+        "canon-explore-grid"
+      ],
+      "parent": 319
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 325
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 325
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 327
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 325
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 330
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 330
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 332
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 334
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 334
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 336
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 336
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 334
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 339
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 339
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 341
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 343
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 343
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 345
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 345
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 343
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 348
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 348
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 350
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 352
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 352
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 354
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 354
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 352
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 357
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 357
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 359
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 361
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 361
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 363
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 363
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 361
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 366
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 366
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 368
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 370
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 370
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 372
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 372
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 370
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 377
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 379
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 379
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 381
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 381
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 379
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 384
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 384
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 386
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 388
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 388
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 390
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 390
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 388
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 393
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 393
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 395
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 397
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 397
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 399
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 399
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 397
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 402
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 402
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 404
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 406
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 406
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 408
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 408
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 406
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 411
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 411
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 413
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 415
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 415
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 417
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 417
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 415
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 420
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 420
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 422
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 424
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 424
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 424
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 429
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 429
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 431
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 433
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 433
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 435
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 435
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 433
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 438
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 438
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 440
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 442
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 442
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 444
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 444
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 442
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 447
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 447
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 449
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 451
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 451
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 453
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 453
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 451
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 456
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 456
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 458
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 460
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 460
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 460
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 465
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 465
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 467
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 469
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 469
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 471
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 471
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 469
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 474
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 474
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 476
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-explore-card"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-explore-icon"
+      ],
+      "parent": 478
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-copy"
+      ],
+      "parent": 478
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 480
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 480
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-explore-footer"
+      ],
+      "parent": 478
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 483
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 483
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 485
+    },
+    {
+      "tag": "nav",
+      "id": "canonPagination",
+      "classes": [
+        "canon-pagination"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-page-control"
+      ],
+      "parent": 487
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-page-number",
+        "active"
+      ],
+      "parent": 487
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-page-number"
+      ],
+      "parent": 487
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-page-number"
+      ],
+      "parent": 487
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-page-ellipsis"
+      ],
+      "parent": 487
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-page-control"
+      ],
+      "parent": 487
+    },
+    {
+      "tag": "aside",
+      "id": "canonPaths",
+      "classes": [
+        "canon-detail-panel"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-right-rail"
+      ],
+      "parent": 494
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-profile-widget"
+      ],
+      "parent": 495
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-profile-head"
+      ],
+      "parent": 496
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-profile-avatar"
+      ],
+      "parent": 497
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 497
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 499
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 499
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 499
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 497
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-xp-row"
+      ],
+      "parent": 496
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 504
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 504
+    },
+    {
+      "tag": "blockquote",
+      "id": "",
+      "classes": [],
+      "parent": 496
+    },
+    {
+      "tag": "br",
+      "id": "",
+      "classes": [],
+      "parent": 507
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 507
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-overview-widget",
+        "canon-overview-premium"
+      ],
+      "parent": 495
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-overview-header"
+      ],
+      "parent": 510
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-overview-title-icon"
+      ],
+      "parent": 511
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 511
+    },
+    {
+      "tag": "h4",
+      "id": "canonOverviewTitle",
+      "classes": [],
+      "parent": 513
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 513
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-overview-info"
+      ],
+      "parent": 511
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-overview-diagram"
+      ],
+      "parent": 510
+    },
+    {
+      "tag": "svg",
+      "id": "",
+      "classes": [
+        "canon-overview-radar-svg"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "defs",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "radialgradient",
+      "id": "canonRadarGlow",
+      "classes": [],
+      "parent": 519
+    },
+    {
+      "tag": "stop",
+      "id": "",
+      "classes": [],
+      "parent": 520
+    },
+    {
+      "tag": "stop",
+      "id": "",
+      "classes": [],
+      "parent": 520
+    },
+    {
+      "tag": "stop",
+      "id": "",
+      "classes": [],
+      "parent": 520
+    },
+    {
+      "tag": "lineargradient",
+      "id": "canonRadarFill",
+      "classes": [],
+      "parent": 519
+    },
+    {
+      "tag": "stop",
+      "id": "",
+      "classes": [],
+      "parent": 524
+    },
+    {
+      "tag": "stop",
+      "id": "",
+      "classes": [],
+      "parent": 524
+    },
+    {
+      "tag": "stop",
+      "id": "",
+      "classes": [],
+      "parent": 524
+    },
+    {
+      "tag": "filter",
+      "id": "canonRadarNodeGlow",
+      "classes": [],
+      "parent": 519
+    },
+    {
+      "tag": "fegaussianblur",
+      "id": "",
+      "classes": [],
+      "parent": 528
+    },
+    {
+      "tag": "femerge",
+      "id": "",
+      "classes": [],
+      "parent": 528
+    },
+    {
+      "tag": "femergenode",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "femergenode",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-ring",
+        "ring-outer"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-ring",
+        "ring-mid"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-ring",
+        "ring-inner"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-ring",
+        "ring-core"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "line",
+      "id": "",
+      "classes": [
+        "canon-overview-axis"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-node"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "line",
+      "id": "",
+      "classes": [
+        "canon-overview-axis"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-node"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "line",
+      "id": "",
+      "classes": [
+        "canon-overview-axis"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-node"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "line",
+      "id": "",
+      "classes": [
+        "canon-overview-axis"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-node"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "line",
+      "id": "",
+      "classes": [
+        "canon-overview-axis"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "circle",
+      "id": "",
+      "classes": [
+        "canon-overview-node"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "polygon",
+      "id": "",
+      "classes": [
+        "canon-overview-radar-max"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "polygon",
+      "id": "",
+      "classes": [
+        "canon-overview-radar-value"
+      ],
+      "parent": 518
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-overview-core"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "i",
+      "id": "",
+      "classes": [],
+      "parent": 549
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 549
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-overview-dimension",
+        "canon-dim-calling"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 552
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 552
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 552
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-overview-dimension",
+        "canon-dim-purpose"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 556
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 556
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 556
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-overview-dimension",
+        "canon-dim-wisdom"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 560
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 560
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 560
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-overview-dimension",
+        "canon-dim-dominion"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 564
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 564
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 564
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-overview-dimension",
+        "canon-dim-legacy"
+      ],
+      "parent": 517
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 568
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 568
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 568
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-overview-maturity"
+      ],
+      "parent": 510
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-maturity-icon"
+      ],
+      "parent": 572
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-maturity-copy"
+      ],
+      "parent": 572
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 574
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 574
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-maturity-bar"
+      ],
+      "parent": 574
+    },
+    {
+      "tag": "i",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-maturity-ring"
+      ],
+      "parent": 572
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 579
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [
+        "canon-overview-native-progress"
+      ],
+      "parent": 510
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-actions-widget"
+      ],
+      "parent": 495
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 582
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 582
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 584
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 582
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 586
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 582
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 588
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 582
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 582
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 592
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-builder-widget"
+      ],
+      "parent": 495
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-builder-badge"
+      ],
+      "parent": 594
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 594
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 596
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 596
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 594
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-detail-sticky"
+      ],
+      "parent": 495
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-detail-media"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 600
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "canon-status",
+        "completed"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 600
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-detail-stats"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 606
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 607
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 607
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 606
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 606
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 613
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 613
+    },
+    {
+      "tag": "progress",
+      "id": "",
+      "classes": [],
+      "parent": 600
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 600
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "sequence-row"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 618
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 618
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 618
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 618
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 600
+    },
+    {
+      "tag": "ul",
+      "id": "",
+      "classes": [
+        "canon-activity-list"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 624
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 624
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 624
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 628
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 629
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 629
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 628
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 633
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 633
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 636
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 636
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 639
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 639
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 642
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 642
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 645
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 645
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 648
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 648
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 651
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 651
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 632
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 654
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 654
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 628
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 628
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 628
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 666
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 666
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 628
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 669
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 628
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 671
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 672
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 672
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 671
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 675
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 675
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 675
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 628
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 679
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 679
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 600
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "canon-recommended-widget"
+      ],
+      "parent": 495
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 684
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recommended-card"
+      ],
+      "parent": 684
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recommended-media"
+      ],
+      "parent": 686
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recommended-image-frame"
+      ],
+      "parent": 687
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recommended-controls"
+      ],
+      "parent": 687
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-recommended-arrow",
+        "prev"
+      ],
+      "parent": 689
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recommended-dots"
+      ],
+      "parent": 689
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 691
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 691
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 691
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 691
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 691
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 691
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-recommended-arrow",
+        "next"
+      ],
+      "parent": 689
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "canon-recommended-copy"
+      ],
+      "parent": 686
+    },
+    {
+      "tag": "h5",
+      "id": "",
+      "classes": [],
+      "parent": 699
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 699
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 699
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 702
+    },
+    {
+      "tag": "section",
+      "id": "phase115SmartRecommendations-canon",
+      "classes": [
+        "phase115-smart-recommendations"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase114-section-head"
+      ],
+      "parent": 704
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 705
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 706
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 706
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 706
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 705
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-grid"
+      ],
+      "parent": 704
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-card"
+      ],
+      "parent": 711
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 712
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 712
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 712
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "phase113-scripture"
+      ],
+      "parent": 712
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 712
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 712
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 718
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 719
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 719
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 718
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 723
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 723
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 726
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 726
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 729
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 729
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 732
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 732
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 735
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 735
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 738
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 738
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 741
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 741
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 722
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 744
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 744
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 718
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 747
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 718
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 718
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 756
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 756
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 718
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 759
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 718
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 761
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 762
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 762
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 761
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 765
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 765
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 765
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 718
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 769
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 769
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 712
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 772
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-card"
+      ],
+      "parent": 711
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 781
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 781
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 781
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "phase113-scripture"
+      ],
+      "parent": 781
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 781
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 781
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 787
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 788
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 788
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 787
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 792
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 792
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 795
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 795
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 798
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 798
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 801
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 801
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 804
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 804
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 807
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 807
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 810
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 810
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 791
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 813
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 813
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 787
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 816
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 787
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 787
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 825
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 825
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 787
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 828
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 787
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 830
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 831
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 831
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 830
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 834
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 834
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 834
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 787
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 838
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 838
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 781
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 841
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-card"
+      ],
+      "parent": 711
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 850
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 850
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 850
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "phase113-scripture"
+      ],
+      "parent": 850
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 850
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 850
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 856
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 857
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 857
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 856
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 861
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 861
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 864
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 864
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 867
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 867
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 870
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 870
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 873
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 873
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 876
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 876
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 879
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 879
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 860
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 882
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 882
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 856
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 885
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 856
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 856
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 894
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 894
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 856
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 897
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 856
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 899
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 900
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 900
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 899
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 903
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 903
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 903
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 856
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 907
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 907
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 850
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 910
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-card"
+      ],
+      "parent": 711
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 919
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 919
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 919
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "phase113-scripture"
+      ],
+      "parent": 919
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 919
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 919
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 925
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 926
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 926
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 925
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 930
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 930
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 933
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 933
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 936
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 936
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 939
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 939
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 942
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 942
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 945
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 945
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 948
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 948
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 929
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 951
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 951
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 925
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 954
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 925
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 925
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 963
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 963
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 925
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 966
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 925
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 968
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 969
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 969
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 968
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 972
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 972
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 972
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 925
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 976
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 976
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 919
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 979
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-card"
+      ],
+      "parent": 711
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 988
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 988
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 988
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "phase113-scripture"
+      ],
+      "parent": 988
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 988
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 988
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 994
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 995
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 995
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 994
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 999
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 999
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1002
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1002
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1005
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1005
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1008
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1008
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1011
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1011
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1014
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1014
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1017
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1017
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 998
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1020
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1020
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 994
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1023
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 994
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 994
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1032
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1032
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 994
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1035
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 994
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 1037
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1038
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1038
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 1037
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 1041
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1041
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 1041
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 994
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1045
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1045
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 988
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1048
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "phase115-recommendation-card"
+      ],
+      "parent": 711
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 1057
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 1057
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1057
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "phase113-scripture"
+      ],
+      "parent": 1057
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 1057
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 1057
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 1063
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1064
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1064
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 1063
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1068
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1068
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1071
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1071
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1074
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1074
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1077
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1077
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1080
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1080
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1083
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1083
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1086
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1086
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 1067
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1089
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1089
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 1063
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1092
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1063
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1063
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1101
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1101
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1063
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1104
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 1063
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 1106
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1107
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1107
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 1106
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 1110
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1110
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 1110
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 1063
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1114
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1114
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 1057
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 1117
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "phase116-workflow-entry"
+      ],
+      "parent": 704
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 1126
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 1127
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 1127
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 1127
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-workflow-grid"
+      ],
+      "parent": 1126
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 1131
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1132
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1132
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 1131
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1135
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1135
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 1131
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1138
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1138
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 1131
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1141
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1141
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 1131
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1144
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1144
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 1131
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 1147
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 1147
+    }
+  ],
+  "assets": [
+    {
+      "elementIndex": 3,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 41, 31, 0.96) 0%, rgba(0, 58, 43, 0.72) 30%, rgba(0, 58, 43, 0.12) 76%), url(/public/images/canon/canon-hero-journey.png)"
+    },
+    {
+      "elementIndex": 20,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 75), rgb(0, 61, 46))"
+    },
+    {
+      "elementIndex": 51,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 75), rgb(0, 61, 46))"
+    },
+    {
+      "elementIndex": 69,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/featured-carousel/canon-featured-slide-01.png)"
+    },
+    {
+      "elementIndex": 73,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgb(255, 227, 155), rgb(17, 173, 128))"
+    },
+    {
+      "elementIndex": 82,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-02.png)"
+    },
+    {
+      "elementIndex": 91,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-02.png)"
+    },
+    {
+      "elementIndex": 92,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-03.png)"
+    },
+    {
+      "elementIndex": 93,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-04.png)"
+    },
+    {
+      "elementIndex": 99,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-13.png)"
+    },
+    {
+      "elementIndex": 108,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-03.png)"
+    },
+    {
+      "elementIndex": 109,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-04.png)"
+    },
+    {
+      "elementIndex": 110,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-05.png)"
+    },
+    {
+      "elementIndex": 116,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-04.png)"
+    },
+    {
+      "elementIndex": 125,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-04.png)"
+    },
+    {
+      "elementIndex": 126,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-05.png)"
+    },
+    {
+      "elementIndex": 127,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-06.png)"
+    },
+    {
+      "elementIndex": 133,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-19.png)"
+    },
+    {
+      "elementIndex": 142,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-05.png)"
+    },
+    {
+      "elementIndex": 143,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-06.png)"
+    },
+    {
+      "elementIndex": 144,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-07.png)"
+    },
+    {
+      "elementIndex": 155,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-01.png)"
+    },
+    {
+      "elementIndex": 159,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-02.png)"
+    },
+    {
+      "elementIndex": 163,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-03.png)"
+    },
+    {
+      "elementIndex": 167,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-04.png)"
+    },
+    {
+      "elementIndex": 171,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-07.png)"
+    },
+    {
+      "elementIndex": 175,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-06.png)"
+    },
+    {
+      "elementIndex": 179,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-10.png)"
+    },
+    {
+      "elementIndex": 183,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-01.png)"
+    },
+    {
+      "elementIndex": 187,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-02.png)"
+    },
+    {
+      "elementIndex": 191,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-03.png)"
+    },
+    {
+      "elementIndex": 195,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-04.png)"
+    },
+    {
+      "elementIndex": 199,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-07.png)"
+    },
+    {
+      "elementIndex": 203,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-06.png)"
+    },
+    {
+      "elementIndex": 207,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 44, 33, 0.08), rgba(0, 44, 33, 0.78)), url(/public/images/canon/canon-tile-10.png)"
+    },
+    {
+      "elementIndex": 217,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-06.png)"
+    },
+    {
+      "elementIndex": 227,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-07.png)"
+    },
+    {
+      "elementIndex": 237,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-05.png)"
+    },
+    {
+      "elementIndex": 247,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-13.png)"
+    },
+    {
+      "elementIndex": 257,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-06.png)"
+    },
+    {
+      "elementIndex": 267,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-11.png)"
+    },
+    {
+      "elementIndex": 277,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/canon-card-12.png)"
+    },
+    {
+      "elementIndex": 286,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/watchman-carousel/canon-watchman-slide-01.png)"
+    },
+    {
+      "elementIndex": 311,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgb(242, 200, 102), rgb(255, 233, 168))"
+    },
+    {
+      "elementIndex": 326,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 332,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 335,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 341,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 344,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 350,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 353,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 359,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 362,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 368,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 371,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 377,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 380,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 386,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 389,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 395,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 398,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 404,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 407,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 413,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 416,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 422,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 425,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 431,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 434,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 440,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 443,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 449,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 452,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 458,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 461,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 467,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 470,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 476,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 479,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 225, 120, 0.28), rgba(0, 0, 0, 0) 32%), linear-gradient(145deg, rgba(0, 119, 89, 0.95), rgba(0, 50, 39, 0.95))"
+    },
+    {
+      "elementIndex": 485,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 117, 87, 0.1), rgba(255, 231, 162, 0.14))"
+    },
+    {
+      "elementIndex": 489,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 111, 84), rgb(0, 81, 63))"
+    },
+    {
+      "elementIndex": 498,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/sidebar/saint-profile-avatar.png)"
+    },
+    {
+      "elementIndex": 505,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgb(0, 107, 75) 62%, rgb(237, 243, 239) 62%)"
+    },
+    {
+      "elementIndex": 507,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 16% 28%, rgba(255, 224, 143, 0.18), rgba(0, 0, 0, 0) 80px), linear-gradient(145deg, rgb(251, 253, 252), rgb(245, 251, 248))"
+    },
+    {
+      "elementIndex": 510,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 100% 13%, rgba(255, 222, 134, 0.32), rgba(0, 0, 0, 0) 24%), radial-gradient(circle at 0% 92%, rgba(11, 121, 91, 0.16), rgba(0, 0, 0, 0) 26%), linear-gradient(135deg, rgba(255, 253, 241, 0.96), rgba(242, 249, 238, 0.88) 56%, rgba(231, 244, 234, 0.92))"
+    },
+    {
+      "elementIndex": 512,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 549,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 38% 18%, rgba(255, 241, 167, 0.24), rgba(0, 0, 0, 0) 30%), linear-gradient(145deg, rgb(0, 115, 82), rgb(0, 57, 47))"
+    },
+    {
+      "elementIndex": 553,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 557,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 561,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 565,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 569,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 573,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 36% 24%, rgba(255, 236, 156, 0.82), rgba(0, 0, 0, 0) 31%), linear-gradient(145deg, rgb(0, 106, 81), rgb(0, 59, 49))"
+    },
+    {
+      "elementIndex": 578,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgb(0, 108, 80), rgb(16, 167, 120))"
+    },
+    {
+      "elementIndex": 579,
+      "attributes": [],
+      "backgroundImage": "conic-gradient(rgb(11, 147, 107) 93.6deg, rgba(0, 94, 70, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 584,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.98), rgba(248, 252, 250, 0.98))"
+    },
+    {
+      "elementIndex": 586,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.98), rgba(248, 252, 250, 0.98))"
+    },
+    {
+      "elementIndex": 588,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.98), rgba(248, 252, 250, 0.98))"
+    },
+    {
+      "elementIndex": 590,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.98), rgba(248, 252, 250, 0.98))"
+    },
+    {
+      "elementIndex": 592,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.98), rgba(248, 252, 250, 0.98))"
+    },
+    {
+      "elementIndex": 594,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 47, 36, 0.92), rgba(0, 71, 50, 0.88)), url(/public/images/carousel/eternal-hope.png)"
+    },
+    {
+      "elementIndex": 595,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 225, 120, 0.14), rgba(0, 82, 61, 0.1)), url(/public/images/canon/canon-builder-badge.png)"
+    },
+    {
+      "elementIndex": 601,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(0, 39, 31, 0.08), rgba(0, 39, 31, 0.42)), url(/public/images/canon/canon-card-04.png)"
+    },
+    {
+      "elementIndex": 672,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 100%, rgba(0, 83, 63, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 688,
+      "attributes": [],
+      "backgroundImage": "url(/public/images/canon/recommended-carousel/canon-recommended-slide-01.png)"
+    },
+    {
+      "elementIndex": 692,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgb(246, 200, 95), rgb(0, 138, 99))"
+    },
+    {
+      "elementIndex": 702,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 75), rgb(0, 138, 99))"
+    },
+    {
+      "elementIndex": 762,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 831,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 900,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 969,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 1038,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    },
+    {
+      "elementIndex": 1107,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    }
+  ],
+  "quotationRegions": [
+    {
+      "selector": ".canon-profile-widget blockquote",
+      "elementIndex": 507,
+      "tag": "blockquote",
+      "id": "",
+      "classes": [],
+      "text": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints, Ephesians 1:18 · WEB",
+      "geometry": {
+        "x": 301.8,
+        "y": 3348.5,
+        "width": 443.2,
+        "height": 207.45
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    }
+  ],
+  "visibleControls": [
+    {
+      "elementIndex": 14,
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "type": "search",
+      "name": "",
+      "geometry": {
+        "x": 390.95,
+        "y": 347.06,
+        "width": 476.5,
+        "height": 48.8
+      }
+    },
+    {
+      "elementIndex": 15,
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "type": "",
+      "name": "Canon category",
+      "geometry": {
+        "x": 874.64,
+        "y": 347.06,
+        "width": 192,
+        "height": 48.8
+      }
+    },
+    {
+      "elementIndex": 20,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "type": "button",
+      "name": "Search",
+      "geometry": {
+        "x": 1073.83,
+        "y": 347.06,
+        "width": 120,
+        "height": 48.8
+      }
+    },
+    {
+      "elementIndex": 22,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need direction",
+      "geometry": {
+        "x": 336.98,
+        "y": 421.05,
+        "width": 157.09,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 23,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need healing",
+      "geometry": {
+        "x": 505.59,
+        "y": 421.05,
+        "width": 144.23,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 24,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need wisdom",
+      "geometry": {
+        "x": 661.34,
+        "y": 421.05,
+        "width": 148.08,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 25,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need peace",
+      "geometry": {
+        "x": 820.94,
+        "y": 421.05,
+        "width": 131.38,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 26,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need identity",
+      "geometry": {
+        "x": 963.83,
+        "y": 421.05,
+        "width": 147.92,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 27,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need breakthrough",
+      "geometry": {
+        "x": 336.98,
+        "y": 468.56,
+        "width": 194.78,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 28,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "I need increase",
+      "geometry": {
+        "x": 543.28,
+        "y": 468.56,
+        "width": 150.75,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 51,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab",
+        "active"
+      ],
+      "type": "button",
+      "name": "Canon Maps 36",
+      "geometry": {
+        "x": 284.8,
+        "y": 655.5,
+        "width": 164,
+        "height": 44.38
+      }
+    },
+    {
+      "elementIndex": 53,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "type": "button",
+      "name": "Archetypes 24",
+      "geometry": {
+        "x": 460.8,
+        "y": 655.5,
+        "width": 156.13,
+        "height": 44.38
+      }
+    },
+    {
+      "elementIndex": 55,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "type": "button",
+      "name": "Promise Clusters 12",
+      "geometry": {
+        "x": 628.92,
+        "y": 655.5,
+        "width": 199.53,
+        "height": 44.38
+      }
+    },
+    {
+      "elementIndex": 57,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "type": "button",
+      "name": "Covenant Paths 12",
+      "geometry": {
+        "x": 840.45,
+        "y": 655.5,
+        "width": 190.02,
+        "height": 44.38
+      }
+    },
+    {
+      "elementIndex": 59,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "type": "button",
+      "name": "Prayer Collections 8",
+      "geometry": {
+        "x": 1042.47,
+        "y": 655.5,
+        "width": 210.03,
+        "height": 44.38
+      }
+    },
+    {
+      "elementIndex": 61,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "canon-tab"
+      ],
+      "type": "button",
+      "name": "Knowledge Graph 108",
+      "geometry": {
+        "x": 284.8,
+        "y": 711.88,
+        "width": 207.86,
+        "height": 44.38
+      }
+    }
+  ]
+}

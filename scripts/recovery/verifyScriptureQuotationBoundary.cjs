@@ -44,4 +44,4 @@ if (failures.length) {
 }
 
 console.log(`SCRIPTURE QUOTATION BOUNDARY: PASSED (${checked} canonical production files checked; no new hard-coded Scripture quotation found).`);
-console.log("The protected generated/static presentation is excluded from migration enforcement and remains an unresolved corpus-comparison blocker, not validated Scripture evidence.");
+console.log("The protected static/derived presentation is governed separately by the exact owner-approved 17-record content-delta replay contract.");

@@ -12,6 +12,7 @@ import {
 } from "../../src/domain/journey/daily-spiritual-loop";
 import { createDeterministicDailySpiritualLoopSeed } from "../../src/features/journey/application/daily-spiritual-loop-service";
 import { canonicalTigService } from "../../src/server/tig/canonical-tig-service";
+import { canonicalScriptureRepository } from "../../src/server/scripture/canonical-scripture-repository";
 
 const workspaceRoot = path.resolve(__dirname, "../..");
 
@@ -171,6 +172,14 @@ describe("guided daily spiritual loop", () => {
     expect(first.trace).toMatchObject({ deterministic: true, externalModelUsed: false });
     expect(first.scriptureReferences.length).toBeGreaterThan(0);
     expect(first.callingDiscernment.summary).toContain("strongest indicators suggest");
+    for (const reference of first.scriptureReferences) {
+      const parsed = canonicalScriptureRepository.parseReferences(reference)[0];
+      expect(parsed?.valid, reference).toBe(true);
+      if (!parsed?.valid) continue;
+      const passage = await canonicalScriptureRepository.getByReference(parsed.reference);
+      expect(passage?.citation, reference).toMatchObject({ translationId: "engwebp", sourceId: "engwebp", validationStatus: "validated" });
+      expect(passage?.verses.length, reference).toBeGreaterThan(0);
+    }
 
     const clientFiles = [
       "src/components/productization/TeoyubeAppStateProvider.tsx",

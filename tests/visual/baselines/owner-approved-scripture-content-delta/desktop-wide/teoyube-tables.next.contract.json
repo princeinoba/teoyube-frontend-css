@@ -1,0 +1,5301 @@
+{
+  "structure": [
+    {
+      "tag": "section",
+      "id": "teoyube-tables",
+      "classes": [
+        "view",
+        "page-container",
+        "tables-page",
+        "active"
+      ],
+      "parent": -1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "teoyube-table-page",
+        "table-demo-section"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "teoyube-tables-hero"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 2
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 3
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 3
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-title-icon"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 3
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "tables-hero-actions"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 8
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-guardrails"
+      ],
+      "parent": 9
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 9
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 8
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-journey"
+      ],
+      "parent": 12
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 12
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "teoyube-table-card"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-card-head"
+      ],
+      "parent": 15
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "tables-card-title"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-card-icon"
+      ],
+      "parent": 17
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 17
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 17
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "tables-toolbar"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [
+        "tables-search-field"
+      ],
+      "parent": 21
+    },
+    {
+      "tag": "input",
+      "id": "teoyubeTableSearch",
+      "classes": [],
+      "parent": 22
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 22
+    },
+    {
+      "tag": "select",
+      "id": "teoyubeTableCategory",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "select",
+      "id": "teoyubeTableSort",
+      "classes": [],
+      "parent": 21
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 31
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 31
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 31
+    },
+    {
+      "tag": "button",
+      "id": "teoyubeTableFiltersButton",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 21
+    },
+    {
+      "tag": "div",
+      "id": "teoyubeTableStats",
+      "classes": [
+        "tables-stat-grid"
+      ],
+      "parent": 15
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "tables-stat-card"
+      ],
+      "parent": 36
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-stat-icon",
+        "tables"
+      ],
+      "parent": 37
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 37
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 39
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 39
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 39
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "tables-stat-card"
+      ],
+      "parent": 36
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-stat-icon",
+        "verses"
+      ],
+      "parent": 43
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 45
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 45
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 45
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "tables-stat-card"
+      ],
+      "parent": 36
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-stat-icon",
+        "audio"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 49
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 51
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 51
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 51
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "tables-stat-card"
+      ],
+      "parent": 36
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-stat-icon",
+        "video"
+      ],
+      "parent": 55
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 55
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 57
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 57
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 57
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "tables-stat-card"
+      ],
+      "parent": 36
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "tables-stat-icon",
+        "updated"
+      ],
+      "parent": 61
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 61
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 63
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 63
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 63
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "teoyube-table-scroll"
+      ],
+      "parent": 15
+    },
+    {
+      "tag": "table",
+      "id": "",
+      "classes": [
+        "teoyube-reference-table"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "thead",
+      "id": "",
+      "classes": [],
+      "parent": 68
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 69
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 71
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "tbody",
+      "id": "teoyubeTablesRows",
+      "classes": [],
+      "parent": 68
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row",
+        "expanded"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 82
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 83
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 85
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 81
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 88
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 90
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 92
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 93
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 93
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 98
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 81
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 100
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 101
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 101
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-detail-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-content"
+      ],
+      "parent": 108
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-preview",
+        "table-preview-video-panel"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-preview-video-cover"
+      ],
+      "parent": 110
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 110
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-detail-play",
+        "table-preview-embed-play-overlay"
+      ],
+      "parent": 110
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 113
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-detail-duration"
+      ],
+      "parent": 110
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-copy"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 116
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 116
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-chips"
+      ],
+      "parent": 116
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video",
+        "table-row-video-premium"
+      ],
+      "parent": 109
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-cover"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-label"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [
+        "table-row-video-title"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 124
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-row-embed-play-overlay"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 129
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-duration"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-nav"
+      ],
+      "parent": 124
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 132
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 132
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row",
+        "expanded"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 136
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 137
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 137
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 135
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 142
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 144
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 146
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 147
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 147
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 152
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 135
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 155
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 155
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 157
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 157
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 157
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-detail-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 161
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-content"
+      ],
+      "parent": 162
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-preview",
+        "table-preview-video-panel"
+      ],
+      "parent": 163
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-preview-video-cover"
+      ],
+      "parent": 164
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-detail-play",
+        "table-preview-embed-play-overlay"
+      ],
+      "parent": 164
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 167
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-detail-duration"
+      ],
+      "parent": 164
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-copy"
+      ],
+      "parent": 163
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 170
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 170
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-chips"
+      ],
+      "parent": 170
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 173
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 173
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 173
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 173
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video",
+        "table-row-video-premium"
+      ],
+      "parent": 163
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-cover"
+      ],
+      "parent": 178
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-label"
+      ],
+      "parent": 178
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [
+        "table-row-video-title"
+      ],
+      "parent": 178
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 178
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-row-embed-play-overlay"
+      ],
+      "parent": 178
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 183
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-duration"
+      ],
+      "parent": 178
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-nav"
+      ],
+      "parent": 178
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 186
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 186
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row",
+        "expanded"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 190
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 191
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 191
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 193
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 189
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 196
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 198
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 200
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 201
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 201
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 204
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 206
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 189
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 208
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 209
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 209
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 211
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 211
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 211
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-detail-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 215
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-content"
+      ],
+      "parent": 216
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-preview",
+        "table-preview-video-panel"
+      ],
+      "parent": 217
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-preview-video-cover"
+      ],
+      "parent": 218
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-detail-play",
+        "table-preview-embed-play-overlay"
+      ],
+      "parent": 218
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 221
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-detail-duration"
+      ],
+      "parent": 218
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-copy"
+      ],
+      "parent": 217
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 224
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 224
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-chips"
+      ],
+      "parent": 224
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 227
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 227
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 227
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 227
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video",
+        "table-row-video-premium"
+      ],
+      "parent": 217
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-cover"
+      ],
+      "parent": 232
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-label"
+      ],
+      "parent": 232
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [
+        "table-row-video-title"
+      ],
+      "parent": 232
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 232
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-row-embed-play-overlay"
+      ],
+      "parent": 232
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 237
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-duration"
+      ],
+      "parent": 232
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-nav"
+      ],
+      "parent": 232
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 240
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row",
+        "expanded"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 244
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 245
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 245
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 247
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 243
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 250
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 252
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 254
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 255
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 255
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 258
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 260
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 243
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 262
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 263
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 263
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 265
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 265
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 265
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-detail-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 269
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-content"
+      ],
+      "parent": 270
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-preview",
+        "table-preview-video-panel"
+      ],
+      "parent": 271
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-preview-video-cover"
+      ],
+      "parent": 272
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 272
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-detail-play",
+        "table-preview-embed-play-overlay"
+      ],
+      "parent": 272
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 275
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-detail-duration"
+      ],
+      "parent": 272
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-copy"
+      ],
+      "parent": 271
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 278
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 278
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-detail-chips"
+      ],
+      "parent": 278
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 281
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 281
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 281
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 281
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video",
+        "table-row-video-premium"
+      ],
+      "parent": 271
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-cover"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-label"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [
+        "table-row-video-title"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 286
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-row-embed-play-overlay"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 291
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-row-video-duration"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-video-nav"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 294
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 294
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 298
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 299
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 299
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 301
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 297
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 304
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 306
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 308
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 309
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 309
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 312
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 314
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 316
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 317
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 317
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 319
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 319
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 319
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 324
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 325
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 325
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 323
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 330
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 332
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 334
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 335
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 335
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 338
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 340
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 323
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 342
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 343
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 343
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 345
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 345
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 345
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 350
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 351
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 351
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 353
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 349
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 356
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 358
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 360
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 361
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 361
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 364
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 366
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 368
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 369
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 369
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 371
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 371
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 371
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 376
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 377
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 377
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 379
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 375
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 382
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 384
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 386
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 387
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 387
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 390
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 392
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 375
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 394
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 395
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 395
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 397
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 397
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 397
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 402
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 403
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 403
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 405
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 401
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 408
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 410
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 412
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 413
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 413
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 416
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 418
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 420
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 421
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 421
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 423
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 423
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 423
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "teoyube-main-row"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-row-controls"
+      ],
+      "parent": 428
+    },
+    {
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "parent": 429
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "parent": 429
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-toggle-icon"
+      ],
+      "parent": 431
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [
+        "table-name-cell"
+      ],
+      "parent": 427
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "parent": 434
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-position-pill"
+      ],
+      "parent": 436
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "table-audio-control"
+      ],
+      "parent": 438
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "parent": 439
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-speaker-icon"
+      ],
+      "parent": 439
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "table-period-pill"
+      ],
+      "parent": 442
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "parent": 444
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 427
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "table-action-menu"
+      ],
+      "parent": 446
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [
+        "table-action-button"
+      ],
+      "parent": 447
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 447
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 449
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 449
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 449
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "teoyube-table-footer"
+      ],
+      "parent": 15
+    },
+    {
+      "tag": "p",
+      "id": "teoyubeTableEntryStatus",
+      "classes": [],
+      "parent": 453
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [
+        "tables-page-size"
+      ],
+      "parent": 453
+    },
+    {
+      "tag": "select",
+      "id": "teoyubeTablePageSize",
+      "classes": [],
+      "parent": 455
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 456
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 456
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 456
+    },
+    {
+      "tag": "div",
+      "id": "teoyubeTablePagination",
+      "classes": [
+        "table-pagination"
+      ],
+      "parent": 453
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 460
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 460
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 460
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 460
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 460
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "teoyube-data-tables"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "teoyube-data-tables-head"
+      ],
+      "parent": 466
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 467
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 468
+    },
+    {
+      "tag": "h4",
+      "id": "teoyubeDataTablesTitle",
+      "classes": [],
+      "parent": 468
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 468
+    },
+    {
+      "tag": "div",
+      "id": "teoyubeDataVideoSourceWrap",
+      "classes": [
+        "data-table-source"
+      ],
+      "parent": 467
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 472
+    },
+    {
+      "tag": "select",
+      "id": "teoyubeDataVideoSource",
+      "classes": [],
+      "parent": 472
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 474
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 474
+    },
+    {
+      "tag": "div",
+      "id": "teoyubeDataTableTabs",
+      "classes": [
+        "data-table-tabs"
+      ],
+      "parent": 466
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 477
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 477
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 477
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 477
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 477
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-toolbar"
+      ],
+      "parent": 466
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [
+        "data-table-search"
+      ],
+      "parent": 483
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 484
+    },
+    {
+      "tag": "input",
+      "id": "teoyubeDataTableSearch",
+      "classes": [],
+      "parent": 484
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 483
+    },
+    {
+      "tag": "select",
+      "id": "teoyubeDataTableSort",
+      "classes": [],
+      "parent": 487
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 488
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 488
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 488
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 483
+    },
+    {
+      "tag": "select",
+      "id": "teoyubeDataTablePageSize",
+      "classes": [],
+      "parent": 492
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 493
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 493
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 493
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-shell"
+      ],
+      "parent": 466
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-scroll"
+      ],
+      "parent": 497
+    },
+    {
+      "tag": "table",
+      "id": "",
+      "classes": [
+        "teoyube-management-table"
+      ],
+      "parent": 498
+    },
+    {
+      "tag": "thead",
+      "id": "teoyubeDataTableHead",
+      "classes": [],
+      "parent": 499
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 500
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 501
+    },
+    {
+      "tag": "tbody",
+      "id": "teoyubeDataTableRows",
+      "classes": [],
+      "parent": 499
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 511
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 516
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 517
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 510
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 526
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 527
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 527
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 531
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 536
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 537
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 546
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 547
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 547
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 551
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 556
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 550
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 566
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 567
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 567
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 571
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 576
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 577
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 570
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 586
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 587
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 587
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 591
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 596
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 597
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 590
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 606
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 607
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 607
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 611
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 616
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 617
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 610
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 626
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 627
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 627
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 631
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 636
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 637
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 630
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 646
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 647
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 647
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 651
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "select",
+      "id": "",
+      "classes": [],
+      "parent": 656
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "option",
+      "id": "",
+      "classes": [],
+      "parent": 657
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 650
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-actions"
+      ],
+      "parent": 666
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 667
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 667
+    },
+    {
+      "tag": "div",
+      "id": "teoyubeDataTableEmpty",
+      "classes": [
+        "data-table-empty"
+      ],
+      "parent": 497
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 670
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 670
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "data-table-pagination"
+      ],
+      "parent": 466
+    },
+    {
+      "tag": "p",
+      "id": "teoyubeDataTableStatus",
+      "classes": [],
+      "parent": 673
+    },
+    {
+      "tag": "div",
+      "id": "teoyubeDataTablePagination",
+      "classes": [],
+      "parent": 673
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 675
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 675
+    }
+  ],
+  "assets": [
+    {
+      "elementIndex": 2,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(249, 252, 249, 0.96) 0%, rgba(249, 252, 249, 0.72) 46%, rgba(0, 82, 65, 0.08) 100%), url(/public/images/lexicon/lexicon-hero-bg.png)"
+    },
+    {
+      "elementIndex": 18,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 37,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 247, 0.92))"
+    },
+    {
+      "elementIndex": 38,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 43,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 247, 0.92))"
+    },
+    {
+      "elementIndex": 44,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 49,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 247, 0.92))"
+    },
+    {
+      "elementIndex": 50,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 55,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 247, 0.92))"
+    },
+    {
+      "elementIndex": 56,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 61,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 247, 0.92))"
+    },
+    {
+      "elementIndex": 62,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 71,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 73,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 74,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 75,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 76,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 77,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 78,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 79,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    },
+    {
+      "elementIndex": 95,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 110,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 50% 36%, rgba(236, 197, 110, 0.2), rgba(0, 0, 0, 0) 58%), url(/public/images/embed/embedded-videos-hero-bg.png), none"
+    },
+    {
+      "elementIndex": 111,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.38)), radial-gradient(circle at 50% 42%, rgba(236, 197, 110, 0.3), rgba(0, 0, 0, 0) 56%), url(/public/images/embed/embedded-videos-hero-bg.png)"
+    },
+    {
+      "elementIndex": 113,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0) 32%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 124,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(4, 42, 34, 0.2), rgba(4, 42, 34, 0.64)), radial-gradient(circle at 50% 35%, rgba(255, 220, 128, 0.34), rgba(0, 0, 0, 0) 160px), url(/public/images/embed/embedded-videos-hero-bg.png), none"
+    },
+    {
+      "elementIndex": 125,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(3, 36, 30, 0.26), rgba(3, 36, 30, 0.04) 48%, rgba(3, 36, 30, 0.38)), radial-gradient(circle at 50% 42%, rgba(255, 224, 148, 0.42), rgba(0, 0, 0, 0) 128px), radial-gradient(circle at 70% 18%, rgba(0, 143, 111, 0.16), rgba(0, 0, 0, 0) 144px), url(/public/images/embed/embedded-videos-hero-bg.png)"
+    },
+    {
+      "elementIndex": 126,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 132, 103, 0.96), rgba(0, 82, 65, 0.96))"
+    },
+    {
+      "elementIndex": 129,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.24), rgba(0, 0, 0, 0) 30%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 149,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 164,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 50% 36%, rgba(236, 197, 110, 0.2), rgba(0, 0, 0, 0) 58%), url(/public/images/today/teoyubeworld-search-bg.png), none"
+    },
+    {
+      "elementIndex": 165,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.38)), radial-gradient(circle at 50% 42%, rgba(236, 197, 110, 0.3), rgba(0, 0, 0, 0) 56%), url(/public/images/today/teoyubeworld-search-bg.png)"
+    },
+    {
+      "elementIndex": 167,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0) 32%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 178,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(4, 42, 34, 0.2), rgba(4, 42, 34, 0.64)), radial-gradient(circle at 50% 35%, rgba(255, 220, 128, 0.34), rgba(0, 0, 0, 0) 160px), url(/public/images/today/teoyubeworld-search-bg.png), none"
+    },
+    {
+      "elementIndex": 179,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(3, 36, 30, 0.26), rgba(3, 36, 30, 0.04) 48%, rgba(3, 36, 30, 0.38)), radial-gradient(circle at 50% 42%, rgba(255, 224, 148, 0.42), rgba(0, 0, 0, 0) 128px), radial-gradient(circle at 70% 18%, rgba(0, 143, 111, 0.16), rgba(0, 0, 0, 0) 144px), url(/public/images/today/teoyubeworld-search-bg.png)"
+    },
+    {
+      "elementIndex": 180,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 132, 103, 0.96), rgba(0, 82, 65, 0.96))"
+    },
+    {
+      "elementIndex": 183,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.24), rgba(0, 0, 0, 0) 30%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 203,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 218,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 50% 36%, rgba(236, 197, 110, 0.2), rgba(0, 0, 0, 0) 58%), url(/public/images/table/calling-compass-panel-bg.png), none"
+    },
+    {
+      "elementIndex": 219,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.38)), radial-gradient(circle at 50% 42%, rgba(236, 197, 110, 0.3), rgba(0, 0, 0, 0) 56%), url(/public/images/table/calling-compass-panel-bg.png)"
+    },
+    {
+      "elementIndex": 221,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0) 32%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 232,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(4, 42, 34, 0.2), rgba(4, 42, 34, 0.64)), radial-gradient(circle at 50% 35%, rgba(255, 220, 128, 0.34), rgba(0, 0, 0, 0) 160px), url(/public/images/table/calling-compass-panel-bg.png), none"
+    },
+    {
+      "elementIndex": 233,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(3, 36, 30, 0.26), rgba(3, 36, 30, 0.04) 48%, rgba(3, 36, 30, 0.38)), radial-gradient(circle at 50% 42%, rgba(255, 224, 148, 0.42), rgba(0, 0, 0, 0) 128px), radial-gradient(circle at 70% 18%, rgba(0, 143, 111, 0.16), rgba(0, 0, 0, 0) 144px), url(/public/images/table/calling-compass-panel-bg.png)"
+    },
+    {
+      "elementIndex": 234,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 132, 103, 0.96), rgba(0, 82, 65, 0.96))"
+    },
+    {
+      "elementIndex": 237,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.24), rgba(0, 0, 0, 0) 30%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 257,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 272,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 50% 36%, rgba(236, 197, 110, 0.2), rgba(0, 0, 0, 0) 58%), url(/public/images/search/search-purpose-hero.png), none"
+    },
+    {
+      "elementIndex": 273,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.38)), radial-gradient(circle at 50% 42%, rgba(236, 197, 110, 0.3), rgba(0, 0, 0, 0) 56%), url(/public/images/search/search-purpose-hero.png)"
+    },
+    {
+      "elementIndex": 275,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0) 32%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 286,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(4, 42, 34, 0.2), rgba(4, 42, 34, 0.64)), radial-gradient(circle at 50% 35%, rgba(255, 220, 128, 0.34), rgba(0, 0, 0, 0) 160px), url(/public/images/search/search-purpose-hero.png), none"
+    },
+    {
+      "elementIndex": 287,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(3, 36, 30, 0.26), rgba(3, 36, 30, 0.04) 48%, rgba(3, 36, 30, 0.38)), radial-gradient(circle at 50% 42%, rgba(255, 224, 148, 0.42), rgba(0, 0, 0, 0) 128px), radial-gradient(circle at 70% 18%, rgba(0, 143, 111, 0.16), rgba(0, 0, 0, 0) 144px), url(/public/images/search/search-purpose-hero.png)"
+    },
+    {
+      "elementIndex": 288,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 132, 103, 0.96), rgba(0, 82, 65, 0.96))"
+    },
+    {
+      "elementIndex": 291,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.24), rgba(0, 0, 0, 0) 30%), linear-gradient(135deg, rgb(0, 145, 113), rgb(0, 87, 68))"
+    },
+    {
+      "elementIndex": 311,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 337,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 363,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 389,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 415,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 441,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))"
+    },
+    {
+      "elementIndex": 462,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 107, 87), rgb(0, 76, 63))"
+    }
+  ],
+  "quotationRegions": [
+    {
+      "selector": ".table-detail-copy p",
+      "elementIndex": 117,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "\"having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,\"",
+      "geometry": {
+        "x": 664.38,
+        "y": 735.05,
+        "width": 314.42,
+        "height": 134.53
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16.32px",
+        "lineHeight": "26.928px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    },
+    {
+      "selector": ".table-detail-copy p",
+      "elementIndex": 171,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "\"Working together, we entreat also that you do not receive the grace of God in vain.\"",
+      "geometry": {
+        "x": 664.38,
+        "y": 1185.98,
+        "width": 314.42,
+        "height": 80.72
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16.32px",
+        "lineHeight": "26.928px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    },
+    {
+      "selector": ".table-detail-copy p",
+      "elementIndex": 225,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "\"For he says, “At an acceptable time I listened to you. In a day of salvation I helped you.” Behold, now is the acceptable time. Behold, now is the day of salvation.\"",
+      "geometry": {
+        "x": 664.38,
+        "y": 1583.11,
+        "width": 314.42,
+        "height": 134.53
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16.32px",
+        "lineHeight": "26.928px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    },
+    {
+      "selector": ".table-detail-copy p",
+      "elementIndex": 279,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "\"having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,\"",
+      "geometry": {
+        "x": 664.38,
+        "y": 2007.14,
+        "width": 314.42,
+        "height": 134.53
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "16.32px",
+        "lineHeight": "26.928px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    }
+  ],
+  "visibleControls": [
+    {
+      "elementIndex": 9,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Guardrails",
+      "geometry": {
+        "x": 986.81,
+        "y": 28.8,
+        "width": 140.36,
+        "height": 45.38
+      }
+    },
+    {
+      "elementIndex": 12,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Generate Today's Journey",
+      "geometry": {
+        "x": 1138.36,
+        "y": 28.8,
+        "width": 262.45,
+        "height": 44.8
+      }
+    },
+    {
+      "elementIndex": 23,
+      "tag": "input",
+      "id": "teoyubeTableSearch",
+      "classes": [],
+      "type": "search",
+      "name": "",
+      "geometry": {
+        "x": 613.69,
+        "y": 282.09,
+        "width": 199.63,
+        "height": 43
+      }
+    },
+    {
+      "elementIndex": 25,
+      "tag": "select",
+      "id": "teoyubeTableCategory",
+      "classes": [],
+      "type": "",
+      "name": "Filter table category",
+      "geometry": {
+        "x": 864.69,
+        "y": 279.59,
+        "width": 204.53,
+        "height": 48
+      }
+    },
+    {
+      "elementIndex": 31,
+      "tag": "select",
+      "id": "teoyubeTableSort",
+      "classes": [],
+      "type": "",
+      "name": "Sort table rows",
+      "geometry": {
+        "x": 1081.22,
+        "y": 279.59,
+        "width": 204.55,
+        "height": 48
+      }
+    },
+    {
+      "elementIndex": 35,
+      "tag": "button",
+      "id": "teoyubeTableFiltersButton",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Filters",
+      "geometry": {
+        "x": 1297.77,
+        "y": 272.91,
+        "width": 82.86,
+        "height": 61.38
+      }
+    },
+    {
+      "elementIndex": 84,
+      "tag": "input",
+      "id": "",
+      "classes": [],
+      "type": "checkbox",
+      "name": "Select TEOYUBE; TYMAKWITHOHIS, CAWTROTGLOHINITS",
+      "geometry": {
+        "x": 337.19,
+        "y": 639.17,
+        "width": 26.17,
+        "height": 13
+      }
+    },
+    {
+      "elementIndex": 85,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-expand-button"
+      ],
+      "type": "button",
+      "name": "Collapse TEOYUBE; TYMAKWITHOHIS, CAWTROTGLOHINITS",
+      "geometry": {
+        "x": 372.75,
+        "y": 629.67,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "elementIndex": 89,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle"
+      ],
+      "type": "button",
+      "name": "Watch TEOYUBE; TYMAKWITHOHIS, CAWTROTGLOHINITS",
+      "geometry": {
+        "x": 734.39,
+        "y": 629.27,
+        "width": 50.8,
+        "height": 32.8
+      }
+    },
+    {
+      "elementIndex": 94,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-expand-audio"
+      ],
+      "type": "button",
+      "name": "Play audio for TEOYUBE; TYMAKWITHOHIS, CAWTROTGLOHINITS",
+      "geometry": {
+        "x": 1102.08,
+        "y": 627.38,
+        "width": 50,
+        "height": 33.59
+      }
+    },
+    {
+      "elementIndex": 99,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-icon-button",
+        "table-video-toggle",
+        "table-airplay-button"
+      ],
+      "type": "button",
+      "name": "Open airplay for TEOYUBE; TYMAKWITHOHIS, CAWTROTGLOHINITS",
+      "geometry": {
+        "x": 1367.48,
+        "y": 629.27,
+        "width": 62,
+        "height": 32.8
+      }
+    },
+    {
+      "elementIndex": 105,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Save to Book",
+      "geometry": {
+        "x": 1387.78,
+        "y": 711.86,
+        "width": 154.81,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 106,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Filter Promise",
+      "geometry": {
+        "x": 1387.78,
+        "y": 747.86,
+        "width": 154.81,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 113,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-detail-play",
+        "table-preview-embed-play-overlay"
+      ],
+      "type": "button",
+      "name": "Play The Seed of Promise in the far-left preview panel",
+      "geometry": {
+        "x": 496.38,
+        "y": 831.69,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "elementIndex": 129,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "table-row-embed-play-overlay"
+      ],
+      "type": "button",
+      "name": "Play The Seed of Promise",
+      "geometry": {
+        "x": 1226.8,
+        "y": 815.69,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "elementIndex": 133,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Previous TeoyubeWorld video",
+      "geometry": {
+        "x": 1006.98,
+        "y": 837.69,
+        "width": 36,
+        "height": 36
+      }
+    }
+  ]
+}

@@ -25,4 +25,6 @@ No removal is authorized by this ledger. A row may change only in the feature-sp
 
 ## Prompt 15 Scripture migration note
 
-`src/features/scripture/infrastructure/local-scripture-repository.ts` is now a compatibility export to the canonical server-owned repository. The approved Canon view still uses its original reference-only view model and output. Legacy Scripture anchors, hard-coded visible quotations, TIG seed excerpts, and interpretation datasets remain retained because no complete approved text corpus exists. No legacy consumer may be removed or promoted to corpus authority until exact-text, licensing, integration, and parity evidence passes.
+`src/features/scripture/infrastructure/local-scripture-repository.ts` remains a compatibility export to the canonical server-owned repository. Prompt 15B activated the owner-approved `engwebp` corpus and remediated the 17 visible quotation records through an exact source/content-delta overlay. No legacy file was deleted.
+
+The following debt remains `RETAIN_QUARANTINED`: 15 unreachable `clientsPromiseRows` entries in `app.js`, three unknown-provenance KJV TIG excerpt seeds, one noncanonical offline fallback, and one dormant historical fallback. The five prayer/paraphrase records remain typed prayer content rather than removal candidates. `scripts/recovery/verifyNonVisibleScriptureQuarantine.cjs` prevents all 20 legacy records from entering canonical Scripture DTOs or visible output. Removal requires independent consumer, parity, and owner evidence.

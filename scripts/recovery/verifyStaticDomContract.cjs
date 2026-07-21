@@ -4,6 +4,7 @@
 const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
+const { isApprovedSourceDelta, verifyScriptureContentDelta } = require("./scriptureContentDeltaOverlay.cjs");
 
 const projectRoot = path.resolve(__dirname, "../..");
 const contractPath = path.join(projectRoot, "tests/visual/contracts/static-dom-contract.json");
@@ -66,8 +67,13 @@ if (!fs.existsSync(contractPath) || !fs.existsSync(htmlPath)) {
 const contract = JSON.parse(fs.readFileSync(contractPath, "utf8"));
 const html = fs.readFileSync(htmlPath, "utf8");
 const htmlHash = sha256(html);
+const scriptureDelta = verifyScriptureContentDelta();
 
-if (htmlHash !== contract.sourceSha256) {
+if (!scriptureDelta.valid) {
+  scriptureDelta.failures.forEach((failure) => fail(`owner-approved Scripture content delta: ${failure}`));
+}
+
+if (htmlHash !== contract.sourceSha256 && !isApprovedSourceDelta("index.html", htmlHash, Buffer.byteLength(html, "utf8"), scriptureDelta)) {
   fail(`index.html changed (expected ${contract.sourceSha256}, received ${htmlHash})`);
 }
 
@@ -100,5 +106,5 @@ if (process.exitCode) {
 console.log(
   `Static DOM contract passed: ${(contract.requiredIds || []).length} IDs, ` +
     `${(contract.requiredClassNames || []).length} class names, ` +
-    `${(contract.stylesheetOrder || []).length} stylesheets.`
+    `${(contract.stylesheetOrder || []).length} stylesheets; exact owner-approved Scripture text delta only.`
 );

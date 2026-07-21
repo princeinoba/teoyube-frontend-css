@@ -1,0 +1,5466 @@
+{
+  "structure": [
+    {
+      "tag": "section",
+      "id": "today",
+      "classes": [
+        "view",
+        "page-container",
+        "active"
+      ],
+      "parent": -1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "today-premium-shell"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "section",
+      "id": "todayPromiseCarousel",
+      "classes": [
+        "promise-carousel"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "button",
+      "id": "carouselPrev",
+      "classes": [
+        "carousel-arrow",
+        "prev"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-viewport"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "promiseCarouselTrack",
+      "classes": [
+        "carousel-track"
+      ],
+      "parent": 4
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide",
+        "active"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 6
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 7
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 7
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 7
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 7
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 7
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 12
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 12
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 7
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 15
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-journey"
+      ],
+      "parent": 16
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 16
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 15
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "welcome",
+        "slide-where-god's-promises-meet-your-calling"
+      ],
+      "parent": 6
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 20
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 20
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 20
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 24
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 25
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 25
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 25
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 25
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 30
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 30
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 25
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 33
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-journey"
+      ],
+      "parent": 34
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 34
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 33
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "journey",
+        "slide-a-new-day.-a-divine-assignment."
+      ],
+      "parent": 24
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 38
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 38
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 38
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 42
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 43
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 43
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 43
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 48
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 48
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 43
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 51
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 51
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "search",
+        "slide-discover.-find.-receive."
+      ],
+      "parent": 42
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 54
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 54
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 54
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 58
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 59
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 59
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 59
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 59
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 59
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 64
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 64
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 59
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 67
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "canon",
+        "slide-explore-god's-kingdom-blueprint."
+      ],
+      "parent": 58
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 70
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 70
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 74
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 75
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 75
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 75
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 75
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 75
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 80
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 75
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 83
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "promise",
+        "slide-god's-promises-are-yes-and-amen."
+      ],
+      "parent": 74
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 86
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 86
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 86
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 90
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 91
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 91
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 91
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 91
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 91
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 91
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 99
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 99
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "growth",
+        "slide-grow-daily.-walk-in-purpose."
+      ],
+      "parent": 90
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 102
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 102
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 102
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 106
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 107
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 107
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 107
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 112
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 112
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 107
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 115
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 115
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "anchored",
+        "slide-live-anchored.-lead-with-purpose."
+      ],
+      "parent": 106
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 118
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 118
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 118
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 122
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 123
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 123
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 123
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 123
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 123
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 128
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 123
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 131
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 131
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "impact",
+        "slide-your-calling.-his-kingdom.-eternal-impact."
+      ],
+      "parent": 122
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 134
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 134
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 134
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 138
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 139
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 139
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 144
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 144
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 139
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 147
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 147
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "deeper",
+        "slide-go-deeper.-live-stronger."
+      ],
+      "parent": 138
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 150
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 155
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 155
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 155
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 155
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 155
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 160
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 160
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 155
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 163
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 163
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "legacy",
+        "slide-finish-well.-leave-a-legacy."
+      ],
+      "parent": 154
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 166
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 166
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 166
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 170
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 171
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 171
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 171
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 171
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 171
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 176
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 176
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 171
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 179
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 179
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "faith",
+        "slide-stay-focused.-walk-in-faith."
+      ],
+      "parent": 170
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 182
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 182
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 182
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "carousel-slide"
+      ],
+      "parent": 5
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-copy"
+      ],
+      "parent": 186
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "slide-number"
+      ],
+      "parent": 187
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 187
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 187
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 187
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 187
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 192
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 192
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-cta-row"
+      ],
+      "parent": 187
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "parent": 195
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-journey"
+      ],
+      "parent": 196
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 196
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "parent": 195
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "button-icon",
+        "button-icon-guardrails"
+      ],
+      "parent": 199
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 199
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "slide-artwork",
+        "banner-art",
+        "overlook",
+        "slide-god-guides-every-faithful-step."
+      ],
+      "parent": 186
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 202
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-glow"
+      ],
+      "parent": 202
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "art-symbol"
+      ],
+      "parent": 202
+    },
+    {
+      "tag": "div",
+      "id": "promisePreviewRail",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "carousel-preview-rail"
+      ],
+      "parent": 206
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "preview-card"
+      ],
+      "parent": 207
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 208
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 208
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 208
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 208
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "preview-card"
+      ],
+      "parent": 207
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 213
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 213
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 213
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 213
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "preview-card"
+      ],
+      "parent": 207
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 218
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "preview-card"
+      ],
+      "parent": 207
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 223
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 223
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 223
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 223
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "preview-card"
+      ],
+      "parent": 207
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 228
+    },
+    {
+      "tag": "button",
+      "id": "carouselNext",
+      "classes": [
+        "carousel-arrow",
+        "next"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "promiseCarouselDots",
+      "classes": [
+        "carousel-dots"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 234
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "today-insight-row"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "promise-detail-card"
+      ],
+      "parent": 247
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 248
+    },
+    {
+      "tag": "h3",
+      "id": "dailyTheme",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "p",
+      "id": "dailySummary",
+      "classes": [],
+      "parent": 248
+    },
+    {
+      "tag": "div",
+      "id": "dailyScriptures",
+      "classes": [
+        "scripture-strip"
+      ],
+      "parent": 248
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 252
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "scripture-pill"
+      ],
+      "parent": 252
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "daily-inspiration-card"
+      ],
+      "parent": 247
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 255
+    },
+    {
+      "tag": "blockquote",
+      "id": "",
+      "classes": [],
+      "parent": 255
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 255
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "daily-progress-card"
+      ],
+      "parent": 247
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 259
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "progress-widget"
+      ],
+      "parent": 259
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "progress-ring"
+      ],
+      "parent": 261
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 262
+    },
+    {
+      "tag": "ul",
+      "id": "",
+      "classes": [],
+      "parent": 261
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 264
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 265
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 264
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 267
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 264
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 269
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 264
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 271
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "streak-card"
+      ],
+      "parent": 247
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 273
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "streak-number"
+      ],
+      "parent": 273
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 275
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 275
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 273
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "today-action-grid"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "word-card"
+      ],
+      "parent": 280
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 281
+    },
+    {
+      "tag": "h3",
+      "id": "dailyWord",
+      "classes": [],
+      "parent": 281
+    },
+    {
+      "tag": "p",
+      "id": "dailyMeaning",
+      "classes": [],
+      "parent": 281
+    },
+    {
+      "tag": "button",
+      "id": "prayBtn",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 281
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "assignment-card"
+      ],
+      "parent": 280
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "ul",
+      "id": "assignmentList",
+      "classes": [],
+      "parent": 286
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 288
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 288
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 288
+    },
+    {
+      "tag": "li",
+      "id": "",
+      "classes": [],
+      "parent": 288
+    },
+    {
+      "tag": "textarea",
+      "id": "reflectionInput",
+      "classes": [],
+      "parent": 286
+    },
+    {
+      "tag": "button",
+      "id": "completeAssignment",
+      "classes": [
+        "primary",
+        "full"
+      ],
+      "parent": 286
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "integration-card",
+        "search-promise-card",
+        "teoyubeworld-featured-panel"
+      ],
+      "parent": 280
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-panel-inner"
+      ],
+      "parent": 295
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-search-shell"
+      ],
+      "parent": 296
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-heading"
+      ],
+      "parent": 297
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "featured-story-brand-icon"
+      ],
+      "parent": 298
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 298
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 300
+    },
+    {
+      "tag": "h3",
+      "id": "teoyubeworldFeaturedTitle",
+      "classes": [],
+      "parent": 300
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "featured-story-lede"
+      ],
+      "parent": 297
+    },
+    {
+      "tag": "form",
+      "id": "promiseMovieForm",
+      "classes": [
+        "promise-search-form"
+      ],
+      "parent": 297
+    },
+    {
+      "tag": "label",
+      "id": "",
+      "classes": [],
+      "parent": 304
+    },
+    {
+      "tag": "input",
+      "id": "promiseMovieInput",
+      "classes": [],
+      "parent": 304
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "parent": 304
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 297
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "parent": 308
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 309
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 310
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 310
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "parent": 309
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 313
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 313
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 313
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 313
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 313
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "parent": 313
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "search-chip-row"
+      ],
+      "parent": 297
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 320
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 320
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 320
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 320
+    },
+    {
+      "tag": "p",
+      "id": "promiseMovieStatus",
+      "classes": [
+        "muted",
+        "small"
+      ],
+      "parent": 297
+    },
+    {
+      "tag": "div",
+      "id": "featuredStoryCarousel",
+      "classes": [
+        "featured-story-carousel"
+      ],
+      "parent": 296
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-stage"
+      ],
+      "parent": 326
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide",
+        "active"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 328
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 329
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 330
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 330
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 330
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 329
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 329
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 329
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 336
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 337
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 336
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 340
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 341
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 342
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 342
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 342
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 341
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 341
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 341
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 348
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 349
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 348
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 352
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 353
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 354
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 354
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 354
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 353
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 353
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 353
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 360
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 361
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 360
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 364
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 365
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 366
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 366
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 366
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 365
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 365
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 365
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 372
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 373
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 372
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 376
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 377
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 378
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 378
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 378
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 377
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 377
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 377
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 384
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 385
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 384
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 388
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 389
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 390
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 390
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 390
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 389
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 389
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 389
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 396
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 397
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 396
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 400
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 401
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 402
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 402
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 402
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 401
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 401
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 408
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 409
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 408
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [
+        "featured-story-slide"
+      ],
+      "parent": 327
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-copy"
+      ],
+      "parent": 412
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-meta"
+      ],
+      "parent": 413
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 414
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 414
+    },
+    {
+      "tag": "time",
+      "id": "",
+      "classes": [],
+      "parent": 414
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 413
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 413
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-actions"
+      ],
+      "parent": 413
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "classes": [
+        "primary",
+        "featured-story-cta"
+      ],
+      "parent": 420
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 421
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "featured-story-select"
+      ],
+      "parent": 420
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-controls"
+      ],
+      "parent": 326
+    },
+    {
+      "tag": "button",
+      "id": "featuredStoryPrev",
+      "classes": [
+        "featured-story-arrow"
+      ],
+      "parent": 424
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "featured-story-dots"
+      ],
+      "parent": 424
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 426
+    },
+    {
+      "tag": "button",
+      "id": "featuredStoryNext",
+      "classes": [
+        "featured-story-arrow"
+      ],
+      "parent": 424
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "today-integrations"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "teoyube-promise-panel"
+      ],
+      "parent": 436
+    },
+    {
+      "tag": "article",
+      "id": "promiseMovieResult",
+      "classes": [
+        "integration-card",
+        "promise-movie-card"
+      ],
+      "parent": 437
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 438
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "promise-movie-detail"
+      ],
+      "parent": 438
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "promise-video-thumbnail",
+        "promise-youtube-frame"
+      ],
+      "parent": 440
+    },
+    {
+      "tag": "iframe",
+      "id": "",
+      "classes": [],
+      "parent": 441
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "promise-embed-play-overlay"
+      ],
+      "parent": 441
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 443
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "promise-video-copy"
+      ],
+      "parent": 440
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 445
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 445
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 445
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "local-media-note"
+      ],
+      "parent": 445
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "promise-video-actions"
+      ],
+      "parent": 445
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "watch-now-button"
+      ],
+      "parent": 450
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "promise-video-nav"
+      ],
+      "parent": 450
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "promise-video-nav-button"
+      ],
+      "parent": 452
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "promise-video-nav-button"
+      ],
+      "parent": 452
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "integration-card",
+        "clients-promise-card"
+      ],
+      "parent": 436
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "clients-card-header"
+      ],
+      "parent": 455
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 456
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "icon-menu"
+      ],
+      "parent": 456
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "clients-table-wrap"
+      ],
+      "parent": 455
+    },
+    {
+      "tag": "table",
+      "id": "",
+      "classes": [
+        "clients-table"
+      ],
+      "parent": 459
+    },
+    {
+      "tag": "thead",
+      "id": "",
+      "classes": [],
+      "parent": 460
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 461
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "th",
+      "id": "",
+      "classes": [],
+      "parent": 462
+    },
+    {
+      "tag": "tbody",
+      "id": "clientsPromiseRows",
+      "classes": [],
+      "parent": 460
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [
+        "active-video-row"
+      ],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 470
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 470
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 472
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 473
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 473
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 470
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 470
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 477
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 470
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 479
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 470
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 482
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 482
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 484
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 485
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 485
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 482
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 482
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 489
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 482
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 491
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 482
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 494
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 494
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 496
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 497
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 497
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 494
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 494
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 501
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 494
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 503
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 494
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 506
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 506
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 508
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 509
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 506
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 506
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 513
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 506
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 515
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 506
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 520
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 521
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 521
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 525
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 527
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 518
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 532
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 533
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 533
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 537
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 539
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 530
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 542
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 542
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 544
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 545
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 545
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 542
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 542
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 549
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 542
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 551
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 542
+    },
+    {
+      "tag": "tr",
+      "id": "",
+      "classes": [],
+      "parent": 469
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 554
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 554
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "feed-video-title"
+      ],
+      "parent": 556
+    },
+    {
+      "tag": "img",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 557
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 554
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 554
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "video-button",
+        "today-video-select"
+      ],
+      "parent": 561
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 554
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "position-badge",
+        "success"
+      ],
+      "parent": 563
+    },
+    {
+      "tag": "td",
+      "id": "",
+      "classes": [],
+      "parent": 554
+    }
+  ],
+  "assets": [
+    {
+      "elementIndex": 16,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 21,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-01-welcome.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 22,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 23,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 34,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 39,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-02-journey.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 40,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 41,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 52,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 55,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-03-search.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 56,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 57,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 68,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 71,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-04-canon.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 72,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 73,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 84,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 87,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-05-promise-table.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 88,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 89,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 100,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 103,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-06-growth.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 104,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 105,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 116,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 119,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-07-live-promises.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 120,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 121,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 132,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 135,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-08-impact.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 136,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 137,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 148,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 151,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-09-deeper.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 152,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 153,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 164,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 167,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-10-legacy.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 168,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 169,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 180,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 183,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-11-faith.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 184,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 185,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 196,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 122, 95), rgb(0, 71, 54))"
+    },
+    {
+      "elementIndex": 203,
+      "attributes": [
+        [
+          "src",
+          "public/images/today-carousel/today-carousel-12-overlook.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 204,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.55), rgba(0, 0, 0, 0) 64%)"
+    },
+    {
+      "elementIndex": 205,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgba(255, 246, 199, 0.92), rgba(255, 246, 199, 0.22) 42%, rgba(0, 0, 0, 0) 70%)"
+    },
+    {
+      "elementIndex": 210,
+      "attributes": [
+        [
+          "src",
+          "public/images/ads/divine-direction.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 215,
+      "attributes": [
+        [
+          "src",
+          "public/images/ads/strength-for-today.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 220,
+      "attributes": [
+        [
+          "src",
+          "public/images/ads/growth-in-grace.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 225,
+      "attributes": [
+        [
+          "src",
+          "public/images/teoyube-carousel-5-wide.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 230,
+      "attributes": [
+        [
+          "src",
+          "public/images/teoyube-carousel-5-wide.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 262,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 55%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(8, 117, 111) 0deg, rgb(8, 117, 111) 72%, rgba(8, 117, 111, 0.13) 72%, rgba(8, 117, 111, 0.13) 100%)"
+    },
+    {
+      "elementIndex": 285,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 289,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgb(8, 117, 111), rgb(8, 117, 111))"
+    },
+    {
+      "elementIndex": 290,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgb(8, 117, 111), rgb(8, 117, 111))"
+    },
+    {
+      "elementIndex": 291,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgb(8, 117, 111), rgb(8, 117, 111))"
+    },
+    {
+      "elementIndex": 292,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(rgb(8, 117, 111), rgb(8, 117, 111))"
+    },
+    {
+      "elementIndex": 294,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 295,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 18% 12%, rgba(255, 226, 140, 0.32), rgba(0, 0, 0, 0) 224px), linear-gradient(135deg, rgba(247, 253, 248, 0.96) 0%, rgba(236, 249, 241, 0.88) 46%, rgba(214, 236, 222, 0.88) 100%)"
+    },
+    {
+      "elementIndex": 299,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 34% 28%, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 5.6px, rgb(0, 130, 100) 6.08px, rgb(0, 130, 100) 100%)"
+    },
+    {
+      "elementIndex": 307,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 328,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/embed/embedded-videos-hero-bg.png)"
+    },
+    {
+      "elementIndex": 329,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 337,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 340,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/today/teoyubeworld-search-bg.png)"
+    },
+    {
+      "elementIndex": 341,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 349,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 352,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/table/calling-compass-panel-bg.png)"
+    },
+    {
+      "elementIndex": 353,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 361,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 364,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/search/search-purpose-hero.png)"
+    },
+    {
+      "elementIndex": 365,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 373,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 376,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/canon/journey-calling.png)"
+    },
+    {
+      "elementIndex": 377,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 385,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 388,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/carousel/kingdom-wisdom.png)"
+    },
+    {
+      "elementIndex": 389,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 397,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 400,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/carousel/growth-in-grace.png)"
+    },
+    {
+      "elementIndex": 401,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 409,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 412,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 43, 33, 0.88) 0%, rgba(0, 59, 45, 0.56) 42%, rgba(0, 49, 37, 0.16) 100%), linear-gradient(0deg, rgba(0, 36, 28, 0.84) 0%, rgba(0, 36, 28, 0.14) 62%), url(/public/images/canon/canon-card-04.png)"
+    },
+    {
+      "elementIndex": 413,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(238, 249, 242, 0.72))"
+    },
+    {
+      "elementIndex": 421,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 96, 72), rgb(0, 132, 102))"
+    },
+    {
+      "elementIndex": 438,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 62% 8%, rgba(255, 216, 111, 0.5), rgba(0, 0, 0, 0) 256px), linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(237, 248, 241, 0.9) 42%, rgba(5, 65, 49, 0.78) 100%)"
+    },
+    {
+      "elementIndex": 441,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 50% 15%, rgba(255, 220, 120, 0.32), rgba(0, 0, 0, 0) 42%), linear-gradient(135deg, rgb(6, 43, 35), rgb(10, 93, 69) 52%, rgb(23, 54, 31))"
+    },
+    {
+      "elementIndex": 443,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.24), rgba(0, 0, 0, 0) 32%), linear-gradient(135deg, rgb(0, 130, 100), rgb(0, 91, 70))"
+    },
+    {
+      "elementIndex": 445,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(238, 250, 242, 0.68))"
+    },
+    {
+      "elementIndex": 474,
+      "attributes": [
+        [
+          "src",
+          "public/images/embed/embedded-videos-hero-bg.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 478,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 486,
+      "attributes": [
+        [
+          "src",
+          "public/images/today/teoyubeworld-search-bg.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 490,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 498,
+      "attributes": [
+        [
+          "src",
+          "public/images/table/calling-compass-panel-bg.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 502,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 510,
+      "attributes": [
+        [
+          "src",
+          "public/images/search/search-purpose-hero.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 514,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 522,
+      "attributes": [
+        [
+          "src",
+          "public/images/canon/journey-calling.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 526,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 534,
+      "attributes": [
+        [
+          "src",
+          "public/images/carousel/kingdom-wisdom.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 538,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 546,
+      "attributes": [
+        [
+          "src",
+          "public/images/carousel/growth-in-grace.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 550,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    },
+    {
+      "elementIndex": 558,
+      "attributes": [
+        [
+          "src",
+          "public/images/canon/canon-card-04.png"
+        ]
+      ],
+      "backgroundImage": "none"
+    },
+    {
+      "elementIndex": 562,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 93, 76), rgb(0, 120, 93))"
+    }
+  ],
+  "quotationRegions": [
+    {
+      "selector": ".daily-inspiration-card blockquote",
+      "elementIndex": 257,
+      "tag": "blockquote",
+      "id": "",
+      "classes": [],
+      "text": "The LORD will keep you from all evil. He will keep your soul.",
+      "geometry": {
+        "x": 47.39,
+        "y": 990.16,
+        "width": 673.22,
+        "height": 27.45
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "15.2px",
+        "lineHeight": "23.56px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    }
+  ],
+  "visibleControls": [
+    {
+      "elementIndex": 2,
+      "tag": "section",
+      "id": "todayPromiseCarousel",
+      "classes": [
+        "promise-carousel"
+      ],
+      "type": "",
+      "name": "Automated Today's Promise carousel",
+      "geometry": {
+        "x": 26.39,
+        "y": 191.61,
+        "width": 715.22,
+        "height": 528
+      }
+    },
+    {
+      "elementIndex": 3,
+      "tag": "button",
+      "id": "carouselPrev",
+      "classes": [
+        "carousel-arrow",
+        "prev"
+      ],
+      "type": "button",
+      "name": "Previous promise slide",
+      "geometry": {
+        "x": 43.39,
+        "y": 432.81,
+        "width": 45.59,
+        "height": 45.59
+      }
+    },
+    {
+      "elementIndex": 16,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Start Today's Journey",
+      "geometry": {
+        "x": 58.09,
+        "y": 555.33,
+        "width": 228,
+        "height": 49.5
+      }
+    },
+    {
+      "elementIndex": 19,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Explore Teoyube",
+      "geometry": {
+        "x": 58.09,
+        "y": 616.83,
+        "width": 165.36,
+        "height": 49.5
+      }
+    },
+    {
+      "elementIndex": 34,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Start Today's Journey",
+      "geometry": {
+        "x": 57.21,
+        "y": 564.52,
+        "width": 227.27,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 37,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "View My Journey",
+      "geometry": {
+        "x": 57.21,
+        "y": 625.83,
+        "width": 168.42,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 52,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Start Searching",
+      "geometry": {
+        "x": 57.21,
+        "y": 576.87,
+        "width": 153.25,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 53,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Explore Categories",
+      "geometry": {
+        "x": 222.41,
+        "y": 576.87,
+        "width": 179.96,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 68,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Explore the Canon",
+      "geometry": {
+        "x": 57.21,
+        "y": 595.17,
+        "width": 175.69,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 69,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "View Kingdom Map",
+      "geometry": {
+        "x": 244.86,
+        "y": 595.17,
+        "width": 185.89,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 84,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Explore Promise Table",
+      "geometry": {
+        "x": 57.21,
+        "y": 576.87,
+        "width": 206.95,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 85,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "My Favorite Promises",
+      "geometry": {
+        "x": 57.21,
+        "y": 638.18,
+        "width": 201.33,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 100,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "View My Progress",
+      "geometry": {
+        "x": 57.21,
+        "y": 595.17,
+        "width": 173.9,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 101,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Today's Devotional",
+      "geometry": {
+        "x": 243.07,
+        "y": 595.17,
+        "width": 184.29,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 116,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Start Living His Promises",
+      "geometry": {
+        "x": 57.21,
+        "y": 595.17,
+        "width": 226.79,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 117,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Explore More",
+      "geometry": {
+        "x": 295.96,
+        "y": 595.17,
+        "width": 140.35,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 132,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "See My Impact",
+      "geometry": {
+        "x": 57.21,
+        "y": 613.48,
+        "width": 149.07,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 133,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Share Your Story",
+      "geometry": {
+        "x": 218.24,
+        "y": 613.48,
+        "width": 165.1,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 148,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Continue My Journey",
+      "geometry": {
+        "x": 57.21,
+        "y": 595.17,
+        "width": 198.88,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 149,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "My Favorites",
+      "geometry": {
+        "x": 268.05,
+        "y": 595.17,
+        "width": 136.1,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 164,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Complete My Journey",
+      "geometry": {
+        "x": 57.21,
+        "y": 564.52,
+        "width": 203.04,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 165,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Invite & Inspire Others",
+      "geometry": {
+        "x": 57.21,
+        "y": 625.83,
+        "width": 207.85,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 180,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Strengthen My Faith",
+      "geometry": {
+        "x": 57.21,
+        "y": 595.17,
+        "width": 191.67,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 181,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Join the Journey",
+      "geometry": {
+        "x": 260.84,
+        "y": 595.17,
+        "width": 163.82,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 196,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Generate Today's Journey",
+      "geometry": {
+        "x": 57.21,
+        "y": 564.52,
+        "width": 258.25,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 199,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "action-icon-button"
+      ],
+      "type": "button",
+      "name": "Open Guardrails",
+      "geometry": {
+        "x": 57.21,
+        "y": 625.83,
+        "width": 184.22,
+        "height": 49.34
+      }
+    },
+    {
+      "elementIndex": 233,
+      "tag": "button",
+      "id": "carouselNext",
+      "classes": [
+        "carousel-arrow",
+        "next"
+      ],
+      "type": "button",
+      "name": "Next promise slide",
+      "geometry": {
+        "x": 679.02,
+        "y": 432.81,
+        "width": 45.59,
+        "height": 45.59
+      }
+    },
+    {
+      "elementIndex": 235,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "type": "button",
+      "name": "Go to Where God's Promises Meet Your Calling slide",
+      "geometry": {
+        "x": 249.47,
+        "y": 684.19,
+        "width": 36,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 236,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to A New Day. A Divine Assignment. slide",
+      "geometry": {
+        "x": 292.66,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 237,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Discover. Find. Receive. slide",
+      "geometry": {
+        "x": 313.84,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 238,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Explore God's Kingdom Blueprint. slide",
+      "geometry": {
+        "x": 335.03,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 239,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to God's Promises Are Yes and Amen. slide",
+      "geometry": {
+        "x": 356.22,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 240,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Grow Daily. Walk in Purpose. slide",
+      "geometry": {
+        "x": 377.41,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 241,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Live Anchored. Lead With Purpose. slide",
+      "geometry": {
+        "x": 398.59,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 242,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Your Calling. His Kingdom. Eternal Impact. slide",
+      "geometry": {
+        "x": 419.78,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 243,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Go Deeper. Live Stronger. slide",
+      "geometry": {
+        "x": 440.97,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 244,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Finish Well. Leave a Legacy. slide",
+      "geometry": {
+        "x": 462.16,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 245,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to Stay Focused. Walk in Faith. slide",
+      "geometry": {
+        "x": 483.34,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    },
+    {
+      "elementIndex": 246,
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "type": "button",
+      "name": "Go to God Guides Every Faithful Step. slide",
+      "geometry": {
+        "x": 504.53,
+        "y": 684.19,
+        "width": 14,
+        "height": 8.95
+      }
+    }
+  ]
+}

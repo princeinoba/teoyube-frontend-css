@@ -5,11 +5,11 @@ const path = require("node:path");
 const workspaceRoot = path.resolve(__dirname, "../..");
 const chunkRoot = path.join(workspaceRoot, ".next", "static", "chunks");
 const prohibited = [
-  ["Scripture corpus registry", /teoyube-scripture-registry-2026-07-20\.1/],
-  ["Scripture reference-index implementation", /createCanonicalScriptureRepository|collectReferenceLabels/],
+  ["Scripture corpus registry", /teoyube-scripture-registry-2026-07-20\.2/],
+  ["Scripture corpus/importer implementation", /createCanonicalScriptureRepository|collectReferenceLabels|teoyube-web-usfm-importer-1\.0\.0|engwebp-2020-stable-2026-07-10\.p15b\.1/],
   ["Scripture server repository error", /ScriptureRepositoryError/],
   ["legacy TIG KJV corpus seed", /scripture_romans_8_28|scripture_isaiah_40_31|scripture_joshua_1_9/],
-  ["Scripture source checksum", /45dbec709a49fd5fe8a0c115c451ecf56ec5b2b538b72e31563606faa823bdf6/]
+  ["Scripture source/corpus checksum", /4253589697dc6b5e92695655f2f28792d50e7be7b9c8e212af4f4bd18e866c3b|6e6b3f95b5d61c83c06534ee4281f10b6e4e02c878b75141dcdd4403bf42d77f|544b67548c04a36e2445fa6601f07f6cdb7b8d044ae2691591629609b2eeeeb2/]
 ];
 
 if (!fs.existsSync(chunkRoot)) {
@@ -35,4 +35,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`SCRIPTURE CLIENT BUNDLE CONTRACT: PASSED (${chunks.length} JavaScript chunks checked; no corpus, reference index, repository implementation, or blocked KJV seed found).`);
+console.log(`SCRIPTURE CLIENT BUNDLE CONTRACT: PASSED (${chunks.length} JavaScript chunks checked; no corpus/index/importer internals, server repository implementation, or blocked KJV seed found).`);

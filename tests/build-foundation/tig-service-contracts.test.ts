@@ -7,12 +7,14 @@ import { createDeterministicDailySpiritualLoopSeed } from "../../src/features/jo
 import { createPrayerPageViewModel, createPrayerReplyDto } from "../../src/features/prayer/application/prayer-service";
 import { createCallingCompassViewModel } from "../../src/features/calling/application/calling-compass-service";
 import { runTigEndToEndRecommendation } from "../../src/lib/teoyube/tig/tig-end-to-end-recommendation-flow";
+import { getScriptureSeedById } from "../../src/lib/tig/seed/scriptures.seed";
 import {
   TIG_DATASET_VERSION,
   TIG_RULESET_VERSION,
   canonicalTigService,
   createCanonicalTigService
 } from "../../src/server/tig/canonical-tig-service";
+import { canonicalScriptureRepository } from "../../src/server/scripture/canonical-scripture-repository";
 import { TIG_CHARACTERIZATION_FIXTURES } from "../fixtures/tig/canonical-output-characterization";
 
 const workspaceRoot = path.resolve(__dirname, "../..");
@@ -142,6 +144,12 @@ describe("canonical typed TIG service", () => {
     expect(result.explanation.scriptureAnchors.length).toBeGreaterThan(0);
     expect(await service.explain(result.recommendationId)).toEqual(result.explanation);
     expect(await service.validateSources(result)).toEqual(result.sourceValidation);
+    expect(result.sourceValidation.missing).toEqual([]);
+    for (const anchor of result.explanation.scriptureAnchors) {
+      expect(anchor.validation, anchor.reference).toBe("verified");
+      const canonicalReference = getScriptureSeedById(anchor.reference)?.reference || anchor.reference;
+      expect(canonicalScriptureRepository.hasReference(canonicalReference), anchor.reference).toBe(true);
+    }
   });
 
   it("uses dataset/ruleset/config-aware cache keys without caching raw private reflection or prayer text", async () => {

@@ -15,8 +15,8 @@ async function samples(iterations: number, operation: () => Promise<unknown>): P
   return values;
 }
 
-describe("Scripture reference-only performance budgets", () => {
-  it("records bounded local corpus/index, reference, context, search, and cache timings", async () => {
+describe("WEB Scripture retrieval performance budgets", () => {
+  it("records bounded corpus/index load, exact retrieval, context, search, validation, and cache timings", async () => {
     const moduleStartedAt = performance.now();
     const { createCanonicalScriptureRepository } = await import("../../src/server/scripture/canonical-scripture-repository");
     const corpusModuleLoadMs = performance.now() - moduleStartedAt;
@@ -27,18 +27,22 @@ describe("Scripture reference-only performance budgets", () => {
 
     const exact = await samples(100, () => repository.getByReference(parsed.reference));
     const context = await samples(100, () => repository.getContext(parsed.reference));
-    const coldSearch = await samples(50, () => createCanonicalScriptureRepository().search({ text: "Ephesians 1:18", limit: 10 }));
+    const coldSearch = await samples(50, () => createCanonicalScriptureRepository().search({ text: "lamp feet path", limit: 10 }));
     await repository.search({ text: "Romans 8:28", limit: 10 });
     const cachedSearch = await samples(100, () => repository.search({ text: "Romans 8:28", limit: 10 }));
+    const passage = await repository.getByReference(parsed.reference);
+    const validation = await samples(100, () => repository.validateCitation(passage!.citation, passage!.verses.map((verse) => verse.text).join(" ")));
     const metrics = {
       corpusModuleLoadMs,
       referenceIndexBuildMs: repository.diagnostics().referenceIndexBuildDurationMs,
       exactReference: { p50: percentile(exact, 0.5), p95: percentile(exact, 0.95) },
       context: { p50: percentile(context, 0.5), p95: percentile(context, 0.95) },
       lexicalSearchMiss: { p50: percentile(coldSearch, 0.5), p95: percentile(coldSearch, 0.95) },
-      lexicalSearchHit: { p50: percentile(cachedSearch, 0.5), p95: percentile(cachedSearch, 0.95) }
+      lexicalSearchHit: { p50: percentile(cachedSearch, 0.5), p95: percentile(cachedSearch, 0.95) },
+      citationValidation: { p50: percentile(validation, 0.5), p95: percentile(validation, 0.95) },
+      cache: repository.diagnostics()
     };
-    console.info(`SCRIPTURE_REFERENCE_ONLY_PERFORMANCE ${JSON.stringify(metrics)}`);
+    console.info(`SCRIPTURE_WEB_PERFORMANCE ${JSON.stringify(metrics)}`);
 
     expect(metrics.corpusModuleLoadMs).toBeLessThan(5_000);
     expect(metrics.referenceIndexBuildMs).toBeLessThan(250);
@@ -46,5 +50,6 @@ describe("Scripture reference-only performance budgets", () => {
     expect(metrics.context.p95).toBeLessThan(25);
     expect(metrics.lexicalSearchMiss.p95).toBeLessThan(100);
     expect(metrics.lexicalSearchHit.p95).toBeLessThan(25);
-  });
+    expect(metrics.citationValidation.p95).toBeLessThan(25);
+  }, 15_000);
 });

@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const { CONTRACT_PATH, buildVisualContract } = require("./visualContractLib.cjs");
+const { isApprovedSourceDelta, verifyScriptureContentDelta } = require("./scriptureContentDeltaOverlay.cjs");
 
 function mapByPath(records) {
   return new Map(records.map((record) => [record.path, record]));
@@ -25,6 +26,8 @@ if (!fs.existsSync(CONTRACT_PATH)) {
 const expected = JSON.parse(fs.readFileSync(CONTRACT_PATH, "utf8"));
 const actual = buildVisualContract();
 const failures = [];
+const scriptureDelta = verifyScriptureContentDelta();
+if (!scriptureDelta.valid) scriptureDelta.failures.forEach((failure) => failures.push(`Owner-approved Scripture content delta: ${failure}`));
 
 const expectedFiles = mapByPath(expected.protectedFiles);
 const actualFiles = mapByPath(actual.protectedFiles);
@@ -36,7 +39,7 @@ for (const [relativePath, expectedRecord] of expectedFiles) {
     continue;
   }
   if (expectedRecord.bytes !== actualRecord.bytes || expectedRecord.sha256 !== actualRecord.sha256) {
-    failures.push(`Protected visual file changed: ${relativePath}`);
+    if (!isApprovedSourceDelta(relativePath, actualRecord.sha256, actualRecord.bytes, scriptureDelta)) failures.push(`Protected visual file changed: ${relativePath}`);
   }
 }
 
@@ -91,3 +94,4 @@ console.log(`DOM classes verified: ${actualMarkup.classes.length}`);
 console.log(`DOM IDs verified: ${actualMarkup.ids.length}`);
 console.log(`CSS classes verified: ${actualMarkup.cssClasses.length}`);
 console.log(`Animation names verified: ${actualMarkup.animationNames.length}`);
+console.log(`Exact owner-approved Scripture source overlays replayed: ${scriptureDelta.approvedByPath.size}.`);

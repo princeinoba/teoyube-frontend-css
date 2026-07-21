@@ -1,0 +1,1109 @@
+{
+  "schemaVersion": 1,
+  "decisionId": "TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B",
+  "approvalDate": "2026-07-20",
+  "ownerRole": "Teoyube project owner",
+  "evidenceCommit": "4da2adfaa784039c5250a894fdcbd4c4aea64e82",
+  "checkpointTag": "teoyube-prompt15a-quotation-gate-4da2adf",
+  "inventoryPath": "docs/scripture/legacy-quotation-owner-review.json",
+  "inventorySha256": "f6108e8617786464888dcbabb3f48899ed5a113d4d3851af947ced776d91d68c",
+  "archiveSha256": "4253589697dc6b5e92695655f2f28792d50e7be7b9c8e212af4f4bd18e866c3b",
+  "translation": {
+    "id": "engwebp",
+    "name": "World English Bible",
+    "abbreviation": "WEB"
+  },
+  "scopedVisualApproval": "Content-only wrapping, fluid height growth, and downstream vertical movement caused solely by the exact 17 WEB quotations and WEB citation labels.",
+  "prohibitedChanges": [
+    "css",
+    "dom_or_class_structure",
+    "assets",
+    "fonts",
+    "fixed_dimensions",
+    "truncation",
+    "breakpoints",
+    "immutable_baseline_overwrite"
+  ],
+  "records": [
+    {
+      "id": "UI-TODAY-001",
+      "routeOrSurface": [
+        "static:#today",
+        "next:/"
+      ],
+      "sourceLocations": [
+        "index.html:100",
+        "src/app/_today/ApprovedTodayView.tsx:276"
+      ],
+      "selector": ".daily-inspiration-card blockquote",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Psalm 121:7",
+      "existingWording": "The Lord will keep you from all harm; He will watch over your life.",
+      "existingWordingSha256": "7d88f21473f89a23bbfd47c3545027969b7ce44df159c4abe703fca0123c3ce9",
+      "exactWebWording": "The LORD will keep you from all evil. He will keep your soul.",
+      "exactWebWordingSha256": "1e82a2ef3f7db519a95ce116c6a01e42a7e710af59f4aef7d7895c288ea4603e",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Psalm 121:7 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-CANON-001",
+      "routeOrSurface": [
+        "static:#canon",
+        "next:/canon"
+      ],
+      "sourceLocations": [
+        "app.js:6557",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".canon-profile-widget blockquote",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Ephesians 1:18",
+      "existingWording": "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.",
+      "existingWordingSha256": "52b3df1de2ad8c6bec9d510208f03312b1ba4a96f9bf575ca093c6c1d6fed92a",
+      "exactWebWording": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "exactWebWordingSha256": "12262c980b4b44955ce4bd3740aed364c0c643dba9a6d39a4d411a3087fe1ae3",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Ephesians 1:18 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-CALLING-001",
+      "routeOrSurface": [
+        "static:#calling",
+        "next:/calling-compass"
+      ],
+      "sourceLocations": [
+        "index.html:838",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".calling-daily-inspiration p",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Ephesians 1:18",
+      "existingWording": "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.",
+      "existingWordingSha256": "52b3df1de2ad8c6bec9d510208f03312b1ba4a96f9bf575ca093c6c1d6fed92a",
+      "exactWebWording": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "exactWebWordingSha256": "12262c980b4b44955ce4bd3740aed364c0c643dba9a6d39a4d411a3087fe1ae3",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Ephesians 1:18 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-BOOK-001",
+      "routeOrSurface": [
+        "static:#book",
+        "next:/book"
+      ],
+      "sourceLocations": [
+        "index.html:1112",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".book-encouragement-card p",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Proverbs 3:5-6",
+      "existingWording": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to Him, and He will make your paths straight.",
+      "existingWordingSha256": "076dbea306d782557a157c540aa8ac1d2fe67d1b0b9f0173d910b6c6312e0eec",
+      "exactWebWording": "Trust in the LORD with all your heart, and don’t lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight.",
+      "exactWebWordingSha256": "18127a4bf731b619e205a5aca73e9f89dfd1e33b3207d9ac27bc944ae128304e",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Proverbs 3:5-6 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-BOOK-002",
+      "routeOrSurface": [
+        "static:#book",
+        "next:/book"
+      ],
+      "sourceLocations": [
+        "index.html:1196",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".book-journey-scripture p",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Psalm 77:11",
+      "existingWording": "I will remember the deeds of the Lord; yes, I will remember your miracles of long ago.",
+      "existingWordingSha256": "01058d68917da93967f27d6082a770b5dfdb118262053929018f9550329b0438",
+      "exactWebWording": "I will remember the LORD’s deeds; for I will remember your wonders of old.",
+      "exactWebWordingSha256": "0d93983ad716c31e70ce7a6eeabe316fa05bec4a11c8098202d91e4fa7b1f953",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Psalm 77:11 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-BOOK-003",
+      "routeOrSurface": [
+        "static:#book",
+        "next:/book"
+      ],
+      "sourceLocations": [
+        "index.html:1212",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".book-lantern-card h4",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Luke 16:10",
+      "existingWording": "Stay faithful in the little, God will entrust you with much.",
+      "existingWordingSha256": "298d94abaade66c054395ec6c5f2c7ccb3fe591aced63885eda420be085ec27d",
+      "exactWebWording": "He who is faithful in a very little is faithful also in much. He who is dishonest in a very little is also dishonest in much.",
+      "exactWebWordingSha256": "e141e90f3dadf61a73e8b771ede893ea564eee2a998766597eb9512a752b35e9",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Luke 16:10 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-LEXICON-001",
+      "routeOrSurface": [
+        "static:#lexicon",
+        "next:/lexicon"
+      ],
+      "sourceLocations": [
+        "index.html:1259",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".lexicon-inspiration-card p:not(.eyebrow)",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Colossians 3:16",
+      "existingWording": "Let the word of Christ dwell in you richly in all wisdom.",
+      "existingWordingSha256": "65f3cd594ff42830817c3cb8cf2a68fea80b6d6b7cf1d6e2e2262bde3896d6e6",
+      "exactWebWording": "Let the word of Christ dwell in you richly; in all wisdom teaching and admonishing one another with psalms, hymns, and spiritual songs, singing with grace in your heart to the Lord.",
+      "exactWebWordingSha256": "90f369bdf6305aa824255d8f511a448f67d294ad3548c23664d2b67b3d406d9d",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Colossians 3:16 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-LEXICON-002",
+      "routeOrSurface": [
+        "static:#lexicon",
+        "next:/lexicon"
+      ],
+      "sourceLocations": [
+        "index.html:1318",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".lexicon-scripture-art p",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Proverbs 9:10",
+      "existingWording": "The fear of the Lord is the beginning of wisdom.",
+      "existingWordingSha256": "65e32d2a0cb6fee23e9ac19557bc83a56dd54021825355c35e18e44bd6026d78",
+      "exactWebWording": "The fear of the LORD is the beginning of wisdom. The knowledge of the Holy One is understanding.",
+      "exactWebWordingSha256": "f5962d20b76149ecf7ea53441ac108adec76743da6ee1c7521506a89298b914d",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Proverbs 9:10 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-GUIDE-001",
+      "routeOrSurface": [
+        "static:#guide",
+        "next:/teo-guide"
+      ],
+      "sourceLocations": [
+        "index.html:1507",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "selector": ".guide-wisdom-banner p",
+      "uiState": [
+        "default"
+      ],
+      "reference": "Psalm 119:105",
+      "existingWording": "Your word is a lamp to my feet and a light to my path.",
+      "existingWordingSha256": "ba857706e4b188facde25d04fe9b25157b8ce4dece11dfe0990cfe54a1ddaf9c",
+      "exactWebWording": "Your word is a lamp to my feet, and a light for my path.",
+      "exactWebWordingSha256": "6bef518237c67747c2807509e2b6e95a39e1d188fc4cadc5eac9eecb5f161a20",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Psalm 119:105 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-001",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables",
+        "next:/promise-table",
+        "next:/tables"
+      ],
+      "sourceLocations": [
+        "scripts/seedDB.js:6-9",
+        "app.js:590"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "api-success",
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "Ephesians 1:18",
+      "existingWording": "The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,",
+      "existingWordingSha256": "ae775c3cef22cf4d1081b95054ecc3d0634e6a2a000d7568cd168de6ea993e16",
+      "exactWebWording": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,",
+      "exactWebWordingSha256": "12262c980b4b44955ce4bd3740aed364c0c643dba9a6d39a4d411a3087fe1ae3",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "Ephesians 1:18 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-002",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables",
+        "next:/promise-table",
+        "next:/tables"
+      ],
+      "sourceLocations": [
+        "scripts/seedDB.js:17-20",
+        "app.js:596"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "api-success",
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:1",
+      "existingWording": "We then, as workers together with him, beseech you also that ye receive not the grace of God in vain.",
+      "existingWordingSha256": "15a4c7c252b9f7ca0427c98b9f720c5f8215b6c3f183394ee7bf7faf898d1267",
+      "exactWebWording": "Working together, we entreat also that you do not receive the grace of God in vain.",
+      "exactWebWordingSha256": "e42ca1c06a346446fa3cf8acd5a5e08d04fb7e686c15154c1e609adba0a8d400",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:1 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-003",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables",
+        "next:/promise-table",
+        "next:/tables"
+      ],
+      "sourceLocations": [
+        "scripts/seedDB.js:27-32",
+        "app.js:603"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "api-success",
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:2",
+      "existingWording": "(For he saith, I have heard thee in a time accepted, and in the day of salvation have I succored thee: behold, now is the day of salvation.)",
+      "existingWordingSha256": "bf9c1302a3655b3de5a589e74eb34f4a6dbf0a9d2059e9515e3130a92b55af2b",
+      "exactWebWording": "For he says, “At an acceptable time I listened to you. In a day of salvation I helped you.” Behold, now is the acceptable time. Behold, now is the day of salvation.",
+      "exactWebWordingSha256": "3c5e748c722b6bb88e1c57ff1cfa87626ab6895b8ae7bdbbb896bbec013399f8",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:2 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-004",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables"
+      ],
+      "sourceLocations": [
+        "app.js:609"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:3",
+      "existingWording": "Giving no offense in any thing, that the mininstry be not blamed:",
+      "existingWordingSha256": "1446f7bf6a174d711331ac80992ff3d8fa88b65937d852d201ef0ba20a4cb087",
+      "exactWebWording": "We give no occasion of stumbling in anything, that our service may not be blamed,",
+      "exactWebWordingSha256": "255cd559511903084fa501d74fcb0b5f693bb10c946ecc9f533d31eb2e87323b",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:3 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-005",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables"
+      ],
+      "sourceLocations": [
+        "app.js:616"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:4",
+      "existingWording": "But in all things approving ourselves as the misnisters of God, in much patience, in afflictions, in necessities, in distresses,",
+      "existingWordingSha256": "4ef8c65ceee23e88712ac2603c74d22eccb820ade15c2e35673495788b388ab5",
+      "exactWebWording": "but in everything commending ourselves as servants of God: in great endurance, in afflictions, in hardships, in distresses,",
+      "exactWebWordingSha256": "6fe7d51a8380d1b77f7b45d5255b9732acff59cb26b67558ec80926efe14bdbd",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:4 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-006",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables"
+      ],
+      "sourceLocations": [
+        "app.js:622"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:5",
+      "existingWording": "In stripes, in imprisonments, in tum-ults, in labours, in watchings, in fastings,",
+      "existingWordingSha256": "ff863984832efbd9549e0ff6941e35fa3ed38f1e83749dba5938cd5d22cdfb8f",
+      "exactWebWording": "in beatings, in imprisonments, in riots, in labors, in watchings, in fastings,",
+      "exactWebWordingSha256": "b33ff74b1a5c91fff33e8555a450b0e2b4643819b64985f5f1b94b23c799e02f",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:5 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-007",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables"
+      ],
+      "sourceLocations": [
+        "app.js:628"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:6",
+      "existingWording": "By pureness, by knowledge, by long-suffering, by kindness, by the Holy Ghost, by love unfeigned,",
+      "existingWordingSha256": "32fb0bf251b3ee3ef9d8d9608d917bba921056068959ce92d6b1e9c39e24ab43",
+      "exactWebWording": "in pureness, in knowledge, in perseverance, in kindness, in the Holy Spirit, in sincere love,",
+      "exactWebWordingSha256": "3c2ca944071d1b31bcdf36e9ac79ed264886dd757d482c340bcc6dc396111df4",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:6 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    },
+    {
+      "id": "UI-PROMISE-008",
+      "routeOrSurface": [
+        "static:#table",
+        "static:#teoyube-tables"
+      ],
+      "sourceLocations": [
+        "app.js:635"
+      ],
+      "selector": [
+        ".promise-search-item p",
+        ".table-detail-copy p"
+      ],
+      "uiState": [
+        "local-fallback",
+        "expanded-row"
+      ],
+      "reference": "2 Corinthians 6:7",
+      "existingWording": "By the word of truth, by the power of God, by the armour of righteousness on the right hand and on the left,",
+      "existingWordingSha256": "48bf29c0fc565922a753f3271e1b5b0602319f15738ba43098a23d60267cae0d",
+      "exactWebWording": "in the word of truth, in the power of God, by the armor of righteousness on the right hand and on the left,",
+      "exactWebWordingSha256": "5330d2486fffe6c9c827eb109707f7a91f53ecc9f8f7e991003c7ffd78e1e617",
+      "semanticRole": "verbatim_scripture_quotation",
+      "ownerDecision": "REPLACE_WITH_EXACT_WEB",
+      "translationLabelTreatment": "2 Corinthians 6:7 · WEB in the existing citation/reference element",
+      "affectedViewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedVisualImpact": "Exact WEB wording may wrap and increase fluid content height; no CSS, DOM/class, asset, font, dimension, truncation, or breakpoint change is authorized.",
+      "implementationResult": "IMPLEMENTED",
+      "validationResult": "PASS_EXACT_WEB_SOURCE_AND_CONTENT_DELTA"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "index.html",
+      "originalSha256": "42a6bcb4848aacdc6aaa9d5fb4848b03e731c8fa7a181b8b423ffa508d0cddce",
+      "originalBytes": 92151,
+      "approvedNewSha256": "44be7b485457a22e6c39407861c34c57300bc6d25733c342207c77f5edc787d8",
+      "approvedNewBytes": 92485,
+      "recordIds": [
+        "UI-TODAY-001",
+        "UI-CALLING-001",
+        "UI-BOOK-001",
+        "UI-BOOK-002",
+        "UI-BOOK-003",
+        "UI-LEXICON-001",
+        "UI-LEXICON-002",
+        "UI-GUIDE-001"
+      ],
+      "operations": [
+        {
+          "recordIds": [
+            "UI-TODAY-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "75fdcd37c323b8c049d7ac90644a946212f00d474b7ed43dbf71c9d402d56708",
+          "authorizedNewTextSha256": "15439d533d0806150c619d05b6c5cf27923938452ac50621f059d53224c1b330",
+          "oldText": "<blockquote>The Lord will keep you from all harm; He will watch over your life.</blockquote>",
+          "newText": "<blockquote>The LORD will keep you from all evil. He will keep your soul.</blockquote>"
+        },
+        {
+          "recordIds": [
+            "UI-TODAY-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "2a27d6746ee8860dcd6bdcb2e259ed13f659df80f6f45c3bc36f628b855c8963",
+          "authorizedNewTextSha256": "50d99d596edbeb9fddac8393f78aa1f6f2b7c742d8c46400d2da738c2d2dcfc8",
+          "oldText": "<strong>Psalm 121:7</strong>",
+          "newText": "<strong>Psalm 121:7 · WEB</strong>"
+        },
+        {
+          "recordIds": [
+            "UI-CALLING-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "52b3df1de2ad8c6bec9d510208f03312b1ba4a96f9bf575ca093c6c1d6fed92a",
+          "authorizedNewTextSha256": "12262c980b4b44955ce4bd3740aed364c0c643dba9a6d39a4d411a3087fe1ae3",
+          "oldText": "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.",
+          "newText": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,"
+        },
+        {
+          "recordIds": [
+            "UI-CALLING-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "d8955d0326f220c206e874bd8d442646e788d9c3b1bbe73235290cf11eefc169",
+          "authorizedNewTextSha256": "914061cae6ddbc0f3789d3a1b4396754fd4cda304c689057b467b6427f957b82",
+          "oldText": "<strong>Ephesians 1:18</strong>",
+          "newText": "<strong>Ephesians 1:18 · WEB</strong>"
+        },
+        {
+          "recordIds": [
+            "UI-BOOK-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "076dbea306d782557a157c540aa8ac1d2fe67d1b0b9f0173d910b6c6312e0eec",
+          "authorizedNewTextSha256": "18127a4bf731b619e205a5aca73e9f89dfd1e33b3207d9ac27bc944ae128304e",
+          "oldText": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to Him, and He will make your paths straight.",
+          "newText": "Trust in the LORD with all your heart, and don’t lean on your own understanding. In all your ways acknowledge him, and he will make your paths straight."
+        },
+        {
+          "recordIds": [
+            "UI-BOOK-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "79086a173e1138563d533ea8a70e9a4562f2de726bf58741d33b902bf261268f",
+          "authorizedNewTextSha256": "80140bcce6e625128ea9a8767e9d375eeb350f437dd43a649e15e4e7f261e9ff",
+          "oldText": "<b>Proverbs 3:5-6</b>",
+          "newText": "<b>Proverbs 3:5-6 · WEB</b>"
+        },
+        {
+          "recordIds": [
+            "UI-BOOK-002"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "58e63ae62a6aec3880a0b88d99c36f85953ab48caed415a5fa7a1b1983ceea01",
+          "authorizedNewTextSha256": "e3487768e2f4e03c20f54a0b35595f2c72e902ebb2f840d8b72627ce32310668",
+          "oldText": "I will remember the deeds of the Lord;<br />yes, I will remember your miracles of long ago.",
+          "newText": "I will remember the LORD’s deeds;<br />for I will remember your wonders of old."
+        },
+        {
+          "recordIds": [
+            "UI-BOOK-002"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "f6fde576f1efc67e72e8346385ce091d2b7fb45eba18fb8dcbf42219c3bf8977",
+          "authorizedNewTextSha256": "12c48e3a2c09dbb669899038428520bc0644d770b1e78d6f5311652d67f56d5e",
+          "oldText": "<b>Psalm 77:11</b>",
+          "newText": "<b>Psalm 77:11 · WEB</b>"
+        },
+        {
+          "recordIds": [
+            "UI-BOOK-003"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "298d94abaade66c054395ec6c5f2c7ccb3fe591aced63885eda420be085ec27d",
+          "authorizedNewTextSha256": "e141e90f3dadf61a73e8b771ede893ea564eee2a998766597eb9512a752b35e9",
+          "oldText": "Stay faithful in the little, God will entrust you with much.",
+          "newText": "He who is faithful in a very little is faithful also in much. He who is dishonest in a very little is also dishonest in much."
+        },
+        {
+          "recordIds": [
+            "UI-BOOK-003"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "fb04372143f26822cf508c15115ed2ebf332e338c98f1aaa580920f8fe4c2103",
+          "authorizedNewTextSha256": "4b25910a00e855cee5b0adc31e3f28db9729c890768a2084d61fc1842852b29a",
+          "oldText": "<b>Luke 16:10</b>",
+          "newText": "<b>Luke 16:10 · WEB</b>"
+        },
+        {
+          "recordIds": [
+            "UI-LEXICON-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "65f3cd594ff42830817c3cb8cf2a68fea80b6d6b7cf1d6e2e2262bde3896d6e6",
+          "authorizedNewTextSha256": "90f369bdf6305aa824255d8f511a448f67d294ad3548c23664d2b67b3d406d9d",
+          "oldText": "Let the word of Christ dwell in you richly in all wisdom.",
+          "newText": "Let the word of Christ dwell in you richly; in all wisdom teaching and admonishing one another with psalms, hymns, and spiritual songs, singing with grace in your heart to the Lord."
+        },
+        {
+          "recordIds": [
+            "UI-LEXICON-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "46393dc138185c4f3c176bec5b708408e2d4dab11f016e8815961cd150d3ec8b",
+          "authorizedNewTextSha256": "cc03d888916de111b8ac1bb4dbd9468425e5db916b569a817b113fa3b501e319",
+          "oldText": "<b>Colossians 3:16</b>",
+          "newText": "<b>Colossians 3:16 · WEB</b>"
+        },
+        {
+          "recordIds": [
+            "UI-LEXICON-002"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "65e32d2a0cb6fee23e9ac19557bc83a56dd54021825355c35e18e44bd6026d78",
+          "authorizedNewTextSha256": "f5962d20b76149ecf7ea53441ac108adec76743da6ee1c7521506a89298b914d",
+          "oldText": "The fear of the Lord is the beginning of wisdom.",
+          "newText": "The fear of the LORD is the beginning of wisdom. The knowledge of the Holy One is understanding."
+        },
+        {
+          "recordIds": [
+            "UI-LEXICON-002"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "e64f86040edfd714f239427180524f98a0914985e3357b84f71948431b5d59f8",
+          "authorizedNewTextSha256": "eef1fb4df8c080ffe9743706e340554e0cbdb1a2198d90f6a5fde26bb7f38ccc",
+          "oldText": "<b>Proverbs 9:10</b>",
+          "newText": "<b>Proverbs 9:10 · WEB</b>"
+        },
+        {
+          "recordIds": [
+            "UI-GUIDE-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "ba857706e4b188facde25d04fe9b25157b8ce4dece11dfe0990cfe54a1ddaf9c",
+          "authorizedNewTextSha256": "6bef518237c67747c2807509e2b6e95a39e1d188fc4cadc5eac9eecb5f161a20",
+          "oldText": "Your word is a lamp to my feet and a light to my path.",
+          "newText": "Your word is a lamp to my feet, and a light for my path."
+        },
+        {
+          "recordIds": [
+            "UI-GUIDE-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "932b081ec25e163a9c3803058d1138df2adee5a3831fa02f91b278fefd677ee3",
+          "authorizedNewTextSha256": "46b4855a6cb56fc7a51d89db145f0851b71a072926f902ed0fc4b35e333e9190",
+          "oldText": "<b>Psalm 119:105</b>",
+          "newText": "<b>Psalm 119:105 · WEB</b>"
+        }
+      ]
+    },
+    {
+      "path": "app.js",
+      "originalSha256": "86ef586e92abb52dcbd73b2e4c8628266b2c65aa34d0f815fdbc8c58bb852c81",
+      "originalBytes": 585204,
+      "approvedNewSha256": "e1275c4d62561002cef5cca25b1a31e5a728637e37fef8d328913caa4a73495e",
+      "approvedNewBytes": 585321,
+      "recordIds": [
+        "UI-PROMISE-001",
+        "UI-PROMISE-002",
+        "UI-PROMISE-003",
+        "UI-PROMISE-004",
+        "UI-PROMISE-005",
+        "UI-PROMISE-006",
+        "UI-PROMISE-007",
+        "UI-PROMISE-008",
+        "UI-CANON-001"
+      ],
+      "operations": [
+        {
+          "recordIds": [
+            "UI-PROMISE-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "d0962fa3a986a4153e956a9a5f9f5080057cf2b656a6f3cda015a93adbab52be",
+          "authorizedNewTextSha256": "aa227dfe8e8550b13eb1a9ed807b0ab28d4cc50246d91ab3071041950252e0d6",
+          "oldText": "The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints, -Ephesians 1:18-",
+          "newText": "having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints, -Ephesians 1:18 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-002"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "24ffdbdd2e3bc42afe92da395291e5ae17d5e23a02a1c73dd95d48654bc5a1f1",
+          "authorizedNewTextSha256": "2e465bd42f2087464bce05267060c650bf39b55c2e8df81ade90d3001f01b390",
+          "oldText": "We then, as workers together with him, beseech you also that ye receive not the grace of God in vain. -2Corinthians 6:1-",
+          "newText": "Working together, we entreat also that you do not receive the grace of God in vain. -2 Corinthians 6:1 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-003"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "87266fd9e0b130f300b6bcf202a0202927b11e1ad7e4e761cfb6ff8a99fc9798",
+          "authorizedNewTextSha256": "3435b1954e7962e945afc98d6f2ef69c6be0fb22c3d2cfcb48a06a35ebb6f5d6",
+          "oldText": "(For he saith, I have heard thee in a time accepted, and in the day of salvation have I succored thee: behold, now is the day of salvation.) -2Corinthians 6:2-",
+          "newText": "For he says, “At an acceptable time I listened to you. In a day of salvation I helped you.” Behold, now is the acceptable time. Behold, now is the day of salvation. -2 Corinthians 6:2 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-004"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "d4f1b4eb0e3d071b20395fcceb23ac3789aaba86f16d73db861d74ddb95e8091",
+          "authorizedNewTextSha256": "10c5f19f99b34957ccd4670df51ae852f8ea606ed37faebebd62488e9232d124",
+          "oldText": "Giving no offense in any thing, that the mininstry be not blamed: -2Corinthians 6:3-",
+          "newText": "We give no occasion of stumbling in anything, that our service may not be blamed, -2 Corinthians 6:3 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-005"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "6c4d23f2e1fdc4f93fea60abb70f41c8d6c3d7d3ccff2a82ed010f6027889785",
+          "authorizedNewTextSha256": "0ea94ad77a9e562ae32e3d1f60e11da45cfcf678468b8726b388cf247826fb97",
+          "oldText": "But in all things approving ourselves as the misnisters of God, in much patience, in afflictions, in necessities, in distresses, -2Corinthians 6:4-",
+          "newText": "but in everything commending ourselves as servants of God: in great endurance, in afflictions, in hardships, in distresses, -2 Corinthians 6:4 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-006"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "f301d944d7e718dde819b33a855faf40e73fb9ee7d728314e807b1a6e9d8171d",
+          "authorizedNewTextSha256": "c5fd4eed0e7293d56592fe8951d561d46f50488ea6a2dd2f96d4db5e753010da",
+          "oldText": "In stripes, in imprisonments, in tum-ults, in labours, in watchings, in fastings, -2Corinthians 6:5-",
+          "newText": "in beatings, in imprisonments, in riots, in labors, in watchings, in fastings, -2 Corinthians 6:5 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-007"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "6c84dad46b976284af1480b197f7f3df7a9bf71c9a16e7f6cbc616e1d2c6a24f",
+          "authorizedNewTextSha256": "b8443ca1ed1eca66a5fa0091d320433a7025e18bb2c3f6f059efefa9b2c2491b",
+          "oldText": "By pureness, by knowledge, by long-suffering, by kindness, by the Holy Ghost, by love unfeigned, -2Corinthians 6:6-",
+          "newText": "in pureness, in knowledge, in perseverance, in kindness, in the Holy Spirit, in sincere love, -2 Corinthians 6:6 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-008"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "7202d27e5849be3d5731eb4e77b7ea321bb0c0b5f10f7633b9d4597b1d7c3b49",
+          "authorizedNewTextSha256": "f8ab2e2b40b9d205a38c1f11b3facb82dd76129e9a3e262d8927ccfbba899205",
+          "oldText": "By the word of truth, by the power of God, by the armour of righteousness on the right hand and on the left, -2Corinthians 6:7-",
+          "newText": "in the word of truth, in the power of God, by the armor of righteousness on the right hand and on the left, -2 Corinthians 6:7 · WEB-"
+        },
+        {
+          "recordIds": [
+            "UI-CANON-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "1afce88f953b08bd88e4a5db7e72c00f9f29eaf60807714174a9335ddaa92b2d",
+          "authorizedNewTextSha256": "6d09aeb8cff0ed748321224c7219da4c347e2e5338c60405b6b88dc69b20f752",
+          "oldText": "<blockquote>I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you.<br><b>Ephesians 1:18</b></blockquote>",
+          "newText": "<blockquote>having the eyes of your hearts enlightened, that you may know what is the hope of his calling, and what are the riches of the glory of his inheritance in the saints,<br><b>Ephesians 1:18 · WEB</b></blockquote>"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-001",
+            "UI-PROMISE-002",
+            "UI-PROMISE-003",
+            "UI-PROMISE-004",
+            "UI-PROMISE-005",
+            "UI-PROMISE-006",
+            "UI-PROMISE-007",
+            "UI-PROMISE-008"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "b3b9b6821f49476524f98031a67a2db7e8eb84d5e6e7403e95f8c3d8e5974967",
+          "authorizedNewTextSha256": "b6b50bfd1bca2095f00894fb2257bd60228abefb1e375db4d8e08276ee0001ba",
+          "oldText": "description.match(/-([A-Za-z0-9 ]+:\\d+)-?$/)",
+          "newText": "description.match(/-([A-Za-z0-9 ]+:\\d+)(?: · WEB)?-?\\s*$/)"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-001",
+            "UI-PROMISE-002",
+            "UI-PROMISE-003",
+            "UI-PROMISE-004",
+            "UI-PROMISE-005",
+            "UI-PROMISE-006",
+            "UI-PROMISE-007",
+            "UI-PROMISE-008"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "3f506ffb2ea2dfc62c8d72e03c5e29b3bbb3b5a6010f94b3b2b6f39308062635",
+          "authorizedNewTextSha256": "cb538251d0a73c38ae6d97ad841f506e5c7421b046c32a9dd62c0b2b3991bf4a",
+          "oldText": "return match ? `-${match[1]}-` : \"-Ephesians 1:18-\";",
+          "newText": "return match ? `-${match[1]} · WEB-` : \"-Ephesians 1:18 · WEB-\";"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-001",
+            "UI-PROMISE-002",
+            "UI-PROMISE-003",
+            "UI-PROMISE-004",
+            "UI-PROMISE-005",
+            "UI-PROMISE-006",
+            "UI-PROMISE-007",
+            "UI-PROMISE-008"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "a6a61a8967dcedacdaf9da399789c02480d4b38c1443e4d4f2b9484114b87c2e",
+          "authorizedNewTextSha256": "870e94d9e4185787c2961c04b10263831eaa6a8a9531f38ccc0d958b46629b3d",
+          "oldText": "description.replace(/\\s*-[A-Za-z0-9 ]+:\\d+-?\\s*$/, \"\")",
+          "newText": "description.replace(/\\s*-[A-Za-z0-9 ]+:\\d+(?: · WEB)?-?\\s*$/, \"\")"
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-001",
+            "UI-PROMISE-002",
+            "UI-PROMISE-003",
+            "UI-PROMISE-004",
+            "UI-PROMISE-005",
+            "UI-PROMISE-006",
+            "UI-PROMISE-007",
+            "UI-PROMISE-008"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "a1ffb493201f1a7c57bb6b9b64442174d0cfb574aec2d911f758524388a722f3",
+          "authorizedNewTextSha256": "912b14dc34e6408cef00474cb2efa4f3f837c6c715c29fc812460e25df3322d0",
+          "oldText": "rows = rows.sort((a, b) => getPromisePosition(a.description).localeCompare(getPromisePosition(b.description)));",
+          "newText": "rows = rows.sort((a, b) => a.tableIndex - b.tableIndex);"
+        }
+      ]
+    },
+    {
+      "path": "scripts/seedDB.js",
+      "originalSha256": "f1c60e5cd5cadbc077a5f5375059991dd03812757f0350a073631a500c89156d",
+      "originalBytes": 1857,
+      "approvedNewSha256": "def274e7120ab334f1933c7a41f54090a731bf3092edc6a438862a42a0085eb0",
+      "approvedNewBytes": 1879,
+      "recordIds": [
+        "UI-PROMISE-001",
+        "UI-PROMISE-002",
+        "UI-PROMISE-003"
+      ],
+      "operations": [
+        {
+          "recordIds": [
+            "UI-PROMISE-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "7751e9f392637bd2008011155687a9cf0ae9827b75805c97fb031906e415de9d",
+          "authorizedNewTextSha256": "c5d06f6a72a8a3abff8d6e8853007d6991b292141443867065b2a4fed54f9c12",
+          "oldText": "\"The eyes of your understanding being enlightened; \",\n      \"that ye may know what is the hope of his calling, \",\n      \"and what the riches of the glory of his inheritance in the saints, \",\n      \"-Ephesians 1:18- \"",
+          "newText": "\"having the eyes of your hearts enlightened, \",\n      \"that you may know what is the hope of his calling, \",\n      \"and what are the riches of the glory of his inheritance in the saints, \",\n      \"-Ephesians 1:18 · WEB- \""
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-002"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "2e1cd3206d5df701991974f1d8c9ca7b364f41e1e84ce0a0180c0e70550c2b5e",
+          "authorizedNewTextSha256": "bbfb03193f0579a85b088fe8200528224dc91a5a4997c7f2bd04ff57be6892e3",
+          "oldText": "\"We then, \",\n      \"as workers together with him, \",\n      \"beseech you also that ye receive not the grace of God in vain. \",\n      \"-2Corinthians 6:1- \"",
+          "newText": "\"Working together, \",\n      \"we entreat also that you do not receive the grace of God in vain. \",\n      \"-2 Corinthians 6:1 · WEB- \""
+        },
+        {
+          "recordIds": [
+            "UI-PROMISE-003"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "8f8b5ed631f829ff2721c532b13bb1d0df759344cc45cc1049ca31f8c25d3dd0",
+          "authorizedNewTextSha256": "c20f994d661ee5acccbff2ff239ffaf90ad242929f75ff828dca95020690bf43",
+          "oldText": "\"(For he saith, \",\n      \"I have heard thee in a time accepted, \",\n      \"and in the day of salvation have I succored thee: behold, \",\n      \"now is the day of salvation.) \",\n      \"-2Corinthians 6:2- \"",
+          "newText": "\"For he says, “At an acceptable time I listened to you. \",\n      \"In a day of salvation I helped you.” \",\n      \"Behold, now is the acceptable time. \",\n      \"Behold, now is the day of salvation. \",\n      \"-2 Corinthians 6:2 · WEB- \""
+        }
+      ]
+    },
+    {
+      "path": "src/app/_today/ApprovedTodayView.tsx",
+      "originalSha256": "b13f24b57092281260a7c87c2abd76e407977ad994b6c7c73db34e15c2fabcae",
+      "originalBytes": 18361,
+      "approvedNewSha256": "566b8dbc57f84068159d067cc8f370653f001524328009e15049253faa371639",
+      "approvedNewBytes": 18362,
+      "recordIds": [
+        "UI-TODAY-001"
+      ],
+      "operations": [
+        {
+          "recordIds": [
+            "UI-TODAY-001"
+          ],
+          "expectedOccurrences": 1,
+          "authorizedOldTextSha256": "aef53083b547d9b0583fa4daa6ead239d9131523de6ee043566fedc7aeaa6695",
+          "authorizedNewTextSha256": "56c16d14ae255c04fc9afe57f5df0ce094d9c0c4a663ddc278312156c18d89ef",
+          "oldText": "<blockquote>The Lord will keep you from all harm; He will watch over your life.</blockquote><strong>Psalm 121:7</strong>",
+          "newText": "<blockquote>The LORD will keep you from all evil. He will keep your soul.</blockquote><strong>Psalm 121:7 · WEB</strong>"
+        }
+      ]
+    },
+    {
+      "path": "src/app/_approved-source/approved-view-markup.generated.ts",
+      "originalSha256": "df0352bb287cc8dd62cfa8f16c7b110709b27320d8223baa1592322cf91fa167",
+      "originalBytes": 1728172,
+      "approvedNewSha256": "c20110b92d23d6d1652e9a9d3295527fae21d845391ba8c02efa100b9236f3c0",
+      "approvedNewBytes": 1730131,
+      "recordIds": [
+        "UI-CANON-001",
+        "UI-CALLING-001",
+        "UI-BOOK-001",
+        "UI-BOOK-002",
+        "UI-BOOK-003",
+        "UI-LEXICON-001",
+        "UI-LEXICON-002",
+        "UI-GUIDE-001",
+        "UI-PROMISE-001",
+        "UI-PROMISE-002",
+        "UI-PROMISE-003"
+      ],
+      "operations": [],
+      "derivedFrom": [
+        "index.html",
+        "app.js",
+        "scripts/seedDB.js"
+      ],
+      "derivation": "Fresh deterministic browser capture from the exact approved static source overlay; source digest and full tag/attribute structure are verified."
+    }
+  ],
+  "historicalBaselinesRemainReadOnly": true,
+  "contentDeltaArtifacts": [
+    {
+      "manifestPath": "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json",
+      "manifestSha256": "404f98be60170502522622ad262d5490d574133fe8505e1b0bde7e6bc1976822",
+      "artifactCount": 300,
+      "stateCount": 60,
+      "immutableBaselineOverwrites": 0
+    }
+  ],
+  "pgpSignatureVerification": "NOT_PERFORMED",
+  "ownerResidualRiskAcceptance": true,
+  "staticRuntime": "CANONICAL",
+  "nextRuntime": "PREVIEW_ONLY"
+}

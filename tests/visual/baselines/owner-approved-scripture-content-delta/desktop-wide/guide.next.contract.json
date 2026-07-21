@@ -1,0 +1,1586 @@
+{
+  "structure": [
+    {
+      "tag": "section",
+      "id": "guide",
+      "classes": [
+        "view",
+        "page-container",
+        "guide-view",
+        "active"
+      ],
+      "parent": -1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-layout"
+      ],
+      "parent": 0
+    },
+    {
+      "tag": "main",
+      "id": "",
+      "classes": [
+        "guide-main"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-hero"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 3
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 4
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 6
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 4
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-feature-panel"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "guide-feature-orb"
+      ],
+      "parent": 10
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-feature-copy"
+      ],
+      "parent": 10
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 12
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 12
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-feature-list"
+      ],
+      "parent": 10
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 16
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 16
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 16
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 20
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 20
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 20
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 15
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 24
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 24
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 24
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-help-section"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 28
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-help-grid"
+      ],
+      "parent": 28
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 31
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 31
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 31
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 35
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 35
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 35
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 39
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 39
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 39
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 30
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "h4",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 43
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-topics-section"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 47
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "quick-prompts",
+        "guide-topic-grid"
+      ],
+      "parent": 47
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary",
+        "prompt-chip"
+      ],
+      "parent": 49
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [
+        "guide-wisdom-banner"
+      ],
+      "parent": 2
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 58
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 58
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 60
+    },
+    {
+      "tag": "b",
+      "id": "",
+      "classes": [],
+      "parent": 60
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "guide-chat-panel"
+      ],
+      "parent": 1
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-chat-head"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 64
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 64
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 66
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 66
+    },
+    {
+      "tag": "section",
+      "id": "phase116bTeoGuideTools",
+      "classes": [
+        "phase116b-functional-panel"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-panel-head"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 70
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 71
+    },
+    {
+      "tag": "h3",
+      "id": "",
+      "classes": [],
+      "parent": 71
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 71
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [
+        "phase116b-score"
+      ],
+      "parent": 70
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-command-grid"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 76
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 77
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 77
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 76
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 80
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 80
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 76
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 83
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 83
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 76
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 86
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 86
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116b-action-row"
+      ],
+      "parent": 69
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 89
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 89
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 89
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 89
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 89
+    },
+    {
+      "tag": "div",
+      "id": "chatLog",
+      "classes": [
+        "chat-log"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "message-row",
+        "teo"
+      ],
+      "parent": 95
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "message-icon"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "message",
+        "teo"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "details",
+      "id": "",
+      "classes": [
+        "phase116-why-this-panel"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "parent": 99
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 100
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 100
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-why-grid"
+      ],
+      "parent": 99
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 104
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 104
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 107
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 110
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 110
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 113
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 113
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 116
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 116
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 119
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 122
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 122
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "parent": 103
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 125
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 125
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-path-row"
+      ],
+      "parent": 99
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 128
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 99
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 99
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 137
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 137
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 99
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 140
+    },
+    {
+      "tag": "aside",
+      "id": "",
+      "classes": [
+        "phase116-quality-score"
+      ],
+      "parent": 99
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-score-ring"
+      ],
+      "parent": 142
+    },
+    {
+      "tag": "strong",
+      "id": "",
+      "classes": [],
+      "parent": 143
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [],
+      "parent": 143
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 142
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 146
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 146
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 146
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-panel-actions"
+      ],
+      "parent": 99
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 150
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase115-feedback-controls"
+      ],
+      "parent": 96
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "parent": 153
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "guide-suggested-prompts"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "parent": 162
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-teo-groups"
+      ],
+      "parent": 162
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "active"
+      ],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [],
+      "parent": 164
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-teo-prompts"
+      ],
+      "parent": 162
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "prompt-chip"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "prompt-chip"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "prompt-chip"
+      ],
+      "parent": 172
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-search-suggestions"
+      ],
+      "parent": 162
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [],
+      "parent": 176
+    },
+    {
+      "tag": "span",
+      "id": "",
+      "classes": [
+        "eyebrow"
+      ],
+      "parent": 177
+    },
+    {
+      "tag": "small",
+      "id": "",
+      "classes": [],
+      "parent": 177
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "phase116-chip-row"
+      ],
+      "parent": 176
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "phase116-chip",
+        "subtle"
+      ],
+      "parent": 180
+    },
+    {
+      "tag": "form",
+      "id": "chatForm",
+      "classes": [
+        "chat-form"
+      ],
+      "parent": 63
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "guide-attach-button"
+      ],
+      "parent": 188
+    },
+    {
+      "tag": "input",
+      "id": "chatInput",
+      "classes": [],
+      "parent": 188
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "primary"
+      ],
+      "parent": 188
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "guide-mic-button"
+      ],
+      "parent": 188
+    },
+    {
+      "tag": "p",
+      "id": "",
+      "classes": [
+        "guide-chat-note"
+      ],
+      "parent": 63
+    }
+  ],
+  "assets": [
+    {
+      "elementIndex": 3,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(245, 251, 247, 0.98) 0px, rgba(245, 251, 247, 0.98) 32%, rgba(245, 251, 247, 0.7) 54%, rgba(0, 52, 40, 0.08)), url(/public/images/lexicon/word-of-the-day-bg.png)"
+    },
+    {
+      "elementIndex": 10,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle at 9% 20%, rgba(255, 255, 255, 0.18), rgba(0, 0, 0, 0) 23%), linear-gradient(135deg, rgba(0, 95, 74, 0.96), rgba(0, 53, 42, 0.98))"
+    },
+    {
+      "elementIndex": 58,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(90deg, rgba(0, 61, 48, 0.78), rgba(0, 61, 48, 0.26)), url(/public/images/lexicon/lexicon-hero-bg.png)"
+    },
+    {
+      "elementIndex": 97,
+      "attributes": [],
+      "backgroundImage": "linear-gradient(135deg, rgb(0, 116, 91), rgb(0, 81, 63))"
+    },
+    {
+      "elementIndex": 143,
+      "attributes": [],
+      "backgroundImage": "radial-gradient(circle, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 56%, rgba(0, 0, 0, 0) 57%), conic-gradient(rgb(0, 117, 91) 99%, rgba(0, 83, 63, 0.14) 0deg)"
+    }
+  ],
+  "quotationRegions": [
+    {
+      "selector": ".guide-wisdom-banner p",
+      "elementIndex": 61,
+      "tag": "p",
+      "id": "",
+      "classes": [],
+      "text": "Your word is a lamp to my feet, and a light for my path.",
+      "geometry": {
+        "x": 389.59,
+        "y": 1292.05,
+        "width": 446.97,
+        "height": 26.69
+      },
+      "presentation": {
+        "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "18.4px",
+        "lineHeight": "26.68px",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal"
+      }
+    }
+  ],
+  "visibleControls": [
+    {
+      "elementIndex": 90,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Save Response",
+      "geometry": {
+        "x": 997.31,
+        "y": 491.77,
+        "width": 149.66,
+        "height": 45.38
+      }
+    },
+    {
+      "elementIndex": 91,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Save Prayer",
+      "geometry": {
+        "x": 1154.97,
+        "y": 491.77,
+        "width": 126.52,
+        "height": 45.38
+      }
+    },
+    {
+      "elementIndex": 92,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Add Reflection",
+      "geometry": {
+        "x": 997.31,
+        "y": 545.14,
+        "width": 151.34,
+        "height": 45.38
+      }
+    },
+    {
+      "elementIndex": 93,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Copy Response",
+      "geometry": {
+        "x": 1156.66,
+        "y": 545.14,
+        "width": 152.84,
+        "height": 45.38
+      }
+    },
+    {
+      "elementIndex": 94,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Clear Chat",
+      "geometry": {
+        "x": 997.31,
+        "y": 598.52,
+        "width": 113.97,
+        "height": 45.38
+      }
+    },
+    {
+      "elementIndex": 100,
+      "tag": "summary",
+      "id": "",
+      "classes": [],
+      "type": "",
+      "name": "Why this? Excellent",
+      "geometry": {
+        "x": 998.91,
+        "y": 853.97,
+        "width": 13.19,
+        "height": 42
+      }
+    },
+    {
+      "elementIndex": 154,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "More like this",
+      "geometry": {
+        "x": 1035.48,
+        "y": 837.77,
+        "width": 108.83,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 155,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Less like this",
+      "geometry": {
+        "x": 1150.7,
+        "y": 837.77,
+        "width": 101.97,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 156,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Not relevant",
+      "geometry": {
+        "x": 1259.06,
+        "y": 837.77,
+        "width": 101.72,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 157,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Save Scripture",
+      "geometry": {
+        "x": 1035.48,
+        "y": 880.16,
+        "width": 112.38,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 158,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Save Word",
+      "geometry": {
+        "x": 1154.25,
+        "y": 880.16,
+        "width": 90.83,
+        "height": 36
+      }
+    },
+    {
+      "elementIndex": 159,
+      "tag": "button",
+      "id": "",
+      "classes": [
+        "secondary"
+      ],
+      "type": "button",
+      "name": "Save Prayer",
+      "geometry": {
+        "x": 1251.47,
+        "y": 880.16,
+        "width": 96.53,
+        "height": 36
+      }
+    }
+  ]
+}
