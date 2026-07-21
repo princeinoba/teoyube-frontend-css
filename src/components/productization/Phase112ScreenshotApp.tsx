@@ -20,6 +20,7 @@ import {
   useTestimonies,
   useTeoGuide
 } from "./TeoyubeAppStateProvider";
+import { ConsentAwareMemoryControls } from "./ConsentAwareMemoryControls";
 
 type AnyRecord = Record<string, any>;
 
@@ -101,22 +102,25 @@ export function SafetyNotice() {
 export function ConsentControlsPanel() {
   const { consentState, setConsentState, resetPersonalization } = usePersonalizationControls();
   return (
-    <TeoyubeProductCard eyebrow="Consent" title="Session Personalization">
-      <p className="muted">
-        Current mode: {consentState.personalization}. Raw private text storage, analytics, live AI, and automatic contact remain disabled.
-      </p>
-      <div className="button-row">
-        <button className="button secondary" type="button" onClick={() => setConsentState("session_only")}>
-          Session Only
-        </button>
-        <button className="button secondary" type="button" onClick={() => setConsentState("disabled")}>
-          Disable
-        </button>
-        <button className="button secondary" type="button" onClick={resetPersonalization}>
-          Clear Signals
-        </button>
-      </div>
-    </TeoyubeProductCard>
+    <>
+      <TeoyubeProductCard eyebrow="Consent" title="Session Personalization">
+        <p className="muted">
+          Current mode: {consentState.personalization}. Raw private text storage, analytics, live AI, and automatic contact remain disabled.
+        </p>
+        <div className="button-row">
+          <button className="button secondary" type="button" onClick={() => setConsentState("session_only")}>
+            Session Only
+          </button>
+          <button className="button secondary" type="button" onClick={() => setConsentState("disabled")}>
+            Disable
+          </button>
+          <button className="button secondary" type="button" onClick={resetPersonalization}>
+            Clear Signals
+          </button>
+        </div>
+      </TeoyubeProductCard>
+      <ConsentAwareMemoryControls />
+    </>
   );
 }
 
