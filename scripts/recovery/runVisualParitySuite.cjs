@@ -1,6 +1,8 @@
 "use strict";
+/* eslint-disable @typescript-eslint/no-require-imports */
 
 const { spawn } = require("node:child_process");
+const net = require("node:net");
 const path = require("node:path");
 
 const workspaceRoot = path.resolve(__dirname, "../..");
@@ -49,6 +51,31 @@ async function urlIsReady(url) {
   }
 }
 
+async function portIsListening(port) {
+  return new Promise((resolve) => {
+    const socket = net.createConnection({ host: "127.0.0.1", port: Number(port) });
+    socket.setTimeout(500);
+    socket.once("connect", () => {
+      socket.destroy();
+      resolve(true);
+    });
+    socket.once("timeout", () => {
+      socket.destroy();
+      resolve(false);
+    });
+    socket.once("error", () => resolve(false));
+  });
+}
+
+async function waitForClosedPort(port, timeoutMs = 10_000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    if (!(await portIsListening(port))) return;
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  throw new Error(`Port ${port} remained open after owned server shutdown.`);
+}
+
 async function stopServer(child) {
   if (!child || !child.pid || child.exitCode !== null) return;
   try {
@@ -81,22 +108,46 @@ function startNextServer(port = "3100") {
 
 async function main() {
   const servers = [];
+  const ownedPorts = [];
+  let tests = null;
   const staticPort = mode === "gate-audit" ? "4183" : "4173";
   const nextPort = mode === "gate-audit" ? "3183" : "3100";
   const staticOrigin = `http://127.0.0.1:${staticPort}`;
   const nextOrigin = `http://127.0.0.1:${nextPort}`;
+  const requireFresh = process.env.TEOYUBE_GATE_REQUIRE_FRESH === "1";
+  let interruptedSignal = null;
+  const handleSignal = (signal) => {
+    interruptedSignal = signal;
+    if (tests?.pid && tests.exitCode === null) tests.kill("SIGTERM");
+    for (const server of servers) {
+      if (server?.pid && server.exitCode === null) server.kill("SIGTERM");
+    }
+  };
+  process.once("SIGINT", handleSignal);
+  process.once("SIGTERM", handleSignal);
   try {
+    if (requireFresh) {
+      const ports = mode === "status" ? [] : [staticPort];
+      if (["next", "shell", "today", "search", "canon-promise", "prayer-calling-journey", "journal-testimony-book", "remaining-retained", "gate-audit", "support-capture", "support-baseline", "next-support-capture", "next-support-baseline"].includes(mode)) {
+        ports.push(nextPort);
+      }
+      for (const port of [...new Set(ports)]) {
+        if (await portIsListening(port)) throw new Error(`Fresh-run port ${port} is already in use; refusing to reuse an unknown listener.`);
+      }
+    }
     if (!new Set(["status", "support-capture", "support-baseline", "next-support-capture", "next-support-baseline"]).has(mode)) {
       const staticUrl = `${staticOrigin}/index.html`;
-      if (!(await urlIsReady(staticUrl))) {
+      if (requireFresh || !(await urlIsReady(staticUrl))) {
         const staticServer = startStaticServer(staticPort);
         servers.push(staticServer);
+        ownedPorts.push(staticPort);
         await waitForUrl(staticServer, staticUrl);
       }
     }
     if (mode === "next" || mode === "shell" || mode === "today" || mode === "search" || mode === "canon-promise" || mode === "prayer-calling-journey" || mode === "journal-testimony-book" || mode === "remaining-retained" || mode === "gate-audit" || mode === "support-capture" || mode === "support-baseline" || mode === "next-support-capture" || mode === "next-support-baseline") {
       const nextServer = startNextServer(nextPort);
       servers.push(nextServer);
+      ownedPorts.push(nextPort);
       await waitForUrl(nextServer, `${nextOrigin}/api/health`);
     }
 
@@ -136,7 +187,7 @@ async function main() {
         : mode === "next-support-baseline"
           ? "owner-approved-next-support-parity"
         : "next-candidate-contract"];
-    const tests = spawn(
+    tests = spawn(
       process.execPath,
       [
         playwrightCli,
@@ -156,9 +207,14 @@ async function main() {
     );
     const result = await waitForExit(tests);
     if (result.signal) throw new Error(`Playwright exited from signal ${result.signal}.`);
+    if (interruptedSignal) throw new Error(`Visual parity runner was interrupted by ${interruptedSignal}.`);
     process.exitCode = result.code ?? 1;
   } finally {
+    process.removeListener("SIGINT", handleSignal);
+    process.removeListener("SIGTERM", handleSignal);
+    if (tests?.pid && tests.exitCode === null) await stopServer(tests);
     await Promise.all(servers.map((server) => stopServer(server)));
+    await Promise.all(ownedPorts.map((port) => waitForClosedPort(port)));
   }
 }
 

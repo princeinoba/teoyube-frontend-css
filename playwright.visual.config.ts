@@ -66,7 +66,12 @@ export default defineConfig({
     },
     {
       name: "full-gate-audit",
-      testMatch: /full-gate-audit\.spec\.ts/
+      testMatch: /full-gate-audit\.spec\.ts/,
+      use: {
+        screenshot: "off",
+        trace: "off",
+        video: "off"
+      }
     },
     {
       name: "support-route-baseline-capture",

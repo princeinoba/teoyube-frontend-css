@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { performance as nodePerformance } from "node:perf_hooks";
 import { chromium, expect, test, type Page } from "@playwright/test";
@@ -15,7 +16,10 @@ import {
 const staticBaseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4183";
 const nextBaseUrl = process.env.TEOYUBE_NEXT_BASE_URL || "http://127.0.0.1:3183";
 const outputRoot = path.join(candidateRoot, "next-preview-parity-gate");
-const checkpointPath = path.join(outputRoot, "performance-accessibility-checkpoint.json");
+const defaultCheckpointPath = path.join(outputRoot, "performance-accessibility-checkpoint.json");
+const performanceThresholdMs = 5_000;
+const boundedCellTimeoutMs = 120_000;
+const resumableGateEnabled = process.env.TEOYUBE_RESUMABLE_GATE === "1";
 
 type AuditResult = Readonly<{
   issues: readonly string[];
@@ -33,6 +37,36 @@ type PerformanceResult = Readonly<{
   transferBytes: number;
   encodedBodyBytes: number;
 }>;
+
+type GateIdentity = Readonly<{
+  gitCommit: string;
+  nodeVersion: string;
+  npmVersion: string;
+  auditVersion: string;
+  thresholdMs: number;
+  baselineHashes: unknown;
+  buildHashes: unknown;
+}>;
+
+type GateCellResult = Record<string, unknown> & {
+  cellId: string;
+  view: ViewId;
+  viewport: ViewportName;
+  passed: boolean;
+  violations: string[];
+  static: { accessibility: AuditResult; performance: PerformanceResult };
+  next: { accessibility: AuditResult; performance: PerformanceResult };
+};
+
+type GateSegment = {
+  segmentId: string;
+  startedAt: string;
+  endedAt: string | null;
+  resumed: boolean;
+  initialCompletedCells: number;
+  completedCells: number;
+  status: "in_progress" | "interrupted" | "failed" | "passed";
+};
 
 function round(value: number) {
   return Math.round(value * 10) / 10;
@@ -174,53 +208,267 @@ function median(values: number[]) {
   return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
 }
 
+function atomicWriteJson(filePath: string, value: unknown) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  const temporary = `${filePath}.${process.pid}.${Math.random().toString(16).slice(2)}.tmp`;
+  fs.writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  const handle = fs.openSync(temporary, "r");
+  try {
+    fs.fsyncSync(handle);
+  } finally {
+    fs.closeSync(handle);
+  }
+  fs.renameSync(temporary, filePath);
+}
+
+function identitySignature(identity: GateIdentity) {
+  return JSON.stringify({
+    gitCommit: identity.gitCommit,
+    nodeVersion: identity.nodeVersion,
+    npmVersion: identity.npmVersion,
+    auditVersion: identity.auditVersion,
+    thresholdMs: identity.thresholdMs,
+    baselineHashes: identity.baselineHashes,
+    buildHashes: identity.buildHashes
+  });
+}
+
+function requireEnvironment(name: string) {
+  const value = process.env[name];
+  if (!value) throw new Error(`Missing ${name} for the resumable visual gate.`);
+  return value;
+}
+
+function canonicalCells() {
+  return runtimeManifest.views.flatMap((view) =>
+    (Object.keys(runtimeManifest.viewports) as ViewportName[]).map((viewport) => ({
+      cellId: `${view}/${viewport}`,
+      view,
+      viewport
+    }))
+  );
+}
+
+function readResumableSettings() {
+  if (!resumableGateEnabled) return null;
+  const identityPath = path.resolve(requireEnvironment("TEOYUBE_GATE_IDENTITY_PATH"));
+  const checkpointPath = path.resolve(requireEnvironment("TEOYUBE_GATE_CHECKPOINT_PATH"));
+  const resultPath = path.resolve(requireEnvironment("TEOYUBE_GATE_RESULT_PATH"));
+  const runId = requireEnvironment("TEOYUBE_GATE_RUN_ID");
+  const runOrdinal = Number(requireEnvironment("TEOYUBE_GATE_RUN_ORDINAL"));
+  const artifactBudgetBytes = Number(requireEnvironment("TEOYUBE_GATE_ARTIFACT_BUDGET_BYTES"));
+  for (const candidatePath of [identityPath, checkpointPath, resultPath]) assertDisposableCandidatePath(candidatePath);
+  const identity = JSON.parse(fs.readFileSync(identityPath, "utf8")) as GateIdentity;
+  if (identity.thresholdMs !== performanceThresholdMs) {
+    throw new Error(`Locked threshold mismatch: identity=${identity.thresholdMs}; audit=${performanceThresholdMs}.`);
+  }
+  if (!Number.isInteger(runOrdinal) || runOrdinal < 1 || !Number.isFinite(artifactBudgetBytes)) {
+    throw new Error("Invalid resumable gate ordinal or artifact budget.");
+  }
+  return { identity, checkpointPath, resultPath, runId, runOrdinal, artifactBudgetBytes };
+}
+
+async function withCellTimeout<T>(operation: Promise<T>, cellId: string, attempt: number): Promise<T> {
+  let timeout: NodeJS.Timeout | undefined;
+  try {
+    return await Promise.race([
+      operation,
+      new Promise<never>((_, reject) => {
+        timeout = setTimeout(
+          () => reject(new Error(`${cellId} attempt ${attempt} exceeded the ${boundedCellTimeoutMs} ms cell-execution bound.`)),
+          boundedCellTimeoutMs
+        );
+      })
+    ]);
+  } finally {
+    if (timeout) clearTimeout(timeout);
+  }
+}
+
 test("all 72 matrix cells retain accessibility and provide side-by-side performance evidence", async () => {
   test.setTimeout(2_400_000);
   assertDisposableCandidatePath(outputRoot);
   fs.mkdirSync(outputRoot, { recursive: true });
-  const rows: Array<Record<string, unknown>> = [];
-  const violations: string[] = [];
+  const settings = readResumableSettings();
+  const checkpointPath = settings?.checkpointPath || defaultCheckpointPath;
+  assertDisposableCandidatePath(checkpointPath);
+  const cells = canonicalCells();
+  const cellOrder = new Map(cells.map((cell, index) => [cell.cellId, index]));
+  const startedAt = new Date().toISOString();
+  let checkpointStartedAt = startedAt;
+  let rows: GateCellResult[] = [];
+  let segments: GateSegment[] = [];
 
-  for (const view of runtimeManifest.views) {
-    const browser = await chromium.launch({ channel: "chrome", headless: true });
-    try {
-      for (const [viewportName, viewport] of Object.entries(runtimeManifest.viewports) as Array<[ViewportName, { width: number; height: number }]>) {
-        const staticContext = await browser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
-        const nextContext = await browser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
-        await installDeterminism(staticContext, [new URL(staticBaseUrl).origin]);
-        await installDeterminism(nextContext, [new URL(nextBaseUrl).origin]);
-        const staticPage = await staticContext.newPage();
-        const nextPage = await nextContext.newPage();
-        try {
-          let attempts = 1;
-          let { staticAccessibility, nextAccessibility, staticPerformance, nextPerformance } =
-            await auditPair(staticPage, nextPage, view);
-          const firstAttemptMismatch =
-            JSON.stringify(staticAccessibility) !== JSON.stringify(nextAccessibility);
-          const firstAttemptSlow =
-            staticPerformance.readyMs > 5_000 || nextPerformance.readyMs > 5_000;
-          if (firstAttemptMismatch || firstAttemptSlow) {
-            attempts = 2;
-            ({ staticAccessibility, nextAccessibility, staticPerformance, nextPerformance } =
-              await auditPair(staticPage, nextPage, view));
-          }
-          if (JSON.stringify(staticAccessibility) !== JSON.stringify(nextAccessibility)) violations.push(`${view}/${viewportName}: accessibility or focus-order mismatch`);
-          if (staticPerformance.readyMs > 5_000 || nextPerformance.readyMs > 5_000) violations.push(`${view}/${viewportName}: local ready time exceeded 5,000 ms`);
-          rows.push({ view, route: routeForView(view), viewport: viewportName, viewportSize: viewport, attempts, static: { accessibility: staticAccessibility, performance: staticPerformance }, next: { accessibility: nextAccessibility, performance: nextPerformance }, accessibilityParity: JSON.stringify(staticAccessibility) === JSON.stringify(nextAccessibility) });
-          fs.writeFileSync(checkpointPath, `${JSON.stringify({ rows, violations }, null, 2)}\n`, "utf8");
-          console.log(`Gate audit completed ${view}/${viewportName}: attempts=${attempts}; static=${staticPerformance.readyMs}ms; next=${nextPerformance.readyMs}ms`);
-        } finally {
-          await staticContext.close();
-          await nextContext.close();
-        }
+  if (settings && fs.existsSync(checkpointPath)) {
+    const prior = JSON.parse(fs.readFileSync(checkpointPath, "utf8")) as Record<string, unknown> & {
+      schemaVersion?: string;
+      runId?: string;
+      runOrdinal?: number;
+      thresholdMs?: number;
+      startedAt?: string;
+      results?: GateCellResult[];
+      segments?: GateSegment[];
+    };
+    const priorIdentity = prior as unknown as GateIdentity;
+    const compatible =
+      prior.schemaVersion === "teoyube-performance-gate-checkpoint-1"
+      && prior.runId === settings.runId
+      && prior.runOrdinal === settings.runOrdinal
+      && prior.thresholdMs === performanceThresholdMs
+      && identitySignature(priorIdentity) === identitySignature(settings.identity);
+    if (compatible) {
+      const failed = (prior.results || []).filter((result) => result.passed === false);
+      if (failed.length > 0) throw new Error("A checkpoint containing a failed cell cannot resume or skip that failure.");
+      rows = (prior.results || []).filter((result) => result.passed === true);
+      segments = [...(prior.segments || [])];
+      checkpointStartedAt = prior.startedAt || startedAt;
+      const unfinished = segments.at(-1);
+      if (unfinished && unfinished.endedAt === null) {
+        unfinished.endedAt = String((prior as Record<string, unknown>).updatedAt || startedAt);
+        unfinished.status = "interrupted";
       }
-    } finally {
-      await browser.close();
+    } else {
+      fs.rmSync(checkpointPath, { force: true });
     }
   }
 
+  const completedCellIds = new Set(rows.map((row) => row.cellId));
+  const segment: GateSegment = {
+    segmentId: `${settings?.runId || "nonresumable"}-segment-${segments.length + 1}`,
+    startedAt,
+    endedAt: null,
+    resumed: completedCellIds.size > 0,
+    initialCompletedCells: completedCellIds.size,
+    completedCells: 0,
+    status: "in_progress"
+  };
+  segments.push(segment);
+
+  const checkpointPayload = (status: "in_progress" | "passed" | "failed") => {
+    rows.sort((left, right) => (cellOrder.get(left.cellId) || 0) - (cellOrder.get(right.cellId) || 0));
+    const passedCellIds = rows.filter((row) => row.passed).map((row) => row.cellId);
+    const failures = rows.filter((row) => !row.passed).flatMap((row) => row.violations);
+    const passedSet = new Set(passedCellIds);
+    return {
+      schemaVersion: "teoyube-performance-gate-checkpoint-1",
+      ...(settings?.identity || {
+        gitCommit: "nonresumable",
+        nodeVersion: process.version,
+        npmVersion: process.env.TEOYUBE_NPM_VERSION || "unrecorded",
+        auditVersion: "canonical-direct",
+        baselineHashes: null,
+        buildHashes: null
+      }),
+      runId: settings?.runId || "canonical-direct",
+      runOrdinal: settings?.runOrdinal || 1,
+      thresholdMs: performanceThresholdMs,
+      artifactBudgetBytes: settings?.artifactBudgetBytes || null,
+      completedCellIds: passedCellIds,
+      nextCellId: cells.find((cell) => !passedSet.has(cell.cellId))?.cellId || null,
+      results: rows,
+      failures,
+      status,
+      startedAt: checkpointStartedAt,
+      updatedAt: new Date().toISOString(),
+      segments
+    };
+  };
+
+  atomicWriteJson(checkpointPath, checkpointPayload("in_progress"));
+
+  try {
+    for (const view of runtimeManifest.views) {
+      const pendingViewports = (Object.keys(runtimeManifest.viewports) as ViewportName[])
+        .filter((viewportName) => !completedCellIds.has(`${view}/${viewportName}`));
+      if (pendingViewports.length === 0) {
+        console.log(`Gate audit resume retained all six completed ${view} cells.`);
+        continue;
+      }
+      const browser = await chromium.launch({ channel: "chrome", headless: true });
+      try {
+        for (const [viewportName, viewport] of Object.entries(runtimeManifest.viewports) as Array<[ViewportName, { width: number; height: number }]>) {
+          const cellId = `${view}/${viewportName}`;
+          if (completedCellIds.has(cellId)) {
+            console.log(`Gate audit resume retained completed ${cellId}.`);
+            continue;
+          }
+          const staticContext = await browser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
+          const nextContext = await browser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
+          await installDeterminism(staticContext, [new URL(staticBaseUrl).origin]);
+          await installDeterminism(nextContext, [new URL(nextBaseUrl).origin]);
+          const staticPage = await staticContext.newPage();
+          const nextPage = await nextContext.newPage();
+          try {
+            let attempts = 1;
+            let { staticAccessibility, nextAccessibility, staticPerformance, nextPerformance } =
+              await withCellTimeout(auditPair(staticPage, nextPage, view), cellId, attempts);
+            const firstAttemptMismatch =
+              JSON.stringify(staticAccessibility) !== JSON.stringify(nextAccessibility);
+            const firstAttemptSlow =
+              staticPerformance.readyMs > performanceThresholdMs || nextPerformance.readyMs > performanceThresholdMs;
+            if (firstAttemptMismatch || firstAttemptSlow) {
+              attempts = 2;
+              ({ staticAccessibility, nextAccessibility, staticPerformance, nextPerformance } =
+                await withCellTimeout(auditPair(staticPage, nextPage, view), cellId, attempts));
+            }
+            const cellViolations: string[] = [];
+            if (JSON.stringify(staticAccessibility) !== JSON.stringify(nextAccessibility)) {
+              cellViolations.push(`${cellId}: accessibility or focus-order mismatch`);
+            }
+            if (staticPerformance.readyMs > performanceThresholdMs || nextPerformance.readyMs > performanceThresholdMs) {
+              cellViolations.push(`${cellId}: local ready time exceeded 5,000 ms`);
+            }
+            const memory = process.memoryUsage();
+            const row: GateCellResult = {
+              cellId,
+              view,
+              route: routeForView(view),
+              viewport: viewportName,
+              viewportSize: viewport,
+              attempts,
+              static: { accessibility: staticAccessibility, performance: staticPerformance },
+              next: { accessibility: nextAccessibility, performance: nextPerformance },
+              accessibilityParity: JSON.stringify(staticAccessibility) === JSON.stringify(nextAccessibility),
+              passed: cellViolations.length === 0,
+              violations: cellViolations,
+              telemetry: {
+                capturedAt: new Date().toISOString(),
+                processId: process.pid,
+                processRssBytes: memory.rss,
+                processHeapUsedBytes: memory.heapUsed,
+                systemFreeMemoryBytes: os.freemem(),
+                systemTotalMemoryBytes: os.totalmem(),
+                loadAverage: os.loadavg()
+              }
+            };
+            rows = rows.filter((existing) => existing.cellId !== cellId);
+            rows.push(row);
+            if (row.passed) completedCellIds.add(cellId);
+            segment.completedCells += 1;
+            atomicWriteJson(checkpointPath, checkpointPayload("in_progress"));
+            console.log(`Gate audit completed ${cellId}: attempts=${attempts}; static=${staticPerformance.readyMs}ms; next=${nextPerformance.readyMs}ms`);
+          } finally {
+            await staticContext.close();
+            await nextContext.close();
+          }
+        }
+      } finally {
+        await browser.close();
+      }
+    }
+  } catch (error) {
+    segment.endedAt = new Date().toISOString();
+    segment.status = "interrupted";
+    atomicWriteJson(checkpointPath, checkpointPayload("in_progress"));
+    throw error;
+  }
+
+  const violations = rows.flatMap((row) => row.violations);
+  segment.endedAt = new Date().toISOString();
+  segment.status = violations.length === 0 ? "passed" : "failed";
+
   const routeSummary = runtimeManifest.views.map((view) => {
-    const routeRows = rows.filter((row) => row.view === view) as Array<{ static: { performance: PerformanceResult; accessibility: AuditResult }; next: { performance: PerformanceResult; accessibility: AuditResult } }>;
+    const routeRows = rows.filter((row) => row.view === view);
     return {
       view,
       route: routeForView(view),
@@ -236,13 +484,17 @@ test("all 72 matrix cells retain accessibility and provide side-by-side performa
   const artifact = {
     artifactType: "next_preview_parity_gate_performance_accessibility",
     generatedAt: new Date().toISOString(),
-    environment: { staticBaseUrl, nextBaseUrl, browser: "Windows Chrome", samplePolicy: "one isolated cold browser context per route and viewport; browser process recycled per route; one same-threshold retry for a transient mismatch or >5,000 ms ready time; local comparative evidence, not a production benchmark" },
+    environment: { staticBaseUrl, nextBaseUrl, browser: "Windows Chrome", samplePolicy: "one isolated cold browser context per route and viewport; browser process recycled per route; one same-threshold retry for a transient mismatch or >5,000 ms ready time; local comparative evidence, not a production benchmark", resumable: resumableGateEnabled, segments: segments.length, boundedCellTimeoutMs },
     totals: { routes: runtimeManifest.views.length, viewports: Object.keys(runtimeManifest.viewports).length, cells: rows.length, violations: violations.length },
     routeSummary,
     rows,
     violations
   };
-  fs.writeFileSync(path.join(outputRoot, "performance-accessibility.json"), `${JSON.stringify(artifact, null, 2)}\n`, "utf8");
+  atomicWriteJson(path.join(outputRoot, "performance-accessibility.json"), artifact);
+  const finalStatus = violations.length === 0 && rows.length === 72 ? "passed" : "failed";
+  const finalCheckpoint = checkpointPayload(finalStatus);
+  atomicWriteJson(checkpointPath, finalCheckpoint);
+  if (settings) atomicWriteJson(settings.resultPath, finalCheckpoint);
   expect(rows).toHaveLength(72);
   expect(violations).toEqual([]);
 });
