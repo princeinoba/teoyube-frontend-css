@@ -1,0 +1,78 @@
+[
+  {
+    "prompt": "I need wisdom for a decision.",
+    "response": {
+      "id": "teo-local-569541b7",
+      "role": "teo-guide",
+      "text": "This local deterministic preview may connect your question to wisdom and patient discernment. Begin with James 1:5; this is an interpretation and suggested application, not divine speech or certainty.",
+      "sources": [
+        {
+          "kind": "scripture",
+          "reference": "James 1:5",
+          "authority": "Scripture"
+        }
+      ],
+      "interpretation": "Teoyube interpretation: the prompt appears related to wisdom and patient discernment.",
+      "suggestedApplication": "Suggested action: write down the decision, pray, and review it with wise counsel.",
+      "confidence": "deterministic_scripture_match",
+      "limitation": "For major decisions, pray, read Scripture in context, seek wise counsel and community, and use appropriate professional care."
+    }
+  },
+  {
+    "prompt": "Help me discern my calling.",
+    "response": {
+      "id": "teo-local-c1132164",
+      "role": "teo-guide",
+      "text": "This local deterministic preview may connect your question to purpose expressed through faithful service. Begin with Ephesians 2:10; this is an interpretation and suggested application, not divine speech or certainty.",
+      "sources": [
+        {
+          "kind": "scripture",
+          "reference": "Ephesians 2:10",
+          "authority": "Scripture"
+        }
+      ],
+      "interpretation": "Teoyube interpretation: the prompt appears related to purpose expressed through faithful service.",
+      "suggestedApplication": "Suggested action: name one present gift, one burden, and one humble act of service.",
+      "confidence": "deterministic_scripture_match",
+      "limitation": "For major decisions, pray, read Scripture in context, seek wise counsel and community, and use appropriate professional care."
+    }
+  },
+  {
+    "prompt": "Please help me pray about anxiety.",
+    "response": {
+      "id": "teo-local-8464ffc5",
+      "role": "teo-guide",
+      "text": "This local deterministic preview may connect your question to Scripture-guided faithfulness. Begin with Psalm 119:105; this is an interpretation and suggested application, not divine speech or certainty.",
+      "sources": [
+        {
+          "kind": "scripture",
+          "reference": "Psalm 119:105",
+          "authority": "Scripture"
+        }
+      ],
+      "interpretation": "Teoyube interpretation: the prompt appears related to Scripture-guided faithfulness.",
+      "suggestedApplication": "Suggested action: read the passage in context, pray, and choose one realistic next step.",
+      "confidence": "deterministic_scripture_match",
+      "limitation": "For major decisions, pray, read Scripture in context, seek wise counsel and community, and use appropriate professional care."
+    }
+  },
+  {
+    "prompt": "Help me take one faithful next step.",
+    "response": {
+      "id": "teo-local-b1d9f457",
+      "role": "teo-guide",
+      "text": "This local deterministic preview may connect your question to Scripture-guided faithfulness. Begin with Psalm 119:105; this is an interpretation and suggested application, not divine speech or certainty.",
+      "sources": [
+        {
+          "kind": "scripture",
+          "reference": "Psalm 119:105",
+          "authority": "Scripture"
+        }
+      ],
+      "interpretation": "Teoyube interpretation: the prompt appears related to Scripture-guided faithfulness.",
+      "suggestedApplication": "Suggested action: read the passage in context, pray, and choose one realistic next step.",
+      "confidence": "deterministic_scripture_match",
+      "limitation": "For major decisions, pray, read Scripture in context, seek wise counsel and community, and use appropriate professional care."
+    }
+  }
+]
