@@ -35,4 +35,15 @@ describe("Teoyube environment validation", () => {
       }).liveAi
     ).toBe(true);
   });
+
+  it("keeps Prompt 18 external intelligence and retrieval capabilities disabled by default", () => {
+    const availability = readServerFeatureAvailability({});
+    expect(availability).toMatchObject({
+      liveAi: false,
+      embeddings: false,
+      vectorRetrieval: false,
+      broadRag: false,
+      externalTeoGuideProvider: false
+    });
+  });
 });

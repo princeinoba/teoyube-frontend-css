@@ -170,8 +170,12 @@ test("Lexicon filters and keeps Scripture-derived aid semantics visible", async 
 
 test("Teo Guide responds locally with typed source, interpretation, action, and limitation", async ({ page }) => {
   await page.goto(`${nextBaseUrl}/teo-guide`, { waitUntil: "domcontentloaded" });
-  const networkCalls: string[] = [];
-  page.on("request", (request) => { if (/api\/(ai|teoyube\/teo-guide)/.test(request.url())) networkCalls.push(request.url()); });
+  const orchestrationCalls: string[] = [];
+  const externalIntelligenceCalls: string[] = [];
+  page.on("request", (request) => {
+    if (/api\/teoyube\/teo-guide/.test(request.url())) orchestrationCalls.push(request.url());
+    if (/api\/ai|openai|anthropic|gemini|cohere|pinecone|weaviate/i.test(request.url())) externalIntelligenceCalls.push(request.url());
+  });
   await page.locator("#chatInput").fill("I need wisdom for a decision.");
   await page.locator("#chatInput").press("Enter");
   const response = page.locator("#chatLog .message-row.teo").last();
@@ -180,7 +184,8 @@ test("Teo Guide responds locally with typed source, interpretation, action, and 
   await expect(response).toContainText("Suggested action");
   await expect(response).toContainText("not divine speech or certainty");
   await expect(response).not.toContainText(/God told you|God commands you|final destiny/i);
-  expect(networkCalls).toEqual([]);
+  expect(orchestrationCalls).toHaveLength(1);
+  expect(externalIntelligenceCalls).toEqual([]);
   expect(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length }))).toEqual({ local: 0, session: 0 });
 });
 
