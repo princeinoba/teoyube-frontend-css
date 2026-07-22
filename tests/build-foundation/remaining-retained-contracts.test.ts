@@ -121,7 +121,9 @@ describe("remaining retained preview contracts", () => {
       read("src/app/_media/TablesPageController.tsx")
     ].join("\n");
     expect(clientSource).not.toMatch(/callings\.seed|TIG_CALLING_SEEDS|runtime-manifest\.json|OpenAI|Anthropic|model provider/i);
-    expect(read("src/app/_teo-guide/TeoGuidePageController.tsx")).toContain('fetch("/api/teoyube/teo-guide"');
+    const teoGuideController = read("src/app/_teo-guide/TeoGuidePageController.tsx");
+    expect(teoGuideController).toContain('fetch(liveRequested ? "/api/teoyube/teo-guide/stream" : "/api/teoyube/teo-guide"');
+    expect(teoGuideController).toContain('fetch("/api/teoyube/live-ai-status"');
     const nextConfig = read("next.config.mjs");
     expect(nextConfig).toContain("public, max-age=31536000, immutable");
     expect(nextConfig).toContain('value: "no-store"');
