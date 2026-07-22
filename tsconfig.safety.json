@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "isolatedModules": false,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "outDir": ".tmp/safety-build"
+  },
+  "include": [
+    "scripts/safety/safety-evaluation-cli.ts",
+    "src/domain/safety/**/*.ts",
+    "src/domain/scripture/**/*.ts",
+    "src/server/observability/privacy-safe-events.ts",
+    "src/server/safety/**/*.ts",
+    "src/server/scripture/canonical-scripture-repository.ts",
+    "src/server/scripture/corpus-registry.json",
+    "src/data/**/*.json",
+    "tests/fixtures/safety/**/*.ts"
+  ],
+  "exclude": ["node_modules", ".next", ".tmp"]
+}

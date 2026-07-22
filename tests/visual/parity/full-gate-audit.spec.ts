@@ -15,6 +15,7 @@ import {
 const staticBaseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4183";
 const nextBaseUrl = process.env.TEOYUBE_NEXT_BASE_URL || "http://127.0.0.1:3183";
 const outputRoot = path.join(candidateRoot, "next-preview-parity-gate");
+const checkpointPath = path.join(outputRoot, "performance-accessibility-checkpoint.json");
 
 type AuditResult = Readonly<{
   issues: readonly string[];
@@ -206,7 +207,8 @@ test("all 72 matrix cells retain accessibility and provide side-by-side performa
           if (JSON.stringify(staticAccessibility) !== JSON.stringify(nextAccessibility)) violations.push(`${view}/${viewportName}: accessibility or focus-order mismatch`);
           if (staticPerformance.readyMs > 5_000 || nextPerformance.readyMs > 5_000) violations.push(`${view}/${viewportName}: local ready time exceeded 5,000 ms`);
           rows.push({ view, route: routeForView(view), viewport: viewportName, viewportSize: viewport, attempts, static: { accessibility: staticAccessibility, performance: staticPerformance }, next: { accessibility: nextAccessibility, performance: nextPerformance }, accessibilityParity: JSON.stringify(staticAccessibility) === JSON.stringify(nextAccessibility) });
-          console.log(`Gate audit completed ${view}/${viewportName}`);
+          fs.writeFileSync(checkpointPath, `${JSON.stringify({ rows, violations }, null, 2)}\n`, "utf8");
+          console.log(`Gate audit completed ${view}/${viewportName}: attempts=${attempts}; static=${staticPerformance.readyMs}ms; next=${nextPerformance.readyMs}ms`);
         } finally {
           await staticContext.close();
           await nextContext.close();

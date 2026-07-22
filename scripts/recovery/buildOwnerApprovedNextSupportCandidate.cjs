@@ -18,11 +18,18 @@ const preloadPath = path.join(__dirname, "fixedTimePreload.cjs").replace(/\\/g, 
 const fixedTime = `${approvalDate}T12:00:00.000Z`;
 const existingNodeOptions = process.env.NODE_OPTIONS?.trim();
 const nodeOptions = [existingNodeOptions, `--require=${preloadPath}`].filter(Boolean).join(" ");
-const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
+const npmCli = [
+  process.env.npm_execpath,
+  path.join(path.dirname(process.execPath), "node_modules", "npm", "bin", "npm-cli.js")
+].find((candidate) => candidate && fs.existsSync(candidate));
+
+if (!npmCli) {
+  throw new Error("The repository-pinned npm CLI could not be resolved for the disposable support build.");
+}
 
 console.log(`Building the disposable Next support candidate at owner approval date ${fixedTime}.`);
 
-const child = spawn(npmCommand, ["run", "app:build"], {
+const child = spawn(process.execPath, [npmCli, "run", "app:build"], {
   cwd: workspaceRoot,
   env: {
     ...process.env,
