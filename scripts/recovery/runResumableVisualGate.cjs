@@ -98,6 +98,7 @@ function createRun(controller) {
     checkpointPath: path.join(runRoot, "checkpoint.json"),
     resultPath: path.join(runRoot, "result.json"),
     identityPath: path.join(runRoot, "identity.json"),
+    parityInterruptionPath: path.join(runRoot, "parity-interrupted.json"),
     performance: null,
     parity: null,
     artifactRetention: null,
@@ -255,10 +256,26 @@ async function completeRun(controller, run) {
   }
 
   if (!run.parity?.passed) {
+    const parityInterruptionPath = run.parityInterruptionPath || path.join(path.dirname(run.checkpointPath), "parity-interrupted.json");
+    fs.rmSync(parityInterruptionPath, { force: true });
     const parityCode = await runVisualMode("next", {
       TEOYUBE_NPM_VERSION: controller.identity.npmVersion,
+      TEOYUBE_PARITY_INTERRUPTION_MARKER: parityInterruptionPath,
+      TEOYUBE_PARITY_RUN_ID: run.runId,
     });
     if (parityCode !== 0) {
+      const interruption = readJsonIfPresent(parityInterruptionPath);
+      if (interruption?.schemaVersion === "teoyube-parity-interruption-1" && interruption.runId === run.runId) {
+        run.parity = {
+          passed: false,
+          incomplete: true,
+          interruptionSignal: interruption.signal || "unknown",
+          interruptedAt: interruption.occurredAt || new Date().toISOString(),
+          lastExitCode: parityCode,
+        };
+        persistController(controller);
+        throw new Error(`Canonical parity was interrupted by ${run.parity.interruptionSignal}; rerun the same command to resume ${run.runId}.`);
+      }
       preserveFailedRun(controller, run, `Canonical visual/DOM/class/asset/functional parity exited ${parityCode}.`);
       return false;
     }
@@ -290,10 +307,11 @@ async function completeRun(controller, run) {
   return true;
 }
 
-async function waitForInterRunQuiescence(controller) {
+async function waitForRunQuiescence(controller) {
+  if (controller.currentRun) return;
   const previousRun = controller.runs.at(-1);
-  if (controller.consecutivePasses < 1 || previousRun?.status !== "passed") return;
-  console.log(`Waiting ${interRunQuiescenceMs} ms for prior browser/server teardown to quiesce before the next cold logical run.`);
+  const context = previousRun ? `after ${previousRun.status} ${previousRun.runId}` : "before the first cold logical run";
+  console.log(`Waiting ${interRunQuiescenceMs} ms for browser/server and command-host activity to quiesce ${context}.`);
   await new Promise((resolve) => setTimeout(resolve, interRunQuiescenceMs));
   const currentIdentity = computeGateIdentity();
   if (!identitiesMatch(controller.identity, currentIdentity) || currentIdentity.trackedWorktreeStatus) {
@@ -322,7 +340,7 @@ async function main() {
   }
 
   while (controller.consecutivePasses < requiredLogicalRuns) {
-    await waitForInterRunQuiescence(controller);
+    await waitForRunQuiescence(controller);
     const run = controller.currentRun || createRun(controller);
     const passed = await completeRun(controller, run);
     if (!passed) {

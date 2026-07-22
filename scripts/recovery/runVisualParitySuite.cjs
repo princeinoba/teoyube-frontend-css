@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 
 const { spawn } = require("node:child_process");
+const fs = require("node:fs");
 const net = require("node:net");
 const path = require("node:path");
 
@@ -10,6 +11,28 @@ const playwrightCli = require.resolve("@playwright/test/cli");
 const nextCli = require.resolve("next/dist/bin/next");
 const mode = process.argv[2] || "static";
 const forbiddenUpdate = process.argv.some((argument) => argument.startsWith("--update-snapshots"));
+const interruptionMarker = process.env.TEOYUBE_PARITY_INTERRUPTION_MARKER
+  ? path.resolve(process.env.TEOYUBE_PARITY_INTERRUPTION_MARKER)
+  : null;
+const interruptionRoot = path.resolve(workspaceRoot, ".tmp", "visual-parity", "resumable-gate");
+
+if (interruptionMarker && !interruptionMarker.startsWith(`${interruptionRoot}${path.sep}`)) {
+  console.error(`Refusing a parity interruption marker outside ${interruptionRoot}.`);
+  process.exit(2);
+}
+
+function recordInterruption(signal) {
+  if (!interruptionMarker) return;
+  fs.mkdirSync(path.dirname(interruptionMarker), { recursive: true });
+  const temporary = `${interruptionMarker}.${process.pid}.tmp`;
+  fs.writeFileSync(temporary, `${JSON.stringify({
+    schemaVersion: "teoyube-parity-interruption-1",
+    runId: process.env.TEOYUBE_PARITY_RUN_ID || null,
+    signal,
+    occurredAt: new Date().toISOString(),
+  }, null, 2)}\n`, "utf8");
+  fs.renameSync(temporary, interruptionMarker);
+}
 
 if (forbiddenUpdate) {
   console.error("Refusing --update-snapshots: owner baselines are immutable in ordinary tooling and CI.");
@@ -118,6 +141,7 @@ async function main() {
   let interruptedSignal = null;
   const handleSignal = (signal) => {
     interruptedSignal = signal;
+    recordInterruption(signal);
     if (tests?.pid && tests.exitCode === null) tests.kill("SIGTERM");
     for (const server of servers) {
       if (server?.pid && server.exitCode === null) server.kill("SIGTERM");
