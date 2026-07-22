@@ -17,7 +17,16 @@ export type PrivacySafeEventName =
   | "safety_memory_denied"
   | "safety_tool_denied"
   | "safety_fallback_used"
-  | "safety_gate_failed";
+  | "safety_gate_failed"
+  | "teo_guide_request_started"
+  | "teo_guide_intent_selected"
+  | "teo_guide_tool_allowed"
+  | "teo_guide_tool_blocked"
+  | "teo_guide_fallback_used"
+  | "teo_guide_response_validated"
+  | "teo_guide_action_proposed"
+  | "teo_guide_action_confirmed"
+  | "teo_guide_action_rejected";
 
 export type PrivacySafeEvent = Readonly<{
   name: PrivacySafeEventName;

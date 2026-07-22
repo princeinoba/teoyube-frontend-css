@@ -37,7 +37,11 @@ const serverEnvironmentSchema = z.object({
   TEOYUBE_ENABLE_DATABASE_PERSISTENCE: safeBoolean,
   TEOYUBE_ENABLE_LIVE_AI: safeBoolean,
   TEOYUBE_ENABLE_EXTERNAL_MONITORING: safeBoolean,
-  TEOYUBE_ENABLE_DURABLE_MEMORY: safeBoolean
+  TEOYUBE_ENABLE_DURABLE_MEMORY: safeBoolean,
+  TEOYUBE_ENABLE_EMBEDDINGS: safeBoolean,
+  TEOYUBE_ENABLE_VECTOR_RETRIEVAL: safeBoolean,
+  TEOYUBE_ENABLE_BROAD_RAG: safeBoolean,
+  TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: safeBoolean
 });
 
 export type TeoyubePublicEnvironment = {
@@ -57,6 +61,10 @@ export type TeoyubeServerFeatureAvailability = {
   liveAi: boolean;
   externalMonitoring: boolean;
   durableMemory: boolean;
+  embeddings: boolean;
+  vectorRetrieval: boolean;
+  broadRag: boolean;
+  externalTeoGuideProvider: boolean;
 };
 
 export function readPublicEnvironment(
@@ -87,6 +95,10 @@ export function readServerFeatureAvailability(
     liveAi: parsed.TEOYUBE_ENABLE_LIVE_AI && Boolean(parsed.TEOYUBE_LIVE_AI_API_KEY),
     externalMonitoring:
       parsed.TEOYUBE_ENABLE_EXTERNAL_MONITORING && Boolean(parsed.TEOYUBE_MONITORING_PROVIDER_KEY),
-    durableMemory: parsed.TEOYUBE_ENABLE_DURABLE_MEMORY
+    durableMemory: parsed.TEOYUBE_ENABLE_DURABLE_MEMORY,
+    embeddings: parsed.TEOYUBE_ENABLE_EMBEDDINGS,
+    vectorRetrieval: parsed.TEOYUBE_ENABLE_VECTOR_RETRIEVAL,
+    broadRag: parsed.TEOYUBE_ENABLE_BROAD_RAG,
+    externalTeoGuideProvider: parsed.TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER
   };
 }
