@@ -1,7 +1,7 @@
 # Prompt 17S storage recovery and resumable gate report
 
-Date: 2026-07-22  
-Decision: **PASS**  
+Date: 2026-07-22
+Decision: **PASS**
 Prompt 18: **UNLOCKED, NOT IMPLEMENTED**
 
 ## REPOSITORY
