@@ -63,6 +63,6 @@ test("unauthenticated stateful requests are denied and action confirmation canno
   expect(journeyBody.orchestration.blockedTools[0].reason).toMatch(/authentication|required/i);
   expect(journeyBody.orchestration.response.durableWritePerformed).toBe(false);
 
-  const decision = await request.post("/api/teoyube/teo-guide/actions", { data: { proposalId: "missing-proposal", expectedRevision: 1, decision: "confirm" } });
+  const decision = await request.post("/api/teoyube/teo-guide/actions", { data: { proposalId: "missing-proposal", expectedRevision: 1, idempotencyKey: "missing-confirm-1", decision: "confirm" } });
   expect(decision.status()).toBe(503);
 });

@@ -51,12 +51,12 @@ const inputSchemas = Object.freeze({
   buildPrayerOptions: z.object({ query: textSchema, scriptureReference: referenceSchema }).strict(),
   searchApprovedUserMemory: z.object({ query: textSchema, purpose: z.enum(["preference_continuity", "journey_continuity"]) }).strict(),
   summarizeReflectionPattern: z.object({ query: textSchema, approvedRecordIds: z.array(identifierSchema).max(25) }).strict(),
-  draftJournalEntry: z.object({ query: textSchema, scriptureReference: referenceSchema }).strict(),
-  draftTestimonyCandidate: z.object({ query: textSchema, scriptureReference: referenceSchema }).strict(),
+  createJournalDraft: z.object({ query: textSchema, scriptureReference: referenceSchema }).strict(),
+  createTestimonyDraft: z.object({ query: textSchema, scriptureReference: referenceSchema }).strict(),
   createMentorDiscussionPrompt: z.object({ query: textSchema, scriptureReference: referenceSchema }).strict()
 });
 
-function descriptor(name: TeoGuideToolName, purpose: string, requiresAuthentication = false, requiresConsent = false): TeoGuideToolDescriptor {
+function descriptor(name: TeoGuideToolName, purpose: string, allowedIntents: readonly string[], requiresAuthentication = false, requiresConsent = false): TeoGuideToolDescriptor {
   return Object.freeze({
     name,
     purpose,
@@ -67,24 +67,33 @@ function descriptor(name: TeoGuideToolName, purpose: string, requiresAuthenticat
     requiresAuthentication,
     requiresConsent,
     stateMutation: false,
-    maxOutputCharacters: TEO_GUIDE_LIMITS.toolOutputCharacters
+    allowedIntents: Object.freeze([...allowedIntents]),
+    prohibitedSafetyModes: Object.freeze(["critical" as const]),
+    maxInputCharacters: TEO_GUIDE_LIMITS.inputCharacters,
+    maxOutputCharacters: TEO_GUIDE_LIMITS.toolOutputCharacters,
+    timeoutMs: 2_000,
+    rateLimitPerMinute: 60,
+    idempotency: name === "proposeJourneyAction" || name === "createJournalDraft" || name === "createTestimonyDraft" || name === "createMentorDiscussionPrompt" ? "proposal_key_required" : "read_only_repeatable",
+    sourceRequirements: Object.freeze(["source path", "dataset version", "authority label"]),
+    telemetry: "privacy_safe_metadata_only",
+    implementationVersion: `${TEO_GUIDE_TOOL_REGISTRY_VERSION}:${name}`
   });
 }
 
 export const TEO_GUIDE_TOOL_REGISTRY: readonly TeoGuideToolDescriptor[] = Object.freeze([
-  descriptor("searchScripture", "Search or retrieve exact approved WEB Scripture."),
-  descriptor("getScriptureContext", "Read canonical context around an exact Scripture reference."),
-  descriptor("searchPromises", "Search local Promise Clusters with source provenance."),
-  descriptor("getPromiseCluster", "Read one local Promise Cluster."),
-  descriptor("getCurrentJourney", "Read authenticated current journey state.", true, true),
-  descriptor("proposeJourneyAction", "Create a reversible journey action proposal without mutation.", true, true),
-  descriptor("getCallingEvidence", "Read deterministic TIG calling indicators and limitations."),
-  descriptor("buildPrayerOptions", "Build editable prayer options anchored to Scripture."),
-  descriptor("searchApprovedUserMemory", "Read explicitly approved structured memory.", true, true),
-  descriptor("summarizeReflectionPattern", "Summarize approved reflection record metadata without storage.", true, true),
-  descriptor("draftJournalEntry", "Create an editable session-only journal draft."),
-  descriptor("draftTestimonyCandidate", "Create an editable testimony candidate that only the user may finalize."),
-  descriptor("createMentorDiscussionPrompt", "Create a Scripture-grounded prompt for wise counsel and community.")
+  descriptor("searchScripture", "Search or retrieve exact approved WEB Scripture.", ["scripture_lookup", "scripture_context", "prayer_support", "reflection_help", "journal_draft", "testimony_draft", "book_candidate", "mentor_prompt", "product_help", "unknown_or_ambiguous"]),
+  descriptor("getScriptureContext", "Read canonical context around an exact Scripture reference.", ["scripture_context"]),
+  descriptor("searchPromises", "Search local Promise Clusters with source provenance.", ["promise_discovery", "promise_cluster"]),
+  descriptor("getPromiseCluster", "Read one local Promise Cluster.", ["promise_cluster"]),
+  descriptor("getCurrentJourney", "Read authenticated current journey state.", ["journey_help", "daily_action"], true, true),
+  descriptor("proposeJourneyAction", "Create a reversible journey action proposal without mutation.", ["daily_action"], true, true),
+  descriptor("getCallingEvidence", "Read deterministic TIG calling indicators and limitations.", ["calling_reflection"]),
+  descriptor("buildPrayerOptions", "Build editable prayer options anchored to Scripture.", ["prayer_support"]),
+  descriptor("searchApprovedUserMemory", "Read explicitly approved structured memory.", ["memory_inspection", "memory_summary_proposal"], true, true),
+  descriptor("summarizeReflectionPattern", "Summarize approved reflection record metadata without storage.", ["memory_summary_proposal"], true, true),
+  descriptor("createJournalDraft", "Create an editable session-only journal draft.", ["journal_draft"]),
+  descriptor("createTestimonyDraft", "Create an editable testimony candidate that only the user may finalize.", ["testimony_draft", "book_candidate"]),
+  descriptor("createMentorDiscussionPrompt", "Create a Scripture-grounded prompt for wise counsel and community.", ["mentor_prompt"])
 ]);
 
 function hash(value: string): string {
@@ -125,10 +134,19 @@ function scriptureSource(passage: ScripturePassage): TeoGuideSourceReference {
   });
 }
 
-function output(input: Omit<TeoGuideToolOutput, "outputCharacters">): TeoGuideToolOutput {
-  const computed = JSON.stringify(input).length;
+type ToolOutputInput = Omit<TeoGuideToolOutput, "outputCharacters" | "confidence" | "datasetVersions" | "consentScopes" | "latencyMs" | "resultHash"> & Readonly<{
+  consentScopes?: readonly string[];
+  latencyMs?: number;
+}>;
+
+function output(input: ToolOutputInput): TeoGuideToolOutput {
+  const datasetEntries: Array<readonly [string, string]> = input.sources.map((item) => [item.kind, item.version]);
+  if (datasetEntries.length === 0) datasetEntries.push(["tool_registry", TEO_GUIDE_TOOL_REGISTRY_VERSION]);
+  const datasetVersions = Object.freeze(Object.fromEntries(datasetEntries));
+  const core = { ...input, datasetVersions, consentScopes: Object.freeze([...(input.consentScopes || [])]), latencyMs: input.latencyMs || 0 };
+  const computed = JSON.stringify(core).length;
   if (computed > TEO_GUIDE_LIMITS.toolOutputCharacters) {
-    return Object.freeze({
+    const limited = Object.freeze({
       tool: input.tool,
       status: "fallback",
       summary: "The deterministic tool output exceeded its safe size limit.",
@@ -136,11 +154,35 @@ function output(input: Omit<TeoGuideToolOutput, "outputCharacters">): TeoGuideTo
       sources: Object.freeze(input.sources.slice(0, 1)),
       limitations: Object.freeze([...input.limitations, "Tool output was reduced to stay within the safe output limit."]),
       proposals: Object.freeze([]),
+      confidence: "low" as const,
+      datasetVersions,
+      consentScopes: Object.freeze([...(input.consentScopes || [])]),
+      latencyMs: input.latencyMs || 0,
+      resultHash: hash(JSON.stringify({ tool: input.tool, status: "fallback", datasetVersions })),
       outputTrust: input.outputTrust,
       outputCharacters: 0
     });
+    validateToolOutput(limited);
+    return limited;
   }
-  return Object.freeze({ ...input, outputCharacters: computed });
+  const complete = Object.freeze({
+    ...input,
+    confidence: input.status === "complete" ? "high" as const : "low" as const,
+    datasetVersions,
+    consentScopes: Object.freeze([...(input.consentScopes || [])]),
+    latencyMs: input.latencyMs || 0,
+    resultHash: hash(JSON.stringify(core)),
+    outputCharacters: computed
+  });
+  validateToolOutput(complete);
+  return complete;
+}
+
+function validateToolOutput(value: TeoGuideToolOutput): void {
+  if (!value.tool || !value.status || !value.summary || !value.resultHash || !Number.isFinite(value.latencyMs) || value.outputCharacters > TEO_GUIDE_LIMITS.toolOutputCharacters) {
+    throw new Error("A Teo Guide tool output failed its strict output schema.");
+  }
+  if (value.sources.some((item) => !item.id || !item.path || !item.version || !item.authority)) throw new Error("A Teo Guide tool output failed source validation.");
 }
 
 function empty(tool: TeoGuideToolName, summary: string, limitation: string): TeoGuideToolOutput {
@@ -223,7 +265,7 @@ export class TeoGuideToolRegistry {
       }
       case "proposeJourneyAction": {
         const journeySource = source({ kind: "journey", label: "Current user journey", authority: "User-approved record", path: invocation.input.journeyId, version: invocation.input.stage });
-        const proposal = this.proposals.create({ kind: "journey_action", label: "Review journey action", summary: `Review the proposed ${invocation.input.requestedAction} action for ${invocation.input.stage}.`, sourceIds: Object.freeze([journeySource.id]), payload: Object.freeze({ journeyId: invocation.input.journeyId, expectedStage: invocation.input.stage, action: invocation.input.requestedAction }) });
+        const proposal = this.proposals.create({ kind: "journey_action", label: "Review journey action", summary: `Review the proposed ${invocation.input.requestedAction} action for ${invocation.input.stage}.`, sourceIds: Object.freeze([journeySource.id]), payload: Object.freeze({ journeyId: invocation.input.journeyId, expectedStage: invocation.input.stage, action: invocation.input.requestedAction }), ownerUserId: context.authorization?.user.id, undoPolicy: "Use the Prompt 13 reversible journey transition and undo metadata after an explicit application action." });
         return output({ tool: invocation.name, status: "complete", summary: "A reversible journey action was proposed for explicit review.", items: Object.freeze([Object.freeze({ proposalId: proposal.id, status: proposal.status, requiresExplicitConfirmation: true })]), sources: Object.freeze([journeySource]), limitations: Object.freeze(["No journey state changed. Authentication, CSRF, reauthorization, and explicit confirmation remain required."]), proposals: Object.freeze([proposal]), outputTrust: "trusted_system" });
       }
       case "getCallingEvidence": {
@@ -240,24 +282,24 @@ export class TeoGuideToolRegistry {
         if (!runtime || !context.authorization) return empty(invocation.name, "Approved memory is unavailable.", "Durable memory or authenticated authorization is disabled for this preview request.");
         const records = await new TeoGuideAuthorizedMemoryReader(runtime.memory).readStructuredMemory(context.authorization, invocation.input.purpose);
         const items = records.map((record) => Object.freeze({ id: record.id, layer: record.layer, purposeId: record.purposeId, userApproved: record.userApproved, status: record.status, version: record.version, contentFields: Object.freeze(Object.keys(record.content).sort()) }));
-        return output({ tool: invocation.name, status: "complete", summary: `${items.length} approved structured memory record(s) were available.`, items: Object.freeze(items), sources: Object.freeze(records.map(memorySource)), limitations: Object.freeze(["Raw private prayer or reflection text is not copied into telemetry or conversation metadata."]), proposals: Object.freeze([]), outputTrust: "user_approved" });
+        return output({ tool: invocation.name, status: "complete", summary: `${items.length} approved structured memory record(s) were available.`, items: Object.freeze(items), sources: Object.freeze(records.map(memorySource)), limitations: Object.freeze(["Raw private prayer or reflection text is not copied into telemetry or conversation metadata."]), proposals: Object.freeze([]), consentScopes: Object.freeze([`memory:${invocation.input.purpose}:read`]), outputTrust: "user_approved" });
       }
       case "summarizeReflectionPattern": {
         return output({ tool: invocation.name, status: "complete", summary: "A reviewable pattern summary was prepared from approved record metadata.", items: Object.freeze([Object.freeze({ approvedRecordCount: invocation.input.approvedRecordIds.length, summary: invocation.input.approvedRecordIds.length ? "The approved records may show a recurring invitation to revisit Scripture, prayer, and one realistic action." : "No approved records were available to summarize.", requiresUserReview: true })]), sources: Object.freeze([]), limitations: Object.freeze(["This is a tentative pattern, not a hidden profile or a claim about God's action."]), proposals: Object.freeze([]), outputTrust: "user_approved" });
       }
-      case "draftJournalEntry": {
+      case "createJournalDraft": {
         const draftSource = source({ kind: "scripture", label: invocation.input.scriptureReference, authority: "Scripture", path: `canonical-scripture:${invocation.input.scriptureReference}`, version: "WEB-2026-07-21.1", scriptureReference: invocation.input.scriptureReference });
-        const proposal = this.proposals.create({ kind: "journal_draft", label: "Review journal draft", summary: "Review and edit a session-only reflection draft.", sourceIds: Object.freeze([draftSource.id]), payload: Object.freeze({ scriptureReference: invocation.input.scriptureReference, draftKind: "journal" }) });
+        const proposal = this.proposals.create({ kind: "journal_draft", label: "Review journal draft", summary: "Review and edit a session-only reflection draft.", sourceIds: Object.freeze([draftSource.id]), payload: Object.freeze({ scriptureReference: invocation.input.scriptureReference, draftKind: "journal" }), ownerUserId: context.authorization?.user.id });
         return output({ tool: invocation.name, status: "complete", summary: "An editable journal draft was prepared without persistence.", items: Object.freeze([Object.freeze({ draft: `I am reflecting on ${invocation.input.scriptureReference}. I want to notice what the text says, what I may be interpreting, and one faithful next step.`, editable: true })]), sources: Object.freeze([draftSource]), limitations: Object.freeze(["Nothing is saved unless the user later confirms an authorized application action."]), proposals: Object.freeze([proposal]), outputTrust: "untrusted_retrieved" });
       }
-      case "draftTestimonyCandidate": {
+      case "createTestimonyDraft": {
         const testimonySource = source({ kind: "scripture", label: invocation.input.scriptureReference, authority: "Scripture", path: `canonical-scripture:${invocation.input.scriptureReference}`, version: "WEB-2026-07-21.1", scriptureReference: invocation.input.scriptureReference });
-        const proposal = this.proposals.create({ kind: "testimony_candidate", label: "Review testimony candidate", summary: "Review, edit, or reject a testimony candidate; only the user may finalize it.", sourceIds: Object.freeze([testimonySource.id]), payload: Object.freeze({ scriptureReference: invocation.input.scriptureReference, draftKind: "testimony_candidate" }) });
+        const proposal = this.proposals.create({ kind: "testimony_candidate", label: "Review testimony candidate", summary: "Review, edit, or reject a testimony candidate; only the user may finalize it.", sourceIds: Object.freeze([testimonySource.id]), payload: Object.freeze({ scriptureReference: invocation.input.scriptureReference, draftKind: "testimony_candidate" }), ownerUserId: context.authorization?.user.id });
         return output({ tool: invocation.name, status: "complete", summary: "An editable testimony candidate was prepared without publication or persistence.", items: Object.freeze([Object.freeze({ draft: `In light of ${invocation.input.scriptureReference}, I want to review what happened, what I learned, and what I can responsibly say without automatically declaring promise fulfillment or God's action.`, editable: true, userFinalizationRequired: true })]), sources: Object.freeze([testimonySource]), limitations: Object.freeze(["Teo Guide does not publish testimony, declare a promise fulfilled, or label an event as God's action."]), proposals: Object.freeze([proposal]), outputTrust: "untrusted_retrieved" });
       }
       case "createMentorDiscussionPrompt": {
         const mentorSource = source({ kind: "scripture", label: invocation.input.scriptureReference, authority: "Scripture", path: `canonical-scripture:${invocation.input.scriptureReference}`, version: "WEB-2026-07-21.1", scriptureReference: invocation.input.scriptureReference });
-        const proposal: TeoGuideActionProposal = this.proposals.create({ kind: "mentor_discussion", label: "Review mentor discussion prompt", summary: "Review a question to discuss with wise counsel or community.", sourceIds: Object.freeze([mentorSource.id]), payload: Object.freeze({ scriptureReference: invocation.input.scriptureReference, promptKind: "mentor_discussion" }) });
+        const proposal: TeoGuideActionProposal = this.proposals.create({ kind: "mentor_discussion", label: "Review mentor discussion prompt", summary: "Review a question to discuss with wise counsel or community.", sourceIds: Object.freeze([mentorSource.id]), payload: Object.freeze({ scriptureReference: invocation.input.scriptureReference, promptKind: "mentor_discussion" }), ownerUserId: context.authorization?.user.id });
         return output({ tool: invocation.name, status: "complete", summary: "A community discussion prompt was prepared.", items: Object.freeze([Object.freeze({ prompt: `As we read ${invocation.input.scriptureReference} in context, what interpretation should I test, what risks should I consider, and what humble next step seems faithful?`, editable: true })]), sources: Object.freeze([mentorSource]), limitations: Object.freeze(["For major decisions, include prayer, Scripture, wise counsel, community, and appropriate professional care."]), proposals: Object.freeze([proposal]), outputTrust: "untrusted_retrieved" });
       }
     }

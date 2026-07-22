@@ -20,20 +20,22 @@ export function classifyTeoGuideIntent(inputValue: string): TeoGuideIntent {
   if (includesAny(input, ["ignore previous", "reveal system", "developer message", "hidden prompt", "bypass safety", "print your instructions"])) return "sensitive_topic";
   if (REFERENCE_PATTERN.test(input)) return includesAny(input, ["context", "before", "after", "chapter"]) ? "scripture_context" : "scripture_lookup";
   if (includesAny(input, ["which promise", "promise cluster", "promise category"])) return "promise_cluster";
-  if (includesAny(input, ["promise", "hope", "assurance"])) return "promise_search";
-  if (includesAny(input, ["journey status", "where am i", "current journey"])) return "journey_status";
-  if (includesAny(input, ["next journey", "advance", "accept assignment", "complete this step"])) return "journey_action";
-  if (includesAny(input, ["calling", "purpose", "vocation", "gift", "burden"])) return "calling_discernment";
+  if (includesAny(input, ["promise", "hope", "assurance"])) return "promise_discovery";
+  if (includesAny(input, ["journey status", "where am i", "current journey"])) return "journey_help";
+  if (includesAny(input, ["next journey", "advance", "accept assignment", "complete this step"])) return "daily_action";
+  if (includesAny(input, ["calling", "purpose", "vocation", "gift", "burden"])) return "calling_reflection";
   if (includesAny(input, ["pray", "prayer", "anxious", "anxiety", "peace"])) return "prayer_support";
-  if (includesAny(input, ["remember", "my preference", "what did i choose"])) return "memory_search";
-  if (includesAny(input, ["reflection pattern", "summarize my reflections", "recurring reflection"])) return "reflection_pattern";
+  if (includesAny(input, ["remember", "my preference", "what did i choose"])) return "memory_inspection";
+  if (includesAny(input, ["reflection pattern", "summarize my reflections", "recurring reflection"])) return "memory_summary_proposal";
+  if (includesAny(input, ["help me reflect", "reflection help"])) return "reflection_help";
   if (includesAny(input, ["journal draft", "draft a journal", "journal entry"])) return "journal_draft";
   if (includesAny(input, ["testimony draft", "testimony candidate", "draft testimony"])) return "testimony_draft";
+  if (includesAny(input, ["book candidate", "book of the saint candidate"])) return "book_candidate";
   if (includesAny(input, ["mentor", "pastor", "wise counsel", "community discussion"])) return "mentor_prompt";
   if (includesAny(input, ["abuse", "violence", "medical", "legal", "financial", "trauma", "grief", "depression"])) return "sensitive_topic";
   if (includesAny(input, ["how do i use", "what can teo guide", "help page"])) return "product_help";
   if (includesAny(input, ["scripture", "bible", "verse", "wisdom", "decision", "confusion", "trust", "direction"])) return "scripture_lookup";
-  return "unknown";
+  return "unknown_or_ambiguous";
 }
 
 function step(index: number, tool: TeoGuideToolName, reason: string, options: Partial<Pick<TeoGuidePlanStep, "dependsOn" | "requiresAuthentication" | "requiresConsentPurpose">> = {}): TeoGuidePlanStep {
@@ -56,18 +58,19 @@ export function createDeterministicTeoGuidePlan(request: TeoGuideRequest): TeoGu
     if (tools.length < TEO_GUIDE_LIMITS.toolCallsPerTurn) tools.push(step(tools.length, tool, reason, options));
   };
 
-  if (intent === "scripture_lookup" || intent === "scripture_context" || intent === "prayer_support" || intent === "journal_draft" || intent === "testimony_draft" || intent === "mentor_prompt" || intent === "unknown" || intent === "product_help") add("searchScripture", "Retrieve exact approved WEB Scripture before interpretation.");
+  if (intent === "scripture_lookup" || intent === "scripture_context" || intent === "prayer_support" || intent === "journal_draft" || intent === "testimony_draft" || intent === "book_candidate" || intent === "mentor_prompt" || intent === "unknown_or_ambiguous" || intent === "product_help") add("searchScripture", "Retrieve exact approved WEB Scripture before interpretation.");
   if (intent === "scripture_context") add("getScriptureContext", "Read the requested passage in deterministic canonical context.", { dependsOn: [tools[0]?.id || ""] });
-  if (intent === "promise_search" || intent === "promise_cluster") add("searchPromises", "Find local Promise Clusters with explicit Scripture provenance.");
+  if (intent === "promise_discovery" || intent === "promise_cluster") add("searchPromises", "Find local Promise Clusters with explicit Scripture provenance.");
   if (intent === "promise_cluster") add("getPromiseCluster", "Read the selected local cluster without changing its data.", { dependsOn: [tools[0]?.id || ""] });
-  if (intent === "journey_status" || intent === "journey_action") add("getCurrentJourney", "Read current journey state only after authentication.", { requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
-  if (intent === "journey_action") add("proposeJourneyAction", "Create a reversible proposal; do not mutate journey state.", { dependsOn: [tools[0]?.id || ""], requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
-  if (intent === "calling_discernment") add("getCallingEvidence", "Return deterministic indicators and limitations, never a final calling declaration.");
+  if (intent === "journey_help" || intent === "daily_action") add("getCurrentJourney", "Read current journey state only after authentication.", { requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
+  if (intent === "daily_action") add("proposeJourneyAction", "Create a reversible proposal; do not mutate journey state.", { dependsOn: [tools[0]?.id || ""], requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
+  if (intent === "calling_reflection") add("getCallingEvidence", "Return deterministic indicators and limitations, never a final calling declaration.");
   if (intent === "prayer_support") add("buildPrayerOptions", "Build prayer language as a user-editable devotional aid.", { dependsOn: [tools[0]?.id || ""] });
-  if (intent === "memory_search" || intent === "reflection_pattern") add("searchApprovedUserMemory", "Read only explicitly approved structured memory.", { requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
-  if (intent === "reflection_pattern") add("summarizeReflectionPattern", "Summarize approved records without storing a new conclusion.", { dependsOn: [tools[0]?.id || ""], requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
-  if (intent === "journal_draft") add("draftJournalEntry", "Create an editable session draft, not a durable journal entry.", { dependsOn: [tools[0]?.id || ""] });
-  if (intent === "testimony_draft") add("draftTestimonyCandidate", "Create an editable candidate; only the user may finalize testimony.", { dependsOn: [tools[0]?.id || ""] });
+  if (intent === "memory_inspection" || intent === "memory_summary_proposal") add("searchApprovedUserMemory", "Read only explicitly approved structured memory.", { requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
+  if (intent === "memory_summary_proposal") add("summarizeReflectionPattern", "Summarize approved records without storing a new conclusion.", { dependsOn: [tools[0]?.id || ""], requiresAuthentication: true, requiresConsentPurpose: "journey_continuity" });
+  if (intent === "reflection_help") add("searchScripture", "Anchor reflection help in exact approved WEB Scripture.");
+  if (intent === "journal_draft") add("createJournalDraft", "Create an editable session draft, not a durable journal entry.", { dependsOn: [tools[0]?.id || ""] });
+  if (intent === "testimony_draft" || intent === "book_candidate") add("createTestimonyDraft", "Create an editable candidate; only the user may finalize testimony or Book review.", { dependsOn: [tools[0]?.id || ""] });
   if (intent === "mentor_prompt") add("createMentorDiscussionPrompt", "Offer a discussion prompt for wise counsel and community.", { dependsOn: [tools[0]?.id || ""] });
 
   return Object.freeze({

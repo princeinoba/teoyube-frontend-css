@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 const decisionSchema = z.object({
   proposalId: z.string().trim().min(8).max(160),
   expectedRevision: z.number().int().min(1),
+  idempotencyKey: z.string().trim().min(8).max(160).regex(/^[a-z0-9._:-]+$/i),
   decision: z.enum(["confirm", "reject"])
 }).strict();
 
@@ -18,7 +19,7 @@ export async function POST(request: Request) {
   try {
     const context = await authorizeMutation(request, runtime);
     const decision = decisionSchema.parse(await readJsonObject(request));
-    const current = teoGuideActionProposals.get(decision.proposalId);
+    const current = teoGuideActionProposals.get(decision.proposalId, context.user.id);
     if (!current) throw new Error("Action proposal is unavailable.");
     if (decision.decision === "confirm") {
       const purpose = current.kind === "journey_action" ? "journey_continuity" : current.kind === "testimony_candidate" ? "testimony_book_continuity" : "sensitive_spiritual_storage";

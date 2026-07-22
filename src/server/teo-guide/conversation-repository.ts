@@ -10,6 +10,7 @@ export type TeoGuideConversationRecord = Readonly<{
   turns: readonly TeoGuideConversationTurn[];
   createdAt: string;
   updatedAt: string;
+  ownerHash?: string;
   rawUserTextStored: false;
 }>;
 
@@ -20,7 +21,7 @@ function fingerprint(value: string): string {
 export class TeoGuideConversationRepository {
   readonly #records = new Map<string, TeoGuideConversationRecord>();
 
-  record(input: string, response: TeoGuideResponse, now: string): TeoGuideConversationRecord {
+  record(input: string, response: TeoGuideResponse, now: string, ownerUserId?: string): TeoGuideConversationRecord {
     const current = this.#records.get(response.conversationId);
     const turns = [
       ...(current?.turns || []),
@@ -32,6 +33,7 @@ export class TeoGuideConversationRepository {
       turns: Object.freeze(turns),
       createdAt: current?.createdAt || now,
       updatedAt: now,
+      ...(ownerUserId ? { ownerHash: fingerprint(ownerUserId) } : {}),
       rawUserTextStored: false as const
     });
     this.#records.set(record.id, record);
@@ -43,11 +45,15 @@ export class TeoGuideConversationRepository {
     return record;
   }
 
-  inspect(conversationId: string): TeoGuideConversationRecord | null {
-    return this.#records.get(conversationId) || null;
+  inspect(conversationId: string, ownerUserId?: string): TeoGuideConversationRecord | null {
+    const record = this.#records.get(conversationId);
+    if (!record) return null;
+    if (record.ownerHash && (!ownerUserId || record.ownerHash !== fingerprint(ownerUserId))) return null;
+    return record;
   }
 
-  delete(conversationId: string): boolean {
+  delete(conversationId: string, ownerUserId?: string): boolean {
+    if (!this.inspect(conversationId, ownerUserId)) return false;
     return this.#records.delete(conversationId);
   }
 }

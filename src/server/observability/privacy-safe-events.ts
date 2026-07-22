@@ -22,6 +22,8 @@ export type PrivacySafeEventName =
   | "teo_guide_intent_selected"
   | "teo_guide_tool_allowed"
   | "teo_guide_tool_blocked"
+  | "teo_guide_tool_timeout"
+  | "teo_guide_tool_partial_result"
   | "teo_guide_fallback_used"
   | "teo_guide_response_validated"
   | "teo_guide_action_proposed"
@@ -34,11 +36,17 @@ export type PrivacySafeEvent = Readonly<{
   subjectHash?: string;
   purposeId?: string;
   layer?: string;
-  result?: "allowed" | "denied" | "complete" | "fallback" | "blocked" | "failed";
+  result?: "allowed" | "denied" | "complete" | "fallback" | "blocked" | "failed" | "partial" | "timeout";
   count?: number;
   topic?: string;
   mode?: string;
   policyVersion?: string;
+  datasetVersion?: string;
+  responseVersion?: string;
+  traceId?: string;
+  route?: string;
+  latencyMs?: number;
+  tokenCount?: 0;
 }>;
 
 export interface PrivacySafeEventSink { emit(event: PrivacySafeEvent): void }

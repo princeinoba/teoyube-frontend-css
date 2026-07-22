@@ -12,7 +12,16 @@ export type TeoGuideToolDescriptor = Readonly<{
   requiresAuthentication: boolean;
   requiresConsent: boolean;
   stateMutation: false;
+  allowedIntents: readonly string[];
+  prohibitedSafetyModes: readonly ("critical")[];
+  maxInputCharacters: number;
   maxOutputCharacters: number;
+  timeoutMs: number;
+  rateLimitPerMinute: number;
+  idempotency: "read_only_repeatable" | "proposal_key_required";
+  sourceRequirements: readonly string[];
+  telemetry: "privacy_safe_metadata_only";
+  implementationVersion: string;
 }>;
 
 export type TeoGuideToolInvocation =
@@ -26,8 +35,8 @@ export type TeoGuideToolInvocation =
   | Readonly<{ name: "buildPrayerOptions"; input: Readonly<{ query: string; scriptureReference: string }> }>
   | Readonly<{ name: "searchApprovedUserMemory"; input: Readonly<{ query: string; purpose: "preference_continuity" | "journey_continuity" }> }>
   | Readonly<{ name: "summarizeReflectionPattern"; input: Readonly<{ query: string; approvedRecordIds: readonly string[] }> }>
-  | Readonly<{ name: "draftJournalEntry"; input: Readonly<{ query: string; scriptureReference: string }> }>
-  | Readonly<{ name: "draftTestimonyCandidate"; input: Readonly<{ query: string; scriptureReference: string }> }>
+  | Readonly<{ name: "createJournalDraft"; input: Readonly<{ query: string; scriptureReference: string }> }>
+  | Readonly<{ name: "createTestimonyDraft"; input: Readonly<{ query: string; scriptureReference: string }> }>
   | Readonly<{ name: "createMentorDiscussionPrompt"; input: Readonly<{ query: string; scriptureReference: string }> }>;
 
 export type TeoGuideToolOutput = Readonly<{
@@ -38,6 +47,11 @@ export type TeoGuideToolOutput = Readonly<{
   sources: readonly TeoGuideSourceReference[];
   limitations: readonly string[];
   proposals: readonly TeoGuideActionProposal[];
+  confidence: "high" | "medium" | "low";
+  datasetVersions: Readonly<Record<string, string>>;
+  consentScopes: readonly string[];
+  latencyMs: number;
+  resultHash: string;
   outputTrust: TeoGuideToolTrust;
   outputCharacters: number;
 }>;

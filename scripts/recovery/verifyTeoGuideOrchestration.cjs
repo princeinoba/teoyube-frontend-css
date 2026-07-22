@@ -3,7 +3,7 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "../..");
 const requiredTools = [
-  "searchScripture", "getScriptureContext", "searchPromises", "getPromiseCluster", "getCurrentJourney", "proposeJourneyAction", "getCallingEvidence", "buildPrayerOptions", "searchApprovedUserMemory", "summarizeReflectionPattern", "draftJournalEntry", "draftTestimonyCandidate", "createMentorDiscussionPrompt"
+  "searchScripture", "getScriptureContext", "searchPromises", "getPromiseCluster", "getCurrentJourney", "proposeJourneyAction", "getCallingEvidence", "buildPrayerOptions", "searchApprovedUserMemory", "summarizeReflectionPattern", "createJournalDraft", "createTestimonyDraft", "createMentorDiscussionPrompt"
 ];
 const boundaryFiles = [
   "src/domain/teo-guide/orchestration-contracts.ts",

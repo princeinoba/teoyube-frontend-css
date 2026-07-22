@@ -14,6 +14,7 @@ export type TeoGuideClientResponseDto = Readonly<{
   sections: readonly TeoGuideClientSectionDto[];
   whyThis: readonly string[];
   limitations: readonly string[];
+  followUp?: Readonly<{ question: string; reason: string }>;
   sourceReferences: readonly string[];
   actionProposals: readonly Readonly<{
     id: string;

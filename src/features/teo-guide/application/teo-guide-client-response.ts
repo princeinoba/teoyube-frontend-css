@@ -35,6 +35,7 @@ export function createTeoGuideClientResponse(input: string, response: TeoGuideRe
     sections: Object.freeze(sections),
     whyThis: Object.freeze([...response.whyThis]),
     limitations: Object.freeze([...response.limitations]),
+    ...(response.followUp ? { followUp: Object.freeze({ question: response.followUp.question, reason: response.followUp.reason }) } : {}),
     sourceReferences: Object.freeze(response.sources.map((source) => source.scriptureReference).filter((reference): reference is string => Boolean(reference))),
     actionProposals: Object.freeze(response.actionProposals.map((proposal) => Object.freeze({ id: proposal.id, label: proposal.label, summary: proposal.summary, status: proposal.status, requiresExplicitConfirmation: true as const }))),
     safety: Object.freeze({ mode: response.safety.mode, orderedGuidance: Object.freeze([...response.safety.orderedGuidance]), postValidationPassed: response.safety.postValidationPassed }),

@@ -12,8 +12,8 @@ export async function GET(request: Request, route: Readonly<{ params: Promise<Re
   const runtime = runtimeOrNull();
   if (!runtime) return Response.json({ error: "Authenticated conversation inspection is disabled for this preview environment." }, { status: 503, headers: { "cache-control": "no-store" } });
   try {
-    await authorizeRead(request, runtime);
-    const record = teoGuideConversations.inspect(safeId((await route.params).conversationId));
+    const context = await authorizeRead(request, runtime);
+    const record = teoGuideConversations.inspect(safeId((await route.params).conversationId), context.user.id);
     if (!record) return Response.json({ error: "Conversation is unavailable." }, { status: 404, headers: { "cache-control": "no-store" } });
     return Response.json({ conversation: record }, { headers: { "cache-control": "no-store" } });
   } catch (error) {
@@ -25,8 +25,8 @@ export async function DELETE(request: Request, route: Readonly<{ params: Promise
   const runtime = runtimeOrNull();
   if (!runtime) return Response.json({ error: "Authenticated conversation deletion is disabled for this preview environment." }, { status: 503, headers: { "cache-control": "no-store" } });
   try {
-    await authorizeMutation(request, runtime);
-    return Response.json({ deleted: teoGuideConversations.delete(safeId((await route.params).conversationId)) }, { headers: { "cache-control": "no-store" } });
+    const context = await authorizeMutation(request, runtime);
+    return Response.json({ deleted: teoGuideConversations.delete(safeId((await route.params).conversationId), context.user.id) }, { headers: { "cache-control": "no-store" } });
   } catch (error) {
     return safeApiError(error);
   }

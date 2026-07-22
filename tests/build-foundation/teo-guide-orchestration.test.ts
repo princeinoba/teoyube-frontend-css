@@ -4,6 +4,7 @@ import type { ConsentGrant } from "../../src/domain/memory/memory-contracts";
 import { classifyTeoGuideIntent, createDeterministicTeoGuidePlan } from "../../src/domain/teo-guide/deterministic-planner";
 import type { TeoGuideContext } from "../../src/domain/teo-guide/orchestration-contracts";
 import { TEO_GUIDE_LIMITS } from "../../src/domain/teo-guide/orchestration-contracts";
+import type { TeoGuideToolInvocation } from "../../src/domain/teo-guide/tool-contracts";
 import { InMemoryPrivacySafeEventSink } from "../../src/server/observability/privacy-safe-events";
 import { TeoGuideActionProposalRepository } from "../../src/server/teo-guide/action-proposal-repository";
 import { TeoGuideConversationRepository } from "../../src/server/teo-guide/conversation-repository";
@@ -38,29 +39,32 @@ function fixture(options: Readonly<{ authenticated?: boolean; monotonicNow?: () 
 describe("Prompt 18 deterministic Teo Guide orchestration", () => {
   it("registers exactly the 13 authorized read-only tools with fixed schemas", () => {
     expect(TEO_GUIDE_TOOL_REGISTRY.map((tool) => tool.name)).toEqual([
-      "searchScripture", "getScriptureContext", "searchPromises", "getPromiseCluster", "getCurrentJourney", "proposeJourneyAction", "getCallingEvidence", "buildPrayerOptions", "searchApprovedUserMemory", "summarizeReflectionPattern", "draftJournalEntry", "draftTestimonyCandidate", "createMentorDiscussionPrompt"
+      "searchScripture", "getScriptureContext", "searchPromises", "getPromiseCluster", "getCurrentJourney", "proposeJourneyAction", "getCallingEvidence", "buildPrayerOptions", "searchApprovedUserMemory", "summarizeReflectionPattern", "createJournalDraft", "createTestimonyDraft", "createMentorDiscussionPrompt"
     ]);
     expect(TEO_GUIDE_TOOL_REGISTRY.every((tool) => tool.stateMutation === false && tool.inputSchemaVersion === "1.0.0" && tool.outputSchemaVersion === "1.0.0")).toBe(true);
+    expect(TEO_GUIDE_TOOL_REGISTRY.every((tool) => tool.allowedIntents.length > 0 && tool.timeoutMs > 0 && tool.rateLimitPerMinute > 0 && tool.sourceRequirements.length > 0 && tool.telemetry === "privacy_safe_metadata_only")).toBe(true);
   });
 
   it.each([
     ["James 1:5", "scripture_lookup"],
     ["Read the context before and after James 1:5", "scripture_context"],
-    ["Find a promise for hope", "promise_search"],
+    ["Find a promise for hope", "promise_discovery"],
     ["Which promise cluster fits calling?", "promise_cluster"],
-    ["Where am I in my current journey?", "journey_status"],
-    ["Advance my next journey step", "journey_action"],
-    ["Help me discern my calling", "calling_discernment"],
+    ["Where am I in my current journey?", "journey_help"],
+    ["Advance my next journey step", "daily_action"],
+    ["Help me discern my calling", "calling_reflection"],
     ["Help me pray about anxiety", "prayer_support"],
-    ["What did I choose before?", "memory_search"],
-    ["Summarize my reflection pattern", "reflection_pattern"],
+    ["What did I choose before?", "memory_inspection"],
+    ["Summarize my reflection pattern", "memory_summary_proposal"],
+    ["Help me reflect on today", "reflection_help"],
     ["Draft a journal entry", "journal_draft"],
     ["Draft testimony candidate", "testimony_draft"],
+    ["Create a Book candidate", "book_candidate"],
     ["Give me a mentor discussion question", "mentor_prompt"],
     ["I need medical guidance", "sensitive_topic"],
     ["I want to kill myself", "crisis_support"],
     ["How do I use Teo Guide?", "product_help"],
-    ["unrecognized words", "unknown"]
+    ["unrecognized words", "unknown_or_ambiguous"]
   ] as const)("classifies %s as %s", (input, expected) => {
     expect(classifyTeoGuideIntent(input)).toBe(expected);
   });
@@ -72,6 +76,37 @@ describe("Prompt 18 deterministic Teo Guide orchestration", () => {
     expect(first.steps.length).toBeLessThanOrEqual(TEO_GUIDE_LIMITS.toolCallsPerTurn);
     expect(first.steps.every((step) => step.stateMutation === false)).toBe(true);
     expect(first.steps.map((step) => step.tool)).toEqual(["searchScripture", "buildPrayerOptions"]);
+  });
+
+  it("strictly validates tool inputs and returns hashed, versioned, bounded outputs", async () => {
+    const registry = new TeoGuideToolRegistry(new TeoGuideActionProposalRepository(() => NOW));
+    const result = await registry.execute({ name: "searchScripture", input: { query: "James 1:5", limit: 1 } }, context());
+    expect(result).toMatchObject({ confidence: "high", latencyMs: 0, consentScopes: [] });
+    expect(result.resultHash).toMatch(/^[a-f0-9]{64}$/);
+    expect(Object.keys(result.datasetVersions).length).toBeGreaterThan(0);
+    expect(result.sources[0]).toMatchObject({ authority: "Scripture", scriptureReference: "James 1:5" });
+    expect(result.outputCharacters).toBeLessThanOrEqual(TEO_GUIDE_LIMITS.toolOutputCharacters);
+    const execute = Reflect.get(registry, "execute");
+    await expect(Reflect.apply(execute, registry, [{ name: "searchScripture", input: { query: "", limit: 99, unexpected: true } }, context()])).rejects.toThrow();
+    await expect(Reflect.apply(execute, registry, [{ name: "userNamedTool", input: {} }, context()])).rejects.toThrow();
+  });
+
+  it("enforces the per-tool timeout as a controlled fallback", async () => {
+    class SlowRegistry extends TeoGuideToolRegistry {
+      override descriptor(name: Parameters<TeoGuideToolRegistry["descriptor"]>[0]) {
+        return Object.freeze({ ...super.descriptor(name), timeoutMs: 1 });
+      }
+      override async execute(call: TeoGuideToolInvocation, toolContext: TeoGuideContext) {
+        await new Promise((resolve) => setTimeout(resolve, 10));
+        return super.execute(call, toolContext);
+      }
+    }
+    const events = new InMemoryPrivacySafeEventSink();
+    const orchestrator = new DeterministicTeoGuideOrchestrator({ tools: new SlowRegistry(), events, now: () => NOW, monotonicNow: () => 0 });
+    const result = await orchestrator.run({ input: "I need wisdom for a decision.", context: context() });
+    expect(result.executedTools).toEqual([]);
+    expect(result.blockedTools[0]?.reason).toMatch(/timeout/i);
+    expect(events.events.some((event) => event.name === "teo_guide_tool_timeout" && event.tokenCount === 0)).toBe(true);
   });
 
   it.each([
@@ -96,6 +131,8 @@ describe("Prompt 18 deterministic Teo Guide orchestration", () => {
     expect(first.response.safety.postValidationPassed).toBe(true);
     expect(first.response).toMatchObject({ deterministic: true, externalModelUsed: false, durableWritePerformed: false });
     expect(await verifyTeoGuideScriptureSources(first.response)).toBe(true);
+    expect(first.response.versions.responseContract).toBe("teo-guide-structured-response-2026-07-22.1");
+    expect(first.response.sources.every((source) => source.path && source.version)).toBe(true);
   });
 
   it.each([
@@ -142,9 +179,12 @@ describe("Prompt 18 deterministic Teo Guide orchestration", () => {
     const proposal = result.response.actionProposals[0];
     expect(proposal).toMatchObject({ kind: "journey_action", status: "proposed", requiresExplicitConfirmation: true });
     expect(proposal.sourceIds.length).toBeGreaterThan(0);
-    const confirmed = proposals.decide(authorization, { proposalId: proposal.id, expectedRevision: proposal.confirmationRevision, decision: "confirm" });
+    const decision = { proposalId: proposal.id, expectedRevision: proposal.confirmationRevision, idempotencyKey: "journey-confirm-0001", decision: "confirm" as const };
+    const confirmed = proposals.decide(authorization, decision);
     expect(confirmed).toMatchObject({ applicationActionAuthorized: true, durableWritePerformed: false, proposal: { status: "confirmed" } });
-    expect(() => proposals.decide(authorization, { proposalId: proposal.id, expectedRevision: proposal.confirmationRevision, decision: "confirm" })).toThrow(/conflict/i);
+    expect(proposals.decide(authorization, decision)).toEqual(confirmed);
+    expect(() => proposals.decide(authorization, { ...decision, idempotencyKey: "journey-confirm-0002" })).toThrow(/conflict/i);
+    expect(proposals.get(proposal.id, "different-user")).toBeNull();
   });
 
   it("stores only bounded conversation metadata and lets the user inspect and delete it", async () => {
@@ -157,6 +197,15 @@ describe("Prompt 18 deterministic Teo Guide orchestration", () => {
     expect(record?.turns.length).toBe(2);
     expect(conversations.delete(requestContext.conversationId)).toBe(true);
     expect(conversations.inspect(requestContext.conversationId)).toBeNull();
+  });
+
+  it("enforces conversation ownership and one focused non-sensitive follow-up", async () => {
+    const authenticated = fixture({ authenticated: true });
+    const result = await authenticated.orchestrator.run({ input: "unrecognized words", context: authenticated.requestContext });
+    expect(result.response.followUp).toMatchObject({ maximumQuestions: 1, sensitiveDetailsRequired: false });
+    expect(authenticated.conversations.inspect(authenticated.requestContext.conversationId, "different-user")).toBeNull();
+    expect(authenticated.conversations.delete(authenticated.requestContext.conversationId, "different-user")).toBe(false);
+    expect(authenticated.conversations.inspect(authenticated.requestContext.conversationId, authorization.user.id)).not.toBeNull();
   });
 
   it("uses typed fallbacks for input and execution limits", async () => {

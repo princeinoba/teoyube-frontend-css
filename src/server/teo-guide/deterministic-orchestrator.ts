@@ -8,6 +8,7 @@ import {
   TEO_GUIDE_LIMITS,
   TEO_GUIDE_ORCHESTRATION_VERSION,
   TEO_GUIDE_PLANNER_VERSION,
+  TEO_GUIDE_RESPONSE_CONTRACT_VERSION,
   TEO_GUIDE_TOOL_REGISTRY_VERSION,
   type TeoGuideActionProposal,
   type TeoGuideOrchestrationResult,
@@ -86,8 +87,8 @@ function invocation(step: TeoGuidePlanStep, request: TeoGuideRequest, outputs: r
     case "buildPrayerOptions": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, scriptureReference }) });
     case "searchApprovedUserMemory": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, purpose: "journey_continuity" as const }) });
     case "summarizeReflectionPattern": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, approvedRecordIds: Object.freeze(outputs.find((output) => output.tool === "searchApprovedUserMemory")?.items.map((item) => typeof item.id === "string" ? item.id : "").filter(Boolean) || []) }) });
-    case "draftJournalEntry": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, scriptureReference }) });
-    case "draftTestimonyCandidate": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, scriptureReference }) });
+    case "createJournalDraft": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, scriptureReference }) });
+    case "createTestimonyDraft": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, scriptureReference }) });
     case "createMentorDiscussionPrompt": return Object.freeze({ name: step.tool, input: Object.freeze({ query: request.input, scriptureReference }) });
   }
 }
@@ -116,6 +117,18 @@ function proposalList(outputs: readonly TeoGuideToolOutput[]): readonly TeoGuide
   return Object.freeze([...map.values()]);
 }
 
+async function executeWithTimeout(tools: TeoGuideToolRegistry, call: TeoGuideToolInvocation, context: TeoGuideRequest["context"], timeoutMs: number): Promise<TeoGuideToolOutput> {
+  let timeout: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      tools.execute(call, context),
+      new Promise<never>((_resolve, reject) => { timeout = setTimeout(() => reject(new Error("The deterministic tool timeout was reached.")), timeoutMs); })
+    ]);
+  } finally {
+    if (timeout) clearTimeout(timeout);
+  }
+}
+
 export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
   readonly #tools: TeoGuideToolRegistry;
   readonly #conversations: TeoGuideConversationRepository;
@@ -137,7 +150,8 @@ export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
     const boundedInput = request.input.trim().slice(0, TEO_GUIDE_LIMITS.inputCharacters);
     const inputLimitReached = request.input.length > TEO_GUIDE_LIMITS.inputCharacters;
     const boundedRequest: TeoGuideRequest = Object.freeze({ ...request, input: boundedInput });
-    this.#events.emit({ name: "teo_guide_request_started", occurredAt, result: "allowed", count: boundedInput.length });
+    const traceId = `trace-${digest(`${request.context.conversationId}|${occurredAt}`).slice(0, 16)}`;
+    this.#events.emit({ name: "teo_guide_request_started", occurredAt, result: "allowed", count: boundedInput.length, traceId, route: request.context.route, responseVersion: TEO_GUIDE_RESPONSE_CONTRACT_VERSION, tokenCount: 0 });
     const plan = createDeterministicTeoGuidePlan(boundedRequest);
     this.#events.emit({ name: "teo_guide_intent_selected", occurredAt, result: "allowed", topic: plan.intent });
     const safety = await new DeterministicSafetyOrchestrator({ events: this.#events, now: this.#now }).run({
@@ -183,11 +197,15 @@ export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
         continue;
       }
       try {
-        outputs.push(await this.#tools.execute(invocation(step, boundedRequest, outputs), boundedRequest.context));
+        const toolStarted = this.#monotonicNow();
+        const toolOutput = await executeWithTimeout(this.#tools, invocation(step, boundedRequest, outputs), boundedRequest.context, descriptor.timeoutMs);
+        outputs.push(toolOutput);
         this.#events.emit({ name: "teo_guide_tool_allowed", occurredAt: this.#now(), result: "allowed", topic: step.tool });
-      } catch {
-        blocked.push(Object.freeze({ tool: step.tool, reason: "The deterministic tool returned a controlled failure." }));
-        this.#events.emit({ name: "teo_guide_tool_blocked", occurredAt: this.#now(), result: "failed", topic: step.tool });
+        if (toolOutput.status === "fallback") this.#events.emit({ name: "teo_guide_tool_partial_result", occurredAt: this.#now(), result: "partial", topic: step.tool, latencyMs: Math.max(0, this.#monotonicNow() - toolStarted), tokenCount: 0 });
+      } catch (error) {
+        const timedOut = error instanceof Error && /timeout/i.test(error.message);
+        blocked.push(Object.freeze({ tool: step.tool, reason: timedOut ? "The deterministic tool timeout was reached." : "The deterministic tool returned a controlled failure." }));
+        this.#events.emit({ name: timedOut ? "teo_guide_tool_timeout" : "teo_guide_tool_blocked", occurredAt: this.#now(), result: timedOut ? "timeout" : "failed", topic: step.tool, tokenCount: 0 });
       }
     }
 
@@ -211,8 +229,8 @@ export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
     const prayerOutput = outputFor(outputs, "buildPrayerOptions");
     const journeyOutput = outputFor(outputs, "proposeJourneyAction") || outputFor(outputs, "getCurrentJourney");
     const reflectionOutput = outputFor(outputs, "summarizeReflectionPattern") || outputFor(outputs, "searchApprovedUserMemory");
-    const journalOutput = outputFor(outputs, "draftJournalEntry");
-    const testimonyOutput = outputFor(outputs, "draftTestimonyCandidate");
+    const journalOutput = outputFor(outputs, "createJournalDraft");
+    const testimonyOutput = outputFor(outputs, "createTestimonyDraft");
     const mentorOutput = outputFor(outputs, "createMentorDiscussionPrompt");
     const sensitive = safety.preRetrieval.assessment.sensitive;
     const orderedGuidance = Object.freeze(safety.response.sections.map((item) => item.text));
@@ -244,6 +262,7 @@ export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
       reflectionPrompts: Object.freeze(reflectionOutput || journalOutput ? [section("Reflection", journalOutput ? field(journalOutput, "draft") || journalOutput.summary : reflectionOutput?.summary || "", outputSources(journalOutput || reflectionOutput))] : []),
       testimonyAndBook: Object.freeze(testimonyOutput ? [section("Testimony candidate", field(testimonyOutput, "draft") || testimonyOutput.summary, outputSources(testimonyOutput))] : []),
       mentorCommunity: Object.freeze(mentorOutput ? [section("Mentor or community discussion", field(mentorOutput, "prompt") || mentorOutput.summary, outputSources(mentorOutput))] : []),
+      ...(plan.intent === "unknown_or_ambiguous" ? { followUp: Object.freeze({ question: "Would you like to begin with Scripture, prayer, a Promise Cluster, or your current journey?", reason: "One focused choice materially changes the smallest safe tool plan.", maximumQuestions: 1 as const, sensitiveDetailsRequired: false as const }) } : {}),
       whyThis: Object.freeze([`Intent: ${plan.intent}.`, ...plan.steps.map((step) => `${step.tool}: ${step.reason}`), `Safety policy: ${SAFETY_POLICY_VERSION}.`]),
       confidence: Object.freeze({ label: outputs.some((item) => item.status === "fallback") || blocked.length ? "safe_fallback" : scriptureOutput ? "exact_scripture" : "strong_deterministic_match", score: outputs.some((item) => item.status === "fallback") || blocked.length ? 0.5 : 1, rationale: "The response uses fixed local rules, exact WEB Scripture, source paths, and deterministic safety policy." }),
       limitations,
@@ -258,7 +277,7 @@ export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
         prohibitedClaimsBlocked: Object.freeze(safety.responseValidation.prohibitedClaims.map((finding) => finding.type)),
         postValidationPassed: false
       }),
-      versions: Object.freeze({ orchestrator: TEO_GUIDE_ORCHESTRATION_VERSION, planner: TEO_GUIDE_PLANNER_VERSION, tools: TEO_GUIDE_TOOL_REGISTRY_VERSION, scriptureCorpus: safetyScripture.citation.corpusVersion, tigDataset: TIG_DATASET_VERSION, tigRuleset: TIG_RULESET_VERSION, safetyPolicy: SAFETY_POLICY_VERSION }),
+      versions: Object.freeze({ orchestrator: TEO_GUIDE_ORCHESTRATION_VERSION, responseContract: TEO_GUIDE_RESPONSE_CONTRACT_VERSION, planner: TEO_GUIDE_PLANNER_VERSION, tools: TEO_GUIDE_TOOL_REGISTRY_VERSION, scriptureCorpus: safetyScripture.citation.corpusVersion, tigDataset: TIG_DATASET_VERSION, tigRuleset: TIG_RULESET_VERSION, safetyPolicy: SAFETY_POLICY_VERSION }),
       deterministic: true,
       externalModelUsed: false,
       durableWritePerformed: false
@@ -276,7 +295,7 @@ export class DeterministicTeoGuideOrchestrator implements TeoGuideOrchestrator {
     this.#events.emit({ name: "teo_guide_response_validated", occurredAt: this.#now(), result: "complete", count: response.sources.length });
     if (response.actionProposals.length) this.#events.emit({ name: "teo_guide_action_proposed", occurredAt: this.#now(), result: "allowed", count: response.actionProposals.length });
     if (outputs.some((item) => item.status === "fallback") || blocked.length || inputLimitReached || durationLimitReached) this.#events.emit({ name: "teo_guide_fallback_used", occurredAt: this.#now(), result: "fallback", count: 1 });
-    this.#conversations.record(boundedInput, response, occurredAt);
+    this.#conversations.record(boundedInput, response, occurredAt, request.context.authorization?.user.id);
     return Object.freeze({ response, plan, executedTools: Object.freeze(outputs.map((item) => item.tool)), blockedTools: Object.freeze(blocked), durationMs, fallbackUsed: outputs.some((item) => item.status === "fallback") || blocked.length > 0 || inputLimitReached || durationLimitReached });
   }
 }

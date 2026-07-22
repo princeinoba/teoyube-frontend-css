@@ -2,6 +2,7 @@ import type { AuthorizationContext } from "../identity/identity-contracts";
 import type { ConsentGrant } from "../memory/memory-contracts";
 
 export const TEO_GUIDE_ORCHESTRATION_VERSION = "teo-guide-orchestration-2026-07-22.1";
+export const TEO_GUIDE_RESPONSE_CONTRACT_VERSION = "teo-guide-structured-response-2026-07-22.1";
 export const TEO_GUIDE_PLANNER_VERSION = "teo-guide-deterministic-planner-2026-07-22.1";
 export const TEO_GUIDE_TOOL_REGISTRY_VERSION = "teo-guide-tools-2026-07-22.1";
 
@@ -19,21 +20,23 @@ export const TEO_GUIDE_LIMITS = Object.freeze({
 export type TeoGuideIntent =
   | "scripture_lookup"
   | "scripture_context"
-  | "promise_search"
+  | "promise_discovery"
   | "promise_cluster"
-  | "journey_status"
-  | "journey_action"
-  | "calling_discernment"
+  | "journey_help"
+  | "daily_action"
+  | "calling_reflection"
   | "prayer_support"
-  | "memory_search"
-  | "reflection_pattern"
+  | "memory_inspection"
+  | "memory_summary_proposal"
+  | "reflection_help"
   | "journal_draft"
   | "testimony_draft"
+  | "book_candidate"
   | "mentor_prompt"
   | "sensitive_topic"
   | "crisis_support"
   | "product_help"
-  | "unknown";
+  | "unknown_or_ambiguous";
 
 export type TeoGuideToolName =
   | "searchScripture"
@@ -46,8 +49,8 @@ export type TeoGuideToolName =
   | "buildPrayerOptions"
   | "searchApprovedUserMemory"
   | "summarizeReflectionPattern"
-  | "draftJournalEntry"
-  | "draftTestimonyCandidate"
+  | "createJournalDraft"
+  | "createTestimonyDraft"
   | "createMentorDiscussionPrompt";
 
 export type TeoGuideSourceReference = Readonly<{
@@ -125,6 +128,8 @@ export type TeoGuideActionProposal = Readonly<{
   requiresAuthentication: true;
   requiresCsrf: true;
   requiresExplicitConfirmation: true;
+  reversible: true;
+  undoPolicy: string;
   createdAt: string;
   expiresAt: string;
   confirmationRevision: number;
@@ -152,6 +157,12 @@ export type TeoGuideResponse = Readonly<{
   reflectionPrompts: readonly TeoGuideResponseSection[];
   testimonyAndBook: readonly TeoGuideResponseSection[];
   mentorCommunity: readonly TeoGuideResponseSection[];
+  followUp?: Readonly<{
+    question: string;
+    reason: string;
+    maximumQuestions: 1;
+    sensitiveDetailsRequired: false;
+  }>;
   whyThis: readonly string[];
   confidence: TeoGuideConfidence;
   limitations: readonly string[];
@@ -168,6 +179,7 @@ export type TeoGuideResponse = Readonly<{
   }>;
   versions: Readonly<{
     orchestrator: string;
+    responseContract: string;
     planner: string;
     tools: string;
     scriptureCorpus: string;
@@ -192,6 +204,7 @@ export type TeoGuideOrchestrationResult = Readonly<{
 export type TeoGuideProposalDecision = Readonly<{
   proposalId: string;
   expectedRevision: number;
+  idempotencyKey: string;
   decision: "confirm" | "reject";
 }>;
 
