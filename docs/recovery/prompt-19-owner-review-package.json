@@ -1,0 +1,28 @@
+{
+  "version": "prompt-19-owner-review-2026-07-22.1",
+  "syntheticOnly": true,
+  "apiKeyIncluded": false,
+  "rawProviderErrorIncluded": false,
+  "zeroDataRetentionClaimed": false,
+  "store": false,
+  "fixture": {
+    "id": "exact-scripture",
+    "input": "James 1:5",
+    "modelRoute": "standard",
+    "modelSnapshot": "gpt-5.4-2026-03-05",
+    "promptVersion": "teoyube-live-prompts-2026-07-22.1",
+    "schemaVersion": "teo-guide-live-response-2026-07-22.1",
+    "toolVersion": "teo-guide-tools-2026-07-22.1",
+    "safetyMode": "ordinary",
+    "memoryIncluded": false,
+    "providerStatus": "provider_error",
+    "safeErrorCode": "provider_project_quota_unavailable",
+    "structuredResponse": null,
+    "deterministicFallbackDisplayed": true,
+    "durableWritePerformed": false,
+    "recordedTokenUsage": 0,
+    "recordedEstimatedCostUsd": 0
+  },
+  "gateBPreview": "BLOCKED_PROVIDER_PROJECT_QUOTA",
+  "gateBProduction": "CLOSED"
+}
