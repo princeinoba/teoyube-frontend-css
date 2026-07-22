@@ -1,6 +1,6 @@
 # Prompt 17 combined performance and safety report
 
-Date: 2026-07-21  
+Date: 2026-07-22
 Decision: **BLOCKED**  
 Prompt 18: **LOCKED**
 
@@ -128,3 +128,15 @@ After the security remediation:
 - both static and Next alternated as the slower runtime, so host scheduling/I/O contention is plausible but remains an inference.
 
 No threshold, timeout, readiness predicate, retry, viewport, mask, baseline, or visible content was weakened. Under the owner-authored stop rule, the current performance evidence keeps the combined task and Prompt 18 blocked.
+
+## Prompt 17P stabilization follow-up
+
+Prompt 17P preserved the safety implementation and all earlier performance evidence. A clean `npm ci` kept `package-lock.json` byte-identical, and the production build plus TIG, Scripture, and safety client-boundary checks passed.
+
+The three previously slow Today cells passed 9/9 isolated repetitions with fresh servers and browsers; the maximum was 1,610.4 ms. A canonical-order diagnostic matrix passed 72/72 with a 3,549.7 ms maximum, and a reverse-order matrix passed 72/72 with a 3,310.6 ms maximum. Today therefore did not retain the failure when first or last. Prompt 17 evaluator, fixture, taxonomy, and runner code was absent from Today and built route chunks; ordinary Next Today made no API or duplicate request.
+
+No application or canonical-harness defect was established, so no runtime or harness source was changed. The strongest evidence remains host/command/browser scheduling suspension: the reverse diagnostic paused for approximately 30 minutes between fresh route lifecycles while completed cell timings stayed below the threshold and only one owned Chrome process existed.
+
+The first required final canonical run was preserved after the command host timed out. Its checkpoint contains 45/72 cells, zero violations, and a maximum of 3,281.6 ms. Because this run did not complete, the required three consecutive 72-cell passes were not achieved; final runs 2 and 3 were not executed. The failed-run checkpoint hash is `3BFB5C9F523A60ECC3861B231CD3BA9FECB2FB8303E226F54CCE48BCDEB3E710`.
+
+Final Gate A reconfirmation remains 64/64 PASS with semantic hash `65943d102556d1af6e009621c99189fbccda0f881ceb2b67c62865a68f2f03dd`. Gate B remains `CLOSED_LIVE_AI_DISABLED`, all test listeners are closed, and Prompt 18 remains locked. Full Prompt 17P evidence is recorded in `docs/recovery/prompt-17p-performance-stabilization-report.md`.
