@@ -124,7 +124,7 @@ function atomicWriteJson(filePath, value) {
   fs.mkdirSync(path.dirname(absolute), { recursive: true });
   const temporary = `${absolute}.${process.pid}.${crypto.randomBytes(6).toString("hex")}.tmp`;
   fs.writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`, "utf8");
-  const handle = fs.openSync(temporary, "r");
+  const handle = fs.openSync(temporary, "r+");
   try {
     fs.fsyncSync(handle);
   } finally {

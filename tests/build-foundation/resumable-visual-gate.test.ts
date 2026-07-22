@@ -1,15 +1,20 @@
 import { createRequire } from "node:module";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 
 const require = createRequire(import.meta.url);
 const {
   checkpointMatches,
   checkpointSchemaVersion,
+  atomicWriteJson,
   identitiesMatch,
   thresholdMs,
 } = require("../../scripts/recovery/resumableVisualGateState.cjs") as {
   checkpointMatches: (checkpoint: unknown, identity: unknown, runId: string, runOrdinal: number) => boolean;
   checkpointSchemaVersion: string;
+  atomicWriteJson: (filePath: string, value: unknown) => void;
   identitiesMatch: (left: unknown, right: unknown) => boolean;
   thresholdMs: number;
 };
@@ -32,6 +37,19 @@ const identity = {
 };
 
 describe("resumable visual gate identity", () => {
+  it("atomically creates and replaces a checkpoint on the current host", () => {
+    const directory = fs.mkdtempSync(path.join(os.tmpdir(), "teoyube-gate-checkpoint-"));
+    const checkpoint = path.join(directory, "checkpoint.json");
+    try {
+      atomicWriteJson(checkpoint, { revision: 1 });
+      atomicWriteJson(checkpoint, { revision: 2 });
+      expect(JSON.parse(fs.readFileSync(checkpoint, "utf8"))).toEqual({ revision: 2 });
+      expect(fs.readdirSync(directory)).toEqual(["checkpoint.json"]);
+    } finally {
+      fs.rmSync(directory, { recursive: true, force: true });
+    }
+  });
+
   it("accepts only the exact Git, toolchain, audit, threshold, baseline, and build identity", () => {
     expect(identitiesMatch(identity, structuredClone(identity))).toBe(true);
 
