@@ -28,7 +28,18 @@ export type TeoGuideClientResponseDto = Readonly<{
     orderedGuidance: readonly string[];
     postValidationPassed: boolean;
   }>;
-  deterministic: true;
-  externalModelUsed: false;
+  modelUse: Readonly<{
+    mode: "deterministic" | "live";
+    providerId?: string;
+    modelRoute?: "light" | "standard";
+    modelId?: string;
+    memoryIncluded: boolean;
+    sensitiveContentIncluded: boolean;
+    externalProcessingConsent: boolean;
+    fallbackReason?: string;
+    store: false;
+  }>;
+  deterministic: boolean;
+  externalModelUsed: boolean;
   durableWritePerformed: false;
 }>;

@@ -29,9 +29,9 @@ const publicEnvironmentSchema = z.object({
 });
 
 const serverEnvironmentSchema = z.object({
+  OPENAI_API_KEY: optionalSecret,
   TEOYUBE_ANALYTICS_PROVIDER_KEY: optionalSecret,
   TEOYUBE_DATABASE_URL: optionalSecret,
-  TEOYUBE_LIVE_AI_API_KEY: optionalSecret,
   TEOYUBE_MONITORING_PROVIDER_KEY: optionalSecret,
   TEOYUBE_ENABLE_EXTERNAL_ANALYTICS: safeBoolean,
   TEOYUBE_ENABLE_DATABASE_PERSISTENCE: safeBoolean,
@@ -41,7 +41,8 @@ const serverEnvironmentSchema = z.object({
   TEOYUBE_ENABLE_EMBEDDINGS: safeBoolean,
   TEOYUBE_ENABLE_VECTOR_RETRIEVAL: safeBoolean,
   TEOYUBE_ENABLE_BROAD_RAG: safeBoolean,
-  TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: safeBoolean
+  TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: safeBoolean,
+  TEOYUBE_LIVE_AI_ENABLED: safeBoolean
 });
 
 export type TeoyubePublicEnvironment = {
@@ -92,7 +93,10 @@ export function readServerFeatureAvailability(
       parsed.TEOYUBE_ENABLE_EXTERNAL_ANALYTICS && Boolean(parsed.TEOYUBE_ANALYTICS_PROVIDER_KEY),
     databasePersistence:
       parsed.TEOYUBE_ENABLE_DATABASE_PERSISTENCE && Boolean(parsed.TEOYUBE_DATABASE_URL),
-    liveAi: parsed.TEOYUBE_ENABLE_LIVE_AI && Boolean(parsed.TEOYUBE_LIVE_AI_API_KEY),
+    liveAi: parsed.TEOYUBE_ENABLE_LIVE_AI
+      && parsed.TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER
+      && parsed.TEOYUBE_LIVE_AI_ENABLED
+      && Boolean(parsed.OPENAI_API_KEY),
     externalMonitoring:
       parsed.TEOYUBE_ENABLE_EXTERNAL_MONITORING && Boolean(parsed.TEOYUBE_MONITORING_PROVIDER_KEY),
     durableMemory: parsed.TEOYUBE_ENABLE_DURABLE_MEMORY,

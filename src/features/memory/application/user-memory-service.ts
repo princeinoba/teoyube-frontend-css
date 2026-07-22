@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { MEMORY_PURPOSE_REGISTRY, validateMemoryPurpose } from "../../../domain/memory/data-classification-registry";
+import { MEMORY_PURPOSE_REGISTRY, validateConsentScopes, validateMemoryPurpose } from "../../../domain/memory/data-classification-registry";
 import type {
   ConsentGrant,
   ConsentLedger,
@@ -62,6 +62,7 @@ export class UserMemoryService {
   ) {}
 
   async grantConsent(context: AuthorizationContext, command: GrantConsentCommand): Promise<ConsentGrant> {
+    if (!validateConsentScopes(command.purposeId, command.scope)) throw new Error("Consent scope is invalid for this purpose.");
     const granted = await this.consent.grant(context.user.id, command, this.clock());
     this.events.emit({ name: "consent_granted", occurredAt: this.clock(), subjectHash: safeSubjectHash(context.user.id), purposeId: command.purposeId, result: "allowed" });
     return granted;

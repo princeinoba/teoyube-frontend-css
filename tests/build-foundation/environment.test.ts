@@ -21,7 +21,7 @@ describe("Teoyube environment validation", () => {
     });
   });
 
-  it("requires both an explicit flag and server-only configuration", () => {
+  it("requires all preview kill switches and the server-only OpenAI key", () => {
     expect(
       readServerFeatureAvailability({
         TEOYUBE_ENABLE_LIVE_AI: "true"
@@ -31,7 +31,9 @@ describe("Teoyube environment validation", () => {
     expect(
       readServerFeatureAvailability({
         TEOYUBE_ENABLE_LIVE_AI: "true",
-        TEOYUBE_LIVE_AI_API_KEY: "server-only-test-key"
+        TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: "true",
+        TEOYUBE_LIVE_AI_ENABLED: "true",
+        OPENAI_API_KEY: "server-only-test-key"
       }).liveAi
     ).toBe(true);
   });

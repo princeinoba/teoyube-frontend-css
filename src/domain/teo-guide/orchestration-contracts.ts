@@ -187,8 +187,20 @@ export type TeoGuideResponse = Readonly<{
     tigRuleset: string;
     safetyPolicy: string;
   }>;
-  deterministic: true;
-  externalModelUsed: false;
+  modelUse?: Readonly<{
+    providerId: string;
+    modelRoute: "light" | "standard";
+    modelId: string;
+    modelSnapshot: string;
+    promptVersion: string;
+    responseSchemaVersion: string;
+    store: false;
+    memoryIncluded: boolean;
+    sensitiveContentIncluded: boolean;
+    zeroDataRetentionClaimed: false;
+  }>;
+  deterministic: boolean;
+  externalModelUsed: boolean;
   durableWritePerformed: false;
 }>;
 

@@ -9,7 +9,9 @@ describe("Teoyube preview health metadata", () => {
       NEXT_PUBLIC_TEOYUBE_APP_ENV: "test",
       NEXT_PUBLIC_TEOYUBE_DEPLOYMENT_TARGET: "local",
       TEOYUBE_ENABLE_LIVE_AI: "true",
-      TEOYUBE_LIVE_AI_API_KEY: secret,
+      TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: "true",
+      TEOYUBE_LIVE_AI_ENABLED: "true",
+      OPENAI_API_KEY: secret,
       TEOYUBE_DATABASE_URL: `postgres://${secret}`
     });
     const serialized = JSON.stringify(payload);

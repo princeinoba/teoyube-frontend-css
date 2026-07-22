@@ -33,8 +33,11 @@ for (const tool of requiredTools) {
 if ((registry.match(/descriptor\(\"/g) || []).length !== requiredTools.length) throw new Error("The Teo Guide tool registry contains an unreviewed tool.");
 
 const source = boundaryFiles.map((file) => `// ${file}\n${read(file)}`).join("\n");
+const deterministicSource = boundaryFiles
+  .filter((file) => !file.startsWith("src/app/api/"))
+  .map((file) => `// ${file}\n${read(file)}`).join("\n");
+if (/\b(?:openai|anthropic|gemini|cohere|pinecone|weaviate|langchain)\b/i.test(deterministicSource)) throw new Error("Prompt 18 deterministic domain/server boundary includes live model, vector, or RAG provider code.");
 const prohibited = [
-  [/\b(?:openai|anthropic|gemini|cohere|pinecone|weaviate|langchain)\b/i, "live model, vector, or RAG provider code"],
   [/\bfetch\s*\(/, "server-side network fetch"],
   [/\bas\s+(?:any|unknown|never)\b/, "unchecked type assertion"],
   [/@ts-(?:ignore|nocheck)|eslint-disable/, "suppressed type or lint boundary"],
@@ -54,7 +57,10 @@ for (const flag of ["TEOYUBE_ENABLE_LIVE_AI", "TEOYUBE_ENABLE_EMBEDDINGS", "TEOY
 
 const packageJson = JSON.parse(read("package.json"));
 const dependencies = { ...(packageJson.dependencies || {}), ...(packageJson.devDependencies || {}) };
-for (const name of Object.keys(dependencies)) if (/openai|anthropic|gemini|cohere|pinecone|weaviate|langchain|ai-sdk/i.test(name)) throw new Error(`Unapproved provider or RAG dependency: ${name}`);
+for (const name of Object.keys(dependencies)) {
+  if (name === "openai" && dependencies[name] === "6.48.0") continue;
+  if (/openai|anthropic|gemini|cohere|pinecone|weaviate|langchain|ai-sdk/i.test(name)) throw new Error(`Unapproved provider or RAG dependency: ${name}`);
+}
 if (packageJson.scripts.start !== "node --preserve-symlinks-main server.js") throw new Error("The canonical static start script changed.");
 
 const nextDir = path.join(root, ".next");
@@ -76,4 +82,4 @@ if (fs.existsSync(nextDir)) {
   }
 }
 
-console.log(`TEO GUIDE ORCHESTRATION CONTRACT: PASSED\nTools: ${requiredTools.length}\nBoundary files: ${boundaryFiles.length}\nClient chunks scanned: ${clientChunksScanned}\nLive model/provider SDKs: 0\nEmbeddings/vector/broad RAG: disabled\nCanonical static runtime: unchanged`);
+console.log(`TEO GUIDE ORCHESTRATION CONTRACT: PASSED\nTools: ${requiredTools.length}\nBoundary files: ${boundaryFiles.length}\nClient chunks scanned: ${clientChunksScanned}\nProvider SDKs behind guarded adapter: 1\nEmbeddings/vector/broad RAG: disabled\nCanonical static runtime: unchanged`);

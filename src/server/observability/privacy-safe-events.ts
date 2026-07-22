@@ -28,7 +28,13 @@ export type PrivacySafeEventName =
   | "teo_guide_response_validated"
   | "teo_guide_action_proposed"
   | "teo_guide_action_confirmed"
-  | "teo_guide_action_rejected";
+  | "teo_guide_action_rejected"
+  | "live_ai_request_started"
+  | "live_ai_request_blocked"
+  | "live_ai_provider_completed"
+  | "live_ai_fallback_used"
+  | "live_ai_budget_blocked"
+  | "live_ai_circuit_opened";
 
 export type PrivacySafeEvent = Readonly<{
   name: PrivacySafeEventName;
@@ -46,7 +52,12 @@ export type PrivacySafeEvent = Readonly<{
   traceId?: string;
   route?: string;
   latencyMs?: number;
-  tokenCount?: 0;
+  tokenCount?: number;
+  estimatedCostUsd?: number;
+  modelRoute?: string;
+  provider?: "openai";
+  memoryIncluded?: boolean;
+  safeCode?: string;
 }>;
 
 export interface PrivacySafeEventSink { emit(event: PrivacySafeEvent): void }

@@ -7,7 +7,11 @@ const PURPOSES: readonly PurposeId[] = Object.freeze([
   "preference_continuity",
   "journey_continuity",
   "sensitive_spiritual_storage",
-  "testimony_book_continuity"
+  "testimony_book_continuity",
+  "external_ai_processing",
+  "external_ai_sensitive_content",
+  "external_ai_memory_context",
+  "live_ai_conversation_retention"
 ]);
 
 function stringField(record: UserMemoryRecord, field: string): string | undefined {

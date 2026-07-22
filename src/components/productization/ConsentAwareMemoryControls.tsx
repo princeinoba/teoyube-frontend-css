@@ -7,10 +7,14 @@ type MemoryRecord = Readonly<{ id: string; layer: string; sensitivity: string; p
 type ConsentEvent = Readonly<{ id: string; purposeId: string; action: string; resultingEffectiveState: string; occurredAt: string }>;
 
 const PURPOSES = Object.freeze([
-  Object.freeze({ id: "preference_continuity", label: "Preference continuity" }),
-  Object.freeze({ id: "journey_continuity", label: "Journey continuity" }),
-  Object.freeze({ id: "sensitive_spiritual_storage", label: "Sensitive spiritual storage" }),
-  Object.freeze({ id: "testimony_book_continuity", label: "Testimony and Book continuity" })
+  Object.freeze({ id: "preference_continuity", label: "Preference continuity", scope: Object.freeze(["memory:read", "memory:write", "memory:export", "memory:delete"]) }),
+  Object.freeze({ id: "journey_continuity", label: "Journey continuity", scope: Object.freeze(["memory:read", "memory:write", "memory:export", "memory:delete"]) }),
+  Object.freeze({ id: "sensitive_spiritual_storage", label: "Sensitive spiritual storage", scope: Object.freeze(["memory:read", "memory:write", "memory:export", "memory:delete"]) }),
+  Object.freeze({ id: "testimony_book_continuity", label: "Testimony and Book continuity", scope: Object.freeze(["memory:read", "memory:write", "memory:export", "memory:delete"]) }),
+  Object.freeze({ id: "external_ai_processing", label: "External AI processing", scope: Object.freeze(["external_ai:process"]) }),
+  Object.freeze({ id: "external_ai_sensitive_content", label: "External AI sensitive content", scope: Object.freeze(["external_ai:sensitive_content"]) }),
+  Object.freeze({ id: "external_ai_memory_context", label: "External AI memory context", scope: Object.freeze(["external_ai:memory_context"]) }),
+  Object.freeze({ id: "live_ai_conversation_retention", label: "Live AI conversation retention", scope: Object.freeze(["external_ai:conversation_retention"]) })
 ]);
 
 function cookie(name: string): string {
@@ -82,7 +86,7 @@ export function ConsentAwareMemoryControls() {
         {PURPOSES.map((purpose) => {
           const latest = history.find((event) => event.purposeId === purpose.id);
           return <article className="mini-card" key={purpose.id}><strong>{purpose.label}</strong><p>Status: {latest?.resultingEffectiveState || "not granted"}</p><div className="button-row">
-            <button className="button secondary" type="button" onClick={async () => { try { await mutate("/api/teoyube/consent", "POST", { purposeId: purpose.id, scope: ["memory:read", "memory:write", "memory:export", "memory:delete"], policyVersion: "2026-07-21" }); setStatus(`${purpose.label} granted.`); await load(); } catch (error) { setStatus(error instanceof Error ? error.message : "Consent was not granted."); } }}>Grant</button>
+            <button className="button secondary" type="button" onClick={async () => { try { await mutate("/api/teoyube/consent", "POST", { purposeId: purpose.id, scope: purpose.scope, policyVersion: "2026-07-22" }); setStatus(`${purpose.label} granted.`); await load(); } catch (error) { setStatus(error instanceof Error ? error.message : "Consent was not granted."); } }}>Grant</button>
             <button className="button secondary" type="button" onClick={async () => { try { await mutate("/api/teoyube/consent", "DELETE", { purposeId: purpose.id, policyVersion: "2026-07-21" }); setStatus(`${purpose.label} revoked and active memory removed from future retrieval.`); await load(); } catch (error) { setStatus(error instanceof Error ? error.message : "Consent was not revoked."); } }}>Revoke</button>
           </div></article>;
         })}

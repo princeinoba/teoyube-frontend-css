@@ -66,3 +66,15 @@ test("unauthenticated stateful requests are denied and action confirmation canno
   const decision = await request.post("/api/teoyube/teo-guide/actions", { data: { proposalId: "missing-proposal", expectedRevision: 1, idempotencyKey: "missing-confirm-1", decision: "confirm" } });
   expect(decision.status()).toBe(503);
 });
+
+test("validated stream exposes only public typed events and deterministic fallback when live AI is off", async ({ request }) => {
+  const response = await request.post("/api/teoyube/teo-guide/stream", { data: { input: "James 1:5", conversationId: "e2e-validated-stream-19", locale: "en", mode: "live_if_authorized" } });
+  expect(response.ok()).toBe(true);
+  expect(response.headers()["x-teoyube-stream"]).toBe("validated-sections-only");
+  const events = (await response.text()).trim().split("\n").map((line) => JSON.parse(line) as Readonly<Record<string, unknown>>);
+  expect(events.map((event) => event.type)).toEqual(["progress", "progress", "fallback", "progress", "complete"]);
+  expect(events.find((event) => event.type === "fallback")).toMatchObject({ reasonCode: "live_ai_disabled" });
+  const complete = events.find((event) => event.type === "complete");
+  expect(complete).toMatchObject({ client: { deterministic: true, externalModelUsed: false, durableWritePerformed: false }, liveAi: { generationMode: "deterministic", providerCalls: 0, store: false, durableWritePerformed: false } });
+  expect(JSON.stringify(events)).not.toMatch(/OPENAI_API_KEY|systemPrompt|rawDelta|toolArguments|private-path/i);
+});

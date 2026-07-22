@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { TeoGuideClientResponseDto } from "../../domain/teo-guide/teo-guide-client-dto";
 import { createDeterministicTeoGuideMessage, type TeoGuideMessage } from "../../domain/teo-guide/teo-guide-message";
 import type { TeoGuidePageViewModel } from "../../features/teo-guide/application/teo-guide-page-service";
-import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
+import { ApprovedMigrationOverlays, type ExternalServiceStatus, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedTeoGuideView } from "./ApprovedTeoGuideView";
 
 function escapeHtml(value: string) {
@@ -40,12 +40,21 @@ function isClientResponse(value: unknown): value is TeoGuideClientResponseDto {
     && Array.isArray(value.limitations)
     && Array.isArray(value.sourceReferences)
     && Array.isArray(value.actionProposals)
+    && isObject(value.modelUse)
     && typeof value.safety.mode === "string"
     && value.safety.postValidationPassed === true
-    && value.deterministic === true
-    && value.externalModelUsed === false
+    && typeof value.deterministic === "boolean"
+    && typeof value.externalModelUsed === "boolean"
+    && ((value.modelUse.mode === "live" && value.externalModelUsed === true && value.deterministic === false)
+      || (value.modelUse.mode === "deterministic" && value.externalModelUsed === false && value.deterministic === true))
     && value.durableWritePerformed === false;
 }
+
+type LiveStatus = Readonly<{
+  liveAiConfigured: boolean;
+  externalProcessingConsent: boolean;
+  memoryContextConsent: boolean;
+}>;
 
 export function TeoGuidePageController({ initialViewModel }: { initialViewModel: TeoGuidePageViewModel }) {
   const rootRef = useRef<HTMLElement>(null);
@@ -53,7 +62,34 @@ export function TeoGuidePageController({ initialViewModel }: { initialViewModel:
   const lastMessageRef = useRef(initialViewModel.initialMessage);
   const conversationIdRef = useRef("");
   const requestGenerationRef = useRef(0);
+  const activeControllerRef = useRef<AbortController | null>(null);
+  const forceDeterministicRef = useRef(false);
+  const externalServiceStatusRef = useRef<ExternalServiceStatus>(null);
   const [notice, setNotice] = useState<MigrationNotice>(null);
+  const [externalServiceStatus, setExternalServiceStatus] = useState<ExternalServiceStatus>(null);
+
+  useEffect(() => {
+    externalServiceStatusRef.current = externalServiceStatus;
+  }, [externalServiceStatus]);
+
+  useEffect(() => {
+    const statusController = new AbortController();
+    void fetch("/api/teoyube/teo-guide", { cache: "no-store", signal: statusController.signal }).then(async (response) => {
+      if (!response.ok) return;
+      const status = await response.json() as LiveStatus;
+      if (!status.liveAiConfigured) return;
+      if (status.externalProcessingConsent) {
+        externalServiceStatusRef.current = "live_ready";
+        setExternalServiceStatus("live_ready");
+        setNotice({ title: "Guarded live AI ready", detail: `Your next message may be processed by the approved external model. Authorized memory context is ${status.memoryContextConsent ? "available" : "off"}; deterministic Teo Guide remains available.`, actionLabel: "Use deterministic next" });
+      } else {
+        externalServiceStatusRef.current = "live_consent_required";
+        setExternalServiceStatus("live_consent_required");
+        setNotice({ title: "External AI is off", detail: "No message will be sent to an external model without separate external-processing consent. Deterministic Teo Guide remains fully available." });
+      }
+    }).catch(() => undefined);
+    return () => statusController.abort();
+  }, []);
 
   useEffect(() => {
     const mountedRoot = rootRef.current;
@@ -71,23 +107,66 @@ export function TeoGuidePageController({ initialViewModel }: { initialViewModel:
       chatLog.insertAdjacentHTML("beforeend", renderUserMessage(prompt));
       const input = root.querySelector<HTMLInputElement>("#chatInput");
       if (input) input.value = "";
+      activeControllerRef.current?.abort();
       const controller = new AbortController();
-      const timeout = window.setTimeout(() => controller.abort(), 10_000);
+      activeControllerRef.current = controller;
+      const liveRequested = externalServiceStatusRef.current === "live_ready" && !forceDeterministicRef.current;
+      if (liveRequested) setNotice({ title: "Preparing guarded response", detail: "Checking safety, finding Scripture, reviewing sources, and validating guidance before any model language is displayed." });
+      const timeout = window.setTimeout(() => controller.abort(), liveRequested ? 25_000 : 10_000);
       try {
-        const response = await fetch("/api/teoyube/teo-guide", {
+        const response = await fetch(liveRequested ? "/api/teoyube/teo-guide/stream" : "/api/teoyube/teo-guide", {
           method: "POST",
           headers: { "content-type": "application/json" },
-          body: JSON.stringify({ input: prompt, conversationId: conversationIdRef.current, locale: navigator.language || "en" }),
+          body: JSON.stringify({ input: prompt, conversationId: conversationIdRef.current, locale: navigator.language || "en", mode: forceDeterministicRef.current ? "deterministic" : "live_if_authorized" }),
           signal: controller.signal
         });
-        const body: unknown = await response.json();
-        const client = isObject(body) ? body.client : undefined;
-        if (!response.ok || !isClientResponse(client)) throw new Error("Controlled Teo Guide response unavailable.");
+        if (!response.ok) throw new Error("Controlled Teo Guide response unavailable.");
+        let client: unknown;
+        if (liveRequested) {
+          if (!response.body) throw new Error("Validated response stream unavailable.");
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let buffered = "";
+          let approvedSections = 0;
+          while (true) {
+            const chunk = await reader.read();
+            buffered += decoder.decode(chunk.value || new Uint8Array(), { stream: !chunk.done });
+            const lines = buffered.split("\n");
+            buffered = lines.pop() || "";
+            for (const rawLine of lines) {
+              if (!rawLine.trim()) continue;
+              const event: unknown = JSON.parse(rawLine);
+              if (!isObject(event) || typeof event.type !== "string") continue;
+              if (event.type === "progress" && event.stage === "source_validation") setNotice({ title: "Sources prepared", detail: "Exact Scripture, TIG provenance, consent boundaries, and authorized context are being checked." });
+              if (event.type === "progress" && event.stage === "response_validation") setNotice({ title: "Validating response", detail: "The complete structured response is being checked for citations, theology, safety, and approved actions before display." });
+              if (event.type === "approved_section") {
+                approvedSections += 1;
+                setNotice({ title: "Validated sections ready", detail: `${approvedSections} source-bound section${approvedSections === 1 ? " is" : "s are"} approved; raw provider text is never displayed.` });
+              }
+              if (event.type === "complete") client = event.client;
+            }
+            if (chunk.done) break;
+          }
+        } else {
+          const body: unknown = await response.json();
+          client = isObject(body) ? body.client : undefined;
+        }
+        if (!isClientResponse(client)) throw new Error("Controlled Teo Guide response unavailable.");
         if (generation !== requestGenerationRef.current) return;
         lastMessageRef.current = client.message;
         chatLog.insertAdjacentHTML("beforeend", renderGuideMessage(client.message, client));
         chatLog.scrollTop = chatLog.scrollHeight;
-        setNotice({ title: "Teo Guide responded", detail: "Deterministic local Scripture guidance; no live AI or silent durable write was used.", scripture: client.sourceReferences[0] || client.message.sources[0]?.reference });
+        setNotice(client.externalModelUsed ? {
+          title: "Teo Guide responded",
+          detail: `Guarded external language synthesis was validated before display. Authorized memory was ${client.modelUse.memoryIncluded ? "included" : "not included"}; no silent durable write occurred.`,
+          scripture: client.sourceReferences[0] || client.message.sources[0]?.reference,
+          actionLabel: "Use deterministic next"
+        } : {
+          title: client.modelUse.fallbackReason ? "Teo Guide deterministic fallback" : "Teo Guide responded",
+          detail: client.modelUse.fallbackReason ? `External AI was not used (${client.modelUse.fallbackReason}). Deterministic Scripture guidance remained available and no durable write occurred.` : "Deterministic local Scripture guidance; no live AI or silent durable write was used.",
+          scripture: client.sourceReferences[0] || client.message.sources[0]?.reference,
+          ...(externalServiceStatusRef.current === "live_ready" ? { actionLabel: "Use live when authorized" } : {})
+        });
       } catch {
         if (generation !== requestGenerationRef.current) return;
         const fallback = createDeterministicTeoGuideMessage(prompt);
@@ -97,6 +176,7 @@ export function TeoGuidePageController({ initialViewModel }: { initialViewModel:
         setNotice({ title: "Teo Guide safe fallback", detail: "The server-owned deterministic response was unavailable, so the existing local Scripture fallback was used. No live AI or durable write was used.", scripture: fallback.sources[0]?.reference });
       } finally {
         window.clearTimeout(timeout);
+        if (activeControllerRef.current === controller) activeControllerRef.current = null;
       }
     }
 
@@ -119,6 +199,8 @@ export function TeoGuidePageController({ initialViewModel }: { initialViewModel:
       const action = target.closest<HTMLElement>("[data-phase116b-action]")?.dataset.phase116bAction;
       if (action === "teo-clear-chat") {
         requestGenerationRef.current += 1;
+        activeControllerRef.current?.abort();
+        activeControllerRef.current = null;
         chatLog.innerHTML = originalChatRef.current;
         setNotice({ title: "Chat cleared", detail: "The session-only conversation returned to its approved welcome state." });
         return;
@@ -137,8 +219,17 @@ export function TeoGuidePageController({ initialViewModel }: { initialViewModel:
 
     root.addEventListener("submit", onSubmit);
     root.addEventListener("click", onClick);
-    return () => { root.removeEventListener("submit", onSubmit); root.removeEventListener("click", onClick); };
+    return () => { activeControllerRef.current?.abort(); root.removeEventListener("submit", onSubmit); root.removeEventListener("click", onClick); };
   }, [initialViewModel]);
 
-  return <><ApprovedTeoGuideView html={initialViewModel.approvedHtml} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} /></>;
+  function toggleGenerationMode() {
+    forceDeterministicRef.current = !forceDeterministicRef.current;
+    externalServiceStatusRef.current = forceDeterministicRef.current ? "deterministic_selected" : "live_ready";
+    setExternalServiceStatus(externalServiceStatusRef.current);
+    setNotice(forceDeterministicRef.current
+      ? { title: "Deterministic mode selected", detail: "Your next message will remain local to deterministic Teo Guide. No external model will process it.", actionLabel: "Use live when authorized" }
+      : { title: "Guarded live AI ready", detail: "Your next message may be processed by the approved external model after consent and safety checks. Deterministic mode remains available.", actionLabel: "Use deterministic next" });
+  }
+
+  return <><ApprovedTeoGuideView html={initialViewModel.approvedHtml} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} noticeAction={toggleGenerationMode} externalServiceStatus={externalServiceStatus} /></>;
 }

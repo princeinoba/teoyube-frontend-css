@@ -67,9 +67,9 @@ describe("durable consent-aware memory", () => {
     return memory.grantConsent(context, { purposeId, scope: FULL_SCOPE, policyVersion: "2026-07-21", expiresAt, source: "user_ui" });
   }
 
-  it("exposes five executable data classes and four unbundled, default-off purposes", () => {
+  it("exposes five executable data classes and eight unbundled, default-off purposes", () => {
     expect(Object.keys(DATA_CLASSIFICATION_REGISTRY)).toEqual(["class_0", "class_1", "class_2", "class_3", "class_4"]);
-    expect(Object.keys(MEMORY_PURPOSE_REGISTRY)).toEqual(["preference_continuity", "journey_continuity", "sensitive_spiritual_storage", "testimony_book_continuity"]);
+    expect(Object.keys(MEMORY_PURPOSE_REGISTRY)).toEqual(["preference_continuity", "journey_continuity", "sensitive_spiritual_storage", "testimony_book_continuity", "external_ai_processing", "external_ai_sensitive_content", "external_ai_memory_context", "live_ai_conversation_retention"]);
     expect(Object.values(MEMORY_PURPOSE_REGISTRY).every((purpose) => !purpose.defaultGranted && purpose.explicitUserAction)).toBe(true);
     expect(DATA_CLASSIFICATION_REGISTRY.class_3).toMatchObject({ encryption: "application_aead", analyticsPolicy: "disabled", logPolicy: "never_raw_content" });
   });
@@ -127,6 +127,17 @@ describe("durable consent-aware memory", () => {
     expect(first).toMatchObject({ status: "granted", policyVersion: "2026-07-21", version: 1 });
     expect(await memory.effectiveConsent(context, "sensitive_spiritual_storage")).toBeNull();
     await expect(memory.create(context, sensitive())).rejects.toThrow("consent");
+  });
+
+  it("grants and immediately revokes external processing independently from memory", async () => {
+    const { context } = await signIn();
+    await expect(memory.grantConsent(context, { purposeId: "external_ai_processing", scope: ["memory:read"], policyVersion: "prompt19", source: "user_ui" })).rejects.toThrow("scope");
+    const granted = await memory.grantConsent(context, { purposeId: "external_ai_processing", scope: ["external_ai:process"], policyVersion: "prompt19", source: "user_ui" });
+    expect(granted).toMatchObject({ purposeId: "external_ai_processing", status: "granted", scope: ["external_ai:process"] });
+    expect(await memory.effectiveConsent(context, "external_ai_sensitive_content")).toBeNull();
+    const revoked = await memory.revokeConsent(context, { purposeId: "external_ai_processing", policyVersion: "prompt19", source: "user_ui" });
+    expect(revoked).toMatchObject({ consent: { status: "revoked" }, revocation: { revokedRecords: 0 } });
+    expect(await memory.effectiveConsent(context, "external_ai_processing")).toMatchObject({ status: "revoked" });
   });
 
   it("expires consent and immediately denies future reads and writes", async () => {
