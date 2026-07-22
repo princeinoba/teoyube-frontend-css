@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Compact preservation of the evidence needed to explain the Prompt 17 performance blocker and resume Prompt 17S without retaining multi-gigabyte disposable browser traces.",
+  "authorizedStartingCommit": "ac86a6f83a76a20b58bf01fb7d97928cb0493a7d",
+  "prompt17SafetyBase": "d3976a54687d09943771e618b3ccd6720aa57410",
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "npmExecutable": "C:/Program Files/nodejs/npm.cmd"
+  },
+  "trackedReports": {
+    "safety": {
+      "path": "docs/recovery/prompt-17-safety-evaluation-report.md",
+      "bytes": 9031,
+      "sha256": "e89a852e414ff2f67f774a800137e9c2f66488e21a26ac84a67c592896c0f031"
+    },
+    "performanceStabilization": {
+      "path": "docs/recovery/prompt-17p-performance-stabilization-report.md",
+      "bytes": 6980,
+      "sha256": "4dde050a3ce834cae6e1000d2f34f45b47f2c05e1afc23b7eb26b69fdf6da5c7"
+    }
+  },
+  "preservedFiles": {
+    "safety": {
+      "path": "docs/recovery/evidence/prompt-17s/safety-orchestration-scorecard.json",
+      "bytes": 757840,
+      "sha256": "7288aeb019b5dbb535ef64f29655503af33904476d5c54129747cf3e882050b7",
+      "source": {
+        "path": ".tmp/safety/results/orchestration.json",
+        "bytes": 757840,
+        "sha256": "7288aeb019b5dbb535ef64f29655503af33904476d5c54129747cf3e882050b7"
+      },
+      "byteIdenticalToSource": true
+    },
+    "prompt17Checkpoint": {
+      "path": "docs/recovery/evidence/prompt-17s/prompt-17-blocked-checkpoint.json",
+      "bytes": 133660,
+      "sha256": "af6035ef344bf168579b21c319becffed7331d5e3b5a2a9723311383c4856aa4",
+      "source": {
+        "path": ".tmp/preserved/prompt17-before-17p-d3976a5/visual-parity/next-preview-parity-gate/performance-accessibility-checkpoint.json",
+        "bytes": 133660,
+        "sha256": "af6035ef344bf168579b21c319becffed7331d5e3b5a2a9723311383c4856aa4"
+      },
+      "byteIdenticalToSource": true
+    },
+    "prompt17pCheckpoint": {
+      "path": "docs/recovery/evidence/prompt-17s/prompt-17p-incomplete-checkpoint.json",
+      "bytes": 875133,
+      "sha256": "3bfb5c9f523a60ecc3861b231cd3ba9fecb2fb8303e226f54cce48bcdeb3e710",
+      "source": {
+        "path": ".tmp/preserved/prompt17p-final-run1-failed-20260722/next-preview-parity-gate/performance-accessibility-checkpoint.json",
+        "bytes": 875133,
+        "sha256": "3bfb5c9f523a60ecc3861b231cd3ba9fecb2fb8303e226f54cce48bcdeb3e710"
+      },
+      "byteIdenticalToSource": true
+    },
+    "orderSensitivity": {
+      "path": "docs/recovery/evidence/prompt-17s/prompt-17p-order-sensitivity-summary.json",
+      "bytes": 618,
+      "sha256": "48f87aa573ee5f3e878753d5eeaab4b53745d64ba51cf07d1c89cc4082ab7163",
+      "source": {
+        "path": ".tmp/prompt17p/order-sensitivity-summary.json",
+        "bytes": 618,
+        "sha256": "48f87aa573ee5f3e878753d5eeaab4b53745d64ba51cf07d1c89cc4082ab7163"
+      },
+      "byteIdenticalToSource": true
+    }
+  },
+  "safetyGate": {
+    "status": null,
+    "passedChecks": null,
+    "totalChecks": null,
+    "semanticHash": null,
+    "scorecard": {
+      "path": "docs/recovery/evidence/prompt-17s/safety-orchestration-scorecard.json",
+      "bytes": 757840,
+      "sha256": "7288aeb019b5dbb535ef64f29655503af33904476d5c54129747cf3e882050b7"
+    }
+  },
+  "prompt17BlockedRun": {
+    "schemaVersion": null,
+    "generatedAt": null,
+    "rowCount": 12,
+    "violationCount": 3,
+    "violations": [
+      "today/desktop-standard: local ready time exceeded 5,000 ms",
+      "today/tablet-landscape: local ready time exceeded 5,000 ms",
+      "today/tablet-portrait: local ready time exceeded 5,000 ms"
+    ],
+    "lastCompletedCell": {
+      "view": "search",
+      "viewport": "mobile-small"
+    },
+    "slowestMeasurements": [
+      {
+        "view": "today",
+        "viewport": "desktop-standard",
+        "runtime": "next",
+        "durationMs": 6666.2
+      },
+      {
+        "view": "today",
+        "viewport": "tablet-landscape",
+        "runtime": "static",
+        "durationMs": 5845.3
+      },
+      {
+        "view": "today",
+        "viewport": "tablet-portrait",
+        "runtime": "next",
+        "durationMs": 5250
+      },
+      {
+        "view": "today",
+        "viewport": "tablet-landscape",
+        "runtime": "next",
+        "durationMs": 4647.5
+      },
+      {
+        "view": "today",
+        "viewport": "desktop-standard",
+        "runtime": "static",
+        "durationMs": 4574.6
+      },
+      {
+        "view": "search",
+        "viewport": "mobile",
+        "runtime": "static",
+        "durationMs": 4416.8
+      }
+    ]
+  },
+  "prompt17pIncompleteRun": {
+    "schemaVersion": null,
+    "generatedAt": null,
+    "rowCount": 45,
+    "violationCount": 0,
+    "violations": [],
+    "lastCompletedCell": {
+      "view": "testimony",
+      "viewport": "tablet-landscape"
+    },
+    "slowestMeasurements": [
+      {
+        "view": "today",
+        "viewport": "desktop-wide",
+        "runtime": "static",
+        "durationMs": 3281.6
+      },
+      {
+        "view": "today",
+        "viewport": "tablet-landscape",
+        "runtime": "static",
+        "durationMs": 2779.7
+      },
+      {
+        "view": "canon",
+        "viewport": "desktop-wide",
+        "runtime": "static",
+        "durationMs": 2710.5
+      },
+      {
+        "view": "today",
+        "viewport": "mobile",
+        "runtime": "static",
+        "durationMs": 2580.9
+      },
+      {
+        "view": "today",
+        "viewport": "desktop-standard",
+        "runtime": "static",
+        "durationMs": 2575.4
+      },
+      {
+        "view": "canon",
+        "viewport": "tablet-landscape",
+        "runtime": "static",
+        "durationMs": 2516.5
+      }
+    ]
+  },
+  "isolatedDiagnostics": {
+    "source": {
+      "path": ".tmp/prompt17p/isolated-diagnostics.json",
+      "bytes": 327080,
+      "sha256": "5c3d914f0fd5e0022f69fe5759168607d8c0ff3efe24c8366b67605219cc666d"
+    },
+    "resultCount": 9,
+    "passedCount": 9,
+    "failedCount": 0,
+    "results": [
+      {
+        "name": "next-today-desktop-standard",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "next-today-desktop-standard",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "next-today-desktop-standard",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "static-today-tablet-landscape",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "static-today-tablet-landscape",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "static-today-tablet-landscape",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "next-today-tablet-portrait",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "next-today-tablet-portrait",
+        "passed": true,
+        "durationMs": null
+      },
+      {
+        "name": "next-today-tablet-portrait",
+        "passed": true,
+        "durationMs": null
+      }
+    ]
+  },
+  "orderSensitivity": {
+    "artifactType": "prompt17p_order_sensitivity_summary",
+    "generatedAt": "2026-07-22T03:33:15.371Z",
+    "canonical": {
+      "totals": {
+        "rows": 72,
+        "passed": 72,
+        "failed": 0
+      },
+      "maximum": {
+        "runtime": "static",
+        "view": "roadmap",
+        "viewport": "desktop-wide",
+        "position": 67,
+        "readyMs": 3549.7
+      }
+    },
+    "reverse": {
+      "totals": {
+        "rows": 72,
+        "passed": 72,
+        "failed": 0
+      },
+      "maximum": {
+        "runtime": "static",
+        "view": "roadmap",
+        "viewport": "desktop-standard",
+        "position": 5,
+        "readyMs": 3310.6
+      }
+    }
+  },
+  "retentionDecision": {
+    "retained": [
+      "tracked Prompt 17 and Prompt 17P reports",
+      "the complete Prompt 17 safety orchestration scorecard",
+      "the complete 12-cell blocked Prompt 17 checkpoint",
+      "the complete 45-cell incomplete Prompt 17P checkpoint",
+      "the compact order-sensitivity result",
+      "a compact summary of the isolated diagnostics"
+    ],
+    "omitted": [
+      "passing screenshots already represented by immutable or owner-approved baselines",
+      "multi-gigabyte Playwright traces and trace resources",
+      "reproducible build outputs",
+      "temporary browser profiles and test reports"
+    ],
+    "rationale": "The omitted data is disposable and reproducible. No immutable baseline, owner-approved support baseline, protected asset, source corpus, approval record, or tracked diagnostic report is omitted or modified."
+  }
+}

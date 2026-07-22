@@ -1,0 +1,32 @@
+{
+  "artifactType": "prompt17p_order_sensitivity_summary",
+  "generatedAt": "2026-07-22T03:33:15.371Z",
+  "canonical": {
+    "totals": {
+      "rows": 72,
+      "passed": 72,
+      "failed": 0
+    },
+    "maximum": {
+      "runtime": "static",
+      "view": "roadmap",
+      "viewport": "desktop-wide",
+      "position": 67,
+      "readyMs": 3549.7
+    }
+  },
+  "reverse": {
+    "totals": {
+      "rows": 72,
+      "passed": 72,
+      "failed": 0
+    },
+    "maximum": {
+      "runtime": "static",
+      "view": "roadmap",
+      "viewport": "desktop-standard",
+      "position": 5,
+      "readyMs": 3310.6
+    }
+  }
+}
