@@ -16,6 +16,7 @@ const {
 
 const identity = {
   gitCommit: "abc123",
+  trackedWorktreeStatus: "",
   nodeVersion: "v24.18.0",
   npmVersion: "10.2.4",
   auditVersion: "audit-sha",
@@ -36,6 +37,7 @@ describe("resumable visual gate identity", () => {
 
     for (const changed of [
       { ...identity, gitCommit: "different" },
+      { ...identity, trackedWorktreeStatus: " M tracked-file.ts" },
       { ...identity, nodeVersion: "v24.18.1" },
       { ...identity, npmVersion: "10.2.5" },
       { ...identity, auditVersion: "different" },

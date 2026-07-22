@@ -94,6 +94,7 @@ function computeGateIdentity() {
   ];
   const identity = {
     gitCommit: commandOutput("git", ["rev-parse", "HEAD"]),
+    trackedWorktreeStatus: commandOutput("git", ["status", "--porcelain", "--untracked-files=no"]),
     nodeVersion: process.version,
     npmVersion: resolveNpmVersion(),
     auditVersion: hashPaths([
@@ -135,6 +136,7 @@ function atomicWriteJson(filePath, value) {
 function stableIdentityValue(identity) {
   return JSON.stringify({
     gitCommit: identity.gitCommit,
+    trackedWorktreeStatus: identity.trackedWorktreeStatus,
     nodeVersion: identity.nodeVersion,
     npmVersion: identity.npmVersion,
     auditVersion: identity.auditVersion,

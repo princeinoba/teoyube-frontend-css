@@ -202,6 +202,10 @@ function enforceArtifactBudget(run) {
 }
 
 async function completeRun(controller, run) {
+  const currentIdentity = computeGateIdentity();
+  if (!identitiesMatch(controller.identity, currentIdentity) || currentIdentity.trackedWorktreeStatus) {
+    throw new Error("Gate identity changed or the tracked worktree became dirty; refusing to continue this logical run.");
+  }
   const checkpoint = readJsonIfPresent(run.checkpointPath);
   if (checkpoint?.results?.some((result) => result.passed === false)) {
     preserveFailedRun(controller, run, "A failed cell was recorded; failed logical runs are not resumable.");
@@ -271,6 +275,10 @@ async function completeRun(controller, run) {
     persistController(controller);
   }
 
+  const closingIdentity = computeGateIdentity();
+  if (!identitiesMatch(controller.identity, closingIdentity) || closingIdentity.trackedWorktreeStatus) {
+    throw new Error("Gate identity changed before logical-run closure; the run cannot be promoted.");
+  }
   run.artifactRetention = enforceArtifactBudget(run);
   run.status = "passed";
   run.completedAt = new Date().toISOString();
@@ -286,6 +294,9 @@ async function main() {
   const identity = computeGateIdentity();
   if (identity.nodeVersion !== "v24.18.0" || identity.npmVersion !== "10.2.4") {
     throw new Error(`Locked toolchain mismatch: Node ${identity.nodeVersion}; npm ${identity.npmVersion}.`);
+  }
+  if (identity.trackedWorktreeStatus) {
+    throw new Error(`Tracked worktree must be clean before the gate:\n${identity.trackedWorktreeStatus}`);
   }
 
   let controller = readJsonIfPresent(controllerPath);

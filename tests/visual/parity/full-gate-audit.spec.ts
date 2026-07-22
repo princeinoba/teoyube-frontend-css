@@ -40,6 +40,7 @@ type PerformanceResult = Readonly<{
 
 type GateIdentity = Readonly<{
   gitCommit: string;
+  trackedWorktreeStatus: string;
   nodeVersion: string;
   npmVersion: string;
   auditVersion: string;
@@ -224,6 +225,7 @@ function atomicWriteJson(filePath: string, value: unknown) {
 function identitySignature(identity: GateIdentity) {
   return JSON.stringify({
     gitCommit: identity.gitCommit,
+    trackedWorktreeStatus: identity.trackedWorktreeStatus,
     nodeVersion: identity.nodeVersion,
     npmVersion: identity.npmVersion,
     auditVersion: identity.auditVersion,
@@ -353,6 +355,7 @@ test("all 72 matrix cells retain accessibility and provide side-by-side performa
       schemaVersion: "teoyube-performance-gate-checkpoint-1",
       ...(settings?.identity || {
         gitCommit: "nonresumable",
+        trackedWorktreeStatus: "unrecorded",
         nodeVersion: process.version,
         npmVersion: process.env.TEOYUBE_NPM_VERSION || "unrecorded",
         auditVersion: "canonical-direct",
