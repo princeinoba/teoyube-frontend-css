@@ -8,7 +8,16 @@ export type PrivacySafeEventName =
   | "authorization_denied"
   | "deletion_completed"
   | "journey_resumed"
-  | "persistence_fallback_used";
+  | "persistence_fallback_used"
+  | "safety_topic_detected"
+  | "safety_mode_selected"
+  | "safety_prohibited_claim_blocked"
+  | "safety_citation_failure"
+  | "safety_injection_blocked"
+  | "safety_memory_denied"
+  | "safety_tool_denied"
+  | "safety_fallback_used"
+  | "safety_gate_failed";
 
 export type PrivacySafeEvent = Readonly<{
   name: PrivacySafeEventName;
@@ -16,8 +25,11 @@ export type PrivacySafeEvent = Readonly<{
   subjectHash?: string;
   purposeId?: string;
   layer?: string;
-  result?: "allowed" | "denied" | "complete" | "fallback";
+  result?: "allowed" | "denied" | "complete" | "fallback" | "blocked" | "failed";
   count?: number;
+  topic?: string;
+  mode?: string;
+  policyVersion?: string;
 }>;
 
 export interface PrivacySafeEventSink { emit(event: PrivacySafeEvent): void }
