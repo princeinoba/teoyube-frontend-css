@@ -14,9 +14,11 @@ The registry is fixed at version `teo-guide-tools-2026-07-22.1`. Tools have stri
 | `buildPrayerOptions` | Build editable prayer aids | No | Deterministic Scripture-grounded template |
 | `searchApprovedUserMemory` | Read approved structured memory | Yes | Prompt 16 memory service |
 | `summarizeReflectionPattern` | Summarize approved metadata | Yes | Deterministic summary rule |
-| `draftJournalEntry` | Create session-only draft | No | Deterministic draft rule |
-| `draftTestimonyCandidate` | Create user-review candidate | No | Deterministic draft rule |
+| `createJournalDraft` | Create session-only draft | No | Deterministic draft rule |
+| `createTestimonyDraft` | Create user-review candidate | No | Deterministic draft rule |
 | `createMentorDiscussionPrompt` | Create counsel/community prompt | No | Deterministic prompt rule |
+
+Every descriptor also fixes allowed intents, prohibited safety modes, input/output limits, timeout, rate limit, idempotency policy, source requirements, telemetry policy, and implementation version. Every output carries confidence, limitations, source paths, dataset versions, consent scopes when used, latency, result hash, and schema-validated size.
 
 The registry rejects unknown tools. User or retrieved text is always data and never registry configuration. No client component imports this registry, its local datasets, Scripture implementation, TIG traversal, seeds, caches, or memory runtime.
 

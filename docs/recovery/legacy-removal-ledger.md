@@ -23,6 +23,10 @@ Phase 11.7A-R establishes capability boundaries without removing, relocating, or
 
 No removal is authorized by this ledger. A row may change only in the feature-specific parity task after executable evidence and owner sign-off.
 
+## Prompt 18 Teo Guide migration note
+
+The server-owned deterministic orchestrator now sits behind the approved Teo Guide view and existing compatibility message builder. No legacy Teo Guide, static runtime, protected view, stylesheet, asset, baseline, TIG implementation, Scripture implementation, safety implementation, or Prompt 16 memory implementation was deleted. The compatibility builder remains `RETAIN` until a later owner-authorized removal gate proves it has no production consumer and re-runs visual, functional, safety, and content parity.
+
 ## Prompt 15 Scripture migration note
 
 `src/features/scripture/infrastructure/local-scripture-repository.ts` remains a compatibility export to the canonical server-owned repository. Prompt 15B activated the owner-approved `engwebp` corpus and remediated the 17 visible quotation records through an exact source/content-delta overlay. No legacy file was deleted.
