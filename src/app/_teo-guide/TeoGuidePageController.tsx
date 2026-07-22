@@ -74,7 +74,7 @@ export function TeoGuidePageController({ initialViewModel }: { initialViewModel:
 
   useEffect(() => {
     const statusController = new AbortController();
-    void fetch("/api/teoyube/teo-guide", { cache: "no-store", signal: statusController.signal }).then(async (response) => {
+    void fetch("/api/teoyube/live-ai-status", { cache: "no-store", signal: statusController.signal }).then(async (response) => {
       if (!response.ok) return;
       const status = await response.json() as LiveStatus;
       if (!status.liveAiConfigured) return;

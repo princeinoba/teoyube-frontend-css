@@ -23,7 +23,7 @@
     "teo-guide:verify": "node scripts/recovery/verifyTeoGuideOrchestration.cjs",
     "teo-guide:gate": "npm run teo-guide:verify && npm run test:teo-guide && npm run safety:gate:orchestration",
     "live-ai:verify": "node scripts/recovery/verifyLiveAiBoundaries.cjs",
-    "lint:live-ai": "eslint scripts/recovery/verifyLiveAiBoundaries.cjs src/domain/live-ai src/server/live-ai src/app/api/teoyube/teo-guide src/app/_teo-guide/TeoGuidePageController.tsx src/app/_approved-source/ApprovedMigrationOverlays.tsx --max-warnings=0",
+    "lint:live-ai": "eslint scripts/recovery/verifyLiveAiBoundaries.cjs src/domain/live-ai src/server/live-ai src/app/api/teoyube/teo-guide src/app/api/teoyube/live-ai-status src/app/_teo-guide/TeoGuidePageController.tsx src/app/_approved-source/ApprovedMigrationOverlays.tsx --max-warnings=0",
     "test:live-ai": "vitest run tests/build-foundation/live-ai-contracts.test.ts tests/build-foundation/live-ai-adapter.test.ts tests/build-foundation/live-ai-service.test.ts",
     "test:live-ai:provider": "vitest run tests/build-foundation/live-ai-provider-evaluation.test.ts --reporter=verbose",
     "live-ai:gate:preview": "npm run live-ai:verify && npm run lint:live-ai && npm run test:live-ai && npm run safety:gate:orchestration",

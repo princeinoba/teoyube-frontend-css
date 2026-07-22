@@ -41,6 +41,10 @@ for (const invariant of ["responses.create", "store: false", "parallel_tool_call
 }
 if (/baseURL\s*:|previous_response_id|background\s*:\s*true|web_search|file_search|code_interpreter|computer_use|mcp\b|shell\b/.test(adapterSource)) errors.push("The OpenAI adapter enables a prohibited provider-state or built-in-tool capability.");
 
+const statusRoute = read("src/app/api/teoyube/live-ai-status/route.ts");
+const teoGuideRoute = read("src/app/api/teoyube/teo-guide/route.ts");
+if (!statusRoute.includes("liveAiStatusResponse") || !teoGuideRoute.includes("liveAiStatusResponse")) errors.push("The live-AI readiness probe and compatibility GET must share the server-owned safe status response.");
+
 const environment = read(".env.example");
 for (const flag of ["TEOYUBE_ENABLE_LIVE_AI", "TEOYUBE_LIVE_AI_ENABLED", "TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER", "TEOYUBE_ENABLE_EMBEDDINGS", "TEOYUBE_ENABLE_VECTOR_RETRIEVAL", "TEOYUBE_ENABLE_BROAD_RAG"]) {
   if (!new RegExp(`^${flag}=false$`, "m").test(environment)) errors.push(`${flag} must default to false.`);

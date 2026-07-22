@@ -7,7 +7,7 @@ import { enforceRateLimit, readJsonObject, safeApiError, sameOrigin } from "@/se
 import { deterministicTeoGuideOrchestrator } from "@/server/teo-guide/deterministic-orchestrator";
 import { createTeoGuideContextFromRequest } from "@/server/teo-guide/request-context";
 import { guardedLiveTeoGuideService } from "@/server/live-ai/guarded-live-teo-guide-service";
-import { LIVE_AI_MODELS, readLiveAiRuntimeConfiguration } from "@/server/live-ai/model-configuration";
+import { liveAiStatusResponse } from "@/server/live-ai/live-ai-status";
 
 export const dynamic = "force-dynamic";
 
@@ -19,31 +19,8 @@ const requestSchema = z.object({
   mode: z.enum(["deterministic", "live_if_authorized"]).optional()
 }).strict();
 
-function hasConsent(context: Awaited<ReturnType<typeof createTeoGuideContextFromRequest>>, purposeId: string, scope: string): boolean {
-  const current = Date.parse(context.now);
-  return context.effectiveConsents.some((grant) => grant.purposeId === purposeId
-    && grant.status === "granted"
-    && grant.scope.includes(scope)
-    && (!grant.expiresAt || Date.parse(grant.expiresAt) > current));
-}
-
 export async function GET(request: Request) {
-  if (!sameOrigin(request) || !enforceRateLimit(request)) return safeApiError(new Error("Request verification failed."));
-  const configuration = readLiveAiRuntimeConfiguration();
-  const context = await createTeoGuideContextFromRequest(request, { conversationId: `teo-status-${crypto.randomUUID()}`, locale: "en" });
-  return Response.json({
-    liveAiConfigured: configuration.enabled,
-    deterministicAvailable: true,
-    provider: configuration.enabled ? "openai" : undefined,
-    approvedModels: configuration.enabled ? { light: LIVE_AI_MODELS.light.id, standard: LIVE_AI_MODELS.standard.id, advanced: "disabled" } : undefined,
-    externalProcessingConsent: hasConsent(context, "external_ai_processing", "external_ai:process"),
-    sensitiveContentConsent: hasConsent(context, "external_ai_sensitive_content", "external_ai:sensitive_content"),
-    memoryContextConsent: hasConsent(context, "external_ai_memory_context", "external_ai:memory_context"),
-    conversationRetentionConsent: hasConsent(context, "live_ai_conversation_retention", "external_ai:conversation_retention"),
-    store: false,
-    zeroDataRetentionClaimed: false,
-    secretValuesExposed: false
-  }, { headers: { "cache-control": "no-store" } });
+  return liveAiStatusResponse(request);
 }
 
 export async function POST(request: Request) {

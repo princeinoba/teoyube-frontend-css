@@ -47,7 +47,8 @@ const prohibited = [
 for (const [pattern, label] of prohibited) if (pattern.test(source)) throw new Error(`Prompt 18 boundary includes prohibited ${label}: ${pattern}`);
 
 const controller = read("src/app/_teo-guide/TeoGuidePageController.tsx");
-if (!controller.includes('fetch("/api/teoyube/teo-guide"')) throw new Error("The approved Teo Guide controller is not using the server-owned route.");
+if (!controller.includes('fetch(liveRequested ? "/api/teoyube/teo-guide/stream" : "/api/teoyube/teo-guide"')) throw new Error("The approved Teo Guide controller is not using the server-owned deterministic/live orchestration routes.");
+if (!controller.includes('fetch("/api/teoyube/live-ai-status"')) throw new Error("The approved Teo Guide controller is not using the non-generating live-AI readiness route.");
 if (/TIG_CALLING_SEEDS|callings\.seed|promiseClusters\.json|canonical-tig-service|canonical-scripture-repository/i.test(controller)) throw new Error("The Teo Guide client imports server data or traversal implementation.");
 
 const environment = read(".env.example");
