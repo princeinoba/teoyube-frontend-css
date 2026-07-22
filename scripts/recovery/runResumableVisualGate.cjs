@@ -23,6 +23,7 @@ const visualRunner = path.join(workspaceRoot, "scripts", "recovery", "runVisualP
 const stateRoot = path.join(workspaceRoot, ".tmp", "visual-parity", "resumable-gate");
 const controllerPath = path.join(stateRoot, "controller.json");
 const requiredLogicalRuns = 3;
+const interRunQuiescenceMs = 30_000;
 
 function waitForExit(child) {
   return new Promise((resolve, reject) => {
@@ -289,6 +290,17 @@ async function completeRun(controller, run) {
   return true;
 }
 
+async function waitForInterRunQuiescence(controller) {
+  const previousRun = controller.runs.at(-1);
+  if (controller.consecutivePasses < 1 || previousRun?.status !== "passed") return;
+  console.log(`Waiting ${interRunQuiescenceMs} ms for prior browser/server teardown to quiesce before the next cold logical run.`);
+  await new Promise((resolve) => setTimeout(resolve, interRunQuiescenceMs));
+  const currentIdentity = computeGateIdentity();
+  if (!identitiesMatch(controller.identity, currentIdentity) || currentIdentity.trackedWorktreeStatus) {
+    throw new Error("Gate identity changed during inter-run quiescence; refusing to start another logical run.");
+  }
+}
+
 async function main() {
   fs.mkdirSync(stateRoot, { recursive: true });
   const identity = computeGateIdentity();
@@ -310,6 +322,7 @@ async function main() {
   }
 
   while (controller.consecutivePasses < requiredLogicalRuns) {
+    await waitForInterRunQuiescence(controller);
     const run = controller.currentRun || createRun(controller);
     const passed = await completeRun(controller, run);
     if (!passed) {
