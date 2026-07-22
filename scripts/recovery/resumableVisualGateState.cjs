@@ -87,7 +87,7 @@ function resolveNpmVersion() {
 function computeGateIdentity() {
   const nextBuildInputs = [
     ".next/BUILD_ID",
-    ".next/app-build-manifest.json",
+    ".next/app-path-routes-manifest.json",
     ".next/build-manifest.json",
     ".next/server",
     ".next/static",
