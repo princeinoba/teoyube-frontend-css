@@ -49,6 +49,7 @@ const serverEnvironmentSchema = z.object({
   TEOYUBE_ENABLE_DURABLE_MEMORY: safeBoolean,
   TEOYUBE_ENABLE_EMBEDDINGS: safeBoolean,
   TEOYUBE_ENABLE_VECTOR_RETRIEVAL: safeBoolean,
+  TEOYUBE_VECTOR_RETRIEVAL_ENABLED: safeBoolean,
   TEOYUBE_ENABLE_BROAD_RAG: safeBoolean,
   TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: safeBoolean,
   TEOYUBE_LIVE_AI_ENABLED: safeBoolean
@@ -109,8 +110,12 @@ export function readServerFeatureAvailability(
     externalMonitoring:
       parsed.TEOYUBE_ENABLE_EXTERNAL_MONITORING && Boolean(parsed.TEOYUBE_MONITORING_PROVIDER_KEY),
     durableMemory: parsed.TEOYUBE_ENABLE_DURABLE_MEMORY,
-    embeddings: parsed.TEOYUBE_ENABLE_EMBEDDINGS,
-    vectorRetrieval: parsed.TEOYUBE_ENABLE_VECTOR_RETRIEVAL,
+    embeddings: parsed.TEOYUBE_ENABLE_EMBEDDINGS && Boolean(parsed.OPENAI_API_KEY) && Boolean(parsed.OPENAI_ORG_ID),
+    vectorRetrieval: parsed.TEOYUBE_ENABLE_EMBEDDINGS
+      && parsed.TEOYUBE_ENABLE_VECTOR_RETRIEVAL
+      && parsed.TEOYUBE_VECTOR_RETRIEVAL_ENABLED
+      && Boolean(parsed.OPENAI_API_KEY)
+      && Boolean(parsed.OPENAI_ORG_ID),
     broadRag: parsed.TEOYUBE_ENABLE_BROAD_RAG,
     externalTeoGuideProvider: parsed.TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER
   };

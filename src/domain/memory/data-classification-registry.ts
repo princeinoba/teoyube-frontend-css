@@ -60,7 +60,12 @@ export const MEMORY_PURPOSE_REGISTRY: Readonly<Record<PurposeId, MemoryPurposePo
   external_ai_processing: Object.freeze({ id: "external_ai_processing", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
   external_ai_sensitive_content: Object.freeze({ id: "external_ai_sensitive_content", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
   external_ai_memory_context: Object.freeze({ id: "external_ai_memory_context", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
-  live_ai_conversation_retention: Object.freeze({ id: "live_ai_conversation_retention", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 })
+  live_ai_conversation_retention: Object.freeze({ id: "live_ai_conversation_retention", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  external_ai_embedding_processing: Object.freeze({ id: "external_ai_embedding_processing", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  user_memory_semantic_index: Object.freeze({ id: "user_memory_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  user_testimony_semantic_index: Object.freeze({ id: "user_testimony_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  user_journey_semantic_index: Object.freeze({ id: "user_journey_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  user_calling_evidence_semantic_index: Object.freeze({ id: "user_calling_evidence_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 })
 });
 
 export const CONSENT_SCOPE_REGISTRY: Readonly<Record<PurposeId, readonly string[]>> = Object.freeze({
@@ -71,7 +76,12 @@ export const CONSENT_SCOPE_REGISTRY: Readonly<Record<PurposeId, readonly string[
   external_ai_processing: Object.freeze(["external_ai:process"]),
   external_ai_sensitive_content: Object.freeze(["external_ai:sensitive_content"]),
   external_ai_memory_context: Object.freeze(["external_ai:memory_context"]),
-  live_ai_conversation_retention: Object.freeze(["external_ai:conversation_retention"])
+  live_ai_conversation_retention: Object.freeze(["external_ai:conversation_retention"]),
+  external_ai_embedding_processing: Object.freeze(["embedding:process"]),
+  user_memory_semantic_index: Object.freeze(["semantic_index:memory"]),
+  user_testimony_semantic_index: Object.freeze(["semantic_index:testimony"]),
+  user_journey_semantic_index: Object.freeze(["semantic_index:journey"]),
+  user_calling_evidence_semantic_index: Object.freeze(["semantic_index:calling_evidence"])
 });
 
 export function validateConsentScopes(purposeId: PurposeId, scopes: readonly string[]): boolean {

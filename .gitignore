@@ -33,6 +33,7 @@ __pycache__/
 # Local Prompt 16 relational stores and disposable user exports
 /.data/
 /exports/
+/.var/retrieval/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal

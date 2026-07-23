@@ -11,7 +11,12 @@ export type PurposeId =
   | "external_ai_processing"
   | "external_ai_sensitive_content"
   | "external_ai_memory_context"
-  | "live_ai_conversation_retention";
+  | "live_ai_conversation_retention"
+  | "external_ai_embedding_processing"
+  | "user_memory_semantic_index"
+  | "user_testimony_semantic_index"
+  | "user_journey_semantic_index"
+  | "user_calling_evidence_semantic_index";
 
 export type DataSensitivity =
   | "public"
