@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "inventoryVersion": "teoyube-public-retrieval-inventory-2026-07-23.1",
+  "indexVersion": "public:text-embedding-3-small:1536:teoyube-deterministic-chunker-2026-07-23.1:f0669e6f0c1974fc4be7",
+  "model": "text-embedding-3-small",
+  "returnedDimension": 1536,
+  "embeddingAdapterVersion": "teoyube-openai-embeddings-2026-07-23.1",
+  "chunkerVersion": "teoyube-deterministic-chunker-2026-07-23.1",
+  "compositeSourceHash": "f0669e6f0c1974fc4be742b301e7b3efefdbb0ea367d33b5c7a86ccfeccc7fbe",
+  "sourceCount": 10,
+  "rawSourceChunks": 33599,
+  "duplicateChunksExcluded": 36,
+  "uniqueVectorCount": 33563,
+  "databaseBytes": 296927232,
+  "activeIndexLimitBytes": 629145600,
+  "rawUserTextEmbedded": false,
+  "userVectorsIncluded": false,
+  "providerHostedVectorStoreUsed": false,
+  "generatedArtifactTracked": false,
+  "verification": "PASS"
+}
