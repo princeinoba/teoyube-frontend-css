@@ -6,6 +6,8 @@ Prompt 19: **BLOCKED**
 
 Blocking condition: OpenAI project generation returned `insufficient_quota`; Gate B-Preview cannot pass without validated live outputs.
 
+Prompt 19Q rechecked this blocker on 2026-07-22. Authentication and both owner-approved model snapshots passed a safe model-list check, but the one authorized minimal Responses API generation probe again returned `429 insufficient_quota`. No Gate B-Preview fixture was run after that hard stop, no key was created or rotated, and no product code changed.
+
 Gate B-Production: **CLOSED**.
 
 Prompt 20 unlocked: **NO**.
@@ -53,6 +55,7 @@ Prompt 20 unlocked: **NO**.
 - Per-request estimated cap: USD 0.05
 - Total evaluation cap: USD 2.00
 - Actual recorded provider usage/cost: 0 tokens / USD 0; billing not independently verified
+- Prompt 19Q paid request attempts: 1 minimal 32-token-cap quota probe; the provider reported no usage before returning `insufficient_quota`
 - Budget enforcement: offline tests pass
 
 ## Gateway and privacy
@@ -105,6 +108,7 @@ Prompt 20 unlocked: **NO**.
 - Schema/citation live validity: not measurable; this blocks the gate
 - Provider-outage fallback: PASS
 - Owner review package: created, explicitly records absence of live output
+- Prompt 19Q quota probe: `gpt-5.4-mini-2026-03-17`; `429 insufficient_quota`; 0 input/output tokens reported; 2,581 ms; strict-schema validity not measurable
 
 ## Visual, performance, and runtime evidence
 
@@ -123,6 +127,7 @@ Prompt 20 unlocked: **NO**.
 - Performance stabilization: fixed 30-second pre-run quiescence only; no route warm-up, threshold, retry, readiness definition, baseline, or cold-context change. Signal-interrupted parity now resumes rather than becoming a false product failure.
 - Workspace before: 1,710,509,348 bytes / 27,773 files
 - Workspace after bounded cleanup: 1,786,028,906 bytes / 31,071 files; growth 75,519,558 bytes, within the 524,288,000-byte policy
+- Prompt 19Q workspace inventory: 1,822,678,786 bytes / 31,303 files; still within the Prompt 17S storage policy
 - Preserved evidence: pre-existing Prompt 17 failure artifacts and compact current failures/results retained; only `.next/dev` and a passing disposable parity checkpoint were removed
 - Test listeners: closed on ports 3000, 3100, 3116, 3173, 3183, 4173, 4174, and 4183
 - Static runtime: canonical
