@@ -24,13 +24,14 @@ function grant(purposeId: ConsentGrant["purposeId"], scope: string): ConsentGran
 const processing = grant("external_ai_processing", "external_ai:process");
 const sensitive = grant("external_ai_sensitive_content", "external_ai:sensitive_content");
 
-function context(consents: readonly ConsentGrant[]): TeoGuideContext {
+function context(consents: readonly ConsentGrant[], fixtureId: string): TeoGuideContext {
+  const syntheticUserId = `synthetic-live-evaluation-user-${fixtureId}`;
   return Object.freeze({
-    conversationId: "synthetic-live-evaluation",
+    conversationId: `synthetic-live-evaluation-${fixtureId}`,
     route: "/teo-guide",
     locale: "en",
     now: NOW,
-    authorization: Object.freeze({ user: Object.freeze({ id: "synthetic-live-evaluation-user", role: "user" }), sessionId: "synthetic-session" }),
+    authorization: Object.freeze({ user: Object.freeze({ id: syntheticUserId, role: "user" }), sessionId: `synthetic-session-${fixtureId}` }),
     effectiveConsents: Object.freeze([...consents]),
     turns: Object.freeze([])
   });
@@ -79,7 +80,7 @@ describe.runIf(RUN_LIVE)("Prompt 19 bounded synthetic provider evaluation", () =
     expect(selectedCases.length).toBeGreaterThan(0);
     for (const fixture of selectedCases) {
       const consents = fixture.sensitive ? [processing, sensitive] : [processing];
-      const request = Object.freeze({ input: fixture.input, context: context(consents) });
+      const request = Object.freeze({ input: fixture.input, context: context(consents, fixture.id) });
       const deterministic = await orchestrator.run(request);
       const before = gateway.providerCalls;
       const result = await service.run({ request, deterministic, mode: "live_if_authorized" });

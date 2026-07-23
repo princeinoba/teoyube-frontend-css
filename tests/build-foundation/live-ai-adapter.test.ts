@@ -95,6 +95,34 @@ describe("OpenAI Responses adapter", () => {
     expect(JSON.stringify(body)).not.toContain("OPENAI_API_KEY");
   });
 
+  it("extracts strict JSON from streamed message output items without exposing raw deltas", async () => {
+    const streamedResponse = {
+      ...completedResponse(),
+      output_text: undefined,
+      output: [{
+        type: "message",
+        id: "message-safe",
+        status: "completed",
+        role: "assistant",
+        content: [{
+          type: "output_text",
+          text: JSON.stringify(validStructured),
+          annotations: []
+        }]
+      }]
+    };
+    const adapter = new OpenAiResponsesAdapter({
+      environment: { OPENAI_API_KEY: "test" },
+      clientFactory: clientFor([
+        { type: "response.output_text.delta", delta: "RAW-UNVALIDATED-TEXT" },
+        { type: "response.completed", response: streamedResponse }
+      ])
+    });
+    const result = await adapter.generateStructured(request());
+    expect(result).toMatchObject({ status: "completed", structuredResponse: validStructured });
+    expect(JSON.stringify(result)).not.toContain("RAW-UNVALIDATED-TEXT");
+  });
+
   it("fails closed for a missing key and invalid structured output", async () => {
     const absent = await new OpenAiResponsesAdapter({ environment: {} }).generateStructured(request());
     expect(absent).toMatchObject({ status: "provider_error", safeErrorCode: "provider_not_configured" });

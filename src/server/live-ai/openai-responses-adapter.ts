@@ -136,6 +136,15 @@ function functionCalls(response: OpenAiResponse): readonly ResponseFunctionToolC
   return Object.freeze(response.output.filter((item): item is ResponseFunctionToolCall => item.type === "function_call"));
 }
 
+function structuredOutputText(response: OpenAiResponse): string | undefined {
+  if (typeof response.output_text === "string" && response.output_text.length > 0) return response.output_text;
+  const output = response.output.flatMap((item) => {
+    if (item.type !== "message") return [];
+    return item.content.flatMap((content) => content.type === "output_text" ? [content.text] : []);
+  }).join("");
+  return output.length > 0 ? output : undefined;
+}
+
 function safeErrorStatus(error: unknown, timedOut: boolean, clientCancelled: boolean): LiveStructuredGenerationResult["status"] {
   if (clientCancelled) return "cancelled";
   if (timedOut) return "timeout";
@@ -371,7 +380,9 @@ export class OpenAiResponsesAdapter implements LiveModelGateway {
       stage = "structured_parse";
       let parsedJson: unknown;
       try {
-        parsedJson = JSON.parse(response.output_text);
+        const output = structuredOutputText(response);
+        if (!output) throw new Error("The structured output was absent.");
+        parsedJson = JSON.parse(output);
       } catch {
         emit(Object.freeze({ type: "fallback", requestId: request.requestId, reasonCode: "structured_response_invalid_json" }));
         return terminalResult({ request, status: "schema_invalid", usage, started, monotonicNow: this.#monotonicNow, response, toolRequests, safeErrorCode: "structured_response_invalid_json" });
