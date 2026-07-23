@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { TEO_GUIDE_STRUCTURED_RESPONSE_JSON_SCHEMA, parseTeoGuideStructuredResponse } from "../../src/domain/live-ai/teo-guide-structured-response";
 import { CONSENT_SCOPE_REGISTRY, validateConsentScopes } from "../../src/domain/memory/data-classification-registry";
 import { LiveAiGuardrails, estimateLiveAiCost } from "../../src/server/live-ai/live-ai-guardrails";
-import { LIVE_AI_MODELS, LIVE_AI_OWNER_LIMITS, readLiveAiRuntimeConfiguration, selectLiveModelRoute } from "../../src/server/live-ai/model-configuration";
+import { LIVE_AI_MODELS, LIVE_AI_OWNER_LIMITS, openAiOrganizationId, readLiveAiRuntimeConfiguration, selectLiveModelRoute } from "../../src/server/live-ai/model-configuration";
 import { inspectModelToolDefinitions, validateModelToolArguments } from "../../src/server/live-ai/model-tool-definitions";
 import { buildLivePromptBundle, inspectLivePromptLibrary } from "../../src/server/live-ai/prompt-library";
 
@@ -32,6 +32,8 @@ describe("Prompt 19 live AI contracts", () => {
       advanced: { id: "disabled" }
     });
     expect(selectLiveModelRoute("crisis_support", "critical")).toBe("deterministic_only");
+    expect(openAiOrganizationId({ OPENAI_ORG_ID: "org-funded-test" })).toBe("org-funded-test");
+    expect(openAiOrganizationId({ OPENAI_ORG_ID: "not-an-org" })).toBeUndefined();
   });
 
   it("uses one strict final schema with no unknown-field or free-form bypass", () => {

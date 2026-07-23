@@ -15,6 +15,14 @@ const safePublicLabel = z
   .catch("undecided");
 
 const optionalSecret = z.string().trim().min(1).optional().catch(undefined);
+const optionalServerIdentifier = z
+  .string()
+  .trim()
+  .min(1)
+  .max(128)
+  .regex(/^[a-z0-9._-]+$/i)
+  .optional()
+  .catch(undefined);
 
 const publicEnvironmentSchema = z.object({
   NEXT_PUBLIC_TEOYUBE_APP_ENV: z
@@ -30,6 +38,7 @@ const publicEnvironmentSchema = z.object({
 
 const serverEnvironmentSchema = z.object({
   OPENAI_API_KEY: optionalSecret,
+  OPENAI_ORG_ID: optionalServerIdentifier,
   TEOYUBE_ANALYTICS_PROVIDER_KEY: optionalSecret,
   TEOYUBE_DATABASE_URL: optionalSecret,
   TEOYUBE_MONITORING_PROVIDER_KEY: optionalSecret,

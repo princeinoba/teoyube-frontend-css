@@ -29,10 +29,11 @@ import {
   LIVE_AI_MODEL_CONFIGURATION_VERSION,
   LIVE_AI_PRICING_VERSION,
   openAiApiKey,
+  openAiOrganizationId,
   readLiveAiRuntimeConfiguration
 } from "./model-configuration";
 
-export const OPENAI_RESPONSES_ADAPTER_VERSION = "teoyube-openai-responses-2026-07-22.1";
+export const OPENAI_RESPONSES_ADAPTER_VERSION = "teoyube-openai-responses-2026-07-23.1";
 
 type OpenAiResponsesTransport = Readonly<{
   responses: Readonly<{
@@ -45,7 +46,7 @@ type OpenAiResponsesTransport = Readonly<{
 
 export type OpenAiResponsesAdapterOptions = Readonly<{
   environment?: NodeJS.ProcessEnv;
-  clientFactory?: (apiKey: string) => OpenAiResponsesTransport;
+  clientFactory?: (apiKey: string, organization?: string) => OpenAiResponsesTransport;
   monotonicNow?: () => number;
 }>;
 
@@ -212,20 +213,26 @@ function terminalResult(input: Readonly<{
 
 export class OpenAiResponsesAdapter implements LiveModelGateway {
   readonly #environment: NodeJS.ProcessEnv;
-  readonly #clientFactory: (apiKey: string) => OpenAiResponsesTransport;
+  readonly #clientFactory: (apiKey: string, organization?: string) => OpenAiResponsesTransport;
   readonly #monotonicNow: () => number;
   #client?: OpenAiResponsesTransport;
 
   constructor(options: OpenAiResponsesAdapterOptions = {}) {
     this.#environment = options.environment || process.env;
-    this.#clientFactory = options.clientFactory || ((apiKey) => new OpenAI({ apiKey, maxRetries: 0, timeout: 15_000 }));
+    this.#clientFactory = options.clientFactory || ((apiKey, organization) => new OpenAI({
+      apiKey,
+      ...(organization ? { organization } : {}),
+      maxRetries: 0,
+      timeout: 15_000
+    }));
     this.#monotonicNow = options.monotonicNow || (() => performance.now());
   }
 
   #transport(): OpenAiResponsesTransport | null {
     const key = openAiApiKey(this.#environment);
     if (!key) return null;
-    if (!this.#client) this.#client = this.#clientFactory(key);
+    const organization = openAiOrganizationId(this.#environment);
+    if (!this.#client) this.#client = this.#clientFactory(key, organization);
     return this.#client;
   }
 

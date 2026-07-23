@@ -2,7 +2,7 @@ import { z } from "zod";
 import type { ModelRoute } from "../../domain/live-ai/model-gateway";
 import type { TeoGuideIntent } from "../../domain/teo-guide/orchestration-contracts";
 
-export const LIVE_AI_MODEL_CONFIGURATION_VERSION = "teoyube-openai-routing-2026-07-22.1";
+export const LIVE_AI_MODEL_CONFIGURATION_VERSION = "teoyube-openai-routing-2026-07-23.1";
 export const LIVE_AI_PRICING_VERSION = "openai-public-pricing-2026-07-22";
 
 export const LIVE_AI_MODELS = Object.freeze({
@@ -31,6 +31,7 @@ export const LIVE_AI_OWNER_LIMITS = Object.freeze({
 
 const configurationSchema = z.object({
   OPENAI_API_KEY: z.string().trim().min(1).optional().catch(undefined),
+  OPENAI_ORG_ID: z.string().trim().min(1).max(128).regex(/^org-[a-z0-9_-]+$/i).optional().catch(undefined),
   TEOYUBE_ENABLE_LIVE_AI: z.enum(["true", "false"]).default("false").catch("false"),
   TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER: z.enum(["true", "false"]).default("false").catch("false"),
   TEOYUBE_LIVE_AI_ENABLED: z.enum(["true", "false"]).default("false").catch("false")
@@ -65,6 +66,10 @@ export function readLiveAiRuntimeConfiguration(environment: NodeJS.ProcessEnv = 
 
 export function openAiApiKey(environment: NodeJS.ProcessEnv = process.env): string | undefined {
   return configurationSchema.parse(environment).OPENAI_API_KEY;
+}
+
+export function openAiOrganizationId(environment: NodeJS.ProcessEnv = process.env): string | undefined {
+  return configurationSchema.parse(environment).OPENAI_ORG_ID;
 }
 
 const LIGHT_INTENTS: readonly TeoGuideIntent[] = Object.freeze(["product_help", "unknown_or_ambiguous"]);

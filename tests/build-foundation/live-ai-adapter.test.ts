@@ -66,6 +66,21 @@ function clientFor(events: readonly unknown[], capture?: (body: Readonly<Record<
 }
 
 describe("OpenAI Responses adapter", () => {
+  it("binds the server-only organization when constructing the official client", async () => {
+    let receivedOrganization: string | undefined;
+    const adapter = new OpenAiResponsesAdapter({
+      environment: { OPENAI_API_KEY: "test", OPENAI_ORG_ID: "org-funded-test" },
+      clientFactory: (_apiKey, organization) => {
+        receivedOrganization = organization;
+        return clientFor([
+          { type: "response.completed", response: completedResponse() }
+        ])() as never;
+      }
+    });
+    expect((await adapter.generateStructured(request())).status).toBe("completed");
+    expect(receivedOrganization).toBe("org-funded-test");
+  });
+
   it("uses streaming Responses API with store:false and validates before completion", async () => {
     let body: Readonly<Record<string, unknown>> | undefined;
     const adapter = new OpenAiResponsesAdapter({ environment: { OPENAI_API_KEY: "test" }, clientFactory: clientFor([
