@@ -10,12 +10,17 @@ const {
   checkpointSchemaVersion,
   atomicWriteJson,
   identitiesMatch,
+  reconcileCurrentRun,
   thresholdMs,
 } = require("../../scripts/recovery/resumableVisualGateState.cjs") as {
   checkpointMatches: (checkpoint: unknown, identity: unknown, runId: string, runOrdinal: number) => boolean;
   checkpointSchemaVersion: string;
   atomicWriteJson: (filePath: string, value: unknown) => void;
   identitiesMatch: (left: unknown, right: unknown) => boolean;
+  reconcileCurrentRun: (controller: {
+    currentRun: { runId: string; status: string } | null;
+    runs: Array<{ runId: string; status: string }>;
+  }) => { runId: string; status: string } | null;
   thresholdMs: number;
 };
 
@@ -80,5 +85,19 @@ describe("resumable visual gate identity", () => {
     expect(checkpointMatches({ ...checkpoint, runId: "another" }, identity, "logical-run-1", 1)).toBe(false);
     expect(checkpointMatches({ ...checkpoint, runOrdinal: 2 }, identity, "logical-run-1", 1)).toBe(false);
     expect(checkpointMatches({ ...checkpoint, thresholdMs: 4_999 }, identity, "logical-run-1", 1)).toBe(false);
+  });
+
+  it("reconciles a deserialized active run with its runs-ledger entry", () => {
+    const controller = {
+      currentRun: { runId: "logical-run-1", status: "in_progress" },
+      runs: [{ runId: "logical-run-1", status: "stale" }],
+    };
+
+    const activeRun = reconcileCurrentRun(controller);
+    expect(activeRun).toBe(controller.currentRun);
+    expect(controller.runs[0]).toBe(controller.currentRun);
+
+    if (activeRun) activeRun.status = "passed";
+    expect(controller.runs[0].status).toBe("passed");
   });
 });

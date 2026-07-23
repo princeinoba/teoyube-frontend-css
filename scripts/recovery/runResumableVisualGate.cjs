@@ -15,6 +15,7 @@ const {
   hashPaths,
   identitiesMatch,
   readJsonIfPresent,
+  reconcileCurrentRun,
   thresholdMs,
   workspaceRoot,
 } = require("./resumableVisualGateState.cjs");
@@ -336,6 +337,8 @@ async function main() {
   }
   if (!controller) {
     controller = createController(identity);
+    persistController(controller);
+  } else if (reconcileCurrentRun(controller)) {
     persistController(controller);
   }
 

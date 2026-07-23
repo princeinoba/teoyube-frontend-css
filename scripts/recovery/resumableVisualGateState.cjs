@@ -166,6 +166,17 @@ function readJsonIfPresent(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
 }
 
+function reconcileCurrentRun(controller) {
+  if (!controller?.currentRun) return null;
+  const runIndex = controller.runs.findIndex((run) => run.runId === controller.currentRun.runId);
+  if (runIndex === -1) {
+    controller.runs.push(controller.currentRun);
+  } else {
+    controller.runs[runIndex] = controller.currentRun;
+  }
+  return controller.currentRun;
+}
+
 function directoryStats(directoryPath) {
   if (!fs.existsSync(directoryPath)) return { bytes: 0, files: 0 };
   let bytes = 0;
@@ -203,6 +214,7 @@ module.exports = {
   identitiesMatch,
   processTelemetry,
   readJsonIfPresent,
+  reconcileCurrentRun,
   sha256File,
   stableIdentityValue,
   thresholdMs,
