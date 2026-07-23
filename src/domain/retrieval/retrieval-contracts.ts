@@ -154,6 +154,7 @@ export interface EmbeddingGateway {
 
 export type VectorRecord = Readonly<{
   id: string;
+  indexVersion: string;
   vector: readonly number[];
   normalizedContentHash: string;
   metadata: RetrievalDocumentMetadata;
@@ -162,6 +163,7 @@ export type VectorRecord = Readonly<{
   ordinal: number;
   tokenCount: number;
   matchedTextHash: string;
+  content: string;
 }>;
 
 export type VectorSearchRequest = Readonly<{
@@ -185,6 +187,8 @@ export type VectorSearchResult = Readonly<{
   chunkRole: string;
   ordinal: number;
   tokenCount: number;
+  content: string;
+  indexVersion: string;
 }>;
 
 export type VectorUpsertResult = Readonly<{
@@ -244,6 +248,8 @@ export type VectorIndexInfo = Readonly<{
 export interface VectorRepository {
   upsert(partition: RetrievalPartition, records: readonly VectorRecord[]): Promise<VectorUpsertResult>;
   search(request: VectorSearchRequest): Promise<readonly VectorSearchResult[]>;
+  activateIndex(indexVersion: string, partitions: readonly RetrievalPartition[], activatedAt: string): Promise<void>;
+  rollbackIndex(indexVersion: string, partitions: readonly RetrievalPartition[], rolledBackAt: string): Promise<void>;
   deleteBySource(request: DeleteVectorsBySourceRequest): Promise<VectorDeletionResult>;
   deleteByUser(request: DeleteUserVectorsRequest): Promise<VectorDeletionResult>;
   deleteByConsent(request: DeleteConsentVectorsRequest): Promise<VectorDeletionResult>;
@@ -266,6 +272,7 @@ export type HybridRetrievalRequest = Readonly<{
   topK: number;
   enableVector: boolean;
   activeIndexVersion: string;
+  executionKind: "user_query" | "owner_evaluation";
   authorization?: RetrievalAuthorization;
   exactReferenceHint?: string;
   currentJourneySourceIds?: readonly string[];
@@ -286,12 +293,14 @@ export type RetrievalScoreBreakdown = Readonly<{
 }>;
 
 export type HybridSourceResult = Readonly<{
+  recordId: string;
   sourceId: string;
   documentId: string;
   partition: RetrievalPartition;
   trustLevel: RetrievalTrustLevel;
   title: string;
   canonicalReference?: ScriptureCitation;
+  scriptureCitations: readonly ScriptureCitation[];
   sourceVersion: string;
   sourceChecksum: string;
   lexicalScore?: number;
@@ -308,6 +317,7 @@ export type HybridSourceResult = Readonly<{
   userOwned: boolean;
   consentScopes?: readonly string[];
   indexVersion: string;
+  content: string;
 }>;
 
 export type HybridRetrievalResult = Readonly<{
@@ -333,6 +343,21 @@ export interface HybridRetriever {
 
 export type RetrievalContext = Readonly<{
   sourceIds: readonly string[];
+  segments: readonly Readonly<{
+    sourceId: string;
+    recordId: string;
+    authority:
+      | "Scripture"
+      | "Reviewed context"
+      | "Reviewed Teoyube content"
+      | "System policy"
+      | "User-approved record"
+      | "Product help";
+    content: string;
+    sourceVersion: string;
+    scriptureCitation?: ScriptureCitation;
+    userOwned: boolean;
+  }>[];
   scriptureSources: readonly HybridSourceResult[];
   interpretiveSources: readonly HybridSourceResult[];
   userSources: readonly HybridSourceResult[];
@@ -356,4 +381,21 @@ export type RetrievalEvaluationMetrics = Readonly<{
   promptInjectionBypass: number;
   meanLatencyMs: number;
   contextTokenCount: number;
+}>;
+
+export type RetrievalFeedbackSignal = Readonly<{
+  id: string;
+  requestId: string;
+  sourceId?: string;
+  kind:
+    | "result_helpful"
+    | "result_not_helpful"
+    | "wrong_scripture"
+    | "wrong_context"
+    | "wrong_category"
+    | "source_missing"
+    | "unsafe_or_inappropriate";
+  createdAt: string;
+  userInitiated: true;
+  freeTextStored: false;
 }>;

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "evaluationSetId": "teoyube-retrieval-eval-2026-07-23.1",
+  "lockedBeforeEmbeddingComparison": true,
+  "containsRealUserContent": false,
+  "contentPolicy": "Synthetic and reviewed public-source queries only.",
+  "cases": [
+    {
+      "id": "exact-01",
+      "kind": "exact_reference",
+      "query": "Romans 8:28",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:Romans 8:28"]
+    },
+    {
+      "id": "exact-02",
+      "kind": "exact_reference",
+      "query": "Psalm 91:1-2",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:Psalm 91:1-2"]
+    },
+    {
+      "id": "exact-03",
+      "kind": "exact_reference",
+      "query": "Ephesians 1:18",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:Ephesians 1:18"]
+    },
+    {
+      "id": "exact-04",
+      "kind": "exact_reference",
+      "query": "James 1:5",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:James 1:5"]
+    },
+    {
+      "id": "exact-05",
+      "kind": "exact_reference",
+      "query": "Proverbs 3:5-6",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:Proverbs 3:5-6"]
+    },
+    {
+      "id": "exact-06",
+      "kind": "exact_reference",
+      "query": "Philippians 4:6-7",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:Philippians 4:6-7"]
+    },
+    {
+      "id": "exact-07",
+      "kind": "exact_reference",
+      "query": "1 Peter 5:10",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:1 Peter 5:10"]
+    },
+    {
+      "id": "exact-08",
+      "kind": "exact_reference",
+      "query": "John 15:5",
+      "intent": "scripture",
+      "partitions": ["canonical_scripture"],
+      "expectedDocumentIds": ["canonical:John 15:5"]
+    },
+    {
+      "id": "semantic-01",
+      "kind": "semantic",
+      "query": "how can my gifts serve a meaningful vocation",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC01"]
+    },
+    {
+      "id": "semantic-02",
+      "kind": "semantic",
+      "query": "understanding becomes clear as truth illuminates",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC02"]
+    },
+    {
+      "id": "semantic-03",
+      "kind": "semantic",
+      "query": "safe shelter and calm during fear",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC03"]
+    },
+    {
+      "id": "semantic-04",
+      "kind": "semantic",
+      "query": "renewal after wounds and loss",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC04"]
+    },
+    {
+      "id": "semantic-05",
+      "kind": "semantic",
+      "query": "secure identity within a loving family",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC05"]
+    },
+    {
+      "id": "semantic-06",
+      "kind": "semantic",
+      "query": "lead responsibly with humble influence",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC06"]
+    },
+    {
+      "id": "semantic-07",
+      "kind": "semantic",
+      "query": "care faithfully for resources entrusted to me",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC07"]
+    },
+    {
+      "id": "semantic-08",
+      "kind": "semantic",
+      "query": "healthy growth that produces a lasting harvest",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC08"]
+    },
+    {
+      "id": "semantic-09",
+      "kind": "semantic",
+      "query": "release from guilt through compassionate forgiveness",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC09"]
+    },
+    {
+      "id": "semantic-10",
+      "kind": "semantic",
+      "query": "draw near with reverence and wonder",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC10"]
+    },
+    {
+      "id": "semantic-11",
+      "kind": "semantic",
+      "query": "listen carefully and choose the faithful path",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC11"]
+    },
+    {
+      "id": "semantic-12",
+      "kind": "semantic",
+      "query": "leave wisdom and faith for future generations",
+      "intent": "promise",
+      "partitions": ["promise_clusters"],
+      "expectedDocumentIds": ["promise:PC12"]
+    },
+    {
+      "id": "semantic-13",
+      "kind": "semantic",
+      "query": "a word for asking God for sound judgment",
+      "intent": "teoyube_word",
+      "partitions": ["lexicon"],
+      "expectedDocumentIds": ["lexicon:sophia", "lexicon:wisdora"]
+    },
+    {
+      "id": "semantic-14",
+      "kind": "semantic",
+      "query": "a word about recognizing the direction ahead",
+      "intent": "teoyube_word",
+      "partitions": ["lexicon"],
+      "expectedDocumentIds": ["lexicon:discerna", "lexicon:direkta"]
+    },
+    {
+      "id": "semantic-15",
+      "kind": "semantic",
+      "query": "prayer for being restored after hardship",
+      "intent": "prayer",
+      "partitions": ["prayer_resources"],
+      "expectedDocumentIds": ["prayer:PR003"]
+    },
+    {
+      "id": "semantic-16",
+      "kind": "semantic",
+      "query": "prayer for making a wise decision",
+      "intent": "prayer",
+      "partitions": ["prayer_resources"],
+      "expectedDocumentIds": ["prayer:PR004"]
+    },
+    {
+      "id": "semantic-17",
+      "kind": "semantic",
+      "query": "prayer for safety and courage",
+      "intent": "prayer",
+      "partitions": ["prayer_resources"],
+      "expectedDocumentIds": ["prayer:PR005"]
+    },
+    {
+      "id": "semantic-18",
+      "kind": "semantic",
+      "query": "what does the product say about careful calling language",
+      "intent": "product_help",
+      "partitions": ["theology_safety"],
+      "expectedDocumentIds": ["theology"]
+    },
+    {
+      "id": "semantic-19",
+      "kind": "semantic",
+      "query": "can Teoyube automatically announce that a promise happened",
+      "intent": "product_help",
+      "partitions": ["theology_safety"],
+      "expectedDocumentIds": ["theology"]
+    },
+    {
+      "id": "semantic-20",
+      "kind": "semantic",
+      "query": "where does Scripture rank compared with generated guidance",
+      "intent": "product_help",
+      "partitions": ["theology_safety"],
+      "expectedDocumentIds": ["theology"]
+    }
+  ]
+}

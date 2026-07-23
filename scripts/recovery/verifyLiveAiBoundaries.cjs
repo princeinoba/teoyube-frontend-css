@@ -4,7 +4,11 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "../..");
 const errors = [];
-const adapter = "src/server/live-ai/openai-responses-adapter.ts";
+const adapters = Object.freeze([
+  "src/server/live-ai/openai-responses-adapter.ts",
+  "src/server/retrieval/openai-embedding-gateway.ts"
+]);
+const adapter = adapters[0];
 
 function read(relative) {
   const absolute = path.join(root, relative);
@@ -33,7 +37,9 @@ if (locked?.integrity !== "sha512-KhVp+FyV50QrXNextvL9hIU5l6ox5HYuKQjGVk7lIqprgJ
 
 const production = walk("src");
 const sdkImports = production.filter((file) => /from\s+["']openai(?:\/[^"']*)?["']|require\(["']openai/.test(read(file)));
-if (sdkImports.length !== 1 || sdkImports[0] !== adapter) errors.push(`Only ${adapter} may import the vendor SDK; found: ${sdkImports.join(", ") || "none"}.`);
+if (sdkImports.length !== adapters.length || adapters.some((file) => !sdkImports.includes(file))) {
+  errors.push(`Only the reviewed server adapters may import the vendor SDK; found: ${sdkImports.join(", ") || "none"}.`);
+}
 
 const adapterSource = read(adapter);
 for (const invariant of ["responses.create", "store: false", "parallel_tool_calls: false", "strict: true", "maxRetries: 0", "stream: true"]) {
@@ -50,7 +56,7 @@ if (!statusRoute.includes("liveAiStatusResponse") || !teoGuideRoute.includes("li
 
 const environment = read(".env.example");
 if (!/^OPENAI_ORG_ID=org-funded-organization-id$/m.test(environment)) errors.push("The server-only OPENAI_ORG_ID placeholder is missing.");
-for (const flag of ["TEOYUBE_ENABLE_LIVE_AI", "TEOYUBE_LIVE_AI_ENABLED", "TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER", "TEOYUBE_ENABLE_EMBEDDINGS", "TEOYUBE_ENABLE_VECTOR_RETRIEVAL", "TEOYUBE_ENABLE_BROAD_RAG"]) {
+for (const flag of ["TEOYUBE_ENABLE_LIVE_AI", "TEOYUBE_LIVE_AI_ENABLED", "TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER", "TEOYUBE_ENABLE_EMBEDDINGS", "TEOYUBE_ENABLE_VECTOR_RETRIEVAL", "TEOYUBE_VECTOR_RETRIEVAL_ENABLED", "TEOYUBE_ENABLE_BROAD_RAG"]) {
   if (!new RegExp(`^${flag}=false$`, "m").test(environment)) errors.push(`${flag} must default to false.`);
 }
 if (/^NEXT_PUBLIC_.*(?:OPENAI|SECRET|API_KEY|TOKEN)/m.test(environment)) errors.push("A live-AI secret is exposed through NEXT_PUBLIC_.");
@@ -94,4 +100,4 @@ if (errors.length) {
 }
 
 console.log("LIVE AI BOUNDARY CONTRACT: PASSED");
-console.log(`SDK imports: ${sdkImports.length}; client chunks scanned: ${clientChunksScanned}; store:false; strict structured output/tools; no built-ins; three kill switches default off; static start unchanged.`);
+console.log(`SDK imports: ${sdkImports.length}; client chunks scanned: ${clientChunksScanned}; store:false; strict structured output/tools; no built-ins; live-AI and retrieval kill switches default off; static start unchanged.`);

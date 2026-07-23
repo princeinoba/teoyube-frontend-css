@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "incremental": false,
+    "isolatedModules": false,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "outDir": ".tmp/retrieval-build"
+  },
+  "include": [
+    "scripts/retrieval/retrieval-cli.ts",
+    "src/config/environment.ts",
+    "src/domain/memory/**/*.ts",
+    "src/domain/retrieval/**/*.ts",
+    "src/domain/scripture/**/*.ts",
+    "src/server/memory/encryption.ts",
+    "src/server/memory/node-sqlite.d.ts",
+    "src/server/retrieval/**/*.ts"
+  ],
+  "exclude": ["node_modules", ".next", ".tmp"]
+}
