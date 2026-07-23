@@ -1,5 +1,19 @@
 # Prompt 19R OpenAI account diagnostic
 
+## Prompt 19K owner correction and resolution
+
+This document preserves the Prompt 19R diagnostic as historical evidence. The owner subsequently corrected the billing classification: the visible USD 60.00 balance is OpenAI Platform API credit for Teoyube's funded organization, `org-jxmykEtCh4k3dpbczZFZSESn`.
+
+Prompt 19K used the new, unexposed `Teoyube test key` through hidden local PowerShell entry only. The key was saved to ignored, untracked `.env.local`, never displayed or logged, and was not committed. The server-only adapter was bound to the funded organization. `/v1/me`, approved-model availability, one minimal quota probe, and the nine-fixture bounded Gate B-Preview suite passed.
+
+- Prompt 19K: **PASS**
+- Gate B-Preview: **PASS**
+- Gate B-Production: **CLOSED**
+- Prompt 20 unlocked: **YES**
+- Prompt 20 work started: no
+
+The original Prompt 19R conclusion below remains unchanged as the record of the information and owner answer available at that time. See `docs/recovery/prompt-19k-secure-local-key-and-funded-org-gate.md` for the superseding gate evidence.
+
 Generated: `2026-07-23T02:34:26.458Z`
 
 ## Safe credential status

@@ -2,7 +2,9 @@
 
 ## Result
 
-Prompt 19: **BLOCKED**
+Prompt 19 original result: **BLOCKED** (historical)
+
+Prompt 19K subsequent resolution: **PASS**
 
 Blocking condition: OpenAI project generation returned `insufficient_quota`; Gate B-Preview cannot pass without validated live outputs.
 
@@ -10,9 +12,15 @@ Prompt 19Q rechecked this blocker on 2026-07-22. Authentication and both owner-a
 
 Prompt 19R then verified two API organizations through `/v1/me`, confirmed both approved models remain visible, and found no returned or configured effective organization/project routing. The owner selected billing answer 2: the reported credits appear only in ChatGPT/Codex or a ChatGPT workspace, not as a positive OpenAI Platform API balance. Prompt 19R therefore made no generation request, created no key, and left Gate B-Preview blocked.
 
+Prompt 19K supersedes only that current blocker. The owner later confirmed a USD 60.00 OpenAI Platform API balance for `org-jxmykEtCh4k3dpbczZFZSESn`, created the unexposed `Teoyube test key`, and authorized hidden local entry. The key was stored only in ignored, untracked `.env.local`; it was never printed, logged, committed, or exposed to a client bundle. The server adapter was bound to that organization. A single minimal quota probe passed, followed by all nine bounded Gate B-Preview fixtures.
+
+Gate B-Preview: **PASS** as of Prompt 19K.
+
 Gate B-Production: **CLOSED**.
 
-Prompt 20 unlocked: **NO**.
+Prompt 20 unlocked: **YES**, but no Prompt 20 work was started.
+
+The remaining sections preserve the original Prompt 19 evidence. The complete superseding result is in `docs/recovery/prompt-19k-secure-local-key-and-funded-org-gate.md`.
 
 ## Branch and commits
 

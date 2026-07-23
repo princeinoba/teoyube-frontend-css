@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "teoyube-prompt19r-openai-account-diagnostic-2026-07-23.1",
+  "schemaVersion": "teoyube-prompt19r-openai-account-diagnostic-2026-07-23.2",
   "generatedAt": "2026-07-23T02:34:26.458Z",
   "syntheticOnly": true,
   "secretIncluded": false,
@@ -68,6 +68,59 @@
     "positivePlatformApiBalanceConfirmed": false,
     "fundedOrganization": null,
     "fundedProject": null
+  },
+  "ownerCorrection": {
+    "previousBillingClassification": "CHATGPT_OR_CODEX_NOT_API",
+    "correctedCreditSystem": "OPENAI_PLATFORM_API",
+    "positivePlatformApiBalanceConfirmed": true,
+    "visibleBalanceUsd": 60,
+    "fundedOrganization": {
+      "id": "org-jxmykEtCh4k3dpbczZFZSESn",
+      "name": "teoyube-co-operation"
+    },
+    "priorClassificationSuperseded": true
+  },
+  "prompt19K": {
+    "status": "PASS",
+    "keyName": "Teoyube test key",
+    "secureLocalEntry": "PASS",
+    "localTarget": ".env.local",
+    "targetIgnored": true,
+    "targetTracked": false,
+    "plaintextExposed": false,
+    "oldExposedKeyUsed": false,
+    "configuredOrganization": "org-jxmykEtCh4k3dpbczZFZSESn",
+    "effectiveOrganization": "teoyube-co-operation",
+    "effectiveProject": "proj_aWe6jGi5wUxJEyNr8iSlmbgx",
+    "probe": {
+      "status": "PASS",
+      "errorCode": null,
+      "requestId": "e65d8cc9-ad78-4242-9902-42aff71e341e",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "inputTokens": 62,
+      "outputTokens": 13,
+      "latencyMs": 1851,
+      "estimatedCostUsd": 0.000105,
+      "schemaValid": true,
+      "store": false
+    },
+    "gateBPreview": {
+      "status": "PASS",
+      "fixtureCount": 9,
+      "liveExpected": 7,
+      "providerCalls": 7,
+      "strictResponsesValid": 7,
+      "strictResponsesExpected": 7,
+      "citationsValid": 7,
+      "citationsExpected": 7,
+      "criticalProviderCalls": 0,
+      "actualCostUsd": 0.086566,
+      "budgetPassed": true,
+      "artifactSha256": "7c54a985428d94cbf4108d48563fbc832d8a855a77bf762e9633d55b7323f87c"
+    },
+    "gateBProduction": "CLOSED",
+    "prompt20Unlocked": true,
+    "prompt20WorkStarted": false
   },
   "generationRequestMade": false,
   "newProjectKeyCreated": false,

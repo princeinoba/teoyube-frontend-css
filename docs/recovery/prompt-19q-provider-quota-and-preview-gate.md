@@ -2,11 +2,13 @@
 
 ## Result
 
-Prompt 19Q: **BLOCKED_PROVIDER_PROJECT_QUOTA**
+Prompt 19Q original result: **BLOCKED_PROVIDER_PROJECT_QUOTA** (historical)
 
 The existing credential authenticates and both approved model snapshots remain project-visible. The single authorized minimal generation probe returned `429 insufficient_quota`. The owner-mandated hard stop therefore prevented the bounded paid-provider suite from running. Gate B-Preview remains blocked, Gate B-Production remains closed, and Prompt 20 remains locked.
 
 Prompt 19R follow-up: the owner selected billing answer 2, classifying the reported credits as `CHATGPT_OR_CODEX_NOT_API`. No new generation request or project key was authorized on that branch, so this gate remains blocked and its evidence is unchanged.
+
+Prompt 19K subsequent resolution: **PASS**. The owner later confirmed a positive OpenAI Platform API balance in the funded organization, created an unexposed organization key, and authorized hidden local entry. Organization-bound authentication, one minimal quota probe, and all nine existing bounded Gate B-Preview fixtures passed. Gate B-Production remains closed. Prompt 20 is unlocked, but no Prompt 20 work was started. This amendment preserves the Prompt 19Q failure evidence rather than rewriting it; the complete superseding record is in `docs/recovery/prompt-19k-secure-local-key-and-funded-org-gate.md`.
 
 ## Branch and commits
 
