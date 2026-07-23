@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "teoyube-prompt19r-openai-account-diagnostic-2026-07-23.1",
+  "generatedAt": "2026-07-23T02:34:26.458Z",
+  "syntheticOnly": true,
+  "secretIncluded": false,
+  "credential": {
+    "present": true,
+    "sourceClass": "process environment",
+    "plaintextExposed": false,
+    "authentication": "PASS"
+  },
+  "identity": {
+    "endpoint": "/v1/me",
+    "requestSucceeded": true,
+    "status": 200,
+    "requestId": "e3c8f431-f694-442a-bb0b-0696964741ee",
+    "userId": "user-h73TQx6VWPrixUFbgqM1iLVt",
+    "organizationCount": 2,
+    "organizations": [
+      {
+        "id": "org-jxmykEtCh4k3dpbczZFZSESn",
+        "name": "teoyube-co-operation",
+        "role": "owner"
+      },
+      {
+        "id": "org-ZCGL2IBiQVP0jRTq3BC41YaG",
+        "name": "user-h73tqx6vwprixufbgqm1ilvt",
+        "role": "owner"
+      }
+    ]
+  },
+  "routing": {
+    "modelListSucceeded": true,
+    "modelListRequestId": "530aa532-72bc-4d59-9a53-5b162f1867b3",
+    "approvedLightModelAvailable": true,
+    "approvedStandardModelAvailable": true,
+    "effectiveOrganization": null,
+    "effectiveProject": null,
+    "configuredOrganization": null,
+    "configuredProject": null,
+    "baseUrlHostname": "api.openai.com",
+    "keyScope": "UNKNOWN_SCOPE",
+    "possibleMismatch": "unknown",
+    "responseHeaders": {
+      "openaiOrganization": null,
+      "openaiProject": null,
+      "openaiProcessingMs": "327",
+      "openaiVersion": "2020-10-01"
+    }
+  },
+  "organizationDiagnostics": {
+    "rangeStartUnix": 1784687654,
+    "rangeEndUnix": 1784774054,
+    "costs": {
+      "status": 403,
+      "result": "ADMIN_READ_ACCESS_NOT_AVAILABLE",
+      "requestId": "02310d4f-90c4-4002-888d-98124164d766"
+    },
+    "completionUsage": {
+      "status": 403,
+      "result": "ADMIN_READ_ACCESS_NOT_AVAILABLE",
+      "requestId": "2a5c856d-f8a2-40a5-b5cf-c5c807964fbf"
+    }
+  },
+  "billingConfirmation": {
+    "ownerAnswer": 2,
+    "creditSystem": "CHATGPT_OR_CODEX_NOT_API",
+    "positivePlatformApiBalanceConfirmed": false,
+    "fundedOrganization": null,
+    "fundedProject": null
+  },
+  "generationRequestMade": false,
+  "newProjectKeyCreated": false,
+  "supportPackageCreated": false,
+  "gateBPreview": "BLOCKED_CREDIT_SYSTEM_NOT_API",
+  "gateBProduction": "CLOSED",
+  "prompt19R": "BLOCKED",
+  "prompt20Unlocked": false,
+  "prompt20WorkStarted": false
+}

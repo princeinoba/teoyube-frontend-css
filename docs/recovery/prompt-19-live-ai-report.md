@@ -8,6 +8,8 @@ Blocking condition: OpenAI project generation returned `insufficient_quota`; Gat
 
 Prompt 19Q rechecked this blocker on 2026-07-22. Authentication and both owner-approved model snapshots passed a safe model-list check, but the one authorized minimal Responses API generation probe again returned `429 insufficient_quota`. No Gate B-Preview fixture was run after that hard stop, no key was created or rotated, and no product code changed.
 
+Prompt 19R then verified two API organizations through `/v1/me`, confirmed both approved models remain visible, and found no returned or configured effective organization/project routing. The owner selected billing answer 2: the reported credits appear only in ChatGPT/Codex or a ChatGPT workspace, not as a positive OpenAI Platform API balance. Prompt 19R therefore made no generation request, created no key, and left Gate B-Preview blocked.
+
 Gate B-Production: **CLOSED**.
 
 Prompt 20 unlocked: **NO**.
