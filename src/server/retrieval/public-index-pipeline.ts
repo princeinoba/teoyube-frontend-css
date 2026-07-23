@@ -228,15 +228,25 @@ export class PublicIndexPipeline {
       inventory.dimension,
       EMBEDDING_ADAPTER_VERSION
     );
-    for (
-      let offset = checkpoint.nextOffset;
-      offset < inventory.chunks.length;
-      offset += RETRIEVAL_LIMITS.maximumBatchInputs
-    ) {
-      const batch = inventory.chunks.slice(
-        offset,
-        offset + RETRIEVAL_LIMITS.maximumBatchInputs
-      );
+    let offset = checkpoint.nextOffset;
+    while (offset < inventory.chunks.length) {
+      let batchTokens = 0;
+      let end = offset;
+      while (
+        end < inventory.chunks.length &&
+        end - offset < RETRIEVAL_LIMITS.maximumBatchInputs
+      ) {
+        const nextTokens = inventory.chunks[end].tokenCount;
+        if (
+          end > offset &&
+          batchTokens + nextTokens > RETRIEVAL_LIMITS.maximumBatchEstimatedTokens
+        ) {
+          break;
+        }
+        batchTokens += nextTokens;
+        end += 1;
+      }
+      const batch = inventory.chunks.slice(offset, end);
       const missing = batch.filter((chunk) => {
         const cached = reusable.get(chunk.chunkId);
         return !cached || cached.normalizedContentHash !== chunk.contentHash;
@@ -353,6 +363,7 @@ export class PublicIndexPipeline {
         throw new Error("The cumulative public index cost exceeded its hard budget.");
       }
       writeJson(paths.checkpoint, checkpoint);
+      offset = end;
     }
     await repository.activateIndex(
       inventory.indexVersion,

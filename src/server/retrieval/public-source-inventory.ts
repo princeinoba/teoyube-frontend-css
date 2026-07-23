@@ -58,6 +58,7 @@ export type PublicRetrievalInventory = Readonly<{
   chunks: readonly RetrievalChunk[];
   totalDocuments: number;
   totalChunks: number;
+  duplicateChunksExcluded: number;
   totalEstimatedTokens: number;
 }>;
 
@@ -371,7 +372,7 @@ export function buildPublicRetrievalInventory(
     }
   }
 
-  const ordered = Object.freeze(
+  const orderedWithOverlaps = Object.freeze(
     chunks.sort(
       (left, right) =>
         left.partition.localeCompare(right.partition) ||
@@ -379,7 +380,23 @@ export function buildPublicRetrievalInventory(
         left.ordinal - right.ordinal
     )
   );
-  const sources = sourceSummary(ordered);
+  const uniqueById = new Map<string, RetrievalChunk>();
+  for (const chunk of orderedWithOverlaps) {
+    const existing = uniqueById.get(chunk.chunkId);
+    if (existing) {
+      if (
+        existing.contentHash !== chunk.contentHash ||
+        existing.documentId !== chunk.documentId ||
+        existing.partition !== chunk.partition
+      ) {
+        throw new Error(`Retrieval chunk identifier collision: ${chunk.chunkId}.`);
+      }
+      continue;
+    }
+    uniqueById.set(chunk.chunkId, chunk);
+  }
+  const ordered = Object.freeze([...uniqueById.values()]);
+  const sources = sourceSummary(orderedWithOverlaps);
   const compositeSourceHash = sha256(
     stableJson(
       sources.map((source) => ({
@@ -403,6 +420,7 @@ export function buildPublicRetrievalInventory(
     chunks: ordered,
     totalDocuments: new Set(ordered.map((chunk) => chunk.documentId)).size,
     totalChunks: ordered.length,
+    duplicateChunksExcluded: orderedWithOverlaps.length - ordered.length,
     totalEstimatedTokens: ordered.reduce((sum, chunk) => sum + chunk.tokenCount, 0)
   });
 }

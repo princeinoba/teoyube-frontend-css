@@ -35,6 +35,8 @@ describe("public retrieval inventory", () => {
       ])
     );
     expect(first.chunks.filter((chunk) => chunk.partition === "canonical_scripture")).toHaveLength(31098);
+    expect(first.chunks.filter((chunk) => chunk.partition === "lexicon")).toHaveLength(108);
+    expect(first.duplicateChunksExcluded).toBe(36);
     expect(first.chunks.every((chunk) => chunk.sensitivity === "public")).toBe(true);
   });
 
