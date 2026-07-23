@@ -199,5 +199,6 @@ describe("HybridRetrievalService", () => {
     expect(result.pathsUsed).toContain("vector");
     expect(result.sources.some((source) => source.vectorScore && source.vectorScore > 0)).toBe(true);
     expect(result.sources.every((source) => source.selectionReasons.length > 0)).toBe(true);
+    expect(new Set(result.sources.map((source) => source.documentId)).size).toBe(result.sources.length);
   });
 });

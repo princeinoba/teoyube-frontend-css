@@ -421,7 +421,13 @@ export class HybridRetrievalService implements HybridRetriever {
           right.fusedScore - left.fusedScore ||
           left.candidate.chunk.chunkId.localeCompare(right.candidate.chunk.chunkId)
       );
-    const selected = ranked
+    const seenDocuments = new Set<string>();
+    const diverseRanked = ranked.filter((item) => {
+      if (seenDocuments.has(item.candidate.chunk.documentId)) return false;
+      seenDocuments.add(item.candidate.chunk.documentId);
+      return true;
+    });
+    const selected = diverseRanked
       .slice(0, Math.max(0, request.topK - (exact ? 1 : 0)))
       .map((item, index): HybridSourceResult => {
         const chunk = item.candidate.chunk;
@@ -442,7 +448,7 @@ export class HybridRetrievalService implements HybridRetriever {
           vectorScore: item.candidate.vector,
           graphScore: item.candidate.graph,
           fusedScore: item.fusedScore,
-          scoreBreakdown: item.breakdown,
+          scoreBreakdown: Object.freeze({ ...item.breakdown, diversity: 1 }),
           rank: index + 1 + (exact ? 1 : 0),
           matchedTerms: item.candidate.matchedTerms,
           matchedConcepts: Object.freeze(

@@ -11,6 +11,7 @@
   },
   "include": [
     "scripts/retrieval/retrieval-cli.ts",
+    "scripts/retrieval/retrieval-evaluation-cli.ts",
     "src/config/environment.ts",
     "src/domain/memory/**/*.ts",
     "src/domain/retrieval/**/*.ts",
@@ -18,6 +19,11 @@
     "src/server/memory/encryption.ts",
     "src/server/memory/node-sqlite.d.ts",
     "src/server/retrieval/**/*.ts"
+    ,"src/server/scripture/canonical-scripture-repository.ts"
+    ,"src/server/tig/**/*.ts"
+    ,"src/lib/tig/**/*.ts"
+    ,"src/data/**/*.json"
+    ,"tests/fixtures/retrieval/**/*.json"
   ],
   "exclude": ["node_modules", ".next", ".tmp"]
 }

@@ -6,5 +6,6 @@ export * from "./public-index-pipeline";
 export * from "./public-source-inventory";
 export * from "./retrieval-config";
 export * from "./retrieval-context-assembler";
+export * from "./retrieval-observability";
 export * from "./sqlite-vector-repository";
 export * from "./user-vector-index-service";

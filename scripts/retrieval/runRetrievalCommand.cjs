@@ -5,7 +5,7 @@ const { spawnSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "../..");
 const command = process.argv[2] || "inventory";
-const allowed = new Set(["inventory", "estimate", "index-public", "verify", "rollback"]);
+const allowed = new Set(["inventory", "estimate", "index-public", "verify", "rollback", "evaluate"]);
 if (!allowed.has(command)) {
   console.error(`Unknown retrieval command: ${command}`);
   process.exit(2);
@@ -28,7 +28,12 @@ const compilation = spawnSync(process.execPath, [tsc, "-p", "tsconfig.retrieval.
 });
 if (compilation.status !== 0) process.exit(compilation.status || 1);
 
-const cli = path.join(buildRoot, "scripts", "retrieval", "retrieval-cli.js");
+const cli = path.join(
+  buildRoot,
+  "scripts",
+  "retrieval",
+  command === "evaluate" ? "retrieval-evaluation-cli.js" : "retrieval-cli.js"
+);
 const result = spawnSync(process.execPath, [cli, command], {
   cwd: root,
   env: process.env,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "evaluationSetId": "teoyube-retrieval-eval-2026-07-23.1",
+  "evaluationSetId": "teoyube-retrieval-eval-2026-07-23.1a",
   "lockedBeforeEmbeddingComparison": true,
   "containsRealUserContent": false,
   "contentPolicy": "Synthetic and reviewed public-source queries only.",
@@ -19,7 +19,7 @@
       "query": "Psalm 91:1-2",
       "intent": "scripture",
       "partitions": ["canonical_scripture"],
-      "expectedDocumentIds": ["canonical:Psalm 91:1-2"]
+      "expectedDocumentIds": ["canonical:Psalms 91:1-2"]
     },
     {
       "id": "exact-03",
@@ -228,6 +228,14 @@
       "intent": "product_help",
       "partitions": ["theology_safety"],
       "expectedDocumentIds": ["theology"]
+    }
+  ],
+  "amendments": [
+    {
+      "caseId": "exact-02",
+      "scope": "deterministic exact-reference expectation only",
+      "reason": "The canonical repository normalizes the book label to Psalms; no semantic query, relevance judgment, or model comparison changed.",
+      "amendedAt": "2026-07-23"
     }
   ]
 }
