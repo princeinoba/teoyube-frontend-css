@@ -189,6 +189,14 @@ export class ConsentVectorLifecycleService {
     });
   }
 
+  async deleteUserVectors(
+    userId: string,
+    now: string
+  ): Promise<Readonly<{ deleted: number }>> {
+    const result = await this.deleteUser(userId, now);
+    return Object.freeze({ deleted: result.deleted });
+  }
+
   invalidateSource(
     sourceId: string,
     sourceVersion: string,

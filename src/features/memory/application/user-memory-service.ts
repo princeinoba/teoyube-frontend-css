@@ -37,6 +37,10 @@ type AtomicRevocationStore = Readonly<{
   revokeConsentAndMemory(userId: string, command: RevokeConsentCommand, now: string): Readonly<{ consent: ConsentGrant; revocation: RevocationResult }>;
 }>;
 
+export type MemoryDerivativeLifecycle = Readonly<{
+  deleteUserVectors(userId: string, now: string): Promise<Readonly<{ deleted: number }>>;
+}>;
+
 const FORBIDDEN_SYSTEM_FACT_KEYS = Object.freeze([
   "callingIsFact", "divineDirectionIsCertain", "promiseFulfilled", "testimonyPublished", "spiritualWorth", "godActionDeclared"
 ]);
@@ -58,7 +62,8 @@ export class UserMemoryService {
     private readonly consent: ConsentLedger,
     private readonly atomicRevocation: AtomicRevocationStore,
     private readonly events: PrivacySafeEventSink = nullPrivacySafeEventSink,
-    private readonly clock: () => string = () => new Date().toISOString()
+    private readonly clock: () => string = () => new Date().toISOString(),
+    private readonly derivatives?: MemoryDerivativeLifecycle
   ) {}
 
   async grantConsent(context: AuthorizationContext, command: GrantConsentCommand): Promise<ConsentGrant> {
@@ -70,8 +75,27 @@ export class UserMemoryService {
 
   async revokeConsent(context: AuthorizationContext, command: RevokeConsentCommand): Promise<Readonly<{ consent: ConsentGrant; revocation: RevocationResult }>> {
     const result = this.atomicRevocation.revokeConsentAndMemory(context.user.id, command, this.clock());
+    const vectorPurposes: readonly PurposeId[] = Object.freeze([
+      "external_ai_embedding_processing",
+      "user_memory_semantic_index",
+      "user_testimony_semantic_index",
+      "user_journey_semantic_index",
+      "user_calling_evidence_semantic_index"
+    ]);
+    const derivative = this.derivatives && vectorPurposes.includes(command.purposeId)
+      ? await this.derivatives.deleteUserVectors(context.user.id, this.clock())
+      : null;
+    const combined = derivative
+      ? Object.freeze({
+          consent: result.consent,
+          revocation: Object.freeze({
+            ...result.revocation,
+            derivativesDeleted: result.revocation.derivativesDeleted + derivative.deleted
+          })
+        })
+      : result;
     this.events.emit({ name: "consent_revoked", occurredAt: this.clock(), subjectHash: safeSubjectHash(context.user.id), purposeId: command.purposeId, result: "complete", count: result.revocation.revokedRecords });
-    return result;
+    return combined;
   }
 
   async effectiveConsent(context: AuthorizationContext, purposeId: PurposeId): Promise<ConsentGrant | null> {
@@ -133,8 +157,17 @@ export class UserMemoryService {
 
   async delete(context: AuthorizationContext, command: DeleteMemoryCommand): Promise<DeletionResult> {
     const result = await this.repository.delete(context.user.id, command, this.clock());
+    const derivative = this.derivatives
+      ? await this.derivatives.deleteUserVectors(context.user.id, this.clock())
+      : null;
+    const combined = derivative
+      ? Object.freeze({
+          ...result,
+          derivativesDeleted: result.derivativesDeleted + derivative.deleted
+        })
+      : result;
     this.events.emit({ name: "memory_deleted", occurredAt: this.clock(), subjectHash: safeSubjectHash(context.user.id), purposeId: command.purposeId, result: "complete", count: result.deletedRecords });
-    return result;
+    return combined;
   }
 
   async export(context: AuthorizationContext): Promise<UserDataExport> {
@@ -159,7 +192,16 @@ export class UserMemoryService {
 
   async deleteAccount(context: AuthorizationContext, idempotencyKey: string): Promise<DeletionResult> {
     const result = await this.repository.deleteAccount(context.user.id, idempotencyKey, this.clock());
+    const derivative = this.derivatives
+      ? await this.derivatives.deleteUserVectors(context.user.id, this.clock())
+      : null;
+    const combined = derivative
+      ? Object.freeze({
+          ...result,
+          derivativesDeleted: result.derivativesDeleted + derivative.deleted
+        })
+      : result;
     this.events.emit({ name: "deletion_completed", occurredAt: this.clock(), subjectHash: safeSubjectHash(context.user.id), result: "complete", count: result.deletedRecords });
-    return result;
+    return combined;
   }
 }
