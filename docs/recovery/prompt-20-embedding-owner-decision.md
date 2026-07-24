@@ -19,4 +19,8 @@ The default passed the locked gate, so the candidate was not called or promoted.
 
 The public-run checkpoint recorded $0.01926196 through chunk 31,232. A deterministic duplicate-inventory repair replaced the disposable checkpoint with a zero-cost cached replay before final manifest generation, so the exact terminal provider total is not recoverable from the repaired local checkpoint. The pre-call estimate was $0.04082660, the conservative estimate was $0.04899192, every paid batch enforced the $0.25 cap, and the final replay used 33,563 cache hits with zero provider calls. This accounting limitation is retained rather than inventing an exact total.
 
-Two passing evaluation executions used 286 total input tokens, estimated at $0.00000572. Total spend remained far below the $1.00 owner cap.
+Five passing evaluation executions used 715 total input tokens. One isolated
+two-token provider diagnostic was also performed. Prompt 20 query/evaluation
+usage was therefore 717 tokens, estimated at $0.00001434. Two feature-flag
+negative-control runs made zero provider calls. Total spend remained far below
+the $1.00 owner cap.
