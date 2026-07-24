@@ -17,6 +17,7 @@
     "src/shared/**/*.ts",
     "src/server/**/*.ts",
     "src/app/api/health/route.ts",
+    "src/app/api/readiness/route.ts",
     "src/app/layout.tsx",
     "src/proxy.ts",
     "src/app/page.tsx",

@@ -50,6 +50,8 @@ export function enforceRateLimit(request: Request): boolean {
 }
 
 export async function readJsonObject(request: Request): Promise<Readonly<Record<string, unknown>>> {
+  const contentType = request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase();
+  if (contentType !== "application/json") throw new Error("Request content type is invalid.");
   const length = Number(request.headers.get("content-length") || 0);
   if (length > MEMORY_LIMITS.apiBodyBytes) throw new Error("Request body is too large.");
   const raw = await request.text();
@@ -57,6 +59,15 @@ export async function readJsonObject(request: Request): Promise<Readonly<Record<
   const parsed: unknown = raw ? JSON.parse(raw) : {};
   if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) throw new Error("Request body is invalid.");
   return parsed as Record<string, unknown>;
+}
+
+export function assertAllowedFields(
+  value: Readonly<Record<string, unknown>>,
+  allowedFields: readonly string[]
+): void {
+  const allowed = new Set(allowedFields);
+  const unexpected = Object.keys(value).filter((key) => !allowed.has(key));
+  if (unexpected.length) throw new Error("Request contains unsupported fields.");
 }
 
 export async function authorizeRead(request: Request, runtime: MemoryRuntime): Promise<AuthorizationContext> {
@@ -80,8 +91,18 @@ export function safeApiError(error: unknown): Response {
   const message = error instanceof Error && /limit|too large|conflict|consent|approval|eligible|unavailable|verification|required/i.test(error.message)
     ? error.message
     : "The request could not be completed.";
-  const status = /Authentication required/.test(message) ? 401 : /verification|consent|approval|eligible/.test(message) ? 403 : /limit|too large/.test(message) ? 413 : /conflict/.test(message) ? 409 : 400;
-  return Response.json({ error: message }, { status, headers: { "cache-control": "no-store" } });
+  const rateLimited = /request limit was reached/i.test(message);
+  const status = /Authentication required/.test(message) ? 401 : /verification|consent|approval|eligible/.test(message) ? 403 : rateLimited ? 429 : /too large/.test(message) ? 413 : /conflict/.test(message) ? 409 : 400;
+  return Response.json(
+    { error: message },
+    {
+      status,
+      headers: {
+        "cache-control": "no-store",
+        ...(rateLimited ? { "retry-after": "60" } : {})
+      }
+    }
+  );
 }
 
 export function disabledResponse(): Response {

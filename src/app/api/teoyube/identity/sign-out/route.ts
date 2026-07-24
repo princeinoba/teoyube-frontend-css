@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
-import { CSRF_COOKIE, disabledResponse, runtimeOrNull, safeApiError, sameOrigin, sessionToken, SESSION_COOKIE } from "@/server/http/memory-route-helpers";
+import { CSRF_COOKIE, disabledResponse, enforceRateLimit, runtimeOrNull, safeApiError, sameOrigin, sessionToken, SESSION_COOKIE } from "@/server/http/memory-route-helpers";
 
 export async function POST(request: Request) {
   const runtime = runtimeOrNull();
   if (!runtime) return disabledResponse();
-  if (!sameOrigin(request)) return safeApiError(new Error("Request verification failed."));
+  if (!sameOrigin(request) || !enforceRateLimit(request)) return safeApiError(new Error("Request verification failed."));
   try {
     await runtime.identity.signOut(sessionToken(request), request.headers.get("x-teoyube-csrf") || "");
     const response = NextResponse.json({ signedOut: true }, { headers: { "cache-control": "no-store" } });

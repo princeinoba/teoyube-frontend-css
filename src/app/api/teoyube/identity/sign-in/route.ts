@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { CSRF_COOKIE, disabledResponse, enforceRateLimit, readJsonObject, runtimeOrNull, safeApiError, sameOrigin, SESSION_COOKIE } from "@/server/http/memory-route-helpers";
+import { assertAllowedFields, CSRF_COOKIE, disabledResponse, enforceRateLimit, readJsonObject, runtimeOrNull, safeApiError, sameOrigin, SESSION_COOKIE } from "@/server/http/memory-route-helpers";
 
 export const dynamic = "force-dynamic";
 
@@ -9,6 +9,7 @@ export async function POST(request: Request) {
   if (!sameOrigin(request) || !enforceRateLimit(request)) return safeApiError(new Error("Request verification failed."));
   try {
     const body = await readJsonObject(request);
+    assertAllowedFields(body, ["credential"]);
     if (typeof body.credential !== "string" || body.credential.length > 256) throw new Error("Authentication failed.");
     const issued = await runtime.identity.signIn(body.credential);
     const response = NextResponse.json({ session: issued.session }, { headers: { "cache-control": "no-store" } });

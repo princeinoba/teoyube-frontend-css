@@ -1,3 +1,15 @@
+import { readFileSync } from "node:fs";
+
+const securityPolicy = JSON.parse(
+  readFileSync(new URL("./config/security-headers.json", import.meta.url), "utf8")
+);
+const globalSecurityHeaders = [
+  ...securityPolicy.headers,
+  ...(process.env.TEOYUBE_DEPLOYMENT_TARGET === "production"
+    ? securityPolicy.productionOnlyHeaders
+    : [])
+];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -10,6 +22,10 @@ const nextConfig = {
   },
   async headers() {
     return [
+      {
+        source: "/:path*",
+        headers: globalSecurityHeaders
+      },
       {
         source: "/media/teoyubeworld/pilot-v1/:path*",
         headers: [
