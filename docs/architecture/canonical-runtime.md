@@ -7,6 +7,8 @@ Teoyube's repository/local canonical runtime to use the verified Next
 application after the Prompt 22 candidate gate and final owner confirmation.
 It does not authorize a public deployment.
 
+The owner gave that final confirmation by selecting option 1 on 2026-07-24.
+
 The runtime boundary is:
 
 ```text

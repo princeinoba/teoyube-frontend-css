@@ -1,6 +1,6 @@
 # ADR-006: Owner-controlled local runtime cutover
 
-Status: candidate pending final owner confirmation
+Status: accepted for repository/local runtime
 
 Date: 2026-07-24
 
@@ -12,6 +12,9 @@ Prompt 21 established executable Gate C-Preview evidence for the Next
 application while the static runtime remained canonical. The owner authorized
 Prompt 22 to change only the repository/local canonical command after a second
 complete gate and final confirmation.
+
+The owner selected option 1 on 2026-07-24 after reviewing the final candidate
+gate and the dedicated loopback-only Next and static rollback runtimes.
 
 ## Decision
 

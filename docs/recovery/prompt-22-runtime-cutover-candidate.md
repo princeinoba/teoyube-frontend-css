@@ -102,18 +102,20 @@ transient Windows file-lock interruption. It resumed without losing or
 changing a cell. The final release-orchestrated sequence above completed all
 three runs without resumption and is the release scorecard authority.
 
-## Review URLs
+## Local review evidence
 
-The dedicated review servers are started only after this evidence commit:
+The dedicated review servers were started only after the evidence commit:
 
 - Next candidate: `http://127.0.0.1:3130`
 - Static rollback: `http://127.0.0.1:4200/index.html`
 
-Both are loopback-only and are stopped after the owner's final decision.
+Both were loopback-only, passed their endpoint checks, and were stopped after
+the owner's final decision.
 
 ## Known boundaries
 
-- Final local runtime cutover confirmation is pending.
+- Final local runtime cutover confirmation is approved for repository/local
+  scope only.
 - This candidate is not a public deployment.
 - Production identity, managed persistence, key management, backup/restore,
   external observability, production rate limiting, production crisis
@@ -145,6 +147,11 @@ The static runtime requires no network, package install, or Next build.
 
 ## Owner gate
 
-Final owner confirmation: **PENDING**
+Final owner confirmation: **APPROVED — OPTION 1**
+
+Confirmed at: `2026-07-24T21:10:29.582Z`
+
+Candidate evidence commit:
+`7b27e7fbcd4522b66ddd16e4c231ff0a76379514`
 
 Prompt 23 unlocked: **NO**

@@ -35,9 +35,16 @@ command and without an internet dependency.
 
 ## Final confirmation
 
-Status: pending
+Status: approved
 
-The final local runtime cutover is not approved by this Stage 0 decision alone.
-After the complete automated gate passes and both dedicated local review
-runtimes are available, the owner must separately approve or reject the
-candidate.
+Confirmed at: `2026-07-24T21:10:29.582Z`
+
+Confirmed candidate evidence commit:
+`7b27e7fbcd4522b66ddd16e4c231ff0a76379514`
+
+The owner selected option 1 after the complete automated gate passed and the
+dedicated Next and static rollback runtimes were made available for local
+review. Next is approved as Teoyube's canonical repository/local runtime.
+
+This confirmation does not authorize public deployment, Gate C-Production, or
+Prompt 23. The protected static runtime remains the required rollback.

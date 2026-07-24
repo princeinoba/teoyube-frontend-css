@@ -3,7 +3,14 @@
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
   "ownerDecisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
+  "ownerConfirmation": {
+    "status": "APPROVED",
+    "selectedOption": 1,
+    "confirmedAt": "2026-07-24T21:10:29.582Z",
+    "candidateEvidenceCommit": "7b27e7fbcd4522b66ddd16e4c231ff0a76379514"
+  },
   "cutoverCommit": "52ed7e9530e292f60195f7305a8ec9a476bd7367",
+  "postCutoverTag": "teoyube-next-canonical-local-2026-07-24",
   "staticBaselineCommit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
   "nextBuildId": "I1g8n9KHFcruCq_ERB1C1",
   "publicRoutes": [
