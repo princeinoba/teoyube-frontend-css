@@ -116,13 +116,15 @@ async function main(): Promise<void> {
   const repository = new SqliteVectorRepository(
     path.join(root, ".var", "retrieval", "retrieval.sqlite")
   );
-  const metered = new MeteredEmbeddingGateway(new OpenAiEmbeddingGateway());
   const environment = {
     ...process.env,
     TEOYUBE_ENABLE_EMBEDDINGS: "true",
     TEOYUBE_ENABLE_VECTOR_RETRIEVAL: "true",
     TEOYUBE_VECTOR_RETRIEVAL_ENABLED: "true"
   };
+  const metered = new MeteredEmbeddingGateway(
+    new OpenAiEmbeddingGateway({ environment })
+  );
   const service = new HybridRetrievalService({
     inventory,
     vectorRepository: repository,
