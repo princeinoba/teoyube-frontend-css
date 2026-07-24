@@ -33,4 +33,3 @@ bytes, and workspace storage. Live-provider latency is reused only when Prompt
 Client-bundle verification rejects TIG seeds, WEB corpus/index data, vector
 indexes, safety fixtures, memory/encryption server code, provider secrets, and
 server SDKs.
-

@@ -62,4 +62,3 @@ Analysis template:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 No rows may be populated until real, consented sessions occur.
-

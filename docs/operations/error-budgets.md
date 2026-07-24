@@ -22,4 +22,3 @@ change.
 Preview evidence uses one release run as its observation window. A failed run
 does not disappear through averaging. Production error budgets cannot be
 calculated until real service ownership, traffic, alerts, and monitoring exist.
-

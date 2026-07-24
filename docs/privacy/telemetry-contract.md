@@ -33,4 +33,3 @@ isolated from application behavior.
 ```text
 npm run release:telemetry:verify
 ```
-

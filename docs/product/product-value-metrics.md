@@ -38,4 +38,3 @@ language.
 
 This is an event schema and deterministic summary, not evidence that users
 experienced value.
-

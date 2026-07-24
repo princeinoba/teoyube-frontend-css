@@ -42,4 +42,3 @@ Production availability, provider latency, deletion queue completion, and
 alert response objectives remain unproven until production infrastructure and
 real traffic exist. They must be reset from measured production data after a
 separate cutover approval.
-

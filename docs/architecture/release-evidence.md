@@ -39,4 +39,3 @@ npm run release:evidence:generate
 npm run release:evidence:verify
 npm run release:gate:preview
 ```
-

@@ -24,4 +24,3 @@ Verification is part of:
 npm run release:security:gate
 npm run test:e2e
 ```
-

@@ -30,4 +30,3 @@ For every incident:
 Procedures are in `docs/operations/runbooks/index.md`. Production paging,
 status-page access, counsel, notification duties, and breach timelines remain
 deployment/legal dependencies.
-

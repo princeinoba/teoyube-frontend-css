@@ -20,4 +20,3 @@ gate does not fabricate a signature or signer.
 
 Dependency exceptions require a scoped owner/security review and a policy
 change with rationale. A report alone cannot suppress a vulnerability.
-

@@ -30,4 +30,3 @@ distributed limiter is a Gate C-Production dependency.
 CSP remains Report-Only during preview diagnosis to avoid breaking protected
 media or the approved interface. HSTS is emitted only in production
 configuration. Neither setting is evidence of a production deployment.
-
