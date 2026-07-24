@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "ownerDecisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
+  "branch": "recovery/visual-source-of-truth",
+  "authorizedStartingCommit": "d01464743347251cb6fa2af20585c9983c67fe81",
+  "sourceCandidateCommit": "52ed7e9530e292f60195f7305a8ec9a476bd7367",
+  "preCutoverTag": "teoyube-before-next-canonical-2026-07-24-d014647",
+  "runtime": {
+    "canonical": "next",
+    "canonicalCommand": "npm start",
+    "developmentCommand": "npm run dev",
+    "rollback": "static-node",
+    "rollbackCommand": "npm run rollback:start",
+    "nextBuildId": "I1g8n9KHFcruCq_ERB1C1",
+    "deploymentScope": "repository/local",
+    "publicDeploymentPerformed": false,
+    "gateCProduction": "CLOSED"
+  },
+  "compatibility": {
+    "publicRoutes": 23,
+    "legacyHashMappings": 14,
+    "apiContracts": 31,
+    "dualRuntimeChecks": 83,
+    "dualRuntimeSequence": "Next -> static -> Next",
+    "protectedInternalRoutesDefault": "404"
+  },
+  "visualProtection": {
+    "protectedVisualFilesChanged": 0,
+    "immutableStaticScreenshotsChanged": 0,
+    "immutableDesktopDomSnapshotsChanged": 0,
+    "ownerApprovedSupportBaselinesChanged": 0,
+    "ownerApprovedNextSupportBaselinesChanged": 0,
+    "ownerApprovedScriptureDeltaBaselinesChanged": 0,
+    "immutableStaticScreenshotsVerified": 72,
+    "immutableDesktopDomSnapshotsVerified": 12,
+    "supportScreenshotsVerified": 60,
+    "nextSupportDefaultCapturesVerified": 54,
+    "nextSupportInteractionCapturesVerified": 16
+  },
+  "automatedEvidence": {
+    "releaseCommandsPassed": 35,
+    "releaseCommandsTotal": 35,
+    "releaseArtifactsVerified": 22,
+    "gateCPreview": "PASS",
+    "gateBPreview": "PASS_REUSED_HASH_BOUND",
+    "retrievalQuality": "PASS_REUSED_HASH_BOUND",
+    "safetyGateA": "PASS",
+    "visualPerformanceCellsPassed": 216,
+    "visualPerformanceCellsTotal": 216,
+    "parityFunctionalTestsPassed": 105,
+    "parityFunctionalTestsTotal": 105,
+    "performanceThresholdMs": 5000,
+    "performanceRunMaximumMs": [3292.1, 3645, 3154],
+    "ordinaryE2ePassed": 16,
+    "memoryE2ePassed": 3,
+    "prompt13JourneyE2ePassed": 2,
+    "unitPassed": 238,
+    "unitSkipped": 1,
+    "integrationPassed": 101,
+    "criticalPassed": 68,
+    "retrievalFocusedPassed": 21,
+    "teoGuideFocusedPassed": 49,
+    "liveAiOfflinePassed": 25
+  },
+  "featureDefaults": {
+    "liveAi": false,
+    "embeddings": false,
+    "vectorRetrieval": false,
+    "broadRag": false
+  },
+  "knownBoundaries": [
+    "Final local runtime cutover confirmation is still pending.",
+    "Gate C-Production remains closed.",
+    "No public deployment, domain, DNS, TLS, or hosting change was performed.",
+    "Real-user UX and product validation has not yet been run.",
+    "The historical Phase 11.6C.3 publication-integrity blocker remains unchanged.",
+    "The original static publication-integrity boundary still returns 404 for unpublished protected media.",
+    "Next weak ETag revalidation returns 200; Last-Modified revalidation is the verified 304 contract."
+  ],
+  "rollback": {
+    "operational": "npm run rollback:start",
+    "repository": "git revert 52ed7e9530e292f60195f7305a8ec9a476bd7367",
+    "networkRequired": false,
+    "protectedStaticRuntimeDeleted": false
+  },
+  "review": {
+    "nextBaseUrl": "http://127.0.0.1:3130",
+    "staticRollbackBaseUrl": "http://127.0.0.1:4200/index.html",
+    "finalOwnerConfirmation": "PENDING"
+  },
+  "prompt23Unlocked": false
+}

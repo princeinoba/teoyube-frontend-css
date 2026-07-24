@@ -3,9 +3,9 @@
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
   "ownerDecisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
-  "cutoverCommit": "PENDING_FINAL_OWNER_CONFIRMATION",
+  "cutoverCommit": "52ed7e9530e292f60195f7305a8ec9a476bd7367",
   "staticBaselineCommit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-  "nextBuildId": "PENDING_CANDIDATE_BUILD",
+  "nextBuildId": "I1g8n9KHFcruCq_ERB1C1",
   "publicRoutes": [
     { "path": "/", "capability": "today" },
     { "path": "/search", "capability": "search" },
@@ -91,9 +91,9 @@
     "broadRag": false
   },
   "rollbackCommand": "npm run rollback:start",
-  "verifiedAt": "PENDING_FINAL_OWNER_CONFIRMATION",
+  "verifiedAt": "2026-07-24T21:01:58.267Z",
   "deployment": "local/release-candidate",
-  "gateCPreview": "PENDING_CANDIDATE_GATE",
+  "gateCPreview": "PASS",
   "gateCProduction": "CLOSED",
   "publicDeploymentPerformed": false,
   "routeCompatibilityManifest": "config/runtime/route-compatibility-manifest.json",
