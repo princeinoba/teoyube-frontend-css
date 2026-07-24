@@ -24,7 +24,10 @@ only hashes and summary metrics. Raw model content is never copied.
 
 Framework build timestamps are not claimed to be byte-reproducible. Two clean
 builds are compared using normalized semantic route and client-bundle
-manifests, while every nondeterministic field is recorded.
+manifests. Raw hashes remain recorded. The only normalized value is Next's
+exact generated `BUILD_ID`, including its `.next/static/<BUILD_ID>/` path
+segment and exact references to that value; trace, diagnostic, and cache
+directories are excluded as non-artifact runtime data.
 
 The static runtime remains canonical. Gate C-Production remains closed until
 the listed deployment dependencies and a separate owner cutover decision are

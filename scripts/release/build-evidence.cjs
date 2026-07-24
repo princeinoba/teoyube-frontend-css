@@ -1,6 +1,7 @@
 "use strict";
 
 const fs = require("node:fs");
+const crypto = require("node:crypto");
 const {
   absolute,
   currentIdentity,
@@ -12,10 +13,39 @@ const {
   writeJson
 } = require("./release-utils.cjs");
 
+function normalizedBuildHash(files, buildId) {
+  const hash = crypto.createHash("sha256");
+  let bytes = 0;
+  for (const file of [...files].sort()) {
+    const normalizedPath = buildId
+      ? file.replaceAll(buildId, "<NEXT_BUILD_ID>")
+      : file;
+    const source = fs.readFileSync(absolute(file), "utf8");
+    const normalizedSource = buildId
+      ? source.replaceAll(buildId, "<NEXT_BUILD_ID>")
+      : source;
+    const normalized = Buffer.from(normalizedSource, "utf8");
+    bytes += normalized.length;
+    hash.update(normalizedPath);
+    hash.update("\0");
+    hash.update(crypto.createHash("sha256").update(normalized).digest("hex"));
+    hash.update("\n");
+  }
+  return Object.freeze({
+    sha256: hash.digest("hex"),
+    files: files.length,
+    normalizedBytes: bytes,
+    normalization: buildId
+      ? "exact Next BUILD_ID value and path segment"
+      : "none"
+  });
+}
+
 function semanticBuildManifest() {
   const routeManifest = readJson(".next/app-path-routes-manifest.json");
   const clientFiles = walk(".next/static").filter((file) => /\.(js|css)$/.test(file));
   const serverFiles = walk(".next/server").filter((file) => /\.(js|json|html|rsc|body)$/.test(file));
+  const buildId = fs.readFileSync(absolute(".next/BUILD_ID"), "utf8").trim();
   const publicSourceMaps = [
     ...walk(".next/static").filter((file) => file.endsWith(".map")),
     ...walk("public").filter((file) => file.endsWith(".map"))
@@ -24,8 +54,14 @@ function semanticBuildManifest() {
     routes: Object.entries(routeManifest)
       .map(([route, file]) => ({ route, file }))
       .sort((left, right) => left.route.localeCompare(right.route)),
-    client: hashFileSet(clientFiles),
-    server: hashFileSet(serverFiles),
+    client: Object.freeze({
+      ...hashFileSet(clientFiles),
+      semantic: normalizedBuildHash(clientFiles, buildId)
+    }),
+    server: Object.freeze({
+      ...hashFileSet(serverFiles),
+      semantic: normalizedBuildHash(serverFiles, buildId)
+    }),
     publicSourceMaps,
     packageLockSha256: sha256File("package-lock.json")
   });
@@ -49,7 +85,7 @@ function generate() {
     build: {
       client: semantic.client,
       server: semantic.server,
-      combinedSha256: require("node:crypto")
+      combinedSha256: crypto
         .createHash("sha256")
         .update(semantic.client.sha256)
         .update(semantic.server.sha256)
@@ -114,8 +150,12 @@ function reproducibility() {
   const second = runs[1].manifest;
   const semanticMatch =
     JSON.stringify(first.routes) === JSON.stringify(second.routes) &&
-    first.client.sha256 === second.client.sha256 &&
-    first.server.sha256 === second.server.sha256 &&
+    first.client.semantic.sha256 === second.client.semantic.sha256 &&
+    first.server.semantic.sha256 === second.server.semantic.sha256 &&
+    first.client.files === second.client.files &&
+    first.client.bytes === second.client.bytes &&
+    first.server.files === second.server.files &&
+    first.server.bytes === second.server.bytes &&
     first.packageLockSha256 === second.packageLockSha256;
   writeJson("artifacts/release-evidence/build/reproducibility.json", {
     schemaVersion: 1,
@@ -123,10 +163,11 @@ function reproducibility() {
     identity: currentIdentity(),
     runs,
     normalizedNondeterminism: [
-      ".next/BUILD_ID",
-      ".next/trace",
-      ".next/diagnostics",
-      ".next/cache",
+      "exact .next/BUILD_ID value",
+      ".next/static/<BUILD_ID>/ path segment and exact references to that value",
+      "excluded .next/trace",
+      "excluded .next/diagnostics",
+      "excluded .next/cache",
       "filesystem timestamps"
     ],
     semanticMatch,
