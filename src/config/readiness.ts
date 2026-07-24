@@ -2,7 +2,11 @@ import { readServerFeatureAvailability } from "./environment";
 
 export type TeoyubeReadinessPayload = Readonly<{
   status: "ready" | "degraded";
-  runtime: "next-preview";
+  runtime: "next-canonical-local";
+  rollbackRuntime: "static-node";
+  deployment: "local/release-candidate";
+  gateCPreview: "pass";
+  gateCProduction: "closed";
   deterministicFallbackReady: true;
   dependencies: Readonly<{
     scripture: "ready";
@@ -42,7 +46,11 @@ export function createReadinessPayload(
   const degraded = availability.liveAi && liveAiProvider !== "ready";
   return Object.freeze({
     status: degraded ? "degraded" : "ready",
-    runtime: "next-preview",
+    runtime: "next-canonical-local",
+    rollbackRuntime: "static-node",
+    deployment: "local/release-candidate",
+    gateCPreview: "pass",
+    gateCProduction: "closed",
     deterministicFallbackReady: true,
     dependencies: Object.freeze({
       scripture: "ready",

@@ -25,7 +25,18 @@ check("branch", identity.branch === "recovery/visual-source-of-truth", identity.
 check("node", identity.node === policy.toolchain.node, identity.node);
 check("npm", identity.npm === policy.toolchain.npm, identity.npm);
 check("package-manager", packageJson.packageManager === `npm@${policy.toolchain.npm}`, packageJson.packageManager);
-check("canonical-static-start", packageJson.scripts.start === policy.runtime.canonicalStart, packageJson.scripts.start);
+check("canonical-next-start", packageJson.scripts.start === policy.runtime.canonicalStart, packageJson.scripts.start);
+check(
+  "protected-static-rollback",
+  packageJson.scripts["static:start"] === policy.runtime.rollbackStart &&
+    packageJson.scripts["prototype:start"] === policy.runtime.rollbackStart &&
+    packageJson.scripts["rollback:start"] === policy.runtime.rollbackStart,
+  {
+    staticStart: packageJson.scripts["static:start"],
+    prototypeStart: packageJson.scripts["prototype:start"],
+    rollbackStart: packageJson.scripts["rollback:start"]
+  }
+);
 check(
   "checked-in-live-ai-disabled",
   /^TEOYUBE_LIVE_AI_ENABLED=false$/m.test(envExample),
@@ -37,9 +48,19 @@ check(
   "TEOYUBE_VECTOR_RETRIEVAL_ENABLED=false"
 );
 check(
-  "next-preview-only",
-  packageJson.scripts.start !== packageJson.scripts["app:start"],
+  "next-canonical-local",
+  policy.runtime.nextStatus === "canonical_local" &&
+    packageJson.scripts.start === packageJson.scripts["app:start"],
   { start: packageJson.scripts.start, appStart: packageJson.scripts["app:start"] }
+);
+check(
+  "production-gate-closed",
+  policy.runtime.gateCProduction === "closed" &&
+    policy.runtime.publicDeploymentPerformed === false,
+  {
+    gateCProduction: policy.runtime.gateCProduction,
+    publicDeploymentPerformed: policy.runtime.publicDeploymentPerformed
+  }
 );
 check(
   "lockfile-version",

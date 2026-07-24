@@ -80,6 +80,8 @@ describe("Prompt 21 executable release contracts", () => {
         liveAiCheckedIn: boolean;
         vectorRetrievalCheckedIn: boolean;
         gateBProduction: string;
+        gateCProduction: string;
+        publicDeploymentPerformed: boolean;
       };
       coverage: { criticalContractPercent: number };
       performance: {
@@ -90,10 +92,12 @@ describe("Prompt 21 executable release contracts", () => {
     }>("config/release-gate-policy.json");
 
     expect(policy.runtime).toMatchObject({
-      nextStatus: "preview_only",
+      nextStatus: "canonical_local",
       liveAiCheckedIn: false,
       vectorRetrievalCheckedIn: false,
-      gateBProduction: "closed"
+      gateBProduction: "closed",
+      gateCProduction: "closed",
+      publicDeploymentPerformed: false
     });
     expect(policy.coverage.criticalContractPercent).toBe(100);
     expect(policy.performance.routeReadinessMaximumMs).toBe(5_000);

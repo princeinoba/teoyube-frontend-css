@@ -28,7 +28,13 @@ function walk(relative) {
 
 const packageJson = JSON.parse(read("package.json"));
 if (packageJson.dependencies?.openai !== "6.48.0") errors.push("The official OpenAI SDK must be exactly pinned to 6.48.0.");
-if (packageJson.scripts?.start !== "node --preserve-symlinks-main server.js") errors.push("The canonical static start command changed.");
+const staticCommand = "node --preserve-symlinks-main server.js";
+const nextCommand = "node scripts/runtime/start-next.cjs";
+if (![staticCommand, nextCommand].includes(packageJson.scripts?.start)) errors.push("The runtime start command is not an approved cutover state.");
+if (packageJson.scripts?.["app:start"] !== nextCommand) errors.push("The safe Next start command changed.");
+for (const command of ["static:start", "prototype:start", "rollback:start"]) {
+  if (packageJson.scripts?.[command] !== staticCommand) errors.push(`The protected static rollback command ${command} changed.`);
+}
 
 const lock = JSON.parse(read("package-lock.json"));
 const locked = lock.packages?.["node_modules/openai"];
@@ -100,4 +106,4 @@ if (errors.length) {
 }
 
 console.log("LIVE AI BOUNDARY CONTRACT: PASSED");
-console.log(`SDK imports: ${sdkImports.length}; client chunks scanned: ${clientChunksScanned}; store:false; strict structured output/tools; no built-ins; live-AI and retrieval kill switches default off; static start unchanged.`);
+console.log(`SDK imports: ${sdkImports.length}; client chunks scanned: ${clientChunksScanned}; store:false; strict structured output/tools; no built-ins; live-AI and retrieval kill switches default off; approved Next cutover state and static rollback intact.`);

@@ -239,6 +239,7 @@ function generate() {
       "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8",
       "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
       "TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B",
+      "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
       "teoyube-prompt19k-pass-f7d6385",
       "teoyube-prompt20-pass-d7aefa3"
     ],
@@ -262,7 +263,7 @@ function generate() {
       "domain, TLS, and deployment protection",
       "incident on-call ownership",
       "rollback drill",
-      "owner runtime-cutover approval",
+      "final local runtime-cutover confirmation",
       "owner production visual review",
       "real-user UX, trust, safety, and accessibility pilot evidence"
     ],
@@ -272,11 +273,14 @@ function generate() {
       "managed multi-region deletion and retention operations"
     ],
     runtime: {
-      staticCanonical: true,
-      nextPreviewOnly: true,
+      canonical: "next",
+      rollback: "static-node",
+      nextCanonicalLocal: true,
+      staticRollbackRetained: true,
       liveAiCheckedInEnabled: false,
       vectorRetrievalCheckedInEnabled: false,
-      runtimeCutover: false
+      runtimeCutover: "local-candidate",
+      publicDeploymentPerformed: false
     }
   };
   writeJson(`${artifactRoot}/manifest.json`, manifest);
@@ -299,7 +303,14 @@ function verify() {
   if (manifest.environment.packageLockSha256 !== sha256File("package-lock.json")) failures.push("package_lock");
   if (manifest.gateCPreview !== "PASS") failures.push("gate_c_preview");
   if (manifest.gateCProduction !== "CLOSED") failures.push("gate_c_production");
-  if (!manifest.runtime.staticCanonical || !manifest.runtime.nextPreviewOnly || manifest.runtime.runtimeCutover) failures.push("runtime");
+  if (
+    manifest.runtime.canonical !== "next" ||
+    manifest.runtime.rollback !== "static-node" ||
+    !manifest.runtime.nextCanonicalLocal ||
+    !manifest.runtime.staticRollbackRetained ||
+    manifest.runtime.runtimeCutover !== "local-candidate" ||
+    manifest.runtime.publicDeploymentPerformed
+  ) failures.push("runtime");
   for (const artifact of manifest.artifacts || []) {
     if (!fs.existsSync(absolute(artifact.path))) failures.push(`missing:${artifact.path}`);
     else if (sha256File(artifact.path) !== artifact.sha256) failures.push(`hash:${artifact.path}`);

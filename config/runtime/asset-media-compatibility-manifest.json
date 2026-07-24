@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "ownerDecisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
+  "protectedVisualSourceManifest": {
+    "path": "tests/visual/contracts/protected-visual-source-manifest.json",
+    "sha256": "25fe35f7b7cb4caec7f604b481efaece86aba2c0134746fb5beaf7db4ea2cc86",
+    "fileCount": 268
+  },
+  "publicTree": {
+    "root": "public",
+    "fileCount": 208,
+    "bytes": 178231869,
+    "legacyUrlPrefix": "/public/",
+    "canonicalUrlPrefix": "/"
+  },
+  "stylesheetMappings": [
+    { "url": "/styles.css", "source": "styles.css", "contentType": "text/css; charset=utf-8" },
+    { "urlPrefix": "/styles/", "sourceRoot": "styles", "contentType": "text/css; charset=utf-8" }
+  ],
+  "media": {
+    "root": "public/media/teoyubeworld/pilot-v1",
+    "urlPrefix": "/media/teoyubeworld/pilot-v1/",
+    "fileCount": 49,
+    "bytes": 12058862,
+    "runtimeManifest": "public/media/teoyubeworld/pilot-v1/runtime-manifest.json",
+    "representativeVideo": "public/media/teoyubeworld/pilot-v1/media-1cb26db0174bf3fa9fec/card-preview.mp4",
+    "representativePoster": "public/media/teoyubeworld/pilot-v1/media-1cb26db0174bf3fa9fec/poster.webp",
+    "videoContentType": "video/mp4",
+    "posterContentType": "image/webp",
+    "rangeRequired": true,
+    "headRequired": true,
+    "conditionalRequestRequired": true,
+    "conditionalValidator": "last-modified",
+    "ifModifiedSinceStatus": 304,
+    "weakEtagRevalidationStatus": 200,
+    "cacheControl": "public, max-age=31536000, immutable",
+    "runtimeManifestCacheControl": "no-store"
+  },
+  "protectedPathPrefixes": [
+    "/media-source",
+    "/generated",
+    "/.git",
+    "/.media-tmp"
+  ],
+  "publicationIntegrity": {
+    "phase116c3Status": "BLOCKED_UNCHANGED",
+    "approvalsOrChecksumsModifiedByCutover": false
+  }
+}

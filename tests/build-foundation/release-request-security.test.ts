@@ -55,7 +55,11 @@ describe("release request controls", () => {
     });
     expect(normal).toMatchObject({
       status: "ready",
-      runtime: "next-preview",
+      runtime: "next-canonical-local",
+      rollbackRuntime: "static-node",
+      deployment: "local/release-candidate",
+      gateCPreview: "pass",
+      gateCProduction: "closed",
       deterministicFallbackReady: true,
       dependencies: {
         scripture: "ready",

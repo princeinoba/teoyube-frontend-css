@@ -9,7 +9,7 @@ const packageJson = JSON.parse(fs.readFileSync(path.join(root, "package.json"), 
   scripts: Record<string, string>;
 };
 
-describe("approved Next preview shell source contract", () => {
+describe("approved canonical Next shell source contract", () => {
   it("keeps the protected stylesheet imports in their approved order", () => {
     const approvedStylesheets = [
       "/styles/legacy.css?recovery=1",
@@ -48,9 +48,11 @@ describe("approved Next preview shell source contract", () => {
     expect(shellSource).not.toContain('label: "Settings"');
   });
 
-  it("keeps the original static runtime canonical", () => {
-    expect(packageJson.scripts.start).toBe("node --preserve-symlinks-main server.js");
-    expect(packageJson.scripts["prototype:start"]).toBe(packageJson.scripts.start);
-    expect(packageJson.scripts["app:start"]).toBe("next start");
+  it("keeps Next canonical and the original static runtime as rollback", () => {
+    expect(packageJson.scripts.start).toBe("node scripts/runtime/start-next.cjs");
+    expect(packageJson.scripts["app:start"]).toBe(packageJson.scripts.start);
+    expect(packageJson.scripts["prototype:start"]).toBe("node --preserve-symlinks-main server.js");
+    expect(packageJson.scripts["static:start"]).toBe(packageJson.scripts["prototype:start"]);
+    expect(packageJson.scripts["rollback:start"]).toBe(packageJson.scripts["prototype:start"]);
   });
 });

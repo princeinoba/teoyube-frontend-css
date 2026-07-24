@@ -10,7 +10,11 @@ test("readiness is secret-safe and keeps deterministic core available", async ({
   const payload = await response.json();
   expect(payload).toMatchObject({
     status: "ready",
-    runtime: "next-preview",
+    runtime: "next-canonical-local",
+    rollbackRuntime: "static-node",
+    deployment: "local/release-candidate",
+    gateCPreview: "pass",
+    gateCProduction: "closed",
     deterministicFallbackReady: true,
     dependencies: {
       scripture: "ready",

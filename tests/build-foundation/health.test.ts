@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { createHealthPayload } from "@/config/health";
 
-describe("Teoyube preview health metadata", () => {
+describe("Teoyube canonical local health metadata", () => {
   it("returns safe runtime metadata without secret values", () => {
     const secret = "do-not-expose-this-value";
     const payload = createHealthPayload({
@@ -18,7 +18,11 @@ describe("Teoyube preview health metadata", () => {
 
     expect(payload).toMatchObject({
       status: "ok",
-      runtime: "next-preview",
+      runtime: "next-canonical-local",
+      rollbackRuntime: "static-node",
+      deployment: "local/release-candidate",
+      gateCPreview: "pass",
+      gateCProduction: "closed",
       buildVersion: "r2-test",
       environment: "test",
       deploymentTarget: "local"

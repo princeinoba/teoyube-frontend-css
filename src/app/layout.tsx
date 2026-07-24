@@ -1,4 +1,5 @@
 import { ApprovedTeoyubeShell } from "./_shell/ApprovedTeoyubeShell";
+import { LegacyHashCompatibility } from "./_runtime/LegacyHashCompatibility";
 import { TeoyubeAppStateProvider } from "@/components/productization/TeoyubeAppStateProvider";
 import { createDeterministicDailySpiritualLoopSeed } from "@/features/journey/application/daily-spiritual-loop-service";
 import { DailySpiritualLoopProvider } from "@/features/journey/ui/DailySpiritualLoopProvider";
@@ -44,6 +45,9 @@ export default async function RootLayout({
   const initialLegacySearchResult = runTeoyubeSearch("I feel confused about my purpose");
   return (
     <html lang="en">
+      <head>
+        <LegacyHashCompatibility />
+      </head>
       <body data-view="today">
         <style>{approvedStylesheetImports}</style>
         <TeoyubeAppStateProvider initialSearchResult={initialLegacySearchResult} initialState={initialLegacyAppState} safeExportBase={initialSafeExportBundle}>

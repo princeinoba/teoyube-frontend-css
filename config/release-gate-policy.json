@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "policyVersion": "teoyube-release-gate-2026-07-24.1",
+  "policyVersion": "teoyube-release-gate-2026-07-24.2",
   "startingCommit": "d7aefa3f62c107e1806f3b90ea7963e39c8bc59f",
   "toolchain": {
     "node": "v24.18.0",
@@ -8,11 +8,14 @@
     "packageManager": "npm"
   },
   "runtime": {
-    "canonicalStart": "node --preserve-symlinks-main server.js",
-    "nextStatus": "preview_only",
+    "canonicalStart": "node scripts/runtime/start-next.cjs",
+    "rollbackStart": "node --preserve-symlinks-main server.js",
+    "nextStatus": "canonical_local",
     "liveAiCheckedIn": false,
     "vectorRetrievalCheckedIn": false,
-    "gateBProduction": "closed"
+    "gateBProduction": "closed",
+    "gateCProduction": "closed",
+    "publicDeploymentPerformed": false
   },
   "coverage": {
     "ordinaryStatementsPercent": 35,

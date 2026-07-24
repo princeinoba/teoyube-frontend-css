@@ -76,8 +76,9 @@ const report = {
   checkedFiles: files.length,
   missingImportCount: missing.length,
   missing,
-  primaryRuntime: "static-node-app",
-  nextMigrationLayerChecked: true
+  primaryRuntime: "next-app",
+  staticRollbackRuntimeChecked: true,
+  nextMigrationLayerChecked: false
 };
 
 console.log(JSON.stringify(report, null, 2));

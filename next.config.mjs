@@ -48,6 +48,15 @@ const nextConfig = {
       { source: "/styles/:path*", destination: "/approved-static/styles/:path*" },
       { source: "/public/:path*", destination: "/:path*" }
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: false
+      }
+    ];
   }
 };
 

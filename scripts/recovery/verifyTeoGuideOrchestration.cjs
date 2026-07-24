@@ -62,7 +62,13 @@ for (const name of Object.keys(dependencies)) {
   if (name === "openai" && dependencies[name] === "6.48.0") continue;
   if (/openai|anthropic|gemini|cohere|pinecone|weaviate|langchain|ai-sdk/i.test(name)) throw new Error(`Unapproved provider or RAG dependency: ${name}`);
 }
-if (packageJson.scripts.start !== "node --preserve-symlinks-main server.js") throw new Error("The canonical static start script changed.");
+const staticCommand = "node --preserve-symlinks-main server.js";
+const nextCommand = "node scripts/runtime/start-next.cjs";
+if (![staticCommand, nextCommand].includes(packageJson.scripts.start)) throw new Error("The runtime start command is not an approved cutover state.");
+if (packageJson.scripts["app:start"] !== nextCommand) throw new Error("The safe Next start command changed.");
+for (const command of ["static:start", "prototype:start", "rollback:start"]) {
+  if (packageJson.scripts[command] !== staticCommand) throw new Error(`The protected static rollback command ${command} changed.`);
+}
 
 const nextDir = path.join(root, ".next");
 let clientChunksScanned = 0;
@@ -83,4 +89,4 @@ if (fs.existsSync(nextDir)) {
   }
 }
 
-console.log(`TEO GUIDE ORCHESTRATION CONTRACT: PASSED\nTools: ${requiredTools.length}\nBoundary files: ${boundaryFiles.length}\nClient chunks scanned: ${clientChunksScanned}\nProvider SDKs behind guarded adapter: 1\nEmbeddings/vector/broad RAG: disabled\nCanonical static runtime: unchanged`);
+console.log(`TEO GUIDE ORCHESTRATION CONTRACT: PASSED\nTools: ${requiredTools.length}\nBoundary files: ${boundaryFiles.length}\nClient chunks scanned: ${clientChunksScanned}\nProvider SDKs behind guarded adapter: 1\nEmbeddings/vector/broad RAG: disabled\nApproved Next cutover state and static rollback: intact`);

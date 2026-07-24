@@ -70,13 +70,20 @@ const policy = readJson("config/release-gate-policy.json");
 const packageJson = readJson("package.json");
 const env = fs.readFileSync(absolute(".env.example"), "utf8");
 const invariants = {
-  staticCanonical:
+  nextCanonicalLocal:
     packageJson.scripts.start === policy.runtime.canonicalStart &&
-    packageJson.scripts["prototype:start"] === policy.runtime.canonicalStart,
-  nextPreviewOnly: policy.runtime.nextStatus === "preview_only",
+    packageJson.scripts["app:start"] === policy.runtime.canonicalStart,
+  staticRollback:
+    packageJson.scripts["static:start"] === policy.runtime.rollbackStart &&
+    packageJson.scripts["prototype:start"] === policy.runtime.rollbackStart &&
+    packageJson.scripts["rollback:start"] === policy.runtime.rollbackStart,
+  localCutoverOnly: policy.runtime.nextStatus === "canonical_local",
   liveAiDisabled: /^TEOYUBE_LIVE_AI_ENABLED=false$/m.test(env),
   vectorRetrievalDisabled: /^TEOYUBE_VECTOR_RETRIEVAL_ENABLED=false$/m.test(env),
-  productionGateClosed: policy.runtime.gateBProduction === "closed",
+  productionGateClosed:
+    policy.runtime.gateBProduction === "closed" &&
+    policy.runtime.gateCProduction === "closed" &&
+    policy.runtime.publicDeploymentPerformed === false,
   userResearchNotFabricated: research.includes("USER_RESEARCH_NOT_YET_RUN"),
   ownerOnCallNotFabricated: normalizedRunbooks.includes(
     "no staffed on-call team is claimed"

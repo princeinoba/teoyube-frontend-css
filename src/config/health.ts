@@ -7,7 +7,11 @@ import {
 
 export type TeoyubeHealthPayload = {
   status: "ok";
-  runtime: "next-preview";
+  runtime: "next-canonical-local";
+  rollbackRuntime: "static-node";
+  deployment: "local/release-candidate";
+  gateCPreview: "pass";
+  gateCProduction: "closed";
   buildVersion: string;
   environment: TeoyubePublicEnvironment["appEnvironment"];
   deploymentTarget: string;
@@ -26,7 +30,11 @@ export function createHealthPayload(
   const serverFeatures = readServerFeatureAvailability(environment);
   return {
     status: "ok",
-    runtime: "next-preview",
+    runtime: "next-canonical-local",
+    rollbackRuntime: "static-node",
+    deployment: "local/release-candidate",
+    gateCPreview: "pass",
+    gateCProduction: "closed",
     buildVersion: safeBuildVersion(environment.TEOYUBE_BUILD_VERSION),
     environment: publicEnvironment.appEnvironment,
     deploymentTarget: publicEnvironment.deploymentTarget,

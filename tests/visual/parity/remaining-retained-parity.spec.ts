@@ -95,7 +95,10 @@ for (const definition of approvedRoutes) {
         const staticUrl = `${staticBaseUrl}/index.html${definition.ownerQa ? "?qa=1" : ""}#${definition.view}`;
         await staticPage.goto(staticUrl, { waitUntil: "domcontentloaded" });
         await openStaticView(staticPage, definition.view);
-        await nextPage.goto(`${nextBaseUrl}${definition.route}`, { waitUntil: "domcontentloaded" });
+        await nextPage.goto(
+          `${nextBaseUrl}${definition.route}${definition.ownerQa ? "?qa=1" : ""}`,
+          { waitUntil: "domcontentloaded" }
+        );
         await nextPage.waitForFunction((view) => document.body.dataset.view === view, definition.view);
         await align(staticPage);
         await align(nextPage);
@@ -225,7 +228,9 @@ test("Tables preserves pagination, management tabs, row controls, and full-width
 });
 
 test("owner and development routes remain absent from normal navigation", async ({ page }) => {
-  await page.goto(`${nextBaseUrl}/roadmap`, { waitUntil: "domcontentloaded" });
+  const unavailable = await page.goto(`${nextBaseUrl}/roadmap`, { waitUntil: "domcontentloaded" });
+  expect(unavailable?.status()).toBe(404);
+  await page.goto(`${nextBaseUrl}/roadmap?qa=1`, { waitUntil: "domcontentloaded" });
   await expect(page.locator("#roadmap")).toHaveClass(/owner-qa-view/);
   const nav = page.locator("#primarySidebar .nav-list");
   await expect(nav).not.toContainText("Roadmap");

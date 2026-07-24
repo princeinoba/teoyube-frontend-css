@@ -114,7 +114,8 @@ async function openStaticForAudit(page: Page, view: ViewId) {
 }
 
 async function openNextForAudit(page: Page, view: ViewId) {
-  await page.goto(`${nextBaseUrl}${routeForView(view)}`, { waitUntil: "domcontentloaded" });
+  const ownerQa = view === "roadmap" ? "?qa=1" : "";
+  await page.goto(`${nextBaseUrl}${routeForView(view)}${ownerQa}`, { waitUntil: "domcontentloaded" });
   await page.waitForFunction((requestedView) => document.body.dataset.view === requestedView, view);
   await page.waitForTimeout(200);
   await readyForAudit(page);

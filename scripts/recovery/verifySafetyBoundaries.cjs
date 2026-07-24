@@ -40,8 +40,13 @@ for (const stage of ["pre_retrieval", "pre_tool", "post_composition", "pre_write
 const environment = fs.readFileSync(path.join(root, ".env.example"), "utf8");
 if (!/^TEOYUBE_ENABLE_LIVE_AI=false$/m.test(environment)) errors.push(".env.example must keep live AI disabled.");
 const packageJson = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
-if (packageJson.scripts.start !== "node --preserve-symlinks-main server.js") errors.push("The canonical static start command changed.");
-if (packageJson.scripts["app:start"] !== "next start") errors.push("The Next preview start command is missing or changed.");
+const staticCommand = "node --preserve-symlinks-main server.js";
+const nextCommand = "node scripts/runtime/start-next.cjs";
+if (![staticCommand, nextCommand].includes(packageJson.scripts.start)) errors.push("The runtime start command is not an approved cutover state.");
+if (packageJson.scripts["app:start"] !== nextCommand) errors.push("The safe Next start command is missing or changed.");
+for (const command of ["static:start", "prototype:start", "rollback:start"]) {
+  if (packageJson.scripts[command] !== staticCommand) errors.push(`The protected static rollback command ${command} changed.`);
+}
 
 if (errors.length) {
   console.error("SAFETY BOUNDARY CONTRACT: FAILED");
@@ -50,4 +55,4 @@ if (errors.length) {
 }
 
 console.log("SAFETY BOUNDARY CONTRACT: PASSED");
-console.log(`Checked ${safetyFiles.length} safety files and ${clients.length} client modules; no model/network/UI/client/server-boundary violation found. Static start remains canonical and live AI remains disabled.`);
+console.log(`Checked ${safetyFiles.length} safety files and ${clients.length} client modules; no model/network/UI/client/server-boundary violation found. The approved Next cutover state and static rollback are intact; live AI remains disabled.`);

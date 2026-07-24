@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "ownerDecisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
+  "taxonomyDecisionId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+  "publicRoutes": [
+    { "path": "/", "capability": "today", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/search", "capability": "search", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/canon", "capability": "canon", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/promise-table", "capability": "promises", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/calling-compass", "capability": "calling", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/book", "capability": "book", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/lexicon", "capability": "lexicon", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/testimony", "capability": "testimony", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/teo-guide", "capability": "teo-guide", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/embedded-videos", "capability": "media", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/tables", "capability": "tables", "paritySource": "IMMUTABLE_STATIC_RUNTIME" },
+    { "path": "/prayer", "capability": "prayer", "paritySource": "FROZEN_PRE_MIGRATION" },
+    { "path": "/journey", "capability": "journey", "paritySource": "FROZEN_PRE_MIGRATION" },
+    { "path": "/journal", "capability": "journal", "paritySource": "FROZEN_PRE_MIGRATION" },
+    { "path": "/settings", "capability": "settings", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/privacy", "capability": "privacy", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/consent", "capability": "consent", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/terms", "capability": "terms", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/profile", "capability": "profile", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/personalization", "capability": "personalization", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/daily-word", "capability": "daily-word", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/explore", "capability": "explore", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" },
+    { "path": "/promise-search", "capability": "promise-search", "paritySource": "OWNER_APPROVED_NEXT_SUPPORT" }
+  ],
+  "canonicalRedirects": [
+    {
+      "source": "/compass",
+      "target": "/calling-compass",
+      "permanent": true,
+      "safeQueryParameters": ["assessment", "topic", "q"]
+    }
+  ],
+  "legacyEntryPoints": [
+    {
+      "source": "/index.html",
+      "target": "/",
+      "kind": "temporary-http-redirect",
+      "preserveQuery": true,
+      "preserveFragmentInBrowser": true
+    }
+  ],
+  "legacyHashMappings": [
+    { "hash": "today", "target": "/" },
+    { "hash": "search", "target": "/search" },
+    { "hash": "canon", "target": "/canon" },
+    { "hash": "table", "target": "/promise-table" },
+    { "hash": "calling", "target": "/calling-compass" },
+    { "hash": "book", "target": "/book" },
+    { "hash": "lexicon", "target": "/lexicon" },
+    { "hash": "testimony", "target": "/testimony" },
+    { "hash": "guide", "target": "/teo-guide" },
+    { "hash": "ui-elements", "target": "/embedded-videos" },
+    { "hash": "teoyube-tables", "target": "/tables" },
+    { "hash": "media", "target": "/embedded-videos" },
+    { "hash": "videos", "target": "/embedded-videos" },
+    { "hash": "embedded-videos", "target": "/embedded-videos" }
+  ],
+  "conditionalLegacyHashMappings": [
+    {
+      "hash": "roadmap",
+      "target": "/roadmap",
+      "requiredQuery": { "qa": "1" },
+      "visibility": "OWNER_ONLY"
+    }
+  ],
+  "protectedRoutes": [
+    { "path": "/roadmap", "visibility": "OWNER_ONLY" },
+    { "path": "/dashboard", "visibility": "DEVELOPMENT_ONLY" },
+    { "path": "/dev/teoyube-health", "visibility": "DEVELOPMENT_ONLY" },
+    { "path": "/graph", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/data", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/debug", "visibility": "DEVELOPMENT_ONLY" },
+    { "path": "/tig/graph", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/journal", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/journey", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/onboarding", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/privacy", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/progress", "visibility": "INTERNAL_ONLY" },
+    { "path": "/tig/traversal", "visibility": "INTERNAL_ONLY" }
+  ]
+}

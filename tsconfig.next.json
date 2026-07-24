@@ -22,6 +22,7 @@
     "src/proxy.ts",
     "src/app/page.tsx",
     "src/app/_shell/**/*.tsx",
+    "src/app/_runtime/**/*.tsx",
     "src/app/_approved-source/**/*.ts",
     "src/app/_approved-source/**/*.tsx",
     "src/app/_today/**/*.tsx",

@@ -24,8 +24,18 @@ function walk(relative) {
 }
 
 const packageJson = JSON.parse(read("package.json"));
-if (packageJson.scripts?.start !== "node --preserve-symlinks-main server.js") {
-  errors.push("The canonical static start command changed.");
+const staticCommand = "node --preserve-symlinks-main server.js";
+const nextCommand = "node scripts/runtime/start-next.cjs";
+if (![staticCommand, nextCommand].includes(packageJson.scripts?.start)) {
+  errors.push("The runtime start command is not an approved cutover state.");
+}
+if (packageJson.scripts?.["app:start"] !== nextCommand) {
+  errors.push("The safe Next start command changed.");
+}
+for (const command of ["static:start", "prototype:start", "rollback:start"]) {
+  if (packageJson.scripts?.[command] !== staticCommand) {
+    errors.push(`The protected static rollback command ${command} changed.`);
+  }
 }
 for (const script of [
   "retrieval:inventory",
@@ -155,5 +165,5 @@ if (errors.length) {
 
 console.log("RETRIEVAL BOUNDARY CONTRACT: PASSED");
 console.log(
-  `Partitions: 11; locked evaluation cases: ${lockedEvaluation.cases.length}; provider SDK adapters: ${sdkImports.length}; client seed/traversal imports: 0; static start unchanged.`
+  `Partitions: 11; locked evaluation cases: ${lockedEvaluation.cases.length}; provider SDK adapters: ${sdkImports.length}; client seed/traversal imports: 0; approved Next cutover state and static rollback intact.`
 );

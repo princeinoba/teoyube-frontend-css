@@ -124,7 +124,11 @@ function startStaticServer(port = "4173") {
 function startNextServer(port = "3100") {
   return spawn(process.execPath, [nextCli, "start", "--hostname", "127.0.0.1", "--port", port], {
     cwd: workspaceRoot,
-    env: { ...process.env, NODE_ENV: "production" },
+    env: {
+      ...process.env,
+      NODE_ENV: "production",
+      TEOYUBE_OWNER_QA_TEST_MODE: "true"
+    },
     stdio: "inherit"
   });
 }
