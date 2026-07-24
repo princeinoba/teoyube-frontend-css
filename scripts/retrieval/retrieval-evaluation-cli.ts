@@ -10,11 +10,13 @@ import type {
   HybridRetrievalResult,
   RetrievalPartition
 } from "../../src/domain/retrieval/retrieval-contracts";
+import { RETRIEVAL_PARTITION_POLICIES } from "../../src/domain/retrieval/retrieval-policy";
 import { canonicalScriptureRepository } from "../../src/server/scripture/canonical-scripture-repository";
 import { canonicalTigService } from "../../src/server/tig/canonical-tig-service";
 import { HybridRetrievalService } from "../../src/server/retrieval/hybrid-retrieval-service";
 import { OpenAiEmbeddingGateway } from "../../src/server/retrieval/openai-embedding-gateway";
 import { buildPublicRetrievalInventory } from "../../src/server/retrieval/public-source-inventory";
+import { RetrievalContextAssembler } from "../../src/server/retrieval/retrieval-context-assembler";
 import {
   EMBEDDING_MODELS,
   PROMPT_20_BUDGETS
@@ -86,8 +88,32 @@ function ndcgAt10(result: HybridRetrievalResult, expected: readonly string[]): n
   return ideal === 0 ? 0 : dcg / ideal;
 }
 
+function precisionAt10(
+  result: HybridRetrievalResult,
+  expected: readonly string[]
+): number {
+  const sources = result.sources.slice(0, 10);
+  if (!sources.length) return 0;
+  return (
+    sources.filter((source) => expected.includes(source.documentId)).length /
+    sources.length
+  );
+}
+
+function sourceDiversityAt10(result: HybridRetrievalResult): number {
+  const sources = result.sources.slice(0, 10);
+  if (!sources.length) return 1;
+  return new Set(sources.map((source) => source.documentId)).size / sources.length;
+}
+
 function mean(values: readonly number[]): number {
   return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
+}
+
+function percentile95(values: readonly number[]): number {
+  if (!values.length) return 0;
+  const ordered = [...values].sort((left, right) => left - right);
+  return ordered[Math.max(0, Math.ceil(ordered.length * 0.95) - 1)];
 }
 
 function rounded(value: number): number {
@@ -133,6 +159,9 @@ async function main(): Promise<void> {
     tigService: canonicalTigService,
     environment
   });
+  const contextAssembler = new RetrievalContextAssembler(
+    canonicalScriptureRepository
+  );
   try {
     const exactCases = evaluation.cases.filter((item) => item.kind === "exact_reference");
     const semanticCases = evaluation.cases.filter((item) => item.kind === "semantic");
@@ -168,6 +197,13 @@ async function main(): Promise<void> {
         hybridRank: number;
         baselineNdcgAt10: number;
         hybridNdcgAt10: number;
+        baselinePrecisionAt10: number;
+        hybridPrecisionAt10: number;
+        hybridSourceDiversityAt10: number;
+        trustFilterValid: boolean;
+        baselineContextTokens: number;
+        hybridContextTokens: number;
+        hybridLatencyMs: number;
         sourceInspectable: boolean;
       }>
     > = [];
@@ -185,6 +221,8 @@ async function main(): Promise<void> {
       };
       const baseline = await service.retrieve({ ...request, enableVector: false });
       const hybrid = await service.retrieve({ ...request, enableVector: true });
+      const baselineContext = await contextAssembler.assemble(baseline);
+      const hybridContext = await contextAssembler.assemble(hybrid);
       comparisons.push(
         Object.freeze({
           id: item.id,
@@ -192,6 +230,20 @@ async function main(): Promise<void> {
           hybridRank: rank(hybrid, item.expectedDocumentIds),
           baselineNdcgAt10: ndcgAt10(baseline, item.expectedDocumentIds),
           hybridNdcgAt10: ndcgAt10(hybrid, item.expectedDocumentIds),
+          baselinePrecisionAt10: precisionAt10(baseline, item.expectedDocumentIds),
+          hybridPrecisionAt10: precisionAt10(hybrid, item.expectedDocumentIds),
+          hybridSourceDiversityAt10: sourceDiversityAt10(hybrid),
+          trustFilterValid: hybrid.sources.every(
+            (source) =>
+              item.partitions.includes(source.partition) &&
+              !source.userOwned &&
+              RETRIEVAL_PARTITION_POLICIES[
+                source.partition
+              ].allowedTrustLevels.includes(source.trustLevel)
+          ),
+          baselineContextTokens: baselineContext.totalTokens,
+          hybridContextTokens: hybridContext.totalTokens,
+          hybridLatencyMs: hybrid.latencyMs,
           sourceInspectable: hybrid.sources.every(
             (source) =>
               Boolean(
@@ -212,8 +264,35 @@ async function main(): Promise<void> {
     const hybridRecall = mean(
       comparisons.map((item) => (item.hybridRank > 0 && item.hybridRank <= 10 ? 1 : 0))
     );
+    const baselineRecallAt5 = mean(
+      comparisons.map((item) => (item.baselineRank > 0 && item.baselineRank <= 5 ? 1 : 0))
+    );
+    const hybridRecallAt5 = mean(
+      comparisons.map((item) => (item.hybridRank > 0 && item.hybridRank <= 5 ? 1 : 0))
+    );
     const baselineNdcg = mean(comparisons.map((item) => item.baselineNdcgAt10));
     const hybridNdcg = mean(comparisons.map((item) => item.hybridNdcgAt10));
+    const baselinePrecision = mean(
+      comparisons.map((item) => item.baselinePrecisionAt10)
+    );
+    const hybridPrecision = mean(
+      comparisons.map((item) => item.hybridPrecisionAt10)
+    );
+    const sourceDiversity = mean(
+      comparisons.map((item) => item.hybridSourceDiversityAt10)
+    );
+    const trustFilterAccuracy = mean(
+      comparisons.map((item) => (item.trustFilterValid ? 1 : 0))
+    );
+    const baselineContextTokens = mean(
+      comparisons.map((item) => item.baselineContextTokens)
+    );
+    const hybridContextTokens = mean(
+      comparisons.map((item) => item.hybridContextTokens)
+    );
+    const hybridLatencyP95Ms = percentile95(
+      comparisons.map((item) => item.hybridLatencyMs)
+    );
     const baselineMrr = mean(
       comparisons.map((item) => (item.baselineRank ? 1 / item.baselineRank : 0))
     );
@@ -278,6 +357,8 @@ async function main(): Promise<void> {
         metered.providerCalls === beforeCriticalCalls &&
         critical.pathsUsed.includes("vector") === false,
       sourceInspectability: sourceInspectability === 1,
+      trustFilterAccuracy: trustFilterAccuracy === 1,
+      consentFilterAccuracy: critical.sources.every((source) => !source.userOwned),
       deterministicFallback: fallbackDeterministic
     });
     const semanticThresholdsPassed =
@@ -301,6 +382,8 @@ async function main(): Promise<void> {
       metrics: Object.freeze({
         exactReferenceAccuracy: rounded(exactAccuracy),
         citationValidity: rounded(citationValidity),
+        baselineRecallAt5: rounded(baselineRecallAt5),
+        hybridRecallAt5: rounded(hybridRecallAt5),
         baselineRecallAt10: rounded(baselineRecall),
         hybridRecallAt10: rounded(hybridRecall),
         recallAt10Improvement: rounded(recallImprovement),
@@ -309,6 +392,15 @@ async function main(): Promise<void> {
         baselineNdcgAt10: rounded(baselineNdcg),
         hybridNdcgAt10: rounded(hybridNdcg),
         ndcgAt10Improvement: rounded(ndcgImprovement),
+        baselineSourcePrecisionAt10: rounded(baselinePrecision),
+        hybridSourcePrecisionAt10: rounded(hybridPrecision),
+        hybridSourceDiversityAt10: rounded(sourceDiversity),
+        trustFilterAccuracy: rounded(trustFilterAccuracy),
+        consentFilterAccuracy: thresholds.consentFilterAccuracy ? 1 : 0,
+        meanBaselineContextTokens: rounded(baselineContextTokens),
+        meanHybridContextTokens: rounded(hybridContextTokens),
+        contextTokenChange: rounded(hybridContextTokens - baselineContextTokens),
+        hybridLatencyP95Ms: rounded(hybridLatencyP95Ms),
         sourceInspectability: rounded(sourceInspectability),
         criticalRegressions: criticalRegressions.length,
         crossUserLeakage: critical.sources.filter((source) => source.userOwned).length,
