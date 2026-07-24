@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "teoyube-release-gate-2026-07-24.1",
+  "startingCommit": "d7aefa3f62c107e1806f3b90ea7963e39c8bc59f",
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "packageManager": "npm"
+  },
+  "runtime": {
+    "canonicalStart": "node --preserve-symlinks-main server.js",
+    "nextStatus": "preview_only",
+    "liveAiCheckedIn": false,
+    "vectorRetrievalCheckedIn": false,
+    "gateBProduction": "closed"
+  },
+  "coverage": {
+    "ordinaryStatementsPercent": 35,
+    "ordinaryBranchesPercent": 30,
+    "criticalContractPercent": 100,
+    "mutationChecksRequired": 12
+  },
+  "performance": {
+    "nonRegressionPercent": 10,
+    "routeReadinessMaximumMs": 5000,
+    "requiredPerformanceCells": 216,
+    "nextClientJsBaselineBytes": 1896094,
+    "nextClientJsMaximumBytes": 2085704,
+    "largestClientChunkBaselineBytes": 886783,
+    "largestClientChunkMaximumBytes": 975462,
+    "approvedCssBaselineBytes": 948538,
+    "approvedCssMaximumBytes": 948538,
+    "imageBaselineBytes": 167041108,
+    "imageMaximumBytes": 167041108,
+    "mediaBaselineBytes": 11161794,
+    "mediaMaximumBytes": 11161794,
+    "largestImageMaximumBytes": 2554394,
+    "largestMediaMaximumBytes": 942235,
+    "apiP95MaximumMs": 250,
+    "retrievalP95BaselineMs": 304.2182,
+    "retrievalP95MaximumMs": 334.64,
+    "liveAiFirstApprovedSectionMaximumMs": 15000,
+    "liveAiCompleteMaximumMs": 20000,
+    "activeVectorIndexMaximumBytes": 629145600,
+    "workspaceGrowthMaximumBytes": 524288000
+  },
+  "correctness": {
+    "exactDisplayedWebCitationValidity": 1,
+    "criticalImmediateDangerRecall": 1,
+    "crossUserExposure": 0,
+    "unauthorizedMemoryToolStateActions": 0,
+    "fabricatedScriptureDisplayed": 0,
+    "protectedVisualBaselineDrift": 0
+  },
+  "criticalContracts": [
+    {
+      "id": "authorization-server-session",
+      "file": "tests/build-foundation/consent-aware-memory.test.ts",
+      "patterns": ["server-authoritative sessions", "isolates two authenticated users"]
+    },
+    {
+      "id": "csrf-and-forgery",
+      "file": "tests/e2e-memory/consent-memory.spec.ts",
+      "patterns": ["request forgery", "missing CSRF"]
+    },
+    {
+      "id": "consent-purpose-separation",
+      "file": "tests/build-foundation/consent-aware-memory.test.ts",
+      "patterns": ["separates purposes", "revokes external processing independently from memory"]
+    },
+    {
+      "id": "memory-encryption",
+      "file": "tests/build-foundation/consent-aware-memory.test.ts",
+      "patterns": ["ciphertext with a key version", "wrong key"]
+    },
+    {
+      "id": "memory-export-delete",
+      "file": "tests/build-foundation/consent-aware-memory.test.ts",
+      "patterns": ["exports only the authenticated user's", "deletes one record and an account"]
+    },
+    {
+      "id": "scripture-citation-validation",
+      "file": "tests/build-foundation/scripture-reference-only-repository.test.ts",
+      "patterns": ["citation", "WEB"]
+    },
+    {
+      "id": "critical-safety-routing",
+      "file": "tests/build-foundation/safety-orchestration.test.ts",
+      "patterns": ["critical", "provider"]
+    },
+    {
+      "id": "prohibited-claims",
+      "file": "tests/build-foundation/safety-orchestration.test.ts",
+      "patterns": ["prohibited", "divine"]
+    },
+    {
+      "id": "tool-write-confirmation",
+      "file": "tests/build-foundation/teo-guide-orchestration.test.ts",
+      "patterns": ["confirmation", "write"]
+    },
+    {
+      "id": "external-ai-consent",
+      "file": "tests/build-foundation/live-ai-service.test.ts",
+      "patterns": ["consent", "provider"]
+    },
+    {
+      "id": "strict-ai-output",
+      "file": "tests/build-foundation/live-ai-contracts.test.ts",
+      "patterns": ["strict", "schema"]
+    },
+    {
+      "id": "vector-user-isolation",
+      "file": "tests/build-foundation/retrieval-storage.test.ts",
+      "patterns": ["cross-user", "unauthorized"]
+    },
+    {
+      "id": "vector-revocation-deletion",
+      "file": "tests/build-foundation/retrieval-security-permission.test.ts",
+      "patterns": ["revocation", "deletion"]
+    },
+    {
+      "id": "prompt-injection",
+      "file": "tests/build-foundation/safety-orchestration.test.ts",
+      "patterns": ["prompt injection", "highest authority"]
+    },
+    {
+      "id": "telemetry-redaction",
+      "file": "tests/build-foundation/observability-product-value.test.ts",
+      "patterns": ["redacts", "prohibited"]
+    },
+    {
+      "id": "request-schema-limits",
+      "file": "tests/build-foundation/release-request-security.test.ts",
+      "patterns": ["content type", "unsupported fields"]
+    }
+  ],
+  "faultInjectionPatterns": [
+    "wrong key",
+    "provider outage",
+    "quota",
+    "timeout",
+    "cancellation",
+    "revocation",
+    "cross-user",
+    "prompt injection",
+    "unsupported fields",
+    "content type",
+    "budget",
+    "corrupt"
+  ],
+  "evidenceReuse": {
+    "prompt19Tag": "teoyube-prompt19k-pass-f7d6385",
+    "prompt20Tag": "teoyube-prompt20-pass-d7aefa3",
+    "liveAiPaths": [
+      "src/domain/live-ai",
+      "src/server/live-ai",
+      "src/domain/safety",
+      "src/server/safety",
+      "src/server/scripture",
+      "tests/fixtures/safety",
+      "tests/build-foundation/live-ai-provider-evaluation.test.ts"
+    ],
+    "retrievalPaths": [
+      "src/domain/retrieval",
+      "src/server/retrieval",
+      "src/server/scripture",
+      "src/server/tig",
+      "tests/fixtures/retrieval",
+      "docs/testing/retrieval-evaluation-scorecard.json"
+    ]
+  }
+}

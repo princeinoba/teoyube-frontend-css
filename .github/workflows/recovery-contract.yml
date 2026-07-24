@@ -22,7 +22,10 @@ jobs:
       - name: Use the recovery Node baseline
         uses: actions/setup-node@v4
         with:
-          node-version: 22.20.0
+          node-version: 24.18.0
+
+      - name: Pin the repository npm runtime
+        run: npm install --global npm@10.2.4
 
       - name: Report toolchain
         run: |

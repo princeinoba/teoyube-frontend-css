@@ -1,0 +1,170 @@
+name: Teoyube Prompt 21 Release Evidence
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      paid_job:
+        description: Optional owner-authorized paid preview operation
+        required: false
+        default: none
+        type: choice
+        options:
+          - none
+          - live-ai-preview-gate
+          - embedding-reindex
+          - embedding-candidate-evaluation
+      owner_budget_acknowledged:
+        description: Confirm the checked-in owner budget for the selected paid job
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  offline-release-evidence:
+    name: Current executable release evidence
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    environment: local-preview
+    env:
+      TEOYUBE_ALLOW_CROSS_PLATFORM_STATIC: "1"
+      TEOYUBE_LIVE_AI_ENABLED: "false"
+      TEOYUBE_VECTOR_RETRIEVAL_ENABLED: "false"
+
+    steps:
+      - name: Check out complete history and owner evidence tags
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use the exact repository Node runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24.18.0
+          cache: npm
+
+      - name: Pin exact npm
+        run: npm install --global npm@10.2.4
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Execute current clean-checkout gates
+        run: npm run release:commands:core
+
+      - name: Generate current machine-readable release evidence
+        run: npm run release:commands:evidence
+
+      - name: Generate and verify the canonical evidence manifest
+        run: |
+          npm run release:evidence:generate
+          npm run release:evidence:verify
+          npm run release:gate:preview
+
+      - name: Confirm gates did not rewrite tracked source or owner evidence
+        run: git diff --exit-code
+
+      - name: Upload compact evidence on failure only
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prompt-21-release-failure-evidence
+          path: |
+            artifacts/release-evidence/
+            .tmp/release-evidence/logs/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  live-ai-preview-gate:
+    name: Protected live-AI preview evaluation
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      inputs.paid_job == 'live-ai-preview-gate' &&
+      inputs.owner_budget_acknowledged
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: prompt-21-paid-preview
+    env:
+      TEOYUBE_LIVE_AI_ENABLED: "true"
+      TEOYUBE_OWNER_BUDGET_USD: "2.00"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.18.0
+          cache: npm
+      - run: npm install --global npm@10.2.4
+      - run: npm ci
+      - name: Run the owner-budgeted provider gate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          npm run live-ai:gate:preview
+          npm run test:live-ai:provider
+
+  embedding-reindex:
+    name: Protected embedding reindex
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      inputs.paid_job == 'embedding-reindex' &&
+      inputs.owner_budget_acknowledged
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment: prompt-21-paid-preview
+    env:
+      TEOYUBE_VECTOR_RETRIEVAL_ENABLED: "true"
+      TEOYUBE_OWNER_BUDGET_USD: "0.25"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.18.0
+          cache: npm
+      - run: npm install --global npm@10.2.4
+      - run: npm ci
+      - name: Reindex under the protected environment and owner budget
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run retrieval:index:public
+
+  embedding-candidate-evaluation:
+    name: Protected embedding candidate evaluation
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      inputs.paid_job == 'embedding-candidate-evaluation' &&
+      inputs.owner_budget_acknowledged
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment: prompt-21-paid-preview
+    env:
+      TEOYUBE_VECTOR_RETRIEVAL_ENABLED: "true"
+      TEOYUBE_OWNER_BUDGET_USD: "0.50"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.18.0
+          cache: npm
+      - run: npm install --global npm@10.2.4
+      - run: npm ci
+      - name: Evaluate the candidate index without activation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run retrieval:evaluate

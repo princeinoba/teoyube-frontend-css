@@ -45,6 +45,12 @@ export default defineConfig([
       ]
     }
   },
+  {
+    files: ["scripts/release/**/*.cjs"],
+    rules: {
+      "@typescript-eslint/no-require-imports": "off"
+    }
+  },
   globalIgnores([
     ".next/**",
     ".tmp/**",

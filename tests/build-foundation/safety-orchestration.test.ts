@@ -92,7 +92,7 @@ describe("versioned Teoyube theological safety contracts", () => {
     expect(detectProhibitedClaims("God told me that you must act immediately.").map((entry) => entry.type)).toContain("divine_authority");
   });
 
-  it("blocks policy, consent, tools, secrets, cross-user access, fabricated Scripture, crisis bypass, and silent-write injections", () => {
+  it("blocks prompt injection against policy, consent, tools, secrets, cross-user access, fabricated Scripture, crisis bypass, and silent writes", () => {
     const injectionCases = SAFETY_EVALUATION_CASES.filter((entry) => entry.category === "prompt_injection");
     expect(injectionCases).toHaveLength(8);
     for (const item of injectionCases) expect(detectPromptInjection(...(item.syntheticContext || [])), item.id).not.toHaveLength(0);
