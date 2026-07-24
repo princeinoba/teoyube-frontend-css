@@ -349,10 +349,14 @@ export function updateVideoProgress(
   };
 }
 
-export function createSafeExportBundle(state: TeoyubeAppState) {
+export function createSafeExportBundle(
+  state: TeoyubeAppState,
+  exportedAt?: string
+) {
   const base = createPhase11SafeExportBundle();
   return {
     ...base,
+    exportedAt: exportedAt || base.exportedAt,
     appState: {
       selectedWord: state.selectedWord,
       selectedScripture: state.selectedScripture,

@@ -12,6 +12,12 @@ export const metadata = {
   description: "TEOYUBE helps Saints discover biblical promises, understand calling, receive daily divine assignments, and build the Book of the Saint."
 };
 
+function reproducibleBuildTimestamp(): string | undefined {
+  const seconds = Number(process.env.SOURCE_DATE_EPOCH);
+  if (!Number.isInteger(seconds) || seconds <= 0) return undefined;
+  return new Date(seconds * 1000).toISOString();
+}
+
 const approvedStylesheetImports = `
 @import url("/styles/legacy.css?recovery=1");
 @import url("/styles/tokens.css?recovery=1");
@@ -31,7 +37,10 @@ export default async function RootLayout({
 }) {
   const dailySpiritualLoopSeed = await createDeterministicDailySpiritualLoopSeed(canonicalTigService);
   const initialLegacyAppState = createInitialTeoyubeAppState();
-  const initialSafeExportBundle = createSafeExportBundle(initialLegacyAppState);
+  const initialSafeExportBundle = createSafeExportBundle(
+    initialLegacyAppState,
+    reproducibleBuildTimestamp()
+  );
   const initialLegacySearchResult = runTeoyubeSearch("I feel confused about my purpose");
   return (
     <html lang="en">

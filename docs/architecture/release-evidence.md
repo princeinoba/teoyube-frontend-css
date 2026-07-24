@@ -22,12 +22,23 @@ Historical Prompt 19K and Prompt 20 evidence can be reused only when the
 configured relevant paths are unchanged from their owner tags. Reuse records
 only hashes and summary metrics. Raw model content is never copied.
 
-Framework build timestamps are not claimed to be byte-reproducible. Two clean
-builds are compared using normalized semantic route and client-bundle
-manifests. Raw hashes remain recorded. The only normalized value is Next's
-exact generated `BUILD_ID`, including its `.next/static/<BUILD_ID>/` path
-segment and exact references to that value; trace, diagnostic, and cache
-directories are excluded as non-artifact runtime data.
+Framework build output is not claimed to be byte-identical. Two clean builds
+are compared using normalized semantic route, client, and server manifests,
+while raw hashes and byte counts remain recorded. Normalization is limited to
+Next's exact generated `BUILD_ID`, its exact static path references, exact ISO
+values assigned to `createdAt`, `updatedAt`, `generatedAt`, or `requestedAt`,
+and the exact legacy internal `phase34_tig_<timestamp>_<nonce>` and
+`tig_demo_request_<timestamp>` result-ID shapes. Equivalent JSON, React-flight,
+and HTML-entity encodings of those exact fields are handled identically.
+Trace, diagnostic, and cache directories are excluded as non-artifact runtime
+data.
+
+The prerender-only initial export timestamp is supplied through
+`SOURCE_DATE_EPOCH` from the source commit. The comparison process also supplies
+an evidence-only Next Server Actions encryption key derived from that commit;
+the key value is never written to evidence. Deployment builds must use a
+deployment-managed key and production signing identity. Ordinary runtime
+timestamps and IDs remain current and nondeterministic.
 
 The static runtime remains canonical. Gate C-Production remains closed until
 the listed deployment dependencies and a separate owner cutover decision are
