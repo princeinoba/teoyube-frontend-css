@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "reportedAt": "2026-07-25T08:42:00-04:00",
   "result": {
-    "prompt23AInventory": "PASS",
+    "prompt23AInventory": "BLOCKED",
     "releaseDeploymentGate": "BLOCKED",
     "prompt23BAuthorized": false,
     "prompt23BEligible": false,
@@ -50,7 +50,7 @@
     "staticRollback": "RETAINED",
     "publicDeployment": "NOT_PERFORMED",
     "staticRollbackArchiveEligible": "NO",
-    "canonicalRuntimeContract": "PASS",
+    "canonicalRuntimeContract": "BLOCKED_AFTER_REQUIRED_BUILD",
     "publicRoutes": 23,
     "legacyHashMappings": 14,
     "apiContracts": 31
@@ -196,7 +196,7 @@
     "productionAudit": "PASS (0 critical/high; entry evidence remains current because dependency inputs are byte-identical)",
     "fullAudit": "EXPECTED BLOCKED (0 critical, 9 high; reproduced by npm ci and local security evidence)",
     "recoveryConstituents": "PASS",
-    "runtime": "PASS",
+    "runtime": "BLOCKED AFTER REQUIRED BUILD: pre-build contract passed, but app:build generated ScebDgB9WUecs9EA8cic3 while the protected canonical manifest requires I1g8n9KHFcruCq_ERB1C1",
     "releaseLineage": "PASS (14/14 focused tests)",
     "imports": "PASS (1,431 files, 0 missing)",
     "architecture": "PASS (155 files, 0 forbidden imports/cycles)",
@@ -216,15 +216,16 @@
     "full216CellRerun": "NOT REQUIRED: no product/runtime/client/visual/test-harness source changed; baseline and Prompt 22 release-evidence hashes are unchanged"
   },
   "knownLimitations": [
+    "The required production build succeeds but generates a fresh Next build ID; runtime:verify then blocks because the protected Prompt 22 canonical manifest pins a different owner-approved build ID. No manifest, build configuration, or generated artifact was altered to hide this mismatch.",
     "Gate C-Preview remains blocked by nine unresolved high-severity development-tool advisories.",
     "No stabilization period or ten meaningful sessions are documented.",
     "Two ignored-output candidates remain BLOCKED_UNKNOWN because no candidate-specific existing safe cleanup command and evidence-retention decision were verified.",
     "The only tracked deletion candidate is a six-byte probe; it remains pending and cannot be actioned without all future prerequisites and explicit candidate-level owner approval.",
     "No candidate is approved or executable."
   ],
-  "rollback": "git revert --no-edit <Prompt-23A-I-final-report-commit> b69e02d933987836457664257e95fbdfdfdaa769",
+  "rollback": "git revert --no-edit 6bccbba694ae9b0f975884e182a0ad3f92cd7619..HEAD",
   "ownerApprovalRequired": "YES for every future archive, deletion, or cleanup action; none is authorized by this report",
-  "nextGate": "BLOCKED",
+  "nextGate": "BLOCKED_RUNTIME_BUILD_ID_AND_SECURITY_ADVISORY",
   "prompt23BUnlocked": false,
   "prompt24Unlocked": false
 }

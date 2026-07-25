@@ -1,6 +1,6 @@
 # Prompt 23A-I Inventory Under Security Blocker
 
-Result: **PASS for non-destructive inventory only**.
+Result: **BLOCKED at final runtime verification**.
 
 Release/deployment remains **BLOCKED**. Gate C-Preview remains
 `BLOCKED_SECURITY_ADVISORY`; Gate C-Production remains `CLOSED`. Prompt 23B
@@ -116,7 +116,7 @@ manifest retain their checkpoint hashes.
 | Production audit | PASS — 0 critical/high |
 | Full audit | EXPECTED BLOCKED — 0 critical, 9 high |
 | Recovery constituents | PASS |
-| Runtime contract | PASS |
+| Runtime contract | BLOCKED after required build — generated ID differs from protected Prompt 22 ID |
 | Release-lineage tests | PASS — 14/14 |
 | Import contract | PASS — 1,431 files, 0 missing |
 | Architecture | PASS — 155 files, no forbidden imports/cycles |
@@ -134,12 +134,20 @@ manifest retain their checkpoint hashes.
 | Git diff classification | PASS — documentation/evidence additions only |
 | Listeners | PASS — 3000, 4173, 43123, and 43124 closed |
 
+The required production build succeeds, but Next generates a fresh build ID.
+The post-build runtime contract therefore blocks: generated
+`ScebDgB9WUecs9EA8cic3` does not equal the protected Prompt 22 manifest value
+`I1g8n9KHFcruCq_ERB1C1`. The pre-build runtime contract passed. No runtime
+manifest, build configuration, or generated artifact was altered to hide the
+mismatch.
+
 The 216-cell visual/performance gate was not rerun because no
 product/runtime/client/visual/test-harness source changed and the current
 baseline and Prompt 22 release-evidence hashes are unchanged.
 
 ## Remaining blockers
 
+- Required-build/canonical-manifest build ID mismatch.
 - Nine high-severity development-tool advisories remain unresolved.
 - No qualifying stabilization evidence is documented.
 - Two ignored-output candidates need evidence-retention and safe-command
@@ -149,7 +157,7 @@ baseline and Prompt 22 release-evidence hashes are unchanged.
 Rollback:
 
 ```text
-git revert --no-edit <Prompt-23A-I-final-report-commit> b69e02d933987836457664257e95fbdfdfdaa769
+git revert --no-edit 6bccbba694ae9b0f975884e182a0ad3f92cd7619..HEAD
 ```
 
 Owner approval is required for every future archive, deletion, or cleanup
