@@ -77,9 +77,9 @@ test("canonical redirects, trailing slashes, refresh, and browser history remain
   await page.goto("/canon", { waitUntil: "domcontentloaded" });
   await page.goto("/promise-table", { waitUntil: "domcontentloaded" });
   await page.goBack({ waitUntil: "domcontentloaded" });
-  expect(new URL(page.url()).pathname).toBe("/canon");
+  await expect(page).toHaveURL(/\/canon$/);
   await page.goForward({ waitUntil: "domcontentloaded" });
-  expect(new URL(page.url()).pathname).toBe("/promise-table");
+  await expect(page).toHaveURL(/\/promise-table$/);
 });
 
 test("canonical media preserves HEAD, Range, cache, conditional, and not-found behavior", async ({
