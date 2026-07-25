@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-07-25T01:50:22.146Z",
+  "selectedPlan": "D6_NO_SAFE_REMEDIATION",
+  "result": "BLOCKED",
+  "packageChangesApplied": [],
+  "lockfileChanged": false,
+  "matrix": [
+    {
+      "id": "D1",
+      "option": "Patch/minor update inside current direct-package major",
+      "result": "INCOMPLETE",
+      "evidence": "The only semver-compatible update is brace-expansion 5.0.7 -> 5.0.8 beneath minimatch 10.2.5. Six minimatch 3.1.5 branches remain on brace-expansion 1.1.16 and the audit remains at nine highs."
+    },
+    {
+      "id": "D2",
+      "option": "Update the direct parent",
+      "result": "UNAVAILABLE",
+      "evidence": "ESLint 9.39.5 is the latest stable 9.x. eslint-config-next 16.2.11 still introduces stable plugins that require minimatch ^3.1.2. The latest @eslint/eslintrc 3.3.6 still requires minimatch ^3.1.5."
+    },
+    {
+      "id": "D3",
+      "option": "Compatible npm overrides",
+      "result": "INCOMPATIBLE",
+      "evidence": "A 5.0.8 override is compatible only for the 5.x branch. Overriding the six 1.x branches to brace-expansion 5.0.8 violates minimatch 3.1.5's ^1.1.7 range. Overriding minimatch 3 to 10 violates plugin ranges and changes the CommonJS export from callable function to object."
+    },
+    {
+      "id": "D4",
+      "option": "Controlled ESLint 10 upgrade",
+      "result": "INCOMPATIBLE_AND_INCOMPLETE",
+      "evidence": "An isolated exact ESLint 10.8.0 plus eslint-config-next 16.2.11 candidate leaves six high vulnerabilities. eslint-plugin-import 2.32.0, eslint-plugin-jsx-a11y 6.10.2, and eslint-plugin-react 7.37.5 all reject ESLint 10 in their peer ranges."
+    },
+    {
+      "id": "D5",
+      "option": "Replace an obsolete lint/test package",
+      "result": "NO_EQUIVALENT_SUPPORTED_REPLACEMENT",
+      "evidence": "The current Next flat configuration depends on three stable plugins with no drop-in release that both preserves rule coverage and removes minimatch 3. Replacing or removing the configuration would weaken checks."
+    },
+    {
+      "id": "D6",
+      "option": "No safe remediation",
+      "result": "SELECTED",
+      "evidence": "Every available complete change is incompatible, weakens current lint coverage, or still leaves high findings."
+    }
+  ],
+  "dryRuns": [
+    {
+      "command": "%APPDATA%\\npm\\npm.cmd audit fix --dry-run --json",
+      "added": 95,
+      "removed": 7,
+      "changed": 0,
+      "highAfterProposal": 9,
+      "accepted": false,
+      "reason": "Does not clear the audit and points to breaking force fixes."
+    },
+    {
+      "command": "%APPDATA%\\npm\\npm.cmd update brace-expansion --package-lock-only --ignore-scripts (isolated .tmp candidate)",
+      "changed": ["brace-expansion 5.0.7 -> 5.0.8 on the minimatch 10 branch"],
+      "highAfterProposal": 9,
+      "accepted": false,
+      "reason": "Legacy minimatch 3 branches remain vulnerable."
+    },
+    {
+      "command": "%APPDATA%\\npm\\npm.cmd install --package-lock-only --ignore-scripts --save-dev --save-exact eslint@10.8.0 eslint-config-next@16.2.11 (isolated .tmp candidate)",
+      "highAfterProposal": 6,
+      "peerWarnings": [
+        "eslint-plugin-import@2.32.0 does not accept ESLint 10",
+        "eslint-plugin-jsx-a11y@6.10.2 does not accept ESLint 10",
+        "eslint-plugin-react@7.37.5 does not accept ESLint 10"
+      ],
+      "accepted": false,
+      "reason": "Incomplete security result and invalid plugin peer tree."
+    }
+  ],
+  "reconsiderWhen": [
+    "The advisory identifies a patched 1.x brace-expansion release accepted by minimatch 3.1.5.",
+    "Stable Next lint plugins move from minimatch 3 to a safe compatible branch.",
+    "eslint-config-next publishes a stable dependency set whose plugins explicitly support ESLint 10 and whose audit has zero critical/high findings."
+  ],
+  "hardStops": {
+    "dependencyChange": true,
+    "gateCRegeneration": true,
+    "archiveInventory": true,
+    "prompt23B": true,
+    "prompt24": true
+  }
+}

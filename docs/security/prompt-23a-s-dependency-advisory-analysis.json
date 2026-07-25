@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-07-25T01:50:22.146Z",
+  "result": "NO_SAFE_REMEDIATION_AVAILABLE",
+  "selectedDisposition": "D6",
+  "rootAdvisory": {
+    "ghsa": "GHSA-mh99-v99m-4gvg",
+    "cve": "CVE-2026-14257",
+    "npmSource": 1124334,
+    "package": "brace-expansion",
+    "severity": "high",
+    "cvss": 7.5,
+    "cwe": ["CWE-400", "CWE-770"],
+    "affectedRange": "<=5.0.7",
+    "patchedRange": ">=5.0.8",
+    "nearestSafeVersion": "5.0.8",
+    "direct": false,
+    "dependencyType": "dev-transitive",
+    "officialSources": [
+      "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+      "https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-mh99-v99m-4gvg",
+      "https://www.npmjs.com/package/brace-expansion"
+    ],
+    "exploitPreconditions": "Attacker-influenced brace or glob patterns must reach brace-expansion directly or through minimatch. In this repository the affected packages are dev-only lint tooling, so the current production runtime has no identified request path. A malicious or compromised repository/configuration input can still expose local or CI lint processes to uncatchable out-of-memory termination.",
+    "execution": {
+      "productionRuntime": false,
+      "build": false,
+      "lint": true,
+      "test": false,
+      "ci": true,
+      "developerTooling": true
+    }
+  },
+  "installedVulnerableCopies": [
+    {
+      "version": "1.1.16",
+      "parent": "minimatch@3.1.5",
+      "parentRange": "^1.1.7",
+      "parentAcceptsPatchedVersion": false,
+      "paths": [
+        "eslint@9.39.5 > @eslint/config-array@0.21.2 > minimatch@3.1.5 > brace-expansion@1.1.16",
+        "eslint@9.39.5 > @eslint/eslintrc@3.3.6 > minimatch@3.1.5 > brace-expansion@1.1.16",
+        "eslint@9.39.5 > minimatch@3.1.5 > brace-expansion@1.1.16",
+        "eslint-config-next@16.2.10 > eslint-plugin-import@2.32.0 > minimatch@3.1.5 > brace-expansion@1.1.16",
+        "eslint-config-next@16.2.10 > eslint-plugin-jsx-a11y@6.10.2 > minimatch@3.1.5 > brace-expansion@1.1.16",
+        "eslint-config-next@16.2.10 > eslint-plugin-react@7.37.5 > minimatch@3.1.5 > brace-expansion@1.1.16"
+      ]
+    },
+    {
+      "version": "5.0.7",
+      "parent": "minimatch@10.2.5",
+      "parentRange": "^5.0.5",
+      "parentAcceptsPatchedVersion": true,
+      "paths": [
+        "eslint-config-next@16.2.10 > typescript-eslint@8.64.0 > @typescript-eslint/typescript-estree@8.64.0 > minimatch@10.2.5 > brace-expansion@5.0.7"
+      ]
+    }
+  ],
+  "metavulnerabilities": [
+    {
+      "package": "@eslint/config-array",
+      "version": "0.21.2",
+      "severity": "high",
+      "range": "<=0.22.0",
+      "direct": false,
+      "topLevelIntroducer": "eslint@9.39.5",
+      "path": "eslint > @eslint/config-array > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "@eslint/eslintrc",
+      "version": "3.3.6",
+      "severity": "high",
+      "range": "0.0.1 || >=0.1.1",
+      "direct": false,
+      "topLevelIntroducer": "eslint@9.39.5",
+      "path": "eslint > @eslint/eslintrc > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "eslint",
+      "version": "9.39.5",
+      "severity": "high",
+      "range": "0.12.0 - 2.0.0-rc.1 || 4.1.0 - 10.0.0-rc.2",
+      "direct": true,
+      "topLevelIntroducer": "root devDependency",
+      "path": "eslint > minimatch/@eslint packages > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "eslint-config-next",
+      "version": "16.2.10",
+      "severity": "high",
+      "range": ">=10.2.1-canary.2",
+      "direct": true,
+      "topLevelIntroducer": "root devDependency",
+      "path": "eslint-config-next > eslint plugins > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "eslint-plugin-import",
+      "version": "2.32.0",
+      "severity": "high",
+      "range": ">=1.15.0",
+      "direct": false,
+      "topLevelIntroducer": "eslint-config-next@16.2.10",
+      "path": "eslint-config-next > eslint-plugin-import > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "eslint-plugin-jsx-a11y",
+      "version": "6.10.2",
+      "severity": "high",
+      "range": ">=6.5.0",
+      "direct": false,
+      "topLevelIntroducer": "eslint-config-next@16.2.10",
+      "path": "eslint-config-next > eslint-plugin-jsx-a11y > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "eslint-plugin-react",
+      "version": "7.37.5",
+      "severity": "high",
+      "range": ">=7.23.0",
+      "direct": false,
+      "topLevelIntroducer": "eslint-config-next@16.2.10",
+      "path": "eslint-config-next > eslint-plugin-react > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    },
+    {
+      "package": "minimatch",
+      "versions": ["3.1.5", "10.2.5"],
+      "severity": "high",
+      "range": "2.0.0 - 10.0.2",
+      "direct": false,
+      "topLevelIntroducers": ["eslint@9.39.5", "eslint-config-next@16.2.10"],
+      "path": "eslint and eslint-config-next dependency branches > minimatch > brace-expansion",
+      "rootAdvisory": "GHSA-mh99-v99m-4gvg"
+    }
+  ],
+  "compatibilityEvidence": {
+    "braceExpansionPublishedVersions": {
+      "highest1x": "1.1.16",
+      "highest2x": "2.1.2",
+      "highest3x": "3.0.2",
+      "highest4x": "4.0.1",
+      "patched": "5.0.8",
+      "patchedLegacyMajorAvailable": false
+    },
+    "minimatchApi": {
+      "3.1.5": {
+        "commonJsExportType": "function",
+        "braceExpansionRange": "^1.1.7"
+      },
+      "10.2.5": {
+        "commonJsExportType": "object",
+        "namedMinimatchType": "function",
+        "braceExpansionRange": "^5.0.5"
+      },
+      "majorOverrideCompatible": false,
+      "reason": "The three stable Next lint plugins call require('minimatch') as a function. minimatch 10 returns an object and is outside each plugin's ^3.1.2 dependency range."
+    },
+    "latestStablePackages": {
+      "eslint": "10.8.0",
+      "eslint9": "9.39.5",
+      "eslint-config-next": "16.2.11",
+      "eslint-plugin-import": "2.32.0",
+      "eslint-plugin-jsx-a11y": "6.10.2",
+      "eslint-plugin-react": "7.37.5",
+      "@eslint/eslintrc": "3.3.6",
+      "@eslint/config-array": "0.23.5"
+    },
+    "eslint10PluginPeerRanges": {
+      "eslint-plugin-import@2.32.0": "^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9",
+      "eslint-plugin-jsx-a11y@6.10.2": "^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9",
+      "eslint-plugin-react@7.37.5": "^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7"
+    }
+  },
+  "regressionScopeIfUpstreamFixAppears": [
+    "clean npm ci",
+    "full and production npm audit",
+    "lint with zero warnings",
+    "typecheck, unit, integration, app build",
+    "release security and supply-chain gates",
+    "runtime/recovery/safety contracts",
+    "Gate C-Preview regeneration"
+  ]
+}

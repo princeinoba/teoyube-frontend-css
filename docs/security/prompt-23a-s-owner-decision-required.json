@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "P23A-S-SECURITY-001",
+  "status": "PENDING",
+  "decision": "PENDING",
+  "blocker": "GHSA-mh99-v99m-4gvg has no patched legacy release compatible with minimatch 3.1.5, and the stable Next lint plugin tree has not migrated away from minimatch 3.",
+  "recommendedDecision": "KEEP_GATE_C_CLOSED_AND_RETRY_AFTER_UPSTREAM_COMPATIBLE_RELEASE",
+  "safeNextAction": "Monitor authoritative package releases, then rerun Prompt 23A-S remediation from the checkpoint with exact versions and the complete regression scope.",
+  "unsafeOptionsRejected": [
+    "npm audit fix --force",
+    "forcing brace-expansion 5.0.8 into minimatch 3.1.5",
+    "forcing minimatch 10 into plugins that call the minimatch 3 CommonJS function export",
+    "using ESLint 10 with peer-invalid stable plugins",
+    "removing or disabling current lint rules",
+    "lowering or suppressing the audit threshold"
+  ],
+  "ownerAuthorizationFabricated": false,
+  "gateCPreview": "CLOSED",
+  "gateCProduction": "CLOSED",
+  "prompt23AInventoryStarted": false,
+  "prompt23BAuthorized": false,
+  "prompt24Authorized": false
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-07-25T01:50:22.146Z",
+  "result": "BLOCKED",
+  "branchAndCommits": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "9308195e8d93abe0401d0bd5774d9c2099528f3c",
+    "securityRemediationCommit": null,
+    "gateCEvidenceCommit": null,
+    "inventoryReportCommit": null,
+    "finalCommit": "documentation commit containing this report; resolve with git rev-parse HEAD",
+    "worktree": "report-only files pending final documentation commit at report generation"
+  },
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "packageManager": "npm@10.2.4",
+    "npmPath": "%APPDATA%\\npm\\npm.cmd"
+  },
+  "auditBefore": {
+    "critical": 0,
+    "high": 9,
+    "moderate": 0,
+    "low": 0,
+    "productionCriticalHigh": 0,
+    "advisoryIds": ["GHSA-mh99-v99m-4gvg", "CVE-2026-14257"],
+    "affectedPaths": 7
+  },
+  "remediation": {
+    "selectedPlan": "D6_NO_SAFE_REMEDIATION",
+    "directPackageChanges": [],
+    "transitiveChanges": [],
+    "overrides": [],
+    "eslintMajorChanged": false,
+    "unrelatedPackagesChanged": false,
+    "lockfileBefore": "1edbad08c15ad46effdca2258278ca4b7159f223bad088fbc792e7a5e57008ef",
+    "lockfileAfter": "1edbad08c15ad46effdca2258278ca4b7159f223bad088fbc792e7a5e57008ef"
+  },
+  "auditAfter": {
+    "status": "NOT_APPLICABLE_NO_REMEDIATION",
+    "critical": 0,
+    "high": 9,
+    "moderate": 0,
+    "low": 0,
+    "productionCriticalHigh": 0,
+    "securityGate": "BLOCKED"
+  },
+  "releaseEvidence": {
+    "lineageTests": "PASS (14/14) at starting commit",
+    "evidenceMode": "NOT_REGENERATED_D6_HARD_STOP",
+    "semanticBuildMatch": "NOT_EVALUATED",
+    "paidEvidenceReused": false,
+    "paidCalls": 0,
+    "visualPerformanceEvidence": "NOT_REUSED_OR_RERUN",
+    "gateCPreview": "CLOSED",
+    "gateCProduction": "CLOSED"
+  },
+  "stabilization": {
+    "status": "STABILIZATION_NOT_DOCUMENTED",
+    "prompt23BAllowed": false
+  },
+  "inventory": {
+    "status": "NOT_STARTED_D6_HARD_STOP",
+    "trackedFiles": null,
+    "ignoredPaths": null,
+    "untrackedPaths": null,
+    "totalBytes": null,
+    "classCounts": {},
+    "unknownBlocked": null
+  },
+  "dependencyProof": {
+    "nextGraph": "NOT_INVENTORIED",
+    "staticRollbackGraph": "NOT_INVENTORIED",
+    "sharedGraph": "NOT_INVENTORIED",
+    "testGraph": "NOT_INVENTORIED",
+    "ciBuildGraph": "NOT_INVENTORIED",
+    "dynamicStringRisks": "NOT_INVENTORIED",
+    "candidatesComplete": false,
+    "candidatesBlocked": true
+  },
+  "candidates": {
+    "keep": 0,
+    "refactorLater": 0,
+    "archiveAfterStabilization": 0,
+    "deleteAfterStabilizationAndOwnerApproval": 0,
+    "ephemeralCleanup": 0,
+    "blocked": 1
+  },
+  "protection": {
+    "filesMoved": 0,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "stylesheetsConsolidated": 0,
+    "imagesIconsMoved": 0,
+    "layoutsRemoved": 0,
+    "baselinesRetired": 0,
+    "staticRollbackFilesChanged": 0,
+    "protectedVisualFilesChanged": 0
+  },
+  "ownerPackage": {
+    "candidateIds": ["P23A-S-SECURITY-001"],
+    "pendingDecisions": 1,
+    "blanketApproval": false
+  },
+  "verification": {
+    "npmCi": "NOT_RERUN_AFTER_D6_NO_PACKAGE_CHANGE",
+    "lockfile": "UNCHANGED",
+    "audit": "BLOCKED_9_HIGH",
+    "security": "BLOCKED",
+    "releaseLineage": "STARTING_TESTS_PASS_14_OF_14; NO_GATE_REGENERATION",
+    "gateCPreview": "CLOSED",
+    "runtime": "PASS_AT_PREFLIGHT",
+    "recovery": "AGGREGATE_WRAPPER_TIMED_OUT_WITHOUT_OUTPUT; ALL DOCUMENTED CONSTITUENT SUBCHECKS PASS",
+    "visualContracts": "PASS (268 protected source files, 210 protected contract files, 12 owner references, 72 screenshots, 12 DOM snapshots)",
+    "ownerApprovedSupportBaselines": "PASS (60 screenshots, 120 DOM/asset contracts)",
+    "ownerApprovedNextSupportBaselines": "PASS (54 default captures, 16 interaction captures)",
+    "tig": "PASS",
+    "scripture": "PASS",
+    "imports": "PASS (1,431 files; 0 missing)",
+    "architecture": "PASS (155 files; no forbidden imports or cycles)",
+    "safetyBoundaries": "PASS",
+    "retrievalBoundaries": "PASS",
+    "typecheck": "NOT_RERUN_D6_HARD_STOP",
+    "lint": "NOT_RERUN_D6_HARD_STOP",
+    "unit": "NOT_RERUN_D6_HARD_STOP",
+    "integration": "NOT_RERUN_D6_HARD_STOP",
+    "build": "NOT_RERUN_D6_HARD_STOP",
+    "nextSmoke": "NOT_RERUN_D6_HARD_STOP",
+    "staticSmoke": "NOT_RERUN_D6_HARD_STOP",
+    "secretScan": "NOT_RERUN_D6_HARD_STOP",
+    "noMoveNoDelete": "PASS",
+    "listenersClosed": true
+  },
+  "authorization": {
+    "prompt23AS": "BLOCKED",
+    "prompt23BAuthorized": false,
+    "prompt23BEligibleAfterStabilizationAndOwnerApprovals": false,
+    "prompt24Authorized": false
+  },
+  "rollback": "git revert <final documentation commit>"
+}
