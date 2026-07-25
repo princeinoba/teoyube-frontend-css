@@ -15,6 +15,9 @@ if (!fs.existsSync(absolute(controllerPath))) {
 }
 const controller = readJson(controllerPath);
 const identity = currentIdentity();
+const authoritativeRunIds = new Set(
+  (controller.summary?.logicalRuns || []).map((run) => run.runId)
+);
 const issuesByRoute = new Map();
 let cells = 0;
 let parityFailures = 0;
@@ -23,7 +26,11 @@ let missingNames = 0;
 let ariaHiddenFocusable = 0;
 
 for (const run of controller.runs || []) {
-  if (run.status !== "passed" || !fs.existsSync(run.resultPath)) continue;
+  if (
+    run.status !== "passed" ||
+    !authoritativeRunIds.has(run.runId) ||
+    !fs.existsSync(run.resultPath)
+  ) continue;
   const result = JSON.parse(fs.readFileSync(run.resultPath, "utf8"));
   for (const cell of result.results || []) {
     cells += 1;
@@ -45,6 +52,7 @@ const reducedMotion = fs.readFileSync(absolute("styles.css"), "utf8").includes("
 const passed =
   controller.status === "passed" &&
   controller.identity?.gitCommit === identity.commit &&
+  authoritativeRunIds.size === controller.requiredLogicalRuns &&
   cells === 216 &&
   parityFailures === 0 &&
   positiveTabindex === 0 &&
