@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T12:31:24.126Z",
-  "sourceCommit": "6bccbba694ae9b0f975884e182a0ad3f92cd7619",
+  "generatedAt": "2026-07-25T18:36:30.044Z",
+  "sourceCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
   "branch": "recovery/visual-source-of-truth",
   "method": {
     "trackedSource": "git ls-files -z",
@@ -20,7 +20,8 @@
       "package scripts",
       "runtime, visual, owner, release, media, and rollback manifests"
     ],
-    "lastGitChange": "single git log traversal; null only when no practical current-branch record exists"
+    "lastGitChange": "single git log traversal; null only when no practical current-branch record exists",
+    "prompt23ADelta": "Scoped recomputation of deterministic runtime/release tooling changed since the authorized starting commit; the four-hour base scan was not rerun."
   },
   "securityGate": {
     "fullAuditCritical": 0,
@@ -30,19 +31,19 @@
     "gateCProduction": "CLOSED"
   },
   "summary": {
-    "trackedFiles": 3516,
+    "trackedFiles": 3521,
     "workspacePathRecords": 36,
     "untrackedFiles": 14,
     "ignoredPresentPaths": 6,
-    "totalBytes": 2215582266,
+    "totalBytes": 2215614476,
     "classCounts": {
-      "BUILD_TOOLING_CURRENT": 126,
+      "BUILD_TOOLING_CURRENT": 127,
       "CI_CURRENT": 5,
       "CANDIDATE_DELETE_AFTER_OWNER_APPROVAL": 1,
-      "DOCUMENTATION_CURRENT": 234,
+      "DOCUMENTATION_CURRENT": 235,
       "OWNER_REFERENCE": 12,
       "PROTECTED_VISUAL_SOURCE": 257,
-      "RUNTIME_CONFIG": 9,
+      "RUNTIME_CONFIG": 10,
       "LIVE_AI_REQUIRED": 28,
       "PRODUCT_THEOLOGY_SOURCE": 6,
       "HISTORICAL_REPORT": 332,
@@ -58,7 +59,7 @@
       "SHARED_RUNTIME": 53,
       "SCRIPTURE_GENERATED_REQUIRED": 3,
       "SCRIPTURE_CORPUS_SOURCE": 2,
-      "TEST_CURRENT": 74,
+      "TEST_CURRENT": 76,
       "OWNER_APPROVED_BASELINE": 693,
       "IMMUTABLE_BASELINE": 85,
       "GENERATED_CURRENT_EVIDENCE": 3,
@@ -66,10 +67,10 @@
       "EPHEMERAL_IGNORED_OUTPUT": 4
     },
     "dispositionCounts": {
-      "KEEP_ACTIVE": 591,
-      "KEEP_TEST": 158,
+      "KEEP_ACTIVE": 593,
+      "KEEP_TEST": 160,
       "DELETE_AFTER_STABILIZATION_AND_OWNER_APPROVAL": 1,
-      "KEEP_EVIDENCE": 557,
+      "KEEP_EVIDENCE": 558,
       "KEEP_OWNER_PROTECTED": 1047,
       "KEEP_LICENSE_OR_SOURCE": 11,
       "KEEP_STATIC_ROLLBACK": 1183,
@@ -79,12 +80,12 @@
     "staticRollbackArchiveEligible": false
   },
   "sizeAnalysis": {
-    "trackedRepositoryBytes": 464933418,
-    "workspaceBytes": 2215582266,
+    "trackedRepositoryBytes": 464965628,
+    "workspaceBytes": 2215614476,
     "gitBytes": 371066874,
-    "sourceBytes": 25915783,
-    "testsBytes": 221679109,
-    "docsBytes": 24424602,
+    "sourceBytes": 25915999,
+    "testsBytes": 221689748,
+    "docsBytes": 24426678,
     "protectedVisualBytes": 420963729,
     "staticRollbackBytes": 202119424,
     "nextBuildOutputBytes": 206424178,
@@ -98,7 +99,7 @@
     {
       "path": "src",
       "type": "directory",
-      "bytes": 25915783,
+      "bytes": 25915999,
       "fileCount": 1652,
       "directoryCount": 219,
       "state": "tracked-or-mixed",
@@ -196,8 +197,8 @@
     {
       "path": "tests",
       "type": "directory",
-      "bytes": 221679109,
-      "fileCount": 856,
+      "bytes": 221689748,
+      "fileCount": 858,
       "directoryCount": 232,
       "state": "tracked-or-mixed",
       "exists": true,
@@ -210,8 +211,8 @@
     {
       "path": "scripts",
       "type": "directory",
-      "bytes": 1023456,
-      "fileCount": 133,
+      "bytes": 1041040,
+      "fileCount": 134,
       "directoryCount": 12,
       "state": "tracked-or-mixed",
       "exists": true,
@@ -224,8 +225,8 @@
     {
       "path": "docs",
       "type": "directory",
-      "bytes": 24424602,
-      "fileCount": 572,
+      "bytes": 24426678,
+      "fileCount": 573,
       "directoryCount": 31,
       "state": "tracked-or-mixed",
       "exists": true,
@@ -238,8 +239,8 @@
     {
       "path": "config",
       "type": "directory",
-      "bytes": 45162,
-      "fileCount": 9,
+      "bytes": 46414,
+      "fileCount": 10,
       "directoryCount": 2,
       "state": "tracked-or-mixed",
       "exists": true,
@@ -350,7 +351,7 @@
     {
       "path": "next.config.mjs",
       "type": "file-or-absent",
-      "bytes": 1605,
+      "bytes": 2048,
       "fileCount": 1,
       "directoryCount": 0,
       "state": "tracked-or-mixed",
@@ -937,6 +938,78 @@
         "committedAt": "2026-07-18T03:26:33Z"
       },
       "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "app.js",
+      "type": "file",
+      "bytes": 585321,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "571a6760935231ad2d3ec376c9ea2f79b869b3df",
+        "committedAt": "2026-07-21T08:25:26-04:00"
+      },
+      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": true,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
+      "primaryClass": "PROTECTED_VISUAL_SOURCE",
+      "proposedDisposition": "KEEP_OWNER_PROTECTED",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "archive/teoyubeworld-runtime-page/README.md",
+      "type": "file",
+      "bytes": 479,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored historical archive record.",
       "reachability": {
         "nextProduction": false,
         "staticRollback": false,
@@ -1898,9 +1971,153 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "Asset/Teoyube Calling Engine - Advanced Architecture.pdf",
+      "type": "file",
+      "bytes": 64656,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": true,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
+      "primaryClass": "PROTECTED_VISUAL_SOURCE",
+      "proposedDisposition": "KEEP_OWNER_PROTECTED",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "Asset/Teoyube Concept.pdf",
+      "type": "file",
+      "bytes": 14563,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": true,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
+      "primaryClass": "PROTECTED_VISUAL_SOURCE",
+      "proposedDisposition": "KEEP_OWNER_PROTECTED",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "Asset/TEOYUBE Founder Blueprint.pdf",
       "type": "file",
       "bytes": 50441,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": true,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
+      "primaryClass": "PROTECTED_VISUAL_SOURCE",
+      "proposedDisposition": "KEEP_OWNER_PROTECTED",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "Asset/Teoyube Promise Language Engine.pdf",
+      "type": "file",
+      "bytes": 33924,
       "fileCount": 1,
       "state": "tracked",
       "exists": true,
@@ -2038,294 +2255,6 @@
       "primaryClass": "PROTECTED_VISUAL_SOURCE",
       "proposedDisposition": "KEEP_OWNER_PROTECTED",
       "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "Asset/Teoyube Calling Engine - Advanced Architecture.pdf",
-      "type": "file",
-      "bytes": 64656,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": true,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
-      "primaryClass": "PROTECTED_VISUAL_SOURCE",
-      "proposedDisposition": "KEEP_OWNER_PROTECTED",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "Asset/Teoyube Concept.pdf",
-      "type": "file",
-      "bytes": 14563,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": true,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
-      "primaryClass": "PROTECTED_VISUAL_SOURCE",
-      "proposedDisposition": "KEEP_OWNER_PROTECTED",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "Asset/Teoyube Promise Language Engine.pdf",
-      "type": "file",
-      "bytes": 33924,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": true,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "tests/visual/contracts/protected-visual-source-manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
-      "primaryClass": "PROTECTED_VISUAL_SOURCE",
-      "proposedDisposition": "KEEP_OWNER_PROTECTED",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "ROUTING_SIMPLIFICATION.md",
-      "type": "file",
-      "bytes": 1686,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "Teoyube_Codex_Execution_Prompts.md",
-      "type": "file",
-      "bytes": 64655,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "app.js",
-      "type": "file",
-      "bytes": 585321,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "571a6760935231ad2d3ec376c9ea2f79b869b3df",
-        "committedAt": "2026-07-21T08:25:26-04:00"
-      },
-      "provenanceLicense": "Original uploaded Teoyube source protected by immutable manifest.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": true,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "PROTECTED_VISUAL_SOURCE",
-      "primaryClass": "PROTECTED_VISUAL_SOURCE",
-      "proposedDisposition": "KEEP_OWNER_PROTECTED",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "archive/teoyubeworld-runtime-page/README.md",
-      "type": "file",
-      "bytes": 479,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored historical archive record.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -2735,6 +2664,86 @@
           },
           {
             "from": "tests/build-foundation/runtime-cutover-contracts.test.ts",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "RUNTIME_CONFIG",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "config/runtime/runtime-source-manifest.json",
+      "type": "file",
+      "bytes": 871,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+        "committedAt": "2026-07-25T11:08:57-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": true,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 5,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "config/runtime/canonical-runtime-manifest.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "docs/architecture/deterministic-runtime-build-identity.md",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/runtime/runtime-source-identity.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/build-foundation/runtime-source-identity.test.ts",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "config/runtime/canonical-runtime-manifest.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "docs/architecture/deterministic-runtime-build-identity.md",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/runtime/runtime-source-identity.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/build-foundation/runtime-source-identity.test.ts",
             "kind": "string-path"
           }
         ]
@@ -3440,6 +3449,54 @@
       "primaryClass": "DOCUMENTATION_CURRENT",
       "proposedDisposition": "KEEP_EVIDENCE",
       "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/architecture/deterministic-runtime-build-identity.md",
+      "type": "file",
+      "bytes": 2076,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+        "committedAt": "2026-07-25T11:08:57-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -4728,298 +4785,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "docs/owner-approvals/visual/README.md",
-      "type": "file",
-      "bytes": 1058,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "OWNER_APPROVAL_RECORD",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/owner-approvals/visual/TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D.md",
-      "type": "file",
-      "bytes": 3722,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "b799b8a69679165fd5a9792b76c99c8d67d8df49",
-        "committedAt": "2026-07-20T08:33:23-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 3,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "scripts/recovery/materializeOwnerApprovedNextSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/verifyOwnerApprovedNextSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "tests/visual/baselines/owner-approved-next-support/manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "scripts/recovery/materializeOwnerApprovedNextSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/verifyOwnerApprovedNextSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "tests/visual/baselines/owner-approved-next-support/manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "OWNER_APPROVAL_RECORD",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.json",
-      "type": "file",
-      "bytes": 10378,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "750862ded54898d64f36b8e074f77e88f8ce3920",
-        "committedAt": "2026-07-19T19:04:54-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 4,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "OWNER_APPROVAL_RECORD",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.md",
-      "type": "file",
-      "bytes": 1890,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "750862ded54898d64f36b8e074f77e88f8ce3920",
-        "committedAt": "2026-07-19T19:04:54-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 4,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "OWNER_APPROVAL_RECORD",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/owner-approvals/visual/VISUAL_CHANGE_REQUEST_TEMPLATE.md",
-      "type": "file",
-      "bytes": 1107,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/r0-verification-report.md",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/r0-verification-report.md",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "OWNER_APPROVAL_RECORD",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "docs/owner-approvals/visual/evidence/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8/v-01/today-tablet-landscape.diff.png",
       "type": "file",
       "bytes": 16738,
@@ -6172,6 +5937,298 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "docs/owner-approvals/visual/README.md",
+      "type": "file",
+      "bytes": 1058,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "OWNER_APPROVAL_RECORD",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/owner-approvals/visual/TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D.md",
+      "type": "file",
+      "bytes": 3722,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "b799b8a69679165fd5a9792b76c99c8d67d8df49",
+        "committedAt": "2026-07-20T08:33:23-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 3,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "scripts/recovery/materializeOwnerApprovedNextSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/verifyOwnerApprovedNextSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/visual/baselines/owner-approved-next-support/manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "scripts/recovery/materializeOwnerApprovedNextSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/verifyOwnerApprovedNextSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/visual/baselines/owner-approved-next-support/manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "OWNER_APPROVAL_RECORD",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.json",
+      "type": "file",
+      "bytes": 10378,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+        "committedAt": "2026-07-19T19:04:54-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 4,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "OWNER_APPROVAL_RECORD",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/owner-approvals/visual/TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8.md",
+      "type": "file",
+      "bytes": 1890,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "750862ded54898d64f36b8e074f77e88f8ce3920",
+        "committedAt": "2026-07-19T19:04:54-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 4,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/materializeOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/verifyOwnerApprovedSupportBaselines.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "OWNER_APPROVAL_RECORD",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/owner-approvals/visual/VISUAL_CHANGE_REQUEST_TEMPLATE.md",
+      "type": "file",
+      "bytes": 1107,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/r0-verification-report.md",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/r0-verification-report.md",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "OWNER_APPROVAL_RECORD",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "docs/performance/budgets.md",
       "type": "file",
       "bytes": 1831,
@@ -6772,42 +6829,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "docs/product-source/TEOYUBE THEOLOGY CONSTITUTION V1.pdf",
-      "type": "file",
-      "bytes": 30022,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Owner-provided normative product/theology source.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "PRODUCT_THEOLOGY_SOURCE",
-      "primaryClass": "PRODUCT_THEOLOGY_SOURCE",
-      "proposedDisposition": "KEEP_LICENSE_OR_SOURCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "docs/product-source/Teoyube Language Grammar and Lexicon Architecture.pdf",
       "type": "file",
       "bytes": 217257,
@@ -6847,6 +6868,42 @@
       "path": "docs/product-source/Teoyube Promise Cluster Architecture.pdf",
       "type": "file",
       "bytes": 56992,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Owner-provided normative product/theology source.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "PRODUCT_THEOLOGY_SOURCE",
+      "primaryClass": "PRODUCT_THEOLOGY_SOURCE",
+      "proposedDisposition": "KEEP_LICENSE_OR_SOURCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/product-source/TEOYUBE THEOLOGY CONSTITUTION V1.pdf",
+      "type": "file",
+      "bytes": 30022,
       "fileCount": 1,
       "state": "tracked",
       "exists": true,
@@ -7192,354 +7249,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "docs/recovery/INITIAL_RECOVERY_REPORT.md",
-      "type": "file",
-      "bytes": 3932,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "0d96f987b952eaf316668f82a3630b04e9210f0a",
-        "committedAt": "2026-07-18T03:29:51Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/NEXT_PREVIEW_BUILD_FOUNDATION.md",
-      "type": "file",
-      "bytes": 4251,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8460fb551cd2047f2931893bac4822caf189ca3c",
-        "committedAt": "2026-07-18T17:03:43-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/README.md",
-      "type": "file",
-      "bytes": 1856,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "57d2bbaea9c4717343073846c129900990b31820",
-        "committedAt": "2026-07-18T03:27:30Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "scripts/release/release-lineage.cjs",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "scripts/release/release-lineage.cjs",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/RECOVERY_BRANCH.md",
-      "type": "file",
-      "bytes": 1893,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/r0-verification-report.md",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/r0-verification-report.md",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/RECOVERY_SETUP_REPORT.md",
-      "type": "file",
-      "bytes": 4782,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/SELECTIVE_NON_VISUAL_PORT_ALLOWLIST.md",
-      "type": "file",
-      "bytes": 2384,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "0d96f987b952eaf316668f82a3630b04e9210f0a",
-        "committedAt": "2026-07-18T03:29:51Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/VISUAL_SOURCE_OF_TRUTH.md",
-      "type": "file",
-      "bytes": 2149,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/r0-verification-report.md",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/r0-verification-report.md",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/recovery/evidence/prompt-17s/README.md",
-      "type": "file",
-      "bytes": 1331,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "39ed2e419f8f8ed89b3002f9914c4575fcd16cba",
-        "committedAt": "2026-07-22T10:11:09-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "docs/recovery/evidence/prompt-17s/evidence-manifest.json",
       "type": "file",
       "bytes": 8624,
@@ -7732,6 +7441,42 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "docs/recovery/evidence/prompt-17s/README.md",
+      "type": "file",
+      "bytes": 1331,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "39ed2e419f8f8ed89b3002f9914c4575fcd16cba",
+        "committedAt": "2026-07-22T10:11:09-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "docs/recovery/evidence/prompt-17s/resumable-performance-gate-summary.json",
       "type": "file",
       "bytes": 351265,
@@ -7872,6 +7617,54 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "docs/recovery/INITIAL_RECOVERY_REPORT.md",
+      "type": "file",
+      "bytes": 3932,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "0d96f987b952eaf316668f82a3630b04e9210f0a",
+        "committedAt": "2026-07-18T03:29:51Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "docs/recovery/legacy-removal-ledger.md",
       "type": "file",
       "bytes": 4274,
@@ -7881,6 +7674,42 @@
       "lastGitChange": {
         "commit": "3ed82ef5e790af16f65572041ac98f51d3dfd1e7",
         "committedAt": "2026-07-22T12:27:57-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/recovery/NEXT_PREVIEW_BUILD_FOUNDATION.md",
+      "type": "file",
+      "bytes": 4251,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8460fb551cd2047f2931893bac4822caf189ca3c",
+        "committedAt": "2026-07-18T17:03:43-04:00"
       },
       "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
       "reachability": {
@@ -10100,6 +9929,234 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "docs/recovery/README.md",
+      "type": "file",
+      "bytes": 1856,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "57d2bbaea9c4717343073846c129900990b31820",
+        "committedAt": "2026-07-18T03:27:30Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/recovery/RECOVERY_BRANCH.md",
+      "type": "file",
+      "bytes": 1893,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/r0-verification-report.md",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/r0-verification-report.md",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/recovery/RECOVERY_SETUP_REPORT.md",
+      "type": "file",
+      "bytes": 4782,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/recovery/SELECTIVE_NON_VISUAL_PORT_ALLOWLIST.md",
+      "type": "file",
+      "bytes": 2384,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "0d96f987b952eaf316668f82a3630b04e9210f0a",
+        "committedAt": "2026-07-18T03:29:51Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/recovery/VISUAL_SOURCE_OF_TRUTH.md",
+      "type": "file",
+      "bytes": 2149,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/r0-verification-report.md",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/r0-verification-report.md",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "docs/recovery/visual-parity-matrix.md",
       "type": "file",
       "bytes": 21013,
@@ -11640,42 +11697,6 @@
       "primaryClass": "DOCUMENTATION_CURRENT",
       "proposedDisposition": "KEEP_EVIDENCE",
       "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "docs/teoyube/WHAT-TEOYUBE-DOES.md",
-      "type": "file",
-      "bytes": 3619,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "DOCUMENTATION_CURRENT",
-      "proposedDisposition": "KEEP_EVIDENCE",
-      "confidence": "MEDIUM",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -27464,6 +27485,42 @@
       "primaryClass": "DOCUMENTATION_CURRENT",
       "proposedDisposition": "KEEP_EVIDENCE",
       "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "docs/teoyube/WHAT-TEOYUBE-DOES.md",
+      "type": "file",
+      "bytes": 3619,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -44279,6 +44336,42 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "ROUTING_SIMPLIFICATION.md",
+      "type": "file",
+      "bytes": 1686,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "scripts/applyTeoyubeWorldReviewPatches.cjs",
       "type": "file",
       "bytes": 2513,
@@ -44897,42 +44990,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "scripts/fixtures/teoyubeworld-media/README.md",
-      "type": "file",
-      "bytes": 244,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": true,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "BUILD_TOOLING_CURRENT",
-      "proposedDisposition": "KEEP_ACTIVE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "scripts/fixtures/teoyubeworld-media/empty/.gitkeep",
       "type": "file",
       "bytes": 1,
@@ -45013,6 +45070,42 @@
       "primaryClass": "BUILD_TOOLING_CURRENT",
       "proposedDisposition": "KEEP_ACTIVE",
       "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "scripts/fixtures/teoyubeworld-media/README.md",
+      "type": "file",
+      "bytes": 244,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": true,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "BUILD_TOOLING_CURRENT",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "MEDIUM",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -46039,75 +46132,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "scripts/phase116Smoke.cjs",
-      "type": "file",
-      "bytes": 7361,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 4,
-        "incomingKinds": [
-          "package-script",
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/phase116b1ReadinessSmoke.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/phase117Smoke.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "package.json",
-            "kind": "package-script"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/phase116b1ReadinessSmoke.cjs",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/phase117Smoke.cjs",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_PHASE_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "scripts/phase116b1ReadinessSmoke.cjs",
       "type": "file",
       "bytes": 12828,
@@ -46740,6 +46764,75 @@
         "references": [
           {
             "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_PHASE_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "scripts/phase116Smoke.cjs",
+      "type": "file",
+      "bytes": 7361,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 4,
+        "incomingKinds": [
+          "package-script",
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/phase116b1ReadinessSmoke.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/phase117Smoke.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "package.json",
+            "kind": "package-script"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/phase116b1ReadinessSmoke.cjs",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/phase117Smoke.cjs",
             "kind": "string-path"
           }
         ]
@@ -48024,6 +48117,63 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "scripts/recovery/runtimeBaselineLib.cjs",
+      "type": "file",
+      "bytes": 2495,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 3,
+        "incomingKinds": [
+          "commonjs-require",
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          },
+          {
+            "from": "scripts/recovery/createInitialRuntimeBaselineManifest.cjs",
+            "kind": "commonjs-require"
+          },
+          {
+            "from": "scripts/recovery/verifyRuntimeBaselines.cjs",
+            "kind": "commonjs-require"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "BUILD_TOOLING_CURRENT",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "scripts/recovery/runVisualParitySuite.cjs",
       "type": "file",
       "bytes": 9557,
@@ -48073,63 +48223,6 @@
           },
           {
             "from": "scripts/recovery/resumableVisualGateState.cjs",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "BUILD_TOOLING_CURRENT",
-      "proposedDisposition": "KEEP_ACTIVE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "scripts/recovery/runtimeBaselineLib.cjs",
-      "type": "file",
-      "bytes": 2495,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "8bccd29215da42064fa5b36c750337315524956f",
-        "committedAt": "2026-07-18T03:26:33Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 3,
-        "incomingKinds": [
-          "commonjs-require",
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
-            "kind": "string-path"
-          },
-          {
-            "from": "scripts/recovery/createInitialRuntimeBaselineManifest.cjs",
-            "kind": "commonjs-require"
-          },
-          {
-            "from": "scripts/recovery/verifyRuntimeBaselines.cjs",
-            "kind": "commonjs-require"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "docs/recovery/prompt-21-existing-gate-inventory.json",
             "kind": "string-path"
           }
         ]
@@ -50385,6 +50478,65 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "scripts/runtime/runtime-source-identity.cjs",
+      "type": "file",
+      "bytes": 13285,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+        "committedAt": "2026-07-25T11:08:57-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": true,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 5,
+        "incomingKinds": [
+          "commonjs-require"
+        ],
+        "examples": [
+          {
+            "from": "next.config.mjs",
+            "kind": "commonjs-require"
+          },
+          {
+            "from": "scripts/release/release-lineage.cjs",
+            "kind": "commonjs-require"
+          },
+          {
+            "from": "scripts/runtime/runtime-status.cjs",
+            "kind": "commonjs-require"
+          },
+          {
+            "from": "scripts/runtime/verify-runtime-contract.cjs",
+            "kind": "commonjs-require"
+          },
+          {
+            "from": "tests/build-foundation/runtime-source-identity.test.ts",
+            "kind": "commonjs-require"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "BUILD_TOOLING_CURRENT",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "scripts/runtime/runtime-status.cjs",
       "type": "file",
       "bytes": 1142,
@@ -52222,77 +52374,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "src/app/_approved-source/ApprovedMigrationOverlays.tsx",
-      "type": "file",
-      "bytes": 3396,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "5aa12beb7210712de93a7f9a7a55b1535b2e1220",
-        "committedAt": "2026-07-22T15:49:00-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": true,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": true,
-        "ciBuildTooling": true,
-        "documentationEvidence": true
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 10,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/app/_book/BookPageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_calling/CallingCompassPageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_canon/CanonPageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_lexicon/LexiconPageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_media/EmbeddedVideosPageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_media/TablesPageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_promise-table/PromiseTablePageController.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/app/_roadmap/RoadmapPageController.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "PRODUCTION_NEXT",
-      "proposedDisposition": "KEEP_ACTIVE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "src/app/_approved-source/approved-view-markup.generated.ts",
       "type": "file",
       "bytes": 1730131,
@@ -52385,6 +52466,77 @@
             "kind": "string-path"
           }
         ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "PRODUCTION_NEXT",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/app/_approved-source/ApprovedMigrationOverlays.tsx",
+      "type": "file",
+      "bytes": 3396,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "5aa12beb7210712de93a7f9a7a55b1535b2e1220",
+        "committedAt": "2026-07-22T15:49:00-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": true,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": true
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 10,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/app/_book/BookPageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_calling/CallingCompassPageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_canon/CanonPageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_lexicon/LexiconPageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_media/EmbeddedVideosPageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_media/TablesPageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_promise-table/PromiseTablePageController.tsx",
+            "kind": "static-import"
+          },
+          {
+            "from": "src/app/_roadmap/RoadmapPageController.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
       },
       "protectedStatus": "NONE",
       "primaryClass": "PRODUCTION_NEXT",
@@ -58320,6 +58472,257 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "src/components/compass/CompassExperience.tsx",
+      "type": "file",
+      "bytes": 64,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/compass/CompassSearchBar.tsx",
+      "type": "file",
+      "bytes": 63,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/compass/CompassExperienceClient.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/compass/CompassSpinner.tsx",
+      "type": "file",
+      "bytes": 61,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/compass/CompassVideoDetail.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/compass/CompassVideoDetail.tsx",
+      "type": "file",
+      "bytes": 65,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/compass/CompassExperienceClient.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/compass/CompassVideoItem.tsx",
+      "type": "file",
+      "bytes": 63,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/compass/CompassVideoList.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/compass/CompassVideoList.tsx",
+      "type": "file",
+      "bytes": 63,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/compass/CompassExperienceClient.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "src/components/DashboardCard.tsx",
       "type": "file",
       "bytes": 51,
@@ -58597,441 +59000,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "src/components/PromiseTablePreview.tsx",
-      "type": "file",
-      "bytes": 57,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": true,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/ExploreTabs.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/SearchFilter.tsx",
-      "type": "file",
-      "bytes": 50,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": true,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/ExploreTabs.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/TeoyubeCard.tsx",
-      "type": "file",
-      "bytes": 49,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": true,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 4,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/ClusterCard.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/components/teoyube/ExploreTabs.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/components/teoyube/PrayerCard.tsx",
-            "kind": "static-import"
-          },
-          {
-            "from": "src/components/teoyube/WordCard.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/WordCard.tsx",
-      "type": "file",
-      "bytes": 46,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": true,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/ExploreTabs.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/compass/CompassExperience.tsx",
-      "type": "file",
-      "bytes": 64,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/compass/CompassSearchBar.tsx",
-      "type": "file",
-      "bytes": 63,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/compass/CompassExperienceClient.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/compass/CompassSpinner.tsx",
-      "type": "file",
-      "bytes": 61,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/compass/CompassVideoDetail.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/compass/CompassVideoDetail.tsx",
-      "type": "file",
-      "bytes": 65,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/compass/CompassExperienceClient.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/compass/CompassVideoItem.tsx",
-      "type": "file",
-      "bytes": 63,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/compass/CompassVideoList.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/compass/CompassVideoList.tsx",
-      "type": "file",
-      "bytes": 63,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/teoyube/compass/CompassExperienceClient.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "src/components/productization/ConsentAwareMemoryControls.tsx",
       "type": "file",
       "bytes": 10549,
@@ -59302,6 +59270,49 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "src/components/PromiseTablePreview.tsx",
+      "type": "file",
+      "bytes": 57,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": true,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/ExploreTabs.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "src/components/public/index.tsx",
       "type": "file",
       "bytes": 2350,
@@ -59391,6 +59402,85 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "src/components/SearchFilter.tsx",
+      "type": "file",
+      "bytes": 50,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": true,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/ExploreTabs.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/admin/ControlledAdminWorkflowPreview.tsx",
+      "type": "file",
+      "bytes": 3248,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "src/components/teoyube/ClusterCard.tsx",
       "type": "file",
       "bytes": 596,
@@ -59418,6 +59508,307 @@
         "examples": [
           {
             "from": "src/components/ClusterCard.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassExperience.tsx",
+      "type": "file",
+      "bytes": 330,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "715bd10a90abb0441c961f8d51166f7f89c74131",
+        "committedAt": "2026-07-20T13:10:56-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/compass/CompassExperience.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassExperienceClient.tsx",
+      "type": "file",
+      "bytes": 4024,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "715bd10a90abb0441c961f8d51166f7f89c74131",
+        "committedAt": "2026-07-20T13:10:56-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/compass/CompassExperience.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassSearchBar.tsx",
+      "type": "file",
+      "bytes": 1554,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/compass/CompassSearchBar.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassSpinner.tsx",
+      "type": "file",
+      "bytes": 263,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/compass/CompassSpinner.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassVideoDetail.tsx",
+      "type": "file",
+      "bytes": 893,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/compass/CompassVideoDetail.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassVideoItem.tsx",
+      "type": "file",
+      "bytes": 693,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/compass/CompassVideoItem.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/teoyube/compass/CompassVideoList.tsx",
+      "type": "file",
+      "bytes": 866,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/compass/CompassVideoList.tsx",
             "kind": "static-import"
           }
         ]
@@ -59941,9 +60332,9 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "src/components/teoyube/admin/ControlledAdminWorkflowPreview.tsx",
+      "path": "src/components/TeoyubeCard.tsx",
       "type": "file",
-      "bytes": 3248,
+      "bytes": 49,
       "fileCount": 1,
       "state": "tracked",
       "exists": true,
@@ -59953,7 +60344,7 @@
       },
       "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
       "reachability": {
-        "nextProduction": false,
+        "nextProduction": true,
         "staticRollback": false,
         "sharedRuntime": false,
         "test": false,
@@ -59961,307 +60352,25 @@
         "documentationEvidence": false
       },
       "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassExperience.tsx",
-      "type": "file",
-      "bytes": 330,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "715bd10a90abb0441c961f8d51166f7f89c74131",
-        "committedAt": "2026-07-20T13:10:56-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
+        "incomingReferenceCount": 4,
         "incomingKinds": [
           "static-import"
         ],
         "examples": [
           {
-            "from": "src/components/compass/CompassExperience.tsx",
+            "from": "src/components/teoyube/ClusterCard.tsx",
             "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassExperienceClient.tsx",
-      "type": "file",
-      "bytes": 4024,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "715bd10a90abb0441c961f8d51166f7f89c74131",
-        "committedAt": "2026-07-20T13:10:56-04:00"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
+          },
           {
-            "from": "src/components/teoyube/compass/CompassExperience.tsx",
+            "from": "src/components/teoyube/ExploreTabs.tsx",
             "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassSearchBar.tsx",
-      "type": "file",
-      "bytes": 1554,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
+          },
           {
-            "from": "src/components/compass/CompassSearchBar.tsx",
+            "from": "src/components/teoyube/PrayerCard.tsx",
             "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassSpinner.tsx",
-      "type": "file",
-      "bytes": 263,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
+          },
           {
-            "from": "src/components/compass/CompassSpinner.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassVideoDetail.tsx",
-      "type": "file",
-      "bytes": 893,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/compass/CompassVideoDetail.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassVideoItem.tsx",
-      "type": "file",
-      "bytes": 693,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/compass/CompassVideoItem.tsx",
-            "kind": "static-import"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
-      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
-      "path": "src/components/teoyube/compass/CompassVideoList.tsx",
-      "type": "file",
-      "bytes": 866,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "static-import"
-        ],
-        "examples": [
-          {
-            "from": "src/components/compass/CompassVideoList.tsx",
+            "from": "src/components/teoyube/WordCard.tsx",
             "kind": "static-import"
           }
         ]
@@ -60799,6 +60908,49 @@
             "kind": "string-path"
           }
         ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
+      "proposedDisposition": "KEEP_STATIC_ROLLBACK",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/components/WordCard.tsx",
+      "type": "file",
+      "bytes": 46,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": true,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "static-import"
+        ],
+        "examples": [
+          {
+            "from": "src/components/teoyube/ExploreTabs.tsx",
+            "kind": "static-import"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
       },
       "protectedStatus": "NONE",
       "primaryClass": "LEGACY_COMPATIBILITY_ACTIVE",
@@ -62543,54 +62695,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "src/data/promiseClusterSystem.json",
-      "type": "file",
-      "bytes": 326,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": true,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 1,
-        "incomingKinds": [
-          "string-path"
-        ],
-        "examples": [
-          {
-            "from": "app.js",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "dynamicStringPathRisk": {
-        "present": true,
-        "references": [
-          {
-            "from": "app.js",
-            "kind": "string-path"
-          }
-        ]
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "SHARED_RUNTIME",
-      "proposedDisposition": "KEEP_ACTIVE",
-      "confidence": "HIGH",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "src/data/promiseClusters.json",
       "type": "file",
       "bytes": 25890,
@@ -62684,6 +62788,54 @@
           },
           {
             "from": "src/lib/teoyube/data/teoyube-data-normalization.ts",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "SHARED_RUNTIME",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/data/promiseClusterSystem.json",
+      "type": "file",
+      "bytes": 326,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": true,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 1,
+        "incomingKinds": [
+          "string-path"
+        ],
+        "examples": [
+          {
+            "from": "app.js",
+            "kind": "string-path"
+          }
+        ]
+      },
+      "dynamicStringPathRisk": {
+        "present": true,
+        "references": [
+          {
+            "from": "app.js",
             "kind": "string-path"
           }
         ]
@@ -131957,42 +132109,6 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
-      "path": "src/lib/tig/README.md",
-      "type": "file",
-      "bytes": 19406,
-      "fileCount": 1,
-      "state": "tracked",
-      "exists": true,
-      "lastGitChange": {
-        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-        "committedAt": "2026-07-18T03:02:26Z"
-      },
-      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
-      "reachability": {
-        "nextProduction": false,
-        "staticRollback": false,
-        "sharedRuntime": false,
-        "test": false,
-        "ciBuildTooling": false,
-        "documentationEvidence": false
-      },
-      "dependencyProof": {
-        "incomingReferenceCount": 0,
-        "incomingKinds": [],
-        "examples": []
-      },
-      "dynamicStringPathRisk": {
-        "present": false,
-        "references": []
-      },
-      "protectedStatus": "NONE",
-      "primaryClass": "TIG_REQUIRED",
-      "proposedDisposition": "KEEP_ACTIVE",
-      "confidence": "MEDIUM",
-      "blocker": null,
-      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
-    },
-    {
       "path": "src/lib/tig/ai-interface.ts",
       "type": "file",
       "bytes": 4251,
@@ -136917,6 +137033,42 @@
       "primaryClass": "TIG_REQUIRED",
       "proposedDisposition": "KEEP_ACTIVE",
       "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "src/lib/tig/README.md",
+      "type": "file",
+      "bytes": 19406,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
+        "committedAt": "2026-07-18T03:02:26Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "TIG_REQUIRED",
+      "proposedDisposition": "KEEP_ACTIVE",
+      "confidence": "MEDIUM",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -143386,6 +143538,42 @@
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
     {
+      "path": "Teoyube_Codex_Execution_Prompts.md",
+      "type": "file",
+      "bytes": 64655,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "8bccd29215da42064fa5b36c750337315524956f",
+        "committedAt": "2026-07-18T03:26:33Z"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "DOCUMENTATION_CURRENT",
+      "proposedDisposition": "KEEP_EVIDENCE",
+      "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
       "path": "teoyubeworld-media-experience.js",
       "type": "file",
       "bytes": 40764,
@@ -143561,6 +143749,42 @@
       "protectedStatus": "PROTECTED_VISUAL_SOURCE",
       "primaryClass": "PROTECTED_VISUAL_SOURCE",
       "proposedDisposition": "KEEP_OWNER_PROTECTED",
+      "confidence": "HIGH",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "tests/build-foundation/accessibility-evidence.test.ts",
+      "type": "file",
+      "bytes": 629,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+        "committedAt": "2026-07-25T13:41:43-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "TEST_CURRENT",
+      "proposedDisposition": "KEEP_TEST",
       "confidence": "HIGH",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
@@ -144947,6 +145171,42 @@
       "primaryClass": "TEST_CURRENT",
       "proposedDisposition": "KEEP_TEST",
       "confidence": "MEDIUM",
+      "blocker": null,
+      "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
+    },
+    {
+      "path": "tests/build-foundation/runtime-source-identity.test.ts",
+      "type": "file",
+      "bytes": 8716,
+      "fileCount": 1,
+      "state": "tracked",
+      "exists": true,
+      "lastGitChange": {
+        "commit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+        "committedAt": "2026-07-25T11:08:57-04:00"
+      },
+      "provenanceLicense": "Repository-authored or owner-provided project material; retain governing source/license record where applicable.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": true,
+        "ciBuildTooling": true,
+        "documentationEvidence": false
+      },
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "protectedStatus": "NONE",
+      "primaryClass": "TEST_CURRENT",
+      "proposedDisposition": "KEEP_TEST",
+      "confidence": "HIGH",
       "blocker": null,
       "expectedBenefit": "Retention preserves current runtime, rollback, verification, evidence, source, or documentation coverage."
     },
@@ -185753,5 +186013,63 @@
     "P23A-D001",
     "P23A-B001",
     "P23A-B002"
-  ]
+  ],
+  "prompt23ADelta": {
+    "startingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
+    "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+    "changedPaths": [
+      "config/runtime/canonical-runtime-manifest.json",
+      "config/runtime/runtime-source-manifest.json",
+      "docs/architecture/deterministic-runtime-build-identity.md",
+      "next.config.mjs",
+      "scripts/release/accessibility-gate.cjs",
+      "scripts/release/release-evidence.cjs",
+      "scripts/release/release-lineage.cjs",
+      "scripts/runtime/runtime-source-identity.cjs",
+      "scripts/runtime/runtime-status.cjs",
+      "scripts/runtime/verify-runtime-contract.cjs",
+      "src/shared/contracts/canonical-runtime.ts",
+      "tests/build-foundation/accessibility-evidence.test.ts",
+      "tests/build-foundation/release-evidence-lineage.test.ts",
+      "tests/build-foundation/runtime-source-identity.test.ts",
+      "tests/e2e/runtime-cutover.spec.ts"
+    ],
+    "changedPathCount": 15,
+    "affectedBytesBefore": 57504,
+    "affectedBytesAfter": 89714,
+    "byteDelta": 32210,
+    "addedInventoryNodes": [
+      {
+        "path": "config/runtime/runtime-source-manifest.json",
+        "class": "RUNTIME_CONFIG",
+        "disposition": "KEEP_ACTIVE"
+      },
+      {
+        "path": "docs/architecture/deterministic-runtime-build-identity.md",
+        "class": "DOCUMENTATION_CURRENT",
+        "disposition": "KEEP_EVIDENCE"
+      },
+      {
+        "path": "scripts/runtime/runtime-source-identity.cjs",
+        "class": "BUILD_TOOLING_CURRENT",
+        "disposition": "KEEP_ACTIVE"
+      },
+      {
+        "path": "tests/build-foundation/accessibility-evidence.test.ts",
+        "class": "TEST_CURRENT",
+        "disposition": "KEEP_TEST"
+      },
+      {
+        "path": "tests/build-foundation/runtime-source-identity.test.ts",
+        "class": "TEST_CURRENT",
+        "disposition": "KEEP_TEST"
+      }
+    ],
+    "postScanReportArtifactsExcludedFromNodeCount": 16,
+    "archiveCandidatesAdded": 0,
+    "unknownClassificationsAdded": 0,
+    "candidateDecisionsChanged": 0,
+    "status": "COMPLETE",
+    "aggregateCountScope": "3,521 tracked inventory nodes plus 36 required workspace path records; five tracked nodes were added to the frozen 3,516-node base."
+  }
 }

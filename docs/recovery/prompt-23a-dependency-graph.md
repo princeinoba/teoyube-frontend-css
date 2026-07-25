@@ -52,3 +52,26 @@ The chain is active build tooling. It is retained and classified `REFACTOR_LATER
 Static rollback, protected visual source, immutable baselines, owner-approved baselines, owner references, legacy hash mappings, assets, and rollback tests are retained. `STATIC_ROLLBACK_ARCHIVE_ELIGIBLE: NO`.
 
 The JSON graph contains every parsed edge and candidate proof record. Unresolved strings remain conservative risk markers and cannot support archive or deletion.
+
+## Prompt 23A-D scoped delta
+
+Generated: 2026-07-25T18:36:30.044Z
+
+- Nodes: **3521**
+- Edges: **10726**
+- Added nodes: **5**
+- Added edges: **36**
+- Next-reachable: **1866**
+- Static rollback-reachable: **465**
+- Shared runtime: **432**
+- Test-reachable: **2012**
+- CI/build/tooling-reachable: **1805**
+- Documentation/evidence-reachable: **2229**
+- Unresolved string/path risk records: **undefined**
+
+The scoped scan considered only added dependency-bearing lines in the
+15 files changed from the authorized starting commit and
+deduplicated them against the frozen graph. It added only edges whose source
+and target are inventory nodes. Report-only artifacts outside the frozen node
+set were not backfilled. Candidate reachability did not change, and no runtime
+tooling file became an archive/delete candidate.

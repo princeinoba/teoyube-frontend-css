@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-07-25T18:30:00.000Z",
+  "branch": "recovery/visual-source-of-truth",
+  "authorizedStartingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
+  "historicalMismatch": {
+    "prompt22ProtectedExpectedBuildId": "I1g8n9KHFcruCq_ERB1C1",
+    "latestIndependentBuildId": "ScebDgB9WUecs9EA8cic3",
+    "runtimeVerify": "BLOCKED_BUILD_ID_MISMATCH"
+  },
+  "preFixCharacterization": {
+    "generateBuildIdPresent": false,
+    "cleanBuildOne": "tN95MP87UZng8-trvmg12",
+    "cleanBuildTwo": "pkxDK78kvksKZQH5CTaxl",
+    "equal": false,
+    "manifestChangedBetweenBuilds": false,
+    "cause": "Next default production build identity was random because next.config.mjs did not define generateBuildId.",
+    "protectedVerifier": "scripts/runtime/verify-runtime-contract.cjs"
+  },
+  "resolution": {
+    "supportedNextOption": "generateBuildId",
+    "identityManifest": "config/runtime/runtime-source-manifest.json",
+    "identityHelper": "scripts/runtime/runtime-source-identity.cjs",
+    "algorithm": "sha256 over normalized, ordered, versioned runtime-source records",
+    "generatorVersion": "teoyube-runtime-source-digest-2026-07-25.1",
+    "runtimeSourceCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+    "runtimeSourceDigest": "466f4dec9876dbb7d8c6dfd364079014168b5df92fe7e581c36dffbc62d24305",
+    "deterministicBuildId": "teoyube-466f4dec9876dbb7d8c6dfd3",
+    "postFixCleanBuildOne": "teoyube-466f4dec9876dbb7d8c6dfd3",
+    "postFixCleanBuildTwo": "teoyube-466f4dec9876dbb7d8c6dfd3",
+    "reportOnlyInvalidates": false,
+    "runtimeSourceInvalidates": true,
+    "unknownPathFailsClosed": true,
+    "arbitraryOverrideFailsClosed": true
+  },
+  "preservedEvidenceSha256": {
+    "docs/recovery/prompt-22-runtime-cutover-report.md": "f0c64f6af85bae45094125236550593a48a37cf0e27ae32e6e31e261044968a8",
+    "config/runtime/canonical-runtime-manifest.json.before": "310ccb47da4ab52b8fb94154f5132d46dd25a1378446b023c554bdd2c05ba3b0",
+    "docs/recovery/prompt-23a-release-lineage-diagnosis.json": "c4834494b7f89d212928694a83ffcbfd01cc091d353822a314a5a76754e2231d",
+    "docs/recovery/prompt-23a-release-lineage-diagnosis.md": "7c6ba9daf8aba435187e0bcc19b563173dbb9fa6ac7924929bb9384234e0105a",
+    "docs/recovery/prompt-23a-i-inventory-under-security-blocker-report.json": "5fe1c5282a28846aded29c06fe4214333b6c8a3b1f6e9b13c66db4871ca0340c",
+    "docs/recovery/prompt-23a-i-inventory-under-security-blocker-report.md": "d3681462011c8f54fb3ceda2e826c007803a5cab2dffb41df3d30899e5474ab4",
+    "docs/recovery/prompt-23a-complete-inventory.json": "deca068b1001841970fc480193fe421d7d13e00a6acd1eeed671863306b25da6",
+    "docs/recovery/prompt-23a-complete-inventory.md": "383a6298bfdf182abb5cd5537a612dfedce3c4f2740b23bd3aded88963dbbc52",
+    "docs/recovery/prompt-23a-dependency-graph.json": "95fd59e9e4d720c40b3a3a36dbec3577c0f300ecc9e273bbb4635a3a3b7688a9",
+    "docs/recovery/prompt-23a-dependency-graph.md": "3dbec8cf16ab9d298c38c56506722d0ab7e1fd368dfc5a06155e2aa6dac33eae",
+    "docs/recovery/prompt-23a-owner-approval-package.json": "4c23d012de4755b5b7065404f710362888ea993e0da265a06f53a1eb7a8a26ad",
+    "docs/recovery/prompt-23a-owner-approval-package.md": "8bbba06b87615c53bc4a55367681575d8b88f3b18cd4a8c70d447deecfcdb71a"
+  },
+  "missingHistoricalPattern": {
+    "path": "docs/recovery/prompt-23a-release-lineage-repair-report.*",
+    "status": "ABSENT_AT_AUTHORIZED_START"
+  },
+  "securityStatus": {
+    "fullAuditCritical": 0,
+    "fullAuditHigh": 9,
+    "productionCriticalHigh": 0,
+    "gateCPreview": "BLOCKED_SECURITY_ADVISORY",
+    "gateCProduction": "CLOSED"
+  },
+  "protection": {
+    "dependenciesChanged": 0,
+    "lockfileChanged": 0,
+    "protectedVisualFilesChanged": 0,
+    "baselinesChanged": 0,
+    "staticRollbackFilesChanged": 0,
+    "paidProviderCalls": 0
+  }
+}

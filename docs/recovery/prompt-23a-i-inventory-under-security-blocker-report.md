@@ -163,3 +163,38 @@ git revert --no-edit 6bccbba694ae9b0f975884e182a0ad3f92cd7619..HEAD
 Owner approval is required for every future archive, deletion, or cleanup
 action. Prompt 23B remains ineligible until stabilization, Gate C-Preview,
 security, hash, runtime, and candidate-level approval prerequisites all pass.
+
+## Prompt 23A-D authoritative closeout
+
+Generated: 2026-07-25T18:36:30.044Z
+
+This section supersedes the earlier Prompt 23A-I build-ID blocker result while
+preserving its historical diagnosis.
+
+- Prompt 23A-D: **PASS**
+- Runtime build identity: **PASS**
+- Deterministic build ID: `teoyube-466f4dec9876dbb7d8c6dfd3`
+- Runtime source digest:
+  `466f4dec9876dbb7d8c6dfd364079014168b5df92fe7e581c36dffbc62d24305`
+- Canonical runtime: **Next**
+- Static rollback: **RETAINED**
+- Runtime contract: **PASS**
+- Three-run gate: **PASS â€” 216/216 cells**
+- Visual/DOM/class/asset/functional parity: **PASS**
+- Accessibility/focus parity: **PASS** with inherited debt still reported
+- Non-destructive inventory: **COMPLETE â€” 3521 nodes, 10726 edges**
+- Candidate decisions: **5 PENDING**
+- Release/deployment: `BLOCKED_SECURITY_ADVISORY`
+- Gate C-Production: `CLOSED`
+- Prompt 23B authorized: **NO**
+- Prompt 24 authorized: **NO**
+
+The full dependency evidence remains 0 critical and 9 high; production-only
+evidence remains 0 critical/high. Direct audit submission was denied by the
+tool security reviewer, so the current lock-bound local artifact was reused
+without bypass. Dependencies and lockfile changed: **0**.
+
+No protected visual source, immutable baseline, owner-approved baseline,
+static rollback file, stylesheet, asset, layout, or visible copy changed.
+No file was moved, deleted, renamed, or archived, and no paid provider call
+was made.

@@ -134,3 +134,32 @@ No candidate action is executable. Stabilization, Gate C-Preview, security, hash
 The graph uses parsed imports, re-exports, dynamic imports, CommonJS requires, file-system reads, JSON/repository path strings, CSS URLs, HTML references, public URLs, API routes, package scripts, and runtime/visual/owner/release manifests. Framework discovery seeds every Next page/API route. Static rollback policy seeds the protected HTML/CSS/JS/assets and rollback launcher. Test, CI/build, and documentation/evidence roots are separately traversed.
 
 An unresolved string is treated as risk, never as proof of dead code. Names such as `phase`, `legacy`, `old`, or `temporary` do not establish candidacy.
+
+## Prompt 23A-D scoped delta
+
+Generated: 2026-07-25T18:36:30.044Z
+
+Gate-execution source commit: `db4747d2fd653b3bc531d0a52d061f82339ca8bf`
+
+- Base inventory nodes: **3,516**
+- Added classified runtime/release-tooling nodes: **5**
+- Current inventory nodes: **3521**
+- Dependency edges after scoped recomputation: **10726**
+- Added parsed edges: **36**
+- Runtime build identity: **PASS**
+- Non-destructive inventory: **COMPLETE**
+- Release/deployment: `BLOCKED_SECURITY_ADVISORY`
+- Archive/delete execution: **NOT AUTHORIZED**
+- New candidates: **0**
+- Unknown classifications: **0**
+- Owner decisions changed: **0**
+
+Added classes are one `RUNTIME_CONFIG`, one `BUILD_TOOLING_CURRENT`, one
+`DOCUMENTATION_CURRENT`, and two `TEST_CURRENT` records. The accessibility
+test verifies release-evidence accounting only; it does not change approved
+markup or accessibility baselines. Sixteen post-scan report artifacts remain
+outside the frozen inventory node set, and later Prompt 23A-D report artifacts
+are likewise evidence outputs rather than rescanned source nodes.
+
+The five original candidates are unchanged and every decision remains
+`PENDING`. No file was moved, renamed, archived, or deleted.

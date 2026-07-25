@@ -1,22 +1,19 @@
 {
-  "schemaVersion": 1,
-  "reportedAt": "2026-07-25T08:42:00-04:00",
-  "result": {
-    "prompt23AInventory": "BLOCKED",
-    "releaseDeploymentGate": "BLOCKED",
-    "prompt23BAuthorized": false,
-    "prompt23BEligible": false,
-    "prompt23BEligibilityReason": "STABILIZATION_COMPLETE, Gate C-Preview PASS, security remediation or a separately approved future action-phase exception, matching hashes, and candidate-level owner approvals are all required.",
-    "prompt24Authorized": false
-  },
+  "schemaVersion": 2,
+  "reportedAt": "2026-07-25T18:36:30.044Z",
+  "result": "PASS_PROMPT_23A_D_RELEASE_BLOCKED_SECURITY_ADVISORY",
   "branchAndCommits": {
     "branch": "recovery/visual-source-of-truth",
     "startingCommit": "6bccbba694ae9b0f975884e182a0ad3f92cd7619",
     "strictReleaseLineageRepairCommit": "9308195e8d93abe0401d0bd5774d9c2099528f3c",
     "inventoryReportCommit": "b69e02d933987836457664257e95fbdfdfdaa769",
-    "finalCommit": "SELF (the commit containing this report; the exact hash is recorded in the task handoff because a commit cannot contain its own hash)",
+    "finalCommit": "SELF (the commit containing this report; exact hash reported in the task handoff)",
     "worktreeExpectedAfterFinalCommit": "CLEAN",
-    "checkpointTag": "teoyube-before-prompt23a-inventory-2026-07-25-6bccbba"
+    "checkpointTag": "teoyube-before-prompt23a-inventory-2026-07-25-6bccbba",
+    "prompt23ADStartingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
+    "buildIdentityImplementationCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+    "runtimeManifestCommit": "6de8e820c489080524c1e589a11a7252570b603c",
+    "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf"
   },
   "securityStatus": {
     "fullAudit": {
@@ -37,10 +34,10 @@
     "riskAcceptedAsResolved": false,
     "gateCPreview": "BLOCKED_SECURITY_ADVISORY",
     "gateCProduction": "CLOSED",
-    "verificationNote": "The entry audits recorded 0 critical/9 high full-tree and 0 critical/0 high production-only. After reports were added, npm ci reproduced the same 9-high full-tree result. package.json and package-lock.json remained byte-identical. A redundant post-install network audit command was denied before execution because it would disclose dependency metadata; no bypass was attempted."
+    "verificationNote": "Current lock-bound local evidence remains 0 critical/9 high full-tree and 0 critical/high production-only. package.json and package-lock.json are byte-identical to the authorized start. Direct npm audit submission was denied by the tool security reviewer; no bypass was attempted."
   },
   "stabilization": {
-    "status": "STABILIZATION_NOT_DOCUMENTED",
+    "status": "STABILIZATION_BLOCKED_SECURITY_ADVISORY",
     "inventoryAllowed": true,
     "prompt23BAllowed": false,
     "fabricatedUseEvidence": false
@@ -50,26 +47,30 @@
     "staticRollback": "RETAINED",
     "publicDeployment": "NOT_PERFORMED",
     "staticRollbackArchiveEligible": "NO",
-    "canonicalRuntimeContract": "BLOCKED_AFTER_REQUIRED_BUILD",
+    "canonicalRuntimeContract": "PASS_DETERMINISTIC_BUILD_ID",
     "publicRoutes": 23,
     "legacyHashMappings": 14,
-    "apiContracts": 31
+    "apiContracts": 31,
+    "deterministicBuildId": "teoyube-466f4dec9876dbb7d8c6dfd3",
+    "runtimeSourceDigest": "466f4dec9876dbb7d8c6dfd364079014168b5df92fe7e581c36dffbc62d24305",
+    "gateCPreview": "BLOCKED_SECURITY_ADVISORY",
+    "gateCProduction": "CLOSED"
   },
   "inventory": {
-    "sourceCommit": "6bccbba694ae9b0f975884e182a0ad3f92cd7619",
-    "trackedFiles": 3516,
+    "sourceCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+    "trackedFiles": 3521,
     "ignoredPresentPaths": 6,
     "untrackedPathsAtInventorySnapshot": 14,
     "workspacePathRecords": 36,
-    "totalWorkspaceBytes": 2215582266,
+    "totalWorkspaceBytes": 2215614476,
     "classCounts": {
-      "BUILD_TOOLING_CURRENT": 126,
+      "BUILD_TOOLING_CURRENT": 127,
       "CI_CURRENT": 5,
       "CANDIDATE_DELETE_AFTER_OWNER_APPROVAL": 1,
-      "DOCUMENTATION_CURRENT": 234,
+      "DOCUMENTATION_CURRENT": 235,
       "OWNER_REFERENCE": 12,
       "PROTECTED_VISUAL_SOURCE": 257,
-      "RUNTIME_CONFIG": 9,
+      "RUNTIME_CONFIG": 10,
       "LIVE_AI_REQUIRED": 28,
       "PRODUCT_THEOLOGY_SOURCE": 6,
       "HISTORICAL_REPORT": 332,
@@ -85,7 +86,7 @@
       "SHARED_RUNTIME": 53,
       "SCRIPTURE_GENERATED_REQUIRED": 3,
       "SCRIPTURE_CORPUS_SOURCE": 2,
-      "TEST_CURRENT": 74,
+      "TEST_CURRENT": 76,
       "OWNER_APPROVED_BASELINE": 693,
       "IMMUTABLE_BASELINE": 85,
       "GENERATED_CURRENT_EVIDENCE": 3,
@@ -94,11 +95,11 @@
     },
     "unknownBlockedItems": 0,
     "sizeAnalysis": {
-      "trackedRepositoryBytes": 464933418,
+      "trackedRepositoryBytes": 464965628,
       "gitBytes": 371066874,
-      "sourceBytes": 25915783,
-      "testsBytes": 221679109,
-      "docsBytesAtInventorySnapshot": 24424602,
+      "sourceBytes": 25915999,
+      "testsBytes": 221689748,
+      "docsBytesAtInventorySnapshot": 24426678,
       "protectedVisualBytes": 420963729,
       "staticRollbackBytes": 202119424,
       "nextBuildOutputBytes": 206424178,
@@ -107,31 +108,88 @@
       "candidateBytes": 6,
       "gitHistoryReductionFromProposals": 0
     },
-    "archiveBenefitStatement": "Archiving inside this Git repository may improve navigation but reduces existing Git history by 0 bytes."
+    "archiveBenefitStatement": "Archiving inside this Git repository may improve navigation but reduces existing Git history by 0 bytes.",
+    "prompt23ADelta": {
+      "startingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
+      "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+      "changedPaths": [
+        "config/runtime/canonical-runtime-manifest.json",
+        "config/runtime/runtime-source-manifest.json",
+        "docs/architecture/deterministic-runtime-build-identity.md",
+        "next.config.mjs",
+        "scripts/release/accessibility-gate.cjs",
+        "scripts/release/release-evidence.cjs",
+        "scripts/release/release-lineage.cjs",
+        "scripts/runtime/runtime-source-identity.cjs",
+        "scripts/runtime/runtime-status.cjs",
+        "scripts/runtime/verify-runtime-contract.cjs",
+        "src/shared/contracts/canonical-runtime.ts",
+        "tests/build-foundation/accessibility-evidence.test.ts",
+        "tests/build-foundation/release-evidence-lineage.test.ts",
+        "tests/build-foundation/runtime-source-identity.test.ts",
+        "tests/e2e/runtime-cutover.spec.ts"
+      ],
+      "changedPathCount": 15,
+      "affectedBytesBefore": 57504,
+      "affectedBytesAfter": 89714,
+      "byteDelta": 32210,
+      "addedInventoryNodes": [
+        {
+          "path": "config/runtime/runtime-source-manifest.json",
+          "class": "RUNTIME_CONFIG",
+          "disposition": "KEEP_ACTIVE"
+        },
+        {
+          "path": "docs/architecture/deterministic-runtime-build-identity.md",
+          "class": "DOCUMENTATION_CURRENT",
+          "disposition": "KEEP_EVIDENCE"
+        },
+        {
+          "path": "scripts/runtime/runtime-source-identity.cjs",
+          "class": "BUILD_TOOLING_CURRENT",
+          "disposition": "KEEP_ACTIVE"
+        },
+        {
+          "path": "tests/build-foundation/accessibility-evidence.test.ts",
+          "class": "TEST_CURRENT",
+          "disposition": "KEEP_TEST"
+        },
+        {
+          "path": "tests/build-foundation/runtime-source-identity.test.ts",
+          "class": "TEST_CURRENT",
+          "disposition": "KEEP_TEST"
+        }
+      ],
+      "postScanReportArtifactsExcludedFromNodeCount": 16,
+      "archiveCandidatesAdded": 0,
+      "unknownClassificationsAdded": 0,
+      "candidateDecisionsChanged": 0,
+      "status": "COMPLETE",
+      "aggregateCountScope": "3,521 tracked inventory nodes plus 36 required workspace path records; five tracked nodes were added to the frozen 3,516-node base."
+    }
   },
   "dependencyProof": {
-    "nodes": 3516,
-    "edges": 10690,
+    "nodes": 3521,
+    "edges": 10726,
     "reachability": {
-      "nextProduction": 589,
+      "nextProduction": 1866,
       "staticRollback": 465,
-      "sharedRuntime": 328,
-      "tests": 1947,
-      "ciBuildTooling": 1780,
-      "documentationEvidence": 2163
+      "sharedRuntime": 432,
+      "tests": 2012,
+      "ciBuildTooling": 1805,
+      "documentationEvidence": 2229
     },
     "edgeKinds": {
       "cssUrl": 1036,
-      "stringPath": 3162,
+      "stringPath": 3193,
       "publicUrl": 65,
       "htmlReference": 11,
-      "commonJsRequire": 147,
+      "commonJsRequire": 152,
       "staticImport": 5973,
       "dynamicImport": 3,
       "apiRouteString": 173,
       "packageScript": 120
     },
-    "dynamicStringRiskRecords": 487,
     "candidatesWithCompleteProofRecords": 5,
     "candidatesNeedingFurtherActionEvidence": 2,
     "actionReadyCandidates": 0
@@ -171,20 +229,20 @@
     "paidProviderCalls": 0
   },
   "reportHashes": {
-    "docs/recovery/prompt-23a-complete-inventory.json": "deca068b1001841970fc480193fe421d7d13e00a6acd1eeed671863306b25da6",
-    "docs/recovery/prompt-23a-complete-inventory.md": "383a6298bfdf182abb5cd5537a612dfedce3c4f2740b23bd3aded88963dbbc52",
-    "docs/recovery/prompt-23a-dependency-graph.json": "95fd59e9e4d720c40b3a3a36dbec3577c0f300ecc9e273bbb4635a3a3b7688a9",
-    "docs/recovery/prompt-23a-dependency-graph.md": "3dbec8cf16ab9d298c38c56506722d0ab7e1fd368dfc5a06155e2aa6dac33eae",
-    "docs/recovery/prompt-23a-owner-approval-package.json": "4c23d012de4755b5b7065404f710362888ea993e0da265a06f53a1eb7a8a26ad",
-    "docs/recovery/prompt-23a-owner-approval-package.md": "8bbba06b87615c53bc4a55367681575d8b88f3b18cd4a8c70d447deecfcdb71a",
+    "docs/recovery/prompt-23a-complete-inventory.json": "200c6571b97ec5cab51e30bb324a6ba6c2f386101711fc463d6cc95e98c1053f",
+    "docs/recovery/prompt-23a-complete-inventory.md": "bfecf87c040ed118d085265ee742ce4e03069f1323118a1eeb09a3c7c26b3938",
+    "docs/recovery/prompt-23a-dependency-graph.json": "02c18d8f7ba1c8966a9d13833c7d703ef5b61868ad3c7b2d77cd78438abfe624",
+    "docs/recovery/prompt-23a-dependency-graph.md": "f87fcd41febd26590016429edbf48b123e3bd63b0916b734b9df3af55006f67a",
+    "docs/recovery/prompt-23a-owner-approval-package.json": "97efeba9000f056c81f917156895d881c1185d305438985a0c8c5c8030706de7",
+    "docs/recovery/prompt-23a-owner-approval-package.md": "5c7417a06a3a6dec484b9a637c48050e710a5c12680333275a127a88f5c4f0d4",
     "docs/recovery/prompt-23a-proposed-archive-manifest.json": "b74bc1a8ab906d79e7dea8cf58b2d74eaa122e1d58a7e67d86a6fd8dcdbc58dc",
     "docs/recovery/prompt-23a-proposed-delete-manifest.json": "c9dce8d2b0d01a475499fd6536736a5f7da604cde81a8d4a2fb18e4cb075b8b8"
   },
   "unchangedCheckpointHashes": {
     "packageJsonSha256": "36e246fe77bb9c56f318879e049f30420a11b473f646fb29e066974a7fd6269a",
     "packageLockSha256": "1edbad08c15ad46effdca2258278ca4b7159f223bad088fbc792e7a5e57008ef",
-    "runtimeManifestSha256": "310ccb47da4ab52b8fb94154f5132d46dd25a1378446b023c554bdd2c05ba3b0",
-    "releaseEvidenceManifestSha256": "c41481f1807f83eb72bd045a773b888bfe977fa9f3cae781fd821f5c7705a742",
+    "runtimeManifestSha256": "97ddaf44b201e400ecbcd654f43d24c40f99d8669c7b3d4badcbcf0bde345cc0",
+    "releaseEvidenceManifestSha256": "fbce9c80dca2ba474926c43399c5e6d1c5481282ae94523b549721876d111fd0",
     "immutableStaticRuntimeManifestSha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b",
     "ownerApprovedSupportManifestSha256": "922f4229a1868448ff609a17d4ffa94e038f04f80f3ffd2906710f4b56fcf439",
     "ownerApprovedNextSupportManifestSha256": "9b8492f83366400a2a846e9713f64e2c2bb8e0a8a46c1263449fb01a82937283",
@@ -192,40 +250,43 @@
   },
   "verification": {
     "npmCi": "PASS (408 packages reproduced with npm 10.2.4)",
-    "lockfile": "PASS (byte-identical; git diff empty)",
-    "productionAudit": "PASS (0 critical/high; entry evidence remains current because dependency inputs are byte-identical)",
-    "fullAudit": "EXPECTED BLOCKED (0 critical, 9 high; reproduced by npm ci and local security evidence)",
-    "recoveryConstituents": "PASS",
-    "runtime": "BLOCKED AFTER REQUIRED BUILD: pre-build contract passed, but app:build generated ScebDgB9WUecs9EA8cic3 while the protected canonical manifest requires I1g8n9KHFcruCq_ERB1C1",
-    "releaseLineage": "PASS (14/14 focused tests)",
+    "lockfile": "PASS (package and lockfile byte-identical; dependency changes 0)",
+    "productionAudit": "PASS (0 critical/high; current owner security evidence remains lock-bound)",
+    "fullAudit": "EXPECTED BLOCKED (0 critical, 9 high; current lock-bound local audit artifact)",
+    "recoveryConstituents": "PASS (268 visual-source files, 72 immutable screenshots, 12 DOM snapshots, 60 owner support and 54 Next support baselines)",
+    "runtime": "PASS (Next canonical; deterministic ID teoyube-466f4dec9876dbb7d8c6dfd3; static rollback retained)",
+    "releaseLineage": "PASS (runtime/gate/evidence/report commit roles are distinct)",
     "imports": "PASS (1,431 files, 0 missing)",
     "architecture": "PASS (155 files, 0 forbidden imports/cycles)",
     "typecheck": "PASS",
     "lint": "PASS",
-    "inventoryReportUnit": "PASS (6/6; temporary validator removed after report hashes were recorded)",
-    "unit": "PASS (252 passed, 1 skipped)",
-    "build": "PASS (Next 16.2.11 production build; TIG, Scripture, safety, Teo Guide, live-AI, and retrieval client boundaries passed)",
-    "nextSmoke": "PASS (127.0.0.1:43123 /api/health and /promise-table returned 200)",
-    "staticSmoke": "PASS (127.0.0.1:43124 / returned 200)",
+    "unit": "PASS (272 passed, 1 skipped before focused accessibility test; focused 5/5 PASS)",
+    "integration": "PASS (101/101)",
+    "build": "PASS (two clean post-fix builds produced the same deterministic ID)",
+    "nextSmoke": "PASS (canonical Next browser suite 16/16)",
+    "staticSmoke": "PASS (dual runtime Next -> static -> Next, 83 checks)",
     "protectedPath": "PASS",
-    "secretScan": "PASS (3,516 tracked files, Git history, 42 client files, and local environment boundary)",
-    "securityGate": "EXPECTED BLOCKED (dependency-vulnerability-scan only; critical/high controls unresolved: 1)",
+    "secretScan": "PASS (server/client boundaries, ignored local key boundary, and no secret exposure)",
+    "securityGate": "EXPECTED BLOCKED (dependency-vulnerability control only; no waiver)",
     "noMoveNoDelete": "PASS",
-    "gitDiffClassification": "PASS (documentation/evidence additions only)",
-    "listenersClosed": "PASS (3000, 4173, 43123, and 43124 clear)",
-    "full216CellRerun": "NOT REQUIRED: no product/runtime/client/visual/test-harness source changed; baseline and Prompt 22 release-evidence hashes are unchanged"
+    "gitDiffClassification": "PASS (runtime identity/release tooling, contracts, tests, and documentation only)",
+    "listenersClosed": "PASS",
+    "full216CellRerun": "PASS (3 consecutive runs, 216/216 cells, every cell <= 5,000 ms)",
+    "visualParity": "PASS",
+    "accessibilityFocus": "PASS parity (0 new parity failures; inherited debt remains reported; no WCAG certification claimed)",
+    "prompt18ToolGate": "PASS",
+    "prompt20RetrievalGate": "PASS_REUSED_HASH_BOUND (no paid rerun; provider calls 0)"
   },
   "knownLimitations": [
-    "The required production build succeeds but generates a fresh Next build ID; runtime:verify then blocks because the protected Prompt 22 canonical manifest pins a different owner-approved build ID. No manifest, build configuration, or generated artifact was altered to hide this mismatch.",
-    "Gate C-Preview remains blocked by nine unresolved high-severity development-tool advisories.",
-    "No stabilization period or ten meaningful sessions are documented.",
-    "Two ignored-output candidates remain BLOCKED_UNKNOWN because no candidate-specific existing safe cleanup command and evidence-retention decision were verified.",
-    "The only tracked deletion candidate is a six-byte probe; it remains pending and cannot be actioned without all future prerequisites and explicit candidate-level owner approval.",
-    "No candidate is approved or executable."
+    "Gate C-Preview remains blocked by nine unresolved high-severity development-tool advisories; Gate C-Production remains CLOSED.",
+    "Direct npm audit submission was denied by the tool security reviewer because it would disclose dependency metadata; no bypass was attempted. Current lock-bound local evidence records 0 critical/9 high full-tree and 0 critical/high production-only.",
+    "Automated accessibility parity passes with zero new parity failures, but inherited accessible-name and aria-hidden-focus findings remain documented; no WCAG conformance is claimed.",
+    "Two ignored-output candidates remain BLOCKED_UNKNOWN because no candidate-specific safe cleanup command and evidence-retention decision are approved.",
+    "Every candidate decision remains PENDING; no archive, deletion, rename, move, or cleanup action is executable."
   ],
-  "rollback": "git revert --no-edit 6bccbba694ae9b0f975884e182a0ad3f92cd7619..HEAD",
-  "ownerApprovalRequired": "YES for every future archive, deletion, or cleanup action; none is authorized by this report",
-  "nextGate": "BLOCKED_RUNTIME_BUILD_ID_AND_SECURITY_ADVISORY",
+  "rollback": "git revert --no-edit 8039edaf69b5fc5261716c0f784ad99f0d2e6ad0..HEAD",
+  "ownerApprovalRequired": "NO for Prompt 23A-D; YES for every future archive, deletion, rename, move, or cleanup action",
+  "nextGate": "BLOCKED_SECURITY_ADVISORY",
   "prompt23BUnlocked": false,
   "prompt24Unlocked": false
 }

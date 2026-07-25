@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "reportedAt": "2026-07-25T18:30:00.000Z",
+  "result": {
+    "prompt23AD": "PASS",
+    "runtimeBuildIdentity": "PASS",
+    "nonDestructiveInventory": "COMPLETE",
+    "releaseDeployment": "BLOCKED_SECURITY_ADVISORY",
+    "prompt23BAuthorized": false,
+    "prompt24Authorized": false
+  },
+  "branchAndCommits": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
+    "buildIdentityImplementationCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+    "runtimeManifestCommit": "6de8e820c489080524c1e589a11a7252570b603c",
+    "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+    "finalReportCommit": "SELF (commit containing this report)"
+  },
+  "buildIdentityBefore": {
+    "prompt22Expected": "I1g8n9KHFcruCq_ERB1C1",
+    "latestRandomRebuild": "ScebDgB9WUecs9EA8cic3",
+    "cleanPreFixBuilds": [
+      "tN95MP87UZng8-trvmg12",
+      "pkxDK78kvksKZQH5CTaxl"
+    ],
+    "generateBuildIdPresent": false
+  },
+  "deterministicIdentity": {
+    "runtimeSourceCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
+    "runtimeSourceDigest": "466f4dec9876dbb7d8c6dfd364079014168b5df92fe7e581c36dffbc62d24305",
+    "algorithmVersion": "sha256 / teoyube-runtime-source-digest-2026-07-25.1",
+    "buildIdFormat": "teoyube-<first 24 lowercase hex digest characters>",
+    "buildId": "teoyube-466f4dec9876dbb7d8c6dfd3",
+    "cleanPostFixBuilds": [
+      "teoyube-466f4dec9876dbb7d8c6dfd3",
+      "teoyube-466f4dec9876dbb7d8c6dfd3"
+    ],
+    "reportOnlyAffectsId": false,
+    "runtimeSourceAffectsId": true,
+    "unknownPathFailsClosed": true
+  },
+  "runtime": {
+    "canonical": "Next",
+    "staticRollback": "RETAINED",
+    "runtimeVerify": "PASS",
+    "runtimeStatus": "PASS",
+    "nextSmoke": "PASS",
+    "staticSmoke": "PASS",
+    "dualRuntimeChecks": 83,
+    "listenersClosed": true,
+    "publicDeployment": "NOT_PERFORMED"
+  },
+  "security": {
+    "fullAuditCritical": 0,
+    "fullAuditHigh": 9,
+    "productionCriticalHigh": 0,
+    "dependencyChanges": 0,
+    "lockfileChanges": 0,
+    "gateCPreview": "BLOCKED_SECURITY_ADVISORY",
+    "gateCProduction": "CLOSED",
+    "directAuditRerun": "DENIED_BY_TOOL_SECURITY_REVIEWER_NO_BYPASS",
+    "evidence": "current lock-bound local audit artifact and owner production report"
+  },
+  "regressions": {
+    "npmCi": "PASS (408 packages)",
+    "lockfile": "PASS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "unit": "PASS (272 passed, 1 skipped; focused accessibility 5/5)",
+    "integration": "PASS (101/101)",
+    "build": "PASS",
+    "imports": "PASS (1,431 files, 0 missing)",
+    "architecture": "PASS (155 files, no forbidden imports/cycles)",
+    "bundles": "PASS (42 client files; server-only boundaries intact)",
+    "webCorpus": "PASS (66 books, 1,189 chapters, 31,103 markers)",
+    "tig": "PASS",
+    "prompt17GateA": "PASS (64/64)",
+    "prompt18ToolGate": "PASS",
+    "prompt20RetrievalGate": "PASS_REUSED_HASH_BOUND",
+    "secretScan": "PASS",
+    "routesAssetsMedia": "PASS",
+    "visual": "PASS",
+    "accessibilityFocus": "PASS_PARITY_WITH_INHERITED_DEBT_REPORTED",
+    "performance216Cells": "PASS"
+  },
+  "performance": {
+    "completedCells": 216,
+    "thresholdMs": 5000,
+    "maximumReadyMsByRun": [
+      3326.8,
+      3316.3,
+      3140.7
+    ],
+    "visual": "PASS",
+    "domClass": "PASS",
+    "asset": "PASS",
+    "functional": "PASS",
+    "baselineWrites": 0
+  },
+  "inventory": {
+    "records": 3521,
+    "dependencyEdges": 10726,
+    "candidateRecords": 5,
+    "decisionsPending": 5,
+    "status": "COMPLETE",
+    "runtimeToolingClassifications": {
+      "RUNTIME_CONFIG": 1,
+      "BUILD_TOOLING_CURRENT": 1,
+      "DOCUMENTATION_CURRENT": 1,
+      "TEST_CURRENT": 2
+    },
+    "unknownClassifications": 0,
+    "archiveDeleteExecution": "NOT_AUTHORIZED"
+  },
+  "protection": {
+    "filesMovedDeletedRenamedArchived": 0,
+    "protectedVisualFilesChanged": 0,
+    "baselinesChanged": 0,
+    "staticRollbackFilesChanged": 0,
+    "paidProviderCalls": 0,
+    "staticRollbackArchiveEligible": false
+  },
+  "artifactHashes": {
+    "inventoryJson": "200c6571b97ec5cab51e30bb324a6ba6c2f386101711fc463d6cc95e98c1053f",
+    "inventoryMarkdown": "bfecf87c040ed118d085265ee742ce4e03069f1323118a1eeb09a3c7c26b3938",
+    "graphJson": "02c18d8f7ba1c8966a9d13833c7d703ef5b61868ad3c7b2d77cd78438abfe624",
+    "graphMarkdown": "f87fcd41febd26590016429edbf48b123e3bd63b0916b734b9df3af55006f67a",
+    "approvalJson": "97efeba9000f056c81f917156895d881c1185d305438985a0c8c5c8030706de7",
+    "approvalMarkdown": "5c7417a06a3a6dec484b9a637c48050e710a5c12680333275a127a88f5c4f0d4"
+  },
+  "knownLimitations": [
+    "Nine high development-only dependency advisories remain unresolved; Gate C-Preview stays blocked.",
+    "Direct npm audit submission was denied by the tool security reviewer; no bypass was attempted.",
+    "Inherited accessibility debt remains reported and no WCAG conformance is claimed.",
+    "Every archive/delete/cleanup candidate decision remains PENDING."
+  ],
+  "rollback": "git revert --no-edit 8039edaf69b5fc5261716c0f784ad99f0d2e6ad0..HEAD",
+  "nextRequiredAction": "WAIT FOR A SAFE UPSTREAM DEPENDENCY REMEDIATION AND COMPLETE STABILIZATION"
+}

@@ -41,3 +41,19 @@ The manifests are non-executable unless all of the following are true:
 - a pre-action tag.
 
 No approval, move, rename, archive, deletion, cleanup, or dependency action occurs in Prompt 23A-I.
+
+## Prompt 23A-D status
+
+- Runtime build identity: **PASS**
+- Non-destructive inventory: **COMPLETE**
+- Release/deployment: `BLOCKED_SECURITY_ADVISORY`
+- Archive/delete execution: **NOT AUTHORIZED**
+- New candidates: **0**
+- Candidate decisions: **5 PENDING**
+- Blanket approval: **NO**
+- Prompt 23B authorized: **NO**
+- Prompt 24 authorized: **NO**
+
+The deterministic runtime identity tooling is retained as current runtime
+configuration, build tooling, documentation, and tests. It is not an archive
+or deletion candidate. All prior action prerequisites remain fail-closed.
