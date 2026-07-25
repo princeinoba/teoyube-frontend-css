@@ -1,0 +1,5394 @@
+[
+  {
+    "id": "1536x1024",
+    "screenshot": ".tmp/search-visual-review/static-candidate/search-static-after-1536x1024.png",
+    "messages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "pageerror",
+        "text": "Published media manifest returned 404."
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      }
+    ],
+    "viewport": {
+      "width": 1536,
+      "height": 1024
+    },
+    "scroll": {
+      "width": 1536,
+      "height": 1131
+    },
+    "horizontalOverflow": false,
+    "boxes": {
+      "shell": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1130.61,
+        "bottom": 1130.61,
+        "right": 1536
+      },
+      "sidebar": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024,
+        "bottom": 1028,
+        "right": 194
+      },
+      "main": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 1130.61,
+        "bottom": 1130.61,
+        "right": 1536
+      },
+      "header": {
+        "x": 210,
+        "y": 11.19,
+        "width": 1302,
+        "height": 53.59,
+        "bottom": 64.78,
+        "right": 1512
+      },
+      "root": {
+        "x": 210,
+        "y": 71.97,
+        "width": 1302,
+        "height": 1042.64,
+        "bottom": 1114.61,
+        "right": 1512
+      },
+      "hero": {
+        "x": 210,
+        "y": 71.97,
+        "width": 1302,
+        "height": 338.25,
+        "bottom": 410.22,
+        "right": 1512
+      },
+      "form": {
+        "x": 237.39,
+        "y": 210.67,
+        "width": 672,
+        "height": 55.58,
+        "bottom": 266.25,
+        "right": 909.39
+      },
+      "suggestions": {
+        "x": 237.39,
+        "y": 277.44,
+        "width": 672,
+        "height": 51.59,
+        "bottom": 329.03,
+        "right": 909.39
+      },
+      "quickPrompts": {
+        "x": 237.39,
+        "y": 329.03,
+        "width": 672,
+        "height": 64.19,
+        "bottom": 393.22,
+        "right": 909.39
+      },
+      "resultsShell": {
+        "x": 210,
+        "y": 418.22,
+        "width": 1302,
+        "height": 626.27,
+        "bottom": 1044.48,
+        "right": 1512
+      },
+      "toolbar": {
+        "x": 227,
+        "y": 434.41,
+        "width": 1268,
+        "height": 32,
+        "bottom": 466.41,
+        "right": 1495
+      },
+      "results": {
+        "x": 227,
+        "y": 477.59,
+        "width": 1268,
+        "height": 549.89,
+        "bottom": 1027.48,
+        "right": 1495
+      },
+      "benefits": {
+        "x": 210,
+        "y": 1052.48,
+        "width": 1302,
+        "height": 62.13,
+        "bottom": 1114.61,
+        "right": 1512
+      }
+    },
+    "cards": [
+      {
+        "x": 227,
+        "y": 477.59,
+        "width": 413.59,
+        "height": 549.89,
+        "bottom": 1027.48
+      },
+      {
+        "x": 654.19,
+        "y": 477.59,
+        "width": 413.61,
+        "height": 549.89,
+        "bottom": 1027.48
+      },
+      {
+        "x": 1081.39,
+        "y": 477.59,
+        "width": 413.59,
+        "height": 549.89,
+        "bottom": 1027.48
+      }
+    ],
+    "controlCount": 74,
+    "visibleControlCount": 74,
+    "hiddenControls": [],
+    "undersizedControls": [],
+    "controls": [
+      {
+        "index": 0,
+        "tag": "input",
+        "text": "",
+        "visible": true,
+        "x": 244,
+        "y": 217.3,
+        "w": 429.5,
+        "h": 42.4
+      },
+      {
+        "index": 1,
+        "tag": "select",
+        "text": "All Promise Scripture Life Problem Calling Prayer Teoyube Word Testimony",
+        "visible": true,
+        "x": 673.5,
+        "y": 217.3,
+        "w": 112,
+        "h": 42.4
+      },
+      {
+        "index": 2,
+        "tag": "button",
+        "text": "Search Promise",
+        "visible": true,
+        "x": 785.5,
+        "y": 217.3,
+        "w": 117.3,
+        "h": 42.4
+      },
+      {
+        "index": 3,
+        "tag": "button",
+        "text": "Romans 8:28-30",
+        "visible": true,
+        "x": 250.4,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 359,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 5,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 467.6,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 6,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 576.2,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 7,
+        "tag": "button",
+        "text": "calling clarity",
+        "visible": true,
+        "x": 684.8,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 8,
+        "tag": "button",
+        "text": "Clear",
+        "visible": true,
+        "x": 793.4,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 9,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 250.4,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 10,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 380.7,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 11,
+        "tag": "button",
+        "text": "I need peace",
+        "visible": true,
+        "x": 511,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 12,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 641.3,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 13,
+        "tag": "button",
+        "text": "I need strength",
+        "visible": true,
+        "x": 771.7,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 14,
+        "tag": "button",
+        "text": "I need identity",
+        "visible": true,
+        "x": 250.4,
+        "y": 362.6,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 15,
+        "tag": "button",
+        "text": "I need breakthrough",
+        "visible": true,
+        "x": 380.7,
+        "y": 362.6,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 16,
+        "tag": "button",
+        "text": "I need increase",
+        "visible": true,
+        "x": 511,
+        "y": 362.6,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 17,
+        "tag": "button",
+        "text": "▦",
+        "visible": true,
+        "x": 1292.8,
+        "y": 434.4,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 18,
+        "tag": "button",
+        "text": "☰",
+        "visible": true,
+        "x": 1332,
+        "y": 434.4,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 19,
+        "tag": "select",
+        "text": "Most Relevant Newest Calling Match Journey Level",
+        "visible": true,
+        "x": 1371.2,
+        "y": 434.4,
+        "w": 123.8,
+        "h": 32
+      },
+      {
+        "index": 20,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 602.8,
+        "y": 486.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 21,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 248.5,
+        "y": 740.4,
+        "w": 370.6,
+        "h": 24
+      },
+      {
+        "index": 22,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 248.5,
+        "y": 785.6,
+        "w": 370.6,
+        "h": 24
+      },
+      {
+        "index": 23,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 248.5,
+        "y": 1417.6,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 24,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 318.1,
+        "y": 1417.6,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 25,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 239.5,
+        "y": 893.3,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 26,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 239.5,
+        "y": 827.7,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 27,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 436.2,
+        "y": 827.7,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 28,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 436.2,
+        "y": 893.3,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 29,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 239.5,
+        "y": 860.5,
+        "w": 388.6,
+        "h": 28
+      },
+      {
+        "index": 30,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 239.5,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 31,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 337.8,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 32,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 436,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 33,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 534.3,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 34,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 239.5,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 35,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 337.8,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 36,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 436,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 37,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 239.5,
+        "y": 989.7,
+        "w": 192,
+        "h": 26.4
+      },
+      {
+        "index": 38,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 1030,
+        "y": 486.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 39,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 675.7,
+        "y": 725.5,
+        "w": 370.6,
+        "h": 24
+      },
+      {
+        "index": 40,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 675.7,
+        "y": 770.7,
+        "w": 370.6,
+        "h": 24
+      },
+      {
+        "index": 41,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 675.7,
+        "y": 1381.7,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 42,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 745.3,
+        "y": 1381.7,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 43,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 666.7,
+        "y": 893.3,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 44,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 666.7,
+        "y": 827.7,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 45,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 863.4,
+        "y": 827.7,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 46,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 863.4,
+        "y": 893.3,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 47,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 666.7,
+        "y": 860.5,
+        "w": 388.6,
+        "h": 28
+      },
+      {
+        "index": 48,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 666.7,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 49,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 765,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 50,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 863.2,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 51,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 961.5,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 52,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 666.7,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 53,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 765,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 54,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 863.2,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 55,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 666.7,
+        "y": 989.7,
+        "w": 192,
+        "h": 26.4
+      },
+      {
+        "index": 56,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 1457.2,
+        "y": 486.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 57,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 1102.9,
+        "y": 725.5,
+        "w": 370.6,
+        "h": 24
+      },
+      {
+        "index": 58,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 1102.9,
+        "y": 770.7,
+        "w": 370.6,
+        "h": 24
+      },
+      {
+        "index": 59,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 1102.9,
+        "y": 1381.7,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 60,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 1172.5,
+        "y": 1381.7,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 61,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 1093.9,
+        "y": 893.3,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 62,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 1093.9,
+        "y": 827.7,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 63,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 1290.6,
+        "y": 827.7,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 64,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 1290.6,
+        "y": 893.3,
+        "w": 191.9,
+        "h": 28
+      },
+      {
+        "index": 65,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 1093.9,
+        "y": 860.5,
+        "w": 388.6,
+        "h": 28
+      },
+      {
+        "index": 66,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 1093.9,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 67,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 1192.2,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 68,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 1290.4,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 69,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 1388.7,
+        "y": 928,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 70,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 1093.9,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 71,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 1192.2,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 72,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 1290.4,
+        "y": 958.8,
+        "w": 93.8,
+        "h": 26.4
+      },
+      {
+        "index": 73,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 1093.9,
+        "y": 989.7,
+        "w": 192,
+        "h": 26.4
+      }
+    ]
+  },
+  {
+    "id": "1440x900",
+    "screenshot": ".tmp/search-visual-review/static-candidate/search-static-after-1440x900.png",
+    "messages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "pageerror",
+        "text": "Published media manifest returned 404."
+      }
+    ],
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scroll": {
+      "width": 1440,
+      "height": 1137
+    },
+    "horizontalOverflow": false,
+    "boxes": {
+      "shell": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1136.94,
+        "bottom": 1136.94,
+        "right": 1440
+      },
+      "sidebar": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 900,
+        "bottom": 904,
+        "right": 194
+      },
+      "main": {
+        "x": 198,
+        "y": 0,
+        "width": 1242,
+        "height": 1136.94,
+        "bottom": 1136.94,
+        "right": 1440
+      },
+      "header": {
+        "x": 210,
+        "y": 11.19,
+        "width": 1206,
+        "height": 53.59,
+        "bottom": 64.78,
+        "right": 1416
+      },
+      "root": {
+        "x": 210,
+        "y": 71.97,
+        "width": 1206,
+        "height": 1048.97,
+        "bottom": 1120.94,
+        "right": 1416
+      },
+      "hero": {
+        "x": 210,
+        "y": 71.97,
+        "width": 1206,
+        "height": 338.25,
+        "bottom": 410.22,
+        "right": 1416
+      },
+      "form": {
+        "x": 237.39,
+        "y": 210.67,
+        "width": 672,
+        "height": 55.58,
+        "bottom": 266.25,
+        "right": 909.39
+      },
+      "suggestions": {
+        "x": 237.39,
+        "y": 277.44,
+        "width": 672,
+        "height": 51.59,
+        "bottom": 329.03,
+        "right": 909.39
+      },
+      "quickPrompts": {
+        "x": 237.39,
+        "y": 329.03,
+        "width": 672,
+        "height": 64.19,
+        "bottom": 393.22,
+        "right": 909.39
+      },
+      "resultsShell": {
+        "x": 210,
+        "y": 418.22,
+        "width": 1206,
+        "height": 626.27,
+        "bottom": 1044.48,
+        "right": 1416
+      },
+      "toolbar": {
+        "x": 227,
+        "y": 434.41,
+        "width": 1172,
+        "height": 32,
+        "bottom": 466.41,
+        "right": 1399
+      },
+      "results": {
+        "x": 227,
+        "y": 477.59,
+        "width": 1172,
+        "height": 549.89,
+        "bottom": 1027.48,
+        "right": 1399
+      },
+      "benefits": {
+        "x": 210,
+        "y": 1052.48,
+        "width": 1206,
+        "height": 68.45,
+        "bottom": 1120.94,
+        "right": 1416
+      }
+    },
+    "cards": [
+      {
+        "x": 227,
+        "y": 477.59,
+        "width": 381.59,
+        "height": 549.89,
+        "bottom": 1027.48
+      },
+      {
+        "x": 622.19,
+        "y": 477.59,
+        "width": 381.61,
+        "height": 549.89,
+        "bottom": 1027.48
+      },
+      {
+        "x": 1017.39,
+        "y": 477.59,
+        "width": 381.59,
+        "height": 549.89,
+        "bottom": 1027.48
+      }
+    ],
+    "controlCount": 74,
+    "visibleControlCount": 74,
+    "hiddenControls": [],
+    "undersizedControls": [],
+    "controls": [
+      {
+        "index": 0,
+        "tag": "input",
+        "text": "",
+        "visible": true,
+        "x": 244,
+        "y": 217.3,
+        "w": 429.5,
+        "h": 42.4
+      },
+      {
+        "index": 1,
+        "tag": "select",
+        "text": "All Promise Scripture Life Problem Calling Prayer Teoyube Word Testimony",
+        "visible": true,
+        "x": 673.5,
+        "y": 217.3,
+        "w": 112,
+        "h": 42.4
+      },
+      {
+        "index": 2,
+        "tag": "button",
+        "text": "Search Promise",
+        "visible": true,
+        "x": 785.5,
+        "y": 217.3,
+        "w": 117.3,
+        "h": 42.4
+      },
+      {
+        "index": 3,
+        "tag": "button",
+        "text": "Romans 8:28-30",
+        "visible": true,
+        "x": 250.4,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 359,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 5,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 467.6,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 6,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 576.2,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 7,
+        "tag": "button",
+        "text": "calling clarity",
+        "visible": true,
+        "x": 684.8,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 8,
+        "tag": "button",
+        "text": "Clear",
+        "visible": true,
+        "x": 793.4,
+        "y": 301,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 9,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 250.4,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 10,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 380.7,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 11,
+        "tag": "button",
+        "text": "I need peace",
+        "visible": true,
+        "x": 511,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 12,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 641.3,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 13,
+        "tag": "button",
+        "text": "I need strength",
+        "visible": true,
+        "x": 771.7,
+        "y": 333,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 14,
+        "tag": "button",
+        "text": "I need identity",
+        "visible": true,
+        "x": 250.4,
+        "y": 362.6,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 15,
+        "tag": "button",
+        "text": "I need breakthrough",
+        "visible": true,
+        "x": 380.7,
+        "y": 362.6,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 16,
+        "tag": "button",
+        "text": "I need increase",
+        "visible": true,
+        "x": 511,
+        "y": 362.6,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 17,
+        "tag": "button",
+        "text": "▦",
+        "visible": true,
+        "x": 1196.8,
+        "y": 434.4,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 18,
+        "tag": "button",
+        "text": "☰",
+        "visible": true,
+        "x": 1236,
+        "y": 434.4,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 19,
+        "tag": "select",
+        "text": "Most Relevant Newest Calling Match Journey Level",
+        "visible": true,
+        "x": 1275.2,
+        "y": 434.4,
+        "w": 123.8,
+        "h": 32
+      },
+      {
+        "index": 20,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 570.8,
+        "y": 486.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 21,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 248.5,
+        "y": 740.4,
+        "w": 338.6,
+        "h": 24
+      },
+      {
+        "index": 22,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 248.5,
+        "y": 785.6,
+        "w": 338.6,
+        "h": 24
+      },
+      {
+        "index": 23,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 248.5,
+        "y": 1438.6,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 24,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 318.1,
+        "y": 1438.6,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 25,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 239.5,
+        "y": 893.3,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 26,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 239.5,
+        "y": 827.7,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 27,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 420.2,
+        "y": 827.7,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 28,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 420.2,
+        "y": 893.3,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 29,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 239.5,
+        "y": 860.5,
+        "w": 356.6,
+        "h": 28
+      },
+      {
+        "index": 30,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 239.5,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 31,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 329.8,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 32,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 420,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 33,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 510.3,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 34,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 239.5,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 35,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 329.8,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 36,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 420,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 37,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 239.5,
+        "y": 989.7,
+        "w": 176,
+        "h": 26.4
+      },
+      {
+        "index": 38,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 966,
+        "y": 486.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 39,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 643.7,
+        "y": 725.5,
+        "w": 338.6,
+        "h": 24
+      },
+      {
+        "index": 40,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 643.7,
+        "y": 770.7,
+        "w": 338.6,
+        "h": 24
+      },
+      {
+        "index": 41,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 643.7,
+        "y": 1402.7,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 42,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 713.3,
+        "y": 1402.7,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 43,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 634.7,
+        "y": 893.3,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 44,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 634.7,
+        "y": 827.7,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 45,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 815.4,
+        "y": 827.7,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 46,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 815.4,
+        "y": 893.3,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 47,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 634.7,
+        "y": 860.5,
+        "w": 356.6,
+        "h": 28
+      },
+      {
+        "index": 48,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 634.7,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 49,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 725,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 50,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 815.2,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 51,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 905.5,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 52,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 634.7,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 53,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 725,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 54,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 815.2,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 55,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 634.7,
+        "y": 989.7,
+        "w": 176,
+        "h": 26.4
+      },
+      {
+        "index": 56,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 1361.2,
+        "y": 486.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 57,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 1038.9,
+        "y": 725.5,
+        "w": 338.6,
+        "h": 24
+      },
+      {
+        "index": 58,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 1038.9,
+        "y": 770.7,
+        "w": 338.6,
+        "h": 24
+      },
+      {
+        "index": 59,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 1038.9,
+        "y": 1402.7,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 60,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 1108.5,
+        "y": 1402.7,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 61,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 1029.9,
+        "y": 893.3,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 62,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 1029.9,
+        "y": 827.7,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 63,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 1210.6,
+        "y": 827.7,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 64,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 1210.6,
+        "y": 893.3,
+        "w": 175.9,
+        "h": 28
+      },
+      {
+        "index": 65,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 1029.9,
+        "y": 860.5,
+        "w": 356.6,
+        "h": 28
+      },
+      {
+        "index": 66,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 1029.9,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 67,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 1120.2,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 68,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 1210.4,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 69,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 1300.7,
+        "y": 928,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 70,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 1029.9,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 71,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 1120.2,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 72,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 1210.4,
+        "y": 958.8,
+        "w": 85.8,
+        "h": 26.4
+      },
+      {
+        "index": 73,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 1029.9,
+        "y": 989.7,
+        "w": 176,
+        "h": 26.4
+      }
+    ]
+  },
+  {
+    "id": "1280x800",
+    "screenshot": ".tmp/search-visual-review/static-candidate/search-static-after-1280x800.png",
+    "messages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "pageerror",
+        "text": "Published media manifest returned 404."
+      }
+    ],
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scroll": {
+      "width": 1280,
+      "height": 1148
+    },
+    "horizontalOverflow": false,
+    "boxes": {
+      "shell": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 1148.44,
+        "bottom": 1148.44,
+        "right": 1280
+      },
+      "sidebar": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 800,
+        "bottom": 804,
+        "right": 194
+      },
+      "main": {
+        "x": 198,
+        "y": 0,
+        "width": 1082,
+        "height": 1148.44,
+        "bottom": 1148.44,
+        "right": 1280
+      },
+      "header": {
+        "x": 210,
+        "y": 11.19,
+        "width": 1046,
+        "height": 53.59,
+        "bottom": 64.78,
+        "right": 1256
+      },
+      "root": {
+        "x": 210,
+        "y": 71.97,
+        "width": 1046,
+        "height": 1060.47,
+        "bottom": 1132.44,
+        "right": 1256
+      },
+      "hero": {
+        "x": 210,
+        "y": 71.97,
+        "width": 1046,
+        "height": 336,
+        "bottom": 407.97,
+        "right": 1256
+      },
+      "form": {
+        "x": 237.39,
+        "y": 207.38,
+        "width": 672,
+        "height": 55.58,
+        "bottom": 262.95,
+        "right": 909.39
+      },
+      "suggestions": {
+        "x": 237.39,
+        "y": 274.14,
+        "width": 672,
+        "height": 51.59,
+        "bottom": 325.73,
+        "right": 909.39
+      },
+      "quickPrompts": {
+        "x": 237.39,
+        "y": 325.73,
+        "width": 672,
+        "height": 64.19,
+        "bottom": 389.92,
+        "right": 909.39
+      },
+      "resultsShell": {
+        "x": 210,
+        "y": 415.97,
+        "width": 1046,
+        "height": 640.02,
+        "bottom": 1055.98,
+        "right": 1256
+      },
+      "toolbar": {
+        "x": 227,
+        "y": 432.16,
+        "width": 1012,
+        "height": 32,
+        "bottom": 464.16,
+        "right": 1239
+      },
+      "results": {
+        "x": 227,
+        "y": 475.34,
+        "width": 1012,
+        "height": 563.64,
+        "bottom": 1038.98,
+        "right": 1239
+      },
+      "benefits": {
+        "x": 210,
+        "y": 1063.98,
+        "width": 1046,
+        "height": 68.45,
+        "bottom": 1132.44,
+        "right": 1256
+      }
+    },
+    "cards": [
+      {
+        "x": 227,
+        "y": 475.34,
+        "width": 328.27,
+        "height": 563.64,
+        "bottom": 1038.98
+      },
+      {
+        "x": 568.86,
+        "y": 475.34,
+        "width": 328.27,
+        "height": 563.64,
+        "bottom": 1038.98
+      },
+      {
+        "x": 910.72,
+        "y": 475.34,
+        "width": 328.28,
+        "height": 563.64,
+        "bottom": 1038.98
+      }
+    ],
+    "controlCount": 74,
+    "visibleControlCount": 74,
+    "hiddenControls": [],
+    "undersizedControls": [],
+    "controls": [
+      {
+        "index": 0,
+        "tag": "input",
+        "text": "",
+        "visible": true,
+        "x": 244,
+        "y": 214,
+        "w": 429.5,
+        "h": 42.4
+      },
+      {
+        "index": 1,
+        "tag": "select",
+        "text": "All Promise Scripture Life Problem Calling Prayer Teoyube Word Testimony",
+        "visible": true,
+        "x": 673.5,
+        "y": 214,
+        "w": 112,
+        "h": 42.4
+      },
+      {
+        "index": 2,
+        "tag": "button",
+        "text": "Search Promise",
+        "visible": true,
+        "x": 785.5,
+        "y": 214,
+        "w": 117.3,
+        "h": 42.4
+      },
+      {
+        "index": 3,
+        "tag": "button",
+        "text": "Romans 8:28-30",
+        "visible": true,
+        "x": 250.4,
+        "y": 297.7,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 359,
+        "y": 297.7,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 5,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 467.6,
+        "y": 297.7,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 6,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 576.2,
+        "y": 297.7,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 7,
+        "tag": "button",
+        "text": "calling clarity",
+        "visible": true,
+        "x": 684.8,
+        "y": 297.7,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 8,
+        "tag": "button",
+        "text": "Clear",
+        "visible": true,
+        "x": 793.4,
+        "y": 297.7,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 9,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 250.4,
+        "y": 329.7,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 10,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 380.7,
+        "y": 329.7,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 11,
+        "tag": "button",
+        "text": "I need peace",
+        "visible": true,
+        "x": 511,
+        "y": 329.7,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 12,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 641.3,
+        "y": 329.7,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 13,
+        "tag": "button",
+        "text": "I need strength",
+        "visible": true,
+        "x": 771.7,
+        "y": 329.7,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 14,
+        "tag": "button",
+        "text": "I need identity",
+        "visible": true,
+        "x": 250.4,
+        "y": 359.3,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 15,
+        "tag": "button",
+        "text": "I need breakthrough",
+        "visible": true,
+        "x": 380.7,
+        "y": 359.3,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 16,
+        "tag": "button",
+        "text": "I need increase",
+        "visible": true,
+        "x": 511,
+        "y": 359.3,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 17,
+        "tag": "button",
+        "text": "▦",
+        "visible": true,
+        "x": 1036.8,
+        "y": 432.2,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 18,
+        "tag": "button",
+        "text": "☰",
+        "visible": true,
+        "x": 1076,
+        "y": 432.2,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 19,
+        "tag": "select",
+        "text": "Most Relevant Newest Calling Match Journey Level",
+        "visible": true,
+        "x": 1115.2,
+        "y": 432.2,
+        "w": 123.8,
+        "h": 32
+      },
+      {
+        "index": 20,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 517.5,
+        "y": 484.3,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 21,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 248.5,
+        "y": 751,
+        "w": 285.2,
+        "h": 24
+      },
+      {
+        "index": 22,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 248.5,
+        "y": 796.2,
+        "w": 285.2,
+        "h": 24
+      },
+      {
+        "index": 23,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 248.5,
+        "y": 1504.1,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 24,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 318.1,
+        "y": 1504.1,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 25,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 239.5,
+        "y": 903.9,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 26,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 239.5,
+        "y": 838.3,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 27,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 393.5,
+        "y": 838.3,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 28,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 393.5,
+        "y": 903.9,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 29,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 239.5,
+        "y": 871.1,
+        "w": 303.2,
+        "h": 28
+      },
+      {
+        "index": 30,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 239.5,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 31,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 316.4,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 32,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 393.4,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 33,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 470.3,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 34,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 239.5,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 35,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 316.4,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 36,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 393.4,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 37,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 239.5,
+        "y": 1001.2,
+        "w": 149.4,
+        "h": 26.4
+      },
+      {
+        "index": 38,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 859.3,
+        "y": 484.3,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 39,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 590.4,
+        "y": 736.2,
+        "w": 285.2,
+        "h": 24
+      },
+      {
+        "index": 40,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 590.4,
+        "y": 781.3,
+        "w": 285.2,
+        "h": 24
+      },
+      {
+        "index": 41,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 590.4,
+        "y": 1468.3,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 42,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 659.9,
+        "y": 1468.3,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 43,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 581.4,
+        "y": 903.9,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 44,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 581.4,
+        "y": 838.3,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 45,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 735.4,
+        "y": 838.3,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 46,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 735.4,
+        "y": 903.9,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 47,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 581.4,
+        "y": 871.1,
+        "w": 303.2,
+        "h": 28
+      },
+      {
+        "index": 48,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 581.4,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 49,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 658.3,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 50,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 735.2,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 51,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 812.1,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 52,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 581.4,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 53,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 658.3,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 54,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 735.2,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 55,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 581.4,
+        "y": 1001.2,
+        "w": 149.4,
+        "h": 26.4
+      },
+      {
+        "index": 56,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 1201.2,
+        "y": 484.3,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 57,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 932.2,
+        "y": 736.2,
+        "w": 285.3,
+        "h": 24
+      },
+      {
+        "index": 58,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 932.2,
+        "y": 781.3,
+        "w": 285.3,
+        "h": 24
+      },
+      {
+        "index": 59,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 932.2,
+        "y": 1455.4,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 60,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 1001.8,
+        "y": 1455.4,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 61,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 923.2,
+        "y": 903.9,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 62,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 923.2,
+        "y": 838.3,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 63,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 1077.3,
+        "y": 838.3,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 64,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 1077.3,
+        "y": 903.9,
+        "w": 149.2,
+        "h": 28
+      },
+      {
+        "index": 65,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 923.2,
+        "y": 871.1,
+        "w": 303.3,
+        "h": 28
+      },
+      {
+        "index": 66,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 923.2,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 67,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 1000.2,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 68,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 1077.1,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 69,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 1154,
+        "y": 938.6,
+        "w": 72.5,
+        "h": 26.4
+      },
+      {
+        "index": 70,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 923.2,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 71,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 1000.2,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 72,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 1077.1,
+        "y": 969.5,
+        "w": 72.5,
+        "h": 27.3
+      },
+      {
+        "index": 73,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 923.2,
+        "y": 1001.2,
+        "w": 149.4,
+        "h": 26.4
+      }
+    ]
+  },
+  {
+    "id": "1024x768",
+    "screenshot": ".tmp/search-visual-review/static-candidate/search-static-after-1024x768.png",
+    "messages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "pageerror",
+        "text": "Published media manifest returned 404."
+      }
+    ],
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "scroll": {
+      "width": 1024,
+      "height": 1726
+    },
+    "horizontalOverflow": false,
+    "boxes": {
+      "shell": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1726.2,
+        "bottom": 1726.2,
+        "right": 1024
+      },
+      "sidebar": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1718.2,
+        "bottom": 1722.2,
+        "right": 194
+      },
+      "main": {
+        "x": 198,
+        "y": 0,
+        "width": 826,
+        "height": 1726.2,
+        "bottom": 1726.2,
+        "right": 1024
+      },
+      "header": {
+        "x": 210,
+        "y": 11.19,
+        "width": 790,
+        "height": 53.59,
+        "bottom": 64.78,
+        "right": 1000
+      },
+      "root": {
+        "x": 210,
+        "y": 71.97,
+        "width": 790,
+        "height": 1638.23,
+        "bottom": 1710.2,
+        "right": 1000
+      },
+      "hero": {
+        "x": 210,
+        "y": 71.97,
+        "width": 790,
+        "height": 336,
+        "bottom": 407.97,
+        "right": 1000
+      },
+      "form": {
+        "x": 237.39,
+        "y": 205.47,
+        "width": 672,
+        "height": 55.58,
+        "bottom": 261.05,
+        "right": 909.39
+      },
+      "suggestions": {
+        "x": 237.39,
+        "y": 272.23,
+        "width": 672,
+        "height": 51.59,
+        "bottom": 323.83,
+        "right": 909.39
+      },
+      "quickPrompts": {
+        "x": 237.39,
+        "y": 323.83,
+        "width": 672,
+        "height": 64.19,
+        "bottom": 388.02,
+        "right": 909.39
+      },
+      "resultsShell": {
+        "x": 210,
+        "y": 415.97,
+        "width": 790,
+        "height": 1161.98,
+        "bottom": 1577.95,
+        "right": 1000
+      },
+      "toolbar": {
+        "x": 227,
+        "y": 432.16,
+        "width": 756,
+        "height": 32,
+        "bottom": 464.16,
+        "right": 983
+      },
+      "results": {
+        "x": 227,
+        "y": 475.34,
+        "width": 756,
+        "height": 1085.61,
+        "bottom": 1560.95,
+        "right": 983
+      },
+      "benefits": {
+        "x": 210,
+        "y": 1585.95,
+        "width": 790,
+        "height": 124.25,
+        "bottom": 1710.2,
+        "right": 1000
+      }
+    },
+    "cards": [
+      {
+        "x": 227,
+        "y": 475.34,
+        "width": 371.2,
+        "height": 549.89,
+        "bottom": 1025.23
+      },
+      {
+        "x": 611.8,
+        "y": 475.34,
+        "width": 371.2,
+        "height": 549.89,
+        "bottom": 1025.23
+      },
+      {
+        "x": 227,
+        "y": 1038.83,
+        "width": 756,
+        "height": 522.13,
+        "bottom": 1560.95
+      }
+    ],
+    "controlCount": 74,
+    "visibleControlCount": 74,
+    "hiddenControls": [],
+    "undersizedControls": [],
+    "controls": [
+      {
+        "index": 0,
+        "tag": "input",
+        "text": "",
+        "visible": true,
+        "x": 244,
+        "y": 212.1,
+        "w": 429.5,
+        "h": 42.4
+      },
+      {
+        "index": 1,
+        "tag": "select",
+        "text": "All Promise Scripture Life Problem Calling Prayer Teoyube Word Testimony",
+        "visible": true,
+        "x": 673.5,
+        "y": 212.1,
+        "w": 112,
+        "h": 42.4
+      },
+      {
+        "index": 2,
+        "tag": "button",
+        "text": "Search Promise",
+        "visible": true,
+        "x": 785.5,
+        "y": 212.1,
+        "w": 117.3,
+        "h": 42.4
+      },
+      {
+        "index": 3,
+        "tag": "button",
+        "text": "Romans 8:28-30",
+        "visible": true,
+        "x": 250.4,
+        "y": 295.8,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 359,
+        "y": 295.8,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 5,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 467.6,
+        "y": 295.8,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 6,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 576.2,
+        "y": 295.8,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 7,
+        "tag": "button",
+        "text": "calling clarity",
+        "visible": true,
+        "x": 684.8,
+        "y": 295.8,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 8,
+        "tag": "button",
+        "text": "Clear",
+        "visible": true,
+        "x": 793.4,
+        "y": 295.8,
+        "w": 103,
+        "h": 24
+      },
+      {
+        "index": 9,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 250.4,
+        "y": 327.8,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 10,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 380.7,
+        "y": 327.8,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 11,
+        "tag": "button",
+        "text": "I need peace",
+        "visible": true,
+        "x": 511,
+        "y": 327.8,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 12,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 641.3,
+        "y": 327.8,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 13,
+        "tag": "button",
+        "text": "I need strength",
+        "visible": true,
+        "x": 771.7,
+        "y": 327.8,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 14,
+        "tag": "button",
+        "text": "I need identity",
+        "visible": true,
+        "x": 250.4,
+        "y": 357.4,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 15,
+        "tag": "button",
+        "text": "I need breakthrough",
+        "visible": true,
+        "x": 380.7,
+        "y": 357.4,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 16,
+        "tag": "button",
+        "text": "I need increase",
+        "visible": true,
+        "x": 511,
+        "y": 357.4,
+        "w": 124.7,
+        "h": 24
+      },
+      {
+        "index": 17,
+        "tag": "button",
+        "text": "▦",
+        "visible": true,
+        "x": 780.8,
+        "y": 432.2,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 18,
+        "tag": "button",
+        "text": "☰",
+        "visible": true,
+        "x": 820,
+        "y": 432.2,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 19,
+        "tag": "select",
+        "text": "Most Relevant Newest Calling Match Journey Level",
+        "visible": true,
+        "x": 859.2,
+        "y": 432.2,
+        "w": 123.8,
+        "h": 32
+      },
+      {
+        "index": 20,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 560.4,
+        "y": 484.3,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 21,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 248.5,
+        "y": 738.2,
+        "w": 328.2,
+        "h": 24
+      },
+      {
+        "index": 22,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 248.5,
+        "y": 783.3,
+        "w": 328.2,
+        "h": 24
+      },
+      {
+        "index": 23,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 248.5,
+        "y": 1457.3,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 24,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 318.1,
+        "y": 1457.3,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 25,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 239.5,
+        "y": 891,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 26,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 239.5,
+        "y": 825.4,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 27,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 415,
+        "y": 825.4,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 28,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 415,
+        "y": 891,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 29,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 239.5,
+        "y": 858.2,
+        "w": 346.2,
+        "h": 28
+      },
+      {
+        "index": 30,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 239.5,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 31,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 327.2,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 32,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 414.8,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 33,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 502.5,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 34,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 239.5,
+        "y": 956.6,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 35,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 327.2,
+        "y": 956.6,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 36,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 414.8,
+        "y": 956.6,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 37,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 239.5,
+        "y": 987.5,
+        "w": 170.8,
+        "h": 26.4
+      },
+      {
+        "index": 38,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 945.2,
+        "y": 484.3,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 39,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 633.3,
+        "y": 723.3,
+        "w": 328.2,
+        "h": 24
+      },
+      {
+        "index": 40,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 633.3,
+        "y": 768.5,
+        "w": 328.2,
+        "h": 24
+      },
+      {
+        "index": 41,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 633.3,
+        "y": 1421.5,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 42,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 702.9,
+        "y": 1421.5,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 43,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 624.3,
+        "y": 891,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 44,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 624.3,
+        "y": 825.4,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 45,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 799.8,
+        "y": 825.4,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 46,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 799.8,
+        "y": 891,
+        "w": 170.7,
+        "h": 28
+      },
+      {
+        "index": 47,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 624.3,
+        "y": 858.2,
+        "w": 346.2,
+        "h": 28
+      },
+      {
+        "index": 48,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 624.3,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 49,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 712,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 50,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 799.6,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 51,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 887.3,
+        "y": 925.7,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 52,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 624.3,
+        "y": 956.6,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 53,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 712,
+        "y": 956.6,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 54,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 799.6,
+        "y": 956.6,
+        "w": 83.2,
+        "h": 26.4
+      },
+      {
+        "index": 55,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 624.3,
+        "y": 987.5,
+        "w": 170.8,
+        "h": 26.4
+      },
+      {
+        "index": 56,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 945.2,
+        "y": 1047.8,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 57,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 248.5,
+        "y": 1273.9,
+        "w": 713,
+        "h": 24
+      },
+      {
+        "index": 58,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 248.5,
+        "y": 1319,
+        "w": 713,
+        "h": 24
+      },
+      {
+        "index": 59,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 248.5,
+        "y": 1809.5,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 60,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 318.1,
+        "y": 1809.5,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 61,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 239.5,
+        "y": 1426.7,
+        "w": 363.1,
+        "h": 28
+      },
+      {
+        "index": 62,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 239.5,
+        "y": 1361.1,
+        "w": 363.1,
+        "h": 28
+      },
+      {
+        "index": 63,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 607.4,
+        "y": 1361.1,
+        "w": 363.1,
+        "h": 28
+      },
+      {
+        "index": 64,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 607.4,
+        "y": 1426.7,
+        "w": 363.1,
+        "h": 28
+      },
+      {
+        "index": 65,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 239.5,
+        "y": 1393.9,
+        "w": 731,
+        "h": 28
+      },
+      {
+        "index": 66,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 239.5,
+        "y": 1461.5,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 67,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 423.4,
+        "y": 1461.5,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 68,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 607.2,
+        "y": 1461.5,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 69,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 791.1,
+        "y": 1461.5,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 70,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 239.5,
+        "y": 1492.3,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 71,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 423.4,
+        "y": 1492.3,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 72,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 607.2,
+        "y": 1492.3,
+        "w": 179.4,
+        "h": 26.4
+      },
+      {
+        "index": 73,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 239.5,
+        "y": 1523.2,
+        "w": 363.3,
+        "h": 26.4
+      }
+    ]
+  },
+  {
+    "id": "768x1024",
+    "screenshot": ".tmp/search-visual-review/static-candidate/search-static-after-768x1024.png",
+    "messages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "pageerror",
+        "text": "Published media manifest returned 404."
+      }
+    ],
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "scroll": {
+      "width": 768,
+      "height": 2654
+    },
+    "horizontalOverflow": false,
+    "boxes": {
+      "shell": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 2653.98,
+        "bottom": 2653.98,
+        "right": 768
+      },
+      "sidebar": {
+        "x": -352,
+        "y": 0,
+        "width": 320,
+        "height": 1024,
+        "bottom": 1024,
+        "right": -32
+      },
+      "main": {
+        "x": 0,
+        "y": 53.38,
+        "width": 768,
+        "height": 2600.61,
+        "bottom": 2653.98,
+        "right": 768
+      },
+      "header": {
+        "x": 12,
+        "y": 62.17,
+        "width": 744,
+        "height": 96.06,
+        "bottom": 158.23,
+        "right": 756
+      },
+      "root": {
+        "x": 12,
+        "y": 165.42,
+        "width": 744,
+        "height": 2472.56,
+        "bottom": 2637.98,
+        "right": 756
+      },
+      "hero": {
+        "x": 12,
+        "y": 165.42,
+        "width": 744,
+        "height": 506.41,
+        "bottom": 671.83,
+        "right": 756
+      },
+      "form": {
+        "x": 29,
+        "y": 297.42,
+        "width": 672,
+        "height": 156.38,
+        "bottom": 453.8,
+        "right": 701
+      },
+      "suggestions": {
+        "x": 29,
+        "y": 464.98,
+        "width": 672,
+        "height": 96.06,
+        "bottom": 561.05,
+        "right": 701
+      },
+      "quickPrompts": {
+        "x": 29,
+        "y": 561.05,
+        "width": 672,
+        "height": 93.78,
+        "bottom": 654.83,
+        "right": 701
+      },
+      "resultsShell": {
+        "x": 12,
+        "y": 679.83,
+        "width": 744,
+        "height": 1704.66,
+        "bottom": 2384.48,
+        "right": 756
+      },
+      "toolbar": {
+        "x": 25,
+        "y": 692.83,
+        "width": 718,
+        "height": 73.91,
+        "bottom": 766.73,
+        "right": 743
+      },
+      "results": {
+        "x": 25,
+        "y": 777.92,
+        "width": 718,
+        "height": 1593.56,
+        "bottom": 2371.48,
+        "right": 743
+      },
+      "benefits": {
+        "x": 12,
+        "y": 2392.48,
+        "width": 744,
+        "height": 245.5,
+        "bottom": 2637.98,
+        "right": 756
+      }
+    },
+    "cards": [
+      {
+        "x": 25,
+        "y": 777.92,
+        "width": 718,
+        "height": 522.13,
+        "bottom": 1300.05
+      },
+      {
+        "x": 25,
+        "y": 1313.64,
+        "width": 718,
+        "height": 522.13,
+        "bottom": 1835.77
+      },
+      {
+        "x": 25,
+        "y": 1849.36,
+        "width": 718,
+        "height": 522.13,
+        "bottom": 2371.48
+      }
+    ],
+    "controlCount": 74,
+    "visibleControlCount": 74,
+    "hiddenControls": [],
+    "undersizedControls": [],
+    "controls": [
+      {
+        "index": 0,
+        "tag": "input",
+        "text": "",
+        "visible": true,
+        "x": 35.6,
+        "y": 304,
+        "w": 658.8,
+        "h": 44
+      },
+      {
+        "index": 1,
+        "tag": "select",
+        "text": "All Promise Scripture Life Problem Calling Prayer Teoyube Word Testimony",
+        "visible": true,
+        "x": 35.6,
+        "y": 353.6,
+        "w": 658.8,
+        "h": 44
+      },
+      {
+        "index": 2,
+        "tag": "button",
+        "text": "Search Promise",
+        "visible": true,
+        "x": 35.6,
+        "y": 403.2,
+        "w": 658.8,
+        "h": 44
+      },
+      {
+        "index": 3,
+        "tag": "button",
+        "text": "Romans 8:28-30",
+        "visible": true,
+        "x": 42,
+        "y": 503.5,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 259.2,
+        "y": 503.5,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 5,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 476.4,
+        "y": 503.5,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 6,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 42,
+        "y": 533,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 7,
+        "tag": "button",
+        "text": "calling clarity",
+        "visible": true,
+        "x": 259.2,
+        "y": 533,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 8,
+        "tag": "button",
+        "text": "Clear",
+        "visible": true,
+        "x": 476.4,
+        "y": 533,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 9,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 42,
+        "y": 565,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 10,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 259.2,
+        "y": 565,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 11,
+        "tag": "button",
+        "text": "I need peace",
+        "visible": true,
+        "x": 476.4,
+        "y": 565,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 12,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 42,
+        "y": 594.6,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 13,
+        "tag": "button",
+        "text": "I need strength",
+        "visible": true,
+        "x": 259.2,
+        "y": 594.6,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 14,
+        "tag": "button",
+        "text": "I need identity",
+        "visible": true,
+        "x": 476.4,
+        "y": 594.6,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 15,
+        "tag": "button",
+        "text": "I need breakthrough",
+        "visible": true,
+        "x": 42,
+        "y": 624.2,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 16,
+        "tag": "button",
+        "text": "I need increase",
+        "visible": true,
+        "x": 259.2,
+        "y": 624.2,
+        "w": 211.6,
+        "h": 24
+      },
+      {
+        "index": 17,
+        "tag": "button",
+        "text": "▦",
+        "visible": true,
+        "x": 25,
+        "y": 734.7,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 18,
+        "tag": "button",
+        "text": "☰",
+        "visible": true,
+        "x": 64.2,
+        "y": 734.7,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 19,
+        "tag": "select",
+        "text": "Most Relevant Newest Calling Match Journey Level",
+        "visible": true,
+        "x": 103.4,
+        "y": 734.7,
+        "w": 639.6,
+        "h": 32
+      },
+      {
+        "index": 20,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 705.2,
+        "y": 786.9,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 21,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 46.5,
+        "y": 1013,
+        "w": 675,
+        "h": 24
+      },
+      {
+        "index": 22,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 46.5,
+        "y": 1058.1,
+        "w": 675,
+        "h": 24
+      },
+      {
+        "index": 23,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 46.5,
+        "y": 1630.1,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 24,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 116.1,
+        "y": 1630.1,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 25,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 37.5,
+        "y": 1165.8,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 26,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 37.5,
+        "y": 1100.2,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 27,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 386.4,
+        "y": 1100.2,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 28,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 386.4,
+        "y": 1165.8,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 29,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 37.5,
+        "y": 1133,
+        "w": 693,
+        "h": 28
+      },
+      {
+        "index": 30,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 37.5,
+        "y": 1200.5,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 31,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 211.9,
+        "y": 1200.5,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 32,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 386.2,
+        "y": 1200.5,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 33,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 560.6,
+        "y": 1200.5,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 34,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 37.5,
+        "y": 1231.4,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 35,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 211.9,
+        "y": 1231.4,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 36,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 386.2,
+        "y": 1231.4,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 37,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 37.5,
+        "y": 1262.3,
+        "w": 344.3,
+        "h": 26.4
+      },
+      {
+        "index": 38,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 705.2,
+        "y": 1322.6,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 39,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 46.5,
+        "y": 1548.7,
+        "w": 675,
+        "h": 24
+      },
+      {
+        "index": 40,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 46.5,
+        "y": 1593.9,
+        "w": 675,
+        "h": 24
+      },
+      {
+        "index": 41,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 46.5,
+        "y": 2144.8,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 42,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 116.1,
+        "y": 2144.8,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 43,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 37.5,
+        "y": 1701.5,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 44,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 37.5,
+        "y": 1636,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 45,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 386.4,
+        "y": 1636,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 46,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 386.4,
+        "y": 1701.5,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 47,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 37.5,
+        "y": 1668.8,
+        "w": 693,
+        "h": 28
+      },
+      {
+        "index": 48,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 37.5,
+        "y": 1736.3,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 49,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 211.9,
+        "y": 1736.3,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 50,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 386.2,
+        "y": 1736.3,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 51,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 560.6,
+        "y": 1736.3,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 52,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 37.5,
+        "y": 1767.1,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 53,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 211.9,
+        "y": 1767.1,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 54,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 386.2,
+        "y": 1767.1,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 55,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 37.5,
+        "y": 1798,
+        "w": 344.3,
+        "h": 26.4
+      },
+      {
+        "index": 56,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 705.2,
+        "y": 1858.4,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 57,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 46.5,
+        "y": 2084.4,
+        "w": 675,
+        "h": 24
+      },
+      {
+        "index": 58,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 46.5,
+        "y": 2129.6,
+        "w": 675,
+        "h": 24
+      },
+      {
+        "index": 59,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 46.5,
+        "y": 2680.5,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 60,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 116.1,
+        "y": 2680.5,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 61,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 37.5,
+        "y": 2237.3,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 62,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 37.5,
+        "y": 2171.7,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 63,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 386.4,
+        "y": 2171.7,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 64,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 386.4,
+        "y": 2237.3,
+        "w": 344.1,
+        "h": 28
+      },
+      {
+        "index": 65,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 37.5,
+        "y": 2204.5,
+        "w": 693,
+        "h": 28
+      },
+      {
+        "index": 66,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 37.5,
+        "y": 2272,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 67,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 211.9,
+        "y": 2272,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 68,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 386.2,
+        "y": 2272,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 69,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 560.6,
+        "y": 2272,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 70,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 37.5,
+        "y": 2302.8,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 71,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 211.9,
+        "y": 2302.8,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 72,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 386.2,
+        "y": 2302.8,
+        "w": 169.9,
+        "h": 26.4
+      },
+      {
+        "index": 73,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 37.5,
+        "y": 2333.7,
+        "w": 344.3,
+        "h": 26.4
+      }
+    ]
+  },
+  {
+    "id": "390x844",
+    "screenshot": ".tmp/search-visual-review/static-candidate/search-static-after-390x844.png",
+    "messages": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      },
+      {
+        "type": "pageerror",
+        "text": "Published media manifest returned 404."
+      }
+    ],
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scroll": {
+      "width": 390,
+      "height": 3001
+    },
+    "horizontalOverflow": false,
+    "boxes": {
+      "shell": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 3000.58,
+        "bottom": 3000.58,
+        "right": 390
+      },
+      "sidebar": {
+        "x": -352,
+        "y": 0,
+        "width": 320,
+        "height": 844,
+        "bottom": 844,
+        "right": -32
+      },
+      "main": {
+        "x": 0,
+        "y": 53.38,
+        "width": 390,
+        "height": 2947.2,
+        "bottom": 3000.58,
+        "right": 390
+      },
+      "header": {
+        "x": 8,
+        "y": 60.56,
+        "width": 374,
+        "height": 104.86,
+        "bottom": 165.42,
+        "right": 382
+      },
+      "root": {
+        "x": 8,
+        "y": 172.61,
+        "width": 374,
+        "height": 2814.38,
+        "bottom": 2986.98,
+        "right": 382
+      },
+      "hero": {
+        "x": 8,
+        "y": 172.61,
+        "width": 374,
+        "height": 609.52,
+        "bottom": 782.13,
+        "right": 382
+      },
+      "form": {
+        "x": 22.59,
+        "y": 350.94,
+        "width": 344.81,
+        "height": 156.38,
+        "bottom": 507.31,
+        "right": 367.41
+      },
+      "suggestions": {
+        "x": 22.59,
+        "y": 518.5,
+        "width": 344.81,
+        "height": 125.66,
+        "bottom": 644.16,
+        "right": 367.41
+      },
+      "quickPrompts": {
+        "x": 22.59,
+        "y": 644.16,
+        "width": 344.81,
+        "height": 123.38,
+        "bottom": 767.53,
+        "right": 367.41
+      },
+      "resultsShell": {
+        "x": 8,
+        "y": 790.13,
+        "width": 374,
+        "height": 1943.36,
+        "bottom": 2733.48,
+        "right": 382
+      },
+      "toolbar": {
+        "x": 21,
+        "y": 803.13,
+        "width": 348,
+        "height": 73.91,
+        "bottom": 877.03,
+        "right": 369
+      },
+      "results": {
+        "x": 21,
+        "y": 888.22,
+        "width": 348,
+        "height": 1832.27,
+        "bottom": 2720.48,
+        "right": 369
+      },
+      "benefits": {
+        "x": 8,
+        "y": 2741.48,
+        "width": 374,
+        "height": 245.5,
+        "bottom": 2986.98,
+        "right": 382
+      }
+    },
+    "cards": [
+      {
+        "x": 21,
+        "y": 888.22,
+        "width": 348,
+        "height": 611.61,
+        "bottom": 1499.83
+      },
+      {
+        "x": 21,
+        "y": 1513.42,
+        "width": 348,
+        "height": 596.73,
+        "bottom": 2110.16
+      },
+      {
+        "x": 21,
+        "y": 2123.75,
+        "width": 348,
+        "height": 596.73,
+        "bottom": 2720.48
+      }
+    ],
+    "controlCount": 74,
+    "visibleControlCount": 74,
+    "hiddenControls": [],
+    "undersizedControls": [],
+    "controls": [
+      {
+        "index": 0,
+        "tag": "input",
+        "text": "",
+        "visible": true,
+        "x": 29.2,
+        "y": 357.5,
+        "w": 331.6,
+        "h": 44
+      },
+      {
+        "index": 1,
+        "tag": "select",
+        "text": "All Promise Scripture Life Problem Calling Prayer Teoyube Word Testimony",
+        "visible": true,
+        "x": 29.2,
+        "y": 407.1,
+        "w": 331.6,
+        "h": 44
+      },
+      {
+        "index": 2,
+        "tag": "button",
+        "text": "Search Promise",
+        "visible": true,
+        "x": 29.2,
+        "y": 456.7,
+        "w": 331.6,
+        "h": 44
+      },
+      {
+        "index": 3,
+        "tag": "button",
+        "text": "Romans 8:28-30",
+        "visible": true,
+        "x": 35.6,
+        "y": 557,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 4,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 197.8,
+        "y": 557,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 5,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 35.6,
+        "y": 586.6,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 6,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 197.8,
+        "y": 586.6,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 7,
+        "tag": "button",
+        "text": "calling clarity",
+        "visible": true,
+        "x": 35.6,
+        "y": 616.2,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 8,
+        "tag": "button",
+        "text": "Clear",
+        "visible": true,
+        "x": 197.8,
+        "y": 616.2,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 9,
+        "tag": "button",
+        "text": "I need direction",
+        "visible": true,
+        "x": 35.6,
+        "y": 648.2,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 10,
+        "tag": "button",
+        "text": "I need healing",
+        "visible": true,
+        "x": 197.8,
+        "y": 648.2,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 11,
+        "tag": "button",
+        "text": "I need peace",
+        "visible": true,
+        "x": 35.6,
+        "y": 677.8,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 12,
+        "tag": "button",
+        "text": "I need wisdom",
+        "visible": true,
+        "x": 197.8,
+        "y": 677.8,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 13,
+        "tag": "button",
+        "text": "I need strength",
+        "visible": true,
+        "x": 35.6,
+        "y": 707.3,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 14,
+        "tag": "button",
+        "text": "I need identity",
+        "visible": true,
+        "x": 197.8,
+        "y": 707.3,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 15,
+        "tag": "button",
+        "text": "I need breakthrough",
+        "visible": true,
+        "x": 35.6,
+        "y": 736.9,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 16,
+        "tag": "button",
+        "text": "I need increase",
+        "visible": true,
+        "x": 197.8,
+        "y": 736.9,
+        "w": 156.6,
+        "h": 24
+      },
+      {
+        "index": 17,
+        "tag": "button",
+        "text": "▦",
+        "visible": true,
+        "x": 21,
+        "y": 845,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 18,
+        "tag": "button",
+        "text": "☰",
+        "visible": true,
+        "x": 60.2,
+        "y": 845,
+        "w": 32,
+        "h": 32
+      },
+      {
+        "index": 19,
+        "tag": "select",
+        "text": "Most Relevant Newest Calling Match Journey Level",
+        "visible": true,
+        "x": 99.4,
+        "y": 845,
+        "w": 269.6,
+        "h": 32
+      },
+      {
+        "index": 20,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 331.2,
+        "y": 897.2,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 21,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 42.5,
+        "y": 1151,
+        "w": 305,
+        "h": 24
+      },
+      {
+        "index": 22,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 42.5,
+        "y": 1196.2,
+        "w": 305,
+        "h": 24
+      },
+      {
+        "index": 23,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 42.5,
+        "y": 1948.2,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 24,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 112.1,
+        "y": 1948.2,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 25,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 33.5,
+        "y": 1303.9,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 26,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 33.5,
+        "y": 1238.3,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 27,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 197.4,
+        "y": 1238.3,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 28,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 197.4,
+        "y": 1303.9,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 29,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 33.5,
+        "y": 1271.1,
+        "w": 323,
+        "h": 28
+      },
+      {
+        "index": 30,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 33.5,
+        "y": 1338.6,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 31,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 197.2,
+        "y": 1338.6,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 32,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 33.5,
+        "y": 1369.5,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 33,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 197.2,
+        "y": 1369.5,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 34,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 33.5,
+        "y": 1400.3,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 35,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 197.2,
+        "y": 1400.3,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 36,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 33.5,
+        "y": 1431.2,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 37,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 33.5,
+        "y": 1462,
+        "w": 323,
+        "h": 26.4
+      },
+      {
+        "index": 38,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 331.2,
+        "y": 1522.4,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 39,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 42.5,
+        "y": 1761.4,
+        "w": 305,
+        "h": 24
+      },
+      {
+        "index": 40,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 42.5,
+        "y": 1806.5,
+        "w": 305,
+        "h": 24
+      },
+      {
+        "index": 41,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 42.5,
+        "y": 2524.7,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 42,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 112.1,
+        "y": 2524.7,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 43,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 33.5,
+        "y": 1914.2,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 44,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 33.5,
+        "y": 1848.6,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 45,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 197.4,
+        "y": 1848.6,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 46,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 197.4,
+        "y": 1914.2,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 47,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 33.5,
+        "y": 1881.4,
+        "w": 323,
+        "h": 28
+      },
+      {
+        "index": 48,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 33.5,
+        "y": 1948.9,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 49,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 197.2,
+        "y": 1948.9,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 50,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 33.5,
+        "y": 1979.8,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 51,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 197.2,
+        "y": 1979.8,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 52,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 33.5,
+        "y": 2010.7,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 53,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 197.2,
+        "y": 2010.7,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 54,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 33.5,
+        "y": 2041.5,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 55,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 33.5,
+        "y": 2072.4,
+        "w": 323,
+        "h": 26.4
+      },
+      {
+        "index": 56,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 331.2,
+        "y": 2132.8,
+        "w": 28.8,
+        "h": 28.8
+      },
+      {
+        "index": 57,
+        "tag": "summary",
+        "text": "Why this?",
+        "visible": true,
+        "x": 42.5,
+        "y": 2371.7,
+        "w": 305,
+        "h": 24
+      },
+      {
+        "index": 58,
+        "tag": "summary",
+        "text": "Why this? Excellent",
+        "visible": true,
+        "x": 42.5,
+        "y": 2416.9,
+        "w": 305,
+        "h": 24
+      },
+      {
+        "index": 59,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 42.5,
+        "y": 3135,
+        "w": 64.8,
+        "h": 42.4
+      },
+      {
+        "index": 60,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 112.1,
+        "y": 3135,
+        "w": 90.9,
+        "h": 42.4
+      },
+      {
+        "index": 61,
+        "tag": "button",
+        "text": "▱",
+        "visible": true,
+        "x": 33.5,
+        "y": 2524.5,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 62,
+        "tag": "button",
+        "text": "Add to Promise Table",
+        "visible": true,
+        "x": 33.5,
+        "y": 2459,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 63,
+        "tag": "button",
+        "text": "Explore Journey",
+        "visible": true,
+        "x": 197.4,
+        "y": 2459,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 64,
+        "tag": "button",
+        "text": "View Graph",
+        "visible": true,
+        "x": 197.4,
+        "y": 2524.5,
+        "w": 159.1,
+        "h": 28
+      },
+      {
+        "index": 65,
+        "tag": "button",
+        "text": "Compare Preview",
+        "visible": true,
+        "x": 33.5,
+        "y": 2491.8,
+        "w": 323,
+        "h": 28
+      },
+      {
+        "index": 66,
+        "tag": "button",
+        "text": "More like this",
+        "visible": true,
+        "x": 33.5,
+        "y": 2559.3,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 67,
+        "tag": "button",
+        "text": "Less like this",
+        "visible": true,
+        "x": 197.2,
+        "y": 2559.3,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 68,
+        "tag": "button",
+        "text": "Not relevant",
+        "visible": true,
+        "x": 33.5,
+        "y": 2590.1,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 69,
+        "tag": "button",
+        "text": "Save Scripture",
+        "visible": true,
+        "x": 197.2,
+        "y": 2590.1,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 70,
+        "tag": "button",
+        "text": "Save Word",
+        "visible": true,
+        "x": 33.5,
+        "y": 2621,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 71,
+        "tag": "button",
+        "text": "Save Prayer",
+        "visible": true,
+        "x": 197.2,
+        "y": 2621,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 72,
+        "tag": "button",
+        "text": "Complete Action",
+        "visible": true,
+        "x": 33.5,
+        "y": 2651.8,
+        "w": 159.3,
+        "h": 26.4
+      },
+      {
+        "index": 73,
+        "tag": "button",
+        "text": "Reset this preference",
+        "visible": true,
+        "x": 33.5,
+        "y": 2682.7,
+        "w": 323,
+        "h": 26.4
+      }
+    ]
+  }
+]

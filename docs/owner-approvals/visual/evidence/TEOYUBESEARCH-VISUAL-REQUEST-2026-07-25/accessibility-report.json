@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-2026-07-25-SEARCH-001",
+  "scope": "Rendered canonical /search document",
+  "results": [
+    {
+      "viewport": "1536x1024",
+      "violations": [],
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "nodeCount": 7
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodeCount": 48
+        }
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "nodeCount": 7
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodeCount": 48
+        }
+      ]
+    }
+  ],
+  "totalViolations": 0,
+  "totalViolationNodes": 0
+}

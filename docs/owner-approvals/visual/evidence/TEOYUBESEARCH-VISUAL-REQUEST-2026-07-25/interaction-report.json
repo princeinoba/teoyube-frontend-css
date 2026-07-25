@@ -1,0 +1,1070 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-2026-07-25-SEARCH-001",
+  "url": "http://127.0.0.1:3000/search",
+  "checks": [
+    {
+      "name": "search-control-inventory",
+      "pass": true,
+      "count": 74
+    },
+    {
+      "name": "all-search-controls-visible-and-enabled",
+      "pass": true,
+      "failed": []
+    },
+    {
+      "name": "all-search-controls-at-least-24px-high",
+      "pass": true,
+      "failed": []
+    },
+    {
+      "name": "keyboard-tab-reaches-every-currently-exposed-search-control",
+      "pass": true,
+      "visitedCount": 68,
+      "deferredClosedDisclosureControls": [
+        21,
+        22,
+        23,
+        24,
+        39,
+        40,
+        41,
+        42,
+        57,
+        58,
+        59,
+        60
+      ],
+      "unexpectedMissing": []
+    },
+    {
+      "name": "keyboard-focus-visible",
+      "pass": true,
+      "badFocus": []
+    },
+    {
+      "name": "closed-disclosure-controls-focusable-when-expanded",
+      "pass": true,
+      "deferredFocus": [
+        {
+          "index": 21,
+          "focused": true
+        },
+        {
+          "index": 22,
+          "focused": true
+        },
+        {
+          "index": 23,
+          "focused": true
+        },
+        {
+          "index": 24,
+          "focused": true
+        },
+        {
+          "index": 39,
+          "focused": true
+        },
+        {
+          "index": 40,
+          "focused": true
+        },
+        {
+          "index": 41,
+          "focused": true
+        },
+        {
+          "index": 42,
+          "focused": true
+        },
+        {
+          "index": 57,
+          "focused": true
+        },
+        {
+          "index": 58,
+          "focused": true
+        },
+        {
+          "index": 59,
+          "focused": true
+        },
+        {
+          "index": 60,
+          "focused": true
+        }
+      ]
+    },
+    {
+      "name": "both-explanations-expand-without-horizontal-overflow",
+      "pass": true,
+      "originalCardHeight": 549.890625,
+      "expandedHeight": 1294.671875
+    },
+    {
+      "name": "search-submit",
+      "pass": true,
+      "query": "wisdom"
+    },
+    {
+      "name": "category-filter",
+      "pass": true,
+      "optionCount": 8
+    },
+    {
+      "name": "smart-suggestion-loads-and-focuses-input",
+      "pass": true,
+      "suggestionText": "Romans 8:28-30"
+    },
+    {
+      "name": "smart-suggestions-deterministic-reset",
+      "pass": true,
+      "resetSuggestionCount": 5,
+      "clearNotice": "Search suggestions cleared Session-only safe searches cleared. View in Book Add Reflection Close"
+    },
+    {
+      "name": "quick-prompt-runs",
+      "pass": true,
+      "promptText": "I need direction"
+    },
+    {
+      "name": "bookmark-control-remains-operable",
+      "pass": true
+    },
+    {
+      "name": "save-to-book-action",
+      "pass": true,
+      "notice": "Search result saved TEOYUBE - The Eyes Of Your Understanding Being Enlightened Ephesians 1:18 View in Book Add Reflection Close"
+    },
+    {
+      "name": "view-graph-dialog",
+      "pass": true
+    },
+    {
+      "name": "view-graph-dialog-closes",
+      "pass": true
+    },
+    {
+      "name": "compare-dialog",
+      "pass": true
+    },
+    {
+      "name": "compare-dialog-closes",
+      "pass": true
+    },
+    {
+      "name": "all-feedback-actions",
+      "pass": true,
+      "feedbackResults": [
+        {
+          "kind": "more_like_this",
+          "visible": true,
+          "notice": "Feedback noted Personalization is off, so no preference signal was stored. Enable it from Personalization Center to learn from feedback. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "less_like_this",
+          "visible": true,
+          "notice": "Feedback noted Personalization is off, so no preference signal was stored. Enable it from Personalization Center to learn from feedback. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "not_relevant",
+          "visible": true,
+          "notice": "Feedback noted Personalization is off, so no preference signal was stored. Enable it from Personalization Center to learn from feedback. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "save_scripture",
+          "visible": true,
+          "notice": "Feedback updated Saved to visible journey memory; personalization remains off. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "save_word",
+          "visible": true,
+          "notice": "Feedback updated Saved to visible journey memory; personalization remains off. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "save_prayer",
+          "visible": true,
+          "notice": "Feedback updated Saved to visible journey memory; personalization remains off. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "complete_action",
+          "visible": true,
+          "notice": "Feedback updated Saved to visible journey memory; personalization remains off. Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        {
+          "kind": "reset_preference",
+          "visible": true,
+          "notice": "Preference reset Visible personalization hints were cleared. Ephesians 1:18 View in Book Add Reflection Close"
+        }
+      ]
+    },
+    {
+      "name": "view-and-sort-controls",
+      "pass": true
+    },
+    {
+      "name": "add-to-promise-table-navigation",
+      "pass": true,
+      "url": "http://127.0.0.1:3000/promise-table"
+    },
+    {
+      "name": "explore-journey-navigation",
+      "pass": true,
+      "url": "http://127.0.0.1:3000/teo-guide"
+    },
+    {
+      "name": "desktop-shell-controls-visible",
+      "pass": true,
+      "shellControls": [
+        {
+          "text": "Today",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "TeoyubeSearch",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Canon",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Promise Table",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Calling Compass",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Book of the Saint",
+          "visible": true,
+          "height": 45.3
+        },
+        {
+          "text": "Lexicon",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Testimony",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Teo Guide",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Embedded Videos",
+          "visible": true,
+          "height": 45.3
+        },
+        {
+          "text": "Tables",
+          "visible": true,
+          "height": 34.4
+        },
+        {
+          "text": "Purpose Assessment",
+          "visible": true,
+          "height": 42.8
+        },
+        {
+          "text": "Personalization Center",
+          "visible": true,
+          "height": 42.8
+        },
+        {
+          "text": "Guardrails",
+          "visible": true,
+          "height": 37.6
+        },
+        {
+          "text": "Generate Today's Journey",
+          "visible": true,
+          "height": 37.6
+        }
+      ]
+    },
+    {
+      "name": "mobile-navigation-open",
+      "pass": true,
+      "opened": {
+        "open": true,
+        "x": 0,
+        "expanded": "true"
+      }
+    },
+    {
+      "name": "mobile-navigation-escape-close-and-focus-return",
+      "pass": true,
+      "closed": {
+        "open": false,
+        "x": -352,
+        "expanded": "false",
+        "focus": "mobileNavToggle"
+      }
+    }
+  ],
+  "passed": true,
+  "failures": [],
+  "networkErrors": [],
+  "performance": {
+    "domContentLoaded": 1084.1,
+    "loadEventEnd": 1167.4,
+    "transferSize": 23614,
+    "encodedBodySize": 23314,
+    "resourceCount": 36
+  },
+  "inventory": [
+    {
+      "index": 0,
+      "tag": "input",
+      "text": "",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 429.5,
+      "height": 42.4
+    },
+    {
+      "index": 1,
+      "tag": "select",
+      "text": "AllPromiseScriptureLife ProblemCallingPrayerTeoyube WordTestimony",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 112,
+      "height": 42.4
+    },
+    {
+      "index": 2,
+      "tag": "button",
+      "text": "Search Promise",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 117.3,
+      "height": 42.4
+    },
+    {
+      "index": 3,
+      "tag": "button",
+      "text": "Romans 8:28-30",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 103,
+      "height": 24
+    },
+    {
+      "index": 4,
+      "tag": "button",
+      "text": "I need direction",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 103,
+      "height": 24
+    },
+    {
+      "index": 5,
+      "tag": "button",
+      "text": "I need healing",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 103,
+      "height": 24
+    },
+    {
+      "index": 6,
+      "tag": "button",
+      "text": "I need wisdom",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 103,
+      "height": 24
+    },
+    {
+      "index": 7,
+      "tag": "button",
+      "text": "calling clarity",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 103,
+      "height": 24
+    },
+    {
+      "index": 8,
+      "tag": "button",
+      "text": "Clear",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 103,
+      "height": 24
+    },
+    {
+      "index": 9,
+      "tag": "button",
+      "text": "I need direction",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 10,
+      "tag": "button",
+      "text": "I need healing",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 11,
+      "tag": "button",
+      "text": "I need peace",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 12,
+      "tag": "button",
+      "text": "I need wisdom",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 13,
+      "tag": "button",
+      "text": "I need strength",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 14,
+      "tag": "button",
+      "text": "I need identity",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 15,
+      "tag": "button",
+      "text": "I need breakthrough",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 16,
+      "tag": "button",
+      "text": "I need increase",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 124.7,
+      "height": 24
+    },
+    {
+      "index": 17,
+      "tag": "button",
+      "text": "▦",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "index": 18,
+      "tag": "button",
+      "text": "☰",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "index": 19,
+      "tag": "select",
+      "text": "Most RelevantNewestCalling MatchJourney Level",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 123.8,
+      "height": 32
+    },
+    {
+      "index": 20,
+      "tag": "button",
+      "text": "▱",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 28.8,
+      "height": 28.8
+    },
+    {
+      "index": 21,
+      "tag": "summary",
+      "text": "Why this?",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 370.6,
+      "height": 24
+    },
+    {
+      "index": 22,
+      "tag": "summary",
+      "text": "Why this? Excellent",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 370.6,
+      "height": 24
+    },
+    {
+      "index": 23,
+      "tag": "button",
+      "text": "View Graph",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 64.8,
+      "height": 42.4
+    },
+    {
+      "index": 24,
+      "tag": "button",
+      "text": "Compare Preview",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 90.9,
+      "height": 42.4
+    },
+    {
+      "index": 25,
+      "tag": "button",
+      "text": "▱",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 26,
+      "tag": "button",
+      "text": "Add to Promise Table",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 27,
+      "tag": "button",
+      "text": "Explore Journey",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 28,
+      "tag": "button",
+      "text": "View Graph",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 29,
+      "tag": "button",
+      "text": "Compare Preview",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 388.6,
+      "height": 28
+    },
+    {
+      "index": 30,
+      "tag": "button",
+      "text": "More like this",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 31,
+      "tag": "button",
+      "text": "Less like this",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 32,
+      "tag": "button",
+      "text": "Not relevant",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 33,
+      "tag": "button",
+      "text": "Save Scripture",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 34,
+      "tag": "button",
+      "text": "Save Word",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 35,
+      "tag": "button",
+      "text": "Save Prayer",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 36,
+      "tag": "button",
+      "text": "Complete Action",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 37,
+      "tag": "button",
+      "text": "Reset this preference",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 192,
+      "height": 26.4
+    },
+    {
+      "index": 38,
+      "tag": "button",
+      "text": "▱",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 28.8,
+      "height": 28.8
+    },
+    {
+      "index": 39,
+      "tag": "summary",
+      "text": "Why this?",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 370.6,
+      "height": 24
+    },
+    {
+      "index": 40,
+      "tag": "summary",
+      "text": "Why this? Excellent",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 370.6,
+      "height": 24
+    },
+    {
+      "index": 41,
+      "tag": "button",
+      "text": "View Graph",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 64.8,
+      "height": 42.4
+    },
+    {
+      "index": 42,
+      "tag": "button",
+      "text": "Compare Preview",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 90.9,
+      "height": 42.4
+    },
+    {
+      "index": 43,
+      "tag": "button",
+      "text": "▱",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 44,
+      "tag": "button",
+      "text": "Add to Promise Table",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 45,
+      "tag": "button",
+      "text": "Explore Journey",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 46,
+      "tag": "button",
+      "text": "View Graph",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 47,
+      "tag": "button",
+      "text": "Compare Preview",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 388.6,
+      "height": 28
+    },
+    {
+      "index": 48,
+      "tag": "button",
+      "text": "More like this",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 49,
+      "tag": "button",
+      "text": "Less like this",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 50,
+      "tag": "button",
+      "text": "Not relevant",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 51,
+      "tag": "button",
+      "text": "Save Scripture",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 52,
+      "tag": "button",
+      "text": "Save Word",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 53,
+      "tag": "button",
+      "text": "Save Prayer",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 54,
+      "tag": "button",
+      "text": "Complete Action",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 55,
+      "tag": "button",
+      "text": "Reset this preference",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 192,
+      "height": 26.4
+    },
+    {
+      "index": 56,
+      "tag": "button",
+      "text": "▱",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 28.8,
+      "height": 28.8
+    },
+    {
+      "index": 57,
+      "tag": "summary",
+      "text": "Why this?",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 370.6,
+      "height": 24
+    },
+    {
+      "index": 58,
+      "tag": "summary",
+      "text": "Why this? Excellent",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 370.6,
+      "height": 24
+    },
+    {
+      "index": 59,
+      "tag": "button",
+      "text": "View Graph",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 64.8,
+      "height": 42.4
+    },
+    {
+      "index": 60,
+      "tag": "button",
+      "text": "Compare Preview",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 90.9,
+      "height": 42.4
+    },
+    {
+      "index": 61,
+      "tag": "button",
+      "text": "▱",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 62,
+      "tag": "button",
+      "text": "Add to Promise Table",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 63,
+      "tag": "button",
+      "text": "Explore Journey",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 64,
+      "tag": "button",
+      "text": "View Graph",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 191.9,
+      "height": 28
+    },
+    {
+      "index": 65,
+      "tag": "button",
+      "text": "Compare Preview",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 388.6,
+      "height": 28
+    },
+    {
+      "index": 66,
+      "tag": "button",
+      "text": "More like this",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 67,
+      "tag": "button",
+      "text": "Less like this",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 68,
+      "tag": "button",
+      "text": "Not relevant",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 69,
+      "tag": "button",
+      "text": "Save Scripture",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 70,
+      "tag": "button",
+      "text": "Save Word",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 71,
+      "tag": "button",
+      "text": "Save Prayer",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 72,
+      "tag": "button",
+      "text": "Complete Action",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 93.8,
+      "height": 26.4
+    },
+    {
+      "index": 73,
+      "tag": "button",
+      "text": "Reset this preference",
+      "visible": true,
+      "disabled": false,
+      "pointerEvents": "auto",
+      "width": 192,
+      "height": 26.4
+    }
+  ]
+}

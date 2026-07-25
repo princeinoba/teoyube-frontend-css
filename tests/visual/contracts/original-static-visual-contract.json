@@ -998,8 +998,8 @@
     },
     {
       "path": "styles/pages/search.css",
-      "bytes": 109,
-      "sha256": "cf1a76c81e8d8715c96855ac8e9891ca382d034f08accb3c133ef0571fb22c8d"
+      "bytes": 20989,
+      "sha256": "b889c52caabd5f3c36c03d8554888027f808c4bac95568ea193fa1cbaa6b324e"
     },
     {
       "path": "styles/pages/tables.css",

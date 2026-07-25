@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-2026-07-25-SEARCH-001",
+  "method": "Per-channel absolute RGB comparison at deviceScaleFactor 1; changed-pixel threshold is max RGB delta > 16. Diff pixels are amplified 4x for visibility.",
+  "referenceVsBefore": {
+    "width": 1536,
+    "height": 1024,
+    "meanAbsoluteChannelError": 79.426032,
+    "normalizedMeanAbsoluteErrorPercent": 31.147463,
+    "rootMeanSquareChannelError": 117.147236,
+    "changedPixelsOver16Percent": 65.550613,
+    "exactPixelPercent": 0.57017
+  },
+  "referenceVsAfter": {
+    "width": 1536,
+    "height": 1024,
+    "meanAbsoluteChannelError": 25.746889,
+    "normalizedMeanAbsoluteErrorPercent": 10.096819,
+    "rootMeanSquareChannelError": 55.60324,
+    "changedPixelsOver16Percent": 36.219724,
+    "exactPixelPercent": 1.204554
+  },
+  "normalizedMeanAbsoluteErrorImprovementPercent": 67.583816,
+  "nextVsStatic": {
+    "1536x1024": {
+      "width": 1536,
+      "height": 1024,
+      "meanAbsoluteChannelError": 0.000389,
+      "normalizedMeanAbsoluteErrorPercent": 0.000153,
+      "rootMeanSquareChannelError": 0.14113,
+      "changedPixelsOver16Percent": 0.001526,
+      "exactPixelPercent": 99.998474
+    },
+    "1440x900": {
+      "width": 1440,
+      "height": 900,
+      "meanAbsoluteChannelError": 0.000472,
+      "normalizedMeanAbsoluteErrorPercent": 0.000185,
+      "rootMeanSquareChannelError": 0.155476,
+      "changedPixelsOver16Percent": 0.001852,
+      "exactPixelPercent": 99.998148
+    },
+    "1280x800": {
+      "width": 1280,
+      "height": 800,
+      "meanAbsoluteChannelError": 0.000598,
+      "normalizedMeanAbsoluteErrorPercent": 0.000234,
+      "rootMeanSquareChannelError": 0.174911,
+      "changedPixelsOver16Percent": 0.002344,
+      "exactPixelPercent": 99.997656
+    },
+    "1024x768": {
+      "width": 1024,
+      "height": 768,
+      "meanAbsoluteChannelError": 0.002714,
+      "normalizedMeanAbsoluteErrorPercent": 0.001064,
+      "rootMeanSquareChannelError": 0.361757,
+      "changedPixelsOver16Percent": 0.010554,
+      "exactPixelPercent": 99.989446
+    },
+    "768x1024": {
+      "width": 768,
+      "height": 1024,
+      "meanAbsoluteChannelError": 0.000058,
+      "normalizedMeanAbsoluteErrorPercent": 0.000023,
+      "rootMeanSquareChannelError": 0.015213,
+      "changedPixelsOver16Percent": 0,
+      "exactPixelPercent": 99.996948
+    },
+    "390x844": {
+      "width": 390,
+      "height": 844,
+      "meanAbsoluteChannelError": 0,
+      "normalizedMeanAbsoluteErrorPercent": 0,
+      "rootMeanSquareChannelError": 0,
+      "changedPixelsOver16Percent": 0,
+      "exactPixelPercent": 100
+    }
+  },
+  "acceptedDifferences": [
+    "All existing functional Search controls remain visible although the reference omits some controls.",
+    "Existing owner-approved header copy is preserved.",
+    "Existing split suggestion structures are styled as one coherent surface without changing DOM."
+  ],
+  "hashes": {
+    "reference": "9ae5508cf494416e3dad337057cec8de84f64ac259ce13dbf02411451e4874dd",
+    "before": "10e85141f5f5c9543515a22da3f65d4d05b9374b12986ccbb58827c681f4cc44",
+    "afterNext1536": "2594bbe91bec59cd933f6ff5e52c82fd3e98fd8c366b4569a7178f16cee72eca",
+    "afterStatic1536": "cab7a18aa2d6f41b7c3c1211266fca29fc93f6859986580f0d6c4e55ca34eb10",
+    "sideBySide": "80924babec213f6273c65b6011d5fcc9b41a76b32a4cf43b4831c640c9ee1265",
+    "overlay": "7550736d93d8826acd656a96847783789190f164cce98b0dc011bd28c71b2177",
+    "referenceDiff": "0f414404947d74f1f80bcfdea6e79caf4758f4bfb5c30e8b478f12f83ff0fd96",
+    "runtimeDiff": "2c75156fa3f07c4141fea6efbd20130deb9c7a6b20385d82c440659ae41531b9"
+  }
+}
