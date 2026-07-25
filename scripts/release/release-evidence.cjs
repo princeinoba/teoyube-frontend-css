@@ -145,7 +145,11 @@ function generate() {
     retrieval.result === "PASS_REUSED_HASH_BOUND",
     environment.result === "PASS"
   ];
-  const gateCPreview = gateInputs.every(Boolean) ? "PASS" : "BLOCKED";
+  const gateCPreview = gateInputs.every(Boolean)
+    ? "PASS"
+    : security.result !== "PASS"
+      ? "BLOCKED_SECURITY_ADVISORY"
+      : "BLOCKED";
   const scorecard = {
     schemaVersion: 1,
     scorecardVersion: "teoyube-gate-c-preview-2026-07-24.1",
@@ -356,6 +360,9 @@ function verify() {
     currentHeadAccepted: lineage.result === "PASS",
     lineage: {
       runtimeSourceCommit: lineage.runtimeSourceCommit,
+      runtimeSourceDigest: lineage.runtimeSourceDigest,
+      computedRuntimeSourceDigest: lineage.computedRuntimeSourceDigest,
+      runtimeSourceDigestMatches: lineage.runtimeSourceDigestMatches,
       gateExecutionCommit: lineage.gateExecutionCommit,
       evidenceCommit: lineage.evidenceCommit,
       reportCommit: lineage.reportCommit,

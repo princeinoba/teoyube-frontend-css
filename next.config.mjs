@@ -1,4 +1,15 @@
 import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
+
+const require = createRequire(import.meta.url);
+const {
+  computeRuntimeSourceIdentity,
+  resolveBuildId
+} = require("./scripts/runtime/runtime-source-identity.cjs");
+const runtimeSourceIdentity = computeRuntimeSourceIdentity({
+  root: fileURLToPath(new URL(".", import.meta.url))
+});
 
 const securityPolicy = JSON.parse(
   readFileSync(new URL("./config/security-headers.json", import.meta.url), "utf8")
@@ -14,6 +25,7 @@ const globalSecurityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  generateBuildId: async () => resolveBuildId(runtimeSourceIdentity),
   turbopack: {
     root: process.cwd()
   },

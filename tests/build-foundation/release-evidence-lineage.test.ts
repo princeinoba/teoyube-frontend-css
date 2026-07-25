@@ -13,6 +13,7 @@ const {
     evidenceCommitIsDescendant: boolean;
     artifactsValid: boolean;
     runtimeMetadataVerified: boolean;
+    runtimeSourceDigestMatches: boolean;
     changedPaths: Array<{
       path: string;
       classification: string;
@@ -26,7 +27,8 @@ const base = {
   gateExecutionIsDescendant: true,
   evidenceCommitIsDescendant: true,
   artifactsValid: true,
-  runtimeMetadataVerified: true
+  runtimeMetadataVerified: true,
+  runtimeSourceDigestMatches: true
 };
 
 const evaluate = (
@@ -110,6 +112,16 @@ describe("strict release-evidence lineage", () => {
       evaluateLineage({
         ...base,
         runtimeSourceIsAncestor: false,
+        changedPaths: []
+      }).result
+    ).toBe("BLOCKED");
+  });
+
+  it("blocks a stale runtime-source digest", () => {
+    expect(
+      evaluateLineage({
+        ...base,
+        runtimeSourceDigestMatches: false,
         changedPaths: []
       }).result
     ).toBe("BLOCKED");

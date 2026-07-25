@@ -28,6 +28,11 @@ export interface CanonicalRuntimeManifest {
   readonly cutoverCommit: string;
   readonly staticBaselineCommit: string;
   readonly nextBuildId: string;
+  readonly runtimeSourceCommit?: string;
+  readonly runtimeSourceDigest?: string;
+  readonly buildIdGeneratorVersion?: string;
+  readonly buildIdDigestAlgorithm?: "sha256";
+  readonly runtimeSourceManifest?: string;
   readonly publicRoutes: readonly RuntimeRouteRecord[];
   readonly legacyUrlMappings: readonly LegacyUrlMapping[];
   readonly assetContracts: readonly AssetContract[];

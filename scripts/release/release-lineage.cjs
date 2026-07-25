@@ -8,6 +8,10 @@ const {
   run,
   sha256File
 } = require("./release-utils.cjs");
+const {
+  computeRuntimeSourceIdentity,
+  validateRuntimeSourceDigest
+} = require("../runtime/runtime-source-identity.cjs");
 
 const CLASSIFICATIONS = Object.freeze({
   RUNTIME_AFFECTING: "RUNTIME_AFFECTING",
@@ -56,6 +60,13 @@ const EXACT_REPORT_RECORDS = new Set([
   "docs/recovery/prompt-23a-dependency-graph.json",
   "docs/recovery/prompt-23a-owner-approval-package.md",
   "docs/recovery/prompt-23a-owner-approval-package.json",
+  "docs/recovery/prompt-23a-i-inventory-under-security-blocker-report.md",
+  "docs/recovery/prompt-23a-i-inventory-under-security-blocker-report.json",
+  "docs/recovery/prompt-23a-d-build-identity-diagnosis.md",
+  "docs/recovery/prompt-23a-d-build-identity-diagnosis.json",
+  "docs/recovery/prompt-23a-d-deterministic-build-and-inventory-closeout.md",
+  "docs/recovery/prompt-23a-d-deterministic-build-and-inventory-closeout.json",
+  "docs/architecture/deterministic-runtime-build-identity.md",
   "docs/recovery/prompt-23a-proposed-archive-manifest.json",
   "docs/recovery/prompt-23a-proposed-delete-manifest.json",
   "docs/recovery/prompt-23a-archive-inventory-report.md",
@@ -70,6 +81,11 @@ const RUNTIME_METADATA_KEYS = new Set([
   "ownerConfirmation",
   "cutoverCommit",
   "postCutoverTag",
+  "runtimeSourceCommit",
+  "runtimeSourceDigest",
+  "buildIdGeneratorVersion",
+  "buildIdDigestAlgorithm",
+  "runtimeSourceManifest",
   "nextBuildId",
   "verifiedAt",
   "gateCPreview"
@@ -134,6 +150,11 @@ function classifyChangedPath(filePath, options = {}) {
   if (
     normalized.startsWith("src/") ||
     normalized.startsWith("scripts/runtime/") ||
+    normalized === "config/runtime/runtime-source-manifest.json" ||
+    normalized === "config/runtime/route-compatibility-manifest.json" ||
+    normalized === "config/runtime/asset-media-compatibility-manifest.json" ||
+    normalized === "config/security-headers.json" ||
+    normalized === "config/telemetry-event-registry.json" ||
     normalized === "server.js"
   ) {
     return CLASSIFICATIONS.RUNTIME_AFFECTING;
@@ -159,6 +180,7 @@ function classifyChangedPath(filePath, options = {}) {
 
 function evaluateLineage(input) {
   const failures = [];
+  if (input.runtimeSourceDigestMatches === false) failures.push("runtime_source_digest");
   if (!input.runtimeSourceIsAncestor) failures.push("runtime_source_not_ancestor");
   if (!input.gateExecutionIsDescendant) failures.push("gate_execution_lineage");
   if (!input.evidenceCommitIsDescendant) failures.push("evidence_commit_lineage");
@@ -213,6 +235,15 @@ function verifyRepositoryLineage(manifest, options = {}) {
   const runtimeSourceCommit = lineage.runtimeSourceCommit || manifest.source?.commit;
   const gateExecutionCommit = lineage.gateExecutionCommit || manifest.source?.commit;
   const evidenceCommit = lineage.evidenceCommit || gateExecutionCommit;
+  const computedRuntimeIdentity = computeRuntimeSourceIdentity();
+  let runtimeSourceDigestMatches = false;
+  try {
+    runtimeSourceDigestMatches =
+      validateRuntimeSourceDigest(lineage.runtimeSourceDigest) === computedRuntimeIdentity.digest &&
+      lineage.runtimeSourceIdentityVersion === computedRuntimeIdentity.generatorVersion;
+  } catch {
+    runtimeSourceDigestMatches = false;
+  }
   const bound = new Map(
     (lineage.allowedDescendantFiles || []).map((record) => [record.path, record])
   );
@@ -259,6 +290,7 @@ function verifyRepositoryLineage(manifest, options = {}) {
       commitIsAncestor(evidenceCommit, currentHead),
     artifactsValid: options.artifactsValid === true,
     runtimeMetadataVerified,
+    runtimeSourceDigestMatches,
     changedPaths
   });
 
@@ -269,16 +301,22 @@ function verifyRepositoryLineage(manifest, options = {}) {
     gateExecutionCommit,
     evidenceCommit,
     reportCommit: lineage.reportCommit || null,
+    runtimeSourceDigest: lineage.runtimeSourceDigest || null,
+    computedRuntimeSourceDigest: computedRuntimeIdentity.digest,
+    runtimeSourceDigestMatches,
     runtimeMetadataVerified,
     changedPaths
   });
 }
 
 function createLineageRecord(sourceCommit) {
+  const runtimeIdentity = computeRuntimeSourceIdentity();
   return {
-    schemaVersion: 1,
-    policyVersion: "teoyube-strict-release-lineage-2026-07-25.1",
+    schemaVersion: 2,
+    policyVersion: "teoyube-strict-release-lineage-2026-07-25.2",
     runtimeSourceCommit: sourceCommit,
+    runtimeSourceDigest: runtimeIdentity.digest,
+    runtimeSourceIdentityVersion: runtimeIdentity.generatorVersion,
     gateExecutionCommit: sourceCommit,
     evidenceCommit: null,
     reportCommit: null,

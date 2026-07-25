@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "identityVersion": "teoyube-runtime-source-digest-2026-07-25.1",
+  "algorithm": "sha256",
+  "buildIdPrefix": "teoyube",
+  "digestPrefixLength": 24,
+  "exactPaths": [
+    ".env.example",
+    "app.js",
+    "config/runtime/asset-media-compatibility-manifest.json",
+    "config/runtime/route-compatibility-manifest.json",
+    "config/runtime/runtime-source-manifest.json",
+    "config/security-headers.json",
+    "config/telemetry-event-registry.json",
+    "index.html",
+    "next.config.mjs",
+    "package-lock.json",
+    "package.json",
+    "server.js",
+    "styles.css",
+    "tsconfig.json",
+    "tsconfig.next.json"
+  ],
+  "prefixes": [
+    "public/",
+    "scripts/runtime/",
+    "src/",
+    "styles/"
+  ],
+  "excludedClasses": [
+    "REPORT_ONLY",
+    "OWNER_APPROVAL",
+    "EVIDENCE_ARTIFACT",
+    "GENERATED_OUTPUT",
+    "GIT_METADATA"
+  ]
+}

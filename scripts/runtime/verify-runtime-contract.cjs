@@ -5,6 +5,12 @@ const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 const { readBuild } = require("./runtime-launcher-lib.cjs");
+const {
+  computeRuntimeSourceIdentity,
+  dirtyRuntimePaths,
+  evaluateRuntimeIdentityContract,
+  loadRuntimeSourceManifest
+} = require("./runtime-source-identity.cjs");
 
 const root = path.resolve(__dirname, "../..");
 const candidateMode = process.argv.includes("--candidate");
@@ -69,11 +75,19 @@ check(
     /^[a-z0-9_-]{1,128}$/i.test(manifest.nextBuildId),
   "Next build ID is invalid."
 );
+check(
+  manifest.runtimeSourceCommit === undefined || /^[a-f0-9]{40}$/.test(manifest.runtimeSourceCommit),
+  "Runtime source commit is invalid."
+);
+check(
+  manifest.runtimeSourceDigest === undefined || /^[a-f0-9]{64}$/.test(manifest.runtimeSourceDigest),
+  "Runtime source digest is invalid."
+);
 check(manifest.rollbackCommand === "npm run rollback:start", "Rollback command differs.");
 check(manifest.gateCProduction === "CLOSED", "Gate C-Production must remain closed.");
 check(manifest.publicDeploymentPerformed === false, "The manifest must not claim a public deployment.");
 check(
-  ["PENDING_CANDIDATE_GATE", "PASS"].includes(manifest.gateCPreview),
+  ["PENDING_CANDIDATE_GATE", "BLOCKED_SECURITY_ADVISORY", "PASS"].includes(manifest.gateCPreview),
   "Gate C-Preview status is invalid."
 );
 check(
@@ -170,6 +184,7 @@ for (const requiredPath of [
   check(fs.existsSync(absolute(requiredPath)), `Required asset is missing: ${requiredPath}`);
 }
 const nextConfig = fs.readFileSync(absolute("next.config.mjs"), "utf8");
+check(nextConfig.includes("generateBuildId"), "Deterministic Next generateBuildId is missing.");
 check(nextConfig.includes('source: "/public/:path*"'), "Legacy /public asset rewrite is missing.");
 check(nextConfig.includes('source: "/styles/:path*"'), "Approved stylesheet rewrite is missing.");
 check(nextConfig.includes('source: "/index.html"'), "Legacy /index.html redirect is missing.");
@@ -181,7 +196,17 @@ check(!/database(?:Url|URL)|apiKey|encryptionSecret/i.test(serializedRuntimeConf
 const build = readBuild(root);
 if (!candidateMode) check(build.ready, build.message);
 if (manifest.nextBuildId !== "PENDING_CANDIDATE_BUILD" && build.ready) {
-  check(manifest.nextBuildId === build.buildId, "Runtime manifest build ID does not match the current Next build.");
+  const runtimeSourceManifest = loadRuntimeSourceManifest(root);
+  const computedIdentity = computeRuntimeSourceIdentity({ root });
+  const identityContract = evaluateRuntimeIdentityContract({
+    recorded: manifest,
+    computed: computedIdentity,
+    buildId: build.buildId,
+    dirtyPaths: candidateMode ? [] : dirtyRuntimePaths(root, runtimeSourceManifest),
+    staticRollbackRetained: manifest.rollbackRuntime === "static-node",
+    featureFlagDefaults: manifest.featureFlagDefaults
+  });
+  for (const failure of identityContract.failures) check(false, failure);
 }
 
 if (errors.length) {
