@@ -309,15 +309,23 @@ function verifyRepositoryLineage(manifest, options = {}) {
   });
 }
 
-function createLineageRecord(sourceCommit) {
+function createLineageRecord({ runtimeSourceCommit, gateExecutionCommit }) {
+  for (const [role, commit] of Object.entries({
+    runtimeSourceCommit,
+    gateExecutionCommit
+  })) {
+    if (!/^[a-f0-9]{40}$/.test(commit || "")) {
+      throw new Error(`Release lineage ${role} is invalid.`);
+    }
+  }
   const runtimeIdentity = computeRuntimeSourceIdentity();
   return {
     schemaVersion: 2,
     policyVersion: "teoyube-strict-release-lineage-2026-07-25.2",
-    runtimeSourceCommit: sourceCommit,
+    runtimeSourceCommit,
     runtimeSourceDigest: runtimeIdentity.digest,
     runtimeSourceIdentityVersion: runtimeIdentity.generatorVersion,
-    gateExecutionCommit: sourceCommit,
+    gateExecutionCommit,
     evidenceCommit: null,
     reportCommit: null,
     allowedDescendantFiles: []

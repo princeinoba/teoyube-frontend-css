@@ -186,6 +186,7 @@ function generate() {
     }));
   const webManifest = readJson("src/server/scripture/corpora/engwebp/generated/manifest.json");
   const retrievalManifest = readJson(".var/retrieval/public-index-manifest.json");
+  const canonicalRuntime = readJson("config/runtime/canonical-runtime-manifest.json");
   const packageLockHash = sha256File("package-lock.json");
   const sourceFiles = git(["ls-files"])
     .split(/\r?\n/)
@@ -202,7 +203,10 @@ function generate() {
       clean: true,
       sourceManifest
     },
-    lineage: createLineageRecord(identity.commit),
+    lineage: createLineageRecord({
+      runtimeSourceCommit: canonicalRuntime.runtimeSourceCommit,
+      gateExecutionCommit: identity.commit
+    }),
     environment: {
       node: identity.node,
       npm: identity.npm,

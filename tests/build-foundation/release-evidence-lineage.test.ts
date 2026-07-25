@@ -4,9 +4,19 @@ import { describe, expect, it } from "vitest";
 const require = createRequire(import.meta.url);
 const {
   CLASSIFICATIONS,
+  createLineageRecord,
   evaluateLineage
 }: {
   CLASSIFICATIONS: Record<string, string>;
+  createLineageRecord: (input: {
+    runtimeSourceCommit: string;
+    gateExecutionCommit: string;
+  }) => {
+    runtimeSourceCommit: string;
+    gateExecutionCommit: string;
+    runtimeSourceDigest: string;
+    runtimeSourceIdentityVersion: string;
+  };
   evaluateLineage: (input: {
     runtimeSourceIsAncestor: boolean;
     gateExecutionIsDescendant: boolean;
@@ -43,6 +53,24 @@ const evaluate = (
   });
 
 describe("strict release-evidence lineage", () => {
+  it("records runtime source and gate execution as distinct commit roles", () => {
+    const runtimeSourceCommit = "1".repeat(40);
+    const gateExecutionCommit = "2".repeat(40);
+    const record = createLineageRecord({ runtimeSourceCommit, gateExecutionCommit });
+    expect(record).toMatchObject({
+      runtimeSourceCommit,
+      gateExecutionCommit,
+      runtimeSourceDigest: expect.stringMatching(/^[a-f0-9]{64}$/),
+      runtimeSourceIdentityVersion: "teoyube-runtime-source-digest-2026-07-25.1"
+    });
+  });
+
+  it("rejects malformed lineage commit roles", () => {
+    expect(() =>
+      createLineageRecord({ runtimeSourceCommit: "bad", gateExecutionCommit: "2".repeat(40) })
+    ).toThrow(/runtimeSourceCommit is invalid/);
+  });
+
   it("accepts an exact report-only descendant", () => {
     expect(
       evaluate(
