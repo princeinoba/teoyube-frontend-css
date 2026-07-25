@@ -5,7 +5,8 @@ const require = createRequire(import.meta.url);
 const {
   CLASSIFICATIONS,
   createLineageRecord,
-  evaluateLineage
+  evaluateLineage,
+  selectDescendantPolicyBaseCommit
 }: {
   CLASSIFICATIONS: Record<string, string>;
   createLineageRecord: (input: {
@@ -30,6 +31,10 @@ const {
       boundHashMatches?: boolean | null;
     }>;
   }) => { result: string; evidenceMode: string; failures: string[] };
+  selectDescendantPolicyBaseCommit: (
+    runtimeSourceCommit: string,
+    gateExecutionCommit?: string
+  ) => string;
 } = require("../../scripts/release/release-lineage.cjs");
 
 const base = {
@@ -63,6 +68,18 @@ describe("strict release-evidence lineage", () => {
       runtimeSourceDigest: expect.stringMatching(/^[a-f0-9]{64}$/),
       runtimeSourceIdentityVersion: "teoyube-runtime-source-digest-2026-07-25.1"
     });
+  });
+
+  it("evaluates descendant reuse from the fresh gate-execution commit", () => {
+    const runtimeSourceCommit = "1".repeat(40);
+    const gateExecutionCommit = "2".repeat(40);
+
+    expect(
+      selectDescendantPolicyBaseCommit(runtimeSourceCommit, gateExecutionCommit)
+    ).toBe(gateExecutionCommit);
+    expect(selectDescendantPolicyBaseCommit(runtimeSourceCommit)).toBe(
+      runtimeSourceCommit
+    );
   });
 
   it("rejects malformed lineage commit roles", () => {

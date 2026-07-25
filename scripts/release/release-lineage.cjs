@@ -229,6 +229,10 @@ function changedPathsBetween(sourceCommit, currentHead) {
   return output ? output.split(/\r?\n/).filter(Boolean).map(normalizePath) : [];
 }
 
+function selectDescendantPolicyBaseCommit(runtimeSourceCommit, gateExecutionCommit) {
+  return gateExecutionCommit || runtimeSourceCommit;
+}
+
 function verifyRepositoryLineage(manifest, options = {}) {
   const currentHead = git(["rev-parse", "HEAD"]);
   const lineage = manifest.lineage || {};
@@ -247,7 +251,10 @@ function verifyRepositoryLineage(manifest, options = {}) {
   const bound = new Map(
     (lineage.allowedDescendantFiles || []).map((record) => [record.path, record])
   );
-  const paths = changedPathsBetween(runtimeSourceCommit, currentHead);
+  const paths = changedPathsBetween(
+    selectDescendantPolicyBaseCommit(runtimeSourceCommit, gateExecutionCommit),
+    currentHead
+  );
   const runtimeMetadataChanged = paths.includes(RUNTIME_METADATA_PATH);
   const runtimeMetadataOnly = runtimeMetadataChanged
     ? isRuntimeMetadataOnly(runtimeSourceCommit)
@@ -368,5 +375,6 @@ module.exports = {
   createLineageRecord,
   evaluateLineage,
   isRuntimeMetadataOnly,
+  selectDescendantPolicyBaseCommit,
   verifyRepositoryLineage
 };
