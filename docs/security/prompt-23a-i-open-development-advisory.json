@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-07-25T00:00:00-04:00",
+  "status": "OPEN",
+  "resolution": "UNRESOLVED",
+  "waiverGranted": false,
+  "securityExceptionGranted": false,
+  "auditThresholdChanged": false,
+  "advisories": [
+    {
+      "ghsa": "GHSA-mh99-v99m-4gvg",
+      "cve": "CVE-2026-14257",
+      "npmSource": 1124334,
+      "package": "brace-expansion",
+      "severity": "high",
+      "affectedRange": "<=5.0.7",
+      "currentlyRecognizedPatchedVersion": "5.0.8"
+    }
+  ],
+  "audit": {
+    "fullTree": {
+      "critical": 0,
+      "high": 9,
+      "moderate": 0,
+      "low": 0,
+      "result": "BLOCKED"
+    },
+    "productionOnly": {
+      "critical": 0,
+      "high": 0,
+      "moderate": 0,
+      "low": 0,
+      "result": "PASS"
+    }
+  },
+  "reachability": {
+    "productionRuntime": "NONE_IDENTIFIED",
+    "nextProduction": false,
+    "staticRollback": false,
+    "development": true,
+    "lint": true,
+    "ci": true,
+    "buildGate": true
+  },
+  "dependencyPaths": [
+    "eslint@9.39.5 > @eslint/config-array@0.21.2 > minimatch@3.1.5 > brace-expansion@1.1.16",
+    "eslint@9.39.5 > @eslint/eslintrc@3.3.6 > minimatch@3.1.5 > brace-expansion@1.1.16",
+    "eslint@9.39.5 > minimatch@3.1.5 > brace-expansion@1.1.16",
+    "eslint-config-next@16.2.10 > eslint-plugin-import@2.32.0 > minimatch@3.1.5 > brace-expansion@1.1.16",
+    "eslint-config-next@16.2.10 > eslint-plugin-jsx-a11y@6.10.2 > minimatch@3.1.5 > brace-expansion@1.1.16",
+    "eslint-config-next@16.2.10 > eslint-plugin-react@7.37.5 > minimatch@3.1.5 > brace-expansion@1.1.16",
+    "eslint-config-next@16.2.10 > typescript-eslint@8.64.0 > @typescript-eslint/typescript-estree@8.64.0 > minimatch@10.2.5 > brace-expansion@5.0.7"
+  ],
+  "safeRemediationAvailable": false,
+  "ownerDecision": {
+    "inventoryAuthorized": true,
+    "releaseDeploymentAuthorized": false,
+    "archiveDeleteExecutionAuthorized": false,
+    "gateCPreview": "BLOCKED_SECURITY_ADVISORY",
+    "gateCProduction": "CLOSED",
+    "riskAcceptedAsResolved": false
+  },
+  "classification": {
+    "primaryClass": "BUILD_TOOLING_CURRENT",
+    "recommendation": "REFACTOR_LATER_NOT_ARCHIVE"
+  },
+  "nextReviewTriggers": [
+    "A patched brace-expansion version compatible with the legacy dependency API.",
+    "A maintained plugin release that removes the vulnerable chain.",
+    "A supported ESLint migration path with valid peer contracts.",
+    "A security advisory update changing affected ranges or severity."
+  ],
+  "sources": [
+    "docs/security/prompt-23a-s-npm-audit-before.json",
+    "docs/security/prompt-23a-s-dependency-advisory-analysis.json",
+    "https://github.com/advisories/GHSA-mh99-v99m-4gvg"
+  ]
+}

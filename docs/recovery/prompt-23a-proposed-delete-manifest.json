@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-25T12:31:24.126Z",
+  "sourceCommit": "6bccbba694ae9b0f975884e182a0ad3f92cd7619",
+  "status": "DRY_RUN_NON_EXECUTABLE",
+  "prerequisites": {
+    "stabilizationComplete": false,
+    "gateCPreviewPass": false,
+    "fullTreeCriticalHighZeroOrFutureExplicitActionPhaseException": false,
+    "matchingHashes": true,
+    "candidateLevelOwnerApproval": false,
+    "cleanWorktree": false,
+    "currentRuntimeGates": true,
+    "preActionTag": true,
+    "executable": false
+  },
+  "items": [
+    {
+      "candidateId": "P23A-D001",
+      "path": ".tmp-apply-patch-probe.txt",
+      "class": "CANDIDATE_DELETE_AFTER_OWNER_APPROVAL",
+      "bytes": 6,
+      "dependencyProof": {
+        "incomingReferenceCount": 0,
+        "incomingKinds": [],
+        "examples": []
+      },
+      "currentUse": "Six-byte apply-patch diagnostic probe containing only 'probe'; no parsed import, require, path, runtime, rollback, test, CI, build, documentation, visual, or owner dependency.",
+      "reachability": {
+        "nextProduction": false,
+        "staticRollback": false,
+        "sharedRuntime": false,
+        "test": false,
+        "ciBuildTooling": false,
+        "documentationEvidence": false
+      },
+      "dynamicStringPathRisk": {
+        "present": false,
+        "references": []
+      },
+      "proposedAction": "DELETE_AFTER_STABILIZATION_AND_OWNER_APPROVAL",
+      "archiveConsidered": true,
+      "archiveRejectedReason": "Archiving a six-byte diagnostic probe would add more permanent navigation and evidence overhead than it preserves.",
+      "benefit": "6 tracked bytes and one root navigation entry; no bundle, build, or test-time effect; Git-history reduction 0.",
+      "risk": "Low functional risk based on complete static/reference proof, but deletion remains gated by future candidate-level owner approval and all action prerequisites.",
+      "requiredTests": [
+        "matching inventory hash",
+        "clean Gate C/security state or separately approved future action-phase exception",
+        "runtime:verify",
+        "recovery:verify",
+        "check:imports",
+        "architecture:verify",
+        "typecheck",
+        "lint",
+        "test",
+        "app:build",
+        "Next smoke",
+        "static rollback smoke"
+      ],
+      "rollback": "git restore --source=6bccbba694ae9b0f975884e182a0ad3f92cd7619 -- .tmp-apply-patch-probe.txt",
+      "protectedImpact": "NONE",
+      "ownerDecision": "PENDING"
+    }
+  ],
+  "ownerDecision": "PENDING"
+}

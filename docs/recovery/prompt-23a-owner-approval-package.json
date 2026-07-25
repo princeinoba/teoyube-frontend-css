@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-25T12:31:24.126Z",
+  "sourceCommit": "6bccbba694ae9b0f975884e182a0ad3f92cd7619",
+  "blanketApproval": false,
+  "decisionsDefault": "PENDING",
+  "allowedDecisions": [
+    "KEEP",
+    "APPROVE_ARCHIVE_AFTER_STABILIZATION",
+    "APPROVE_DELETE_AFTER_STABILIZATION",
+    "APPROVE_EPHEMERAL_CLEANUP",
+    "REJECT",
+    "NEEDS_MORE_EVIDENCE",
+    "PENDING"
+  ],
+  "prerequisites": {
+    "stabilizationComplete": false,
+    "gateCPreviewPass": false,
+    "fullTreeCriticalHighZeroOrFutureExplicitActionPhaseException": false,
+    "matchingHashes": true,
+    "candidateLevelOwnerApproval": false,
+    "cleanWorktree": false,
+    "currentRuntimeGates": true,
+    "preActionTag": true,
+    "executable": false
+  },
+  "groups": {
+    "A_KEEP": [
+      {
+        "candidateId": "P23A-K001",
+        "path": "server.js, index.html, app.js, styles/**, public/**, protected visual sources and rollback contracts",
+        "class": "STATIC_ROLLBACK",
+        "bytes": 202119424,
+        "dependencyProof": {
+          "staticReachableFiles": 465,
+          "protectedFiles": 1087
+        },
+        "currentUse": "Protected static rollback runtime, legacy hashes, assets, visual contracts, and owner evidence.",
+        "proposedAction": "KEEP_STATIC_ROLLBACK",
+        "benefit": "Preserves exact rollback and owner-authorized visual recovery.",
+        "risk": "Archiving or deletion would violate the owner contract and remove rollback coverage.",
+        "requiredTests": [
+          "All current runtime, recovery, visual, and static rollback gates."
+        ],
+        "rollback": "Not applicable; no action proposed.",
+        "protectedImpact": "OWNER_PROTECTED",
+        "ownerDecision": "PENDING"
+      }
+    ],
+    "B_REFACTOR_LATER": [
+      {
+        "candidateId": "P23A-R001",
+        "path": "package.json#devDependencies(eslint,eslint-config-next) and transitive minimatch/brace-expansion tree",
+        "class": "BUILD_TOOLING_CURRENT",
+        "bytes": 0,
+        "dependencyProof": {
+          "fullAuditHigh": 9,
+          "productionCriticalHigh": 0,
+          "report": "docs/security/prompt-23a-i-open-development-advisory.json"
+        },
+        "currentUse": "Active lint, CI, and release/build-gate tooling.",
+        "proposedAction": "REFACTOR_LATER_NOT_ARCHIVE",
+        "benefit": "A future supported upstream migration would clear the security gate without weakening lint coverage.",
+        "risk": "Current supported alternatives are incomplete or peer-invalid; no change is authorized now.",
+        "requiredTests": [
+          "Full Prompt 23A-S security and Gate C regression scope after a supported release exists."
+        ],
+        "rollback": "Revert only a future focused dependency-remediation commit.",
+        "protectedImpact": "NONE",
+        "ownerDecision": "PENDING"
+      }
+    ],
+    "C_ARCHIVE_AFTER_STABILIZATION": [],
+    "D_DELETE_AFTER_STABILIZATION_AND_EXPLICIT_APPROVAL": [
+      {
+        "candidateId": "P23A-D001",
+        "path": ".tmp-apply-patch-probe.txt",
+        "class": "CANDIDATE_DELETE_AFTER_OWNER_APPROVAL",
+        "bytes": 6,
+        "dependencyProof": {
+          "incomingReferenceCount": 0,
+          "incomingKinds": [],
+          "examples": []
+        },
+        "currentUse": "Six-byte apply-patch diagnostic probe containing only 'probe'; no parsed import, require, path, runtime, rollback, test, CI, build, documentation, visual, or owner dependency.",
+        "reachability": {
+          "nextProduction": false,
+          "staticRollback": false,
+          "sharedRuntime": false,
+          "test": false,
+          "ciBuildTooling": false,
+          "documentationEvidence": false
+        },
+        "dynamicStringPathRisk": {
+          "present": false,
+          "references": []
+        },
+        "proposedAction": "DELETE_AFTER_STABILIZATION_AND_OWNER_APPROVAL",
+        "archiveConsidered": true,
+        "archiveRejectedReason": "Archiving a six-byte diagnostic probe would add more permanent navigation and evidence overhead than it preserves.",
+        "benefit": "6 tracked bytes and one root navigation entry; no bundle, build, or test-time effect; Git-history reduction 0.",
+        "risk": "Low functional risk based on complete static/reference proof, but deletion remains gated by future candidate-level owner approval and all action prerequisites.",
+        "requiredTests": [
+          "matching inventory hash",
+          "clean Gate C/security state or separately approved future action-phase exception",
+          "runtime:verify",
+          "recovery:verify",
+          "check:imports",
+          "architecture:verify",
+          "typecheck",
+          "lint",
+          "test",
+          "app:build",
+          "Next smoke",
+          "static rollback smoke"
+        ],
+        "rollback": "git restore --source=6bccbba694ae9b0f975884e182a0ad3f92cd7619 -- .tmp-apply-patch-probe.txt",
+        "protectedImpact": "NONE",
+        "ownerDecision": "PENDING"
+      }
+    ],
+    "E_EPHEMERAL_CLEANUP_THROUGH_EXISTING_SAFE_COMMAND": [],
+    "F_BLOCKED_UNKNOWN": [
+      {
+        "candidateId": "P23A-B001",
+        "path": ".tmp",
+        "class": "EPHEMERAL_IGNORED_OUTPUT",
+        "bytes": 369618686,
+        "dependencyProof": {
+          "trackedReachability": false,
+          "ignored": true,
+          "generatedOrTemporary": true
+        },
+        "currentUse": "Ignored local output; may contain current test, analyzer, or diagnostic evidence.",
+        "proposedAction": "BLOCKED_UNKNOWN",
+        "benefit": "Potential workspace-only reduction; tracked and Git-history reduction 0.",
+        "risk": "No candidate-specific existing safe cleanup command was verified, and cleanup is outside Prompt 23A-I.",
+        "requiredTests": [
+          "Owner-approved cleanup command and current evidence-retention review."
+        ],
+        "rollback": "Regenerate only after the exact producer and evidence-retention policy are verified.",
+        "protectedImpact": "NONE_IDENTIFIED",
+        "ownerDecision": "PENDING"
+      },
+      {
+        "candidateId": "P23A-B002",
+        "path": "playwright-report",
+        "class": "EPHEMERAL_IGNORED_OUTPUT",
+        "bytes": 553074,
+        "dependencyProof": {
+          "trackedReachability": false,
+          "ignored": true,
+          "generatedOrTemporary": true
+        },
+        "currentUse": "Ignored local output; may contain current test, analyzer, or diagnostic evidence.",
+        "proposedAction": "BLOCKED_UNKNOWN",
+        "benefit": "Potential workspace-only reduction; tracked and Git-history reduction 0.",
+        "risk": "No candidate-specific existing safe cleanup command was verified, and cleanup is outside Prompt 23A-I.",
+        "requiredTests": [
+          "Owner-approved cleanup command and current evidence-retention review."
+        ],
+        "rollback": "Regenerate only after the exact producer and evidence-retention policy are verified.",
+        "protectedImpact": "NONE_IDENTIFIED",
+        "ownerDecision": "PENDING"
+      }
+    ]
+  },
+  "candidateIds": [
+    "P23A-K001",
+    "P23A-R001",
+    "P23A-D001",
+    "P23A-B001",
+    "P23A-B002"
+  ],
+  "pendingDecisions": 5
+}

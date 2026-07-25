@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-07-25T00:00:00-04:00",
+  "status": "STABILIZATION_NOT_DOCUMENTED",
+  "evidence": {
+    "sevenDaysOfUse": false,
+    "tenMeaningfulSessions": false,
+    "incidentHistory": "NOT_DOCUMENTED",
+    "productionOperation": false
+  },
+  "inventoryAllowed": true,
+  "prompt23BAllowed": false,
+  "prompt23BPrerequisites": [
+    "STABILIZATION_COMPLETE",
+    "Gate C-Preview PASS",
+    "zero unresolved critical/high full-tree advisories or a separately approved future action-phase security exception",
+    "matching candidate hashes",
+    "candidate-level owner approval",
+    "clean worktree",
+    "current runtime gates",
+    "pre-action tag"
+  ]
+}

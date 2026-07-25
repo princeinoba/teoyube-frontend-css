@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-25T12:31:24.126Z",
+  "sourceCommit": "6bccbba694ae9b0f975884e182a0ad3f92cd7619",
+  "status": "DRY_RUN_NON_EXECUTABLE",
+  "prerequisites": {
+    "stabilizationComplete": false,
+    "gateCPreviewPass": false,
+    "fullTreeCriticalHighZeroOrFutureExplicitActionPhaseException": false,
+    "matchingHashes": true,
+    "candidateLevelOwnerApproval": false,
+    "cleanWorktree": false,
+    "currentRuntimeGates": true,
+    "preActionTag": true,
+    "executable": false
+  },
+  "items": [],
+  "ownerDecision": "PENDING",
+  "note": "No tracked archive candidate met the conservative evidence threshold. In-repository archiving would reduce Git history by 0 bytes."
+}
