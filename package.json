@@ -46,6 +46,8 @@
     "release:commands:evidence": "node scripts/release/command-runner.cjs evidence",
     "release:evidence:generate": "node scripts/release/release-evidence.cjs generate",
     "release:evidence:verify": "node scripts/release/release-evidence.cjs verify",
+    "release:evidence:bind": "node scripts/release/release-evidence.cjs bind",
+    "release:evidence:lineage": "node scripts/release/release-evidence.cjs verify",
     "release:gate:preview": "node scripts/release/release-evidence.cjs gate",
     "test:e2e": "node scripts/runNextPreviewE2E.cjs",
     "test:teo-guide": "vitest run tests/build-foundation/teo-guide-characterization.test.ts tests/build-foundation/teo-guide-orchestration.test.ts",

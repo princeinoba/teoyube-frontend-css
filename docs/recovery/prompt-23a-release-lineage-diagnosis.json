@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "branch": "recovery/visual-source-of-truth",
+  "runtimeSourceCommit": "52ed7e9530e292f60195f7305a8ec9a476bd7367",
+  "originalEvidenceCommit": "7b27e7fbcd4522b66ddd16e4c231ff0a76379514",
+  "prompt22FinalReportCommit": "b74eb7e5f25b4de1804d89e6ecff0d08b987ffda",
+  "sourceIsAncestor": true,
+  "diffCheck": "PASS",
+  "changedPaths": [
+    {
+      "path": "config/runtime/canonical-runtime-manifest.json",
+      "classification": "RUNTIME_MANIFEST_METADATA",
+      "reason": "Only final owner decision, cutover/build identity, tag, verification time, and Gate C-Preview metadata changed; command, route, API, asset, rollback, deployment, and feature-flag contracts are unchanged.",
+      "runtimeVerify": "PASS"
+    },
+    {
+      "path": "docs/architecture/adr/ADR-006-owner-controlled-local-runtime-cutover.md",
+      "classification": "REPORT_ONLY"
+    },
+    {
+      "path": "docs/architecture/canonical-runtime.md",
+      "classification": "REPORT_ONLY"
+    },
+    {
+      "path": "docs/owner-approvals/runtime/TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24.md",
+      "classification": "OWNER_APPROVAL"
+    },
+    {
+      "path": "docs/recovery/prompt-22-runtime-cutover-candidate.json",
+      "classification": "EVIDENCE_ARTIFACT"
+    },
+    {
+      "path": "docs/recovery/prompt-22-runtime-cutover-candidate.md",
+      "classification": "REPORT_ONLY"
+    },
+    {
+      "path": "docs/recovery/prompt-22-runtime-cutover-report.md",
+      "classification": "REPORT_ONLY"
+    }
+  ],
+  "classCounts": {
+    "RUNTIME_AFFECTING": 0,
+    "ROUTE_OR_API_AFFECTING": 0,
+    "VISUAL_OR_ASSET_AFFECTING": 0,
+    "BUILD_OR_DEPENDENCY_AFFECTING": 0,
+    "GATE_OR_TEST_AFFECTING": 0,
+    "RUNTIME_MANIFEST_METADATA": 1,
+    "OWNER_APPROVAL": 1,
+    "EVIDENCE_ARTIFACT": 1,
+    "REPORT_ONLY": 4,
+    "UNKNOWN_BLOCKED": 0
+  },
+  "originalDescendantReuseEligibility": "STRICT_EVIDENCE_ONLY_DESCENDANT_REUSE",
+  "repairImplementationEffect": "GATE_OR_TEST_AFFECTING",
+  "requiredPath": "Regenerate the complete no-cost Gate C-Preview evidence at the committed lineage-repair source before inventory."
+}

@@ -11,6 +11,11 @@ const {
   sha256File,
   writeJson
 } = require("./release-utils.cjs");
+const {
+  bindCurrentHead,
+  createLineageRecord,
+  verifyRepositoryLineage
+} = require("./release-lineage.cjs");
 
 const mode = process.argv[2] || "verify";
 const policy = readJson("config/release-gate-policy.json");
@@ -193,6 +198,7 @@ function generate() {
       clean: true,
       sourceManifest
     },
+    lineage: createLineageRecord(identity.commit),
     environment: {
       node: identity.node,
       npm: identity.npm,
@@ -296,7 +302,6 @@ function verify() {
   }
   const manifest = readJson(manifestPath);
   const failures = [];
-  if (manifest.source.commit !== identity.commit) failures.push("source_commit");
   if (manifest.source.branch !== identity.branch) failures.push("branch");
   if (manifest.environment.node !== policy.toolchain.node) failures.push("node");
   if (manifest.environment.npm !== policy.toolchain.npm) failures.push("npm");
@@ -311,10 +316,16 @@ function verify() {
     manifest.runtime.runtimeCutover !== "local-candidate" ||
     manifest.runtime.publicDeploymentPerformed
   ) failures.push("runtime");
+  const artifactFailures = [];
   for (const artifact of manifest.artifacts || []) {
-    if (!fs.existsSync(absolute(artifact.path))) failures.push(`missing:${artifact.path}`);
-    else if (sha256File(artifact.path) !== artifact.sha256) failures.push(`hash:${artifact.path}`);
+    if (!fs.existsSync(absolute(artifact.path))) artifactFailures.push(`missing:${artifact.path}`);
+    else if (sha256File(artifact.path) !== artifact.sha256) artifactFailures.push(`hash:${artifact.path}`);
   }
+  failures.push(...artifactFailures);
+  const lineage = verifyRepositoryLineage(manifest, {
+    artifactsValid: artifactFailures.length === 0
+  });
+  failures.push(...lineage.failures.map((failure) => `lineage:${failure}`));
   const protectedDiff = git([
     "diff",
     "--name-only",
@@ -340,6 +351,18 @@ function verify() {
     manifestVersion: manifest.manifestVersion,
     artifactsVerified: manifest.artifacts?.length || 0,
     failures,
+    releaseEvidenceLineage: lineage.result,
+    evidenceMode: lineage.evidenceMode,
+    currentHeadAccepted: lineage.result === "PASS",
+    lineage: {
+      runtimeSourceCommit: lineage.runtimeSourceCommit,
+      gateExecutionCommit: lineage.gateExecutionCommit,
+      evidenceCommit: lineage.evidenceCommit,
+      reportCommit: lineage.reportCommit,
+      currentHead: lineage.currentHead,
+      runtimeMetadataVerified: lineage.runtimeMetadataVerified,
+      changedPaths: lineage.changedPaths
+    },
     gateCPreview: result,
     gateCProduction: "CLOSED"
   });
@@ -347,5 +370,22 @@ function verify() {
   if (failures.length) process.exitCode = 1;
 }
 
+function bind() {
+  const manifestPath = `${artifactRoot}/manifest.json`;
+  const manifest = readJson(manifestPath);
+  const artifactsValid = (manifest.artifacts || []).every(
+    (artifact) =>
+      fs.existsSync(absolute(artifact.path)) &&
+      sha256File(artifact.path) === artifact.sha256
+  );
+  const bound = bindCurrentHead(manifest, { artifactsValid });
+  writeJson(manifestPath, bound.manifest);
+  console.log(
+    `RELEASE EVIDENCE LINEAGE BOUND: ${bound.verification.evidenceMode}; current ${bound.verification.currentHead}`
+  );
+  verify();
+}
+
 if (mode === "generate") generate();
+else if (mode === "bind") bind();
 else verify();

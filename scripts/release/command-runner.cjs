@@ -63,7 +63,7 @@ if (!selected) {
 
 const existingPath = "artifacts/release-evidence/commands.json";
 const identity = currentIdentity();
-const existing = fs.existsSync(absolute(existingPath))
+let existing = fs.existsSync(absolute(existingPath))
   ? readJson(existingPath)
   : {
       schemaVersion: 1,
@@ -78,7 +78,21 @@ const existing = fs.existsSync(absolute(existingPath))
       commands: []
     };
 if (existing.sourceCommit !== identity.commit) {
-  throw new Error("Existing command evidence belongs to a different source commit.");
+  if (process.env.TEOYUBE_RELEASE_NEW_SOURCE !== "1") {
+    throw new Error("Existing command evidence belongs to a different source commit.");
+  }
+  existing = {
+    schemaVersion: 1,
+    runnerVersion: "teoyube-release-command-runner-2026-07-24.1",
+    sourceCommit: identity.commit,
+    branch: identity.branch,
+    environment: {
+      node: identity.node,
+      npm: identity.npm,
+      os: identity.os
+    },
+    commands: []
+  };
 }
 const byId = new Map(existing.commands.map((item) => [item.id, item]));
 const logRoot = absolute(".tmp/release-evidence/logs");
