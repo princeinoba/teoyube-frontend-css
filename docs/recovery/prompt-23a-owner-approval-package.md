@@ -44,6 +44,8 @@ No approval, move, rename, archive, deletion, cleanup, or dependency action occu
 
 ## Prompt 23A-D status
 
+Gate-execution source commit: `ff925572a8117e21d0532f7127cc3111cc297d1b`
+
 - Runtime build identity: **PASS**
 - Non-destructive inventory: **COMPLETE**
 - Release/deployment: `BLOCKED_SECURITY_ADVISORY`

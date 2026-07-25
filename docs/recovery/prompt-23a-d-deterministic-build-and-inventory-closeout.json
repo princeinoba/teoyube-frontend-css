@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reportedAt": "2026-07-25T18:30:00.000Z",
+  "reportedAt": "2026-07-25T19:43:04.511Z",
   "result": {
     "prompt23AD": "PASS",
     "runtimeBuildIdentity": "PASS",
@@ -14,7 +14,7 @@
     "startingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
     "buildIdentityImplementationCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
     "runtimeManifestCommit": "6de8e820c489080524c1e589a11a7252570b603c",
-    "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+    "gateExecutionCommit": "ff925572a8117e21d0532f7127cc3111cc297d1b",
     "finalReportCommit": "SELF (commit containing this report)"
   },
   "buildIdentityBefore": {
@@ -88,15 +88,44 @@
     "completedCells": 216,
     "thresholdMs": 5000,
     "maximumReadyMsByRun": [
-      3326.8,
-      3316.3,
-      3140.7
+      3125.9,
+      3643.3,
+      3531.2
     ],
     "visual": "PASS",
     "domClass": "PASS",
     "asset": "PASS",
     "functional": "PASS",
-    "baselineWrites": 0
+    "baselineWrites": 0,
+    "gateSequenceId": "prompt17s-ff925572a811-20260725184757534",
+    "logicalRuns": [
+      {
+        "runOrdinal": 1,
+        "runId": "prompt17s-ff925572a811-20260725184757534-attempt-1-run-1",
+        "completedCells": 72,
+        "maximumReadyMs": 3125.9,
+        "performanceResultSha256": "c8746ea3e97aae0e526a9038862ef28ca783434295315f76094ab3f5509698ed",
+        "parityEvidenceSha256": "627d91b6270ad2a2edeff56cf25d277e7fd6b8d27a16c78cc01c653e642b6fd2"
+      },
+      {
+        "runOrdinal": 2,
+        "runId": "prompt17s-ff925572a811-20260725184757534-attempt-2-run-2",
+        "completedCells": 72,
+        "maximumReadyMs": 3643.3,
+        "performanceResultSha256": "ab8b06f2202b6dcf26e8c455d7749ed90329ced40a6246206da933ed1ffab4ca",
+        "parityEvidenceSha256": "047f45d30dcdefd6463bca405b5069bc65e823a7ae27a8026d60aa1b67e2429d"
+      },
+      {
+        "runOrdinal": 3,
+        "runId": "prompt17s-ff925572a811-20260725184757534-attempt-3-run-3",
+        "completedCells": 72,
+        "maximumReadyMs": 3531.2,
+        "performanceResultSha256": "bda90b9f572da678d7ce9ccc525150ff0cfc6eac2ba5c4571a51162d4a04d5b0",
+        "parityEvidenceSha256": "498963476dc4ad53edb0d326a41fdbe247cbe87bf5b7ad2bab78a9c8e0be59ca"
+      }
+    ],
+    "parityTestsPerRun": 35,
+    "totalParityTests": 105
   },
   "inventory": {
     "records": 3521,
@@ -122,12 +151,12 @@
     "staticRollbackArchiveEligible": false
   },
   "artifactHashes": {
-    "inventoryJson": "200c6571b97ec5cab51e30bb324a6ba6c2f386101711fc463d6cc95e98c1053f",
-    "inventoryMarkdown": "bfecf87c040ed118d085265ee742ce4e03069f1323118a1eeb09a3c7c26b3938",
-    "graphJson": "02c18d8f7ba1c8966a9d13833c7d703ef5b61868ad3c7b2d77cd78438abfe624",
-    "graphMarkdown": "f87fcd41febd26590016429edbf48b123e3bd63b0916b734b9df3af55006f67a",
-    "approvalJson": "97efeba9000f056c81f917156895d881c1185d305438985a0c8c5c8030706de7",
-    "approvalMarkdown": "5c7417a06a3a6dec484b9a637c48050e710a5c12680333275a127a88f5c4f0d4"
+    "inventoryJson": "a49ef9b05b9164a8eb328e51a5675eeca390c1b6ed0f7c34e11ccb32fee8b47a",
+    "inventoryMarkdown": "04571d52e133bebda3711d5d8ee90d76e35fe8c2f6c74fbda8f2049b231edcb3",
+    "graphJson": "38cce85e08342fe95023ae7225698c1f484e72235cf2cdbc7d6d45d2a3a8264f",
+    "graphMarkdown": "b17156608b3df7668a3fe96a10a152a1c9c040417edc68b19bd25a2c8a50419a",
+    "approvalJson": "613b66ef083f21351e04e3d70f8aaea26a00b7b90e3034dec5d1706dd09e0584",
+    "approvalMarkdown": "0c5a94d7d76744d82ff309e783517219d4f66e41393ceefecac27e28ea73144c"
   },
   "knownLimitations": [
     "Nine high development-only dependency advisories remain unresolved; Gate C-Preview stays blocked.",

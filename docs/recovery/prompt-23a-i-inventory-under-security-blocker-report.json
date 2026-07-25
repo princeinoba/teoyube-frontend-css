@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "reportedAt": "2026-07-25T18:36:30.044Z",
+  "reportedAt": "2026-07-25T19:43:04.511Z",
   "result": "PASS_PROMPT_23A_D_RELEASE_BLOCKED_SECURITY_ADVISORY",
   "branchAndCommits": {
     "branch": "recovery/visual-source-of-truth",
@@ -13,7 +13,7 @@
     "prompt23ADStartingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
     "buildIdentityImplementationCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
     "runtimeManifestCommit": "6de8e820c489080524c1e589a11a7252570b603c",
-    "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf"
+    "gateExecutionCommit": "ff925572a8117e21d0532f7127cc3111cc297d1b"
   },
   "securityStatus": {
     "fullAudit": {
@@ -57,12 +57,12 @@
     "gateCProduction": "CLOSED"
   },
   "inventory": {
-    "sourceCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+    "sourceCommit": "ff925572a8117e21d0532f7127cc3111cc297d1b",
     "trackedFiles": 3521,
     "ignoredPresentPaths": 6,
     "untrackedPathsAtInventorySnapshot": 14,
     "workspacePathRecords": 36,
-    "totalWorkspaceBytes": 2215614476,
+    "totalWorkspaceBytes": 2215615291,
     "classCounts": {
       "BUILD_TOOLING_CURRENT": 127,
       "CI_CURRENT": 5,
@@ -95,10 +95,10 @@
     },
     "unknownBlockedItems": 0,
     "sizeAnalysis": {
-      "trackedRepositoryBytes": 464965628,
+      "trackedRepositoryBytes": 464966443,
       "gitBytes": 371066874,
       "sourceBytes": 25915999,
-      "testsBytes": 221689748,
+      "testsBytes": 221690318,
       "docsBytesAtInventorySnapshot": 24426678,
       "protectedVisualBytes": 420963729,
       "staticRollbackBytes": 202119424,
@@ -111,7 +111,7 @@
     "archiveBenefitStatement": "Archiving inside this Git repository may improve navigation but reduces existing Git history by 0 bytes.",
     "prompt23ADelta": {
       "startingCommit": "8039edaf69b5fc5261716c0f784ad99f0d2e6ad0",
-      "gateExecutionCommit": "db4747d2fd653b3bc531d0a52d061f82339ca8bf",
+      "gateExecutionCommit": "ff925572a8117e21d0532f7127cc3111cc297d1b",
       "changedPaths": [
         "config/runtime/canonical-runtime-manifest.json",
         "config/runtime/runtime-source-manifest.json",
@@ -131,8 +131,8 @@
       ],
       "changedPathCount": 15,
       "affectedBytesBefore": 57504,
-      "affectedBytesAfter": 89714,
-      "byteDelta": 32210,
+      "affectedBytesAfter": 90529,
+      "byteDelta": 33025,
       "addedInventoryNodes": [
         {
           "path": "config/runtime/runtime-source-manifest.json",
@@ -229,12 +229,12 @@
     "paidProviderCalls": 0
   },
   "reportHashes": {
-    "docs/recovery/prompt-23a-complete-inventory.json": "200c6571b97ec5cab51e30bb324a6ba6c2f386101711fc463d6cc95e98c1053f",
-    "docs/recovery/prompt-23a-complete-inventory.md": "bfecf87c040ed118d085265ee742ce4e03069f1323118a1eeb09a3c7c26b3938",
-    "docs/recovery/prompt-23a-dependency-graph.json": "02c18d8f7ba1c8966a9d13833c7d703ef5b61868ad3c7b2d77cd78438abfe624",
-    "docs/recovery/prompt-23a-dependency-graph.md": "f87fcd41febd26590016429edbf48b123e3bd63b0916b734b9df3af55006f67a",
-    "docs/recovery/prompt-23a-owner-approval-package.json": "97efeba9000f056c81f917156895d881c1185d305438985a0c8c5c8030706de7",
-    "docs/recovery/prompt-23a-owner-approval-package.md": "5c7417a06a3a6dec484b9a637c48050e710a5c12680333275a127a88f5c4f0d4",
+    "docs/recovery/prompt-23a-complete-inventory.json": "a49ef9b05b9164a8eb328e51a5675eeca390c1b6ed0f7c34e11ccb32fee8b47a",
+    "docs/recovery/prompt-23a-complete-inventory.md": "04571d52e133bebda3711d5d8ee90d76e35fe8c2f6c74fbda8f2049b231edcb3",
+    "docs/recovery/prompt-23a-dependency-graph.json": "38cce85e08342fe95023ae7225698c1f484e72235cf2cdbc7d6d45d2a3a8264f",
+    "docs/recovery/prompt-23a-dependency-graph.md": "b17156608b3df7668a3fe96a10a152a1c9c040417edc68b19bd25a2c8a50419a",
+    "docs/recovery/prompt-23a-owner-approval-package.json": "613b66ef083f21351e04e3d70f8aaea26a00b7b90e3034dec5d1706dd09e0584",
+    "docs/recovery/prompt-23a-owner-approval-package.md": "0c5a94d7d76744d82ff309e783517219d4f66e41393ceefecac27e28ea73144c",
     "docs/recovery/prompt-23a-proposed-archive-manifest.json": "b74bc1a8ab906d79e7dea8cf58b2d74eaa122e1d58a7e67d86a6fd8dcdbc58dc",
     "docs/recovery/prompt-23a-proposed-delete-manifest.json": "c9dce8d2b0d01a475499fd6536736a5f7da604cde81a8d4a2fb18e4cb075b8b8"
   },

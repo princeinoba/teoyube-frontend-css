@@ -137,15 +137,18 @@ An unresolved string is treated as risk, never as proof of dead code. Names such
 
 ## Prompt 23A-D scoped delta
 
-Generated: 2026-07-25T18:36:30.044Z
+Generated: 2026-07-25T19:43:04.511Z
 
-Gate-execution source commit: `db4747d2fd653b3bc531d0a52d061f82339ca8bf`
+Gate-execution source commit: `ff925572a8117e21d0532f7127cc3111cc297d1b`
 
 - Base inventory nodes: **3,516**
 - Added classified runtime/release-tooling nodes: **5**
 - Current inventory nodes: **3521**
 - Dependency edges after scoped recomputation: **10726**
 - Added parsed edges: **36**
+- Affected bytes before: **57,504**
+- Affected bytes after: **90,529**
+- Scoped byte delta: **33,025**
 - Runtime build identity: **PASS**
 - Non-destructive inventory: **COMPLETE**
 - Release/deployment: `BLOCKED_SECURITY_ADVISORY`

@@ -166,11 +166,12 @@ security, hash, runtime, and candidate-level approval prerequisites all pass.
 
 ## Prompt 23A-D authoritative closeout
 
-Generated: 2026-07-25T18:36:30.044Z
+Generated: 2026-07-25T19:43:04.511Z
 
 This section supersedes the earlier Prompt 23A-I build-ID blocker result while
 preserving its historical diagnosis.
 
+- Gate-execution source commit: `ff925572a8117e21d0532f7127cc3111cc297d1b`
 - Prompt 23A-D: **PASS**
 - Runtime build identity: **PASS**
 - Deterministic build ID: `teoyube-466f4dec9876dbb7d8c6dfd3`
@@ -179,10 +180,10 @@ preserving its historical diagnosis.
 - Canonical runtime: **Next**
 - Static rollback: **RETAINED**
 - Runtime contract: **PASS**
-- Three-run gate: **PASS â€” 216/216 cells**
+- Three-run gate: **PASS — 216/216 cells; 105/105 parity tests**
 - Visual/DOM/class/asset/functional parity: **PASS**
 - Accessibility/focus parity: **PASS** with inherited debt still reported
-- Non-destructive inventory: **COMPLETE â€” 3521 nodes, 10726 edges**
+- Non-destructive inventory: **COMPLETE — 3521 nodes, 10726 edges**
 - Candidate decisions: **5 PENDING**
 - Release/deployment: `BLOCKED_SECURITY_ADVISORY`
 - Gate C-Production: `CLOSED`

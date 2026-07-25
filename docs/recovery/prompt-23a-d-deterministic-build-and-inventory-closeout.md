@@ -17,7 +17,7 @@ Release/deployment: `BLOCKED_SECURITY_ADVISORY`
 - Runtime manifest:
   `6de8e820c489080524c1e589a11a7252570b603c`
 - Gate execution:
-  `db4747d2fd653b3bc531d0a52d061f82339ca8bf`
+  `ff925572a8117e21d0532f7127cc3111cc297d1b`
 - Final report commit: the commit containing this report; a commit cannot
   contain its own hash
 - Worktree: expected clean after the final report commit
@@ -51,23 +51,23 @@ overrides fail closed.
 - Static rollback: **RETAINED**
 - `runtime:verify`: **PASS**
 - `runtime:status`: **PASS**
-- Next browser smoke: **PASS â€” 16/16**
+- Next browser smoke: **PASS — 16/16**
 - Static rollback smoke: **PASS**
-- Dual runtime: **PASS â€” 83 checks, Next -> static -> Next**
+- Dual runtime: **PASS — 83 checks, Next -> static -> Next**
 - Dedicated listeners closed: **YES**
-- `npm ci`: **PASS â€” 408 packages**
+- `npm ci`: **PASS — 408 packages**
 - Package/lock integrity: **PASS**
 - Typecheck: **PASS**
 - Lint: **PASS**
-- Unit: **PASS â€” 272 passed, 1 skipped; focused accessibility 5/5**
-- Integration: **PASS â€” 101/101**
+- Unit: **PASS — 272 passed, 1 skipped; focused runtime/accessibility/lineage 38/38**
+- Integration: **PASS — 101/101**
 - Production/reproducible build: **PASS**
-- Imports: **PASS â€” 1,431 files, 0 missing**
-- Architecture: **PASS â€” 155 files, no forbidden imports/cycles**
-- Client/server bundles: **PASS â€” 42 client files**
-- WEB corpus: **PASS â€” 66 books, 1,189 chapters, 31,103 markers**
+- Imports: **PASS — 1,431 files, 0 missing**
+- Architecture: **PASS — 155 files, no forbidden imports/cycles**
+- Client/server bundles: **PASS — 42 client files**
+- WEB corpus: **PASS — 66 books, 1,189 chapters, 31,103 markers**
 - TIG: **PASS**
-- Prompt 17 Gate A: **PASS â€” 64/64**
+- Prompt 17 Gate A: **PASS — 64/64**
 - Prompt 18 Tool Gate: **PASS**
 - Prompt 20 Retrieval Gate: **PASS_REUSED_HASH_BOUND**
 - Secret and server/client boundary scans: **PASS**
@@ -77,19 +77,19 @@ The commit-bound resumable gate passed three consecutive logical runs:
 
 | Run | Cells | Maximum readiness |
 |---|---:|---:|
-| 1 | 72 | 3,326.8 ms |
-| 2 | 72 | 3,316.3 ms |
-| 3 | 72 | 3,140.7 ms |
+| 1 | 72 | 3,125.9 ms |
+| 2 | 72 | 3,643.3 ms |
+| 3 | 72 | 3,531.2 ms |
 
-All 216 cells were at or below 5,000 ms. Screenshot, DOM/class, asset,
+All 216 cells were at or below 5,000 ms, and all 105 parity tests passed. Screenshot, DOM/class, asset,
 functional, responsive, accessibility/focus parity, and all 35 route tests per
 run passed with zero baseline writes. Inherited accessible-name and
 `aria-hidden` focus debt remains reported; no WCAG conformance is claimed.
 
 ## Security
 
-- Full audit: **0 critical, 9 high â€” BLOCKED**
-- Production-only audit: **0 critical/high â€” PASS**
+- Full audit: **0 critical, 9 high — BLOCKED**
+- Production-only audit: **0 critical/high — PASS**
 - Dependencies changed: **0**
 - Lockfile changed: **0**
 - Gate C-Preview: `BLOCKED_SECURITY_ADVISORY`

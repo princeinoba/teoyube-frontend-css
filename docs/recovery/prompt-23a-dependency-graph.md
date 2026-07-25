@@ -55,8 +55,9 @@ The JSON graph contains every parsed edge and candidate proof record. Unresolved
 
 ## Prompt 23A-D scoped delta
 
-Generated: 2026-07-25T18:36:30.044Z
+Generated: 2026-07-25T19:43:04.511Z
 
+- Gate-execution source commit: `ff925572a8117e21d0532f7127cc3111cc297d1b`
 - Nodes: **3521**
 - Edges: **10726**
 - Added nodes: **5**
@@ -67,7 +68,7 @@ Generated: 2026-07-25T18:36:30.044Z
 - Test-reachable: **2012**
 - CI/build/tooling-reachable: **1805**
 - Documentation/evidence-reachable: **2229**
-- Unresolved string/path risk records: **undefined**
+- Unresolved string/path risk records: **487**
 
 The scoped scan considered only added dependency-bearing lines in the
 15 files changed from the authorized starting commit and
