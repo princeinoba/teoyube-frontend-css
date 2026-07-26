@@ -1018,8 +1018,8 @@
     },
     {
       "path": "styles/pages/today.css",
-      "bytes": 112,
-      "sha256": "c86d8601e479a0ffcc5a13fa22abd52a6fa2f482419b390e0ec94692fd832c09"
+      "bytes": 24825,
+      "sha256": "04f6038fe74d3b139e292e200a17a360e6310677e4f3e93ba7a4ecbf8081db17"
     },
     {
       "path": "styles/reset.css",

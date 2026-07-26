@@ -1,3 +1,960 @@
+/* Owner-approved Today visual transformation.
+ * Approval: TEOYUBE-VISUAL-2026-07-25-TODAY-001
+ * Scope: Today route only; DOM, copy, behavior, assets, and stylesheet order remain unchanged.
+ */
+
+/* 1. Today page tokens and size safety */
+body[data-view="today"] {
+  --today-content-gap: clamp(0.5rem, 0.7vw, 0.72rem);
+  --today-section-gap: clamp(0.55rem, 0.85vw, 0.85rem);
+  --today-panel-padding: clamp(0.78rem, 1.05vw, 1rem);
+  --today-card-padding: clamp(0.72rem, 0.9vw, 0.9rem);
+  --today-control-height: 2.5rem;
+  --today-hero-min-block: clamp(22rem, 28vw, 27rem);
+  --today-feed-height: clamp(20rem, 23vw, 24rem);
+  --today-radius-panel: 0.875rem;
+  --today-radius-card: 0.75rem;
+  --today-radius-control: 0.55rem;
+  --today-radius-pill: 999px;
+  --today-accent: #006a53;
+  --today-accent-strong: #004f3f;
+  --today-ink: #102126;
+  --today-muted: #5b686d;
+  --today-gold: rgb(231 198 98);
+  --today-line: rgba(0, 83, 63, 0.11);
+  --today-surface: rgba(255, 255, 255, 0.96);
+  --today-mint: rgb(240 249 244);
+  --today-shadow-panel: 0 12px 30px rgba(12, 45, 38, 0.08);
+  --today-shadow-hero: 0 15px 38px rgba(0, 63, 49, 0.15);
+  --today-layer-media: 1;
+  --today-layer-content: 2;
+  --today-layer-control: 3;
+  background: #f7faf8;
+}
+
+body[data-view="today"] .view.page-container,
+body[data-view="today"] .view.page-container * {
+  box-sizing: border-box;
+}
+
+body[data-view="today"] .view.page-container :where(section, article, div, form, table, thead, tbody, tr, td, th) {
+  min-inline-size: 0;
+}
+
+body[data-view="today"] .view.page-container :where(img, iframe, video, input, textarea, button, a) {
+  max-inline-size: 100%;
+}
+
+body[data-view="today"] .view.page-container img {
+  display: block;
+}
+
+/* 2. Search-aligned page shell and header */
+body[data-view="today"] .app-shell {
+  grid-template-columns: 12.375rem minmax(0, 1fr);
+  gap: 0;
+  background: #f7faf8;
+}
+
+body[data-view="today"] .app-sidebar {
+  width: auto;
+}
+
+body[data-view="today"] .sidebar {
+  gap: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(0, 83, 63, 0.05);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 32px rgba(12, 45, 38, 0.08);
+}
+
+body[data-view="today"] .brand-lockup {
+  gap: 0.62rem;
+  padding: 0.5rem 0.25rem 0.7rem;
+}
+
+body[data-view="today"] .brand-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+body[data-view="today"] .brand-mark::before {
+  font-size: 1.28rem;
+}
+
+body[data-view="today"] .brand-mark::after {
+  bottom: 0.56rem;
+}
+
+body[data-view="today"] .brand-lockup .eyebrow {
+  font-size: 0.58rem;
+}
+
+body[data-view="today"] .brand-lockup h1 {
+  font-size: 1rem;
+}
+
+body[data-view="today"] .brand-subtitle {
+  font-size: 0.64rem;
+}
+
+body[data-view="today"] .nav-list {
+  gap: 0.16rem;
+}
+
+body[data-view="today"] .nav-item {
+  gap: 0.58rem;
+  min-height: 2.15rem;
+  padding: 0.48rem 0.62rem;
+  border-radius: 0.45rem;
+  font-size: 0.72rem;
+}
+
+body[data-view="today"] .nav-item::before {
+  width: 0.95rem;
+  font-size: 1rem;
+}
+
+body[data-view="today"] .saint-card {
+  gap: 0.58rem;
+  margin-top: auto;
+  padding: 0.72rem;
+  border: 1px solid rgba(0, 83, 63, 0.1);
+  border-radius: 0.65rem;
+  box-shadow: 0 10px 24px rgba(12, 45, 38, 0.06);
+}
+
+body[data-view="today"] .saint-profile-head {
+  gap: 0.55rem;
+}
+
+body[data-view="today"] .saint-avatar {
+  width: 2.55rem;
+}
+
+body[data-view="today"] .saint-card h2 {
+  font-size: 1rem;
+}
+
+body[data-view="today"] .saint-card p,
+body[data-view="today"] #sidebarCalling {
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+body[data-view="today"] .active-badge {
+  padding: 0.18rem 0.4rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="today"] #openAssessment,
+body[data-view="today"] .saint-card > button:last-child {
+  min-height: 2.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="today"] .app-main {
+  padding: 0.7rem 1.5rem 1rem 0.75rem;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(232, 246, 238, 0.88), transparent 18rem),
+    linear-gradient(180deg, #fbfdfb, #f4f8f6) !important;
+}
+
+body[data-view="today"] .app-header {
+  min-height: 3.35rem;
+  margin-bottom: 0.45rem;
+  padding: 0.15rem 0.85rem 0.35rem;
+}
+
+body[data-view="today"] .app-header > div:first-child {
+  display: grid;
+  gap: 0.08rem;
+}
+
+body[data-view="today"] .app-header .eyebrow {
+  color: var(--today-accent-strong);
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
+}
+
+body[data-view="today"] #viewTitle {
+  font-size: 1.65rem;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+body[data-view="today"] .topbar-actions {
+  gap: 0.55rem;
+}
+
+body[data-view="today"] .topbar-actions > button {
+  min-height: 2.35rem;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.74rem;
+}
+
+body[data-view="today"] .view.page-container {
+  display: grid;
+  gap: var(--today-section-gap);
+  max-width: 100%;
+}
+
 body[data-view="today"] :where(.today-premium-shell, .today-layout, .today-integrations) {
   max-width: 100%;
+}
+
+body[data-view="today"] .today-premium-shell {
+  gap: var(--today-content-gap);
+}
+
+/* 3. Cinematic promise hero */
+body[data-view="today"] .today-premium-shell .promise-carousel {
+  height: auto;
+  min-height: var(--today-hero-min-block);
+  border: 1px solid rgba(0, 72, 55, 0.12);
+  border-radius: var(--today-radius-panel);
+  box-shadow: var(--today-shadow-hero);
+}
+
+body[data-view="today"] .today-premium-shell .carousel-slide {
+  padding: clamp(1.15rem, 1.6vw, 1.55rem) clamp(1.3rem, 1.8vw, 1.75rem) clamp(1.55rem, 2vw, 1.9rem);
+}
+
+body[data-view="today"] .today-premium-shell .carousel-slide .carousel-copy {
+  width: min(34rem, 48%);
+  max-width: min(34rem, 100%);
+  gap: clamp(0.48rem, 0.65vw, 0.66rem);
+  padding: 0.35rem;
+}
+
+body[data-view="today"] .today-premium-shell .slide-number {
+  min-width: 3.65rem;
+  height: 1.65rem;
+  padding-inline: 0.55rem;
+  font-size: 0.62rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-copy .eyebrow {
+  font-size: 0.66rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-copy h3 {
+  max-width: 32rem;
+  font-size: clamp(2.05rem, 3.15vw, 3.25rem);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-copy p:not(.eyebrow) {
+  max-width: 30rem;
+  font-size: clamp(0.74rem, 0.82vw, 0.88rem);
+  line-height: 1.42;
+  text-wrap: pretty;
+}
+
+body[data-view="today"] .today-premium-shell .scripture-strip {
+  gap: 0.38rem;
+}
+
+body[data-view="today"] .today-premium-shell .scripture-pill {
+  padding: 0.28rem 0.52rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-cta-row {
+  gap: 0.5rem;
+  margin-top: 0.08rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-cta-row .primary,
+body[data-view="today"] .today-premium-shell .carousel-cta-row .secondary {
+  min-height: var(--today-control-height);
+  border-radius: var(--today-radius-control);
+  padding: 0.58rem 0.84rem;
+  font-size: 0.7rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-arrow {
+  z-index: var(--today-layer-control);
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-arrow.prev {
+  left: 0.7rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-arrow.next {
+  right: 0.7rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-dots {
+  z-index: var(--today-layer-control);
+  bottom: 0.72rem;
+  gap: 0.3rem;
+  padding: 0.3rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-dots button {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+body[data-view="today"] .today-premium-shell .carousel-dots button.active {
+  width: 1.8rem;
+}
+
+/* 4. Shared Today panel system */
+body[data-view="today"] :where(.promise-detail-card, .daily-inspiration-card, .daily-progress-card, .streak-card, .word-card, .assignment-card, .integration-card) {
+  border: 1px solid var(--today-line);
+  border-radius: var(--today-radius-card);
+  background: var(--today-surface);
+  box-shadow: var(--today-shadow-panel);
+  backdrop-filter: none;
+}
+
+body[data-view="today"] .today-insight-row .eyebrow,
+body[data-view="today"] .today-action-grid .eyebrow,
+body[data-view="today"] .today-integrations .eyebrow {
+  color: var(--today-accent);
+  font-size: 0.61rem;
+  letter-spacing: 0.07em;
+}
+
+/* 5. Daily summary cards */
+body[data-view="today"] .today-insight-row {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: var(--today-content-gap);
+}
+
+body[data-view="today"] :where(.promise-detail-card, .daily-inspiration-card, .daily-progress-card, .streak-card) {
+  min-height: 9rem;
+  padding: var(--today-card-padding);
+}
+
+body[data-view="today"] .promise-detail-card {
+  display: grid;
+  align-content: start;
+  gap: 0.48rem;
+}
+
+body[data-view="today"] .promise-detail-card h3 {
+  font-size: 1.12rem;
+}
+
+body[data-view="today"] .promise-detail-card > p:not(.eyebrow),
+body[data-view="today"] .daily-inspiration-card blockquote {
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+body[data-view="today"] .daily-inspiration-card,
+body[data-view="today"] .daily-progress-card,
+body[data-view="today"] .streak-card {
+  gap: 0.52rem;
+}
+
+body[data-view="today"] .daily-inspiration-card strong,
+body[data-view="today"] .streak-card small,
+body[data-view="today"] .streak-card > p {
+  font-size: 0.64rem;
+}
+
+body[data-view="today"] .progress-widget {
+  justify-content: center;
+  gap: 0.62rem;
+}
+
+body[data-view="today"] .progress-ring {
+  width: 4rem;
+  flex: 0 0 auto;
+}
+
+body[data-view="today"] .progress-widget ul {
+  min-width: 0;
+  gap: 0.28rem;
+}
+
+body[data-view="today"] .progress-widget li {
+  gap: 0.4rem;
+  padding: 0.26rem 0.4rem;
+  font-size: 0.62rem;
+}
+
+body[data-view="today"] .streak-number {
+  gap: 0.35rem;
+}
+
+body[data-view="today"] .streak-number strong {
+  font-size: 1.75rem;
+}
+
+/* 6. Word and assignment row */
+body[data-view="today"] .today-action-grid {
+  grid-template-areas:
+    "word assignment"
+    "featured featured";
+  grid-template-columns: minmax(16rem, 0.78fr) minmax(24rem, 1.22fr);
+  align-items: stretch;
+  gap: var(--today-content-gap);
+}
+
+body[data-view="today"] .today-action-grid .word-card,
+body[data-view="today"] .today-action-grid .assignment-card {
+  min-height: 13.5rem;
+  padding: var(--today-panel-padding);
+}
+
+body[data-view="today"] .today-action-grid .word-card h3 {
+  font-size: clamp(1.85rem, 2.55vw, 2.35rem);
+}
+
+body[data-view="today"] .today-action-grid .word-card > p:not(.eyebrow),
+body[data-view="today"] .today-action-grid .assignment-card li {
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+body[data-view="today"] .today-action-grid .word-card button,
+body[data-view="today"] .today-action-grid .assignment-card button {
+  min-height: var(--today-control-height);
+  border-radius: var(--today-radius-control);
+  padding: 0.58rem 0.78rem;
+  font-size: 0.7rem;
+}
+
+body[data-view="today"] .today-action-grid .assignment-card textarea {
+  min-height: 4.2rem;
+  border-radius: var(--today-radius-control);
+  font-size: 0.78rem;
+}
+
+/* 7. Featured Stories search and devotional carousel */
+body[data-view="today"] .today-action-grid .teoyubeworld-featured-panel {
+  min-height: clamp(25rem, 30vw, 28rem) !important;
+  border: 1px solid var(--today-line);
+  border-radius: var(--today-radius-panel) !important;
+  box-shadow: var(--today-shadow-panel);
+}
+
+body[data-view="today"] .featured-story-panel-inner {
+  grid-template-columns: minmax(17rem, 0.76fr) minmax(22rem, 1.24fr);
+  gap: var(--today-content-gap);
+  padding: var(--today-content-gap);
+}
+
+body[data-view="today"] .featured-story-search-shell {
+  gap: 0.55rem;
+  padding: var(--today-panel-padding);
+  border-radius: var(--today-radius-card);
+  box-shadow: 0 10px 24px rgba(0, 63, 47, 0.07);
+  backdrop-filter: none;
+}
+
+body[data-view="today"] .featured-story-heading {
+  gap: 0.55rem;
+}
+
+body[data-view="today"] .featured-story-brand-icon {
+  width: 2.15rem;
+  height: 2.15rem;
+}
+
+body[data-view="today"] .featured-story-brand-icon::before {
+  width: 0.98rem;
+  height: 0.98rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .featured-story-heading .eyebrow {
+  margin-bottom: 0.12rem;
+  font-size: 0.58rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .featured-story-heading h3 {
+  font-size: 1.28rem;
+}
+
+body[data-view="today"] .featured-story-lede {
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .promise-search-form {
+  min-width: 0;
+  border-radius: var(--today-radius-control);
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .promise-search-form input,
+body[data-view="today"] .teoyubeworld-featured-panel #promiseMovieForm .primary {
+  min-height: var(--today-control-height);
+  font-size: 0.72rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .phase116-search-suggestions {
+  display: grid;
+  gap: 0.24rem;
+  margin: 0;
+  border: 1px solid var(--today-line);
+  border-radius: var(--today-radius-control);
+  padding: 0.35rem 0.45rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .phase116-search-suggestions > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .phase116-search-suggestions .eyebrow {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 0.52rem;
+  white-space: nowrap;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .phase116-search-suggestions small {
+  overflow: hidden;
+  color: var(--today-muted);
+  font-size: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .phase116-chip-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.28rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .phase116-chip {
+  min-width: 0;
+  min-height: 1.55rem;
+  overflow: hidden;
+  border-color: var(--today-line);
+  border-radius: var(--today-radius-pill);
+  padding: 0.22rem 0.35rem;
+  background: #fff;
+  color: #203733;
+  font-size: 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .search-chip-row {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .search-chip-row button {
+  min-height: 2.1rem;
+  border-radius: var(--today-radius-control);
+  padding: 0.35rem;
+  font-size: 0.58rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel #promiseMovieStatus {
+  font-size: 0.6rem;
+}
+
+body[data-view="today"] .featured-story-carousel {
+  border-radius: var(--today-radius-panel);
+  box-shadow: 0 14px 34px rgba(0, 57, 42, 0.14);
+}
+
+body[data-view="today"] .featured-story-slide {
+  padding: 0.8rem;
+}
+
+body[data-view="today"] .featured-story-copy {
+  gap: 0.5rem;
+  padding: 0.82rem;
+  border-radius: var(--today-radius-card);
+  backdrop-filter: none;
+}
+
+body[data-view="today"] .featured-story-meta {
+  gap: 0.3rem;
+  font-size: 0.52rem;
+}
+
+body[data-view="today"] .featured-story-meta span,
+body[data-view="today"] .featured-story-meta time {
+  min-height: 1.4rem;
+  padding: 0.22rem 0.4rem;
+}
+
+body[data-view="today"] .teoyubeworld-featured-panel .featured-story-copy h3 {
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+}
+
+body[data-view="today"] .featured-story-copy p {
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+body[data-view="today"] .featured-story-actions {
+  gap: 0.42rem;
+}
+
+body[data-view="today"] .featured-story-actions .primary,
+body[data-view="today"] .featured-story-actions .secondary {
+  min-height: 2.25rem;
+  padding: 0.5rem 0.72rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="today"] .featured-story-controls {
+  right: 0.72rem;
+  bottom: 0.72rem;
+  gap: 0.35rem;
+  padding: 0.32rem;
+}
+
+body[data-view="today"] .featured-story-arrow {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.8rem;
+}
+
+body[data-view="today"] .featured-story-dots button {
+  width: 1rem;
+}
+
+body[data-view="today"] .featured-story-dots button.active {
+  width: 1.8rem;
+}
+
+/* 8. Video highlight and independently scrollable TeoyubeWorld Feed */
+body[data-view="today"] .today-integrations {
+  grid-template-columns: minmax(24rem, 0.92fr) minmax(0, 1.45fr) !important;
+  align-items: start !important;
+  gap: var(--today-content-gap) !important;
+  margin-top: 0;
+}
+
+/* Legacy Today media rules use !important fixed heights. These exact page-scoped
+ * overrides restore content-aware outer panels while the feed body stays bounded. */
+body[data-view="today"] .teoyube-promise-panel,
+body[data-view="today"] .clients-promise-card {
+  height: auto !important;
+  min-height: var(--today-feed-height) !important;
+  max-height: none !important;
+  border-radius: var(--today-radius-card) !important;
+}
+
+body[data-view="today"] #promiseMovieResult {
+  gap: 0.65rem !important;
+  padding: var(--today-panel-padding) !important;
+  border-radius: var(--today-radius-card) !important;
+  box-shadow: var(--today-shadow-panel);
+}
+
+body[data-view="today"] #promiseMovieResult .promise-movie-detail {
+  gap: var(--today-content-gap) !important;
+}
+
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame,
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame iframe {
+  min-height: clamp(15rem, 19vw, 20rem) !important;
+  border-radius: var(--today-radius-control);
+}
+
+body[data-view="today"] #promiseMovieResult .promise-video-copy {
+  gap: 0.55rem !important;
+  padding: var(--today-card-padding) !important;
+  border-radius: var(--today-radius-control);
+}
+
+body[data-view="today"] #promiseMovieResult .promise-video-copy h3 {
+  font-size: 1rem;
+}
+
+body[data-view="today"] #promiseMovieResult .promise-video-copy p,
+body[data-view="today"] #promiseMovieResult .promise-video-copy button {
+  font-size: 0.64rem;
+}
+
+body[data-view="today"] .clients-promise-card {
+  display: grid !important;
+  grid-template-rows: auto minmax(0, 1fr) !important;
+  align-content: stretch !important;
+  min-block-size: 0;
+  padding: var(--today-panel-padding) !important;
+  overflow: visible !important;
+  box-shadow: var(--today-shadow-panel);
+}
+
+body[data-view="today"] .clients-card-header {
+  margin-bottom: 0.55rem !important;
+}
+
+body[data-view="today"] .clients-card-header h3 {
+  font-size: 0.84rem;
+}
+
+body[data-view="today"] .clients-table-wrap {
+  align-self: stretch !important;
+  block-size: var(--today-feed-height) !important;
+  min-block-size: 16rem !important;
+  max-block-size: var(--today-feed-height) !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+  scroll-padding-block: 0.75rem;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+body[data-view="today"] .clients-table {
+  min-inline-size: 46rem;
+}
+
+body[data-view="today"] .clients-table tr {
+  scroll-margin-block: 0.75rem;
+}
+
+body[data-view="today"] .clients-table tr:focus-within {
+  outline: 2px solid var(--today-gold);
+  outline-offset: -2px;
+}
+
+body[data-view="today"] .clients-table th,
+body[data-view="today"] .clients-table td {
+  padding: 0.46rem 0.55rem;
+  font-size: 0.62rem;
+}
+
+body[data-view="today"] .clients-table .position-badge.success {
+  color: #fff;
+  background: #0b6b55;
+}
+
+/* 9. Controls, focus, forced colors, and motion */
+body[data-view="today"] .view.page-container :where(button, input, textarea, select, summary, a):focus-visible {
+  outline: 2px solid var(--today-gold);
+  outline-offset: 2px;
+  forced-color-adjust: auto;
+}
+
+
+/* 10. Compact desktop / landscape tablet */
+@media (max-width: 1180px) {
+  body[data-view="today"] {
+    --today-hero-min-block: clamp(24rem, 42vw, 30rem);
+    --today-feed-height: clamp(19rem, 36vw, 23rem);
+  }
+
+  body[data-view="today"] .today-insight-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="today"] .today-integrations {
+    grid-template-columns: 1fr !important;
+  }
+
+  body[data-view="today"] .teoyube-promise-panel,
+  body[data-view="today"] .clients-promise-card {
+    min-height: 0 !important;
+  }
+
+  body[data-view="today"] #promiseMovieResult .promise-movie-detail {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame,
+  body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame iframe {
+    min-height: clamp(17rem, 42vw, 24rem) !important;
+  }
+}
+
+/* 11. Tablet and mobile navigation transition */
+@media (max-width: 900px) {
+  body[data-view="today"] .app-shell {
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+  }
+
+  body[data-view="today"] .sidebar {
+    padding-inline: 0.7rem;
+  }
+
+  body[data-view="today"] .nav-item {
+    font-size: 0.66rem;
+  }
+
+  body[data-view="today"] .app-main {
+    padding-right: 0.75rem;
+  }
+
+  body[data-view="today"] .today-action-grid {
+    grid-template-areas:
+      "word"
+      "assignment"
+      "featured";
+    grid-template-columns: 1fr;
+  }
+
+  body[data-view="today"] .featured-story-panel-inner {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-view="today"] .featured-story-carousel {
+    min-height: 23rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body[data-view="today"] {
+    --today-panel-padding: clamp(0.72rem, 2.7vw, 0.9rem);
+    --today-feed-height: clamp(18rem, 65vw, 22rem);
+  }
+
+  body[data-view="today"] .app-shell {
+    display: block;
+  }
+
+  body[data-view="today"] .app-sidebar {
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  body[data-view="today"] .sidebar {
+    gap: 0.8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  body[data-view="today"] .app-main {
+    padding: 0.55rem 0.75rem 1rem;
+  }
+
+  body[data-view="today"] .app-header {
+    min-height: 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 0.45rem;
+    padding: 0.25rem 0;
+  }
+
+  body[data-view="today"] .topbar-actions {
+    width: 100%;
+  }
+
+  body[data-view="today"] .topbar-actions > button {
+    flex: 1 1 11rem;
+  }
+
+  body[data-view="today"] .today-premium-shell .promise-carousel {
+    min-height: clamp(37rem, 150vw, 41rem);
+    border-radius: 0.75rem;
+  }
+
+  body[data-view="today"] .today-premium-shell .carousel-slide {
+    padding: 1rem 0.9rem 4rem;
+  }
+
+  body[data-view="today"] .today-premium-shell .carousel-slide .carousel-copy {
+    width: 100%;
+    gap: 0.58rem;
+    padding: 0;
+  }
+
+  body[data-view="today"] .today-premium-shell .carousel-copy h3 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  body[data-view="today"] .today-premium-shell .carousel-copy p:not(.eyebrow) {
+    font-size: 0.78rem;
+  }
+
+  body[data-view="today"] .teoyubeworld-featured-panel .phase116-search-suggestions > div:first-child {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  body[data-view="today"] .teoyubeworld-featured-panel .phase116-search-suggestions small {
+    white-space: normal;
+  }
+
+  body[data-view="today"] .teoyubeworld-featured-panel .phase116-chip-row,
+  body[data-view="today"] .teoyubeworld-featured-panel .search-chip-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="today"] .clients-table-wrap {
+    block-size: var(--today-feed-height) !important;
+    min-block-size: 16rem !important;
+    max-block-size: var(--today-feed-height) !important;
+  }
+}
+
+/* 12. Narrow mobile */
+@media (max-width: 560px) {
+  body[data-view="today"] .today-insight-row {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-view="today"] .progress-widget {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-view="today"] {
+    --today-feed-height: clamp(18rem, 82vw, 20rem);
+  }
+
+  body[data-view="today"] .app-main {
+    padding: 0.45rem 0.5rem 0.85rem;
+  }
+
+  body[data-view="today"] #viewTitle {
+    font-size: 1.45rem;
+  }
+
+  body[data-view="today"] .today-premium-shell .promise-carousel {
+    min-height: 39rem;
+  }
+
+  body[data-view="today"] .featured-story-panel-inner {
+    padding: 0.58rem;
+  }
+
+  body[data-view="today"] .featured-story-search-shell,
+  body[data-view="today"] .featured-story-copy {
+    border-radius: 0.65rem;
+  }
+
+  body[data-view="today"] .teoyubeworld-featured-panel .promise-search-form input,
+  body[data-view="today"] .today-action-grid .assignment-card textarea {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-view="today"] .view.page-container *,
+  body[data-view="today"] .view.page-container *::before,
+  body[data-view="today"] .view.page-container *::after {
+    scroll-behavior: auto !important;
+  }
+
+  body[data-view="today"] .today-premium-shell .carousel-slide,
+  body[data-view="today"] .today-premium-shell .slide-artwork.banner-art img,
+  body[data-view="today"] .today-premium-shell .carousel-slide.active .carousel-copy,
+  body[data-view="today"] .featured-story-slide {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
 }
