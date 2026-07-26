@@ -1712,6 +1712,11 @@ body[data-view="canon"] .canon-featured-carousel-dots button.active {
   background: linear-gradient(90deg, #ffe39b, #11ad80);
 }
 
+/* Owner-requested Canon Explore consolidation: retain the final twelve cards. */
+body[data-view="canon"] .canon-explore-grid > .canon-explore-card:nth-child(-n + 6) {
+  display: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
   body[data-view="canon"] .canon-featured-carousel-card:hover {
     box-shadow:

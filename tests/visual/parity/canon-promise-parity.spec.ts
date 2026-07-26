@@ -98,8 +98,31 @@ for (const definition of [
 }
 
 test("Canon tabs, paging, search, and carousels preserve approved controls", async ({ page }) => {
+  await page.setViewportSize({ width: 1536, height: 1024 });
   await page.goto(`${nextBaseUrl}/canon`, { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => document.body.dataset.view === "canon");
+  const exploreCards = page.locator("#canonExploreGrid > .canon-explore-card");
+  const visibleExploreCards = page.locator("#canonExploreGrid > .canon-explore-card:visible");
+  await expect(exploreCards).toHaveCount(18);
+  await expect(visibleExploreCards).toHaveCount(12);
+  await expect(visibleExploreCards.locator("h4")).toHaveText([
+    "Kingdom Warfare",
+    "Growth",
+    "Calling",
+    "Kingdom Identity",
+    "Testimony",
+    "Lexicon",
+    "Covenant Paths",
+    "Promise Clusters",
+    "Prayer Collections",
+    "Knowledge Graph",
+    "Kingdom Legacy",
+    "Purpose Roadmap"
+  ]);
+  const exploreRows = await visibleExploreCards.evaluateAll((cards) =>
+    [...new Set(cards.map((card) => Math.round(card.getBoundingClientRect().top)))]
+  );
+  expect(exploreRows).toHaveLength(2);
   await page.locator('[data-canon-tab="promise-clusters"]').click();
   await expect(page.locator('[data-canon-tab="promise-clusters"]')).toHaveClass(/active/);
   await expect(page.locator("#canonGrid [data-canon-item]")).toHaveCount(5);
