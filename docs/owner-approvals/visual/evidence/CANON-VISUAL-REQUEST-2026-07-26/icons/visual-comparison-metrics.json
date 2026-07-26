@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "teoyube-owner-reference-icon-comparison-1",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-CANON-REC-ICONS-001",
+  "reference": {
+    "path": "docs/owner-approvals/visual/evidence/CANON-VISUAL-REQUEST-2026-07-26/icons/owner-reference.png",
+    "width": 1122,
+    "height": 1402
+  },
+  "candidate": {
+    "path": "docs/owner-approvals/visual/evidence/CANON-VISUAL-REQUEST-2026-07-26/icons/after-panel-1536x1024.png",
+    "width": 1305,
+    "height": 1616,
+    "normalizedWidth": 1122,
+    "normalizedHeight": 1402,
+    "scrollOffsetY": -64.390625
+  },
+  "comparison": {
+    "thresholdPerChannel": 16,
+    "changedPixelRatio": 0.16738565481957277,
+    "meanAbsoluteChannelDifference": 15.504078080460559,
+    "normalizedMeanAbsoluteDifference": 0.06080030619788455,
+    "rootMeanSquareChannelDifference": 43.58813657520089
+  },
+  "previousApprovedComparison": {
+    "approvalId": "TEOYUBE-VISUAL-2026-07-25-CANON-001",
+    "changedPixelRatio": 0.15739992015480814
+  },
+  "improvedOrPreserved": false,
+  "interpretation": "Measured with the prior screenshot dimensions, normalization, per-channel threshold, and -64.39px root scroll offset. The icon pass improves the header/reference symbols but does not preserve the aggregate prior ratio; the approved DOM has no privacy footer and the CSS-only scope forbids inventing one."
+}
