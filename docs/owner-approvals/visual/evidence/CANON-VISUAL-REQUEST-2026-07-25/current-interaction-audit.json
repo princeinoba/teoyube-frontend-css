@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-07-26T03:35:37.349Z",
+  "checks": [
+    {
+      "name": "hero search control type",
+      "passed": false,
+      "detail": "type=button"
+    },
+    {
+      "name": "hero Search button emits result notice",
+      "passed": false,
+      "detail": "visible notices=0"
+    },
+    {
+      "name": "popular-search chip populates input",
+      "passed": true,
+      "detail": "I need direction"
+    },
+    {
+      "name": "popular-search chip returns input focus",
+      "passed": true,
+      "detail": "focus check"
+    },
+    {
+      "name": "featured carousel next",
+      "passed": true,
+      "detail": "0 -> 1"
+    },
+    {
+      "name": "featured carousel keyboard",
+      "passed": true,
+      "detail": "1 -> 2"
+    },
+    {
+      "name": "recommended carousel next",
+      "passed": true,
+      "detail": "0 -> 1"
+    },
+    {
+      "name": "journey card selection",
+      "passed": true,
+      "detail": "canon-project-card active"
+    },
+    {
+      "name": "Why this disclosure",
+      "passed": true,
+      "detail": "open=true"
+    },
+    {
+      "name": "Canon tab transition",
+      "passed": true,
+      "detail": "active archetypes=1"
+    },
+    {
+      "name": "desktop runtime errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile navigation opens",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "mobile navigation closes with Escape",
+      "passed": true,
+      "detail": "false"
+    }
+  ]
+}
