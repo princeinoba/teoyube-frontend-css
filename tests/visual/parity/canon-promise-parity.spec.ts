@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { expect, test, type Page } from "@playwright/test";
+import { chromium, expect, test, type Page } from "@playwright/test";
 import { captureRichContract, installDeterminism, openStaticView, settlePage } from "./capture";
 import { compareRichContracts, compareScreenshots } from "./compare";
 import { assertDisposableCandidatePath, candidateRoot, runtimeManifest, type ViewportName } from "./config";
@@ -45,7 +45,7 @@ for (const definition of [
   { view: "canon" as const, route: "/canon", root: "#canon", evidence: "canon-owner-review" },
   { view: "table" as const, route: "/promise-table", root: "#table", evidence: "promise-table-owner-review" }
 ]) {
-  test(`approved ${definition.view} candidate matches at every required viewport`, async ({ browser }) => {
+  test(`approved ${definition.view} candidate matches at every required viewport`, async () => {
     test.setTimeout(600_000);
     const evidenceRoot = path.join(candidateRoot, definition.evidence);
     assertDisposableCandidatePath(evidenceRoot);
@@ -54,8 +54,12 @@ for (const definition of [
     for (const [viewportName, viewport] of Object.entries(runtimeManifest.viewports) as Array<[ViewportName, { width: number; height: number }]>) {
       const requested = process.env.TEOYUBE_PROMPT8_VIEWPORT;
       if (requested && requested !== viewportName) continue;
-      const staticContext = await browser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
-      const nextContext = await browser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
+      const isolatedBrowser = await chromium.launch({
+        channel: process.platform === "win32" ? "chrome" : undefined,
+        headless: true
+      });
+      const staticContext = await isolatedBrowser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
+      const nextContext = await isolatedBrowser.newContext({ viewport, colorScheme: "light", deviceScaleFactor: 1, locale: "en-US" });
       await installDeterminism(staticContext, [new URL(staticBaseUrl).origin]);
       await installDeterminism(nextContext, [new URL(nextBaseUrl).origin]);
       const staticPage = await staticContext.newPage();
@@ -86,6 +90,7 @@ for (const definition of [
       } finally {
         await staticContext.close();
         await nextContext.close();
+        await isolatedBrowser.close();
       }
     }
     fs.writeFileSync(path.join(evidenceRoot, "summary.json"), `${JSON.stringify(summary, null, 2)}\n`, "utf8");

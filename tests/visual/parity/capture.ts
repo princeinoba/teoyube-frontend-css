@@ -82,13 +82,30 @@ export async function settlePage(page: Page): Promise<void> {
       const rect = image.getBoundingClientRect();
       return Boolean(image.currentSrc) && rect.width > 0 && rect.height > 0;
     });
+    const backgroundImageUrls = new Set<string>();
+    for (const element of document.querySelectorAll("*")) {
+      const rect = element.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) continue;
+      for (const pseudo of [null, "::before", "::after"] as const) {
+        const backgroundImage = getComputedStyle(element, pseudo).backgroundImage;
+        for (const match of backgroundImage.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
+          backgroundImageUrls.add(new URL(match[1] || "", window.location.href).href);
+        }
+      }
+    }
+    const requestedBackgroundImages = [...backgroundImageUrls].map((source) => {
+      const image = new Image();
+      image.src = source;
+      return image.decode().catch(() => undefined);
+    });
     await Promise.race([
-      Promise.all(
-        requestedImages.map((image) =>
+      Promise.all([
+        ...requestedImages.map((image) =>
           image.complete ? Promise.resolve() : image.decode().catch(() => undefined)
-        )
-      ),
-      new Promise((resolve) => window.setTimeout(resolve, 1_500))
+        ),
+        ...requestedBackgroundImages
+      ]),
+      new Promise((resolve) => window.setTimeout(resolve, 2_500))
     ]);
     document.documentElement.style.scrollBehavior = "auto";
     document.body.style.caretColor = "transparent";
