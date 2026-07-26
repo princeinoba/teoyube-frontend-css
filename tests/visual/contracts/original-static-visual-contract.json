@@ -968,8 +968,8 @@
     },
     {
       "path": "styles/pages/canon.css",
-      "bytes": 100,
-      "sha256": "d20ef8960921ff6039c318d39ab68e3239d9cc6bdd9505feac2d3534a6f3685b"
+      "bytes": 38620,
+      "sha256": "4ddc79fe23865dc0c5d024774dde57bb63d8e016a308914e137aeaa5c98e6161"
     },
     {
       "path": "styles/pages/embedded-videos.css",

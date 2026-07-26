@@ -1,0 +1,327 @@
+{
+  "generatedAt": "2026-07-26T05:15:35.138Z",
+  "results": [
+    {
+      "viewport": "1536x1024",
+      "structureEqual": true,
+      "controlsEqual": true,
+      "geometryDifferences": {
+        "shell": 0,
+        "sidebar": 0,
+        "header": 0,
+        "root": 0,
+        "layout": 0,
+        "main": 0,
+        "rail": 0,
+        "hero": 0,
+        "kpis": 0,
+        "featured": 0,
+        "recent": 0,
+        "explore": 0
+      },
+      "maximumGeometryDifference": 0,
+      "document": {
+        "static": {
+          "width": 1536,
+          "height": 3439,
+          "horizontalOverflow": false
+        },
+        "next": {
+          "width": 1536,
+          "height": 3439,
+          "horizontalOverflow": false
+        }
+      },
+      "pixelDifference": {
+        "changedPixelRatio": 0.000016530354817708332,
+        "meanAbsoluteChannelDifference": 0.0000021101342826627177
+      },
+      "errors": {
+        "static": {
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "page": [
+            "Published media manifest returned 404."
+          ],
+          "request": []
+        },
+        "next": {
+          "console": [],
+          "page": [],
+          "request": []
+        }
+      }
+    },
+    {
+      "viewport": "1440x900",
+      "structureEqual": true,
+      "controlsEqual": true,
+      "geometryDifferences": {
+        "shell": 0,
+        "sidebar": 0,
+        "header": 0,
+        "root": 0,
+        "layout": 0,
+        "main": 0,
+        "rail": 0,
+        "hero": 0,
+        "kpis": 0,
+        "featured": 0,
+        "recent": 0,
+        "explore": 0
+      },
+      "maximumGeometryDifference": 0,
+      "document": {
+        "static": {
+          "width": 1440,
+          "height": 3386,
+          "horizontalOverflow": false
+        },
+        "next": {
+          "width": 1440,
+          "height": 3386,
+          "horizontalOverflow": false
+        }
+      },
+      "pixelDifference": {
+        "changedPixelRatio": 0.000020061728395061728,
+        "meanAbsoluteChannelDifference": 0.0000025609214879367384
+      },
+      "errors": {
+        "static": {
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "page": [
+            "Published media manifest returned 404."
+          ],
+          "request": []
+        },
+        "next": {
+          "console": [],
+          "page": [],
+          "request": []
+        }
+      }
+    },
+    {
+      "viewport": "1280x800",
+      "structureEqual": true,
+      "controlsEqual": true,
+      "geometryDifferences": {
+        "shell": 0,
+        "sidebar": 0,
+        "header": 0,
+        "root": 0,
+        "layout": 0,
+        "main": 0,
+        "rail": 0,
+        "hero": 0,
+        "kpis": 0,
+        "featured": 0,
+        "recent": 0,
+        "explore": 0
+      },
+      "maximumGeometryDifference": 0,
+      "document": {
+        "static": {
+          "width": 1280,
+          "height": 4952,
+          "horizontalOverflow": false
+        },
+        "next": {
+          "width": 1280,
+          "height": 4952,
+          "horizontalOverflow": false
+        }
+      },
+      "pixelDifference": {
+        "changedPixelRatio": 0.0000244140625,
+        "meanAbsoluteChannelDifference": 0.0000032207414215686273
+      },
+      "errors": {
+        "static": {
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "page": [
+            "Published media manifest returned 404."
+          ],
+          "request": []
+        },
+        "next": {
+          "console": [],
+          "page": [],
+          "request": []
+        }
+      }
+    },
+    {
+      "viewport": "1024x768",
+      "structureEqual": true,
+      "controlsEqual": true,
+      "geometryDifferences": {
+        "shell": 0,
+        "sidebar": 0,
+        "header": 0,
+        "root": 0,
+        "layout": 0,
+        "main": 0,
+        "rail": 0,
+        "hero": 0,
+        "kpis": 0,
+        "featured": 0,
+        "recent": 0,
+        "explore": 0
+      },
+      "maximumGeometryDifference": 0,
+      "document": {
+        "static": {
+          "width": 1024,
+          "height": 6679,
+          "horizontalOverflow": false
+        },
+        "next": {
+          "width": 1024,
+          "height": 6679,
+          "horizontalOverflow": false
+        }
+      },
+      "pixelDifference": {
+        "changedPixelRatio": 0,
+        "meanAbsoluteChannelDifference": 0
+      },
+      "errors": {
+        "static": {
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "page": [
+            "Published media manifest returned 404."
+          ],
+          "request": []
+        },
+        "next": {
+          "console": [],
+          "page": [],
+          "request": []
+        }
+      }
+    },
+    {
+      "viewport": "768x1024",
+      "structureEqual": true,
+      "controlsEqual": true,
+      "geometryDifferences": {
+        "shell": 0,
+        "sidebar": 0,
+        "header": 0,
+        "root": 0,
+        "layout": 0,
+        "main": 0,
+        "rail": 0,
+        "hero": 0,
+        "kpis": 0,
+        "featured": 0,
+        "recent": 0,
+        "explore": 0
+      },
+      "maximumGeometryDifference": 0,
+      "document": {
+        "static": {
+          "width": 768,
+          "height": 12829,
+          "horizontalOverflow": false
+        },
+        "next": {
+          "width": 768,
+          "height": 12829,
+          "horizontalOverflow": false
+        }
+      },
+      "pixelDifference": {
+        "changedPixelRatio": 0,
+        "meanAbsoluteChannelDifference": 0
+      },
+      "errors": {
+        "static": {
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "page": [
+            "Published media manifest returned 404."
+          ],
+          "request": []
+        },
+        "next": {
+          "console": [],
+          "page": [],
+          "request": []
+        }
+      }
+    },
+    {
+      "viewport": "390x844",
+      "structureEqual": true,
+      "controlsEqual": true,
+      "geometryDifferences": {
+        "shell": 0,
+        "sidebar": 0,
+        "header": 0,
+        "root": 0,
+        "layout": 0,
+        "main": 0,
+        "rail": 0,
+        "hero": 0,
+        "kpis": 0,
+        "featured": 0,
+        "recent": 0,
+        "explore": 0
+      },
+      "maximumGeometryDifference": 0,
+      "document": {
+        "static": {
+          "width": 390,
+          "height": 13423,
+          "horizontalOverflow": false
+        },
+        "next": {
+          "width": 390,
+          "height": 13423,
+          "horizontalOverflow": false
+        }
+      },
+      "pixelDifference": {
+        "changedPixelRatio": 0,
+        "meanAbsoluteChannelDifference": 0
+      },
+      "errors": {
+        "static": {
+          "console": [
+            "Failed to load resource: the server responded with a status of 404 (Not Found)"
+          ],
+          "page": [
+            "Published media manifest returned 404."
+          ],
+          "request": []
+        },
+        "next": {
+          "console": [],
+          "page": [],
+          "request": []
+        }
+      }
+    }
+  ],
+  "summary": {
+    "viewports": 6,
+    "structureFailures": 0,
+    "controlFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "maximumGeometryDifference": 0,
+    "maximumChangedPixelRatio": 0.0000244140625,
+    "maximumMeanAbsoluteChannelDifference": 0.0000032207414215686273,
+    "runtimeErrors": 12
+  }
+}

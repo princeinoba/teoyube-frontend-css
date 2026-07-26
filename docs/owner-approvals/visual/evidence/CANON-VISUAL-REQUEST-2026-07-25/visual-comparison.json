@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-07-26T05:15:36.700Z",
+  "note": "The owner reference is a tall conceptual composite, not a same-environment viewport baseline. Its normalized raster ratio is descriptive and is not used as a parity threshold.",
+  "inputs": {
+    "reference": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\docs\\owner-approvals\\visual\\evidence\\CANON-VISUAL-REQUEST-2026-07-25\\owner-proposed-reference.png",
+    "beforeDesktop": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\docs\\owner-approvals\\visual\\evidence\\CANON-VISUAL-REQUEST-2026-07-25\\before-top-1536x1024.png",
+    "beforeMobile": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\docs\\owner-approvals\\visual\\evidence\\CANON-VISUAL-REQUEST-2026-07-25\\before-full-390x844.png",
+    "afterDesktop": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\after-final-top-1536x1024.png",
+    "afterDesktopFull": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\after-final-full-1536x1024.png",
+    "afterMobile": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\after-final-full-390x844.png"
+  },
+  "outputs": {
+    "referenceAfter": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\side-by-side-reference-after-1536.png",
+    "beforeAfterDesktop": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\side-by-side-before-after-1536x1024.png",
+    "beforeAfterMobile": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\side-by-side-before-after-390x844.png",
+    "referenceOverlay": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\overlay-reference-after-1536.png",
+    "beforeAfterDifference": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF\\.tmp\\canon-visual-request\\difference-before-after-1536x1024.png"
+  },
+  "dimensions": {
+    "referenceAfter": {
+      "width": 1536,
+      "height": 1720
+    },
+    "beforeAfterDesktop": {
+      "width": 1536,
+      "height": 512
+    },
+    "beforeAfterMobile": {
+      "width": 780,
+      "height": 16652
+    }
+  },
+  "measurements": {
+    "referenceNormalizedAgainstAfterFull": {
+      "changedPixelRatio": 0.5374067831007076,
+      "meanAbsoluteChannelDifference": 0.24513873348037157
+    },
+    "beforeAgainstAfterDesktopViewport": {
+      "changedPixelRatio": 0.6533126831054688,
+      "meanAbsoluteChannelDifference": 0.312317219486943
+    }
+  }
+}
