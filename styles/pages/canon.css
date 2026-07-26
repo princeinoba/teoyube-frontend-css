@@ -2235,6 +2235,7 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] :where(button,
 /*
  * Owner-approved Standard Recommendation icon restoration.
  * Approval: TEOYUBE-VISUAL-2026-07-26-CANON-REC-ICONS-001.
+ * Closeout: TEOYUBE-VISUAL-2026-07-26-CANON-REC-ICONS-CLOSE-001.
  * URL-encoded SVG masks reuse Teoyube's existing icon-mask architecture and
  * stay inside the unique Canon recommendation root.
  */
@@ -2304,6 +2305,18 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-work
   padding-inline-start: 4rem;
 }
 
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head {
+  margin-bottom: 0.69rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div {
+  padding-inline-start: 4.75rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child {
+  padding-inline-start: 4.35rem;
+}
+
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div::before,
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child::before,
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card::before {
@@ -2320,19 +2333,33 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-reco
   forced-color-adjust: none;
 }
 
-body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div::before,
-body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child::before {
-  inset: 0 auto auto 0;
-  inline-size: 3.15rem;
-  block-size: 3.15rem;
-  border-radius: 13px;
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div::before {
+  inset: -0.15rem auto auto -0.05rem;
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+  border-radius: 14px;
 }
 
-body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div::after,
-body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child::after {
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child::before {
+  inset: 0 auto auto 0.25rem;
+  inline-size: 2.9rem;
+  block-size: 2.9rem;
+  border-radius: 12px;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div::after {
   --canon-rec-current-icon: var(--canon-rec-icon-rooted);
   position: absolute;
-  inset: 0.72rem auto auto 0.72rem;
+  inset: 0.74rem auto auto 0.84rem;
+  inline-size: 1.9rem;
+  block-size: 1.9rem;
+  color: var(--canon-rec-icon-color);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child::after {
+  --canon-rec-current-icon: var(--canon-rec-icon-compass);
+  position: absolute;
+  inset: 0.59rem auto auto 0.84rem;
   inline-size: 1.72rem;
   block-size: 1.72rem;
   color: var(--canon-rec-icon-color);
@@ -2369,13 +2396,13 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-reco
 }
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card::before {
-  inset: 0.82rem auto auto 0.82rem;
+  inset: 0.25rem auto auto 0.9rem;
 }
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card::after {
   --canon-rec-current-icon: var(--canon-rec-card-icon);
   position: absolute;
-  inset: 1.5rem auto auto 1.5rem;
+  inset: 0.925rem auto auto 1.575rem;
   inline-size: 1.4rem;
   block-size: 1.4rem;
   color: var(--canon-rec-icon-color);
@@ -2427,6 +2454,11 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] [data-phase116
   --canon-rec-current-icon: var(--canon-rec-icon-graph);
 }
 
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-panel-actions button::before {
+  inline-size: 0.8rem;
+  block-size: 0.8rem;
+}
+
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button {
   display: flex;
   flex-direction: column;
@@ -2438,8 +2470,8 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feed
 }
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button::before {
-  inline-size: 1.12rem;
-  block-size: 1.12rem;
+  inline-size: 0.8rem;
+  block-size: 0.8rem;
   color: var(--canon-rec-green);
 }
 
@@ -2454,9 +2486,6 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] [data-phase115
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] [data-phase115-feedback="complete_action"]::before { --canon-rec-current-icon: var(--canon-rec-icon-check); }
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] [data-phase115-feedback="reset_preference"]::before { --canon-rec-current-icon: var(--canon-rec-icon-reset); }
 
-body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child::after {
-  --canon-rec-current-icon: var(--canon-rec-icon-compass);
-}
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid button {
   position: relative;
@@ -2464,8 +2493,8 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-work
 }
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid button::before {
-  inline-size: 1.65rem;
-  block-size: 1.65rem;
+  inline-size: 1.45rem;
+  block-size: 1.45rem;
   color: var(--canon-rec-green);
 }
 
@@ -2480,8 +2509,8 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-work
   --canon-rec-current-icon: var(--canon-rec-icon-arrow);
   position: absolute;
   inset: auto 0.72rem 0.72rem auto;
-  inline-size: 0.95rem;
-  block-size: 0.95rem;
+  inline-size: 0.7rem;
+  block-size: 0.7rem;
   color: var(--canon-rec-green);
 }
 
