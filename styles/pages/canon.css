@@ -394,6 +394,12 @@ body[data-view="canon"] .canon-featured-carousel-card {
   border-radius: 11px !important;
 }
 
+body[data-view="canon"] .canon-project-card[data-canon-item="canon-map-D02"] {
+  aspect-ratio: 16 / 8.85;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
 body[data-view="canon"] .canon-featured-carousel-stage {
   border-radius: inherit;
   background-size: 100% 100%;
@@ -431,11 +437,12 @@ body[data-view="canon"] .canon-project-card:nth-child(2) .canon-project-media {
 }
 
 body[data-view="canon"] .canon-project-card[data-canon-item="canon-map-D02"] .canon-project-media {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: auto;
   background-color: var(--canon-page-accent-strong);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 0;
 }
 
 body[data-view="canon"] .canon-project-card:nth-child(n + 3) .canon-project-media {
@@ -1012,6 +1019,10 @@ body[data-view="canon"] :where(button, input, select, summary, a, [tabindex]):fo
   }
 
   body[data-view="canon"] .canon-featured-carousel-card {
+    aspect-ratio: 16 / 9;
+  }
+
+  body[data-view="canon"] .canon-project-card[data-canon-item="canon-map-D02"] {
     aspect-ratio: 16 / 9;
   }
 
