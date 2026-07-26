@@ -1,3 +1,1623 @@
+/* Owner-approved Canon visual transformation.
+ * Approval: TEOYUBE-VISUAL-2026-07-25-CANON-001
+ * Scope: Canon route only; DOM, copy, behavior, and assets remain unchanged.
+ */
+
+body[data-view="canon"] {
+  --canon-page-accent: rgb(0, 107, 82);
+  --canon-page-accent-strong: rgb(0, 76, 60);
+  --canon-page-gold: rgb(226, 189, 85);
+  --canon-page-ink: rgb(16, 33, 39);
+  --canon-page-muted: rgb(94, 109, 109);
+  --canon-page-line: rgba(0, 83, 63, 0.12);
+  --canon-page-panel: rgba(255, 255, 255, 0.96);
+  --canon-page-soft: rgb(242, 247, 244);
+  --canon-page-shadow: 0 12px 30px rgba(10, 48, 39, 0.08);
+  --canon-page-shadow-raised: 0 18px 38px rgba(8, 50, 40, 0.12);
+  --canon-page-radius: 12px;
+  --canon-page-gap: 0.75rem;
+  background: rgb(245, 249, 247);
+}
+
+body[data-view="canon"] .view.page-container,
+body[data-view="canon"] .view.page-container * {
+  box-sizing: border-box;
+}
+
+body[data-view="canon"] .view.page-container :where(section, article, div, form, nav, aside) {
+  min-inline-size: 0;
+}
+
 body[data-view="canon"] :where(.canon-layout, .canon-dashboard, .canon-grid) {
   max-width: 100%;
+}
+
+body[data-view="canon"] .app-shell {
+  grid-template-columns: 12.375rem minmax(0, 1fr);
+  gap: 0;
+  background: rgb(245, 249, 247);
+}
+
+body[data-view="canon"] .app-sidebar {
+  width: auto;
+}
+
+body[data-view="canon"] .sidebar {
+  gap: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(0, 83, 63, 0.05);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 32px rgba(12, 45, 38, 0.08);
+}
+
+body[data-view="canon"] .brand-lockup {
+  gap: 0.62rem;
+  padding: 0.5rem 0.25rem 0.7rem;
+}
+
+body[data-view="canon"] .brand-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+body[data-view="canon"] .brand-mark::before {
+  font-size: 1.28rem;
+}
+
+body[data-view="canon"] .brand-mark::after {
+  bottom: 0.56rem;
+}
+
+body[data-view="canon"] .brand-lockup .eyebrow {
+  font-size: 0.58rem;
+}
+
+body[data-view="canon"] .brand-lockup h1 {
+  font-size: 1rem;
+}
+
+body[data-view="canon"] .brand-subtitle {
+  font-size: 0.64rem;
+}
+
+body[data-view="canon"] .nav-list {
+  gap: 0.16rem;
+}
+
+body[data-view="canon"] .nav-item {
+  gap: 0.58rem;
+  min-height: 2.15rem;
+  padding: 0.48rem 0.62rem;
+  border-radius: 7px;
+  font-size: 0.72rem;
+}
+
+body[data-view="canon"] .nav-item::before {
+  width: 0.95rem;
+  font-size: 1rem;
+}
+
+body[data-view="canon"] .saint-card {
+  gap: 0.58rem;
+  margin-top: auto;
+  padding: 0.72rem;
+  border: 1px solid rgba(0, 83, 63, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(12, 45, 38, 0.06);
+}
+
+body[data-view="canon"] .saint-profile-head {
+  gap: 0.55rem;
+}
+
+body[data-view="canon"] .saint-avatar {
+  width: 2.55rem;
+}
+
+body[data-view="canon"] .saint-card h2 {
+  font-size: 1rem;
+}
+
+body[data-view="canon"] .saint-card p,
+body[data-view="canon"] #sidebarCalling {
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] .active-badge {
+  padding: 0.18rem 0.4rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] #openAssessment,
+body[data-view="canon"] .saint-card > button:last-child {
+  min-height: 2.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="canon"] .app-main {
+  min-inline-size: 0;
+  padding: 0.7rem 1.35rem 1.2rem 0.75rem;
+  background:
+    radial-gradient(circle at 86% 7%, rgba(226, 244, 235, 0.9), transparent 18rem),
+    linear-gradient(180deg, rgb(251, 253, 251), rgb(243, 247, 245)) !important;
+}
+
+body[data-view="canon"] .app-header {
+  min-height: 3.35rem;
+  margin-bottom: 0.45rem;
+  padding: 0.15rem 0.35rem 0.35rem;
+}
+
+body[data-view="canon"] .app-header > div:first-child {
+  display: grid;
+  gap: 0.08rem;
+}
+
+body[data-view="canon"] .app-header .eyebrow {
+  color: var(--canon-page-accent-strong);
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
+}
+
+body[data-view="canon"] #viewTitle {
+  font-size: 1.65rem;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+body[data-view="canon"] #viewTitle::after {
+  font-size: 0.95rem;
+}
+
+body[data-view="canon"] .topbar-actions {
+  gap: 0.55rem;
+}
+
+body[data-view="canon"] .topbar-actions > button {
+  min-height: 2.35rem;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.74rem;
+  box-shadow: 0 8px 18px rgba(12, 45, 38, 0.08);
+}
+
+body[data-view="canon"] [id="canon"] {
+  display: grid;
+  max-width: none;
+  gap: 0.85rem;
+}
+
+body[data-view="canon"] .canon-premium-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 18rem);
+  gap: var(--canon-page-gap);
+  align-items: start;
+}
+
+body[data-view="canon"] .canon-main-column {
+  min-width: 0;
+}
+
+body[data-view="canon"] .canon-kingdom-hero {
+  position: relative;
+  display: grid;
+  min-height: 18.25rem;
+  align-content: end;
+  gap: 0.68rem;
+  overflow: hidden;
+  padding: 1.35rem 1.45rem 0.85rem;
+  border: 1px solid rgba(0, 75, 57, 0.16);
+  border-radius: 12px;
+  background:
+    linear-gradient(90deg, rgba(0, 43, 33, 0.96) 0%, rgba(0, 58, 43, 0.8) 32%, rgba(0, 58, 43, 0.18) 73%),
+    url("../../public/images/canon/canon-hero-journey.png") center / cover no-repeat;
+  box-shadow: 0 14px 32px rgba(7, 53, 41, 0.16);
+}
+
+body[data-view="canon"] .canon-kingdom-hero::after {
+  background:
+    radial-gradient(circle at 62% 16%, rgba(255, 222, 124, 0.14), transparent 15rem),
+    linear-gradient(180deg, transparent 47%, rgba(0, 38, 29, 0.65));
+}
+
+body[data-view="canon"] .canon-hero-copy h3 {
+  max-width: 27rem;
+  font-size: clamp(1.8rem, 2.4vw, 2.55rem);
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+}
+
+body[data-view="canon"] .canon-hero-copy p {
+  max-width: 49rem;
+  margin: 0.55rem 0 0;
+  color: rgb(240, 212, 119);
+  font-size: 0.68rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] .canon-hero-search {
+  grid-template-columns: auto minmax(11rem, 1fr) minmax(7.5rem, 9.25rem) 5.5rem;
+  width: 100%;
+  gap: 0;
+  padding: 0.3rem;
+  border-width: 1px;
+  border-radius: 9px;
+  box-shadow: 0 10px 24px rgba(0, 28, 21, 0.14);
+}
+
+body[data-view="canon"] .canon-hero-search span {
+  width: 2.1rem;
+  height: 2.1rem;
+  font-size: 1rem;
+}
+
+body[data-view="canon"] .canon-hero-search input,
+body[data-view="canon"] .canon-hero-search select,
+body[data-view="canon"] .canon-hero-search .primary {
+  min-height: 2.4rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="canon"] .canon-hero-search input,
+body[data-view="canon"] .canon-hero-search select {
+  min-width: 0;
+  padding-inline: 0.55rem;
+}
+
+body[data-view="canon"] .canon-hero-search .primary {
+  border-radius: 6px;
+  padding-inline: 0.65rem;
+  box-shadow: none;
+}
+
+body[data-view="canon"] .canon-quick-chips {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+body[data-view="canon"] .canon-quick-chips button {
+  min-height: 1.65rem;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid rgba(0, 76, 58, 0.1);
+  font-size: 0.53rem;
+  box-shadow: 0 6px 14px rgba(0, 28, 21, 0.06);
+}
+
+body[data-view="canon"] .canon-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0.72rem 0 0.62rem;
+}
+
+body[data-view="canon"] .canon-kpi-card {
+  min-height: 4.65rem;
+  padding: 0.7rem 0.6rem 0.62rem 3.25rem;
+  border: 1px solid var(--canon-page-line);
+  border-radius: 9px;
+  background: var(--canon-page-panel);
+  box-shadow: var(--canon-page-shadow);
+  backdrop-filter: none;
+}
+
+body[data-view="canon"] .canon-kpi-card::before {
+  left: 0.65rem;
+  top: 0.7rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+body[data-view="canon"] .canon-kpi-card span {
+  font-size: 0.55rem;
+  line-height: 1.15;
+}
+
+body[data-view="canon"] .canon-kpi-card strong {
+  font-size: 1.2rem;
+}
+
+body[data-view="canon"] .canon-kpi-card small {
+  font-size: 0.52rem;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] .canon-tabs {
+  display: flex;
+  gap: 0.4rem;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 0 0.6rem;
+  padding: 0.12rem 0.08rem 0.25rem;
+  scrollbar-width: thin;
+}
+
+body[data-view="canon"] .canon-tab {
+  flex: 0 0 auto;
+  min-height: 2rem;
+  padding: 0.42rem 0.65rem;
+  border-radius: 7px;
+  font-size: 0.56rem;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.04);
+}
+
+body[data-view="canon"] .canon-section-block {
+  min-width: 0;
+  margin-top: 0.7rem;
+}
+
+body[data-view="canon"] .canon-section-title {
+  min-height: 1.55rem;
+  margin-bottom: 0.35rem;
+}
+
+body[data-view="canon"] .canon-section-title h3 {
+  gap: 0.38rem;
+  font-size: 0.72rem;
+}
+
+body[data-view="canon"] .canon-section-title span {
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .canon-project-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 0.62rem !important;
+}
+
+body[data-view="canon"] .canon-project-card,
+body[data-view="canon"] .canon-recent-card,
+body[data-view="canon"] .canon-explore-card {
+  border: 1px solid var(--canon-page-line) !important;
+  border-radius: 10px !important;
+  box-shadow: var(--canon-page-shadow) !important;
+}
+
+body[data-view="canon"] .canon-project-card:first-child,
+body[data-view="canon"] .canon-project-card:nth-child(2) {
+  grid-column: span 3;
+}
+
+body[data-view="canon"] .canon-project-card:nth-child(n + 3) {
+  grid-column: span 2;
+}
+
+body[data-view="canon"] .canon-featured-carousel-card {
+  aspect-ratio: 16 / 8.85;
+  border-radius: 11px !important;
+}
+
+body[data-view="canon"] .canon-featured-carousel-stage {
+  border-radius: inherit;
+  background-size: 100% 100%;
+}
+
+body[data-view="canon"] .canon-featured-carousel-stage::before {
+  content: "";
+  display: block;
+  z-index: 1;
+  background: rgba(6, 42, 34, 0.15);
+}
+
+body[data-view="canon"] .canon-featured-carousel-arrow {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.35rem;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots {
+  bottom: 0.55rem;
+  gap: 0.25rem;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots button {
+  width: 1rem;
+  height: 0.22rem;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots button.active {
+  width: 1.6rem;
+}
+
+body[data-view="canon"] .canon-project-card:nth-child(2) .canon-project-media {
+  min-height: clamp(9.25rem, 13vw, 12rem);
+}
+
+body[data-view="canon"] .canon-project-card:nth-child(n + 3) .canon-project-media {
+  min-height: clamp(6.75rem, 8.5vw, 8.5rem);
+}
+
+body[data-view="canon"] .canon-project-media,
+body[data-view="canon"] .canon-recent-media {
+  background-size: cover;
+}
+
+body[data-view="canon"] .canon-project-body,
+body[data-view="canon"] .canon-recent-card > div:last-child {
+  gap: 0.3rem;
+  padding: 0.5rem 0.55rem 0.58rem;
+}
+
+body[data-view="canon"] .canon-project-heading h4,
+body[data-view="canon"] .canon-recent-card h4 {
+  font-size: clamp(0.65rem, 0.68vw, 0.76rem);
+  line-height: 1.16;
+}
+
+body[data-view="canon"] .canon-project-body p,
+body[data-view="canon"] .canon-recent-card p {
+  font-size: 0.55rem;
+  line-height: 1.28;
+}
+
+body[data-view="canon"] .canon-project-heading button {
+  width: 1.65rem;
+  height: 1.65rem;
+  min-height: 1.65rem;
+}
+
+body[data-view="canon"] .canon-status {
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 0.16rem 0.35rem;
+  font-size: 0.48rem;
+}
+
+body[data-view="canon"] .canon-avatar-row span {
+  width: 1rem;
+  height: 1rem;
+}
+
+body[data-view="canon"] .canon-avatar-row::after {
+  font-size: 0.52rem;
+}
+
+body[data-view="canon"] .canon-project-footer {
+  font-size: 0.53rem;
+}
+
+body[data-view="canon"] .canon-category-carousel {
+  border-radius: 10px;
+  padding: 0.08rem 0;
+}
+
+body[data-view="canon"] .canon-category-track {
+  gap: 0.5rem;
+}
+
+body[data-view="canon"] .canon-category-carousel .canon-category-card {
+  flex-basis: clamp(7.35rem, 8.8vw, 9rem);
+  min-height: 5.25rem;
+  padding: 0.48rem;
+  border-radius: 8px;
+}
+
+body[data-view="canon"] .canon-category-card span {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+body[data-view="canon"] .canon-category-card strong {
+  font-size: 0.57rem;
+}
+
+body[data-view="canon"] .canon-category-card small {
+  font-size: 0.48rem;
+}
+
+body[data-view="canon"] .canon-recent-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 0.62rem !important;
+}
+
+body[data-view="canon"] .canon-recent-grid > .canon-recent-card:not(.canon-watchman-story-card) {
+  min-height: 14.25rem;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+body[data-view="canon"] .canon-recent-grid > .canon-recent-card:not(.canon-watchman-story-card) .canon-recent-media {
+  min-height: 8.5rem;
+}
+
+body[data-view="canon"] .canon-recent-grid > .canon-recent-card:not(.canon-watchman-story-card) > div:last-child {
+  min-height: 5.45rem;
+  max-height: 6.35rem;
+}
+
+body[data-view="canon"] .canon-recent-merged-card.canon-watchman-story-card {
+  grid-column: span 3;
+  align-self: stretch;
+  border-radius: 11px !important;
+}
+
+body[data-view="canon"] .canon-watchman-story-stage,
+body[data-view="canon"] .canon-watchman-image-frame {
+  border-radius: inherit;
+}
+
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-controls {
+  bottom: 0.4rem;
+  width: min(14rem, calc(100% - 0.75rem));
+}
+
+body[data-view="canon"] .canon-explore-section {
+  margin-top: 0.8rem;
+}
+
+body[data-view="canon"] .canon-section-title-stacked p {
+  margin-top: 0.12rem;
+  font-size: 0.58rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] .canon-explore-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.55rem !important;
+}
+
+body[data-view="canon"] .canon-explore-card {
+  grid-template-rows: 4.65rem minmax(0, 1fr) auto;
+  min-height: 10.4rem;
+  border-radius: 9px !important;
+}
+
+body[data-view="canon"] .canon-explore-card::before {
+  min-height: 4.65rem;
+}
+
+body[data-view="canon"] .canon-explore-icon {
+  top: 0.38rem;
+  left: 0.38rem;
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+body[data-view="canon"] .canon-explore-icon::before {
+  width: 0.67rem;
+  height: 0.67rem;
+}
+
+body[data-view="canon"] .canon-explore-copy {
+  gap: 0.2rem;
+  padding: 0.42rem 0.45rem 0;
+}
+
+body[data-view="canon"] .canon-explore-copy h4 {
+  font-size: 0.61rem;
+}
+
+body[data-view="canon"] .canon-explore-copy p {
+  font-size: 0.5rem;
+  line-height: 1.25;
+}
+
+body[data-view="canon"] .canon-explore-footer {
+  gap: 0.25rem;
+  padding: 0.32rem 0.42rem 0.42rem;
+}
+
+body[data-view="canon"] .canon-explore-footer > span,
+body[data-view="canon"] .canon-explore-footer button {
+  font-size: 0.48rem;
+}
+
+body[data-view="canon"] .canon-explore-footer button {
+  min-height: 1.45rem;
+  padding-inline: 0.35rem;
+}
+
+body[data-view="canon"] .canon-pagination {
+  gap: 0.3rem;
+  margin: 0.65rem 0 0;
+}
+
+body[data-view="canon"] .canon-pagination button,
+body[data-view="canon"] .canon-pagination span {
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .canon-right-rail {
+  position: sticky;
+  top: 0.65rem;
+  display: grid;
+  gap: 0.62rem;
+  align-content: start;
+}
+
+body[data-view="canon"] .canon-profile-widget,
+body[data-view="canon"] .canon-overview-widget,
+body[data-view="canon"] .canon-actions-widget,
+body[data-view="canon"] .canon-detail-sticky,
+body[data-view="canon"] .canon-recommended-widget,
+body[data-view="canon"] .canon-builder-widget {
+  border: 1px solid var(--canon-page-line);
+  border-radius: 10px;
+  background: var(--canon-page-panel);
+  box-shadow: var(--canon-page-shadow);
+  backdrop-filter: none;
+}
+
+body[data-view="canon"] .canon-profile-widget,
+body[data-view="canon"] .canon-overview-widget,
+body[data-view="canon"] .canon-actions-widget,
+body[data-view="canon"] .canon-detail-sticky,
+body[data-view="canon"] .canon-recommended-widget {
+  padding: 0.7rem;
+}
+
+body[data-view="canon"] .canon-profile-head {
+  grid-template-columns: 3.45rem minmax(0, 1fr) auto;
+  gap: 0.55rem;
+}
+
+body[data-view="canon"] .canon-profile-avatar {
+  width: 3.45rem;
+  height: 3.45rem;
+  border-width: 2px;
+}
+
+body[data-view="canon"] .canon-profile-head h3 {
+  font-size: 0.95rem;
+}
+
+body[data-view="canon"] .canon-profile-head p {
+  margin: 0.08rem 0 0.28rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .canon-profile-head div > span {
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.5rem;
+}
+
+body[data-view="canon"] .canon-profile-head button {
+  width: 1.65rem;
+  height: 1.65rem;
+}
+
+body[data-view="canon"] .canon-xp-row {
+  gap: 0.28rem;
+  margin: 0.48rem 0 0.55rem;
+  font-size: 0.52rem;
+}
+
+body[data-view="canon"] .canon-profile-widget blockquote {
+  padding: 0.65rem;
+  border-radius: 8px;
+  font-size: 0.55rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] .canon-overview-premium {
+  min-height: 0;
+  padding: 0.72rem;
+  border-radius: 10px;
+}
+
+body[data-view="canon"] .canon-overview-header h3 {
+  font-size: 0.95rem;
+}
+
+body[data-view="canon"] .canon-overview-header p,
+body[data-view="canon"] .canon-overview-info,
+body[data-view="canon"] .canon-maturity-copy {
+  font-size: 0.52rem;
+  line-height: 1.3;
+}
+
+body[data-view="canon"] .canon-overview-diagram {
+  width: min(100%, 14rem);
+  min-height: 12.5rem;
+  margin-inline: auto;
+}
+
+body[data-view="canon"] .canon-overview-maturity {
+  gap: 0.4rem;
+}
+
+body[data-view="canon"] .canon-actions-widget {
+  gap: 0.35rem;
+}
+
+body[data-view="canon"] .canon-actions-widget h4 {
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+}
+
+body[data-view="canon"] .canon-actions-widget button {
+  min-height: 2rem;
+  border-radius: 7px;
+  padding: 0.4rem 0.55rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .canon-builder-widget {
+  grid-template-columns: 3.2rem minmax(0, 1fr);
+  gap: 0.55rem;
+  padding: 0.75rem;
+}
+
+body[data-view="canon"] .canon-builder-badge {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+body[data-view="canon"] .canon-builder-widget h3 {
+  font-size: 0.78rem;
+}
+
+body[data-view="canon"] .canon-builder-widget p {
+  font-size: 0.52rem;
+  line-height: 1.3;
+}
+
+body[data-view="canon"] .canon-builder-widget button {
+  min-height: 2rem;
+  margin-top: 0.35rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .canon-detail-sticky {
+  gap: 0.4rem;
+}
+
+body[data-view="canon"] .canon-detail-media {
+  min-height: 6.5rem;
+  margin: -0.7rem -0.7rem 0.25rem;
+  border-radius: 10px 10px 0 0;
+}
+
+body[data-view="canon"] .canon-detail-sticky :where(h3, h4) {
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] .canon-detail-sticky :where(p, li, span, small) {
+  font-size: 0.52rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] .canon-detail-stats {
+  gap: 0.35rem;
+}
+
+body[data-view="canon"] .canon-detail-stats article {
+  padding: 0.42rem;
+}
+
+body[data-view="canon"] .canon-detail-sticky :where(.primary, .secondary) {
+  min-height: 2rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .canon-recommended-widget {
+  gap: 0.5rem;
+}
+
+body[data-view="canon"] .canon-recommended-widget h4 {
+  font-size: 0.7rem;
+}
+
+body[data-view="canon"] .canon-recommended-image-frame {
+  border-radius: 9px;
+}
+
+body[data-view="canon"] .canon-recommended-copy h5 {
+  font-size: 0.66rem;
+}
+
+body[data-view="canon"] .canon-recommended-copy p {
+  font-size: 0.52rem;
+}
+
+body[data-view="canon"] .canon-recommended-copy button {
+  min-height: 1.85rem;
+  font-size: 0.53rem;
+}
+
+body[data-view="canon"] .canon-recommended-controls {
+  grid-template-columns: 1.65rem minmax(0, 1fr) 1.65rem;
+}
+
+body[data-view="canon"] .canon-recommended-arrow {
+  width: 1.65rem;
+  height: 1.65rem;
+  min-height: 1.65rem;
+}
+
+body[data-view="canon"] .phase115-smart-recommendations {
+  margin-top: 0;
+  border: 1px solid var(--canon-page-line);
+  border-radius: 11px;
+  padding: 0.78rem;
+  background: var(--canon-page-panel);
+  box-shadow: var(--canon-page-shadow);
+}
+
+body[data-view="canon"] .phase114-section-head {
+  gap: 0.6rem;
+  margin-bottom: 0.55rem;
+}
+
+body[data-view="canon"] .phase114-section-head .eyebrow {
+  font-size: 0.52rem;
+}
+
+body[data-view="canon"] .phase114-section-head h3 {
+  margin-top: 0.08rem;
+  font-size: 0.9rem;
+}
+
+body[data-view="canon"] .phase114-section-head p {
+  margin-top: 0.12rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] .phase114-section-head > button {
+  min-height: 1.9rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.52rem;
+}
+
+body[data-view="canon"] .phase115-recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.48rem;
+}
+
+body[data-view="canon"] .phase115-recommendation-card {
+  min-width: 0;
+  gap: 0.35rem;
+  padding: 0.58rem;
+  border: 1px solid var(--canon-page-line);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+body[data-view="canon"] .phase115-recommendation-card :where(.eyebrow, small, p, span) {
+  font-size: 0.52rem;
+  line-height: 1.32;
+}
+
+body[data-view="canon"] .phase115-recommendation-card h4 {
+  font-size: 0.68rem;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] .phase116-why-this-panel {
+  margin-top: 0.3rem;
+  border-radius: 7px;
+  padding: 0.35rem 0.42rem;
+  box-shadow: none;
+}
+
+body[data-view="canon"] .phase116-why-this-panel summary {
+  min-height: 1.45rem;
+  font-size: 0.53rem;
+}
+
+body[data-view="canon"] .phase116-why-this-panel summary strong {
+  font-size: 0.46rem;
+}
+
+body[data-view="canon"] .phase116-why-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+body[data-view="canon"] .phase116-why-grid article,
+body[data-view="canon"] .phase116-quality-score {
+  padding: 0.38rem;
+}
+
+body[data-view="canon"] .phase116-why-grid :where(span, strong),
+body[data-view="canon"] .phase116-path-row span,
+body[data-view="canon"] .phase116-panel-actions button,
+body[data-view="canon"] .phase115-feedback-controls button {
+  font-size: 0.48rem;
+}
+
+body[data-view="canon"] .phase116-workflow-entry {
+  margin-top: 0.6rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+body[data-view="canon"] .phase116-workflow-entry .eyebrow {
+  font-size: 0.5rem;
+}
+
+body[data-view="canon"] .phase116-workflow-entry h3 {
+  font-size: 0.78rem;
+}
+
+body[data-view="canon"] .phase116-workflow-entry p {
+  font-size: 0.53rem;
+}
+
+body[data-view="canon"] .phase116-workflow-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+body[data-view="canon"] .phase116-workflow-grid button {
+  min-height: 3.1rem;
+  padding: 0.45rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="canon"] :where(button, input, select, summary, a, [tabindex]):focus-visible {
+  outline: 2px solid var(--canon-page-gold);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body[data-view="canon"] .canon-project-card:hover,
+  body[data-view="canon"] .canon-recent-card:hover,
+  body[data-view="canon"] .canon-explore-card:hover {
+    transform: translateY(-2px) !important;
+    border-color: rgba(0, 107, 82, 0.28) !important;
+    box-shadow: var(--canon-page-shadow-raised) !important;
+  }
+}
+
+@media (max-width: 1320px) {
+  body[data-view="canon"] .canon-premium-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .canon-right-rail {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="canon"] .canon-right-rail > * {
+    align-self: start;
+  }
+}
+
+@media (max-width: 1180px) {
+  body[data-view="canon"] .canon-project-grid,
+  body[data-view="canon"] .canon-recent-grid,
+  body[data-view="canon"] .canon-explore-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  body[data-view="canon"] .canon-project-card,
+  body[data-view="canon"] .canon-project-card:first-child,
+  body[data-view="canon"] .canon-project-card:nth-child(2),
+  body[data-view="canon"] .canon-project-card:nth-child(n + 3),
+  body[data-view="canon"] .canon-recent-merged-card.canon-watchman-story-card {
+    grid-column: auto;
+  }
+
+  body[data-view="canon"] .canon-featured-carousel-card {
+    aspect-ratio: 16 / 9;
+  }
+
+  body[data-view="canon"] .canon-explore-card {
+    min-height: 11.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  body[data-view="canon"] .app-shell {
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .sidebar {
+    padding-inline: 0.7rem;
+  }
+
+  body[data-view="canon"] .nav-item {
+    font-size: 0.66rem;
+  }
+
+  body[data-view="canon"] .app-main {
+    padding-right: 0.75rem;
+  }
+
+  body[data-view="canon"] .canon-kpi-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body[data-view="canon"] .canon-right-rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .phase115-recommendation-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  body[data-view="canon"] .app-shell {
+    display: block;
+  }
+
+  body[data-view="canon"] .app-sidebar {
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  body[data-view="canon"] .sidebar {
+    gap: 0.8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  body[data-view="canon"] .app-main {
+    padding: 0.55rem 0.75rem 1rem;
+  }
+
+  body[data-view="canon"] .app-header {
+    min-height: 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 0.45rem;
+    padding: 0.25rem 0;
+  }
+
+  body[data-view="canon"] .topbar-actions {
+    width: 100%;
+  }
+
+  body[data-view="canon"] .topbar-actions > button {
+    flex: 1 1 11rem;
+  }
+
+  body[data-view="canon"] .canon-kingdom-hero {
+    min-height: 0;
+    padding: 1rem;
+    background-position: 58% center;
+  }
+
+  body[data-view="canon"] .canon-hero-copy h3 {
+    font-size: clamp(1.65rem, 7vw, 2.15rem);
+  }
+
+  body[data-view="canon"] .canon-hero-search {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.3rem;
+  }
+
+  body[data-view="canon"] .canon-hero-search select,
+  body[data-view="canon"] .canon-hero-search .primary {
+    grid-column: auto;
+  }
+
+  body[data-view="canon"] .canon-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="canon"] .canon-kpi-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  body[data-view="canon"] .canon-category-carousel .canon-category-card {
+    flex-basis: clamp(9rem, 35vw, 12rem);
+  }
+
+  body[data-view="canon"] .phase116-workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  body[data-view="canon"] .canon-project-grid,
+  body[data-view="canon"] .canon-recent-grid,
+  body[data-view="canon"] .canon-explore-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body[data-view="canon"] .canon-kpi-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .canon-kpi-card:last-child {
+    grid-column: auto;
+  }
+
+  body[data-view="canon"] .canon-hero-search {
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 0.45rem;
+  }
+
+  body[data-view="canon"] .canon-hero-search > span {
+    display: grid;
+  }
+
+  body[data-view="canon"] .canon-hero-search select,
+  body[data-view="canon"] .canon-hero-search .primary {
+    grid-column: 1 / -1;
+  }
+
+  body[data-view="canon"] .canon-hero-search input,
+  body[data-view="canon"] .canon-hero-search select,
+  body[data-view="canon"] .canon-hero-search .primary {
+    width: 100%;
+    min-height: 2.75rem;
+    border: 0;
+  }
+
+  body[data-view="canon"] .canon-quick-chips {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="canon"] .canon-quick-chips button {
+    min-width: 0;
+  }
+
+  body[data-view="canon"] .canon-recent-grid > .canon-recent-card:not(.canon-watchman-story-card) {
+    min-height: 19rem;
+  }
+
+  body[data-view="canon"] .canon-recent-grid > .canon-recent-card:not(.canon-watchman-story-card) .canon-recent-media {
+    min-height: 12rem;
+  }
+
+  body[data-view="canon"] .canon-watchman-story-card {
+    aspect-ratio: 16 / 9;
+  }
+
+  body[data-view="canon"] .canon-explore-card {
+    min-height: 12rem;
+  }
+
+  body[data-view="canon"] .canon-explore-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  body[data-view="canon"] .canon-explore-footer button {
+    width: 100%;
+    min-height: 2rem;
+  }
+
+  body[data-view="canon"] .phase114-section-head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  body[data-view="canon"] .phase114-section-head > button {
+    width: 100%;
+  }
+
+  body[data-view="canon"] .phase116-workflow-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-view="canon"] .app-main {
+    padding: 0.45rem 0.5rem 0.85rem;
+  }
+
+  body[data-view="canon"] #viewTitle {
+    font-size: 1.45rem;
+  }
+
+  body[data-view="canon"] .canon-kingdom-hero {
+    padding: 0.85rem;
+  }
+
+  body[data-view="canon"] .canon-hero-copy h3 {
+    font-size: clamp(1.5rem, 8.5vw, 1.9rem);
+  }
+
+  body[data-view="canon"] .canon-hero-copy p {
+    font-size: 0.62rem;
+  }
+
+  body[data-view="canon"] .canon-quick-chips {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .canon-category-carousel .canon-category-card {
+    flex-basis: clamp(10rem, 62vw, 14rem);
+  }
+
+  body[data-view="canon"] .phase115-recommendation-card {
+    padding: 0.5rem;
+  }
+
+  body[data-view="canon"] .phase115-feedback-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-view="canon"] .canon-category-track {
+    animation: none;
+    transform: none;
+  }
+
+  body[data-view="canon"] :where(
+    .canon-project-card,
+    .canon-recent-card,
+    .canon-explore-card,
+    .canon-project-media,
+    .canon-recent-media,
+    .canon-featured-carousel-arrow,
+    .canon-featured-carousel-dots button,
+    .canon-recommended-arrow,
+    .canon-recommended-dots button,
+    .canon-watchman-video-controls button,
+    .phase116-why-this-panel
+  ) {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Canon refinement pass 2: compact the information-dense rail and controls. */
+body[data-view="canon"] .canon-overview-premium {
+  min-height: 0 !important;
+  padding: 0.72rem !important;
+  border-radius: 10px !important;
+}
+
+body[data-view="canon"] .canon-overview-header {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.45rem;
+  margin-bottom: 0.3rem;
+}
+
+body[data-view="canon"] .canon-overview-header h4 {
+  font-size: 1.2rem !important;
+  line-height: 1 !important;
+}
+
+body[data-view="canon"] .canon-overview-header p {
+  margin-top: 0.18rem;
+  font-size: 0.55rem;
+  line-height: 1.25;
+}
+
+body[data-view="canon"] .canon-overview-title-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+body[data-view="canon"] .canon-overview-info {
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 0.85rem;
+}
+
+body[data-view="canon"] .canon-overview-diagram {
+  height: 19rem !important;
+  min-height: 19rem;
+  margin: 0.25rem 0 0.55rem;
+}
+
+body[data-view="canon"] .canon-overview-radar-svg {
+  width: min(14rem, 82%);
+}
+
+body[data-view="canon"] .canon-overview-core {
+  width: 4.8rem;
+  height: 4.8rem;
+  box-shadow:
+    0 14px 30px rgba(0, 58, 43, 0.2),
+    0 0 0 0.65rem rgba(0, 105, 75, 0.07),
+    0 0 0 1.35rem rgba(0, 105, 75, 0.04),
+    inset 0 -12px 26px rgba(0, 18, 13, 0.16);
+}
+
+body[data-view="canon"] .canon-overview-core i {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-bottom: -0.9rem;
+}
+
+body[data-view="canon"] .canon-overview-core strong {
+  margin-top: 0.7rem;
+  font-size: 1.35rem;
+}
+
+body[data-view="canon"] .canon-overview-dimension {
+  width: 4.75rem;
+  min-height: 3.35rem;
+  padding: 0.9rem 0.3rem 0.4rem;
+  border-radius: 10px;
+}
+
+body[data-view="canon"] .canon-overview-dimension::after {
+  height: 1.35rem;
+}
+
+body[data-view="canon"] .canon-overview-dimension > span {
+  top: -0.78rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+body[data-view="canon"] .canon-overview-dimension strong {
+  font-size: 0.65rem;
+}
+
+body[data-view="canon"] .canon-overview-dimension b {
+  margin-top: 0.12rem;
+  font-size: 0.98rem;
+}
+
+body[data-view="canon"] .canon-overview-maturity {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.5rem;
+  min-height: 4.6rem;
+  padding: 0.55rem;
+  border-radius: 10px;
+}
+
+body[data-view="canon"] .canon-maturity-icon {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+body[data-view="canon"] .canon-maturity-copy strong {
+  font-size: 0.7rem;
+}
+
+body[data-view="canon"] .canon-maturity-copy span {
+  margin-top: 0.08rem;
+  font-size: 0.5rem;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] .canon-maturity-bar {
+  height: 0.35rem;
+  margin-top: 0.4rem;
+}
+
+body[data-view="canon"] .canon-maturity-ring {
+  width: 3rem;
+  height: 3rem;
+}
+
+body[data-view="canon"] .canon-maturity-ring::before {
+  inset: 0.45rem;
+}
+
+body[data-view="canon"] .canon-maturity-ring strong {
+  font-size: 0.8rem;
+}
+
+body[data-view="canon"] .phase115-feedback-controls {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+body[data-view="canon"] .phase115-feedback-controls button {
+  min-width: 0;
+  min-height: 1.55rem;
+  padding: 0.22rem 0.25rem;
+  overflow-wrap: anywhere;
+  border-radius: 5px;
+  line-height: 1.08;
+}
+
+body[data-view="canon"] .phase116-workflow-grid button {
+  min-height: 2.55rem;
+}
+
+@media (max-width: 900px) {
+  body[data-view="canon"] .phase115-feedback-controls {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  body[data-view="canon"] .canon-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="canon"] .canon-kpi-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  body[data-view="canon"] .phase115-feedback-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-view="canon"] .canon-quick-chips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Canon refinement pass 3: contrast, mobile flow, and usable control targets. */
+body[data-view="canon"] .canon-status.in-progress {
+  background: rgb(133, 73, 0);
+  color: rgb(255, 253, 244);
+}
+
+body[data-view="canon"] .canon-status.completed {
+  background: rgb(23, 109, 53);
+  color: rgb(255, 255, 255);
+}
+
+body[data-view="canon"] .canon-status.planning {
+  background: rgb(23, 87, 166);
+  color: rgb(255, 255, 255);
+}
+
+body[data-view="canon"] .canon-profile-head div > span {
+  background: rgb(0, 107, 75);
+}
+
+body[data-view="canon"] .canon-explore-footer button {
+  min-height: 1.75rem;
+}
+
+body[data-view="canon"] .phase116-why-this-panel summary {
+  min-height: 1.6rem;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots button,
+body[data-view="canon"] .canon-recommended-dots button,
+body[data-view="canon"] .canon-watchman-video-dots button,
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots button {
+  width: 1.625rem;
+  min-width: 1.625rem;
+  height: 1.625rem;
+  min-height: 1.625rem;
+  background:
+    linear-gradient(rgba(0, 107, 82, 0.36), rgba(0, 107, 82, 0.36))
+    center / 0.75rem 0.24rem no-repeat;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots button {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.58))
+    center / 1rem 0.24rem no-repeat;
+}
+
+body[data-view="canon"] .canon-watchman-video-dots button,
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots button {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+    center / 0.75rem 0.24rem no-repeat;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots button.active,
+body[data-view="canon"] .canon-recommended-dots button.active,
+body[data-view="canon"] .canon-watchman-video-dots button.active,
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots button.active {
+  width: 1.75rem;
+  background:
+    linear-gradient(90deg, rgb(241, 203, 104), rgb(13, 163, 119))
+    center / 1.35rem 0.28rem no-repeat;
+}
+
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-controls {
+  width: min(18rem, calc(100% - 1rem));
+}
+
+body[data-view="canon"] .app-shell :where(
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  a,
+  [tabindex]
+):focus-visible {
+  outline: 2px solid var(--canon-page-gold) !important;
+  outline-offset: 2px !important;
+}
+
+@media (max-width: 760px) {
+  body[data-view="canon"] .canon-overview-header {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .canon-overview-info {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+
+  body[data-view="canon"] .canon-overview-diagram {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+    width: 100%;
+    height: auto !important;
+    min-height: 0;
+    padding-top: 12rem;
+  }
+
+  body[data-view="canon"] .canon-overview-radar-svg,
+  body[data-view="canon"] .canon-overview-core {
+    top: 5.75rem;
+  }
+
+  body[data-view="canon"] .canon-overview-dimension,
+  body[data-view="canon"] .canon-dim-calling,
+  body[data-view="canon"] .canon-dim-purpose,
+  body[data-view="canon"] .canon-dim-wisdom,
+  body[data-view="canon"] .canon-dim-dominion,
+  body[data-view="canon"] .canon-dim-legacy {
+    position: relative;
+    inset: auto;
+    width: auto;
+    transform: none;
+  }
+
+  body[data-view="canon"] .canon-dim-calling {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(9rem, 100%);
+  }
+
+  body[data-view="canon"] .canon-overview-maturity {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  body[data-view="canon"] .canon-maturity-ring {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  body[data-view="canon"] .canon-project-grid,
+  body[data-view="canon"] .canon-recent-grid,
+  body[data-view="canon"] .canon-explore-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body[data-view="canon"] .canon-project-card,
+  body[data-view="canon"] .canon-project-card:first-child,
+  body[data-view="canon"] .canon-project-card:nth-child(2),
+  body[data-view="canon"] .canon-project-card:nth-child(n + 3),
+  body[data-view="canon"] .canon-recent-merged-card.canon-watchman-story-card {
+    grid-column: auto;
+  }
+}
+
+/* Canon refinement pass 4: intermediate tablet flow and exact target sizing. */
+body[data-view="canon"] .canon-featured-carousel-dots button,
+body[data-view="canon"] .canon-recommended-dots button,
+body[data-view="canon"] .canon-watchman-video-dots button,
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots button {
+  width: 1.6rem;
+}
+
+body[data-view="canon"] .canon-featured-carousel-dots button.active,
+body[data-view="canon"] .canon-recommended-dots button.active,
+body[data-view="canon"] .canon-watchman-video-dots button.active,
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots button.active {
+  width: 1.85rem;
+}
+
+@media (max-width: 900px) {
+  body[data-view="canon"] .canon-project-grid,
+  body[data-view="canon"] .canon-recent-grid,
+  body[data-view="canon"] .canon-explore-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body[data-view="canon"] .canon-project-card,
+  body[data-view="canon"] .canon-project-card:first-child,
+  body[data-view="canon"] .canon-project-card:nth-child(2),
+  body[data-view="canon"] .canon-project-card:nth-child(n + 3),
+  body[data-view="canon"] .canon-recent-merged-card.canon-watchman-story-card {
+    grid-column: auto;
+  }
 }
