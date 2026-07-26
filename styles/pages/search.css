@@ -389,12 +389,52 @@ body[data-view="search"] .search-results-toolbar {
   margin-bottom: 0.7rem;
 }
 
+body[data-view="search"] .search-results-toolbar > div:first-child {
+  display: grid;
+  grid-template-columns: 1.55rem minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+body[data-view="search"] .search-results-toolbar > div:first-child::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 1.5px solid var(--search-accent);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, var(--search-accent) 0 0.1rem, transparent 0.12rem),
+    linear-gradient(transparent 47%, var(--search-accent) 47% 53%, transparent 53%),
+    linear-gradient(90deg, transparent 47%, var(--search-accent) 47% 53%, transparent 53%),
+    linear-gradient(45deg, transparent 49%, var(--search-accent) 49% 51%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, var(--search-accent) 49% 51%, transparent 51%);
+  box-sizing: border-box;
+}
+
+body[data-view="search"] .search-results-toolbar > div:first-child::after {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  place-self: center;
+  width: 0.72rem;
+  height: 0.72rem;
+  background: var(--search-accent);
+  clip-path: polygon(50% 0, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0 50%, 42% 42%);
+}
+
 body[data-view="search"] .search-results-toolbar .eyebrow {
+  grid-column: 2;
+  grid-row: 1;
   margin: 0 0 0.12rem;
   font-size: 0.66rem;
 }
 
 body[data-view="search"] .search-results-toolbar h3 {
+  grid-column: 2;
+  grid-row: 2;
   font-size: 0.66rem;
 }
 
