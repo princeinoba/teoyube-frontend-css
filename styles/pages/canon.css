@@ -441,7 +441,7 @@ body[data-view="canon"] .canon-project-card[data-canon-item="canon-map-D02"] .ca
   background-color: var(--canon-page-accent-strong);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 0;
 }
 
