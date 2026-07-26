@@ -430,6 +430,14 @@ body[data-view="canon"] .canon-project-card:nth-child(2) .canon-project-media {
   min-height: clamp(9.25rem, 13vw, 12rem);
 }
 
+body[data-view="canon"] .canon-project-card[data-canon-item="canon-map-D02"] .canon-project-media {
+  aspect-ratio: 16 / 9;
+  background-color: var(--canon-page-accent-strong);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 body[data-view="canon"] .canon-project-card:nth-child(n + 3) .canon-project-media {
   min-height: clamp(6.75rem, 8.5vw, 8.5rem);
 }
