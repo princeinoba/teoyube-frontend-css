@@ -1,0 +1,137 @@
+{
+  "root": {
+    "x": 210,
+    "y": 0,
+    "width": 1304,
+    "height": 1868
+  },
+  "rootStyle": {
+    "padding": "21.6px",
+    "radius": "18px",
+    "background": "rgb(252, 254, 253)"
+  },
+  "header": {
+    "x": 233,
+    "y": 22,
+    "width": 1259,
+    "height": 74,
+    "display": "flex"
+  },
+  "compareButton": {
+    "x": 1288,
+    "y": 22,
+    "width": 204,
+    "height": 46
+  },
+  "gridColumns": "620.812px 620.812px",
+  "gridRows": "844.781px 279.625px 300.609px",
+  "cards": [
+    {
+      "type": "Scripture",
+      "x": 233,
+      "y": 115,
+      "width": 621,
+      "height": 845,
+      "display": "flex",
+      "overflow": "visible"
+    },
+    {
+      "type": "Teoyube Word",
+      "x": 871,
+      "y": 115,
+      "width": 621,
+      "height": 845,
+      "display": "flex",
+      "overflow": "visible"
+    },
+    {
+      "type": "Promise Cluster",
+      "x": 233,
+      "y": 978,
+      "width": 621,
+      "height": 280,
+      "display": "flex",
+      "overflow": "visible"
+    },
+    {
+      "type": "Prayer",
+      "x": 871,
+      "y": 978,
+      "width": 621,
+      "height": 280,
+      "display": "flex",
+      "overflow": "visible"
+    },
+    {
+      "type": "Action Step",
+      "x": 233,
+      "y": 1275,
+      "width": 621,
+      "height": 301,
+      "display": "flex",
+      "overflow": "visible"
+    },
+    {
+      "type": "Journey",
+      "x": 871,
+      "y": 1275,
+      "width": 621,
+      "height": 301,
+      "display": "flex",
+      "overflow": "visible"
+    }
+  ],
+  "feedbackColumns": "73.3438px 73.3594px 73.3438px 73.3594px 73.3438px 73.3594px 73.3438px 73.3594px",
+  "workflowColumns": "194.875px 194.875px 194.875px 194.891px 194.875px 194.875px",
+  "workflowButtons": [
+    {
+      "x": 250,
+      "y": 1684,
+      "width": 195,
+      "height": 144
+    },
+    {
+      "x": 456,
+      "y": 1684,
+      "width": 195,
+      "height": 144
+    },
+    {
+      "x": 662,
+      "y": 1684,
+      "width": 195,
+      "height": 144
+    },
+    {
+      "x": 868,
+      "y": 1684,
+      "width": 195,
+      "height": 144
+    },
+    {
+      "x": 1074,
+      "y": 1684,
+      "width": 195,
+      "height": 144
+    },
+    {
+      "x": 1280,
+      "y": 1684,
+      "width": 195,
+      "height": 144
+    }
+  ],
+  "controlCount": 73,
+  "hiddenControls": 0,
+  "clippedControls": [],
+  "documentOverflowX": 0,
+  "detailsOpen": [
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "failures": []
+}

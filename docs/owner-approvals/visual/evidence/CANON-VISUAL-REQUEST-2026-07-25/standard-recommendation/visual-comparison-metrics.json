@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "teoyube-owner-reference-css-comparison-1",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-25-CANON-001",
+  "reference": {
+    "path": "docs/owner-approvals/visual/evidence/CANON-VISUAL-REQUEST-2026-07-25/standard-recommendation/owner-reference.png",
+    "width": 1122,
+    "height": 1402
+  },
+  "candidate": {
+    "path": "docs/owner-approvals/visual/evidence/CANON-VISUAL-REQUEST-2026-07-25/standard-recommendation/after-panel-1536x1024.png",
+    "width": 1305,
+    "height": 1616,
+    "normalizedWidth": 1122,
+    "normalizedHeight": 1402
+  },
+  "comparison": {
+    "thresholdPerChannel": 16,
+    "changedPixelRatio": 0.15739992015480814,
+    "meanAbsoluteChannelDifference": 14.033931451800882,
+    "normalizedMeanAbsoluteDifference": 0.05503502530117993,
+    "rootMeanSquareChannelDifference": 40.74821647101005
+  },
+  "interpretation": "This is a measured reference-comparison artifact, not an immutable baseline gate. The source DOM lacks the reference-only decorative icons and privacy footer, and the CSS-only authorization forbids adding markup or generated content."
+}

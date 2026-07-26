@@ -1,0 +1,104 @@
+{
+  "root": {
+    "x": 210,
+    "y": 0,
+    "width": 1304,
+    "height": 1615
+  },
+  "gridColumns": "620.812px 620.812px",
+  "gridRows": "699.25px 238.219px 257.406px",
+  "cards": [
+    {
+      "type": "Scripture",
+      "x": 233,
+      "y": 115,
+      "width": 621,
+      "height": 699
+    },
+    {
+      "type": "Teoyube Word",
+      "x": 871,
+      "y": 115,
+      "width": 621,
+      "height": 699
+    },
+    {
+      "type": "Promise Cluster",
+      "x": 233,
+      "y": 832,
+      "width": 621,
+      "height": 238
+    },
+    {
+      "type": "Prayer",
+      "x": 871,
+      "y": 832,
+      "width": 621,
+      "height": 238
+    },
+    {
+      "type": "Action Step",
+      "x": 233,
+      "y": 1088,
+      "width": 621,
+      "height": 257
+    },
+    {
+      "type": "Journey",
+      "x": 871,
+      "y": 1088,
+      "width": 621,
+      "height": 257
+    }
+  ],
+  "scriptureParts": [
+    {
+      "name": "p.eyebrow",
+      "height": 13
+    },
+    {
+      "name": "h4.",
+      "height": 19
+    },
+    {
+      "name": "p.",
+      "height": 14
+    },
+    {
+      "name": "p.phase113-scripture",
+      "height": 18
+    },
+    {
+      "name": "small.",
+      "height": 12
+    },
+    {
+      "name": "details.phase116-why-this-panel",
+      "height": 501
+    },
+    {
+      "name": "div.phase115-feedback-controls",
+      "height": 56
+    }
+  ],
+  "workflowColumns": "197px 197.016px 197.016px 197px 197.016px 197.016px",
+  "workflow": {
+    "x": 233,
+    "y": 1363,
+    "width": 1259,
+    "height": 229
+  },
+  "controlCount": 73,
+  "hidden": 0,
+  "clipped": [],
+  "overflowX": 0,
+  "detailsOpen": [
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "failures": []
+}

@@ -1,0 +1,683 @@
+{
+  "root": {
+    "id": "phase115SmartRecommendations-canon",
+    "classes": "phase115-smart-recommendations",
+    "children": [
+      "div.phase114-section-head",
+      "div.phase115-recommendation-grid",
+      "section.phase116-workflow-entry"
+    ],
+    "style": {
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "gridTemplateRows": "none",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 1304.41,
+      "height": 1397.55,
+      "x": 210,
+      "y": -0.39,
+      "padding": "12.48px",
+      "gap": "normal",
+      "borderRadius": "11px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    }
+  },
+  "styles": {
+    ".phase114-section-head": {
+      "display": "flex",
+      "gridTemplateColumns": "none",
+      "gridTemplateRows": "none",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 1277.47,
+      "height": 51.08,
+      "x": 223.47,
+      "y": 13.08,
+      "padding": "0px",
+      "gap": "9.6px",
+      "borderRadius": "0px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    },
+    ".phase115-recommendation-grid": {
+      "display": "grid",
+      "gridTemplateColumns": "634.891px 634.906px",
+      "gridTemplateRows": "691.172px 194.75px 194.75px",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 1277.47,
+      "height": 1096.02,
+      "x": 223.47,
+      "y": 72.95,
+      "padding": "0px",
+      "gap": "7.68px",
+      "borderRadius": "0px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    },
+    ".phase115-recommendation-card": {
+      "display": "grid",
+      "gridTemplateColumns": "614.359px",
+      "gridTemplateRows": "10.9688px 13.0469px 10.9688px 19.9062px 10.9688px 540px 31.2188px",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 634.89,
+      "height": 691.17,
+      "x": 223.47,
+      "y": 72.95,
+      "padding": "9.28px",
+      "gap": "5.6px",
+      "borderRadius": "8px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    },
+    ".phase116-why-this-panel": {
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "gridTemplateRows": "none",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 614.36,
+      "height": 535.2,
+      "x": 233.73,
+      "y": 181.84,
+      "padding": "5.6px 6.72px",
+      "gap": "normal",
+      "borderRadius": "7px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    },
+    ".phase115-feedback-controls": {
+      "display": "grid",
+      "gridTemplateColumns": "73.2812px 73.2969px 73.2969px 73.2969px 73.2969px 73.2969px 73.2969px 73.2969px",
+      "gridTemplateRows": "25.625px",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 614.36,
+      "height": 25.63,
+      "x": 233.73,
+      "y": 728.23,
+      "padding": "0px",
+      "gap": "4px",
+      "borderRadius": "0px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    },
+    ".phase116-workflow-entry": {
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "gridTemplateRows": "none",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 1277.47,
+      "height": 205.13,
+      "x": 223.47,
+      "y": 1178.56,
+      "padding": "9.6px",
+      "gap": "normal",
+      "borderRadius": "8px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    },
+    ".phase116-workflow-grid": {
+      "display": "grid",
+      "gridTemplateColumns": "414.5px 414.5px 414.5px",
+      "gridTemplateRows": "63.375px 63.375px",
+      "flexDirection": "row",
+      "position": "static",
+      "overflow": "visible/visible",
+      "width": 1256.28,
+      "height": 133.14,
+      "x": 234.06,
+      "y": 1239.95,
+      "padding": "0px",
+      "gap": "6.4px",
+      "borderRadius": "0px",
+      "fontSize": "16px",
+      "zIndex": "auto"
+    }
+  },
+  "cards": [
+    {
+      "index": 0,
+      "type": "Scripture",
+      "title": "Romans 8:28-30",
+      "classes": "phase115-recommendation-card",
+      "children": [
+        "p.eyebrow",
+        "h4.",
+        "p.",
+        "p.phase113-scripture",
+        "small.",
+        "details.phase116-why-this-panel",
+        "div.phase115-feedback-controls"
+      ],
+      "detailsOpen": true,
+      "detailsAriaExpanded": null,
+      "buttons": [
+        {
+          "label": "View Graph",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Compare Preview",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "More like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Less like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Not relevant",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Scripture",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Word",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Prayer",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Complete Action",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Reset this preference",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "614.359px",
+        "gridTemplateRows": "10.9688px 13.0469px 10.9688px 19.9062px 10.9688px 540px 31.2188px",
+        "flexDirection": "row",
+        "position": "static",
+        "overflow": "visible/visible",
+        "width": 634.89,
+        "height": 691.17,
+        "x": 223.47,
+        "y": 72.95,
+        "padding": "9.28px",
+        "gap": "5.6px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "zIndex": "auto"
+      }
+    },
+    {
+      "index": 1,
+      "type": "Teoyube Word",
+      "title": "TIDUILOVP",
+      "classes": "phase115-recommendation-card",
+      "children": [
+        "p.eyebrow",
+        "h4.",
+        "p.",
+        "p.phase113-scripture",
+        "small.",
+        "details.phase116-why-this-panel",
+        "div.phase115-feedback-controls"
+      ],
+      "detailsOpen": false,
+      "detailsAriaExpanded": null,
+      "buttons": [
+        {
+          "label": "View Graph",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Compare Preview",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "More like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Less like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Not relevant",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Scripture",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Word",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Prayer",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Complete Action",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Reset this preference",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "614.375px",
+        "gridTemplateRows": "81.875px 83.9531px 81.8906px 90.8281px 81.8906px 114.5px 102.141px",
+        "flexDirection": "row",
+        "position": "static",
+        "overflow": "visible/visible",
+        "width": 634.91,
+        "height": 691.17,
+        "x": 866.03,
+        "y": 72.95,
+        "padding": "9.28px",
+        "gap": "5.6px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "zIndex": "auto"
+      }
+    },
+    {
+      "index": 2,
+      "type": "Promise Cluster",
+      "title": "Calling & Purpose",
+      "classes": "phase115-recommendation-card",
+      "children": [
+        "p.eyebrow",
+        "h4.",
+        "p.",
+        "p.phase113-scripture",
+        "small.",
+        "details.phase116-why-this-panel",
+        "div.phase115-feedback-controls"
+      ],
+      "detailsOpen": false,
+      "detailsAriaExpanded": null,
+      "buttons": [
+        {
+          "label": "View Graph",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Compare Preview",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "More like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Less like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Not relevant",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Scripture",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Word",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Prayer",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Complete Action",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Reset this preference",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "614.359px",
+        "gridTemplateRows": "10.9688px 13.0469px 10.9688px 19.9062px 10.9688px 43.5781px 31.2188px",
+        "flexDirection": "row",
+        "position": "static",
+        "overflow": "visible/visible",
+        "width": 634.89,
+        "height": 194.75,
+        "x": 223.47,
+        "y": 771.8,
+        "padding": "9.28px",
+        "gap": "5.6px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "zIndex": "auto"
+      }
+    },
+    {
+      "index": 3,
+      "type": "Prayer",
+      "title": "Father, make me chosen, called, and sent into divine purpose.",
+      "classes": "phase115-recommendation-card",
+      "children": [
+        "p.eyebrow",
+        "h4.",
+        "p.",
+        "p.phase113-scripture",
+        "small.",
+        "details.phase116-why-this-panel",
+        "div.phase115-feedback-controls"
+      ],
+      "detailsOpen": false,
+      "detailsAriaExpanded": null,
+      "buttons": [
+        {
+          "label": "View Graph",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Compare Preview",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "More like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Less like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Not relevant",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Scripture",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Word",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Prayer",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Complete Action",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Reset this preference",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "614.375px",
+        "gridTemplateRows": "10.9688px 13.0469px 10.9688px 19.9062px 10.9688px 43.5781px 31.2188px",
+        "flexDirection": "row",
+        "position": "static",
+        "overflow": "visible/visible",
+        "width": 634.91,
+        "height": 194.75,
+        "x": 866.03,
+        "y": 771.8,
+        "padding": "9.28px",
+        "gap": "5.6px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "zIndex": "auto"
+      }
+    },
+    {
+      "index": 4,
+      "type": "Action Step",
+      "title": "Pray through Benor -> Arion -> Luma -> Taviel and journal one reflection connected to Calling & Purpose.",
+      "classes": "phase115-recommendation-card",
+      "children": [
+        "p.eyebrow",
+        "h4.",
+        "p.",
+        "p.phase113-scripture",
+        "small.",
+        "details.phase116-why-this-panel",
+        "div.phase115-feedback-controls"
+      ],
+      "detailsOpen": false,
+      "detailsAriaExpanded": null,
+      "buttons": [
+        {
+          "label": "View Graph",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Compare Preview",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "More like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Less like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Not relevant",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Scripture",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Word",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Prayer",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Complete Action",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Reset this preference",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "614.359px",
+        "gridTemplateRows": "10.9688px 13.0469px 10.9688px 19.9062px 10.9688px 43.5781px 31.2188px",
+        "flexDirection": "row",
+        "position": "static",
+        "overflow": "visible/visible",
+        "width": 634.89,
+        "height": 194.75,
+        "x": 223.47,
+        "y": 974.22,
+        "padding": "9.28px",
+        "gap": "5.6px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "zIndex": "auto"
+      }
+    },
+    {
+      "index": 5,
+      "type": "Journey",
+      "title": "Calling & Purpose: TIDUILOVP",
+      "classes": "phase115-recommendation-card",
+      "children": [
+        "p.eyebrow",
+        "h4.",
+        "p.",
+        "p.phase113-scripture",
+        "small.",
+        "details.phase116-why-this-panel",
+        "div.phase115-feedback-controls"
+      ],
+      "detailsOpen": false,
+      "detailsAriaExpanded": null,
+      "buttons": [
+        {
+          "label": "View Graph",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Compare Preview",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "More like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Less like this",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Not relevant",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Scripture",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Word",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Save Prayer",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Complete Action",
+          "visible": true,
+          "disabled": false
+        },
+        {
+          "label": "Reset this preference",
+          "visible": true,
+          "disabled": false
+        }
+      ],
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "614.375px",
+        "gridTemplateRows": "10.9688px 13.0469px 10.9688px 19.9062px 10.9688px 43.5781px 31.2188px",
+        "flexDirection": "row",
+        "position": "static",
+        "overflow": "visible/visible",
+        "width": 634.91,
+        "height": 194.75,
+        "x": 866.03,
+        "y": 974.22,
+        "padding": "9.28px",
+        "gap": "5.6px",
+        "borderRadius": "8px",
+        "fontSize": "16px",
+        "zIndex": "auto"
+      }
+    }
+  ],
+  "workflowButtons": [
+    "I need a promise Search a situation, choose a category, and receive a Scripture-rooted promise path.",
+    "Help me pray Build a devotional prayer from Scripture, promise language, and one faithful next step.",
+    "I need calling clarity Use cautious Calling Compass language, Scripture support, and action guidance.",
+    "Start a growth journey Choose a focus, review stages, and save the first local journey action.",
+    "Study a Teoyube word Open word detail, Scripture, prayer, related words, and graph view.",
+    "Record testimony Connect testimony to Scripture or promise without automatic fulfillment claims."
+  ],
+  "controlCount": 73,
+  "hiddenControls": [],
+  "disabledControls": [],
+  "clippedControls": [],
+  "documentOverflowX": 0,
+  "runtimeErrors": [
+    "console:Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+}

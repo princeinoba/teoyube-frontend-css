@@ -1747,3 +1747,488 @@ body[data-view="canon"] .canon-explore-grid > .canon-explore-card:nth-child(-n +
     width: 2rem;
   }
 }
+
+/*
+ * Owner-approved Standard Recommendation workspace.
+ * Approval: TEOYUBE-VISUAL-2026-07-25-CANON-001.
+ * The unique section root keeps this visual system isolated from every other
+ * recommendation surface while preserving the existing DOM and handlers.
+ */
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] {
+  --canon-rec-surface: rgb(252 254 253);
+  --canon-rec-card: rgb(255 255 255);
+  --canon-rec-evidence: rgb(241 248 244);
+  --canon-rec-green: rgb(0 107 87);
+  --canon-rec-deep: rgb(11 59 50);
+  --canon-rec-text: rgb(19 43 41);
+  --canon-rec-muted: rgb(102 119 114);
+  --canon-rec-gold: rgb(217 174 58);
+  --canon-rec-line: rgb(220 232 227);
+  --canon-rec-control-line: rgb(184 210 200);
+  --canon-rec-radius: 18px;
+  --canon-rec-card-radius: 14px;
+  --canon-rec-control-radius: 9px;
+  --canon-rec-gap: clamp(0.85rem, 1.2vw, 1.1rem);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin-top: 1rem;
+  padding: clamp(1rem, 1.5vw, 1.35rem);
+  border: 1px solid var(--canon-rec-line);
+  border-radius: var(--canon-rec-radius);
+  background: var(--canon-rec-surface);
+  box-shadow: 0 8px 28px rgba(24, 66, 55, 0.07);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"],
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: clamp(0.9rem, 1.3vw, 1.2rem);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div {
+  flex: 1 1 auto;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head .eyebrow {
+  margin: 0 0 0.2rem;
+  color: var(--canon-rec-green);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head h3 {
+  margin: 0;
+  color: var(--canon-rec-text);
+  font-size: clamp(1.4rem, 2.1vw, 1.95rem);
+  font-weight: 900;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head p:not(.eyebrow) {
+  max-width: 48rem;
+  margin: 0.3rem 0 0;
+  color: var(--canon-rec-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > button {
+  flex: 0 0 auto;
+  width: auto;
+  min-height: 2.85rem;
+  padding: 0.68rem 1rem;
+  border: 1px solid var(--canon-rec-green);
+  border-radius: var(--canon-rec-control-radius);
+  background: var(--canon-rec-card);
+  color: var(--canon-rec-deep);
+  box-shadow: 0 3px 10px rgba(24, 66, 55, 0.05);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: var(--canon-rec-gap);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 0.3rem;
+  padding: clamp(0.72rem, 1vw, 0.85rem);
+  overflow: visible;
+  border: 1px solid var(--canon-rec-line);
+  border-radius: var(--canon-rec-card-radius);
+  background: var(--canon-rec-card);
+  box-shadow: 0 3px 12px rgba(24, 66, 55, 0.05);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card > .eyebrow {
+  margin: 0;
+  color: var(--canon-rec-green);
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card > h4 {
+  margin: 0;
+  color: var(--canon-rec-text);
+  font-size: clamp(0.88rem, 1vw, 0.98rem);
+  font-weight: 900;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card > p:not(.eyebrow):not(.phase113-scripture) {
+  margin: 0;
+  color: var(--canon-rec-muted);
+  font-size: 0.66rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card > .phase113-scripture {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: 0.18rem 0 0;
+  padding: 0.2rem 0.48rem;
+  border-radius: 999px;
+  background: var(--canon-rec-evidence);
+  color: var(--canon-rec-green);
+  font-size: 0.58rem;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card > small {
+  color: var(--canon-rec-muted);
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-this-panel {
+  width: 100%;
+  max-width: 100%;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-this-panel summary {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.48rem 0.65rem;
+  border: 1px solid var(--canon-rec-line);
+  border-radius: var(--canon-rec-control-radius);
+  background: var(--canon-rec-card);
+  color: var(--canon-rec-deep);
+  box-shadow: 0 3px 10px rgba(24, 66, 55, 0.06);
+  font-size: 0.64rem;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-this-panel summary strong {
+  margin-left: auto;
+  padding: 0.25rem 0.52rem;
+  background: var(--canon-rec-evidence);
+  color: var(--canon-rec-green);
+  font-size: 0.58rem;
+  line-height: 1.1;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-this-panel[open] summary {
+  margin-bottom: 0.5rem;
+  border-color: var(--canon-rec-control-line);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.38rem;
+  margin-top: 0;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-grid article {
+  min-height: 0;
+  padding: 0.42rem 0.48rem;
+  border: 1px solid rgba(0, 107, 87, 0.08);
+  border-radius: 8px;
+  background: var(--canon-rec-evidence);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-grid span {
+  color: var(--canon-rec-green);
+  font-size: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-grid strong {
+  color: var(--canon-rec-text);
+  font-size: 0.58rem;
+  line-height: 1.25;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-path-row {
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-path-row span {
+  padding: 0.22rem 0.4rem;
+  background: rgba(217, 174, 58, 0.16);
+  color: rgb(89 66 11);
+  font-size: 0.5rem;
+  line-height: 1.2;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-this-panel > p {
+  margin: 0.35rem 0 0;
+  color: var(--canon-rec-muted);
+  font-size: 0.56rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-quality-score {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.55rem;
+  margin: 0.55rem 0;
+  padding: 0.5rem;
+  border-color: var(--canon-rec-line);
+  border-radius: 10px;
+  background: var(--canon-rec-card);
+  box-shadow: 0 3px 10px rgba(24, 66, 55, 0.05);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-score-ring {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-score-ring strong {
+  color: var(--canon-rec-text);
+  font-size: 0.9rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-quality-score .eyebrow {
+  color: var(--canon-rec-green);
+  font-size: 0.54rem;
+  letter-spacing: 0.05em;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-quality-score p,
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-quality-score small {
+  color: var(--canon-rec-muted);
+  font-size: 0.56rem;
+  line-height: 1.35;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-panel-actions {
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-panel-actions button {
+  min-height: 2.1rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--canon-rec-control-line);
+  border-radius: var(--canon-rec-control-radius);
+  background: var(--canon-rec-card);
+  color: var(--canon-rec-deep);
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button {
+  width: 100%;
+  min-width: 0;
+  min-height: 3rem;
+  padding: 0.36rem 0.18rem;
+  border: 1px solid var(--canon-rec-line);
+  border-radius: 0;
+  background: var(--canon-rec-card);
+  color: var(--canon-rec-deep);
+  font-size: 0.5rem;
+  font-weight: 850;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button:first-child {
+  border-radius: var(--canon-rec-control-radius) 0 0 var(--canon-rec-control-radius);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button:last-child {
+  border-radius: 0 var(--canon-rec-control-radius) var(--canon-rec-control-radius) 0;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button + button {
+  border-left: 0;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry {
+  margin-top: var(--canon-rec-gap);
+  padding: 0.85rem;
+  overflow: visible;
+  border: 1px solid var(--canon-rec-line);
+  border-radius: var(--canon-rec-card-radius);
+  background: var(--canon-rec-card);
+  box-shadow: 0 3px 12px rgba(24, 66, 55, 0.05);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry .eyebrow {
+  margin: 0;
+  color: var(--canon-rec-green);
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry h3 {
+  margin: 0.16rem 0 0;
+  color: var(--canon-rec-text);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  line-height: 1.2;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-entry > div:first-child > p:not(.eyebrow) {
+  margin: 0.26rem 0 0;
+  color: var(--canon-rec-muted);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid button {
+  display: flex;
+  min-height: 8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.45rem;
+  padding: 0.75rem;
+  overflow: visible;
+  border: 1px solid var(--canon-rec-line);
+  border-radius: 10px;
+  background: var(--canon-rec-card);
+  color: var(--canon-rec-deep);
+  box-shadow: 0 3px 10px rgba(24, 66, 55, 0.04);
+  text-align: left;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid strong {
+  color: var(--canon-rec-text);
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid span {
+  color: var(--canon-rec-muted);
+  font-size: 0.58rem;
+  line-height: 1.4;
+  opacity: 1;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] :where(button, summary):hover {
+  border-color: rgba(0, 107, 87, 0.42);
+  background-color: rgb(248 252 250);
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] :where(button, summary):focus-visible {
+  outline: 2px solid var(--canon-rec-gold);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1320px) {
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.35rem;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button,
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button:first-child,
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button:last-child {
+    border: 1px solid var(--canon-rec-line);
+    border-radius: var(--canon-rec-control-radius);
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head {
+    flex-wrap: wrap;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > button {
+    width: 100%;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] {
+    padding: 0.75rem;
+    border-radius: 14px;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head h3 {
+    font-size: 1.35rem;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-recommendation-card {
+    padding: 0.75rem;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-grid,
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls,
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-quality-score {
+    align-items: start;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid button {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"],
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] * {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
