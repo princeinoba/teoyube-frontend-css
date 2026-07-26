@@ -1,12 +1,12 @@
 # Canon Visual Change Request
 
-Approval-ID: UNASSIGNED — OWNER ONLY
+Approval-ID: TEOYUBE-VISUAL-2026-07-25-CANON-001
 
-Decision: PENDING — OWNER ONLY
+Decision: APPROVED
 
-Approved-By: PENDING — OWNER ONLY
+Approved-By: Prince Okiemute Inoba — Teoyube Project Owner
 
-Approved-At: PENDING — OWNER ONLY
+Approved-At: 2026-07-25T23:43:50-04:00
 
 ## Request summary
 
@@ -16,10 +16,10 @@ styling follow the supplied Canon reference. Preserve the current React markup,
 content, assets, data, state, events, routes, accessibility semantics, and
 application behavior.
 
-This request does **not** authorize implementation. The existing Prompt 12 R8
-Canon acceptance explicitly excludes future CSS or visual changes. The supplied
-engineering brief describes the reference as owner-approved, but it does not
-contain the owner-only approval fields required by the repository protocol.
+The Teoyube Project Owner approved this exact request and the complete upgraded
+Canon-page CSS engineering and responsive requirements supplied with it. The
+approval is limited to the route, files, selectors, assets, states, viewports,
+and verification scope recorded here.
 
 ## Exact route and state
 
@@ -248,12 +248,17 @@ markup/TypeScript changes and requires all controls to work, so those
 instructions conflict. This request does not authorize silently changing the
 button or controller.
 
-Before implementation, the owner must choose one of the following in writing:
+Owner decision: preserve the current non-submitting Search button behavior for
+this CSS-only task. Keep the control present, visible, aligned, sized, keyboard
+reachable, focus-visible, and clickable to the same extent as the audited
+baseline. Do not repair, hide, disable, replace, cover, relabel, or simulate its
+submission in CSS.
 
-1. approve the CSS-only visual work while explicitly preserving the current
-   non-submitting Search button behavior for this task; or
-2. separately authorize the exact markup/controller files and behavior needed
-   to make Search submit, after a narrowly scoped functional-change proposal.
+Record the result as:
+
+`PRE-EXISTING FUNCTIONAL DEFECT — UNCHANGED BY THE APPROVED CSS WORK`
+
+Any future repair requires a separate, explicitly authorized functional task.
 
 ## Alternatives considered
 
@@ -347,19 +352,21 @@ If a future implementation is approved and committed:
 No baseline regeneration or asset restoration should be necessary because
 neither is in scope.
 
-## Owner decision required
+## Owner decision
 
-If approving, the owner must fill the four owner-only fields at the top and
-state:
+The owner approved:
 
-- whether the approval covers the full selector/file/viewports scope above or a
-  narrower subset;
-- whether the new supplied image fingerprint is the approved visual target;
-- which resolution applies to the existing Search-button conflict.
+- the full selector, file, state, and viewport scope recorded above;
+- the newly supplied reference with SHA-256
+  `FDE68552B2A23A28012495E18E15D1298EB50901CD82CD7A36C0E64E37056AED`
+  as the visual target;
+- CSS-only implementation with the pre-existing Search submission defect
+  intentionally preserved unchanged.
 
-Approval is limited to the exact written scope.
+Approval remains limited to this exact written scope.
 
 ## Agent declaration
 
-I have not approved this request, changed protected visual sources, or updated
-baselines. Work is stopped pending an owner decision.
+The agent did not invent, broaden, or self-approve this decision. The four
+owner-only fields and Search decision above were supplied explicitly by Prince
+Okiemute Inoba, Teoyube Project Owner.
