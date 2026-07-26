@@ -262,3 +262,63 @@ No production visual file, protected visual contract, baseline, asset,
 markup, or functional code was changed while preparing this request. The
 agent stopped before implementation as required by the visual approval
 protocol.
+
+## Owner closeout decision
+
+Decision: APPROVED WITH SCOPED EXCEPTIONS AND FINAL CSS REFINEMENT
+Approval-ID: TEOYUBE-VISUAL-2026-07-26-CANON-REC-ICONS-CLOSE-001
+Approved-By: Prince Okiemute Inoba — Teoyube Project Owner
+Approved-At: 2026-07-26T19:05:45-04:00
+
+The owner authorizes one final focused CSS-only icon-fidelity refinement under
+the exact route, section root, selector inventory, production file, and
+functional-safety boundaries already recorded above. The closeout does not
+authorize markup, application behavior, data, route, asset, package, baseline,
+or cross-route styling changes.
+
+### Privacy-footer disposition
+
+The approved Canon DOM has no privacy footer, privacy statement, privacy icon
+container, or suitable existing semantic target. Adding one would require a
+prohibited markup or component change. The inventory and closeout evidence
+must therefore classify the reference-only privacy footer and lock as:
+
+`REFERENCE-ONLY ELEMENT — WAIVED BY OWNER BECAUSE NO APPROVED DOM TARGET EXISTS`
+
+No footer, privacy copy, free-floating lock, pseudo-generated privacy sentence,
+or unrelated target may be added. Its absence is not a blocker for this scoped
+CSS task.
+
+### Existing handler disposition
+
+The unmounted comparison, graph, feedback, and workflow responses pre-date the
+icon work and are outside this CSS authorization. They must be classified as:
+
+`PRE-EXISTING NON-CSS RUNTIME LIMITATION — UNCHANGED AND OUTSIDE THIS APPROVAL`
+
+For this closeout, functional acceptance requires all 73 existing controls to
+remain rendered, enabled, unobstructed, and pointer-safe, with keyboard order
+and currently mounted behavior unchanged.
+
+### Repository accessibility disposition
+
+The repository-wide findings of 54 inherited missing accessible names and 216
+inherited aria-hidden focusable controls are outside this change and must be
+classified as:
+
+`INHERITED REPOSITORY ACCESSIBILITY BACKLOG — NOT INTRODUCED BY THIS TASK`
+
+The release-level accessibility command remains honestly blocked by those
+inherited findings. Scoped Canon icon accessibility passes only when focused
+Axe, keyboard, focus, name/role, pointer-safety, and changed-section regression
+checks pass without a new finding.
+
+### Final visual-measurement disposition
+
+The owner requires the same-method full-reference difference to target 16.00%
+or lower where technically achievable, preferably the prior 15.74%, and
+requires the like-for-like implemented-region difference to improve from the
+current 16.74% result. The like-for-like crop may exclude only the waived
+reference-only privacy-footer strip from both images. It may not exclude any
+implemented recommendation header, card, disclosure, quality panel, toolbar,
+workflow header, workflow tile, control, or other differing live region.
