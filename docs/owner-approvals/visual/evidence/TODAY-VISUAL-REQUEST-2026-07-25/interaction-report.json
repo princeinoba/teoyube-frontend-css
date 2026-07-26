@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-07-26T01:16:51.812Z",
+  "checks": [
+    {
+      "name": "promise carousel next",
+      "passed": true,
+      "detail": "Where God's Promises Meet Your Calling -> A New Day. A Divine Assignment."
+    },
+    {
+      "name": "promise carousel keyboard",
+      "passed": true,
+      "detail": "A New Day. A Divine Assignment. -> Discover. Find. Receive."
+    },
+    {
+      "name": "promise carousel dot",
+      "passed": true,
+      "detail": "Where God's Promises Meet Your Calling"
+    },
+    {
+      "name": "TeoyubeWorld search submit",
+      "passed": true,
+      "detail": "Showing 8 local TeoyubeWorld previews for \"calling\". Source not connected in this preview. Reviewed TeoyubeWorld embeds remain a future owner-approved integration."
+    },
+    {
+      "name": "smart suggestion loads",
+      "passed": true,
+      "detail": "Romans 8:28-30"
+    },
+    {
+      "name": "smart suggestion restores focus",
+      "passed": true,
+      "detail": "input focused"
+    },
+    {
+      "name": "smart suggestions clear",
+      "passed": true,
+      "detail": "suggestion buttons removed"
+    },
+    {
+      "name": "category filter",
+      "passed": true,
+      "detail": "Showing 8 local TeoyubeWorld previews for \"TeoyubeWorld teachings\". Source not connected in this preview. Reviewed TeoyubeWorld embeds remain a future owner-approved integration."
+    },
+    {
+      "name": "featured story next",
+      "passed": true,
+      "detail": "The Seed of Promise -> Walk in Divine Purpose"
+    },
+    {
+      "name": "featured story keyboard",
+      "passed": true,
+      "detail": "Walk in Divine Purpose -> Faith That Moves Mountains"
+    },
+    {
+      "name": "feed row selection",
+      "passed": true,
+      "detail": "Grace for Every Season"
+    },
+    {
+      "name": "feed bottom reachability",
+      "passed": true,
+      "detail": "{\"atBottom\":true,\"finalRowVisible\":true}"
+    },
+    {
+      "name": "media preview available",
+      "passed": true,
+      "detail": "play overlay present"
+    },
+    {
+      "name": "media preview action",
+      "passed": true,
+      "detail": "TeoyubeWorld highlight: Source not connected in this preview. Reviewed TeoyubeWorld embeds remain a future owner-approved integration."
+    },
+    {
+      "name": "assignment completion",
+      "passed": true,
+      "detail": "Assignment recordedCalling & PurposeRomans 8:28-30View in BookAdd ReflectionClose"
+    },
+    {
+      "name": "assignment clears reflection",
+      "passed": true,
+      "detail": "reflection cleared"
+    },
+    {
+      "name": "prayer framework navigation",
+      "passed": true,
+      "detail": "http://127.0.0.1:3000/teo-guide"
+    },
+    {
+      "name": "mobile navigation opens",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "mobile navigation closes by keyboard",
+      "passed": true,
+      "detail": "false"
+    }
+  ]
+}

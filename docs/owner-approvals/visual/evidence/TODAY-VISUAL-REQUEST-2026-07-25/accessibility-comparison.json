@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-07-26T01:16:55.870Z",
+  "startingCommit": "da894664ad384bc4da1de1af1c843341a842f7c0",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop-wide",
+        "width": 1536,
+        "height": 1024
+      },
+      "baseline": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "targets": [
+            ".carousel-slide:nth-child(10)",
+            ".carousel-slide:nth-child(11)",
+            ".carousel-slide:nth-child(12)",
+            ".carousel-slide:nth-child(2)",
+            ".carousel-slide:nth-child(3)",
+            ".carousel-slide:nth-child(4)",
+            ".carousel-slide:nth-child(5)",
+            ".carousel-slide:nth-child(6)",
+            ".carousel-slide:nth-child(7)",
+            ".carousel-slide:nth-child(8)",
+            ".carousel-slide:nth-child(9)",
+            ".featured-story-slide:nth-child(2)",
+            ".featured-story-slide:nth-child(3)",
+            ".featured-story-slide:nth-child(4)",
+            ".featured-story-slide:nth-child(5)",
+            ".featured-story-slide:nth-child(6)",
+            ".featured-story-slide:nth-child(7)",
+            ".featured-story-slide:nth-child(8)"
+          ]
+        }
+      ],
+      "candidate": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "targets": [
+            ".carousel-slide:nth-child(10)",
+            ".carousel-slide:nth-child(11)",
+            ".carousel-slide:nth-child(12)",
+            ".carousel-slide:nth-child(2)",
+            ".carousel-slide:nth-child(3)",
+            ".carousel-slide:nth-child(4)",
+            ".carousel-slide:nth-child(5)",
+            ".carousel-slide:nth-child(6)",
+            ".carousel-slide:nth-child(7)",
+            ".carousel-slide:nth-child(8)",
+            ".carousel-slide:nth-child(9)",
+            ".featured-story-slide:nth-child(2)",
+            ".featured-story-slide:nth-child(3)",
+            ".featured-story-slide:nth-child(4)",
+            ".featured-story-slide:nth-child(5)",
+            ".featured-story-slide:nth-child(6)",
+            ".featured-story-slide:nth-child(7)",
+            ".featured-story-slide:nth-child(8)"
+          ]
+        }
+      ],
+      "introduced": [],
+      "resolved": []
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "baseline": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "targets": [
+            ".carousel-slide:nth-child(10)",
+            ".carousel-slide:nth-child(11)",
+            ".carousel-slide:nth-child(12)",
+            ".carousel-slide:nth-child(2)",
+            ".carousel-slide:nth-child(3)",
+            ".carousel-slide:nth-child(4)",
+            ".carousel-slide:nth-child(5)",
+            ".carousel-slide:nth-child(6)",
+            ".carousel-slide:nth-child(7)",
+            ".carousel-slide:nth-child(8)",
+            ".carousel-slide:nth-child(9)",
+            ".featured-story-slide:nth-child(2)",
+            ".featured-story-slide:nth-child(3)",
+            ".featured-story-slide:nth-child(4)",
+            ".featured-story-slide:nth-child(5)",
+            ".featured-story-slide:nth-child(6)",
+            ".featured-story-slide:nth-child(7)",
+            ".featured-story-slide:nth-child(8)"
+          ]
+        }
+      ],
+      "candidate": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "targets": [
+            ".carousel-slide:nth-child(10)",
+            ".carousel-slide:nth-child(11)",
+            ".carousel-slide:nth-child(12)",
+            ".carousel-slide:nth-child(2)",
+            ".carousel-slide:nth-child(3)",
+            ".carousel-slide:nth-child(4)",
+            ".carousel-slide:nth-child(5)",
+            ".carousel-slide:nth-child(6)",
+            ".carousel-slide:nth-child(7)",
+            ".carousel-slide:nth-child(8)",
+            ".carousel-slide:nth-child(9)",
+            ".featured-story-slide:nth-child(2)",
+            ".featured-story-slide:nth-child(3)",
+            ".featured-story-slide:nth-child(4)",
+            ".featured-story-slide:nth-child(5)",
+            ".featured-story-slide:nth-child(6)",
+            ".featured-story-slide:nth-child(7)",
+            ".featured-story-slide:nth-child(8)"
+          ]
+        }
+      ],
+      "introduced": [],
+      "resolved": []
+    }
+  ]
+}

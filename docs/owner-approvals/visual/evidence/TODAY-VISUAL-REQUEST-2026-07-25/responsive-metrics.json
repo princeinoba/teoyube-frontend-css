@@ -1,0 +1,1698 @@
+{
+  "generatedAt": "2026-07-26T01:16:40.885Z",
+  "url": "http://127.0.0.1:3000/",
+  "viewports": [
+    {
+      "name": "1536x1024",
+      "width": 1536,
+      "height": 1024,
+      "metrics": {
+        "bodyView": "today",
+        "boxes": {
+          ".app-shell": {
+            "selector": ".app-shell",
+            "x": 0,
+            "y": 0,
+            "width": 1536,
+            "height": 1941.33,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "198px 1338px"
+          },
+          ".sidebar": {
+            "selector": ".sidebar",
+            "x": 4,
+            "y": 4,
+            "width": 190,
+            "height": 1012.8,
+            "display": "flex",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          },
+          ".main-content": null,
+          ".topbar": {
+            "selector": ".topbar",
+            "x": 210,
+            "y": 11.19,
+            "width": 1302,
+            "height": 53.59,
+            "display": "flex",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "none"
+          },
+          "#today": {
+            "selector": "#today",
+            "x": 210,
+            "y": 71.97,
+            "width": 1302,
+            "height": 1853.36,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "1302px"
+          },
+          "#today .promise-carousel": {
+            "selector": "#today .promise-carousel",
+            "x": 210,
+            "y": 71.97,
+            "width": 1302,
+            "height": 430.08,
+            "display": "block",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "gridTemplateColumns": "none"
+          },
+          "#today .insight-grid": null,
+          "#today .actions-grid": null,
+          "#today .featured-stories-search": null,
+          "#today .integrations-grid": null,
+          "#today .videos-card": null,
+          "#today .clients-promise-card": {
+            "selector": "#today .clients-promise-card",
+            "x": 721.98,
+            "y": 1493.67,
+            "width": 790,
+            "height": 431.66,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "756px"
+          },
+          "#today .clients-table-wrap": {
+            "selector": "#today .clients-table-wrap",
+            "x": 738.98,
+            "y": 1555.06,
+            "width": 756,
+            "height": 353.27,
+            "display": "block",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          }
+        },
+        "document": {
+          "innerWidth": 1536,
+          "innerHeight": 1024,
+          "scrollWidth": 1536,
+          "scrollHeight": 1941,
+          "horizontalOverflow": false,
+          "normallyScrollable": true
+        },
+        "controls": {
+          "total": 94,
+          "visible": 94,
+          "small": [
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 8,
+              "label": "Go to Where God's Promises Meet Your Calling slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to A New Day. A Divine Assignment. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Discover. Find. Receive. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Explore God's Kingdom Blueprint. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God's Promises Are Yes and Amen. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Grow Daily. Walk in Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Live Anchored. Lead With Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Your Calling. His Kingdom. Eternal Impact. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Go Deeper. Live Stronger. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Finish Well. Leave a Legacy. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Stay Focused. Walk in Faith. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God Guides Every Faithful Step. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 5.4,
+              "label": "Show The Seed of Promise"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Walk in Divine Purpose"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Faith That Moves Mountains"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show The Power of Prayer"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Grace for Every Season"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Kingdom Calling"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Promise Language"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Daily Divine Assignment"
+            }
+          ]
+        },
+        "feed": {
+          "clientHeight": 353,
+          "scrollHeight": 423,
+          "scrollTop": 70,
+          "clientWidth": 741,
+          "scrollWidth": 741,
+          "rowCount": 8,
+          "verticallyScrollable": true,
+          "horizontallyScrollable": false,
+          "atBottom": true,
+          "finalRowVisible": true
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "name": "1440x900",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "bodyView": "today",
+        "boxes": {
+          ".app-shell": {
+            "selector": ".app-shell",
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1869.97,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "198px 1242px"
+          },
+          ".sidebar": {
+            "selector": ".sidebar",
+            "x": 4,
+            "y": 4,
+            "width": 190,
+            "height": 888.8,
+            "display": "flex",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          },
+          ".main-content": null,
+          ".topbar": {
+            "selector": ".topbar",
+            "x": 210,
+            "y": 11.19,
+            "width": 1206,
+            "height": 53.59,
+            "display": "flex",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "none"
+          },
+          "#today": {
+            "selector": "#today",
+            "x": 210,
+            "y": 71.97,
+            "width": 1206,
+            "height": 1782,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "1206px"
+          },
+          "#today .promise-carousel": {
+            "selector": "#today .promise-carousel",
+            "x": 210,
+            "y": 71.97,
+            "width": 1206,
+            "height": 403.19,
+            "display": "block",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "gridTemplateColumns": "none"
+          },
+          "#today .insight-grid": null,
+          "#today .actions-grid": null,
+          "#today .featured-stories-search": null,
+          "#today .integrations-grid": null,
+          "#today .videos-card": null,
+          "#today .clients-promise-card": {
+            "selector": "#today .clients-promise-card",
+            "x": 684.31,
+            "y": 1446.17,
+            "width": 731.69,
+            "height": 407.8,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "699.469px"
+          },
+          "#today .clients-table-wrap": {
+            "selector": "#today .clients-table-wrap",
+            "x": 700.42,
+            "y": 1506.67,
+            "width": 699.47,
+            "height": 331.19,
+            "display": "block",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          }
+        },
+        "document": {
+          "innerWidth": 1440,
+          "innerHeight": 900,
+          "scrollWidth": 1440,
+          "scrollHeight": 1870,
+          "horizontalOverflow": false,
+          "normallyScrollable": true
+        },
+        "controls": {
+          "total": 94,
+          "visible": 94,
+          "small": [
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 8,
+              "label": "Go to Where God's Promises Meet Your Calling slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to A New Day. A Divine Assignment. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Discover. Find. Receive. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Explore God's Kingdom Blueprint. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God's Promises Are Yes and Amen. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Grow Daily. Walk in Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Live Anchored. Lead With Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Your Calling. His Kingdom. Eternal Impact. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Go Deeper. Live Stronger. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Finish Well. Leave a Legacy. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Stay Focused. Walk in Faith. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God Guides Every Faithful Step. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 5.4,
+              "label": "Show The Seed of Promise"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Walk in Divine Purpose"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Faith That Moves Mountains"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show The Power of Prayer"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Grace for Every Season"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Kingdom Calling"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Promise Language"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Daily Divine Assignment"
+            }
+          ]
+        },
+        "feed": {
+          "clientHeight": 331,
+          "scrollHeight": 452,
+          "scrollTop": 121,
+          "clientWidth": 684,
+          "scrollWidth": 684,
+          "rowCount": 8,
+          "verticallyScrollable": true,
+          "horizontallyScrollable": false,
+          "atBottom": true,
+          "finalRowVisible": true
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "name": "1280x800",
+      "width": 1280,
+      "height": 800,
+      "metrics": {
+        "bodyView": "today",
+        "boxes": {
+          ".app-shell": {
+            "selector": ".app-shell",
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 1786.67,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "198px 1082px"
+          },
+          ".sidebar": {
+            "selector": ".sidebar",
+            "x": 4,
+            "y": 4,
+            "width": 190,
+            "height": 788.8,
+            "display": "flex",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          },
+          ".main-content": null,
+          ".topbar": {
+            "selector": ".topbar",
+            "x": 210,
+            "y": 11.19,
+            "width": 1046,
+            "height": 53.59,
+            "display": "flex",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "none"
+          },
+          "#today": {
+            "selector": "#today",
+            "x": 210,
+            "y": 71.97,
+            "width": 1046,
+            "height": 1698.7,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "1046px"
+          },
+          "#today .promise-carousel": {
+            "selector": "#today .promise-carousel",
+            "x": 210,
+            "y": 71.97,
+            "width": 1046,
+            "height": 358.39,
+            "display": "block",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "gridTemplateColumns": "none"
+          },
+          "#today .insight-grid": null,
+          "#today .actions-grid": null,
+          "#today .featured-stories-search": null,
+          "#today .integrations-grid": null,
+          "#today .videos-card": null,
+          "#today .clients-promise-card": {
+            "selector": "#today .clients-promise-card",
+            "x": 621.52,
+            "y": 1377.41,
+            "width": 634.48,
+            "height": 393.27,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "605.609px"
+          },
+          "#today .clients-table-wrap": {
+            "selector": "#today .clients-table-wrap",
+            "x": 635.95,
+            "y": 1436.23,
+            "width": 605.61,
+            "height": 320,
+            "display": "block",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          }
+        },
+        "document": {
+          "innerWidth": 1280,
+          "innerHeight": 800,
+          "scrollWidth": 1280,
+          "scrollHeight": 1787,
+          "horizontalOverflow": false,
+          "normallyScrollable": true
+        },
+        "controls": {
+          "total": 94,
+          "visible": 94,
+          "small": [
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 8,
+              "label": "Go to Where God's Promises Meet Your Calling slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to A New Day. A Divine Assignment. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Discover. Find. Receive. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Explore God's Kingdom Blueprint. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God's Promises Are Yes and Amen. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Grow Daily. Walk in Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Live Anchored. Lead With Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Your Calling. His Kingdom. Eternal Impact. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Go Deeper. Live Stronger. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Finish Well. Leave a Legacy. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Stay Focused. Walk in Faith. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God Guides Every Faithful Step. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 5.4,
+              "label": "Show The Seed of Promise"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Walk in Divine Purpose"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Faith That Moves Mountains"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show The Power of Prayer"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Grace for Every Season"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Kingdom Calling"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Promise Language"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Daily Divine Assignment"
+            }
+          ]
+        },
+        "feed": {
+          "clientHeight": 320,
+          "scrollHeight": 571,
+          "scrollTop": 251,
+          "clientWidth": 591,
+          "scrollWidth": 591,
+          "rowCount": 8,
+          "verticallyScrollable": true,
+          "horizontallyScrollable": false,
+          "atBottom": true,
+          "finalRowVisible": true
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "bodyView": "today",
+        "boxes": {
+          ".app-shell": {
+            "selector": ".app-shell",
+            "x": 0,
+            "y": 0,
+            "width": 1024,
+            "height": 2787.8,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "198px 826px"
+          },
+          ".sidebar": {
+            "selector": ".sidebar",
+            "x": 4,
+            "y": 4,
+            "width": 190,
+            "height": 756.8,
+            "display": "flex",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          },
+          ".main-content": null,
+          ".topbar": {
+            "selector": ".topbar",
+            "x": 210,
+            "y": 11.19,
+            "width": 790,
+            "height": 53.59,
+            "display": "flex",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "none"
+          },
+          "#today": {
+            "selector": "#today",
+            "x": 210,
+            "y": 71.97,
+            "width": 790,
+            "height": 2699.83,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "790px"
+          },
+          "#today .promise-carousel": {
+            "selector": "#today .promise-carousel",
+            "x": 210,
+            "y": 71.97,
+            "width": 790,
+            "height": 430.08,
+            "display": "block",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "gridTemplateColumns": "none"
+          },
+          "#today .insight-grid": null,
+          "#today .actions-grid": null,
+          "#today .featured-stories-search": null,
+          "#today .integrations-grid": null,
+          "#today .videos-card": null,
+          "#today .clients-promise-card": {
+            "selector": "#today .clients-promise-card",
+            "x": 210,
+            "y": 2332.47,
+            "width": 790,
+            "height": 439.33,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "763.062px"
+          },
+          "#today .clients-table-wrap": {
+            "selector": "#today .clients-table-wrap",
+            "x": 223.47,
+            "y": 2390.33,
+            "width": 763.06,
+            "height": 368,
+            "display": "block",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          }
+        },
+        "document": {
+          "innerWidth": 1024,
+          "innerHeight": 768,
+          "scrollWidth": 1024,
+          "scrollHeight": 2788,
+          "horizontalOverflow": false,
+          "normallyScrollable": true
+        },
+        "controls": {
+          "total": 94,
+          "visible": 94,
+          "small": [
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 8,
+              "label": "Go to Where God's Promises Meet Your Calling slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to A New Day. A Divine Assignment. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Discover. Find. Receive. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Explore God's Kingdom Blueprint. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God's Promises Are Yes and Amen. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Grow Daily. Walk in Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Live Anchored. Lead With Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Your Calling. His Kingdom. Eternal Impact. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Go Deeper. Live Stronger. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Finish Well. Leave a Legacy. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Stay Focused. Walk in Faith. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God Guides Every Faithful Step. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 5.4,
+              "label": "Show The Seed of Promise"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Walk in Divine Purpose"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Faith That Moves Mountains"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show The Power of Prayer"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Grace for Every Season"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Kingdom Calling"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Promise Language"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Daily Divine Assignment"
+            }
+          ]
+        },
+        "feed": {
+          "clientHeight": 368,
+          "scrollHeight": 423,
+          "scrollTop": 55,
+          "clientWidth": 748,
+          "scrollWidth": 748,
+          "rowCount": 8,
+          "verticallyScrollable": true,
+          "horizontallyScrollable": false,
+          "atBottom": true,
+          "finalRowVisible": true
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "bodyView": "today",
+        "boxes": {
+          ".app-shell": {
+            "selector": ".app-shell",
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 3718.25,
+            "display": "block",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "184px minmax(0px, 1fr)"
+          },
+          ".sidebar": {
+            "selector": ".sidebar",
+            "x": -352,
+            "y": 0,
+            "width": 320,
+            "height": 1024,
+            "display": "flex",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          },
+          ".main-content": null,
+          ".topbar": {
+            "selector": ".topbar",
+            "x": 12,
+            "y": 62.17,
+            "width": 744,
+            "height": 100.86,
+            "display": "flex",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "none"
+          },
+          "#today": {
+            "selector": "#today",
+            "x": 12,
+            "y": 170.22,
+            "width": 744,
+            "height": 3532.03,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "744px"
+          },
+          "#today .promise-carousel": {
+            "selector": "#today .promise-carousel",
+            "x": 12,
+            "y": 170.22,
+            "width": 744,
+            "height": 656,
+            "display": "block",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "gridTemplateColumns": "none"
+          },
+          "#today .insight-grid": null,
+          "#today .actions-grid": null,
+          "#today .featured-stories-search": null,
+          "#today .integrations-grid": null,
+          "#today .videos-card": null,
+          "#today .clients-promise-card": {
+            "selector": "#today .clients-promise-card",
+            "x": 12,
+            "y": 3275.08,
+            "width": 744,
+            "height": 427.17,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "713.219px"
+          },
+          "#today .clients-table-wrap": {
+            "selector": "#today .clients-table-wrap",
+            "x": 27.39,
+            "y": 3334.86,
+            "width": 713.22,
+            "height": 352,
+            "display": "block",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          }
+        },
+        "document": {
+          "innerWidth": 768,
+          "innerHeight": 1024,
+          "scrollWidth": 768,
+          "scrollHeight": 3718,
+          "horizontalOverflow": false,
+          "normallyScrollable": true
+        },
+        "controls": {
+          "total": 94,
+          "visible": 94,
+          "small": [
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 8,
+              "label": "Go to Where God's Promises Meet Your Calling slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to A New Day. A Divine Assignment. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Discover. Find. Receive. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Explore God's Kingdom Blueprint. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God's Promises Are Yes and Amen. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Grow Daily. Walk in Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Live Anchored. Lead With Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Your Calling. His Kingdom. Eternal Impact. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Go Deeper. Live Stronger. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Finish Well. Leave a Legacy. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Stay Focused. Walk in Faith. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God Guides Every Faithful Step. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 5.4,
+              "label": "Show The Seed of Promise"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Walk in Divine Purpose"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Faith That Moves Mountains"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show The Power of Prayer"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Grace for Every Season"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Kingdom Calling"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Promise Language"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 16,
+              "height": 5.4,
+              "label": "Show Daily Divine Assignment"
+            }
+          ]
+        },
+        "feed": {
+          "clientHeight": 352,
+          "scrollHeight": 442,
+          "scrollTop": 90,
+          "clientWidth": 698,
+          "scrollWidth": 698,
+          "rowCount": 8,
+          "verticallyScrollable": true,
+          "horizontallyScrollable": false,
+          "atBottom": true,
+          "finalRowVisible": true
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "bodyView": "today",
+        "boxes": {
+          ".app-shell": {
+            "selector": ".app-shell",
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 3912.64,
+            "display": "block",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "184px minmax(0px, 1fr)"
+          },
+          ".sidebar": {
+            "selector": ".sidebar",
+            "x": -352,
+            "y": 0,
+            "width": 320,
+            "height": 844,
+            "display": "flex",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          },
+          ".main-content": null,
+          ".topbar": {
+            "selector": ".topbar",
+            "x": 8,
+            "y": 60.56,
+            "width": 374,
+            "height": 104.86,
+            "display": "flex",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "none"
+          },
+          "#today": {
+            "selector": "#today",
+            "x": 8,
+            "y": 172.61,
+            "width": 374,
+            "height": 3726.44,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "374px"
+          },
+          "#today .promise-carousel": {
+            "selector": "#today .promise-carousel",
+            "x": 8,
+            "y": 172.61,
+            "width": 374,
+            "height": 624,
+            "display": "block",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "gridTemplateColumns": "none"
+          },
+          "#today .insight-grid": null,
+          "#today .actions-grid": null,
+          "#today .featured-stories-search": null,
+          "#today .integrations-grid": null,
+          "#today .videos-card": null,
+          "#today .clients-promise-card": {
+            "selector": "#today .clients-promise-card",
+            "x": 8,
+            "y": 3509.83,
+            "width": 374,
+            "height": 389.22,
+            "display": "grid",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "gridTemplateColumns": "348.969px"
+          },
+          "#today .clients-table-wrap": {
+            "selector": "#today .clients-table-wrap",
+            "x": 20.52,
+            "y": 3566.73,
+            "width": 348.97,
+            "height": 319.8,
+            "display": "block",
+            "overflowX": "auto",
+            "overflowY": "auto",
+            "gridTemplateColumns": "none"
+          }
+        },
+        "document": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 3913,
+          "horizontalOverflow": false,
+          "normallyScrollable": true
+        },
+        "controls": {
+          "total": 94,
+          "visible": 94,
+          "small": [
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 28.8,
+              "height": 8,
+              "label": "Go to Where God's Promises Meet Your Calling slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to A New Day. A Divine Assignment. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Discover. Find. Receive. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Explore God's Kingdom Blueprint. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God's Promises Are Yes and Amen. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Grow Daily. Walk in Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Live Anchored. Lead With Purpose. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Your Calling. His Kingdom. Eternal Impact. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Go Deeper. Live Stronger. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Finish Well. Leave a Legacy. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to Stay Focused. Walk in Faith. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 14,
+              "height": 8,
+              "label": "Go to God Guides Every Faithful Step. slide"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "active",
+              "width": 24.5,
+              "height": 5.4,
+              "label": "Show The Seed of Promise"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show Walk in Divine Purpose"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show Faith That Moves Mountains"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show The Power of Prayer"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show Grace for Every Season"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show Kingdom Calling"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show Promise Language"
+            },
+            {
+              "tag": "button",
+              "id": null,
+              "className": "",
+              "width": 13.6,
+              "height": 5.4,
+              "label": "Show Daily Divine Assignment"
+            }
+          ]
+        },
+        "feed": {
+          "clientHeight": 320,
+          "scrollHeight": 1118,
+          "scrollTop": 798,
+          "clientWidth": 334,
+          "scrollWidth": 494,
+          "rowCount": 8,
+          "verticallyScrollable": true,
+          "horizontallyScrollable": true,
+          "atBottom": true,
+          "finalRowVisible": true
+        }
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "failedRequests": []
+    }
+  ]
+}
