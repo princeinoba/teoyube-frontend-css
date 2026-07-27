@@ -460,8 +460,8 @@ body[data-view="table"] #table #promiseTableVideoPanel {
 }
 body[data-view="table"] #table .promise-table-featured-shell {
   display: grid;
-  grid-template-columns: minmax(17rem, 0.68fr) minmax(0, 1.32fr);
-  grid-template-areas: "copy stage" "nav nav";
+  grid-template-columns: minmax(17rem, 0.68fr) minmax(0, 1.32fr) !important;
+  grid-template-areas: "copy stage" "nav nav" !important;
   align-items: stretch;
   min-block-size: 22rem;
 }
@@ -537,6 +537,9 @@ body[data-view="table"] #table .promise-table-video-artwork {
 body[data-view="table"] #table .promise-table-embed-play-overlay { z-index: var(--promise-z-control); }
 body[data-view="table"] #table .promise-table-featured-nav {
   grid-area: nav;
+  position: static !important;
+  inset: auto !important;
+  z-index: auto;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 0.65rem;
@@ -544,6 +547,7 @@ body[data-view="table"] #table .promise-table-featured-nav {
   padding: 0.65rem 1rem;
   border-block-start: 1px solid rgba(255,255,255,0.14);
   background: rgba(0,34,27,0.76);
+  pointer-events: auto;
 }
 body[data-view="table"] #table .promise-table-featured-nav > button { min-block-size: 2.25rem; }
 body[data-view="table"] #table .promise-table-featured-dots > button {
