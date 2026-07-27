@@ -1299,7 +1299,9 @@ body[data-view="calling"] #phase116bCallingCompassTool .phase116b-result-card {
  * Scope: internal .calling-radar composition only; outer panel, header, footer, DOM, copy, and behavior remain locked.
  */
 body[data-view="calling"] .calling-compass-panel .calling-radar::before,
-body[data-view="calling"] .calling-compass-panel .calling-radar::after {
+body[data-view="calling"] .calling-compass-panel .calling-radar::after,
+body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center::before,
+body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center::after {
   pointer-events: none;
 }
 
