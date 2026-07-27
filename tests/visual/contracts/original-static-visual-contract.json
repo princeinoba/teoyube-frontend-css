@@ -988,8 +988,8 @@
     },
     {
       "path": "styles/pages/promise-table.css",
-      "bytes": 52123,
-      "sha256": "52e7d176d7588adabcbddc0f1e76cb5f3e006ff45a3c3db40da38c9f7f359a2e"
+      "bytes": 56038,
+      "sha256": "a8a72a647a570c404e7f91328b32321c496aa5d93223b2a3917f6af569a5885d"
     },
     {
       "path": "styles/pages/roadmap.css",
