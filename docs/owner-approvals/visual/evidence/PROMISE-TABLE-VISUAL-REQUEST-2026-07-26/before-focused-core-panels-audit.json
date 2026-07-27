@@ -1,0 +1,1020 @@
+{
+  "url": "http://127.0.0.1:3000/promise-table",
+  "viewport": {
+    "width": 1672,
+    "height": 941,
+    "devicePixelRatio": 1
+  },
+  "document": {
+    "clientWidth": 1672,
+    "scrollWidth": 1672,
+    "scrollHeight": 3279,
+    "overflowX": 0
+  },
+  "bodyView": "table",
+  "stylesheetHrefs": [],
+  "panels": {
+    "#phase116bPromiseWorkspace": {
+      "tag": "section",
+      "className": "phase116b-functional-panel",
+      "rect": {
+        "x": 210,
+        "y": 523.95,
+        "width": 1438,
+        "height": 725.97
+      },
+      "styles": {
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "1391.22px",
+        "gap": "16px",
+        "padding": "22.4px",
+        "borderRadius": "20px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflowX": "visible",
+        "minWidth": "0px",
+        "height": "725.969px"
+      }
+    },
+    "#phase117PromiseTableControls": {
+      "tag": "section",
+      "className": "phase117-surface-controls",
+      "rect": {
+        "x": 210,
+        "y": 1285.92,
+        "width": 1438,
+        "height": 125.66
+      },
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "gap": "16px",
+        "padding": "22.4px",
+        "borderRadius": "20px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflowX": "visible",
+        "minWidth": "0px",
+        "height": "125.656px"
+      }
+    },
+    "#phase114PromiseTablePanel": {
+      "tag": "section",
+      "className": "phase114-promise-table-panel",
+      "rect": {
+        "x": 210,
+        "y": 1451.58,
+        "width": 1438,
+        "height": 364.38
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "padding": "22.4px",
+        "borderRadius": "20px",
+        "background": "rgba(0, 0, 0, 0)",
+        "overflowX": "visible",
+        "minWidth": "0px",
+        "height": "364.375px"
+      }
+    }
+  },
+  "localBeta": {
+    "rect": {
+      "x": 1068.92,
+      "y": 848.28,
+      "width": 579.08,
+      "height": 68.72
+    },
+    "styles": {
+      "display": "grid",
+      "position": "fixed",
+      "gridTemplateColumns": "553.078px",
+      "gap": "4px",
+      "padding": "10.4px 12px",
+      "borderRadius": "12px",
+      "background": "rgba(255, 255, 255, 0.92)",
+      "overflowX": "visible",
+      "minWidth": "0px",
+      "height": "68.7188px"
+    },
+    "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+  },
+  "controls": [
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Export Table",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1504.64,
+        "y": 547.34,
+        "width": 119.97,
+        "height": 45.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "primary",
+      "type": "button",
+      "text": "Add Promise",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1480.58,
+        "y": 658.2,
+        "width": 128.64,
+        "height": 44
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "active",
+      "type": "button",
+      "text": "all",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 233.39,
+        "y": 734.19,
+        "width": 166.89,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Discovered",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 408.28,
+        "y": 734.19,
+        "width": 166.91,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Studying",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 583.19,
+        "y": 734.19,
+        "width": 166.91,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Praying",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 758.09,
+        "y": 734.19,
+        "width": 166.91,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Acting",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 933,
+        "y": 734.19,
+        "width": 166.89,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Witnessing Progress",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1107.89,
+        "y": 734.19,
+        "width": 166.91,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Testified",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1282.8,
+        "y": 734.19,
+        "width": 166.91,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": null,
+      "type": "button",
+      "text": "Remembered",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1457.7,
+        "y": 734.19,
+        "width": 166.91,
+        "height": 36
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "input",
+      "id": "phase116bPromiseSearch",
+      "className": null,
+      "type": null,
+      "text": "",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 233.39,
+        "y": 778.19,
+        "width": 1041.41,
+        "height": 47.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "select",
+      "id": "phase116bPromiseSort",
+      "className": null,
+      "type": null,
+      "text": "NewestStatusScripture",
+      "ariaLabel": "Sort promise rows",
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1282.8,
+        "y": 778.19,
+        "width": 341.81,
+        "height": 47.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "textarea",
+      "id": "phase116bPromiseNoteInput",
+      "className": null,
+      "type": null,
+      "text": "",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 256.78,
+        "y": 1002.52,
+        "width": 1344.44,
+        "height": 92
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Save Note",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 256.78,
+        "y": 1104.91,
+        "width": 329.5,
+        "height": 45.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Generate Prayer",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 595.08,
+        "y": 1104.91,
+        "width": 329.52,
+        "height": 45.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Start Action Step",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 933.39,
+        "y": 1104.91,
+        "width": 329.52,
+        "height": 45.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Save to Book",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1271.7,
+        "y": 1104.91,
+        "width": 329.52,
+        "height": 45.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Export Promise Table JSON",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1202.84,
+        "y": 1326.75,
+        "width": 214.06,
+        "height": 44
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Import / Restore Preview",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1425.7,
+        "y": 1326.75,
+        "width": 198.91,
+        "height": 44
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Export Safe Table",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1470.25,
+        "y": 1474.97,
+        "width": 154.36,
+        "height": 45.38
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "select",
+      "id": null,
+      "className": null,
+      "type": null,
+      "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+      "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 686.13,
+        "y": 1626.02,
+        "width": 168.39,
+        "height": 44
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Detail",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 988.45,
+        "y": 1626.02,
+        "width": 198.45,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Save to Book",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1193.3,
+        "y": 1626.02,
+        "width": 198.45,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Remove",
+      "ariaLabel": null,
+      "disabled": true,
+      "hidden": false,
+      "rect": {
+        "x": 1398.14,
+        "y": 1626.02,
+        "width": 198.45,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Pray",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 988.45,
+        "y": 1666,
+        "width": 198.45,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Act",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1193.3,
+        "y": 1666,
+        "width": 198.45,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Compare",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1398.14,
+        "y": 1666,
+        "width": 198.45,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "More like this",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 988.45,
+        "y": 1706.78,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Less like this",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1141.89,
+        "y": 1706.78,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Not relevant",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1295.33,
+        "y": 1706.78,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Save Scripture",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1448.77,
+        "y": 1706.78,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Save Word",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 988.45,
+        "y": 1745.97,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Save Prayer",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1141.89,
+        "y": 1745.97,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Complete Action",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1295.33,
+        "y": 1745.97,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "type": "button",
+      "text": "Reset this preference",
+      "ariaLabel": null,
+      "disabled": false,
+      "hidden": false,
+      "rect": {
+        "x": 1448.77,
+        "y": 1745.97,
+        "width": 147.84,
+        "height": 33.59
+      },
+      "pseudo": {
+        "content": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "maskImage": "none",
+        "webkitMaskImage": "none",
+        "background": "rgba(0, 0, 0, 0)"
+      }
+    }
+  ],
+  "controlCount": 35,
+  "enabledControlCount": 34,
+  "hiddenControlCount": 0,
+  "iconNodes": [],
+  "table": {
+    "tag": "table",
+    "headings": [
+      "Promise",
+      "Scripture",
+      "Status",
+      "Source",
+      "Actions"
+    ],
+    "rows": 1,
+    "rect": {
+      "x": 234.39,
+      "y": 1574.02,
+      "width": 1374.22,
+      "height": 217.55
+    },
+    "wrapper": {
+      "x": 233.39,
+      "y": 1573.02,
+      "width": 1391.22,
+      "height": 219.55
+    },
+    "wrapperOverflowX": "auto"
+  },
+  "targetElementCount": 99,
+  "captureClip": {
+    "x": 202,
+    "y": 515.953125,
+    "width": 1454,
+    "height": 1308
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "requestFailures": []
+}

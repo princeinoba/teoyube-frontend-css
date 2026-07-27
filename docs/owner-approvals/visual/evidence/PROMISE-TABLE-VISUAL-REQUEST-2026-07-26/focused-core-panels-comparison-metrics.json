@@ -1,0 +1,25 @@
+{
+  "comparisonType": "Owner reference compared with a normalized evidence copy; production CSS and runtime output are not scaled by this comparison process.",
+  "ownerReference": {
+    "file": "docs/owner-approvals/visual/evidence/PROMISE-TABLE-VISUAL-REQUEST-2026-07-26/focused-core-panels-owner-reference.png",
+    "width": 1672,
+    "height": 941
+  },
+  "runtimeCapture": {
+    "file": "docs/owner-approvals/visual/evidence/PROMISE-TABLE-VISUAL-REQUEST-2026-07-26/after-focused-core-panels-1672-raw.png",
+    "sourceWidth": 1454,
+    "sourceHeight": 953
+  },
+  "normalizedCandidate": {
+    "file": "docs/owner-approvals/visual/evidence/PROMISE-TABLE-VISUAL-REQUEST-2026-07-26/after-focused-core-panels-normalized-1672x941.png",
+    "width": 1672,
+    "height": 941
+  },
+  "pixelCount": 1573352,
+  "changedPixelCount": 1401561,
+  "changedPixelPercent": 89.0812,
+  "stronglyChangedPixelCount": 148740,
+  "stronglyChangedPixelPercent": 9.4537,
+  "meanAbsoluteRgbDifference": 14.7867,
+  "interpretation": "The reference is a visual target rather than an immutable pixel baseline for this owner-approved redesign. Structural, responsive, functional, and control-inventory evidence is authoritative; these pixel metrics quantify remaining appearance differences without masking them."
+}

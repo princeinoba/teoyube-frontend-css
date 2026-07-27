@@ -1,0 +1,56 @@
+{
+  "document": {
+    "scrollWidth": 1672,
+    "clientWidth": 1672,
+    "scrollHeight": 2924
+  },
+  "panels": {
+    "#phase116bPromiseWorkspace": {
+      "x": 210,
+      "y": 523.95,
+      "width": 1438,
+      "height": 602.17
+    },
+    "#phase117PromiseTableControls": {
+      "x": 210,
+      "y": 1138.13,
+      "width": 1438,
+      "height": 91.09
+    },
+    "#phase114PromiseTablePanel": {
+      "x": 210,
+      "y": 1234.83,
+      "width": 1438,
+      "height": 225.94
+    }
+  },
+  "targetHeight": 936.8125,
+  "controlCount": 35,
+  "hidden": 0,
+  "notice": {
+    "rect": {
+      "x": 1416,
+      "y": 852.48,
+      "width": 240,
+      "height": 72.52
+    },
+    "pointerEvents": "none"
+  },
+  "table": {
+    "wrap": {
+      "x": 227,
+      "y": 1324.59,
+      "width": 1404,
+      "height": 123.17
+    },
+    "scrollWidth": 1387,
+    "clientWidth": 1387,
+    "overflowX": "auto"
+  },
+  "captureClip": {
+    "x": 202,
+    "y": 515.953125,
+    "width": 1454,
+    "height": 952.8125
+  }
+}

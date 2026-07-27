@@ -1,0 +1,4908 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-PANELS-001",
+  "testedUrl": "http://127.0.0.1:3000/promise-table",
+  "capturedAt": "2026-07-27T11:20:46.322Z",
+  "responsive": [
+    {
+      "viewport": {
+        "slug": "reference-1672x941",
+        "width": 1672,
+        "height": 941,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 1672,
+          "scrollWidth": 1672,
+          "scrollHeight": 2924,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 210,
+            "y": 523.95,
+            "width": 1438,
+            "height": 602.17
+          },
+          "#phase117PromiseTableControls": {
+            "x": 210,
+            "y": 1138.13,
+            "width": 1438,
+            "height": 91.09
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 210,
+            "y": 1234.83,
+            "width": 1438,
+            "height": 225.94
+          }
+        },
+        "targetUnionHeight": 936.82,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 134.92,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 47.28,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 96.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.34,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 77.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.97,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 148.52,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 81.75,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.09,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 552.42,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 196.44,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 1368.44,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164.14,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 130.19,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 74.92,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 69.8,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.09,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 77.59,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.61,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 66.33,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 87.88,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 105.58,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 1387,
+          "wrapperScrollWidth": 1387
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 1416,
+            "y": 852.48,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 202,
+        "y": 515.953125,
+        "width": 1454,
+        "height": 952.8125
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "desktop-1536x1024",
+        "width": 1536,
+        "height": 1024,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 1536,
+          "scrollWidth": 1536,
+          "scrollHeight": 2993,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 210,
+            "y": 523.95,
+            "width": 1302,
+            "height": 600.63
+          },
+          "#phase117PromiseTableControls": {
+            "x": 210,
+            "y": 1136.58,
+            "width": 1302,
+            "height": 91.09
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 210,
+            "y": 1233.28,
+            "width": 1302,
+            "height": 225.94
+          }
+        },
+        "targetUnionHeight": 935.27,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 134.92,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 47.28,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 96.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.34,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 77.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.97,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 148.52,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 81.75,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.09,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 552.42,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 196.44,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 1233.59,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164.14,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 115.23,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 74.92,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 69.8,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.09,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 77.59,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.61,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 66.33,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 87.88,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 105.58,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 1251,
+          "wrapperScrollWidth": 1251
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 1280,
+            "y": 935.48,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 202,
+        "y": 515.953125,
+        "width": 1318,
+        "height": 951.265625
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "desktop-wide-1440x900",
+        "width": 1440,
+        "height": 900,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 1440,
+          "scrollWidth": 1440,
+          "scrollHeight": 2880,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 210,
+            "y": 523.39,
+            "width": 1206,
+            "height": 592.58
+          },
+          "#phase117PromiseTableControls": {
+            "x": 210,
+            "y": 1127.41,
+            "width": 1206,
+            "height": 90.09
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 210,
+            "y": 1222.55,
+            "width": 1206,
+            "height": 224.94
+          }
+        },
+        "targetUnionHeight": 924.1,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 134.92,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 47.28,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 96.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.34,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 77.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.97,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 148.52,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 81.75,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.09,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 552.42,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 196.44,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 1141.56,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164.14,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 104.67,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 69.52,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 64.86,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.14,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 71.94,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 58.36,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 61.72,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 81.25,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 97.28,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 1155,
+          "wrapperScrollWidth": 1155
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 1184,
+            "y": 811.48,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 202,
+        "y": 515.390625,
+        "width": 1222,
+        "height": 940.09375
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "desktop-standard-1280x800",
+        "width": 1280,
+        "height": 800,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 1280,
+          "scrollWidth": 1280,
+          "scrollHeight": 2837,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 210,
+            "y": 521.48,
+            "width": 1046,
+            "height": 576.75
+          },
+          "#phase117PromiseTableControls": {
+            "x": 210,
+            "y": 1107.5,
+            "width": 1046,
+            "height": 104.55
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 210,
+            "y": 1214.92,
+            "width": 1046,
+            "height": 222.17
+          }
+        },
+        "targetUnionHeight": 915.61,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 134.92,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 47.28,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 96.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.34,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 77.17,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.97,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 148.52,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 81.75,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.09,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 552.42,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 196.44,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 988.25,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164.14,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 90.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.97,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.08,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.3,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.98,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 51.63,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 54.45,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.77,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.17,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 995,
+          "wrapperScrollWidth": 1026
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 1024,
+            "y": 711.48,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 202,
+        "y": 513.484375,
+        "width": 1062,
+        "height": 931.609375
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "tablet-landscape-1024x768",
+        "width": 1024,
+        "height": 768,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 1024,
+          "scrollWidth": 1024,
+          "scrollHeight": 3290,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 210,
+            "y": 868.72,
+            "width": 790,
+            "height": 623.05
+          },
+          "#phase117PromiseTableControls": {
+            "x": 210,
+            "y": 1498.16,
+            "width": 790,
+            "height": 144.36
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 210,
+            "y": 1642.52,
+            "width": 790,
+            "height": 279.2
+          }
+        },
+        "targetUnionHeight": 1053,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 134.92,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 568.02,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 185.61,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 734.19,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 164.14,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 90.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.97,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.08,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.3,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.98,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 51.63,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 54.45,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.77,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.17,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 739,
+          "wrapperScrollWidth": 1026
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 768.64,
+            "y": 680.13,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 202,
+        "y": 860.71875,
+        "width": 806,
+        "height": 1069
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "tablet-portrait-768x1024",
+        "width": 768,
+        "height": 1024,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 768,
+          "scrollWidth": 768,
+          "scrollHeight": 4048,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 12,
+            "y": 1032.89,
+            "width": 744,
+            "height": 729
+          },
+          "#phase117PromiseTableControls": {
+            "x": 12,
+            "y": 1768.28,
+            "width": 744,
+            "height": 144.36
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 12,
+            "y": 1912.64,
+            "width": 744,
+            "height": 296.42
+          }
+        },
+        "targetUnionHeight": 1176.17,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 713.22,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 688.19,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 533.52,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 688.19,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 710,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 90.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.97,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.08,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.3,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.98,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 51.63,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 54.45,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.77,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.17,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 708,
+          "wrapperScrollWidth": 1026
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 516.48,
+            "y": 939.97,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 4,
+        "y": 1024.890625,
+        "width": 760,
+        "height": 1192.171875
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "mobile-390x844",
+        "width": 390,
+        "height": 844,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "scrollHeight": 4711,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 8,
+            "y": 1272.86,
+            "width": 374,
+            "height": 1070.72
+          },
+          "#phase117PromiseTableControls": {
+            "x": 8,
+            "y": 2348.38,
+            "width": 374,
+            "height": 213.56
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 8,
+            "y": 2560.34,
+            "width": 374,
+            "height": 313.64
+          }
+        },
+        "targetUnionHeight": 1601.12,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 346.41,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 321.38,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 170.41,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 346.41,
+            "height": 45.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 346.41,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 321.38,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 321.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 321.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 321.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 321.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 340,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 340,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 340,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 90.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.97,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.08,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.3,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.98,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 51.63,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 54.45,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.77,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.17,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 338,
+          "wrapperScrollWidth": 1026
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 171.61,
+            "y": 760.3,
+            "width": 208,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 0,
+        "y": 1264.859375,
+        "width": 390,
+        "height": 1617.125
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "mobile-small-360x800",
+        "width": 360,
+        "height": 800,
+        "deviceScaleFactor": 1
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 360,
+          "scrollWidth": 360,
+          "scrollHeight": 4760,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 8,
+            "y": 1329.95,
+            "width": 344,
+            "height": 1070.72
+          },
+          "#phase117PromiseTableControls": {
+            "x": 8,
+            "y": 2405.47,
+            "width": 344,
+            "height": 230.78
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 8,
+            "y": 2634.66,
+            "width": 344,
+            "height": 313.64
+          }
+        },
+        "targetUnionHeight": 1618.35,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 316.41,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 291.38,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 155.41,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 316.41,
+            "height": 45.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 316.41,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 291.38,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 291.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 291.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 291.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 291.38,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 310,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 310,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 310,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 90.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.97,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.08,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.3,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.98,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 51.63,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 54.45,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.77,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.17,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 308,
+          "wrapperScrollWidth": 1026
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 141.61,
+            "y": 716.3,
+            "width": 208,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 0,
+        "y": 1321.953125,
+        "width": 360,
+        "height": 1634.34375
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    },
+    {
+      "viewport": {
+        "slug": "zoom-200-768x512",
+        "width": 768,
+        "height": 512,
+        "deviceScaleFactor": 2
+      },
+      "audit": {
+        "document": {
+          "clientWidth": 768,
+          "scrollWidth": 768,
+          "scrollHeight": 3761,
+          "overflowX": 0
+        },
+        "bodyView": "table",
+        "panels": {
+          "#phase116bPromiseWorkspace": {
+            "x": 12,
+            "y": 1032.89,
+            "width": 744,
+            "height": 729
+          },
+          "#phase117PromiseTableControls": {
+            "x": 12,
+            "y": 1768.28,
+            "width": 744,
+            "height": 144.36
+          },
+          "#phase114PromiseTablePanel": {
+            "x": 12,
+            "y": 1912.64,
+            "width": 744,
+            "height": 296.42
+          }
+        },
+        "targetUnionHeight": 1176.17,
+        "targetControlCount": 35,
+        "enabledTargetControlCount": 34,
+        "hiddenTargetControlCount": 0,
+        "controls": [
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 713.22,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Add Promise",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 688.19,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "all",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Discovered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Studying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Praying",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Acting",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Witnessing Progress",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Testified",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remembered",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 37.59
+          },
+          {
+            "tag": "input",
+            "id": "phase116bPromiseSearch",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 533.52,
+            "height": 47.38
+          },
+          {
+            "tag": "select",
+            "id": "phase116bPromiseSort",
+            "text": "NewestStatusScripture",
+            "ariaLabel": "Sort promise rows",
+            "disabled": false,
+            "hidden": false,
+            "width": 174.11,
+            "height": 47.38
+          },
+          {
+            "tag": "textarea",
+            "id": "phase116bPromiseNoteInput",
+            "text": "",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 688.19,
+            "height": 57.72
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Note",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 118.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Generate Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 153.86,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Start Action Step",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 159.03,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 135.73,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Promise Table JSON",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 223,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Import / Restore Preview",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 210.09,
+            "height": 43.19
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Export Safe Table",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 710,
+            "height": 43.19
+          },
+          {
+            "tag": "select",
+            "id": null,
+            "text": "DiscoveredStudyingPrayingActingWitnessing ProgressTestifiedRemembered",
+            "ariaLabel": "Update status for Calling & Purpose: TIDUILOVP",
+            "disabled": false,
+            "hidden": false,
+            "width": 90.25,
+            "height": 37.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Detail",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 72.94,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save to Book",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 109.03,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Remove",
+            "ariaLabel": null,
+            "disabled": true,
+            "hidden": false,
+            "width": 83.8,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Pray",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 65.91,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Act",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.13,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Compare",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 88.3,
+            "height": 32.8
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "More like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 60.97,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Less like this",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.08,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Not relevant",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 57.3,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Scripture",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 62.98,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Word",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 51.63,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Save Prayer",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 54.45,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Complete Action",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 70.77,
+            "height": 29.59
+          },
+          {
+            "tag": "button",
+            "id": null,
+            "text": "Reset this preference",
+            "ariaLabel": null,
+            "disabled": false,
+            "hidden": false,
+            "width": 84.17,
+            "height": 29.59
+          }
+        ],
+        "allPageControlCount": 150,
+        "allVisiblePageControlCount": 150,
+        "iconTargetCount": 17,
+        "renderedIconCount": 17,
+        "emptyIconTargets": [],
+        "table": {
+          "semantic": true,
+          "headings": [
+            "Promise",
+            "Scripture",
+            "Status",
+            "Source",
+            "Actions"
+          ],
+          "rows": 1,
+          "wrapperOverflowX": "auto",
+          "wrapperClientWidth": 708,
+          "wrapperScrollWidth": 1026
+        },
+        "localBeta": {
+          "present": true,
+          "rect": {
+            "x": 516.48,
+            "y": 427.97,
+            "width": 240,
+            "height": 72.52
+          },
+          "pointerEvents": "none",
+          "text": "Local beta onlineExternal services remain disabled; network is not used for AI, analytics, uploads, or persistence."
+        },
+        "positiveTabIndexes": []
+      },
+      "clip": {
+        "x": 4,
+        "y": 1024.890625,
+        "width": 760,
+        "height": 1192.171875
+      },
+      "controlSignatureParity": true,
+      "trialClickFailures": [],
+      "runtimeErrors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "pass": true
+    }
+  ],
+  "accessibility": {
+    "testedUrl": "http://127.0.0.1:3000/promise-table",
+    "testedRoots": [
+      "#phase116bPromiseWorkspace",
+      "#phase117PromiseTableControls",
+      "#phase114PromiseTablePanel"
+    ],
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure ARIA attributes are not prohibited for an element's role",
+        "help": "Elements must only use permitted ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": {
+                  "role": null,
+                  "nodeName": "div",
+                  "messageKey": "noRoleSingular",
+                  "prohibited": [
+                    "aria-label"
+                  ]
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+              }
+            ],
+            "impact": "serious",
+            "html": "<div class=\"phase115-feedback-controls\" aria-label=\"Personalization feedback controls\">",
+            "target": [
+              ".phase115-feedback-controls"
+            ],
+            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.8pt (14.4px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"phase116b1-promise-add-launcher\">",
+                    "target": [
+                      ".phase116b1-promise-add-launcher"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Manual promise entry</strong>",
+            "target": [
+              ".phase116b1-promise-add-launcher > div > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.4pt (12.48px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"phase116b1-promise-add-launcher\">",
+                    "target": [
+                      ".phase116b1-promise-add-launcher"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>Use the validated dialog for title, Scripture, Teoyube word, category, status, and an optional safe note.</p>",
+            "target": [
+              ".phase116b1-promise-add-launcher > div > p"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.8pt (13.12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button class=\"primary\" type=\"button\" data-teoyube-action=\"promise.add.open\">Add Promise</button>",
+                    "target": [
+                      "button[data-teoyube-action=\"promise.add.open\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"primary\" type=\"button\" data-teoyube-action=\"promise.add.open\">Add Promise</button>",
+            "target": [
+              "button[data-teoyube-action=\"promise.add.open\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<input id=\"phase116bPromiseSearch\" value=\"\" placeholder=\"Search saved rows...\">",
+                    "target": [
+                      "#phase116bPromiseSearch"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<input id=\"phase116bPromiseSearch\" value=\"\" placeholder=\"Search saved rows...\">",
+            "target": [
+              "#phase116bPromiseSearch"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<select id=\"phase116bPromiseSort\" aria-label=\"Sort promise rows\">\n          <option value=\"newest\" selected=\"\">Newest</option><option value=\"status\">Status</option><option value=\"scripture\">Scripture</option>\n        </select>",
+                    "target": [
+                      "#phase116bPromiseSort"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<select id=\"phase116bPromiseSort\" aria-label=\"Sort promise rows\">\n          <option value=\"newest\" selected=\"\">Newest</option><option value=\"status\">Status</option><option value=\"scripture\">Scripture</option>\n        </select>",
+            "target": [
+              "#phase116bPromiseSort"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<button class=\"secondary\" type=\"button\" data-phase116b-action=\"promise-save-note\" data-phase116b-id=\"active-daily-promise\">Save Note</button>",
+                    "target": [
+                      "button[data-phase116b-action=\"promise-save-note\"]"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button class=\"secondary\" type=\"button\" data-phase116b-action=\"promise-save-note\" data-phase116b-id=\"active-daily-promise\">Save Note</button>",
+            "target": [
+              "button[data-phase116b-action=\"promise-save-note\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "8.6pt (11.52px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"phase116b-safety\">Testimony prompt appears only after you choose Testified; no fulfillment is inferred.</p>",
+                    "target": [
+                      ".phase116b-safety"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"phase116b-safety\">Testimony prompt appears only after you choose Testified; no fulfillment is inferred.</p>",
+            "target": [
+              ".phase116b-safety"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "7.6pt (10.08px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<th>Promise</th>",
+                    "target": [
+                      "th:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<th>Promise</th>",
+            "target": [
+              "th:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "7.6pt (10.08px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<th>Scripture</th>",
+                    "target": [
+                      "th:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<th>Scripture</th>",
+            "target": [
+              "th:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "7.6pt (10.08px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<th>Status</th>",
+                    "target": [
+                      "th:nth-child(3)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<th>Status</th>",
+            "target": [
+              "th:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "7.6pt (10.08px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<th>Source</th>",
+                    "target": [
+                      "th:nth-child(4)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<th>Source</th>",
+            "target": [
+              "th:nth-child(4)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "7.6pt (10.08px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<th>Actions</th>",
+                    "target": [
+                      "th:nth-child(5)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<th>Actions</th>",
+            "target": [
+              "th:nth-child(5)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          }
+        ]
+      }
+    ],
+    "passCount": 15,
+    "inapplicableCount": 47,
+    "runtimeErrors": {
+      "console": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "page": [],
+      "request": [],
+      "http": [
+        "404 http://127.0.0.1:3000/today.css",
+        "404 http://127.0.0.1:3000/roadmap.css",
+        "404 http://127.0.0.1:3000/canon.css",
+        "404 http://127.0.0.1:3000/search.css",
+        "404 http://127.0.0.1:3000/promise-table.css",
+        "404 http://127.0.0.1:3000/calling-compass.css",
+        "404 http://127.0.0.1:3000/book.css",
+        "404 http://127.0.0.1:3000/lexicon.css",
+        "404 http://127.0.0.1:3000/testimony.css",
+        "404 http://127.0.0.1:3000/teo-guide.css",
+        "404 http://127.0.0.1:3000/embedded-videos.css",
+        "404 http://127.0.0.1:3000/tables.css"
+      ]
+    },
+    "pass": true
+  },
+  "functional": {
+    "checks": [
+      {
+        "name": "workspace-export",
+        "pass": true,
+        "detail": {
+          "actionDispatched": true,
+          "controlStillEnabled": true
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "manual-entry-dialog",
+        "pass": true,
+        "detail": {
+          "opened": true,
+          "closed": true
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "all-status-tabs-search-sort",
+        "pass": true,
+        "detail": {
+          "tabCount": 8,
+          "labels": [
+            "all",
+            "Discovered",
+            "Studying",
+            "Praying",
+            "Acting",
+            "Witnessing Progress",
+            "Testified",
+            "Remembered"
+          ],
+          "searchValue": "TIDUILOVP",
+          "sortOptionsExercised": [
+            "newest",
+            "status",
+            "scripture"
+          ]
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "detail-save-note",
+        "pass": true,
+        "detail": {
+          "notice": "Save Note Calling & Purpose: TIDUILOVP Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "detail-generate-prayer",
+        "pass": true,
+        "detail": {
+          "notice": "Generate Prayer Calling & Purpose: TIDUILOVP Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "detail-start-action",
+        "pass": true,
+        "detail": {
+          "notice": "Start Action Step Calling & Purpose: TIDUILOVP Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "detail-save-to-book",
+        "pass": true,
+        "detail": {
+          "notice": "Promise saved to Book Calling & Purpose: TIDUILOVP · Level A Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "live-json-export",
+        "pass": true,
+        "detail": {
+          "actionDispatched": true,
+          "controlStillEnabled": true
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "live-import-preview",
+        "pass": true,
+        "detail": {
+          "notice": ""
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "saved-table-export",
+        "pass": true,
+        "detail": {
+          "actionDispatched": true,
+          "controlStillEnabled": true
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-status",
+        "pass": true,
+        "detail": {
+          "original": "Studying",
+          "selected": "Praying",
+          "restored": "Studying"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-detail",
+        "pass": true,
+        "detail": {
+          "notice": "Detail Calling & Purpose: TIDUILOVP Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-save-book",
+        "pass": true,
+        "detail": {
+          "notice": "Promise saved to Book Calling & Purpose: TIDUILOVP · Level A Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-pray",
+        "pass": true,
+        "detail": {
+          "notice": "Pray Calling & Purpose: TIDUILOVP Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-act",
+        "pass": true,
+        "detail": {
+          "notice": "Act Calling & Purpose: TIDUILOVP Ephesians 1:18 View in Book Add Reflection Close"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-compare",
+        "pass": true,
+        "detail": {
+          "notice": ""
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "row-remove-disabled-state",
+        "pass": true,
+        "detail": {
+          "disabled": true,
+          "text": "Remove"
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "all-feedback-actions",
+        "pass": true,
+        "detail": {
+          "count": 8,
+          "labels": [
+            "More like this",
+            "Less like this",
+            "Not relevant",
+            "Save Scripture",
+            "Save Word",
+            "Save Prayer",
+            "Complete Action",
+            "Reset this preference"
+          ]
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      },
+      {
+        "name": "keyboard-focus-order",
+        "pass": true,
+        "detail": {
+          "uniqueVisited": 33,
+          "focusVisible": 33,
+          "controls": [
+            {
+              "label": "Export Table",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Add Promise",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "all",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Discovered",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Studying",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Praying",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Acting",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Witnessing Progress",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Testified",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Remembered",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "",
+              "tag": "input",
+              "focusVisible": true
+            },
+            {
+              "label": "Sort promise rows",
+              "tag": "select",
+              "focusVisible": true
+            },
+            {
+              "label": "",
+              "tag": "textarea",
+              "focusVisible": true
+            },
+            {
+              "label": "Save Note",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Generate Prayer",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Start Action Step",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Save to Book",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Export Promise Table JSON",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Import / Restore Preview",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Export Safe Table",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Update status for Calling & Purpose: TIDUILOVP",
+              "tag": "select",
+              "focusVisible": true
+            },
+            {
+              "label": "Detail",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Pray",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Act",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Compare",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "More like this",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Less like this",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Not relevant",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Save Scripture",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Save Word",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Save Prayer",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Complete Action",
+              "tag": "button",
+              "focusVisible": true
+            },
+            {
+              "label": "Reset this preference",
+              "tag": "button",
+              "focusVisible": true
+            }
+          ]
+        },
+        "runtimeErrors": {
+          "console": [],
+          "page": [],
+          "request": [],
+          "http": []
+        }
+      }
+    ],
+    "failures": [],
+    "pass": true
+  },
+  "pass": true
+}
