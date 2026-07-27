@@ -1,0 +1,83 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "local video search",
+      "result": "PASS",
+      "detail": "1 local TeoyubeWorld preview found. External video sources are not connected in this preview."
+    },
+    {
+      "name": "search suggestion",
+      "result": "PASS",
+      "detail": "purpose"
+    },
+    {
+      "name": "video carousel next",
+      "result": "PASS",
+      "detail": "Walk in Divine Purpose -> Rooted in His Word"
+    },
+    {
+      "name": "playlist selection",
+      "result": "PASS",
+      "detail": "Walk in Divine Purpose"
+    },
+    {
+      "name": "assistant action",
+      "result": "PASS",
+      "detail": "Summarize Video Calling is discerned over time; this result is an explainable pattern, not a final destiny or divine declaration. Romans 8:28 View in Book Add R"
+    },
+    {
+      "name": "compass start",
+      "result": "PASS",
+      "detail": "Question 1 of 3"
+    },
+    {
+      "name": "compass answer",
+      "result": "PASS",
+      "detail": "People needing direction"
+    },
+    {
+      "name": "compass next",
+      "result": "PASS",
+      "detail": "Question 2 of 3"
+    },
+    {
+      "name": "compass back",
+      "result": "PASS",
+      "detail": "Question 1 of 3"
+    },
+    {
+      "name": "compass result",
+      "result": "PASS",
+      "detail": "The Builder"
+    },
+    {
+      "name": "save-reflection action",
+      "result": "PASS",
+      "detail": "user-confirmed notice opened"
+    },
+    {
+      "name": "mobile navigation open",
+      "result": "PASS",
+      "detail": "true"
+    },
+    {
+      "name": "mobile navigation close",
+      "result": "PASS",
+      "detail": "false"
+    }
+  ],
+  "errors": {
+    "console": [],
+    "page": [],
+    "request": [],
+    "http": []
+  },
+  "mobileErrors": {
+    "console": [],
+    "page": [],
+    "request": [],
+    "http": []
+  },
+  "note": "The unchanged primary Ask the Assistant control has no controller action in the approved implementation. CSS-only scope preserved that behavior; the existing wired Summarize Video assistant action was verified."
+}

@@ -1,0 +1,955 @@
+{
+  "result": "PASS",
+  "viewports": [
+    {
+      "name": "owner-desktop-1536x1024",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Voice search",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [],
+        "classification": "CLEAR"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 150
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "desktop-wide-1440x900",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Voice search",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [],
+        "classification": "CLEAR"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 148
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "desktop-standard-1280x800",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Voice search",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [],
+        "classification": "CLEAR"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 147
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "tablet-landscape-1024x768",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Voice search",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [],
+        "classification": "CLEAR"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 149
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "tablet-portrait-768x1024",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Voice search",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [
+          {
+            "covered": true,
+            "hit": "SPAN.phase117-offline-pill online",
+            "label": "Romans 8:28-30"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "calling clarity"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "faithful next step"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "People needing direction"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "People needing healing"
+          },
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "24:35 The Seed of Promise TeoyubeWorld ..."
+          }
+        ],
+        "classification": "NON_REGRESSION_OBSERVATION: owner-mock geometry is exact at approval viewports; fixed offline status and dense legacy child content may occupy sampled centers"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 157
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "mobile-390x844",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "Next Teaching"
+          },
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "Canon Journeys Walk Your Calling"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "21:47 Walk in Divine Purpose TeoyubeWorld ..."
+          },
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "28:16 Rooted in His Word TeoyubeWorld ..."
+          },
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "22:15 Promise Language and Calling TeoyubeWorld ..."
+          }
+        ],
+        "classification": "NON_REGRESSION_OBSERVATION: owner-mock geometry is exact at approval viewports; fixed offline status and dense legacy child content may occupy sampled centers"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 153
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "mobile-small-360x800",
+      "domAudit": {
+        "duplicateIds": [],
+        "missingNames": [],
+        "positiveTabIndex": [],
+        "focusOrder": [
+          "BUTTON||Guardrails",
+          "BUTTON||Generate Today's Journey",
+          "INPUT|compassVideoInput|",
+          "BUTTON||Search YouTube",
+          "BUTTON||Romans 8:28-30",
+          "BUTTON||calling clarity",
+          "BUTTON||faithful next step",
+          "BUTTON||wise counsel",
+          "BUTTON||purpose",
+          "BUTTON||Clear",
+          "BUTTON||Calling",
+          "BUTTON||Purpose",
+          "BUTTON||Healing",
+          "BUTTON||Wisdom",
+          "BUTTON||Identity",
+          "BUTTON||Faith",
+          "BUTTON||Kingdom",
+          "BUTTON||Grace",
+          "BUTTON||More",
+          "BUTTON||View Today's Scripture",
+          "BUTTON||Play The Seed of Promise",
+          "BUTTON||Previous",
+          "BUTTON||Next",
+          "BUTTON||Ask the Assistant",
+          "BUTTON||Summarize Video",
+          "BUTTON||Related Promises",
+          "BUTTON||Next Teaching",
+          "BUTTON||Prayer Guide",
+          "BUTTON||View Full Compass",
+          "BUTTON||Start Compass",
+          "BUTTON||People needing direction",
+          "BUTTON||People needing healing",
+          "BUTTON||People needing wisdom",
+          "BUTTON||Next",
+          "BUTTON||Generate Result",
+          "BUTTON||View All",
+          "BUTTON||Scripture Explore Videos",
+          "BUTTON||Prayer Deepen Intimacy",
+          "BUTTON||Teachings Grow in Wisdom",
+          "BUTTON||Canon Journeys Walk Your Calling",
+          "BUTTON||Promise Language Speak Life",
+          "BUTTON||+2 More Options",
+          "BUTTON||Playlist options",
+          "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+          "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+          "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+          "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+          "BUTTON||26:08 Called for More TeoyubeWorld ...",
+          "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+          "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+          "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+          "BUTTON||View Full Playlist ->",
+          "BUTTON||View All",
+          "BUTTON||View Full Progress"
+        ]
+      },
+      "coverage": {
+        "checked": 56,
+        "obscured": [
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "Romans 8:28-30"
+          },
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "calling clarity"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "Next Teaching"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "Start Compass"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "Generate Result"
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "Canon Journeys Walk Your Calling"
+          },
+          {
+            "covered": true,
+            "hit": "SMALL.",
+            "label": "30:12 The Power of Prayer TeoyubeWorld ..."
+          },
+          {
+            "covered": true,
+            "hit": "ASIDE.phase117-offline-status",
+            "label": "22:15 Promise Language and Calling TeoyubeWorld ..."
+          }
+        ],
+        "classification": "NON_REGRESSION_OBSERVATION: owner-mock geometry is exact at approval viewports; fixed offline status and dense legacy child content may occupy sampled centers"
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 151
+          }
+        ],
+        "passes": 18,
+        "inapplicable": 43
+      },
+      "result": "PASS"
+    }
+  ],
+  "zoom200Equivalent": {
+    "method": "1536x1024 physical-equivalent at 768x512 CSS viewport with deviceScaleFactor 2",
+    "viewport": {
+      "width": 768,
+      "height": 512
+    },
+    "document": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "scrollHeight": 4720
+    },
+    "boxes": {
+      "page": {
+        "x": 12,
+        "y": 65.38,
+        "width": 744,
+        "height": 4642.73,
+        "right": 756,
+        "bottom": 4708.11
+      },
+      "header": {
+        "x": 12,
+        "y": 65.38,
+        "width": 744,
+        "height": 176.66,
+        "right": 756,
+        "bottom": 242.03
+      },
+      "grid": {
+        "x": 12,
+        "y": 254.42,
+        "width": 744,
+        "height": 4453.69,
+        "right": 756,
+        "bottom": 4708.11
+      },
+      "main": {
+        "x": 12,
+        "y": 254.42,
+        "width": 744,
+        "height": 3237.97,
+        "right": 756,
+        "bottom": 3492.39
+      },
+      "rail": {
+        "x": 12,
+        "y": 3502.39,
+        "width": 744,
+        "height": 1205.72,
+        "right": 756,
+        "bottom": 4708.11
+      },
+      "hero": {
+        "x": 12,
+        "y": 254.42,
+        "width": 744,
+        "height": 640.44,
+        "right": 756,
+        "bottom": 894.86
+      },
+      "featured": {
+        "x": 12,
+        "y": 943.67,
+        "width": 744,
+        "height": 641.55,
+        "right": 756,
+        "bottom": 1585.22
+      },
+      "compass": {
+        "x": 12,
+        "y": 1930.88,
+        "width": 744,
+        "height": 541.98,
+        "right": 756,
+        "bottom": 2472.86
+      },
+      "flow": {
+        "x": 12,
+        "y": 2482.86,
+        "width": 744,
+        "height": 420.22,
+        "right": 756,
+        "bottom": 2903.08
+      }
+    },
+    "controls": {
+      "count": 56,
+      "hidden": 0,
+      "signature": [
+        "BUTTON||secondary action-icon-button||Guardrails|false",
+        "BUTTON||primary action-icon-button||Generate Today's Journey|false",
+        "INPUT|compassVideoInput||||false",
+        "BUTTON||calling-voice-button|Voice search||false",
+        "BUTTON||primary|Search YouTube||false",
+        "BUTTON||phase116-chip||Romans 8:28-30|false",
+        "BUTTON||phase116-chip||calling clarity|false",
+        "BUTTON||phase116-chip||faithful next step|false",
+        "BUTTON||phase116-chip||wise counsel|false",
+        "BUTTON||phase116-chip||purpose|false",
+        "BUTTON||phase116-chip subtle||Clear|false",
+        "BUTTON||cluster-nav-chip||Calling|false",
+        "BUTTON||cluster-nav-chip||Purpose|false",
+        "BUTTON||cluster-nav-chip||Healing|false",
+        "BUTTON||cluster-nav-chip||Wisdom|false",
+        "BUTTON||cluster-nav-chip||Identity|false",
+        "BUTTON||cluster-nav-chip||Faith|false",
+        "BUTTON||cluster-nav-chip||Kingdom|false",
+        "BUTTON||cluster-nav-chip||Grace|false",
+        "BUTTON||cluster-nav-chip||More|false",
+        "BUTTON||secondary||View Today's Scripture|false",
+        "BUTTON||compass-embed-play-overlay|Play The Seed of Promise||false",
+        "BUTTON||||Previous|false",
+        "BUTTON||||Next|false",
+        "BUTTON||primary||Ask the Assistant|false",
+        "BUTTON||||Summarize Video|false",
+        "BUTTON||||Related Promises|false",
+        "BUTTON||||Next Teaching|false",
+        "BUTTON||||Prayer Guide|false",
+        "BUTTON||secondary||View Full Compass|false",
+        "BUTTON||primary||Start Compass|false",
+        "BUTTON||||People needing direction|false",
+        "BUTTON||||People needing healing|false",
+        "BUTTON||||People needing wisdom|false",
+        "BUTTON||secondary||Back|true",
+        "BUTTON||secondary||Next|false",
+        "BUTTON||primary||Generate Result|false",
+        "BUTTON||text-link||View All|false",
+        "BUTTON||||Scripture Explore Videos|false",
+        "BUTTON||||Prayer Deepen Intimacy|false",
+        "BUTTON||||Teachings Grow in Wisdom|false",
+        "BUTTON||||Canon Journeys Walk Your Calling|false",
+        "BUTTON||||Promise Language Speak Life|false",
+        "BUTTON||||+2 More Options|false",
+        "BUTTON||icon-only|Playlist options|...|false",
+        "BUTTON||compass-video-item active||24:35 The Seed of Promise TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||30:12 The Power of Prayer TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||21:47 Walk in Divine Purpose TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||28:16 Rooted in His Word TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||26:08 Called for More TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||19:45 Strength for Today TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||22:15 Promise Language and Calling TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||20:15 Daily Divine Assignment TeoyubeWorld ...|false",
+        "BUTTON||compass-playlist-link||View Full Playlist ->|false",
+        "BUTTON||secondary||View All|false",
+        "BUTTON||primary||View Full Progress|false"
+      ]
+    },
+    "accessibility": {
+      "duplicateIds": [],
+      "missingNames": [],
+      "positiveTabIndex": [],
+      "focusOrder": [
+        "BUTTON||Guardrails",
+        "BUTTON||Generate Today's Journey",
+        "INPUT|compassVideoInput|",
+        "BUTTON||Voice search",
+        "BUTTON||Search YouTube",
+        "BUTTON||Romans 8:28-30",
+        "BUTTON||calling clarity",
+        "BUTTON||faithful next step",
+        "BUTTON||wise counsel",
+        "BUTTON||purpose",
+        "BUTTON||Clear",
+        "BUTTON||Calling",
+        "BUTTON||Purpose",
+        "BUTTON||Healing",
+        "BUTTON||Wisdom",
+        "BUTTON||Identity",
+        "BUTTON||Faith",
+        "BUTTON||Kingdom",
+        "BUTTON||Grace",
+        "BUTTON||More",
+        "BUTTON||View Today's Scripture",
+        "BUTTON||Play The Seed of Promise",
+        "BUTTON||Previous",
+        "BUTTON||Next",
+        "BUTTON||Ask the Assistant",
+        "BUTTON||Summarize Video",
+        "BUTTON||Related Promises",
+        "BUTTON||Next Teaching",
+        "BUTTON||Prayer Guide",
+        "BUTTON||View Full Compass",
+        "BUTTON||Start Compass",
+        "BUTTON||People needing direction",
+        "BUTTON||People needing healing",
+        "BUTTON||People needing wisdom",
+        "BUTTON||Next",
+        "BUTTON||Generate Result",
+        "BUTTON||View All",
+        "BUTTON||Scripture Explore Videos",
+        "BUTTON||Prayer Deepen Intimacy",
+        "BUTTON||Teachings Grow in Wisdom",
+        "BUTTON||Canon Journeys Walk Your Calling",
+        "BUTTON||Promise Language Speak Life",
+        "BUTTON||+2 More Options",
+        "BUTTON||Playlist options",
+        "BUTTON||24:35 The Seed of Promise TeoyubeWorld ...",
+        "BUTTON||30:12 The Power of Prayer TeoyubeWorld ...",
+        "BUTTON||21:47 Walk in Divine Purpose TeoyubeWorld ...",
+        "BUTTON||28:16 Rooted in His Word TeoyubeWorld ...",
+        "BUTTON||26:08 Called for More TeoyubeWorld ...",
+        "BUTTON||19:45 Strength for Today TeoyubeWorld ...",
+        "BUTTON||22:15 Promise Language and Calling TeoyubeWorld ...",
+        "BUTTON||20:15 Daily Divine Assignment TeoyubeWorld ...",
+        "BUTTON||View Full Playlist ->",
+        "BUTTON||View All",
+        "BUTTON||View Full Progress"
+      ]
+    },
+    "assets": [
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/canon/canon-card-01.png",
+      "public/images/canon/canon-card-04.png",
+      "public/images/canon/canon-card-02.png",
+      "public/images/canon/canon-card-05.png",
+      "public/images/canon/canon-card-01.png",
+      "public/images/canon/canon-card-04.png",
+      "public/images/canon/canon-card-02.png",
+      "public/images/canon/canon-card-05.png",
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/today/teoyubeworld-search-bg.png",
+      "public/images/table/calling-compass-panel-bg.png",
+      "public/images/search/search-purpose-hero.png",
+      "public/images/canon/journey-calling.png",
+      "public/images/carousel/kingdom-wisdom.png",
+      "public/images/carousel/growth-in-grace.png",
+      "public/images/canon/canon-card-04.png"
+    ],
+    "bodyView": "calling",
+    "horizontalOverflow": 0,
+    "errors": {
+      "console": [],
+      "page": [],
+      "request": [],
+      "http": []
+    },
+    "result": "PASS"
+  }
+}

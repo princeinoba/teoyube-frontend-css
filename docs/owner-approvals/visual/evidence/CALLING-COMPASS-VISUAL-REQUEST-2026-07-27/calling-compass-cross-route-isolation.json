@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "routes": [
+    {
+      "route": "/",
+      "bodyView": "today",
+      "callingPagePresent": false,
+      "horizontalOverflow": 0,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "result": "PASS"
+    },
+    {
+      "route": "/search",
+      "bodyView": "search",
+      "callingPagePresent": false,
+      "horizontalOverflow": 0,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "result": "PASS"
+    },
+    {
+      "route": "/canon",
+      "bodyView": "canon",
+      "callingPagePresent": false,
+      "horizontalOverflow": 0,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "result": "PASS"
+    },
+    {
+      "route": "/promise-table",
+      "bodyView": "table",
+      "callingPagePresent": false,
+      "horizontalOverflow": 0,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      },
+      "result": "PASS"
+    }
+  ]
+}

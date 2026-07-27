@@ -1,0 +1,656 @@
+{
+  "approvalStatus": "OWNER_REVIEW_REQUIRED",
+  "productionSourceChanged": false,
+  "cssInjectionOnly": true,
+  "before": {
+    "viewport": {
+      "width": 1536,
+      "height": 1024
+    },
+    "document": {
+      "clientWidth": 1536,
+      "scrollWidth": 1536,
+      "scrollHeight": 2486
+    },
+    "boxes": {
+      "page": {
+        "x": 280,
+        "y": 20,
+        "width": 1236,
+        "height": 2446.45,
+        "right": 1516,
+        "bottom": 2466.45
+      },
+      "header": {
+        "x": 280,
+        "y": 20,
+        "width": 1236,
+        "height": 63.88,
+        "right": 1516,
+        "bottom": 83.88
+      },
+      "grid": {
+        "x": 280,
+        "y": 99.86,
+        "width": 1236,
+        "height": 2366.59,
+        "right": 1516,
+        "bottom": 2466.45
+      },
+      "main": {
+        "x": 280,
+        "y": 99.86,
+        "width": 915,
+        "height": 2366.59,
+        "right": 1195,
+        "bottom": 2466.45
+      },
+      "rail": {
+        "x": 1211,
+        "y": 99.86,
+        "width": 305,
+        "height": 1257.03,
+        "right": 1516,
+        "bottom": 1356.89
+      },
+      "hero": {
+        "x": 300,
+        "y": 119.86,
+        "width": 875,
+        "height": 655.16,
+        "right": 1175,
+        "bottom": 775.02
+      },
+      "featured": {
+        "x": 300,
+        "y": 831.02,
+        "width": 550.41,
+        "height": 729.77,
+        "right": 850.41,
+        "bottom": 1560.78
+      },
+      "compass": {
+        "x": 862.41,
+        "y": 1096.33,
+        "width": 312.59,
+        "height": 464.45,
+        "right": 1175,
+        "bottom": 1560.78
+      },
+      "flow": {
+        "x": 300,
+        "y": 1590.38,
+        "width": 875,
+        "height": 381.84,
+        "right": 1175,
+        "bottom": 1972.22
+      }
+    },
+    "controls": {
+      "count": 56,
+      "hidden": 0,
+      "signature": [
+        "BUTTON||secondary action-icon-button||Guardrails|false",
+        "BUTTON||primary action-icon-button||Generate Today's Journey|false",
+        "INPUT|compassVideoInput||||false",
+        "BUTTON||calling-voice-button|Voice search||false",
+        "BUTTON||primary|Search YouTube||false",
+        "BUTTON||phase116-chip||Romans 8:28-30|false",
+        "BUTTON||phase116-chip||calling clarity|false",
+        "BUTTON||phase116-chip||faithful next step|false",
+        "BUTTON||phase116-chip||wise counsel|false",
+        "BUTTON||phase116-chip||purpose|false",
+        "BUTTON||phase116-chip subtle||Clear|false",
+        "BUTTON||cluster-nav-chip||Calling|false",
+        "BUTTON||cluster-nav-chip||Purpose|false",
+        "BUTTON||cluster-nav-chip||Healing|false",
+        "BUTTON||cluster-nav-chip||Wisdom|false",
+        "BUTTON||cluster-nav-chip||Identity|false",
+        "BUTTON||cluster-nav-chip||Faith|false",
+        "BUTTON||cluster-nav-chip||Kingdom|false",
+        "BUTTON||cluster-nav-chip||Grace|false",
+        "BUTTON||cluster-nav-chip||More|false",
+        "BUTTON||secondary||View Today's Scripture|false",
+        "BUTTON||compass-embed-play-overlay|Play The Seed of Promise||false",
+        "BUTTON||||Previous|false",
+        "BUTTON||||Next|false",
+        "BUTTON||primary||Ask the Assistant|false",
+        "BUTTON||||Summarize Video|false",
+        "BUTTON||||Related Promises|false",
+        "BUTTON||||Next Teaching|false",
+        "BUTTON||||Prayer Guide|false",
+        "BUTTON||secondary||View Full Compass|false",
+        "BUTTON||primary||Start Compass|false",
+        "BUTTON||||People needing direction|false",
+        "BUTTON||||People needing healing|false",
+        "BUTTON||||People needing wisdom|false",
+        "BUTTON||secondary||Back|true",
+        "BUTTON||secondary||Next|false",
+        "BUTTON||primary||Generate Result|false",
+        "BUTTON||text-link||View All|false",
+        "BUTTON||||Scripture Explore Videos|false",
+        "BUTTON||||Prayer Deepen Intimacy|false",
+        "BUTTON||||Teachings Grow in Wisdom|false",
+        "BUTTON||||Canon Journeys Walk Your Calling|false",
+        "BUTTON||||Promise Language Speak Life|false",
+        "BUTTON||||+2 More Options|false",
+        "BUTTON||icon-only|Playlist options|...|false",
+        "BUTTON||compass-video-item active||24:35 The Seed of Promise TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||30:12 The Power of Prayer TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||21:47 Walk in Divine Purpose TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||28:16 Rooted in His Word TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||26:08 Called for More TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||19:45 Strength for Today TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||22:15 Promise Language and Calling TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||20:15 Daily Divine Assignment TeoyubeWorld ...|false",
+        "BUTTON||compass-playlist-link||View Full Playlist ->|false",
+        "BUTTON||secondary||View All|false",
+        "BUTTON||primary||View Full Progress|false"
+      ]
+    },
+    "assets": [
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/today/teoyubeworld-search-bg.png",
+      "public/images/table/calling-compass-panel-bg.png",
+      "public/images/search/search-purpose-hero.png",
+      "public/images/canon/journey-calling.png",
+      "public/images/carousel/kingdom-wisdom.png",
+      "public/images/carousel/growth-in-grace.png",
+      "public/images/canon/canon-card-04.png"
+    ],
+    "bodyView": "calling"
+  },
+  "mobileBefore": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "document": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 6277
+    },
+    "boxes": {
+      "page": {
+        "x": 8,
+        "y": 61.38,
+        "width": 374,
+        "height": 6207.41,
+        "right": 382,
+        "bottom": 6268.78
+      },
+      "header": {
+        "x": 8,
+        "y": 61.38,
+        "width": 374,
+        "height": 170.69,
+        "right": 382,
+        "bottom": 232.06
+      },
+      "grid": {
+        "x": 8,
+        "y": 246.45,
+        "width": 374,
+        "height": 6022.33,
+        "right": 382,
+        "bottom": 6268.78
+      },
+      "main": {
+        "x": 8,
+        "y": 246.45,
+        "width": 374,
+        "height": 4511.34,
+        "right": 382,
+        "bottom": 4757.8
+      },
+      "rail": {
+        "x": 8,
+        "y": 4773.8,
+        "width": 374,
+        "height": 1494.98,
+        "right": 382,
+        "bottom": 6268.78
+      },
+      "hero": {
+        "x": 21.59,
+        "y": 260.05,
+        "width": 346.81,
+        "height": 946.59,
+        "right": 368.41,
+        "bottom": 1206.64
+      },
+      "featured": {
+        "x": 21.59,
+        "y": 1262.64,
+        "width": 346.81,
+        "height": 730.47,
+        "right": 368.41,
+        "bottom": 1993.11
+      },
+      "compass": {
+        "x": 21.59,
+        "y": 2488.17,
+        "width": 346.81,
+        "height": 681.11,
+        "right": 368.41,
+        "bottom": 3169.28
+      },
+      "flow": {
+        "x": 21.59,
+        "y": 3198.88,
+        "width": 346.81,
+        "height": 670.16,
+        "right": 368.41,
+        "bottom": 3869.03
+      }
+    },
+    "controls": {
+      "count": 56,
+      "hidden": 1,
+      "signature": [
+        "BUTTON||secondary action-icon-button||Guardrails|false",
+        "BUTTON||primary action-icon-button||Generate Today's Journey|false",
+        "INPUT|compassVideoInput||||false",
+        "BUTTON||calling-voice-button|Voice search||false",
+        "BUTTON||primary|Search YouTube||false",
+        "BUTTON||phase116-chip||Romans 8:28-30|false",
+        "BUTTON||phase116-chip||calling clarity|false",
+        "BUTTON||phase116-chip||faithful next step|false",
+        "BUTTON||phase116-chip||wise counsel|false",
+        "BUTTON||phase116-chip||purpose|false",
+        "BUTTON||phase116-chip subtle||Clear|false",
+        "BUTTON||cluster-nav-chip||Calling|false",
+        "BUTTON||cluster-nav-chip||Purpose|false",
+        "BUTTON||cluster-nav-chip||Healing|false",
+        "BUTTON||cluster-nav-chip||Wisdom|false",
+        "BUTTON||cluster-nav-chip||Identity|false",
+        "BUTTON||cluster-nav-chip||Faith|false",
+        "BUTTON||cluster-nav-chip||Kingdom|false",
+        "BUTTON||cluster-nav-chip||Grace|false",
+        "BUTTON||cluster-nav-chip||More|false",
+        "BUTTON||secondary||View Today's Scripture|false",
+        "BUTTON||compass-embed-play-overlay|Play The Seed of Promise||false",
+        "BUTTON||||Previous|false",
+        "BUTTON||||Next|false",
+        "BUTTON||primary||Ask the Assistant|false",
+        "BUTTON||||Summarize Video|false",
+        "BUTTON||||Related Promises|false",
+        "BUTTON||||Next Teaching|false",
+        "BUTTON||||Prayer Guide|false",
+        "BUTTON||secondary||View Full Compass|false",
+        "BUTTON||primary||Start Compass|false",
+        "BUTTON||||People needing direction|false",
+        "BUTTON||||People needing healing|false",
+        "BUTTON||||People needing wisdom|false",
+        "BUTTON||secondary||Back|true",
+        "BUTTON||secondary||Next|false",
+        "BUTTON||primary||Generate Result|false",
+        "BUTTON||text-link||View All|false",
+        "BUTTON||||Scripture Explore Videos|false",
+        "BUTTON||||Prayer Deepen Intimacy|false",
+        "BUTTON||||Teachings Grow in Wisdom|false",
+        "BUTTON||||Canon Journeys Walk Your Calling|false",
+        "BUTTON||||Promise Language Speak Life|false",
+        "BUTTON||||+2 More Options|false",
+        "BUTTON||icon-only|Playlist options|...|false",
+        "BUTTON||compass-video-item active||24:35 The Seed of Promise TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||30:12 The Power of Prayer TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||21:47 Walk in Divine Purpose TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||28:16 Rooted in His Word TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||26:08 Called for More TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||19:45 Strength for Today TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||22:15 Promise Language and Calling TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||20:15 Daily Divine Assignment TeoyubeWorld ...|false",
+        "BUTTON||compass-playlist-link||View Full Playlist ->|false",
+        "BUTTON||secondary||View All|false",
+        "BUTTON||primary||View Full Progress|false"
+      ]
+    },
+    "assets": [
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/today/teoyubeworld-search-bg.png",
+      "public/images/table/calling-compass-panel-bg.png",
+      "public/images/search/search-purpose-hero.png",
+      "public/images/canon/journey-calling.png",
+      "public/images/carousel/kingdom-wisdom.png",
+      "public/images/carousel/growth-in-grace.png",
+      "public/images/canon/canon-card-04.png"
+    ],
+    "bodyView": "calling"
+  },
+  "mock": {
+    "viewport": {
+      "width": 1536,
+      "height": 1024
+    },
+    "document": {
+      "clientWidth": 1536,
+      "scrollWidth": 1536,
+      "scrollHeight": 2323
+    },
+    "boxes": {
+      "page": {
+        "x": 210,
+        "y": 11.19,
+        "width": 1302,
+        "height": 2295.7,
+        "right": 1512,
+        "bottom": 2306.89
+      },
+      "header": {
+        "x": 210,
+        "y": 11.19,
+        "width": 1302,
+        "height": 69.86,
+        "right": 1512,
+        "bottom": 81.05
+      },
+      "grid": {
+        "x": 210,
+        "y": 95.44,
+        "width": 1302,
+        "height": 2211.45,
+        "right": 1512,
+        "bottom": 2306.89
+      },
+      "main": {
+        "x": 210,
+        "y": 95.44,
+        "width": 954,
+        "height": 2211.45,
+        "right": 1164,
+        "bottom": 2306.89
+      },
+      "rail": {
+        "x": 1176,
+        "y": 95.44,
+        "width": 336,
+        "height": 1247.56,
+        "right": 1512,
+        "bottom": 1343
+      },
+      "hero": {
+        "x": 210,
+        "y": 95.44,
+        "width": 954,
+        "height": 563.63,
+        "right": 1164,
+        "bottom": 659.06
+      },
+      "featured": {
+        "x": 210,
+        "y": 711.88,
+        "width": 600.8,
+        "height": 758.13,
+        "right": 810.8,
+        "bottom": 1470
+      },
+      "compass": {
+        "x": 822.8,
+        "y": 977.19,
+        "width": 341.2,
+        "height": 492.81,
+        "right": 1164,
+        "bottom": 1470
+      },
+      "flow": {
+        "x": 210,
+        "y": 1482,
+        "width": 954,
+        "height": 369.84,
+        "right": 1164,
+        "bottom": 1851.84
+      }
+    },
+    "controls": {
+      "count": 56,
+      "hidden": 0,
+      "signature": [
+        "BUTTON||secondary action-icon-button||Guardrails|false",
+        "BUTTON||primary action-icon-button||Generate Today's Journey|false",
+        "INPUT|compassVideoInput||||false",
+        "BUTTON||calling-voice-button|Voice search||false",
+        "BUTTON||primary|Search YouTube||false",
+        "BUTTON||phase116-chip||Romans 8:28-30|false",
+        "BUTTON||phase116-chip||calling clarity|false",
+        "BUTTON||phase116-chip||faithful next step|false",
+        "BUTTON||phase116-chip||wise counsel|false",
+        "BUTTON||phase116-chip||purpose|false",
+        "BUTTON||phase116-chip subtle||Clear|false",
+        "BUTTON||cluster-nav-chip||Calling|false",
+        "BUTTON||cluster-nav-chip||Purpose|false",
+        "BUTTON||cluster-nav-chip||Healing|false",
+        "BUTTON||cluster-nav-chip||Wisdom|false",
+        "BUTTON||cluster-nav-chip||Identity|false",
+        "BUTTON||cluster-nav-chip||Faith|false",
+        "BUTTON||cluster-nav-chip||Kingdom|false",
+        "BUTTON||cluster-nav-chip||Grace|false",
+        "BUTTON||cluster-nav-chip||More|false",
+        "BUTTON||secondary||View Today's Scripture|false",
+        "BUTTON||compass-embed-play-overlay|Play The Seed of Promise||false",
+        "BUTTON||||Previous|false",
+        "BUTTON||||Next|false",
+        "BUTTON||primary||Ask the Assistant|false",
+        "BUTTON||||Summarize Video|false",
+        "BUTTON||||Related Promises|false",
+        "BUTTON||||Next Teaching|false",
+        "BUTTON||||Prayer Guide|false",
+        "BUTTON||secondary||View Full Compass|false",
+        "BUTTON||primary||Start Compass|false",
+        "BUTTON||||People needing direction|false",
+        "BUTTON||||People needing healing|false",
+        "BUTTON||||People needing wisdom|false",
+        "BUTTON||secondary||Back|true",
+        "BUTTON||secondary||Next|false",
+        "BUTTON||primary||Generate Result|false",
+        "BUTTON||text-link||View All|false",
+        "BUTTON||||Scripture Explore Videos|false",
+        "BUTTON||||Prayer Deepen Intimacy|false",
+        "BUTTON||||Teachings Grow in Wisdom|false",
+        "BUTTON||||Canon Journeys Walk Your Calling|false",
+        "BUTTON||||Promise Language Speak Life|false",
+        "BUTTON||||+2 More Options|false",
+        "BUTTON||icon-only|Playlist options|...|false",
+        "BUTTON||compass-video-item active||24:35 The Seed of Promise TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||30:12 The Power of Prayer TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||21:47 Walk in Divine Purpose TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||28:16 Rooted in His Word TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||26:08 Called for More TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||19:45 Strength for Today TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||22:15 Promise Language and Calling TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||20:15 Daily Divine Assignment TeoyubeWorld ...|false",
+        "BUTTON||compass-playlist-link||View Full Playlist ->|false",
+        "BUTTON||secondary||View All|false",
+        "BUTTON||primary||View Full Progress|false"
+      ]
+    },
+    "assets": [
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/today/teoyubeworld-search-bg.png",
+      "public/images/table/calling-compass-panel-bg.png",
+      "public/images/search/search-purpose-hero.png",
+      "public/images/canon/journey-calling.png",
+      "public/images/carousel/kingdom-wisdom.png",
+      "public/images/carousel/growth-in-grace.png",
+      "public/images/canon/canon-card-04.png"
+    ],
+    "bodyView": "calling"
+  },
+  "mobileMock": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "document": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 6068
+    },
+    "boxes": {
+      "page": {
+        "x": 12,
+        "y": 65.38,
+        "width": 366,
+        "height": 5991.11,
+        "right": 378,
+        "bottom": 6056.48
+      },
+      "header": {
+        "x": 12,
+        "y": 65.38,
+        "width": 366,
+        "height": 176.67,
+        "right": 378,
+        "bottom": 242.05
+      },
+      "grid": {
+        "x": 12,
+        "y": 254.44,
+        "width": 366,
+        "height": 5802.05,
+        "right": 378,
+        "bottom": 6056.48
+      },
+      "main": {
+        "x": 12,
+        "y": 254.44,
+        "width": 366,
+        "height": 4304.25,
+        "right": 378,
+        "bottom": 4558.69
+      },
+      "rail": {
+        "x": 12,
+        "y": 4568.69,
+        "width": 366,
+        "height": 1487.8,
+        "right": 378,
+        "bottom": 6056.48
+      },
+      "hero": {
+        "x": 12,
+        "y": 254.44,
+        "width": 366,
+        "height": 946.59,
+        "right": 378,
+        "bottom": 1201.03
+      },
+      "featured": {
+        "x": 12,
+        "y": 1249.84,
+        "width": 366,
+        "height": 730.47,
+        "right": 378,
+        "bottom": 1980.31
+      },
+      "compass": {
+        "x": 12,
+        "y": 2475.38,
+        "width": 366,
+        "height": 655.73,
+        "right": 378,
+        "bottom": 3131.11
+      },
+      "flow": {
+        "x": 12,
+        "y": 3141.11,
+        "width": 366,
+        "height": 565.59,
+        "right": 378,
+        "bottom": 3706.7
+      }
+    },
+    "controls": {
+      "count": 56,
+      "hidden": 1,
+      "signature": [
+        "BUTTON||secondary action-icon-button||Guardrails|false",
+        "BUTTON||primary action-icon-button||Generate Today's Journey|false",
+        "INPUT|compassVideoInput||||false",
+        "BUTTON||calling-voice-button|Voice search||false",
+        "BUTTON||primary|Search YouTube||false",
+        "BUTTON||phase116-chip||Romans 8:28-30|false",
+        "BUTTON||phase116-chip||calling clarity|false",
+        "BUTTON||phase116-chip||faithful next step|false",
+        "BUTTON||phase116-chip||wise counsel|false",
+        "BUTTON||phase116-chip||purpose|false",
+        "BUTTON||phase116-chip subtle||Clear|false",
+        "BUTTON||cluster-nav-chip||Calling|false",
+        "BUTTON||cluster-nav-chip||Purpose|false",
+        "BUTTON||cluster-nav-chip||Healing|false",
+        "BUTTON||cluster-nav-chip||Wisdom|false",
+        "BUTTON||cluster-nav-chip||Identity|false",
+        "BUTTON||cluster-nav-chip||Faith|false",
+        "BUTTON||cluster-nav-chip||Kingdom|false",
+        "BUTTON||cluster-nav-chip||Grace|false",
+        "BUTTON||cluster-nav-chip||More|false",
+        "BUTTON||secondary||View Today's Scripture|false",
+        "BUTTON||compass-embed-play-overlay|Play The Seed of Promise||false",
+        "BUTTON||||Previous|false",
+        "BUTTON||||Next|false",
+        "BUTTON||primary||Ask the Assistant|false",
+        "BUTTON||||Summarize Video|false",
+        "BUTTON||||Related Promises|false",
+        "BUTTON||||Next Teaching|false",
+        "BUTTON||||Prayer Guide|false",
+        "BUTTON||secondary||View Full Compass|false",
+        "BUTTON||primary||Start Compass|false",
+        "BUTTON||||People needing direction|false",
+        "BUTTON||||People needing healing|false",
+        "BUTTON||||People needing wisdom|false",
+        "BUTTON||secondary||Back|true",
+        "BUTTON||secondary||Next|false",
+        "BUTTON||primary||Generate Result|false",
+        "BUTTON||text-link||View All|false",
+        "BUTTON||||Scripture Explore Videos|false",
+        "BUTTON||||Prayer Deepen Intimacy|false",
+        "BUTTON||||Teachings Grow in Wisdom|false",
+        "BUTTON||||Canon Journeys Walk Your Calling|false",
+        "BUTTON||||Promise Language Speak Life|false",
+        "BUTTON||||+2 More Options|false",
+        "BUTTON||icon-only|Playlist options|...|false",
+        "BUTTON||compass-video-item active||24:35 The Seed of Promise TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||30:12 The Power of Prayer TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||21:47 Walk in Divine Purpose TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||28:16 Rooted in His Word TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||26:08 Called for More TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||19:45 Strength for Today TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||22:15 Promise Language and Calling TeoyubeWorld ...|false",
+        "BUTTON||compass-video-item ||20:15 Daily Divine Assignment TeoyubeWorld ...|false",
+        "BUTTON||compass-playlist-link||View Full Playlist ->|false",
+        "BUTTON||secondary||View All|false",
+        "BUTTON||primary||View Full Progress|false"
+      ]
+    },
+    "assets": [
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/embed/embedded-videos-hero-bg.png",
+      "public/images/today/teoyubeworld-search-bg.png",
+      "public/images/table/calling-compass-panel-bg.png",
+      "public/images/search/search-purpose-hero.png",
+      "public/images/canon/journey-calling.png",
+      "public/images/carousel/kingdom-wisdom.png",
+      "public/images/carousel/growth-in-grace.png",
+      "public/images/canon/canon-card-04.png"
+    ],
+    "bodyView": "calling"
+  },
+  "controlSignaturesEqual": true,
+  "errors": {
+    "before": {
+      "console": [],
+      "page": [],
+      "request": [],
+      "http": []
+    },
+    "mock": {
+      "console": [],
+      "page": [],
+      "request": [],
+      "http": []
+    }
+  }
+}

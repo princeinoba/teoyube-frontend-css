@@ -1,0 +1,22 @@
+{
+  "result": "PASS_WITH_KNOWN_UNRELATED_MEDIA_BASELINE_BLOCKER",
+  "status": 200,
+  "url": "http://127.0.0.1:4174/#calling",
+  "bodyView": "calling",
+  "controls": 56,
+  "callingCss": true,
+  "overflow": 0,
+  "errors": {
+    "console": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "page": [
+      "Published media manifest returned 404."
+    ],
+    "request": [],
+    "http": [
+      "404 http://127.0.0.1:4174/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+    ]
+  },
+  "classification": "Calling route, approved stylesheet, 56 controls, and overflow checks passed. The retained static rollback separately reports its pre-existing unpublished TeoyubeWorld runtime-manifest 404; CSS-only scope did not alter media publication."
+}
