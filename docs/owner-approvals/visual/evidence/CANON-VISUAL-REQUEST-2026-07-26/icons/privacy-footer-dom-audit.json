@@ -1,6 +1,12 @@
 {
-  "status": "NOT_PRESENT_IN_APPROVED_DOM",
-  "matchingText": [],
-  "ownerConstraint": "Do not add privacy copy, footer container, or DOM solely to create the icon.",
-  "implementation": "No lock icon applied; no authorized target exists."
+  "schemaVersion": "teoyube-canon-reference-only-privacy-footer-2",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-CANON-REC-ICONS-CLOSE-001",
+  "route": "/canon",
+  "sectionId": "phase115SmartRecommendations-canon",
+  "footerOrPrivacySelectorMatches": 0,
+  "matchingPrivacyStatements": [],
+  "suitableApprovedDomTarget": false,
+  "status": "OWNER_WAIVED",
+  "classification": "REFERENCE-ONLY ELEMENT — WAIVED BY OWNER BECAUSE NO APPROVED DOM TARGET EXISTS",
+  "implementation": "No footer, copy, lock, markup, or unrelated pseudo target added."
 }
