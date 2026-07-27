@@ -290,3 +290,102 @@ The coding agent will not write or modify the owner-only approval fields.
 ## Agent declaration
 
 > I have not approved this request, changed protected visual sources, or updated baselines. Work is stopped pending an owner decision.
+
+---
+
+## Owner amendment -- Guided Calling Compass panel
+
+Decision: APPROVED
+Approval-ID: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-GUIDED-PANEL-001
+Approved-By: Prince Okiemute Inoba -- Teoyube Project Owner
+Approved-At: 2026-07-27T13:53:17-04:00
+Parent-Approval-ID: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-001
+
+### Exact approved route and state
+
+- Canonical Next route: `/calling-compass`.
+- Shared static rollback Calling view, because both runtimes load the same
+  route stylesheet.
+- Existing dynamic panel: `#phase116bCallingCompassTool`.
+- Default, started, active-step, selected-answer, generated-result, disabled,
+  focus-visible, hover, keyboard, responsive, and 200% zoom states.
+
+### Exact approved production file
+
+- `styles/pages/calling-compass.css`
+
+No HTML, JavaScript, TypeScript, TSX, asset, package, test, shared stylesheet,
+or global stylesheet change is authorized.
+
+### Exact approved selector scope
+
+All new visual rules must remain rooted at:
+
+```css
+body[data-view="calling"] #phase116bCallingCompassTool
+```
+
+The approved descendants are the panel's existing:
+
+- `.phase116b-panel-head`;
+- eyebrow, heading, subtitle, and Start Compass button;
+- `.phase116b-compass-progress` and its three ordered step spans;
+- `.phase116b-compass-card` question, answer buttons, and action row;
+- existing result card and feedback states when present.
+
+### Approved visual result
+
+The Guided Calling Compass panel may be restyled to match the owner-supplied
+2048x512 reference:
+
+- a full-width warm white and mint bordered panel;
+- a compact compass emblem beside the existing eyebrow, heading, and subtitle;
+- the existing Start Compass action at the upper right;
+- three connected burden, gift, and season progress pills with numeric markers
+  1, 2, and 3 and CSS-rendered semantic icons;
+- a contained question workspace with a gold directional emblem;
+- CSS-rendered semantic icons for the existing direction, healing, and wisdom
+  answer buttons;
+- CSS-rendered arrow, sparkle, and wand icons for the existing Back, Next, and
+  Generate Result controls;
+- route-scoped desktop, tablet, mobile, intermediate-width, focus, disabled,
+  hover, and 200% zoom refinements.
+
+CSS pseudo-elements and URL-encoded SVG masks are authorized for these
+decorative icons. They must use both `-webkit-mask-*` and standard `mask-*`
+properties, must not capture pointer events, and must not add accessible or
+DOM text. The only pseudo-element text authorized is the progress numbering
+`"1"`, `"2"`, and `"3"`.
+
+### Required preservation
+
+- Existing DOM hierarchy, IDs, classes, class ordering, text, controls,
+  accessible names, DOM order, keyboard order, focus behavior, data
+  attributes, event wiring, state transitions, TIG behavior, results,
+  fallback wording, and route behavior remain unchanged.
+- The panel must not become a wizard, modal, drawer, replacement dashboard, or
+  screenshot background.
+- No new image, icon, font, JavaScript, provider, dependency, or network
+  request may be introduced.
+- No baseline image or DOM snapshot may be regenerated or replaced.
+- All CSS-created decorative elements must use `pointer-events: none`.
+
+### Owner reference and evidence
+
+The owner-supplied reference must be copied without modification to the
+existing Calling Compass evidence area as:
+
+`guided-calling-compass-owner-reference-2048x512.png`
+
+Evidence must include the focused panel crop, all required full-page
+viewports, mobile, 200% zoom, intermediate drag widths, interaction states,
+keyboard/focus verification, Axe, DOM/control invariants, runtime identity,
+recovery verification, build/type/lint/unit/browser results, and before/after
+geometry.
+
+### Rollback
+
+Revert only the focused approval, CSS implementation, and derived
+evidence/fingerprint commits; restore the preceding exact Calling Compass CSS
+and manifest hashes; then run `npm run recovery:verify` and the complete
+Calling Compass visual and functional suite.
