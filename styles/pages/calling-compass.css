@@ -1294,3 +1294,284 @@ body[data-view="calling"] #phase116bCallingCompassTool .phase116b-result-card {
     min-inline-size: 0;
   }
 }
+/* 10. Owner-approved Your Calling Compass internal diagram
+ * Approval: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-DIAGRAM-001
+ * Scope: internal .calling-radar composition only; outer panel, header, footer, DOM, copy, and behavior remain locked.
+ */
+body[data-view="calling"] .calling-compass-panel .calling-radar::before,
+body[data-view="calling"] .calling-compass-panel .calling-radar::after {
+  pointer-events: none;
+}
+
+@media (min-width: 721px) {
+  body[data-view="calling"] .calling-compass-panel .calling-radar {
+    --calling-diagram-gap: clamp(0.22rem, 0.45vw, 0.42rem);
+    --calling-diagram-card-border: rgba(255, 222, 118, 0.24);
+    --calling-diagram-card-surface: rgba(0, 47, 36, 0.72);
+    --calling-diagram-card-highlight: rgba(126, 255, 185, 0.08);
+    container-name: calling-diagram;
+    container-type: inline-size;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows:
+      minmax(0, 0.55fr)
+      minmax(0, 0.55fr)
+      minmax(0, 1.16fr)
+      minmax(0, 0.55fr)
+      minmax(0, 0.55fr);
+    gap: var(--calling-diagram-gap);
+    align-items: stretch;
+    inline-size: 100%;
+    max-inline-size: var(--calling-diagram-max-width);
+    min-inline-size: 0;
+    padding: 0 !important;
+    isolation: isolate;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar::before,
+  body[data-view="calling"] .calling-compass-panel .calling-radar::after {
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar::before {
+    inline-size: clamp(8.4rem, 39%, 10.8rem) !important;
+    block-size: clamp(8.4rem, 39%, 10.8rem) !important;
+    border-style: dashed !important;
+    opacity: 0.72;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar::after {
+    inline-size: clamp(9.1rem, 44%, 11.7rem) !important;
+    block-size: clamp(9.1rem, 44%, 11.7rem) !important;
+    opacity: 0.42;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node {
+    position: relative !important;
+    inset: auto !important;
+    z-index: 2;
+    display: grid !important;
+    grid-template-columns: 1.6rem minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    column-gap: 0.28rem;
+    row-gap: 0.08rem;
+    align-items: center;
+    justify-items: start;
+    justify-self: stretch;
+    inline-size: 100% !important;
+    min-inline-size: 0;
+    min-block-size: 0;
+    margin: 0;
+    padding: 0.18rem 0.24rem;
+    overflow: visible;
+    border: 1px solid var(--calling-diagram-card-border);
+    border-radius: 0.58rem;
+    background:
+      linear-gradient(120deg, var(--calling-diagram-card-highlight), transparent 42%),
+      var(--calling-diagram-card-surface);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 5px 12px rgba(0, 20, 15, 0.14);
+    text-align: left;
+    transform: none !important;
+    transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node:hover,
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node:focus-visible {
+    border-color: rgba(255, 222, 118, 0.58);
+    background-color: rgba(0, 60, 45, 0.82);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      0 0 0 2px rgba(185, 243, 106, 0.12),
+      0 7px 16px rgba(0, 20, 15, 0.2);
+    outline: 2px solid #f0bf49;
+    outline-offset: 2px;
+    filter: none;
+    transform: translateY(-1px) !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node i {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    inline-size: 1.55rem !important;
+    block-size: 1.55rem !important;
+    margin: 0 !important;
+    border-color: rgba(255, 222, 118, 0.5);
+    box-shadow:
+      0 4px 10px rgba(0, 17, 12, 0.22),
+      inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node i::before {
+    inline-size: 0.82rem !important;
+    block-size: 0.82rem !important;
+    pointer-events: none;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node em {
+    grid-column: 2;
+    grid-row: 1;
+    min-inline-size: 0;
+    font-size: 0.58rem !important;
+    line-height: 1.05;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node small {
+    grid-column: 2;
+    grid-row: 2;
+    display: block !important;
+    min-inline-size: 0;
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.42rem !important;
+    line-height: 1.13;
+    overflow-wrap: anywhere;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node small::after {
+    inline-size: 1rem;
+    margin: 0.18rem 0 0;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.purpose {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.identity {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.giftings {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.service {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.prayer {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.leadership {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node.wisdom {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center {
+    left: 50% !important;
+    top: 50% !important;
+    z-index: 3;
+    inline-size: 4.75rem !important;
+    block-size: 4.75rem !important;
+    aspect-ratio: 1;
+    padding: 0.48rem !important;
+    box-sizing: border-box;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center i {
+    inline-size: 1.3rem !important;
+    block-size: 1.08rem !important;
+    margin-block-end: 0.14rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center span {
+    font-size: 0.92rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center small {
+    max-inline-size: 4.2rem !important;
+    margin-block-start: 0.16rem !important;
+    font-size: 0.5rem !important;
+    line-height: 1.12 !important;
+  }
+}
+
+@container calling-diagram (min-width: 25rem) {
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node {
+    grid-template-columns: 2.15rem minmax(0, 1fr);
+    column-gap: 0.45rem;
+    padding: 0.3rem 0.42rem;
+    border-radius: 0.68rem;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node i {
+    inline-size: 2.05rem !important;
+    block-size: 2.05rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node i::before {
+    inline-size: 1.08rem !important;
+    block-size: 1.08rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node em {
+    font-size: 0.74rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node small {
+    font-size: 0.54rem !important;
+    line-height: 1.18;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center {
+    inline-size: 6.25rem !important;
+    block-size: 6.25rem !important;
+    padding: 0.62rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center i {
+    inline-size: 1.8rem !important;
+    block-size: 1.48rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center span {
+    font-size: 1.28rem !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center small {
+    max-inline-size: 5.2rem !important;
+    font-size: 0.62rem !important;
+    line-height: 1.16 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-view="calling"] .calling-compass-panel .calling-radar::before,
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center,
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center::before {
+    animation: none !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node {
+    transition-duration: 0.01ms !important;
+  }
+}
+@media (max-width: 720px) {
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node {
+    inset: auto !important;
+    justify-self: stretch;
+    inline-size: 100% !important;
+    max-inline-size: 100%;
+    min-inline-size: 0;
+    transform: none !important;
+  }
+
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node:hover,
+  body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node:focus-visible {
+    transform: translateY(-1px) !important;
+  }
+}
