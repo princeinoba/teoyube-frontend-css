@@ -1,0 +1,857 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T01:28:10.436Z",
+  "baseUrl": "http://127.0.0.1:3101",
+  "freeze": "test-only reduced motion plus zero animation/transition duration",
+  "viewports": [
+    {
+      "name": "1536x1024",
+      "status": 200,
+      "viewport": {
+        "width": 1536,
+        "height": 1024
+      },
+      "document": {
+        "clientWidth": 1536,
+        "scrollWidth": 1536,
+        "scrollHeight": 3352,
+        "pageHorizontalOverflow": false
+      },
+      "controls": {
+        "total": 126,
+        "enabled": 125,
+        "visible": 126,
+        "initiallyOutsideIntentionalScrollViewport": [
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview"
+        ],
+        "unreachableAfterOpeningDisclosuresAndScroll": []
+      },
+      "layout": {
+        "hero": {
+          "display": "grid",
+          "columns": 6
+        },
+        "toolbar": {
+          "display": "grid",
+          "columns": 8
+        },
+        "featured": {
+          "display": "grid",
+          "columns": 2
+        },
+        "media": {
+          "display": "grid",
+          "columns": 3
+        }
+      },
+      "semanticTable": true,
+      "tableHeadings": [
+        "Promise",
+        "Scripture",
+        "Status",
+        "Source",
+        "Actions"
+      ],
+      "internalTableScroll": {
+        "clientWidth": 1172,
+        "scrollWidth": 1172,
+        "available": false
+      },
+      "featuredDots": [
+        {
+          "width": 49,
+          "height": 28
+        },
+        {
+          "width": 49,
+          "height": 28
+        },
+        {
+          "width": 49,
+          "height": 28
+        },
+        {
+          "width": 49,
+          "height": 28
+        },
+        {
+          "width": 49,
+          "height": 28
+        },
+        {
+          "width": 49,
+          "height": 28
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "1440x900",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 3331,
+        "pageHorizontalOverflow": false
+      },
+      "controls": {
+        "total": 126,
+        "enabled": 125,
+        "visible": 126,
+        "initiallyOutsideIntentionalScrollViewport": [
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview"
+        ],
+        "unreachableAfterOpeningDisclosuresAndScroll": []
+      },
+      "layout": {
+        "hero": {
+          "display": "grid",
+          "columns": 6
+        },
+        "toolbar": {
+          "display": "grid",
+          "columns": 8
+        },
+        "featured": {
+          "display": "grid",
+          "columns": 2
+        },
+        "media": {
+          "display": "grid",
+          "columns": 3
+        }
+      },
+      "semanticTable": true,
+      "tableHeadings": [
+        "Promise",
+        "Scripture",
+        "Status",
+        "Source",
+        "Actions"
+      ],
+      "internalTableScroll": {
+        "clientWidth": 1076,
+        "scrollWidth": 1120,
+        "available": true
+      },
+      "featuredDots": [
+        {
+          "width": 46,
+          "height": 28
+        },
+        {
+          "width": 46,
+          "height": 28
+        },
+        {
+          "width": 46,
+          "height": 28
+        },
+        {
+          "width": 46,
+          "height": 28
+        },
+        {
+          "width": 46,
+          "height": 28
+        },
+        {
+          "width": 46,
+          "height": 28
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "1280x800",
+      "status": 200,
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "document": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "scrollHeight": 3163,
+        "pageHorizontalOverflow": false
+      },
+      "controls": {
+        "total": 126,
+        "enabled": 125,
+        "visible": 126,
+        "initiallyOutsideIntentionalScrollViewport": [
+          "Remove",
+          "Compare",
+          "Not relevant",
+          "Save Scripture",
+          "Complete Action",
+          "Reset this preference",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview"
+        ],
+        "unreachableAfterOpeningDisclosuresAndScroll": []
+      },
+      "layout": {
+        "hero": {
+          "display": "grid",
+          "columns": 6
+        },
+        "toolbar": {
+          "display": "grid",
+          "columns": 8
+        },
+        "featured": {
+          "display": "grid",
+          "columns": 2
+        },
+        "media": {
+          "display": "grid",
+          "columns": 3
+        }
+      },
+      "semanticTable": true,
+      "tableHeadings": [
+        "Promise",
+        "Scripture",
+        "Status",
+        "Source",
+        "Actions"
+      ],
+      "internalTableScroll": {
+        "clientWidth": 921,
+        "scrollWidth": 1120,
+        "available": true
+      },
+      "featuredDots": [
+        {
+          "width": 41,
+          "height": 28
+        },
+        {
+          "width": 41,
+          "height": 28
+        },
+        {
+          "width": 41,
+          "height": 28
+        },
+        {
+          "width": 41,
+          "height": 28
+        },
+        {
+          "width": 41,
+          "height": 28
+        },
+        {
+          "width": 41,
+          "height": 28
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "1024x768",
+      "status": 200,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "document": {
+        "clientWidth": 1024,
+        "scrollWidth": 1024,
+        "scrollHeight": 3797,
+        "pageHorizontalOverflow": false
+      },
+      "controls": {
+        "total": 126,
+        "enabled": 125,
+        "visible": 126,
+        "initiallyOutsideIntentionalScrollViewport": [
+          "Detail",
+          "Save to Book",
+          "Remove",
+          "Pray",
+          "Act",
+          "Compare",
+          "More like this",
+          "Less like this",
+          "Not relevant",
+          "Save Scripture",
+          "Save Word",
+          "Save Prayer",
+          "Complete Action",
+          "Reset this preference",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview"
+        ],
+        "unreachableAfterOpeningDisclosuresAndScroll": []
+      },
+      "layout": {
+        "hero": {
+          "display": "grid",
+          "columns": 2
+        },
+        "toolbar": {
+          "display": "grid",
+          "columns": 4
+        },
+        "featured": {
+          "display": "grid",
+          "columns": 2
+        },
+        "media": {
+          "display": "grid",
+          "columns": 2
+        }
+      },
+      "semanticTable": true,
+      "tableHeadings": [
+        "Promise",
+        "Scripture",
+        "Status",
+        "Source",
+        "Actions"
+      ],
+      "internalTableScroll": {
+        "clientWidth": 681,
+        "scrollWidth": 1120,
+        "available": true
+      },
+      "featuredDots": [
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "768x1024",
+      "status": 200,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "document": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 4743,
+        "pageHorizontalOverflow": false
+      },
+      "controls": {
+        "total": 126,
+        "enabled": 125,
+        "visible": 126,
+        "initiallyOutsideIntentionalScrollViewport": [
+          "Detail",
+          "Save to Book",
+          "Remove",
+          "Pray",
+          "Act",
+          "Compare",
+          "More like this",
+          "Less like this",
+          "Not relevant",
+          "Save Scripture",
+          "Save Word",
+          "Save Prayer",
+          "Complete Action",
+          "Reset this preference",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview"
+        ],
+        "unreachableAfterOpeningDisclosuresAndScroll": []
+      },
+      "layout": {
+        "hero": {
+          "display": "grid",
+          "columns": 2
+        },
+        "toolbar": {
+          "display": "grid",
+          "columns": 4
+        },
+        "featured": {
+          "display": "grid",
+          "columns": 1
+        },
+        "media": {
+          "display": "grid",
+          "columns": 2
+        }
+      },
+      "semanticTable": true,
+      "tableHeadings": [
+        "Promise",
+        "Scripture",
+        "Status",
+        "Source",
+        "Actions"
+      ],
+      "internalTableScroll": {
+        "clientWidth": 708,
+        "scrollWidth": 1120,
+        "available": true
+      },
+      "featuredDots": [
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "390x844",
+      "status": 200,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 5467,
+        "pageHorizontalOverflow": false
+      },
+      "controls": {
+        "total": 126,
+        "enabled": 125,
+        "visible": 126,
+        "initiallyOutsideIntentionalScrollViewport": [
+          "Update status for Calling & Purpose: TIDUILOVP",
+          "Detail",
+          "Save to Book",
+          "Remove",
+          "Pray",
+          "Act",
+          "Compare",
+          "More like this",
+          "Less like this",
+          "Not relevant",
+          "Save Scripture",
+          "Save Word",
+          "Save Prayer",
+          "Complete Action",
+          "Reset this preference",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview",
+          "View Graph",
+          "Compare Preview"
+        ],
+        "unreachableAfterOpeningDisclosuresAndScroll": []
+      },
+      "layout": {
+        "hero": {
+          "display": "grid",
+          "columns": 1
+        },
+        "toolbar": {
+          "display": "grid",
+          "columns": 2
+        },
+        "featured": {
+          "display": "grid",
+          "columns": 1
+        },
+        "media": {
+          "display": "grid",
+          "columns": 1
+        }
+      },
+      "semanticTable": true,
+      "tableHeadings": [
+        "Promise",
+        "Scripture",
+        "Status",
+        "Source",
+        "Actions"
+      ],
+      "internalTableScroll": {
+        "clientWidth": 343,
+        "scrollWidth": 1120,
+        "available": true
+      },
+      "featuredDots": [
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        },
+        {
+          "width": 36,
+          "height": 28
+        }
+      ],
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    }
+  ],
+  "pass": true,
+  "reachabilityEvidence": "promise-table-control-reachability-audit.json"
+}

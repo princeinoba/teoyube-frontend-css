@@ -988,8 +988,8 @@
     },
     {
       "path": "styles/pages/promise-table.css",
-      "bytes": 175,
-      "sha256": "4d45da3dded7806cdea5798e68775ae879f8873c9b5cd25c9912fb2842f0d290"
+      "bytes": 31846,
+      "sha256": "eb099f920f4fa462cafa6459841d4e50e6baf8f1d7b9a08f9e40c214b8a17f80"
     },
     {
       "path": "styles/pages/roadmap.css",
@@ -4399,16 +4399,24 @@
       "lexiconOverviewStroke",
       "openAssessment",
       "phase113InsightContent",
+      "phase114PromiseTablePanel",
       "phase114QaPanel",
       "phase115PersonalizationContent",
       "phase116bLexiconWordSelect",
+      "phase116bPromiseNoteInput",
+      "phase116bPromiseSearch",
+      "phase116bPromiseSort",
+      "phase116bPromiseWorkspace",
+      "phase117PromiseTableControls",
       "prayBtn",
       "promiseMovieForm",
       "promiseMovieResult",
       "promiseMovieStatus",
       "promisePreviewRail",
+      "promiseTableSearchInput",
       "promiseTableSearchResults",
       "promiseTableVideoPanel",
+      "purposeProgress",
       "refreshUiVideos",
       "search",
       "sidebarCalling",
@@ -4459,6 +4467,7 @@
       "uiVideoLightShimmer"
     ],
     "mediaQueries": [
+      "(forced-colors: active)",
       "(hover: hover) and (pointer: fine)",
       "(max-width: 1000px)",
       "(max-width: 1024px)",
@@ -4476,6 +4485,7 @@
       "(max-width: 1380px)",
       "(max-width: 1400px)",
       "(max-width: 1450px)",
+      "(max-width: 420px)",
       "(max-width: 430px)",
       "(max-width: 470px)",
       "(max-width: 520px)",

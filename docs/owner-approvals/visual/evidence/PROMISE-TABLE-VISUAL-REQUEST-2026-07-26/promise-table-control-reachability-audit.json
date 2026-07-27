@@ -1,0 +1,62 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T01:42:23.839Z",
+  "method": "All native Why-this disclosures were opened. Each of the 126 controls was individually scrolled instantly into the centered page/internal-scroll viewport, then checked against the browser viewport.",
+  "viewports": [
+    {
+      "name": "1536x1024",
+      "width": 1536,
+      "height": 1024,
+      "total": 126,
+      "reachable": 126,
+      "unreachable": [],
+      "pageHorizontalOverflow": false
+    },
+    {
+      "name": "1440x900",
+      "width": 1440,
+      "height": 900,
+      "total": 126,
+      "reachable": 126,
+      "unreachable": [],
+      "pageHorizontalOverflow": false
+    },
+    {
+      "name": "1280x800",
+      "width": 1280,
+      "height": 800,
+      "total": 126,
+      "reachable": 126,
+      "unreachable": [],
+      "pageHorizontalOverflow": false
+    },
+    {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768,
+      "total": 126,
+      "reachable": 126,
+      "unreachable": [],
+      "pageHorizontalOverflow": false
+    },
+    {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024,
+      "total": 126,
+      "reachable": 126,
+      "unreachable": [],
+      "pageHorizontalOverflow": false
+    },
+    {
+      "name": "390x844",
+      "width": 390,
+      "height": 844,
+      "total": 126,
+      "reachable": 126,
+      "unreachable": [],
+      "pageHorizontalOverflow": false
+    }
+  ],
+  "pass": true
+}

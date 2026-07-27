@@ -1,0 +1,180 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T02:50:27.169Z",
+  "cssSha256": "eb099f920f4fa462cafa6459841d4e50e6baf8f1d7b9a08f9e40c214b8a17f80",
+  "baseUrl": "http://127.0.0.1:3102",
+  "method": "Every parsed final Promise Table selector was evaluated on each retained non-Promise route in the optimized production build.",
+  "routes": [
+    {
+      "name": "today",
+      "route": "/",
+      "status": 200,
+      "bodyView": "today",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "search",
+      "route": "/search",
+      "status": 200,
+      "bodyView": "search",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "canon",
+      "route": "/canon",
+      "status": 200,
+      "bodyView": "canon",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "calling",
+      "route": "/calling-compass",
+      "status": 200,
+      "bodyView": "calling",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "book",
+      "route": "/book",
+      "status": 200,
+      "bodyView": "book",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "lexicon",
+      "route": "/lexicon",
+      "status": 200,
+      "bodyView": "lexicon",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "testimony",
+      "route": "/testimony",
+      "status": 200,
+      "bodyView": "testimony",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "teo-guide",
+      "route": "/teo-guide",
+      "status": 200,
+      "bodyView": "guide",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "embedded-videos",
+      "route": "/embedded-videos",
+      "status": 200,
+      "bodyView": "ui-elements",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    },
+    {
+      "name": "tables",
+      "route": "/tables",
+      "status": 200,
+      "bodyView": "teoyube-tables",
+      "promiseSelectorMatches": 0,
+      "invalidSelectors": [],
+      "pageHorizontalOverflow": false,
+      "navPresent": true,
+      "headerPresent": true,
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "http": []
+      }
+    }
+  ],
+  "pass": true
+}

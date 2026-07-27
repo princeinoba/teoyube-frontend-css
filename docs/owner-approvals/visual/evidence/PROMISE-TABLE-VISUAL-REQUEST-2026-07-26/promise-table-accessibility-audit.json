@@ -1,0 +1,186 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T01:43:31.274Z",
+  "focusedAxe": {
+    "scope": "#table",
+    "viewports": [
+      {
+        "name": "1536x1024",
+        "violations": [],
+        "passes": 32,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 84
+          },
+          {
+            "id": "frame-tested",
+            "impact": "critical",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "name": "1440x900",
+        "violations": [],
+        "passes": 32,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 84
+          },
+          {
+            "id": "frame-tested",
+            "impact": "critical",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "name": "1280x800",
+        "violations": [],
+        "passes": 32,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 84
+          },
+          {
+            "id": "frame-tested",
+            "impact": "critical",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "name": "1024x768",
+        "violations": [],
+        "passes": 32,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 84
+          },
+          {
+            "id": "frame-tested",
+            "impact": "critical",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "name": "768x1024",
+        "violations": [],
+        "passes": 32,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 84
+          },
+          {
+            "id": "frame-tested",
+            "impact": "critical",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "name": "390x844",
+        "violations": [],
+        "passes": 32,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 84
+          },
+          {
+            "id": "frame-tested",
+            "impact": "critical",
+            "nodes": 1
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "zoom200": {
+    "method": "Standards-equivalent 200% desktop zoom: a 1536x1024 physical viewport exposes a 768x512 CSS viewport.",
+    "cssViewport": {
+      "width": 768,
+      "height": 512
+    },
+    "physicalEquivalent": {
+      "width": 1536,
+      "height": 1024
+    },
+    "controls": 126,
+    "reachable": 126,
+    "unreachable": [],
+    "pageHorizontalOverflow": false,
+    "internalTableScroll": {
+      "clientWidth": 708,
+      "scrollWidth": 1120,
+      "available": true
+    },
+    "errors": {
+      "console": [],
+      "page": [],
+      "request": [],
+      "http": []
+    },
+    "pass": true
+  },
+  "forcedColorsAndReducedMotion": {
+    "forcedColors": true,
+    "reducedMotion": true,
+    "controls": 126,
+    "pageHorizontalOverflow": false,
+    "focusOutline": {
+      "style": "solid",
+      "width": "3px",
+      "color": "rgb(55, 0, 110)"
+    },
+    "dot": {
+      "border": "none",
+      "background": "rgba(255, 255, 255, 0)"
+    },
+    "pass": true
+  },
+  "pass": true
+}

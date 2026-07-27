@@ -1,0 +1,420 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T01:49:55.828Z",
+  "isolationPolicy": "Each behavior group begins from a fresh Promise Table page; route-changing controls cannot contaminate later checks.",
+  "results": [
+    {
+      "name": "baseline-control-inventory",
+      "pass": true,
+      "detail": {
+        "total": 126,
+        "enabled": 125,
+        "disabled": [
+          "Remove"
+        ],
+        "dataActionCounts": {
+          "data-phase116b-action": 8,
+          "data-teoyube-action": 1,
+          "data-phase116b-promise-filter": 8,
+          "input": 2,
+          "select": 1,
+          "textarea": 1,
+          "data-phase117-action": 2,
+          "data-phase114-action": 1,
+          "data-phase114-promise-status": 1,
+          "data-phase114-save-promise": 1,
+          "data-phase114-remove-promise": 1,
+          "data-phase115-action": 25,
+          "data-phase115-feedback": 8,
+          "button": 1,
+          "data-phase116-action": 30,
+          "data-promise-table-play": 1,
+          "data-promise-table-video-nav": 3,
+          "data-video-id": 1,
+          "data-promise-table-video-index": 6,
+          "data-video-index": 24
+        }
+      }
+    },
+    {
+      "name": "sidebar-navigation-today",
+      "pass": true,
+      "detail": {
+        "expected": "/",
+        "actual": "/"
+      }
+    },
+    {
+      "name": "sidebar-navigation-search",
+      "pass": true,
+      "detail": {
+        "expected": "/search",
+        "actual": "/search"
+      }
+    },
+    {
+      "name": "sidebar-navigation-canon",
+      "pass": true,
+      "detail": {
+        "expected": "/canon",
+        "actual": "/canon"
+      }
+    },
+    {
+      "name": "sidebar-navigation-table",
+      "pass": true,
+      "detail": {
+        "expected": "/promise-table",
+        "actual": "/promise-table"
+      }
+    },
+    {
+      "name": "sidebar-navigation-calling",
+      "pass": true,
+      "detail": {
+        "expected": "/calling-compass",
+        "actual": "/calling-compass"
+      }
+    },
+    {
+      "name": "sidebar-navigation-book",
+      "pass": true,
+      "detail": {
+        "expected": "/book",
+        "actual": "/book"
+      }
+    },
+    {
+      "name": "sidebar-navigation-lexicon",
+      "pass": true,
+      "detail": {
+        "expected": "/lexicon",
+        "actual": "/lexicon"
+      }
+    },
+    {
+      "name": "sidebar-navigation-testimony",
+      "pass": true,
+      "detail": {
+        "expected": "/testimony",
+        "actual": "/testimony"
+      }
+    },
+    {
+      "name": "sidebar-navigation-guide",
+      "pass": true,
+      "detail": {
+        "expected": "/teo-guide",
+        "actual": "/teo-guide"
+      }
+    },
+    {
+      "name": "sidebar-navigation-ui-elements",
+      "pass": true,
+      "detail": {
+        "expected": "/embedded-videos",
+        "actual": "/embedded-videos"
+      }
+    },
+    {
+      "name": "sidebar-navigation-teoyube-tables",
+      "pass": true,
+      "detail": {
+        "expected": "/tables",
+        "actual": "/tables"
+      }
+    },
+    {
+      "name": "guardrails",
+      "pass": true,
+      "detail": {
+        "before": "http://127.0.0.1:3101/promise-table",
+        "after": "http://127.0.0.1:3101/promise-table",
+        "drawer": 1
+      }
+    },
+    {
+      "name": "generate-todays-journey",
+      "pass": true,
+      "detail": {
+        "before": "http://127.0.0.1:3101/promise-table",
+        "after": "http://127.0.0.1:3101/"
+      }
+    },
+    {
+      "name": "mobile-navigation",
+      "pass": true,
+      "detail": {
+        "opened": "true",
+        "closed": "false"
+      }
+    },
+    {
+      "name": "calling-and-purpose-compass-controls",
+      "pass": true,
+      "detail": {
+        "count": 4,
+        "clicked": 4
+      }
+    },
+    {
+      "name": "all-status-tabs",
+      "pass": true,
+      "detail": {
+        "count": 8,
+        "expected": "All plus seven Promise statuses",
+        "states": [
+          {
+            "value": "all",
+            "active": true,
+            "visibleRows": 1
+          },
+          {
+            "value": "Discovered",
+            "active": true,
+            "visibleRows": 0
+          },
+          {
+            "value": "Studying",
+            "active": true,
+            "visibleRows": 1
+          },
+          {
+            "value": "Praying",
+            "active": true,
+            "visibleRows": 0
+          },
+          {
+            "value": "Acting",
+            "active": true,
+            "visibleRows": 0
+          },
+          {
+            "value": "Witnessing Progress",
+            "active": true,
+            "visibleRows": 0
+          },
+          {
+            "value": "Testified",
+            "active": true,
+            "visibleRows": 0
+          },
+          {
+            "value": "Remembered",
+            "active": true,
+            "visibleRows": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "saved-row-search-and-sort",
+      "pass": true,
+      "detail": {
+        "search": "Calling",
+        "sort": "status",
+        "options": [
+          "newest",
+          "status",
+          "scripture"
+        ]
+      }
+    },
+    {
+      "name": "safe-note-and-workspace-actions",
+      "pass": true,
+      "detail": {
+        "note": "Local verification note",
+        "observed": [
+          {
+            "action": "promise-save-note",
+            "notice": "Save Note\nCalling & Purpose: TIDUILOVP\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+          },
+          {
+            "action": "promise-prayer",
+            "notice": "Generate Prayer\nCalling & Purpose: TIDUILOVP\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+          },
+          {
+            "action": "promise-start-action",
+            "notice": "Start Action Step\nCalling & Purpose: TIDUILOVP\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+          },
+          {
+            "action": "promise-save-book",
+            "notice": "Save to Book\nCalling & Purpose: TIDUILOVP\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+          }
+        ]
+      }
+    },
+    {
+      "name": "export-and-import-controls",
+      "pass": true,
+      "detail": {
+        "count": 4,
+        "observed": [
+          {
+            "name": "export-table",
+            "filename": null,
+            "url": "http://127.0.0.1:3101/promise-table",
+            "dialogCount": 0,
+            "noticeCount": 1
+          },
+          {
+            "name": "export-json",
+            "filename": null,
+            "url": "http://127.0.0.1:3101/promise-table",
+            "dialogCount": 0,
+            "noticeCount": 1
+          },
+          {
+            "name": "import-restore",
+            "filename": null,
+            "url": "http://127.0.0.1:3101/promise-table",
+            "dialogCount": 0,
+            "noticeCount": 1
+          },
+          {
+            "name": "export-safe",
+            "filename": null,
+            "url": "http://127.0.0.1:3101/promise-table",
+            "dialogCount": 0,
+            "noticeCount": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "saved-row-actions",
+      "pass": true,
+      "detail": {
+        "status": {
+          "before": "Studying",
+          "after": "Praying"
+        },
+        "clicked": [
+          "promise-detail",
+          "promise-prayer",
+          "promise-start-action",
+          "save-to-book"
+        ],
+        "removeDisabled": true
+      }
+    },
+    {
+      "name": "all-feedback-actions",
+      "pass": true,
+      "detail": {
+        "count": 8,
+        "values": [
+          "more_like_this",
+          "less_like_this",
+          "not_relevant",
+          "save_scripture",
+          "save_word",
+          "save_prayer",
+          "complete_action",
+          "reset_preference"
+        ]
+      }
+    },
+    {
+      "name": "search-suggestions-and-clear",
+      "pass": true,
+      "detail": {
+        "count": 5,
+        "values": [
+          "Romans 8:28-30",
+          "Calling & Purpose",
+          "calling promise",
+          "prayer promise",
+          "Scripture anchor"
+        ],
+        "cleared": true
+      }
+    },
+    {
+      "name": "promise-search-submit",
+      "pass": true,
+      "detail": {
+        "notice": "Promise search complete\nCalling & Purpose\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+      }
+    },
+    {
+      "name": "all-video-and-carousel-controls",
+      "pass": true,
+      "detail": {
+        "watchNow": true,
+        "play": true,
+        "dotCount": 6,
+        "titles": [
+          "The Seed of Promise",
+          "The Power of Prayer",
+          "Walk in Divine Purpose",
+          "Rooted in His Word",
+          "Called for More",
+          "Strength for Today"
+        ],
+        "previous": "Called for More",
+        "next": "Strength for Today"
+      }
+    },
+    {
+      "name": "every-watch-video-control",
+      "pass": true,
+      "detail": {
+        "count": 24,
+        "allClicked": true,
+        "activeIndexes": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    },
+    {
+      "name": "every-why-this-control",
+      "pass": true,
+      "detail": {
+        "count": 24,
+        "allOpened": true
+      }
+    },
+    {
+      "name": "add-dialog",
+      "pass": true,
+      "detail": {
+        "dialogOpened": true,
+        "rowAdded": 1,
+        "provenance": true
+      }
+    }
+  ],
+  "failures": [],
+  "errors": {
+    "console": [],
+    "page": [],
+    "request": [],
+    "http": []
+  },
+  "pass": true
+}

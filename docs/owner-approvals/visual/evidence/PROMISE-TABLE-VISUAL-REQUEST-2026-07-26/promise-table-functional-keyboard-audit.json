@@ -1,0 +1,510 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T01:24:30.790Z",
+  "isolationPolicy": "Every interaction starts from a fresh /promise-table page to prevent navigation side effects from contaminating later checks.",
+  "results": [
+    {
+      "name": "semantic-and-control-baseline",
+      "pass": true,
+      "detail": {
+        "controls": 150,
+        "enabledControls": 125,
+        "rows": 1,
+        "mediaCards": 24,
+        "semanticTable": true,
+        "headings": [
+          "Promise",
+          "Scripture",
+          "Status",
+          "Source",
+          "Actions"
+        ]
+      }
+    },
+    {
+      "name": "status-transition-and-filter",
+      "pass": true,
+      "detail": {
+        "original": "Studying",
+        "selected": "Praying",
+        "visibleRows": 1,
+        "notice": "Promise status updated\nStudying → Praying\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+      }
+    },
+    {
+      "name": "search-suggestion-and-submit",
+      "pass": true,
+      "detail": {
+        "value": "Romans 8:28-30",
+        "notice": "Promise search complete\nRomans 8:28-30\nEphesians 1:18\nView in Book\nAdd Reflection\nClose"
+      }
+    },
+    {
+      "name": "featured-video-navigation",
+      "pass": true,
+      "detail": {
+        "selectedTitle": "Walk in Divine Purpose",
+        "nextTitle": "Rooted in His Word"
+      }
+    },
+    {
+      "name": "add-remove-and-undo",
+      "pass": true,
+      "detail": {
+        "added": true,
+        "removed": true,
+        "restored": true,
+        "provenance": "James 1:5"
+      }
+    },
+    {
+      "name": "row-actions-and-disclosures",
+      "pass": true,
+      "detail": {
+        "detailNotice": "Detail\nCalling & Purpose: TIDUILOVP\nEphesians 1:18\nView in Book\nAdd Reflection\nClose",
+        "saveNotice": "Promise saved to Book\nCalling & Purpose: TIDUILOVP · Level A\nEphesians 1:18\nView in Book\nAdd Reflection\nClose",
+        "disclosureOpen": true
+      }
+    },
+    {
+      "name": "responsive-pointer-coverage",
+      "pass": true,
+      "detail": {
+        "visibleControls": 150,
+        "controlsBelow24px": []
+      }
+    },
+    {
+      "name": "keyboard-order-and-focus",
+      "pass": true,
+      "detail": {
+        "positiveTabIndex": [],
+        "uniquePromiseControlsVisited": 59,
+        "focusVisibleCount": 54,
+        "sequence": [
+          {
+            "tag": "SPAN",
+            "id": "",
+            "label": "Primary Your central calling and assignment",
+            "focusVisible": false,
+            "inViewport": false
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "label": "Burdens The needs that break your heart",
+            "focusVisible": false,
+            "inViewport": false
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "label": "Gifts The abilities the Holy Spirit empowers",
+            "focusVisible": false,
+            "inViewport": false
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "label": "Growth The continuous journey to maturity",
+            "focusVisible": false,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Export Table",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Add Promise",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "all",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Discovered",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Studying",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Praying",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Acting",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Witnessing Progress",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Testified",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Remembered",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "INPUT",
+            "id": "phase116bPromiseSearch",
+            "label": "",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "SELECT",
+            "id": "phase116bPromiseSort",
+            "label": "Sort promise rows",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "TEXTAREA",
+            "id": "phase116bPromiseNoteInput",
+            "label": "",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Save Note",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Generate Prayer",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Start Action Step",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Save to Book",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Export Promise Table JSON",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Import / Restore Preview",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Export Safe Table",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "SELECT",
+            "id": "",
+            "label": "Update status for Calling & Purpose: TIDUILOVP",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Detail",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Pray",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Act",
+            "focusVisible": true,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Compare",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "More like this",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Less like this",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Not relevant",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Save Scripture",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Save Word",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Save Prayer",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Complete Action",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Reset this preference",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "INPUT",
+            "id": "promiseTableSearchInput",
+            "label": "",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Search",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Romans 8:28-30",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Calling & Purpose",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "calling promise",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "prayer promise",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Scripture anchor",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Clear",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Watch Now",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Next Video",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "IFRAME",
+            "id": "",
+            "label": "",
+            "focusVisible": false,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Play The Seed of Promise",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Previous Promise Table video",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Show The Seed of Promise",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Show The Power of Prayer",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Show Walk in Divine Purpose",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Show Rooted in His Word",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Show Called for More",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Show Strength for Today",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Next Promise Table video",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "label": "Watch Video!",
+            "focusVisible": true,
+            "inViewport": false
+          },
+          {
+            "tag": "SUMMARY",
+            "id": "",
+            "label": "Why this? Excellent",
+            "focusVisible": true,
+            "inViewport": false
+          }
+        ]
+      }
+    }
+  ],
+  "failures": [],
+  "runtimeErrors": {
+    "console": [],
+    "page": [],
+    "request": [],
+    "http": []
+  },
+  "pass": true
+}

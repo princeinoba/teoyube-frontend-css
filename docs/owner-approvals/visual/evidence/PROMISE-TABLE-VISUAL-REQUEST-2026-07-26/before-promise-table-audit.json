@@ -1,0 +1,242 @@
+{
+  "capturedAt": "2026-07-27T00:10:39.811Z",
+  "responseStatus": 200,
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "layout": {
+    "url": "http://127.0.0.1:3000/promise-table",
+    "bodyView": "table",
+    "title": "TEOYUBE App",
+    "page": {
+      "scrollWidth": 1536,
+      "clientWidth": 1536,
+      "scrollHeight": 3135,
+      "clientHeight": 1024
+    },
+    "rootCount": 1,
+    "controls": {
+      "total": 126,
+      "enabled": 125,
+      "disabled": 1
+    },
+    "tables": [
+      {
+        "className": "phase114-promise-table",
+        "rows": 2,
+        "headings": [
+          "Promise",
+          "Scripture",
+          "Status",
+          "Source",
+          "Actions"
+        ]
+      }
+    ],
+    "layout": {
+      "#table": {
+        "tag": "section",
+        "className": "view page-container active",
+        "display": "block",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1236,
+        "height": 2990,
+        "x": 280,
+        "y": 125
+      },
+      ".promise-table-layout": null,
+      ".promise-table-grid": {
+        "tag": "div",
+        "className": "promise-table-grid",
+        "display": "grid",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1236,
+        "height": 416,
+        "x": 280,
+        "y": 125
+      },
+      ".promise-scrolls-panel": {
+        "tag": "article",
+        "className": "module-card span-two promise-scrolls-panel",
+        "display": "grid",
+        "position": "relative",
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "width": 611,
+        "height": 264,
+        "x": 280,
+        "y": 125
+      },
+      ".promise-calling-compass-card": {
+        "tag": "article",
+        "className": "module-card promise-calling-compass-card",
+        "display": "grid",
+        "position": "relative",
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "width": 611,
+        "height": 264,
+        "x": 905,
+        "y": 125
+      },
+      "#phase116bPromiseWorkspace": {
+        "tag": "section",
+        "className": "phase116b-functional-panel",
+        "display": "grid",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1236,
+        "height": 793,
+        "x": 280,
+        "y": 557
+      },
+      ".phase116b1-promise-add-launcher": {
+        "tag": "div",
+        "className": "phase116b1-promise-add-launcher",
+        "display": "flex",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1202,
+        "height": 96,
+        "x": 297,
+        "y": 669
+      },
+      ".phase116b-toolbar": {
+        "tag": "div",
+        "className": "phase116b-toolbar",
+        "display": "flex",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1202,
+        "height": 140,
+        "x": 297,
+        "y": 781
+      },
+      ".phase116b-detail-drawer": {
+        "tag": "aside",
+        "className": "phase116b-detail-drawer",
+        "display": "grid",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1202,
+        "height": 395,
+        "x": 297,
+        "y": 938
+      },
+      "#phase117PromiseTableControls": {
+        "tag": "section",
+        "className": "phase117-surface-controls",
+        "display": "flex",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1236,
+        "height": 110,
+        "x": 280,
+        "y": 1366
+      },
+      "#phase114PromiseTablePanel": {
+        "tag": "section",
+        "className": "phase114-promise-table-panel",
+        "display": "block",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1236,
+        "height": 389,
+        "x": 280,
+        "y": 1496
+      },
+      ".phase114-table-wrap": {
+        "tag": "div",
+        "className": "phase114-table-wrap",
+        "display": "block",
+        "position": "static",
+        "overflowX": "auto",
+        "overflowY": "auto",
+        "width": 1202,
+        "height": 257,
+        "x": 297,
+        "y": 1610
+      },
+      ".phase114-promise-table": {
+        "tag": "table",
+        "className": "phase114-promise-table",
+        "display": "table",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1200,
+        "height": 255,
+        "x": 298,
+        "y": 1611
+      },
+      ".promise-search-layout": null,
+      "#promiseTableVideoPanel": {
+        "tag": "article",
+        "className": "promise-video-panel",
+        "display": "grid",
+        "position": "relative",
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "width": 1236,
+        "height": 412,
+        "x": 280,
+        "y": 1982
+      },
+      ".promise-table-featured-shell": {
+        "tag": "div",
+        "className": "promise-table-featured-shell",
+        "display": "grid",
+        "position": "relative",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1234,
+        "height": 410,
+        "x": 281,
+        "y": 1983
+      },
+      ".promise-search-scroll-wrapper": {
+        "tag": "div",
+        "className": "promise-search-scroll-wrapper",
+        "display": "block",
+        "position": "static",
+        "overflowX": "hidden",
+        "overflowY": "auto",
+        "width": 1236,
+        "height": 594,
+        "x": 280,
+        "y": 2410
+      },
+      ".promise-search-list": {
+        "tag": "div",
+        "className": "promise-search-list",
+        "display": "grid",
+        "position": "static",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "width": 1208,
+        "height": 2560,
+        "x": 288,
+        "y": 2425
+      },
+      ".phase116-smart-suggestions": null
+    }
+  },
+  "interaction": {
+    "searchValue": "calling",
+    "filterActive": true,
+    "addDialogOpened": true,
+    "videoAdvanced": true,
+    "videoBefore": "Show The Seed of Promise",
+    "videoAfter": "Show The Power of Prayer"
+  }
+}

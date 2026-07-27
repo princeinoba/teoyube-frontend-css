@@ -1,0 +1,57 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T01:50:28.035Z",
+  "reference": "Asset/ChatGPT Image page (TeoyubePromise table Page).png",
+  "canvas": {
+    "width": 1024,
+    "height": 1536
+  },
+  "policy": {
+    "thresholdPerChannel": 16,
+    "changedPixel": "Any RGB channel absolute difference exceeds threshold.",
+    "masks": 0,
+    "blur": 0,
+    "ignoredRegions": 0,
+    "interpretation": "Contextual only: the owner reference shows a different retained runtime-content state. Structural and functional audits remain authoritative."
+  },
+  "fullPageFitFill": {
+    "before": {
+      "changedPixels": 811938,
+      "totalPixels": 1572864,
+      "changedRatio": 0.5162162780761719,
+      "changedPercent": 51.62162780761719,
+      "meanAbsoluteChannelDifference": 70.38241958618164,
+      "thresholdPerChannel": 16
+    },
+    "after": {
+      "changedPixels": 855384,
+      "totalPixels": 1572864,
+      "changedRatio": 0.5438385009765625,
+      "changedPercent": 54.38385009765625,
+      "meanAbsoluteChannelDifference": 77.74648157755534,
+      "thresholdPerChannel": 16
+    },
+    "deltaPercentagePoints": 2.7622222900390625
+  },
+  "topAlignedWidthNormalized": {
+    "before": {
+      "changedPixels": 790724,
+      "totalPixels": 1572864,
+      "changedRatio": 0.5027287801106771,
+      "changedPercent": 50.27287801106771,
+      "meanAbsoluteChannelDifference": 68.30903667873807,
+      "thresholdPerChannel": 16
+    },
+    "after": {
+      "changedPixels": 758178,
+      "totalPixels": 1572864,
+      "changedRatio": 0.4820365905761719,
+      "changedPercent": 48.20365905761719,
+      "meanAbsoluteChannelDifference": 61.17442258199056,
+      "thresholdPerChannel": 16
+    },
+    "deltaPercentagePoints": -2.069218953450523,
+    "improvementPercentagePoints": 2.069218953450523
+  },
+  "pass": true
+}

@@ -1,0 +1,38 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001",
+  "capturedAt": "2026-07-27T02:30:03.908Z",
+  "url": "http://127.0.0.1:4173/#table",
+  "status": 200,
+  "controls": 126,
+  "semanticTable": true,
+  "pageOverflow": false,
+  "css": {
+    "status": 200,
+    "approvalMarkerPresent": true
+  },
+  "functional": {
+    "filterActive": true,
+    "videoTitle": "Walk in Divine Purpose",
+    "dialogVisible": true
+  },
+  "knownUnchangedStaticRuntimeDiagnostics": {
+    "classification": "Existing static-runtime publication-media manifest absence; no product source or manifest path changed in this CSS-only task.",
+    "console": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "page": [
+      "Published media manifest returned 404."
+    ],
+    "http": [
+      "404 http://127.0.0.1:4173/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+    ],
+    "request": []
+  },
+  "unexpectedErrors": {
+    "console": [],
+    "page": [],
+    "http": [],
+    "request": []
+  },
+  "pass": true
+}
