@@ -1,0 +1,65 @@
+{
+  "method": "Unmasked RGB absolute difference after normalizing the final equivalent crop to the unchanged owner reference dimensions.",
+  "ownerReferenceUnmodified": true,
+  "normalization": {
+    "owner": {
+      "width": 2048,
+      "height": 512
+    },
+    "finalOriginal": {
+      "format": "png",
+      "mediaType": "image/png",
+      "width": 1466,
+      "height": 366,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 1466,
+        "height": 366
+      }
+    },
+    "finalCompared": {
+      "width": 2048,
+      "height": 512,
+      "fit": "fill"
+    },
+    "beforeOriginal": {
+      "format": "png",
+      "mediaType": "image/png",
+      "width": 1466,
+      "height": 371,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 1466,
+        "height": 371
+      }
+    }
+  },
+  "thresholdChannelDelta": 8,
+  "changedPixels": 275395,
+  "pixelCount": 1048576,
+  "changedPixelRatio": 0.2626371383666992,
+  "meanChannelDelta": 15.571845372517904,
+  "maxChannelDelta": 255,
+  "files": {
+    "sideBySide": "guided-calling-compass-owner-final-side-by-side.png",
+    "overlay": "guided-calling-compass-owner-final-overlay.png",
+    "difference": "guided-calling-compass-owner-final-difference.png",
+    "beforeFinalSideBySide": "guided-calling-compass-before-final-side-by-side.png"
+  }
+}

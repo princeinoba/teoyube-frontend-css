@@ -963,8 +963,8 @@
     },
     {
       "path": "styles/pages/calling-compass.css",
-      "bytes": 12899,
-      "sha256": "ffe598cf6c2b1031f4b49433bdda434781a8568d18f2514c6bd3a2e02a3bcc4b"
+      "bytes": 41891,
+      "sha256": "13169753677e4e1a46f2a5321ffa6800792a21027128b6ae411378e0f148d623"
     },
     {
       "path": "styles/pages/canon.css",
@@ -4202,6 +4202,7 @@
       "d99a20",
       "d9a33a",
       "d9a43a",
+      "d9ad3c",
       "d9e6e1",
       "d9ebe5",
       "d9eee3",
@@ -4255,6 +4256,7 @@
       "e8f7ee",
       "e8f8ef",
       "e9f6ef",
+      "e9f6f1",
       "e9f8ef",
       "eadcae",
       "eaf7ef",
@@ -4300,6 +4302,7 @@
       "f2d371",
       "f2f1c5",
       "f2fbf6",
+      "f3c64f",
       "f3c76a",
       "f3d27a",
       "f3d783",
@@ -4307,6 +4310,7 @@
       "f3faf7",
       "f3fbf7",
       "f4c34f",
+      "f4c84d",
       "f4cf72",
       "f4d982",
       "f4e3bb",
@@ -4410,6 +4414,7 @@
       "phase114PromiseTablePanel",
       "phase114QaPanel",
       "phase115PersonalizationContent",
+      "phase116bCallingCompassTool",
       "phase116bLexiconWordSelect",
       "phase116bPromiseNoteInput",
       "phase116bPromiseSearch",
@@ -4511,6 +4516,7 @@
       "(max-width: 990px)",
       "(min-width: 1101px)",
       "(min-width: 1261px)",
+      "(min-width: 521px)",
       "(min-width: 901px)",
       "(min-width: 981px)",
       "(min-width: 981px) and (max-width: 1600px)",

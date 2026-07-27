@@ -1,0 +1,294 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-GUIDED-PANEL-001",
+  "ownerReference": {
+    "source": "C:/Users/royce/AppData/Local/Temp/codex-clipboard-ef99c824-705f-465a-831a-66b7ea25def4.png",
+    "evidence": "docs/owner-approvals/visual/evidence/CALLING-COMPASS-VISUAL-REQUEST-2026-07-27/guided-panel/guided-calling-compass-owner-reference-2048x512.png",
+    "sourceSha256": "608e5092cb5910360de52945ab9508d40c244e837c67e829a16e6e8ea9d0ec07",
+    "evidenceSha256": "608e5092cb5910360de52945ab9508d40c244e837c67e829a16e6e8ea9d0ec07",
+    "unchanged": true
+  },
+  "before": {
+    "path": "docs/owner-approvals/visual/evidence/CALLING-COMPASS-VISUAL-REQUEST-2026-07-27/guided-panel/guided-calling-compass-before-panel-2048-equivalent.png",
+    "sha256": "5669b77fb1c6749d8b6aee367ab6ed1aa59c528f442790f61c08ac92adbf6520"
+  },
+  "responsive": [
+    {
+      "name": "desktop-owner-1536x1024",
+      "width": 1536,
+      "height": 1024,
+      "panel": {
+        "x": 210,
+        "y": 520,
+        "width": 954,
+        "height": 355.953125
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "289.844px 289.844px 289.844px",
+      "optionColumns": "264px 264px 264px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "desktop-wide-1440x900",
+      "width": 1440,
+      "height": 900,
+      "panel": {
+        "x": 210,
+        "y": 355.953125,
+        "width": 858,
+        "height": 355.921875
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "259px 259px 259px",
+      "optionColumns": "258px 258.016px 258.016px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "desktop-standard-1280x800",
+      "width": 1280,
+      "height": 800,
+      "panel": {
+        "x": 210,
+        "y": 409.609375,
+        "width": 698,
+        "height": 355.921875
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "207.578px 207.578px 207.578px",
+      "optionColumns": "205.734px 205.734px 205.75px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "tablet-landscape-1024x768",
+      "width": 1024,
+      "height": 768,
+      "panel": {
+        "x": 210,
+        "y": 543.875,
+        "width": 790,
+        "height": 355.921875
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "241.312px 241.328px 241.328px",
+      "optionColumns": "238.109px 238.109px 238.125px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "tablet-portrait-768x1024",
+      "width": 768,
+      "height": 1024,
+      "panel": {
+        "x": 12,
+        "y": 1192.5625,
+        "width": 744,
+        "height": 355.921875
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "229.062px 229.062px 229.062px",
+      "optionColumns": "223px 223px 223px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "panel": {
+        "x": 12,
+        "y": 24.09375,
+        "width": 366,
+        "height": 452.515625
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "110.672px 110.672px 110.688px",
+      "optionColumns": "321.406px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "mobile-small-360x800",
+      "width": 360,
+      "height": 800,
+      "panel": {
+        "x": 12,
+        "y": 24.46875,
+        "width": 336,
+        "height": 484.78125
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "100.672px 100.672px 100.688px",
+      "optionColumns": "291.406px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "drag-1181x820",
+      "width": 1181,
+      "height": 820,
+      "panel": {
+        "x": 210,
+        "y": 400.328125,
+        "width": 599,
+        "height": 393.703125
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "175.766px 175.766px 175.766px",
+      "optionColumns": "173.406px 173.406px 173.406px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "drag-899x820",
+      "width": 899,
+      "height": 820,
+      "panel": {
+        "x": 196,
+        "y": 2057.234375,
+        "width": 691,
+        "height": 355.921875
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "209.812px 209.828px 209.828px",
+      "optionColumns": "205.328px 205.328px 205.328px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "drag-719x820",
+      "width": 719,
+      "height": 820,
+      "panel": {
+        "x": 12,
+        "y": 2601.953125,
+        "width": 695,
+        "height": 569.484375
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "217.453px 217.453px 217.453px",
+      "optionColumns": "639.812px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "drag-519x820",
+      "width": 519,
+      "height": 820,
+      "panel": {
+        "x": 12,
+        "y": 2756.46875,
+        "width": 495,
+        "height": 408.75
+      },
+      "elementCount": 20,
+      "controlCount": 7,
+      "documentOverflow": 0,
+      "clippedControls": [],
+      "stepColumns": "153.672px 153.672px 153.672px",
+      "optionColumns": "450.406px",
+      "decorativePointerEventsNone": true,
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    }
+  ],
+  "zoom200Percent": {
+    "panel": {
+      "x": 12,
+      "y": 431.859375,
+      "width": 744,
+      "height": 355.921875,
+      "top": 431.859375,
+      "right": 756,
+      "bottom": 787.78125,
+      "left": 12
+    },
+    "documentOverflow": 0,
+    "controlCount": 7
+  }
+}

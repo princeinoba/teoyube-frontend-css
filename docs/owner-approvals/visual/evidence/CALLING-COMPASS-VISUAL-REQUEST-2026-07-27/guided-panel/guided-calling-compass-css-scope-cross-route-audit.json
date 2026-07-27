@@ -1,0 +1,52 @@
+{
+  "result": "PASS",
+  "cssParse": "PASS",
+  "focusedRuleCount": 123,
+  "invalidSelectors": [],
+  "importantDeclarations": 0,
+  "contentValues": [
+    "\"\"",
+    "\"\"",
+    "\"\"",
+    "\"\"",
+    "\"\"",
+    "\"1\"",
+    "\"2\"",
+    "\"3\"",
+    "\"\"",
+    "\"\"",
+    "\"\"",
+    "\"\""
+  ],
+  "contentValuesAllowed": true,
+  "routeResults": [
+    {
+      "route": "/",
+      "bodyView": "today",
+      "guidedPanelCount": 0,
+      "documentOverflow": 0,
+      "pageErrors": []
+    },
+    {
+      "route": "/search",
+      "bodyView": "search",
+      "guidedPanelCount": 0,
+      "documentOverflow": 0,
+      "pageErrors": []
+    },
+    {
+      "route": "/canon",
+      "bodyView": "canon",
+      "guidedPanelCount": 0,
+      "documentOverflow": 0,
+      "pageErrors": []
+    },
+    {
+      "route": "/promise-table",
+      "bodyView": "table",
+      "guidedPanelCount": 0,
+      "documentOverflow": 0,
+      "pageErrors": []
+    }
+  ]
+}
