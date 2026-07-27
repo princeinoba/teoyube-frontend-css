@@ -1,8 +1,167 @@
-﻿/*
+/*
  * Promise Table owner-approved route-scoped visual architecture.
  * Approval: TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001
  */
 
+/* Search, Canon, and Today-aligned route shell */
+body[data-view="table"] {
+  --promise-shell-accent: #006a53;
+  --promise-shell-accent-strong: #004f3f;
+  background: #f7faf8;
+}
+
+body[data-view="table"] .app-shell {
+  grid-template-columns: 12.375rem minmax(0, 1fr);
+  gap: 0;
+  background: #f7faf8;
+}
+
+body[data-view="table"] .app-sidebar {
+  width: auto;
+}
+
+body[data-view="table"] .sidebar {
+  gap: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(0, 83, 63, 0.05);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 32px rgba(12, 45, 38, 0.08);
+}
+
+body[data-view="table"] .brand-lockup {
+  gap: 0.62rem;
+  padding: 0.5rem 0.25rem 0.7rem;
+}
+
+body[data-view="table"] .brand-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+body[data-view="table"] .brand-mark::before {
+  font-size: 1.28rem;
+}
+
+body[data-view="table"] .brand-mark::after {
+  bottom: 0.56rem;
+}
+
+body[data-view="table"] .brand-lockup .eyebrow {
+  font-size: 0.58rem;
+}
+
+body[data-view="table"] .brand-lockup h1 {
+  font-size: 1rem;
+}
+
+body[data-view="table"] .brand-subtitle {
+  font-size: 0.64rem;
+}
+
+body[data-view="table"] .nav-list {
+  gap: 0.16rem;
+}
+
+body[data-view="table"] .nav-item {
+  gap: 0.58rem;
+  min-height: 2.15rem;
+  padding: 0.48rem 0.62rem;
+  border-radius: 0.45rem;
+  font-size: 0.72rem;
+}
+
+body[data-view="table"] .nav-item::before {
+  width: 0.95rem;
+  font-size: 1rem;
+}
+
+body[data-view="table"] .saint-card {
+  gap: 0.58rem;
+  margin-top: auto;
+  padding: 0.72rem;
+  border: 1px solid rgba(0, 83, 63, 0.1);
+  border-radius: 0.65rem;
+  box-shadow: 0 10px 24px rgba(12, 45, 38, 0.06);
+}
+
+body[data-view="table"] .saint-profile-head {
+  gap: 0.55rem;
+}
+
+body[data-view="table"] .saint-avatar {
+  width: 2.55rem;
+}
+
+body[data-view="table"] .saint-card h2 {
+  font-size: 1rem;
+}
+
+body[data-view="table"] .saint-card p,
+body[data-view="table"] #sidebarCalling {
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+body[data-view="table"] .active-badge {
+  padding: 0.18rem 0.4rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="table"] #openAssessment,
+body[data-view="table"] .saint-card > button:last-child {
+  min-height: 2.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="table"] .app-main {
+  min-inline-size: 0;
+  padding: 0.7rem 1.5rem 1rem 0.75rem;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(232, 246, 238, 0.88), transparent 18rem),
+    linear-gradient(180deg, #fbfdfb, #f4f8f6) !important;
+}
+
+body[data-view="table"] .app-header {
+  min-height: 3.35rem;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+  padding: 0.15rem 0.85rem 0.35rem;
+}
+
+body[data-view="table"] .app-header > div:first-child {
+  display: grid;
+  gap: 0.08rem;
+  min-inline-size: 0;
+}
+
+body[data-view="table"] .app-header .eyebrow {
+  color: var(--promise-shell-accent-strong);
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
+}
+
+body[data-view="table"] #viewTitle {
+  font-size: 1.65rem;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+body[data-view="table"] .app-header .topbar-actions {
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+body[data-view="table"] .app-header .topbar-actions > button {
+  min-block-size: 2.35rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.5rem;
+  font-size: 0.74rem;
+}
 /* 1. Page tokens and size safety */
 body[data-view="table"] #table {
   --promise-page-gap: clamp(0.9rem, 1.35vw, 1.25rem);
@@ -57,12 +216,6 @@ body[data-view="table"] #table :where(.promise-table-page, .promise-table-layout
   min-inline-size: 0;
 }
 
-/* 2. Shell relationship and page header */
-body[data-view="table"] .app-main { min-inline-size: 0; }
-body[data-view="table"] .app-header { gap: var(--promise-section-gap); align-items: center; }
-body[data-view="table"] .app-header > div:first-child { min-inline-size: 0; }
-body[data-view="table"] .app-header .topbar-actions { flex: 0 0 auto; align-items: center; gap: 0.65rem; }
-body[data-view="table"] .app-header .topbar-actions > button { min-block-size: var(--promise-control-height); }
 
 /* 3. Hero grid and shared cards */
 body[data-view="table"] #table .promise-table-grid {
@@ -692,8 +845,6 @@ body[data-view="table"] .phase117-offline-status {
 }
 
 @media (max-width: 900px) {
-  body[data-view="table"] .app-header { align-items: flex-start; flex-direction: column; }
-  body[data-view="table"] .app-header .topbar-actions { inline-size: 100%; justify-content: flex-start; }
   body[data-view="table"] #table .promise-table-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body[data-view="table"] #table .promise-table-grid > .module-card.promise-scrolls-panel,
   body[data-view="table"] #table .promise-table-grid > .promise-calling-compass-card,
@@ -712,6 +863,43 @@ body[data-view="table"] .phase117-offline-status {
   body[data-view="table"] #table .phase114-table-wrap { scrollbar-gutter: auto; }
 }
 
+@media (max-width: 768px) {
+  body[data-view="table"] .app-shell {
+    display: block;
+  }
+
+  body[data-view="table"] .app-sidebar {
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  body[data-view="table"] .sidebar {
+    gap: 0.8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  body[data-view="table"] .app-main {
+    padding: 0.55rem 0.75rem 1rem;
+  }
+
+  body[data-view="table"] .app-header {
+    min-height: 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 0.45rem;
+    padding: 0.25rem 0;
+  }
+
+  body[data-view="table"] .app-header .topbar-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  body[data-view="table"] .app-header .topbar-actions > button {
+    flex: 1 1 11rem;
+  }
+}
 @media (max-width: 640px) {
   body[data-view="table"] .app-header .topbar-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body[data-view="table"] .app-header .topbar-actions > button { inline-size: 100%; }
@@ -739,6 +927,13 @@ body[data-view="table"] .phase117-offline-status {
 }
 
 @media (max-width: 420px) {
+  body[data-view="table"] .app-main {
+    padding: 0.45rem 0.5rem 0.85rem;
+  }
+
+  body[data-view="table"] #viewTitle {
+    font-size: 1.45rem;
+  }
   body[data-view="table"] .app-header .topbar-actions { grid-template-columns: minmax(0, 1fr); }
   body[data-view="table"] #table .phase116b-action-row { grid-template-columns: minmax(0, 1fr); }
   body[data-view="table"] #table .phase116b-toolbar > button { font-size: 0.72rem; }

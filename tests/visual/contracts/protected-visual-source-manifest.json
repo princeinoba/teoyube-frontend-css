@@ -1268,8 +1268,8 @@
     },
     {
       "path": "styles/pages/promise-table.css",
-      "sizeBytes": 31966,
-      "sha256": "32464e88560a26db4a12fd42008747ace8502d7811d1d19e8a44b0bb6872c8dd"
+      "sizeBytes": 35446,
+      "sha256": "c9592524509daf78e275e31cb48037ed4c16d5c41e19d4f40e692b61c530872b"
     },
     {
       "path": "styles/pages/roadmap.css",
