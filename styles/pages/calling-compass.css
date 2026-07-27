@@ -1551,6 +1551,12 @@ body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center:
   }
 }
 
+@media (min-width: 721px) and (max-width: 900px) {
+  body[data-view="calling"] .calling-compass-panel .calling-radar {
+    max-inline-size: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   body[data-view="calling"] .calling-compass-panel .calling-radar::before,
   body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center,
