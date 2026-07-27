@@ -389,3 +389,55 @@ Revert only the focused approval, CSS implementation, and derived
 evidence/fingerprint commits; restore the preceding exact Calling Compass CSS
 and manifest hashes; then run `npm run recovery:verify` and the complete
 Calling Compass visual and functional suite.
+
+---
+
+## Owner amendment -- Your Calling Compass internal diagram
+
+Decision: APPROVED
+Approval-ID: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-DIAGRAM-001
+Approved-By: Prince Okiemute Inoba -- Teoyube Project Owner
+Approved-At: 2026-07-27T16:00:00-04:00
+Parent-Approval-ID: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-001
+
+### Exact approved route and panel
+
+- Canonical Next route: `/calling-compass`.
+- Shared static rollback Calling view, because both runtimes load the same route stylesheet.
+- Existing outer panel: `.calling-compass-panel[aria-label="Your Calling Compass"]`.
+- Existing internal diagram: `.calling-radar`.
+
+### Exact approved production file and selector scope
+
+- `styles/pages/calling-compass.css`
+- Rules must remain rooted beneath `body[data-view="calling"] .calling-compass-panel .calling-radar`.
+
+No HTML, JavaScript, TypeScript, TSX, image, SVG asset, package, test, shared stylesheet, global stylesheet, route, data, copy, or behavior change is authorized.
+
+### Approved internal transformation
+
+The seven existing dimension nodes may be reorganized inside the current diagram region into the owner-reference card composition:
+
+- Purpose upper left and Identity upper right;
+- Giftings beneath Purpose and Service beneath Identity;
+- Prayer lower left and Leadership lower right;
+- Wisdom in the final left position;
+- the existing Calling hub enlarged and centered;
+- existing icons and descriptions enlarged and kept visible;
+- decorative connector lines kept behind content.
+
+The target arrangement is the owner-supplied `image1.png`. The current `image2.png` is the outer-panel geometry baseline.
+
+### Absolute preservation
+
+- The outer panel width, height, position, grid footprint, background, border, radius, shadow, header, header spacing, footer action, footer geometry, and surrounding page layout remain unchanged within one CSS pixel.
+- All seven dimensions, their existing descriptions, icons, tooltips, tabindex values, accessible names, DOM order, focus order, handlers, values, and scores remain unchanged.
+- The existing `View Full Compass` action retains its exact dimensions, position, label, icon, keyboard behavior, and destination.
+- No diagram node may be hidden, clipped, overlapped, duplicated, or converted into substantive generated CSS text.
+- No baseline image or DOM snapshot may be regenerated or replaced.
+
+### Evidence and rollback
+
+Evidence must include baseline and final geometry, required viewports, intermediate widths, 200% zoom, interaction and focus checks, focused Axe, cross-section and cross-route scope, owner-reference comparisons, exact fingerprints, runtime identity, and complete recovery verification.
+
+Rollback must revert only this approval, the scoped CSS implementation, and the derived evidence/fingerprint commit series, then rerun `npm run recovery:verify` and the focused Calling Compass parity suite.
