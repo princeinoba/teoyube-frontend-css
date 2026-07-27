@@ -140,3 +140,29 @@ The approved product-source scope is limited to `styles/pages/promise-table.css`
 No HTML, JSX, TSX, JavaScript, TypeScript, application behavior, route, data, copy, semantic table structure, asset, dependency, test source, immutable baseline, or owner-approved baseline change is authorized. Governance records, Promise Table-specific evidence, the exact final stylesheet fingerprints, and the deterministic runtime identity derived solely from those approved changes may be updated.
 
 This owner amendment closes the pending-decision condition in the earlier agent declaration only for the exact focused scope above. It does not extend approval to the Promise Table hero, summary metrics, lower search/media sections, sidebar, shared header, another route, or another protected page.
+## Final spacing and Calling Compass layout amendment
+
+Decision: APPROVED
+
+Approval-ID: TEOYUBE-VISUAL-2026-07-27-PROMISE-LAYOUT-001
+
+Approved-By: Prince Okiemute Inoba — Teoyube Project Owner
+
+Approved-At: 2026-07-27T09:47:27-04:00
+
+Parent approvals:
+
+- TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001
+- TEOYUBE-VISUAL-2026-07-26-PROMISE-PANELS-001
+
+The owner authorizes a CSS-only refinement on `/promise-table` to:
+
+1. Normalize and tighten vertical spacing between the approved Promise Table sections.
+2. Align the Workspace, Safe 11.7 data, Local Promise Table, promise search, Smart Search Suggestions, and Featured Video regions to the existing page grid.
+3. Increase the existing Calling Compass diagram through its actual layout dimensions, center it inside its current panel, preserve its aspect ratio, and keep every existing label and feature visible.
+4. Remove redundant blank space and improve responsive organization without changing the approved panel designs.
+5. Reposition the existing Local beta notice only where necessary to keep every control reachable.
+
+The approved product-source scope remains limited to `styles/pages/promise-table.css`. No HTML, JSX, TSX, JavaScript, TypeScript, component, route, behavior, data, copy, icon, asset, SVG source, dependency, test source, immutable baseline, or owner-approved baseline change is authorized. Promise Table-specific evidence and reports, the exact final stylesheet fingerprints, and the deterministic runtime identity derived solely from this approved CSS delta may be updated.
+
+This amendment does not authorize a new page redesign, another route, global/shared CSS changes, application logic changes, diagram replacement, transform scaling, browser zoom, hidden controls, or baseline regeneration.
