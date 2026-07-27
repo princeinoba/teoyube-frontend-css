@@ -1,0 +1,2753 @@
+{
+  "capturedAt": "2026-07-27T21:26:45.298Z",
+  "origin": "http://127.0.0.1:3000",
+  "viewports": [
+    {
+      "name": "desktop-primary",
+      "width": 1536,
+      "height": 1024,
+      "file": "your-calling-compass-before-desktop-primary-1536x1024.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 774.390625,
+          "y": -44.75,
+          "width": 295.21875,
+          "height": 471.796875,
+          "top": -44.75,
+          "right": 1069.609375,
+          "bottom": 427.046875,
+          "left": 774.390625
+        },
+        "header": {
+          "x": 787.859375,
+          "y": -31.28125,
+          "width": 268.28125,
+          "height": 99.328125,
+          "top": -31.28125,
+          "right": 1056.140625,
+          "bottom": 68.046875,
+          "left": 787.859375
+        },
+        "radar": {
+          "x": 787.859375,
+          "y": 77.3125,
+          "width": 268.28125,
+          "height": 288,
+          "top": 77.3125,
+          "right": 1056.140625,
+          "bottom": 365.3125,
+          "left": 787.859375
+        },
+        "center": {
+          "x": 922,
+          "y": 224.1875,
+          "width": 80,
+          "height": 80,
+          "top": 224.1875,
+          "right": 1002,
+          "bottom": 304.1875,
+          "left": 922
+        },
+        "footer": {
+          "x": 787.859375,
+          "y": 374.578125,
+          "width": 268.28125,
+          "height": 39,
+          "top": 374.578125,
+          "right": 1056.140625,
+          "bottom": 413.578125,
+          "left": 787.859375
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 774.390625,
+            "y": -298.34375,
+            "width": 295.21875,
+            "height": 237.59375,
+            "top": -298.34375,
+            "right": 1069.609375,
+            "bottom": -60.75,
+            "left": 774.390625
+          },
+          "featured": {
+            "x": 236.390625,
+            "y": -298.34375,
+            "width": 522,
+            "height": 725.390625,
+            "top": -298.34375,
+            "right": 758.390625,
+            "bottom": 427.046875,
+            "left": 236.390625
+          },
+          "recommended": {
+            "x": 236.390625,
+            "y": 909.28125,
+            "width": 833.21875,
+            "height": 217.796875,
+            "top": 909.28125,
+            "right": 1069.609375,
+            "bottom": 1127.078125,
+            "left": 236.390625
+          }
+        },
+        "panelComputed": {
+          "width": "295.219px",
+          "height": "471.797px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "stretch",
+          "padding": "12.48px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "268.281px",
+          "height": "288px",
+          "minHeight": "288px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "block"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": 880.8046875,
+              "y": 100.34375,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 100.34375,
+              "right": 963.1953125,
+              "bottom": 146.0625,
+              "left": 880.8046875
+            },
+            "iconRect": {
+              "x": 905.9921875,
+              "y": 100.34375,
+              "width": 32,
+              "height": 32,
+              "top": 100.34375,
+              "right": 937.9921875,
+              "bottom": 132.34375,
+              "left": 905.9921875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 1010.53125,
+              "y": 157.9375,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 157.9375,
+              "right": 1092.921875,
+              "bottom": 203.65625,
+              "left": 1010.53125
+            },
+            "iconRect": {
+              "x": 1035.71875,
+              "y": 157.9375,
+              "width": 32,
+              "height": 32,
+              "top": 157.9375,
+              "right": 1067.71875,
+              "bottom": 189.9375,
+              "left": 1035.71875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 1010.53125,
+              "y": 270.265625,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 270.265625,
+              "right": 1092.921875,
+              "bottom": 315.984375,
+              "left": 1010.53125
+            },
+            "iconRect": {
+              "x": 1035.71875,
+              "y": 270.265625,
+              "width": 32,
+              "height": 32,
+              "top": 270.265625,
+              "right": 1067.71875,
+              "bottom": 302.265625,
+              "left": 1035.71875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 836.140625,
+              "y": 270.265625,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 270.265625,
+              "right": 918.53125,
+              "bottom": 315.984375,
+              "left": 836.140625
+            },
+            "iconRect": {
+              "x": 861.328125,
+              "y": 270.265625,
+              "width": 32,
+              "height": 32,
+              "top": 270.265625,
+              "right": 893.328125,
+              "bottom": 302.265625,
+              "left": 861.328125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": 880.8046875,
+              "y": 322.109375,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 322.109375,
+              "right": 963.1953125,
+              "bottom": 367.828125,
+              "left": 880.8046875
+            },
+            "iconRect": {
+              "x": 905.9921875,
+              "y": 322.109375,
+              "width": 32,
+              "height": 32,
+              "top": 322.109375,
+              "right": 937.9921875,
+              "bottom": 354.109375,
+              "left": 905.9921875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 832.125,
+              "y": 224.1875,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 224.1875,
+              "right": 914.515625,
+              "bottom": 269.90625,
+              "left": 832.125
+            },
+            "iconRect": {
+              "x": 857.3125,
+              "y": 224.1875,
+              "width": 32,
+              "height": 32,
+              "top": 224.1875,
+              "right": 889.3125,
+              "bottom": 256.1875,
+              "left": 857.3125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 836.140625,
+              "y": 160.828125,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 160.828125,
+              "right": 918.53125,
+              "bottom": 206.546875,
+              "left": 836.140625
+            },
+            "iconRect": {
+              "x": 861.328125,
+              "y": 160.828125,
+              "width": 32,
+              "height": 32,
+              "top": 160.828125,
+              "right": 893.328125,
+              "bottom": 192.828125,
+              "left": 861.328125
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": 832.125,
+          "y": 100.34375,
+          "width": 260.796875,
+          "height": 267.484375,
+          "widthUsage": 0.9721025043680839,
+          "heightUsage": 0.9287651909722222
+        },
+        "clipped": [
+          {
+            "name": "compass-node identity",
+            "clipped": true
+          },
+          {
+            "name": "compass-node giftings",
+            "clipped": true
+          },
+          {
+            "name": "compass-node prayer",
+            "clipped": true
+          }
+        ],
+        "overlaps": [],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 25,
+          "panelY": 0,
+          "radarX": 37,
+          "radarY": 3
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900,
+      "file": "your-calling-compass-before-desktop-wide-1440x900.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 685.609375,
+          "y": 213.8125,
+          "width": 288,
+          "height": 471.796875,
+          "top": 213.8125,
+          "right": 973.609375,
+          "bottom": 685.609375,
+          "left": 685.609375
+        },
+        "header": {
+          "x": 699.078125,
+          "y": 227.28125,
+          "width": 261.0625,
+          "height": 99.328125,
+          "top": 227.28125,
+          "right": 960.140625,
+          "bottom": 326.609375,
+          "left": 699.078125
+        },
+        "radar": {
+          "x": 699.078125,
+          "y": 335.875,
+          "width": 261.0625,
+          "height": 288,
+          "top": 335.875,
+          "right": 960.140625,
+          "bottom": 623.875,
+          "left": 699.078125
+        },
+        "center": {
+          "x": 829.609375,
+          "y": 482.75,
+          "width": 80,
+          "height": 80,
+          "top": 482.75,
+          "right": 909.609375,
+          "bottom": 562.75,
+          "left": 829.609375
+        },
+        "footer": {
+          "x": 699.078125,
+          "y": 633.140625,
+          "width": 261.0625,
+          "height": 39,
+          "top": 633.140625,
+          "right": 960.140625,
+          "bottom": 672.140625,
+          "left": 699.078125
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 685.609375,
+            "y": -39.78125,
+            "width": 288,
+            "height": 237.59375,
+            "top": -39.78125,
+            "right": 973.609375,
+            "bottom": 197.8125,
+            "left": 685.609375
+          },
+          "featured": {
+            "x": 236.390625,
+            "y": -39.78125,
+            "width": 433.21875,
+            "height": 725.390625,
+            "top": -39.78125,
+            "right": 669.609375,
+            "bottom": 685.609375,
+            "left": 236.390625
+          },
+          "recommended": {
+            "x": 236.390625,
+            "y": 1192.890625,
+            "width": 737.21875,
+            "height": 217.796875,
+            "top": 1192.890625,
+            "right": 973.609375,
+            "bottom": 1410.6875,
+            "left": 236.390625
+          }
+        },
+        "panelComputed": {
+          "width": "288px",
+          "height": "471.797px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "stretch",
+          "padding": "12.48px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "261.062px",
+          "height": "288px",
+          "minHeight": "288px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "block"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": 788.4140625,
+              "y": 358.90625,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 358.90625,
+              "right": 870.8046875,
+              "bottom": 404.625,
+              "left": 788.4140625
+            },
+            "iconRect": {
+              "x": 813.6015625,
+              "y": 358.90625,
+              "width": 32,
+              "height": 32,
+              "top": 358.90625,
+              "right": 845.6015625,
+              "bottom": 390.90625,
+              "left": 813.6015625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 915.75,
+              "y": 416.5,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 416.5,
+              "right": 998.140625,
+              "bottom": 462.21875,
+              "left": 915.75
+            },
+            "iconRect": {
+              "x": 940.9375,
+              "y": 416.5,
+              "width": 32,
+              "height": 32,
+              "top": 416.5,
+              "right": 972.9375,
+              "bottom": 448.5,
+              "left": 940.9375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 915.75,
+              "y": 528.828125,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 528.828125,
+              "right": 998.140625,
+              "bottom": 574.546875,
+              "left": 915.75
+            },
+            "iconRect": {
+              "x": 940.9375,
+              "y": 528.828125,
+              "width": 32,
+              "height": 32,
+              "top": 528.828125,
+              "right": 972.9375,
+              "bottom": 560.828125,
+              "left": 940.9375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 746.0625,
+              "y": 528.828125,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 528.828125,
+              "right": 828.453125,
+              "bottom": 574.546875,
+              "left": 746.0625
+            },
+            "iconRect": {
+              "x": 771.25,
+              "y": 528.828125,
+              "width": 32,
+              "height": 32,
+              "top": 528.828125,
+              "right": 803.25,
+              "bottom": 560.828125,
+              "left": 771.25
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": 788.4140625,
+              "y": 580.671875,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 580.671875,
+              "right": 870.8046875,
+              "bottom": 626.390625,
+              "left": 788.4140625
+            },
+            "iconRect": {
+              "x": 813.6015625,
+              "y": 580.671875,
+              "width": 32,
+              "height": 32,
+              "top": 580.671875,
+              "right": 845.6015625,
+              "bottom": 612.671875,
+              "left": 813.6015625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 742.140625,
+              "y": 482.75,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 482.75,
+              "right": 824.53125,
+              "bottom": 528.46875,
+              "left": 742.140625
+            },
+            "iconRect": {
+              "x": 767.328125,
+              "y": 482.75,
+              "width": 32,
+              "height": 32,
+              "top": 482.75,
+              "right": 799.328125,
+              "bottom": 514.75,
+              "left": 767.328125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 746.0625,
+              "y": 419.390625,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 419.390625,
+              "right": 828.453125,
+              "bottom": 465.109375,
+              "left": 746.0625
+            },
+            "iconRect": {
+              "x": 771.25,
+              "y": 419.390625,
+              "width": 32,
+              "height": 32,
+              "top": 419.390625,
+              "right": 803.25,
+              "bottom": 451.390625,
+              "left": 771.25
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": 742.140625,
+          "y": 358.90625,
+          "width": 256,
+          "height": 267.484375,
+          "widthUsage": 0.9806080919320086,
+          "heightUsage": 0.9287651909722222
+        },
+        "clipped": [
+          {
+            "name": "compass-node identity",
+            "clipped": true
+          },
+          {
+            "name": "compass-node giftings",
+            "clipped": true
+          },
+          {
+            "name": "compass-node prayer",
+            "clipped": true
+          }
+        ],
+        "overlaps": [],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 26,
+          "panelY": 0,
+          "radarX": 38,
+          "radarY": 3
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800,
+      "file": "your-calling-compass-before-desktop-standard-1280x800.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 525.609375,
+          "y": 164.59375,
+          "width": 288,
+          "height": 471.796875,
+          "top": 164.59375,
+          "right": 813.609375,
+          "bottom": 636.390625,
+          "left": 525.609375
+        },
+        "header": {
+          "x": 539.078125,
+          "y": 178.0625,
+          "width": 261.0625,
+          "height": 99.328125,
+          "top": 178.0625,
+          "right": 800.140625,
+          "bottom": 277.390625,
+          "left": 539.078125
+        },
+        "radar": {
+          "x": 539.078125,
+          "y": 286.65625,
+          "width": 261.0625,
+          "height": 288,
+          "top": 286.65625,
+          "right": 800.140625,
+          "bottom": 574.65625,
+          "left": 539.078125
+        },
+        "center": {
+          "x": 669.609375,
+          "y": 433.53125,
+          "width": 80,
+          "height": 80,
+          "top": 433.53125,
+          "right": 749.609375,
+          "bottom": 513.53125,
+          "left": 669.609375
+        },
+        "footer": {
+          "x": 539.078125,
+          "y": 583.921875,
+          "width": 261.0625,
+          "height": 39,
+          "top": 583.921875,
+          "right": 800.140625,
+          "bottom": 622.921875,
+          "left": 539.078125
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 525.609375,
+            "y": -158.625,
+            "width": 288,
+            "height": 307.21875,
+            "top": -158.625,
+            "right": 813.609375,
+            "bottom": 148.59375,
+            "left": 525.609375
+          },
+          "featured": {
+            "x": 236.390625,
+            "y": -158.625,
+            "width": 273.21875,
+            "height": 795.015625,
+            "top": -158.625,
+            "right": 509.609375,
+            "bottom": 636.390625,
+            "left": 236.390625
+          },
+          "recommended": {
+            "x": 236.390625,
+            "y": 1215.609375,
+            "width": 577.21875,
+            "height": 217.796875,
+            "top": 1215.609375,
+            "right": 813.609375,
+            "bottom": 1433.40625,
+            "left": 236.390625
+          }
+        },
+        "panelComputed": {
+          "width": "288px",
+          "height": "471.797px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "stretch",
+          "padding": "12.48px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "261.062px",
+          "height": "288px",
+          "minHeight": "288px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "block"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": 628.4140625,
+              "y": 309.6875,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 309.6875,
+              "right": 710.8046875,
+              "bottom": 355.40625,
+              "left": 628.4140625
+            },
+            "iconRect": {
+              "x": 653.6015625,
+              "y": 309.6875,
+              "width": 32,
+              "height": 32,
+              "top": 309.6875,
+              "right": 685.6015625,
+              "bottom": 341.6875,
+              "left": 653.6015625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 755.75,
+              "y": 367.28125,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 367.28125,
+              "right": 838.140625,
+              "bottom": 413,
+              "left": 755.75
+            },
+            "iconRect": {
+              "x": 780.9375,
+              "y": 367.28125,
+              "width": 32,
+              "height": 32,
+              "top": 367.28125,
+              "right": 812.9375,
+              "bottom": 399.28125,
+              "left": 780.9375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 755.75,
+              "y": 479.609375,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 479.609375,
+              "right": 838.140625,
+              "bottom": 525.328125,
+              "left": 755.75
+            },
+            "iconRect": {
+              "x": 780.9375,
+              "y": 479.609375,
+              "width": 32,
+              "height": 32,
+              "top": 479.609375,
+              "right": 812.9375,
+              "bottom": 511.609375,
+              "left": 780.9375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 586.0625,
+              "y": 479.609375,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 479.609375,
+              "right": 668.453125,
+              "bottom": 525.328125,
+              "left": 586.0625
+            },
+            "iconRect": {
+              "x": 611.25,
+              "y": 479.609375,
+              "width": 32,
+              "height": 32,
+              "top": 479.609375,
+              "right": 643.25,
+              "bottom": 511.609375,
+              "left": 611.25
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": 628.4140625,
+              "y": 531.453125,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 531.453125,
+              "right": 710.8046875,
+              "bottom": 577.171875,
+              "left": 628.4140625
+            },
+            "iconRect": {
+              "x": 653.6015625,
+              "y": 531.453125,
+              "width": 32,
+              "height": 32,
+              "top": 531.453125,
+              "right": 685.6015625,
+              "bottom": 563.453125,
+              "left": 653.6015625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 582.140625,
+              "y": 433.53125,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 433.53125,
+              "right": 664.53125,
+              "bottom": 479.25,
+              "left": 582.140625
+            },
+            "iconRect": {
+              "x": 607.328125,
+              "y": 433.53125,
+              "width": 32,
+              "height": 32,
+              "top": 433.53125,
+              "right": 639.328125,
+              "bottom": 465.53125,
+              "left": 607.328125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 586.0625,
+              "y": 370.171875,
+              "width": 82.390625,
+              "height": 45.71875,
+              "top": 370.171875,
+              "right": 668.453125,
+              "bottom": 415.890625,
+              "left": 586.0625
+            },
+            "iconRect": {
+              "x": 611.25,
+              "y": 370.171875,
+              "width": 32,
+              "height": 32,
+              "top": 370.171875,
+              "right": 643.25,
+              "bottom": 402.171875,
+              "left": 611.25
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": 582.140625,
+          "y": 309.6875,
+          "width": 256,
+          "height": 267.484375,
+          "widthUsage": 0.9806080919320086,
+          "heightUsage": 0.9287651909722222
+        },
+        "clipped": [
+          {
+            "name": "compass-node identity",
+            "clipped": true
+          },
+          {
+            "name": "compass-node giftings",
+            "clipped": true
+          },
+          {
+            "name": "compass-node prayer",
+            "clipped": true
+          }
+        ],
+        "overlaps": [],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 26,
+          "panelY": 0,
+          "radarX": 38,
+          "radarY": 3
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "file": "your-calling-compass-before-tablet-landscape-1024x768.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 712,
+          "y": 194.15625,
+          "width": 288,
+          "height": 378.71875,
+          "top": 194.15625,
+          "right": 1000,
+          "bottom": 572.875,
+          "left": 712
+        },
+        "header": {
+          "x": 725.46875,
+          "y": 207.625,
+          "width": 261.0625,
+          "height": 48.78125,
+          "top": 207.625,
+          "right": 986.53125,
+          "bottom": 256.40625,
+          "left": 725.46875
+        },
+        "radar": {
+          "x": 725.46875,
+          "y": 265.671875,
+          "width": 261.0625,
+          "height": 248,
+          "top": 265.671875,
+          "right": 986.53125,
+          "bottom": 513.671875,
+          "left": 725.46875
+        },
+        "center": {
+          "x": 816.8046875,
+          "y": 352.9453125,
+          "width": 78.390625,
+          "height": 78.390625,
+          "top": 352.9453125,
+          "right": 895.1953125,
+          "bottom": 431.3359375,
+          "left": 816.8046875
+        },
+        "footer": {
+          "x": 725.46875,
+          "y": 522.9375,
+          "width": 261.0625,
+          "height": 36.46875,
+          "top": 522.9375,
+          "right": 986.53125,
+          "bottom": 559.40625,
+          "left": 725.46875
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 712,
+            "y": -139.5,
+            "width": 288,
+            "height": 321.65625,
+            "top": -139.5,
+            "right": 1000,
+            "bottom": 182.15625,
+            "left": 712
+          },
+          "featured": {
+            "x": 210,
+            "y": -139.5,
+            "width": 490,
+            "height": 712.375,
+            "top": -139.5,
+            "right": 700,
+            "bottom": 572.875,
+            "left": 210
+          },
+          "recommended": {
+            "x": 210,
+            "y": 949.609375,
+            "width": 790,
+            "height": 218.078125,
+            "top": 949.609375,
+            "right": 1000,
+            "bottom": 1167.6875,
+            "left": 210
+          }
+        },
+        "panelComputed": {
+          "width": "288px",
+          "height": "378.719px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "stretch",
+          "padding": "12.48px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "261.062px",
+          "height": "248px",
+          "minHeight": "248px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "block"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": 814.8046875,
+              "y": 262.6015625,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 262.6015625,
+              "right": 897.1953125,
+              "bottom": 308.3984375,
+              "left": 814.8046875
+            },
+            "iconRect": {
+              "x": 839.9921875,
+              "y": 262.6015625,
+              "width": 32,
+              "height": 32,
+              "top": 262.6015625,
+              "right": 871.9921875,
+              "bottom": 294.6015625,
+              "left": 839.9921875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 900.9453125,
+              "y": 312.2109375,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 312.2109375,
+              "right": 983.3359375,
+              "bottom": 358.0078125,
+              "left": 900.9453125
+            },
+            "iconRect": {
+              "x": 926.1328125,
+              "y": 312.2109375,
+              "width": 32,
+              "height": 32,
+              "top": 312.2109375,
+              "right": 958.1328125,
+              "bottom": 344.2109375,
+              "left": 926.1328125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 900.9453125,
+              "y": 408.9296875,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 408.9296875,
+              "right": 983.3359375,
+              "bottom": 454.7265625,
+              "left": 900.9453125
+            },
+            "iconRect": {
+              "x": 926.1328125,
+              "y": 408.9296875,
+              "width": 32,
+              "height": 32,
+              "top": 408.9296875,
+              "right": 958.1328125,
+              "bottom": 440.9296875,
+              "left": 926.1328125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 731.2578125,
+              "y": 408.9296875,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 408.9296875,
+              "right": 813.6484375,
+              "bottom": 454.7265625,
+              "left": 731.2578125
+            },
+            "iconRect": {
+              "x": 756.4453125,
+              "y": 408.9296875,
+              "width": 32,
+              "height": 32,
+              "top": 408.9296875,
+              "right": 788.4453125,
+              "bottom": 440.9296875,
+              "left": 756.4453125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": 814.8046875,
+              "y": 453.5703125,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 453.5703125,
+              "right": 897.1953125,
+              "bottom": 499.3671875,
+              "left": 814.8046875
+            },
+            "iconRect": {
+              "x": 839.9921875,
+              "y": 453.5703125,
+              "width": 32,
+              "height": 32,
+              "top": 453.5703125,
+              "right": 871.9921875,
+              "bottom": 485.5703125,
+              "left": 839.9921875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 727.3359375,
+              "y": 369.2421875,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 369.2421875,
+              "right": 809.7265625,
+              "bottom": 415.0390625,
+              "left": 727.3359375
+            },
+            "iconRect": {
+              "x": 752.5234375,
+              "y": 369.2421875,
+              "width": 32,
+              "height": 32,
+              "top": 369.2421875,
+              "right": 784.5234375,
+              "bottom": 401.2421875,
+              "left": 752.5234375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 731.2578125,
+              "y": 314.6796875,
+              "width": 82.390625,
+              "height": 45.796875,
+              "top": 314.6796875,
+              "right": 813.6484375,
+              "bottom": 360.4765625,
+              "left": 731.2578125
+            },
+            "iconRect": {
+              "x": 756.4453125,
+              "y": 314.6796875,
+              "width": 32,
+              "height": 32,
+              "top": 314.6796875,
+              "right": 788.4453125,
+              "bottom": 346.6796875,
+              "left": 756.4453125
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": 727.3359375,
+          "y": 262.6015625,
+          "width": 256,
+          "height": 236.765625,
+          "widthUsage": 0.9806080919320086,
+          "heightUsage": 0.9547001008064516
+        },
+        "clipped": [
+          {
+            "name": "compass-node purpose",
+            "clipped": true
+          }
+        ],
+        "overlaps": [
+          [
+            "compass-node service",
+            "compass-node leadership"
+          ]
+        ],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 0,
+          "panelY": 0,
+          "radarX": 0,
+          "radarY": 0
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "file": "your-calling-compass-before-tablet-portrait-768x1024.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 38.390625,
+          "y": 213.21875,
+          "width": 691.21875,
+          "height": 597.296875,
+          "top": 213.21875,
+          "right": 729.609375,
+          "bottom": 810.515625,
+          "left": 38.390625
+        },
+        "header": {
+          "x": 55.390625,
+          "y": 230.21875,
+          "width": 657.21875,
+          "height": 102.515625,
+          "top": 230.21875,
+          "right": 712.609375,
+          "bottom": 332.734375,
+          "left": 55.390625
+        },
+        "radar": {
+          "x": 55.390625,
+          "y": 346.328125,
+          "width": 657.21875,
+          "height": 384,
+          "top": 346.328125,
+          "right": 712.609375,
+          "bottom": 730.328125,
+          "left": 55.390625
+        },
+        "center": {
+          "x": 384,
+          "y": 542.15625,
+          "width": 80,
+          "height": 80,
+          "top": 542.15625,
+          "right": 464,
+          "bottom": 622.15625,
+          "left": 384
+        },
+        "footer": {
+          "x": 55.390625,
+          "y": 743.921875,
+          "width": 657.21875,
+          "height": 49.59375,
+          "top": 743.921875,
+          "right": 712.609375,
+          "bottom": 793.515625,
+          "left": 55.390625
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 38.390625,
+            "y": -110,
+            "width": 691.21875,
+            "height": 307.21875,
+            "top": -110,
+            "right": 729.609375,
+            "bottom": 197.21875,
+            "left": 38.390625
+          },
+          "featured": {
+            "x": 38.390625,
+            "y": -893.21875,
+            "width": 691.21875,
+            "height": 767.21875,
+            "top": -893.21875,
+            "right": 729.609375,
+            "bottom": -126,
+            "left": 38.390625
+          },
+          "recommended": {
+            "x": 38.390625,
+            "y": 1312.09375,
+            "width": 691.21875,
+            "height": 217.796875,
+            "top": 1312.09375,
+            "right": 729.609375,
+            "bottom": 1529.890625,
+            "left": 38.390625
+          }
+        },
+        "panelComputed": {
+          "width": "691.219px",
+          "height": "597.297px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "start",
+          "padding": "16px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "657.219px",
+          "height": "384px",
+          "minHeight": "288px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "block"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": 327.203125,
+              "y": 377.046875,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 377.046875,
+              "right": 440.796875,
+              "bottom": 475.0625,
+              "left": 327.203125
+            },
+            "iconRect": {
+              "x": 359.203125,
+              "y": 377.046875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 377.046875,
+              "right": 408.796875,
+              "bottom": 426.640625,
+              "left": 359.203125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 604.15625,
+              "y": 453.84375,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 453.84375,
+              "right": 717.75,
+              "bottom": 551.859375,
+              "left": 604.15625
+            },
+            "iconRect": {
+              "x": 636.15625,
+              "y": 453.84375,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 453.84375,
+              "right": 685.75,
+              "bottom": 503.4375,
+              "left": 636.15625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 600.875,
+              "y": 607.4375,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 607.4375,
+              "right": 714.46875,
+              "bottom": 705.453125,
+              "left": 600.875
+            },
+            "iconRect": {
+              "x": 632.875,
+              "y": 607.4375,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 607.4375,
+              "right": 682.46875,
+              "bottom": 657.03125,
+              "left": 632.875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 193.40625,
+              "y": 607.4375,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 607.4375,
+              "right": 307,
+              "bottom": 705.453125,
+              "left": 193.40625
+            },
+            "iconRect": {
+              "x": 225.40625,
+              "y": 607.4375,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 607.4375,
+              "right": 275,
+              "bottom": 657.03125,
+              "left": 225.40625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": 327.203125,
+              "y": 676.5625,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 676.5625,
+              "right": 440.796875,
+              "bottom": 774.578125,
+              "left": 327.203125
+            },
+            "iconRect": {
+              "x": 359.203125,
+              "y": 676.5625,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 676.5625,
+              "right": 408.796875,
+              "bottom": 726.15625,
+              "left": 359.203125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 163.828125,
+              "y": 538.328125,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 538.328125,
+              "right": 277.421875,
+              "bottom": 636.34375,
+              "left": 163.828125
+            },
+            "iconRect": {
+              "x": 195.828125,
+              "y": 538.328125,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 538.328125,
+              "right": 245.421875,
+              "bottom": 587.921875,
+              "left": 195.828125
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 193.40625,
+              "y": 457.6875,
+              "width": 113.59375,
+              "height": 98.015625,
+              "top": 457.6875,
+              "right": 307,
+              "bottom": 555.703125,
+              "left": 193.40625
+            },
+            "iconRect": {
+              "x": 225.40625,
+              "y": 457.6875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 457.6875,
+              "right": 275,
+              "bottom": 507.28125,
+              "left": 225.40625
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": 163.828125,
+          "y": 377.046875,
+          "width": 553.921875,
+          "height": 397.53125,
+          "widthUsage": 0.8428272550045172,
+          "heightUsage": 1.0352376302083333
+        },
+        "clipped": [
+          {
+            "name": "compass-node identity",
+            "clipped": true
+          },
+          {
+            "name": "compass-node giftings",
+            "clipped": true
+          },
+          {
+            "name": "compass-node prayer",
+            "clipped": true
+          }
+        ],
+        "overlaps": [
+          [
+            "compass-node service",
+            "compass-node leadership"
+          ],
+          [
+            "compass-node leadership",
+            "compass-node wisdom"
+          ]
+        ],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 0,
+          "panelY": 0,
+          "radarX": 5,
+          "radarY": 44
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "file": "your-calling-compass-before-mobile-390x844.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 12,
+          "y": -115.640625,
+          "width": 366,
+          "height": 655.734375,
+          "top": -115.640625,
+          "right": 378,
+          "bottom": 540.09375,
+          "left": 12
+        },
+        "header": {
+          "x": 27.390625,
+          "y": -100.25,
+          "width": 335.21875,
+          "height": 57.796875,
+          "top": -100.25,
+          "right": 362.609375,
+          "bottom": -42.453125,
+          "left": 27.390625
+        },
+        "radar": {
+          "x": 27.390625,
+          "y": -30.453125,
+          "width": 335.21875,
+          "height": 491.96875,
+          "top": -30.453125,
+          "right": 362.609375,
+          "bottom": 461.515625,
+          "left": 27.390625
+        },
+        "center": {
+          "x": 131,
+          "y": 164.21875,
+          "width": 128,
+          "height": 128,
+          "top": 164.21875,
+          "right": 259,
+          "bottom": 292.21875,
+          "left": 131
+        },
+        "footer": {
+          "x": 27.390625,
+          "y": 475.109375,
+          "width": 335.21875,
+          "height": 49.59375,
+          "top": 475.109375,
+          "right": 362.609375,
+          "bottom": 524.703125,
+          "left": 27.390625
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 12,
+            "y": -598.703125,
+            "width": 366,
+            "height": 471.0625,
+            "top": -598.703125,
+            "right": 378,
+            "bottom": -127.640625,
+            "left": 12
+          },
+          "featured": {
+            "x": 12,
+            "y": -1341.171875,
+            "width": 366,
+            "height": 730.46875,
+            "top": -1341.171875,
+            "right": 378,
+            "bottom": -610.703125,
+            "left": 12
+          },
+          "recommended": {
+            "x": 12,
+            "y": 1012.609375,
+            "width": 366,
+            "height": 215.515625,
+            "top": 1012.609375,
+            "right": 378,
+            "bottom": 1228.125,
+            "left": 12
+          }
+        },
+        "panelComputed": {
+          "width": "366px",
+          "height": "655.734px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "start",
+          "padding": "14.4px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "335.219px",
+          "height": "491.969px",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "grid"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": 27.390625,
+              "y": -30.453125,
+              "width": 162.65625,
+              "height": 85.03125,
+              "top": -30.453125,
+              "right": 190.046875,
+              "bottom": 54.578125,
+              "left": 27.390625
+            },
+            "iconRect": {
+              "x": 37.65625,
+              "y": -12.734375,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": -12.734375,
+              "right": 87.25,
+              "bottom": 36.859375,
+              "left": 37.65625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 199.953125,
+              "y": -24.109375,
+              "width": 162.65625,
+              "height": 72.34375,
+              "top": -24.109375,
+              "right": 362.609375,
+              "bottom": 48.234375,
+              "left": 199.953125
+            },
+            "iconRect": {
+              "x": 210.21875,
+              "y": -12.734375,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": -12.734375,
+              "right": 259.8125,
+              "bottom": 36.859375,
+              "left": 210.21875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 27.390625,
+              "y": 70.828125,
+              "width": 162.65625,
+              "height": 72.34375,
+              "top": 70.828125,
+              "right": 190.046875,
+              "bottom": 143.171875,
+              "left": 27.390625
+            },
+            "iconRect": {
+              "x": 37.65625,
+              "y": 82.203125,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 82.203125,
+              "right": 87.25,
+              "bottom": 131.796875,
+              "left": 37.65625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 199.953125,
+              "y": 64.484375,
+              "width": 162.65625,
+              "height": 85.03125,
+              "top": 64.484375,
+              "right": 362.609375,
+              "bottom": 149.515625,
+              "left": 199.953125
+            },
+            "iconRect": {
+              "x": 210.21875,
+              "y": 82.203125,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 82.203125,
+              "right": 259.8125,
+              "bottom": 131.796875,
+              "left": 210.21875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": 27.390625,
+              "y": 306.921875,
+              "width": 162.65625,
+              "height": 72.34375,
+              "top": 306.921875,
+              "right": 190.046875,
+              "bottom": 379.265625,
+              "left": 27.390625
+            },
+            "iconRect": {
+              "x": 37.65625,
+              "y": 318.296875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 318.296875,
+              "right": 87.25,
+              "bottom": 367.890625,
+              "left": 37.65625
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 199.953125,
+              "y": 306.921875,
+              "width": 162.65625,
+              "height": 72.34375,
+              "top": 306.921875,
+              "right": 362.609375,
+              "bottom": 379.265625,
+              "left": 199.953125
+            },
+            "iconRect": {
+              "x": 210.21875,
+              "y": 318.296875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 318.296875,
+              "right": 259.8125,
+              "bottom": 367.890625,
+              "left": 210.21875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 27.390625,
+              "y": 389.171875,
+              "width": 162.65625,
+              "height": 72.34375,
+              "top": 389.171875,
+              "right": 190.046875,
+              "bottom": 461.515625,
+              "left": 27.390625
+            },
+            "iconRect": {
+              "x": 37.65625,
+              "y": 400.546875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 400.546875,
+              "right": 87.25,
+              "bottom": 450.140625,
+              "left": 37.65625
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": 27.390625,
+          "y": -30.453125,
+          "width": 335.21875,
+          "height": 491.96875,
+          "widthUsage": 1,
+          "heightUsage": 1
+        },
+        "clipped": [],
+        "overlaps": [],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 0,
+          "panelY": 0,
+          "radarX": 0,
+          "radarY": 0
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "file": "your-calling-compass-before-mobile-small-360x800.png",
+      "geometry": {
+        "bodyView": "calling",
+        "panel": {
+          "x": 34.390625,
+          "y": 13.09375,
+          "width": 291.21875,
+          "height": 773.546875,
+          "top": 13.09375,
+          "right": 325.609375,
+          "bottom": 786.640625,
+          "left": 34.390625
+        },
+        "header": {
+          "x": 49.78125,
+          "y": 28.484375,
+          "width": 260.4375,
+          "height": 124.109375,
+          "top": 28.484375,
+          "right": 310.21875,
+          "bottom": 152.59375,
+          "left": 49.78125
+        },
+        "radar": {
+          "x": 49.78125,
+          "y": 166.1875,
+          "width": 260.4375,
+          "height": 541.875,
+          "top": 166.1875,
+          "right": 310.21875,
+          "bottom": 708.0625,
+          "left": 49.78125
+        },
+        "center": {
+          "x": 140,
+          "y": 403.78125,
+          "width": 80,
+          "height": 80,
+          "top": 403.78125,
+          "right": 220,
+          "bottom": 483.78125,
+          "left": 140
+        },
+        "footer": {
+          "x": 49.78125,
+          "y": 721.65625,
+          "width": 260.4375,
+          "height": 49.59375,
+          "top": 721.65625,
+          "right": 310.21875,
+          "bottom": 771.25,
+          "left": 49.78125
+        },
+        "adjacent": {
+          "assistant": {
+            "x": 34.390625,
+            "y": -462.09375,
+            "width": 291.21875,
+            "height": 459.1875,
+            "top": -462.09375,
+            "right": 325.609375,
+            "bottom": -2.90625,
+            "left": 34.390625
+          },
+          "featured": {
+            "x": 34.390625,
+            "y": -1288.140625,
+            "width": 291.21875,
+            "height": 810.046875,
+            "top": -1288.140625,
+            "right": 325.609375,
+            "bottom": -478.09375,
+            "left": 34.390625
+          },
+          "recommended": {
+            "x": 34.390625,
+            "y": 3323.03125,
+            "width": 291.21875,
+            "height": 238.796875,
+            "top": 3323.03125,
+            "right": 325.609375,
+            "bottom": 3561.828125,
+            "left": 34.390625
+          }
+        },
+        "panelComputed": {
+          "width": "291.219px",
+          "height": "773.547px",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "minHeight": "0px",
+          "maxHeight": "none",
+          "margin": "0px",
+          "gridColumn": "compass",
+          "gridRow": "compass",
+          "alignSelf": "start",
+          "padding": "14.4px",
+          "borderWidth": "1px",
+          "borderRadius": "20px",
+          "overflow": "hidden"
+        },
+        "radarComputed": {
+          "width": "260.438px",
+          "height": "541.875px",
+          "minHeight": "288px",
+          "maxHeight": "none",
+          "padding": "0px",
+          "overflow": "visible",
+          "display": "grid"
+        },
+        "nodeData": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose",
+            "description": "Discover your God-given direction.",
+            "tabIndex": 0,
+            "tooltip": "Purpose Score: 82%. Walking in alignment.",
+            "rect": {
+              "x": -12.8515625,
+              "y": 166.1875,
+              "width": 125.265625,
+              "height": 108.890625,
+              "top": 166.1875,
+              "right": 112.4140625,
+              "bottom": 275.078125,
+              "left": -12.8515625
+            },
+            "iconRect": {
+              "x": -2.5859375,
+              "y": 195.828125,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 195.828125,
+              "right": 47.0078125,
+              "bottom": 245.421875,
+              "left": -2.5859375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity",
+            "description": "Know who you are in Christ.",
+            "tabIndex": 0,
+            "tooltip": "Identity Score: 78%. Rooted in Christ.",
+            "rect": {
+              "x": 184.953125,
+              "y": 172.84375,
+              "width": 125.265625,
+              "height": 95.578125,
+              "top": 172.84375,
+              "right": 310.21875,
+              "bottom": 268.421875,
+              "left": 184.953125
+            },
+            "iconRect": {
+              "x": 195.21875,
+              "y": 195.828125,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 195.828125,
+              "right": 244.8125,
+              "bottom": 245.421875,
+              "left": 195.21875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings",
+            "description": "Activate your gifts for His Kingdom.",
+            "tabIndex": 0,
+            "tooltip": "Giftings Score: 80%. Activate what God placed in you.",
+            "rect": {
+              "x": 49.78125,
+              "y": 291.640625,
+              "width": 125.265625,
+              "height": 95.578125,
+              "top": 291.640625,
+              "right": 175.046875,
+              "bottom": 387.21875,
+              "left": 49.78125
+            },
+            "iconRect": {
+              "x": 60.046875,
+              "y": 314.625,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 314.625,
+              "right": 109.640625,
+              "bottom": 364.21875,
+              "left": 60.046875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service",
+            "description": "Serve with purpose and impact.",
+            "tabIndex": 0,
+            "tooltip": "Service Score: 76%. Serving with purpose.",
+            "rect": {
+              "x": 184.953125,
+              "y": 284.984375,
+              "width": 125.265625,
+              "height": 108.890625,
+              "top": 284.984375,
+              "right": 310.21875,
+              "bottom": 393.875,
+              "left": 184.953125
+            },
+            "iconRect": {
+              "x": 195.21875,
+              "y": 314.625,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 314.625,
+              "right": 244.8125,
+              "bottom": 364.21875,
+              "left": 195.21875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer",
+            "description": "Stay connected through prayer.",
+            "tabIndex": 0,
+            "tooltip": "Prayer Score: 84%. Staying connected.",
+            "rect": {
+              "x": -12.8515625,
+              "y": 493.6875,
+              "width": 125.265625,
+              "height": 95.578125,
+              "top": 493.6875,
+              "right": 112.4140625,
+              "bottom": 589.265625,
+              "left": -12.8515625
+            },
+            "iconRect": {
+              "x": -2.5859375,
+              "y": 516.671875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 516.671875,
+              "right": 47.0078125,
+              "bottom": 566.265625,
+              "left": -2.5859375
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership",
+            "description": "Lead with integrity and love.",
+            "tabIndex": 0,
+            "tooltip": "Leadership Score: 74%. Influence with integrity.",
+            "rect": {
+              "x": 184.953125,
+              "y": 500.34375,
+              "width": 125.265625,
+              "height": 82.265625,
+              "top": 500.34375,
+              "right": 310.21875,
+              "bottom": 582.609375,
+              "left": 184.953125
+            },
+            "iconRect": {
+              "x": 195.21875,
+              "y": 516.671875,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 516.671875,
+              "right": 244.8125,
+              "bottom": 566.265625,
+              "left": 195.21875
+            },
+            "visible": true
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom",
+            "description": "Seek divine insight for decisions.",
+            "tabIndex": 0,
+            "tooltip": "Wisdom Score: 86%. Seeking divine insight.",
+            "rect": {
+              "x": 49.78125,
+              "y": 599.171875,
+              "width": 125.265625,
+              "height": 108.890625,
+              "top": 599.171875,
+              "right": 175.046875,
+              "bottom": 708.0625,
+              "left": 49.78125
+            },
+            "iconRect": {
+              "x": 60.046875,
+              "y": 628.8125,
+              "width": 49.59375,
+              "height": 49.59375,
+              "top": 628.8125,
+              "right": 109.640625,
+              "bottom": 678.40625,
+              "left": 60.046875
+            },
+            "visible": true
+          }
+        ],
+        "visibleDimensions": 7,
+        "visibleIcons": 7,
+        "composition": {
+          "x": -12.8515625,
+          "y": 166.1875,
+          "width": 323.0703125,
+          "height": 541.875,
+          "widthUsage": 1.2404907607391409,
+          "heightUsage": 1
+        },
+        "clipped": [
+          {
+            "name": "compass-node purpose",
+            "clipped": true
+          },
+          {
+            "name": "compass-node prayer",
+            "clipped": true
+          }
+        ],
+        "overlaps": [],
+        "documentOverflow": 0,
+        "internalScroll": {
+          "panelX": 0,
+          "panelY": 0,
+          "radarX": 13,
+          "radarY": 0
+        },
+        "focusOrder": [
+          {
+            "className": "compass-node purpose",
+            "text": "Purpose Discover your God-given direction.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node identity",
+            "text": "Identity Know who you are in Christ.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node giftings",
+            "text": "Giftings Activate your gifts for His Kingdom.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node service",
+            "text": "Service Serve with purpose and impact.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node prayer",
+            "text": "Prayer Stay connected through prayer.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node leadership",
+            "text": "Leadership Lead with integrity and love.",
+            "tabIndex": 0
+          },
+          {
+            "className": "compass-node wisdom",
+            "text": "Wisdom Seek divine insight for decisions.",
+            "tabIndex": 0
+          },
+          {
+            "className": "secondary",
+            "text": "View Full Compass",
+            "tabIndex": 0
+          }
+        ]
+      },
+      "diagnostics": {
+        "consoleErrors": [],
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "teoyube-calling-compass-diagram-evidence-1",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-DIAGRAM-001",
+  "generatedAt": "2026-07-27T22:22:49.871Z",
+  "artifactCount": 41,
+  "totalBytes": 15227501,
+  "ownerReferences": {
+    "image1": {
+      "source": "C:/Users/royce/Downloads/image1.png",
+      "evidence": "your-calling-compass-owner-target-image1.png",
+      "sourceSha256": "10682077babd7b624475201767b58f9a1f3b844495bad67843c9b1f1ceb3fd14",
+      "evidenceSha256": "10682077babd7b624475201767b58f9a1f3b844495bad67843c9b1f1ceb3fd14"
+    },
+    "image2": {
+      "source": "C:/Users/royce/Downloads/image2.png",
+      "evidence": "your-calling-compass-baseline-image2.png",
+      "sourceSha256": "183e770d0457f5891940cf4b460088b38568f01fbda55c092c5b9ea3462a4165",
+      "evidenceSha256": "183e770d0457f5891940cf4b460088b38568f01fbda55c092c5b9ea3462a4165"
+    }
+  },
+  "ownerReferencesByteIdentical": true,
+  "artifacts": [
+    {
+      "name": "your-calling-compass-baseline-geometry.json",
+      "bytes": 81052,
+      "sha256": "70361cc50977083f3e2812413f4c09e210790851763fc6c18917c54609ef94a3"
+    },
+    {
+      "name": "your-calling-compass-baseline-image2.png",
+      "bytes": 444829,
+      "sha256": "183e770d0457f5891940cf4b460088b38568f01fbda55c092c5b9ea3462a4165"
+    },
+    {
+      "name": "your-calling-compass-baseline-owner-wide-geometry.json",
+      "bytes": 2424,
+      "sha256": "6d63a2d939efbdbb3b4d9e22fef2fb9b53e6453b7f590aa24047420eebe67fb6"
+    },
+    {
+      "name": "your-calling-compass-before-200-percent-equivalent.png",
+      "bytes": 1458856,
+      "sha256": "2d42fd17f6b9660f821a060df3541b94cbf4e341c52ff81d9720898a98604a3b"
+    },
+    {
+      "name": "your-calling-compass-before-desktop-primary-1536x1024-locked.png",
+      "bytes": 220852,
+      "sha256": "1ad3ac25b198677a78d9f95c455cf448fd7fa5f4f823948d9fc7e9d544107d7f"
+    },
+    {
+      "name": "your-calling-compass-before-desktop-standard-1280x800-locked.png",
+      "bytes": 154255,
+      "sha256": "fdab79cc10c5fc8fde94044cb50aacaa19837ab04c259f0f547ae4077f81b40b"
+    },
+    {
+      "name": "your-calling-compass-before-desktop-wide-1440x900-locked.png",
+      "bytes": 186265,
+      "sha256": "c64c34b1db7c769e33d399c75014157318e0791a7e7c275bb2ebbb01ca2e5c05"
+    },
+    {
+      "name": "your-calling-compass-before-drag-1181-1181x820-locked.png",
+      "bytes": 146609,
+      "sha256": "8051260eb4c8f83056cfb36d60d1e51401ac3b25b1d08cdafaf51ad2011856ac"
+    },
+    {
+      "name": "your-calling-compass-before-drag-519-519x820-locked.png",
+      "bytes": 313118,
+      "sha256": "30cf2d9fe1e61015568da9bca67a1e74dc18752e6e7ecb6cb6986863aede8fa2"
+    },
+    {
+      "name": "your-calling-compass-before-drag-719-719x820-locked.png",
+      "bytes": 428026,
+      "sha256": "6cf467776486cb3266e8c7e3c8888fb97f26834c5090f091d04c09d0bb174264"
+    },
+    {
+      "name": "your-calling-compass-before-drag-899-899x820-locked.png",
+      "bytes": 413030,
+      "sha256": "b32b4f3166e5db4c492fb930d982154b8fe211b34320f77f1706791ea38c3db0"
+    },
+    {
+      "name": "your-calling-compass-before-final-absolute-difference.png",
+      "bytes": 204314,
+      "sha256": "7d840c89b2759d4f57087d29984fa0d22d175a7097f3d428915c0d36649b5092"
+    },
+    {
+      "name": "your-calling-compass-before-final-overlay-50-percent.png",
+      "bytes": 490741,
+      "sha256": "f3e8bc68ec8dd861b381d62d52ca5ceedcfc6ba11c2a7f4b7767faa3f086590d"
+    },
+    {
+      "name": "your-calling-compass-before-final-side-by-side.png",
+      "bytes": 687376,
+      "sha256": "1009cd4ca6c175610c0262f76e5abbe8f9546de6b0972e89ddd322730f598797"
+    },
+    {
+      "name": "your-calling-compass-before-mobile-390x844-locked.png",
+      "bytes": 264243,
+      "sha256": "600d363ddefc9a99861aa93cd53d154cfbb2c5aaeb3ab24bd8eff465baba14fe"
+    },
+    {
+      "name": "your-calling-compass-before-mobile-small-360x800-locked.png",
+      "bytes": 253471,
+      "sha256": "fc3c3df483430671ed76a5dd6ca7aed92b0ef8dc1e29de74b7d5e6366e61e66e"
+    },
+    {
+      "name": "your-calling-compass-before-owner-wide-2048x1200-locked.png",
+      "bytes": 362367,
+      "sha256": "36fd974b8cffdcc18c51b40a9568c90681cdd871126f5aefd88145c31d4e08bb"
+    },
+    {
+      "name": "your-calling-compass-before-tablet-landscape-1024x768-locked.png",
+      "bytes": 145331,
+      "sha256": "9ecdcaff92a26681e850c87a3a3c6e57bb778110c277ffd6170364045127f96f"
+    },
+    {
+      "name": "your-calling-compass-before-tablet-portrait-768x1024-locked.png",
+      "bytes": 450346,
+      "sha256": "3e3c96ea492eb72f8591cb9811cc08e8970c6189d724c393b4669538daf9ff7e"
+    },
+    {
+      "name": "your-calling-compass-comparative-runtime-audit.json",
+      "bytes": 418651,
+      "sha256": "ec76a419f3f4ada7d01309826cafd81d489768bd09aba10436d530feb6802b75"
+    },
+    {
+      "name": "your-calling-compass-css-scope-audit.json",
+      "bytes": 858,
+      "sha256": "f132d984e8bb3c8c94084f229df0e1a20ce707440101b4c9117ea606198c1b55"
+    },
+    {
+      "name": "your-calling-compass-diagram-verification-report.md",
+      "bytes": 9285,
+      "sha256": "0aea3f2a23110035ddb1394a4c586ea27c81e688565b2d45ab1d6c9d244717ad"
+    },
+    {
+      "name": "your-calling-compass-final-200-percent-equivalent.png",
+      "bytes": 1294743,
+      "sha256": "a511989c73451a9d3638375492b28a3e3edb3737b726cda18890d29b10417a7a"
+    },
+    {
+      "name": "your-calling-compass-final-desktop-primary-1536x1024.png",
+      "bytes": 212958,
+      "sha256": "bb96185e9dca44b05692f2b86033dfe62f684cb93e59c6ada540aa6c26d52ff3"
+    },
+    {
+      "name": "your-calling-compass-final-desktop-standard-1280x800.png",
+      "bytes": 151030,
+      "sha256": "c5dd9f7e012cf28ae0938564d6029f43d7c673811e861ddb94756a67ab344b93"
+    },
+    {
+      "name": "your-calling-compass-final-desktop-wide-1440x900.png",
+      "bytes": 181508,
+      "sha256": "2dc89506e10b25d018583875cf164155882b7e1a343e11bf6907777f0c4ab3ca"
+    },
+    {
+      "name": "your-calling-compass-final-drag-1181-1181x820.png",
+      "bytes": 145296,
+      "sha256": "195fb3f836c21a2c43cfdb40e9df37293afb711c348e7a6e918c54b2083252c9"
+    },
+    {
+      "name": "your-calling-compass-final-drag-519-519x820.png",
+      "bytes": 311351,
+      "sha256": "de230760a6dc68c4abef6fd296f21545ef3b22eb9a00a29042f7a5b566a98867"
+    },
+    {
+      "name": "your-calling-compass-final-drag-719-719x820.png",
+      "bytes": 410835,
+      "sha256": "951ef37f4c6e745fa2a6609b26287c65085360f7366891ccd51ed94709284181"
+    },
+    {
+      "name": "your-calling-compass-final-drag-899-899x820.png",
+      "bytes": 366946,
+      "sha256": "f11d78b9b9692f1d7f968a955b6f8a335b38fbe6405f84bb4f479d5905cf48ee"
+    },
+    {
+      "name": "your-calling-compass-final-full-page-1536x1024.png",
+      "bytes": 2316574,
+      "sha256": "41cdf18e64873f10e32c80b193dad305a4864e73712729518695bc8fc19ab88e"
+    },
+    {
+      "name": "your-calling-compass-final-mobile-390x844.png",
+      "bytes": 264243,
+      "sha256": "600d363ddefc9a99861aa93cd53d154cfbb2c5aaeb3ab24bd8eff465baba14fe"
+    },
+    {
+      "name": "your-calling-compass-final-mobile-small-360x800.png",
+      "bytes": 253471,
+      "sha256": "fc3c3df483430671ed76a5dd6ca7aed92b0ef8dc1e29de74b7d5e6366e61e66e"
+    },
+    {
+      "name": "your-calling-compass-final-owner-wide-2048x1200.png",
+      "bytes": 356711,
+      "sha256": "856bf3d030c201d001c3a742db24b7c69b834a422c77f60d3d9d35305caa6d6d"
+    },
+    {
+      "name": "your-calling-compass-final-tablet-landscape-1024x768.png",
+      "bytes": 143452,
+      "sha256": "18a5a05cc36c0a041c6e3b26967c82e4b2a58ef7a2f5e4b240d598bb5f58b69e"
+    },
+    {
+      "name": "your-calling-compass-final-tablet-portrait-768x1024.png",
+      "bytes": 403104,
+      "sha256": "915570d45682a306680ec66b69f6a1cda1ba503dcb908b66d209c468b368cafd"
+    },
+    {
+      "name": "your-calling-compass-geometry-interaction-summary.json",
+      "bytes": 23207,
+      "sha256": "ee3cca3bd0d54f1abd2a65aa2e570be57195c5bbceff53c0e72d9685356bcb74"
+    },
+    {
+      "name": "your-calling-compass-owner-target-final-side-by-side.png",
+      "bytes": 890373,
+      "sha256": "08bf1f601c08cf43dde152c17b1ea2be3551d67d4701ad1ce1f3361e49dd07dd"
+    },
+    {
+      "name": "your-calling-compass-owner-target-image1.png",
+      "bytes": 350036,
+      "sha256": "10682077babd7b624475201767b58f9a1f3b844495bad67843c9b1f1ceb3fd14"
+    },
+    {
+      "name": "your-calling-compass-pointer-target-audit.json",
+      "bytes": 14949,
+      "sha256": "43ed8816a0d3af1b46cc7b8176a7ad606e204bff87a888d4e503075af541fe76"
+    },
+    {
+      "name": "your-calling-compass-visual-diff-metrics.json",
+      "bytes": 415,
+      "sha256": "6294bdf460be7dd3766492e1fb988f7ea096c68a60c41e2f1388d00071703278"
+    }
+  ]
+}

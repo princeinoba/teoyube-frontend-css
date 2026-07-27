@@ -1,0 +1,669 @@
+{
+  "capturedAt": "2026-07-27T22:04:07.236Z",
+  "route": "/calling-compass",
+  "scope": ".calling-compass-panel .calling-radar",
+  "viewports": [
+    {
+      "name": "owner-wide",
+      "width": 2048,
+      "height": 1200,
+      "decorativeLayersNonIntercepting": true,
+      "pointerEvents": {
+        "radarBefore": "none",
+        "radarAfter": "none",
+        "centerBefore": "none",
+        "centerAfter": "none"
+      },
+      "baselineCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": false,
+          "hit": ""
+        }
+      ],
+      "finalCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": false,
+          "hit": ""
+        }
+      ],
+      "currentNinePointCoverage": [
+        {
+          "label": "Purpose",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Identity",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Giftings",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Service",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Prayer",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Leadership",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Wisdom",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "decorativeLayersNonIntercepting": true,
+      "pointerEvents": {
+        "radarBefore": "none",
+        "radarAfter": "none",
+        "centerBefore": "none",
+        "centerAfter": "none"
+      },
+      "baselineCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "finalCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "currentNinePointCoverage": [
+        {
+          "label": "Purpose",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Identity",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Giftings",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Service",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Prayer",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Leadership",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Wisdom",
+          "usablePoints": 3,
+          "totalSamplePoints": 9,
+          "blockers": [
+            "phase117-offline-status",
+            "phase117-offline-pill online"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800,
+      "decorativeLayersNonIntercepting": true,
+      "pointerEvents": {
+        "radarBefore": "none",
+        "radarAfter": "none",
+        "centerBefore": "none",
+        "centerAfter": "none"
+      },
+      "baselineCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "finalCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "currentNinePointCoverage": [
+        {
+          "label": "Purpose",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Identity",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Giftings",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Service",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Prayer",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Leadership",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Wisdom",
+          "usablePoints": 0,
+          "totalSamplePoints": 9,
+          "blockers": [
+            "phase117-offline-status"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "drag-719",
+      "width": 719,
+      "height": 820,
+      "decorativeLayersNonIntercepting": true,
+      "pointerEvents": {
+        "radarBefore": "none",
+        "radarAfter": "none",
+        "centerBefore": "none",
+        "centerAfter": "none"
+      },
+      "baselineCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "finalCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "currentNinePointCoverage": [
+        {
+          "label": "Purpose",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Identity",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Giftings",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Service",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Prayer",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Leadership",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Wisdom",
+          "usablePoints": 3,
+          "totalSamplePoints": 9,
+          "blockers": [
+            "phase117-offline-status",
+            "phase117-offline-pill online"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "drag-519",
+      "width": 519,
+      "height": 820,
+      "decorativeLayersNonIntercepting": true,
+      "pointerEvents": {
+        "radarBefore": "none",
+        "radarAfter": "none",
+        "centerBefore": "none",
+        "centerAfter": "none"
+      },
+      "baselineCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "finalCenterCoverage": [
+        {
+          "label": "Purpose",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Identity",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Giftings",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Service",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Prayer",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Leadership",
+          "covered": false,
+          "hit": ""
+        },
+        {
+          "label": "Wisdom",
+          "covered": true,
+          "hit": "phase117-offline-status"
+        }
+      ],
+      "currentNinePointCoverage": [
+        {
+          "label": "Purpose",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Identity",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Giftings",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Service",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Prayer",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Leadership",
+          "usablePoints": 9,
+          "totalSamplePoints": 9,
+          "blockers": []
+        },
+        {
+          "label": "Wisdom",
+          "usablePoints": 3,
+          "totalSamplePoints": 9,
+          "blockers": [
+            "phase117-offline-status",
+            "phase117-offline-pill online"
+          ]
+        }
+      ]
+    }
+  ],
+  "conclusion": "All radar and hub decorative layers pass pointer events through. All seven owner-wide node cards have 9/9 usable sample points and retain keyboard focus/tooltips. At narrow widths the pre-existing global phase117 offline-status overlay covers part or all of Wisdom at the tested scroll position in both locked-before and final captures; that shared overlay is outside this approval scope."
+}

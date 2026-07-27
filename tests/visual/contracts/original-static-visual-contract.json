@@ -963,8 +963,8 @@
     },
     {
       "path": "styles/pages/calling-compass.css",
-      "bytes": 41891,
-      "sha256": "13169753677e4e1a46f2a5321ffa6800792a21027128b6ae411378e0f148d623"
+      "bytes": 51442,
+      "sha256": "8db16464a9e5a28aff3cd868ef14ef348fb01b81758d293cea476f4902d53aef"
     },
     {
       "path": "styles/pages/canon.css",
@@ -4517,6 +4517,8 @@
       "(min-width: 1101px)",
       "(min-width: 1261px)",
       "(min-width: 521px)",
+      "(min-width: 721px)",
+      "(min-width: 721px) and (max-width: 900px)",
       "(min-width: 901px)",
       "(min-width: 981px)",
       "(min-width: 981px) and (max-width: 1600px)",

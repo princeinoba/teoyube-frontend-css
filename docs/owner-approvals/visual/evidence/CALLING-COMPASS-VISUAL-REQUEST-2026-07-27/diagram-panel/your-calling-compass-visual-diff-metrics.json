@@ -1,0 +1,14 @@
+{
+  "comparison": "locked starting-commit rendering vs approved final rendering",
+  "width": 527,
+  "height": 610,
+  "totalPixels": 321470,
+  "changedPixelsExact": 113783,
+  "changedPercentExact": 35.394594,
+  "changedPixelsThreshold16": 59153,
+  "changedPercentThreshold16": 18.400784,
+  "meanAbsoluteRgbDifference": 10.194388,
+  "maximumChannelDifference": 255,
+  "maskedRegions": 0,
+  "baselineUpdated": false
+}

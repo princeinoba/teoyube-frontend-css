@@ -1,0 +1,20 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-DIAGRAM-001",
+  "startingCommit": "5fc26e6e4608c55eeb5508905b06f26a93703170",
+  "cssFile": "styles/pages/calling-compass.css",
+  "sectionStartLine": 1297,
+  "selectorPartCount": 45,
+  "allSelectorsScoped": true,
+  "invalidSelectors": [],
+  "transformScaleCount": 0,
+  "transitionAllCount": 0,
+  "externalUrlCount": 0,
+  "cssContentDeclarationCount": 0,
+  "importantCount": 56,
+  "protectedAppSourceChanged": [],
+  "changedTrackedFilesAtImplementationCommit": [
+    "docs/owner-approvals/visual/CALLING_COMPASS_VISUAL_CHANGE_REQUEST_2026-07-27.md",
+    "styles/pages/calling-compass.css"
+  ],
+  "conclusion": "PASS: every added selector is scoped to the Calling view, Calling Compass panel, and Calling radar; no DOM, JavaScript, TypeScript, React, route, data, or asset implementation changed."
+}
