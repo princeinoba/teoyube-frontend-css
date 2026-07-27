@@ -112,3 +112,31 @@ Evidence and this request remain as an audit trail. The implementation report mu
 ## Agent declaration
 
 > I have not approved this request, changed protected visual sources, or updated baselines. Work is stopped pending an owner decision.
+
+## Focused core-panel owner amendment
+
+Decision: APPROVED
+
+Approval-ID: TEOYUBE-VISUAL-2026-07-26-PROMISE-PANELS-001
+
+Approved-By: Prince Okiemute Inoba — Teoyube Project Owner
+
+Approved-At: 2026-07-26T22:44:26-04:00
+
+Parent approval: TEOYUBE-VISUAL-2026-07-26-PROMISE-TABLE-001
+
+The owner authorizes a CSS-only visual replacement on `/promise-table` for:
+
+1. Promise Table Workspace
+2. Safe 11.7 Promise Table Data — Live promise rows
+3. Local Promise Table — Saved Promise Rows
+4. Presentational icons in the approved existing containers and controls
+5. Local beta notice positioning and presentation where necessary to avoid blocking controls
+
+The approved product-source scope is limited to `styles/pages/promise-table.css`. The owner reference for this amendment is:
+
+`docs/owner-approvals/visual/evidence/PROMISE-TABLE-VISUAL-REQUEST-2026-07-26/focused-core-panels-owner-reference.png`
+
+No HTML, JSX, TSX, JavaScript, TypeScript, application behavior, route, data, copy, semantic table structure, asset, dependency, test source, immutable baseline, or owner-approved baseline change is authorized. Governance records, Promise Table-specific evidence, the exact final stylesheet fingerprints, and the deterministic runtime identity derived solely from those approved changes may be updated.
+
+This owner amendment closes the pending-decision condition in the earlier agent declaration only for the exact focused scope above. It does not extend approval to the Promise Table hero, summary metrics, lower search/media sections, sidebar, shared header, another route, or another protected page.
