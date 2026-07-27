@@ -1,3 +1,521 @@
+/* Owner-approved Calling Compass visual architecture upgrade.
+ * Approval: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-001
+ * Scope: Calling Compass route only; DOM, copy, assets, data, and behavior remain unchanged.
+ */
+
+/* 1. Route-scoped tokens and sizing safeguards */
+body[data-view="calling"] {
+  --calling-page-gap: clamp(0.7rem, 0.9vw, 0.9rem);
+  --calling-section-gap: 0.75rem;
+  --calling-card-gap: clamp(0.62rem, 0.8vw, 0.78rem);
+  --calling-panel-padding: clamp(0.82rem, 1vw, 1rem);
+  --calling-compact-padding: clamp(0.65rem, 0.85vw, 0.82rem);
+  --calling-control-height: 2.5rem;
+  --calling-control-height-compact: 2.25rem;
+  --calling-panel-radius: 0.9rem;
+  --calling-card-radius: 0.75rem;
+  --calling-control-radius: 0.58rem;
+  --calling-pill-radius: 999px;
+  --calling-border: rgba(0, 83, 63, 0.12);
+  --calling-border-strong: rgba(0, 92, 68, 0.24);
+  --calling-green: #006a53;
+  --calling-green-deep: #004f3f;
+  --calling-mint: #eef8f2;
+  --calling-warm-white: rgb(255 254 249);
+  --calling-gold: rgb(229 187 66);
+  --calling-text: #102126;
+  --calling-muted: #5b686d;
+  --calling-success: rgb(232 246 237);
+  --calling-warning: #fff7dc;
+  --calling-danger: rgb(180 35 24);
+  --calling-panel-shadow: 0 12px 30px rgba(12, 45, 38, 0.08);
+  --calling-card-shadow: 0 9px 22px rgba(12, 45, 38, 0.07);
+  --calling-diagram-max-width: 28rem;
+  --calling-diagram-min-height: 15.5rem;
+  --calling-media-min-width: 18rem;
+  --calling-layer-content: 1;
+  --calling-layer-control: 2;
+  --calling-layer-notice: 3;
+  background: #f7faf8;
+}
+
+body[data-view="calling"] .view.page-container,
+body[data-view="calling"] .view.page-container * {
+  box-sizing: border-box;
+}
+
+body[data-view="calling"] .view.page-container :where(section, article, aside, div, form, nav) {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .view.page-container :where(img, iframe, video, input, select, textarea, button, a) {
+  max-inline-size: 100%;
+}
+
 body[data-view="calling"] :where(.calling-premium-page, .calling-layout, .calling-main) {
   max-width: 100%;
+}
+
+/* 2. Search-aligned application shell */
+body[data-view="calling"] .app-shell {
+  grid-template-columns: 12.375rem minmax(0, 1fr);
+  gap: 0;
+  background: #f7faf8;
+}
+
+body[data-view="calling"] .app-sidebar {
+  width: auto;
+}
+
+body[data-view="calling"] .sidebar {
+  gap: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(0, 83, 63, 0.05);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 32px rgba(12, 45, 38, 0.08);
+}
+
+body[data-view="calling"] .brand-lockup {
+  gap: 0.62rem;
+  padding: 0.5rem 0.25rem 0.7rem;
+}
+
+body[data-view="calling"] .brand-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+body[data-view="calling"] .brand-mark::before {
+  font-size: 1.28rem;
+}
+
+body[data-view="calling"] .brand-mark::after {
+  bottom: 0.56rem;
+}
+
+body[data-view="calling"] .brand-lockup .eyebrow {
+  font-size: 0.58rem;
+}
+
+body[data-view="calling"] .brand-lockup h1 {
+  font-size: 1rem;
+}
+
+body[data-view="calling"] .brand-subtitle {
+  font-size: 0.64rem;
+}
+
+body[data-view="calling"] .nav-list {
+  gap: 0.16rem;
+}
+
+body[data-view="calling"] .nav-item {
+  gap: 0.58rem;
+  min-height: 2.15rem;
+  padding: 0.48rem 0.62rem;
+  border-radius: 0.45rem;
+  font-size: 0.72rem;
+}
+
+body[data-view="calling"] .nav-item::before {
+  width: 0.95rem;
+  font-size: 1rem;
+}
+
+body[data-view="calling"] .saint-card {
+  gap: 0.58rem;
+  margin-top: auto;
+  padding: 0.72rem;
+  border: 1px solid rgba(0, 83, 63, 0.1);
+  border-radius: 0.65rem;
+  box-shadow: 0 10px 24px rgba(12, 45, 38, 0.06);
+}
+
+body[data-view="calling"] .saint-profile-head {
+  gap: 0.55rem;
+}
+
+body[data-view="calling"] .saint-avatar {
+  width: 2.55rem;
+}
+
+body[data-view="calling"] .saint-card h2 {
+  font-size: 1rem;
+}
+
+body[data-view="calling"] .saint-card p,
+body[data-view="calling"] #sidebarCalling {
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+body[data-view="calling"] .active-badge {
+  padding: 0.18rem 0.4rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="calling"] #openAssessment,
+body[data-view="calling"] .saint-card > button:last-child {
+  min-height: 2.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="calling"] .app-main {
+  min-inline-size: 0;
+  padding: 0.7rem 1.5rem 1rem 0.75rem;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(232, 246, 238, 0.88), transparent 18rem),
+    linear-gradient(180deg, #fbfdfb, #f4f8f6) !important;
+}
+
+/* 3. Page header and workspace architecture */
+body[data-view="calling"] #calling {
+  display: block;
+  max-width: none;
+}
+
+body[data-view="calling"] .calling-premium-page {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 100%;
+}
+
+body[data-view="calling"] .calling-premium-head {
+  min-inline-size: 0;
+  padding: 0.15rem 0.85rem 0.225rem;
+}
+
+body[data-view="calling"] .calling-premium-head > div:first-child {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-premium-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+body[data-view="calling"] .calling-premium-actions :where(button, .primary, .secondary) {
+  min-height: 2.35rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.5rem;
+  font-size: 0.74rem;
+}
+
+body[data-view="calling"] .calling-premium-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 21rem;
+  gap: var(--calling-section-gap);
+  align-items: start;
+}
+
+body[data-view="calling"] .calling-main-column {
+  display: grid;
+  gap: var(--calling-section-gap);
+  min-inline-size: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body[data-view="calling"] .calling-right-rail {
+  display: grid;
+  gap: var(--calling-section-gap);
+  min-inline-size: 0;
+  position: sticky;
+  top: var(--calling-section-gap);
+}
+
+/* 4. Page-specific hero and status */
+body[data-view="calling"] .calling-hero-panel {
+  border: 1px solid rgba(255, 225, 128, 0.2);
+  border-radius: var(--calling-panel-radius);
+  box-shadow: 0 18px 42px rgba(0, 52, 39, 0.15);
+}
+
+body[data-view="calling"] .calling-search-form {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-search-form input {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-daily-inspiration {
+  min-inline-size: 0;
+  border-radius: var(--calling-card-radius);
+}
+
+body[data-view="calling"] .compass-video-status {
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}
+
+/* 5. Coherent panel and control system */
+body[data-view="calling"] :where(
+  .calling-featured-video,
+  .calling-assistant-panel,
+  .calling-recommended-section,
+  .calling-category-section,
+  .calling-playlist-card,
+  .phase116b-functional-panel
+) {
+  border-color: var(--calling-border);
+  border-radius: var(--calling-panel-radius);
+  box-shadow: var(--calling-panel-shadow);
+}
+
+body[data-view="calling"] :where(
+  .calling-continue-card,
+  .calling-progress-card,
+  .calling-compass-panel
+) {
+  border-radius: var(--calling-panel-radius) !important;
+}
+
+body[data-view="calling"] .calling-content-grid {
+  gap: var(--calling-section-gap) !important;
+}
+
+body[data-view="calling"] .phase116b-functional-panel {
+  margin-block: 0;
+  padding: 0.625rem;
+}
+
+body[data-view="calling"] .calling-featured-video,
+body[data-view="calling"] .calling-assistant-panel,
+body[data-view="calling"] .calling-compass-panel {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-featured-video {
+  border-radius: var(--calling-panel-radius) !important;
+}
+
+body[data-view="calling"] .compass-player-shell,
+body[data-view="calling"] .compass-video-frame,
+body[data-view="calling"] .compass-featured-meta {
+  border-radius: var(--calling-card-radius) !important;
+}
+
+body[data-view="calling"] .compass-video-frame {
+  inline-size: 100%;
+  aspect-ratio: 1672 / 941;
+}
+
+body[data-view="calling"] .compass-video-frame iframe {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+body[data-view="calling"] .calling-assistant-actions,
+body[data-view="calling"] .calling-category-grid,
+body[data-view="calling"] .calling-progress-grid {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] :where(
+  .calling-premium-actions,
+  .calling-assistant-actions,
+  .calling-category-grid
+) :where(button, input, select, textarea) {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] :where(button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid rgba(229, 187, 66, 0.94);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 2px rgba(0, 79, 63, 0.78);
+}
+
+body[data-view="calling"] :where(button, input, select, textarea):disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+/* 6. Informational compass and scrolling rail */
+body[data-view="calling"] .calling-compass-panel {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-radar {
+  inline-size: 100%;
+  max-inline-size: var(--calling-diagram-max-width);
+  min-block-size: var(--calling-diagram-min-height) !important;
+  margin-inline: auto;
+}
+
+body[data-view="calling"] .compass-video-list {
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
+}
+
+body[data-view="calling"] .compass-video-item {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .compass-video-item > * {
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-continue-card,
+body[data-view="calling"] .calling-progress-card,
+body[data-view="calling"] .calling-playlist-card {
+  align-content: start;
+}
+
+body[data-view="calling"] .calling-continue-card > .secondary,
+body[data-view="calling"] .calling-progress-card > .primary,
+body[data-view="calling"] .calling-compass-panel > .secondary,
+body[data-view="calling"] .compass-playlist-link {
+  margin-block-start: auto;
+}
+
+/* 7. Responsive architecture */
+@media (max-width: 1180px) {
+  body[data-view="calling"] .calling-premium-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="calling"] .calling-right-rail {
+    position: static;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  body[data-view="calling"] .app-shell {
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+  }
+
+  body[data-view="calling"] .sidebar {
+    padding-inline: 0.72rem;
+  }
+
+  body[data-view="calling"] .app-main {
+    padding-right: 0.75rem;
+  }
+
+  body[data-view="calling"] .calling-premium-head {
+    align-items: stretch;
+  }
+
+  body[data-view="calling"] .calling-premium-actions {
+    align-items: stretch;
+  }
+
+  body[data-view="calling"] .calling-right-rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="calling"] .calling-radar {
+    max-inline-size: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body[data-view="calling"] .app-shell {
+    display: block;
+  }
+
+  body[data-view="calling"] .app-sidebar {
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  body[data-view="calling"] .sidebar {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  body[data-view="calling"] .app-main {
+    padding: 0.75rem 0.75rem 0.72rem;
+  }
+
+  body[data-view="calling"] .calling-premium-head {
+    margin-bottom: 0.025rem;
+    padding-inline: 0;
+  }
+
+  body[data-view="calling"] .calling-premium-actions {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.98rem;
+    width: 100%;
+  }
+
+  body[data-view="calling"] .calling-premium-actions > button {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.72rem 1rem;
+    border-radius: 0.625rem;
+  }
+
+  body[data-view="calling"] .calling-premium-grid,
+  body[data-view="calling"] .calling-main-column,
+  body[data-view="calling"] .calling-right-rail {
+    gap: 0.625rem;
+  }
+
+  body[data-view="calling"] .calling-content-grid {
+    gap: var(--calling-section-gap) !important;
+  }
+
+  body[data-view="calling"] .calling-radar {
+    min-block-size: 0 !important;
+  }
+}
+
+@media (max-width: 620px) {
+
+  body[data-view="calling"] .calling-category-grid,
+  body[data-view="calling"] .calling-assistant-actions,
+  body[data-view="calling"] .calling-progress-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* 8. Accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  body[data-view="calling"] {
+    scroll-behavior: auto;
+  }
+
+  body[data-view="calling"] *,
+  body[data-view="calling"] *::before,
+  body[data-view="calling"] *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  body[data-view="calling"] :where(button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 3px solid Highlight;
+    outline-offset: 3px;
+    box-shadow: none;
+  }
+
+  body[data-view="calling"] :where(
+    .calling-hero-panel,
+    .calling-featured-video,
+    .calling-assistant-panel,
+    .calling-compass-panel,
+    .calling-recommended-section,
+    .calling-category-section,
+    .calling-playlist-card,
+    .calling-continue-card,
+    .calling-progress-card,
+    .phase116b-functional-panel
+  ) {
+    border: 1px solid CanvasText;
+  }
 }
