@@ -164,7 +164,11 @@ body[data-view="table"] .app-header .topbar-actions > button {
 }
 /* 1. Page tokens and size safety */
 body[data-view="table"] #table {
-  --promise-page-gap: clamp(0.9rem, 1.35vw, 1.25rem);
+  --promise-page-section-gap: 0.875rem;
+  --promise-compact-section-gap: 0.75rem;
+  --promise-internal-panel-gap: 0.75rem;
+  --promise-search-suggestion-gap: 0.5625rem;
+  --promise-suggestion-featured-gap: 0.875rem;
   --promise-section-gap: clamp(0.75rem, 1.1vw, 1rem);
   --promise-card-gap: clamp(0.65rem, 0.9vw, 0.85rem);
   --promise-panel-padding: clamp(1rem, 1.55vw, 1.4rem);
@@ -235,8 +239,9 @@ body[data-view="table"] #table {
   --promise-core-icon-upload: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 18H6a4 4 0 0 1 0-8 6 6 0 0 1 11.5-1.8A4.5 4.5 0 0 1 18 17h-1'/%3E%3Cpath d='m12 18v-8m0 0-3 3m3-3 3 3'/%3E%3C/svg%3E");
   --promise-core-icon-list: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01'/%3E%3C/svg%3E");
   --promise-core-icon-trash: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6'/%3E%3C/svg%3E");
-  --promise-core-icon-compare: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.05' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7h14M15 3l4 4-4 4M19 17H5M9 13l-4 4 4 4'/%3E%3C/svg%3E");  display: grid;
-  gap: var(--promise-page-gap);
+  --promise-core-icon-compare: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.05' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7h14M15 3l4 4-4 4M19 17H5M9 13l-4 4 4 4'/%3E%3C/svg%3E");
+  display: grid;
+  gap: var(--promise-page-section-gap);
   inline-size: 100%;
   min-inline-size: 0;
   max-inline-size: 100%;
@@ -266,6 +271,16 @@ body[data-view="table"] #table .promise-table-grid {
   align-items: stretch;
 }
 
+body[data-view="table"] #table > :where(
+  .promise-table-grid,
+  #phase116bPromiseWorkspace,
+  #phase117PromiseTableControls,
+  #phase114PromiseTablePanel,
+  .promise-search-feed
+) {
+  margin-block: 0 !important;
+}
+
 body[data-view="table"] #table .promise-table-grid > .module-card {
   min-block-size: 0;
   padding: var(--promise-panel-padding);
@@ -286,7 +301,7 @@ body[data-view="table"] #table .promise-table-grid > .module-card:hover {
 body[data-view="table"] #table .promise-table-grid > .promise-scrolls-panel {
   grid-column: span 3;
   align-content: end;
-  min-block-size: clamp(16rem, 21vw, 18.5rem);
+  min-block-size: clamp(19rem, 22vw, 21.5rem) !important;
   padding: clamp(1.25rem, 2vw, 1.8rem);
   overflow: hidden;
   border-color: rgba(245, 197, 66, 0.34);
@@ -318,9 +333,9 @@ body[data-view="table"] #table .promise-scrolls-panel .status-pill {
 /* 5. Calling Compass */
 body[data-view="table"] #table .promise-calling-compass-card {
   grid-column: span 3;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) !important;
   align-content: stretch;
-  min-block-size: clamp(16rem, 21vw, 18.5rem);
+  min-block-size: clamp(19rem, 22vw, 21.5rem) !important;
   overflow: hidden;
   background-position: center;
   background-size: cover;
@@ -328,15 +343,32 @@ body[data-view="table"] #table .promise-calling-compass-card {
 body[data-view="table"] #table .promise-compass-heading { display: flex; gap: 0.65rem; align-items: center; }
 body[data-view="table"] #table .promise-compass-heading p { margin: 0; }
 body[data-view="table"] #table .promise-calling-compass {
-  inline-size: min(15rem, 100%);
-  min-block-size: 11.5rem;
-  margin: 0 auto;
+  /* Protected legacy rescue rules absolutely centered and constrained this
+     DOM diagram. Flow-based sizing keeps its intrinsic geometry and labels
+     inside the approved card while making the complete diagram legible. */
+  position: relative !important;
+  inset: auto !important;
+  place-self: center;
+  inline-size: min(84%, 42rem) !important;
+  block-size: auto !important;
+  min-block-size: 0 !important;
+  margin: 0 !important;
+  aspect-ratio: 1.910569;
+  transform: none !important;
   overflow: visible;
   background: radial-gradient(circle, rgba(255,255,255,0.97) 0 29%, rgba(235,247,240,0.9) 30% 100%);
   box-shadow: 0 1rem 2.4rem rgba(0,75,55,0.12), inset 0 0 0 1px rgba(255,255,255,0.75);
   backdrop-filter: none;
 }
-body[data-view="table"] #table .promise-compass-node:focus-visible { outline: 3px solid var(--promise-gold); outline-offset: 3px; }
+body[data-view="table"] #table .promise-compass-node:focus-visible {
+  outline: 3px solid var(--promise-gold) !important;
+  outline-offset: 3px !important;
+}
+body[data-view="table"] #table .promise-compass-node.growth-node {
+  /* The protected legacy -8% offset placed the complete label outside its
+     now flow-sized diagram region. Keep the node inside the diagram. */
+  bottom: 0 !important;
+}
 
 /* 6. Summary metrics */
 body[data-view="table"] #table .promise-table-grid > .module-card:nth-child(n + 3) {
@@ -718,7 +750,7 @@ body[data-view="table"] #table #phase117PromiseTableControls {
   align-items: center;
   justify-content: space-between;
   min-block-size: 0;
-  margin-block-start: -1.5rem;
+  margin-block-start: 0;
   padding: 0.75rem 1rem;
   overflow: visible;
 }
@@ -735,7 +767,7 @@ body[data-view="table"] #table #phase117PromiseTableControls .phase115-control-r
 
 /* 13. Saved Promise Rows */
 body[data-view="table"] #table #phase114PromiseTablePanel {
-  margin-block-start: -0.9rem;
+  margin-block-start: 0;
   padding: 0.75rem 1rem;
   overflow: visible;
 }
@@ -858,12 +890,16 @@ body[data-view="table"] #table .promise-search-feed {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) !important;
   grid-template-areas: "search" "suggestions" "featured" "results" !important;
-  gap: var(--promise-section-gap) !important;
+  gap: var(--promise-search-suggestion-gap) !important;
   block-size: auto !important;
   min-block-size: 0 !important;
   max-block-size: none !important;
-  padding: var(--promise-panel-padding) !important;
+  padding: 0 !important;
   overflow: visible !important;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 body[data-view="table"] #table .promise-feed-search {
   grid-area: search !important;
@@ -913,6 +949,7 @@ body[data-view="table"] #table #promiseTableVideoPanel {
   inline-size: 100% !important;
   block-size: auto !important;
   min-block-size: 0 !important;
+  margin-block-start: calc(var(--promise-suggestion-featured-gap) - var(--promise-search-suggestion-gap));
   padding: 0 !important;
   overflow: hidden !important;
   border: 1px solid var(--promise-border);
@@ -1174,6 +1211,7 @@ body[data-view="table"] .phase117-offline-status .phase117-offline-pill::before 
   body[data-view="table"] #table .promise-table-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body[data-view="table"] #table .promise-table-grid > .module-card.promise-scrolls-panel,
   body[data-view="table"] #table .promise-table-grid > .promise-calling-compass-card { grid-column: 1 / -1 !important; }
+  body[data-view="table"] #table .promise-calling-compass { inline-size: min(88%, 42rem) !important; }
   body[data-view="table"] #table .promise-table-grid > .module-card:nth-child(n + 3) { grid-column: span 1; }
   body[data-view="table"] #table .promise-table-grid > .module-card:nth-child(5) { grid-column: 1 / -1 !important; }
   body[data-view="table"] #table .phase116b-toolbar { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -1248,14 +1286,59 @@ body[data-view="table"] .phase117-offline-status .phase117-offline-pill::before 
     flex: 1 1 11rem;
   }
 }
+
+@media (max-width: 760px) {
+  body[data-view="table"] #table .promise-table-grid > .promise-calling-compass-card {
+    min-block-size: 0 !important;
+  }
+
+  body[data-view="table"] #table .promise-calling-compass {
+    display: block !important;
+    place-self: center;
+    inline-size: min(92%, 34rem) !important;
+    margin-block-start: var(--promise-internal-panel-gap) !important;
+    aspect-ratio: 1.910569;
+  }
+
+  body[data-view="table"] #table .promise-calling-compass::before,
+  body[data-view="table"] #table .promise-calling-compass::after,
+  body[data-view="table"] #table .promise-compass-lines {
+    display: block !important;
+  }
+
+  body[data-view="table"] #table .promise-compass-core {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    grid-column: auto !important;
+    inline-size: 5.65rem !important;
+    block-size: 5.65rem !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  body[data-view="table"] #table .promise-compass-node {
+    position: absolute !important;
+  }
+}
+
 @media (max-width: 640px) {
   body[data-view="table"] .app-header .topbar-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body[data-view="table"] .app-header .topbar-actions > button { inline-size: 100%; }
-  body[data-view="table"] #table { --promise-panel-padding: 0.85rem; --promise-page-gap: 0.8rem; --promise-core-panel-padding: 0.8rem; --promise-core-section-gap: 0.65rem; }
+  body[data-view="table"] #table {
+    --promise-page-section-gap: 0.75rem;
+    --promise-compact-section-gap: 0.625rem;
+    --promise-internal-panel-gap: 0.625rem;
+    --promise-search-suggestion-gap: 0.5rem;
+    --promise-suggestion-featured-gap: 0.75rem;
+    --promise-panel-padding: 0.85rem;
+    --promise-core-panel-padding: 0.8rem;
+    --promise-core-section-gap: 0.65rem;
+  }
   body[data-view="table"] #table .promise-table-grid { grid-template-columns: minmax(0, 1fr); }
   body[data-view="table"] #table .promise-table-grid > .module-card { grid-column: 1 !important; }
   body[data-view="table"] #table .promise-table-grid > .module-card:nth-child(n + 3) { min-block-size: 0; }
   body[data-view="table"] #table .promise-scrolls-panel { min-block-size: 15rem; }
+  body[data-view="table"] #table .promise-calling-compass { inline-size: min(92%, 34rem) !important; }
   body[data-view="table"] #table .phase116b-toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body[data-view="table"] #table #phase116bPromiseSearch,
   body[data-view="table"] #table #phase116bPromiseSort { grid-column: 1 / -1; }
@@ -1275,6 +1358,38 @@ body[data-view="table"] .phase117-offline-status .phase117-offline-pill::before 
 }
 
 @media (max-width: 420px) {
+  body[data-view="table"] #table .promise-compass-core {
+    inline-size: 3.5rem !important;
+    block-size: 3.5rem !important;
+    padding: 0.4rem !important;
+  }
+
+  body[data-view="table"] #table .promise-compass-node {
+    max-inline-size: 5.2rem !important;
+    padding: 0.35rem !important;
+    gap: 0.04rem 0.3rem !important;
+  }
+
+  body[data-view="table"] #table .promise-compass-node i {
+    inline-size: 1.6rem !important;
+    block-size: 1.6rem !important;
+  }
+
+  body[data-view="table"] #table .promise-compass-node em { font-size: 0.56rem !important; }
+  body[data-view="table"] #table .promise-compass-node small { font-size: 0.42rem !important; }
+  body[data-view="table"] #table .promise-compass-node.primary-node {
+    grid-template-columns: 1.6rem minmax(0, 3.45rem) !important;
+  }
+  body[data-view="table"] #table .promise-compass-node.burdens-node {
+    grid-template-columns: minmax(0, 3.45rem) 1.6rem !important;
+  }
+  body[data-view="table"] #table .promise-compass-node.gifts-node {
+    grid-template-columns: 1.6rem minmax(0, 3.45rem) !important;
+  }
+  body[data-view="table"] #table .promise-compass-node.growth-node {
+    max-inline-size: 5.6rem !important;
+  }
+
   body[data-view="table"] .app-main {
     padding: 0.45rem 0.5rem 0.85rem;
   }
