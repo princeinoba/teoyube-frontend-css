@@ -22,19 +22,25 @@ body[data-view="testimony"] :where(.testimony-view, .testimony-view *) {
   box-sizing: border-box;
 }
 
-/* Compact approved shell treatment used by the other upgraded Teoyube pages. */
+/* Search-aligned application shell and navigation. */
 body[data-view="testimony"] .app-shell {
-  grid-template-columns: clamp(9.25rem, 12.1vw, 10.75rem) minmax(0, 1fr);
+  grid-template-columns: 12.375rem minmax(0, 1fr);
   gap: 0;
+  background: #f7faf8;
 }
 
 body[data-view="testimony"] .app-sidebar {
-  gap: 0.62rem;
   width: auto;
-  margin: 0.28rem;
-  padding: 0.78rem 0.62rem;
-  border-radius: 0.72rem;
-  box-shadow: var(--testimony-shadow);
+}
+
+body[data-view="testimony"] .sidebar {
+  gap: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(0, 83, 63, 0.05);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 32px rgba(12, 45, 38, 0.08);
 }
 
 body[data-view="testimony"] .brand {
@@ -162,85 +168,92 @@ body[data-view="testimony"] #testimony {
 }
 
 body[data-view="testimony"] .brand-lockup {
-  gap: 0.5rem;
-  padding: 0.3rem 0.15rem 0.58rem;
+  gap: 0.62rem;
+  padding: 0.5rem 0.25rem 0.7rem;
 }
 
 body[data-view="testimony"] .brand-lockup .brand-mark {
-  width: 2.15rem;
-  height: 2.15rem;
-  border-radius: 0.42rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.5rem;
 }
 
 body[data-view="testimony"] .brand-lockup .brand-mark::before {
-  font-size: 1rem;
+  font-size: 1.28rem;
 }
 
 body[data-view="testimony"] .brand-lockup .brand-mark::after {
-  bottom: 0.48rem;
-  width: 0.6rem;
+  bottom: 0.56rem;
 }
 
 body[data-view="testimony"] .brand-lockup h1 {
-  font-size: 0.78rem;
+  font-size: 1rem;
 }
 
 body[data-view="testimony"] .brand-lockup .eyebrow {
-  font-size: 0.42rem;
+  font-size: 0.58rem;
 }
 
 body[data-view="testimony"] .brand-lockup .brand-subtitle {
-  margin-top: 0.08rem;
-  font-size: 0.48rem;
-  line-height: 1.2;
+  font-size: 0.64rem;
 }
 
 body[data-view="testimony"] .nav-list {
-  gap: 0.1rem;
-  margin-top: 1rem;
+  gap: 0.16rem;
+  margin-top: 0;
 }
 
 body[data-view="testimony"] .nav-item {
-  min-height: 2.05rem;
-  gap: 0.5rem;
-  padding: 0.35rem 0.48rem;
-  border-radius: 0.42rem;
-  font-size: 0.62rem;
+  min-height: 2.15rem;
+  gap: 0.58rem;
+  padding: 0.48rem 0.62rem;
+  border-radius: 7px;
+  font-size: 0.72rem;
 }
 
 body[data-view="testimony"] .nav-item::before {
-  width: 0.82rem;
-  font-size: 0.82rem;
+  width: 0.95rem;
+  font-size: 1rem;
 }
 
 body[data-view="testimony"] .saint-card {
-  gap: 0.5rem;
-  padding: 0.7rem;
-  border-radius: 0.58rem;
+  gap: 0.58rem;
+  margin-top: auto;
+  padding: 0.72rem;
+  border: 1px solid rgba(0, 83, 63, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(12, 45, 38, 0.06);
 }
 
 body[data-view="testimony"] .saint-profile-head {
-  gap: 0.42rem;
+  gap: 0.55rem;
 }
 
 body[data-view="testimony"] .saint-avatar {
-  width: 2.35rem;
-  height: 2.35rem;
+  width: 2.55rem;
+  height: 2.55rem;
 }
 
 body[data-view="testimony"] .saint-card h2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
-body[data-view="testimony"] .saint-card :where(p, .active-badge) {
-  font-size: 0.52rem;
+body[data-view="testimony"] .saint-card p,
+body[data-view="testimony"] #sidebarCalling {
+  font-size: 0.67rem;
   line-height: 1.35;
 }
 
-body[data-view="testimony"] .saint-card button {
-  min-height: 2.05rem;
-  padding: 0.35rem;
-  font-size: 0.53rem;
+body[data-view="testimony"] .active-badge {
+  padding: 0.18rem 0.4rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="testimony"] #openAssessment,
+body[data-view="testimony"] .saint-card > button:last-child {
+  min-height: 2.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.64rem;
 }
 /* Hero */
 body[data-view="testimony"] #testimony .testimony-hero {
@@ -783,21 +796,15 @@ body[data-view="testimony"] :where(button, a, input, select, textarea):focus-vis
 
 @media (max-width: 900px) {
   body[data-view="testimony"] .app-shell {
-    grid-template-columns: 4.25rem minmax(0, 1fr);
+    grid-template-columns: 11.5rem minmax(0, 1fr);
   }
 
-  body[data-view="testimony"] .app-sidebar {
-    padding-inline: 0.42rem;
+  body[data-view="testimony"] .sidebar {
+    padding-inline: 0.7rem;
   }
 
-  body[data-view="testimony"] .brand-copy,
-  body[data-view="testimony"] .primary-nav a span,
-  body[data-view="testimony"] .saint-card > :not(img) {
-    display: none;
-  }
-
-  body[data-view="testimony"] .primary-nav a {
-    justify-content: center;
+  body[data-view="testimony"] .nav-item {
+    font-size: 0.66rem;
   }
 
   body[data-view="testimony"] #testimony .testimony-rail {
@@ -822,7 +829,14 @@ body[data-view="testimony"] :where(button, a, input, select, textarea):focus-vis
   }
 
   body[data-view="testimony"] .app-sidebar {
-    width: min(18rem, calc(100vw - 2rem));
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  body[data-view="testimony"] .sidebar {
+    gap: 0.8rem;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 12px;
   }
 
   body[data-view="testimony"] .app-main {

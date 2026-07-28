@@ -1238,8 +1238,8 @@
     },
     {
       "path": "styles/pages/book.css",
-      "sizeBytes": 51083,
-      "sha256": "0b6b2d9cd813f2ec35216ad3d8778ac4b3a69e44367d8680052d7d2a6101d184"
+      "sizeBytes": 51104,
+      "sha256": "af8554160868a1960428df2118c8dfc0a27555fce52fd2788128765f69b1e2de"
     },
     {
       "path": "styles/pages/calling-compass.css",
@@ -1293,8 +1293,8 @@
     },
     {
       "path": "styles/pages/testimony.css",
-      "sizeBytes": 22782,
-      "sha256": "186c77292d038c5e786fbc88fa204018672829ec14b205ced86b3e9d1e9737f4"
+      "sizeBytes": 23042,
+      "sha256": "62a109956b4b06851a2afe1514a8252fb8f7ae82cb7c44a3d2e4fb89d8e2f697"
     },
     {
       "path": "styles/pages/today.css",
