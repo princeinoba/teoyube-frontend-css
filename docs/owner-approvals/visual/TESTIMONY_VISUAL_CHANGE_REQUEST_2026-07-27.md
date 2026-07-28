@@ -87,4 +87,3 @@ asset, continuous animation, large blur, layout animation, or
 Rollback must revert only the focused commits created for this Testimony task.
 The original static source, immutable baselines, and unrelated owner-approved
 route work remain untouched.
-

@@ -9,8 +9,8 @@ Owner approval: `TEOYUBE-VISUAL-2026-07-27-TESTIMONY-001`
 5. **Approved at:** `2026-07-27T20:47:40-04:00`.
 6. **Branch:** `recovery/visual-source-of-truth`.
 7. **Starting HEAD:** `6ddf9b293761831645dc3d49a52535a966ee012d`.
-8. **Containing evidence commit:** subject `test(recovery): record Testimony evidence and fingerprints`; its SHA is reported in the final handoff because a commit cannot embed its own hash.
-9. **Commits prepared:** `70e525c` (`docs(approval): record Testimony owner authority`), `96617a8` (`style(testimony): match owner-approved archive layout`), and the containing evidence commit named in item 8.
+8. **Evidence commit:** `0e4952c` (`test(recovery): record Testimony evidence and fingerprints`). The final documentation-closeout SHA is reported in the handoff because a commit cannot embed its own hash.
+9. **Commits created:** `70e525c` (`docs(approval): record Testimony owner authority`), `96617a8` (`style(testimony): match owner-approved archive layout`), `0e4952c` (`test(recovery): record Testimony evidence and fingerprints`), plus the final documentation-only closeout commit containing this report correction.
 10. **Exact Testimony CSS files changed:** `styles/pages/testimony.css` only.
 11. **Approval and evidence files changed:** `docs/owner-approvals/visual/TESTIMONY_VISUAL_CHANGE_REQUEST_2026-07-27.md` plus files under `docs/owner-approvals/visual/evidence/TESTIMONY-VISUAL-REQUEST-2026-07-27/`.
 12. **Protected-hash and fingerprint files changed:** `tests/visual/contracts/protected-visual-source-manifest.json` and `tests/visual/contracts/original-static-visual-contract.json`. Only the approved Testimony CSS size/hash and CSS-derived selector, ID, color-token, and media-query inventory changed.
@@ -86,12 +86,12 @@ Owner approval: `TEOYUBE-VISUAL-2026-07-27-TESTIMONY-001`
 82. **Measured visual difference:** exact-size 1448x1086 comparison: mean absolute RGB channel differences `[20.771368, 17.779701, 18.312324]`, RMS channel differences `[54.806604, 44.455588, 45.693694]`, exact-channel ratio `0.10784037`. These are descriptive metrics, not a baseline-replacement threshold.
 83. **Remaining CSS-only differences:** existing live copy and current DOM controls remain authoritative; the reference-only three-dot header/menu and record overflow-menu treatment were not fabricated; the live page is 18 CSS pixels taller than the reference viewport because natural scrolling and all current controls/records were preserved.
 84. **Temporary-file status:** all task-local disposable Testimony audit scripts and candidate manifests under `.tmp/` were removed after evidence generation; only owner evidence remains.
-85. **Pre-commit worktree status:** only the four authorized deterministic metadata files and this authorized Testimony evidence directory are pending. Final clean-tree status is reported after the containing evidence commit.
+85. **Closeout status:** canonical runtime and complete recovery checks passed against committed evidence SHA `0e4952c`; only this report correction and the approval record's final blank-line normalization are pending in the documentation-only closeout commit. Final clean-tree status is reported in the handoff.
 86. **Rollback command:** `git revert <final-evidence-commit> 96617a8 70e525c` (revert newest to oldest, resolving only if later owner work overlaps).
 
 ## Additional gate state
 
 - Safety orchestration: PASS (`64/64` fixtures); Gate B remains `CLOSED_LIVE_AI_DISABLED`.
-- Canonical runtime candidate check: PASS. The clean-tree canonical check is performed after the evidence commit and reported in the final handoff.
+- Canonical runtime candidate and clean-tree checks: PASS.
 - Runtime policy is unchanged: Next is canonical under `TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24`; static remains the rollback.
 - No public deployment, live-AI enablement, persistence change, embedding change, or retrieval-policy change was performed.
