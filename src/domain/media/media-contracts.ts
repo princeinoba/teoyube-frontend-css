@@ -7,6 +7,9 @@ export type MediaAssetDto = Readonly<{
   playbackUrl: string | null;
   posterUrl: string;
   thumbnailUrl: string;
+  durationSeconds: number | null;
+  sequenceTitle: string | null;
+  sequenceOrder: number | null;
   mimeType: "video/mp4" | null;
   source: "original_local_preview" | "approved_teoyubeworld_pilot";
   runtimeApproved: boolean;

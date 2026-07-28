@@ -195,8 +195,22 @@ test("Teo Guide responds locally with typed source, interpretation, action, and 
 test("Embedded Videos preserves contained sources, controls, MIME, Range, cache, and protected paths", async ({ page, request }) => {
   await page.goto(`${nextBaseUrl}/embedded-videos`, { waitUntil: "domcontentloaded" });
   await page.locator("#uiVideoCategoryTabs [data-video-category='TeoyubeWorld Media']").click();
-  await expect(page.locator("#uiVideoGrid [data-ui-video-source='approved']")).toHaveCount(0);
-  await expect(page.locator("#uiVideoGrid .ui-video-empty")).toContainText("No videos found");
+  const approvedCards = page.locator("#uiVideoGrid .ui-video-card[data-ui-video-source='approved']");
+  await expect(approvedCards).toHaveCount(4);
+  await expect(page.locator("#uiVideoGrid .ui-video-empty")).toHaveCount(0);
+  await expect(page.locator("#uiVideoStats")).toContainText("12");
+  const firstApprovedCard = approvedCards.first();
+  await expect(firstApprovedCard.locator("h4")).toHaveText("No Other Gospel - Segment 01 - Paul, an Apostle");
+  await expect(firstApprovedCard.locator(".embedded-video-position")).toHaveText("1 / 12");
+  await firstApprovedCard.locator("[data-ui-video-nav='next']").click();
+  await expect(firstApprovedCard.locator("h4")).toHaveText("No Other Gospel - Segment 02 - Not From Men");
+  await expect(firstApprovedCard.locator(".ui-video-meta")).toContainText("Galatians 1:1");
+  await expect(firstApprovedCard.locator(".embedded-video-position")).toHaveText("2 / 12");
+  await firstApprovedCard.locator("[data-ui-video-play]").first().click();
+  await expect(firstApprovedCard.locator("video source")).toHaveAttribute("src", /\/media\/teoyubeworld\/pilot-v1\/.+\/card-preview\.mp4$/);
+  await firstApprovedCard.locator(".embedded-video-menu summary").click();
+  await firstApprovedCard.getByRole("button", { name: "Details" }).click();
+  await expect(firstApprovedCard.locator("[data-ui-video-detail-panel]")).toContainText("No Other Gospel - Galatians 1 Opening, segment 2.");
   await page.locator("#uiVideoCategoryTabs [data-video-category='All Videos']").click();
   await page.locator("#uiVideoGrid [data-ui-video-play]").first().click();
   await expect(page.locator("#phase113SaveDrawer")).toContainText("has no connected playable source");

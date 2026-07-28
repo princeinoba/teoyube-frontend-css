@@ -6,6 +6,7 @@ import type { MediaAssetDto } from "../../domain/media/media-contracts";
 import type { EmbeddedVideosPageViewModel } from "../../features/media/application/retained-media-page-service";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedEmbeddedVideosView } from "./ApprovedEmbeddedVideosView";
+import { syncEmbeddedVideoCard } from "./embedded-video-card-sync";
 
 function normalize(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -40,6 +41,13 @@ export function EmbeddedVideosPageController({ initialViewModel }: { initialView
       root?.querySelectorAll<HTMLElement>("#uiVideoCategoryTabs [data-video-category]").forEach((button) => button.classList.toggle("active", button.dataset.videoCategory === tabId));
       const select = root?.querySelector<HTMLSelectElement>("#uiVideoCategorySelect");
       if (select) select.value = tabId === "All Videos" ? "All Categories" : tabId;
+      const loadMore = root?.querySelector<HTMLElement>("#uiVideoLoadMore");
+      if (loadMore) {
+        const cardCount = grid?.querySelectorAll(".ui-video-card").length || 0;
+        const shouldHide = tabId === "TeoyubeWorld Media" || (tabId !== "All Videos" && cardCount <= 4);
+        loadMore.hidden = shouldHide;
+        loadMore.style.display = shouldHide ? "none" : "";
+      }
       applySearch();
     }
 
@@ -70,7 +78,8 @@ export function EmbeddedVideosPageController({ initialViewModel }: { initialView
       const candidates = initialViewModel.media.filter((item) => item.source === source);
       const current = candidates.findIndex((item) => item.id === card.dataset.uiVideoId);
       const offset = action.dataset.uiVideoNav === "next" ? 1 : -1;
-      const selected = candidates[(Math.max(0, current) + offset + candidates.length) % candidates.length];
+      const selectedPosition = (Math.max(0, current) + offset + candidates.length) % candidates.length;
+      const selected = candidates[selectedPosition];
       if (!selected) return;
       card.dataset.uiVideoId = selected.id;
       card.querySelectorAll<HTMLElement>("[data-ui-video-play]").forEach((button) => { button.dataset.uiVideoPlay = selected.id; });
@@ -79,6 +88,7 @@ export function EmbeddedVideosPageController({ initialViewModel }: { initialView
       card.querySelectorAll<HTMLImageElement>(".embedded-video-poster-image, .embedded-video-poster-backdrop").forEach((image) => { image.src = selected.thumbnailUrl; });
       const position = card.querySelector(".embedded-video-position");
       if (position) position.textContent = `${((current + offset + candidates.length) % candidates.length) + 1} / ${candidates.length}`;
+      syncEmbeddedVideoCard(card, selected, selectedPosition, candidates.length);
     }
 
     function onInput(event: Event) {

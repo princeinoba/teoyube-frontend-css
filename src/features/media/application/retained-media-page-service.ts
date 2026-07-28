@@ -2,6 +2,7 @@ import runtimeManifest from "../../../../public/media/teoyubeworld/pilot-v1/runt
 import { APPROVED_VIEW_MARKUP } from "../../../app/_approved-source/approved-view-markup.generated";
 import { MEDIA_DELIVERY_CONTRACT, type MediaAssetDto } from "../../../domain/media/media-contracts";
 import { TEOYUBE_MEDIA_LIBRARY } from "../../../lib/teoyube/data-access";
+import { renderApprovedMediaGrid, renderApprovedMediaStats } from "./embedded-video-tab-renderer";
 
 type CapturedTab = Readonly<{ grid: string; stats: string }>;
 type CapturedManagementTab = Readonly<{ rows: string; pagination: string; status: string | null; videoSourceHidden: boolean }>;
@@ -39,6 +40,9 @@ function originalMedia(): MediaAssetDto[] {
     playbackUrl: null,
     posterUrl: "public/images/embed/embedded-videos-hero-bg.png",
     thumbnailUrl: "public/images/embed/embedded-videos-hero-bg.png",
+    durationSeconds: null,
+    sequenceTitle: null,
+    sequenceOrder: null,
     mimeType: null,
     source: "original_local_preview",
     runtimeApproved: false
@@ -63,6 +67,9 @@ function originalMedia(): MediaAssetDto[] {
     playbackUrl: null,
     posterUrl: "public/images/embed/embedded-videos-hero-bg.png",
     thumbnailUrl: "public/images/embed/embedded-videos-hero-bg.png",
+    durationSeconds: null,
+    sequenceTitle: null,
+    sequenceOrder: null,
     mimeType: null,
     source: "original_local_preview",
     runtimeApproved: false
@@ -80,6 +87,9 @@ function approvedMedia(): MediaAssetDto[] {
     playbackUrl: record.plannedPublicCardUrl,
     posterUrl: record.plannedPublicPosterUrl,
     thumbnailUrl: record.plannedPublicThumbnailUrl,
+    durationSeconds: record.durationSeconds,
+    sequenceTitle: record.sequenceTitle,
+    sequenceOrder: record.sequenceOrder,
     mimeType: "video/mp4",
     source: "approved_teoyubeworld_pilot",
     runtimeApproved: record.validationState === "validated" && record.ownerReviewState === "confirmed"
@@ -87,11 +97,19 @@ function approvedMedia(): MediaAssetDto[] {
 }
 
 export function createEmbeddedVideosPageViewModel(): EmbeddedVideosPageViewModel {
+  const original = originalMedia();
+  const approved = approvedMedia();
   return Object.freeze({
     approvedHtml: APPROVED_VIEW_MARKUP.embeddedVideos.initial,
     sourceDigest: APPROVED_VIEW_MARKUP.sourceDigest,
-    tabs: APPROVED_VIEW_MARKUP.embeddedVideos.tabs,
-    media: Object.freeze([...originalMedia(), ...approvedMedia()]),
+    tabs: Object.freeze({
+      ...APPROVED_VIEW_MARKUP.embeddedVideos.tabs,
+      "TeoyubeWorld Media": Object.freeze({
+        grid: renderApprovedMediaGrid(approved),
+        stats: renderApprovedMediaStats(approved.length)
+      })
+    }),
+    media: Object.freeze([...original, ...approved]),
     delivery: MEDIA_DELIVERY_CONTRACT
   });
 }

@@ -64,7 +64,11 @@ describe("remaining retained preview contracts", () => {
     expect(approved.every((entry) => entry.runtimeApproved && entry.mimeType === "video/mp4")).toBe(true);
     expect(approved.every((entry) => entry.playbackUrl && isPublicMediaPath(entry.playbackUrl))).toBe(true);
     expect(Object.keys(viewModel.tabs)).toEqual(["All Videos", "Teachings", "Worship", "Messages", "Documentaries", "Shorts", "TeoyubeWorld Media"]);
-    expect(viewModel.tabs["TeoyubeWorld Media"].grid).toContain("No videos found");
+    const approvedTab = viewModel.tabs["TeoyubeWorld Media"];
+    expect(approvedTab.grid).not.toContain("No videos found");
+    expect(approvedTab.grid.match(/<article class="ui-video-card embedded-video-card" data-ui-video-source="approved"/g)).toHaveLength(4);
+    expect(approvedTab.grid).toContain("No Other Gospel - Segment 01 - Paul, an Apostle");
+    expect(approvedTab.stats).toMatch(/Total Videos[\s\S]*12[\s\S]*Approved local collection/);
     expect(viewModel.delivery).toMatchObject({ supportsByteRanges: true, immutablePublishedAssets: true, manifestNoStore: true });
     expect(viewModel.delivery.protectedPathPrefixes).toContain("/media-source");
   });
