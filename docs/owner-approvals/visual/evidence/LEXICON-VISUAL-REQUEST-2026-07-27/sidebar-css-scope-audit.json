@@ -1,0 +1,14 @@
+{
+  "stylesheet": "styles/pages/lexicon.css",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-27-LEXICON-001",
+  "addedLineCount": 208,
+  "removedLineCount": 0,
+  "ruleOpenerCount": 39,
+  "routeScopedRuleOpenerCount": 39,
+  "outOfScopeRuleOpeners": [],
+  "forbiddenInteractionOverrides": [],
+  "forbiddenAssetOrContentOverrides": [],
+  "applicationMarkupOrScriptChanged": false,
+  "otherRouteStylesheetChanged": false,
+  "pass": true
+}

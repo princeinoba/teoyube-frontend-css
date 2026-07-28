@@ -1,0 +1,5 @@
+{
+  "destination": "/search",
+  "bodyView": "search",
+  "drawerClosed": true
+}

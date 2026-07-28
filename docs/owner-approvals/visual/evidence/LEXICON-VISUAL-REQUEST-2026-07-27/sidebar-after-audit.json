@@ -1,0 +1,818 @@
+{
+  "search": {
+    "dataView": "search",
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1130.61
+      },
+      "display": "grid",
+      "gap": "0px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgb(247, 250, 248)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "appSidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "sidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "brand": {
+      "rect": {
+        "x": 19.39,
+        "y": 18.59,
+        "width": 144.22,
+        "height": 74.94
+      },
+      "display": "flex",
+      "gap": "9.92px",
+      "margin": "0px",
+      "padding": "8px 4px 11.2px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navList": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 425.67
+      },
+      "display": "grid",
+      "gap": "2.56px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navItem": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 34.39
+      },
+      "display": "flex",
+      "gap": "9.28px",
+      "margin": "0px",
+      "padding": "7.68px 9.92px",
+      "borderRadius": "7px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "11.52px"
+    },
+    "saintCard": {
+      "rect": {
+        "x": 19.39,
+        "y": 771.41,
+        "width": 144.22,
+        "height": 242
+      },
+      "display": "grid",
+      "gap": "9.28px",
+      "margin": "226.609px 0px 0px",
+      "padding": "11.52px",
+      "borderRadius": "10px",
+      "backgroundColor": "rgba(255, 255, 255, 0.88)",
+      "boxShadow": "rgba(12, 45, 38, 0.06) 0px 10px 24px 0px",
+      "fontSize": "16px"
+    },
+    "appMain": {
+      "rect": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 1130.61
+      },
+      "display": "block",
+      "gap": "normal",
+      "margin": "0px",
+      "padding": "11.2px 24px 16px 12px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "controlCount": 87,
+    "visibleControlCount": 85,
+    "errors": []
+  },
+  "canon": {
+    "dataView": "canon",
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 3558.33
+      },
+      "display": "grid",
+      "gap": "0px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgb(245, 249, 247)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "appSidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "sidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "brand": {
+      "rect": {
+        "x": 19.39,
+        "y": 18.59,
+        "width": 144.22,
+        "height": 74.94
+      },
+      "display": "flex",
+      "gap": "9.92px",
+      "margin": "0px",
+      "padding": "8px 4px 11.2px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navList": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 425.67
+      },
+      "display": "grid",
+      "gap": "2.56px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navItem": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 34.39
+      },
+      "display": "flex",
+      "gap": "9.28px",
+      "margin": "0px",
+      "padding": "7.68px 9.92px",
+      "borderRadius": "7px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "11.52px"
+    },
+    "saintCard": {
+      "rect": {
+        "x": 19.39,
+        "y": 771.41,
+        "width": 144.22,
+        "height": 242
+      },
+      "display": "grid",
+      "gap": "9.28px",
+      "margin": "226.609px 0px 0px",
+      "padding": "11.52px",
+      "borderRadius": "10px",
+      "backgroundColor": "rgba(255, 255, 255, 0.88)",
+      "boxShadow": "rgba(12, 45, 38, 0.06) 0px 10px 24px 0px",
+      "fontSize": "16px"
+    },
+    "appMain": {
+      "rect": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 3558.33
+      },
+      "display": "block",
+      "gap": "normal",
+      "margin": "0px",
+      "padding": "11.2px 21.6px 19.2px 12px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "controlCount": 172,
+    "visibleControlCount": 161,
+    "errors": []
+  },
+  "calling-compass": {
+    "dataView": "calling",
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 2309
+      },
+      "display": "grid",
+      "gap": "0px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgb(247, 250, 248)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "appSidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "sidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "brand": {
+      "rect": {
+        "x": 19.39,
+        "y": 18.59,
+        "width": 144.22,
+        "height": 74.94
+      },
+      "display": "flex",
+      "gap": "9.92px",
+      "margin": "0px",
+      "padding": "8px 4px 11.2px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navList": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 425.67
+      },
+      "display": "grid",
+      "gap": "2.56px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navItem": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 34.39
+      },
+      "display": "flex",
+      "gap": "9.28px",
+      "margin": "0px",
+      "padding": "7.68px 9.92px",
+      "borderRadius": "7.2px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "11.52px"
+    },
+    "saintCard": {
+      "rect": {
+        "x": 19.39,
+        "y": 771.41,
+        "width": 144.22,
+        "height": 242
+      },
+      "display": "grid",
+      "gap": "9.28px",
+      "margin": "226.609px 0px 0px",
+      "padding": "11.52px",
+      "borderRadius": "10.4px",
+      "backgroundColor": "rgba(255, 255, 255, 0.88)",
+      "boxShadow": "rgba(12, 45, 38, 0.06) 0px 10px 24px 0px",
+      "fontSize": "16px"
+    },
+    "appMain": {
+      "rect": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 2309
+      },
+      "display": "block",
+      "gap": "normal",
+      "margin": "0px",
+      "padding": "11.2px 24px 16px 12px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "controlCount": 75,
+    "visibleControlCount": 71,
+    "errors": []
+  },
+  "promise-table": {
+    "dataView": "table",
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 2910.72
+      },
+      "display": "grid",
+      "gap": "0px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgb(247, 250, 248)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "appSidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "sidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "brand": {
+      "rect": {
+        "x": 19.39,
+        "y": 18.59,
+        "width": 144.22,
+        "height": 74.94
+      },
+      "display": "flex",
+      "gap": "9.92px",
+      "margin": "0px",
+      "padding": "8px 4px 11.2px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navList": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 425.67
+      },
+      "display": "grid",
+      "gap": "2.56px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navItem": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 34.39
+      },
+      "display": "flex",
+      "gap": "9.28px",
+      "margin": "0px",
+      "padding": "7.68px 9.92px",
+      "borderRadius": "7.2px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "11.52px"
+    },
+    "saintCard": {
+      "rect": {
+        "x": 19.39,
+        "y": 771.41,
+        "width": 144.22,
+        "height": 242
+      },
+      "display": "grid",
+      "gap": "9.28px",
+      "margin": "226.609px 0px 0px",
+      "padding": "11.52px",
+      "borderRadius": "10.4px",
+      "backgroundColor": "rgba(255, 255, 255, 0.88)",
+      "boxShadow": "rgba(12, 45, 38, 0.06) 0px 10px 24px 0px",
+      "fontSize": "16px"
+    },
+    "appMain": {
+      "rect": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 2910.72
+      },
+      "display": "block",
+      "gap": "normal",
+      "margin": "0px",
+      "padding": "11.2px 24px 16px 12px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "controlCount": 145,
+    "visibleControlCount": 143,
+    "errors": []
+  },
+  "today": {
+    "dataView": "today",
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 1941.33
+      },
+      "display": "grid",
+      "gap": "0px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgb(247, 250, 248)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "appSidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1012.8
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "sidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1012.8
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "brand": {
+      "rect": {
+        "x": 19.39,
+        "y": 18.59,
+        "width": 144.22,
+        "height": 74.94
+      },
+      "display": "flex",
+      "gap": "9.92px",
+      "margin": "0px",
+      "padding": "8px 4px 11.2px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navList": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 425.67
+      },
+      "display": "grid",
+      "gap": "2.56px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navItem": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 34.39
+      },
+      "display": "flex",
+      "gap": "9.28px",
+      "margin": "0px",
+      "padding": "7.68px 9.92px",
+      "borderRadius": "7.2px",
+      "backgroundColor": "rgb(238, 248, 242)",
+      "boxShadow": "rgba(8, 117, 111, 0.06) 0px 0px 0px 1px inset",
+      "fontSize": "11.52px"
+    },
+    "saintCard": {
+      "rect": {
+        "x": 19.39,
+        "y": 764.41,
+        "width": 144.22,
+        "height": 237.8
+      },
+      "display": "grid",
+      "gap": "9.28px",
+      "margin": "219.609px 0px 0px",
+      "padding": "11.52px",
+      "borderRadius": "10.4px",
+      "backgroundColor": "rgba(255, 255, 255, 0.92)",
+      "boxShadow": "rgba(12, 45, 38, 0.06) 0px 10px 24px 0px",
+      "fontSize": "16px"
+    },
+    "appMain": {
+      "rect": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 1941.33
+      },
+      "display": "block",
+      "gap": "normal",
+      "margin": "0px",
+      "padding": "11.2px 24px 16px 12px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "controlCount": 111,
+    "visibleControlCount": 109,
+    "errors": []
+  },
+  "lexicon": {
+    "dataView": "lexicon",
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1536,
+        "height": 7916.25
+      },
+      "display": "grid",
+      "gap": "0px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgb(247, 250, 248)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "appSidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "sidebar": {
+      "rect": {
+        "x": 4,
+        "y": 4,
+        "width": 190,
+        "height": 1024
+      },
+      "display": "flex",
+      "gap": "12.8px",
+      "margin": "4px",
+      "padding": "13.6px 14.4px",
+      "borderRadius": "12px",
+      "backgroundColor": "rgba(255, 255, 255, 0.97)",
+      "boxShadow": "rgba(12, 45, 38, 0.08) 0px 12px 32px 0px",
+      "fontSize": "16px"
+    },
+    "brand": {
+      "rect": {
+        "x": 19.39,
+        "y": 18.59,
+        "width": 144.22,
+        "height": 74.94
+      },
+      "display": "flex",
+      "gap": "9.92px",
+      "margin": "0px",
+      "padding": "8px 4px 11.2px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navList": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 425.67
+      },
+      "display": "grid",
+      "gap": "2.56px",
+      "margin": "0px",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "navItem": {
+      "rect": {
+        "x": 19.39,
+        "y": 106.33,
+        "width": 144.22,
+        "height": 34.39
+      },
+      "display": "flex",
+      "gap": "9.28px",
+      "margin": "0px",
+      "padding": "7.68px 9.92px",
+      "borderRadius": "7px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "11.52px"
+    },
+    "saintCard": {
+      "rect": {
+        "x": 19.39,
+        "y": 771.41,
+        "width": 144.22,
+        "height": 242
+      },
+      "display": "grid",
+      "gap": "9.28px",
+      "margin": "226.609px 0px 0px",
+      "padding": "11.52px",
+      "borderRadius": "10px",
+      "backgroundColor": "rgba(255, 255, 255, 0.88)",
+      "boxShadow": "rgba(12, 45, 38, 0.06) 0px 10px 24px 0px",
+      "fontSize": "16px"
+    },
+    "appMain": {
+      "rect": {
+        "x": 198,
+        "y": 0,
+        "width": 1338,
+        "height": 7916.25
+      },
+      "display": "block",
+      "gap": "normal",
+      "margin": "0px",
+      "padding": "11.2px 24px 16px 12px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "boxShadow": "none",
+      "fontSize": "16px"
+    },
+    "controlCount": 734,
+    "visibleControlCount": 732,
+    "errors": []
+  }
+}

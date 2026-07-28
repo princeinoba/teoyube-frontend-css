@@ -4,6 +4,159 @@
  * Product-source changes remain CSS-only and route-scoped.
  */
 
+/* Search-aligned application shell and navigation. */
+body[data-view="lexicon"] {
+  background: #f7faf8;
+}
+
+body[data-view="lexicon"] .app-shell {
+  grid-template-columns: 12.375rem minmax(0, 1fr);
+  gap: 0;
+  background: #f7faf8;
+}
+
+body[data-view="lexicon"] .app-sidebar {
+  width: auto;
+}
+
+body[data-view="lexicon"] .sidebar {
+  gap: 0.8rem;
+  margin: 0.25rem;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid rgba(0, 83, 63, 0.05);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 12px 32px rgba(12, 45, 38, 0.08);
+}
+
+body[data-view="lexicon"] .brand-lockup {
+  gap: 0.62rem;
+  padding: 0.5rem 0.25rem 0.7rem;
+}
+
+body[data-view="lexicon"] .brand-mark {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+body[data-view="lexicon"] .brand-mark::before {
+  font-size: 1.28rem;
+}
+
+body[data-view="lexicon"] .brand-mark::after {
+  bottom: 0.56rem;
+}
+
+body[data-view="lexicon"] .brand-lockup .eyebrow {
+  font-size: 0.58rem;
+}
+
+body[data-view="lexicon"] .brand-lockup h1 {
+  font-size: 1rem;
+}
+
+body[data-view="lexicon"] .brand-subtitle {
+  font-size: 0.64rem;
+}
+
+body[data-view="lexicon"] .nav-list {
+  gap: 0.16rem;
+}
+
+body[data-view="lexicon"] .nav-item {
+  gap: 0.58rem;
+  min-height: 2.15rem;
+  padding: 0.48rem 0.62rem;
+  border-radius: 7px;
+  font-size: 0.72rem;
+}
+
+body[data-view="lexicon"] .nav-item::before {
+  width: 0.95rem;
+  font-size: 1rem;
+}
+
+body[data-view="lexicon"] .saint-card {
+  gap: 0.58rem;
+  margin-top: auto;
+  padding: 0.72rem;
+  border: 1px solid rgba(0, 83, 63, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(12, 45, 38, 0.06);
+}
+
+body[data-view="lexicon"] .saint-profile-head {
+  gap: 0.55rem;
+}
+
+body[data-view="lexicon"] .saint-avatar {
+  width: 2.55rem;
+}
+
+body[data-view="lexicon"] .saint-card h2 {
+  font-size: 1rem;
+}
+
+body[data-view="lexicon"] .saint-card p,
+body[data-view="lexicon"] #sidebarCalling {
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+body[data-view="lexicon"] .active-badge {
+  padding: 0.18rem 0.4rem;
+  font-size: 0.55rem;
+}
+
+body[data-view="lexicon"] #openAssessment,
+body[data-view="lexicon"] .saint-card > button:last-child {
+  min-height: 2.2rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="lexicon"] .app-main {
+  min-inline-size: 0;
+  padding: 0.7rem 1.5rem 1rem 0.75rem;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(232, 246, 238, 0.88), transparent 18rem),
+    linear-gradient(180deg, #fbfdfb, #f4f8f6) !important;
+}
+
+body[data-view="lexicon"] .app-header {
+  min-height: 3.35rem;
+  margin-bottom: 0.45rem;
+  padding: 0.15rem 0.85rem 0.35rem;
+}
+
+body[data-view="lexicon"] .app-header > div:first-child {
+  display: grid;
+  gap: 0.08rem;
+}
+
+body[data-view="lexicon"] .app-header .eyebrow {
+  color: #004f3f;
+  font-size: 0.65rem;
+  letter-spacing: 0.07em;
+}
+
+body[data-view="lexicon"] #viewTitle {
+  font-size: 1.65rem;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+body[data-view="lexicon"] .topbar-actions {
+  gap: 0.55rem;
+}
+
+body[data-view="lexicon"] .topbar-actions > button {
+  min-height: 2.35rem;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.74rem;
+}
+
 body[data-view="lexicon"] #lexicon {
   --lexicon-ink: #10251f;
   --lexicon-muted: #64736f;
@@ -1642,4 +1795,59 @@ body[data-view="lexicon"] .grammar-panel .rank-card > * {
 body[data-view="lexicon"] #lexicon .lexicon-toolbar select:focus-visible {
   outline: 3px solid rgba(222, 177, 64, 0.68) !important;
   outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  body[data-view="lexicon"] .app-shell {
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+  }
+
+  body[data-view="lexicon"] .sidebar {
+    padding-inline: 0.7rem;
+  }
+
+  body[data-view="lexicon"] .nav-item {
+    font-size: 0.66rem;
+  }
+
+  body[data-view="lexicon"] .app-main {
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body[data-view="lexicon"] .app-shell {
+    display: block;
+  }
+
+  body[data-view="lexicon"] .app-sidebar {
+    width: min(20rem, calc(100vw - 2.5rem));
+  }
+
+  body[data-view="lexicon"] .sidebar {
+    gap: 0.8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  body[data-view="lexicon"] .app-main {
+    padding: 0.55rem 0.75rem 1rem;
+  }
+
+  body[data-view="lexicon"] .app-header {
+    min-height: 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 0.45rem;
+    padding: 0.25rem 0;
+  }
+
+  body[data-view="lexicon"] .topbar-actions {
+    width: 100%;
+  }
+
+  body[data-view="lexicon"] .topbar-actions > button {
+    flex: 1 1 11rem;
+  }
 }

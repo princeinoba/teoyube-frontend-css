@@ -1,0 +1,14 @@
+{
+  "viewport": "390x844",
+  "open": {
+    "expanded": "true",
+    "bodyOpen": true,
+    "backdropHidden": false
+  },
+  "closed": {
+    "expanded": "false",
+    "bodyOpen": false,
+    "backdropHidden": true,
+    "focusReturned": true
+  }
+}

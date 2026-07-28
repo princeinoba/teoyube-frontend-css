@@ -13,11 +13,11 @@
   "postCutoverTag": "teoyube-next-canonical-local-2026-07-24",
   "staticBaselineCommit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
   "runtimeSourceCommit": "2f8b55cb904a84ac129a26c9f2f50a6747b44d5e",
-  "runtimeSourceDigest": "76e4188df729b6fab27e772fba3496ea136fa82925aa290e64abc81babc615f7",
+  "runtimeSourceDigest": "751721dee1d666214b78f90104745aadedb93d5d4e9cf0ebe7226be7e9ff712c",
   "buildIdGeneratorVersion": "teoyube-runtime-source-digest-2026-07-25.1",
   "buildIdDigestAlgorithm": "sha256",
   "runtimeSourceManifest": "config/runtime/runtime-source-manifest.json",
-  "nextBuildId": "teoyube-76e4188df729b6fab27e772f",
+  "nextBuildId": "teoyube-751721dee1d666214b78f901",
   "publicRoutes": [
     { "path": "/", "capability": "today" },
     { "path": "/search", "capability": "search" },

@@ -1,0 +1,23 @@
+{
+  "bodyView": "lexicon",
+  "horizontalOverflow": false,
+  "documentWidth": 768,
+  "viewportWidth": 768,
+  "sidebarWidth": 320,
+  "sidebarX": -352,
+  "sidebarTransform": "matrix(1, 0, 0, 1, -352, 0)",
+  "controls": 734,
+  "cards": 109,
+  "open": {
+    "expanded": "true",
+    "bodyOpen": true,
+    "backdropHidden": false,
+    "sidebarX": 0
+  },
+  "closed": {
+    "expanded": "false",
+    "bodyOpen": false,
+    "backdropHidden": true,
+    "focusReturned": false
+  }
+}
