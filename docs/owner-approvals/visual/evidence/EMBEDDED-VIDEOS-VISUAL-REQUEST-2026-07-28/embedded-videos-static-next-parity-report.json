@@ -1,0 +1,267 @@
+{
+  "generatedAt": "2026-07-28T21:09:52.820Z",
+  "cssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "entries": {
+    "next": {
+      "status": 200,
+      "normalizedMarkupHash": "03125024a54b4b2107216f2e3e83e879955dd85f248f825746fce7d1e68261c3",
+      "controls": 53,
+      "cards": 4,
+      "tabs": 7,
+      "stats": 4,
+      "nav": 8,
+      "plays": 4,
+      "menus": 4,
+      "ids": [
+        "refreshUiVideos",
+        "uiVideoCategoryTabs",
+        "uiVideoCategorySelect",
+        "uiVideoSort",
+        "uiVideoFiltersButton",
+        "uiVideoStats",
+        "uiVideoSearch",
+        "uiVideoGrid",
+        "uiVideoLoadMore"
+      ],
+      "classes": [
+        "action-icon-button",
+        "active",
+        "button-icon",
+        "button-icon-guardrails",
+        "button-icon-journey",
+        "channel",
+        "embedded-category-tabs",
+        "embedded-filter-controls",
+        "embedded-hero-actions",
+        "embedded-load-more",
+        "embedded-search-field",
+        "embedded-stat-card",
+        "embedded-stat-icon",
+        "embedded-stats-search",
+        "embedded-title-icon",
+        "embedded-toolbar",
+        "embedded-video-boundary",
+        "embedded-video-card",
+        "embedded-video-card-body",
+        "embedded-video-card-nav",
+        "embedded-video-detail",
+        "embedded-video-hero",
+        "embedded-video-library",
+        "embedded-video-menu",
+        "embedded-video-menu-actions",
+        "embedded-video-page",
+        "embedded-video-play",
+        "embedded-video-position",
+        "embedded-video-poster",
+        "embedded-video-poster-backdrop",
+        "embedded-video-poster-image",
+        "embedded-video-stats",
+        "embedded-video-summary",
+        "eyebrow",
+        "library",
+        "phase116-chip",
+        "phase116-chip-row",
+        "phase116-search-suggestions",
+        "primary",
+        "secondary",
+        "subtle",
+        "time",
+        "ui-video-actions",
+        "ui-video-badge",
+        "ui-video-card",
+        "ui-video-duration",
+        "ui-video-grid",
+        "ui-video-meta",
+        "updated",
+        "views"
+      ],
+      "assets": [
+        "linear-gradient(135deg, rgb(0, 116, 93), rgb(0, 77, 63))",
+        "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))",
+        "linear-gradient(135deg, rgba(0, 125, 101, 0.96), rgba(0, 82, 68, 0.96))",
+        "linear-gradient(90deg, rgba(248, 252, 249, 0.99) 0%, rgba(248, 252, 249, 0.93) 29%, rgba(248, 252, 249, 0.52) 52%, rgba(0, 48, 37, 0.16) 100%), radial-gradient(circle at 72% 14%, rgba(255, 226, 131, 0.3), rgba(0, 0, 0, 0) 272px), url(/public/images/embed/embedded-videos-hero-bg.png)",
+        "public/images/embed/embedded-videos-hero-bg.png",
+        "public/images/search/search-purpose-hero.png",
+        "public/images/table/calling-compass-panel-bg.png",
+        "public/images/today/teoyubeworld-search-bg.png",
+        "radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0) 30%), linear-gradient(135deg, rgba(0, 145, 113, 0.95), rgba(0, 82, 65, 0.96))",
+        "url(data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' stroke='%231b443c' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m6 8 4 4 4-4'/%3E%3C/svg%3E)"
+      ],
+      "scrollWidth": 1536,
+      "innerWidth": 1536,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "httpErrors": [],
+      "mobile": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": false,
+        "columns": "353.812px"
+      }
+    },
+    "static": {
+      "status": 200,
+      "normalizedMarkupHash": "03125024a54b4b2107216f2e3e83e879955dd85f248f825746fce7d1e68261c3",
+      "controls": 53,
+      "cards": 4,
+      "tabs": 7,
+      "stats": 4,
+      "nav": 8,
+      "plays": 4,
+      "menus": 4,
+      "ids": [
+        "refreshUiVideos",
+        "uiVideoCategoryTabs",
+        "uiVideoCategorySelect",
+        "uiVideoSort",
+        "uiVideoFiltersButton",
+        "uiVideoStats",
+        "uiVideoSearch",
+        "uiVideoGrid",
+        "uiVideoLoadMore"
+      ],
+      "classes": [
+        "action-icon-button",
+        "active",
+        "button-icon",
+        "button-icon-guardrails",
+        "button-icon-journey",
+        "channel",
+        "embedded-category-tabs",
+        "embedded-filter-controls",
+        "embedded-hero-actions",
+        "embedded-load-more",
+        "embedded-search-field",
+        "embedded-stat-card",
+        "embedded-stat-icon",
+        "embedded-stats-search",
+        "embedded-title-icon",
+        "embedded-toolbar",
+        "embedded-video-boundary",
+        "embedded-video-card",
+        "embedded-video-card-body",
+        "embedded-video-card-nav",
+        "embedded-video-detail",
+        "embedded-video-hero",
+        "embedded-video-library",
+        "embedded-video-menu",
+        "embedded-video-menu-actions",
+        "embedded-video-page",
+        "embedded-video-play",
+        "embedded-video-position",
+        "embedded-video-poster",
+        "embedded-video-poster-backdrop",
+        "embedded-video-poster-image",
+        "embedded-video-stats",
+        "embedded-video-summary",
+        "eyebrow",
+        "library",
+        "phase116-chip",
+        "phase116-chip-row",
+        "phase116-search-suggestions",
+        "primary",
+        "secondary",
+        "subtle",
+        "time",
+        "ui-video-actions",
+        "ui-video-badge",
+        "ui-video-card",
+        "ui-video-duration",
+        "ui-video-grid",
+        "ui-video-meta",
+        "updated",
+        "views"
+      ],
+      "assets": [
+        "linear-gradient(135deg, rgb(0, 116, 93), rgb(0, 77, 63))",
+        "linear-gradient(135deg, rgba(0, 107, 87, 0.12), rgba(236, 197, 110, 0.14))",
+        "linear-gradient(135deg, rgba(0, 125, 101, 0.96), rgba(0, 82, 68, 0.96))",
+        "linear-gradient(90deg, rgba(248, 252, 249, 0.99) 0%, rgba(248, 252, 249, 0.93) 29%, rgba(248, 252, 249, 0.52) 52%, rgba(0, 48, 37, 0.16) 100%), radial-gradient(circle at 72% 14%, rgba(255, 226, 131, 0.3), rgba(0, 0, 0, 0) 272px), url(/public/images/embed/embedded-videos-hero-bg.png)",
+        "public/images/embed/embedded-videos-hero-bg.png",
+        "public/images/search/search-purpose-hero.png",
+        "public/images/table/calling-compass-panel-bg.png",
+        "public/images/today/teoyubeworld-search-bg.png",
+        "radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0) 30%), linear-gradient(135deg, rgba(0, 145, 113, 0.95), rgba(0, 82, 65, 0.96))",
+        "url(data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' stroke='%231b443c' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m6 8 4 4 4-4'/%3E%3C/svg%3E)"
+      ],
+      "scrollWidth": 1536,
+      "innerWidth": 1536,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "pageErrors": [
+        "Error: Published media manifest returned 404."
+      ],
+      "httpErrors": [
+        {
+          "status": 404,
+          "url": "http://127.0.0.1:4196/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+        }
+      ],
+      "mobile": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": false,
+        "columns": "353.812px"
+      }
+    }
+  },
+  "comparisons": {
+    "normalizedMarkupHash": {
+      "equal": true,
+      "next": "03125024a54b4b2107216f2e3e83e879955dd85f248f825746fce7d1e68261c3",
+      "static": "03125024a54b4b2107216f2e3e83e879955dd85f248f825746fce7d1e68261c3"
+    },
+    "controls": {
+      "equal": true,
+      "next": 53,
+      "static": 53
+    },
+    "cards": {
+      "equal": true,
+      "next": 4,
+      "static": 4
+    },
+    "tabs": {
+      "equal": true,
+      "next": 7,
+      "static": 7
+    },
+    "stats": {
+      "equal": true,
+      "next": 4,
+      "static": 4
+    },
+    "nav": {
+      "equal": true,
+      "next": 8,
+      "static": 8
+    },
+    "plays": {
+      "equal": true,
+      "next": 4,
+      "static": 4
+    },
+    "menus": {
+      "equal": true,
+      "next": 4,
+      "static": 4
+    },
+    "ids": {
+      "equal": true,
+      "next": 9,
+      "static": 9
+    },
+    "classes": {
+      "equal": true,
+      "next": 50,
+      "static": 50
+    },
+    "assets": {
+      "equal": true,
+      "next": 10,
+      "static": 10
+    }
+  },
+  "interpretation": "Static and Next share exact route markup, IDs, classes, controls, normalized asset paths, and responsive composition. The isolated static runtime retains its pre-existing unavailable published-media endpoint fallback; no image, CSS, or media asset 404 was introduced."
+}

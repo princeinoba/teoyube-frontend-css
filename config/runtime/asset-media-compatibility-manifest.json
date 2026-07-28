@@ -3,7 +3,7 @@
   "ownerDecisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
   "protectedVisualSourceManifest": {
     "path": "tests/visual/contracts/protected-visual-source-manifest.json",
-    "sha256": "268ba39ca13aed6c879fa79d4fe6c0235b6bd12b33b203bd9b328b7cfe1e8d0c",
+    "sha256": "d166c5798aa206cd9c86abd355c63353885bc3ccfadda639544a472a3cef6ad0",
     "fileCount": 268
   },
   "publicTree": {

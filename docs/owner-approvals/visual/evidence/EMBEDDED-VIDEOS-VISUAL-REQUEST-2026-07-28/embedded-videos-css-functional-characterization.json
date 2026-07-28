@@ -1,0 +1,148 @@
+{
+  "generatedAt": "2026-07-28T21:30:17.856Z",
+  "originalCssSha256": "eeab64e9febe302f7a645f573f64fbfbed05ca4fdf6ce9c45343a22ab6a8b373",
+  "currentCssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "original": {
+    "initial": {
+      "titles": [
+        "The Seed of Promise",
+        "The Power of Prayer",
+        "Walk in Divine Purpose",
+        "Rooted in His Word"
+      ],
+      "cards": 4,
+      "controls": 53
+    },
+    "next": [
+      "The Power of Prayer",
+      "The Power of Prayer",
+      "Walk in Divine Purpose",
+      "Rooted in His Word"
+    ],
+    "previous": [
+      "The Seed of Promise",
+      "The Power of Prayer",
+      "Walk in Divine Purpose",
+      "Rooted in His Word"
+    ],
+    "tab": {
+      "value": "Teachings",
+      "titles": [
+        "The Seed of Promise",
+        "Walk in Divine Purpose",
+        "Promise Language and Calling"
+      ]
+    },
+    "sort": {
+      "value": "Sort by: Shortest",
+      "titles": [
+        "Walk in Divine Purpose",
+        "The Power of Prayer",
+        "The Seed of Promise",
+        "Rooted in His Word"
+      ]
+    },
+    "search": {
+      "value": "prayer video",
+      "titles": [
+        "Walk in Divine Purpose",
+        "The Power of Prayer",
+        "The Seed of Promise",
+        "Rooted in His Word"
+      ]
+    },
+    "menu": {
+      "open": true,
+      "actions": 4
+    },
+    "loadMore": {
+      "visible": true,
+      "before": 4,
+      "after": 4
+    },
+    "refresh": {
+      "titles": [
+        "The Seed of Promise",
+        "The Power of Prayer",
+        "Walk in Divine Purpose",
+        "Rooted in His Word"
+      ]
+    },
+    "preview": {
+      "detail": 1
+    },
+    "errors": []
+  },
+  "current": {
+    "initial": {
+      "titles": [
+        "The Seed of Promise",
+        "The Power of Prayer",
+        "Walk in Divine Purpose",
+        "Rooted in His Word"
+      ],
+      "cards": 4,
+      "controls": 53
+    },
+    "next": [
+      "The Power of Prayer",
+      "The Power of Prayer",
+      "Walk in Divine Purpose",
+      "Rooted in His Word"
+    ],
+    "previous": [
+      "The Seed of Promise",
+      "The Power of Prayer",
+      "Walk in Divine Purpose",
+      "Rooted in His Word"
+    ],
+    "tab": {
+      "value": "Teachings",
+      "titles": [
+        "The Seed of Promise",
+        "Walk in Divine Purpose",
+        "Promise Language and Calling"
+      ]
+    },
+    "sort": {
+      "value": "Sort by: Shortest",
+      "titles": [
+        "Walk in Divine Purpose",
+        "The Power of Prayer",
+        "The Seed of Promise",
+        "Rooted in His Word"
+      ]
+    },
+    "search": {
+      "value": "prayer video",
+      "titles": [
+        "Walk in Divine Purpose",
+        "The Power of Prayer",
+        "The Seed of Promise",
+        "Rooted in His Word"
+      ]
+    },
+    "menu": {
+      "open": true,
+      "actions": 4
+    },
+    "loadMore": {
+      "visible": true,
+      "before": 4,
+      "after": 4
+    },
+    "refresh": {
+      "titles": [
+        "The Seed of Promise",
+        "The Power of Prayer",
+        "Walk in Divine Purpose",
+        "Rooted in His Word"
+      ]
+    },
+    "preview": {
+      "detail": 1
+    },
+    "errors": []
+  },
+  "fieldForFieldEqual": true
+}

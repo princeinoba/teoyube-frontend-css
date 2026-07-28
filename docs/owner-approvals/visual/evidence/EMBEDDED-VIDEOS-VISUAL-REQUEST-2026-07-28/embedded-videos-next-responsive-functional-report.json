@@ -1,0 +1,493 @@
+{
+  "generatedAt": "2026-07-28T21:34:47.868Z",
+  "cssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "route": "http://127.0.0.1:3000/embedded-videos",
+  "responsive": [
+    {
+      "label": "1536x1024",
+      "status": 200,
+      "innerWidth": 1536,
+      "scrollWidth": 1536,
+      "scrollHeight": 1032,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 210,
+        "y": 0,
+        "width": 1314,
+        "height": 184.31,
+        "bottom": 184.31
+      },
+      "library": {
+        "x": 210,
+        "y": 184.31,
+        "width": 1314,
+        "height": 824,
+        "bottom": 1008.31
+      },
+      "toolbar": {
+        "x": 211,
+        "y": 185.31,
+        "width": 1312,
+        "height": 59.22,
+        "bottom": 244.53
+      },
+      "metricsSearch": {
+        "x": 211,
+        "y": 244.53,
+        "width": 1312,
+        "height": 175.77,
+        "bottom": 420.3
+      },
+      "grid": {
+        "x": 211,
+        "y": 420.3,
+        "width": 1312,
+        "height": 535.03,
+        "bottom": 955.33
+      },
+      "firstCard": {
+        "x": 225.39,
+        "y": 425.89,
+        "width": 635.38,
+        "height": 256.48,
+        "bottom": 682.38
+      },
+      "firstPoster": {
+        "x": 226.39,
+        "y": 426.89,
+        "width": 633.38,
+        "height": 208.09,
+        "bottom": 634.98
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": false,
+      "columnCount": 2,
+      "errors": []
+    },
+    {
+      "label": "1440x900",
+      "status": 200,
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 981,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 210,
+        "y": 0,
+        "width": 1218,
+        "height": 172.8,
+        "bottom": 172.8
+      },
+      "library": {
+        "x": 210,
+        "y": 172.8,
+        "width": 1218,
+        "height": 792.47,
+        "bottom": 965.27
+      },
+      "toolbar": {
+        "x": 211,
+        "y": 173.8,
+        "width": 1216,
+        "height": 59.22,
+        "bottom": 233.02
+      },
+      "metricsSearch": {
+        "x": 211,
+        "y": 233.02,
+        "width": 1216,
+        "height": 175.77,
+        "bottom": 408.78
+      },
+      "grid": {
+        "x": 211,
+        "y": 408.78,
+        "width": 1216,
+        "height": 503.5,
+        "bottom": 912.28
+      },
+      "firstCard": {
+        "x": 225.39,
+        "y": 414.38,
+        "width": 587.38,
+        "height": 240.72,
+        "bottom": 655.09
+      },
+      "firstPoster": {
+        "x": 226.39,
+        "y": 415.38,
+        "width": 585.38,
+        "height": 192.33,
+        "bottom": 607.7
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": false,
+      "columnCount": 2,
+      "errors": []
+    },
+    {
+      "label": "1280x800",
+      "status": 200,
+      "innerWidth": 1280,
+      "scrollWidth": 1280,
+      "scrollHeight": 988,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 196,
+        "y": 0,
+        "width": 1074.41,
+        "height": 170.39,
+        "bottom": 170.39
+      },
+      "library": {
+        "x": 196,
+        "y": 170.39,
+        "width": 1074.41,
+        "height": 801.11,
+        "bottom": 971.5
+      },
+      "toolbar": {
+        "x": 197,
+        "y": 171.39,
+        "width": 1072.41,
+        "height": 106.41,
+        "bottom": 277.8
+      },
+      "metricsSearch": {
+        "x": 197,
+        "y": 277.8,
+        "width": 1072.41,
+        "height": 184.41,
+        "bottom": 462.2
+      },
+      "grid": {
+        "x": 197,
+        "y": 462.2,
+        "width": 1072.41,
+        "height": 456.31,
+        "bottom": 918.52
+      },
+      "firstCard": {
+        "x": 211.39,
+        "y": 467.8,
+        "width": 515.58,
+        "height": 217.13,
+        "bottom": 684.92
+      },
+      "firstPoster": {
+        "x": 212.39,
+        "y": 468.8,
+        "width": 513.58,
+        "height": 168.73,
+        "bottom": 637.53
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": false,
+      "columnCount": 2,
+      "errors": []
+    },
+    {
+      "label": "1024x768",
+      "status": 200,
+      "innerWidth": 1024,
+      "scrollWidth": 1024,
+      "scrollHeight": 1982,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 196,
+        "y": 0,
+        "width": 818.41,
+        "height": 213.88,
+        "bottom": 213.88
+      },
+      "library": {
+        "x": 196,
+        "y": 213.88,
+        "width": 818.41,
+        "height": 1752.45,
+        "bottom": 1966.33
+      },
+      "toolbar": {
+        "x": 197,
+        "y": 214.88,
+        "width": 816.41,
+        "height": 106.41,
+        "bottom": 321.28
+      },
+      "metricsSearch": {
+        "x": 197,
+        "y": 321.28,
+        "width": 816.41,
+        "height": 319,
+        "bottom": 640.28
+      },
+      "grid": {
+        "x": 197,
+        "y": 640.28,
+        "width": 816.41,
+        "height": 1273.06,
+        "bottom": 1913.34
+      },
+      "firstCard": {
+        "x": 211.39,
+        "y": 645.88,
+        "width": 787.63,
+        "height": 306.52,
+        "bottom": 952.39
+      },
+      "firstPoster": {
+        "x": 212.39,
+        "y": 646.88,
+        "width": 785.63,
+        "height": 258.13,
+        "bottom": 905
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": false,
+      "columnCount": 1,
+      "errors": []
+    },
+    {
+      "label": "768x1024",
+      "status": 200,
+      "innerWidth": 768,
+      "scrollWidth": 768,
+      "scrollHeight": 1942,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 10.39,
+        "y": 53.38,
+        "width": 747.22,
+        "height": 213.88,
+        "bottom": 267.25
+      },
+      "library": {
+        "x": 10.39,
+        "y": 267.25,
+        "width": 747.22,
+        "height": 1658.89,
+        "bottom": 1926.14
+      },
+      "toolbar": {
+        "x": 11.39,
+        "y": 268.25,
+        "width": 745.22,
+        "height": 106.41,
+        "bottom": 374.66
+      },
+      "metricsSearch": {
+        "x": 11.39,
+        "y": 374.66,
+        "width": 745.22,
+        "height": 319,
+        "bottom": 693.66
+      },
+      "grid": {
+        "x": 11.39,
+        "y": 693.66,
+        "width": 745.22,
+        "height": 1179.5,
+        "bottom": 1873.16
+      },
+      "firstCard": {
+        "x": 25.78,
+        "y": 699.25,
+        "width": 716.44,
+        "height": 283.13,
+        "bottom": 982.38
+      },
+      "firstPoster": {
+        "x": 26.78,
+        "y": 700.25,
+        "width": 714.44,
+        "height": 234.73,
+        "bottom": 934.98
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": false,
+      "columnCount": 1,
+      "errors": []
+    },
+    {
+      "label": "200pct-768x512",
+      "status": 200,
+      "innerWidth": 768,
+      "scrollWidth": 768,
+      "scrollHeight": 1942,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 10.39,
+        "y": 53.38,
+        "width": 747.22,
+        "height": 213.88,
+        "bottom": 267.25
+      },
+      "library": {
+        "x": 10.39,
+        "y": 267.25,
+        "width": 747.22,
+        "height": 1658.89,
+        "bottom": 1926.14
+      },
+      "toolbar": {
+        "x": 11.39,
+        "y": 268.25,
+        "width": 745.22,
+        "height": 106.41,
+        "bottom": 374.66
+      },
+      "metricsSearch": {
+        "x": 11.39,
+        "y": 374.66,
+        "width": 745.22,
+        "height": 319,
+        "bottom": 693.66
+      },
+      "grid": {
+        "x": 11.39,
+        "y": 693.66,
+        "width": 745.22,
+        "height": 1179.5,
+        "bottom": 1873.16
+      },
+      "firstCard": {
+        "x": 25.78,
+        "y": 699.25,
+        "width": 716.44,
+        "height": 283.13,
+        "bottom": 982.38
+      },
+      "firstPoster": {
+        "x": 26.78,
+        "y": 700.25,
+        "width": 714.44,
+        "height": 234.73,
+        "bottom": 934.98
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": false,
+      "columnCount": 1,
+      "errors": []
+    },
+    {
+      "label": "390x844",
+      "status": 200,
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 2099,
+      "horizontalOverflow": false,
+      "hero": {
+        "x": 7.19,
+        "y": 53.38,
+        "width": 375.63,
+        "height": 256,
+        "bottom": 309.38
+      },
+      "library": {
+        "x": 7.19,
+        "y": 317.05,
+        "width": 375.63,
+        "height": 1768.78,
+        "bottom": 2085.83
+      },
+      "toolbar": {
+        "x": 8.19,
+        "y": 318.05,
+        "width": 373.63,
+        "height": 150.7,
+        "bottom": 468.75
+      },
+      "metricsSearch": {
+        "x": 8.19,
+        "y": 468.75,
+        "width": 373.63,
+        "height": 529.44,
+        "bottom": 998.19
+      },
+      "grid": {
+        "x": 8.19,
+        "y": 998.19,
+        "width": 373.63,
+        "height": 1034.66,
+        "bottom": 2032.84
+      },
+      "firstCard": {
+        "x": 18.09,
+        "y": 1008.09,
+        "width": 353.81,
+        "height": 246.28,
+        "bottom": 1254.38
+      },
+      "firstPoster": {
+        "x": 19.09,
+        "y": 1009.09,
+        "width": 351.81,
+        "height": 197.89,
+        "bottom": 1206.98
+      },
+      "cards": 4,
+      "tabs": 7,
+      "suggestions": 6,
+      "stats": 4,
+      "navControls": 8,
+      "playControls": 4,
+      "menus": 4,
+      "controls": 53,
+      "tabStripScrollable": true,
+      "columnCount": 1,
+      "errors": []
+    }
+  ],
+  "verification": {
+    "allHttp200": true,
+    "noDocumentHorizontalOverflow": true,
+    "allCardsRetained": true,
+    "allControlsRetained": true,
+    "noConsoleOrPageErrors": true,
+    "wideDesktopTwoColumns": true,
+    "compactTabletAndMobileOneColumn": true,
+    "note": "At 390px, categories remain reachable through the intentional horizontal tab rail; document-level overflow is zero."
+  }
+}

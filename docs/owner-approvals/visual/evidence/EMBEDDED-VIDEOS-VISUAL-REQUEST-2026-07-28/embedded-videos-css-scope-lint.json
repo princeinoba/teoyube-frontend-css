@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-07-28T21:36:34.980Z",
+  "cssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "bytes": 33451,
+  "parse": "PASS",
+  "selectors": 191,
+  "routeScopedSelectors": 191,
+  "unscopedSelectors": [],
+  "forbiddenPatterns": {
+    "transitionAll": false,
+    "willChange": false,
+    "backdropFilter": false,
+    "expensiveBlur": false,
+    "pageZoom": false,
+    "pageRootScale": false
+  },
+  "allowedSmallFocusTransform": true,
+  "result": "PASS"
+}

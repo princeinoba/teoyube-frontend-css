@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-07-28T21:13:12.432Z",
+  "cssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "mechanisms": [
+    "existing DOM icon nodes and project-owned icon hooks",
+    "route-scoped CSS geometry",
+    "five small URL-encoded SVG masks in the Embedded Videos stylesheet",
+    "decorative pseudo-elements with pointer-events disabled"
+  ],
+  "groups": [
+    {
+      "name": "title screen/play",
+      "selector": ".embedded-title-icon",
+      "count": 1,
+      "visible": 1
+    },
+    {
+      "name": "header action icons",
+      "selector": ".embedded-hero-actions .button-icon",
+      "count": 2,
+      "visible": 2
+    },
+    {
+      "name": "refresh icon",
+      "selector": "[id=\"refreshUiVideos\"]",
+      "count": 1,
+      "visible": 1
+    },
+    {
+      "name": "select chevrons",
+      "selector": ".embedded-filter-controls select",
+      "count": 2,
+      "visible": 2
+    },
+    {
+      "name": "filter icon",
+      "selector": "#uiVideoFiltersButton",
+      "count": 1,
+      "visible": 1
+    },
+    {
+      "name": "metric icons",
+      "selector": ".embedded-stat-icon",
+      "count": 4,
+      "visible": 4
+    },
+    {
+      "name": "search icon",
+      "selector": ".embedded-search-field > span",
+      "count": 1,
+      "visible": 1
+    },
+    {
+      "name": "smart-search icon",
+      "selector": ".phase116-search-suggestions .eyebrow",
+      "count": 1,
+      "visible": 1
+    },
+    {
+      "name": "play icons",
+      "selector": ".embedded-video-play",
+      "count": 4,
+      "visible": 4
+    },
+    {
+      "name": "carousel chevrons",
+      "selector": ".embedded-video-card-nav button",
+      "count": 8,
+      "visible": 8
+    },
+    {
+      "name": "provider/channel icons",
+      "selector": ".ui-video-meta .channel",
+      "count": 4,
+      "visible": 4
+    },
+    {
+      "name": "overflow icons",
+      "selector": ".embedded-video-menu > summary",
+      "count": 4,
+      "visible": 4
+    },
+    {
+      "name": "load-more chevron",
+      "selector": "#uiVideoLoadMore",
+      "count": 1,
+      "visible": 1
+    },
+    {
+      "name": "local-status dot",
+      "selector": ".phase117-offline-pill",
+      "count": 1,
+      "visible": 1
+    }
+  ],
+  "renderedIconInstances": 35,
+  "emptyApprovedIconContainers": 0
+}

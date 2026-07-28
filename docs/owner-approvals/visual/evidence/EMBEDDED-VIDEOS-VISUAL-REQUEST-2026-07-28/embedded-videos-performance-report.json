@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-07-28T21:34:42.880Z",
+  "originalCssSha256": "eeab64e9febe302f7a645f573f64fbfbed05ca4fdf6ce9c45343a22ab6a8b373",
+  "currentCssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "runs": [
+    {
+      "mode": "original",
+      "run": 1,
+      "domContentLoaded": 301.6,
+      "loadEvent": 384.5,
+      "responseEnd": 11.2,
+      "resourceRequests": 37,
+      "embeddedCssRequests": 1,
+      "layoutShift": 0.08998,
+      "longTasks": 0
+    },
+    {
+      "mode": "original",
+      "run": 2,
+      "domContentLoaded": 198.6,
+      "loadEvent": 358.9,
+      "responseEnd": 13.4,
+      "resourceRequests": 36,
+      "embeddedCssRequests": 1,
+      "layoutShift": 0.14143,
+      "longTasks": 0
+    },
+    {
+      "mode": "original",
+      "run": 3,
+      "domContentLoaded": 147.9,
+      "loadEvent": 332.5,
+      "responseEnd": 7.5,
+      "resourceRequests": 36,
+      "embeddedCssRequests": 1,
+      "layoutShift": 0.14143,
+      "longTasks": 0
+    },
+    {
+      "mode": "current",
+      "run": 1,
+      "domContentLoaded": 210.4,
+      "loadEvent": 386.9,
+      "responseEnd": 11.3,
+      "resourceRequests": 36,
+      "embeddedCssRequests": 1,
+      "layoutShift": 0.28578,
+      "longTasks": 0
+    },
+    {
+      "mode": "current",
+      "run": 2,
+      "domContentLoaded": 348,
+      "loadEvent": 589.2,
+      "responseEnd": 9.1,
+      "resourceRequests": 36,
+      "embeddedCssRequests": 1,
+      "layoutShift": 0.28578,
+      "longTasks": 0
+    },
+    {
+      "mode": "current",
+      "run": 3,
+      "domContentLoaded": 529.7,
+      "loadEvent": 606.6,
+      "responseEnd": 10.4,
+      "resourceRequests": 36,
+      "embeddedCssRequests": 1,
+      "layoutShift": 0.32961,
+      "longTasks": 0
+    }
+  ],
+  "summary": {
+    "original": {
+      "domContentLoadedMedian": 198.6,
+      "loadEventMedian": 358.9,
+      "responseEndMedian": 11.2,
+      "resourceRequestsMedian": 36,
+      "embeddedCssRequestsMedian": 1,
+      "layoutShiftMedian": 0.14143,
+      "longTasksMedian": 0
+    },
+    "current": {
+      "domContentLoadedMedian": 348,
+      "loadEventMedian": 589.2,
+      "responseEndMedian": 10.4,
+      "resourceRequestsMedian": 36,
+      "embeddedCssRequestsMedian": 1,
+      "layoutShiftMedian": 0.28578,
+      "longTasksMedian": 0
+    }
+  },
+  "staticFileBytes": {
+    "original": 7240,
+    "current": 33451,
+    "delta": 26211
+  },
+  "interpretation": "The CSS-only change adds no request, script, dependency, font, asset, hydration, or media fetch. Local layout-shift readings are diagnostic and reflect the existing imported stylesheet chain applying the approved restyle after the legacy initial layout."
+}

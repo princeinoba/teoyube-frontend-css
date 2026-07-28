@@ -973,8 +973,8 @@
     },
     {
       "path": "styles/pages/embedded-videos.css",
-      "bytes": 7240,
-      "sha256": "eeab64e9febe302f7a645f573f64fbfbed05ca4fdf6ce9c45343a22ab6a8b373"
+      "bytes": 33451,
+      "sha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657"
     },
     {
       "path": "styles/pages/index.css",

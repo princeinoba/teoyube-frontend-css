@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-07-28T21:10:58.592Z",
+  "originalCssSha256": "eeab64e9febe302f7a645f573f64fbfbed05ca4fdf6ce9c45343a22ab6a8b373",
+  "currentCssSha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+  "runs": [
+    {
+      "mode": "original",
+      "viewport": "1536x1024",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 34
+        }
+      ],
+      "passes": 20
+    },
+    {
+      "mode": "original",
+      "viewport": "390x844",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 34
+        }
+      ],
+      "passes": 20
+    },
+    {
+      "mode": "current",
+      "viewport": "1536x1024",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 42
+        }
+      ],
+      "passes": 20
+    },
+    {
+      "mode": "current",
+      "viewport": "390x844",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "nodes": 5
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 42
+        }
+      ],
+      "passes": 21
+    }
+  ],
+  "summary": {
+    "allRunsZeroViolations": true,
+    "note": "Axe reported no violations. Incomplete contrast checks are expected where image/gradient backgrounds require manual review; the pre-existing prohibited-ARIA incomplete nodes are unchanged."
+  }
+}

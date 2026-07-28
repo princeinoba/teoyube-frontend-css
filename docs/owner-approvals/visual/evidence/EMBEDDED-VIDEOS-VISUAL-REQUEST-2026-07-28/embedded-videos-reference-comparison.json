@@ -1,0 +1,17 @@
+{
+  "reference": {
+    "width": 1536,
+    "height": 1024
+  },
+  "candidate": {
+    "width": 1536,
+    "height": 1024
+  },
+  "meanAbsoluteChannelDifference": 31.52406056722005,
+  "rootMeanSquareChannelDifference": 60.58486542301459,
+  "pixelsOver10": 810742,
+  "pixelsOver10Ratio": 0.5154558817545573,
+  "pixelsOver25": 548401,
+  "pixelsOver25Ratio": 0.3486639658610026,
+  "note": "Reference contains reference-only preview-strip content absent from the protected DOM; all live records and controls were retained and no DOM was fabricated."
+}
