@@ -283,6 +283,7 @@ body[data-view="ui-elements"] .embedded-search-field:focus-within { outline: 3px
 }
 
 @media (max-width: 1050px) {
+  body[data-view="ui-elements"] .ui-video-grid { grid-template-columns: 1fr; }
   body[data-view="ui-elements"] .embedded-video-hero { min-height: 12rem; flex-direction: column; }
   body[data-view="ui-elements"] .embedded-hero-actions { justify-content: flex-start; }
   body[data-view="ui-elements"] .embedded-stats-search { grid-template-columns: 1fr; }
