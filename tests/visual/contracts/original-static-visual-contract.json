@@ -1008,8 +1008,8 @@
     },
     {
       "path": "styles/pages/teo-guide.css",
-      "bytes": 101,
-      "sha256": "525c5a75e54331e9ae4940060ed63a1159e7963a897697355c3d96ffd99ccb02"
+      "bytes": 29397,
+      "sha256": "f9b8ba36687790fa31c75e486f3289325fd340a3ff12aa8aec29e35d79b3dbdd"
     },
     {
       "path": "styles/pages/testimony.css",

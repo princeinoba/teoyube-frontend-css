@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-28T18:39:44.048Z",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-28-TEO-GUIDE-001",
+  "scope": "#guide",
+  "standardTags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "evidenceType": "focused Axe comparison; not a WCAG certification",
+  "rows": [
+    {
+      "viewport": {
+        "name": "owner-reference",
+        "width": 1402,
+        "height": 1122
+      },
+      "current": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.12.1"
+        },
+        "testEnvironment": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+          "windowWidth": 1402,
+          "windowHeight": 1122,
+          "orientationAngle": 0,
+          "orientationType": "landscape-primary"
+        },
+        "passes": 13,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 74
+          }
+        ],
+        "violations": []
+      },
+      "baselineWithoutPageCss": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.12.1"
+        },
+        "testEnvironment": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+          "windowWidth": 1402,
+          "windowHeight": 1122,
+          "orientationAngle": 0,
+          "orientationType": "landscape-primary"
+        },
+        "passes": 13,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 74
+          }
+        ],
+        "violations": []
+      },
+      "newViolationSignatures": [],
+      "resolvedViolationSignatures": []
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "current": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.12.1"
+        },
+        "testEnvironment": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+          "windowWidth": 390,
+          "windowHeight": 844,
+          "orientationAngle": 0,
+          "orientationType": "landscape-primary"
+        },
+        "passes": 13,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 74
+          }
+        ],
+        "violations": []
+      },
+      "baselineWithoutPageCss": {
+        "testEngine": {
+          "name": "axe-core",
+          "version": "4.12.1"
+        },
+        "testEnvironment": {
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+          "windowWidth": 390,
+          "windowHeight": 844,
+          "orientationAngle": 0,
+          "orientationType": "landscape-primary"
+        },
+        "passes": 13,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 2
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 74
+          }
+        ],
+        "violations": []
+      },
+      "newViolationSignatures": [],
+      "resolvedViolationSignatures": []
+    }
+  ],
+  "summary": {
+    "viewports": 2,
+    "newViolationSignatures": 0,
+    "currentSeriousOrCriticalNodes": 0,
+    "baselineSeriousOrCriticalNodes": 0
+  },
+  "result": "PASS_NO_NEW_AXE_VIOLATION_SIGNATURES"
+}

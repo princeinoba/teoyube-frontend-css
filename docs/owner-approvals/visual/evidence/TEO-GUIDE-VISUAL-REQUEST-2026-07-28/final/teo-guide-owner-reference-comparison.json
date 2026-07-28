@@ -1,0 +1,32 @@
+{
+  "reference": {
+    "path": "docs/owner-approvals/visual/evidence/TEO-GUIDE-VISUAL-REQUEST-2026-07-28/teo-guide-owner-reference-1402x1122.png",
+    "width": 1402,
+    "height": 1122
+  },
+  "candidate": {
+    "path": "docs/owner-approvals/visual/evidence/TEO-GUIDE-VISUAL-REQUEST-2026-07-28/final/final-next-owner-reference-1402x1122-viewport.png",
+    "width": 1402,
+    "height": 1122
+  },
+  "before": {
+    "mae": 51.57350631429678,
+    "normalizedMae": 0.2022490443697913,
+    "rmse": 91.37514697103357,
+    "percentPixelsOver16": 41.105843193197394,
+    "percentPixelsOver32": 32.51441154856444
+  },
+  "after": {
+    "mae": 22.308359037212774,
+    "normalizedMae": 0.08748376093024618,
+    "rmse": 53.82221296123025,
+    "percentPixelsOver16": 23.79609216271128,
+    "percentPixelsOver32": 16.009723822092706
+  },
+  "improvement": {
+    "maeReduction": 29.265147277084004,
+    "relativeMaeReductionPercent": 56.74453681457637,
+    "rmseReduction": 37.55293400980332
+  },
+  "policy": "Owner reference is a directional visual target, not an immutable pixel baseline. Metrics are recorded, not used to hide or excuse structural differences."
+}

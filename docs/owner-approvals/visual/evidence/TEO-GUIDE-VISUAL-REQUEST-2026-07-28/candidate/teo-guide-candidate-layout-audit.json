@@ -1,0 +1,2067 @@
+[
+  {
+    "viewport": {
+      "name": "1402x1122",
+      "width": 1402,
+      "height": 1122
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 1402,
+    "clientWidth": 1402,
+    "scrollHeight": 1171,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1402,
+          "height": 1170.75,
+          "right": 1402,
+          "bottom": 1170.75
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "198px 1204px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 198,
+          "y": 0,
+          "width": 1204,
+          "height": 1170.75,
+          "right": 1402,
+          "bottom": 1170.75
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1168,
+          "height": 53.59375,
+          "right": 1378,
+          "bottom": 64.78125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1168,
+          "height": 1082.78125,
+          "right": 1378,
+          "bottom": 1154.75
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1168,
+          "height": 1082.78125,
+          "right": 1378,
+          "bottom": 1154.75
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "662.109px 490.469px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 662.109375,
+          "height": 747.375,
+          "right": 872.109375,
+          "bottom": 819.34375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "662.109px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 887.53125,
+          "y": 71.96875,
+          "width": 490.46875,
+          "height": 1082.78125,
+          "right": 1378,
+          "bottom": 1154.75
+        },
+        "display": "grid",
+        "position": "sticky",
+        "gridTemplateColumns": "461.844px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 662.109375,
+          "height": 252,
+          "right": 872.109375,
+          "bottom": 323.96875
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "660.109px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 210,
+          "y": 336.578125,
+          "width": 662.109375,
+          "height": 108.625,
+          "right": 872.109375,
+          "bottom": 445.203125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "68.7969px 192.094px 352.188px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 210,
+          "y": 482.609375,
+          "width": 662.109375,
+          "height": 140,
+          "right": 872.109375,
+          "bottom": 622.609375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "159.281px 159.297px 159.297px 159.297px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 210,
+          "y": 660.015625,
+          "width": 662.109375,
+          "height": 70.71875,
+          "right": 872.109375,
+          "bottom": 730.734375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "160.484px 160.484px 160.484px 160.5px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 210,
+          "y": 743.34375,
+          "width": 662.109375,
+          "height": 76,
+          "right": 872.109375,
+          "bottom": 819.34375
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 901.84375,
+          "y": 148.1875,
+          "width": 461.84375,
+          "height": 209.953125,
+          "right": 1363.6875,
+          "bottom": 358.140625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "437.469px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 901.84375,
+          "y": 384.046875,
+          "width": 461.84375,
+          "height": 208.15625,
+          "right": 1363.6875,
+          "bottom": 592.203125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "461.844px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 901.84375,
+          "y": 602.109375,
+          "width": 461.84375,
+          "height": 451.28125,
+          "right": 1363.6875,
+          "bottom": 1053.390625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "461.844px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 901.84375,
+          "y": 809.90625,
+          "width": 461.84375,
+          "height": 233.09375,
+          "right": 1363.6875,
+          "bottom": 1043
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "143.359px 143.359px 143.359px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 901.84375,
+          "y": 1063.296875,
+          "width": 461.84375,
+          "height": 55.1875,
+          "right": 1363.6875,
+          "bottom": 1118.484375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 321.312px 38.0781px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 901.84375,
+          "y": 1128.390625,
+          "width": 461.84375,
+          "height": 12.046875,
+          "right": 1363.6875,
+          "bottom": 1140.4375
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  },
+  {
+    "viewport": {
+      "name": "1536x1024",
+      "width": 1536,
+      "height": 1024
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 1536,
+    "clientWidth": 1536,
+    "scrollHeight": 1135,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1134.53125,
+          "right": 1536,
+          "bottom": 1134.53125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "198px 1338px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 198,
+          "y": 0,
+          "width": 1338,
+          "height": 1134.53125,
+          "right": 1536,
+          "bottom": 1134.53125
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1302,
+          "height": 53.59375,
+          "right": 1512,
+          "bottom": 64.78125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1302,
+          "height": 1046.5625,
+          "right": 1512,
+          "bottom": 1118.53125
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1302,
+          "height": 1046.5625,
+          "right": 1512,
+          "bottom": 1118.53125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "738.297px 546.906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 738.296875,
+          "height": 740.75,
+          "right": 948.296875,
+          "bottom": 812.71875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "738.297px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 965.09375,
+          "y": 71.96875,
+          "width": 546.90625,
+          "height": 1046.5625,
+          "right": 1512,
+          "bottom": 1118.53125
+        },
+        "display": "grid",
+        "position": "sticky",
+        "gridTemplateColumns": "515.75px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 738.296875,
+          "height": 252,
+          "right": 948.296875,
+          "bottom": 323.96875
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "736.297px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 210,
+          "y": 337.078125,
+          "width": 738.296875,
+          "height": 100,
+          "right": 948.296875,
+          "bottom": 437.078125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "68.7969px 218.984px 401.484px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 210,
+          "y": 474.984375,
+          "width": 738.296875,
+          "height": 140,
+          "right": 948.296875,
+          "bottom": 614.984375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "178.328px 178.344px 178.344px 178.344px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 210,
+          "y": 652.890625,
+          "width": 738.296875,
+          "height": 70.71875,
+          "right": 948.296875,
+          "bottom": 723.609375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "179.531px 179.531px 179.531px 179.547px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 210,
+          "y": 736.71875,
+          "width": 738.296875,
+          "height": 76,
+          "right": 948.296875,
+          "bottom": 812.71875
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 980.671875,
+          "y": 149.453125,
+          "width": 515.75,
+          "height": 174.765625,
+          "right": 1496.421875,
+          "bottom": 324.21875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "491.375px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 980.671875,
+          "y": 350.125,
+          "width": 515.75,
+          "height": 208.15625,
+          "right": 1496.421875,
+          "bottom": 558.28125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "515.75px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 980.671875,
+          "y": 568.1875,
+          "width": 515.75,
+          "height": 447.71875,
+          "right": 1496.421875,
+          "bottom": 1015.90625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "515.75px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 980.671875,
+          "y": 775.984375,
+          "width": 515.75,
+          "height": 229.53125,
+          "right": 1496.421875,
+          "bottom": 1005.515625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "161.328px 161.328px 161.328px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 980.671875,
+          "y": 1025.8125,
+          "width": 515.75,
+          "height": 55.1875,
+          "right": 1496.421875,
+          "bottom": 1081
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 375.219px 38.0781px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 980.671875,
+          "y": 1090.90625,
+          "width": 515.75,
+          "height": 12.046875,
+          "right": 1496.421875,
+          "bottom": 1102.953125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  },
+  {
+    "viewport": {
+      "name": "1440x900",
+      "width": 1440,
+      "height": 900
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 1171,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1171.46875,
+          "right": 1440,
+          "bottom": 1171.46875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "198px 1242px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 198,
+          "y": 0,
+          "width": 1242,
+          "height": 1171.46875,
+          "right": 1440,
+          "bottom": 1171.46875
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1206,
+          "height": 53.59375,
+          "right": 1416,
+          "bottom": 64.78125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1206,
+          "height": 1083.5,
+          "right": 1416,
+          "bottom": 1155.46875
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1206,
+          "height": 1083.5,
+          "right": 1416,
+          "bottom": 1155.46875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "683.703px 506.469px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 683.703125,
+          "height": 740.125,
+          "right": 893.703125,
+          "bottom": 812.09375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "683.703px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 909.53125,
+          "y": 71.96875,
+          "width": 506.46875,
+          "height": 1083.5,
+          "right": 1416,
+          "bottom": 1155.46875
+        },
+        "display": "grid",
+        "position": "sticky",
+        "gridTemplateColumns": "477.125px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 683.703125,
+          "height": 252,
+          "right": 893.703125,
+          "bottom": 323.96875
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "681.703px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 210,
+          "y": 336.921875,
+          "width": 683.703125,
+          "height": 100,
+          "right": 893.703125,
+          "bottom": 436.921875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "68.7969px 199.719px 366.156px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 210,
+          "y": 474.671875,
+          "width": 683.703125,
+          "height": 140,
+          "right": 893.703125,
+          "bottom": 614.671875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "164.688px 164.688px 164.688px 164.703px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 210,
+          "y": 652.421875,
+          "width": 683.703125,
+          "height": 70.71875,
+          "right": 893.703125,
+          "bottom": 723.140625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "165.875px 165.891px 165.891px 165.891px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 210,
+          "y": 736.09375,
+          "width": 683.703125,
+          "height": 76,
+          "right": 893.703125,
+          "bottom": 812.09375
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 924.203125,
+          "y": 148.546875,
+          "width": 477.125,
+          "height": 209.953125,
+          "right": 1401.328125,
+          "bottom": 358.5
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "452.75px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 924.203125,
+          "y": 384.40625,
+          "width": 477.125,
+          "height": 208.15625,
+          "right": 1401.328125,
+          "bottom": 592.5625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "477.125px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 924.203125,
+          "y": 602.46875,
+          "width": 477.125,
+          "height": 451.28125,
+          "right": 1401.328125,
+          "bottom": 1053.75
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "477.125px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 924.203125,
+          "y": 810.265625,
+          "width": 477.125,
+          "height": 233.09375,
+          "right": 1401.328125,
+          "bottom": 1043.359375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "148.453px 148.453px 148.453px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 924.203125,
+          "y": 1063.65625,
+          "width": 477.125,
+          "height": 55.1875,
+          "right": 1401.328125,
+          "bottom": 1118.84375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 336.594px 38.0781px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 924.203125,
+          "y": 1128.75,
+          "width": 477.125,
+          "height": 12.046875,
+          "right": 1401.328125,
+          "bottom": 1140.796875
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  },
+  {
+    "viewport": {
+      "name": "1280x800",
+      "width": 1280,
+      "height": 800
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 1201,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 1200.8125,
+          "right": 1280,
+          "bottom": 1200.8125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "198px 1082px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 198,
+          "y": 0,
+          "width": 1082,
+          "height": 1200.8125,
+          "right": 1280,
+          "bottom": 1200.8125
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1046,
+          "height": 53.59375,
+          "right": 1256,
+          "bottom": 64.78125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1046,
+          "height": 1112.84375,
+          "right": 1256,
+          "bottom": 1184.8125
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 1046,
+          "height": 1112.84375,
+          "right": 1256,
+          "bottom": 1184.8125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "592.797px 439.125px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 592.796875,
+          "height": 731.921875,
+          "right": 802.796875,
+          "bottom": 803.890625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "592.797px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 816.875,
+          "y": 71.96875,
+          "width": 439.125,
+          "height": 1112.84375,
+          "right": 1256,
+          "bottom": 1184.8125
+        },
+        "display": "grid",
+        "position": "sticky",
+        "gridTemplateColumns": "412.812px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 592.796875,
+          "height": 236.796875,
+          "right": 802.796875,
+          "bottom": 308.765625
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "590.797px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 210,
+          "y": 320.28125,
+          "width": 592.796875,
+          "height": 108.625,
+          "right": 802.796875,
+          "bottom": 428.90625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "68.7969px 168px 306.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 210,
+          "y": 465.21875,
+          "width": 592.796875,
+          "height": 144.125,
+          "right": 802.796875,
+          "bottom": 609.34375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "141.953px 141.969px 141.969px 141.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 210,
+          "y": 645.65625,
+          "width": 592.796875,
+          "height": 70.71875,
+          "right": 802.796875,
+          "bottom": 716.375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "143.156px 143.156px 143.156px 143.172px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 210,
+          "y": 727.890625,
+          "width": 592.796875,
+          "height": 76,
+          "right": 802.796875,
+          "bottom": 803.890625
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 830.03125,
+          "y": 147.03125,
+          "width": 412.8125,
+          "height": 223.15625,
+          "right": 1242.84375,
+          "bottom": 370.1875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "388.438px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 830.03125,
+          "y": 396.09375,
+          "width": 412.8125,
+          "height": 223.765625,
+          "right": 1242.84375,
+          "bottom": 619.859375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "412.812px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 830.03125,
+          "y": 629.765625,
+          "width": 412.8125,
+          "height": 454.84375,
+          "right": 1242.84375,
+          "bottom": 1084.609375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "412.812px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 830.03125,
+          "y": 837.5625,
+          "width": 412.8125,
+          "height": 236.65625,
+          "right": 1242.84375,
+          "bottom": 1074.21875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "127.016px 127.016px 127.031px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 830.03125,
+          "y": 1094.515625,
+          "width": 412.8125,
+          "height": 55.1875,
+          "right": 1242.84375,
+          "bottom": 1149.703125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 272.281px 38.0781px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 830.03125,
+          "y": 1159.609375,
+          "width": 412.8125,
+          "height": 12.046875,
+          "right": 1242.84375,
+          "bottom": 1171.65625
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  },
+  {
+    "viewport": {
+      "name": "1024x768",
+      "width": 1024,
+      "height": 768
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 1811,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1810.609375,
+          "right": 1024,
+          "bottom": 1810.609375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "198px 826px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 198,
+          "y": 0,
+          "width": 826,
+          "height": 1810.609375,
+          "right": 1024,
+          "bottom": 1810.609375
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 790,
+          "height": 53.59375,
+          "right": 1000,
+          "bottom": 64.78125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 790,
+          "height": 1722.640625,
+          "right": 1000,
+          "bottom": 1794.609375
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 790,
+          "height": 1722.640625,
+          "right": 1000,
+          "bottom": 1794.609375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "790px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 790,
+          "height": 731.9375,
+          "right": 1000,
+          "bottom": 803.90625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "790px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 210,
+          "y": 816.703125,
+          "width": 790,
+          "height": 977.90625,
+          "right": 1000,
+          "bottom": 1794.609375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "764.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 210,
+          "y": 71.96875,
+          "width": 790,
+          "height": 256,
+          "right": 1000,
+          "bottom": 327.96875
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "788px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 210,
+          "y": 337.875,
+          "width": 790,
+          "height": 100,
+          "right": 1000,
+          "bottom": 437.875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "68.7969px 237.234px 434.938px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 210,
+          "y": 472.578125,
+          "width": 790,
+          "height": 140,
+          "right": 1000,
+          "bottom": 612.578125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "191.266px 191.266px 191.266px 191.266px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 210,
+          "y": 647.28125,
+          "width": 790,
+          "height": 70.71875,
+          "right": 1000,
+          "bottom": 718
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "192.453px 192.469px 192.453px 192.469px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 210,
+          "y": 727.90625,
+          "width": 790,
+          "height": 76,
+          "right": 1000,
+          "bottom": 803.90625
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 222.515625,
+          "y": 891.125,
+          "width": 764.96875,
+          "height": 174.765625,
+          "right": 987.484375,
+          "bottom": 1065.890625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "740.594px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 222.515625,
+          "y": 1091.796875,
+          "width": 764.96875,
+          "height": 208.15625,
+          "right": 987.484375,
+          "bottom": 1299.953125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "764.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 222.515625,
+          "y": 1309.859375,
+          "width": 764.96875,
+          "height": 385.1875,
+          "right": 987.484375,
+          "bottom": 1695.046875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "764.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 222.515625,
+          "y": 1517.65625,
+          "width": 764.96875,
+          "height": 167,
+          "right": 987.484375,
+          "bottom": 1684.65625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "244.406px 244.406px 244.406px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 222.515625,
+          "y": 1704.953125,
+          "width": 764.96875,
+          "height": 55.1875,
+          "right": 987.484375,
+          "bottom": 1760.140625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 624.438px 38.0781px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 222.515625,
+          "y": 1770.046875,
+          "width": 764.96875,
+          "height": 12.046875,
+          "right": 987.484375,
+          "bottom": 1782.09375
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  },
+  {
+    "viewport": {
+      "name": "768x1024",
+      "width": 768,
+      "height": 1024
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 2115,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 2114.71875,
+          "right": 768,
+          "bottom": 2114.71875
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "184px minmax(0px, 1fr)",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 0,
+          "y": 53.375,
+          "width": 768,
+          "height": 2061.34375,
+          "right": 768,
+          "bottom": 2114.71875
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 12,
+          "y": 62.171875,
+          "width": 744,
+          "height": 96.0625,
+          "right": 756,
+          "bottom": 158.234375
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 12,
+          "y": 165.421875,
+          "width": 744,
+          "height": 1933.296875,
+          "right": 756,
+          "bottom": 2098.71875
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 12,
+          "y": 165.421875,
+          "width": 744,
+          "height": 1933.296875,
+          "right": 756,
+          "bottom": 2098.71875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "744px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 12,
+          "y": 165.421875,
+          "width": 744,
+          "height": 912.5,
+          "right": 756,
+          "bottom": 1077.921875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "744px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 12,
+          "y": 1090.71875,
+          "width": 744,
+          "height": 1008,
+          "right": 756,
+          "bottom": 2098.71875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "718.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 12,
+          "y": 165.421875,
+          "width": 744,
+          "height": 224,
+          "right": 756,
+          "bottom": 389.421875
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "742px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 12,
+          "y": 399.328125,
+          "width": 744,
+          "height": 126.8125,
+          "right": 756,
+          "bottom": 526.140625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "56px 650.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 12,
+          "y": 560.84375,
+          "width": 744,
+          "height": 248.3125,
+          "right": 756,
+          "bottom": 809.15625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "367.844px 367.844px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 12,
+          "y": 843.859375,
+          "width": 744,
+          "height": 148.15625,
+          "right": 756,
+          "bottom": 992.015625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "368.641px 368.641px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 12,
+          "y": 1001.921875,
+          "width": 744,
+          "height": 76,
+          "right": 756,
+          "bottom": 1077.921875
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 24.515625,
+          "y": 1165.140625,
+          "width": 718.96875,
+          "height": 235.234375,
+          "right": 743.484375,
+          "bottom": 1400.375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "694.594px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 24.515625,
+          "y": 1426.28125,
+          "width": 718.96875,
+          "height": 208.15625,
+          "right": 743.484375,
+          "bottom": 1634.4375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "718.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 24.515625,
+          "y": 1644.34375,
+          "width": 718.96875,
+          "height": 354.8125,
+          "right": 743.484375,
+          "bottom": 1999.15625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "718.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 24.515625,
+          "y": 1852.140625,
+          "width": 718.96875,
+          "height": 136.625,
+          "right": 743.484375,
+          "bottom": 1988.765625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "346.641px 346.656px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 24.515625,
+          "y": 2009.0625,
+          "width": 718.96875,
+          "height": 55.1875,
+          "right": 743.484375,
+          "bottom": 2064.25
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 578.438px 38.0781px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 24.515625,
+          "y": 2074.15625,
+          "width": 718.96875,
+          "height": 12.046875,
+          "right": 743.484375,
+          "bottom": 2086.203125
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  },
+  {
+    "viewport": {
+      "name": "390x844",
+      "width": 390,
+      "height": 844
+    },
+    "bodyDataView": "guide",
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 2857,
+    "controlCount": 44,
+    "visibleControlCount": 44,
+    "clipped": [],
+    "geometry": {
+      ".app-shell": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 2856.65625,
+          "right": 390,
+          "bottom": 2856.65625
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "184px minmax(0px, 1fr)",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      ".app-main": {
+        "rect": {
+          "x": 0,
+          "y": 53.375,
+          "width": 390,
+          "height": 2803.28125,
+          "right": 390,
+          "bottom": 2856.65625
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "clip",
+        "overflowY": "visible"
+      },
+      ".app-header": {
+        "rect": {
+          "x": 8,
+          "y": 60.5625,
+          "width": 374,
+          "height": 104.859375,
+          "right": 382,
+          "bottom": 165.421875
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide": {
+        "rect": {
+          "x": 8,
+          "y": 172.609375,
+          "width": 374,
+          "height": 2670.453125,
+          "right": 382,
+          "bottom": 2843.0625
+        },
+        "display": "block",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-layout": {
+        "rect": {
+          "x": 8,
+          "y": 172.609375,
+          "width": 374,
+          "height": 2670.453125,
+          "right": 382,
+          "bottom": 2843.0625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "374px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-main": {
+        "rect": {
+          "x": 8,
+          "y": 172.609375,
+          "width": 374,
+          "height": 1309.625,
+          "right": 382,
+          "bottom": 1482.234375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "374px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-panel": {
+        "rect": {
+          "x": 8,
+          "y": 1495.03125,
+          "width": 374,
+          "height": 1348.03125,
+          "right": 382,
+          "bottom": 2843.0625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "348.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-hero": {
+        "rect": {
+          "x": 8,
+          "y": 172.609375,
+          "width": 374,
+          "height": 208,
+          "right": 382,
+          "bottom": 380.609375
+        },
+        "display": "grid",
+        "position": "relative",
+        "gridTemplateColumns": "372px",
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      "#guide .guide-feature-panel": {
+        "rect": {
+          "x": 8,
+          "y": 390.515625,
+          "width": 374,
+          "height": 200.65625,
+          "right": 382,
+          "bottom": 591.171875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "348.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-help-grid": {
+        "rect": {
+          "x": 8,
+          "y": 625.875,
+          "width": 374,
+          "height": 427.75,
+          "right": 382,
+          "bottom": 1053.625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "374px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-topic-grid": {
+        "rect": {
+          "x": 8,
+          "y": 1088.328125,
+          "width": 374,
+          "height": 303.03125,
+          "right": 382,
+          "bottom": 1391.359375
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "374px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-wisdom-banner": {
+        "rect": {
+          "x": 8,
+          "y": 1401.265625,
+          "width": 374,
+          "height": 80.96875,
+          "right": 382,
+          "bottom": 1482.234375
+        },
+        "display": "flex",
+        "position": "static",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide #phase116bTeoGuideTools": {
+        "rect": {
+          "x": 20.515625,
+          "y": 1569.453125,
+          "width": 348.96875,
+          "height": 318.8125,
+          "right": 369.484375,
+          "bottom": 1888.265625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "324.594px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-log": {
+        "rect": {
+          "x": 20.515625,
+          "y": 1914.171875,
+          "width": 348.96875,
+          "height": 297.359375,
+          "right": 369.484375,
+          "bottom": 2211.53125
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "348.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-suggested-prompts": {
+        "rect": {
+          "x": 20.515625,
+          "y": 2221.4375,
+          "width": 348.96875,
+          "height": 471.703125,
+          "right": 369.484375,
+          "bottom": 2693.140625
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "348.969px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .phase116-search-suggestions": {
+        "rect": {
+          "x": 20.515625,
+          "y": 2514.328125,
+          "width": 348.96875,
+          "height": 168.421875,
+          "right": 369.484375,
+          "bottom": 2682.75
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "329.375px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .chat-form": {
+        "rect": {
+          "x": 20.515625,
+          "y": 2703.046875,
+          "width": 348.96875,
+          "height": 93.5,
+          "right": 369.484375,
+          "bottom": 2796.546875
+        },
+        "display": "grid",
+        "position": "static",
+        "gridTemplateColumns": "34.3906px 252.594px 34.3906px",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      },
+      "#guide .guide-chat-note": {
+        "rect": {
+          "x": 20.515625,
+          "y": 2806.453125,
+          "width": 348.96875,
+          "height": 24.09375,
+          "right": 369.484375,
+          "bottom": 2830.546875
+        },
+        "display": "flex",
+        "position": "relative",
+        "gridTemplateColumns": "none",
+        "overflowX": "visible",
+        "overflowY": "visible"
+      }
+    },
+    "counts": {
+      "topics": 8,
+      "categories": 7,
+      "prompts": 3,
+      "smart": 7,
+      "feedback": 8,
+      "contextActions": 5
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-28T18:30:01.380Z",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-28-TEO-GUIDE-001",
+  "stylesheet": {
+    "path": "styles/pages/teo-guide.css",
+    "bytes": 29397,
+    "sha256": "f9b8ba36687790fa31c75e486f3289325fd340a3ff12aa8aec29e35d79b3dbdd",
+    "ruleCount": 189,
+    "allRulesRouteScoped": true,
+    "unscopedSelectors": []
+  },
+  "safety": {
+    "displayNoneDeclarations": 0,
+    "visibilityHiddenDeclarations": 0,
+    "pointerEventsNoneDeclarations": 1,
+    "pointerEventsNoneScope": "decorative .guide-hero::after overlay only",
+    "externalUrlCount": 0,
+    "allReferencedAssetsExist": true
+  },
+  "assets": [
+    {
+      "reference": "../../public/images/lexicon/word-of-the-day-bg.png",
+      "resolvedPath": "public/images/lexicon/word-of-the-day-bg.png",
+      "exists": true
+    },
+    {
+      "reference": "../../public/images/lexicon/lexicon-hero-bg.png",
+      "resolvedPath": "public/images/lexicon/lexicon-hero-bg.png",
+      "exists": true
+    }
+  ],
+  "notes": [
+    "No HTML, JavaScript, TypeScript, TSX, package, configuration, or test-source behavior was changed by the visual implementation.",
+    "The only pointer-events:none declaration prevents the decorative hero overlay from intercepting input.",
+    "All 44 original controls and all expected icon targets are verified in the browser evidence.",
+    "The contextual tools panel is styled through its existing .phase116b-functional-panel class; the stylesheet adds no CSS ID contract entry."
+  ]
+}

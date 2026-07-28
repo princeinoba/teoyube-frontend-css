@@ -1,0 +1,1004 @@
+{
+  "scope": "CSS-only before/after functional characterization; original CSS injected only in test harness",
+  "matrix": {
+    "nextBeforeCss": {
+      "category": {
+        "before": "Promise",
+        "after": "Promise",
+        "prompts": [
+          "I feel stuck and need a promise.",
+          "Help me reflect on this promise.",
+          "What promise cluster fits this season?"
+        ]
+      },
+      "focus": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Overcome Confusion"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Decision Wisdom"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Purpose Clarity"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Serve While Preparing"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Faith & Trust"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Relationships"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling & Assignment"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer & Direction"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Add Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Copy Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear Chat"
+        },
+        {
+          "tag": "SUMMARY",
+          "id": null,
+          "text": "Why this? Excellent"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "More like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Less like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Not relevant"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Word"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Complete Action"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reset this preference"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Promise"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Journey"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Testimony"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Romans 8:28-30"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me pray through discouragement."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Give me a prayer for clarity and direction."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Attach future context"
+        },
+        {
+          "tag": "INPUT",
+          "id": "chatInput",
+          "text": "Ask Teo for a Scripture-grounded next step..."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Ask"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Voice input"
+        }
+      ],
+      "knownErrors": [],
+      "unexpectedErrors": []
+    },
+    "nextAfterCss": {
+      "category": {
+        "before": "Promise",
+        "after": "Promise",
+        "prompts": [
+          "I feel stuck and need a promise.",
+          "Help me reflect on this promise.",
+          "What promise cluster fits this season?"
+        ]
+      },
+      "focus": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Overcome Confusion"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Decision Wisdom"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Purpose Clarity"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Serve While Preparing"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Faith & Trust"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Relationships"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling & Assignment"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer & Direction"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Add Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Copy Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear Chat"
+        },
+        {
+          "tag": "SUMMARY",
+          "id": null,
+          "text": "Why this? Excellent"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "More like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Less like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Not relevant"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Word"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Complete Action"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reset this preference"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Promise"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Journey"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Testimony"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Romans 8:28-30"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me pray through discouragement."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Give me a prayer for clarity and direction."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Attach future context"
+        },
+        {
+          "tag": "INPUT",
+          "id": "chatInput",
+          "text": "Ask Teo for a Scripture-grounded next step..."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Ask"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Voice input"
+        }
+      ],
+      "knownErrors": [],
+      "unexpectedErrors": []
+    },
+    "staticBeforeCss": {
+      "category": {
+        "before": "Promise",
+        "after": "Prayer",
+        "prompts": [
+          "Help me pray through discouragement.",
+          "Give me a prayer for clarity and direction.",
+          "What is one faithful prayer step today?"
+        ]
+      },
+      "focus": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Overcome Confusion"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Decision Wisdom"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Purpose Clarity"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Serve While Preparing"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Faith & Trust"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Relationships"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling & Assignment"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer & Direction"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Add Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Copy Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear Chat"
+        },
+        {
+          "tag": "SUMMARY",
+          "id": null,
+          "text": "Why this? Excellent"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "More like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Less like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Not relevant"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Word"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Complete Action"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reset this preference"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Promise"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Journey"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Testimony"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Romans 8:28-30"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me pray through discouragement."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Give me a prayer for clarity and direction."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Attach future context"
+        },
+        {
+          "tag": "INPUT",
+          "id": "chatInput",
+          "text": "Ask Teo for a Scripture-grounded next step..."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Ask"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Voice input"
+        }
+      ],
+      "knownErrors": [
+        {
+          "type": "http",
+          "status": 404,
+          "url": "http://127.0.0.1:4193/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+        },
+        {
+          "type": "pageerror",
+          "message": "Published media manifest returned 404."
+        },
+        {
+          "type": "http",
+          "status": 404,
+          "url": "http://127.0.0.1:4193/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+        },
+        {
+          "type": "pageerror",
+          "message": "Published media manifest returned 404."
+        }
+      ],
+      "unexpectedErrors": []
+    },
+    "staticAfterCss": {
+      "category": {
+        "before": "Promise",
+        "after": "Prayer",
+        "prompts": [
+          "Help me pray through discouragement.",
+          "Give me a prayer for clarity and direction.",
+          "What is one faithful prayer step today?"
+        ]
+      },
+      "focus": [
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Overcome Confusion"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Decision Wisdom"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Purpose Clarity"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Serve While Preparing"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Faith & Trust"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Relationships"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling & Assignment"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer & Direction"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Add Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Copy Response"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear Chat"
+        },
+        {
+          "tag": "SUMMARY",
+          "id": null,
+          "text": "Why this? Excellent"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "More like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Less like this"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Not relevant"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Word"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Save Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Complete Action"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reset this preference"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Promise"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Prayer"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Calling"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Journey"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Scripture"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Reflection"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Testimony"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Romans 8:28-30"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "I feel stuck and need a promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me reflect on this promise."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "What promise cluster fits this season?"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Help me pray through discouragement."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Give me a prayer for clarity and direction."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Clear"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Attach future context"
+        },
+        {
+          "tag": "INPUT",
+          "id": "chatInput",
+          "text": "Ask Teo for a Scripture-grounded next step..."
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Ask"
+        },
+        {
+          "tag": "BUTTON",
+          "id": null,
+          "text": "Voice input"
+        }
+      ],
+      "knownErrors": [
+        {
+          "type": "http",
+          "status": 404,
+          "url": "http://127.0.0.1:4193/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+        },
+        {
+          "type": "pageerror",
+          "message": "Published media manifest returned 404."
+        },
+        {
+          "type": "http",
+          "status": 404,
+          "url": "http://127.0.0.1:4193/media/teoyubeworld/pilot-v1/runtime-manifest.json"
+        },
+        {
+          "type": "pageerror",
+          "message": "Published media manifest returned 404."
+        }
+      ],
+      "unexpectedErrors": []
+    }
+  },
+  "parity": {
+    "nextCategoryBeforeAfterExact": true,
+    "staticCategoryBeforeAfterExact": true,
+    "nextFocusBeforeAfterExact": true,
+    "staticFocusBeforeAfterExact": true,
+    "effectiveFocusCount": 43
+  },
+  "knownExistingRuntimeDifference": {
+    "nextCategoryAfterPrayerClick": "Promise",
+    "staticCategoryAfterPrayerClick": "Prayer",
+    "classification": "Pre-existing Next controller difference; unchanged by CSS and outside CSS-only authorization."
+  },
+  "askFlow": {
+    "messageCountBefore": 1,
+    "messageCountAfter": 2,
+    "passed": true
+  },
+  "whyDisclosure": {
+    "beforeOpen": false,
+    "afterKeyboardToggleOpen": true,
+    "toggledByKeyboard": true
+  },
+  "feedback": {
+    "moreLikeThisClickCompleted": true
+  },
+  "contextActions": {
+    "Save Response": {
+      "visible": true,
+      "enabled": true
+    },
+    "Save Prayer": {
+      "visible": true,
+      "enabled": true
+    },
+    "Add Reflection": {
+      "visible": true,
+      "enabled": true
+    }
+  },
+  "unexpectedRuntimeErrors": [],
+  "passed": true
+}

@@ -1,8 +1,8 @@
 # Teoyube Visual Change Request — Teo Guide
 
-Decision: APPROVED  
-Approval-ID: TEOYUBE-VISUAL-2026-07-28-TEO-GUIDE-001  
-Approved-By: Prince Okiemute Inoba — Teoyube Project Owner  
+Decision: APPROVED
+Approval-ID: TEOYUBE-VISUAL-2026-07-28-TEO-GUIDE-001
+Approved-By: Prince Okiemute Inoba — Teoyube Project Owner
 Approved-At: 2026-07-28T07:11:22-04:00
 
 ## Requested scope

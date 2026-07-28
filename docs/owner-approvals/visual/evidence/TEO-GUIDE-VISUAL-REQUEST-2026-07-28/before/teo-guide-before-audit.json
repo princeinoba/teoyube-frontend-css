@@ -1,0 +1,2579 @@
+{
+  "url": "http://127.0.0.1:3000/teo-guide",
+  "title": "TEOYUBE App",
+  "viewport": {
+    "width": 1402,
+    "height": 1122,
+    "devicePixelRatio": 1
+  },
+  "scroll": {
+    "scrollWidth": 1402,
+    "clientWidth": 1402,
+    "scrollHeight": 2140,
+    "body": {
+      "x": 0,
+      "y": -1018,
+      "width": 1402,
+      "height": 2140.1875,
+      "right": 1402,
+      "bottom": 1122.1875
+    }
+  },
+  "bodyDataView": "guide",
+  "geometry": {
+    ".app-shell": {
+      "rect": {
+        "x": 0,
+        "y": -1018,
+        "width": 1402,
+        "height": 2140.1875,
+        "right": 1402,
+        "bottom": 1122.1875
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "260px 1142px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    ".app-main": {
+      "rect": {
+        "x": 260,
+        "y": -1018,
+        "width": 1142,
+        "height": 2140.1875,
+        "right": 1402,
+        "bottom": 1122.1875
+      },
+      "display": "block",
+      "position": "static",
+      "gridTemplateColumns": "none",
+      "overflowX": "clip",
+      "overflowY": "visible"
+    },
+    ".app-header": {
+      "rect": {
+        "x": 280,
+        "y": -998,
+        "width": 1102,
+        "height": 85,
+        "right": 1382,
+        "bottom": -913
+      },
+      "display": "flex",
+      "position": "relative",
+      "gridTemplateColumns": "none",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide": {
+      "rect": {
+        "x": 280,
+        "y": -897,
+        "width": 1102,
+        "height": 1999.1875,
+        "right": 1382,
+        "bottom": 1102.1875
+      },
+      "display": "block",
+      "position": "static",
+      "gridTemplateColumns": "none",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-layout": {
+      "rect": {
+        "x": 280,
+        "y": -897,
+        "width": 1102,
+        "height": 1999.1875,
+        "right": 1382,
+        "bottom": 1102.1875
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "639.328px 444.281px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-main": {
+      "rect": {
+        "x": 280,
+        "y": -897,
+        "width": 639.328125,
+        "height": 1286.6875,
+        "right": 919.328125,
+        "bottom": 389.6875
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "599.328px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-chat-panel": {
+      "rect": {
+        "x": 937.71875,
+        "y": -897,
+        "width": 444.28125,
+        "height": 1999.1875,
+        "right": 1382,
+        "bottom": 1102.1875
+      },
+      "display": "grid",
+      "position": "sticky",
+      "gridTemplateColumns": "403.906px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-hero": {
+      "rect": {
+        "x": 300,
+        "y": -877,
+        "width": 599.328125,
+        "height": 336,
+        "right": 899.328125,
+        "bottom": -541
+      },
+      "display": "block",
+      "position": "relative",
+      "gridTemplateColumns": "none",
+      "overflowX": "hidden",
+      "overflowY": "hidden"
+    },
+    "#guide .guide-feature-panel": {
+      "rect": {
+        "x": 300,
+        "y": -525,
+        "width": 599.328125,
+        "height": 259.96875,
+        "right": 899.328125,
+        "bottom": -265.03125
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "112px 168.094px 247.234px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-help-grid": {
+      "rect": {
+        "x": 300,
+        "y": -213.4375,
+        "width": 599.328125,
+        "height": 286.75,
+        "right": 899.328125,
+        "bottom": 73.3125
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "139.625px 139.641px 139.641px 139.641px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-topic-grid": {
+      "rect": {
+        "x": 300,
+        "y": 124.90625,
+        "width": 599.328125,
+        "height": 132.78125,
+        "right": 899.328125,
+        "bottom": 257.6875
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "142.625px 142.641px 142.641px 142.641px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-wisdom-banner": {
+      "rect": {
+        "x": 300,
+        "y": 273.6875,
+        "width": 599.328125,
+        "height": 96,
+        "right": 899.328125,
+        "bottom": 369.6875
+      },
+      "display": "flex",
+      "position": "static",
+      "gridTemplateColumns": "none",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .phase116b-functional-panel": {
+      "rect": {
+        "x": 957.90625,
+        "y": -804.015625,
+        "width": 403.90625,
+        "height": 445.90625,
+        "right": 1361.8125,
+        "bottom": -358.109375
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "369.906px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .chat-log": {
+      "rect": {
+        "x": 957.90625,
+        "y": -326.109375,
+        "width": 403.90625,
+        "height": 544,
+        "right": 1361.8125,
+        "bottom": 217.890625
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "392.719px",
+      "overflowX": "auto",
+      "overflowY": "auto"
+    },
+    "#guide .phase116-teo-groups": {
+      "rect": {
+        "x": 957.90625,
+        "y": 267.484375,
+        "width": 403.90625,
+        "height": 134.59375,
+        "right": 1361.8125,
+        "bottom": 402.078125
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "128.766px 128.766px 128.766px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-suggested-prompts": {
+      "rect": {
+        "x": 957.90625,
+        "y": 233.890625,
+        "width": 403.90625,
+        "height": 721.109375,
+        "right": 1361.8125,
+        "bottom": 955
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "403.906px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .phase116-search-suggestions": {
+      "rect": {
+        "x": 957.90625,
+        "y": 545.640625,
+        "width": 403.90625,
+        "height": 398.96875,
+        "right": 1361.8125,
+        "bottom": 944.609375
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "121.172px 121.172px 121.188px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .chat-form": {
+      "rect": {
+        "x": 957.90625,
+        "y": 971,
+        "width": 403.90625,
+        "height": 63,
+        "right": 1361.8125,
+        "bottom": 1034
+      },
+      "display": "grid",
+      "position": "static",
+      "gridTemplateColumns": "39.1875px 224.75px 61.2188px 39.1875px",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    },
+    "#guide .guide-chat-note": {
+      "rect": {
+        "x": 957.90625,
+        "y": 1050,
+        "width": 403.90625,
+        "height": 32,
+        "right": 1361.8125,
+        "bottom": 1082
+      },
+      "display": "flex",
+      "position": "static",
+      "gridTemplateColumns": "none",
+      "overflowX": "visible",
+      "overflowY": "visible"
+    }
+  },
+  "controlCount": 44,
+  "controls": [
+    {
+      "index": 0,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Overcome Confusion",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 300,
+        "y": 124.90625,
+        "width": 142.625,
+        "height": 61.59375,
+        "right": 442.625,
+        "bottom": 186.5
+      },
+      "visible": true
+    },
+    {
+      "index": 1,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Decision Wisdom",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 452.21875,
+        "y": 124.90625,
+        "width": 142.640625,
+        "height": 61.59375,
+        "right": 594.859375,
+        "bottom": 186.5
+      },
+      "visible": true
+    },
+    {
+      "index": 2,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Purpose Clarity",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 604.453125,
+        "y": 124.90625,
+        "width": 142.640625,
+        "height": 61.59375,
+        "right": 747.09375,
+        "bottom": 186.5
+      },
+      "visible": true
+    },
+    {
+      "index": 3,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Serve While Preparing",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 756.6875,
+        "y": 124.90625,
+        "width": 142.640625,
+        "height": 61.59375,
+        "right": 899.328125,
+        "bottom": 186.5
+      },
+      "visible": true
+    },
+    {
+      "index": 4,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Faith & Trust",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 300,
+        "y": 196.09375,
+        "width": 142.625,
+        "height": 61.59375,
+        "right": 442.625,
+        "bottom": 257.6875
+      },
+      "visible": true
+    },
+    {
+      "index": 5,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Relationships",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 452.21875,
+        "y": 196.09375,
+        "width": 142.640625,
+        "height": 61.59375,
+        "right": 594.859375,
+        "bottom": 257.6875
+      },
+      "visible": true
+    },
+    {
+      "index": 6,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Calling & Assignment",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 604.453125,
+        "y": 196.09375,
+        "width": 142.640625,
+        "height": 61.59375,
+        "right": 747.09375,
+        "bottom": 257.6875
+      },
+      "visible": true
+    },
+    {
+      "index": 7,
+      "tag": "BUTTON",
+      "type": null,
+      "id": null,
+      "className": "secondary prompt-chip",
+      "text": "Prayer & Direction",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 756.6875,
+        "y": 196.09375,
+        "width": 142.640625,
+        "height": 61.59375,
+        "right": 899.328125,
+        "bottom": 257.6875
+      },
+      "visible": true
+    },
+    {
+      "index": 8,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Save Response",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 974.90625,
+        "y": -527.234375,
+        "width": 149.65625,
+        "height": 45.375,
+        "right": 1124.5625,
+        "bottom": -481.859375
+      },
+      "visible": true
+    },
+    {
+      "index": 9,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Save Prayer",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1132.5625,
+        "y": -527.234375,
+        "width": 126.515625,
+        "height": 45.375,
+        "right": 1259.078125,
+        "bottom": -481.859375
+      },
+      "visible": true
+    },
+    {
+      "index": 10,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Add Reflection",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 974.90625,
+        "y": -473.859375,
+        "width": 151.34375,
+        "height": 45.375,
+        "right": 1126.25,
+        "bottom": -428.484375
+      },
+      "visible": true
+    },
+    {
+      "index": 11,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Copy Response",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1134.25,
+        "y": -473.859375,
+        "width": 152.84375,
+        "height": 45.375,
+        "right": 1287.09375,
+        "bottom": -428.484375
+      },
+      "visible": true
+    },
+    {
+      "index": 12,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Clear Chat",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 974.90625,
+        "y": -420.484375,
+        "width": 113.96875,
+        "height": 45.375,
+        "right": 1088.875,
+        "bottom": -375.109375
+      },
+      "visible": true
+    },
+    {
+      "index": 13,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 976.5,
+        "y": 11194.765625,
+        "width": 81.734375,
+        "height": 66.375,
+        "right": 1058.234375,
+        "bottom": 11261.140625
+      },
+      "visible": true
+    },
+    {
+      "index": 14,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 976.5,
+        "y": 11268.328125,
+        "width": 104.609375,
+        "height": 66.375,
+        "right": 1081.109375,
+        "bottom": 11334.703125
+      },
+      "visible": true
+    },
+    {
+      "index": 15,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "More like this",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1013.078125,
+        "y": -181.234375,
+        "width": 108.828125,
+        "height": 36,
+        "right": 1121.90625,
+        "bottom": -145.234375
+      },
+      "visible": true
+    },
+    {
+      "index": 16,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Less like this",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1128.296875,
+        "y": -181.234375,
+        "width": 101.96875,
+        "height": 36,
+        "right": 1230.265625,
+        "bottom": -145.234375
+      },
+      "visible": true
+    },
+    {
+      "index": 17,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Not relevant",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1013.078125,
+        "y": -138.84375,
+        "width": 101.71875,
+        "height": 36,
+        "right": 1114.796875,
+        "bottom": -102.84375
+      },
+      "visible": true
+    },
+    {
+      "index": 18,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Save Scripture",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1121.1875,
+        "y": -138.84375,
+        "width": 112.375,
+        "height": 36,
+        "right": 1233.5625,
+        "bottom": -102.84375
+      },
+      "visible": true
+    },
+    {
+      "index": 19,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Save Word",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1013.078125,
+        "y": -96.453125,
+        "width": 90.828125,
+        "height": 36,
+        "right": 1103.90625,
+        "bottom": -60.453125
+      },
+      "visible": true
+    },
+    {
+      "index": 20,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Save Prayer",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1110.296875,
+        "y": -96.453125,
+        "width": 96.53125,
+        "height": 36,
+        "right": 1206.828125,
+        "bottom": -60.453125
+      },
+      "visible": true
+    },
+    {
+      "index": 21,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Complete Action",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1013.078125,
+        "y": -54.0625,
+        "width": 126.828125,
+        "height": 36,
+        "right": 1139.90625,
+        "bottom": -18.0625
+      },
+      "visible": true
+    },
+    {
+      "index": 22,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Reset this preference",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1146.296875,
+        "y": -54.0625,
+        "width": 154.046875,
+        "height": 36,
+        "right": 1300.34375,
+        "bottom": -18.0625
+      },
+      "visible": true
+    },
+    {
+      "index": 23,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "active",
+      "text": "Promise",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 957.90625,
+        "y": 267.484375,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1086.671875,
+        "bottom": 306.484375
+      },
+      "visible": true
+    },
+    {
+      "index": 24,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": null,
+      "text": "Prayer",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1095.46875,
+        "y": 267.484375,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1224.234375,
+        "bottom": 306.484375
+      },
+      "visible": true
+    },
+    {
+      "index": 25,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": null,
+      "text": "Calling",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1233.03125,
+        "y": 267.484375,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1361.796875,
+        "bottom": 306.484375
+      },
+      "visible": true
+    },
+    {
+      "index": 26,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": null,
+      "text": "Journey",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 957.90625,
+        "y": 315.28125,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1086.671875,
+        "bottom": 354.28125
+      },
+      "visible": true
+    },
+    {
+      "index": 27,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": null,
+      "text": "Scripture",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1095.46875,
+        "y": 315.28125,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1224.234375,
+        "bottom": 354.28125
+      },
+      "visible": true
+    },
+    {
+      "index": 28,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": null,
+      "text": "Reflection",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1233.03125,
+        "y": 315.28125,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1361.796875,
+        "bottom": 354.28125
+      },
+      "visible": true
+    },
+    {
+      "index": 29,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": null,
+      "text": "Testimony",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 957.90625,
+        "y": 363.078125,
+        "width": 128.765625,
+        "height": 39,
+        "right": 1086.671875,
+        "bottom": 402.078125
+      },
+      "visible": true
+    },
+    {
+      "index": 30,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "prompt-chip",
+      "text": "I feel stuck and need a promise.",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 957.90625,
+        "y": 430.171875,
+        "width": 128.765625,
+        "height": 85.78125,
+        "right": 1086.671875,
+        "bottom": 515.953125
+      },
+      "visible": true
+    },
+    {
+      "index": 31,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "prompt-chip",
+      "text": "Help me reflect on this promise.",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1095.46875,
+        "y": 430.171875,
+        "width": 128.765625,
+        "height": 85.78125,
+        "right": 1224.234375,
+        "bottom": 515.953125
+      },
+      "visible": true
+    },
+    {
+      "index": 32,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "prompt-chip",
+      "text": "What promise cluster fits this season?",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1233.03125,
+        "y": 419.671875,
+        "width": 128.765625,
+        "height": 106.78125,
+        "right": 1361.796875,
+        "bottom": 526.453125
+      },
+      "visible": true
+    },
+    {
+      "index": 33,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip",
+      "text": "Romans 8:28-30",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 557.03125,
+        "width": 113.25,
+        "height": 30.4375,
+        "right": 1212.515625,
+        "bottom": 587.46875
+      },
+      "visible": true
+    },
+    {
+      "index": 34,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip",
+      "text": "I feel stuck and need a promise.",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 594.65625,
+        "width": 121.171875,
+        "height": 45.4375,
+        "right": 1220.4375,
+        "bottom": 640.09375
+      },
+      "visible": true
+    },
+    {
+      "index": 35,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip",
+      "text": "Help me reflect on this promise.",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 647.28125,
+        "width": 121.171875,
+        "height": 45.4375,
+        "right": 1220.4375,
+        "bottom": 692.71875
+      },
+      "visible": true
+    },
+    {
+      "index": 36,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip",
+      "text": "What promise cluster fits this season?",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 699.90625,
+        "width": 121.171875,
+        "height": 60.4375,
+        "right": 1220.4375,
+        "bottom": 760.34375
+      },
+      "visible": true
+    },
+    {
+      "index": 37,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip",
+      "text": "Help me pray through discouragement.",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 767.53125,
+        "width": 121.171875,
+        "height": 60.4375,
+        "right": 1220.4375,
+        "bottom": 827.96875
+      },
+      "visible": true
+    },
+    {
+      "index": 38,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip",
+      "text": "Give me a prayer for clarity and direction.",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 835.15625,
+        "width": 121.171875,
+        "height": 60.4375,
+        "right": 1220.4375,
+        "bottom": 895.59375
+      },
+      "visible": true
+    },
+    {
+      "index": 39,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "phase116-chip subtle",
+      "text": "Clear",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1099.265625,
+        "y": 902.78125,
+        "width": 50.5625,
+        "height": 30.4375,
+        "right": 1149.828125,
+        "bottom": 933.21875
+      },
+      "visible": true
+    },
+    {
+      "index": 40,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "guide-attach-button",
+      "text": "Attach future context",
+      "ariaLabel": "Attach future context",
+      "disabled": false,
+      "rect": {
+        "x": 966.90625,
+        "y": 982.90625,
+        "width": 39.1875,
+        "height": 39.1875,
+        "right": 1006.09375,
+        "bottom": 1022.09375
+      },
+      "visible": true
+    },
+    {
+      "index": 41,
+      "tag": "INPUT",
+      "type": null,
+      "id": "chatInput",
+      "className": null,
+      "text": "Ask Teo for a Scripture-grounded next step...",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1013.28125,
+        "y": 980,
+        "width": 224.75,
+        "height": 45,
+        "right": 1238.03125,
+        "bottom": 1025
+      },
+      "visible": true
+    },
+    {
+      "index": 42,
+      "tag": "BUTTON",
+      "type": "submit",
+      "id": null,
+      "className": "primary",
+      "text": "Ask",
+      "ariaLabel": null,
+      "disabled": false,
+      "rect": {
+        "x": 1245.21875,
+        "y": 980.8125,
+        "width": 61.21875,
+        "height": 43.375,
+        "right": 1306.4375,
+        "bottom": 1024.1875
+      },
+      "visible": true
+    },
+    {
+      "index": 43,
+      "tag": "BUTTON",
+      "type": "button",
+      "id": null,
+      "className": "guide-mic-button",
+      "text": "Voice input",
+      "ariaLabel": "Voice input",
+      "disabled": false,
+      "rect": {
+        "x": 1313.625,
+        "y": 982.90625,
+        "width": 39.1875,
+        "height": 39.1875,
+        "right": 1352.8125,
+        "bottom": 1022.09375
+      },
+      "visible": true
+    }
+  ],
+  "outline": {
+    "tag": "section",
+    "id": "guide",
+    "className": "view page-container guide-view active",
+    "text": "",
+    "children": [
+      {
+        "tag": "div",
+        "id": null,
+        "className": "guide-layout",
+        "text": "",
+        "children": [
+          {
+            "tag": "main",
+            "id": null,
+            "className": "guide-main",
+            "text": "",
+            "children": [
+              {
+                "tag": "section",
+                "id": null,
+                "className": "guide-hero",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "p",
+                        "id": null,
+                        "className": "eyebrow",
+                        "text": "Where God's Promises Meet Your Calling",
+                        "children": []
+                      },
+                      {
+                        "tag": "h3",
+                        "id": null,
+                        "className": "",
+                        "text": "Teo Guide",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "h4",
+                        "id": null,
+                        "className": "",
+                        "text": "Your Biblical Scholar, Mentor, and Calling Navigator.",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "id": null,
+                        "className": "",
+                        "text": "Rooted in Scripture. Guided by Wisdom. Led by Purpose.",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "section",
+                "id": null,
+                "className": "guide-feature-panel",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "span",
+                    "id": null,
+                    "className": "guide-feature-orb",
+                    "text": "",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "guide-feature-copy",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "id": null,
+                        "className": "",
+                        "text": "Your Divine Guide",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "id": null,
+                        "className": "",
+                        "text": "Teo Guide uses Scripture, Promise Clusters, and your Calling Profile to provide biblical wisdom for every step you take.",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "guide-feature-list",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "Scripture-Grounded",
+                            "children": []
+                          },
+                          {
+                            "tag": "small",
+                            "id": null,
+                            "className": "",
+                            "text": "Every response is anchored in God's Word.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "Personalized for You",
+                            "children": []
+                          },
+                          {
+                            "tag": "small",
+                            "id": null,
+                            "className": "",
+                            "text": "Guidance based on your profile and calling.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "Always Accessible",
+                            "children": []
+                          },
+                          {
+                            "tag": "small",
+                            "id": null,
+                            "className": "",
+                            "text": "Ask anytime, anywhere for divine wisdom.",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "section",
+                "id": null,
+                "className": "guide-help-section",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "h3",
+                    "id": null,
+                    "className": "",
+                    "text": "How Teo Guide Helps You",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "guide-help-grid",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "h4",
+                            "id": null,
+                            "className": "",
+                            "text": "Understand God's Word",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Get clear, scripture-backed insights for your questions.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "h4",
+                            "id": null,
+                            "className": "",
+                            "text": "Navigate Your Calling",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Receive direction and clarity for your purpose.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "h4",
+                            "id": null,
+                            "className": "",
+                            "text": "Make Wise Decisions",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Discern God's will in every situation you face.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": []
+                          },
+                          {
+                            "tag": "h4",
+                            "id": null,
+                            "className": "",
+                            "text": "Grow Spiritually",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Practical steps to strengthen your walk with God.",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "section",
+                "id": null,
+                "className": "guide-topics-section",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "h3",
+                    "id": null,
+                    "className": "",
+                    "text": "Popular Guidance Topics",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "quick-prompts guide-topic-grid",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Overcome Confusion",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Decision Wisdom",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Purpose Clarity",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Serve While Preparing",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Faith & Trust",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Relationships",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Calling & Assignment",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary prompt-chip",
+                        "text": "Prayer & Direction",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "section",
+                "id": null,
+                "className": "guide-wisdom-banner",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "span",
+                    "id": null,
+                    "className": "",
+                    "text": "",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "p",
+                        "id": null,
+                        "className": "",
+                        "text": "Your word is a lamp to my feet, and a light for my path.",
+                        "children": []
+                      },
+                      {
+                        "tag": "b",
+                        "id": null,
+                        "className": "",
+                        "text": "Psalm 119:105 · WEB",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "aside",
+            "id": null,
+            "className": "guide-chat-panel",
+            "text": "",
+            "children": [
+              {
+                "tag": "div",
+                "id": null,
+                "className": "guide-chat-head",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "span",
+                    "id": null,
+                    "className": "",
+                    "text": "",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "h3",
+                        "id": null,
+                        "className": "",
+                        "text": "Chat with Teo Guide",
+                        "children": []
+                      },
+                      {
+                        "tag": "p",
+                        "id": null,
+                        "className": "",
+                        "text": "AI-powered biblical guidance",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "section",
+                "id": "phase116bTeoGuideTools",
+                "className": "phase116b-functional-panel",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "phase116b-panel-head",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "eyebrow",
+                            "text": "Contextual Teo Guide",
+                            "children": []
+                          },
+                          {
+                            "tag": "h3",
+                            "id": null,
+                            "className": "",
+                            "text": "Calling & Purpose",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Uses selected word, promise, Scripture, journey, and fallback reason from app state.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "strong",
+                        "id": null,
+                        "className": "phase116b-score",
+                        "text": "100",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "phase116b-command-grid",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "Word",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "TIDUILOVP",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "Promise",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "Calling & Purpose",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "Scripture",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "Romans 8:28-30",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "article",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "",
+                            "text": "Fallback",
+                            "children": []
+                          },
+                          {
+                            "tag": "strong",
+                            "id": null,
+                            "className": "",
+                            "text": "Scripture anchors available.",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "phase116b-action-row",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary",
+                        "text": "Save Response",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary",
+                        "text": "Save Prayer",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary",
+                        "text": "Add Reflection",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary",
+                        "text": "Copy Response",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "secondary",
+                        "text": "Clear Chat",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "id": "chatLog",
+                "className": "chat-log",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "message-row teo",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "span",
+                        "id": null,
+                        "className": "message-icon",
+                        "text": "",
+                        "children": []
+                      },
+                      {
+                        "tag": "div",
+                        "id": null,
+                        "className": "message teo",
+                        "text": "Welcome. Based on the Teoyube guardrails, I will keep guidance rooted in Scripture, cautious in calling language, and connected to one faithful next step.",
+                        "children": []
+                      },
+                      {
+                        "tag": "details",
+                        "id": null,
+                        "className": "phase116-why-this-panel",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "summary",
+                            "id": null,
+                            "className": "",
+                            "text": "",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "Why this?",
+                                "children": []
+                              },
+                              {
+                                "tag": "strong",
+                                "id": null,
+                                "className": "",
+                                "text": "Excellent",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "id": null,
+                            "className": "phase116-why-grid",
+                            "text": "",
+                            "children": [
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Context",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Welcome. Based on the Teoyube guardrails, I will keep guidance rooted in Scripture, cautious in",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Intent",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Promise Search",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Need",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "general guidance",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Word",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "TIDUILOVP",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Promise",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Calling & Purpose",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Scripture",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Romans 8:28-30",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Prayer",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Father, make me chosen, called, and sent into divine purpose.",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "article",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Action",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Pray through Benor -> Arion -> Luma -> Taviel and journal one reflection connected to Calling & Purpose.",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "id": null,
+                            "className": "phase116-path-row",
+                            "text": "",
+                            "children": [
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "Sanitized local context",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "Promise Search",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "general guidance",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "TIDUILOVP",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "Calling & Purpose",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "Romans 8:28-30",
+                                "children": []
+                              },
+                              {
+                                "tag": "span",
+                                "id": null,
+                                "className": "",
+                                "text": "Pray through Benor -> Arion -> Luma -> Taviel and journal one reflection connected to Calling & Purpose.",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Scripture anchors stay visible and remain the authority; Teoyube words, prayers, and actions are devotional aids only.",
+                            "children": []
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Scripture anchored (82%). No fallback used",
+                            "children": [
+                              {
+                                "tag": "strong",
+                                "id": null,
+                                "className": "",
+                                "text": "Confidence:",
+                                "children": []
+                              },
+                              {
+                                "tag": "strong",
+                                "id": null,
+                                "className": "",
+                                "text": "Fallback:",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "id": null,
+                            "className": "",
+                            "text": "Off. Standard Scripture Path is active. No personalization change. Standard Scripture Path is active.",
+                            "children": [
+                              {
+                                "tag": "strong",
+                                "id": null,
+                                "className": "",
+                                "text": "Personalization:",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "aside",
+                            "id": null,
+                            "className": "phase116-quality-score",
+                            "text": "",
+                            "children": [
+                              {
+                                "tag": "div",
+                                "id": null,
+                                "className": "phase116-score-ring",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "strong",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "99",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Excellent",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "div",
+                                "id": null,
+                                "className": "",
+                                "text": "",
+                                "children": [
+                                  {
+                                    "tag": "p",
+                                    "id": null,
+                                    "className": "eyebrow",
+                                    "text": "Recommendation Quality",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "p",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "Strong Scripture, promise, word, prayer, and action alignment.",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "small",
+                                    "id": null,
+                                    "className": "",
+                                    "text": "You can continue with prayer, counsel, and one faithful action.",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "id": null,
+                            "className": "phase116-panel-actions",
+                            "text": "",
+                            "children": [
+                              {
+                                "tag": "button",
+                                "id": null,
+                                "className": "secondary",
+                                "text": "View Graph",
+                                "children": []
+                              },
+                              {
+                                "tag": "button",
+                                "id": null,
+                                "className": "secondary",
+                                "text": "Compare Preview",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "id": null,
+                        "className": "phase115-feedback-controls",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "More like this",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Less like this",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Not relevant",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Save Scripture",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Save Word",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Save Prayer",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Complete Action",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "secondary",
+                            "text": "Reset this preference",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "id": null,
+                "className": "guide-suggested-prompts",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "p",
+                    "id": null,
+                    "className": "",
+                    "text": "Suggested Prompts",
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "phase116-teo-groups",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "active",
+                        "text": "Promise",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "",
+                        "text": "Prayer",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "",
+                        "text": "Calling",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "",
+                        "text": "Journey",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "",
+                        "text": "Scripture",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "",
+                        "text": "Reflection",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "",
+                        "text": "Testimony",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "phase116-teo-prompts",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "prompt-chip",
+                        "text": "I feel stuck and need a promise.",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "prompt-chip",
+                        "text": "Help me reflect on this promise.",
+                        "children": []
+                      },
+                      {
+                        "tag": "button",
+                        "id": null,
+                        "className": "prompt-chip",
+                        "text": "What promise cluster fits this season?",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "id": null,
+                    "className": "phase116-search-suggestions",
+                    "text": "",
+                    "children": [
+                      {
+                        "tag": "div",
+                        "id": null,
+                        "className": "",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "span",
+                            "id": null,
+                            "className": "eyebrow",
+                            "text": "Smart Search Suggestions",
+                            "children": []
+                          },
+                          {
+                            "tag": "small",
+                            "id": null,
+                            "className": "",
+                            "text": "Session-only, sanitized, local suggestions.",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "id": null,
+                        "className": "phase116-chip-row",
+                        "text": "",
+                        "children": [
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip",
+                            "text": "Romans 8:28-30",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip",
+                            "text": "I feel stuck and need a promise.",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip",
+                            "text": "Help me reflect on this promise.",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip",
+                            "text": "What promise cluster fits this season?",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip",
+                            "text": "Help me pray through discouragement.",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip",
+                            "text": "Give me a prayer for clarity and direction.",
+                            "children": []
+                          },
+                          {
+                            "tag": "button",
+                            "id": null,
+                            "className": "phase116-chip subtle",
+                            "text": "Clear",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "form",
+                "id": "chatForm",
+                "className": "chat-form",
+                "text": "",
+                "children": [
+                  {
+                    "tag": "button",
+                    "id": null,
+                    "className": "guide-attach-button",
+                    "text": "",
+                    "children": []
+                  },
+                  {
+                    "tag": "input",
+                    "id": "chatInput",
+                    "className": "",
+                    "text": "",
+                    "children": []
+                  },
+                  {
+                    "tag": "button",
+                    "id": null,
+                    "className": "primary",
+                    "text": "Ask",
+                    "children": []
+                  },
+                  {
+                    "tag": "button",
+                    "id": null,
+                    "className": "guide-mic-button",
+                    "text": "",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "id": null,
+                "className": "guide-chat-note",
+                "text": "Teo Guide provides general biblical guidance. Always pray and seek counsel for major decisions.",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "selectors": {
+    "topicControls": 8,
+    "promptCategories": 0,
+    "suggestedPrompts": 3,
+    "smartSuggestions": 7,
+    "feedbackControls": 8,
+    "phase116PanelActions": 2,
+    "contextActions": 5
+  },
+  "runtimeErrors": []
+}
