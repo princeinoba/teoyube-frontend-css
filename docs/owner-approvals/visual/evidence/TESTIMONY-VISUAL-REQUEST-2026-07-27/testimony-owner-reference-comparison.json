@@ -1,0 +1,28 @@
+{
+  "reference": {
+    "path": "testimony-owner-reference-1448x1086.png",
+    "sha256": "e2f16b55bb8ea1454fb3f57f52beeee2d2ae4391882bbfeb965ae7c036bfbfa5",
+    "width": 1448,
+    "height": 1086
+  },
+  "candidate": {
+    "path": "final-next-1448x1086-viewport.png",
+    "sha256": "c37bcbbf1a7c3cdb2b5723661fad14c14ce1038ab461494d0c5d798cb974eccd",
+    "width": 1448,
+    "height": 1086
+  },
+  "comparison": {
+    "meanAbsoluteChannelDifference": [
+      20.771368,
+      17.779701,
+      18.312324
+    ],
+    "rmsChannelDifference": [
+      54.806604,
+      44.455588,
+      45.693694
+    ],
+    "exactChannelRatio": 0.10784037,
+    "note": "The owner image is a visual target, not an immutable pixel baseline. Metrics are descriptive; structural, functional, responsive, and accessibility evidence controls acceptance."
+  }
+}

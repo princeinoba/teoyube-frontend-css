@@ -1,0 +1,368 @@
+{
+  "ids": [
+    "teoyube-legacy-hash-compatibility",
+    "primarySidebar",
+    "sidebarName",
+    "sidebarCalling",
+    "openAssessment",
+    "openPersonalizationCenter",
+    "mobileNavBackdrop",
+    "mobileNavToggle",
+    "appMain",
+    "viewTitle",
+    "privacyBtn",
+    "generateBtn",
+    "testimony",
+    "testimonyForm",
+    "testimonyTitle",
+    "testimonyCategory",
+    "testimonyBody",
+    "phase117TestimonyControls",
+    "testimonyList",
+    "_R_",
+    "phase113Shell",
+    "phase113InsightRail",
+    "phase113RailToggle",
+    "phase113InsightContent",
+    "phase113SaveDrawer",
+    "phase117OfflineStatus"
+  ],
+  "classes": [
+    "action-icon-button",
+    "active",
+    "active-badge",
+    "app-header",
+    "app-main",
+    "app-shell",
+    "app-sidebar",
+    "brand-lockup",
+    "brand-mark",
+    "brand-subtitle",
+    "button-icon",
+    "button-icon-guardrails",
+    "button-icon-journey",
+    "button-icon-menu",
+    "collapsed",
+    "eyebrow",
+    "full",
+    "mobile-nav-backdrop",
+    "mobile-nav-toggle",
+    "module-card",
+    "nav-item",
+    "nav-list",
+    "online",
+    "page-container",
+    "phase113-insight-rail",
+    "phase113-rail-metrics",
+    "phase113-rail-toggle",
+    "phase113-save-drawer",
+    "phase113-scripture",
+    "phase115-control-row",
+    "phase117-offline-pill",
+    "phase117-offline-status",
+    "phase117-surface-controls",
+    "primary",
+    "saint-avatar",
+    "saint-card",
+    "saint-profile-head",
+    "scripture-pill",
+    "scripture-strip",
+    "secondary",
+    "sidebar",
+    "skip-link",
+    "testimony-archive-card",
+    "testimony-avatar-row",
+    "testimony-card-head",
+    "testimony-card-icon",
+    "testimony-dashboard",
+    "testimony-entry",
+    "testimony-entry-body",
+    "testimony-entry-meta",
+    "testimony-entry-stats",
+    "testimony-form-card",
+    "testimony-hero",
+    "testimony-impact-card",
+    "testimony-insight-grid",
+    "testimony-insights-card",
+    "testimony-list",
+    "testimony-list-tools",
+    "testimony-load-more",
+    "testimony-main",
+    "testimony-media-actions",
+    "testimony-media-card",
+    "testimony-milestone-footer",
+    "testimony-milestones",
+    "testimony-milestones-card",
+    "testimony-quick-card",
+    "testimony-rail",
+    "testimony-section-head",
+    "testimony-status-badge",
+    "testimony-tabs",
+    "testimony-thumb",
+    "testimony-thumb-image",
+    "testimony-view",
+    "testimony-wall-card",
+    "topbar",
+    "topbar-actions",
+    "view"
+  ],
+  "testimonyControls": [
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "",
+      "aria": "Add image",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "",
+      "aria": "Add video",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "",
+      "aria": "Record audio",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "",
+      "aria": "Add link",
+      "type": "button"
+    },
+    {
+      "tag": "input",
+      "id": "testimonyTitle",
+      "className": "",
+      "text": "",
+      "aria": null,
+      "type": null
+    },
+    {
+      "tag": "select",
+      "id": "testimonyCategory",
+      "className": "",
+      "text": "Faith Grace Healing Obedience Provision Purpose",
+      "aria": null,
+      "type": null
+    },
+    {
+      "tag": "textarea",
+      "id": "testimonyBody",
+      "className": "",
+      "text": "",
+      "aria": null,
+      "type": null
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "primary full",
+      "text": "Save Testimony",
+      "aria": null,
+      "type": "submit"
+    },
+    {
+      "tag": "select",
+      "id": null,
+      "className": "",
+      "text": "Latest First",
+      "aria": "Sort testimonies",
+      "type": null
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Filters",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "active",
+      "text": "All",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Public",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Private",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Drafts",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Export Testimony Archive JSON",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "Data Controls",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Label",
+      "aria": "Change local label for God's Peace in the Storm",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Delete",
+      "aria": "Delete God's Peace in the Storm",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Label",
+      "aria": "Change local label for A New Beginning",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Delete",
+      "aria": "Delete A New Beginning",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Label",
+      "aria": "Change local label for Walking in Faith",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Delete",
+      "aria": "Delete Walking in Faith",
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary testimony-load-more",
+      "text": "Load More",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "select",
+      "id": null,
+      "className": "",
+      "text": "This Month",
+      "aria": "Testimony insight period",
+      "type": null
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "className": "",
+      "text": "View All Milestones →",
+      "aria": null,
+      "type": null
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "primary",
+      "text": "Encourage Someone",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "secondary",
+      "text": "View Impact Analytics →",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Write Testimony",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Invite Encouragement",
+      "aria": null,
+      "type": "button"
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "",
+      "text": "Export Archive",
+      "aria": null,
+      "type": "button"
+    }
+  ],
+  "records": [
+    {
+      "className": "testimony-entry testimony-media-card",
+      "status": "Public",
+      "title": "God's Peace in the Storm"
+    },
+    {
+      "className": "testimony-entry testimony-media-card",
+      "status": "Private",
+      "title": "A New Beginning"
+    },
+    {
+      "className": "testimony-entry testimony-media-card",
+      "status": "Draft",
+      "title": "Walking in Faith"
+    }
+  ]
+}

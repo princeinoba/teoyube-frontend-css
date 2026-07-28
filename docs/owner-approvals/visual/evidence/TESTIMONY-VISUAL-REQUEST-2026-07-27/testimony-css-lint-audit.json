@@ -1,0 +1,54 @@
+{
+  "file": "styles/pages/testimony.css",
+  "bytes": 22752,
+  "rules": 169,
+  "selectors": 181,
+  "unscopedSelectors": [],
+  "hiddenRules": [
+    {
+      "selector": "body[data-view=\"testimony\"] #testimony #testimonyList .testimony-entry[hidden]",
+      "value": "none",
+      "line": 479
+    },
+    {
+      "selector": "body[data-view=\"testimony\"] .brand-copy,\n  body[data-view=\"testimony\"] .primary-nav a span,\n  body[data-view=\"testimony\"] .saint-card > :not(img)",
+      "value": "none",
+      "line": 796
+    },
+    {
+      "selector": "body[data-view=\"testimony\"] .topbar-actions button:first-child",
+      "value": "none",
+      "line": 923
+    }
+  ],
+  "hiddenRuleClassifications": {
+    "dynamicFilterPreservation": 1,
+    "responsiveShellCompaction": 1,
+    "responsiveTopbarCompaction": 1,
+    "unauthorized": []
+  },
+  "pointerEventNoneRules": [
+    {
+      "selector": "body[data-view=\"testimony\"] .app-header",
+      "line": 122
+    },
+    {
+      "selector": "body[data-view=\"testimony\"] .phase117-offline-status",
+      "line": 761
+    }
+  ],
+  "projectAssetUrls": [
+    "../../public/images/testimony/testimony-hero-bg.png"
+  ],
+  "externalUrls": [],
+  "forbiddenDeclarations": [],
+  "parseErrors": [],
+  "result": "PASS",
+  "notes": [
+    "Every selector is scoped beneath body[data-view=\"testimony\"].",
+    "The dynamic [hidden] rule preserves the existing All/Public/Private/Drafts filter behavior.",
+    "The other display:none declarations are narrow responsive shell/topbar compaction states at approved breakpoints.",
+    "Pointer-events:none is limited to the header staging layer (whose child actions restore pointer-events:auto) and the non-interactive local-status notice; all 30 page controls remain clickable.",
+    "No external icon URL, new asset, new package, broad reset, or cross-route selector was introduced."
+  ]
+}

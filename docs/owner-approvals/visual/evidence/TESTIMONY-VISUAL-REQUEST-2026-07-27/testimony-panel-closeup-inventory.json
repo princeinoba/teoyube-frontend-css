@@ -1,0 +1,67 @@
+[
+  {
+    "name": "header-hero",
+    "selector": ".testimony-hero",
+    "status": "captured"
+  },
+  {
+    "name": "share-form",
+    "selector": ".testimony-form-card",
+    "status": "captured"
+  },
+  {
+    "name": "optional-media",
+    "selector": ".testimony-media-actions",
+    "status": "captured"
+  },
+  {
+    "name": "insights",
+    "selector": ".testimony-insights-card",
+    "status": "captured"
+  },
+  {
+    "name": "milestones",
+    "selector": ".testimony-milestones-card",
+    "status": "captured"
+  },
+  {
+    "name": "encouragement-wall",
+    "selector": ".testimony-wall-card",
+    "status": "captured"
+  },
+  {
+    "name": "impact",
+    "selector": ".testimony-impact-card",
+    "status": "captured"
+  },
+  {
+    "name": "quick-actions",
+    "selector": ".testimony-quick-card",
+    "status": "captured"
+  },
+  {
+    "name": "archive-header",
+    "selector": ".testimony-archive-card .testimony-section-head",
+    "status": "captured"
+  },
+  {
+    "name": "safety-panel",
+    "selector": "#phase117TestimonyControls",
+    "status": "captured"
+  },
+  {
+    "name": "records",
+    "selector": "#testimonyList",
+    "status": "captured"
+  },
+  {
+    "name": "record-actions",
+    "selector": "#testimonyList .testimony-entry:first-child .testimony-entry-stats",
+    "status": "captured"
+  },
+  {
+    "name": "local-beta",
+    "selector": "#phase117OfflineStatus",
+    "status": "captured"
+  }
+]

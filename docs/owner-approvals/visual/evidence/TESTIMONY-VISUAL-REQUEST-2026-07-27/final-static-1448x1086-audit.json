@@ -1,0 +1,16 @@
+{
+  "view": "#testimony",
+  "bodyView": "testimony",
+  "controls": 30,
+  "records": 3,
+  "statuses": [
+    "Public",
+    "Private",
+    "Draft"
+  ],
+  "scrollWidth": 1448,
+  "clientWidth": 1448,
+  "scrollHeight": 1104,
+  "status": 200,
+  "domSha256": "0a15acb01250a499cf1f3228594e736206350f3038c02ae687d8db0849e54390"
+}

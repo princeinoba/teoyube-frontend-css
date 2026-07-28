@@ -1,0 +1,266 @@
+{
+  "initialRecordCount": 3,
+  "initialStatuses": [
+    "Public",
+    "Private",
+    "Draft"
+  ],
+  "mediaActionNotice": true,
+  "tabFiltering": {
+    "Public": 1,
+    "Private": 1,
+    "Drafts": 1,
+    "All": 3
+  },
+  "createdDraft": true,
+  "creationWasReversible": true,
+  "labelTransition": true,
+  "deleteWasReversible": true,
+  "safeExport": true,
+  "keyboardFocus": {
+    "title": {
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px"
+    },
+    "categoryFocused": true
+  },
+  "axe": {
+    "violations": 0,
+    "critical": [],
+    "serious": [],
+    "detail": []
+  },
+  "stylesheetResponses": [
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/legacy.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/tokens.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/reset.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/base.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/layout.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/components.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/responsive.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/utilities.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/index.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/today.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/canon.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/roadmap.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/search.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/promise-table.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/calling-compass.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/book.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/lexicon.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/testimony.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/teo-guide.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/embedded-videos.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/tables.css"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/legacy.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/tokens.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/base.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/layout.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/reset.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/components.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/responsive.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/utilities.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/index.css?recovery=1"
+    },
+    {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/roadmap.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/today.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/canon.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/search.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/promise-table.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/calling-compass.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/book.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/lexicon.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/testimony.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/teo-guide.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/embedded-videos.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:3000/tables.css"
+    }
+  ],
+  "errors": {
+    "console": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "page": [],
+    "requests": [],
+    "responses": [
+      "404 http://127.0.0.1:3000/roadmap.css",
+      "404 http://127.0.0.1:3000/today.css",
+      "404 http://127.0.0.1:3000/canon.css",
+      "404 http://127.0.0.1:3000/search.css",
+      "404 http://127.0.0.1:3000/promise-table.css",
+      "404 http://127.0.0.1:3000/calling-compass.css",
+      "404 http://127.0.0.1:3000/book.css",
+      "404 http://127.0.0.1:3000/lexicon.css",
+      "404 http://127.0.0.1:3000/testimony.css",
+      "404 http://127.0.0.1:3000/teo-guide.css",
+      "404 http://127.0.0.1:3000/embedded-videos.css",
+      "404 http://127.0.0.1:3000/tables.css"
+    ]
+  },
+  "errorClassification": {
+    "expectedDuplicateCssResponses": [
+      "404 http://127.0.0.1:3000/roadmap.css",
+      "404 http://127.0.0.1:3000/today.css",
+      "404 http://127.0.0.1:3000/canon.css",
+      "404 http://127.0.0.1:3000/search.css",
+      "404 http://127.0.0.1:3000/promise-table.css",
+      "404 http://127.0.0.1:3000/calling-compass.css",
+      "404 http://127.0.0.1:3000/book.css",
+      "404 http://127.0.0.1:3000/lexicon.css",
+      "404 http://127.0.0.1:3000/testimony.css",
+      "404 http://127.0.0.1:3000/teo-guide.css",
+      "404 http://127.0.0.1:3000/embedded-videos.css",
+      "404 http://127.0.0.1:3000/tables.css"
+    ],
+    "canonicalTestimonyStylesheet": {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/styles/pages/testimony.css"
+    },
+    "unexpectedResponses": [],
+    "unexpectedConsole": []
+  }
+}

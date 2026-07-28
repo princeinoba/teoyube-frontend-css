@@ -1,0 +1,4550 @@
+{
+  "result": "PASS",
+  "viewports": [
+    {
+      "label": "desktop-reference",
+      "viewport": {
+        "width": 1448,
+        "height": 1086
+      },
+      "document": {
+        "scrollWidth": 1448,
+        "clientWidth": 1448,
+        "scrollHeight": 1104,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 726.25,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 761.75,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 797.25,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 832.75,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 293.42,
+            "width": 653.34,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 351.52,
+            "width": 653.34,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 409.61,
+            "width": 653.34,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 488.47,
+            "width": 653.34,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 686.44,
+            "y": 561.55,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 791.08,
+            "y": 561.55,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 208.98,
+            "y": 609.84,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 252.14,
+            "y": 609.84,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 310.78,
+            "y": 609.84,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 373.98,
+            "y": 609.84,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 622.64,
+            "y": 681.83,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 777.98,
+            "y": 681.83,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 838.47,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 864.84,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 838.47,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 864.84,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 838.47,
+            "y": 987.64,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 864.84,
+            "y": 987.64,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 208.98,
+            "y": 1054.38,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1349.52,
+            "y": 220.02,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1304.73,
+            "y": 485.58,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 900.8,
+            "y": 615.36,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 900.8,
+            "y": 785.98,
+            "width": 523.5,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 900.8,
+            "y": 885.69,
+            "width": 523.5,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 900.8,
+            "y": 923.13,
+            "width": 523.5,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 900.8,
+            "y": 960.56,
+            "width": 523.5,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "desktop-large",
+      "viewport": {
+        "width": 1536,
+        "height": 1024
+      },
+      "document": {
+        "scrollWidth": 1536,
+        "clientWidth": 1536,
+        "scrollHeight": 1104,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 774.97,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 810.47,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 845.97,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 881.47,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 293.42,
+            "width": 702.06,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 351.52,
+            "width": 702.06,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 409.61,
+            "width": 702.06,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 488.47,
+            "width": 702.06,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 735.16,
+            "y": 561.55,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 839.8,
+            "y": 561.55,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 208.98,
+            "y": 609.84,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 252.14,
+            "y": 609.84,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 310.78,
+            "y": 609.84,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 373.98,
+            "y": 609.84,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 671.36,
+            "y": 681.83,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 826.7,
+            "y": 681.83,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 887.19,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 913.56,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 887.19,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 913.56,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 887.19,
+            "y": 987.64,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 913.56,
+            "y": 987.64,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 208.98,
+            "y": 1054.38,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1437.52,
+            "y": 220.02,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1392.73,
+            "y": 485.58,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 949.52,
+            "y": 615.36,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 949.52,
+            "y": 785.98,
+            "width": 562.78,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 949.52,
+            "y": 885.69,
+            "width": 562.78,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 949.52,
+            "y": 923.13,
+            "width": 562.78,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 949.52,
+            "y": 960.56,
+            "width": 562.78,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "desktop-wide",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "document": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 1104,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 721.83,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 757.33,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 792.83,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 828.33,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 293.42,
+            "width": 648.92,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 351.52,
+            "width": 648.92,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 409.61,
+            "width": 648.92,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 209.8,
+            "y": 488.47,
+            "width": 648.92,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 682.02,
+            "y": 561.55,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 786.66,
+            "y": 561.55,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 208.98,
+            "y": 609.84,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 252.14,
+            "y": 609.84,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 310.78,
+            "y": 609.84,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 373.98,
+            "y": 609.84,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 618.22,
+            "y": 681.83,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 773.56,
+            "y": 681.83,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 834.05,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 860.42,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 834.05,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 860.42,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 834.05,
+            "y": 987.64,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 860.42,
+            "y": 987.64,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 208.98,
+            "y": 1054.38,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1341.5,
+            "y": 220.02,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1296.72,
+            "y": 485.58,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 896.38,
+            "y": 615.36,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 896.38,
+            "y": 785.98,
+            "width": 519.91,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 896.38,
+            "y": 885.69,
+            "width": 519.91,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 896.38,
+            "y": 923.13,
+            "width": 519.91,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 896.38,
+            "y": 960.56,
+            "width": 519.91,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "desktop-standard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "document": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "scrollHeight": 1160,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 625.61,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 661.11,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 696.61,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 732.11,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 192.67,
+            "y": 293.42,
+            "width": 569.83,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 192.67,
+            "y": 351.52,
+            "width": 569.83,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 192.67,
+            "y": 409.61,
+            "width": 569.83,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 192.67,
+            "y": 488.47,
+            "width": 569.83,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 585.8,
+            "y": 561.55,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 690.44,
+            "y": 561.55,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 191.86,
+            "y": 609.84,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 235.02,
+            "y": 609.84,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 293.66,
+            "y": 609.84,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 356.86,
+            "y": 609.84,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 522,
+            "y": 681.83,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 677.34,
+            "y": 681.83,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 737.83,
+            "y": 794.69,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 764.2,
+            "y": 794.69,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 737.83,
+            "y": 914.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 764.2,
+            "y": 914.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 737.83,
+            "y": 1034.31,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 764.2,
+            "y": 1034.31,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 191.86,
+            "y": 1110.39,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1181.5,
+            "y": 220.02,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 1136.72,
+            "y": 485.58,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 800.16,
+            "y": 615.36,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 800.16,
+            "y": 785.98,
+            "width": 456.13,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 800.16,
+            "y": 885.69,
+            "width": 456.13,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 800.16,
+            "y": 923.13,
+            "width": 456.13,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 800.16,
+            "y": 960.56,
+            "width": 456.13,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "tablet-landscape",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "document": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "scrollHeight": 1623,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 862.59,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 898.09,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 933.59,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 969.09,
+            "y": 236.94,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 185.8,
+            "y": 293.42,
+            "width": 813.69,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 185.8,
+            "y": 351.52,
+            "width": 813.69,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 185.8,
+            "y": 409.61,
+            "width": 813.69,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 185.8,
+            "y": 488.47,
+            "width": 813.69,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 822.78,
+            "y": 561.55,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 927.42,
+            "y": 561.55,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 184.98,
+            "y": 609.84,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 228.14,
+            "y": 609.84,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 286.78,
+            "y": 609.84,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 349.98,
+            "y": 609.84,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 758.98,
+            "y": 681.83,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 914.33,
+            "y": 681.83,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 963.75,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 990.13,
+            "y": 785.36,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 963.75,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 990.13,
+            "y": 886.5,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 963.75,
+            "y": 984.53,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 990.13,
+            "y": 984.53,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 184.98,
+            "y": 1048.17,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 499.91,
+            "y": 1109.02,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 880.73,
+            "y": 1235.03,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 184.98,
+            "y": 1364.81,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 610.58,
+            "y": 1390.59,
+            "width": 389.72,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 184.98,
+            "y": 1490.3,
+            "width": 389.7,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 184.98,
+            "y": 1527.73,
+            "width": 389.7,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 184.98,
+            "y": 1565.17,
+            "width": 389.7,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "tablet-portrait",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "document": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 2145,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 606.59,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 642.09,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 677.59,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 713.09,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 346.8,
+            "width": 705.69,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 404.89,
+            "width": 705.69,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 462.98,
+            "width": 705.69,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 541.84,
+            "width": 705.69,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 566.78,
+            "y": 614.92,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 671.42,
+            "y": 614.92,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 663.22,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 80.14,
+            "y": 663.22,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 138.78,
+            "y": 663.22,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 201.98,
+            "y": 663.22,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 502.98,
+            "y": 735.2,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 658.33,
+            "y": 735.2,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 688.28,
+            "y": 913.48,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 714.66,
+            "y": 913.48,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 688.28,
+            "y": 1073.88,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 714.66,
+            "y": 1073.88,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 688.28,
+            "y": 1234.27,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 714.66,
+            "y": 1234.27,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 1285.5,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 669.52,
+            "y": 1346.34,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 624.73,
+            "y": 1611.91,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 1741.69,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 1912.31,
+            "width": 707.31,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 2012.02,
+            "width": 707.31,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 2049.45,
+            "width": 707.31,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 2086.89,
+            "width": 707.31,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "document": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 3068,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 57.3,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 92.8,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 128.3,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 526.48,
+            "width": 346.41,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 584.58,
+            "width": 346.41,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 642.67,
+            "width": 346.41,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 721.53,
+            "width": 346.41,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 845.3,
+            "width": 171.45,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 197.55,
+            "y": 845.3,
+            "width": 171.47,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 886.09,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 64.14,
+            "y": 886.09,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 122.78,
+            "y": 886.09,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 185.98,
+            "y": 886.09,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 31.25,
+            "y": 1008.64,
+            "width": 161.34,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 197.39,
+            "y": 1008.64,
+            "width": 161.36,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 305.02,
+            "y": 1313.44,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 335.39,
+            "y": 1313.44,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 305.02,
+            "y": 1623.69,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 335.39,
+            "y": 1623.69,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 305.02,
+            "y": 1933.94,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 335.39,
+            "y": 1933.94,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 1985.17,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 157.61,
+            "y": 2075.2,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.31,
+            "y": 2465.81,
+            "width": 349.38,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2595.59,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2840.61,
+            "width": 348.03,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2940.31,
+            "width": 348.03,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2977.75,
+            "width": 348.03,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 3015.19,
+            "width": 348.03,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "axe": {
+        "violations": 0,
+        "critical": [],
+        "serious": [],
+        "detail": []
+      },
+      "errors": {
+        "console": [
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        ],
+        "page": [],
+        "request": [],
+        "response": [
+          "404 http://127.0.0.1:3000/today.css",
+          "404 http://127.0.0.1:3000/roadmap.css",
+          "404 http://127.0.0.1:3000/canon.css",
+          "404 http://127.0.0.1:3000/search.css",
+          "404 http://127.0.0.1:3000/promise-table.css",
+          "404 http://127.0.0.1:3000/calling-compass.css",
+          "404 http://127.0.0.1:3000/book.css",
+          "404 http://127.0.0.1:3000/lexicon.css",
+          "404 http://127.0.0.1:3000/testimony.css",
+          "404 http://127.0.0.1:3000/teo-guide.css",
+          "404 http://127.0.0.1:3000/embedded-videos.css",
+          "404 http://127.0.0.1:3000/tables.css"
+        ],
+        "expectedDuplicateCssResponses": [
+          "404 http://127.0.0.1:3000/today.css",
+          "404 http://127.0.0.1:3000/roadmap.css",
+          "404 http://127.0.0.1:3000/canon.css",
+          "404 http://127.0.0.1:3000/search.css",
+          "404 http://127.0.0.1:3000/promise-table.css",
+          "404 http://127.0.0.1:3000/calling-compass.css",
+          "404 http://127.0.0.1:3000/book.css",
+          "404 http://127.0.0.1:3000/lexicon.css",
+          "404 http://127.0.0.1:3000/testimony.css",
+          "404 http://127.0.0.1:3000/teo-guide.css",
+          "404 http://127.0.0.1:3000/embedded-videos.css",
+          "404 http://127.0.0.1:3000/tables.css"
+        ],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "mobile-small",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "document": {
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "scrollHeight": 3087,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 57.3,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 92.8,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 128.3,
+            "y": 470,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 526.48,
+            "width": 316.41,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 584.58,
+            "width": 316.41,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 642.67,
+            "width": 316.41,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 21.8,
+            "y": 721.53,
+            "width": 316.41,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 845.3,
+            "width": 156.45,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 182.55,
+            "y": 845.3,
+            "width": 156.47,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 886.09,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 64.14,
+            "y": 886.09,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 122.78,
+            "y": 886.09,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 185.98,
+            "y": 886.09,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 31.25,
+            "y": 1008.64,
+            "width": 146.34,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 182.39,
+            "y": 1008.64,
+            "width": 146.36,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 275.02,
+            "y": 1313.44,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 305.39,
+            "y": 1313.44,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 275.02,
+            "y": 1623.69,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 305.39,
+            "y": 1623.69,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 275.02,
+            "y": 1952.61,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 305.39,
+            "y": 1952.61,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2003.84,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 142.61,
+            "y": 2093.88,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.31,
+            "y": 2484.48,
+            "width": 319.38,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2614.27,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2859.28,
+            "width": 318.03,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2958.98,
+            "width": 318.03,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 2996.42,
+            "width": 318.03,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 20.98,
+            "y": 3033.86,
+            "width": 318.03,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "errors": {
+        "console": [],
+        "page": [],
+        "request": [],
+        "response": [],
+        "expectedDuplicateCssResponses": [],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    },
+    {
+      "label": "zoom-200-equivalent",
+      "viewport": {
+        "width": 768,
+        "height": 512
+      },
+      "document": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 2145,
+        "horizontalOverflow": false
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add image",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 606.59,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add video",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 642.09,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Record audio",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 677.59,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Add link",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 713.09,
+            "y": 290.31,
+            "width": 30.39,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "input",
+          "id": "testimonyTitle",
+          "label": "Example: Peace during a hard decision",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 346.8,
+            "width": 705.69,
+            "height": 32
+          }
+        },
+        {
+          "tag": "select",
+          "id": "testimonyCategory",
+          "label": "Faith Grace Healing Obedience Provision Purpose",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 404.89,
+            "width": 705.69,
+            "height": 32
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "testimonyBody",
+          "label": "Share what you believe God has done and which promise it connects to.",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 462.98,
+            "width": 705.69,
+            "height": 69.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Save Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 37.8,
+            "y": 541.84,
+            "width": 705.69,
+            "height": 36.38
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Sort testimonies",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 566.78,
+            "y": 614.92,
+            "width": 99.53,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Filters",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 671.42,
+            "y": 614.92,
+            "width": 72.88,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "All",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 663.22,
+            "width": 37.72,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Public",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 80.14,
+            "y": 663.22,
+            "width": 53.2,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Private",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 138.78,
+            "y": 663.22,
+            "width": 57.77,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Drafts",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 201.98,
+            "y": 663.22,
+            "width": 53.69,
+            "height": 29.59
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Testimony Archive JSON",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 502.98,
+            "y": 735.2,
+            "width": 150.55,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Data Controls",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 658.33,
+            "y": 735.2,
+            "width": 75.7,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 688.28,
+            "y": 913.48,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete God's Peace in the Storm",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 714.66,
+            "y": 913.48,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 688.28,
+            "y": 1073.88,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete A New Beginning",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 714.66,
+            "y": 1073.88,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Change local label for Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 688.28,
+            "y": 1234.27,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Delete Walking in Faith",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 714.66,
+            "y": 1234.27,
+            "width": 22.39,
+            "height": 28.8
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Load More",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 1285.5,
+            "width": 75.73,
+            "height": 24
+          }
+        },
+        {
+          "tag": "select",
+          "id": null,
+          "label": "Testimony insight period",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 669.52,
+            "y": 1346.34,
+            "width": 74.78,
+            "height": 26.39
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "label": "View All Milestones →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 624.73,
+            "y": 1611.91,
+            "width": 120.23,
+            "height": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Encourage Someone",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 1741.69,
+            "width": 130.7,
+            "height": 30.39
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "View Impact Analytics →",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 1912.31,
+            "width": 707.31,
+            "height": 40.38
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Write Testimony",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 2012.02,
+            "width": 707.31,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Invite Encouragement",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 2049.45,
+            "width": 707.31,
+            "height": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "label": "Export Archive",
+          "visible": true,
+          "disabled": false,
+          "pointerEvents": "auto",
+          "horizontalClip": false,
+          "rect": {
+            "x": 36.98,
+            "y": 2086.89,
+            "width": 707.31,
+            "height": 32
+          }
+        }
+      ],
+      "icons": {
+        "count": 41,
+        "populated": 41
+      },
+      "records": 3,
+      "statuses": [
+        "Public",
+        "Private",
+        "Draft"
+      ],
+      "localNotice": {
+        "visible": true,
+        "pointerEvents": "none"
+      },
+      "summary": {
+        "totalControls": 30,
+        "visibleControls": 30,
+        "hiddenControls": [],
+        "pointerBlockedControls": [],
+        "horizontallyClippedControls": []
+      },
+      "axe": {
+        "violations": 0,
+        "critical": [],
+        "serious": [],
+        "detail": []
+      },
+      "errors": {
+        "console": [
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        ],
+        "page": [],
+        "request": [],
+        "response": [
+          "404 http://127.0.0.1:3000/today.css",
+          "404 http://127.0.0.1:3000/roadmap.css",
+          "404 http://127.0.0.1:3000/canon.css",
+          "404 http://127.0.0.1:3000/search.css",
+          "404 http://127.0.0.1:3000/promise-table.css",
+          "404 http://127.0.0.1:3000/calling-compass.css",
+          "404 http://127.0.0.1:3000/book.css",
+          "404 http://127.0.0.1:3000/lexicon.css",
+          "404 http://127.0.0.1:3000/testimony.css",
+          "404 http://127.0.0.1:3000/teo-guide.css",
+          "404 http://127.0.0.1:3000/embedded-videos.css",
+          "404 http://127.0.0.1:3000/tables.css"
+        ],
+        "expectedDuplicateCssResponses": [
+          "404 http://127.0.0.1:3000/today.css",
+          "404 http://127.0.0.1:3000/roadmap.css",
+          "404 http://127.0.0.1:3000/canon.css",
+          "404 http://127.0.0.1:3000/search.css",
+          "404 http://127.0.0.1:3000/promise-table.css",
+          "404 http://127.0.0.1:3000/calling-compass.css",
+          "404 http://127.0.0.1:3000/book.css",
+          "404 http://127.0.0.1:3000/lexicon.css",
+          "404 http://127.0.0.1:3000/testimony.css",
+          "404 http://127.0.0.1:3000/teo-guide.css",
+          "404 http://127.0.0.1:3000/embedded-videos.css",
+          "404 http://127.0.0.1:3000/tables.css"
+        ],
+        "unexpectedResponses": [],
+        "unexpectedConsole": []
+      }
+    }
+  ]
+}

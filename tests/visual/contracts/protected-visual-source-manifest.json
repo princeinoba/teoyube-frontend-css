@@ -1293,8 +1293,8 @@
     },
     {
       "path": "styles/pages/testimony.css",
-      "sizeBytes": 111,
-      "sha256": "a81f3460723d4c60294d25ec95d1aea72458b3b96fe580106130af482224cea2"
+      "sizeBytes": 22752,
+      "sha256": "617fc90329c8b135d88b38e23d8a442b5677e3c4e0807c9394e167194f4509f3"
     },
     {
       "path": "styles/pages/today.css",

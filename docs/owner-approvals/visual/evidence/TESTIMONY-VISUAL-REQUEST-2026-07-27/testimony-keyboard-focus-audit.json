@@ -1,0 +1,487 @@
+{
+  "result": "PASS",
+  "count": 30,
+  "issues": [],
+  "controls": [
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Add image",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 726.25,
+        "y": 236.94,
+        "width": 30.39,
+        "height": 30.39
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Add video",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 761.75,
+        "y": 236.94,
+        "width": 30.39,
+        "height": 30.39
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Record audio",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 797.25,
+        "y": 236.94,
+        "width": 30.39,
+        "height": 30.39
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Add link",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 832.75,
+        "y": 236.94,
+        "width": 30.39,
+        "height": 30.39
+      }
+    },
+    {
+      "tag": "input",
+      "id": "testimonyTitle",
+      "label": "Example: Peace during a hard decision",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "rgba(255, 255, 255, 0.85) 0px 1px 0px 0px inset",
+      "rect": {
+        "x": 209.8,
+        "y": 293.42,
+        "width": 653.34,
+        "height": 32
+      }
+    },
+    {
+      "tag": "select",
+      "id": "testimonyCategory",
+      "label": "Faith Grace Healing Obedience Provision Purpose",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "rgba(255, 255, 255, 0.85) 0px 1px 0px 0px inset",
+      "rect": {
+        "x": 209.8,
+        "y": 351.52,
+        "width": 653.34,
+        "height": 32
+      }
+    },
+    {
+      "tag": "textarea",
+      "id": "testimonyBody",
+      "label": "Share what you believe God has done and which promise it connects to.",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "rgba(255, 255, 255, 0.85) 0px 1px 0px 0px inset",
+      "rect": {
+        "x": 209.8,
+        "y": 409.61,
+        "width": 653.34,
+        "height": 69.59
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Save Testimony",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "rgba(0, 82, 61, 0.14) 0px 7.2px 14.4px 0px",
+      "rect": {
+        "x": 209.8,
+        "y": 488.47,
+        "width": 653.34,
+        "height": 36.38
+      }
+    },
+    {
+      "tag": "select",
+      "id": null,
+      "label": "Sort testimonies",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 686.44,
+        "y": 561.55,
+        "width": 99.53,
+        "height": 32
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Filters",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 791.08,
+        "y": 561.55,
+        "width": 72.88,
+        "height": 32
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "All",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 208.98,
+        "y": 609.84,
+        "width": 37.72,
+        "height": 29.59
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Public",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 252.14,
+        "y": 609.84,
+        "width": 53.2,
+        "height": 29.59
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Private",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 310.78,
+        "y": 609.84,
+        "width": 57.77,
+        "height": 29.59
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Drafts",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 373.98,
+        "y": 609.84,
+        "width": 53.69,
+        "height": 29.59
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Export Testimony Archive JSON",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 622.64,
+        "y": 681.83,
+        "width": 150.55,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Data Controls",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 777.98,
+        "y": 681.83,
+        "width": 75.7,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Change local label for God's Peace in the Storm",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 838.47,
+        "y": 785.36,
+        "width": 22.39,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Delete God's Peace in the Storm",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 852.84,
+        "y": 785.36,
+        "width": 22.39,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Change local label for A New Beginning",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 826.47,
+        "y": 886.5,
+        "width": 22.39,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Delete A New Beginning",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 852.84,
+        "y": 886.5,
+        "width": 22.39,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Change local label for Walking in Faith",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 826.47,
+        "y": 987.64,
+        "width": 22.39,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Delete Walking in Faith",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 852.84,
+        "y": 987.64,
+        "width": 22.39,
+        "height": 28.8
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Load More",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 197.98,
+        "y": 1054.38,
+        "width": 75.73,
+        "height": 24
+      }
+    },
+    {
+      "tag": "select",
+      "id": null,
+      "label": "Testimony insight period",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 1349.52,
+        "y": 220.02,
+        "width": 74.78,
+        "height": 26.39
+      }
+    },
+    {
+      "tag": "a",
+      "id": null,
+      "label": "View All Milestones →",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 1304.73,
+        "y": 485.58,
+        "width": 120.23,
+        "height": 16
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Encourage Someone",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 900.8,
+        "y": 615.36,
+        "width": 130.7,
+        "height": 30.39
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "View Impact Analytics →",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 900.8,
+        "y": 785.98,
+        "width": 523.5,
+        "height": 40.38
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Write Testimony",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 900.8,
+        "y": 885.69,
+        "width": 523.5,
+        "height": 32
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Invite Encouragement",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 900.8,
+        "y": 923.13,
+        "width": 523.5,
+        "height": 32
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "label": "Export Archive",
+      "focused": true,
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineColor": "rgb(237, 178, 71)",
+      "boxShadow": "none",
+      "rect": {
+        "x": 900.8,
+        "y": 960.56,
+        "width": 523.5,
+        "height": 32
+      }
+    }
+  ]
+}
