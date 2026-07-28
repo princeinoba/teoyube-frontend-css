@@ -123,10 +123,7 @@ body[data-view="testimony"] .app-header {
 }
 
 body[data-view="testimony"] .app-header > div:first-child {
-  position: absolute;
-  top: 0.85rem;
-  left: 1.05rem;
-  z-index: 2;
+  display: none;
 }
 
 body[data-view="testimony"] .app-header > div:first-child .eyebrow {
@@ -266,7 +263,7 @@ body[data-view="testimony"] #testimony .testimony-hero::after {
 body[data-view="testimony"] #testimony .testimony-hero > div {
   max-width: 31rem;
   gap: 0.44rem;
-  padding: 3.45rem 1.15rem 1rem;
+  padding: 1.4rem 1.15rem 1rem;
 }
 
 body[data-view="testimony"] #testimony .testimony-hero .eyebrow {
@@ -420,15 +417,18 @@ body[data-view="testimony"] #testimony .testimony-list-tools :where(select, butt
 }
 
 body[data-view="testimony"] #testimony .testimony-tabs {
-  gap: 0.34rem;
-  margin: 0.55rem 0;
+  gap: 0.45rem;
+  margin: 1rem 0 0.75rem;
 }
 
 body[data-view="testimony"] #testimony .testimony-tabs button {
-  min-height: 1.85rem;
-  padding: 0 0.72rem;
-  border-radius: 0.38rem;
-  font-size: 0.58rem;
+  min-height: 2.4rem;
+  padding: 0 1rem;
+  border-radius: 8px;
+}
+
+body[data-view="testimony"] #testimony .testimony-draft-empty-state p {
+  color: var(--testimony-muted);
 }
 
 body[data-view="testimony"] #phase117TestimonyControls {

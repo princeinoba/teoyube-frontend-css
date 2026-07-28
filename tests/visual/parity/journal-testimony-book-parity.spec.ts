@@ -153,6 +153,27 @@ test("Testimony remains user-reviewed, reversible, and separate from the Book", 
   expect(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length }))).toEqual({ local: 0, session: 0 });
 });
 
+test("Testimony keeps one hero title and restores the approved Drafts empty state", async ({ page }) => {
+  await page.goto(`${nextBaseUrl}/testimony`, { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#testimony .testimony-hero h3")).toHaveText("Testimony Archive");
+  expect(await page.getByText("Testimony Archive", { exact: true }).evaluateAll((elements) => elements.filter((element) => {
+    const style = getComputedStyle(element);
+    const rect = element.getBoundingClientRect();
+    return style.display !== "none" && style.visibility !== "hidden" && rect.width > 0 && rect.height > 0;
+  }).length)).toBe(1);
+  await expect(page.locator(".testimony-tabs button")).toHaveCount(4);
+  await page.getByRole("button", { name: "Drafts", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Drafts", exact: true })).toHaveClass(/active/);
+  await expect(page.locator(".testimony-draft-empty-state")).toBeVisible();
+  await expect(page.locator(".testimony-draft-empty-state h4")).toHaveText("No testimonies recorded yet.");
+  await expect(page.locator(".testimony-entry", { hasText: "Walking in Faith" })).toBeHidden();
+  await page.getByRole("button", { name: "Write Your First Testimony" }).click();
+  await expect(page.locator("#testimonyTitle")).toBeFocused();
+  await page.getByRole("button", { name: "All", exact: true }).click();
+  await expect(page.locator(".testimony-draft-empty-state")).toHaveCount(0);
+  await expect(page.locator(".testimony-entry", { hasText: "Walking in Faith" })).toBeVisible();
+});
+
 test("Book journal action does not silently promote a reflection", async ({ page }) => {
   await page.goto(`${nextBaseUrl}/book`, { waitUntil: "domcontentloaded" });
   await page.locator("#bookSearchInput").fill("no matching reflection");

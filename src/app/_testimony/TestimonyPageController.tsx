@@ -39,6 +39,24 @@ function renderTestimony(dto: TestimonyDisplayDto) {
   </article>`;
 }
 
+function renderDraftEmptyState() {
+  return `<article class="testimony-empty-state testimony-draft-empty-state">
+    <span class="testimony-draft-illustration" aria-hidden="true"></span>
+    <h4>No testimonies recorded yet.</h4>
+    <p>Your story matters. Share how God has moved in your life and encourage someone today.</p>
+    <button class="primary" type="button">
+      Write Your First Testimony
+      <span aria-hidden="true"></span>
+    </button>
+  </article>`;
+}
+
+function isSeededDraftPlaceholder(entry: HTMLElement) {
+  const title = entry.querySelector("h4")?.textContent?.trim();
+  const status = entry.querySelector(".testimony-status-badge")?.textContent?.trim();
+  return title === "Walking in Faith" && status === "Draft";
+}
+
 export function TestimonyPageController({ initialViewModel }: { initialViewModel: TestimonyPageViewModel }) {
   const rootRef = useRef<HTMLElement>(null);
   const recordsRef = useRef(new Map(initialViewModel.testimonies.map((dto) => [dto.record.title, dto.record])));
@@ -64,10 +82,17 @@ export function TestimonyPageController({ initialViewModel }: { initialViewModel
 
     function applyFilter(label: string) {
       const wanted = label === "Drafts" ? "Draft" : label;
-      root?.querySelectorAll<HTMLElement>("#testimonyList .testimony-entry").forEach((entry) => {
+      const list = root?.querySelector<HTMLElement>("#testimonyList");
+      if (!list) return;
+      list.querySelector(".testimony-draft-empty-state")?.remove();
+      const entries = [...list.querySelectorAll<HTMLElement>(".testimony-entry")];
+      const draftEntries = entries.filter((entry) => entry.querySelector(".testimony-status-badge")?.textContent?.trim() === "Draft");
+      const showDraftEmptyState = wanted === "Draft" && (!draftEntries.length || draftEntries.every(isSeededDraftPlaceholder));
+      entries.forEach((entry) => {
         const status = entry.querySelector(".testimony-status-badge")?.textContent?.trim() || "Draft";
-        entry.hidden = wanted !== "All" && status !== wanted;
+        entry.hidden = showDraftEmptyState || (wanted !== "All" && status !== wanted);
       });
+      if (showDraftEmptyState) list.insertAdjacentHTML("afterbegin", renderDraftEmptyState());
     }
 
     function downloadSafeArchive() {
@@ -101,7 +126,9 @@ export function TestimonyPageController({ initialViewModel }: { initialViewModel
       const dto: TestimonyDisplayDto = Object.freeze({ record, image: "public/images/carousel/faith-in-action.png", dateLabel: "Draft saved just now", updatedLabel: "Updated just now", metrics: Object.freeze({ encouragements: 0, views: 0, shares: 0 }) });
       recordsRef.current.set(record.title, record);
       lastCreatedTitleRef.current = record.title;
-      root?.querySelector("#testimonyList")?.insertAdjacentHTML("afterbegin", renderTestimony(dto));
+      const list = root?.querySelector("#testimonyList");
+      list?.querySelector(".testimony-draft-empty-state")?.remove();
+      list?.insertAdjacentHTML("afterbegin", renderTestimony(dto));
       form.reset();
       setNotice({ title: "Testimony draft saved", detail: "User-authored, editable, session-only, and not added to the Book.", undoLabel: "Undo" });
       if (testimonyMomentActive) {
@@ -116,6 +143,11 @@ export function TestimonyPageController({ initialViewModel }: { initialViewModel
       if (tab) {
         root?.querySelectorAll(".testimony-tabs button").forEach((button) => button.classList.toggle("active", button === tab));
         applyFilter(tab.textContent?.trim() || "All");
+        return;
+      }
+      if (target.closest(".testimony-draft-empty-state button")) {
+        root?.querySelector<HTMLInputElement>("#testimonyTitle")?.focus();
+        root?.querySelector("#testimonyForm")?.scrollIntoView({ behavior: "smooth", block: "start" });
         return;
       }
       const action = target.closest<HTMLElement>("[data-phase116b-action], [data-phase117-action]");
