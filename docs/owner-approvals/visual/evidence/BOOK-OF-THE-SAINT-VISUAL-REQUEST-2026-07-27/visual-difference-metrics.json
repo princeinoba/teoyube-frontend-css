@@ -1,0 +1,11 @@
+{
+  "method": "absolute RGB pixel difference at identical 1122x1402 dimensions; changed pixel threshold max channel delta > 10; no regions masked",
+  "width": 1122,
+  "height": 1402,
+  "pixels": 1573044,
+  "changedPixelsOver10": 615359,
+  "changedPercentOver10": 39.119,
+  "meanAbsoluteRgbDelta": 22.5821,
+  "rmseRgbDelta": 52.2787,
+  "maximumChannelDelta": 255
+}

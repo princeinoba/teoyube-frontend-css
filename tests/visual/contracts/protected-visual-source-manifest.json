@@ -1238,8 +1238,8 @@
     },
     {
       "path": "styles/pages/book.css",
-      "sizeBytes": 97,
-      "sha256": "21e97bde6d65fa72b5f8519496b3a8d06b27f92c8ecca7ca540b723c698d3294"
+      "sizeBytes": 51083,
+      "sha256": "0b6b2d9cd813f2ec35216ad3d8778ac4b3a69e44367d8680052d7d2a6101d184"
     },
     {
       "path": "styles/pages/calling-compass.css",

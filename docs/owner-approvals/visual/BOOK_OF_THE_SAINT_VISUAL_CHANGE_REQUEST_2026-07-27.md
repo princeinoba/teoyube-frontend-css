@@ -1,8 +1,8 @@
 # Teoyube Visual Change Request — Book of the Saint
 
-Decision: APPROVED  
-Approval-ID: TEOYUBE-VISUAL-2026-07-27-BOOK-OF-THE-SAINT-001  
-Approved-By: Prince Okiemute Inoba — Teoyube Project Owner  
+Decision: APPROVED
+Approval-ID: TEOYUBE-VISUAL-2026-07-27-BOOK-OF-THE-SAINT-001
+Approved-By: Prince Okiemute Inoba — Teoyube Project Owner
 Approved-At: 2026-07-27T18:45:04-04:00
 
 ## Requested scope
@@ -145,4 +145,3 @@ To inspect the original Book stylesheet without changing the worktree:
 ```text
 git show <starting-head>:styles/pages/book.css
 ```
-

@@ -1,0 +1,15 @@
+{
+  "file": "styles/pages/book.css",
+  "parser": "postcss",
+  "parseResult": "PASS",
+  "rules": 289,
+  "declarations": 879,
+  "unscopedSelectorCount": 0,
+  "unscoped": [],
+  "transitionAllCount": 0,
+  "transitionAll": [],
+  "externalUrlCount": 0,
+  "externalUrls": [],
+  "routeScope": "body[data-view=\"book\"]",
+  "status": "PASS"
+}
