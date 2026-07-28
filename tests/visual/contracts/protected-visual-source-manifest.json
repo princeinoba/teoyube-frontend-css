@@ -1263,8 +1263,8 @@
     },
     {
       "path": "styles/pages/lexicon.css",
-      "sizeBytes": 103,
-      "sha256": "66f6f7220414c27cd16715482362cd11bb38b1ee1386b9a08ba61bf1dcb0aae5"
+      "sizeBytes": 44249,
+      "sha256": "83410c9049eda0fd1b2ec395ea3858e0e1580d4cd91f999c41786fc69d575098"
     },
     {
       "path": "styles/pages/promise-table.css",

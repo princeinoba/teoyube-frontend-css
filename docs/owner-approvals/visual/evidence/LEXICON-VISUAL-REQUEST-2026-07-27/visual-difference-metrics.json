@@ -1,0 +1,61 @@
+{
+  "ownerReference": {
+    "path": "lexicon-owner-reference-659x1134.jpeg",
+    "original": {
+      "format": "jpeg",
+      "mediaType": "image/jpeg",
+      "width": 659,
+      "height": 1134,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "density": 72,
+      "chromaSubsampling": "4:2:0",
+      "isProgressive": false,
+      "isPalette": false,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 659,
+        "height": 1134
+      }
+    }
+  },
+  "finalCandidate": {
+    "path": "final-next-1536x1024-full-page.png",
+    "original": {
+      "format": "png",
+      "mediaType": "image/png",
+      "width": 1536,
+      "height": 8019,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "density": 72,
+      "isProgressive": false,
+      "isPalette": false,
+      "bitsPerSample": 8,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 1536,
+        "height": 8019
+      }
+    }
+  },
+  "normalization": {
+    "width": 659,
+    "height": 1134,
+    "fit": "contain",
+    "crop": false,
+    "background": "#ffffff"
+  },
+  "metrics": {
+    "meanAbsoluteChannelDifference": 24.88800616258043,
+    "normalizedMeanAbsoluteDifference": 0.09760002416698209,
+    "changedPixelsOver10": 242994,
+    "changedPixelRatioOver10": 0.32515997462886687,
+    "maximumChannelDifference": 255
+  },
+  "interpretation": "Measured comparison is evidence, not a parity threshold. Current live content and 109-card dataset were preserved as owner-required, so the final page is materially taller than the owner reference."
+}

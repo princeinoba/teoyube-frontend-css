@@ -1,0 +1,15 @@
+{
+  "file": "styles/pages/lexicon.css",
+  "bytes": 44249,
+  "rules": 227,
+  "unscopedSelectors": [],
+  "unauthorizedHiddenRules": [],
+  "authorizedDynamicHiddenRuleCount": 1,
+  "forbiddenDeclarations": [],
+  "result": "PASS",
+  "notes": [
+    "All revised selectors are scoped beneath body[data-view=\"lexicon\"].",
+    "The single dynamic hidden rule applies only to .lexicon-item[hidden] and preserves the existing search and filter behavior.",
+    "No external icon URL, new asset, new package, broad reset, or cross-route selector was introduced."
+  ]
+}

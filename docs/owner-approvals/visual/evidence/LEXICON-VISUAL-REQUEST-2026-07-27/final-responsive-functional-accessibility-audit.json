@@ -1,0 +1,299 @@
+{
+  "generatedAt": "2026-07-28T02:22:53.884Z",
+  "viewports": [
+    {
+      "name": "1536x1024",
+      "viewport": {
+        "width": 1536,
+        "height": 1024
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 1536,
+        "clientWidth": 1536,
+        "scrollHeight": 8019,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 4,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "1440x900",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 8063,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 4,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "1280x800",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "scrollHeight": 8202,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 4,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "1024x768",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "scrollHeight": 10465,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 3,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "768x1024",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 14570,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 2,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 27339,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 1,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "360x800",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "scrollHeight": 27435,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 1,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    },
+    {
+      "name": "200-percent-768x512",
+      "viewport": {
+        "width": 768,
+        "height": 512
+      },
+      "bodyDataView": "lexicon",
+      "document": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 14570,
+        "horizontalOverflow": false
+      },
+      "controlCount": 715,
+      "visibleControlCount": 715,
+      "wordCardCount": 109,
+      "visibleWordCardCount": 109,
+      "computedWordGridColumns": 2,
+      "clipped": [],
+      "iconTargetCount": 687,
+      "renderedIconTargetCount": 687,
+      "emptyApprovedIconTargets": [],
+      "focusIssueCount": 0,
+      "focusIssues": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "badResponses": []
+    }
+  ],
+  "interactions": {
+    "search": {
+      "filteredCount": 1,
+      "value": "TIDUILOVP",
+      "restoredCount": 109
+    },
+    "smartSuggestion": {
+      "value": "Benor",
+      "filteredCount": 0
+    },
+    "categoryFilter": {
+      "value": "acceptance",
+      "filteredCount": 1
+    },
+    "speechFilter": {
+      "value": "authority",
+      "filteredCount": 12
+    },
+    "alphaFilter": {
+      "filteredCount": 13,
+      "restoredCount": 109
+    },
+    "gridList": {
+      "beforeClass": "lexicon-grid",
+      "afterListClass": "lexicon-grid",
+      "afterGridClass": "lexicon-grid",
+      "controlsRemainEnabled": true
+    },
+    "studyAction": {
+      "noticeVisible": false,
+      "panelHeading": "TIDUILOVP"
+    },
+    "studySelector": {
+      "value": "TEOYUBE",
+      "panelHeading": "TEOYUBE"
+    },
+    "loadMore": {
+      "cardCount": 109,
+      "controlEnabled": true
+    },
+    "quickTool": {
+      "controlEnabled": true
+    }
+  },
+  "axe": {
+    "violations": [
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "description": "Ensure an element's role supports its ARIA attributes",
+        "nodes": 27
+      }
+    ],
+    "seriousOrCritical": 1
+  },
+  "errors": null,
+  "keyboardFocus": {
+    "observedCount": 165,
+    "focusVisibleCount": 165,
+    "issueCount": 0,
+    "issues": []
+  }
+}
