@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "teoyube-canon-owner-reference-comparison-1",
+  "approvalId": "TEOYUBE-VISUAL-2026-07-28-CANON-FULL-PAGE-002",
+  "reference": {
+    "path": "canon-owner-reference-1024x1536.png",
+    "width": 1024,
+    "height": 1536
+  },
+  "candidate": {
+    "source": "final-full-page-1536.png",
+    "comparisonCopy": "final-full-page-contained-1024x1536.png",
+    "resizeMode": "proportional contain, top aligned, no crop",
+    "width": 1024,
+    "height": 1536
+  },
+  "comparison": {
+    "channelDeltaThreshold": 16,
+    "differentPixels": 752247,
+    "pixelCount": 1572864,
+    "differentPixelRatio": 0.47826576232910156,
+    "maxChannelDelta": 255,
+    "meanAbsoluteRgbChannelDelta": 73.75571568806966
+  },
+  "interpretation": "Pixel difference is recorded honestly; the owner reference is a scaled target composition and the live page retains additional owner-required content without cropping."
+}

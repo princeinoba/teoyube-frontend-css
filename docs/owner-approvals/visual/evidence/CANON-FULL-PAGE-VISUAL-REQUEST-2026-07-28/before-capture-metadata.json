@@ -1,0 +1,62 @@
+{
+  "sourceCommit": "81af4d387b49685d8cc9a904fa23ebd68d1f1e65",
+  "disabledCurrentCanonStylesheet": [
+    "http://127.0.0.1:3000/styles/pages/canon.css"
+  ],
+  "injectedOldCssBytes": 79639,
+  "geometry": {
+    "documentHeight": 3461,
+    "documentWidth": 1536,
+    "viewportWidth": 1536,
+    "main": {
+      "x": 210,
+      "y": 74.359375,
+      "width": 1004.40625,
+      "height": 2248.484375,
+      "bottom": 2322.84375
+    },
+    "rail": {
+      "x": 1226.40625,
+      "y": 74.359375,
+      "width": 288,
+      "height": 2199.65625,
+      "bottom": 2274.015625
+    },
+    "standard": {
+      "x": 210,
+      "y": 2336.4375,
+      "width": 1004.40625,
+      "height": 1105.84375,
+      "bottom": 3442.28125
+    }
+  },
+  "runtimeErrors": [],
+  "desktop1280": {
+    "geometry": {
+      "documentHeight": 3496,
+      "horizontalOverflow": false,
+      "main": {
+        "x": 210,
+        "y": 74.359375,
+        "width": 780.40625,
+        "height": 2064.5,
+        "bottom": 2138.859375
+      },
+      "rail": {
+        "x": 1002.40625,
+        "y": 74.359375,
+        "width": 256,
+        "height": 2201.734375,
+        "bottom": 2276.09375
+      },
+      "standard": {
+        "x": 210,
+        "y": 2152.453125,
+        "width": 780.40625,
+        "height": 1324.328125,
+        "bottom": 3476.78125
+      }
+    },
+    "runtimeErrors": []
+  }
+}

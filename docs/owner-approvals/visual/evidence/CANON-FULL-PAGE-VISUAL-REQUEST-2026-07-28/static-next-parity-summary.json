@@ -1,0 +1,86 @@
+[
+  {
+    "viewport": "desktop-wide",
+    "width": 1440,
+    "height": 900,
+    "comparison": {
+      "differentPixels": 4527,
+      "differentPixelRatio": 0.0034930555555555557,
+      "maxChannelDelta": 143,
+      "meanPerceptualDelta": 0.00009744349128540272,
+      "maxRegionalPerceptualDelta": 0.0004936002178649224,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "desktop-standard",
+    "width": 1280,
+    "height": 800,
+    "comparison": {
+      "differentPixels": 3819,
+      "differentPixelRatio": 0.0037294921875,
+      "maxChannelDelta": 90,
+      "meanPerceptualDelta": 0.0000791462418300651,
+      "maxRegionalPerceptualDelta": 0.0005548747276688437,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "width": 1024,
+    "height": 768,
+    "comparison": {
+      "differentPixels": 3220,
+      "differentPixelRatio": 0.004094441731770833,
+      "maxChannelDelta": 147,
+      "meanPerceptualDelta": 0.00011382591230936781,
+      "maxRegionalPerceptualDelta": 0.0009429466230936789,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "width": 768,
+    "height": 1024,
+    "comparison": {
+      "differentPixels": 1856,
+      "differentPixelRatio": 0.0023600260416666665,
+      "maxChannelDelta": 61,
+      "meanPerceptualDelta": 0.00008701831427015222,
+      "maxRegionalPerceptualDelta": 0.0004084967320261427,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "comparison": {
+      "differentPixels": 0,
+      "differentPixelRatio": 0,
+      "maxChannelDelta": 0,
+      "meanPerceptualDelta": 0,
+      "maxRegionalPerceptualDelta": 0,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "comparison": {
+      "differentPixels": 0,
+      "differentPixelRatio": 0,
+      "maxChannelDelta": 0,
+      "meanPerceptualDelta": 0,
+      "maxRegionalPerceptualDelta": 0,
+      "strictPassed": true,
+      "passed": true
+    }
+  }
+]

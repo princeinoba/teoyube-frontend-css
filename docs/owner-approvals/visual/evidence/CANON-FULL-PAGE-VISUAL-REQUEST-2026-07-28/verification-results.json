@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "approval": {
+    "decision": "APPROVED",
+    "approvalId": "TEOYUBE-VISUAL-2026-07-28-CANON-FULL-PAGE-002",
+    "approvedBy": "Prince Okiemute Inoba — Teoyube Project Owner",
+    "approvedAt": "2026-07-28T15:30:00-04:00"
+  },
+  "source": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "81af4d387b49685d8cc9a904fa23ebd68d1f1e65",
+    "canonStylesheet": "styles/pages/canon.css",
+    "reference": "canon-owner-reference-1024x1536.png",
+    "referenceSha256": "f3ca2787be901fd468715f0cd864fda967d0c769cc101cd6d369c3bdc9219004"
+  },
+  "scope": {
+    "applicationSourceFilesChanged": ["styles/pages/canon.css"],
+    "htmlJsxTsxJavaScriptTypeScriptChanged": false,
+    "otherPageStylesheetsChanged": false,
+    "assetsChanged": false,
+    "packageOrBuildConfigurationChanged": false,
+    "canonSelectorAudit": {
+      "parsed": true,
+      "rules": 433,
+      "selectors": 544,
+      "declarations": 1145,
+      "unscopedSelectors": 0
+    }
+  },
+  "fingerprints": {
+    "canonCss": {
+      "previousBytes": 79639,
+      "previousSha256": "cf740a873c7f0aadc99878f3806f5f69ef3721225e6f5531b902978901a4024d",
+      "newBytes": 80779,
+      "newSha256": "340251e77dd7ee8c4f4afd905be75188a4218987832bd0e301293eae4ba1c116"
+    },
+    "protectedVisualSourceManifest": {
+      "previousSha256": "0282b929c07f42bd4bd25ac6044578712da86c8557656d80bcf7db3e6f38f161",
+      "newSha256": "f5f58bad2af79c3497d924caf3536317994943f7cfd200bded96503cd51be9c5"
+    },
+    "runtime": {
+      "previousDigest": "fefb4aa229f7eede271fef5e8dc08fb42f031fba12aca648409ea9d155dd26e8",
+      "newDigest": "ef83e7d1c07e194a7c5c9eaccc08a900adcd65f6bad8f2b2fb3c2d3ac92d0713",
+      "previousBuildId": "teoyube-fefb4aa229f7eede271fef5e",
+      "newBuildId": "teoyube-ef83e7d1c07e194a7c5c9eac",
+      "generatorVersion": "teoyube-runtime-source-digest-2026-07-25.1"
+    }
+  },
+  "contentAndControls": {
+    "baseline": {
+      "visibleControls": 175,
+      "namedControls": 175,
+      "canonItems": 16,
+      "visibleCanonItems": 13,
+      "projectCards": 5,
+      "categoryCards": 14,
+      "pathCardsInDom": 18,
+      "renderedPathCards": 12,
+      "recommendationCards": 6,
+      "workflowCards": 6,
+      "rightRailModules": 6,
+      "iconNodes": 43,
+      "emptyApprovedIconNodes": 0
+    },
+    "finalDesktop": {
+      "visibleControls": 175,
+      "namedControls": 175,
+      "canonItems": 16,
+      "visibleCanonItems": 13,
+      "projectCards": 5,
+      "categoryCards": 14,
+      "pathCardsInDom": 18,
+      "renderedPathCards": 12,
+      "recommendationCards": 6,
+      "workflowCards": 6,
+      "rightRailModules": 6,
+      "iconNodes": 43,
+      "emptyApprovedIconNodes": 0
+    },
+    "additionalLiveContentPreserved": true,
+    "handlersMarkupCopyDataScoresProgressAndOrderChanged": false
+  },
+  "responsiveAudit": {
+    "viewports": [
+      "1024x1536 owner-reference canvas",
+      "1536x1024",
+      "1440x900",
+      "1280x800",
+      "1024x768",
+      "768x1024",
+      "390x844",
+      "200% effective zoom at 640x400 CSS pixels with DPR 2"
+    ],
+    "horizontalOverflowAtAnyViewport": false,
+    "desktopRightRailVisibleBesideMain": true,
+    "railStacksCompleteAtCompactWidths": true,
+    "zoom200": {
+      "clientWidth": 640,
+      "scrollWidth": 640,
+      "documentHeight": 12072,
+      "visibleControls": 176,
+      "passed": true
+    }
+  },
+  "keyboardAudit": {
+    "expectedFocusableControls": 174,
+    "tabStopsVisited": 174,
+    "offscreenAfterBrowserScroll": 0,
+    "unnamedTabStops": 0,
+    "focusStopsWithoutComputedOutlineShadowOrBorder": 0,
+    "runtimeErrors": 0,
+    "passed": true
+  },
+  "accessibilityAudit": {
+    "tool": "axe-core",
+    "viewport": "1536x1024",
+    "violations": 0,
+    "passes": 43,
+    "passed": true,
+    "note": "Axe injection probes imported relative CSS URLs separately; all route runtime events were captured before injection and were zero."
+  },
+  "verification": {
+    "recoveryVerify": "PASS — 268 protected files, 72 immutable screenshots, 12 immutable DOM snapshots",
+    "ownerApprovedSupportBaselines": "PASS — 10 routes, 6 viewports, 60 screenshots, 120 DOM/asset contracts",
+    "nextSupportBaselines": "PASS — 9 routes, 6 viewports, 54 default captures, 16 interaction captures",
+    "visualContract": "PASS — 210 protected files, 12 owner references, 1015 DOM classes, 525 IDs, 1156 CSS classes, 34 animations",
+    "domClassContract": "PASS — static 185 IDs and 398 class names; Canon static/Next contract exact",
+    "staticNextCanonPromiseParity": "PASS — 4 Playwright tests; Canon and Promise Table at 6 viewports plus both interaction suites",
+    "tigContract": "PASS",
+    "cssParseAndScoping": "PASS — PostCSS parse and 544/544 Canon-scoped selectors",
+    "applicationLint": "PASS",
+    "typecheck": "PASS",
+    "unit": "PASS — 38 files passed, 1 skipped; 276 tests passed, 1 skipped; maxWorkers=1",
+    "browserE2e": "PASS — 19/19",
+    "productionBuild": "PASS — Next 16.2.11, 58 pages, deterministic build ID verified",
+    "runtimeHealth": "PASS — HTTP 200",
+    "consolePageRequestHydrationAssetErrors": "PASS — zero route-runtime errors at every audited viewport",
+    "crossRouteRegression": "PASS — only Canon CSS changed; all selectors route-scoped; all retained routes passed E2E",
+    "functionalParity": "PASS — search, chips, category selector, carousel controls, keyboard carousel control, tabs, pagination, drawer, recommendations, workflow and rail controls retained"
+  },
+  "visualComparison": {
+    "method": "Proportionally contain the uncropped live full page on the 1024x1536 owner-reference canvas; compare RGB pixels without region masks.",
+    "thresholdPerChannel": 16,
+    "differentPixels": 752247,
+    "totalPixels": 1572864,
+    "differentPixelRatio": 0.47826576232910156,
+    "maximumChannelDelta": 255,
+    "meanAbsoluteChannelDelta": 73.7557,
+    "acceptedDifferences": [
+      "Current owner-required live content extends the page beyond the scaled reference.",
+      "Current live copy is preserved where the reference wording differs.",
+      "Reference-only decorative details without an existing DOM target were not generated as substantive CSS content.",
+      "At 1536px the starting state already matched the final wide-desktop cascade, so honest before and final wide captures are byte-identical; the task locks the newest approval and responsive/static-to-Next behavior without fabricating a visual delta."
+    ]
+  },
+  "runtimeStatus": {
+    "canonicalRuntime": "next",
+    "rollbackRuntime": "static-node",
+    "publicDeploymentPerformed": false,
+    "gateCPreview": "BLOCKED_SECURITY_ADVISORY",
+    "gateCProduction": "CLOSED",
+    "liveAi": false,
+    "embeddings": false,
+    "vectorRetrieval": false,
+    "broadRag": false
+  }
+}
