@@ -1048,7 +1048,14 @@ body[data-view="table"] #table .promise-table-featured-nav {
   background: rgba(0,34,27,0.76);
   pointer-events: auto;
 }
-body[data-view="table"] #table .promise-table-featured-nav > button { min-block-size: 2.25rem; }
+body[data-view="table"] #table .promise-table-featured-nav > button {
+  min-block-size: 2.25rem;
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 body[data-view="table"] #table .promise-table-featured-dots > button {
   min-inline-size: 1.75rem;
   min-block-size: 1.75rem;
