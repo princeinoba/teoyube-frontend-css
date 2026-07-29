@@ -1045,7 +1045,7 @@ body[data-view="table"] #table .promise-table-featured-nav {
   align-items: center;
   padding: 0.65rem 1rem;
   border-block-start: 1px solid rgba(255,255,255,0.14);
-  background: rgba(0,34,27,0.76);
+  background: transparent;
   pointer-events: auto;
 }
 body[data-view="table"] #table .promise-table-featured-nav > button {
