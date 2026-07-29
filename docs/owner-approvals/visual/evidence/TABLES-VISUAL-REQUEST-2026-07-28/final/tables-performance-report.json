@@ -1,0 +1,44 @@
+[
+  {
+    "name": "canonical-next",
+    "url": "http://127.0.0.1:3000/tables",
+    "wallClockMs": 1783,
+    "navigation": {
+      "domContentLoaded": 343.4000000357628,
+      "load": 344.4000000357628,
+      "responseEnd": 15.900000035762787,
+      "transferSize": 33875,
+      "decodedBodySize": 346364
+    },
+    "paint": {
+      "first-paint": 108,
+      "first-contentful-paint": 332
+    },
+    "lcp": 600,
+    "cls": 0.9380953834491986,
+    "longTasks": 2,
+    "documentHeight": 1441,
+    "documentOverflow": false
+  },
+  {
+    "name": "static-rollback",
+    "url": "http://127.0.0.1:4180/#teoyube-tables",
+    "wallClockMs": 1388,
+    "navigation": {
+      "domContentLoaded": 138.5,
+      "load": 140.20000004768372,
+      "responseEnd": 5.300000011920929,
+      "transferSize": 92785,
+      "decodedBodySize": 92485
+    },
+    "paint": {
+      "first-paint": 196,
+      "first-contentful-paint": 196
+    },
+    "lcp": 724,
+    "cls": 0.10582085082797636,
+    "longTasks": 3,
+    "documentHeight": 1441,
+    "documentOverflow": false
+  }
+]

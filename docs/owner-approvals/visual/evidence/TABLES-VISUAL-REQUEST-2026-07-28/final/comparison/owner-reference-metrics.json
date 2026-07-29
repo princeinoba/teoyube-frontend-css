@@ -1,0 +1,9 @@
+{
+  "width": 1254,
+  "height": 1254,
+  "meanAbsoluteChannelDifference": 54.102812732377075,
+  "normalizedDifference": 0.21216789306814537,
+  "pixelsOverThreshold32": 573631,
+  "pixelRatioOverThreshold32": 0.3647854775404511,
+  "interpretation": "Owner reference is an approved target composition, not an immutable baseline; live content and route state are preserved."
+}

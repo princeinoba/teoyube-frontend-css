@@ -1,0 +1,62 @@
+{
+  "tolerance": "zero pixels with maximum RGB-channel difference above 16",
+  "results": [
+    {
+      "viewport": "owner-1254x1254",
+      "meanAbsoluteChannelDifference": 0.000008478981029975741,
+      "normalizedDifference": 3.325090599990487e-8,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    },
+    {
+      "viewport": "desktop-1536x1024",
+      "meanAbsoluteChannelDifference": 0,
+      "normalizedDifference": 0,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    },
+    {
+      "viewport": "desktop-1440x900",
+      "meanAbsoluteChannelDifference": 0,
+      "normalizedDifference": 0,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    },
+    {
+      "viewport": "desktop-1280x800",
+      "meanAbsoluteChannelDifference": 0.000012369791666666666,
+      "normalizedDifference": 4.850898692810458e-8,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    },
+    {
+      "viewport": "tablet-landscape-1024x768",
+      "meanAbsoluteChannelDifference": 0,
+      "normalizedDifference": 0,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    },
+    {
+      "viewport": "tablet-portrait-768x1024",
+      "meanAbsoluteChannelDifference": 0,
+      "normalizedDifference": 0,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    },
+    {
+      "viewport": "mobile-390x844",
+      "meanAbsoluteChannelDifference": 0,
+      "normalizedDifference": 0,
+      "pixelsOverThreshold16": 0,
+      "pixelRatioOverThreshold16": 0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

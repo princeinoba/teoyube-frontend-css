@@ -1,0 +1,20 @@
+{
+  "approvalId": "TEOYUBE-VISUAL-2026-07-28-TABLES-001",
+  "bytes": 46344,
+  "sha256": "8f8392ec1df04e49ffe34927fdc81688bdd2ee3b2e55edbce9fcffecbbf98cf3",
+  "topLevelNodeCount": 191,
+  "unscopedSelectors": [],
+  "assetUrls": [
+    "../../public/images/lexicon/lexicon-hero-bg.png"
+  ],
+  "inlineDataIconCount": 4,
+  "mediaQueries": [
+    "(max-width: 1439px)",
+    "(max-width: 1253px)",
+    "(max-width: 1023px)",
+    "(max-width: 767px)",
+    "(max-width: 479px)",
+    "(prefers-reduced-motion: reduce)"
+  ],
+  "forbiddenFrameworkTokens": []
+}

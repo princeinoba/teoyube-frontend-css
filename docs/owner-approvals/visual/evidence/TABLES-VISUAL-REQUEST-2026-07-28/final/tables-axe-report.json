@@ -1,0 +1,570 @@
+{
+  "url": "http://127.0.0.1:3000/tables",
+  "counts": {
+    "violations": 0,
+    "violationNodes": 0,
+    "criticalSerious": 0,
+    "incomplete": 3,
+    "passes": 35
+  },
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr?application=axeAPI",
+      "nodeCount": 15,
+      "targets": [
+        [
+          ".tables-toolbar"
+        ],
+        [
+          "div[data-table-video-preview=\"local-seed-of-promise\"]"
+        ],
+        [
+          ".teoyube-detail-row:nth-child(2) > td[colspan=\"8\"] > .table-detail-content > .table-detail-copy > .table-detail-chips[aria-label=\"Table row metadata\"]"
+        ],
+        [
+          "div[aria-label=\"The Seed of Promise navigation\"]"
+        ],
+        [
+          "div[data-table-video-preview=\"local-power-of-prayer\"]"
+        ],
+        [
+          ".teoyube-detail-row:nth-child(4) > td[colspan=\"8\"] > .table-detail-content > .table-detail-copy > .table-detail-chips[aria-label=\"Table row metadata\"]"
+        ],
+        [
+          "div[aria-label=\"The Power of Prayer navigation\"]"
+        ],
+        [
+          "div[data-table-video-preview=\"local-walk-in-purpose\"]"
+        ],
+        [
+          ".teoyube-detail-row:nth-child(6) > td[colspan=\"8\"] > .table-detail-content > .table-detail-copy > .table-detail-chips[aria-label=\"Table row metadata\"]"
+        ],
+        [
+          "div[data-table-video-current-index=\"2\"] > .table-row-video-nav"
+        ],
+        [
+          "div[data-table-video-preview=\"local-rooted-in-truth\"]"
+        ],
+        [
+          ".teoyube-detail-row:nth-child(8) > td[colspan=\"8\"] > .table-detail-content > .table-detail-copy > .table-detail-chips[aria-label=\"Table row metadata\"]"
+        ],
+        [
+          "div[aria-label=\"Rooted in His Word navigation\"]"
+        ],
+        [
+          "#teoyubeTablePagination"
+        ],
+        [
+          "#teoyubeDataTablePagination"
+        ]
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "nodeCount": 83,
+      "targets": [
+        [
+          ".teoyube-tables-hero > div:nth-child(1) > .eyebrow"
+        ],
+        [
+          "h3"
+        ],
+        [
+          ".teoyube-tables-hero > div:nth-child(1) > p:nth-child(3)"
+        ],
+        [
+          ".tables-hero-actions > .action-icon-button.secondary[type=\"button\"] > span:nth-child(2)"
+        ],
+        [
+          "button[data-view-shortcut=\"today\"] > span:nth-child(2)"
+        ],
+        [
+          ".tables-card-title > h4"
+        ],
+        [
+          ".tables-card-title > p"
+        ],
+        [
+          "#teoyubeTableCategory"
+        ],
+        [
+          "#teoyubeTableSort"
+        ],
+        [
+          ".tables-stat-card:nth-child(1) > div > p"
+        ],
+        [
+          ".tables-stat-card:nth-child(1) > div > strong"
+        ],
+        [
+          ".tables-stat-card:nth-child(1) > div > small"
+        ],
+        [
+          ".tables-stat-card:nth-child(2) > div > p"
+        ],
+        [
+          ".tables-stat-card:nth-child(2) > div > strong"
+        ],
+        [
+          ".tables-stat-card:nth-child(2) > div > small"
+        ],
+        [
+          ".tables-stat-card:nth-child(3) > div > p"
+        ],
+        [
+          ".tables-stat-card:nth-child(3) > div > strong"
+        ],
+        [
+          ".tables-stat-card:nth-child(3) > div > small"
+        ],
+        [
+          ".tables-stat-card:nth-child(4) > div > p"
+        ],
+        [
+          ".tables-stat-card:nth-child(4) > div > strong"
+        ],
+        [
+          ".tables-stat-card:nth-child(4) > div > small"
+        ],
+        [
+          ".tables-stat-card:nth-child(5) > div > p"
+        ],
+        [
+          ".tables-stat-card:nth-child(5) > div > strong"
+        ],
+        [
+          ".tables-stat-card:nth-child(5) > div > small"
+        ],
+        [
+          ".teoyube-reference-table > thead > tr > th:nth-child(2)"
+        ],
+        [
+          ".teoyube-reference-table > thead > tr > th:nth-child(3)"
+        ],
+        [
+          ".teoyube-reference-table > thead > tr > th:nth-child(4)"
+        ],
+        [
+          ".teoyube-reference-table > thead > tr > th:nth-child(5)"
+        ],
+        [
+          ".teoyube-reference-table > thead > tr > th:nth-child(6)"
+        ],
+        [
+          ".teoyube-reference-table > thead > tr > th:nth-child(7)"
+        ],
+        [
+          "th:nth-child(8)"
+        ],
+        [
+          ".table-expand-button[data-table-row=\"0\"][type=\"button\"] > .table-toggle-icon"
+        ],
+        [
+          "div[data-table-video-preview=\"local-seed-of-promise\"] > .table-detail-duration"
+        ],
+        [
+          "div[data-table-video-current-index=\"0\"] > .table-row-video-label"
+        ],
+        [
+          "div[data-table-video-current-index=\"0\"] > .table-row-video-title"
+        ],
+        [
+          "div[data-table-video-current-index=\"0\"] > .table-row-video-duration"
+        ],
+        [
+          ".table-expand-button[data-table-row=\"1\"][type=\"button\"] > .table-toggle-icon"
+        ],
+        [
+          "div[data-table-video-preview=\"local-power-of-prayer\"] > .table-detail-duration"
+        ],
+        [
+          "div[data-table-video-current-index=\"1\"] > .table-row-video-label"
+        ],
+        [
+          "div[data-table-video-current-index=\"1\"] > .table-row-video-title"
+        ],
+        [
+          "div[data-table-video-current-index=\"1\"] > .table-row-video-duration"
+        ],
+        [
+          ".table-expand-button[data-table-row=\"2\"][type=\"button\"] > .table-toggle-icon"
+        ],
+        [
+          "div[data-table-video-preview=\"local-walk-in-purpose\"] > .table-detail-duration"
+        ],
+        [
+          "div[data-table-video-current-index=\"2\"] > .table-row-video-label"
+        ],
+        [
+          "div[data-table-video-current-index=\"2\"] > .table-row-video-title"
+        ],
+        [
+          "div[data-table-video-current-index=\"2\"] > .table-row-video-duration"
+        ],
+        [
+          ".table-expand-button[data-table-row=\"3\"][type=\"button\"] > .table-toggle-icon"
+        ],
+        [
+          "div[data-table-video-preview=\"local-rooted-in-truth\"] > .table-detail-duration"
+        ],
+        [
+          "div[data-table-video-current-index=\"3\"] > .table-row-video-label"
+        ],
+        [
+          "div[data-table-video-current-index=\"3\"] > .table-row-video-title"
+        ],
+        [
+          "div[data-table-video-current-index=\"3\"] > .table-row-video-duration"
+        ],
+        [
+          "#teoyubeTableEntryStatus"
+        ],
+        [
+          ".tables-page-size"
+        ],
+        [
+          "#teoyubeTablePageSize"
+        ],
+        [
+          "button[aria-label=\"Go to page 1\"]"
+        ],
+        [
+          ".teoyube-data-tables-head > div:nth-child(1) > .eyebrow"
+        ],
+        [
+          "#teoyubeDataTablesTitle"
+        ],
+        [
+          ".teoyube-data-tables-head > div:nth-child(1) > p:nth-child(3)"
+        ],
+        [
+          "label[for=\"teoyubeDataVideoSource\"]"
+        ],
+        [
+          "#teoyubeDataVideoSource"
+        ],
+        [
+          "button[data-data-table-tab=\"promises\"]"
+        ],
+        [
+          ".data-table-search > span"
+        ],
+        [
+          "label[for=\"teoyubeDataTableSort\"]"
+        ],
+        [
+          "#teoyubeDataTableSort"
+        ],
+        [
+          "label[for=\"teoyubeDataTablePageSize\"]"
+        ],
+        [
+          "#teoyubeDataTablePageSize"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(1)"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(2)"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(3)"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(4)"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(5)"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(6)"
+        ],
+        [
+          "th[scope=\"col\"]:nth-child(7)"
+        ],
+        [
+          "select[data-data-row-id=\"PC06\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC01\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC08\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC09\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC04\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC12\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC02\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "select[data-data-row-id=\"PC11\"][data-data-table-action=\"promise-status\"]"
+        ],
+        [
+          "#teoyubeDataTableStatus"
+        ],
+        [
+          "button[data-data-table-page=\"1\"]"
+        ]
+      ]
+    },
+    {
+      "id": "frame-tested",
+      "impact": "critical",
+      "help": "Frames should be tested with axe-core",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/frame-tested?application=axeAPI",
+      "nodeCount": 8,
+      "targets": [
+        [
+          "iframe[title=\"The Seed of Promise preview\"]"
+        ],
+        [
+          "iframe[title=\"The Seed of Promise\"]"
+        ],
+        [
+          "iframe[title=\"The Power of Prayer preview\"]"
+        ],
+        [
+          "iframe[title=\"The Power of Prayer\"]"
+        ],
+        [
+          "iframe[title=\"Walk in Divine Purpose preview\"]"
+        ],
+        [
+          "iframe[title=\"Walk in Divine Purpose\"]"
+        ],
+        [
+          "iframe[title=\"Rooted in His Word preview\"]"
+        ],
+        [
+          "iframe[title=\"Rooted in His Word\"]"
+        ]
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": null,
+      "help": "Elements must only use supported ARIA attributes",
+      "nodeCount": 117
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": null,
+      "help": "ARIA role should be appropriate for the element",
+      "nodeCount": 47
+    },
+    {
+      "id": "aria-conditional-attr",
+      "impact": null,
+      "help": "ARIA attributes must be used as specified for the element's role",
+      "nodeCount": 117
+    },
+    {
+      "id": "aria-deprecated-role",
+      "impact": null,
+      "help": "Deprecated ARIA roles must not be used",
+      "nodeCount": 7
+    },
+    {
+      "id": "aria-hidden-focus",
+      "impact": null,
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "nodeCount": 36
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "help": "Elements must only use permitted ARIA attributes",
+      "nodeCount": 102
+    },
+    {
+      "id": "aria-required-attr",
+      "impact": null,
+      "help": "Required ARIA attributes must be provided",
+      "nodeCount": 7
+    },
+    {
+      "id": "aria-required-children",
+      "impact": null,
+      "help": "Certain ARIA roles must contain particular children",
+      "nodeCount": 1
+    },
+    {
+      "id": "aria-required-parent",
+      "impact": null,
+      "help": "Certain ARIA roles must be contained by particular parents",
+      "nodeCount": 5
+    },
+    {
+      "id": "aria-roles",
+      "impact": null,
+      "help": "ARIA roles used must conform to valid values",
+      "nodeCount": 7
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": null,
+      "help": "ARIA attributes must conform to valid values",
+      "nodeCount": 117
+    },
+    {
+      "id": "aria-valid-attr",
+      "impact": null,
+      "help": "ARIA attributes must conform to valid names",
+      "nodeCount": 117
+    },
+    {
+      "id": "autocomplete-valid",
+      "impact": null,
+      "help": "autocomplete attribute must be used correctly",
+      "nodeCount": 2
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": null,
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "nodeCount": 8
+    },
+    {
+      "id": "button-name",
+      "impact": null,
+      "help": "Buttons must have discernible text",
+      "nodeCount": 87
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "nodeCount": 150
+    },
+    {
+      "id": "duplicate-id-aria",
+      "impact": null,
+      "help": "IDs used in ARIA and labels must be unique",
+      "nodeCount": 7
+    },
+    {
+      "id": "empty-heading",
+      "impact": null,
+      "help": "Headings should not be empty",
+      "nodeCount": 3
+    },
+    {
+      "id": "empty-table-header",
+      "impact": null,
+      "help": "Table header text should not be empty",
+      "nodeCount": 15
+    },
+    {
+      "id": "form-field-multiple-labels",
+      "impact": null,
+      "help": "Form field must not have multiple label elements",
+      "nodeCount": 26
+    },
+    {
+      "id": "frame-title-unique",
+      "impact": null,
+      "help": "Frames must have a unique title attribute",
+      "nodeCount": 8
+    },
+    {
+      "id": "frame-title",
+      "impact": null,
+      "help": "Frames must have an accessible name",
+      "nodeCount": 8
+    },
+    {
+      "id": "heading-order",
+      "impact": null,
+      "help": "Heading levels should only increase by one",
+      "nodeCount": 3
+    },
+    {
+      "id": "label-title-only",
+      "impact": null,
+      "help": "Form elements should have a visible label",
+      "nodeCount": 26
+    },
+    {
+      "id": "label",
+      "impact": null,
+      "help": "Form elements must have labels",
+      "nodeCount": 12
+    },
+    {
+      "id": "landmark-unique",
+      "impact": null,
+      "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "nodeCount": 2
+    },
+    {
+      "id": "nested-interactive",
+      "impact": null,
+      "help": "Interactive controls must not be nested",
+      "nodeCount": 182
+    },
+    {
+      "id": "scope-attr-valid",
+      "impact": null,
+      "help": "scope attribute should be used correctly",
+      "nodeCount": 7
+    },
+    {
+      "id": "scrollable-region-focusable",
+      "impact": null,
+      "help": "Scrollable region must have keyboard access",
+      "nodeCount": 1
+    },
+    {
+      "id": "select-name",
+      "impact": null,
+      "help": "Select element must have an accessible name",
+      "nodeCount": 14
+    },
+    {
+      "id": "summary-name",
+      "impact": null,
+      "help": "Summary elements must have discernible text",
+      "nodeCount": 10
+    },
+    {
+      "id": "tabindex",
+      "impact": null,
+      "help": "Elements should not have tabindex greater than zero",
+      "nodeCount": 1
+    },
+    {
+      "id": "table-duplicate-name",
+      "impact": null,
+      "help": "Tables should not have the same summary and caption",
+      "nodeCount": 2
+    },
+    {
+      "id": "td-headers-attr",
+      "impact": null,
+      "help": "Table cell headers attributes must refer to other <th> elements in the same table",
+      "nodeCount": 2
+    },
+    {
+      "id": "th-has-data-cells",
+      "impact": null,
+      "help": "Table headers in a data table must refer to data cells",
+      "nodeCount": 2
+    }
+  ]
+}

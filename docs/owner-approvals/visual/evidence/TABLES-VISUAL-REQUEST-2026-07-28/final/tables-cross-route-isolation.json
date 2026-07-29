@@ -1,0 +1,112 @@
+[
+  {
+    "route": "/",
+    "expectedView": "today",
+    "bodyView": "today",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/search",
+    "expectedView": "search",
+    "bodyView": "search",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/canon",
+    "expectedView": "canon",
+    "bodyView": "canon",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/promise-table",
+    "expectedView": "table",
+    "bodyView": "table",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/calling-compass",
+    "expectedView": "calling",
+    "bodyView": "calling",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/book",
+    "expectedView": "book",
+    "bodyView": "book",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/lexicon",
+    "expectedView": "lexicon",
+    "bodyView": "lexicon",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/testimony",
+    "expectedView": "testimony",
+    "bodyView": "testimony",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/teo-guide",
+    "expectedView": "guide",
+    "bodyView": "guide",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/embedded-videos",
+    "expectedView": "ui-elements",
+    "bodyView": "ui-elements",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "",
+    "title": "TEOYUBE App",
+    "pass": true
+  },
+  {
+    "route": "/tables",
+    "expectedView": "teoyube-tables",
+    "bodyView": "teoyube-tables",
+    "rootVisible": true,
+    "documentOverflow": false,
+    "tablesToken": "#006c57",
+    "title": "TEOYUBE App",
+    "pass": true
+  }
+]

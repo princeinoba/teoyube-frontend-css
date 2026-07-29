@@ -1,0 +1,46 @@
+{
+  "normalization": [
+    "runtime origin removed from computed asset URLs"
+  ],
+  "nextUrl": "http://127.0.0.1:3000/tables",
+  "staticUrl": "http://127.0.0.1:4180/#teoyube-tables",
+  "sections": {
+    "orderedDom": {
+      "next": "2f0561f56abcd3b8a70273e9b0ca4271c237c92e87175615c344689673a76736",
+      "static": "2f0561f56abcd3b8a70273e9b0ca4271c237c92e87175615c344689673a76736",
+      "equal": true,
+      "count": 678
+    },
+    "controls": {
+      "next": "9bdc9925f3f270b4faaa7c4556019e3126f97e260df0099107398b1ce7a3decd",
+      "static": "9bdc9925f3f270b4faaa7c4556019e3126f97e260df0099107398b1ce7a3decd",
+      "equal": true,
+      "count": 154
+    },
+    "ids": {
+      "next": "ee89dd74ecad27aae3fd49d0eb9ddf098dac2376212e6801dfc3f5ffce5c0cd4",
+      "static": "ee89dd74ecad27aae3fd49d0eb9ddf098dac2376212e6801dfc3f5ffce5c0cd4",
+      "equal": true,
+      "count": 22
+    },
+    "classLists": {
+      "next": "6ddf7da3252dd675e657b1d367613239716eec898c299e7df049a93dd29b09fb",
+      "static": "6ddf7da3252dd675e657b1d367613239716eec898c299e7df049a93dd29b09fb",
+      "equal": true,
+      "count": 257
+    },
+    "assets": {
+      "next": "f559eb025c925231137f44e9b547ddecdf53a5dba73267e2d2068f507141303f",
+      "static": "f559eb025c925231137f44e9b547ddecdf53a5dba73267e2d2068f507141303f",
+      "equal": true,
+      "count": 72
+    },
+    "visibleText": {
+      "next": "21eeb3125ba5f31f0f83ab7e2ebd6504e37bfabe0c5960fabe50bcf14fa6a617",
+      "static": "21eeb3125ba5f31f0f83ab7e2ebd6504e37bfabe0c5960fabe50bcf14fa6a617",
+      "equal": true,
+      "characters": 4569
+    }
+  },
+  "pass": true
+}
