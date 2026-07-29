@@ -1,5 +1,5 @@
-/* Owner-approved Canon visual transformation.
- * Approval: TEOYUBE-VISUAL-2026-07-25-CANON-001
+/* Owner-approved Canon full-page visual transformation.
+ * Approval: TEOYUBE-VISUAL-2026-07-28-CANON-FULL-PAGE-002
  * Scope: Canon route only; DOM, copy, behavior, and assets remain unchanged.
  */
 
@@ -16,6 +16,16 @@ body[data-view="canon"] {
   --canon-page-shadow-raised: 0 18px 38px rgba(8, 50, 40, 0.12);
   --canon-page-radius: 12px;
   --canon-page-gap: 0.75rem;
+  --canon-main-section-gap: 0.72rem;
+  --canon-compact-gap: 0.5rem;
+  --canon-panel-padding: 0.72rem;
+  --canon-card-padding: 0.58rem;
+  --canon-control-height: 2.35rem;
+  --canon-compact-control-height: 1.85rem;
+  --canon-card-radius: 10px;
+  --canon-pill-radius: 999px;
+  --canon-right-rail-width: clamp(16rem, 19vw, 18rem);
+  --canon-hero-height: clamp(15.75rem, 18.2vw, 17.25rem);
   background: rgb(245, 249, 247);
 }
 
@@ -187,25 +197,43 @@ body[data-view="canon"] .topbar-actions > button {
 
 body[data-view="canon"] [id="canon"] {
   display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--canon-right-rail-width);
+  grid-template-rows: auto auto;
+  align-items: start;
   max-width: none;
-  gap: 0.85rem;
+  column-gap: var(--canon-page-gap);
+  row-gap: 0.85rem;
 }
 
 body[data-view="canon"] .canon-premium-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(15rem, 18rem);
-  gap: var(--canon-page-gap);
-  align-items: start;
+  display: contents;
 }
 
 body[data-view="canon"] .canon-main-column {
+  grid-column: 1;
+  grid-row: 1;
   min-width: 0;
+}
+
+body[data-view="canon"] .canon-detail-panel {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body[data-view="canon"] [id="phase115SmartRecommendations-canon"] {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 body[data-view="canon"] .canon-kingdom-hero {
   position: relative;
   display: grid;
-  min-height: 18.25rem;
+  min-height: var(--canon-hero-height);
   align-content: end;
   gap: 0.68rem;
   overflow: hidden;
@@ -509,7 +537,7 @@ body[data-view="canon"] .canon-category-track {
 
 body[data-view="canon"] .canon-category-carousel .canon-category-card {
   flex-basis: clamp(7.35rem, 8.8vw, 9rem);
-  min-height: 5.25rem;
+  min-height: 4.65rem;
   padding: 0.48rem;
   border-radius: 8px;
 }
@@ -645,6 +673,7 @@ body[data-view="canon"] .canon-right-rail {
   position: sticky;
   top: 0.65rem;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.62rem;
   align-content: start;
 }
@@ -988,9 +1017,24 @@ body[data-view="canon"] :where(button, input, select, summary, a, [tabindex]):fo
   }
 }
 
-@media (max-width: 1320px) {
-  body[data-view="canon"] .canon-premium-layout {
+@media (max-width: 1199px) {
+  body[data-view="canon"] [id="canon"] {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="canon"] .canon-main-column {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body[data-view="canon"] .canon-detail-panel {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  body[data-view="canon"] [id="phase115SmartRecommendations-canon"] {
+    grid-column: 1;
+    grid-row: 3;
   }
 
   body[data-view="canon"] .canon-right-rail {
@@ -1318,18 +1362,18 @@ body[data-view="canon"] .canon-overview-info {
 }
 
 body[data-view="canon"] .canon-overview-diagram {
-  height: 19rem !important;
-  min-height: 19rem;
+  height: 13.75rem !important;
+  min-height: 13.75rem;
   margin: 0.25rem 0 0.55rem;
 }
 
 body[data-view="canon"] .canon-overview-radar-svg {
-  width: min(14rem, 82%);
+  width: min(11.75rem, 82%);
 }
 
 body[data-view="canon"] .canon-overview-core {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 4.25rem;
+  height: 4.25rem;
   box-shadow:
     0 14px 30px rgba(0, 58, 43, 0.2),
     0 0 0 0.65rem rgba(0, 105, 75, 0.07),
@@ -1349,8 +1393,8 @@ body[data-view="canon"] .canon-overview-core strong {
 }
 
 body[data-view="canon"] .canon-overview-dimension {
-  width: 4.75rem;
-  min-height: 3.35rem;
+  width: 4.2rem;
+  min-height: 3rem;
   padding: 0.9rem 0.3rem 0.4rem;
   border-radius: 10px;
 }
@@ -1377,7 +1421,7 @@ body[data-view="canon"] .canon-overview-dimension b {
 body[data-view="canon"] .canon-overview-maturity {
   grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 0.5rem;
-  min-height: 4.6rem;
+  min-height: 3.8rem;
   padding: 0.55rem;
   border-radius: 10px;
 }
@@ -1670,7 +1714,7 @@ body[data-view="canon"] .canon-project-card[data-canon-item="canon-map-D02"] .ca
 
 @media (max-width: 1320px) {
   body[data-view="canon"] .canon-featured-carousel-stage {
-    transform: none;
+    transform: translateZ(0);
   }
 }
 
@@ -1768,13 +1812,13 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] {
   --canon-rec-radius: 18px;
   --canon-rec-card-radius: 14px;
   --canon-rec-control-radius: 9px;
-  --canon-rec-gap: clamp(0.85rem, 1.2vw, 1.1rem);
+  --canon-rec-gap: clamp(0.55rem, 0.8vw, 0.72rem);
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  margin-top: 1rem;
-  padding: clamp(1rem, 1.5vw, 1.35rem);
+  margin-top: 0;
+  padding: clamp(0.72rem, 1vw, 0.9rem);
   border: 1px solid var(--canon-rec-line);
   border-radius: var(--canon-rec-radius);
   background: var(--canon-rec-surface);
@@ -1792,7 +1836,7 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-sect
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: clamp(0.9rem, 1.3vw, 1.2rem);
+  margin-bottom: clamp(0.58rem, 0.8vw, 0.72rem);
 }
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > div {
@@ -1812,7 +1856,7 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-sect
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head h3 {
   margin: 0;
   color: var(--canon-rec-text);
-  font-size: clamp(1.4rem, 2.1vw, 1.95rem);
+  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
   font-weight: 900;
   line-height: 1.08;
   text-wrap: balance;
@@ -1829,8 +1873,8 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-sect
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase114-section-head > button {
   flex: 0 0 auto;
   width: auto;
-  min-height: 2.85rem;
-  padding: 0.68rem 1rem;
+  min-height: 2.35rem;
+  padding: 0.5rem 0.8rem;
   border: 1px solid var(--canon-rec-green);
   border-radius: var(--canon-rec-control-radius);
   background: var(--canon-rec-card);
@@ -1855,7 +1899,7 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-reco
   flex-direction: column;
   align-self: stretch;
   gap: 0.3rem;
-  padding: clamp(0.72rem, 1vw, 0.85rem);
+  padding: clamp(0.58rem, 0.8vw, 0.7rem);
   overflow: visible;
   border: 1px solid var(--canon-rec-line);
   border-radius: var(--canon-rec-card-radius);
@@ -1923,8 +1967,8 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-why-this-panel summary {
   width: 100%;
-  min-height: 2.5rem;
-  padding: 0.48rem 0.65rem;
+  min-height: 2.15rem;
+  padding: 0.4rem 0.58rem;
   border: 1px solid var(--canon-rec-line);
   border-radius: var(--canon-rec-control-radius);
   background: var(--canon-rec-card);
@@ -2056,8 +2100,8 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feed
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feedback-controls button {
   width: 100%;
   min-width: 0;
-  min-height: 3rem;
-  padding: 0.36rem 0.18rem;
+  min-height: 2.6rem;
+  padding: 0.28rem 0.16rem;
   border: 1px solid var(--canon-rec-line);
   border-radius: 0;
   background: var(--canon-rec-card);
@@ -2120,7 +2164,7 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-work
 
 body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase116-workflow-grid button {
   display: flex;
-  min-height: 8rem;
+  min-height: 6.25rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2465,7 +2509,7 @@ body[data-view="canon"] [id="phase115SmartRecommendations-canon"] .phase115-feed
   align-items: center;
   justify-content: center;
   gap: 0.12rem;
-  min-block-size: 2.85rem;
+  min-block-size: 2.6rem;
   padding-block: 0.1rem;
 }
 
