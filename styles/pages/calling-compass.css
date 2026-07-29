@@ -1,5 +1,6 @@
 /* Owner-approved Calling Compass visual architecture upgrade.
- * Approval: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-001
+ * Approvals: TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-001;
+ * TEOYUBE-VISUAL-2026-07-28-CALLING-COMPASS-FULL-PAGE-002
  * Scope: Calling Compass route only; DOM, copy, assets, data, and behavior remain unchanged.
  */
 
@@ -1581,5 +1582,458 @@ body[data-view="calling"] .calling-compass-panel .calling-radar .compass-center:
   body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node:hover,
   body[data-view="calling"] .calling-compass-panel .calling-radar .compass-node:focus-visible {
     transform: translateY(-1px) !important;
+  }
+}
+
+/* 11. Owner-approved Calling Compass full-page composition
+ * Approval: TEOYUBE-VISUAL-2026-07-28-CALLING-COMPASS-FULL-PAGE-002
+ * Scope: Calling Compass route only; live DOM, copy, assets, state, and handlers remain unchanged.
+ */
+body[data-view="calling"] {
+  --calling-page-gap: clamp(0.55rem, 0.72vw, 0.72rem);
+  --calling-section-gap: clamp(0.58rem, 0.7vw, 0.72rem);
+  --calling-card-gap: clamp(0.5rem, 0.68vw, 0.66rem);
+  --calling-panel-padding: clamp(0.68rem, 0.82vw, 0.84rem);
+  --calling-compact-padding: clamp(0.54rem, 0.7vw, 0.7rem);
+  --calling-rail-width: clamp(15.75rem, 18vw, 17.5rem);
+  --calling-diagram-max-width: 24rem;
+  --calling-diagram-min-height: 12.5rem;
+}
+
+body[data-view="calling"] .app-main {
+  padding: 0.55rem 0.7rem 0.9rem 0.6rem;
+}
+
+body[data-view="calling"] .calling-premium-page {
+  gap: var(--calling-page-gap);
+}
+
+body[data-view="calling"] .calling-premium-head {
+  padding: 0.08rem 0.45rem 0.12rem;
+}
+
+body[data-view="calling"] .calling-premium-head h3 {
+  font-size: clamp(1.55rem, 2vw, 2rem);
+  line-height: 1;
+}
+
+body[data-view="calling"] .calling-premium-head .eyebrow {
+  margin-block-end: 0.18rem;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+}
+
+body[data-view="calling"] .calling-premium-actions {
+  gap: 0.48rem;
+}
+
+body[data-view="calling"] .calling-premium-actions :where(button, .primary, .secondary) {
+  min-block-size: 2.2rem;
+  padding: 0.48rem 0.78rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+}
+
+body[data-view="calling"] .calling-premium-grid {
+  grid-template-columns: minmax(0, 1fr) var(--calling-rail-width);
+  gap: var(--calling-section-gap);
+}
+
+body[data-view="calling"] .calling-main-column,
+body[data-view="calling"] .calling-right-rail {
+  gap: var(--calling-section-gap);
+}
+
+body[data-view="calling"] .calling-right-rail {
+  top: 0.55rem;
+}
+
+body[data-view="calling"] .calling-hero-panel {
+  grid-template-columns: minmax(0, 1fr) minmax(13.75rem, 15.25rem);
+  gap: 0.58rem 0.75rem;
+  min-block-size: 0;
+  padding: clamp(0.9rem, 1.2vw, 1.15rem);
+  background-position: center 42%;
+}
+
+body[data-view="calling"] .calling-hero-copy h3 {
+  max-inline-size: 35rem;
+  margin: 0.24rem 0 0.42rem;
+  font-size: clamp(1.72rem, 2.5vw, 2.65rem);
+  line-height: 1.02;
+}
+
+body[data-view="calling"] .calling-hero-copy p {
+  max-inline-size: 34rem;
+  font-size: clamp(0.72rem, 0.76vw, 0.82rem);
+  line-height: 1.42;
+}
+
+body[data-view="calling"] .calling-search-form {
+  width: min(43rem, 100%);
+  margin-block-start: 0;
+  padding: 0.28rem;
+  gap: 0.42rem;
+}
+
+body[data-view="calling"] .calling-search-form input {
+  min-block-size: 2.35rem;
+  font-size: 0.72rem;
+}
+
+body[data-view="calling"] :where(
+  .calling-search-icon,
+  .calling-voice-button,
+  .calling-search-form .primary
+) {
+  inline-size: 2.15rem;
+  block-size: 2.15rem;
+}
+
+body[data-view="calling"] .calling-hero-panel .quick-prompts {
+  gap: 0.3rem;
+  margin-block-start: 0;
+}
+
+body[data-view="calling"] .calling-hero-panel .quick-prompts span {
+  font-size: 0.66rem;
+}
+
+body[data-view="calling"] .calling-hero-panel .cluster-nav-chip {
+  min-block-size: 1.65rem;
+  padding: 0.3rem 0.52rem;
+  font-size: 0.62rem;
+}
+
+body[data-view="calling"] .calling-hero-panel > div[data-phase116-mounted] {
+  grid-column: 1 / -1;
+  min-inline-size: 0;
+}
+
+body[data-view="calling"] .calling-hero-panel .phase116-search-suggestions {
+  display: flex;
+  align-items: center;
+  gap: 0.38rem 0.62rem;
+  min-inline-size: 0;
+  padding: 0.48rem 0.58rem;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+body[data-view="calling"] .calling-hero-panel .phase116-search-suggestions > div:first-child {
+  flex: 0 0 auto;
+}
+
+body[data-view="calling"] .calling-hero-panel .phase116-search-suggestions .eyebrow {
+  font-size: 0.57rem;
+  white-space: nowrap;
+}
+
+body[data-view="calling"] .calling-hero-panel .phase116-search-suggestions small {
+  font-size: 0.56rem;
+  white-space: nowrap;
+}
+
+body[data-view="calling"] .calling-hero-panel .phase116-chip-row {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 0.28rem;
+  min-inline-size: 0;
+  flex-wrap: wrap;
+}
+
+body[data-view="calling"] .calling-hero-panel .phase116-chip {
+  min-block-size: 1.55rem;
+  padding: 0.26rem 0.45rem;
+  font-size: 0.58rem;
+}
+
+body[data-view="calling"] .calling-daily-inspiration {
+  align-self: start;
+  align-content: start;
+  gap: 0.42rem;
+  min-block-size: 0;
+  padding: 0.72rem;
+}
+
+body[data-view="calling"] .calling-daily-inspiration h4 {
+  font-size: 0.78rem;
+}
+
+body[data-view="calling"] .calling-daily-inspiration p {
+  font-size: 0.66rem;
+  line-height: 1.4;
+}
+
+body[data-view="calling"] .calling-daily-inspiration strong {
+  font-size: 0.68rem;
+}
+
+body[data-view="calling"] .calling-daily-inspiration .secondary {
+  min-block-size: 2rem;
+  padding: 0.42rem 0.58rem;
+  font-size: 0.64rem;
+}
+
+body[data-view="calling"] .compass-video-status {
+  min-block-size: 1.7rem;
+  padding: 0.28rem 0.58rem;
+  font-size: 0.66rem;
+}
+
+body[data-view="calling"] .calling-content-grid {
+  grid-template-columns: minmax(0, 1.65fr) minmax(15rem, 0.9fr);
+  gap: var(--calling-section-gap) !important;
+}
+
+body[data-view="calling"] .calling-featured-video,
+body[data-view="calling"] .calling-assistant-panel,
+body[data-view="calling"] .calling-compass-panel {
+  padding: var(--calling-panel-padding);
+}
+
+body[data-view="calling"] .compass-video-frame {
+  max-block-size: 20rem;
+}
+
+body[data-view="calling"] .calling-assistant-panel {
+  gap: 0.58rem;
+}
+
+body[data-view="calling"] .calling-assistant-panel h4 {
+  margin-block-end: 0.55rem;
+  font-size: 0.84rem;
+  line-height: 1.32;
+}
+
+body[data-view="calling"] .calling-assistant-panel .primary {
+  min-block-size: 2.2rem;
+  padding: 0.45rem 0.65rem;
+}
+
+body[data-view="calling"] .calling-assistant-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.42rem;
+}
+
+body[data-view="calling"] .calling-assistant-actions button {
+  min-block-size: 2.75rem;
+  padding: 0.42rem 0.35rem;
+  font-size: 0.66rem;
+}
+
+body[data-view="calling"] .calling-radar {
+  max-inline-size: var(--calling-diagram-max-width);
+  min-block-size: var(--calling-diagram-min-height) !important;
+}
+
+body[data-view="calling"] .calling-continue-card,
+body[data-view="calling"] .calling-progress-card,
+body[data-view="calling"] .calling-playlist-card {
+  gap: 0.58rem;
+  padding: var(--calling-compact-padding);
+}
+
+body[data-view="calling"] .calling-playlist-card {
+  max-block-size: none;
+}
+
+body[data-view="calling"] .compass-video-list {
+  max-block-size: clamp(16rem, 31vh, 18.5rem);
+}
+
+body[data-view="calling"] .compass-video-item {
+  grid-template-columns: 4.45rem minmax(0, 1fr) auto;
+  gap: 0.42rem;
+  min-block-size: 3.35rem;
+  padding: 0.32rem 0;
+}
+
+body[data-view="calling"] :where(.compass-video-item img, .compass-video-thumb) {
+  inline-size: 4.45rem;
+  border-radius: 0.45rem;
+}
+
+body[data-view="calling"] .compass-video-item b {
+  inset-inline-start: 3.12rem;
+  inset-block-end: 0.38rem;
+  font-size: 0.54rem;
+}
+
+body[data-view="calling"] .compass-video-item strong {
+  font-size: 0.68rem;
+}
+
+body[data-view="calling"] .compass-video-item :where(small, em) {
+  font-size: 0.58rem;
+}
+
+body[data-view="calling"] .calling-continue-row {
+  grid-template-columns: 3.65rem minmax(0, 1fr) auto;
+  gap: 0.42rem;
+}
+
+body[data-view="calling"] .calling-continue-row > span:first-child {
+  block-size: 2.55rem;
+}
+
+body[data-view="calling"] .calling-continue-row strong {
+  font-size: 0.68rem;
+}
+
+body[data-view="calling"] .calling-continue-row :where(small, b) {
+  font-size: 0.58rem;
+}
+
+body[data-view="calling"] .calling-progress-grid {
+  gap: 0.38rem;
+}
+
+body[data-view="calling"] .calling-progress-grid div {
+  padding: 0.5rem;
+}
+
+body[data-view="calling"] .calling-progress-grid strong {
+  font-size: 1.35rem;
+}
+
+body[data-view="calling"] .calling-recommended-section,
+body[data-view="calling"] .calling-category-section {
+  padding: var(--calling-panel-padding);
+}
+
+body[data-view="calling"] .calling-recommendation-grid {
+  gap: var(--calling-card-gap);
+  margin-block-start: 0.52rem;
+}
+
+body[data-view="calling"] .calling-recommendation-track {
+  gap: var(--calling-card-gap);
+}
+
+body[data-view="calling"] .calling-recommendation-grid article {
+  flex-basis: clamp(11.5rem, 17vw, 15rem);
+  min-block-size: 7.5rem;
+}
+
+body[data-view="calling"] .calling-category-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--calling-card-gap);
+  margin-block-start: 0.52rem;
+}
+
+body[data-view="calling"] .calling-category-grid button {
+  min-block-size: 4rem;
+  padding: 0.55rem;
+  font-size: 0.66rem;
+}
+
+body[data-view="calling"] .calling-category-grid small {
+  font-size: 0.56rem;
+}
+
+body[data-view="calling"] [id="phase117OfflineStatus"] {
+  position: static;
+  inline-size: min(16.5rem, calc(100vw - 1.5rem));
+  max-inline-size: calc(100vw - 1.5rem);
+  margin: 0.15rem 0.75rem 0.75rem auto;
+}
+
+@media (max-width: 1100px) {
+  body[data-view="calling"] .calling-premium-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="calling"] .calling-right-rail {
+    position: static;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body[data-view="calling"] .calling-category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
+  body[data-view="calling"] .calling-content-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "video"
+      "assistant"
+      "compass";
+  }
+
+  body[data-view="calling"] .calling-right-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-view="calling"] .calling-progress-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 900px) {
+  body[data-view="calling"] .calling-hero-panel {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "copy"
+      "inspiration"
+      "search"
+      "prompts"
+      "smart";
+  }
+
+  body[data-view="calling"] .calling-hero-copy {
+    grid-area: copy;
+  }
+
+  body[data-view="calling"] .calling-daily-inspiration {
+    grid-area: inspiration;
+  }
+
+  body[data-view="calling"] .calling-search-form {
+    grid-area: search;
+  }
+
+  body[data-view="calling"] .calling-hero-panel .quick-prompts {
+    grid-area: prompts;
+  }
+
+  body[data-view="calling"] .calling-hero-panel > div[data-phase116-mounted] {
+    grid-area: smart;
+  }
+
+  body[data-view="calling"] .calling-right-rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  body[data-view="calling"] .calling-right-rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body[data-view="calling"] [id="phase117OfflineStatus"] {
+    inline-size: auto;
+    max-inline-size: none;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  body[data-view="calling"] .calling-hero-panel .phase116-search-suggestions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  body[data-view="calling"] .calling-hero-panel .phase116-search-suggestions small {
+    white-space: normal;
+  }
+
+  body[data-view="calling"] .calling-category-grid,
+  body[data-view="calling"] .calling-assistant-actions,
+  body[data-view="calling"] .calling-progress-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
