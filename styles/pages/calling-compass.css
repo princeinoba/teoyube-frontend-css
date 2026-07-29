@@ -1706,7 +1706,8 @@ body[data-view="calling"] .calling-hero-panel .cluster-nav-chip {
 }
 
 body[data-view="calling"] .calling-hero-panel > div[data-phase116-mounted] {
-  grid-column: 1 / -1;
+  grid-column: 1;
+  inline-size: min(44rem, 100%);
   min-inline-size: 0;
 }
 
