@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "approvalId": "TEOYUBE-VISUAL-2026-07-28-CALLING-COMPASS-FULL-PAGE-002",
+  "parentApprovalId": "TEOYUBE-VISUAL-2026-07-27-CALLING-COMPASS-001",
+  "verifiedAt": "2026-07-29T10:00:10.0400250-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "80436e1c43bafa59eaf69464da2899fc9d223ee4",
+  "implementationCommit": "06e5a51041ea7faa634f394bba0e4b850009777f",
+  "scope": {
+    "route": "/calling-compass",
+    "productionCss": "styles/pages/calling-compass.css",
+    "htmlChanged": false,
+    "javascriptChanged": false,
+    "typescriptChanged": false,
+    "assetsChanged": false,
+    "immutableBaselinesChanged": false
+  },
+  "fingerprints": {
+    "callingCompassCssBytes": 62665,
+    "callingCompassCssSha256": "d0be737bce1d3055d067bdcf5b3876e126dacd675ef4be388cd50c5cb00b4eb3",
+    "protectedVisualManifestSha256": "439849fd8bfa93ac1e0cd0d5e04e05f2a99f537032a9059ba935c0eac615af9c",
+    "runtimeSourceDigest": "2418ff2339428203749b8dfcfe085c66ac86835316e3839c34852439e5d7d6f7",
+    "nextBuildId": "teoyube-2418ff2339428203749b8dfc"
+  },
+  "preservedContentCounts": {
+    "recommendationCards": 8,
+    "categoryControls": 6,
+    "playlistItems": 8,
+    "continueWatchingItems": 3,
+    "compassDimensions": 7,
+    "guidedOptions": 3,
+    "directRailModules": 3
+  },
+  "interactionAudit": {
+    "desktopNamedControls": "78/78",
+    "tabletPortraitAndZoomNamedControls": "79/79 including the responsive rail toggle",
+    "playlistOverflowY": "auto",
+    "playlistScrollbarGutter": "stable",
+    "playlistOverscrollBehaviorY": "contain",
+    "playlistIndependentlyScrollable": true,
+    "lastPlaylistItemReachable": true,
+    "horizontalOverflow": false,
+    "overlaps": 0,
+    "productRuntimeErrors": 0,
+    "axeViolations": 0
+  },
+  "responsiveAudit": [
+    { "viewport": "1536x1024", "result": "PASS", "rail": "beside main" },
+    { "viewport": "1440x900", "result": "PASS", "rail": "beside main" },
+    { "viewport": "1300x1210", "result": "PASS", "rail": "beside main" },
+    { "viewport": "1280x800", "result": "PASS", "rail": "beside main" },
+    { "viewport": "1181x820", "result": "PASS", "rail": "beside main" },
+    { "viewport": "1024x768", "result": "PASS", "rail": "stacked" },
+    { "viewport": "768x1024", "result": "PASS", "rail": "stacked" },
+    { "viewport": "390x844", "result": "PASS", "rail": "stacked" },
+    { "viewport": "200-percent-zoom", "result": "PASS", "horizontalOverflow": false }
+  ],
+  "staticNextParity": [
+    { "viewport": "1440x900", "differentPixels": 3, "differentPixelRatio": 0.0000023148148148148148, "strictPassed": true },
+    { "viewport": "1280x800", "differentPixels": 1, "differentPixelRatio": 0.0000009765625, "strictPassed": true },
+    { "viewport": "1024x768", "differentPixels": 0, "differentPixelRatio": 0, "strictPassed": true },
+    { "viewport": "768x1024", "differentPixels": 0, "differentPixelRatio": 0, "strictPassed": true },
+    { "viewport": "390x844", "differentPixels": 0, "differentPixelRatio": 0, "strictPassed": true },
+    { "viewport": "360x800", "differentPixels": 0, "differentPixelRatio": 0, "strictPassed": true }
+  ],
+  "checks": {
+    "recoveryVerify": "PASS",
+    "recoveryVisualVerify": "PASS: 72 immutable screenshots and 12 desktop DOM snapshots",
+    "recoveryTigVerify": "PASS",
+    "scriptureVerify": "PASS",
+    "architectureVerify": "PASS",
+    "safetyBoundaryVerify": "PASS",
+    "retrievalBoundaryVerify": "PASS",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "unit": "PASS: 276 passed, 1 skipped",
+    "build": "PASS: Next 16.2.11, 58 static pages generated",
+    "browser": "PASS: 19 passed",
+    "callingPrayerJourneyParity": "PASS: 6 passed on isolated ports 4174 and 3101",
+    "accessibility": "PASS: zero focused Axe violations and all controls named",
+    "runtimeHealth": "PASS: HTTP 200",
+    "runtimeContract": "PASS: Next canonical, deterministic build identity, static rollback retained"
+  },
+  "ownerReferenceComparison": {
+    "geometry": "1300x1210",
+    "differentPixelRatio": 0.7251614748887476,
+    "interpretation": "The owner reference includes reference-only Canon-style modules. The implementation follows its visual direction while preserving the current live Calling Compass DOM, content, and behavior; this measurement is evidence, not a parity threshold."
+  },
+  "knownDiagnostics": [
+    "The first parity runner encountered an unrelated Bookie server on port 4173; the isolated rerun on ports 4174 and 3101 passed 6 of 6 tests.",
+    "The first concurrent unit run caused one 5-second inventory timeout; the required serial rerun passed all 276 runnable tests.",
+    "Axe injection emits test-probe CSS fetch events; product runtime errors remain zero.",
+    "The existing Calling Compass DOM keeps Your Calling Compass in the main content flow; CSS does not duplicate or fabricate a right-rail copy."
+  ]
+}

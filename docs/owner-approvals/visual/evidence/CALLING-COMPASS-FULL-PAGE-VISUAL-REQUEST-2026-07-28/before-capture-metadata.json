@@ -1,0 +1,1578 @@
+{
+  "capturedAt": "2026-07-29T10:34:35.570Z",
+  "route": "http://127.0.0.1:3000/calling-compass",
+  "css": {
+    "bytes": 51442,
+    "sha256": "8db16464a9e5a28aff3cd868ef14ef348fb01b81758d293cea476f4902d53aef"
+  },
+  "viewports": {
+    "owner-1300x1210": {
+      "width": 1300,
+      "height": 1210,
+      "document": {
+        "clientWidth": 1300,
+        "scrollWidth": 1300,
+        "scrollHeight": 2484,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": 4,
+          "y": 4,
+          "width": 190,
+          "height": 1210,
+          "right": 194,
+          "bottom": 1214
+        },
+        "pageRoot": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1066,
+          "height": 2456.609375,
+          "right": 1276,
+          "bottom": 2467.796875
+        },
+        "header": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1066,
+          "height": 63.109375,
+          "right": 1276,
+          "bottom": 74.296875
+        },
+        "shellGrid": {
+          "x": 210,
+          "y": 88.6875,
+          "width": 1066,
+          "height": 2379.109375,
+          "right": 1276,
+          "bottom": 2467.796875
+        },
+        "main": {
+          "x": 210,
+          "y": 88.6875,
+          "width": 718,
+          "height": 2379.109375,
+          "right": 928,
+          "bottom": 2467.796875
+        },
+        "rail": {
+          "x": 940,
+          "y": 88.6875,
+          "width": 336,
+          "height": 1262.9375,
+          "right": 1276,
+          "bottom": 1351.625
+        },
+        "hero": {
+          "x": 210,
+          "y": 88.6875,
+          "width": 718,
+          "height": 704.1875,
+          "right": 928,
+          "bottom": 792.875
+        },
+        "dailyInspiration": {
+          "x": 629,
+          "y": 115.6875,
+          "width": 272,
+          "height": 224.9375,
+          "right": 901,
+          "bottom": 340.625
+        },
+        "contentGrid": {
+          "x": 210,
+          "y": 845.6875,
+          "width": 718,
+          "height": 743.875,
+          "right": 928,
+          "bottom": 1589.5625
+        },
+        "featuredVideo": {
+          "x": 210,
+          "y": 845.6875,
+          "width": 418,
+          "height": 743.875,
+          "right": 628,
+          "bottom": 1589.5625
+        },
+        "assistant": {
+          "x": 640,
+          "y": 845.6875,
+          "width": 288,
+          "height": 321.65625,
+          "right": 928,
+          "bottom": 1167.34375
+        },
+        "compass": {
+          "x": 640,
+          "y": 1179.34375,
+          "width": 288,
+          "height": 410.21875,
+          "right": 928,
+          "bottom": 1589.5625
+        },
+        "guided": {
+          "x": 210,
+          "y": 1601.5625,
+          "width": 718,
+          "height": 355.921875,
+          "right": 928,
+          "bottom": 1957.484375
+        },
+        "recommended": {
+          "x": 210,
+          "y": 1966.296875,
+          "width": 718,
+          "height": 218.078125,
+          "right": 928,
+          "bottom": 2184.375
+        },
+        "categories": {
+          "x": 210,
+          "y": 2196.375,
+          "width": 718,
+          "height": 271.421875,
+          "right": 928,
+          "bottom": 2467.796875
+        },
+        "playlistCard": {
+          "x": 940,
+          "y": 88.6875,
+          "width": 336,
+          "height": 464.296875,
+          "right": 1276,
+          "bottom": 552.984375
+        },
+        "playlistList": {
+          "x": 955.390625,
+          "y": 153.59375,
+          "width": 305.21875,
+          "height": 384,
+          "right": 1260.609375,
+          "bottom": 537.59375
+        },
+        "continueWatching": {
+          "x": 940,
+          "y": 564.984375,
+          "width": 336,
+          "height": 442.40625,
+          "right": 1276,
+          "bottom": 1007.390625
+        },
+        "kingdomProgress": {
+          "x": 940,
+          "y": 1019.390625,
+          "width": 336,
+          "height": 332.234375,
+          "right": 1276,
+          "bottom": 1351.625
+        },
+        "localBeta": {
+          "x": 900,
+          "y": 1041.09375,
+          "width": 384,
+          "height": 85.71875,
+          "right": 1284,
+          "bottom": 1126.8125
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 384,
+        "scrollHeight": 583,
+        "maxScrollTop": 199,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "desktop-1536x1024": {
+      "width": 1536,
+      "height": 1024,
+      "document": {
+        "clientWidth": 1536,
+        "scrollWidth": 1536,
+        "scrollHeight": 2309,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": 4,
+          "y": 4,
+          "width": 190,
+          "height": 1024,
+          "right": 194,
+          "bottom": 1028
+        },
+        "pageRoot": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1302,
+          "height": 2281.8125,
+          "right": 1512,
+          "bottom": 2293
+        },
+        "header": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1302,
+          "height": 69.859375,
+          "right": 1512,
+          "bottom": 81.046875
+        },
+        "shellGrid": {
+          "x": 210,
+          "y": 95.4375,
+          "width": 1302,
+          "height": 2197.5625,
+          "right": 1512,
+          "bottom": 2293
+        },
+        "main": {
+          "x": 210,
+          "y": 95.4375,
+          "width": 954,
+          "height": 2197.5625,
+          "right": 1164,
+          "bottom": 2293
+        },
+        "rail": {
+          "x": 1176,
+          "y": 95.4375,
+          "width": 336,
+          "height": 1247.5625,
+          "right": 1512,
+          "bottom": 1343
+        },
+        "hero": {
+          "x": 210,
+          "y": 95.4375,
+          "width": 954,
+          "height": 563.625,
+          "right": 1164,
+          "bottom": 659.0625
+        },
+        "dailyInspiration": {
+          "x": 864.609375,
+          "y": 122.828125,
+          "width": 272,
+          "height": 224.9375,
+          "right": 1136.609375,
+          "bottom": 347.765625
+        },
+        "contentGrid": {
+          "x": 210,
+          "y": 711.875,
+          "width": 954,
+          "height": 758.125,
+          "right": 1164,
+          "bottom": 1470
+        },
+        "featuredVideo": {
+          "x": 210,
+          "y": 711.875,
+          "width": 600.796875,
+          "height": 758.125,
+          "right": 810.796875,
+          "bottom": 1470
+        },
+        "assistant": {
+          "x": 822.796875,
+          "y": 711.875,
+          "width": 341.203125,
+          "height": 253.3125,
+          "right": 1164,
+          "bottom": 965.1875
+        },
+        "compass": {
+          "x": 822.796875,
+          "y": 977.1875,
+          "width": 341.203125,
+          "height": 492.8125,
+          "right": 1164,
+          "bottom": 1470
+        },
+        "guided": {
+          "x": 210,
+          "y": 1482,
+          "width": 954,
+          "height": 355.953125,
+          "right": 1164,
+          "bottom": 1837.953125
+        },
+        "recommended": {
+          "x": 210,
+          "y": 1846.765625,
+          "width": 954,
+          "height": 218.078125,
+          "right": 1164,
+          "bottom": 2064.84375
+        },
+        "categories": {
+          "x": 210,
+          "y": 2076.84375,
+          "width": 954,
+          "height": 216.15625,
+          "right": 1164,
+          "bottom": 2293
+        },
+        "playlistCard": {
+          "x": 1176,
+          "y": 95.4375,
+          "width": 336,
+          "height": 448.921875,
+          "right": 1512,
+          "bottom": 544.359375
+        },
+        "playlistList": {
+          "x": 1191.390625,
+          "y": 160.34375,
+          "width": 305.21875,
+          "height": 368.625,
+          "right": 1496.609375,
+          "bottom": 528.96875
+        },
+        "continueWatching": {
+          "x": 1176,
+          "y": 556.359375,
+          "width": 336,
+          "height": 442.40625,
+          "right": 1512,
+          "bottom": 998.765625
+        },
+        "kingdomProgress": {
+          "x": 1176,
+          "y": 1010.765625,
+          "width": 336,
+          "height": 332.234375,
+          "right": 1512,
+          "bottom": 1343
+        },
+        "localBeta": {
+          "x": 1136,
+          "y": 855.09375,
+          "width": 384,
+          "height": 85.71875,
+          "right": 1520,
+          "bottom": 940.8125
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 369,
+        "scrollHeight": 583,
+        "maxScrollTop": 214,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "desktop-1440x900": {
+      "width": 1440,
+      "height": 900,
+      "document": {
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2289,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": 4,
+          "y": 4,
+          "width": 190,
+          "height": 900,
+          "right": 194,
+          "bottom": 904
+        },
+        "pageRoot": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1206,
+          "height": 2261.734375,
+          "right": 1416,
+          "bottom": 2272.921875
+        },
+        "header": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1206,
+          "height": 67.09375,
+          "right": 1416,
+          "bottom": 78.28125
+        },
+        "shellGrid": {
+          "x": 210,
+          "y": 92.671875,
+          "width": 1206,
+          "height": 2180.25,
+          "right": 1416,
+          "bottom": 2272.921875
+        },
+        "main": {
+          "x": 210,
+          "y": 92.671875,
+          "width": 858,
+          "height": 2180.25,
+          "right": 1068,
+          "bottom": 2272.921875
+        },
+        "rail": {
+          "x": 1080,
+          "y": 92.671875,
+          "width": 336,
+          "height": 1202.9375,
+          "right": 1416,
+          "bottom": 1295.609375
+        },
+        "hero": {
+          "x": 210,
+          "y": 92.671875,
+          "width": 858,
+          "height": 591.125,
+          "right": 1068,
+          "bottom": 683.796875
+        },
+        "dailyInspiration": {
+          "x": 768.609375,
+          "y": 120.0625,
+          "width": 272,
+          "height": 224.9375,
+          "right": 1040.609375,
+          "bottom": 345
+        },
+        "contentGrid": {
+          "x": 210,
+          "y": 736.609375,
+          "width": 858,
+          "height": 713.34375,
+          "right": 1068,
+          "bottom": 1449.953125
+        },
+        "featuredVideo": {
+          "x": 210,
+          "y": 736.609375,
+          "width": 539.5625,
+          "height": 713.34375,
+          "right": 749.5625,
+          "bottom": 1449.953125
+        },
+        "assistant": {
+          "x": 761.5625,
+          "y": 736.609375,
+          "width": 306.421875,
+          "height": 253.3125,
+          "right": 1067.984375,
+          "bottom": 989.921875
+        },
+        "compass": {
+          "x": 761.5625,
+          "y": 1001.921875,
+          "width": 306.421875,
+          "height": 448.03125,
+          "right": 1067.984375,
+          "bottom": 1449.953125
+        },
+        "guided": {
+          "x": 210,
+          "y": 1461.953125,
+          "width": 858,
+          "height": 355.921875,
+          "right": 1068,
+          "bottom": 1817.875
+        },
+        "recommended": {
+          "x": 210,
+          "y": 1826.6875,
+          "width": 858,
+          "height": 218.078125,
+          "right": 1068,
+          "bottom": 2044.765625
+        },
+        "categories": {
+          "x": 210,
+          "y": 2056.765625,
+          "width": 858,
+          "height": 216.15625,
+          "right": 1068,
+          "bottom": 2272.921875
+        },
+        "playlistCard": {
+          "x": 1080,
+          "y": 92.671875,
+          "width": 336,
+          "height": 404.296875,
+          "right": 1416,
+          "bottom": 496.96875
+        },
+        "playlistList": {
+          "x": 1095.390625,
+          "y": 157.578125,
+          "width": 305.21875,
+          "height": 324,
+          "right": 1400.609375,
+          "bottom": 481.578125
+        },
+        "continueWatching": {
+          "x": 1080,
+          "y": 508.96875,
+          "width": 336,
+          "height": 442.40625,
+          "right": 1416,
+          "bottom": 951.375
+        },
+        "kingdomProgress": {
+          "x": 1080,
+          "y": 963.375,
+          "width": 336,
+          "height": 332.234375,
+          "right": 1416,
+          "bottom": 1295.609375
+        },
+        "localBeta": {
+          "x": 1040,
+          "y": 731.09375,
+          "width": 384,
+          "height": 85.71875,
+          "right": 1424,
+          "bottom": 816.8125
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 324,
+        "scrollHeight": 583,
+        "maxScrollTop": 259,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "desktop-1280x800": {
+      "width": 1280,
+      "height": 800,
+      "document": {
+        "clientWidth": 1280,
+        "scrollWidth": 1280,
+        "scrollHeight": 2513,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": 4,
+          "y": 4,
+          "width": 190,
+          "height": 800,
+          "right": 194,
+          "bottom": 804
+        },
+        "pageRoot": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1046,
+          "height": 2485.65625,
+          "right": 1256,
+          "bottom": 2496.84375
+        },
+        "header": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 1046,
+          "height": 62.53125,
+          "right": 1256,
+          "bottom": 73.71875
+        },
+        "shellGrid": {
+          "x": 210,
+          "y": 88.109375,
+          "width": 1046,
+          "height": 2408.734375,
+          "right": 1256,
+          "bottom": 2496.84375
+        },
+        "main": {
+          "x": 210,
+          "y": 88.109375,
+          "width": 698,
+          "height": 2408.734375,
+          "right": 908,
+          "bottom": 2496.84375
+        },
+        "rail": {
+          "x": 920,
+          "y": 88.109375,
+          "width": 336,
+          "height": 1166.9375,
+          "right": 1256,
+          "bottom": 1255.046875
+        },
+        "hero": {
+          "x": 210,
+          "y": 88.109375,
+          "width": 698,
+          "height": 738.125,
+          "right": 908,
+          "bottom": 826.234375
+        },
+        "dailyInspiration": {
+          "x": 609.40625,
+          "y": 114.703125,
+          "width": 272,
+          "height": 224.9375,
+          "right": 881.40625,
+          "bottom": 339.640625
+        },
+        "contentGrid": {
+          "x": 210,
+          "y": 879.046875,
+          "width": 698,
+          "height": 739.5625,
+          "right": 908,
+          "bottom": 1618.609375
+        },
+        "featuredVideo": {
+          "x": 210,
+          "y": 879.046875,
+          "width": 398,
+          "height": 739.5625,
+          "right": 608,
+          "bottom": 1618.609375
+        },
+        "assistant": {
+          "x": 620,
+          "y": 879.046875,
+          "width": 288,
+          "height": 321.65625,
+          "right": 908,
+          "bottom": 1200.703125
+        },
+        "compass": {
+          "x": 620,
+          "y": 1212.703125,
+          "width": 288,
+          "height": 405.90625,
+          "right": 908,
+          "bottom": 1618.609375
+        },
+        "guided": {
+          "x": 210,
+          "y": 1630.609375,
+          "width": 698,
+          "height": 355.921875,
+          "right": 908,
+          "bottom": 1986.53125
+        },
+        "recommended": {
+          "x": 210,
+          "y": 1995.34375,
+          "width": 698,
+          "height": 218.078125,
+          "right": 908,
+          "bottom": 2213.421875
+        },
+        "categories": {
+          "x": 210,
+          "y": 2225.421875,
+          "width": 698,
+          "height": 271.421875,
+          "right": 908,
+          "bottom": 2496.84375
+        },
+        "playlistCard": {
+          "x": 920,
+          "y": 88.109375,
+          "width": 336,
+          "height": 368.296875,
+          "right": 1256,
+          "bottom": 456.40625
+        },
+        "playlistList": {
+          "x": 935.390625,
+          "y": 153.015625,
+          "width": 305.21875,
+          "height": 288,
+          "right": 1240.609375,
+          "bottom": 441.015625
+        },
+        "continueWatching": {
+          "x": 920,
+          "y": 468.40625,
+          "width": 336,
+          "height": 442.40625,
+          "right": 1256,
+          "bottom": 910.8125
+        },
+        "kingdomProgress": {
+          "x": 920,
+          "y": 922.8125,
+          "width": 336,
+          "height": 332.234375,
+          "right": 1256,
+          "bottom": 1255.046875
+        },
+        "localBeta": {
+          "x": 880,
+          "y": 631.09375,
+          "width": 384,
+          "height": 85.71875,
+          "right": 1264,
+          "bottom": 716.8125
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 288,
+        "scrollHeight": 583,
+        "maxScrollTop": 295,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "drag-1181x820": {
+      "width": 1181,
+      "height": 820,
+      "document": {
+        "clientWidth": 1181,
+        "scrollWidth": 1181,
+        "scrollHeight": 2659,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": 4,
+          "y": 4,
+          "width": 190,
+          "height": 820,
+          "right": 194,
+          "bottom": 824
+        },
+        "pageRoot": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 947,
+          "height": 2631.609375,
+          "right": 1157,
+          "bottom": 2642.796875
+        },
+        "header": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 947,
+          "height": 59.703125,
+          "right": 1157,
+          "bottom": 70.890625
+        },
+        "shellGrid": {
+          "x": 210,
+          "y": 85.28125,
+          "width": 947,
+          "height": 2557.515625,
+          "right": 1157,
+          "bottom": 2642.796875
+        },
+        "main": {
+          "x": 210,
+          "y": 85.28125,
+          "width": 599,
+          "height": 2557.515625,
+          "right": 809,
+          "bottom": 2642.796875
+        },
+        "rail": {
+          "x": 821,
+          "y": 85.28125,
+          "width": 336,
+          "height": 1174.125,
+          "right": 1157,
+          "bottom": 1259.40625
+        },
+        "hero": {
+          "x": 210,
+          "y": 85.28125,
+          "width": 599,
+          "height": 847.953125,
+          "right": 809,
+          "bottom": 933.234375
+        },
+        "dailyInspiration": {
+          "x": 512.390625,
+          "y": 109.890625,
+          "width": 272,
+          "height": 224.9375,
+          "right": 784.390625,
+          "bottom": 334.828125
+        },
+        "contentGrid": {
+          "x": 210,
+          "y": 986.046875,
+          "width": 599,
+          "height": 718.28125,
+          "right": 809,
+          "bottom": 1704.328125
+        },
+        "featuredVideo": {
+          "x": 210,
+          "y": 986.046875,
+          "width": 299,
+          "height": 718.28125,
+          "right": 509,
+          "bottom": 1704.328125
+        },
+        "assistant": {
+          "x": 521,
+          "y": 986.046875,
+          "width": 288,
+          "height": 321.65625,
+          "right": 809,
+          "bottom": 1307.703125
+        },
+        "compass": {
+          "x": 521,
+          "y": 1319.703125,
+          "width": 288,
+          "height": 384.625,
+          "right": 809,
+          "bottom": 1704.328125
+        },
+        "guided": {
+          "x": 210,
+          "y": 1716.328125,
+          "width": 599,
+          "height": 393.703125,
+          "right": 809,
+          "bottom": 2110.03125
+        },
+        "recommended": {
+          "x": 210,
+          "y": 2118.84375,
+          "width": 599,
+          "height": 218.078125,
+          "right": 809,
+          "bottom": 2336.921875
+        },
+        "categories": {
+          "x": 210,
+          "y": 2348.921875,
+          "width": 599,
+          "height": 293.875,
+          "right": 809,
+          "bottom": 2642.796875
+        },
+        "playlistCard": {
+          "x": 821,
+          "y": 85.28125,
+          "width": 336,
+          "height": 375.484375,
+          "right": 1157,
+          "bottom": 460.765625
+        },
+        "playlistList": {
+          "x": 836.390625,
+          "y": 150.1875,
+          "width": 305.21875,
+          "height": 295.1875,
+          "right": 1141.609375,
+          "bottom": 445.375
+        },
+        "continueWatching": {
+          "x": 821,
+          "y": 472.765625,
+          "width": 336,
+          "height": 442.40625,
+          "right": 1157,
+          "bottom": 915.171875
+        },
+        "kingdomProgress": {
+          "x": 821,
+          "y": 927.171875,
+          "width": 336,
+          "height": 332.234375,
+          "right": 1157,
+          "bottom": 1259.40625
+        },
+        "localBeta": {
+          "x": 781,
+          "y": 651.09375,
+          "width": 384,
+          "height": 85.71875,
+          "right": 1165,
+          "bottom": 736.8125
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 295,
+        "scrollHeight": 583,
+        "maxScrollTop": 288,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "tablet-landscape-1024x768": {
+      "width": 1024,
+      "height": 768,
+      "document": {
+        "clientWidth": 1024,
+        "scrollWidth": 1024,
+        "scrollHeight": 2796,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": 4,
+          "y": 4,
+          "width": 190,
+          "height": 2788.453125,
+          "right": 194,
+          "bottom": 2792.453125
+        },
+        "pageRoot": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 790,
+          "height": 2769.265625,
+          "right": 1000,
+          "bottom": 2780.453125
+        },
+        "header": {
+          "x": 210,
+          "y": 11.1875,
+          "width": 790,
+          "height": 58.609375,
+          "right": 1000,
+          "bottom": 69.796875
+        },
+        "shellGrid": {
+          "x": 210,
+          "y": 84.1875,
+          "width": 790,
+          "height": 2696.265625,
+          "right": 1000,
+          "bottom": 2780.453125
+        },
+        "main": {
+          "x": 210,
+          "y": 84.1875,
+          "width": 790,
+          "height": 2190.46875,
+          "right": 1000,
+          "bottom": 2274.65625
+        },
+        "rail": {
+          "x": 210,
+          "y": 2286.65625,
+          "width": 790,
+          "height": 493.796875,
+          "right": 1000,
+          "bottom": 2780.453125
+        },
+        "hero": {
+          "x": 210,
+          "y": 84.1875,
+          "width": 790,
+          "height": 556.5,
+          "right": 1000,
+          "bottom": 640.6875
+        },
+        "dailyInspiration": {
+          "x": 706.53125,
+          "y": 105.65625,
+          "width": 272,
+          "height": 224.9375,
+          "right": 978.53125,
+          "bottom": 330.59375
+        },
+        "contentGrid": {
+          "x": 210,
+          "y": 693.5,
+          "width": 790,
+          "height": 712.375,
+          "right": 1000,
+          "bottom": 1405.875
+        },
+        "featuredVideo": {
+          "x": 210,
+          "y": 693.5,
+          "width": 490,
+          "height": 712.375,
+          "right": 700,
+          "bottom": 1405.875
+        },
+        "assistant": {
+          "x": 712,
+          "y": 693.5,
+          "width": 288,
+          "height": 321.65625,
+          "right": 1000,
+          "bottom": 1015.15625
+        },
+        "compass": {
+          "x": 712,
+          "y": 1027.15625,
+          "width": 288,
+          "height": 378.71875,
+          "right": 1000,
+          "bottom": 1405.875
+        },
+        "guided": {
+          "x": 210,
+          "y": 1417.875,
+          "width": 790,
+          "height": 355.921875,
+          "right": 1000,
+          "bottom": 1773.796875
+        },
+        "recommended": {
+          "x": 210,
+          "y": 1782.609375,
+          "width": 790,
+          "height": 218.078125,
+          "right": 1000,
+          "bottom": 2000.6875
+        },
+        "categories": {
+          "x": 210,
+          "y": 2012.6875,
+          "width": 790,
+          "height": 261.96875,
+          "right": 1000,
+          "bottom": 2274.65625
+        },
+        "playlistCard": {
+          "x": 210,
+          "y": 2286.65625,
+          "width": 255.328125,
+          "height": 432.296875,
+          "right": 465.328125,
+          "bottom": 2718.953125
+        },
+        "playlistList": {
+          "x": 225.390625,
+          "y": 2351.5625,
+          "width": 224.546875,
+          "height": 352,
+          "right": 449.9375,
+          "bottom": 2703.5625
+        },
+        "continueWatching": {
+          "x": 477.328125,
+          "y": 2286.65625,
+          "width": 255.328125,
+          "height": 493.796875,
+          "right": 732.65625,
+          "bottom": 2780.453125
+        },
+        "kingdomProgress": {
+          "x": 744.65625,
+          "y": 2286.65625,
+          "width": 255.328125,
+          "height": 387.890625,
+          "right": 999.984375,
+          "bottom": 2674.546875
+        },
+        "localBeta": {
+          "x": 624,
+          "y": 599.09375,
+          "width": 384,
+          "height": 85.71875,
+          "right": 1008,
+          "bottom": 684.8125
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 352,
+        "scrollHeight": 583,
+        "maxScrollTop": 231,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "tablet-portrait-768x1024": {
+      "width": 768,
+      "height": 1024,
+      "document": {
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "scrollHeight": 4821,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": -352,
+          "y": 0,
+          "width": 320,
+          "height": 1024,
+          "right": -32,
+          "bottom": 1024
+        },
+        "pageRoot": {
+          "x": 12,
+          "y": 65.375,
+          "width": 744,
+          "height": 4744.140625,
+          "right": 756,
+          "bottom": 4809.515625
+        },
+        "header": {
+          "x": 12,
+          "y": 65.375,
+          "width": 744,
+          "height": 176.65625,
+          "right": 756,
+          "bottom": 242.03125
+        },
+        "shellGrid": {
+          "x": 12,
+          "y": 254.421875,
+          "width": 744,
+          "height": 4555.09375,
+          "right": 756,
+          "bottom": 4809.515625
+        },
+        "main": {
+          "x": 12,
+          "y": 254.421875,
+          "width": 744,
+          "height": 3339.375,
+          "right": 756,
+          "bottom": 3593.796875
+        },
+        "rail": {
+          "x": 12,
+          "y": 3603.796875,
+          "width": 744,
+          "height": 1205.71875,
+          "right": 756,
+          "bottom": 4809.515625
+        },
+        "hero": {
+          "x": 12,
+          "y": 254.421875,
+          "width": 744,
+          "height": 640.4375,
+          "right": 756,
+          "bottom": 894.859375
+        },
+        "dailyInspiration": {
+          "x": 33,
+          "y": 444.8125,
+          "width": 702,
+          "height": 167.703125,
+          "right": 735,
+          "bottom": 612.515625
+        },
+        "contentGrid": {
+          "x": 12,
+          "y": 943.671875,
+          "width": 744,
+          "height": 1694.890625,
+          "right": 756,
+          "bottom": 2638.5625
+        },
+        "featuredVideo": {
+          "x": 12,
+          "y": 943.671875,
+          "width": 744,
+          "height": 807.25,
+          "right": 756,
+          "bottom": 1750.921875
+        },
+        "assistant": {
+          "x": 12,
+          "y": 1762.921875,
+          "width": 744,
+          "height": 321.65625,
+          "right": 756,
+          "bottom": 2084.578125
+        },
+        "compass": {
+          "x": 12,
+          "y": 2096.578125,
+          "width": 744,
+          "height": 541.984375,
+          "right": 756,
+          "bottom": 2638.5625
+        },
+        "guided": {
+          "x": 12,
+          "y": 2648.5625,
+          "width": 744,
+          "height": 355.921875,
+          "right": 756,
+          "bottom": 3004.484375
+        },
+        "recommended": {
+          "x": 12,
+          "y": 3014.484375,
+          "width": 744,
+          "height": 218.078125,
+          "right": 756,
+          "bottom": 3232.5625
+        },
+        "categories": {
+          "x": 12,
+          "y": 3242.5625,
+          "width": 744,
+          "height": 351.234375,
+          "right": 756,
+          "bottom": 3593.796875
+        },
+        "playlistCard": {
+          "x": 12,
+          "y": 3603.796875,
+          "width": 744,
+          "height": 432.296875,
+          "right": 756,
+          "bottom": 4036.09375
+        },
+        "playlistList": {
+          "x": 27.390625,
+          "y": 3668.703125,
+          "width": 713.21875,
+          "height": 352,
+          "right": 740.609375,
+          "bottom": 4020.703125
+        },
+        "continueWatching": {
+          "x": 12,
+          "y": 4046.09375,
+          "width": 744,
+          "height": 442.40625,
+          "right": 756,
+          "bottom": 4488.5
+        },
+        "kingdomProgress": {
+          "x": 12,
+          "y": 4498.5,
+          "width": 744,
+          "height": 311.015625,
+          "right": 756,
+          "bottom": 4809.515625
+        },
+        "localBeta": {
+          "x": 12,
+          "y": 806.28125,
+          "width": 384,
+          "height": 85.71875,
+          "right": 396,
+          "bottom": 892
+        }
+      },
+      "counts": {
+        "controls": 79,
+        "namedControls": 79,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 352,
+        "scrollHeight": 583,
+        "maxScrollTop": 231,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    },
+    "mobile-390x844": {
+      "width": 390,
+      "height": 844,
+      "document": {
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "scrollHeight": 5955,
+        "horizontalOverflow": false
+      },
+      "geometry": {
+        "sidebar": {
+          "x": -352,
+          "y": 0,
+          "width": 320,
+          "height": 844,
+          "right": -32,
+          "bottom": 844
+        },
+        "pageRoot": {
+          "x": 12,
+          "y": 65.375,
+          "width": 366,
+          "height": 5878.015625,
+          "right": 378,
+          "bottom": 5943.390625
+        },
+        "header": {
+          "x": 12,
+          "y": 65.375,
+          "width": 366,
+          "height": 176.65625,
+          "right": 378,
+          "bottom": 242.03125
+        },
+        "shellGrid": {
+          "x": 12,
+          "y": 254.421875,
+          "width": 366,
+          "height": 5688.96875,
+          "right": 378,
+          "bottom": 5943.390625
+        },
+        "main": {
+          "x": 12,
+          "y": 254.421875,
+          "width": 366,
+          "height": 4191.171875,
+          "right": 378,
+          "bottom": 4445.59375
+        },
+        "rail": {
+          "x": 12,
+          "y": 4455.59375,
+          "width": 366,
+          "height": 1487.796875,
+          "right": 378,
+          "bottom": 5943.390625
+        },
+        "hero": {
+          "x": 12,
+          "y": 254.421875,
+          "width": 366,
+          "height": 946.59375,
+          "right": 378,
+          "bottom": 1201.015625
+        },
+        "dailyInspiration": {
+          "x": 26.109375,
+          "y": 532.53125,
+          "width": 337.78125,
+          "height": 205.859375,
+          "right": 363.890625,
+          "bottom": 738.390625
+        },
+        "contentGrid": {
+          "x": 12,
+          "y": 1249.828125,
+          "width": 366,
+          "height": 1881.265625,
+          "right": 378,
+          "bottom": 3131.09375
+        },
+        "featuredVideo": {
+          "x": 12,
+          "y": 1249.828125,
+          "width": 366,
+          "height": 730.46875,
+          "right": 378,
+          "bottom": 1980.296875
+        },
+        "assistant": {
+          "x": 12,
+          "y": 1992.296875,
+          "width": 366,
+          "height": 471.0625,
+          "right": 378,
+          "bottom": 2463.359375
+        },
+        "compass": {
+          "x": 12,
+          "y": 2475.359375,
+          "width": 366,
+          "height": 655.734375,
+          "right": 378,
+          "bottom": 3131.09375
+        },
+        "guided": {
+          "x": 12,
+          "y": 3141.09375,
+          "width": 366,
+          "height": 452.515625,
+          "right": 378,
+          "bottom": 3593.609375
+        },
+        "recommended": {
+          "x": 12,
+          "y": 3603.609375,
+          "width": 366,
+          "height": 215.515625,
+          "right": 378,
+          "bottom": 3819.125
+        },
+        "categories": {
+          "x": 12,
+          "y": 3829.125,
+          "width": 366,
+          "height": 616.46875,
+          "right": 378,
+          "bottom": 4445.59375
+        },
+        "playlistCard": {
+          "x": 12,
+          "y": 4455.59375,
+          "width": 366,
+          "height": 429.734375,
+          "right": 378,
+          "bottom": 4885.328125
+        },
+        "playlistList": {
+          "x": 26.109375,
+          "y": 4519.21875,
+          "width": 337.78125,
+          "height": 352,
+          "right": 363.890625,
+          "bottom": 4871.21875
+        },
+        "continueWatching": {
+          "x": 12,
+          "y": 4895.328125,
+          "width": 366,
+          "height": 442.40625,
+          "right": 378,
+          "bottom": 5337.734375
+        },
+        "kingdomProgress": {
+          "x": 12,
+          "y": 5347.734375,
+          "width": 366,
+          "height": 595.65625,
+          "right": 378,
+          "bottom": 5943.390625
+        },
+        "localBeta": {
+          "x": 12,
+          "y": 626.28125,
+          "width": 358,
+          "height": 85.71875,
+          "right": 370,
+          "bottom": 712
+        }
+      },
+      "counts": {
+        "controls": 78,
+        "namedControls": 78,
+        "recommendationCards": 8,
+        "categoryControls": 6,
+        "playlistItems": 8,
+        "playlistControls": 9,
+        "continueWatchingItems": 3,
+        "compassDimensions": 7,
+        "guidedOptions": 3,
+        "directRailModules": 3,
+        "iconNodes": 21,
+        "emptyIconNodes": 4
+      },
+      "playlist": {
+        "clientHeight": 352,
+        "scrollHeight": 583,
+        "maxScrollTop": 231,
+        "overflowY": "auto",
+        "overflowX": "auto",
+        "scrollbarGutter": "stable",
+        "overscrollBehaviorY": "contain",
+        "independentlyScrollable": true
+      }
+    }
+  }
+}

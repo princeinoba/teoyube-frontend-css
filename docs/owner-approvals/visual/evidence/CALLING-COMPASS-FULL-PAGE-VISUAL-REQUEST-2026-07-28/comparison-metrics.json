@@ -1,0 +1,14 @@
+{
+  "method": "absolute RGB difference at identical 1300x1210 geometry",
+  "threshold": "pixel differs when max RGB channel delta > 16 of 255",
+  "width": 1300,
+  "height": 1210,
+  "totalPixels": 1573000,
+  "differentPixels": 1140679,
+  "differentPixelRatio": 0.7251614748887476,
+  "meanAbsoluteChannelDifference": 96.31398749735114,
+  "maximumChannelDifference": 255,
+  "ownerReferenceSha256": "670349f6aea099c6cf6076c60947396bcc01034eff30c63d79f98957caa32bc4",
+  "finalScreenshotSha256": "7a27255f29dce95534fda1e02a675fa9af7016dfb858748298acfb5d9ee976d1",
+  "interpretation": "The owner reference contains reference-only Canon-style modules while the implementation preserves current live Calling Compass content as required; the metric is evidence, not a baseline threshold."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "viewport": "desktop-wide",
+    "width": 1440,
+    "height": 900,
+    "comparison": {
+      "differentPixels": 3,
+      "differentPixelRatio": 0.0000023148148148148148,
+      "maxChannelDelta": 18,
+      "meanPerceptualDelta": 0.0000036168981481481483,
+      "maxRegionalPerceptualDelta": 0.00005787037037037037,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "desktop-standard",
+    "width": 1280,
+    "height": 800,
+    "comparison": {
+      "differentPixels": 1,
+      "differentPixelRatio": 9.765625e-7,
+      "maxChannelDelta": 18,
+      "meanPerceptualDelta": 0.0000012765522875816993,
+      "maxRegionalPerceptualDelta": 0.000020424836601307188,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "tablet-landscape",
+    "width": 1024,
+    "height": 768,
+    "comparison": {
+      "differentPixels": 0,
+      "differentPixelRatio": 0,
+      "maxChannelDelta": 0,
+      "meanPerceptualDelta": 0,
+      "maxRegionalPerceptualDelta": 0,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "tablet-portrait",
+    "width": 768,
+    "height": 1024,
+    "comparison": {
+      "differentPixels": 0,
+      "differentPixelRatio": 0,
+      "maxChannelDelta": 0,
+      "meanPerceptualDelta": 0,
+      "maxRegionalPerceptualDelta": 0,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "mobile",
+    "width": 390,
+    "height": 844,
+    "comparison": {
+      "differentPixels": 0,
+      "differentPixelRatio": 0,
+      "maxChannelDelta": 0,
+      "meanPerceptualDelta": 0,
+      "maxRegionalPerceptualDelta": 0,
+      "strictPassed": true,
+      "passed": true
+    }
+  },
+  {
+    "viewport": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "comparison": {
+      "differentPixels": 0,
+      "differentPixelRatio": 0,
+      "maxChannelDelta": 0,
+      "meanPerceptualDelta": 0,
+      "maxRegionalPerceptualDelta": 0,
+      "strictPassed": true,
+      "passed": true
+    }
+  }
+]
