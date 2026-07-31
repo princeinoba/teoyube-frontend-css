@@ -1,4 +1,6 @@
 import type { TodayPreviewSlide, TodayPromiseSlide, TodayStory } from "./contracts";
+import todayYouTubeFeed from "./today-youtube-feed.json";
+import { TEOYUBEWORLD_CHANNEL_URL } from "./today-youtube";
 
 export const TODAY_PROMISE_SLIDES: readonly TodayPromiseSlide[] = Object.freeze([
   {
@@ -143,28 +145,29 @@ export const TODAY_PREVIEW_SLIDES: readonly TodayPreviewSlide[] = Object.freeze(
   { title: "Crafting Tomorrow's Digital Narratives", theme: "Envisioning the future.", image: "public/images/teoyube-carousel-5-wide.png", position: "100% center" }
 ]);
 
-const storySeeds = [
-  ["local-seed-of-promise", "Videos", "May 12, 2025", "The Seed of Promise", "A local TeoyubeWorld preview about tending promise language through Scripture and faithful action.", "public/images/embed/embedded-videos-hero-bg.png", "Watch Now"],
-  ["local-power-of-prayer", "Teachings", "May 11, 2025", "Walk in Divine Purpose", "A Scripture-rooted local preview for prayer, surrender, wisdom, and one faithful next step.", "public/images/today/teoyubeworld-search-bg.png", "Explore Teaching"],
-  ["local-walk-in-purpose", "Devotionals", "May 10, 2025", "Faith That Moves Mountains", "A cautious calling preview that connects purpose, courage, and Scripture without claiming certainty.", "public/images/table/calling-compass-panel-bg.png", "Start Devotional"],
-  ["local-rooted-in-truth", "Articles", "May 09, 2025", "The Power of Prayer", "A local preview about Scripture as the highest authority over Teoyube language aids.", "public/images/search/search-purpose-hero.png", "Read Article"],
-  ["local-called-for-more", "Videos", "May 08, 2025", "Grace for Every Season", "A short local preview encouraging prayerful testing of calling through Scripture, fruit, counsel, and time.", "public/images/canon/journey-calling.png", "Watch Now"],
-  ["local-strength-for-today", "Teachings", "May 07, 2025", "Kingdom Calling", "A worship preview for renewed strength, patient trust, and hope in waiting.", "public/images/carousel/kingdom-wisdom.png", "Explore Teaching"],
-  ["local-promise-language", "Devotionals", "May 06, 2025", "Promise Language", "A local preview that keeps Teoyube words as memory aids, not Scripture replacements.", "public/images/carousel/growth-in-grace.png", "Start Devotional"],
-  ["local-daily-assignment", "Articles", "May 05, 2025", "Daily Divine Assignment", "A local preview for translating Scripture, prayer, and calling into one faithful action.", "public/images/canon/canon-card-04.png", "Read Article"]
-] as const;
+type TodayFeedSeed = Readonly<{
+  id: string;
+  category: string;
+  publishedAt: string;
+  title: string;
+  description: string;
+  image: string;
+  cta: string;
+  youtubeVideoId: string | null;
+  youtubeWatchUrl: string | null;
+  playbackStatus: "verified" | "unavailable";
+  playbackUnavailableReason: string | null;
+  order: number;
+}>;
 
+const storySeeds = todayYouTubeFeed.items as readonly TodayFeedSeed[];
 export const TODAY_STORIES: readonly TodayStory[] = Object.freeze(
-  storySeeds.map(([id, category, time, title, description, image, cta]) => ({
-    id,
-    category,
+  storySeeds.map(({ publishedAt, ...story }) => ({
+    ...story,
     source: "TeoyubeWorld",
-    time,
-    title,
-    description,
-    image,
-    cta,
-    secondaryCta: "View in Feed"
+    time: publishedAt,
+    secondaryCta: "View in Feed",
+    channelUrl: TEOYUBEWORLD_CHANNEL_URL
   }))
 );
 
@@ -184,4 +187,7 @@ export const TODAY_SEARCH_SUGGESTIONS = Object.freeze([
 ]);
 
 export const LOCAL_MEDIA_SOURCE_NOTICE =
-  "Source not connected in this preview. Reviewed TeoyubeWorld embeds remain a future owner-approved integration.";
+  "Official TeoyubeWorld video. YouTube playback begins only after you press Play.";
+
+export const UNAVAILABLE_MEDIA_SOURCE_NOTICE =
+  "No exact official TeoyubeWorld channel video is available for this feed item.";

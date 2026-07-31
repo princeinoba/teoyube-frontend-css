@@ -35,4 +35,10 @@
     if (event.detail?.viewId !== "ui-elements") pauseAll();
   });
   refresh();
+  import("./src/features/today/today-youtube-playback.static.js")
+    .then(({ initializeTodayTeoyubeWorldPlayback }) => initializeTodayTeoyubeWorldPlayback())
+    .catch((error) => {
+      document.body.dataset.todayTeoyubeWorldPlayback = "unavailable";
+      document.body.dataset.todayTeoyubeWorldPlaybackError = String(error?.message || error).slice(0, 160);
+    });
 })();

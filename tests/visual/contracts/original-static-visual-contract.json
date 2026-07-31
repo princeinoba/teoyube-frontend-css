@@ -83,8 +83,8 @@
     },
     {
       "path": "embedded-videos.js",
-      "bytes": 1083,
-      "sha256": "26dbd9f5ff566319e8f28cef23f01ab0617d1f1504d8d52554c059b6a6024746"
+      "bytes": 1454,
+      "sha256": "95920be5b646a80bed69db9f8b624497b150276c2d04fa45443cee20a4ad0c95"
     },
     {
       "path": "index.html",
@@ -1018,8 +1018,8 @@
     },
     {
       "path": "styles/pages/today.css",
-      "bytes": 24825,
-      "sha256": "04f6038fe74d3b139e292e200a17a360e6310677e4f3e93ba7a4ecbf8081db17"
+      "bytes": 25805,
+      "sha256": "2aa08aa4459085e929be440ec1e8839e483abec95f94d08725a3bdcca67e59da"
     },
     {
       "path": "styles/reset.css",

@@ -7,6 +7,7 @@ import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopP
 import { getDailySpiritualLoopProgress } from "@/domain/journey/daily-spiritual-loop";
 import type { TodayViewActions, TodayViewModel } from "@/features/today/contracts";
 import { reduceTodayViewModel } from "@/features/today/application/today-service";
+import { createTodayYouTubeEmbedUrl, isTodayStoryPlayable } from "@/features/today/today-youtube";
 import { ApprovedTodayView } from "./ApprovedTodayView";
 
 type SaveNotice = Readonly<{ title: string; detail: string; scripture: string }> | null;
@@ -28,7 +29,7 @@ function LegacyTodayOverlays({ model, notice, clearNotice }: { model: TodayViewM
       <section className={`phase113-save-drawer${notice ? " visible" : ""}`} id="phase113SaveDrawer" aria-live="polite" aria-label="Saved action status">
         {notice && <><strong>{notice.title}</strong><span>{notice.detail}</span><small>{notice.scripture}</small><div className="phase114-save-actions"><button type="button">View in Book</button><button type="button">Add Reflection</button><button type="button" onClick={clearNotice}>Close</button></div></>}
       </section>
-      <aside className="phase117-offline-status" id="phase117OfflineStatus" aria-live="polite"><span className="phase117-offline-pill online">Local beta online</span><small>External services remain disabled; network is not used for AI, analytics, uploads, or persistence.</small></aside>
+      <aside className="phase117-offline-status" id="phase117OfflineStatus" aria-live="polite"><span className="phase117-offline-pill online">Local beta online</span><small>YouTube media connects only after you press Play; Teoyube does not use that connection for AI, analytics, uploads, or persistence.</small></aside>
     </div>,
     document.body
   );
@@ -39,6 +40,7 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
   const [notice, setNotice] = useState<SaveNotice>(null);
   const promisePaused = useRef(false);
   const storyPaused = useRef(false);
+  const playerActive = useRef(false);
   const router = useRouter();
   const { state: dailySpiritualLoop, start: startDailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
 
@@ -47,10 +49,14 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
       if (!promisePaused.current) dispatch({ type: "promise.next" });
     }, 8000);
     const storyTimer = window.setInterval(() => {
-      if (!storyPaused.current) dispatch({ type: "story.next" });
+      if (!storyPaused.current && !playerActive.current) dispatch({ type: "story.next" });
     }, 7000);
     return () => { window.clearInterval(promiseTimer); window.clearInterval(storyTimer); };
   }, []);
+
+  useEffect(() => {
+    playerActive.current = model.sourcePreviewOpened;
+  }, [model.sourcePreviewOpened]);
 
   useEffect(() => {
     const generate = () => {
@@ -74,6 +80,24 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
     previousStory: () => dispatch({ type: "story.previous" }),
     nextStory: () => dispatch({ type: "story.next" }),
     selectStory: (index) => dispatch({ type: "story.select", index }),
+    playStory: (storyId) => {
+      storyPaused.current = true;
+      dispatch({ type: "story.play", storyId });
+    },
+    playSelectedStory: () => {
+      storyPaused.current = true;
+      dispatch({ type: "media.preview" });
+    },
+    playPreviousStory: () => {
+      storyPaused.current = true;
+      dispatch({ type: "story.play.previous" });
+    },
+    playNextStory: () => {
+      storyPaused.current = true;
+      dispatch({ type: "story.play.next" });
+    },
+    markPlayerReady: () => dispatch({ type: "media.ready" }),
+    markPlayerError: () => dispatch({ type: "media.error" }),
     changeSearchQuery: (query) => dispatch({ type: "search.query", query }),
     submitSearch: (query) => dispatch({ type: "search.submit", query }),
     loadSearchSuggestion: (query) => {
@@ -127,6 +151,111 @@ export function TodayPageController({ initialViewModel }: { initialViewModel: To
     setStoryPaused: (paused) => { storyPaused.current = paused; }
   }), [actOnDailySpiritualLoop, dailySpiritualLoop, model.assignmentItems, model.reflection, router]);
 
+  useEffect(() => {
+    const root = document.querySelector<HTMLElement>("#today");
+    if (!root) return;
+    const selected = model.stories[model.activeStoryIndex];
+    const playbackStatus = root.querySelector<HTMLElement>("#promiseMovieStatus");
+    playbackStatus?.setAttribute("role", "status");
+    playbackStatus?.setAttribute("aria-live", "polite");
+    const selectedPlayable = isTodayStoryPlayable(selected);
+
+    root.querySelectorAll<HTMLTableRowElement>("#clientsPromiseRows tr").forEach((row, index) => {
+      const story = model.stories[index];
+      const button = row.querySelector<HTMLButtonElement>(".today-video-select");
+      if (!story || !button) return;
+      const playable = isTodayStoryPlayable(story);
+      row.dataset.todayStoryId = story.id;
+      row.dataset.playbackStatus = story.playbackStatus;
+      button.dataset.todayStoryId = story.id;
+      button.disabled = !playable;
+      button.setAttribute("aria-disabled", String(!playable));
+      button.setAttribute(
+        "aria-label",
+        playable
+          ? `Play ${story.title} in TeoyubeWorld Video Highlight`
+          : `Playback unavailable for ${story.title}: ${story.playbackUnavailableReason}`
+      );
+      button.title = playable ? `Play ${story.title}` : story.playbackUnavailableReason || "Playback unavailable";
+    });
+
+    const panel = root.querySelector<HTMLElement>("#promiseMovieResult");
+    const frameShell = panel?.querySelector<HTMLElement>(".promise-video-thumbnail.promise-youtube-frame");
+    const frame = frameShell?.querySelector<HTMLIFrameElement>("iframe");
+    const overlay = frameShell?.querySelector<HTMLButtonElement>(".promise-embed-play-overlay");
+    const watchButton = panel?.querySelector<HTMLButtonElement>(".watch-now-button");
+    const note = panel?.querySelector<HTMLElement>(".local-media-note");
+    panel?.querySelector<HTMLElement>(".promise-video-nav")?.setAttribute("role", "group");
+    if (selected && frameShell && frame && watchButton && note) {
+      if (overlay) {
+        overlay.dataset.todayStoryId = selected.id;
+        overlay.disabled = !selectedPlayable;
+        overlay.setAttribute("aria-disabled", String(!selectedPlayable));
+        overlay.setAttribute(
+          "aria-label",
+          selectedPlayable
+            ? `Play ${selected.title} in TeoyubeWorld Video Highlight`
+            : `Playback unavailable for ${selected.title}: ${selected.playbackUnavailableReason}`
+        );
+      }
+      const playing = selectedPlayable && model.sourcePreviewOpened && model.activePlaybackStoryId === selected.id;
+      watchButton.dataset.todayStoryId = selected.id;
+      watchButton.disabled = !selectedPlayable;
+      watchButton.setAttribute("aria-disabled", String(!selectedPlayable));
+      watchButton.textContent = selectedPlayable ? "Play Official Video" : "Source Unavailable";
+      watchButton.title = selectedPlayable
+        ? `Play ${selected.title}`
+        : selected.playbackUnavailableReason || "Playback unavailable";
+      note.textContent = selectedPlayable
+        ? "Official TeoyubeWorld video. YouTube playback begins only after you press Play."
+        : "No exact official TeoyubeWorld channel video is available for this feed item.";
+      frame.title = playing ? `TeoyubeWorld video: ${selected.title}` : `${selected.title} media preview`;
+      frame.allow = "autoplay; encrypted-media; picture-in-picture; web-share";
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      frameShell.dataset.todayActiveStoryId = selected.id;
+      frameShell.dataset.playbackState = model.playbackState;
+      if (playing) {
+        const embedUrl = createTodayYouTubeEmbedUrl(selected);
+        if (embedUrl) {
+          frame.removeAttribute("srcdoc");
+          if (frame.src !== embedUrl) frame.src = embedUrl;
+          frame.dataset.youtubeVideoId = selected.youtubeVideoId;
+          if (frame.dataset.playbackListener !== selected.id) {
+            frame.dataset.playbackListener = selected.id;
+            frame.addEventListener("load", actions.markPlayerReady, { once: true });
+            frame.addEventListener("error", actions.markPlayerError, { once: true });
+          }
+        }
+      } else {
+        frame.removeAttribute("src");
+        delete frame.dataset.youtubeVideoId;
+      }
+    }
+
+    const handlePlaybackClick = (event: Event) => {
+      const target = event.target instanceof Element ? event.target : null;
+      if (!target) return;
+      const rowButton = target.closest<HTMLButtonElement>("#clientsPromiseRows .today-video-select");
+      const mainButton = target.closest<HTMLButtonElement>("#promiseMovieResult .promise-embed-play-overlay, #promiseMovieResult .watch-now-button");
+      const navButton = target.closest<HTMLButtonElement>("#promiseMovieResult [data-today-video-nav]");
+      if (rowButton && !rowButton.disabled) {
+        event.preventDefault();
+        event.stopPropagation();
+        actions.playStory(rowButton.dataset.todayStoryId || "");
+      } else if (mainButton && !mainButton.disabled) {
+        event.preventDefault();
+        event.stopPropagation();
+        actions.playSelectedStory();
+      } else if (navButton) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (navButton.dataset.todayVideoNav === "previous") actions.playPreviousStory();
+        else actions.playNextStory();
+      }
+    };
+    root.addEventListener("click", handlePlaybackClick, true);
+    return () => root.removeEventListener("click", handlePlaybackClick, true);
+  }, [actions, model.activePlaybackStoryId, model.activeStoryIndex, model.playbackState, model.sourcePreviewOpened, model.stories]);
   const approvedModel = useMemo<TodayViewModel>(() => {
     if (!dailySpiritualLoop?.active || !["check_in", "daily_assignment", "tomorrow"].includes(dailySpiritualLoop.currentStage)) return model;
     const stage = dailySpiritualLoop.currentStage as "check_in" | "daily_assignment" | "tomorrow";

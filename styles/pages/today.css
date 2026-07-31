@@ -668,6 +668,28 @@ body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-you
   min-height: clamp(15rem, 19vw, 20rem) !important;
   border-radius: var(--today-radius-control);
 }
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame iframe {
+  inline-size: 100%;
+  block-size: 100%;
+  border: 0;
+  border-radius: inherit;
+}
+
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame[data-playback-state="loading"]::before,
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame[data-playback-state="loading"]::after,
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame[data-playback-state="playing"]::before,
+body[data-view="today"] #promiseMovieResult .promise-video-thumbnail.promise-youtube-frame[data-playback-state="playing"]::after {
+  content: none !important;
+  display: none !important;
+  opacity: 0 !important;
+}
+
+body[data-view="today"] #promiseMovieResult button:disabled,
+body[data-view="today"] .clients-table button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  animation: none !important;
+}
 
 body[data-view="today"] #promiseMovieResult .promise-video-copy {
   gap: 0.55rem !important;

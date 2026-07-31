@@ -27,6 +27,11 @@ export type TodayStory = Readonly<{
   image: string;
   cta: string;
   secondaryCta: string;
+  channelUrl: string;
+  youtubeVideoId: string | null;
+  youtubeWatchUrl: string | null;
+  playbackStatus: "verified" | "unavailable";
+  playbackUnavailableReason: string | null;
 }>;
 
 export type TodayJourneyMoment = Readonly<{
@@ -53,6 +58,8 @@ export type TodayViewModel = Readonly<{
   reflection: string;
   assignmentCompleted: boolean;
   sourcePreviewOpened: boolean;
+  activePlaybackStoryId: string | null;
+  playbackState: "idle" | "loading" | "playing" | "error";
   journeyMoment?: TodayJourneyMoment;
   tigCompatibility: Readonly<{
     source: "legacy-deterministic-tig";
@@ -69,11 +76,16 @@ export type TodayAction =
   | Readonly<{ type: "story.next" }>
   | Readonly<{ type: "story.select"; index: number }>
   | Readonly<{ type: "search.query"; query: string }>
+  | Readonly<{ type: "story.play"; storyId: string }>
+  | Readonly<{ type: "story.play.previous" }>
+  | Readonly<{ type: "story.play.next" }>
   | Readonly<{ type: "search.submit"; query: string }>
   | Readonly<{ type: "search.suggestions.clear" }>
   | Readonly<{ type: "reflection.change"; value: string }>
   | Readonly<{ type: "assignment.complete" }>
-  | Readonly<{ type: "media.preview" }>;
+  | Readonly<{ type: "media.preview" }>
+  | Readonly<{ type: "media.ready" }>
+  | Readonly<{ type: "media.error" }>;
 
 export type TodayViewActions = Readonly<{
   previousPromise(): void;
@@ -84,6 +96,12 @@ export type TodayViewActions = Readonly<{
   selectStory(index: number): void;
   changeSearchQuery(query: string): void;
   submitSearch(query: string): void;
+  playStory(storyId: string): void;
+  playSelectedStory(): void;
+  playPreviousStory(): void;
+  playNextStory(): void;
+  markPlayerReady(): void;
+  markPlayerError(): void;
   loadSearchSuggestion(query: string): void;
   clearSearchSuggestions(): void;
   changeReflection(value: string): void;
