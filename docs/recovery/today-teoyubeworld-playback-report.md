@@ -1,8 +1,28 @@
 # Today TeoyubeWorld synchronized playback verification
 
+## 2026-07-31 all-feed official-channel expansion
+
+This addendum supersedes the earlier one-playable-row limitation below while preserving that original delivery record. The owner explicitly requested that every remaining Today feed Play button load a different public video from the official TeoyubeWorld channel.
+
+- Incremental starting HEAD: `7104aef974ae7260094bf70388caa8dd01adaa4e`.
+- Incremental status: PASS.
+- Official source verification: the public channel RSS feed, YouTube oEmbed author metadata, and privacy-enhanced embed endpoints were checked on 2026-07-31.
+- Feed rows mapped: 8.
+- Unique official-channel video IDs: 8.
+- Feed rows unavailable: 0.
+- Existing `The Seed of Promise` mapping retained: `4zM2olpouIo`.
+- New mappings: `Walk in Divine Purpose` -> `yLBb7JCMqJE`; `Faith That Moves Mountains` -> `yDu0bD1lukE`; `The Power of Prayer` -> `tnjdlvbaBY8`; `Grace for Every Season` -> `chLnoAGxyrc`; `Kingdom Calling` -> `jAmIjP7-T5w`; `Promise Language` -> `I8Y3syhDG64`; `Daily Divine Assignment` -> `YY9VYdPUVf8`.
+- Click-to-load and privacy-enhanced `youtube-nocookie.com` embedding remain unchanged. No YouTube request occurs before an explicit Play action.
+- Next and static rollback browser coverage exercises all eight distinct Play controls, one shared iframe, Next/Previous wraparound, and keyboard operation.
+- Full cross-runtime browser result: PASS, 30/30.
+- Today screenshot, DOM, visible-label, action, carousel, and responsive parity: PASS, 4/4 across six viewports.
+- Incremental protected visual files changed: 0. Immutable screenshots, DOM snapshots, and owner-approved support baselines changed: 0.
+- Deterministic runtime identity was recomputed from the repository source manifest; canonical Next and the static rollback runtime remain unchanged.
+- Residual availability risk: a public channel video can later become unavailable if its owner changes YouTube visibility; no runtime channel search or API key was added.
+
 ## Decision and scope
 
-- Final status: PASS, with the explicit verified-channel mapping limitation below.
+- Original 2026-07-30 status: PASS, with the historical verified-channel mapping limitation documented below.
 - Approval ID: `TEOYUBE-FUNCTIONAL-2026-07-30-TODAY-YOUTUBE-PLAYBACK-001`.
 - Branch: `recovery/visual-source-of-truth`.
 - Starting HEAD: `8c50579cff1247e8857ea8aa013e4e4a66fdec7b`.
@@ -131,7 +151,7 @@ The player body shown in active-player evidence is an explicitly labeled determi
 
 ## Remaining limitations, cleanup, and rollback
 
-- Remaining product limitation: only one current feed title has an exact verified official-channel match, so multi-video switching cannot be exposed until the owner publishes or identifies exact official counterparts.
+- Historical product limitation (superseded by the 2026-07-31 owner-directed mapping addendum): only one exact-title match was exposed in the original delivery.
 - Accessibility evidence limitation: cross-origin iframe internals and image-background contrast require manual review; Axe reports no scoped violations.
 - Temporary files: disposable Playwright configs/scripts/results and parity candidates are removed before final handoff; only the reviewed evidence above remains tracked.
 - Worktree: required to be clean after the final test commit and post-commit verification.

@@ -156,7 +156,10 @@ function enhance() {
 
     if (!playing) {
       const availableCount = feed.filter(playable).length;
-      setText(document.querySelector("#promiseMovieStatus"), `Showing ${feed.length} TeoyubeWorld feed items for "TeoyubeWorld". ${availableCount} verified official-channel video available.`);
+      setText(
+        document.querySelector("#promiseMovieStatus"),
+        `Showing ${feed.length} TeoyubeWorld feed items for "TeoyubeWorld". ${availableCount} verified official-channel video${availableCount === 1 ? "" : "s"} available.`
+      );
     }
     if (document.body.dataset.view === "today") {
       setText(document.querySelector("#phase117OfflineStatus small"), NETWORK_NOTICE);

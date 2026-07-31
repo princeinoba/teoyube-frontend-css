@@ -42,7 +42,7 @@ describe("Today view-model boundary", () => {
     model = reduceTodayViewModel(model, { type: "search.submit", query: "  TeoyubeWorld teachings  " });
     expect(model).toMatchObject({ searchQuery: "TeoyubeWorld teachings", activeWorldQuery: "TeoyubeWorld teachings", activeStoryIndex: 0 });
     expect(model.movieStatus).toContain('8 TeoyubeWorld feed items for "TeoyubeWorld teachings"');
-    expect(model.movieStatus).toContain("1 verified official-channel video available");
+    expect(model.movieStatus).toContain("8 verified official-channel videos available");
     model = reduceTodayViewModel(model, { type: "reflection.change", value: "A voluntary reflection" });
     expect(model.reflection).toBe("A voluntary reflection");
     model = reduceTodayViewModel(model, { type: "assignment.complete" });

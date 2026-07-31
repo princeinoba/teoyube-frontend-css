@@ -3,6 +3,12 @@ import { expect, test, type Page } from "@playwright/test";
 const officialEmbedPattern =
   /^https:\/\/www\.youtube-nocookie\.com\/embed\/4zM2olpouIo\?/;
 
+function officialEmbedPatternFor(videoId: string) {
+  return new RegExp(
+    `^https://www\\.youtube-nocookie\\.com/embed/${videoId}\\?`
+  );
+}
+
 async function installDeterministicYouTubeResponse(page: Page) {
   const requests: string[] = [];
   await page.route("https://www.youtube-nocookie.com/**", async (route) => {
@@ -28,13 +34,17 @@ async function expectIdlePlayer(page: Page) {
   await expect(page.locator("#promiseMovieResult .promise-embed-play-overlay")).toBeVisible();
 }
 
-async function expectActivePlayer(page: Page) {
+async function expectActivePlayer(
+  page: Page,
+  videoId = "4zM2olpouIo",
+  title = "The Seed of Promise"
+) {
   const frame = page.locator("#promiseMovieResult iframe");
   await expect(frame).toHaveCount(1);
-  await expect(frame).toHaveAttribute("src", officialEmbedPattern);
+  await expect(frame).toHaveAttribute("src", officialEmbedPatternFor(videoId));
   await expect(frame).toHaveAttribute(
     "title",
-    "TeoyubeWorld video: The Seed of Promise"
+    `TeoyubeWorld video: ${title}`
   );
   await expect(frame).toHaveAttribute(
     "allow",
@@ -80,13 +90,8 @@ test("Today feed controls one privacy-enhanced player only after explicit Play",
   await expect(playable).toHaveAttribute("data-today-story-id", "local-seed-of-promise");
   await expect(playable).toHaveAttribute("data-playback-status", "verified");
 
-  const unavailableButtons = rows.locator(".today-video-select:disabled");
-  await expect(unavailableButtons).toHaveCount(7);
-  await expect(unavailableButtons.first()).toHaveAttribute(
-    "aria-label",
-    /Playback unavailable.*No exact public video/
-  );
-  await expect(unavailableButtons.first()).toHaveAttribute("aria-disabled", "true");
+  await expect(rows.locator(".today-video-select:not(:disabled)")).toHaveCount(8);
+  await expect(rows.locator(".today-video-select:disabled")).toHaveCount(0);
 
   await playableButton.click();
   await expectActivePlayer(page);
@@ -97,14 +102,14 @@ test("Today feed controls one privacy-enhanced player only after explicit Play",
   await expect(page.locator("#promiseMovieResult .local-media-note")).toContainText(
     "YouTube playback begins only after you press Play"
   );
-  expect(externalRequests).toHaveLength(1);
+  await expect.poll(() => externalRequests.length).toBe(1);
   expect(externalRequests[0]).toMatch(officialEmbedPattern);
 
   const navigation = page.locator("#promiseMovieResult .promise-video-nav");
   const next = navigation.getByRole("button", { name: "Next", exact: true });
   await next.focus();
   await page.keyboard.press("Enter");
-  await expectActivePlayer(page);
+  await expectActivePlayer(page, "yLBb7JCMqJE", "Walk in Divine Purpose");
   const previous = navigation.getByRole("button", { name: "Previous", exact: true });
   await previous.focus();
   await page.keyboard.press("Space");
@@ -124,41 +129,51 @@ test("main Play and keyboard Play select the first verified feed item", async ({
   await expectIdlePlayer(page);
 
   const mainPlay = page.locator("#promiseMovieResult .promise-embed-play-overlay");
+  await expect(mainPlay).toBeEnabled();
+  await expect(mainPlay).toHaveAttribute("aria-disabled", "false");
   await mainPlay.focus();
   await expect(mainPlay).toBeFocused();
   await page.keyboard.press("Enter");
   await expectActivePlayer(page);
-  expect(externalRequests).toHaveLength(1);
+  await expect.poll(() => externalRequests.length).toBe(1);
 
   await page.reload({ waitUntil: "domcontentloaded" });
   await expectIdlePlayer(page);
   const mainPlayWithSpace = page.locator("#promiseMovieResult .promise-embed-play-overlay");
+  await expect(mainPlayWithSpace).toBeEnabled();
+  await expect(mainPlayWithSpace).toHaveAttribute("aria-disabled", "false");
   await mainPlayWithSpace.focus();
+  await expect(mainPlayWithSpace).toBeFocused();
   await page.keyboard.press("Space");
   await expectActivePlayer(page);
-  expect(externalRequests).toHaveLength(2);
+  await expect.poll(() => externalRequests.length).toBe(2);
 
   await page.reload({ waitUntil: "domcontentloaded" });
   await expectIdlePlayer(page);
   const feedPlayWithEnter = page.locator("#clientsPromiseRows").getByRole("button", {
     name: "Play The Seed of Promise in TeoyubeWorld Video Highlight"
   });
+  await expect(feedPlayWithEnter).toBeEnabled();
+  await expect(feedPlayWithEnter).toHaveAttribute("aria-disabled", "false");
   await feedPlayWithEnter.focus();
   await expect(feedPlayWithEnter).toBeFocused();
   await page.keyboard.press("Enter");
   await expectActivePlayer(page);
   await expect(feedPlayWithEnter).toBeFocused();
-  expect(externalRequests).toHaveLength(3);
+  await expect.poll(() => externalRequests.length).toBe(3);
 
   await page.reload({ waitUntil: "domcontentloaded" });
   await expectIdlePlayer(page);
   const feedPlayWithSpace = page.locator("#clientsPromiseRows").getByRole("button", {
     name: "Play The Seed of Promise in TeoyubeWorld Video Highlight"
   });
+  await expect(feedPlayWithSpace).toBeEnabled();
+  await expect(feedPlayWithSpace).toHaveAttribute("aria-disabled", "false");
   await feedPlayWithSpace.focus();
+  await expect(feedPlayWithSpace).toBeFocused();
   await page.keyboard.press("Space");
   await expectActivePlayer(page);
-  expect(externalRequests).toHaveLength(4);
+  await expect.poll(() => externalRequests.length).toBe(4);
 });
 
 for (const viewport of [

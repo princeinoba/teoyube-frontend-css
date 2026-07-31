@@ -27,12 +27,23 @@ describe("Today TeoyubeWorld playback boundary", () => {
     expect(TODAY_STORIES.every((story) => story.channelUrl === TEOYUBEWORLD_CHANNEL_URL)).toBe(true);
   });
 
-  it("allows only exact verified official-channel video IDs", () => {
+  it("keeps every feed row mapped to a unique verified official-channel video", () => {
     const playable = TODAY_STORIES.filter(isTodayStoryPlayable);
     const unavailable = TODAY_STORIES.filter((story) => !isTodayStoryPlayable(story));
+    const expectedVideoIds = [
+      "4zM2olpouIo",
+      "yLBb7JCMqJE",
+      "yDu0bD1lukE",
+      "tnjdlvbaBY8",
+      "chLnoAGxyrc",
+      "jAmIjP7-T5w",
+      "I8Y3syhDG64",
+      "YY9VYdPUVf8"
+    ];
 
-    expect(playable).toHaveLength(1);
+    expect(playable).toHaveLength(8);
     expect(new Set(playable.map((story) => story.youtubeVideoId)).size).toBe(playable.length);
+    expect(playable.map((story) => story.youtubeVideoId)).toEqual(expectedVideoIds);
     expect(playable[0]).toMatchObject({
       id: "local-seed-of-promise",
       title: "The Seed of Promise",
@@ -41,24 +52,23 @@ describe("Today TeoyubeWorld playback boundary", () => {
       playbackStatus: "verified",
       playbackUnavailableReason: null
     });
-    expect(TODAY_YOUTUBE_VIDEO_ID_PATTERN.test(playable[0].youtubeVideoId)).toBe(true);
-
-    expect(unavailable).toHaveLength(7);
-    for (const story of unavailable) {
-      expect(story.youtubeVideoId).toBeNull();
-      expect(story.youtubeWatchUrl).toBeNull();
-      expect(story.playbackStatus).toBe("unavailable");
-      expect(story.playbackUnavailableReason).toContain(
-        "No exact public video with this title was verified"
+    for (const story of playable) {
+      expect(TODAY_YOUTUBE_VIDEO_ID_PATTERN.test(story.youtubeVideoId)).toBe(true);
+      expect(story.youtubeWatchUrl).toBe(
+        `https://www.youtube.com/watch?v=${story.youtubeVideoId}`
       );
+      expect(story.playbackUnavailableReason).toBeNull();
     }
+    expect(unavailable).toHaveLength(0);
   });
 
   it("creates a privacy-enhanced embed URL only for a verified story", () => {
     expect(createTodayYouTubeEmbedUrl(TODAY_STORIES[0])).toBe(
       "https://www.youtube-nocookie.com/embed/4zM2olpouIo?autoplay=1&playsinline=1&rel=0&modestbranding=1"
     );
-    expect(createTodayYouTubeEmbedUrl(TODAY_STORIES[1])).toBeNull();
+    expect(createTodayYouTubeEmbedUrl(TODAY_STORIES[1])).toBe(
+      "https://www.youtube-nocookie.com/embed/yLBb7JCMqJE?autoplay=1&playsinline=1&rel=0&modestbranding=1"
+    );
     expect(createTodayYouTubeEmbedUrl(undefined)).toBeNull();
   });
 
@@ -89,43 +99,32 @@ describe("Today TeoyubeWorld playback boundary", () => {
     });
   });
 
-  it("keeps unavailable rows disabled in domain behavior and navigates playable items only", () => {
+  it("plays every row and navigates the unique video sequence", () => {
     const initial = createTodayViewModel();
-    const unavailable = reduceTodayViewModel(initial, {
+    const second = reduceTodayViewModel(initial, {
       type: "story.play",
       storyId: "local-power-of-prayer"
     });
-    expect(unavailable).toMatchObject({
-      activeStoryIndex: 0,
-      activePlaybackStoryId: null,
-      sourcePreviewOpened: false,
-      playbackState: "idle"
+    expect(second).toMatchObject({
+      activeStoryIndex: 1,
+      activePlaybackStoryId: "local-power-of-prayer",
+      sourcePreviewOpened: true,
+      playbackState: "loading"
     });
-    expect(unavailable.movieStatus).toContain("No exact public video");
 
-    const loading = reduceTodayViewModel(initial, {
-      type: "story.play",
-      storyId: "local-seed-of-promise"
-    });
-    const next = reduceTodayViewModel(loading, { type: "story.play.next" });
+    const next = reduceTodayViewModel(second, { type: "story.play.next" });
     const previous = reduceTodayViewModel(next, { type: "story.play.previous" });
-    expect(next.activePlaybackStoryId).toBe("local-seed-of-promise");
-    expect(previous.activePlaybackStoryId).toBe("local-seed-of-promise");
+    expect(next.activePlaybackStoryId).toBe("local-walk-in-purpose");
+    expect(previous.activePlaybackStoryId).toBe("local-power-of-prayer");
 
-    const selectedUnavailable = reduceTodayViewModel(loading, {
+    const selected = reduceTodayViewModel(second, {
       type: "story.select",
       index: 3
     });
-    expect(selectedUnavailable).toMatchObject({
+    const previewed = reduceTodayViewModel(selected, { type: "media.preview" });
+    expect(previewed).toMatchObject({
       activeStoryIndex: 3,
-      activePlaybackStoryId: null,
-      sourcePreviewOpened: false,
-      playbackState: "idle"
-    });
-    const defaulted = reduceTodayViewModel(selectedUnavailable, { type: "media.preview" });
-    expect(defaulted).toMatchObject({
-      activeStoryIndex: 0,
-      activePlaybackStoryId: "local-seed-of-promise",
+      activePlaybackStoryId: "local-rooted-in-truth",
       sourcePreviewOpened: true,
       playbackState: "loading"
     });

@@ -182,9 +182,9 @@ test("Today typed actions preserve the approved functional sequence", async ({ b
     expect(result.search).toMatchObject({ query: "TeoyubeWorld devotionals", story: 0 });
     expect(result.search.status).toContain('8 TeoyubeWorld feed items for "TeoyubeWorld devotionals"');
     expect(result.filter).toMatchObject({ query: "TeoyubeWorld articles", story: 0 });
-    expect(result.unavailableFeed).toBe(true);
+    expect(result.unavailableFeed).toBe(false);
     expect(result.feed.story).toBe(2);
-    expect(result.mainPlayDisabled).toBe(true);
+    expect(result.mainPlayDisabled).toBe(false);
     expect(result.navigationControlCount).toBe(2);
     expect(result.assignment).toMatchObject({ reflection: "", drawerVisible: true });
     expect(result.assignment.drawerText).toContain("Assignment recorded");
