@@ -100,12 +100,11 @@ async function exerciseTodayActions(page: Page) {
   const search = await activeState(page);
   await page.locator('button[data-world-query="TeoyubeWorld articles"]').click();
   const filter = await activeState(page);
-  await page.locator('button.today-video-select[data-today-video-index="2"]').click();
+  const unavailableFeed = await page.locator('button.today-video-select[data-today-video-index="2"]').isDisabled();
+  await page.locator('.featured-story-dots button[data-featured-story-index="2"]').click();
   const feed = await activeState(page);
-  await page.locator('button[data-today-video-nav="next"]').click();
-  const mediaNavigation = await activeState(page);
-  await page.locator(".promise-embed-play-overlay").click();
-  const previewOpened = await page.locator(".promise-embed-play-overlay").count();
+  const mainPlayDisabled = await page.locator(".promise-embed-play-overlay").isDisabled();
+  const navigationControlCount = await page.locator('#promiseMovieResult [data-today-video-nav]').count();
   await page.locator("#reflectionInput").fill("A voluntary reflection");
   await page.locator("#completeAssignment").click();
   const assignment = await page.evaluate(() => ({
@@ -113,7 +112,7 @@ async function exerciseTodayActions(page: Page) {
     drawerVisible: document.querySelector("#phase113SaveDrawer")?.classList.contains("visible"),
     drawerText: document.querySelector("#phase113SaveDrawer")?.textContent?.replace(/\s+/g, " ").trim()
   }));
-  return { initial, nextPromise, keyboardPromise, selectedPromise, swipedPromise, nextStory, keyboardStory, selectedStory, swipedStory, search, filter, feed, mediaNavigation, previewOpened, assignment };
+  return { initial, nextPromise, keyboardPromise, selectedPromise, swipedPromise, nextStory, keyboardStory, selectedStory, swipedStory, search, filter, feed, unavailableFeed, mainPlayDisabled, navigationControlCount, assignment };
 }
 
 test("approved Today candidate matches at every required viewport", async ({ browser }) => {
@@ -181,11 +180,12 @@ test("Today typed actions preserve the approved functional sequence", async ({ b
     expect(result.selectedStory.story).toBe(3);
     expect(result.swipedStory.story).toBe(4);
     expect(result.search).toMatchObject({ query: "TeoyubeWorld devotionals", story: 0 });
-    expect(result.search.status).toContain('8 local TeoyubeWorld previews for "TeoyubeWorld devotionals"');
+    expect(result.search.status).toContain('8 TeoyubeWorld feed items for "TeoyubeWorld devotionals"');
     expect(result.filter).toMatchObject({ query: "TeoyubeWorld articles", story: 0 });
+    expect(result.unavailableFeed).toBe(true);
     expect(result.feed.story).toBe(2);
-    expect(result.mediaNavigation.story).toBe(3);
-    expect(result.previewOpened).toBe(0);
+    expect(result.mainPlayDisabled).toBe(true);
+    expect(result.navigationControlCount).toBe(2);
     expect(result.assignment).toMatchObject({ reflection: "", drawerVisible: true });
     expect(result.assignment.drawerText).toContain("Assignment recorded");
   } finally {

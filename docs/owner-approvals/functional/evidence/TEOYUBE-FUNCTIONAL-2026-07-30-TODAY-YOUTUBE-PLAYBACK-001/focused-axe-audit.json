@@ -1,0 +1,708 @@
+{
+  "approvalId": "TEOYUBE-FUNCTIONAL-2026-07-30-TODAY-YOUTUBE-PLAYBACK-001",
+  "scope": "#today .today-integrations",
+  "generatedAt": "2026-07-31T11:30:07.813Z",
+  "blockingImpactLevels": [
+    "critical",
+    "serious"
+  ],
+  "audits": [
+    {
+      "label": "desktop-before-playback",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.12.1"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/150.0.0.0 Safari/537.36",
+        "windowWidth": 1440,
+        "windowHeight": 900,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "passes": 24,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "targets": [
+            [
+              "#promiseMovieResult > .eyebrow"
+            ],
+            [
+              ".promise-video-copy > h3"
+            ],
+            [
+              ".promise-video-copy > .position-badge.success"
+            ],
+            [
+              ".promise-video-copy > p:nth-child(3)"
+            ],
+            [
+              ".local-media-note"
+            ],
+            [
+              ".watch-now-button"
+            ],
+            [
+              "button[data-today-video-nav=\"previous\"]"
+            ],
+            [
+              "button[data-today-video-nav=\"next\"]"
+            ],
+            [
+              ".clients-card-header > h3"
+            ],
+            [
+              "th:nth-child(2)"
+            ],
+            [
+              "th:nth-child(3)"
+            ],
+            [
+              "th:nth-child(4)"
+            ],
+            [
+              "th:nth-child(5)"
+            ],
+            [
+              "th:nth-child(6)"
+            ],
+            [
+              ".active-video-row > td:nth-child(1)"
+            ],
+            [
+              ".active-video-row > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              ".active-video-row > td:nth-child(3)"
+            ],
+            [
+              "button[data-today-video-index=\"0\"][data-today-story-id=\"local-seed-of-promise\"][title=\"Play The Seed of Promise\"]"
+            ],
+            [
+              ".active-video-row > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ]
+          ]
+        },
+        {
+          "id": "frame-tested",
+          "impact": "critical",
+          "targets": [
+            [
+              "iframe"
+            ]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "label": "desktop-active-player",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.12.1"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/150.0.0.0 Safari/537.36",
+        "windowWidth": 1440,
+        "windowHeight": 900,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "passes": 24,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "targets": [
+            [
+              "#promiseMovieResult > .eyebrow"
+            ],
+            [
+              ".promise-video-copy > h3"
+            ],
+            [
+              ".promise-video-copy > .position-badge.success"
+            ],
+            [
+              ".promise-video-copy > p:nth-child(3)"
+            ],
+            [
+              ".local-media-note"
+            ],
+            [
+              ".watch-now-button"
+            ],
+            [
+              "button[data-today-video-nav=\"previous\"]"
+            ],
+            [
+              "button[data-today-video-nav=\"next\"]"
+            ],
+            [
+              ".clients-card-header > h3"
+            ],
+            [
+              "th:nth-child(2)"
+            ],
+            [
+              "th:nth-child(3)"
+            ],
+            [
+              "th:nth-child(4)"
+            ],
+            [
+              "th:nth-child(5)"
+            ],
+            [
+              "th:nth-child(6)"
+            ],
+            [
+              ".active-video-row > td:nth-child(1)"
+            ],
+            [
+              ".active-video-row > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              ".active-video-row > td:nth-child(3)"
+            ],
+            [
+              "button[data-today-video-index=\"0\"][data-today-story-id=\"local-seed-of-promise\"][title=\"Play The Seed of Promise\"]"
+            ],
+            [
+              ".active-video-row > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ]
+          ]
+        },
+        {
+          "id": "frame-tested",
+          "impact": "critical",
+          "targets": [
+            [
+              "iframe"
+            ]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "label": "mobile-before-playback",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.12.1"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/150.0.0.0 Safari/537.36",
+        "windowWidth": 390,
+        "windowHeight": 844,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "passes": 24,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "targets": [
+            [
+              "#promiseMovieResult > .eyebrow"
+            ],
+            [
+              ".promise-video-copy > h3"
+            ],
+            [
+              ".promise-video-copy > .position-badge.success"
+            ],
+            [
+              ".promise-video-copy > p:nth-child(3)"
+            ],
+            [
+              ".local-media-note"
+            ],
+            [
+              ".watch-now-button"
+            ],
+            [
+              "button[data-today-video-nav=\"previous\"]"
+            ],
+            [
+              "button[data-today-video-nav=\"next\"]"
+            ],
+            [
+              ".clients-card-header > h3"
+            ],
+            [
+              "th:nth-child(2)"
+            ],
+            [
+              "th:nth-child(3)"
+            ],
+            [
+              "th:nth-child(4)"
+            ],
+            [
+              "th:nth-child(5)"
+            ],
+            [
+              "th:nth-child(6)"
+            ],
+            [
+              ".active-video-row > td:nth-child(1)"
+            ],
+            [
+              ".active-video-row > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              ".active-video-row > td:nth-child(3)"
+            ],
+            [
+              "button[data-today-video-index=\"0\"][data-today-story-id=\"local-seed-of-promise\"][title=\"Play The Seed of Promise\"]"
+            ],
+            [
+              ".active-video-row > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ]
+          ]
+        },
+        {
+          "id": "frame-tested",
+          "impact": "critical",
+          "targets": [
+            [
+              "iframe"
+            ]
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "label": "mobile-active-player",
+      "testEngine": {
+        "name": "axe-core",
+        "version": "4.12.1"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/150.0.0.0 Safari/537.36",
+        "windowWidth": 390,
+        "windowHeight": 844,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "passes": 24,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "targets": [
+            [
+              "#promiseMovieResult > .eyebrow"
+            ],
+            [
+              ".promise-video-copy > h3"
+            ],
+            [
+              ".promise-video-copy > .position-badge.success"
+            ],
+            [
+              ".promise-video-copy > p:nth-child(3)"
+            ],
+            [
+              ".local-media-note"
+            ],
+            [
+              ".watch-now-button"
+            ],
+            [
+              "button[data-today-video-nav=\"previous\"]"
+            ],
+            [
+              "button[data-today-video-nav=\"next\"]"
+            ],
+            [
+              ".clients-card-header > h3"
+            ],
+            [
+              "th:nth-child(2)"
+            ],
+            [
+              "th:nth-child(3)"
+            ],
+            [
+              "th:nth-child(4)"
+            ],
+            [
+              "th:nth-child(5)"
+            ],
+            [
+              "th:nth-child(6)"
+            ],
+            [
+              ".active-video-row > td:nth-child(1)"
+            ],
+            [
+              ".active-video-row > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              ".active-video-row > td:nth-child(3)"
+            ],
+            [
+              "button[data-today-video-index=\"0\"][data-today-story-id=\"local-seed-of-promise\"][title=\"Play The Seed of Promise\"]"
+            ],
+            [
+              ".active-video-row > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"1\"][data-today-story-id=\"local-power-of-prayer\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"2\"][data-today-story-id=\"local-walk-in-purpose\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"3\"][data-today-story-id=\"local-rooted-in-truth\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"4\"][data-today-story-id=\"local-called-for-more\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"5\"][data-today-story-id=\"local-strength-for-today\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"6\"][data-today-story-id=\"local-promise-language\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(1)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(2) > .feed-video-title > span"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(3)"
+            ],
+            [
+              "tr[data-today-video-index=\"7\"][data-today-story-id=\"local-daily-assignment\"][data-playback-status=\"unavailable\"] > td:nth-child(6)"
+            ]
+          ]
+        },
+        {
+          "id": "frame-tested",
+          "impact": "critical",
+          "targets": [
+            [
+              "iframe"
+            ]
+          ]
+        }
+      ],
+      "violations": []
+    }
+  ],
+  "result": "PASS"
+}
