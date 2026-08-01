@@ -8,6 +8,7 @@ export default defineConfig({
   outputDir: "./.tmp/playwright-results",
   reporter: [["list"], ["html", { open: "never", outputFolder: "playwright-report" }]],
   use: {
-    baseURL
+    baseURL,
+    channel: process.platform === "win32" ? "chrome" : undefined
   }
 });

@@ -1,0 +1,40 @@
+{
+  "approvalId": "TEOYUBE-FUNCTIONAL-2026-07-30-PROMISE-TABLE-YOUTUBE-PLAYBACK-001",
+  "baseURL": "http://127.0.0.1:3100/promise-table",
+  "beforeReference": "docs\\owner-approvals\\visual\\evidence\\PROMISE-TABLE-VISUAL-REQUEST-2026-07-26\\after-closeup-featured.png",
+  "deterministicEmbed": true,
+  "artifacts": [
+    {
+      "file": "after-active-power-of-prayer.png",
+      "bytes": 559692
+    },
+    {
+      "file": "after-before-playback.png",
+      "bytes": 791385
+    },
+    {
+      "file": "after-selected-power-of-prayer.png",
+      "bytes": 720185
+    },
+    {
+      "file": "main-play-closeup.png",
+      "bytes": 407806
+    },
+    {
+      "file": "mobile-active-390x844.png",
+      "bytes": 328816
+    },
+    {
+      "file": "side-by-side-before-after.png",
+      "bytes": 1784665
+    },
+    {
+      "file": "watch-now-closeup.png",
+      "bytes": 3803
+    },
+    {
+      "file": "watch-video-card-closeup.png",
+      "bytes": 121307
+    }
+  ]
+}
