@@ -7,6 +7,8 @@ import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopP
 import { PROMISE_STATUSES, type PromiseRecord, type PromiseStatus } from "@/domain/promises/promise-repository";
 import type { PromiseTableViewModel } from "@/features/promises/contracts";
 import { LocalPromiseRepository } from "@/features/promises/infrastructure/local-promise-repository";
+import promiseTableYouTubeFeed from "@/features/promises/promise-table-youtube-feed.json";
+import { createPromiseTableYouTubePlayback } from "@/features/promises/promise-table-youtube-player.js";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedPromiseTableView } from "./ApprovedPromiseTableView";
 
@@ -56,6 +58,13 @@ export function PromiseTablePageController({ initialViewModel }: { initialViewMo
   const router = useRouter();
   const { state: dailySpiritualLoop, act: actOnDailySpiritualLoop } = useDailySpiritualLoop();
   const promiseMomentActive = dailySpiritualLoop?.active && dailySpiritualLoop.currentStage === "promise";
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const playback = createPromiseTableYouTubePlayback(root, promiseTableYouTubeFeed);
+    return () => playback.destroy();
+  }, []);
 
   function addRecord(record: PromiseRecord) {
     repositoryRef.current.save(record);
@@ -153,7 +162,7 @@ export function PromiseTablePageController({ initialViewModel }: { initialViewMo
         return;
       }
       const watch = target.closest<HTMLElement>("[data-video-index]");
-      if (watch) { setVideo(Number(watch.dataset.videoIndex)); root.querySelector("#promiseTableVideoPanel")?.scrollIntoView({ block: "nearest" }); return; }
+      if (watch) { setVideo(Number(watch.dataset.videoIndex)); return; }
       const action = target.closest<HTMLElement>("[data-phase116b-action]");
       if (action) setNotice({ title: action.textContent?.trim() || "Promise action ready", detail: "Calling & Purpose: TIDUILOVP", scripture: "Ephesians 1:18" });
     }
