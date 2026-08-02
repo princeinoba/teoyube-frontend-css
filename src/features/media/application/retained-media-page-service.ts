@@ -1,4 +1,5 @@
 import runtimeManifest from "../../../../public/media/teoyubeworld/pilot-v1/runtime-manifest.json";
+import { APPROVED_TABLE_ROW_DETAILS } from "../../../app/_approved-source/approved-tables-row-details.generated";
 import { APPROVED_VIEW_MARKUP } from "../../../app/_approved-source/approved-view-markup.generated";
 import { MEDIA_DELIVERY_CONTRACT, type MediaAssetDto } from "../../../domain/media/media-contracts";
 import { TEOYUBE_MEDIA_LIBRARY } from "../../../lib/teoyube/data-access";
@@ -19,6 +20,7 @@ export type TablesPageViewModel = Readonly<{
   approvedHtml: string;
   sourceDigest: string;
   pages: Readonly<Record<string, string>>;
+  rowDetails: Readonly<Record<string, string>>;
   managementTabs: Readonly<Record<string, CapturedManagementTab>>;
 }>;
 
@@ -119,6 +121,7 @@ export function createTablesPageViewModel(): TablesPageViewModel {
     approvedHtml: APPROVED_VIEW_MARKUP.tables.initial,
     sourceDigest: APPROVED_VIEW_MARKUP.sourceDigest,
     pages: APPROVED_VIEW_MARKUP.tables.pages,
+    rowDetails: APPROVED_TABLE_ROW_DETAILS.rows,
     managementTabs: APPROVED_VIEW_MARKUP.tables.managementTabs
   });
 }

@@ -1,11 +1,13 @@
 {
   "schemaVersion": "1.0.0",
   "approvalId": "TEOYUBE-FUNCTIONAL-2026-08-01-TABLES-DUAL-VIDEO-PLAYBACK-001",
-  "verifiedAt": "2026-08-01T21:25:44-04:00",
+  "verifiedAt": "2026-08-02T00:40:37-04:00",
   "route": "/tables",
   "officialChannelId": "UCxG1guesWqO69QK022fyp2w",
   "officialChannelUrl": "https://www.youtube.com/channel/UCxG1guesWqO69QK022fyp2w",
   "mappingCount": 8,
+  "rowDetailCount": 24,
+  "playControlCount": 48,
   "playbackOrigin": "https://www.youtube-nocookie.com",
   "clickToLoad": true,
   "containers": {
@@ -15,16 +17,18 @@
   },
   "checks": {
     "focusedUnit": "PASS (included in 287 passing unit tests)",
-    "focusedNextBrowser": "PASS",
+    "focusedNextBrowser": "PASS (2/2; 24 rows and 48 Play controls verified)",
     "focusedStaticBrowser": "PASS",
     "keyboardActivation": "PASS",
     "axeSeriousOrCriticalViolations": 0,
-    "fullBrowser": "PASS WITH ISOLATED CONFIRMATION: 40/42 at four workers; two unrelated Today shared-state cases passed 2/2 serially",
+    "fullBrowser": "PASS WITH SERIAL CONFIRMATION: Tables passed in the 39/40 four-worker audit; one unrelated Today external-request case passed with its complete 9/9 file serially; 3 conditional static cases were skipped and focused static Tables passed separately",
     "typecheck": "PASS",
     "lint": "PASS",
     "build": "PASS",
     "recovery": "PASS",
-    "runtimeCandidate": "PASS"
+    "runtimeCandidate": "PASS",
+    "adjacentRowExpansionAndFilter": "PASS",
+    "deterministicBuildId": "teoyube-2f1056fbac6d9e0f1fc2049a"
   },
   "immutableBaselinesChanged": 0,
   "ownerApprovedSupportBaselinesChanged": 0,

@@ -79,6 +79,8 @@ describe("remaining retained preview contracts", () => {
     expect(tables.approvedHtml).toContain('id="teoyubeTablesRows"');
     expect(tables.approvedHtml).toContain('id="teoyubeDataTableTabs"');
     expect(Object.keys(tables.pages)).toEqual(["1", "2", "3"]);
+    expect(Object.keys(tables.rowDetails)).toHaveLength(24);
+    expect(Object.values(tables.rowDetails).every((detail) => detail.includes('class="teoyube-detail-row"'))).toBe(true);
     expect(Object.keys(tables.managementTabs)).toEqual(["promises", "scriptures", "journeys", "videos", "book"]);
     expect(roadmap.approvedHtml).toContain('class="roadmap-dashboard"');
     expect(roadmap.qaPanelHtml).toContain('class="phase114-qa-card"');

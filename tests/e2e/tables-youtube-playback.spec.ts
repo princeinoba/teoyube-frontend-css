@@ -9,6 +9,17 @@ const mappings = {
 
 const axeSource = fs.readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
 
+const orderedMappings = [
+  { id: "local-seed-of-promise", videoId: "4zM2olpouIo" },
+  { id: "local-power-of-prayer", videoId: "yLBb7JCMqJE" },
+  { id: "local-walk-in-purpose", videoId: "yDu0bD1lukE" },
+  { id: "local-rooted-in-truth", videoId: "tnjdlvbaBY8" },
+  { id: "local-called-for-more", videoId: "chLnoAGxyrc" },
+  { id: "local-strength-for-today", videoId: "jAmIjP7-T5w" },
+  { id: "local-promise-language", videoId: "I8Y3syhDG64" },
+  { id: "local-daily-assignment", videoId: "YY9VYdPUVf8" }
+] as const;
+
 test("Tables compact preview and Airplay players stay independent", async ({ page }) => {
   await page.route("https://www.youtube-nocookie.com/**", async (route) => {
     await route.fulfill({
@@ -68,4 +79,46 @@ test("Tables compact preview and Airplay players stay independent", async ({ pag
     return result.violations.filter((violation) => violation.impact === "critical" || violation.impact === "serious");
   });
   expect(seriousViolations).toEqual([]);
+});
+test("all 24 Tables rows restore both corresponding Play controls without disturbing adjacent rows", async ({ page }) => {
+  await page.route("https://www.youtube-nocookie.com/**", async (route) => {
+    await route.fulfill({ status: 200, contentType: "text/html", body: "<!doctype html><title>Tables playback audit</title>" });
+  });
+  await page.goto("/tables", { waitUntil: "domcontentloaded" });
+
+  for (const pageNumber of [1, 2, 3]) {
+    await page.locator(`#teoyubeTablePagination [data-table-page="${pageNumber}"]`).last().click();
+    const rows = page.locator("#teoyubeTablesRows .teoyube-main-row");
+    const count = await rows.count();
+    for (let visibleIndex = 0; visibleIndex < count; visibleIndex += 1) {
+      const row = rows.nth(visibleIndex);
+      const toggle = row.locator(".table-expand-button");
+      const rowId = Number(await toggle.getAttribute("data-table-row"));
+      const mapping = orderedMappings[rowId % orderedMappings.length];
+      let detail = row.locator("xpath=following-sibling::tr[1][contains(@class, 'teoyube-detail-row')]");
+      if (!(await detail.count()) || !(await detail.isVisible())) await toggle.click();
+      detail = row.locator("xpath=following-sibling::tr[1][contains(@class, 'teoyube-detail-row')]");
+
+      await expect(detail).toBeVisible();
+      await expect(row).toHaveClass(/expanded/);
+      await expect(detail.locator(".table-preview-video-panel")).toHaveAttribute("data-table-video-preview", mapping.id);
+      await expect(detail.locator(".table-row-video-premium")).toHaveAttribute("data-table-video-id", mapping.id);
+
+      await detail.locator("[data-table-preview-video-play]").click();
+      await expect(detail.locator(".table-preview-video-panel iframe")).toHaveAttribute("src", new RegExp(`/embed/${mapping.videoId}\\?`));
+      await detail.locator("[data-table-video-play]").click();
+      await expect(detail.locator(".table-row-video-premium iframe")).toHaveAttribute("src", new RegExp(`/embed/${mapping.videoId}\\?`));
+    }
+  }
+
+  await page.locator('#teoyubeTablePagination [data-table-page="1"]').last().click();
+  const fifthRow = page.locator("#teoyubeTablesRows .teoyube-main-row").nth(4);
+  await fifthRow.locator(".table-expand-button").click();
+  const sixthRow = page.locator("#teoyubeTablesRows .teoyube-main-row").nth(5);
+  await expect(sixthRow).toBeVisible();
+  await page.locator("#teoyubeTableSearch").fill("WETAWTWHIBYATYRNTGOGODIV 2");
+  await expect(fifthRow).toBeVisible();
+  await expect(sixthRow).toBeHidden();
+  await page.locator("#teoyubeTableSearch").fill("");
+  await expect(sixthRow).toBeVisible();
 });

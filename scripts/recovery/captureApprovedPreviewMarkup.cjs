@@ -8,6 +8,7 @@ const { chromium } = require("@playwright/test");
 
 const workspaceRoot = path.resolve(__dirname, "../..");
 const outputFile = path.join(workspaceRoot, "src/app/_approved-source/approved-view-markup.generated.ts");
+const tablesRowDetailsOutputFile = path.join(workspaceRoot, "src/app/_approved-source/approved-tables-row-details.generated.ts");
 const baseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4173";
 
 const deterministicInitScript = ({ now }) => {
@@ -137,6 +138,7 @@ async function captureTables(page) {
   await openView(page, "teoyube-tables");
   const initial = await innerHtml(page, "#teoyube-tables");
   const pages = {};
+  const rowDetails = {};
   const pageNumbers = await page.locator("#teoyubeTablePagination [data-table-page]").evaluateAll((buttons) =>
     [...new Set(buttons.map((button) => Number(button.getAttribute("data-table-page"))).filter((value) => Number.isFinite(value)))]
   );
@@ -144,6 +146,29 @@ async function captureTables(page) {
     await page.locator(`#teoyubeTablePagination [data-table-page="${pageNumber}"]`).last().click();
     await settle(page);
     pages[String(pageNumber)] = await innerHtml(page, "#teoyube-tables");
+  }
+
+  for (const pageNumber of pageNumbers) {
+    await page.locator(`#teoyubeTablePagination [data-table-page="${pageNumber}"]`).last().click();
+    await settle(page);
+    const rowIds = await page.locator("#teoyubeTablesRows .table-expand-button[data-table-row]").evaluateAll((buttons) =>
+      buttons.map((button) => button.getAttribute("data-table-row")).filter(Boolean)
+    );
+    for (const rowId of rowIds) {
+      const toggle = page.locator(`#teoyubeTablesRows .table-expand-button[data-table-row="${rowId}"]`);
+      const hasDetail = await toggle.evaluate((button) =>
+        button.closest(".teoyube-main-row")?.nextElementSibling?.matches(".teoyube-detail-row") || false
+      );
+      if (!hasDetail) {
+        await toggle.click();
+        await settle(page);
+      }
+      rowDetails[rowId] = await toggle.evaluate((button) => {
+        const detail = button.closest(".teoyube-main-row")?.nextElementSibling;
+        if (!detail?.matches(".teoyube-detail-row")) throw new Error(`Missing approved detail row ${button.getAttribute("data-table-row")}.`);
+        return detail.outerHTML;
+      });
+    }
   }
 
   await openView(page, "teoyube-tables");
@@ -161,7 +186,7 @@ async function captureTables(page) {
       videoSourceHidden: await page.locator("#teoyubeDataVideoSourceWrap").getAttribute("hidden") !== null
     };
   }
-  return { initial, pages, managementTabs };
+  return { initial, pages, rowDetails, managementTabs };
 }
 
 async function captureRoadmap(page) {
@@ -193,9 +218,12 @@ async function main() {
   await context.addInitScript(deterministicInitScript, { now: "2026-07-18T12:00:00.000Z" });
   const page = await context.newPage();
   try {
+    const sourceDigest = approvedSourceDigest();
+    const capturedAt = "2026-07-18T12:00:00.000Z";
+    const tables = await captureTables(page);
     const markup = {
-      sourceDigest: approvedSourceDigest(),
-      capturedAt: "2026-07-18T12:00:00.000Z",
+      sourceDigest,
+      capturedAt,
       canon: await captureCanon(page),
       table: await captureTable(page),
       calling: await captureCalling(page),
@@ -204,7 +232,11 @@ async function main() {
       lexicon: await captureLexicon(page),
       guide: await captureGuide(page),
       embeddedVideos: await captureEmbeddedVideos(page),
-      tables: await captureTables(page),
+      tables: {
+        initial: tables.initial,
+        pages: tables.pages,
+        managementTabs: tables.managementTabs
+      },
       roadmap: await captureRoadmap(page)
     };
     const source = [
@@ -212,9 +244,16 @@ async function main() {
       `export const APPROVED_VIEW_MARKUP = ${JSON.stringify(markup)} as const;`,
       ""
     ].join("\n");
+    const tablesRowDetailsSource = [
+      "// Generated only from canonical static Tables row-expansion states. Do not hand-edit or use as a baseline update.",
+      `export const APPROVED_TABLE_ROW_DETAILS = ${JSON.stringify({ sourceDigest, capturedAt, rows: tables.rowDetails })} as const;`,
+      ""
+    ].join("\n");
     fs.mkdirSync(path.dirname(outputFile), { recursive: true });
     fs.writeFileSync(outputFile, source, "utf8");
+    fs.writeFileSync(tablesRowDetailsOutputFile, tablesRowDetailsSource, "utf8");
     console.log(`Captured approved retained-route markup to ${path.relative(workspaceRoot, outputFile)}.`);
+    console.log(`Captured approved Tables row details to ${path.relative(workspaceRoot, tablesRowDetailsOutputFile)}.`);
   } finally {
     await context.close();
     await browser.close();

@@ -29,12 +29,30 @@ export function TablesPageController({ initialViewModel }: { initialViewModel: T
     if (!mountedRoot) return;
     const root: HTMLElement = mountedRoot;
 
+    function findDetailRow(row: HTMLTableRowElement | null) {
+      const candidate = row?.nextElementSibling;
+      return candidate?.matches(".teoyube-detail-row") ? candidate as HTMLTableRowElement : null;
+    }
+
+    function ensureDetailRow(row: HTMLTableRowElement, rowId: string) {
+      const existing = findDetailRow(row);
+      if (existing) return existing;
+      const approvedHtml = initialViewModel.rowDetails[rowId];
+      if (!approvedHtml) return null;
+      const template = document.createElement("template");
+      template.innerHTML = approvedHtml.trim();
+      const detail = template.content.firstElementChild;
+      if (!(detail instanceof HTMLTableRowElement) || !detail.matches(".teoyube-detail-row")) return null;
+      row.insertAdjacentElement("afterend", detail);
+      return detail;
+    }
+
     function applyDemoFilter() {
       const query = normalize(root?.querySelector<HTMLInputElement>("#teoyubeTableSearch")?.value || "");
       const category = normalize(root?.querySelector<HTMLSelectElement>("#teoyubeTableCategory")?.value || "all categories");
       const rows = [...(root?.querySelectorAll<HTMLTableRowElement>("#teoyubeTablesRows .teoyube-main-row") || [])];
       rows.forEach((row) => {
-        const detail = row.nextElementSibling as HTMLElement | null;
+        const detail = findDetailRow(row);
         const text = normalize(`${row.textContent || ""} ${detail?.textContent || ""}`);
         const matches = (!query || text.includes(query)) && (category === "all categories" || text.includes(category));
         row.hidden = !matches;
@@ -90,10 +108,15 @@ export function TablesPageController({ initialViewModel }: { initialViewModel: T
       const rowToggle = target.closest<HTMLElement>("[data-table-row]");
       if (rowToggle) {
         const row = rowToggle.closest<HTMLTableRowElement>(".teoyube-main-row");
-        const detail = row?.nextElementSibling as HTMLElement | null;
-        const expanded = !row?.classList.contains("expanded");
-        row?.classList.toggle("expanded", expanded);
-        rowToggle.setAttribute("aria-expanded", String(expanded));
+        if (!row) return;
+        const rowId = rowToggle.dataset.tableRow || "";
+        const expanded = !row.classList.contains("expanded");
+        const detail = expanded ? ensureDetailRow(row, rowId) : findDetailRow(row);
+        if (expanded && !detail) return;
+        row.classList.toggle("expanded", expanded);
+        const expandButton = row.querySelector<HTMLElement>(".table-expand-button[data-table-row]");
+        expandButton?.setAttribute("aria-expanded", String(expanded));
+        expandButton?.setAttribute("aria-label", `${expanded ? "Collapse" : "Expand"} ${row.querySelector(".table-name-cell")?.textContent?.trim() || "table row"}`);
         if (detail) detail.hidden = !expanded;
         return;
       }

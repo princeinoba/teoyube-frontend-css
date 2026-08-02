@@ -60,3 +60,19 @@ Official channel: `https://www.youtube.com/channel/UCxG1guesWqO69QK022fyp2w`.
 Deterministic browser tests intercept the exact privacy-enhanced embed request; public playback still depends on YouTube availability and each video retaining embed permission. The repository's pre-existing high-severity development-dependency advisory remains unchanged; no dependency version was changed in this task.
 
 Rollback is an exact restore of the files listed in the final handoff plus removal of the task's newly added player, shared contract, tests, approval, and evidence files. No automatic rollback was performed.
+## All-row expansion and playback remediation
+
+- Remediation starting HEAD: `af6821a665f460e70cc3f0cbe809021c9c5058fa`.
+- Verified at: `2026-08-02T00:40:37-04:00`.
+- Root cause: the canonical Next controller assumed every main row already had a following detail row. The approved initial capture contains detail markup for only four rows, so later rows could toggle their main-row class but could not reveal either player. Filtering could also mistake the next main row for a detail row.
+- Repair: 24 exact canonical static row-detail states are now retained in a separate generated module. The controller inserts only the matching approved detail row when a collapsed row is first expanded and thereafter toggles that row safely. No protected generated markup, CSS, static source, baseline, asset, class, or ID changed.
+- Playback: all 24 rows across three pages expose the compact and Airplay players, producing 48 verified Play controls. Each initial row assignment follows the existing eight-item official-channel mapping by stable row index. Airplay navigation remains independent of compact playback.
+- Focused browser: **PASS 2/2**; the all-row case verifies 24 row details, all 48 Play actions, exact `youtube-nocookie.com` video IDs, adjacent-row integrity, and search restoration.
+- Static rollback browser: **PASS 1/1**.
+- Focused unit: **PASS 9/9**; full unit: **PASS 287/287 with one existing skipped test**.
+- Complete browser audit: Tables passed within the 39/40 four-worker run. One unrelated Today external-request assertion failed under concurrency and its complete file then passed **9/9** serially; three conditional static cases were skipped in the combined run and the focused static Tables case passed separately.
+- Typecheck, lint, build, TIG/Scripture/safety/live-AI/retrieval bundle boundaries: **PASS**.
+- Complete recovery contract: **PASS**; 72 immutable screenshots, 12 immutable DOM snapshots, 60 owner-approved support screenshots, and 54 Next-support captures remain unchanged.
+- Deterministic build ID: `teoyube-2f1056fbac6d9e0f1fc2049a`.
+- Protected visual files changed in this remediation: **0**.
+- Rollback: revert the focused remediation commit after it is recorded; the prior dual-container implementation remains available at `af6821a665f460e70cc3f0cbe809021c9c5058fa`.

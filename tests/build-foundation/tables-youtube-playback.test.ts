@@ -50,6 +50,8 @@ describe("Tables dual-container TeoyubeWorld playback boundary", () => {
     expect(player).toContain("setAirplayVideo(panel");
     expect(player).not.toContain('querySelector("[data-table-video-preview]")');
     expect(controller).toContain("createTablesYouTubePlayback(root, tablesYouTubeFeed)");
+    expect(controller).toContain("initialViewModel.rowDetails[rowId]");
+    expect(controller).toContain('candidate?.matches(".teoyube-detail-row")');
     expect(bootstrap).toContain('import("./src/features/media/tables-youtube-player.js")');
     expect(bootstrap).toContain("initializeStaticTablesYouTubePlayback");
   });
