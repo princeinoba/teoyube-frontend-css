@@ -47,4 +47,10 @@
       document.body.dataset.promiseTableTeoyubeWorldPlayback = "unavailable";
       document.body.dataset.promiseTableTeoyubeWorldPlaybackError = String(error?.message || error).slice(0, 160);
     });
+  import("./src/features/media/tables-youtube-player.js")
+    .then(({ initializeStaticTablesYouTubePlayback }) => initializeStaticTablesYouTubePlayback())
+    .catch((error) => {
+      document.body.dataset.tablesTeoyubeWorldPlayback = "unavailable";
+      document.body.dataset.tablesTeoyubeWorldPlaybackError = String(error?.message || error).slice(0, 160);
+    });
 })();

@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { TablesPageViewModel } from "../../features/media/application/retained-media-page-service";
+import { createTablesYouTubePlayback } from "../../features/media/tables-youtube-player.js";
+import tablesYouTubeFeed from "../../features/promises/promise-table-youtube-feed.json";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedTablesView } from "./ApprovedTablesView";
 
@@ -14,6 +16,13 @@ export function TablesPageController({ initialViewModel }: { initialViewModel: T
   const rootRef = useRef<HTMLElement>(null);
   const router = useRouter();
   const [notice, setNotice] = useState<MigrationNotice>(null);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+    const playback = createTablesYouTubePlayback(root, tablesYouTubeFeed);
+    return () => playback.destroy();
+  }, []);
 
   useEffect(() => {
     const mountedRoot = rootRef.current;

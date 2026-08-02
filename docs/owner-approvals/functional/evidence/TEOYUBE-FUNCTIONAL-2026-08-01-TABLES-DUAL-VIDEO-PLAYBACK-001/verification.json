@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "approvalId": "TEOYUBE-FUNCTIONAL-2026-08-01-TABLES-DUAL-VIDEO-PLAYBACK-001",
+  "verifiedAt": "2026-08-01T21:25:44-04:00",
+  "route": "/tables",
+  "officialChannelId": "UCxG1guesWqO69QK022fyp2w",
+  "officialChannelUrl": "https://www.youtube.com/channel/UCxG1guesWqO69QK022fyp2w",
+  "mappingCount": 8,
+  "playbackOrigin": "https://www.youtube-nocookie.com",
+  "clickToLoad": true,
+  "containers": {
+    "compactPreview": "independent",
+    "airplay": "independent",
+    "airplayCarouselChangesCompactPreview": false
+  },
+  "checks": {
+    "focusedUnit": "PASS (included in 287 passing unit tests)",
+    "focusedNextBrowser": "PASS",
+    "focusedStaticBrowser": "PASS",
+    "keyboardActivation": "PASS",
+    "axeSeriousOrCriticalViolations": 0,
+    "fullBrowser": "PASS WITH ISOLATED CONFIRMATION: 40/42 at four workers; two unrelated Today shared-state cases passed 2/2 serially",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "build": "PASS",
+    "recovery": "PASS",
+    "runtimeCandidate": "PASS"
+  },
+  "immutableBaselinesChanged": 0,
+  "ownerApprovedSupportBaselinesChanged": 0,
+  "screenshotsAdded": 0
+}

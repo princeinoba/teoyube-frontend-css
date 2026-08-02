@@ -1,49 +1,21 @@
+import {
+  createTeoyubeWorldYouTubeEmbedUrl,
+  isVerifiedTeoyubeWorldVideo,
+  validateTeoyubeWorldYouTubeFeed
+} from "../../shared/media/teoyubeworld-youtube-contract.js";
+
 const FEED_PATH = "/src/features/promises/promise-table-youtube-feed.json";
-const OFFICIAL_CHANNEL_ID = "UCxG1guesWqO69QK022fyp2w";
-const OFFICIAL_CHANNEL_URL = "https://www.youtube.com/channel/UCxG1guesWqO69QK022fyp2w";
-const VIDEO_ID_PATTERN = /^[A-Za-z0-9_-]{11}$/;
 const SOURCE_NOTICE = "Official TeoyubeWorld video. YouTube playback begins only after you press Play.";
 const NETWORK_NOTICE = "YouTube media connects only after you press Play; Teoyube does not use that connection for AI, analytics, uploads, or persistence.";
 
-function playable(video) {
-  return Boolean(
-    video &&
-    video.playbackStatus === "verified" &&
-    video.youtubeVideoId &&
-    VIDEO_ID_PATTERN.test(video.youtubeVideoId)
-  );
-}
+const playable = isVerifiedTeoyubeWorldVideo;
 
 export function createPromiseTableYouTubeEmbedUrl(video) {
-  if (!playable(video)) return null;
-  const parameters = new URLSearchParams({ autoplay: "1", playsinline: "1", rel: "0", modestbranding: "1" });
-  return `https://www.youtube-nocookie.com/embed/${video.youtubeVideoId}?${parameters.toString()}`;
+  return createTeoyubeWorldYouTubeEmbedUrl(video);
 }
 
 export function validatePromiseTableYouTubeFeed(feed) {
-  if (
-    !feed ||
-    feed.officialChannel?.id !== OFFICIAL_CHANNEL_ID ||
-    feed.officialChannel?.url !== OFFICIAL_CHANNEL_URL ||
-    !Array.isArray(feed.items) ||
-    !feed.items.length
-  ) return false;
-
-  const ids = new Set();
-  const videoIds = new Set();
-  for (const video of feed.items) {
-    if (!video?.id || ids.has(video.id) || !Number.isInteger(video.order)) return false;
-    ids.add(video.id);
-    if (video.playbackStatus === "verified") {
-      if (
-        !VIDEO_ID_PATTERN.test(video.youtubeVideoId || "") ||
-        video.youtubeWatchUrl !== `https://www.youtube.com/watch?v=${video.youtubeVideoId}` ||
-        videoIds.has(video.youtubeVideoId)
-      ) return false;
-      videoIds.add(video.youtubeVideoId);
-    }
-  }
-  return true;
+  return validateTeoyubeWorldYouTubeFeed(feed);
 }
 
 function setText(target, value) {

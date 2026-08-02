@@ -113,8 +113,8 @@
     },
     {
       "path": "embedded-videos.js",
-      "sizeBytes": 1857,
-      "sha256": "a22f19d727b71245726f75d02ec29bb3e3495d43d6fcdfc22f499e59f995a928"
+      "sizeBytes": 2226,
+      "sha256": "d8e73fc16f9605f27219401d46ba3c7d11ca94e4c0b21ac881546cb36f3a070d"
     },
     {
       "path": "index.html",
