@@ -76,3 +76,16 @@ Rollback is an exact restore of the files listed in the final handoff plus remov
 - Deterministic build ID: `teoyube-2f1056fbac6d9e0f1fc2049a`.
 - Protected visual files changed in this remediation: **0**.
 - Rollback: revert the focused remediation commit after it is recorded; the prior dual-container implementation remains available at `af6821a665f460e70cc3f0cbe809021c9c5058fa`.
+
+## Live iframe navigation remediation
+
+- Remediation starting HEAD: `d809ced1dbc7f8e506c57e6117865ece6cefc301`.
+- Verified at: `2026-08-02T09:07:02.9133614-04:00`.
+- Root cause: after removing the approved placeholder `srcdoc`, the player left `loading="lazy"` on the iframe. Chrome accepted the new YouTube URL attribute but retained an `about:blank` child frame and made no provider request. The earlier mocked browser assertion checked only the `src` attribute, so it could pass without playback.
+- Repair: the click-to-load adapter now removes lazy loading before the first verified `src` assignment, registers load/error state handlers before navigation, and restores lazy loading only when a player is stopped. Markup, CSS, feed IDs, official-channel mappings, row state, and adjacent Tables controls are unchanged.
+- Provider validation: YouTube oEmbed returned HTTP 200 for all eight configured video IDs and identified every author as TeoyubeWorld.
+- Deterministic browser regression: **PASS 2/2**; all 24 rows and 48 controls now produce 48 intercepted embed-document requests, rather than merely changing iframe attributes.
+- Live provider playback: **PASS 16/16**; each of the eight videos loaded in both compact and Airplay containers, exposed `readyState: 4`, reported no player error, and advanced media time with `paused: false`.
+- Typecheck, lint, unit, build, TIG/Scripture/safety/live-AI/retrieval bundle boundaries: **PASS**.
+- Deterministic build ID: `teoyube-31f851e837cd35a81819b6e1`.
+- Protected visual files, immutable baselines, owner-approved support baselines, CSS, markup, assets, IDs, and class lists changed: **0**.

@@ -64,6 +64,7 @@ export function createTablesYouTubePlayback(root, feed) {
     const frame = panel?.querySelector("iframe");
     if (frame) {
       frame.removeAttribute("src");
+      frame.setAttribute("loading", "lazy");
       delete frame.dataset.youtubeVideoId;
     }
     panel?.classList.remove("playing");
@@ -76,8 +77,8 @@ export function createTablesYouTubePlayback(root, feed) {
     if (!frame || !source) return;
     configureFrame(frame, video, presentation);
     frame.removeAttribute("srcdoc");
+    frame.removeAttribute("loading");
     frame.dataset.youtubeVideoId = video.youtubeVideoId;
-    frame.setAttribute("src", source);
     panel.classList.add("playing");
     panel.dataset.playbackState = "loading";
     frame.addEventListener("load", () => {
@@ -90,6 +91,7 @@ export function createTablesYouTubePlayback(root, feed) {
         panel.dataset.playbackState = "error";
       }
     }, { once: true });
+    frame.setAttribute("src", source);
     document.body.dataset.tablesTeoyubeWorldPlayback = "active";
   }
 

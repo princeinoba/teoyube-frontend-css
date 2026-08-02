@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "approvalId": "TEOYUBE-FUNCTIONAL-2026-08-01-TABLES-DUAL-VIDEO-PLAYBACK-001",
-  "verifiedAt": "2026-08-02T00:40:37-04:00",
+  "verifiedAt": "2026-08-02T09:07:02.9133614-04:00",
   "route": "/tables",
   "officialChannelId": "UCxG1guesWqO69QK022fyp2w",
   "officialChannelUrl": "https://www.youtube.com/channel/UCxG1guesWqO69QK022fyp2w",
@@ -17,7 +17,7 @@
   },
   "checks": {
     "focusedUnit": "PASS (included in 287 passing unit tests)",
-    "focusedNextBrowser": "PASS (2/2; 24 rows and 48 Play controls verified)",
+    "focusedNextBrowser": "PASS (2/2; 24 rows, 48 Play controls, and 48 embed-document requests verified)",
     "focusedStaticBrowser": "PASS",
     "keyboardActivation": "PASS",
     "axeSeriousOrCriticalViolations": 0,
@@ -28,9 +28,18 @@
     "recovery": "PASS",
     "runtimeCandidate": "PASS",
     "adjacentRowExpansionAndFilter": "PASS",
-    "deterministicBuildId": "teoyube-2f1056fbac6d9e0f1fc2049a"
+    "deterministicBuildId": "teoyube-31f851e837cd35a81819b6e1",
+    "liveYouTubePlayback": "PASS (16/16; 8 verified videos x compact/Airplay; readyState 4, advancing media time, no player error)"
   },
   "immutableBaselinesChanged": 0,
   "ownerApprovedSupportBaselinesChanged": 0,
-  "screenshotsAdded": 0
+  "screenshotsAdded": 0,
+  "regressionRootCause": "loading=lazy retained after srcdoc removal prevented dynamic iframe navigation; prior test observed src attribute only",
+  "liveProviderValidation": {
+    "oEmbedAvailable": 8,
+    "oEmbedExpected": 8,
+    "author": "TeoyubeWorld",
+    "containerChecksPassed": 16,
+    "containerChecksExpected": 16
+  }
 }

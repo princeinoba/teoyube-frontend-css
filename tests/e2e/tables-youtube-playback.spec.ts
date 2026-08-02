@@ -21,7 +21,9 @@ const orderedMappings = [
 ] as const;
 
 test("Tables compact preview and Airplay players stay independent", async ({ page }) => {
+  const requestedEmbeds: string[] = [];
   await page.route("https://www.youtube-nocookie.com/**", async (route) => {
+    requestedEmbeds.push(route.request().url());
     await route.fulfill({
       status: 200,
       contentType: "text/html",
@@ -51,6 +53,8 @@ test("Tables compact preview and Airplay players stay independent", async ({ pag
   await expect(compactPlay).toBeFocused();
   await page.keyboard.press("Space");
   await expect(compactFrame).toHaveAttribute("src", new RegExp(`/embed/${mappings.seed.videoId}\\?`));
+  await expect(compactFrame).not.toHaveAttribute("loading", "lazy");
+  await expect.poll(() => requestedEmbeds.some((url) => url.includes(`/embed/${mappings.seed.videoId}?`))).toBe(true);
   await expect(compactFrame).toHaveAttribute("title", `${mappings.seed.title} preview`);
   await expect(airplayFrame).not.toHaveAttribute("src", /youtube-nocookie/);
 
@@ -81,7 +85,9 @@ test("Tables compact preview and Airplay players stay independent", async ({ pag
   expect(seriousViolations).toEqual([]);
 });
 test("all 24 Tables rows restore both corresponding Play controls without disturbing adjacent rows", async ({ page }) => {
+  const requestedEmbeds: string[] = [];
   await page.route("https://www.youtube-nocookie.com/**", async (route) => {
+    requestedEmbeds.push(route.request().url());
     await route.fulfill({ status: 200, contentType: "text/html", body: "<!doctype html><title>Tables playback audit</title>" });
   });
   await page.goto("/tables", { waitUntil: "domcontentloaded" });
@@ -106,8 +112,10 @@ test("all 24 Tables rows restore both corresponding Play controls without distur
 
       await detail.locator("[data-table-preview-video-play]").click();
       await expect(detail.locator(".table-preview-video-panel iframe")).toHaveAttribute("src", new RegExp(`/embed/${mapping.videoId}\\?`));
+      await expect(detail.locator(".table-preview-video-panel iframe")).not.toHaveAttribute("loading", "lazy");
       await detail.locator("[data-table-video-play]").click();
       await expect(detail.locator(".table-row-video-premium iframe")).toHaveAttribute("src", new RegExp(`/embed/${mapping.videoId}\\?`));
+      await expect(detail.locator(".table-row-video-premium iframe")).not.toHaveAttribute("loading", "lazy");
     }
   }
 
@@ -121,4 +129,5 @@ test("all 24 Tables rows restore both corresponding Play controls without distur
   await expect(sixthRow).toBeHidden();
   await page.locator("#teoyubeTableSearch").fill("");
   await expect(sixthRow).toBeVisible();
+  expect(requestedEmbeds).toHaveLength(48);
 });
