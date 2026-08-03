@@ -10,6 +10,11 @@ export type CallingMediaDto = Readonly<{
   description: string;
   duration: string;
   image: string;
+  order: number;
+  channelUrl: string;
+  youtubeVideoId: string;
+  youtubeWatchUrl: string;
+  playbackStatus: "verified" | "unavailable";
 }>;
 
 export type CallingDiscernmentDto = Readonly<{

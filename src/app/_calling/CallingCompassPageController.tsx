@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useDailySpiritualLoop } from "../../features/journey/ui/DailySpiritualLoopProvider";
 import type { CallingCompassViewModel } from "../../domain/calling/calling-discernment";
+import { createCallingCompassYouTubeEmbedUrl } from "../../features/calling/calling-compass-youtube";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedCallingCompassView } from "./ApprovedCallingCompassView";
 
@@ -27,6 +28,70 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
     const currentRoot = rootRef.current;
     if (!currentRoot) return;
     const root: HTMLElement = currentRoot;
+    let activeMediaId: string | null = null;
+
+    function setMediaStatus(message: string) {
+      const status = root.querySelector<HTMLElement>("#compassVideoStatus");
+      if (!status) return;
+      status.setAttribute("aria-live", "polite");
+      status.textContent = message;
+    }
+
+    function stopMediaPlayback(restorePreview = true) {
+      const player = root.querySelector<HTMLElement>("#compassVideoPlayer");
+      const frameShell = player?.querySelector<HTMLElement>(".compass-video-frame");
+      frameShell?.querySelector("iframe")?.remove();
+      activeMediaId = null;
+      if (player) player.dataset.playbackState = "idle";
+      if (!restorePreview || !frameShell) return;
+      for (const element of frameShell.querySelectorAll<HTMLElement>("img, .local-media-disabled-copy, .compass-embed-play-overlay")) {
+        element.hidden = false;
+        element.style.removeProperty("display");
+      }
+    }
+
+    function playMedia(index: number) {
+      const selected = initialViewModel.media[index];
+      const source = selected ? createCallingCompassYouTubeEmbedUrl(selected) : null;
+      const player = root.querySelector<HTMLElement>("#compassVideoPlayer");
+      const frameShell = player?.querySelector<HTMLElement>(".compass-video-frame");
+      if (!selected || !source || !player || !frameShell) {
+        if (selected) setMediaStatus(`Playback is unavailable for "${selected.title}".`);
+        return;
+      }
+
+      stopMediaPlayback(false);
+      for (const element of frameShell.querySelectorAll<HTMLElement>("img, .local-media-disabled-copy, .compass-embed-play-overlay")) {
+        element.hidden = true;
+        element.style.setProperty("display", "none");
+      }
+
+      const frame = document.createElement("iframe");
+      frame.title = `TeoyubeWorld video: ${selected.title}`;
+      frame.allow = "autoplay; encrypted-media; picture-in-picture; web-share";
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      frame.allowFullscreen = true;
+      frame.dataset.youtubeVideoId = selected.youtubeVideoId;
+      frame.style.display = "block";
+      frame.style.border = "0";
+      activeMediaId = selected.id;
+      player.dataset.activeVideoId = selected.id;
+      player.dataset.playbackState = "loading";
+      frame.addEventListener("load", () => {
+        if (activeMediaId !== selected.id) return;
+        player.dataset.playbackState = "playing";
+        setMediaStatus(`Playing "${selected.title}" from the official TeoyubeWorld YouTube channel.`);
+      }, { once: true });
+      frame.addEventListener("error", () => {
+        if (activeMediaId !== selected.id) return;
+        stopMediaPlayback(true);
+        player.dataset.playbackState = "error";
+        setMediaStatus(`The official TeoyubeWorld video "${selected.title}" could not be loaded. Press Play to retry.`);
+      }, { once: true });
+      frameShell.prepend(frame);
+      setMediaStatus(`Loading "${selected.title}" from the official TeoyubeWorld YouTube channel.`);
+      frame.src = source;
+    }
 
     function renderCompass() {
       const panel = root.querySelector<HTMLElement>("#phase116bCallingCompassTool");
@@ -36,23 +101,26 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
       panel.innerHTML = `<div class="phase116b-panel-head"><div><p class="eyebrow">Guided Calling Compass</p><h3>${startedRef.current ? `Question ${stepRef.current + 1} of ${initialViewModel.questions.length}` : "Start a cautious calling flow"}</h3><p>Language stays suggestive, Scripture-tested, and counsel-aware.</p></div><button class="primary" type="button" data-phase116b-action="compass-start">Start Compass</button></div><div class="phase116b-compass-progress">${initialViewModel.questions.map((item, index) => `<span class="${startedRef.current && index <= stepRef.current ? "active" : ""}">${escapeHtml(item.id)}</span>`).join("")}</div><article class="phase116b-compass-card"><h4>${escapeHtml(question.prompt)}</h4><div class="phase116b-chip-row">${question.options.map((option) => `<button type="button" class="${answersRef.current[question.id] === option ? "active" : ""}" data-phase116b-compass-answer="${question.id}" data-phase116b-value="${escapeHtml(option)}">${escapeHtml(option)}</button>`).join("")}</div><div class="phase116b-action-row"><button class="secondary" type="button" data-phase116b-action="compass-back" ${stepRef.current === 0 ? "disabled" : ""}>Back</button><button class="secondary" type="button" data-phase116b-action="compass-next">Next</button><button class="primary" type="button" data-phase116b-action="compass-result">Generate Result</button></div></article>${resultVisibleRef.current ? `<article class="phase116b-result-card"><p class="eyebrow">Calling result</p><h4>${escapeHtml(result.title)}</h4><p>${escapeHtml(result.summary)}</p><div class="scripture-strip"><span class="scripture-pill">${escapeHtml(result.scriptureReference)}</span>${result.relatedWords.map((word) => `<span class="scripture-pill">${escapeHtml(word)}</span>`).join("")}</div><p><strong>Prayer:</strong> ${escapeHtml(result.prayer)}</p><p><strong>Action:</strong> ${escapeHtml(result.actionStep)}</p><div class="phase116b-action-row"><button class="secondary" type="button" data-phase116b-action="compass-save-reflection">Save Reflection</button><button class="secondary" type="button" data-phase116b-action="compass-start-journey"${callingMomentActive ? " data-daily-journey-action=\"accept\"" : ""}>Start Journey</button><button class="secondary" type="button" data-phase116b-action="open-current-graph">View Graph</button><button class="secondary" type="button" data-phase115-action="compare-recommendation">Compare Preview</button></div></article>` : ""}`;
     }
 
-    function selectMedia(index: number) {
+    function selectMedia(index: number, shouldPlay = false) {
       const media = initialViewModel.media;
       if (!media.length) return;
       selectedMediaRef.current = ((index % media.length) + media.length) % media.length;
       const selected = media[selectedMediaRef.current];
       root.querySelectorAll<HTMLElement>("#compassVideoList .compass-video-item").forEach((button, buttonIndex) => button.classList.toggle("active", buttonIndex === selectedMediaRef.current));
-      const player = root.querySelector("#compassVideoPlayer");
+      const player = root.querySelector<HTMLElement>("#compassVideoPlayer");
       if (!player) return;
       player.querySelectorAll(".compass-player-topbar strong, .compass-featured-meta h4").forEach((element) => { element.textContent = selected.title; });
       const image = player.querySelector<HTMLImageElement>(".compass-video-frame img");
       if (image) image.src = selected.image;
-      const play = player.querySelector<HTMLButtonElement>(".compass-embed-play-overlay");
-      if (play) { play.dataset.videoId = selected.id; play.setAttribute("aria-label", `Play ${selected.title}`); }
+      const playButton = player.querySelector<HTMLButtonElement>(".compass-embed-play-overlay");
+      if (playButton) { playButton.dataset.videoId = selected.id; playButton.setAttribute("aria-label", `Play ${selected.title}`); }
       const description = player.querySelector(".compass-featured-meta p");
       if (description) description.textContent = selected.description;
       const meta = player.querySelectorAll(".compass-featured-row span");
       if (meta.length) meta[meta.length - 1].textContent = selected.duration;
+      player.dataset.activeVideoId = selected.id;
+      if (shouldPlay) playMedia(selectedMediaRef.current);
+      else stopMediaPlayback(true);
     }
 
     function setSearch(query: string) {
@@ -61,7 +129,7 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
       if (input) input.value = query;
       const matchIndex = initialViewModel.media.findIndex((media) => `${media.title} ${media.description}`.toLowerCase().includes(query.toLowerCase()));
       if (matchIndex >= 0) selectMedia(matchIndex);
-      if (status) status.textContent = `${matchIndex >= 0 ? 1 : 0} local TeoyubeWorld preview${matchIndex >= 0 ? "" : "s"} found. External video sources are not connected in this preview.`;
+      if (status) status.textContent = `${matchIndex >= 0 ? 1 : 0} TeoyubeWorld video${matchIndex >= 0 ? "" : "s"} found. YouTube playback begins only after you press Play.`;
     }
 
     function onSubmit(event: SubmitEvent) {
@@ -77,9 +145,11 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
       if (query) { setSearch(query.dataset.query || query.dataset.phase116Query || ""); return; }
       if (target.closest('[data-phase116-action="clear-search-suggestions"]')) { setSearch(""); return; }
       const nav = target.closest<HTMLElement>("[data-compass-video-nav]");
-      if (nav) { selectMedia(selectedMediaRef.current + (nav.dataset.compassVideoNav === "next" ? 1 : -1)); return; }
+      if (nav) { selectMedia(selectedMediaRef.current + (nav.dataset.compassVideoNav === "next" ? 1 : -1), Boolean(activeMediaId)); return; }
       const mediaButton = target.closest<HTMLElement>("#compassVideoList .compass-video-item");
-      if (mediaButton) { selectMedia(Number(mediaButton.dataset.index || 0)); return; }
+      if (mediaButton) { event.preventDefault(); selectMedia(Number(mediaButton.dataset.index || 0), true); return; }
+      const featuredPlay = target.closest<HTMLElement>("#compassVideoPlayer .compass-embed-play-overlay");
+      if (featuredPlay) { event.preventDefault(); playMedia(selectedMediaRef.current); return; }
       const answer = target.closest<HTMLElement>("[data-phase116b-compass-answer]");
       if (answer) { answersRef.current[answer.dataset.phase116bCompassAnswer || ""] = answer.dataset.phase116bValue || ""; renderCompass(); return; }
       const action = target.closest<HTMLElement>("[data-phase116b-action]");
@@ -103,7 +173,11 @@ export function CallingCompassPageController({ initialViewModel }: { initialView
 
     root.addEventListener("submit", onSubmit);
     root.addEventListener("click", onClick);
-    return () => { root.removeEventListener("submit", onSubmit); root.removeEventListener("click", onClick); };
+    return () => {
+      stopMediaPlayback(false);
+      root.removeEventListener("submit", onSubmit);
+      root.removeEventListener("click", onClick);
+    };
   }, [actOnDailySpiritualLoop, callingMomentActive, initialViewModel, router]);
 
   return <><ApprovedCallingCompassView html={initialViewModel.approvedHtml} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} /></>;
