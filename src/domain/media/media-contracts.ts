@@ -13,6 +13,11 @@ export type MediaAssetDto = Readonly<{
   mimeType: "video/mp4" | null;
   source: "original_local_preview" | "approved_teoyubeworld_pilot";
   runtimeApproved: boolean;
+  order: number;
+  channelUrl: string | null;
+  youtubeVideoId: string | null;
+  youtubeWatchUrl: string | null;
+  playbackStatus: "verified" | "local" | "unavailable";
 }>;
 
 export type MediaDeliveryContract = Readonly<{

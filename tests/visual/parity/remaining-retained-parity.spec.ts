@@ -213,7 +213,9 @@ test("Embedded Videos preserves contained sources, controls, MIME, Range, cache,
   await expect(firstApprovedCard.locator("[data-ui-video-detail-panel]")).toContainText("No Other Gospel - Galatians 1 Opening, segment 2.");
   await page.locator("#uiVideoCategoryTabs [data-video-category='All Videos']").click();
   await page.locator("#uiVideoGrid [data-ui-video-play]").first().click();
-  await expect(page.locator("#phase113SaveDrawer")).toContainText("has no connected playable source");
+  const verifiedFrame = page.locator("#uiVideoGrid .ui-video-card").first().locator("[data-ui-video-stage] iframe");
+  await expect(verifiedFrame).toHaveAttribute("src", /^https:\/\/www\.youtube-nocookie\.com\/embed\/4zM2olpouIo\?/);
+  await expect(verifiedFrame).toHaveAttribute("title", "TeoyubeWorld video: The Seed of Promise");
   const manifest = await request.get(`${nextBaseUrl}/media/teoyubeworld/pilot-v1/runtime-manifest.json`);
   const manifestBody = await manifest.json();
   const sourcePath = manifestBody.records[0].plannedPublicCardUrl as string;

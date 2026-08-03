@@ -3,6 +3,7 @@ import { APPROVED_TABLE_ROW_DETAILS } from "../../../app/_approved-source/approv
 import { APPROVED_VIEW_MARKUP } from "../../../app/_approved-source/approved-view-markup.generated";
 import { MEDIA_DELIVERY_CONTRACT, type MediaAssetDto } from "../../../domain/media/media-contracts";
 import { TEOYUBE_MEDIA_LIBRARY } from "../../../lib/teoyube/data-access";
+import { EMBEDDED_VIDEOS_OFFICIAL_CHANNEL, getEmbeddedVideosYouTubeMapping } from "../embedded-videos-youtube";
 import { renderApprovedMediaGrid, renderApprovedMediaStats } from "./embedded-video-tab-renderer";
 
 type CapturedTab = Readonly<{ grid: string; stats: string }>;
@@ -33,22 +34,31 @@ function originalMedia(): MediaAssetDto[] {
     media_called_for_more: "local-called-for-more",
     media_strength_for_today: "local-strength-for-today"
   });
-  const mapped = TEOYUBE_MEDIA_LIBRARY.map((record) => Object.freeze({
-    id: renderedIds[record.id] || record.id,
-    title: record.title,
-    description: record.description,
-    category: record.category,
-    scriptureReferences: Object.freeze([...record.scriptureReferences]),
-    playbackUrl: null,
-    posterUrl: "public/images/embed/embedded-videos-hero-bg.png",
-    thumbnailUrl: "public/images/embed/embedded-videos-hero-bg.png",
-    durationSeconds: null,
-    sequenceTitle: null,
-    sequenceOrder: null,
-    mimeType: null,
-    source: "original_local_preview",
-    runtimeApproved: false
-  }) satisfies MediaAssetDto);
+  const mapped = TEOYUBE_MEDIA_LIBRARY.map((record, index) => {
+    const id = renderedIds[record.id] || record.id;
+    const youtube = getEmbeddedVideosYouTubeMapping(id);
+    return Object.freeze({
+      id,
+      title: record.title,
+      description: record.description,
+      category: record.category,
+      scriptureReferences: Object.freeze([...record.scriptureReferences]),
+      playbackUrl: null,
+      posterUrl: "public/images/embed/embedded-videos-hero-bg.png",
+      thumbnailUrl: "public/images/embed/embedded-videos-hero-bg.png",
+      durationSeconds: null,
+      sequenceTitle: null,
+      sequenceOrder: null,
+      mimeType: null,
+      source: "original_local_preview",
+      runtimeApproved: false,
+      order: youtube?.order ?? index,
+      channelUrl: youtube ? EMBEDDED_VIDEOS_OFFICIAL_CHANNEL.url : null,
+      youtubeVideoId: youtube?.youtubeVideoId ?? null,
+      youtubeWatchUrl: youtube?.youtubeWatchUrl ?? null,
+      playbackStatus: youtube ? "verified" : "unavailable"
+    }) satisfies MediaAssetDto;
+  });
   const supplemental: MediaAssetDto[] = [
     {
       id: "local-promise-language",
@@ -64,23 +74,31 @@ function originalMedia(): MediaAssetDto[] {
       category: "Message",
       scriptureReferences: ["Matthew 25:21", "Proverbs 16:3"]
     }
-  ].map((record) => Object.freeze({
-    ...record,
-    playbackUrl: null,
-    posterUrl: "public/images/embed/embedded-videos-hero-bg.png",
-    thumbnailUrl: "public/images/embed/embedded-videos-hero-bg.png",
-    durationSeconds: null,
-    sequenceTitle: null,
-    sequenceOrder: null,
-    mimeType: null,
-    source: "original_local_preview",
-    runtimeApproved: false
-  }));
+  ].map((record, index) => {
+    const youtube = getEmbeddedVideosYouTubeMapping(record.id);
+    return Object.freeze({
+      ...record,
+      playbackUrl: null,
+      posterUrl: "public/images/embed/embedded-videos-hero-bg.png",
+      thumbnailUrl: "public/images/embed/embedded-videos-hero-bg.png",
+      durationSeconds: null,
+      sequenceTitle: null,
+      sequenceOrder: null,
+      mimeType: null,
+      source: "original_local_preview",
+      runtimeApproved: false,
+      order: youtube?.order ?? mapped.length + index,
+      channelUrl: youtube ? EMBEDDED_VIDEOS_OFFICIAL_CHANNEL.url : null,
+      youtubeVideoId: youtube?.youtubeVideoId ?? null,
+      youtubeWatchUrl: youtube?.youtubeWatchUrl ?? null,
+      playbackStatus: youtube ? "verified" : "unavailable"
+    });
+  });
   return [...mapped, ...supplemental];
 }
 
 function approvedMedia(): MediaAssetDto[] {
-  return runtimeManifest.records.map((record) => Object.freeze({
+  return runtimeManifest.records.map((record, index) => Object.freeze({
     id: record.mediaId,
     title: record.title,
     description: record.description,
@@ -94,7 +112,12 @@ function approvedMedia(): MediaAssetDto[] {
     sequenceOrder: record.sequenceOrder,
     mimeType: "video/mp4",
     source: "approved_teoyubeworld_pilot",
-    runtimeApproved: record.validationState === "validated" && record.ownerReviewState === "confirmed"
+    runtimeApproved: record.validationState === "validated" && record.ownerReviewState === "confirmed",
+    order: index,
+    channelUrl: null,
+    youtubeVideoId: null,
+    youtubeWatchUrl: null,
+    playbackStatus: "local"
   }));
 }
 
