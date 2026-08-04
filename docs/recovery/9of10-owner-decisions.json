@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-04T14:24:32.8117021-04:00",
+  "decisions": [
+    {
+      "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
+      "scope": "Initialize the 9/10 program and execute Phase 1 only",
+      "status": "AUTHORIZED_BY_OWNER_SUPPLIED_CONTROLLER",
+      "source": "Teoyube_9_of_10_Implementation_Program_Controller.md",
+      "limitations": ["No Phase 2 work", "no product changes", "no visual changes", "no package/runtime changes", "no paid calls"]
+    },
+    {
+      "decisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
+      "scope": "Next canonical local runtime with static Node rollback",
+      "status": "APPROVED_EXISTING",
+      "source": "config/runtime/canonical-runtime-manifest.json"
+    },
+    {
+      "decisionId": "TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B",
+      "scope": "Exact owner-approved Scripture quotation delta",
+      "status": "APPROVED_EXISTING",
+      "source": "tests/visual/contracts/owner-approved-scripture-content-delta.json"
+    },
+    {
+      "decisionId": "TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8",
+      "scope": "Owner-approved support-route baselines",
+      "status": "APPROVED_EXISTING",
+      "source": "tests/visual/baselines/owner-approved-next-support/manifest.json"
+    },
+    {
+      "decisionId": "TEOYUBE-OWNER-ROUTE-AMENDMENT-2026-07-20-P12D",
+      "scope": "Next support route classification and baselines",
+      "status": "APPROVED_EXISTING",
+      "source": "tests/visual/baselines/owner-approved-next-support/manifest.json"
+    }
+  ],
+  "pendingDecisionGroups": [
+    {"phase": "4A", "decision": "pilot profile, sample, accessibility representation, compensation, session mode, thresholds, and permitted data"},
+    {"phase": "5B", "decision": "path-specific accessibility fixes affecting protected output"},
+    {"phase": "6A", "decision": "production providers and staging architecture"},
+    {"phase": "7", "decision": "paid evaluation budgets, production gates, and final deployment"},
+    {"phase": "8", "decision": "each archive/delete candidate separately"}
+  ],
+  "fabricatedApprovals": 0
+}

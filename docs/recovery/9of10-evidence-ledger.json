@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-04T14:24:32.8117021-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
+  "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
+  "correctedCurrentDependencyHash": "95be7e233e322c5c8513e6792229ab58d93cf231384f4838a4c85ef38b565be6",
+  "baselineIdentities": {
+    "packageLock": {"path": "package-lock.json", "sha256": "1edbad08c15ad46effdca2258278ca4b7159f223bad088fbc792e7a5e57008ef"},
+    "runtime": {
+      "manifestPath": "config/runtime/canonical-runtime-manifest.json",
+      "manifestSha256": "fe378bf7d3d83f85120aaa94a522e87241a6c318ab56cd35ced211363fb78a19",
+      "sourceManifestSha256": "04b1dc3476fc2ec6eca4d67bb05b1a83b14506624db6d1f70831f3db3e8bc1d3",
+      "runtimeSourceDigest": "d01fb290dc1117edca9d97512d529e29f6b4d0635ca539a48b45338effb45534",
+      "buildId": "teoyube-d01fb290dc1117edca9d9751",
+      "canonical": "next",
+      "rollback": "static-node"
+    },
+    "releaseEvidence": {
+      "manifestPath": "artifacts/release-evidence/manifest.json",
+      "manifestSha256": "0b7c530736b21778cfdbfadd02f49ba29dded7c82752f9a1ca3b6e3508857a47",
+      "validationSha256": "3268f1f0ad6fb1f481929582d39b3f84bb14b72d035dc8bd2d97a108dddd7365",
+      "identityCommit": "49a0496ef8a9b2b10957f8e1f68c663238c4ee00",
+      "gateCPreview": "BLOCKED",
+      "gateCProduction": "CLOSED",
+      "failureCount": 1087,
+      "status": "HISTORICAL_BUNDLE_STALE_CURRENT_VALIDATION"
+    },
+    "scripture": {
+      "corpusVersion": "engwebp-2020-stable-2026-07-10.p15b.1",
+      "manifestSha256": "e777cbf8c0dcebbb5093194025f1d4c788095d0c873ab4b5021fd238525ab8bd",
+      "corpusSha256": "6e6b3f95b5d61c83c06534ee4281f10b6e4e02c878b75141dcdd4403bf42d77f",
+      "lexicalIndexSha256": "544b67548c04a36e2445fa6601f07f6cdb7b8d044ae2691591629609b2eeeeb2",
+      "books": 66,
+      "chapters": 1189,
+      "sourceMarkers": 31103,
+      "displayableVerses": 31098,
+      "ownerDeltaContractSha256": "dcc20e9ae265a1e0777daaf4bfbd6e294fc1d6e40a7d49696c861e33e8f0a064",
+      "ownerDeltaBaselineManifestSha256": "404f98be60170502522622ad262d5490d574133fe8505e1b0bde7e6bc1976822"
+    },
+    "tig": {
+      "datasetVersion": "teoyube-local-dataset-2026-07-20.1",
+      "rulesetVersion": "teoyube-deterministic-ruleset-2026-07-20.1",
+      "canonicalServiceSha256": "564c29fc436afb277a0fac0e45fc47b983343a05649d2f84e09c674584854c69"
+    },
+    "safety": {
+      "policyVersion": "teoyube-safety-policy-1.0.0",
+      "taxonomyVersion": "teoyube-sensitive-topic-taxonomy-1.0.0",
+      "datasetVersion": "teoyube-synthetic-safety-dataset-1.0.0",
+      "evaluatorVersion": "teoyube-deterministic-safety-evaluator-1.0.0",
+      "contractsSha256": "a70ca6884b9b302a490613c973b035006ec156b37191ccca71ee5cced65999ee",
+      "deterministicArtifactHash": "65943d102556d1af6e009621c99189fbccda0f881ceb2b67c62865a68f2f03dd",
+      "gateA": "PASS_64_OF_64",
+      "gateBOperationalDefault": "CLOSED_LIVE_AI_DISABLED"
+    },
+    "teoGuide": {
+      "orchestrationVersion": "teo-guide-orchestration-2026-07-22.1",
+      "responseContractVersion": "teo-guide-structured-response-2026-07-22.1",
+      "plannerVersion": "teo-guide-deterministic-planner-2026-07-22.1",
+      "toolRegistryVersion": "teo-guide-tools-2026-07-22.1",
+      "contractsSha256": "bc4a8320387df0642da98f46975c91aa84d311b035e612dc7dd3398df586cf7c"
+    },
+    "liveAi": {
+      "checkedInLiveAi": false,
+      "checkedInEmbeddings": false,
+      "checkedInVectorRetrieval": false,
+      "checkedInBroadRag": false,
+      "envExampleSha256": "f52e74fae9f111222e5969363601a20a24308225ee14a2313acddde17f7027b8",
+      "secretContentInspected": false,
+      "gateBPreview": "PASS_REUSED_HASH_BOUND",
+      "gateBProduction": "CLOSED"
+    },
+    "retrieval": {
+      "manifestPath": ".var/retrieval/public-index-manifest.json",
+      "manifestSha256": "338fc9009d4eb9177103a57f03443d7716aef52b374f91632248875f7a1f0ea3",
+      "indexVersion": "public:text-embedding-3-small:1536:teoyube-deterministic-chunker-2026-07-23.1:f0669e6f0c1974fc4be7",
+      "model": "text-embedding-3-small",
+      "dimension": 1536,
+      "chunks": 33563,
+      "sourceCount": 10,
+      "databaseBytes": 296927232,
+      "rawUserTextEmbedded": false,
+      "userVectorsIncluded": false,
+      "providerHostedVectorStoreUsed": false
+    },
+    "visual": {
+      "protectedSourceManifestSha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117",
+      "immutableStaticManifestSha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b",
+      "ownerSupportManifestSha256": "9b8492f83366400a2a846e9713f64e2c2bb8e0a8a46c1263449fb01a82937283",
+      "ownerReferenceManifestSha256": "72fa9c5bfbf9ad350d276087dd8bb5176b225d71168a3ffb64e8947f1283fab8",
+      "immutableScreenshots": 72,
+      "desktopDomSnapshots": 12,
+      "status": "PASS"
+    },
+    "prompt24": {
+      "scorecardJsonSha256": "fcb62eb682b622e7f9a84d667413358b09832f71ae153f6446328f2a35274a82",
+      "scorecardMarkdownSha256": "d65fee1daf3cd908e35a7d312c4c54f95643858714c6148fecf267024ad10ef8",
+      "evidenceLedgerJsonSha256": "28c0950c7525e480f4dba4be809c273c98e4045c5cf3e0a69b4b8c5ae4d82839",
+      "closeoutJsonSha256": "17606e1f7f8e602416c51e7f2185985558653618a5d213da4272c74d441cca9e",
+      "closeoutMarkdownSha256": "76bf03cf16e6736f9270985fe5fe67081478d6b0abca3d2cb22de3360afc3942",
+      "roadmapSha256": "379d05af3dc77394c87bbefc6c9042d3598349c72d6e3556a1b2132f85e81718",
+      "gapMatrixSha256": "2470a08ab3476ab692c7a9581d8a54b36ea5cd77e8600d5d839cecadb17b38e3",
+      "requiredDeliverables": 15,
+      "ledgerItems": 23,
+      "dimensionScores": 10,
+      "status": "VERIFIED"
+    }
+  },
+  "discrepancies": [
+    {
+      "id": "P24-META-001",
+      "severity": "MEDIUM",
+      "status": "RECORDED_NOT_REWRITTEN",
+      "description": "Prompt 24's composite dependency-hash input recorded safety hash 65943d2578..., but the authoritative Prompt 17 report, retained Prompt 17S evidence, Prompt 18 report, and current Gate A run agree on 65943d1025....",
+      "prompt24RecordedDependencyHash": "92562fd1bdd6143bd397820ec56299c39799da4f087ddb7ff02f714106b22df0",
+      "correctedDependencyHash": "95be7e233e322c5c8513e6792229ab58d93cf231384f4838a4c85ef38b565be6",
+      "scoreImpact": "NONE; Prompt 24 scores remain the locked baseline",
+      "action": "Use the authoritative safety hash in the 9/10 program ledger and preserve Prompt 24 history unchanged"
+    }
+  ],
+  "workspaceAtStart": {"files": 36460, "logicalBytes": 3373388201},
+  "paidCalls": 0
+}
