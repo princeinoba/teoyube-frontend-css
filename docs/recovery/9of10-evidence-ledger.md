@@ -53,3 +53,20 @@ This is a metadata lineage correction, not a score change and not a safety regre
 ## Live-AI configuration
 
 Checked-in live AI, embeddings, vector retrieval, and broad RAG are false. Gate B operational state is `CLOSED_LIVE_AI_DISABLED`; Gate B Production is closed. Secret files and values were not inspected.
+## Phase 2A update
+
+Historical Prompt 24 evidence and discrepancy `P24-META-001` remain unchanged.
+
+| Evidence | Current Phase 2A identity/result |
+| --- | --- |
+| Starting commit | `a7cc36897f32d9eeee8bbadef15bd47c58689161` |
+| Remediation commit | `2981adee6763c112ca677f2f0e11dd5f260722e5` |
+| Runtime-binding commit | `7d4906876412304556eab126ca020beaa8cb8c17` |
+| Package lock | `ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83` |
+| Runtime digest/build | `76e58bce731190a3ba3e4950b40c7b3acb333c4bbc5d9eef59870d4348aee563`; `teoyube-76e58bce731190a3ba3e4950` |
+| Full/production audit | PASS; 0 vulnerabilities / PASS; 0 vulnerabilities |
+| Security/supply chain | PASS, 18 controls / PASS, 490 components |
+| Recovery/protected baselines | PASS; 72 screenshots and 12 DOM snapshots unchanged |
+| Visual/performance composite | BLOCKED; see Phase 2A report; no baseline or threshold changed |
+| Markdown report | `c58e3dd3b9c65a03662e310cdfd5260065e0fbd2967e629949ae2b687fc05583` |
+| JSON report | `1c4744d1aac78a1ba974b722857baf390d79f0aedab671eafa16095419e90cd7` |

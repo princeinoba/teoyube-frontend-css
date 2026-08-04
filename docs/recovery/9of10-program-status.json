@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "SELF_REFERENTIAL_PHASE1_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE2A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -49,20 +49,20 @@
     {
       "phaseId": "2",
       "name": "Security remediation and current release evidence",
-      "status": "READY",
+      "status": "BLOCKED",
       "entryGates": ["Phase 1 PASS"],
-      "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-      "currentCommit": "NOT_STARTED",
+      "startingCommit": "a7cc36897f32d9eeee8bbadef15bd47c58689161",
+      "currentCommit": "FINAL_PHASE2A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": ["2A current dependency-security diagnosis", "2B current release-evidence refresh", "2C Gate C-Preview restoration"],
       "acceptanceCriteria": ["full dependency critical/high 0", "production critical/high 0", "current evidence lineage PASS", "Gate C-Preview PASS", "protected changes 0"],
-      "currentEvidence": ["full development tree: 9 high from one advisory at unchanged lockfile", "production tree: 0 high/critical", "current release validation: 1087 failures"],
-      "currentBlockers": ["GHSA-mh99-v99m-4gvg remains unresolved in recorded evidence", "release evidence is stale"],
+      "currentEvidence": ["Phase 2A full tree: 0 vulnerabilities", "Phase 2A production tree: 0 vulnerabilities", "security gate: 18 controls PASS with critical/high 0", "recovery and immutable baseline contracts PASS", "current 72-cell visual/performance run exposed six Canon focus-order mismatches and one Calling ready-time breach", "current release validation remains stale and is reserved for Phase 2B"],
+      "currentBlockers": ["Phase 2A current visual/performance composite is not green", "release evidence is stale"],
       "ownerDecisionIds": [],
-      "externalDependencies": ["official advisory and compatible upstream package releases"],
+      "externalDependencies": ["separately scoped resolution of pre-existing Canon focus-order parity and current performance-budget evidence"],
       "rollback": "Focused revert for each subphase; preserve historical audit and release evidence",
-      "nextReviewTrigger": "Run Phase 2A current official advisory and dependency compatibility diagnosis",
+      "nextReviewTrigger": "Resolve or separately authorize the pre-existing Canon parity/accessibility and performance-budget findings, then rerun the Phase 2A composite gates",
       "subphases": [
-        {"subphaseId": "2A", "status": "READY"},
+        {"subphaseId": "2A", "status": "BLOCKED"},
         {"subphaseId": "2B", "status": "NOT_STARTED"},
         {"subphaseId": "2C", "status": "NOT_STARTED"}
       ]
@@ -188,9 +188,9 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "2A",
+  "nextReadyPhase": "3A",
   "otherReadyIndependentSubphases": ["3A", "4A", "5A", "6A"],
-  "nextWaitingPhase": "NONE_YET",
+  "nextWaitingPhase": "2A_BLOCKED",
   "prompt23BUnlocked": false,
   "publicDeploymentAuthorized": false
 }

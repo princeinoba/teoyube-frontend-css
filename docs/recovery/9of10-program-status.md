@@ -30,7 +30,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | Phase | Status | Entry/next action |
 | --- | --- | --- |
 | 1 — Baseline lock and program ledger | **PASS** | Baseline/tag/ledgers verified; no product or protected change. |
-| 2 — Security remediation and current release evidence | **READY** | Select 2A and refresh official dependency/advisory evidence. |
+| 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **READY** | Select 3A to create privacy-safe toolkit; authentic sessions remain owner work. |
 | 4 — Real-user pilot | **READY** | Select 4A to prepare one consolidated owner decision. |
 | 5 — Accessibility remediation | **READY** | Select 5A for a current standards-based audit. |
@@ -39,7 +39,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
 | 9 — Re-score and closeout | **NOT_STARTED** | Requires material real-user and production evidence. |
 
-Next READY subphase: **2A**. Independent READY alternatives after Phase 1: **3A, 4A, 5A, 6A**.
+Next READY subphase: **3A**. Phase 2B remains locked until Phase 2A composite gates pass. Other independent READY alternatives: **4A, 5A, 6A**.
 
 ## Current gates
 
@@ -52,7 +52,7 @@ Next READY subphase: **2A**. Independent READY alternatives after Phase 1: **3A,
 | Gate B Preview | PASS_REUSED_HASH_BOUND from Prompt 24 evidence |
 | Gate B Production | CLOSED |
 | Retrieval quality | PASS_REUSED_HASH_BOUND from Prompt 24 evidence |
-| Gate C Preview | BLOCKED — security advisory and 1,087 stale release-evidence failures |
+| Gate C Preview | BLOCKED — dependency advisory cleared; release evidence remains stale and Phase 2A visual/performance findings remain open |
 | Gate C Production | CLOSED |
 | Stabilization | NOT_DOCUMENTED |
 | Real-user research | NOT_YET_RUN |

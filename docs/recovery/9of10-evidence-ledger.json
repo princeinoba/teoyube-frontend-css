@@ -118,6 +118,40 @@
       "action": "Use the authoritative safety hash in the 9/10 program ledger and preserve Prompt 24 history unchanged"
     }
   ],
+  "phaseUpdates": [
+    {
+      "phase": "2A",
+      "status": "BLOCKED",
+      "executedAt": "2026-08-04T16:32:41.9187522-04:00",
+      "startingCommit": "a7cc36897f32d9eeee8bbadef15bd47c58689161",
+      "remediationCommit": "2981adee6763c112ca677f2f0e11dd5f260722e5",
+      "runtimeBindingCommit": "7d4906876412304556eab126ca020beaa8cb8c17",
+      "packageLockSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
+      "runtimeSourceDigest": "76e58bce731190a3ba3e4950b40c7b3acb333c4bbc5d9eef59870d4348aee563",
+      "buildId": "teoyube-76e58bce731190a3ba3e4950",
+      "fullAudit": { "critical": 0, "high": 0, "moderate": 0, "low": 0, "total": 0 },
+      "productionAudit": { "critical": 0, "high": 0, "moderate": 0, "low": 0, "total": 0 },
+      "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+      "supplyChain": "PASS_490_COMPONENTS",
+      "recovery": "PASS",
+      "visualPerformanceComposite": "BLOCKED",
+      "visualPerformanceReasons": [
+        "Canon focus-order mismatch at all six viewports from 11 additional pre-existing Next media-stage controls",
+        "Calling tablet-portrait local ready time 6448.7ms exceeded 5000ms once",
+        "approved CSS 1414956 bytes exceeded historical budget 948538 bytes",
+        "no current 216-cell passing set"
+      ],
+      "phase2aUiSourceChanged": false,
+      "protectedVisualFilesChanged": 0,
+      "baselineFilesChanged": 0,
+      "historicalPrompt24EvidenceRewritten": false,
+      "markdownReportSha256": "c58e3dd3b9c65a03662e310cdfd5260065e0fbd2967e629949ae2b687fc05583",
+      "jsonReportSha256": "1c4744d1aac78a1ba974b722857baf390d79f0aedab671eafa16095419e90cd7",
+      "paidCalls": 0,
+      "nextReadyPhase": "3A",
+      "phase2BReady": false
+    }
+  ],
   "workspaceAtStart": {"files": 36460, "logicalBytes": 3373388201},
   "paidCalls": 0
 }

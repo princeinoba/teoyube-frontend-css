@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "phase": "2A",
+  "status": "BLOCKED",
+  "executedAt": "2026-08-04T16:32:41.9187522-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "a7cc36897f32d9eeee8bbadef15bd47c58689161",
+  "remediationCommit": "2981adee6763c112ca677f2f0e11dd5f260722e5",
+  "runtimeBindingCommit": "7d4906876412304556eab126ca020beaa8cb8c17",
+  "prePhaseTag": "teoyube-9of10-phase2a-start-a7cc368",
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "npmPath": "C:\\Users\\royce\\AppData\\Roaming\\npm\\npm.cmd"
+  },
+  "before": {
+    "fullAudit": { "critical": 0, "high": 1, "moderate": 3, "low": 0, "total": 4 },
+    "productionAudit": { "critical": 0, "high": 0, "moderate": 2, "low": 0, "total": 2 },
+    "advisories": [
+      { "id": "GHSA-mh99-v99m-4gvg", "cve": "CVE-2026-14257", "package": "brace-expansion", "severity": "high", "affectedInstalledVersions": ["1.1.16", "5.0.7"], "supersededForFixSelectionBy": "GHSA-rgw5-rvv9-x895" },
+      { "id": "GHSA-rgw5-rvv9-x895", "cve": "CVE-2026-69152", "package": "brace-expansion", "severity": "high", "affectedInstalledVersions": ["1.1.16", "5.0.7"], "patchedVersions": ["1.1.18", "2.1.4", "3.0.6", "5.0.9"] },
+      { "id": "GHSA-fxqj-rqcc-2cmp", "package": "postcss", "severity": "moderate", "affectedInstalledVersions": ["8.5.19"], "patchedVersions": ["8.5.23"] }
+    ],
+    "dependencyPaths": [
+      "root -> eslint-config-next@16.2.10 -> eslint-plugin-import@2.32.0 -> minimatch@3.1.5 -> brace-expansion@1.1.16",
+      "root -> eslint-config-next@16.2.10 -> eslint-plugin-jsx-a11y@6.10.2 -> minimatch@3.1.5 -> brace-expansion@1.1.16",
+      "root -> eslint-config-next@16.2.10 -> eslint-plugin-react@7.37.5 -> minimatch@3.1.5 -> brace-expansion@1.1.16",
+      "root -> eslint-config-next@16.2.10 -> typescript-eslint@8.64.0 -> @typescript-eslint/typescript-estree@8.64.0 -> minimatch@10.2.5 -> brace-expansion@5.0.7",
+      "root -> eslint@9.39.5 -> @eslint/config-array@0.21.2 -> minimatch@3.1.5 -> brace-expansion@1.1.16",
+      "root -> eslint@9.39.5 -> @eslint/eslintrc@3.3.6 -> minimatch@3.1.5 -> brace-expansion@1.1.16",
+      "root -> eslint@9.39.5 -> minimatch@3.1.5 -> brace-expansion@1.1.16",
+      "root -> next@16.2.11 -> postcss@8.5.19",
+      "root -> vitest@4.1.10 -> vite@8.1.5 -> postcss@8.5.19"
+    ]
+  },
+  "remediation": {
+    "next": { "from": "16.2.11", "to": "16.3.0" },
+    "eslintConfigNext": { "from": "16.2.10", "to": "16.3.0" },
+    "braceExpansion": [{ "from": "1.1.16", "to": "1.1.18" }, { "from": "5.0.7", "to": "5.0.9" }],
+    "postcssOverride": { "from": "8.5.19", "to": "8.5.23" },
+    "nanoidTransitive": { "from": "3.3.16", "to": "3.3.17" },
+    "eslint": { "version": "9.39.5", "decision": "retained because the installed import, jsx-a11y, and react plugins jointly support ESLint 9, not ESLint 10" },
+    "forceAuditFixUsed": false,
+    "incompatibleOverrideUsed": false,
+    "waiverUsed": false,
+    "thresholdWeakened": false
+  },
+  "after": {
+    "fullAudit": { "critical": 0, "high": 0, "moderate": 0, "low": 0, "total": 0 },
+    "productionAudit": { "critical": 0, "high": 0, "moderate": 0, "low": 0, "total": 0 },
+    "packageLockSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
+    "runtimeManifestSha256": "cab52474045f4d2758ef697cfe091c5296b681d0006083640f2bbd6c71296d56",
+    "runtimeSourceDigest": "76e58bce731190a3ba3e4950b40c7b3acb333c4bbc5d9eef59870d4348aee563",
+    "buildId": "teoyube-76e58bce731190a3ba3e4950"
+  },
+  "gates": {
+    "cleanInstall": "PASS",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "unitIntegration": "PASS_294_PASSED_1_SKIPPED",
+    "build": "PASS_NEXT_16_3_0_58_STATIC_PAGES",
+    "browser": "PASS_54_PASSED_3_SKIPPED_SERIAL",
+    "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "supplyChain": "PASS_490_COMPONENTS",
+    "dualRuntime": "PASS_83_CHECKS_LISTENERS_CLOSED",
+    "runtime": "PASS",
+    "recovery": "PASS",
+    "visualParity": "BLOCKED_CANON_FOCUS_ORDER_ALL_6_VIEWPORTS_AND_ONE_CALLING_READY_TIME",
+    "performance": "BLOCKED_APPROVED_CSS_TOTAL_AND_NO_CURRENT_216_CELL_PASS",
+    "gateCPreview": "BLOCKED",
+    "gateCProduction": "CLOSED"
+  },
+  "visualPerformanceFindings": {
+    "phase2aUiSourceChanged": false,
+    "canonAdditionalNextFocusControls": 11,
+    "canonAffectedViewports": 6,
+    "callingTabletPortraitReadyMs": 6448.7,
+    "readyBudgetMs": 5000,
+    "approvedCssBytes": 1414956,
+    "historicalCssBudgetBytes": 948538,
+    "protectedVisualFilesChanged": 0,
+    "immutableBaselinesChanged": 0,
+    "ownerApprovedBaselinesChanged": 0
+  },
+  "historicalEvidenceRewritten": false,
+  "prompt24MetadataDiscrepancyPreserved": "P24-META-001",
+  "productSourceFilesChanged": 0,
+  "workspace": { "files": 36779, "logicalBytes": 3460052710, "phase1StartLogicalBytes": 3373388201, "deltaBytes": 86664509, "cleanupPerformed": false },
+  "paidCalls": 0,
+  "phase2BReady": false,
+  "recommendedIndependentNextReadyPhase": "3A",
+  "rollback": "git revert 7d4906876412304556eab126ca020beaa8cb8c17 2981adee6763c112ca677f2f0e11dd5f260722e5"
+}
