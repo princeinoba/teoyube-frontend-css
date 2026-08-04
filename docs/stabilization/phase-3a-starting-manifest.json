@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "phase": "3A",
+  "createdAt": "2026-08-04T17:47:07.0177126-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "07c4d7f5ce3166d699b14eb5096a48da8a4e0115",
+  "prePhaseTag": "teoyube-9of10-phase3a-start-07c4d7f",
+  "trackedWorktreeClean": true,
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "npmPath": "C:\\Users\\royce\\AppData\\Roaming\\npm\\npm.cmd"
+  },
+  "packageLock": {
+    "path": "package-lock.json",
+    "sha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83"
+  },
+  "runtime": {
+    "canonical": "next",
+    "rollback": "static-node",
+    "runtimeSourceDigest": "76e58bce731190a3ba3e4950b40c7b3acb333c4bbc5d9eef59870d4348aee563",
+    "buildId": "teoyube-76e58bce731190a3ba3e4950",
+    "canonicalManifestSha256": "cab52474045f4d2758ef697cfe091c5296b681d0006083640f2bbd6c71296d56",
+    "sourceManifestSha256": "04b1dc3476fc2ec6eca4d67bb05b1a83b14506624db6d1f70831f3db3e8bc1d3",
+    "routeManifestSha256": "e2613c9ed5d3c99b433c3f43da178a93f542dc29fe1b05685353268a8cdd9f5a",
+    "assetMediaManifestSha256": "402b7f0e3fc6bf37f68f82c311b21a9214c1a0f6889b6e9c0321cad7893695bb"
+  },
+  "prompt24Scorecard": {
+    "markdownSha256": "76bf03cf16e6736f9270985fe5fe67081478d6b0abca3d2cb22de3360afc3942",
+    "jsonSha256": "17606e1f7f8e602416c51e7f2185985558653618a5d213da4272c74d441cca9e"
+  },
+  "programLedgers": {
+    "programStatusMarkdownSha256": "6026d9cae171586f7d764a468ec142b05910d7793152b1c2c14a3193b4eeeeb2",
+    "programStatusJsonSha256": "b6abb1c953970e2d44e32767ca2e91585f54ede48cd11533d631e67ee390c3be",
+    "evidenceLedgerMarkdownSha256": "3dce39b1ab043f28fdedf18b62eeba4d270df5c89aec7f7b5593567b587b43b8",
+    "evidenceLedgerJsonSha256": "cfef2168846bb53f0512da7c9db0bd2f2a758d4a117d4b5c00e03a8e50c14d6c",
+    "ownerDecisionsMarkdownSha256": "048bc24f332e3bb0d4202479346494a493310d86e4e9733f4e4b0c6a07ecfeab",
+    "ownerDecisionsJsonSha256": "30267cb27c83f3c73b0a24ec172c874f5b4a1ed0e0e3446ecbf529806627d028",
+    "phaseHistorySha256": "367f45a82396eb45f0dafedfa85a5530c5f06e071daa0afb3369f6e0481f329d",
+    "riskRegisterSha256": "b0913e1be867c2486398b2972763a27413f930a68fa90260f0e35f17b4008b04"
+  },
+  "phase2aReports": {
+    "markdownSha256": "c58e3dd3b9c65a03662e310cdfd5260065e0fbd2967e629949ae2b687fc05583",
+    "jsonSha256": "1c4744d1aac78a1ba974b722857baf390d79f0aedab671eafa16095419e90cd7"
+  },
+  "currentVisualPerformanceBlockerIds": [
+    "STAB-BLOCKER-CANON-FOCUS",
+    "STAB-BLOCKER-CALLING-PERF",
+    "STAB-BLOCKER-CSS-BUDGET",
+    "STAB-BLOCKER-PERF-EVIDENCE"
+  ],
+  "protectedVisualAndBaselineHashes": {
+    "protectedVisualSourceManifest": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117",
+    "staticDomContract": "b4f99fc01f28c43d4ff0aea54dfd93532488b1d60dfe2364e90a9b9f8bfef9b4",
+    "originalStaticVisualContract": "b428389059116a3e9ec098b9e118aa2b92e6c6fe7837c04e72e0b83a68a010a7",
+    "immutableStaticRuntimeManifest": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b",
+    "ownerReferenceManifest": "72fa9c5bfbf9ad350d276087dd8bb5176b225d71168a3ffb64e8947f1283fab8"
+  },
+  "workspace": {
+    "fileCount": 36796,
+    "logicalBytes": 3460091745
+  },
+  "ports": {
+    "teoyubePort3000": "FREE",
+    "unrelatedPort4173": "LISTENER_PRESERVED"
+  }
+}

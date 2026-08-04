@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "sourcePhase": "2A",
+  "policy": "OBSERVE_ONLY_NO_FIX_OR_WAIVER_IN_PHASE_3A",
+  "blockers": [
+    {
+      "id": "STAB-BLOCKER-CANON-FOCUS",
+      "status": "OPEN",
+      "surface": "Canon focus behavior",
+      "description": "Canon focus-order mismatch at six viewports; 11 Next media controls are absent from the static focus order.",
+      "ownerApprovedDifference": false
+    },
+    {
+      "id": "STAB-BLOCKER-CALLING-PERF",
+      "status": "OPEN",
+      "surface": "Calling Compass tablet portrait",
+      "description": "Calling Compass tablet-portrait ready time was 6,448.7 ms against the 5,000 ms budget.",
+      "ownerApprovedDifference": false
+    },
+    {
+      "id": "STAB-BLOCKER-CSS-BUDGET",
+      "status": "OPEN",
+      "surface": "CSS resource-size evidence",
+      "description": "Approved CSS totals 1,414,956 bytes against the historical 948,538-byte budget.",
+      "ownerApprovedDifference": false
+    },
+    {
+      "id": "STAB-BLOCKER-PERF-EVIDENCE",
+      "status": "OPEN",
+      "surface": "Current performance evidence",
+      "description": "No current passing three-run 216-cell set exists after Phase 2A.",
+      "ownerApprovedDifference": false
+    }
+  ]
+}

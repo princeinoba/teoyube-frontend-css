@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "teoyube-stabilization-status-1.0.0",
+  "policyVersion": "teoyube-stabilization-policy-1.0.0",
+  "toolkitVersion": "teoyube-stabilization-toolkit-1.0.0",
+  "phase3a": "PASS",
+  "phase3": "WAITING_OWNER",
+  "phase3b": "NOT_READY",
+  "stabilizationStatus": "WAITING_OWNER",
+  "requiredCalendarDays": 7,
+  "requiredMeaningfulSessions": 10,
+  "requiredCapabilityCount": 26,
+  "currentLocalSessions": 0,
+  "currentCalendarDays": 0,
+  "coverageStatus": "NOT_STARTED",
+  "openIncidents": 0,
+  "knownBlockerIds": [
+    "STAB-BLOCKER-CANON-FOCUS",
+    "STAB-BLOCKER-CALLING-PERF",
+    "STAB-BLOCKER-CSS-BUDGET",
+    "STAB-BLOCKER-PERF-EVIDENCE"
+  ],
+  "actualRecordsCommitted": false,
+  "ownerCloseoutRequired": true,
+  "updatedAt": "2026-08-04T17:47:07.0177126-04:00"
+}

@@ -36,6 +36,11 @@ __pycache__/
 /.var/retrieval/
 /artifacts/release-evidence/
 /artifacts/release/security-gate.json
+
+# Owner-confirmed Phase 3 stabilization records and redacted local exports
+/.var/stabilization/sessions/
+/.var/stabilization/incidents/
+/.var/stabilization/exports/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal

@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://teoyube.local/schemas/stabilization/session-record-1.0.0.json",
+  "title": "Teoyube privacy-safe stabilization session record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sessionId",
+    "ownerConfirmed",
+    "startedAt",
+    "endedAt",
+    "calendarDate",
+    "runtime",
+    "browser",
+    "viewport",
+    "routes",
+    "capabilities",
+    "actions",
+    "expectedOutcome",
+    "actualOutcome",
+    "result",
+    "issueIds",
+    "blockerObservations",
+    "restartRequired",
+    "rollbackExercised",
+    "returnToNextVerified",
+    "citationIssue",
+    "memoryOrConsentIssue",
+    "visualIssue",
+    "safetyIssue",
+    "dataLossIssue",
+    "crossUserIssue",
+    "safeErrorCodes",
+    "notes",
+    "sensitiveContentIncluded",
+    "recordedBy",
+    "automated",
+    "createdAt",
+    "recordHash"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "teoyube-stabilization-session-1.0.0" },
+    "sessionId": { "type": "string", "pattern": "^STAB-SESSION-[A-Z0-9_-]+$", "maxLength": 80 },
+    "ownerConfirmed": { "const": true },
+    "startedAt": { "type": "string", "format": "date-time" },
+    "endedAt": { "type": "string", "format": "date-time" },
+    "calendarDate": { "type": "string", "format": "date" },
+    "runtime": { "const": "next-canonical" },
+    "browser": { "type": "string", "minLength": 2, "maxLength": 100 },
+    "viewport": { "type": "string", "minLength": 2, "maxLength": 100 },
+    "routes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/route" }
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/capability" }
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": { "$ref": "#/$defs/action" }
+    },
+    "expectedOutcome": { "type": "string", "minLength": 1, "maxLength": 1000 },
+    "actualOutcome": { "type": "string", "minLength": 1, "maxLength": 1000 },
+    "result": { "enum": ["pass", "issue_found", "blocked"] },
+    "issueIds": {
+      "type": "array",
+      "maxItems": 100,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[A-Z0-9_-]{2,80}$" }
+    },
+    "blockerObservations": {
+      "type": "array",
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "STAB-BLOCKER-CANON-FOCUS",
+          "STAB-BLOCKER-CALLING-PERF",
+          "STAB-BLOCKER-CSS-BUDGET",
+          "STAB-BLOCKER-PERF-EVIDENCE"
+        ]
+      }
+    },
+    "restartRequired": { "type": "boolean" },
+    "rollbackExercised": { "type": "boolean" },
+    "returnToNextVerified": { "type": "boolean" },
+    "citationIssue": { "type": "boolean" },
+    "memoryOrConsentIssue": { "type": "boolean" },
+    "visualIssue": { "type": "boolean" },
+    "safetyIssue": { "type": "boolean" },
+    "dataLossIssue": { "type": "boolean" },
+    "crossUserIssue": { "type": "boolean" },
+    "safeErrorCodes": {
+      "type": "array",
+      "maxItems": 100,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[A-Z0-9_-]{2,80}$" }
+    },
+    "notes": { "type": "string", "maxLength": 2000 },
+    "sensitiveContentIncluded": { "const": false },
+    "recordedBy": { "const": "owner" },
+    "automated": { "const": false },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "recordHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  },
+  "$defs": {
+    "route": {
+      "enum": [
+        "/",
+        "/book",
+        "/calling-compass",
+        "/canon",
+        "/consent",
+        "/daily-word",
+        "/embedded-videos",
+        "/explore",
+        "/journal",
+        "/journey",
+        "/lexicon",
+        "/personalization",
+        "/prayer",
+        "/privacy",
+        "/profile",
+        "/promise-search",
+        "/promise-table",
+        "/search",
+        "/settings",
+        "/tables",
+        "/teo-guide",
+        "/terms",
+        "/testimony"
+      ]
+    },
+    "capability": {
+      "enum": [
+        "today_guided_loop",
+        "search",
+        "promise_search",
+        "canon",
+        "promise_table",
+        "daily_word",
+        "prayer",
+        "calling_compass",
+        "journey",
+        "journal_reflection",
+        "testimony_candidate",
+        "book_of_the_saint",
+        "lexicon",
+        "teo_guide_deterministic",
+        "live_ai_local_preview_consent",
+        "hybrid_retrieval_local_preview",
+        "memory_inspection",
+        "memory_export",
+        "memory_deletion",
+        "consent_revocation",
+        "browser_restart_journey_resume",
+        "next_restart",
+        "static_rollback",
+        "return_static_to_next",
+        "runtime_verify",
+        "recovery_verify"
+      ]
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionId",
+        "capability",
+        "route",
+        "expectedBehavior",
+        "actualBehavior",
+        "result",
+        "safeErrorCode",
+        "automated"
+      ],
+      "properties": {
+        "actionId": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$", "maxLength": 80 },
+        "capability": { "$ref": "#/$defs/capability" },
+        "route": { "$ref": "#/$defs/route" },
+        "expectedBehavior": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "actualBehavior": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "result": { "enum": ["pass", "issue_found", "blocked", "skipped"] },
+        "safeErrorCode": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^[A-Z0-9_-]+$", "maxLength": 80 }
+          ]
+        },
+        "automated": { "const": false }
+      }
+    }
+  }
+}
