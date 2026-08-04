@@ -8,6 +8,7 @@ import { createEmbeddedVideosYouTubeEmbedUrl } from "../../features/media/embedd
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedEmbeddedVideosView } from "./ApprovedEmbeddedVideosView";
 import { syncEmbeddedVideoCard } from "./embedded-video-card-sync";
+import styles from "./EmbeddedVideosPageController.module.css";
 
 function normalize(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -43,6 +44,7 @@ export function EmbeddedVideosPageController({ initialViewModel }: { initialView
       restoreActivePlayback();
       root?.querySelectorAll<HTMLVideoElement>("video").forEach((video) => video.pause());
       const markup = stage.innerHTML;
+      player.classList.add(styles.activePlayer);
       stage.replaceChildren(player);
       stage.dataset.playbackState = "playing";
       stage.dataset.activeVideoId = asset.id;
