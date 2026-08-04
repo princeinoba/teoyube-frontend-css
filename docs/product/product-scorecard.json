@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "scorecardId": "teoyube-prompt-24-2026-08-04",
+  "generatedAt": "2026-08-04T12:29:35.9626478-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "sourceCommit": "49a0496ef8a9b2b10957f8e1f68c663238c4ee00",
+  "currentDependencyHash": "92562fd1bdd6143bd397820ec56299c39799da4f087ddb7ff02f714106b22df0",
+  "method": {
+    "scale": "1.0-10.0, one decimal",
+    "unweightedAverage": true,
+    "riskAdjustment": "Subtract 0.7 from the unweighted average for unresolved release-security, stale-release-evidence, production-infrastructure, and real-user-validation gaps.",
+    "ninePlusRulesApplied": [
+      "Product Vision, User Experience, and Spiritual Experience cannot reach 9.0 without real-user evidence.",
+      "Security cannot reach 9.0 while a relevant current high or critical advisory remains unresolved.",
+      "Scalability cannot reach 9.0 without production-shaped repositories, isolation, and measured capacity.",
+      "Developer Experience cannot reach 9.0 without clean dependency health."
+    ]
+  },
+  "scores": [
+    {
+      "dimension": "Product Vision",
+      "score": 8.4,
+      "evidence": ["E01", "E04", "E20", "E22"],
+      "strength": "A coherent Scripture-first doctrine, cross-module formation loop, explainability, consent, and reversibility are specified and executable.",
+      "gap": "No observed user comprehension, retention-of-context, or faithful-action research has been run."
+    },
+    {
+      "dimension": "User Experience",
+      "score": 7.9,
+      "evidence": ["E02", "E03", "E04", "E16", "E17"],
+      "strength": "The canonical Next runtime retains protected static and owner-approved responsive evidence, with broad route and interaction coverage.",
+      "gap": "Automated parity is not WCAG conformance, inherited focus debt remains, and no real-user usability study exists."
+    },
+    {
+      "dimension": "Architecture",
+      "score": 8.8,
+      "evidence": ["E01", "E05", "E07", "E08", "E09", "E21"],
+      "strength": "Typed feature/domain/server boundaries, deterministic TIG, exact Scripture, consent-aware memory, provider-neutral AI, and partitioned retrieval are implemented.",
+      "gap": "The current release-evidence bundle is stale, legacy compatibility remains substantial, and production adapters are intentionally absent."
+    },
+    {
+      "dimension": "AI",
+      "score": 8.5,
+      "evidence": ["E05", "E06", "E08", "E09", "E10", "E11"],
+      "strength": "Deterministic routing, strict structured output, source validation, safety gating, retrieval quality, read-only recommendations, and bounded paid preview evidence are strong.",
+      "gap": "Gate B Production is closed, checked-in live AI is disabled, retrieval source precision is modest, and no real-user usefulness study exists."
+    },
+    {
+      "dimension": "Maintainability",
+      "score": 7.7,
+      "evidence": ["E05", "E12", "E19", "E21"],
+      "strength": "Executable contracts, direct ownership boundaries, deterministic manifests, and a dependency graph make change risks inspectable.",
+      "gap": "The Prompt 23 inventory is stale at the current HEAD, five decisions remain pending, stabilization is undocumented, and legacy compatibility is large."
+    },
+    {
+      "dimension": "Scalability",
+      "score": 6.6,
+      "evidence": ["E07", "E11", "E20"],
+      "strength": "Repository abstractions, tenant/user isolation tests, bounded retrieval, caches, and deterministic fallbacks provide a credible design foundation.",
+      "gap": "Identity, relational storage, key management, vector infrastructure, distributed rate limits, backup/restore, and load evidence are local/test only or absent."
+    },
+    {
+      "dimension": "Performance",
+      "score": 8.3,
+      "evidence": ["E09", "E11", "E23"],
+      "strength": "The 216-cell local gate passed, retrieval p95 was 304.2182 ms, and bounded token/latency budgets are encoded.",
+      "gap": "There is no production network, concurrency, capacity, or long-duration traffic evidence, and the release bundle must be regenerated."
+    },
+    {
+      "dimension": "Security",
+      "score": 7.1,
+      "evidence": ["E06", "E07", "E09", "E14", "E15", "E20"],
+      "strength": "The production dependency tree reports zero high/critical findings; consent, encryption, isolation, CSRF, safe logging, and safety contracts are executable.",
+      "gap": "The full development tree has nine high findings from one unresolved advisory, Gate C Preview is blocked, production controls are not deployed, and release evidence is stale."
+    },
+    {
+      "dimension": "Spiritual Experience",
+      "score": 8.3,
+      "evidence": ["E04", "E06", "E09", "E22"],
+      "strength": "Scripture, interpretation, prayer, calling discernment, action, reflection, testimony, and memory remain distinct, sourced, humble, and reversible.",
+      "gap": "No participants have yet validated clarity, pastoral acceptability, cultural fit, emotional safety, or sustained spiritual usefulness."
+    },
+    {
+      "dimension": "Developer Experience",
+      "score": 7.2,
+      "evidence": ["E01", "E12", "E14", "E19", "E21"],
+      "strength": "Pinned tooling, extensive npm gates, current focused tests, runtime status, rollback commands, and machine-readable evidence support disciplined development.",
+      "gap": "Nine high development advisories, a stale release-evidence workflow, substantial legacy surface, and platform-specific npm/toolchain handling impose friction."
+    }
+  ],
+  "aggregates": {
+    "unweightedAverage": 7.9,
+    "riskAdjustedOverall": 7.2,
+    "localPreviewScore": 8.3,
+    "productionReadinessScore": 5.8,
+    "evidenceConfidenceScore": 9.1,
+    "evidenceConfidenceLabel": "HIGH_FOR_LOCAL_ENGINEERING_LOW_FOR_REAL_USER_AND_PRODUCTION_OUTCOMES"
+  },
+  "conclusions": {
+    "nineOfTenLocalEngineeringArchitecture": "PARTIAL",
+    "nineOfTenLocalPreviewProduct": "PARTIAL",
+    "nineOfTenProductionReadiness": "NO",
+    "nineOfTenValidatedUserExperience": "NO",
+    "nineOfTenOverallProduct": "NO",
+    "overallEvidenceStatus": "ARCHITECTURALLY_IMPLEMENTED_BUT_NOT_VALIDATED"
+  },
+  "currentGates": {
+    "recoveryVerify": "PASS",
+    "runtimeVerify": "PASS",
+    "gateA": "PASS_64_OF_64",
+    "gateBPreview": "PASS_REUSED_UNDER_POLICY_DEFINED_UNCHANGED_PATHS",
+    "gateBOperationalDefault": "CLOSED_LIVE_AI_DISABLED",
+    "gateBProduction": "CLOSED",
+    "retrievalQuality": "PASS_REUSED_UNDER_POLICY_DEFINED_UNCHANGED_PATHS",
+    "gateCPreview": "BLOCKED_SECURITY_ADVISORY_AND_STALE_RELEASE_EVIDENCE",
+    "gateCProduction": "CLOSED",
+    "userResearch": "USER_RESEARCH_NOT_YET_RUN",
+    "stabilization": "STABILIZATION_NOT_DOCUMENTED"
+  }
+}
