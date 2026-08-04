@@ -31,7 +31,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | --- | --- | --- |
 | 1 — Baseline lock and program ledger | **PASS** | Baseline/tag/ledgers verified; no product or protected change. |
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
-| 3 — Formal stabilization | **READY** | Select 3A to create privacy-safe toolkit; authentic sessions remain owner work. |
+| 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
 | 4 — Real-user pilot | **READY** | Select 4A to prepare one consolidated owner decision. |
 | 5 — Accessibility remediation | **READY** | Select 5A for a current standards-based audit. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
@@ -39,7 +39,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
 | 9 — Re-score and closeout | **NOT_STARTED** | Requires material real-user and production evidence. |
 
-Next READY subphase: **3A**. Phase 2B remains locked until Phase 2A composite gates pass. Other independent READY alternatives: **4A, 5A, 6A**.
+Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Independent next-ready choices are **4A, 5A, or 6A**; none is selected automatically.
 
 ## Current gates
 
@@ -54,7 +54,7 @@ Next READY subphase: **3A**. Phase 2B remains locked until Phase 2A composite ga
 | Retrieval quality | PASS_REUSED_HASH_BOUND from Prompt 24 evidence |
 | Gate C Preview | BLOCKED — dependency advisory cleared; release evidence remains stale and Phase 2A visual/performance findings remain open |
 | Gate C Production | CLOSED |
-| Stabilization | NOT_DOCUMENTED |
+| Stabilization | WAITING_OWNER — toolkit PASS; 0 days, 0 sessions, 0 incidents; Phase 3B NOT READY |
 | Real-user research | NOT_YET_RUN |
 
 No phase may reinterpret a historical green gate as current. No protected baseline may be replaced to create a pass.

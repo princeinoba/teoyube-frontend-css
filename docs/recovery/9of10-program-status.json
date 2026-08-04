@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE2A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -27,21 +27,51 @@
     "BLOCKED",
     "PASS",
     "REJECTED",
-    "SUPERSEDED"
+    "SUPERSEDED",
+    "NOT_READY"
   ],
   "phases": [
     {
       "phaseId": "1",
       "name": "Baseline lock and program ledger",
       "status": "PASS",
-      "entryGates": ["Prompt 24 commit is current or an ancestor", "clean tracked worktree", "Node 24 and npm 10.2.4", "Next canonical and static rollback retained"],
+      "entryGates": [
+        "Prompt 24 commit is current or an ancestor",
+        "clean tracked worktree",
+        "Node 24 and npm 10.2.4",
+        "Next canonical and static rollback retained"
+      ],
       "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
       "currentCommit": "SELF_REFERENTIAL_PHASE1_COMMIT_REPORTED_IN_FINAL_HANDOFF",
-      "deliverables": ["annotated baseline tag", "program status", "evidence ledger", "owner-decision ledger", "risk register", "phase history"],
-      "acceptanceCriteria": ["Prompt 24 baseline verified", "program ledger created", "product source changes 0", "protected visual changes 0", "package/lock changes 0", "runtime changes 0", "paid calls 0"],
-      "currentEvidence": ["runtime status PASS", "runtime contract PASS", "recovery contract PASS", "Gate A 64/64 PASS", "Prompt 24 score schema PASS", "release evidence remains BLOCKED with 1087 failures"],
+      "deliverables": [
+        "annotated baseline tag",
+        "program status",
+        "evidence ledger",
+        "owner-decision ledger",
+        "risk register",
+        "phase history"
+      ],
+      "acceptanceCriteria": [
+        "Prompt 24 baseline verified",
+        "program ledger created",
+        "product source changes 0",
+        "protected visual changes 0",
+        "package/lock changes 0",
+        "runtime changes 0",
+        "paid calls 0"
+      ],
+      "currentEvidence": [
+        "runtime status PASS",
+        "runtime contract PASS",
+        "recovery contract PASS",
+        "Gate A 64/64 PASS",
+        "Prompt 24 score schema PASS",
+        "release evidence remains BLOCKED with 1087 failures"
+      ],
       "currentBlockers": [],
-      "ownerDecisionIds": ["CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID"],
+      "ownerDecisionIds": [
+        "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID"
+      ],
       "externalDependencies": [],
       "rollback": "git revert <phase-1-commit>; git tag -d teoyube-prompt24-baseline-39e75ee only if the tag itself was created inaccurately",
       "nextReviewTrigger": "Any baseline identity, controller, scorecard, runtime, corpus, TIG, safety, retrieval, visual, or release-evidence change"
@@ -50,108 +80,326 @@
       "phaseId": "2",
       "name": "Security remediation and current release evidence",
       "status": "BLOCKED",
-      "entryGates": ["Phase 1 PASS"],
+      "entryGates": [
+        "Phase 1 PASS"
+      ],
       "startingCommit": "a7cc36897f32d9eeee8bbadef15bd47c58689161",
       "currentCommit": "FINAL_PHASE2A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
-      "deliverables": ["2A current dependency-security diagnosis", "2B current release-evidence refresh", "2C Gate C-Preview restoration"],
-      "acceptanceCriteria": ["full dependency critical/high 0", "production critical/high 0", "current evidence lineage PASS", "Gate C-Preview PASS", "protected changes 0"],
-      "currentEvidence": ["Phase 2A full tree: 0 vulnerabilities", "Phase 2A production tree: 0 vulnerabilities", "security gate: 18 controls PASS with critical/high 0", "recovery and immutable baseline contracts PASS", "current 72-cell visual/performance run exposed six Canon focus-order mismatches and one Calling ready-time breach", "current release validation remains stale and is reserved for Phase 2B"],
-      "currentBlockers": ["Phase 2A current visual/performance composite is not green", "release evidence is stale"],
+      "deliverables": [
+        "2A current dependency-security diagnosis",
+        "2B current release-evidence refresh",
+        "2C Gate C-Preview restoration"
+      ],
+      "acceptanceCriteria": [
+        "full dependency critical/high 0",
+        "production critical/high 0",
+        "current evidence lineage PASS",
+        "Gate C-Preview PASS",
+        "protected changes 0"
+      ],
+      "currentEvidence": [
+        "Phase 2A full tree: 0 vulnerabilities",
+        "Phase 2A production tree: 0 vulnerabilities",
+        "security gate: 18 controls PASS with critical/high 0",
+        "recovery and immutable baseline contracts PASS",
+        "current 72-cell visual/performance run exposed six Canon focus-order mismatches and one Calling ready-time breach",
+        "current release validation remains stale and is reserved for Phase 2B"
+      ],
+      "currentBlockers": [
+        "Phase 2A current visual/performance composite is not green",
+        "release evidence is stale"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["separately scoped resolution of pre-existing Canon focus-order parity and current performance-budget evidence"],
+      "externalDependencies": [
+        "separately scoped resolution of pre-existing Canon focus-order parity and current performance-budget evidence"
+      ],
       "rollback": "Focused revert for each subphase; preserve historical audit and release evidence",
       "nextReviewTrigger": "Resolve or separately authorize the pre-existing Canon parity/accessibility and performance-budget findings, then rerun the Phase 2A composite gates",
       "subphases": [
-        {"subphaseId": "2A", "status": "BLOCKED"},
-        {"subphaseId": "2B", "status": "NOT_STARTED"},
-        {"subphaseId": "2C", "status": "NOT_STARTED"}
-      ]
+        {
+          "subphaseId": "2A",
+          "status": "BLOCKED"
+        },
+        {
+          "subphaseId": "2B",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "2C",
+          "status": "NOT_STARTED"
+        }
+      ],
+      "dependencyRemediation": "COMPLETE",
+      "visualPerformanceReconciliation": "SEPARATE_OWNER_REVIEWED_WORK_REQUIRED"
     },
     {
       "phaseId": "3",
       "name": "Formal stabilization",
-      "status": "READY",
-      "entryGates": ["Phase 1 PASS"],
-      "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-      "currentCommit": "NOT_STARTED",
-      "deliverables": ["privacy-safe stabilization toolkit", "owner-confirmed session records", "closeout"],
-      "acceptanceCriteria": ["at least 7 calendar days", "at least 10 meaningful sessions", "no unresolved critical incidents", "restart and rollback drills PASS", "owner confirmation"],
-      "currentEvidence": ["STABILIZATION_NOT_DOCUMENTED"],
-      "currentBlockers": ["elapsed time and owner-confirmed sessions cannot be fabricated"],
-      "ownerDecisionIds": [],
-      "externalDependencies": ["owner-performed meaningful sessions"],
+      "status": "WAITING_OWNER",
+      "entryGates": [
+        "Phase 1 PASS"
+      ],
+      "startingCommit": "07c4d7f5ce3166d699b14eb5096a48da8a4e0115",
+      "currentCommit": "FINAL_PHASE3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "deliverables": [
+        "privacy-safe stabilization toolkit: COMPLETE",
+        "owner-confirmed session records: WAITING_OWNER",
+        "closeout: NOT_READY"
+      ],
+      "acceptanceCriteria": [
+        "at least 7 calendar days",
+        "at least 10 meaningful sessions",
+        "no unresolved critical incidents",
+        "restart and rollback drills PASS",
+        "owner confirmation"
+      ],
+      "currentEvidence": [
+        "Phase 3A toolkit PASS at a03979c70a9a4784448e8b36ac6086d2363f66c7",
+        "23/23 synthetic schema, privacy, and gate tests PASS",
+        "record and export paths ignored and absent from client bundles",
+        "runtime/recovery/dual-runtime checks PASS",
+        "current authentic local records: 0 sessions, 0 days, 0 incidents"
+      ],
+      "currentBlockers": [
+        "Seven distinct days and ten owner-confirmed meaningful sessions remain authentic owner work",
+        "All 26 capabilities and four known-blocker surfaces remain to be observed",
+        "Phase 3B owner closeout is not authorized or ready"
+      ],
+      "ownerDecisionIds": [
+        "PHASE_3A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID"
+      ],
+      "externalDependencies": [
+        "owner-performed meaningful sessions over elapsed calendar time"
+      ],
       "rollback": "Revert toolkit commit; never alter authentic session or incident evidence",
-      "nextReviewTrigger": "Select Phase 3A to create the toolkit",
-      "subphases": [{"subphaseId": "3A", "status": "READY"}, {"subphaseId": "3B", "status": "NOT_STARTED"}]
+      "nextReviewTrigger": "Owner begins recording privacy-safe sessions; Phase 3B remains locked until READY_FOR_CLOSEOUT and separate authorization",
+      "subphases": [
+        {
+          "subphaseId": "3A",
+          "status": "PASS"
+        },
+        {
+          "subphaseId": "3B",
+          "status": "NOT_READY"
+        }
+      ]
     },
     {
       "phaseId": "4",
       "name": "Real-user pilot",
       "status": "READY",
-      "entryGates": ["Phase 1 PASS"],
+      "entryGates": [
+        "Phase 1 PASS"
+      ],
       "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
       "currentCommit": "NOT_STARTED",
-      "deliverables": ["pilot protocol and owner decision", "research-safe instrumentation", "participant packets", "analysis"],
-      "acceptanceCriteria": ["real consented participants", "no fabricated evidence", "privacy-safe data", "owner-accepted analysis"],
-      "currentEvidence": ["USER_RESEARCH_NOT_YET_RUN"],
-      "currentBlockers": ["participant profile, sample, representation, compensation, session mode, thresholds, and data collection require owner decision"],
+      "deliverables": [
+        "pilot protocol and owner decision",
+        "research-safe instrumentation",
+        "participant packets",
+        "analysis"
+      ],
+      "acceptanceCriteria": [
+        "real consented participants",
+        "no fabricated evidence",
+        "privacy-safe data",
+        "owner-accepted analysis"
+      ],
+      "currentEvidence": [
+        "USER_RESEARCH_NOT_YET_RUN"
+      ],
+      "currentBlockers": [
+        "participant profile, sample, representation, compensation, session mode, thresholds, and data collection require owner decision"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["participants", "approved researcher or owner-led sessions"],
+      "externalDependencies": [
+        "participants",
+        "approved researcher or owner-led sessions"
+      ],
       "rollback": "Revert preparation/instrumentation commits; preserve authentic anonymized research records",
       "nextReviewTrigger": "Select Phase 4A to prepare one consolidated owner decision",
-      "subphases": [{"subphaseId": "4A", "status": "READY"}, {"subphaseId": "4B", "status": "NOT_STARTED"}, {"subphaseId": "4C", "status": "NOT_STARTED"}, {"subphaseId": "4D", "status": "NOT_STARTED"}]
+      "subphases": [
+        {
+          "subphaseId": "4A",
+          "status": "READY"
+        },
+        {
+          "subphaseId": "4B",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "4C",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "4D",
+          "status": "NOT_STARTED"
+        }
+      ]
     },
     {
       "phaseId": "5",
       "name": "Accessibility remediation",
       "status": "READY",
-      "entryGates": ["Phase 1 PASS"],
+      "entryGates": [
+        "Phase 1 PASS"
+      ],
       "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
       "currentCommit": "NOT_STARTED",
-      "deliverables": ["current accessibility audit", "path-specific owner packages", "approved fixes"],
-      "acceptanceCriteria": ["no unresolved critical accessibility issue", "high issues fixed or explicitly accepted", "no unapproved visual drift"],
-      "currentEvidence": ["visual parity PASS", "accessibility debt documented", "real-user accessibility not proven"],
-      "currentBlockers": ["protected DOM, attribute, copy, layout, or visible fixes require narrow owner approval"],
+      "deliverables": [
+        "current accessibility audit",
+        "path-specific owner packages",
+        "approved fixes"
+      ],
+      "acceptanceCriteria": [
+        "no unresolved critical accessibility issue",
+        "high issues fixed or explicitly accepted",
+        "no unapproved visual drift"
+      ],
+      "currentEvidence": [
+        "visual parity PASS",
+        "accessibility debt documented",
+        "real-user accessibility not proven"
+      ],
+      "currentBlockers": [
+        "protected DOM, attribute, copy, layout, or visible fixes require narrow owner approval"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["current official accessibility standards", "manual and assistive-technology review"],
+      "externalDependencies": [
+        "current official accessibility standards",
+        "manual and assistive-technology review"
+      ],
       "rollback": "Revert each approved accessibility change independently",
       "nextReviewTrigger": "Select Phase 5A for a current audit",
-      "subphases": [{"subphaseId": "5A", "status": "READY"}, {"subphaseId": "5B", "status": "NOT_STARTED"}, {"subphaseId": "5C", "status": "NOT_STARTED"}]
+      "subphases": [
+        {
+          "subphaseId": "5A",
+          "status": "READY"
+        },
+        {
+          "subphaseId": "5B",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "5C",
+          "status": "NOT_STARTED"
+        }
+      ]
     },
     {
       "phaseId": "6",
       "name": "Production infrastructure",
       "status": "READY",
-      "entryGates": ["Phase 1 PASS", "Phase 2 security/evidence requirements understood before PASS"],
+      "entryGates": [
+        "Phase 1 PASS",
+        "Phase 2 security/evidence requirements understood before PASS"
+      ],
       "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
       "currentCommit": "NOT_STARTED",
-      "deliverables": ["provider decision", "identity/persistence", "KMS", "backups", "observability", "limits", "crisis resources", "vectors", "staging"],
-      "acceptanceCriteria": ["all required 6A-6I subphases PASS", "no public launch", "production-shaped isolation, restore, operations, security and parity evidence"],
-      "currentEvidence": ["provider-neutral local/test interfaces exist", "production adapters and production evidence are absent"],
-      "currentBlockers": ["provider selection and credentials require owner decision", "Phase 2 must be understood before Phase 6 can pass"],
+      "deliverables": [
+        "provider decision",
+        "identity/persistence",
+        "KMS",
+        "backups",
+        "observability",
+        "limits",
+        "crisis resources",
+        "vectors",
+        "staging"
+      ],
+      "acceptanceCriteria": [
+        "all required 6A-6I subphases PASS",
+        "no public launch",
+        "production-shaped isolation, restore, operations, security and parity evidence"
+      ],
+      "currentEvidence": [
+        "provider-neutral local/test interfaces exist",
+        "production adapters and production evidence are absent"
+      ],
+      "currentBlockers": [
+        "provider selection and credentials require owner decision",
+        "Phase 2 must be understood before Phase 6 can pass"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["hosting, identity, database, KMS, storage, observability and vector providers"],
+      "externalDependencies": [
+        "hosting, identity, database, KMS, storage, observability and vector providers"
+      ],
       "rollback": "Provider-specific focused reverts and infrastructure rollback plans",
       "nextReviewTrigger": "Select Phase 6A for a consolidated provider decision",
       "subphases": [
-        {"subphaseId": "6A", "status": "READY"}, {"subphaseId": "6B", "status": "NOT_STARTED"}, {"subphaseId": "6C", "status": "NOT_STARTED"},
-        {"subphaseId": "6D", "status": "NOT_STARTED"}, {"subphaseId": "6E", "status": "NOT_STARTED"}, {"subphaseId": "6F", "status": "NOT_STARTED"},
-        {"subphaseId": "6G", "status": "NOT_STARTED"}, {"subphaseId": "6H", "status": "NOT_STARTED"}, {"subphaseId": "6I", "status": "NOT_STARTED"}
+        {
+          "subphaseId": "6A",
+          "status": "READY"
+        },
+        {
+          "subphaseId": "6B",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6C",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6D",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6E",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6F",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6G",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6H",
+          "status": "NOT_STARTED"
+        },
+        {
+          "subphaseId": "6I",
+          "status": "NOT_STARTED"
+        }
       ]
     },
     {
       "phaseId": "7",
       "name": "Production AI, retrieval, and release gates",
       "status": "NOT_STARTED",
-      "entryGates": ["Phases 2, 3, 4, 5 and 6 PASS"],
+      "entryGates": [
+        "Phases 2, 3, 4, 5 and 6 PASS"
+      ],
       "startingCommit": "NOT_STARTED",
       "currentCommit": "NOT_STARTED",
-      "deliverables": ["production data-control review", "red-team/human review", "load/cost/failure tests", "incident drills", "Gate B-Production", "Gate C-Production"],
-      "acceptanceCriteria": ["Gate B-Production PASS", "Gate C-Production PASS", "separate final owner deployment confirmation"],
-      "currentEvidence": ["Gate B-Production CLOSED", "Gate C-Production CLOSED"],
-      "currentBlockers": ["Phases 2-6 incomplete"],
+      "deliverables": [
+        "production data-control review",
+        "red-team/human review",
+        "load/cost/failure tests",
+        "incident drills",
+        "Gate B-Production",
+        "Gate C-Production"
+      ],
+      "acceptanceCriteria": [
+        "Gate B-Production PASS",
+        "Gate C-Production PASS",
+        "separate final owner deployment confirmation"
+      ],
+      "currentEvidence": [
+        "Gate B-Production CLOSED",
+        "Gate C-Production CLOSED"
+      ],
+      "currentBlockers": [
+        "Phases 2-6 incomplete"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["production-shaped services", "human theological review", "authorized paid evaluation budget"],
+      "externalDependencies": [
+        "production-shaped services",
+        "human theological review",
+        "authorized paid evaluation budget"
+      ],
       "rollback": "Keep live AI/vector kill switches and static rollback available",
       "nextReviewTrigger": "All entry phases PASS"
     },
@@ -159,15 +407,41 @@
       "phaseId": "8",
       "name": "Selective approved archive and cleanup",
       "status": "NOT_STARTED",
-      "entryGates": ["Phase 2 PASS", "Phase 3 PASS", "Phase 7 PASS", "current inventory", "candidate-level owner approvals"],
+      "entryGates": [
+        "Phase 2 PASS",
+        "Phase 3 PASS",
+        "Phase 7 PASS",
+        "current inventory",
+        "candidate-level owner approvals"
+      ],
       "startingCommit": "NOT_STARTED",
       "currentCommit": "NOT_STARTED",
-      "deliverables": ["refreshed five candidates", "candidate decisions", "pre-action tag", "approved actions", "measured benefit"],
-      "acceptanceCriteria": ["every action separately approved", "all gates green", "rollback verified", "static rollback retained until separately approved"],
-      "currentEvidence": ["five Prompt 23 decisions pending", "Prompt 23 inventory stale at current HEAD", "archive/delete not authorized"],
-      "currentBlockers": ["entry phases incomplete", "candidate approvals absent"],
+      "deliverables": [
+        "refreshed five candidates",
+        "candidate decisions",
+        "pre-action tag",
+        "approved actions",
+        "measured benefit"
+      ],
+      "acceptanceCriteria": [
+        "every action separately approved",
+        "all gates green",
+        "rollback verified",
+        "static rollback retained until separately approved"
+      ],
+      "currentEvidence": [
+        "five Prompt 23 decisions pending",
+        "Prompt 23 inventory stale at current HEAD",
+        "archive/delete not authorized"
+      ],
+      "currentBlockers": [
+        "entry phases incomplete",
+        "candidate approvals absent"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["candidate-level owner decisions"],
+      "externalDependencies": [
+        "candidate-level owner decisions"
+      ],
       "rollback": "Restore from pre-action commit/tag and verified archive",
       "nextReviewTrigger": "All entry gates satisfied"
     },
@@ -175,22 +449,43 @@
       "phaseId": "9",
       "name": "Re-run Prompt 24 and 9/10 closeout",
       "status": "NOT_STARTED",
-      "entryGates": ["Phases 2-8 PASS or immaterial exclusions supported by evidence"],
+      "entryGates": [
+        "Phases 2-8 PASS or immaterial exclusions supported by evidence"
+      ],
       "startingCommit": "NOT_STARTED",
       "currentCommit": "NOT_STARTED",
-      "deliverables": ["new evidence ledger", "new scorecard", "9/10 closeout or exact gap roadmap"],
-      "acceptanceCriteria": ["real-user evidence real", "production evidence current", "no material unresolved security blocker", "every score evidence-based"],
-      "currentEvidence": ["Prompt 24 baseline locked at 39e75ee"],
-      "currentBlockers": ["Phases 2-8 incomplete"],
+      "deliverables": [
+        "new evidence ledger",
+        "new scorecard",
+        "9/10 closeout or exact gap roadmap"
+      ],
+      "acceptanceCriteria": [
+        "real-user evidence real",
+        "production evidence current",
+        "no material unresolved security blocker",
+        "every score evidence-based"
+      ],
+      "currentEvidence": [
+        "Prompt 24 baseline locked at 39e75ee"
+      ],
+      "currentBlockers": [
+        "Phases 2-8 incomplete"
+      ],
       "ownerDecisionIds": [],
-      "externalDependencies": ["completed real-user and production evidence"],
+      "externalDependencies": [
+        "completed real-user and production evidence"
+      ],
       "rollback": "Report-only revert",
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "3A",
-  "otherReadyIndependentSubphases": ["3A", "4A", "5A", "6A"],
-  "nextWaitingPhase": "2A_BLOCKED",
+  "nextReadyPhase": "OWNER_SELECTION_REQUIRED_4A_5A_OR_6A",
+  "otherReadyIndependentSubphases": [
+    "4A",
+    "5A",
+    "6A"
+  ],
+  "nextWaitingPhase": "PHASE3_WAITING_OWNER_AND_PHASE2A_BLOCKED",
   "prompt23BUnlocked": false,
   "publicDeploymentAuthorized": false
 }

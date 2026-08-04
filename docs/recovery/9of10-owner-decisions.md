@@ -5,6 +5,7 @@
 | Decision | Scope | Status |
 | --- | --- | --- |
 | Controller first-run instruction (no separate ID supplied) | Initialize program and execute Phase 1 only | Authorized by owner-supplied controller |
+| Phase 3A instruction (no separate ID supplied) | Execute privacy-safe stabilization toolkit only | Authorized by owner-supplied Phase 3A prompt |
 | `TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24` | Next canonical locally; static Node rollback | Existing approved decision |
 | `TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B` | Exact Scripture quotation delta | Existing approved decision |
 | `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8` | Owner-approved support baselines | Existing approved decision |
@@ -13,6 +14,8 @@
 No new visual, production, paid-provider, archive, delete, or deployment approval is inferred from the program controller.
 
 ## Future decisions required
+
+- Phase 3B: owner closeout only after authentic status reaches READY_FOR_CLOSEOUT; not currently ready or authorized.
 
 - Phase 4A: participant profile, sample size, accessibility representation, compensation, local/remote mode, success thresholds, and permitted data.
 - Phase 5B: each protected accessibility change by path/issue.

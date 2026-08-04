@@ -1,13 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04T14:24:32.8117021-04:00",
+  "updatedAt": "2026-08-04T18:18:16.6464520-04:00",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
       "scope": "Initialize the 9/10 program and execute Phase 1 only",
       "status": "AUTHORIZED_BY_OWNER_SUPPLIED_CONTROLLER",
       "source": "Teoyube_9_of_10_Implementation_Program_Controller.md",
-      "limitations": ["No Phase 2 work", "no product changes", "no visual changes", "no package/runtime changes", "no paid calls"]
+      "limitations": [
+        "No Phase 2 work",
+        "no product changes",
+        "no visual changes",
+        "no package/runtime changes",
+        "no paid calls"
+      ]
     },
     {
       "decisionId": "TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24",
@@ -32,14 +38,47 @@
       "scope": "Next support route classification and baselines",
       "status": "APPROVED_EXISTING",
       "source": "tests/visual/baselines/owner-approved-next-support/manifest.json"
+    },
+    {
+      "decisionId": "PHASE_3A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
+      "scope": "Execute Phase 3A privacy-safe stabilization toolkit only",
+      "status": "AUTHORIZED_BY_OWNER_SUPPLIED_PHASE_PROMPT",
+      "source": "Teoyube 9/10 Program - Phase 3A: Formal Stabilization Toolkit",
+      "limitations": [
+        "No Phase 3B",
+        "no product or visual changes",
+        "no fabricated sessions",
+        "no private content",
+        "no paid calls",
+        "no blocker fix or waiver"
+      ]
     }
   ],
   "pendingDecisionGroups": [
-    {"phase": "4A", "decision": "pilot profile, sample, accessibility representation, compensation, session mode, thresholds, and permitted data"},
-    {"phase": "5B", "decision": "path-specific accessibility fixes affecting protected output"},
-    {"phase": "6A", "decision": "production providers and staging architecture"},
-    {"phase": "7", "decision": "paid evaluation budgets, production gates, and final deployment"},
-    {"phase": "8", "decision": "each archive/delete candidate separately"}
+    {
+      "phase": "4A",
+      "decision": "pilot profile, sample, accessibility representation, compensation, session mode, thresholds, and permitted data"
+    },
+    {
+      "phase": "5B",
+      "decision": "path-specific accessibility fixes affecting protected output"
+    },
+    {
+      "phase": "6A",
+      "decision": "production providers and staging architecture"
+    },
+    {
+      "phase": "7",
+      "decision": "paid evaluation budgets, production gates, and final deployment"
+    },
+    {
+      "phase": "8",
+      "decision": "each archive/delete candidate separately"
+    },
+    {
+      "phase": "3B",
+      "decision": "Owner closeout only after authentic status reaches READY_FOR_CLOSEOUT; Phase 3B is not currently ready or authorized"
+    }
   ],
   "fabricatedApprovals": 0
 }

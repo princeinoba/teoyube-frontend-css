@@ -5,7 +5,7 @@
 | 9R-01 | Development dependency advisory | **RESOLVED IN PHASE 2A:** full and production trees contain zero vulnerabilities; no waiver or forced fix | Phase 2A/2C | Satisfied at `7d4906876412304556eab126ca020beaa8cb8c17`; preserve in later lockfile changes |
 | 9R-02 | Stale release evidence | Current validation blocked with 1,087 failures | Phase 2B/2C | Current-source lineage and Gate C Preview PASS |
 | 9R-03 | Prompt 24 composite safety-hash input discrepancy | Historical report preserved; authoritative hash locked in Phase 1 | Phase 1 evidence integrity | Phase 1 ledger remains authoritative for later dependency comparisons |
-| 9R-04 | Stabilization absent | No seven-day/ten-session evidence | Phase 3 | Authentic owner-confirmed records and closeout |
+| 9R-04 | Stabilization evidence incomplete | Phase 3A toolkit PASS; authentic evidence remains 0 days, 0 sessions, and 0 incidents | Phase 3 | Seven distinct days, ten owner-confirmed meaningful sessions, full coverage, no disqualifying incident, and owner closeout |
 | 9R-05 | Real-user evidence absent | Research not run | Phase 4 | Owner-accepted real participant analysis |
 | 9R-06 | Accessibility conformance unproved | Current 72-cell audit exposes 11 extra Next Canon focus controls at all six viewports; manual/assistive evidence debt remains | Phase 5 and Phase 2A recheck | No critical issue; high issues fixed or accepted with evidence |
 | 9R-07 | Production infrastructure absent | Local/test adapters only | Phase 6 | Managed, isolated, restored, monitored staging evidence |

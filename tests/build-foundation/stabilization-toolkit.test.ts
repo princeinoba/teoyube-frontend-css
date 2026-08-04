@@ -16,6 +16,8 @@ const toolkit = require("../../scripts/stabilization/stabilization-toolkit.cjs")
     incidents: IncidentRecord[];
     ownerCloseoutConfirmed?: boolean;
   }): StabilizationStatus;
+  exportRedactedAggregate(root: string): { target: string; output: Record<string, unknown> };
+  persistIncident(root: string, draft: IncidentRecord): { target: string; record: IncidentRecord; updated: boolean };
   persistSession(root: string, draft: SessionRecord): { target: string; record: SessionRecord };
   validateIncidentRecord(record: IncidentRecord, options?: { allowMissingRecordHash?: boolean }): IncidentRecord;
   validateSessionRecord(record: SessionRecord, options?: { allowMissingRecordHash?: boolean }): SessionRecord;
@@ -405,6 +407,65 @@ describe("Phase 3A privacy-safe stabilization toolkit", () => {
     const status = toolkit.evaluateStabilization({ sessions: readySessions(), incidents: [] });
     expect(status.status).toBe("READY_FOR_CLOSEOUT");
     expect(status.criteria.ownerCloseoutConfirmed).toBe(false);
+  });
+
+  it("keeps published schemas strict and aligned with validator capability and route contracts", () => {
+    const sessionSchema = JSON.parse(
+      fs.readFileSync(
+        path.join(repositoryRoot, "docs/stabilization/schemas/session-record.schema.json"),
+        "utf8"
+      )
+    ) as {
+      additionalProperties: boolean;
+      required: string[];
+      properties: { schemaVersion: { const: string } };
+      $defs: { capability: { enum: string[] }; route: { enum: string[] } };
+    };
+    const incidentSchema = JSON.parse(
+      fs.readFileSync(
+        path.join(repositoryRoot, "docs/stabilization/schemas/incident-record.schema.json"),
+        "utf8"
+      )
+    ) as {
+      additionalProperties: boolean;
+      required: string[];
+      properties: { schemaVersion: { const: string }; route: { $ref: string }; capability: { $ref: string } };
+    };
+    expect(sessionSchema.additionalProperties).toBe(false);
+    expect(incidentSchema.additionalProperties).toBe(false);
+    expect(sessionSchema.required).toContain("recordHash");
+    expect(incidentSchema.required).toContain("recordHash");
+    expect(sessionSchema.$defs.capability.enum).toEqual(toolkit.CAPABILITIES);
+    expect(sessionSchema.$defs.route.enum).toHaveLength(23);
+    expect(incidentSchema.properties.route.$ref).toContain("session-record.schema.json");
+    expect(incidentSchema.properties.capability.$ref).toContain("session-record.schema.json");
+  });
+
+  it("exports only a redacted aggregate and omits session narratives", () => {
+    const temp = fs.mkdtempSync(path.join(os.tmpdir(), "teoyube-stab-export-"));
+    temporaryRoots.push(temp);
+    const record = sessionDraft();
+    record.notes = "SYNTHETIC_NARRATIVE_MARKER_MUST_NOT_EXPORT";
+    toolkit.persistSession(temp, record);
+    const exported = toolkit.exportRedactedAggregate(temp);
+    const output = JSON.stringify(exported.output);
+    expect(output).not.toContain("SYNTHETIC_NARRATIVE_MARKER_MUST_NOT_EXPORT");
+    expect(output).not.toContain('"notes"');
+    expect(output).not.toContain('"actions"');
+    expect(output).not.toContain('"expectedOutcome"');
+    expect(fs.existsSync(exported.target)).toBe(true);
+  });
+
+  it("updates incidents only from an explicit full record and never auto-closes them", () => {
+    const temp = fs.mkdtempSync(path.join(os.tmpdir(), "teoyube-stab-incident-"));
+    temporaryRoots.push(temp);
+    const first = toolkit.persistIncident(temp, incidentDraft());
+    expect(first.updated).toBe(false);
+    const update = incidentDraft({ status: "investigating", updatedAt: "2026-08-04T10:00:00-04:00" });
+    const second = toolkit.persistIncident(temp, update);
+    expect(second.updated).toBe(true);
+    expect(second.record.status).toBe("investigating");
+    expect(second.record.resolutionCommit).toBeNull();
   });
 
   it("keeps actual record paths ignored and outside runtime/client source", () => {
