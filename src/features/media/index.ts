@@ -4,6 +4,11 @@ import { createCapabilityService } from "../../shared/utilities/create-capabilit
 export type MediaEvent = CapabilityEvent<"media">;
 export type MediaViewModel = CapabilityViewModel<"media">;
 export { createMediaLegacyAdapter } from "./legacy-adapter";
+export {
+  EMBEDDED_VIDEOS_OFFICIAL_CHANNEL,
+  createEmbeddedVideosYouTubeEmbedUrl,
+  getEmbeddedVideosYouTubeMapping
+} from "./embedded-videos-youtube";
 
 export function createMediaFeature(port: CapabilityPort<"media">) {
   return createCapabilityService("media", port);

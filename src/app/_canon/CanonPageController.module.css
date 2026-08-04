@@ -1,0 +1,22 @@
+.playingStage {
+  position: relative;
+  overflow: hidden;
+  background-image: none !important;
+}
+
+.playingStage::before,
+.playingStage::after {
+  display: none !important;
+}
+
+.player {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: inherit;
+  background: #000;
+}

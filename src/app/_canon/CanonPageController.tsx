@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useDailySpiritualLoop } from "@/features/journey/ui/DailySpiritualLoopProvider";
 import type { CanonViewModel } from "@/features/scripture/canon-contracts";
+import { createCanonJourneyYouTubeEmbedUrl } from "@/features/scripture/canon-youtube";
 import { APPROVED_VIEW_MARKUP } from "../_approved-source/approved-view-markup.generated";
 import { ApprovedMigrationOverlays, type MigrationNotice } from "../_approved-source/ApprovedMigrationOverlays";
 import { ApprovedCanonView } from "./ApprovedCanonView";
+import styles from "./CanonPageController.module.css";
 
 const canonTabs = APPROVED_VIEW_MARKUP.canon.tabs as Readonly<Record<string, string>>;
 const canonPages = APPROVED_VIEW_MARKUP.canon.pages as Readonly<Record<string, string>>;
@@ -48,12 +50,81 @@ export function CanonPageController({ initialViewModel }: { initialViewModel: Ca
     const currentRoot = rootRef.current;
     if (!currentRoot) return;
     const root: HTMLElement = currentRoot;
+    let activeStage: HTMLElement | null = null;
+    const mediaByItemId = new Map(initialViewModel.media.map((media) => [media.canonItemId, media]));
+
+    function stopPlayback() {
+      if (!activeStage) return;
+      activeStage.querySelector("iframe")?.remove();
+      activeStage.classList.remove(styles.playingStage);
+      activeStage.dataset.playbackState = "idle";
+      delete activeStage.dataset.activeVideoId;
+      activeStage.setAttribute("aria-pressed", "false");
+      const mapping = mediaByItemId.get(activeStage.closest<HTMLElement>("[data-canon-item]")?.dataset.canonItem || "");
+      if (mapping) activeStage.setAttribute("aria-label", `Play ${mapping.mediaTitle} for ${mapping.journeyTitle}`);
+      activeStage = null;
+    }
+
+    function playJourneyMedia(stage: HTMLElement) {
+      const card = stage.closest<HTMLElement>("[data-canon-item]");
+      const mapping = mediaByItemId.get(card?.dataset.canonItem || "");
+      const source = createCanonJourneyYouTubeEmbedUrl(mapping);
+      if (!card || !mapping || !source) return;
+
+      stopPlayback();
+      root.querySelectorAll("[data-canon-item].active").forEach((item) => item.classList.remove("active"));
+      card.classList.add("active");
+      activeStage = stage;
+      stage.classList.add(styles.playingStage);
+      stage.dataset.activeVideoId = mapping.mediaId;
+      stage.dataset.playbackState = "loading";
+      stage.setAttribute("aria-pressed", "true");
+      stage.setAttribute("aria-label", `Playing ${mapping.mediaTitle} for ${mapping.journeyTitle}`);
+
+      const frame = document.createElement("iframe");
+      frame.className = styles.player;
+      frame.title = `TeoyubeWorld video: ${mapping.mediaTitle} for ${mapping.journeyTitle}`;
+      frame.allow = "autoplay; encrypted-media; picture-in-picture; web-share";
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      frame.allowFullscreen = true;
+      frame.dataset.youtubeVideoId = mapping.youtubeVideoId;
+      frame.addEventListener("load", () => {
+        if (activeStage !== stage) return;
+        stage.dataset.playbackState = "playing";
+      }, { once: true });
+      frame.addEventListener("error", () => {
+        if (activeStage !== stage) return;
+        stopPlayback();
+        stage.dataset.playbackState = "error";
+      }, { once: true });
+      stage.append(frame);
+      frame.src = source;
+    }
+
+    root.querySelectorAll<HTMLElement>(".canon-project-media, .canon-recent-media").forEach((stage) => {
+      const card = stage.closest<HTMLElement>("[data-canon-item]");
+      const mapping = mediaByItemId.get(card?.dataset.canonItem || "");
+      if (!mapping) return;
+      stage.dataset.canonVideoStage = mapping.canonItemId;
+      stage.dataset.canonVideoId = mapping.mediaId;
+      stage.dataset.playbackState = "idle";
+      stage.setAttribute("role", "button");
+      stage.setAttribute("tabindex", "0");
+      stage.setAttribute("aria-pressed", "false");
+      stage.setAttribute("aria-label", `Play ${mapping.mediaTitle} for ${mapping.journeyTitle}`);
+    });
     const continuationButton = [...root.querySelectorAll<HTMLButtonElement>("button")]
       .find((button) => button.textContent?.includes("Continue Your Journey"));
     if (scriptureMomentActive) continuationButton?.setAttribute("data-daily-journey-action", "accept");
 
     function onClick(event: MouseEvent) {
       const target = event.target as HTMLElement;
+      const mediaStage = target.closest<HTMLElement>("[data-canon-video-stage]");
+      if (mediaStage) {
+        event.preventDefault();
+        playJourneyMedia(mediaStage);
+        return;
+      }
       if (target.closest('[data-daily-journey-action="accept"]')) {
         const selected = root.querySelector<HTMLElement>("[data-canon-item].active") || root.querySelector<HTMLElement>("[data-canon-item]");
         actOnDailySpiritualLoop({ type: "accept", userInput: selected?.textContent?.trim() || "Scripture selection reviewed in Canon." });
@@ -120,6 +191,12 @@ export function CanonPageController({ initialViewModel }: { initialViewModel: Ca
 
     function onKeyDown(event: KeyboardEvent) {
       const target = event.target as HTMLElement;
+      const mediaStage = target.closest<HTMLElement>("[data-canon-video-stage]");
+      if (mediaStage && (event.key === "Enter" || event.key === " ")) {
+        event.preventDefault();
+        playJourneyMedia(mediaStage);
+        return;
+      }
       const featured = target.closest("[data-canon-featured-carousel]");
       const recommended = target.closest("[data-canon-recommended-carousel]");
       if (!featured && !recommended) return;
@@ -138,11 +215,12 @@ export function CanonPageController({ initialViewModel }: { initialViewModel: Ca
     }, 7000);
     return () => {
       window.clearInterval(timer);
+      stopPlayback();
       root.removeEventListener("click", onClick);
       root.removeEventListener("submit", onSubmit);
       root.removeEventListener("keydown", onKeyDown);
     };
-  }, [actOnDailySpiritualLoop, html, router, scriptureMomentActive]);
+  }, [actOnDailySpiritualLoop, html, initialViewModel.media, router, scriptureMomentActive]);
 
   return <><ApprovedCanonView html={html} rootRef={rootRef} /><ApprovedMigrationOverlays notice={notice} clearNotice={() => setNotice(null)} /></>;
 }

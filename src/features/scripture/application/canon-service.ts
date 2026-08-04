@@ -2,6 +2,7 @@ import type { PromiseRepository } from "../../../domain/promises/promise-reposit
 import type { ScriptureRepository } from "../../../domain/scripture/scripture-repository";
 import { APPROVED_VIEW_MARKUP } from "../../../app/_approved-source/approved-view-markup.generated";
 import type { CanonViewModel } from "../canon-contracts";
+import { CANON_JOURNEY_YOUTUBE_MAPPINGS } from "../canon-youtube";
 
 export function createApprovedCanonViewModel(
   scriptureRepository: ScriptureRepository,
@@ -12,6 +13,7 @@ export function createApprovedCanonViewModel(
     sourceDigest: APPROVED_VIEW_MARKUP.sourceDigest,
     canonicalEntryCount: scriptureRepository.listCanonEntries().length,
     promiseClusterCount: promiseRepository.listClusters().length,
-    activeTab: "canon-maps"
+    activeTab: "canon-maps",
+    media: CANON_JOURNEY_YOUTUBE_MAPPINGS
   });
 }
