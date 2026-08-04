@@ -161,14 +161,14 @@
     "recovery:runtime-baselines:verify": "node scripts/recovery/verifyRuntimeBaselines.cjs"
   },
   "dependencies": {
-    "next": "16.2.11",
+    "next": "16.3.0",
     "openai": "6.48.0",
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "zod": "4.4.3"
   },
   "overrides": {
-    "postcss": "8.5.19",
+    "postcss": "8.5.23",
     "sharp": "0.35.3"
   },
   "devDependencies": {
@@ -178,7 +178,7 @@
     "@types/react-dom": "19.2.3",
     "@vitest/coverage-v8": "4.1.10",
     "eslint": "9.39.5",
-    "eslint-config-next": "16.2.10",
+    "eslint-config-next": "16.3.0",
     "sharp": "0.35.3",
     "typescript": "5.9.3",
     "vitest": "4.1.10"

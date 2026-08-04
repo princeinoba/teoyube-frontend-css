@@ -83,6 +83,10 @@ check(
   manifest.runtimeSourceDigest === undefined || /^[a-f0-9]{64}$/.test(manifest.runtimeSourceDigest),
   "Runtime source digest is invalid."
 );
+check(
+  manifest.packageLockSha256 === undefined || /^[a-f0-9]{64}$/.test(manifest.packageLockSha256),
+  "Canonical runtime package-lock hash is invalid."
+);
 check(manifest.rollbackCommand === "npm run rollback:start", "Rollback command differs.");
 check(manifest.gateCProduction === "CLOSED", "Gate C-Production must remain closed.");
 check(manifest.publicDeploymentPerformed === false, "The manifest must not claim a public deployment.");
@@ -159,8 +163,12 @@ check(
   "Protected visual-source manifest hash differs."
 );
 check(
-  preCutover.hashes.packageLockSha256 === sha256("package-lock.json"),
-  "package-lock.json changed after the pre-cutover checkpoint."
+  preCutover.hashes.packageLockSha256 === "1edbad08c15ad46effdca2258278ca4b7159f223bad088fbc792e7a5e57008ef",
+  "The historical pre-cutover package-lock checkpoint hash changed."
+);
+check(
+  manifest.packageLockSha256 === sha256("package-lock.json"),
+  "Current package-lock.json differs from the canonical runtime binding."
 );
 const publicFiles = [];
 function walk(directory) {
