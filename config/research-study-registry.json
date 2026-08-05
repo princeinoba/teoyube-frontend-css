@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryVersion": "teoyube-research-studies-2026-08-04.1",
+  "studies": [
+    {
+      "studyId": "teoyube-phase4b-synthetic",
+      "studyVersion": "teoyube-formative-pilot-2026-08-04.1",
+      "status": "synthetic_test_only",
+      "cohorts": ["synthetic_ordinary", "synthetic_expert"],
+      "allowedTaskIds": [
+        "orientation", "scripture-boundary", "action-reversibility", "calling-boundary",
+        "testimony-boundary", "memory-consent", "teo-guide", "retrieval-continuity",
+        "accessibility", "safety-stop", "session-close"
+      ],
+      "retentionDays": 180,
+      "realParticipantCollectionAuthorized": false
+    }
+  ]
+}

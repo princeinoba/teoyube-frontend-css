@@ -41,6 +41,9 @@ __pycache__/
 /.var/stabilization/sessions/
 /.var/stabilization/incidents/
 /.var/stabilization/exports/
+/.var/research/events/
+/.var/research/exports/
+/.var/research/deletions/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal

@@ -16,7 +16,13 @@ export type PurposeId =
   | "user_memory_semantic_index"
   | "user_testimony_semantic_index"
   | "user_journey_semantic_index"
-  | "user_calling_evidence_semantic_index";
+  | "user_calling_evidence_semantic_index"
+  | "research_participation"
+  | "research_product_events"
+  | "research_accessibility_observation"
+  | "research_optional_recording"
+  | "research_optional_live_ai_task"
+  | "research_follow_up_contact";
 
 export type DataSensitivity =
   | "public"

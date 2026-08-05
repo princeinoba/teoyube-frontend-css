@@ -65,7 +65,13 @@ export const MEMORY_PURPOSE_REGISTRY: Readonly<Record<PurposeId, MemoryPurposePo
   user_memory_semantic_index: Object.freeze({ id: "user_memory_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
   user_testimony_semantic_index: Object.freeze({ id: "user_testimony_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
   user_journey_semantic_index: Object.freeze({ id: "user_journey_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
-  user_calling_evidence_semantic_index: Object.freeze({ id: "user_calling_evidence_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 })
+  user_calling_evidence_semantic_index: Object.freeze({ id: "user_calling_evidence_semantic_index", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  research_participation: Object.freeze({ id: "research_participation", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 180 }),
+  research_product_events: Object.freeze({ id: "research_product_events", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 180 }),
+  research_accessibility_observation: Object.freeze({ id: "research_accessibility_observation", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 180 }),
+  research_optional_recording: Object.freeze({ id: "research_optional_recording", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 30 }),
+  research_optional_live_ai_task: Object.freeze({ id: "research_optional_live_ai_task", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 0 }),
+  research_follow_up_contact: Object.freeze({ id: "research_follow_up_contact", allowedLayers: Object.freeze([]), allowedSensitivities: Object.freeze([]), explicitUserAction: true, defaultGranted: false, retentionDays: 30 })
 });
 
 export const CONSENT_SCOPE_REGISTRY: Readonly<Record<PurposeId, readonly string[]>> = Object.freeze({
@@ -81,7 +87,13 @@ export const CONSENT_SCOPE_REGISTRY: Readonly<Record<PurposeId, readonly string[
   user_memory_semantic_index: Object.freeze(["semantic_index:memory"]),
   user_testimony_semantic_index: Object.freeze(["semantic_index:testimony"]),
   user_journey_semantic_index: Object.freeze(["semantic_index:journey"]),
-  user_calling_evidence_semantic_index: Object.freeze(["semantic_index:calling_evidence"])
+  user_calling_evidence_semantic_index: Object.freeze(["semantic_index:calling_evidence"]),
+  research_participation: Object.freeze(["research:participate", "research:withdraw"]),
+  research_product_events: Object.freeze(["research:event:write", "research:event:export", "research:event:delete"]),
+  research_accessibility_observation: Object.freeze(["research:accessibility:observe"]),
+  research_optional_recording: Object.freeze(["research:recording:capture"]),
+  research_optional_live_ai_task: Object.freeze(["research:live_ai:task"]),
+  research_follow_up_contact: Object.freeze(["research:follow_up:contact"])
 });
 
 export function validateConsentScopes(purposeId: PurposeId, scopes: readonly string[]): boolean {
