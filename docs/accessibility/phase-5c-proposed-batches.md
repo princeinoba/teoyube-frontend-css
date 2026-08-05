@@ -1,6 +1,8 @@
 # Proposed Phase 5C implementation batches
 
-Status: **PROPOSED - NOT AUTHORIZED**
+Status: **READY FOR APPROVED SCOPE ONLY - NOT STARTED**
+
+Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` approved the exact current hashes. Each batch still requires a separate Codex task and stop.
 
 ## Batch 5C-1 - Critical and hidden-focus barriers
 

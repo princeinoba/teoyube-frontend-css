@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05T15:52:06.767Z",
+  "updatedAt": "2026-08-05T17:13:18.973Z",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -133,52 +133,25 @@
         "Operator, separate contact-data location and local/privacy review must be completed before manual recruitment contact or data collection",
         "No product, visual, baseline, runtime-ownership or paid-provider change"
       ]
+    },
+    {
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "scope": "Only the 20 current issue-specific and manual-task proposal hashes recorded in the Phase 5B decision ledger.",
+      "status": "APPROVED",
+      "approvedAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "source": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json",
+      "limitations": [
+        "No different implementation, expanded scope, substitute proposal, or changed proposal hash is authorized.",
+        "Phase 5C is not started by this decision-recording task.",
+        "No HTML, CSS, DOM hierarchy, class, ID, ARIA, tabindex, focus-order, visible-copy, icon, image, media-control, route, responsive-layout, or baseline change is authorized while recording this decision.",
+        "All existing Canon media controls must be preserved.",
+        "Manual evidence approval authorizes only the documented task and is not a PASS result.",
+        "Each Phase 5C batch requires a separate Codex task, clean-worktree verification, exact hash scope, before evidence, focused implementation, full applicable gates, rollback, and no baseline replacement."
+      ]
     }
   ],
   "pendingDecisionGroups": [
-    {
-      "phase": "5B",
-      "status": "WAITING_OWNER",
-      "decision": "11 issue decisions and 9 manual-task decisions, each bound to its current proposal hash",
-      "source": "docs/accessibility/owner-review/phase-5b-owner-decisions.json",
-      "issueIds": [
-        "A11Y-001",
-        "A11Y-002",
-        "A11Y-003",
-        "A11Y-004",
-        "A11Y-005",
-        "A11Y-006",
-        "A11Y-007",
-        "A11Y-008",
-        "A11Y-009",
-        "A11Y-010",
-        "A11Y-011"
-      ],
-      "manualTaskIds": [
-        "A11Y-MANUAL-001",
-        "A11Y-MANUAL-002",
-        "A11Y-MANUAL-003",
-        "A11Y-MANUAL-004",
-        "A11Y-MANUAL-005",
-        "A11Y-MANUAL-006",
-        "A11Y-MANUAL-007",
-        "A11Y-MANUAL-008",
-        "A11Y-MANUAL-009"
-      ],
-      "allowedValues": [
-        "APPROVE_RECOMMENDED_PHASE5C_FIX",
-        "APPROVE_MANUAL_EVIDENCE_TASK",
-        "HOLD",
-        "REJECT",
-        "NEEDS_MORE_EVIDENCE"
-      ],
-      "restrictions": [
-        "one decision line per ID",
-        "no blanket approval",
-        "approval must bind the current proposal hash",
-        "approval does not start Phase 5C or update baselines"
-      ]
-    },
     {
       "phase": "6A",
       "decision": "production providers and staging architecture"

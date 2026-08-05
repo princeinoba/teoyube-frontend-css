@@ -89,6 +89,10 @@
   "manualAtEvidenceRequired": false,
   "rollback": "Remove only inaccurate evidence records; preserve raw audit evidence and product source.",
   "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-  "ownerDecision": "PENDING",
-  "proposalHash": "0584a9068607caf728b500981e11e13b70af66c3a88d13d78aa4fda2faf085d9"
+  "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+  "proposalHash": "0584a9068607caf728b500981e11e13b70af66c3a88d13d78aa4fda2faf085d9",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "EVIDENCE_TASKS_APPROVED_NOT_EXECUTED"
 }

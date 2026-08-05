@@ -84,6 +84,10 @@
   "implementationBatch": "5C-2",
   "rollback": "Revert only the A11Y-003 Phase 5C commit and restore the prior exact static handler/attributes; do not remove the existing Next controls or alter baselines.",
   "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
-  "ownerDecision": "PENDING",
-  "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca"
+  "ownerDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "APPROVED_NOT_STARTED"
 }

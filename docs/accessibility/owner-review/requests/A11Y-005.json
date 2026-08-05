@@ -78,6 +78,10 @@
   "implementationBatch": "5C-2",
   "rollback": "Revert only the three A11Y-005 attribute additions and regenerate no baseline.",
   "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
-  "ownerDecision": "PENDING",
-  "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce"
+  "ownerDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "APPROVED_NOT_STARTED"
 }

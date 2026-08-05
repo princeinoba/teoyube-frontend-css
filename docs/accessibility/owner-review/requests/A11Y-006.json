@@ -66,6 +66,10 @@
   "implementationBatch": "5C-2",
   "rollback": "Revert only the A11Y-006 attributes and rerun Testimony and recovery checks.",
   "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
-  "ownerDecision": "PENDING",
-  "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+  "ownerDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "APPROVED_NOT_STARTED"
 }

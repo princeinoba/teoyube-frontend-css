@@ -74,6 +74,10 @@
   "implementationBatch": "5C-1",
   "rollback": "Revert only the A11Y-004 Phase 5C commit and rerun the hidden-focus and recovery checks.",
   "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
-  "ownerDecision": "PENDING",
-  "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+  "ownerDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "APPROVED_NOT_STARTED"
 }

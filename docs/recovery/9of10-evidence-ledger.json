@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T15:52:06.767Z",
+  "generatedAt": "2026-08-05T17:13:18.973Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -635,11 +635,11 @@
     },
     {
       "phase": "5B",
-      "status": "WAITING_OWNER",
-      "executedAt": "2026-08-05T15:52:06.767Z",
+      "status": "PASS",
+      "executedAt": "2026-08-05T17:13:18.973Z",
       "startingCommit": "0a98a0ba498315442823dc5469074cd2d8d3ed10",
       "prePhaseTag": "teoyube-9of10-phase5b-start-0a98a0b",
-      "finalCommit": "FINAL_PHASE5B_REVIEW_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "finalCommit": "FINAL_PHASE5B_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "sourceIssueCount": 11,
       "confirmedIssues": 8,
       "manualEvidenceGaps": 3,
@@ -652,10 +652,10 @@
       "issueReviewRequests": 11,
       "manualTasks": 9,
       "proposalHashes": 20,
-      "ownerDecisions": "ALL_PENDING",
+      "ownerDecisions": "RECORDED_ALL_20",
       "canonDecision": "PENDING",
       "proposedImplementationBatches": 3,
-      "phase5c": "NOT_READY_NOT_STARTED",
+      "phase5c": "READY_FOR_APPROVED_SCOPE_ONLY_NOT_STARTED",
       "conformanceClaim": false,
       "productFixes": 0,
       "productSourceFilesChanged": 0,
@@ -668,34 +668,44 @@
       "paidCalls": 0,
       "artifacts": [
         {
-          "path": "docs/accessibility/phase-5b-starting-manifest.json",
-          "sha256": "9657b9e3ec3e2fcc3c2483f05fabb32933fe5fd3ef599ff894795da038746391"
+          "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json",
+          "sha256": "2806b4b34f12ea49a67416977f7631f0c8e48552084fc381f24f7d6720b3956d"
         },
         {
-          "path": "docs/accessibility/owner-review/phase-5b-owner-review-package.json",
-          "sha256": "75913edc51a961db54f0f9fcf323c3a3f90380c1e31ace7197e018a8597d0364"
+          "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.md",
+          "sha256": "fa652c5ed482d8f38ed3cef3f56a61da9aa1679c543ebd974df6a306303181ea"
         },
         {
           "path": "docs/accessibility/owner-review/phase-5b-owner-decisions.json",
-          "sha256": "d2b43131c94c45aca31d2824537faaa209ed089d00a07a9dfcab37110891e1d9"
+          "sha256": "e61509d06fffdfbed4c8025bfa82b365d90b2d88c8d23eec9763332f5762cf3a"
         },
         {
-          "path": "docs/accessibility/owner-review/canon-focus-owner-decision.json",
-          "sha256": "b4c48056f3a3420e1aa4a337a3ccf72a431e95f4201171ad242e053ea9ecfc26"
+          "path": "docs/accessibility/owner-review/phase-5b-owner-review-package.json",
+          "sha256": "fb3fe2b2675c85848e8df9395b0df665316a0dd09bba06c38ca07a8247264856"
         },
         {
           "path": "docs/accessibility/owner-review/manual-evidence-plan.json",
-          "sha256": "1ff4dab41e84f3c9d8ab1185880f3eec28604d83f7afb65067aabd432e43c254"
+          "sha256": "920b33ca2eb721196714f3bce17b818aa77221b4d0ab2f3c7847a5b81e48ba6b"
+        },
+        {
+          "path": "docs/accessibility/owner-review/canon-focus-owner-decision.json",
+          "sha256": "f02192b73de769b54b6c6950c90f25d5c66c556262be5865f5f090bfedcde50d"
         },
         {
           "path": "docs/accessibility/phase-5c-proposed-batches.json",
-          "sha256": "f6499ac5a56e9c4812bca39cdcc4b59d4504a96cfc694f7fc50e3d8ae2d6ae44"
+          "sha256": "fbb722e0b9941ec47416fb0020a01ea8980959b3ef8607151703d7c43365f838"
         },
         {
           "path": "docs/recovery/9of10-phase-5b-accessibility-owner-review-report.json",
-          "sha256": "6d19e2ec5c4c2eb2b547253d7f7dc1faf94cc4d235fa72d0f45ce24f2c4b699e"
+          "sha256": "cf036e934efa39c6455e6a8a572da74febc23f51c53c535c7785abd37a951c86"
         }
-      ]
+      ],
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "approvedFixes": 8,
+      "approvedManualGapScopes": 3,
+      "approvedManualTasks": 9,
+      "manualTasksExecuted": 0
     }
   ],
   "workspaceAtStart": {
@@ -753,8 +763,8 @@
     "program": "IN_PROGRESS"
   },
   "workspaceAfterPhase5b": {
-    "recordedAt": "2026-08-05T15:52:06.767Z",
-    "head": "FINAL_PHASE5B_REVIEW_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "recordedAt": "2026-08-05T17:13:18.973Z",
+    "head": "FINAL_PHASE5B_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
     "productSourceFilesChanged": 0,
     "protectedVisualFilesChanged": 0,
     "immutableBaselineFilesChanged": 0,
@@ -766,8 +776,8 @@
     "phase3": "WAITING_OWNER",
     "phase4": "WAITING_OWNER_SESSION_DATA",
     "phase5a": "PASS",
-    "phase5b": "WAITING_OWNER",
-    "phase5c": "NOT_READY",
+    "phase5b": "PASS",
+    "phase5c": "READY_FOR_APPROVED_SCOPE_ONLY_NOT_STARTED",
     "phase5Overall": "IN_PROGRESS",
     "program": "IN_PROGRESS"
   }

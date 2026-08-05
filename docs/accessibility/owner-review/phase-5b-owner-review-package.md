@@ -1,6 +1,6 @@
 # Phase 5B accessibility owner-review package
 
-Status: **WAITING_OWNER**. No fix is implemented and no WCAG conformance claim is made.
+Status: **PASS - OWNER DECISIONS RECORDED**. Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` approves only the current hash-bound scopes. No fix is implemented and no WCAG conformance claim is made.
 
 ## Issue decisions
 
@@ -29,6 +29,14 @@ Status: **WAITING_OWNER**. No fix is implemented and no WCAG conformance claim i
 - **A11Y-MANUAL-007** (A11Y-011): VoiceOver and iOS Safari touch media review - recommended **APPROVE_MANUAL_EVIDENCE_TASK** - hash `82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae`
 - **A11Y-MANUAL-008** (A11Y-011): TalkBack and Android Chrome touch media review - recommended **APPROVE_MANUAL_EVIDENCE_TASK** - hash `f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd`
 - **A11Y-MANUAL-009** (A11Y-011): Exact media-alternatives inventory - recommended **APPROVE_MANUAL_EVIDENCE_TASK** - hash `2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533`
+
+## Recorded decision
+
+- Owner: Prince Okiemute Inoba — Teoyube Project Owner
+- Decided at: `2026-08-05T17:13:18.973Z`
+- All 20 entries approved exactly as recommended and hash-bound.
+- Manual evidence remains NOT TESTED.
+- Phase 5C is READY for approved scope only and was not started.
 
 ## Owner rules
 

@@ -33,13 +33,13 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
 | 4 — Real-user pilot | **WAITING_OWNER_SESSION_DATA** | Phase 4A/4B/4C PASS; recruitment authorized; research collection remains disabled; 0 participants, sessions, or participant records; Phase 4D NOT READY. |
-| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A audit PASS; Phase 5B review package complete and WAITING_OWNER; all 20 issue/task decisions pending; Phase 5C NOT READY. |
+| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A and Phase 5B PASS; decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` recorded; Phase 5C READY for exact approved scope only and NOT STARTED; manual tasks NOT TESTED. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
 | 9 — Re-score and closeout | **NOT_STARTED** | Requires material real-user and production evidence. |
 
-Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A, Phase 4B, and Phase 4C are **PASS**. Phase 4 overall is **WAITING_OWNER_SESSION_DATA** and Phase 4D is **NOT READY**. Phase 5A is **PASS**; Phase 5B is **WAITING_OWNER**; Phase 5C is **NOT READY**. Phase 6A remains independently **READY** and was not executed.
+Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A, Phase 4B, and Phase 4C are **PASS**. Phase 4 overall is **WAITING_OWNER_SESSION_DATA** and Phase 4D is **NOT READY**. Phase 5A and Phase 5B are **PASS**; Phase 5C is **READY FOR APPROVED SCOPE ONLY** and was not started. Phase 6A remains independently **READY** and was not executed.
 
 ## Current gates
 
@@ -79,4 +79,4 @@ Phase 3, 4, 5 and eligible Phase 6 subphases may proceed independently after Pha
 
 Phase 5A is **PASS** as a current audit-and-evidence phase. It is not a WCAG conformance claim. The audit covered 311 cells across 23 retained routes and six protected viewports with zero harness errors, and registered 11 issues: one critical, eight high, and two medium. Eight are confirmed product/accessibility or parity issues; three are manual evidence gaps.
 
-Phase 5 is **IN_PROGRESS**. Phase 5B is **WAITING_OWNER** with 11 hash-bound issue requests and 9 hash-bound manual tasks; every decision remains pending. Phase 5C is **NOT READY** and no fix was implemented. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and Phase 4 remains **WAITING_OWNER_SESSION_DATA**. No protected visual source, CSS, DOM/class/ARIA production code, asset, baseline, package, or lockfile changed.
+Phase 5 is **IN_PROGRESS**. Phase 5B is **PASS** under decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`; Phase 5C is **READY FOR APPROVED SCOPE ONLY** and no fix was implemented in this task. Manual tasks are approved but **NOT TESTED**. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and Phase 4 remains **WAITING_OWNER_SESSION_DATA**. No protected visual source, CSS, DOM/class/ARIA production code, asset, baseline, package, or lockfile changed.

@@ -76,6 +76,10 @@
   "implementationBatch": "5C-1",
   "rollback": "Revert only the A11Y-002 Phase 5C commit; restore no baseline and rerun recovery:verify.",
   "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
-  "ownerDecision": "PENDING",
-  "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b"
+  "ownerDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "APPROVED_NOT_STARTED"
 }

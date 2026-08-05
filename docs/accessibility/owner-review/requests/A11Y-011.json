@@ -81,6 +81,10 @@
   "manualAtEvidenceRequired": true,
   "rollback": "Remove only inaccurate evidence records; do not change media mappings, source, or baseline from this evidence task.",
   "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-  "ownerDecision": "PENDING",
-  "proposalHash": "6ff3919f7025616e7a50c456136911a4f6b9de5499d208a6a1d5e4fdbb3641e3"
+  "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+  "proposalHash": "6ff3919f7025616e7a50c456136911a4f6b9de5499d208a6a1d5e4fdbb3641e3",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "implementationStatus": "EVIDENCE_TASKS_APPROVED_NOT_EXECUTED"
 }

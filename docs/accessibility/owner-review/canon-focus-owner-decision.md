@@ -1,7 +1,10 @@
 # Canon focus owner decision
 
-Status: **PENDING**
+Status: **APPROVED FOR EXACT PROPOSAL - NOT STARTED**
 Issue: **A11Y-003**
+Decision: **APPROVE_RECOMMENDED_PHASE5C_FIX**
+Decision ID: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`
+Decided at: `2026-08-05T17:13:18.973Z`
 Proposal hash: `512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca`
 
 ## Findings

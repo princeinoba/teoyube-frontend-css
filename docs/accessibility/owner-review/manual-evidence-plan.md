@@ -1,6 +1,9 @@
 # Phase 5B manual accessibility evidence plan
 
-Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTED**. No private user content is permitted.
+Decision ID: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`
+Decided at: `2026-08-05T17:13:18.973Z`
+
+Status: **OWNER TASKS APPROVED, NOT EXECUTED**. Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` authorizes the documented tasks only. Every environment remains **NOT TESTED** until genuine evidence is recorded. No private user content is permitted.
 
 ## A11Y-MANUAL-001 - Complex-background and forced-colors contrast review
 
@@ -20,7 +23,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `fccac54b66ccb80145cdbbaed860392a218dc860d874c8c5743c17fc9745de02`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-002 - Keyboard focus visibility and obscuration review
@@ -41,7 +44,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `186d9c8fd501df3ebf16852e5299f96b4e1d6b1f7148369347d4f2b6d419b369`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-003 - NVDA and Chrome media/control announcement review
@@ -62,7 +65,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `84b99d36942904896986cf7eefb6ad909a715f55c1c89de0d202f0c8a7992c08`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-004 - NVDA and Firefox media/control announcement review
@@ -83,7 +86,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `d954af1031f13887ea94aad68921e447615af9ab2d9aa8cc06b8a511e38fbff6`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-005 - Narrator and Edge media/control announcement review
@@ -104,7 +107,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `6e075829daaa6400a2c35e92838ef5d6658197e4466219709f4c8171beff5fe0`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-006 - VoiceOver and macOS Safari media/control review
@@ -125,7 +128,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `bf703879160f666fdda3addf2baa9216e011ddd828711e193b695d3e8df6dffc`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-007 - VoiceOver and iOS Safari touch media review
@@ -146,7 +149,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-008 - TalkBack and Android Chrome touch media review
@@ -167,7 +170,7 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**
 
 ## A11Y-MANUAL-009 - Exact media-alternatives inventory
@@ -188,5 +191,5 @@ Status: **PENDING OWNER DECISIONS**. Unavailable environments remain **NOT TESTE
 - Product source before completion: Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.
 - Blocks: Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.
 - Task hash: `2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533`
-- Owner decision: **PENDING**
+- Owner decision: **APPROVE_MANUAL_EVIDENCE_TASK**
 - Recommendation: **APPROVE_MANUAL_EVIDENCE_TASK**

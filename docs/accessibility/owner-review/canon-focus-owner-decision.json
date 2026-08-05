@@ -3,7 +3,7 @@
   "decisionId": "A11Y-003-CANON-FOCUS-PRODUCT-DECISION",
   "issueId": "A11Y-003",
   "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
-  "status": "PENDING",
+  "status": "APPROVED_NOT_STARTED",
   "answers": {
     "controlsVisible": true,
     "controlModel": "Eleven visible, independent media playback actions; not one composite widget.",
@@ -35,5 +35,9 @@
     "Do not begin Phase 5C automatically"
   ],
   "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
-  "ownerDecision": "PENDING"
+  "ownerDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "decidedAt": "2026-08-05T17:13:18.973Z",
+  "phase5cStatus": "READY_FOR_BATCH_5C_2_NOT_STARTED"
 }

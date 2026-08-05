@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-08-05T15:42:20.158Z",
-  "status": "PROPOSED_NOT_AUTHORIZED",
+  "status": "READY_FOR_APPROVED_SCOPE_ONLY_NOT_STARTED",
   "batches": [
     {
       "batchId": "5C-1",
@@ -20,7 +20,14 @@
         "DOM/class/asset contracts",
         "recovery:verify"
       ],
-      "stop": "Stop after this batch; do not continue automatically."
+      "stop": "Stop after this batch; do not continue automatically.",
+      "status": "READY_NOT_STARTED",
+      "approvedIssueIds": [
+        "A11Y-001",
+        "A11Y-002",
+        "A11Y-004"
+      ],
+      "executionRule": "A separate Codex task must verify the clean worktree and exact current proposal hashes before implementing only this batch."
     },
     {
       "batchId": "5C-2",
@@ -39,7 +46,14 @@
         "manual AT tasks as applicable",
         "recovery:verify"
       ],
-      "stop": "Stop after this batch; do not continue automatically."
+      "stop": "Stop after this batch; do not continue automatically.",
+      "status": "READY_NOT_STARTED",
+      "approvedIssueIds": [
+        "A11Y-003",
+        "A11Y-005",
+        "A11Y-006"
+      ],
+      "executionRule": "A separate Codex task must verify the clean worktree and exact current proposal hashes before implementing only this batch."
     },
     {
       "batchId": "5C-3",
@@ -58,7 +72,13 @@
         "manual contrast/touch checks",
         "recovery:verify"
       ],
-      "stop": "Stop after this batch; do not continue automatically."
+      "stop": "Stop after this batch; do not continue automatically.",
+      "status": "READY_NOT_STARTED",
+      "approvedIssueIds": [
+        "A11Y-007",
+        "A11Y-008"
+      ],
+      "executionRule": "A separate Codex task must verify the clean worktree and exact current proposal hashes before implementing only this batch."
     }
   ],
   "manualEvidenceIssueIds": [
@@ -72,5 +92,8 @@
     "Baselines are immutable",
     "Manual gaps are evidence tasks, not silent fixes",
     "Phase 5C does not start from an owner decision alone"
-  ]
+  ],
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "decidedAt": "2026-08-05T17:13:18.973Z"
 }

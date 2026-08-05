@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-08-05T15:42:20.158Z",
-  "status": "PENDING_OWNER",
+  "status": "OWNER_TASKS_APPROVED_NOT_EXECUTED",
   "issueIds": [
     "A11Y-009",
     "A11Y-010",
@@ -84,8 +84,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "fccac54b66ccb80145cdbbaed860392a218dc860d874c8c5743c17fc9745de02"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "fccac54b66ccb80145cdbbaed860392a218dc860d874c8c5743c17fc9745de02",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -161,8 +165,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "186d9c8fd501df3ebf16852e5299f96b4e1d6b1f7148369347d4f2b6d419b369"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "186d9c8fd501df3ebf16852e5299f96b4e1d6b1f7148369347d4f2b6d419b369",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -221,8 +229,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "84b99d36942904896986cf7eefb6ad909a715f55c1c89de0d202f0c8a7992c08"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "84b99d36942904896986cf7eefb6ad909a715f55c1c89de0d202f0c8a7992c08",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -281,8 +293,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "d954af1031f13887ea94aad68921e447615af9ab2d9aa8cc06b8a511e38fbff6"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "d954af1031f13887ea94aad68921e447615af9ab2d9aa8cc06b8a511e38fbff6",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -341,8 +357,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "6e075829daaa6400a2c35e92838ef5d6658197e4466219709f4c8171beff5fe0"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "6e075829daaa6400a2c35e92838ef5d6658197e4466219709f4c8171beff5fe0",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -401,8 +421,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "bf703879160f666fdda3addf2baa9216e011ddd828711e193b695d3e8df6dffc"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "bf703879160f666fdda3addf2baa9216e011ddd828711e193b695d3e8df6dffc",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -460,8 +484,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -519,8 +547,12 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     },
     {
       "schemaVersion": 1,
@@ -578,14 +610,22 @@
       "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
       "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
       "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
-      "ownerDecision": "PENDING",
-      "taskHash": "2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533"
+      "ownerDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "taskHash": "2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "executionStatus": "NOT_TESTED"
     }
   ],
   "resultRules": {
     "unavailable": "NOT_TESTED",
     "syntheticScenariosOnly": true,
     "privateContentAllowed": false,
-    "conformanceClaimBeforeCompletion": false
-  }
+    "conformanceClaimBeforeCompletion": false,
+    "manualApprovalIsPass": false
+  },
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+  "decidedAt": "2026-08-05T17:13:18.973Z"
 }

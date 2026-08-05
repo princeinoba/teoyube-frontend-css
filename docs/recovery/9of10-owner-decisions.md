@@ -11,6 +11,7 @@
 | Phase 4B instruction (no separate ID supplied) | Implement privacy-safe research instrumentation only; keep collection disabled and create no real participant record | Authorized by owner-supplied Phase 4B prompt |
 | Phase 4C instruction (no separate ID supplied) | Prepare pilot operations and synthetic readiness only, then pause before recruitment | Authorized by owner-supplied Phase 4C prompt |
 | Phase 4C owner recruitment response (no separate ID supplied) | Authorize recruitment for the exact approved pilot; no automatic identities, records, events, consents, sessions, or Phase 4D | Approved by explicit owner response at 2026-08-05T07:16:04.7290862-04:00 |
+| `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` | Phase 5B exact hash-bound accessibility decisions; 8 fixes approved-not-started and 12 evidence approvals not tested | Approved at `2026-08-05T17:13:18.973Z`; source `docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json` |
 | `TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24` | Next canonical locally; static Node rollback | Existing approved decision |
 | `TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B` | Exact Scripture quotation delta | Existing approved decision |
 | `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8` | Owner-approved support baselines | Existing approved decision |
@@ -24,7 +25,7 @@ No new visual, production, paid-provider, archive, delete, or deployment approva
 
 - Phase 3B: owner closeout only after authentic status reaches READY_FOR_CLOSEOUT; not currently ready or authorized.
 
-- Phase 5B: **WAITING_OWNER** for 11 issue decisions and 9 manual-task decisions in `docs/accessibility/owner-review/phase-5b-owner-decisions.json`; each decision is proposal-hash-bound, one line per ID, and a blanket approval is invalid. Phase 5C is not authorized.
+- Phase 5C execution: decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` makes the exact approved scope READY, but each batch requires a separate Codex task and remains NOT STARTED.
 - Phase 6A: hosting, identity, database, KMS, storage, observability, rate limits, vectors, backups, crisis-resource operations, and staging domain.
 - Phase 7: paid evaluation budget, production Gate B/C decisions, and final deployment confirmation.
 - Phase 8: each candidate ID separately; no blanket archive/delete approval.

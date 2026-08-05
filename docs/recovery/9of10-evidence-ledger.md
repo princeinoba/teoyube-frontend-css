@@ -231,3 +231,16 @@ Phase 5A is an audit-and-evidence pass only. It neither establishes WCAG conform
 | Phase state | Phase 5A PASS; Phase 5B WAITING_OWNER; Phase 5C NOT READY; Phase 5 IN_PROGRESS; Program IN_PROGRESS |
 
 Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAITING_OWNER_SESSION_DATA. WCAG conformance is not claimed.
+
+## Phase 5B owner decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001
+
+| Evidence | Result |
+| --- | --- |
+| Owner / recorded at | Prince Okiemute Inoba — Teoyube Project Owner; `2026-08-05T17:13:18.973Z` |
+| Exact decisions | 20 hash-bound decisions recorded; 8 fixes, 3 manual-gap scopes, 9 manual tasks |
+| Manual execution | 0; every task remains NOT_TESTED |
+| Phase 5C | READY FOR APPROVED SCOPE ONLY; NOT STARTED |
+| Product/protected/CSS/DOM/ARIA/focus/copy/assets/routes/baselines/package/lock/runtime/paid calls | 0 changes |
+| Phase state | Phase 5A PASS; Phase 5B PASS; Phase 5C READY_NOT_STARTED; Phase 5 IN_PROGRESS |
+
+Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAITING_OWNER_SESSION_DATA. WCAG conformance remains unclaimed.
