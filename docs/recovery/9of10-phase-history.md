@@ -95,7 +95,9 @@ Toolkit commit: `a03979c70a9a4784448e8b36ac6086d2363f66c7`
 ### Result
 
 Phase 3A is **PASS**. Phase 3 overall is **WAITING_OWNER** and Phase 3B is **NOT READY**. Phase 2A remains **BLOCKED** even though dependency remediation is complete; its visual/performance reconciliation requires separate owner-reviewed work. Independent next-ready choices are Phase 4A, Phase 5A, or Phase 6A; none was executed.
-${1}Status: **PASS**
+## Phase 4A — real-user pilot design and owner decision
+
+Status: **PASS**
 Started from: `32933458e6695b851d3e05a67a4b052047f279f7`
 Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`
 
@@ -124,3 +126,22 @@ Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`
 The owner replied `1`, approving the complete recommended pilot design. No separate approval ID was supplied, so the ledger records `PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID` as a descriptive reference rather than an invented owner ID.
 
 Phase 4A is **PASS** and Phase 4B is **READY** but was not started. No participant was contacted, no session was run, no instrumentation was enabled, and no product or protected file changed. Phase 2A remains **BLOCKED** and Phase 3 remains **WAITING_OWNER**. Phase 5A and Phase 6A readiness is unchanged.
+## Phase 4B — privacy-safe research instrumentation
+
+Status: **PASS**
+Started from: `24cbea9965daf998c31ba73e52a3948d53701e26`
+Pre-phase tag: `teoyube-9of10-phase4b-start-24cbea9`
+
+### Actions
+
+1. Revalidated the Next canonical runtime, static Node rollback, branch, lineage, recovery contracts, stabilization state, toolchain, and listener ownership.
+2. Added a server-only, default-off research mode and a single synthetic-only allowlisted study.
+3. Added six distinct consent purposes, signed short-lived synthetic session envelopes, a 66-event fixed registry, and strict allowed/prohibited field policy.
+4. Added encrypted ignored local storage, append-only integrity, participant isolation, idempotent deletion, retention, cohort-separated deterministic export, and failure-isolated product-action observation.
+5. Added local synthetic-only operator commands that cannot create real participants or persist data during Phase 4B.
+6. Added 44 synthetic tests covering mode, consent, privacy, envelopes, isolation, integrity, deletion, export, storage, approved event integration, and failure isolation.
+7. Added no UI, route, CSS, DOM/class, asset, baseline, external analytics vendor, actual participant record, or paid provider call.
+
+### Result
+
+Phase 4B is **PASS**. Research collection remains checked-in disabled and Phase 4C is **READY** but not started. A separate explicit owner start and the approved consent/operator prerequisites are required before recruitment or real participant operations. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and independent Phase 5A and Phase 6A readiness is unchanged.

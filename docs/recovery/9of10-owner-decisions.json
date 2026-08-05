@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04T20:30:43.7760787-04:00",
+  "updatedAt": "2026-08-05T03:28:26.854Z",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -79,6 +79,19 @@
         "no instrumentation or product changes",
         "operator, retention period, environment, consent, and local review prerequisites apply before recruitment",
         "no paid calls"
+      ]
+    },
+    {
+      "decisionId": "PHASE_4B_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
+      "scope": "Execute Phase 4B privacy-safe research instrumentation only",
+      "status": "AUTHORIZED_BY_OWNER_SUPPLIED_PHASE_PROMPT",
+      "source": "Teoyube 9/10 Program - Phase 4B: Privacy-Safe Research Instrumentation",
+      "limitations": [
+        "No Phase 4C, 4D, 5A, 6A, or later phase",
+        "no participant recruitment, contact, session, recording, or actual participant record",
+        "research collection remains checked-in disabled",
+        "no UI, protected visual, route, or baseline change",
+        "no external analytics vendor or paid provider call"
       ]
     }
   ],

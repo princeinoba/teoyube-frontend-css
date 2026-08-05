@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE4B_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -192,10 +192,10 @@
         "Phase 1 PASS"
       ],
       "startingCommit": "32933458e6695b851d3e05a67a4b052047f279f7",
-      "currentCommit": "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE4B_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "pilot protocol and owner decision: COMPLETE",
-        "research-safe instrumentation: NOT_STARTED",
+        "research-safe instrumentation: COMPLETE",
         "participant packets: DRAFTED_NOT_USED",
         "analysis: NOT_STARTED"
       ],
@@ -209,24 +209,26 @@
         "Phase 4A owner-approved design complete",
         "Owner response choice 1 recorded without inventing an approval ID",
         "15 of 15 decision fields approved as recommended",
-        "Phase 4B READY but not started",
-        "0 participants, 0 sessions, 0 participant records, 0 instrumentation, and 0 paid calls"
+        "Phase 4B privacy-safe instrumentation PASS with 66 fixed events and 44 synthetic adversarial tests",
+        "Research mode checked-in false; signed synthetic envelopes, consent, isolation, encrypted storage, deletion, and cohort-separated export verified",
+        "0 participants, 0 sessions, 0 actual participant records, 0 raw spiritual records, and 0 paid calls"
       ],
       "currentBlockers": [
-        "Phase 4B has not been explicitly invoked",
-        "Research operator and exact retention period must be documented before participant data collection",
-        "Local privacy and operational review must be completed before recruitment"
+        "Phase 4C requires a separate explicit owner start before recruitment or participant operations",
+        "Only the synthetic test study is allowlisted; real participant collection remains unauthorized",
+        "Current Phase 2A visual/performance and Phase 3 owner-session blockers remain open"
       ],
       "ownerDecisionIds": [
         "PHASE_4A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
-        "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID"
+        "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
+        "PHASE_4B_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID"
       ],
       "externalDependencies": [
         "participants",
         "approved researcher or owner-led sessions"
       ],
-      "rollback": "Revert the Phase 4A owner-decision commit and pilot-design commit; preserve any future authentic anonymized research records",
-      "nextReviewTrigger": "Owner explicitly selects Phase 4B, Phase 5A, or Phase 6A",
+      "rollback": "Revert the focused Phase 4B documentation, test, and instrumentation commits; preserve Phase 4A and all prior evidence",
+      "nextReviewTrigger": "Owner explicitly starts Phase 4C recruitment/participant operations, or independently selects Phase 5A or Phase 6A",
       "subphases": [
         {
           "subphaseId": "4A",
@@ -234,11 +236,11 @@
         },
         {
           "subphaseId": "4B",
-          "status": "READY"
+          "status": "PASS"
         },
         {
           "subphaseId": "4C",
-          "status": "NOT_STARTED"
+          "status": "READY"
         },
         {
           "subphaseId": "4D",
@@ -488,8 +490,8 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "4B",
-    "otherReadyIndependentSubphases": [
+  "nextReadyPhase": "4C",
+  "otherReadyIndependentSubphases": [
     "5A",
     "6A"
   ],

@@ -124,3 +124,45 @@ The four Phase 2A blockers remain open and unchanged. The 216-cell gate was not 
 | `docs/recovery/9of10-phase-4a-pilot-design-report.json` | `1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21` |
 
 No participant, contact, recording, instrumentation, product, visual, package, baseline, or paid-call artifact was created. Phase 4B requires a separate explicit task.
+## Phase 4B update
+
+| Evidence | Current Phase 4B identity/result |
+| --- | --- |
+| Starting commit/tag | `24cbea9965daf998c31ba73e52a3948d53701e26`; `teoyube-9of10-phase4b-start-24cbea9` |
+| Instrumentation commit | `79bcfbc9e754aeb56beebe697a6cb5e7b77d1909` |
+| Test/security commit | `45a6b6138eae95be8b180c09a533ddda306ef5b0` |
+| Documentation/final commit | `FINAL_PHASE4B_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF` |
+| Registry / study | `teoyube-research-events-2026-08-04.1`, 66 events; `teoyube-formative-pilot-2026-08-04.1` |
+| Checked-in mode / actual data | `false`; 0 participants, 0 sessions, 0 actual records, 0 local event files |
+| Synthetic tests | PASS, 44/44; integration 101/101; full unit 361 passed and 1 intentional skip under serialized execution |
+| Privacy/isolation/deletion/export | PASS; prohibited data fails closed; no raw content; cohort separation preserved |
+| Encrypted write measurement | 3.576 ms; 1,558 bytes for one synthetic event |
+| Build/security/runtime/recovery | PASS; 18 security controls; 490 supply-chain components; 72 screenshots and 12 DOM snapshots unchanged |
+| Browser | PASS under serialized execution plus one isolated unchanged retry; default 12-worker run retained as load-flaky evidence; no threshold changed |
+| Runtime identity | `c84514e0cdccd7ed13e24f7e9515d0c532bf9c77dfd037ae587e2310f7f2a832`; `teoyube-c84514e0cdccd7ed13e24f7e` |
+| Package / lockfile | `package.json` scripts added / lockfile unchanged at `ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83` |
+| Product/protected/CSS/DOM/assets/baselines/paid calls | 0 / 0 / 0 / 0 / 0 / 0 / 0 |
+| Phase state | 2A BLOCKED; 3 WAITING_OWNER; 4A PASS; 4B PASS; 4C READY and NOT STARTED |
+
+### Phase 4B artifact hashes
+
+| Path | SHA-256 |
+| --- | --- |
+| `config/research-event-registry.json` | `efd1c7d9ecb1fef950117951c8fbf6f2ce5f920ebcccae45609d2cc626d091fc` |
+| `config/research-field-policy.json` | `984432da11e8bb4bb407f24602d4941c855aa9963bf1dcda51bee72c2678490f` |
+| `config/research-study-registry.json` | `5b94086e2da0a677a2bc3be7b228e896b41f392ef23f479678fbeaa71f8dcfe3` |
+| `docs/research/phase-4b-starting-manifest.json` | `b1ef43af83a27b186be178887506d4893b24b235b72e103741a04de31097a395` |
+| `docs/research/instrumentation-architecture.md` | `96c9eff6ede5e205b73f7d885f4e6586349b9d5247fb25713cd9ad3f218d7688` |
+| `docs/research/research-event-registry.md` | `2cbb123986974b70a64b2473540d4cf2e147e01e54fa0ce883d2292642a22fcb` |
+| `docs/research/research-data-dictionary.md` | `3904a19a9c01bafb5a00a954a350882a4f2d03e2995400fb818a88454fb1507d` |
+| `docs/research/research-consent-purposes.md` | `d060e398d16f427c2ab2b1d91343159a55d3163f8b27af0b06f12db2c67f379e` |
+| `docs/research/research-session-envelope.md` | `229f3e9dd6c62aab3a38c0419d5ad30f79fc9ef6e1c45f243c4bb51b8e244251` |
+| `docs/research/research-retention-and-deletion.md` | `2c0d4ca6206154e320ddff9b58c2d446afce96216c3371638dbbefdc099346a9` |
+| `docs/research/research-operator-guide.md` | `9ef8511e917fd073a9db8fb6b5fd03c236a372ffb62e14879c18524dd97f77a3` |
+| `docs/research/research-export-format.md` | `caddc330ab067ecd104430ccdb700ca33b3089a3f269dfd3a59de6e57a7c9be5` |
+| `docs/research/research-instrumentation-security.md` | `c451e34fe77484b079bea50df2a4fd8915ec8b15388aef7c98340cc1f3af6037` |
+| `docs/research/research-instrumentation-acceptance.md` | `a31ac0c4f6dfd5a8fcdc4c87e644b65ad203a5173f2266453df312ca94b69628` |
+| `docs/recovery/9of10-phase-4b-research-instrumentation-report.md` | `9301f6b5553f8d55ad96ff159d23042851e7e0fbc619a2fc1e8a780c0bd465aa` |
+| `docs/recovery/9of10-phase-4b-research-instrumentation-report.json` | `7ef6f14e1a4322e742de2ae8a1ad89c4cba86ad7252ed0a21584a7009cf158d9` |
+
+Phase 4B created no participant/contact/recording/event export, no UI route, no external analytics integration, and no paid-call artifact. Phase 4C requires a separate explicit owner start.

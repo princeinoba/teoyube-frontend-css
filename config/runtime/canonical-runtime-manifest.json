@@ -12,90 +12,302 @@
   "cutoverCommit": "52ed7e9530e292f60195f7305a8ec9a476bd7367",
   "postCutoverTag": "teoyube-next-canonical-local-2026-07-24",
   "staticBaselineCommit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-  "runtimeSourceCommit": "a03979c70a9a4784448e8b36ac6086d2363f66c7",
-  "runtimeSourceDigest": "489d8fb7054f78304b524c47b3441b5a737a6156952e4d85e997c1f55e47808c",
+  "runtimeSourceCommit": "45a6b6138eae95be8b180c09a533ddda306ef5b0",
+  "runtimeSourceDigest": "c84514e0cdccd7ed13e24f7e9515d0c532bf9c77dfd037ae587e2310f7f2a832",
   "buildIdGeneratorVersion": "teoyube-runtime-source-digest-2026-07-25.1",
   "buildIdDigestAlgorithm": "sha256",
   "packageLockSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
   "runtimeSourceManifest": "config/runtime/runtime-source-manifest.json",
-  "nextBuildId": "teoyube-489d8fb7054f78304b524c47",
+  "nextBuildId": "teoyube-c84514e0cdccd7ed13e24f7e",
   "publicRoutes": [
-    { "path": "/", "capability": "today" },
-    { "path": "/search", "capability": "search" },
-    { "path": "/canon", "capability": "canon" },
-    { "path": "/promise-table", "capability": "promises" },
-    { "path": "/calling-compass", "capability": "calling" },
-    { "path": "/book", "capability": "book" },
-    { "path": "/lexicon", "capability": "lexicon" },
-    { "path": "/testimony", "capability": "testimony" },
-    { "path": "/teo-guide", "capability": "teo-guide" },
-    { "path": "/embedded-videos", "capability": "media" },
-    { "path": "/tables", "capability": "tables" },
-    { "path": "/prayer", "capability": "prayer" },
-    { "path": "/journey", "capability": "journey" },
-    { "path": "/journal", "capability": "journal" },
-    { "path": "/settings", "capability": "settings" },
-    { "path": "/privacy", "capability": "privacy" },
-    { "path": "/consent", "capability": "consent" },
-    { "path": "/terms", "capability": "terms" },
-    { "path": "/profile", "capability": "profile" },
-    { "path": "/personalization", "capability": "personalization" },
-    { "path": "/daily-word", "capability": "daily-word" },
-    { "path": "/explore", "capability": "explore" },
-    { "path": "/promise-search", "capability": "promise-search" }
+    {
+      "path": "/",
+      "capability": "today"
+    },
+    {
+      "path": "/search",
+      "capability": "search"
+    },
+    {
+      "path": "/canon",
+      "capability": "canon"
+    },
+    {
+      "path": "/promise-table",
+      "capability": "promises"
+    },
+    {
+      "path": "/calling-compass",
+      "capability": "calling"
+    },
+    {
+      "path": "/book",
+      "capability": "book"
+    },
+    {
+      "path": "/lexicon",
+      "capability": "lexicon"
+    },
+    {
+      "path": "/testimony",
+      "capability": "testimony"
+    },
+    {
+      "path": "/teo-guide",
+      "capability": "teo-guide"
+    },
+    {
+      "path": "/embedded-videos",
+      "capability": "media"
+    },
+    {
+      "path": "/tables",
+      "capability": "tables"
+    },
+    {
+      "path": "/prayer",
+      "capability": "prayer"
+    },
+    {
+      "path": "/journey",
+      "capability": "journey"
+    },
+    {
+      "path": "/journal",
+      "capability": "journal"
+    },
+    {
+      "path": "/settings",
+      "capability": "settings"
+    },
+    {
+      "path": "/privacy",
+      "capability": "privacy"
+    },
+    {
+      "path": "/consent",
+      "capability": "consent"
+    },
+    {
+      "path": "/terms",
+      "capability": "terms"
+    },
+    {
+      "path": "/profile",
+      "capability": "profile"
+    },
+    {
+      "path": "/personalization",
+      "capability": "personalization"
+    },
+    {
+      "path": "/daily-word",
+      "capability": "daily-word"
+    },
+    {
+      "path": "/explore",
+      "capability": "explore"
+    },
+    {
+      "path": "/promise-search",
+      "capability": "promise-search"
+    }
   ],
   "legacyUrlMappings": [
-    { "source": "/index.html#today", "target": "/" },
-    { "source": "/index.html#search", "target": "/search" },
-    { "source": "/index.html#canon", "target": "/canon" },
-    { "source": "/index.html#table", "target": "/promise-table" },
-    { "source": "/index.html#calling", "target": "/calling-compass" },
-    { "source": "/index.html#book", "target": "/book" },
-    { "source": "/index.html#lexicon", "target": "/lexicon" },
-    { "source": "/index.html#testimony", "target": "/testimony" },
-    { "source": "/index.html#guide", "target": "/teo-guide" },
-    { "source": "/index.html#ui-elements", "target": "/embedded-videos" },
-    { "source": "/index.html#teoyube-tables", "target": "/tables" },
-    { "source": "/compass", "target": "/calling-compass" }
+    {
+      "source": "/index.html#today",
+      "target": "/"
+    },
+    {
+      "source": "/index.html#search",
+      "target": "/search"
+    },
+    {
+      "source": "/index.html#canon",
+      "target": "/canon"
+    },
+    {
+      "source": "/index.html#table",
+      "target": "/promise-table"
+    },
+    {
+      "source": "/index.html#calling",
+      "target": "/calling-compass"
+    },
+    {
+      "source": "/index.html#book",
+      "target": "/book"
+    },
+    {
+      "source": "/index.html#lexicon",
+      "target": "/lexicon"
+    },
+    {
+      "source": "/index.html#testimony",
+      "target": "/testimony"
+    },
+    {
+      "source": "/index.html#guide",
+      "target": "/teo-guide"
+    },
+    {
+      "source": "/index.html#ui-elements",
+      "target": "/embedded-videos"
+    },
+    {
+      "source": "/index.html#teoyube-tables",
+      "target": "/tables"
+    },
+    {
+      "source": "/compass",
+      "target": "/calling-compass"
+    }
   ],
   "assetContracts": [
-    { "id": "protected-visual-source", "manifest": "tests/visual/contracts/protected-visual-source-manifest.json" },
-    { "id": "legacy-public-prefix", "source": "/public/:path*", "target": "/:path*" },
-    { "id": "approved-styles", "source": "/styles/:path*", "target": "/approved-static/styles/:path*" },
-    { "id": "teoyubeworld-media", "manifest": "config/runtime/asset-media-compatibility-manifest.json" }
+    {
+      "id": "protected-visual-source",
+      "manifest": "tests/visual/contracts/protected-visual-source-manifest.json"
+    },
+    {
+      "id": "legacy-public-prefix",
+      "source": "/public/:path*",
+      "target": "/:path*"
+    },
+    {
+      "id": "approved-styles",
+      "source": "/styles/:path*",
+      "target": "/approved-static/styles/:path*"
+    },
+    {
+      "id": "teoyubeworld-media",
+      "manifest": "config/runtime/asset-media-compatibility-manifest.json"
+    }
   ],
   "apiContracts": [
-    { "path": "/api/ai/companion", "source": "src/app/api/ai/companion/route.ts" },
-    { "path": "/api/daily-word", "source": "src/app/api/daily-word/route.ts" },
-    { "path": "/api/health", "source": "src/app/api/health/route.ts" },
-    { "path": "/api/readiness", "source": "src/app/api/readiness/route.ts" },
-    { "path": "/api/teoyube/app-state", "source": "src/app/api/teoyube/app-state/route.ts" },
-    { "path": "/api/teoyube/calling-compass", "source": "src/app/api/teoyube/calling-compass/route.ts" },
-    { "path": "/api/teoyube/calling-context", "source": "src/app/api/teoyube/calling-context/route.ts" },
-    { "path": "/api/teoyube/consent", "source": "src/app/api/teoyube/consent/route.ts" },
-    { "path": "/api/teoyube/daily-word", "source": "src/app/api/teoyube/daily-word/route.ts" },
-    { "path": "/api/teoyube/identity/rotate", "source": "src/app/api/teoyube/identity/rotate/route.ts" },
-    { "path": "/api/teoyube/identity/session", "source": "src/app/api/teoyube/identity/session/route.ts" },
-    { "path": "/api/teoyube/identity/sign-in", "source": "src/app/api/teoyube/identity/sign-in/route.ts" },
-    { "path": "/api/teoyube/identity/sign-out", "source": "src/app/api/teoyube/identity/sign-out/route.ts" },
-    { "path": "/api/teoyube/journey", "source": "src/app/api/teoyube/journey/route.ts" },
-    { "path": "/api/teoyube/live-ai-status", "source": "src/app/api/teoyube/live-ai-status/route.ts" },
-    { "path": "/api/teoyube/memory", "source": "src/app/api/teoyube/memory/route.ts" },
-    { "path": "/api/teoyube/memory/account-deletion", "source": "src/app/api/teoyube/memory/account-deletion/route.ts" },
-    { "path": "/api/teoyube/memory/export", "source": "src/app/api/teoyube/memory/export/route.ts" },
-    { "path": "/api/teoyube/personalization-preview", "source": "src/app/api/teoyube/personalization-preview/route.ts" },
-    { "path": "/api/teoyube/prayer", "source": "src/app/api/teoyube/prayer/route.ts" },
-    { "path": "/api/teoyube/promise-search", "source": "src/app/api/teoyube/promise-search/route.ts" },
-    { "path": "/api/teoyube/scripture", "source": "src/app/api/teoyube/scripture/route.ts" },
-    { "path": "/api/teoyube/search-rows", "source": "src/app/api/teoyube/search-rows/route.ts" },
-    { "path": "/api/teoyube/seed-summary", "source": "src/app/api/teoyube/seed-summary/route.ts" },
-    { "path": "/api/teoyube/teo-guide", "source": "src/app/api/teoyube/teo-guide/route.ts" },
-    { "path": "/api/teoyube/teo-guide/actions", "source": "src/app/api/teoyube/teo-guide/actions/route.ts" },
-    { "path": "/api/teoyube/teo-guide/conversations/[conversationId]", "source": "src/app/api/teoyube/teo-guide/conversations/[conversationId]/route.ts" },
-    { "path": "/api/teoyube/teo-guide/stream", "source": "src/app/api/teoyube/teo-guide/stream/route.ts" },
-    { "path": "/api/teoyube/tig-production", "source": "src/app/api/teoyube/tig-production/route.ts" },
-    { "path": "/api/tig", "source": "src/app/api/tig/route.ts" },
-    { "path": "/api/youtube/teoyube", "source": "src/app/api/youtube/teoyube/route.ts" }
+    {
+      "path": "/api/ai/companion",
+      "source": "src/app/api/ai/companion/route.ts"
+    },
+    {
+      "path": "/api/daily-word",
+      "source": "src/app/api/daily-word/route.ts"
+    },
+    {
+      "path": "/api/health",
+      "source": "src/app/api/health/route.ts"
+    },
+    {
+      "path": "/api/readiness",
+      "source": "src/app/api/readiness/route.ts"
+    },
+    {
+      "path": "/api/teoyube/app-state",
+      "source": "src/app/api/teoyube/app-state/route.ts"
+    },
+    {
+      "path": "/api/teoyube/calling-compass",
+      "source": "src/app/api/teoyube/calling-compass/route.ts"
+    },
+    {
+      "path": "/api/teoyube/calling-context",
+      "source": "src/app/api/teoyube/calling-context/route.ts"
+    },
+    {
+      "path": "/api/teoyube/consent",
+      "source": "src/app/api/teoyube/consent/route.ts"
+    },
+    {
+      "path": "/api/teoyube/daily-word",
+      "source": "src/app/api/teoyube/daily-word/route.ts"
+    },
+    {
+      "path": "/api/teoyube/identity/rotate",
+      "source": "src/app/api/teoyube/identity/rotate/route.ts"
+    },
+    {
+      "path": "/api/teoyube/identity/session",
+      "source": "src/app/api/teoyube/identity/session/route.ts"
+    },
+    {
+      "path": "/api/teoyube/identity/sign-in",
+      "source": "src/app/api/teoyube/identity/sign-in/route.ts"
+    },
+    {
+      "path": "/api/teoyube/identity/sign-out",
+      "source": "src/app/api/teoyube/identity/sign-out/route.ts"
+    },
+    {
+      "path": "/api/teoyube/journey",
+      "source": "src/app/api/teoyube/journey/route.ts"
+    },
+    {
+      "path": "/api/teoyube/live-ai-status",
+      "source": "src/app/api/teoyube/live-ai-status/route.ts"
+    },
+    {
+      "path": "/api/teoyube/memory",
+      "source": "src/app/api/teoyube/memory/route.ts"
+    },
+    {
+      "path": "/api/teoyube/memory/account-deletion",
+      "source": "src/app/api/teoyube/memory/account-deletion/route.ts"
+    },
+    {
+      "path": "/api/teoyube/memory/export",
+      "source": "src/app/api/teoyube/memory/export/route.ts"
+    },
+    {
+      "path": "/api/teoyube/personalization-preview",
+      "source": "src/app/api/teoyube/personalization-preview/route.ts"
+    },
+    {
+      "path": "/api/teoyube/prayer",
+      "source": "src/app/api/teoyube/prayer/route.ts"
+    },
+    {
+      "path": "/api/teoyube/promise-search",
+      "source": "src/app/api/teoyube/promise-search/route.ts"
+    },
+    {
+      "path": "/api/teoyube/scripture",
+      "source": "src/app/api/teoyube/scripture/route.ts"
+    },
+    {
+      "path": "/api/teoyube/search-rows",
+      "source": "src/app/api/teoyube/search-rows/route.ts"
+    },
+    {
+      "path": "/api/teoyube/seed-summary",
+      "source": "src/app/api/teoyube/seed-summary/route.ts"
+    },
+    {
+      "path": "/api/teoyube/teo-guide",
+      "source": "src/app/api/teoyube/teo-guide/route.ts"
+    },
+    {
+      "path": "/api/teoyube/teo-guide/actions",
+      "source": "src/app/api/teoyube/teo-guide/actions/route.ts"
+    },
+    {
+      "path": "/api/teoyube/teo-guide/conversations/[conversationId]",
+      "source": "src/app/api/teoyube/teo-guide/conversations/[conversationId]/route.ts"
+    },
+    {
+      "path": "/api/teoyube/teo-guide/stream",
+      "source": "src/app/api/teoyube/teo-guide/stream/route.ts"
+    },
+    {
+      "path": "/api/teoyube/tig-production",
+      "source": "src/app/api/teoyube/tig-production/route.ts"
+    },
+    {
+      "path": "/api/tig",
+      "source": "src/app/api/tig/route.ts"
+    },
+    {
+      "path": "/api/youtube/teoyube",
+      "source": "src/app/api/youtube/teoyube/route.ts"
+    }
   ],
   "featureFlagDefaults": {
     "liveAi": false,
@@ -104,7 +316,7 @@
     "broadRag": false
   },
   "rollbackCommand": "npm run rollback:start",
-  "verifiedAt": "2026-08-04T22:08:32.3957030Z",
+  "verifiedAt": "2026-08-05T03:52:12.453Z",
   "deployment": "local/release-candidate",
   "gateCPreview": "PENDING_CANDIDATE_GATE",
   "gateCProduction": "CLOSED",

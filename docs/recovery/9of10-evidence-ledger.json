@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T18:18:16.6464520-04:00",
+  "generatedAt": "2026-08-05T03:28:26.854Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -210,105 +210,231 @@
       "jsonReportSha256": "a201c72ad96447e1ae93de4d5e2ada2945c079bc75626c0f7829f2fcb4d6e8e3"
     },
     {
-        "phase":  "4A",
-        "status":  "PASS",
-        "executedAt":  "2026-08-04T20:30:43.7760787-04:00",
-        "startingCommit":  "32933458e6695b851d3e05a67a4b052047f279f7",
-        "prePhaseTag":  "teoyube-9of10-phase4a-start-3293345",
-        "pilotDesignCommit":  "9ab9b8bf999783a87b81a86a07e6553bd7eaa18b",
-        "ownerDecisionCommit":  "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
-        "deliverables":  15,
-        "researchQuestions":  12,
-        "tasks":  15,
-        "ownerDecision":  "APPROVED",
-        "ownerDecisionId":  null,
-        "approvalReference":  "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
-        "ownerResponse":  "1",
-        "decisionFieldsApproved":  15,
-        "decisionFieldsPending":  0,
-        "recruitmentAuthorizedForPhase4b":  true,
-        "phase4b":  "READY",
-        "participants":  0,
-        "sessions":  0,
-        "participantRecords":  0,
-        "instrumentationChanges":  0,
-        "productSourceFilesChanged":  0,
-        "protectedVisualFilesChanged":  0,
-        "baselineFilesChanged":  0,
-        "packageLockFilesChanged":  0,
-        "paidCalls":  0,
-        "documentationValidation":  "PASS_15_OF_15",
-        "privacyValidation":  "PASS",
-        "prohibitedDataKeys":  "PASS_ZERO",
-        "programLedgerValidation":  "PASS",
-        "runtime":  "PASS",
-        "recovery":  "PASS",
-        "immutableScreenshots":  72,
-        "desktopDomSnapshots":  12,
-        "markdownReportSha256":  "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2",
-        "jsonReportSha256":  "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21",
-        "artifacts":  [
-                          {
-                              "path":  "docs/research/phase-4a-starting-manifest.json",
-                              "sha256":  "9f6abbf8529d1c3968cf34b55708ccbc08e51a56c29fc3665055c18c7bb9a127"
-                          },
-                          {
-                              "path":  "docs/research/pilot-protocol.md",
-                              "sha256":  "8af0ab090a4a6addf81788eaf0a495422f9c4c930ca6b57910c6ffc7013bee9d"
-                          },
-                          {
-                              "path":  "docs/research/participant-consent.md",
-                              "sha256":  "3db4ecc3debb3b2b13c73b183a2c113e55c6145cf413c0f0ac45b7ec4e09021f"
-                          },
-                          {
-                              "path":  "docs/research/recruitment-screen.md",
-                              "sha256":  "19c048f882680699f627756dc09dab190f08149512829e499d00b7cb81685c2c"
-                          },
-                          {
-                              "path":  "docs/research/task-guide.md",
-                              "sha256":  "3d6ff54ddbaf3c18688246c117ef67e248b9a719eeea1e33c493930aa5b7253c"
-                          },
-                          {
-                              "path":  "docs/research/interview-guide.md",
-                              "sha256":  "1d78952abbdeb9d9d450b5aa57d3e281361bc90e8ac97ccb4e6fac2e9188c165"
-                          },
-                          {
-                              "path":  "docs/research/accessibility-guide.md",
-                              "sha256":  "26710a748dc9883b74c79bcc6a9f1d9a7a3a8e544806eae104e3ef78f8d17b1d"
-                          },
-                          {
-                              "path":  "docs/research/adverse-event-protocol.md",
-                              "sha256":  "f48ed7f1391d958301ab0b2a4df7a9b662ae914534358ddd5d59025b3e6d3d93"
-                          },
-                          {
-                              "path":  "docs/research/anonymization-policy.md",
-                              "sha256":  "5fe39a56c053e82cebc5389fd1f009f3913bb75d2eb372efe063359c3cb018de"
-                          },
-                          {
-                              "path":  "docs/research/analysis-plan.md",
-                              "sha256":  "b9cb95d7137c6f9c31a4f377c07b691f9243f91236785cbfa52012488ae05101"
-                          },
-                          {
-                              "path":  "docs/research/data-dictionary.md",
-                              "sha256":  "6d6cb317b10a7d883c9199ce49daa4061c3c26a53cf9f77ab5eecf5693f28daf"
-                          },
-                          {
-                              "path":  "docs/research/pilot-decision.md",
-                              "sha256":  "e3599dc2fa4baa9b4071ec37091bcfea059f1ea5b01bb3d13f14faff8bf4feee"
-                          },
-                          {
-                              "path":  "docs/research/pilot-decision.json",
-                              "sha256":  "997c2d56a460cef81eada422faf76704532b018d78e4e6951e2bb9d17622eefb"
-                          },
-                          {
-                              "path":  "docs/recovery/9of10-phase-4a-pilot-design-report.md",
-                              "sha256":  "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2"
-                          },
-                          {
-                              "path":  "docs/recovery/9of10-phase-4a-pilot-design-report.json",
-                              "sha256":  "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21"
-                          }
-                      ]
+      "phase": "4A",
+      "status": "PASS",
+      "executedAt": "2026-08-04T20:30:43.7760787-04:00",
+      "startingCommit": "32933458e6695b851d3e05a67a4b052047f279f7",
+      "prePhaseTag": "teoyube-9of10-phase4a-start-3293345",
+      "pilotDesignCommit": "9ab9b8bf999783a87b81a86a07e6553bd7eaa18b",
+      "ownerDecisionCommit": "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "deliverables": 15,
+      "researchQuestions": 12,
+      "tasks": 15,
+      "ownerDecision": "APPROVED",
+      "ownerDecisionId": null,
+      "approvalReference": "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
+      "ownerResponse": "1",
+      "decisionFieldsApproved": 15,
+      "decisionFieldsPending": 0,
+      "recruitmentAuthorizedForPhase4b": true,
+      "phase4b": "READY",
+      "participants": 0,
+      "sessions": 0,
+      "participantRecords": 0,
+      "instrumentationChanges": 0,
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "baselineFilesChanged": 0,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0,
+      "documentationValidation": "PASS_15_OF_15",
+      "privacyValidation": "PASS",
+      "prohibitedDataKeys": "PASS_ZERO",
+      "programLedgerValidation": "PASS",
+      "runtime": "PASS",
+      "recovery": "PASS",
+      "immutableScreenshots": 72,
+      "desktopDomSnapshots": 12,
+      "markdownReportSha256": "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2",
+      "jsonReportSha256": "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21",
+      "artifacts": [
+        {
+          "path": "docs/research/phase-4a-starting-manifest.json",
+          "sha256": "9f6abbf8529d1c3968cf34b55708ccbc08e51a56c29fc3665055c18c7bb9a127"
+        },
+        {
+          "path": "docs/research/pilot-protocol.md",
+          "sha256": "8af0ab090a4a6addf81788eaf0a495422f9c4c930ca6b57910c6ffc7013bee9d"
+        },
+        {
+          "path": "docs/research/participant-consent.md",
+          "sha256": "3db4ecc3debb3b2b13c73b183a2c113e55c6145cf413c0f0ac45b7ec4e09021f"
+        },
+        {
+          "path": "docs/research/recruitment-screen.md",
+          "sha256": "19c048f882680699f627756dc09dab190f08149512829e499d00b7cb81685c2c"
+        },
+        {
+          "path": "docs/research/task-guide.md",
+          "sha256": "3d6ff54ddbaf3c18688246c117ef67e248b9a719eeea1e33c493930aa5b7253c"
+        },
+        {
+          "path": "docs/research/interview-guide.md",
+          "sha256": "1d78952abbdeb9d9d450b5aa57d3e281361bc90e8ac97ccb4e6fac2e9188c165"
+        },
+        {
+          "path": "docs/research/accessibility-guide.md",
+          "sha256": "26710a748dc9883b74c79bcc6a9f1d9a7a3a8e544806eae104e3ef78f8d17b1d"
+        },
+        {
+          "path": "docs/research/adverse-event-protocol.md",
+          "sha256": "f48ed7f1391d958301ab0b2a4df7a9b662ae914534358ddd5d59025b3e6d3d93"
+        },
+        {
+          "path": "docs/research/anonymization-policy.md",
+          "sha256": "5fe39a56c053e82cebc5389fd1f009f3913bb75d2eb372efe063359c3cb018de"
+        },
+        {
+          "path": "docs/research/analysis-plan.md",
+          "sha256": "b9cb95d7137c6f9c31a4f377c07b691f9243f91236785cbfa52012488ae05101"
+        },
+        {
+          "path": "docs/research/data-dictionary.md",
+          "sha256": "6d6cb317b10a7d883c9199ce49daa4061c3c26a53cf9f77ab5eecf5693f28daf"
+        },
+        {
+          "path": "docs/research/pilot-decision.md",
+          "sha256": "e3599dc2fa4baa9b4071ec37091bcfea059f1ea5b01bb3d13f14faff8bf4feee"
+        },
+        {
+          "path": "docs/research/pilot-decision.json",
+          "sha256": "997c2d56a460cef81eada422faf76704532b018d78e4e6951e2bb9d17622eefb"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-4a-pilot-design-report.md",
+          "sha256": "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-4a-pilot-design-report.json",
+          "sha256": "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21"
+        }
+      ]
+    },
+    {
+      "phase": "4B",
+      "status": "PASS",
+      "executedAt": "2026-08-05T03:28:26.854Z",
+      "startingCommit": "24cbea9965daf998c31ba73e52a3948d53701e26",
+      "prePhaseTag": "teoyube-9of10-phase4b-start-24cbea9",
+      "instrumentationCommit": "79bcfbc9e754aeb56beebe697a6cb5e7b77d1909",
+      "testSecurityCommit": "45a6b6138eae95be8b180c09a533ddda306ef5b0",
+      "documentationCommit": "FINAL_PHASE4B_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "registryVersion": "teoyube-research-events-2026-08-04.1",
+      "studyVersion": "teoyube-formative-pilot-2026-08-04.1",
+      "eventCount": 66,
+      "syntheticTests": "PASS_44_OF_44",
+      "checkedInResearchMode": false,
+      "actualParticipants": 0,
+      "actualSessions": 0,
+      "actualParticipantRecords": 0,
+      "rawSpiritualRecords": 0,
+      "participantContactRecords": 0,
+      "spiritualScoreEvents": 0,
+      "externalAnalyticsVendor": null,
+      "paidCalls": 0,
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssFilesChanged": 0,
+      "domClassChanges": 0,
+      "assetFilesChanged": 0,
+      "baselineFilesChanged": 0,
+      "packageJsonChanged": true,
+      "packageLockFilesChanged": 0,
+      "currentBlockers": {
+        "canonFocus": "OPEN",
+        "callingTabletPortraitPerformance": "OPEN",
+        "cssHistoricalBudget": "OPEN",
+        "current216CellSet": "NOT_PASSING"
+      },
+      "phase4c": "READY_NOT_STARTED",
+      "artifacts": [
+        {
+          "path": "config/research-event-registry.json",
+          "sha256": "efd1c7d9ecb1fef950117951c8fbf6f2ce5f920ebcccae45609d2cc626d091fc"
+        },
+        {
+          "path": "config/research-field-policy.json",
+          "sha256": "984432da11e8bb4bb407f24602d4941c855aa9963bf1dcda51bee72c2678490f"
+        },
+        {
+          "path": "config/research-study-registry.json",
+          "sha256": "5b94086e2da0a677a2bc3be7b228e896b41f392ef23f479678fbeaa71f8dcfe3"
+        },
+        {
+          "path": "docs/research/phase-4b-starting-manifest.json",
+          "sha256": "b1ef43af83a27b186be178887506d4893b24b235b72e103741a04de31097a395"
+        },
+        {
+          "path": "docs/research/instrumentation-architecture.md",
+          "sha256": "96c9eff6ede5e205b73f7d885f4e6586349b9d5247fb25713cd9ad3f218d7688"
+        },
+        {
+          "path": "docs/research/research-event-registry.md",
+          "sha256": "2cbb123986974b70a64b2473540d4cf2e147e01e54fa0ce883d2292642a22fcb"
+        },
+        {
+          "path": "docs/research/research-data-dictionary.md",
+          "sha256": "3904a19a9c01bafb5a00a954a350882a4f2d03e2995400fb818a88454fb1507d"
+        },
+        {
+          "path": "docs/research/research-consent-purposes.md",
+          "sha256": "d060e398d16f427c2ab2b1d91343159a55d3163f8b27af0b06f12db2c67f379e"
+        },
+        {
+          "path": "docs/research/research-session-envelope.md",
+          "sha256": "229f3e9dd6c62aab3a38c0419d5ad30f79fc9ef6e1c45f243c4bb51b8e244251"
+        },
+        {
+          "path": "docs/research/research-retention-and-deletion.md",
+          "sha256": "2c0d4ca6206154e320ddff9b58c2d446afce96216c3371638dbbefdc099346a9"
+        },
+        {
+          "path": "docs/research/research-operator-guide.md",
+          "sha256": "9ef8511e917fd073a9db8fb6b5fd03c236a372ffb62e14879c18524dd97f77a3"
+        },
+        {
+          "path": "docs/research/research-export-format.md",
+          "sha256": "caddc330ab067ecd104430ccdb700ca33b3089a3f269dfd3a59de6e57a7c9be5"
+        },
+        {
+          "path": "docs/research/research-instrumentation-security.md",
+          "sha256": "c451e34fe77484b079bea50df2a4fd8915ec8b15388aef7c98340cc1f3af6037"
+        },
+        {
+          "path": "docs/research/research-instrumentation-acceptance.md",
+          "sha256": "a31ac0c4f6dfd5a8fcdc4c87e644b65ad203a5173f2266453df312ca94b69628"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-4b-research-instrumentation-report.md",
+          "sha256": "9301f6b5553f8d55ad96ff159d23042851e7e0fbc619a2fc1e8a780c0bd465aa"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-4b-research-instrumentation-report.json",
+          "sha256": "7ef6f14e1a4322e742de2ae8a1ad89c4cba86ad7252ed0a21584a7009cf158d9"
+        }
+      ],
+      "runtimeSourceCommit": "45a6b6138eae95be8b180c09a533ddda306ef5b0",
+      "runtimeSourceDigest": "c84514e0cdccd7ed13e24f7e9515d0c532bf9c77dfd037ae587e2310f7f2a832",
+      "buildId": "teoyube-c84514e0cdccd7ed13e24f7e",
+      "cleanInstall": "PASS_408_PACKAGES",
+      "dependencyAudit": "PASS_ZERO_FULL_AND_PRODUCTION",
+      "lockfileSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
+      "typecheck": "PASS",
+      "lint": "PASS",
+      "build": "PASS",
+      "security": "PASS_18_CONTROLS",
+      "supplyChain": "PASS_490_COMPONENTS",
+      "telemetry": "PASS_22_EVENTS_ZERO_UNSAFE",
+      "architectureImports": "PASS",
+      "clientBundleResearchReferences": 0,
+      "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+      "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+      "browser": "PASS_SERIAL_53_PLUS_ONE_ISOLATED_RETRY_3_STATIC_SKIPS",
+      "staticRollbackSmoke": "PASS",
+      "syntheticWriteLatencyMs": 3.5759,
+      "syntheticEventStoredBytes": 1558,
+      "workspaceLogicalBytes": 3466005717,
+      "temporaryListenersClosed": true
     }
   ],
   "workspaceAtStart": {
@@ -320,5 +446,14 @@
     "files": 36850,
     "logicalBytes": 3461475120,
     "cleanupPerformed": false
+  },
+  "workspaceAfterPhase4b": {
+    "actualParticipantRecords": 0,
+    "researchEventFiles": 0,
+    "protectedVisualFilesChanged": 0,
+    "productSourceFilesChanged": 0,
+    "packageLockFilesChanged": 0,
+    "paidCalls": 0,
+    "workspaceLogicalBytes": 3466005717
   }
 }
