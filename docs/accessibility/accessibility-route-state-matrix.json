@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "phase": "5A",
+  "routeCount": 23,
+  "viewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "allRouteModes": [
+    "default",
+    "wcag-text-spacing",
+    "reduced-motion",
+    "forced-colors",
+    "reflow-320",
+    "effective-200-percent-zoom"
+  ],
+  "routes": [
+    { "route": "/", "capability": "Today", "states": ["default", "carousel-next", "guardrails-dialog"], "findingIds": ["A11Y-002", "A11Y-007"] },
+    { "route": "/search", "capability": "TeoyubeSearch", "states": ["default", "query-calling"], "findingIds": [] },
+    { "route": "/canon", "capability": "Canon", "states": ["default", "alternate-tab", "media-control-focus"], "findingIds": ["A11Y-003", "A11Y-004", "A11Y-007", "A11Y-008"] },
+    { "route": "/promise-table", "capability": "Promise Table", "states": ["default", "video-selected"], "findingIds": [] },
+    { "route": "/calling-compass", "capability": "Calling Compass", "states": ["default", "compass-started"], "findingIds": [] },
+    { "route": "/book", "capability": "Book of the Saint", "states": ["default", "memory-search"], "findingIds": ["A11Y-007"] },
+    { "route": "/lexicon", "capability": "Lexicon", "states": ["default", "category-filter"], "findingIds": ["A11Y-001", "A11Y-005"] },
+    { "route": "/testimony", "capability": "Testimony", "states": ["default", "drafts-tab"], "findingIds": ["A11Y-006"] },
+    { "route": "/teo-guide", "capability": "Teo Guide", "states": ["default", "deterministic-prompt-draft"], "findingIds": [] },
+    { "route": "/embedded-videos", "capability": "Embedded Videos", "states": ["default", "teachings-tab", "worship-tab", "messages-tab", "documentaries-tab", "shorts-tab", "teoyubeworld-media-tab"], "findingIds": ["A11Y-005"] },
+    { "route": "/tables", "capability": "Tables", "states": ["default", "expanded-row"], "findingIds": ["A11Y-005"] },
+    { "route": "/prayer", "capability": "Prayer", "states": ["default", "synthetic-input"], "findingIds": [] },
+    { "route": "/journey", "capability": "Journey", "states": ["default", "journey-primary-action"], "findingIds": [] },
+    { "route": "/journal", "capability": "Journal", "states": ["default", "synthetic-reflection-draft"], "findingIds": [] },
+    { "route": "/settings", "capability": "Settings", "states": ["default", "personalization-disabled"], "findingIds": [] },
+    { "route": "/privacy", "capability": "Privacy", "states": ["default"], "findingIds": [] },
+    { "route": "/consent", "capability": "Consent", "states": ["default"], "findingIds": [] },
+    { "route": "/terms", "capability": "Terms", "states": ["default"], "findingIds": [] },
+    { "route": "/profile", "capability": "Profile", "states": ["default"], "findingIds": [] },
+    { "route": "/personalization", "capability": "Personalization", "states": ["default", "wisdom-signal"], "findingIds": [] },
+    { "route": "/daily-word", "capability": "Daily Word", "states": ["default", "generated-session"], "findingIds": [] },
+    { "route": "/explore", "capability": "Explore", "states": ["default", "clusters-tab", "promise-table-tab", "filtered-wisdom"], "findingIds": ["A11Y-007"] },
+    { "route": "/promise-search", "capability": "Promise Search", "states": ["default", "query-wisdom", "keyboard-query"], "findingIds": [] }
+  ],
+  "coverage": {
+    "defaultCells": 138,
+    "modeCells": 115,
+    "stateCells": 58,
+    "executionErrors": 0
+  },
+  "excluded": [
+    { "route": "/roadmap", "reason": "owner-only" },
+    { "route": "/graph", "reason": "internal-only" },
+    { "route": "/dashboard", "reason": "development-only" },
+    { "route": "/compass", "reason": "redirect alias to /calling-compass" }
+  ]
+}
+

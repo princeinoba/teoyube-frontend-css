@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "route": "/canon",
+  "findingIds": ["A11Y-003", "A11Y-004"],
+  "approvedStaticControlCount": 0,
+  "nextMediaControlCount": 11,
+  "mappedItems": [
+    "canon-map-D02", "canon-map-D03", "canon-map-D04", "canon-map-D05", "canon-map-D06", "canon-map-D07",
+    "canon-map-D08", "canon-map-D09", "canon-map-D10", "canon-map-D11", "canon-map-D12"
+  ],
+  "controllerMutation": {
+    "selector": ".canon-project-media, .canon-recent-media",
+    "addedAttributes": ["data-canon-video-stage", "data-canon-video-id", "data-playback-state", "role=button", "tabindex=0", "aria-pressed=false", "aria-label"],
+    "activation": ["click", "Enter", "Space"]
+  },
+  "evidence": [
+    "src/app/_canon/CanonPageController.tsx",
+    "src/features/scripture/canon-youtube.ts",
+    "tests/e2e/canon-youtube-playback.spec.ts",
+    ".tmp/accessibility/phase-5a/current-audit.json"
+  ],
+  "analysis": "The media feature is keyboard-operable, but it introduces eleven Next-only focus stops that are absent from the approved static DOM/focus contract. The audit cannot bless this delta without owner review. A separate hidden canon-recent-merged-row also remains focusable.",
+  "phase5aAction": "none",
+  "phase5bDecisionRequired": true,
+  "conformanceClaim": "NO"
+}
+
