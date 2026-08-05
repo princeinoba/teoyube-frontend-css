@@ -74,7 +74,6 @@ export function LexiconPageController({ initialViewModel }: { initialViewModel: 
           const active = button === alpha;
           button.classList.toggle("active", active);
           button.setAttribute("aria-selected", String(active));
-          button.setAttribute("aria-pressed", String(active));
         });
         applyFilters();
         return;

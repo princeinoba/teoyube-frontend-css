@@ -5,6 +5,10 @@ const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 const { execFileSync } = require("node:child_process");
+const {
+  revertApprovedPhase5c1Source,
+  verifyPhase5c1Delta
+} = require("../accessibility/phase5c1DeltaContract.cjs");
 
 const projectRoot = path.resolve(__dirname, "../..");
 const contractPath = path.join(projectRoot, "tests/visual/contracts/owner-approved-scripture-content-delta.json");
@@ -68,6 +72,10 @@ function generatedStructure(value, keyPath = "root", records = []) {
 
 function verifyScriptureContentDelta() {
   const failures = [];
+  const phase5c1Delta = verifyPhase5c1Delta();
+  if (!phase5c1Delta.valid) {
+    phase5c1Delta.failures.forEach((failure) => failures.push(`Phase 5C-1 accessibility delta: ${failure}`));
+  }
   if (!fs.existsSync(contractPath)) return { valid: false, failures: ["Owner-approved Scripture content-delta contract is missing."], approvedByPath: new Map() };
 
   const contractBytes = fs.readFileSync(contractPath);
@@ -166,6 +174,7 @@ function verifyScriptureContentDelta() {
       continue;
     }
     const currentBytes = fs.readFileSync(currentPath);
+    const comparisonBytes = revertApprovedPhase5c1Source(relativePath, currentBytes, phase5c1Delta);
     if (sourceFile.derivedFrom) {
       if (relativePath !== "src/app/_approved-source/approved-view-markup.generated.ts") failures.push(`${relativePath}: unrecognized derived overlay.`);
       try {
@@ -187,15 +196,15 @@ function verifyScriptureContentDelta() {
       } catch (error) {
         failures.push(`${relativePath}: derived snapshot verification failed (${error.message}).`);
       }
-    } else if (!transformedBytes.equals(currentBytes)) failures.push(`${relativePath}: current bytes contain a change outside the exact owner-approved replacements.`);
-    if (currentBytes.length !== sourceFile.approvedNewBytes || sha256(currentBytes) !== sourceFile.approvedNewSha256) failures.push(`${relativePath}: approved-current byte contract changed.`);
+    } else if (!transformedBytes.equals(comparisonBytes)) failures.push(`${relativePath}: current bytes contain a change outside the exact owner-approved replacements.`);
+    if (comparisonBytes.length !== sourceFile.approvedNewBytes || sha256(comparisonBytes) !== sourceFile.approvedNewSha256) failures.push(`${relativePath}: approved-current byte contract changed.`);
     approvedByPath.set(relativePath, { bytes: currentBytes.length, sha256: sha256(currentBytes) });
   }
 
   for (const recordId of inventoryById.keys()) {
     if (!seenRecordIds.has(recordId)) failures.push(`${recordId}: no source overlay operation cites this owner-reviewed record.`);
   }
-  return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes) };
+  return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes), phase5c1Delta };
 }
 
 function isApprovedSourceDelta(relativePath, actualHash, actualBytes, verification) {

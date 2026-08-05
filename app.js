@@ -4513,7 +4513,7 @@ function renderPromiseCarousel() {
   track.innerHTML = promiseCarouselSlides
     .map(
       (slide, index) => `
-        <article class="carousel-slide ${index === activePromiseSlide ? "active" : ""}" aria-hidden="${index === activePromiseSlide ? "false" : "true"}">
+        <article class="carousel-slide ${index === activePromiseSlide ? "active" : ""}" aria-hidden="${index === activePromiseSlide ? "false" : "true"}"${index === activePromiseSlide ? "" : " inert"}>
           <div class="carousel-copy">
             <span class="slide-number">${String(index + 1).padStart(2, "0")} / ${String(promiseCarouselSlides.length).padStart(2, "0")}</span>
             <p class="eyebrow">${escapeHtml(slide.kicker)}</p>
@@ -5487,7 +5487,7 @@ function renderLexiconAlphaTabs() {
       const isActive = activeLexiconAlpha === letter;
       const label = letter === "all" ? "All" : letter.toUpperCase();
       const ariaLabel = letter === "all" ? "Show all Lexicon words" : `Show Lexicon words starting with ${label}`;
-      return `<button class="${isActive ? "active" : ""}" type="button" data-lexicon-alpha="${letter}" role="option" aria-selected="${isActive}" aria-pressed="${isActive}" aria-label="${ariaLabel}">${label}</button>`;
+      return `<button class="${isActive ? "active" : ""}" type="button" data-lexicon-alpha="${letter}" role="option" aria-selected="${isActive}" aria-label="${ariaLabel}">${label}</button>`;
     })
     .join("");
 }
@@ -6454,7 +6454,7 @@ function renderCanonPremium() {
           return `
         <article class="canon-recent-card canon-recent-merged-card canon-watchman-story-card ${active ? "active" : ""}" data-canon-item="${escapeHtml(primary.id)}" style="--watchman-image: url('${escapeHtml(activeSlide.image)}')">
           <div class="canon-watchman-story-stage" role="img" aria-label="${escapeHtml(activeSlide.title)}"></div>
-            <div class="canon-watchman-story-copy" aria-hidden="true">
+            <div class="canon-watchman-story-copy" aria-hidden="true" inert>
             <div class="canon-recent-merged-list">
               ${group.entries
                 .map(
@@ -7730,6 +7730,7 @@ function renderFeaturedStoryCarousel() {
             <article
               class="featured-story-slide ${active ? "active" : ""}"
               aria-hidden="${active ? "false" : "true"}"
+              ${active ? "" : "inert"}
               style="--featured-image: url('${escapeHtml(story.image)}')"
             >
               <div class="featured-story-copy">

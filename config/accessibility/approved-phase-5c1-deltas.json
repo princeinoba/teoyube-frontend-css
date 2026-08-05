@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-1",
+  "batch": "critical-and-fail-closed",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionTimestamp": "2026-08-05T17:13:18.973Z",
+  "startingCommit": "1d74ff7a8b995a0f1461d8dd7a6731541d29eb4f",
+  "prePhaseTag": "teoyube-9of10-phase5c1-start-1d74ff7",
+  "issueIds": [
+    "A11Y-001",
+    "A11Y-002",
+    "A11Y-004"
+  ],
+  "proposalHashes": {
+    "A11Y-001": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe",
+    "A11Y-002": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b",
+    "A11Y-004": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+  },
+  "constraints": {
+    "attributeOnly": true,
+    "visibleCopyChanged": false,
+    "cssChanged": false,
+    "classOrIdChanged": false,
+    "assetChanged": false,
+    "baselineChanged": false,
+    "manualEvidenceExecuted": 0,
+    "phase5c2Started": false,
+    "phase5c3Started": false
+  },
+  "sourceFiles": [
+    {
+      "path": "app.js",
+      "issueIds": ["A11Y-001", "A11Y-002", "A11Y-004"],
+      "beforeBytes": 585321,
+      "beforeSha256": "e1275c4d62561002cef5cca25b1a31e5a728637e37fef8d328913caa4a73495e",
+      "afterBytes": 585385,
+      "afterSha256": "06f70a1e45320f6fc80bbfab6d0362324a2a8751ebc03fd65213d31350efa0ee"
+    },
+    {
+      "path": "src/app/_lexicon/LexiconPageController.tsx",
+      "issueIds": ["A11Y-001"],
+      "beforeBytes": 7849,
+      "beforeSha256": "58216c950cc0a0b00c036600209e2defa85736a11f16a4551be99a0f89d24229",
+      "afterBytes": 7786,
+      "afterSha256": "21793ab3d522fb121842d962a4cf2a8ede969da7318a14bad542388ce7edef82"
+    },
+    {
+      "path": "src/app/_today/ApprovedTodayView.tsx",
+      "issueIds": ["A11Y-002"],
+      "beforeBytes": 18362,
+      "beforeSha256": "566b8dbc57f84068159d067cc8f370653f001524328009e15049253faa371639",
+      "afterBytes": 18394,
+      "afterSha256": "a5d0cf4c9d2ec8a295dd5017bf64531f5b5b7d4febe66a635592b24e82478b97"
+    },
+    {
+      "path": "src/app/_approved-source/approved-view-markup.generated.ts",
+      "issueIds": ["A11Y-001", "A11Y-004"],
+      "beforeBytes": 1730131,
+      "beforeSha256": "c20110b92d23d6d1652e9a9d3295527fae21d845391ba8c02efa100b9236f3c0",
+      "afterBytes": 1729529,
+      "afterSha256": "a3581921ad78179b89dc7c048ba2fba52357ad9eda416d32e47cab25d827738f"
+    },
+    {
+      "path": "config/runtime/canonical-runtime-manifest.json",
+      "issueIds": ["A11Y-001", "A11Y-002", "A11Y-004"],
+      "derivedIdentityOnly": true,
+      "beforeBytes": 8366,
+      "beforeSha256": "48c87436db2c53eddb1932c240ab3ae7a24c31c08de189298530a1b66d06a908",
+      "afterBytes": 8366,
+      "afterSha256": "120645c136037d95f0437ba5c7fc96fcf7da3423cac2c416faca0ee9a3b9d55a"
+    }
+  ]
+}

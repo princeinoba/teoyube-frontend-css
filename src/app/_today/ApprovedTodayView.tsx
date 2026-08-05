@@ -52,7 +52,7 @@ function PromiseCarousel({ model, actions }: { model: TodayViewModel; actions: T
           {model.promiseSlides.map((slide, index) => {
             const active = index === model.activePromiseSlide;
             return (
-              <article className={`carousel-slide ${active ? "active" : ""}`} aria-hidden={active ? "false" : "true"} key={slide.title}>
+              <article className={`carousel-slide ${active ? "active" : ""}`} aria-hidden={active ? "false" : "true"} inert={!active} key={slide.title}>
                 <div className="carousel-copy">
                   <span className="slide-number">{String(index + 1).padStart(2, "0")} / {String(model.promiseSlides.length).padStart(2, "0")}</span>
                   <p className="eyebrow">{slide.kicker}</p>
@@ -181,7 +181,7 @@ function FeaturedStories({ model, actions }: { model: TodayViewModel; actions: T
             {model.stories.map((story, index) => {
               const active = index === model.activeStoryIndex;
               return (
-                <article className={`featured-story-slide ${active ? "active" : ""}`} aria-hidden={active ? "false" : "true"} style={{ "--featured-image": `url('${story.image}')` } as CustomProperties} key={story.id}>
+                <article className={`featured-story-slide ${active ? "active" : ""}`} aria-hidden={active ? "false" : "true"} inert={!active} style={{ "--featured-image": `url('${story.image}')` } as CustomProperties} key={story.id}>
                   <div className="featured-story-copy">
                     <div className="featured-story-meta"><span>{story.category}</span><span>{story.source}</span><time>{story.time}</time></div>
                     <h3>{story.title}</h3><p>{story.description}</p>
