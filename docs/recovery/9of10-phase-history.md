@@ -145,3 +145,32 @@ Pre-phase tag: `teoyube-9of10-phase4b-start-24cbea9`
 ### Result
 
 Phase 4B is **PASS**. Research collection remains checked-in disabled and Phase 4C is **READY** but not started. A separate explicit owner start and the approved consent/operator prerequisites are required before recruitment or real participant operations. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and independent Phase 5A and Phase 6A readiness is unchanged.
+
+## Phase 4C — pilot operations and recruitment readiness
+
+Status: **WAITING_OWNER**
+Started from: `d58fa5c5de4069beff84e3281d49b5e5b6192295`
+Pre-phase tag: `teoyube-9of10-phase4c-start-d58fa5c`
+Operations commit: `66d9adb06409f73a875a453f54caeba1a3817b81`
+
+### Actions
+
+1. Created the approved study configuration, six recruitment-operation artifacts, eight participant-packet drafts, eight moderator-packet documents, and 17 versioned synthetic scenarios.
+2. Added bounded status, prepare, reset, verify, export-template, and dry-run tooling that cannot enable real collection or create a participant.
+3. Ran a deterministic synthetic moderator drill covering consent, scoring, rescue, accessibility, fallback, withdrawal, deletion, aggregate regeneration, and reset.
+4. Preserved the Phase 4A decision, Phase 4B 66-event registry, checked-in default-off research mode, product UI, runtime ownership, rollback source, and every baseline.
+5. Left every recruitment decision field pending and created no contact, participant, consent-signature, recording, session, or finding record.
+
+### Evidence
+
+- Readiness tests: PASS, 33/33; combined Phase 4B/4C research verification: PASS, 77/77.
+- Synthetic drill: PASS; 12 coded events and one rescue before deletion; zero records after cleanup.
+- Security/imports/architecture/typecheck/lint/build/runtime/recovery: PASS.
+- Dual runtime: PASS, 83 checks; all temporary listeners closed; unrelated port 4173 untouched.
+- Recovery: PASS; 72 immutable screenshots and 12 desktop DOM snapshots unchanged.
+- Actual participants, sessions, participant records, contact rows, paid calls: 0/0/0/0/0.
+- Product/protected/CSS/DOM/assets/baselines/lockfile changes: 0/0/0/0/0/0/0.
+
+### Result
+
+Phase 4C is **WAITING_OWNER** for the mandatory recruitment-start decision. Phase 4 overall remains **IN_PROGRESS**, Phase 4D is **NOT READY**, Phase 2A remains **BLOCKED**, and Phase 3 remains **WAITING_OWNER**. Independent Phase 5A and Phase 6A remain READY and were not executed.

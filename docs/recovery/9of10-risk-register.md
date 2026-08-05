@@ -6,7 +6,7 @@
 | 9R-02 | Stale release evidence | Current validation blocked with 1,087 failures | Phase 2B/2C | Current-source lineage and Gate C Preview PASS |
 | 9R-03 | Prompt 24 composite safety-hash input discrepancy | Historical report preserved; authoritative hash locked in Phase 1 | Phase 1 evidence integrity | Phase 1 ledger remains authoritative for later dependency comparisons |
 | 9R-04 | Stabilization evidence incomplete | Phase 3A toolkit PASS; authentic evidence remains 0 days, 0 sessions, and 0 incidents | Phase 3 | Seven distinct days, ten owner-confirmed meaningful sessions, full coverage, no disqualifying incident, and owner closeout |
-| 9R-05 | Real-user evidence absent | Phase 4A and 4B PASS; instrumentation is checked-in disabled; 0 participants, sessions, or actual participant records; Phase 4C requires a separate owner start | Phase 4 | Execute the approved pilot through consent-bound Phase 4C participant operations and obtain owner-accepted analysis |
+| 9R-05 | Real-user evidence absent | Phase 4A and 4B PASS; Phase 4C operations and synthetic drill PASS; recruitment WAITING_OWNER; mode disabled; 0 participants, sessions, or actual participant records | Phase 4 | Owner authorizes recruitment, qualified operators conduct consent-bound sessions, and Phase 4D obtains owner-accepted analysis |
 | 9R-06 | Accessibility conformance unproved | Current 72-cell audit exposes 11 extra Next Canon focus controls at all six viewports; manual/assistive evidence debt remains | Phase 5 and Phase 2A recheck | No critical issue; high issues fixed or accepted with evidence |
 | 9R-07 | Production infrastructure absent | Local/test adapters only | Phase 6 | Managed, isolated, restored, monitored staging evidence |
 | 9R-08 | Production AI/release gates closed | Gate B/C Production closed | Phase 7 | Human, red-team, data-control, load, cost, drill, and owner gates PASS |
@@ -16,5 +16,7 @@
 | 9R-12 | Unrelated listener on 4173 | Serves Nominate It, not Teoyube | Operational hygiene | Do not stop; owner manages in its own workspace |
 | 9R-13 | Current performance composite blocked | Approved CSS is 1,414,956 bytes against a historical 948,538-byte budget; no current 216-cell pass | Phase 2A recheck / later performance scope | Reconcile the current owner-approved surface with an owner-authorized budget/evidence decision; never weaken silently |
 
-Documentation is not risk acceptance. Every material risk remains open until its exit trigger is evidenced.
 | 9R-14 | Research collection activated outside an approved study or consent boundary | Server-only default-off flag, allowlisted study, signed short-lived envelope, distinct effective consent, fixed schema, prohibited-data validation, and zero-real-record verifier | Phase 4 | Keep mode disabled until an explicit Phase 4C start and approved operator/privacy prerequisites are satisfied |
+| 9R-15 | Recruitment begins without the required Phase 4C owner decision | Operational materials are ready, but recruitment/operator/contact-storage/privacy-review fields remain `PENDING`; no real records exist | Phase 4C | Owner explicitly chooses authorize, authorize with safe changes, or hold; no automatic recruitment follows |
+
+Documentation is not risk acceptance. Every material risk remains open until its exit trigger is evidenced.

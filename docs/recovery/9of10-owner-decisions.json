@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05T03:28:26.854Z",
+  "updatedAt": "2026-08-05T05:44:46.6298307-04:00",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -93,9 +93,25 @@
         "no UI, protected visual, route, or baseline change",
         "no external analytics vendor or paid provider call"
       ]
+    },
+    {
+      "decisionId": "PHASE_4C_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
+      "scope": "Prepare and verify Phase 4C pilot operations and synthetic session readiness, then pause for the recruitment-start decision",
+      "status": "AUTHORIZED_BY_OWNER_SUPPLIED_PHASE_PROMPT",
+      "source": "Teoyube 9/10 Program - Phase 4C: Pilot Operations, Recruitment Launch, and Session Readiness",
+      "limitations": [
+        "No recruitment, participant contact, scheduling, participant IDs, consent signatures, sessions, recordings, findings, or Phase 4D",
+        "No product, UI, protected visual, route, runtime ownership, baseline, or paid-provider change",
+        "Research collection remains checked-in disabled",
+        "Recruitment decision fields remain PENDING until the owner answers the mandatory pause"
+      ]
     }
   ],
   "pendingDecisionGroups": [
+    {
+      "phase": "4C",
+      "decision": "Recruitment start: authorize approved pilot, authorize with safe changes, or hold; operator, mode, compensation, recording, live-AI, accessibility, expert, start-date, contact-storage, and privacy-review fields remain PENDING"
+    },
     {
       "phase": "5B",
       "decision": "path-specific accessibility fixes affecting protected output"

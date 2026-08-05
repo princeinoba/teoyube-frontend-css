@@ -10,6 +10,9 @@ const root = path.resolve(__dirname, "../..");
 const study = require(path.join(root, "config/research-pilot-study.json"));
 const scenarios = require(path.join(root, "config/research-pilot-scenarios.json"));
 const decision = require(path.join(root, "docs/research/phase-4c-recruitment-decision.json"));
+const phase4aDecision = require(path.join(root, "docs/research/pilot-decision.json"));
+const phase4bReport = require(path.join(root, "docs/recovery/9of10-phase-4b-research-instrumentation-report.json"));
+const phase4bStudyRegistry = require(path.join(root, "config/research-study-registry.json"));
 
 const requiredDocuments = [
   "docs/research/recruitment-message.md",
@@ -88,6 +91,10 @@ function main() {
   verifyNoSecretLikeMaterial(failures);
   verifyProhibitedLanguage(failures);
   if (study.status !== "READY_FOR_OWNER_RECRUITMENT_DECISION") failures.push("study_not_waiting_for_owner");
+  if (phase4aDecision.status !== "APPROVED" || phase4aDecision.ownerApproved !== true || phase4aDecision.approvalReference !== study.approvedPilotDesignReference) failures.push("phase4a_decision_inconsistent");
+  if (phase4aDecision.sampleSize.recommendation !== 12 || phase4aDecision.sampleSize.minimum !== 8 || phase4aDecision.sampleSize.maximum !== 15) failures.push("phase4a_sample_inconsistent");
+  if (phase4bReport.status.final !== "PASS" || phase4bReport.researchMode.checkedInDefault !== false || phase4bReport.researchMode.collectionAuthorized !== false) failures.push("phase4b_report_inconsistent");
+  if (phase4bStudyRegistry.studies.length !== 1 || phase4bStudyRegistry.studies[0].studyId !== "teoyube-phase4b-synthetic" || phase4bStudyRegistry.studies[0].realParticipantCollectionAuthorized !== false) failures.push("phase4b_synthetic_registry_changed");
   if (decision.recruitmentAuthorized !== "PENDING" || decision.researchOperator !== "PENDING") failures.push("decision_prefilled");
   if (decision.actualParticipants !== 0 || decision.actualSessions !== 0) failures.push("actual_counts_nonzero");
   if (scenarios.scenarios.length !== 17) failures.push("scenario_count_invalid");

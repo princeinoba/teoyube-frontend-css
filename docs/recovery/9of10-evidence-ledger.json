@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T03:28:26.854Z",
+  "generatedAt": "2026-08-05T05:44:46.6298307-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -435,6 +435,93 @@
       "syntheticEventStoredBytes": 1558,
       "workspaceLogicalBytes": 3466005717,
       "temporaryListenersClosed": true
+    },
+    {
+      "phase": "4C",
+      "status": "WAITING_OWNER",
+      "executedAt": "2026-08-05T05:44:46.6298307-04:00",
+      "startingCommit": "d58fa5c5de4069beff84e3281d49b5e5b6192295",
+      "prePhaseTag": "teoyube-9of10-phase4c-start-d58fa5c",
+      "operationsCommit": "66d9adb06409f73a875a453f54caeba1a3817b81",
+      "decisionCommit": null,
+      "finalCommit": "FINAL_PHASE4C_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "studyId": "teoyube-formative-pilot-2026-01",
+      "studyStatus": "READY_FOR_OWNER_RECRUITMENT_DECISION",
+      "syntheticScenarioCount": 17,
+      "focusedTests": "PASS_33_OF_33",
+      "researchTests": "PASS_77_OF_77",
+      "syntheticDryRun": "PASS_12_CODED_EVENTS_ONE_RESCUE_ZERO_AFTER_CLEANUP",
+      "recruitment": "PENDING_NOT_AUTHORIZED",
+      "researchOperator": "PENDING",
+      "checkedInResearchMode": false,
+      "actualParticipants": 0,
+      "actualSessions": 0,
+      "actualParticipantRecords": 0,
+      "contactRecords": 0,
+      "consentSignatures": 0,
+      "recordings": 0,
+      "findings": 0,
+      "paidCalls": 0,
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssFilesChanged": 0,
+      "domClassChanges": 0,
+      "assetFilesChanged": 0,
+      "baselineFilesChanged": 0,
+      "packageJsonChanged": true,
+      "packageLockFilesChanged": 0,
+      "runtimeBehaviorChanges": 0,
+      "runtimeSourceDigest": "ae07aa13d9eae08969840a1160571c9483362a98d3a634ce13da2621fcac5a75",
+      "buildId": "teoyube-ae07aa13d9eae08969840a11",
+      "build": "PASS_NEXT_16_3_0_58_PAGES",
+      "typecheck": "PASS",
+      "lint": "PASS",
+      "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+      "imports": "PASS_1433_ZERO_MISSING",
+      "architecture": "PASS_180_ZERO_VIOLATIONS",
+      "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+      "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+      "dualRuntime": "PASS_83_LISTENERS_CLOSED",
+      "full216CellGateRun": false,
+      "phase4d": "NOT_READY",
+      "artifacts": [
+        {
+          "path": "config/research-pilot-study.json",
+          "sha256": "d4c8aef4e136c98212b928945ef69cb68bacf82415953214b2b709d3ef8f0eef"
+        },
+        {
+          "path": "config/research-pilot-scenarios.json",
+          "sha256": "4f5e4c0ff5b163ada25422257e0c9971ff568107bd358a32f7392191c0df43ce"
+        },
+        {
+          "path": "docs/research/phase-4c-starting-manifest.json",
+          "sha256": "065c8285df4e4b6e6f7286758a62361278e01d65b394c5669ecdc3455b45598b"
+        },
+        {
+          "path": "docs/research/phase-4c-synthetic-dry-run-report.md",
+          "sha256": "d5e722809ab3ccfeb8753b793af2461c5020d7c60f21b265a7dbb8373ca2dc40"
+        },
+        {
+          "path": "docs/research/phase-4c-synthetic-dry-run-report.json",
+          "sha256": "b0bdaac8874bc58d30824ebfb27a4b1932a2d3d68bd32458d32c42e868c56c7b"
+        },
+        {
+          "path": "docs/research/phase-4c-recruitment-decision.md",
+          "sha256": "f572374f12da866eebc385e7562f5f4b7cbd8ab0f27d5eff5ee8da81dd49d47c"
+        },
+        {
+          "path": "docs/research/phase-4c-recruitment-decision.json",
+          "sha256": "b8448333c755aea2e29c73202cccfaf9639fcc9a33066258d91aeeeae53e2827"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-4c-pilot-operations-report.md",
+          "sha256": "fc8a12160965797783478d0f5866ad45c1a77d5e79142412aa0177395e7fa7d2"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-4c-pilot-operations-report.json",
+          "sha256": "7f93bf432815bd55a50d62bb5273d3d8c7cd41852c4a1a75822ae9093aa9a0ba"
+        }
+      ]
     }
   ],
   "workspaceAtStart": {
@@ -455,5 +542,16 @@
     "packageLockFilesChanged": 0,
     "paidCalls": 0,
     "workspaceLogicalBytes": 3466005717
+  },
+  "workspaceAfterPhase4c": {
+    "recordedAt": "2026-08-05T05:44:46.6298307-04:00",
+    "head": "FINAL_PHASE4C_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "researchModeDefault": false,
+    "actualParticipants": 0,
+    "actualSessions": 0,
+    "actualParticipantRecords": 0,
+    "paidCalls": 0,
+    "phase4c": "WAITING_OWNER",
+    "phase4d": "NOT_READY"
   }
 }

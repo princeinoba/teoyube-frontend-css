@@ -12,13 +12,13 @@
   "cutoverCommit": "52ed7e9530e292f60195f7305a8ec9a476bd7367",
   "postCutoverTag": "teoyube-next-canonical-local-2026-07-24",
   "staticBaselineCommit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
-  "runtimeSourceCommit": "45a6b6138eae95be8b180c09a533ddda306ef5b0",
-  "runtimeSourceDigest": "c84514e0cdccd7ed13e24f7e9515d0c532bf9c77dfd037ae587e2310f7f2a832",
+  "runtimeSourceCommit": "66d9adb06409f73a875a453f54caeba1a3817b81",
+  "runtimeSourceDigest": "ae07aa13d9eae08969840a1160571c9483362a98d3a634ce13da2621fcac5a75",
   "buildIdGeneratorVersion": "teoyube-runtime-source-digest-2026-07-25.1",
   "buildIdDigestAlgorithm": "sha256",
   "packageLockSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
   "runtimeSourceManifest": "config/runtime/runtime-source-manifest.json",
-  "nextBuildId": "teoyube-c84514e0cdccd7ed13e24f7e",
+  "nextBuildId": "teoyube-ae07aa13d9eae08969840a11",
   "publicRoutes": [
     {
       "path": "/",

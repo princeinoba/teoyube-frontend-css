@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T05:44:46.6298307-04:00",
+  "program": {
+    "selectedPhase": "4C",
+    "name": "Pilot operations and recruitment launch",
+    "previousStatus": "READY",
+    "finalStatus": "WAITING_OWNER",
+    "phase4Overall": "IN_PROGRESS",
+    "phase4d": "NOT_READY",
+    "programOverall": "IN_PROGRESS"
+  },
+  "git": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "d58fa5c5de4069beff84e3281d49b5e5b6192295",
+    "operationsCommit": "66d9adb06409f73a875a453f54caeba1a3817b81",
+    "decisionCommit": null,
+    "decisionCommitStatus": "PENDING_OWNER_DECISION_NOT_CREATED",
+    "finalCommit": "REPORTED_IN_FINAL_HANDOFF",
+    "prePhaseTag": "teoyube-9of10-phase4c-start-d58fa5c"
+  },
+  "study": {
+    "studyId": "teoyube-formative-pilot-2026-01",
+    "status": "READY_FOR_OWNER_RECRUITMENT_DECISION",
+    "ordinaryUserTarget": 12,
+    "minimumParticipants": 8,
+    "maximumParticipants": 15,
+    "accessibilityTarget": "2-3 participants representing accessibility needs",
+    "expertReviewers": "optional 1-2, separate cohort",
+    "sessionDurationMinutes": { "minimum": 60, "maximum": 75 },
+    "syntheticScenarioCount": 17,
+    "liveAi": "OPTIONAL_SEPARATE_CONSENT_DENIED_BY_DEFAULT",
+    "recording": "OPTIONAL_SEPARATE_CONSENT_DENIED_BY_DEFAULT",
+    "compensation": "FIXED_NON_COERCIVE_IF_OFFERED"
+  },
+  "operations": {
+    "recruitmentPackage": "COMPLETE",
+    "participantPacket": "COMPLETE_DRAFT_NO_SIGNATURES",
+    "moderatorPacket": "COMPLETE",
+    "scenarioPack": "COMPLETE_17_SYNTHETIC",
+    "environmentReset": "PASS_BOUNDED_IDEMPOTENT",
+    "syntheticDryRun": "PASS",
+    "contactDataSeparation": "PASS",
+    "retentionDeletion": "PASS_ZERO_RECORDS_AFTER_CLEANUP",
+    "adverseEventProcess": "PASS_NO_UNRESOLVED_EVENT"
+  },
+  "ownerDecision": {
+    "recruitment": "PENDING_NOT_AUTHORIZED",
+    "decisionReference": "PHASE_4C_RECRUITMENT_START_DECISION_PENDING",
+    "researchOperator": "PENDING",
+    "changes": [],
+    "actualParticipants": 0,
+    "actualSessions": 0,
+    "phase4dReady": false
+  },
+  "changes": {
+    "operationsCommitFiles": 35,
+    "productSourceFiles": 0,
+    "protectedVisualFiles": 0,
+    "cssFiles": 0,
+    "domClassChanges": 0,
+    "assetFiles": 0,
+    "baselineFiles": 0,
+    "packageJsonChanged": true,
+    "packageLockFilesChanged": 0,
+    "runtimeBehaviorChanges": 0,
+    "participantRecords": 0,
+    "paidCalls": 0
+  },
+  "verification": {
+    "focusedReadinessTests": "PASS_33_OF_33",
+    "researchSuites": "PASS_77_OF_77",
+    "phase4a4bConsistency": "PASS",
+    "schemas": "PASS",
+    "privacy": "PASS",
+    "consent": "PASS",
+    "syntheticDryRun": "PASS_12_CODED_EVENTS_ONE_RESCUE",
+    "deletion": "PASS_ZERO_AFTER_CLEANUP",
+    "cohortSeparation": "PASS",
+    "researchModeDefault": "DISABLED",
+    "actualParticipantRecords": 0,
+    "secretSecurityScan": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "imports": "PASS_1433_FILES_ZERO_MISSING",
+    "architecture": "PASS_180_FILES_ZERO_VIOLATIONS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "build": "PASS_NEXT_16_3_0_58_PAGES",
+    "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+    "nextStaticSmoke": "PASS_83_DUAL_RUNTIME_CHECKS",
+    "temporaryListenersClosed": true,
+    "unrelatedPort4173Untouched": true,
+    "full216CellRunRequired": false
+  },
+  "currentBlockers": {
+    "phase2a": "BLOCKED_VISUAL_PERFORMANCE_RECONCILIATION",
+    "phase3": "WAITING_OWNER_AUTHENTIC_SESSIONS",
+    "phase4d": "NOT_READY_OWNER_RECRUITMENT_DECISION_AND_REAL_SESSION_DATA_ABSENT"
+  },
+  "nextReadyIndependent": ["5A", "6A"],
+  "rollback": "git revert <final-phase-4c-evidence-commit> 66d9adb06409f73a875a453f54caeba1a3817b81"
+}
