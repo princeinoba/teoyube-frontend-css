@@ -69,7 +69,7 @@ describe("durable consent-aware memory", () => {
 
   it("exposes five executable data classes and thirteen unbundled, default-off purposes", () => {
     expect(Object.keys(DATA_CLASSIFICATION_REGISTRY)).toEqual(["class_0", "class_1", "class_2", "class_3", "class_4"]);
-    expect(Object.keys(MEMORY_PURPOSE_REGISTRY)).toEqual(["preference_continuity", "journey_continuity", "sensitive_spiritual_storage", "testimony_book_continuity", "external_ai_processing", "external_ai_sensitive_content", "external_ai_memory_context", "live_ai_conversation_retention", "external_ai_embedding_processing", "user_memory_semantic_index", "user_testimony_semantic_index", "user_journey_semantic_index", "user_calling_evidence_semantic_index"]);
+    expect(Object.keys(MEMORY_PURPOSE_REGISTRY)).toEqual(["preference_continuity", "journey_continuity", "sensitive_spiritual_storage", "testimony_book_continuity", "external_ai_processing", "external_ai_sensitive_content", "external_ai_memory_context", "live_ai_conversation_retention", "external_ai_embedding_processing", "user_memory_semantic_index", "user_testimony_semantic_index", "user_journey_semantic_index", "user_calling_evidence_semantic_index", "research_participation", "research_product_events", "research_accessibility_observation", "research_optional_recording", "research_optional_live_ai_task", "research_follow_up_contact"]);
     expect(Object.values(MEMORY_PURPOSE_REGISTRY).every((purpose) => !purpose.defaultGranted && purpose.explicitUserAction)).toBe(true);
     expect(DATA_CLASSIFICATION_REGISTRY.class_3).toMatchObject({ encryption: "application_aead", analyticsPolicy: "disabled", logPolicy: "never_raw_content" });
   });
