@@ -1,6 +1,6 @@
 # Teoyube 9/10 Phase 4A pilot-design report
 
-Status: **WAITING_OWNER**
+Status: **PASS**
 
 Executed: 2026-08-04
 
@@ -8,11 +8,11 @@ Executed: 2026-08-04
 
 - Selected phase: Phase 4A — pilot design and owner decision.
 - Previous status: `READY`.
-- Final pre-decision status: `WAITING_OWNER`.
+- Final status: `PASS`.
 - Program overall: `IN_PROGRESS`.
 - Phase 2A remains `BLOCKED` by its separate visual/performance evidence.
 - Phase 3 remains `WAITING_OWNER` with zero owner-confirmed sessions, days, or incidents.
-- Phase 4B is `NOT_READY` and was not started.
+- Phase 4B is `READY` and was not started.
 
 ## Branch and lineage
 
@@ -21,7 +21,7 @@ Executed: 2026-08-04
 - Prompt 24 baseline: `39e75ee11d765c83c67660cd267315acec124ae9`.
 - Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`.
 - Pilot-design commit: reported in the final handoff after commit creation.
-- Owner-decision commit: none; owner decision remains pending.
+- Owner-decision commit: reported in the final handoff after commit creation.
 
 ## Entry gate
 
@@ -114,12 +114,15 @@ A full build, browser suite, and 216-cell rerun were intentionally not run becau
 
 ## Owner decision
 
-- Decision: `PENDING`.
-- Decision ID: none.
+- Decision: `APPROVED`.
+- Decision ID: no separate approval ID supplied.
+- Approval reference: `PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID`.
+- Owner response: choice `1`, approve the recommended pilot design.
+- Approved at: `2026-08-04T20:30:43.7760787-04:00`.
 - Changes: none.
-- Recruitment authorized: no.
-- Phase 4B ready: no.
+- Recruitment authorization: available only for a separately invoked Phase 4B after operator, retention, environment, consent, and local-review prerequisites are satisfied; no recruitment occurred in this turn.
+- Phase 4B ready: yes, not started.
 
-Owner action: choose option 1, 2, or 3 in `docs/research/pilot-decision.md`. Silence is not approval.
+Owner action: none for Phase 4A. A new explicit task is required to begin Phase 4B, Phase 5A, or Phase 6A.
 
-Rollback: revert the focused Phase 4A pilot-design commit. Do not alter prior Phase 1, Phase 2A, Phase 3A, Prompt 24, visual, runtime, or stabilization evidence.
+Rollback: revert the focused Phase 4A owner-decision commit, then revert the pilot-design commit if the package itself must also be removed. Do not alter prior Phase 1, Phase 2A, Phase 3A, Prompt 24, visual, runtime, or stabilization evidence.

@@ -95,9 +95,7 @@ Toolkit commit: `a03979c70a9a4784448e8b36ac6086d2363f66c7`
 ### Result
 
 Phase 3A is **PASS**. Phase 3 overall is **WAITING_OWNER** and Phase 3B is **NOT READY**. Phase 2A remains **BLOCKED** even though dependency remediation is complete; its visual/performance reconciliation requires separate owner-reviewed work. Independent next-ready choices are Phase 4A, Phase 5A, or Phase 6A; none was executed.
-## Phase 4A — real-user pilot design and owner decision
-
-Status: **WAITING_OWNER**
+${1}Status: **PASS**
 Started from: `32933458e6695b851d3e05a67a4b052047f279f7`
 Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`
 
@@ -123,4 +121,6 @@ Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`
 
 ### Result
 
-Phase 4A is **WAITING_OWNER**. The complete pilot package is ready for one consolidated owner decision. Silence is not approval. Recruitment is not authorized and Phase 4B is **NOT READY**. Phase 2A remains **BLOCKED** and Phase 3 remains **WAITING_OWNER**. Independent Phase 5A and Phase 6A readiness is unchanged; neither was executed.
+The owner replied `1`, approving the complete recommended pilot design. No separate approval ID was supplied, so the ledger records `PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID` as a descriptive reference rather than an invented owner ID.
+
+Phase 4A is **PASS** and Phase 4B is **READY** but was not started. No participant was contacted, no session was run, no instrumentation was enabled, and no product or protected file changed. Phase 2A remains **BLOCKED** and Phase 3 remains **WAITING_OWNER**. Phase 5A and Phase 6A readiness is unchanged.

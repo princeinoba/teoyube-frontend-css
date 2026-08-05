@@ -32,14 +32,14 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 1 — Baseline lock and program ledger | **PASS** | Baseline/tag/ledgers verified; no product or protected change. |
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
-| 4 — Real-user pilot | **WAITING_OWNER** | Phase 4A package drafted; consolidated pilot decision required. Recruitment and Phase 4B remain unauthorized. |
+| 4 — Real-user pilot | **IN_PROGRESS** | Phase 4A PASS by owner response choice 1; Phase 4B READY but not started; 0 participants and 0 instrumentation. |
 | 5 — Accessibility remediation | **READY** | Select 5A for a current standards-based audit. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
 | 9 — Re-score and closeout | **NOT_STARTED** | Requires material real-user and production evidence. |
 
-Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A is **WAITING_OWNER** and Phase 4B is **NOT READY**. Independent next-ready choices remain **5A or 6A**; neither is selected automatically.
+Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A is **PASS** and Phase 4B is **READY** but not started. Independent next-ready choices are **4B, 5A, or 6A**; none is selected automatically.
 
 ## Current gates
 
@@ -55,7 +55,7 @@ Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked unti
 | Gate C Preview | BLOCKED — dependency advisory cleared; release evidence remains stale and Phase 2A visual/performance findings remain open |
 | Gate C Production | CLOSED |
 | Stabilization | WAITING_OWNER — toolkit PASS; 0 days, 0 sessions, 0 incidents; Phase 3B NOT READY |
-| Real-user research | WAITING_OWNER — Phase 4A design complete; 0 participants, 0 sessions, 0 instrumentation; recruitment not authorized |
+| Real-user research | READY FOR PHASE 4B — owner-approved design; 0 participants, 0 sessions, 0 instrumentation |
 
 No phase may reinterpret a historical green gate as current. No protected baseline may be replaced to create a pass.
 

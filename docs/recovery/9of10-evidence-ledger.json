@@ -211,19 +211,23 @@
     },
     {
         "phase":  "4A",
-        "status":  "WAITING_OWNER",
-        "executedAt":  "2026-08-04T19:47:22.4086813-04:00",
+        "status":  "PASS",
+        "executedAt":  "2026-08-04T20:30:43.7760787-04:00",
         "startingCommit":  "32933458e6695b851d3e05a67a4b052047f279f7",
         "prePhaseTag":  "teoyube-9of10-phase4a-start-3293345",
-        "pilotDesignCommit":  "FINAL_PHASE4A_PILOT_DESIGN_COMMIT_REPORTED_IN_FINAL_HANDOFF",
-        "ownerDecisionCommit":  null,
+        "pilotDesignCommit":  "9ab9b8bf999783a87b81a86a07e6553bd7eaa18b",
+        "ownerDecisionCommit":  "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
         "deliverables":  15,
         "researchQuestions":  12,
         "tasks":  15,
-        "ownerDecision":  "PENDING",
-        "decisionFieldsPending":  15,
-        "recruitmentAuthorized":  false,
-        "phase4b":  "NOT_READY",
+        "ownerDecision":  "APPROVED",
+        "ownerDecisionId":  null,
+        "approvalReference":  "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
+        "ownerResponse":  "1",
+        "decisionFieldsApproved":  15,
+        "decisionFieldsPending":  0,
+        "recruitmentAuthorizedForPhase4b":  true,
+        "phase4b":  "READY",
         "participants":  0,
         "sessions":  0,
         "participantRecords":  0,
@@ -241,8 +245,8 @@
         "recovery":  "PASS",
         "immutableScreenshots":  72,
         "desktopDomSnapshots":  12,
-        "markdownReportSha256":  "bbbb45b293df6dda3c5f3e7c6d1e723924a05ca3558b6ce9359d8a61270f1a34",
-        "jsonReportSha256":  "3cd4884ab951288e0606df18b62efed0af5bb185260d942909de97d9740e1390",
+        "markdownReportSha256":  "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2",
+        "jsonReportSha256":  "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21",
         "artifacts":  [
                           {
                               "path":  "docs/research/phase-4a-starting-manifest.json",
@@ -250,15 +254,15 @@
                           },
                           {
                               "path":  "docs/research/pilot-protocol.md",
-                              "sha256":  "3fe7ac4fd78dda3e71c8f8949cf95c97004bc5d9191cd3599543b3fe70406013"
+                              "sha256":  "8af0ab090a4a6addf81788eaf0a495422f9c4c930ca6b57910c6ffc7013bee9d"
                           },
                           {
                               "path":  "docs/research/participant-consent.md",
-                              "sha256":  "741650a1b39ecda09c2539da3020ac2abd6022a48f00db9265436cb7174892fd"
+                              "sha256":  "3db4ecc3debb3b2b13c73b183a2c113e55c6145cf413c0f0ac45b7ec4e09021f"
                           },
                           {
                               "path":  "docs/research/recruitment-screen.md",
-                              "sha256":  "2d17ef1a9ecdbdff34d6a2f6355b50d9df2067b13e701f70519ade77e5764d5f"
+                              "sha256":  "19c048f882680699f627756dc09dab190f08149512829e499d00b7cb81685c2c"
                           },
                           {
                               "path":  "docs/research/task-guide.md",
@@ -278,31 +282,31 @@
                           },
                           {
                               "path":  "docs/research/anonymization-policy.md",
-                              "sha256":  "c2c6d9b92e4a57ae4904992e6f8cb314298a18696cc764a9365eb73e7100f3e5"
+                              "sha256":  "5fe39a56c053e82cebc5389fd1f009f3913bb75d2eb372efe063359c3cb018de"
                           },
                           {
                               "path":  "docs/research/analysis-plan.md",
-                              "sha256":  "65843e2e6e6b205ce40a69bd2e995b70e1efa9ed1c871b64f8a192c0667fc047"
+                              "sha256":  "b9cb95d7137c6f9c31a4f377c07b691f9243f91236785cbfa52012488ae05101"
                           },
                           {
                               "path":  "docs/research/data-dictionary.md",
-                              "sha256":  "8129345ad2aae2e9f2edd325fe644c36403b396add71419c03e9ee651aac5237"
+                              "sha256":  "6d6cb317b10a7d883c9199ce49daa4061c3c26a53cf9f77ab5eecf5693f28daf"
                           },
                           {
                               "path":  "docs/research/pilot-decision.md",
-                              "sha256":  "9c06429e9b0208330d281ff7d9622ad19dea6a80c8da42d0f3fa755f6615f9d3"
+                              "sha256":  "e3599dc2fa4baa9b4071ec37091bcfea059f1ea5b01bb3d13f14faff8bf4feee"
                           },
                           {
                               "path":  "docs/research/pilot-decision.json",
-                              "sha256":  "d9d85937b015d860749f6f93f2086fcb3a4b00ff856aee422288cf3485d2b2c3"
+                              "sha256":  "997c2d56a460cef81eada422faf76704532b018d78e4e6951e2bb9d17622eefb"
                           },
                           {
                               "path":  "docs/recovery/9of10-phase-4a-pilot-design-report.md",
-                              "sha256":  "bbbb45b293df6dda3c5f3e7c6d1e723924a05ca3558b6ce9359d8a61270f1a34"
+                              "sha256":  "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2"
                           },
                           {
                               "path":  "docs/recovery/9of10-phase-4a-pilot-design-report.json",
-                              "sha256":  "3cd4884ab951288e0606df18b62efed0af5bb185260d942909de97d9740e1390"
+                              "sha256":  "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21"
                           }
                       ]
     }

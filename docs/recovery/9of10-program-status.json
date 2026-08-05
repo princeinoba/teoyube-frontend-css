@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE4A_PILOT_DESIGN_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -187,17 +187,17 @@
     {
       "phaseId": "4",
       "name": "Real-user pilot",
-      "status": "WAITING_OWNER",
+      "status": "IN_PROGRESS",
       "entryGates": [
         "Phase 1 PASS"
       ],
       "startingCommit": "32933458e6695b851d3e05a67a4b052047f279f7",
-      "currentCommit": "FINAL_PHASE4A_PILOT_DESIGN_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE4A_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
-        "pilot protocol and owner decision",
-        "research-safe instrumentation",
-        "participant packets",
-        "analysis"
+        "pilot protocol and owner decision: COMPLETE",
+        "research-safe instrumentation: NOT_STARTED",
+        "participant packets: DRAFTED_NOT_USED",
+        "analysis: NOT_STARTED"
       ],
       "acceptanceCriteria": [
         "real consented participants",
@@ -206,31 +206,35 @@
         "owner-accepted analysis"
       ],
       "currentEvidence": [
-        "Phase 4A protocol, consent, screen, task, moderator, accessibility, safety, anonymization, analysis, data, and decision drafts complete",
-        "Every owner decision field remains PENDING",
-        "0 participants, 0 sessions, 0 participant records, 0 instrumentation, and 0 paid calls",
-        "Recruitment is not authorized"
+        "Phase 4A owner-approved design complete",
+        "Owner response choice 1 recorded without inventing an approval ID",
+        "15 of 15 decision fields approved as recommended",
+        "Phase 4B READY but not started",
+        "0 participants, 0 sessions, 0 participant records, 0 instrumentation, and 0 paid calls"
       ],
       "currentBlockers": [
-        "Owner decision required for participant profile, sample, accessibility representation, expert track, compensation, session mode, recording, optional AI/retrieval tasks, thresholds, retention, operator, and permitted data"
+        "Phase 4B has not been explicitly invoked",
+        "Research operator and exact retention period must be documented before participant data collection",
+        "Local privacy and operational review must be completed before recruitment"
       ],
       "ownerDecisionIds": [
-        "PHASE_4A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID"
+        "PHASE_4A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
+        "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID"
       ],
       "externalDependencies": [
         "participants",
         "approved researcher or owner-led sessions"
       ],
-      "rollback": "Revert preparation/instrumentation commits; preserve authentic anonymized research records",
-      "nextReviewTrigger": "Owner chooses option 1, 2, or 3 in docs/research/pilot-decision.md; silence is not approval",
+      "rollback": "Revert the Phase 4A owner-decision commit and pilot-design commit; preserve any future authentic anonymized research records",
+      "nextReviewTrigger": "Owner explicitly selects Phase 4B, Phase 5A, or Phase 6A",
       "subphases": [
         {
           "subphaseId": "4A",
-          "status": "WAITING_OWNER"
+          "status": "PASS"
         },
         {
           "subphaseId": "4B",
-          "status": "NOT_READY"
+          "status": "READY"
         },
         {
           "subphaseId": "4C",
@@ -484,12 +488,12 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "OWNER_DECISION_REQUIRED_FOR_PHASE4A_OR_OWNER_SELECTION_OF_5A_OR_6A",
+  "nextReadyPhase": "4B",
     "otherReadyIndependentSubphases": [
     "5A",
     "6A"
   ],
-  "nextWaitingPhase": "PHASE4A_AND_PHASE3_WAITING_OWNER;_PHASE2A_BLOCKED",
+  "nextWaitingPhase": "PHASE3_WAITING_OWNER_AND_PHASE2A_BLOCKED",
   "prompt23BUnlocked": false,
   "publicDeploymentAuthorized": false
 }

@@ -1,6 +1,6 @@
 # Teoyube pilot anonymization, retention, and deletion policy
 
-Status: **DRAFT - RETENTION PERIOD AND OPERATOR PENDING OWNER DECISION**
+Status: **OWNER-APPROVED POLICY - OPERATOR AND RETENTION PERIOD REQUIRED BEFORE COLLECTION**
 
 ## Separation
 

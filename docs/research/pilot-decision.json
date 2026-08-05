@@ -1,28 +1,32 @@
 {
   "schemaVersion": "teoyube-formative-pilot-decision-1.0.0",
   "phase": "4A",
-  "status": "PENDING",
+  "status": "APPROVED",
   "decisionId": null,
-  "ownerApproved": false,
-  "recruitmentAuthorized": false,
+  "ownerApproved": true,
+  "recruitmentAuthorized": true,
   "preparedAt": "2026-08-04T19:47:22.4086813-04:00",
   "targetParticipants": {
     "recommendation": "Adults 18+ able to consent",
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Adults 18+ able to consent"
   },
   "sampleSize": {
     "recommendation": 12,
     "minimum": 8,
     "maximum": 15,
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "12 recommended; minimum 8; maximum 15"
   },
   "accessibilityRepresentation": {
     "recommendation": "At least 2-3 participants or a separate equivalent accessibility track",
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "At least 2-3 participants or a separate equivalent accessibility track"
   },
   "expertReviewers": {
     "recommendation": "Optional 1-2 Christian ministry/expert reviewers analyzed separately",
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Optional 1-2 Christian ministry/expert reviewers analyzed separately"
   },
   "sessionMode": {
     "options": [
@@ -30,14 +34,16 @@
       "local",
       "mixed"
     ],
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Remote, local, or mixed moderated sessions"
   },
   "sessionDuration": {
     "recommendationMinutes": {
       "minimum": 60,
       "maximum": 75
     },
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "60-75 minutes"
   },
   "compensation": {
     "options": [
@@ -46,7 +52,8 @@
       "other fixed non-coercive arrangement"
     ],
     "positiveFeedbackConditionProhibited": true,
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Fixed and non-coercive if offered; never dependent on positive feedback"
   },
   "recording": {
     "options": [
@@ -56,7 +63,8 @@
       "optional video"
     ],
     "separateConsentRequired": true,
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Optional only; audio, screen, and video permissions separately consented"
   },
   "liveAiTask": {
     "options": [
@@ -65,7 +73,8 @@
     ],
     "syntheticContentOnly": true,
     "externalProcessingConsentRequired": true,
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Optional synthetic task only with separate external-processing consent"
   },
   "hybridRetrievalTask": {
     "options": [
@@ -73,30 +82,36 @@
       "exclude"
     ],
     "syntheticContentOnly": true,
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Optional synthetic task; similarity is not spiritual certainty"
   },
   "dataCollected": {
     "recommendation": "Approve the minimal set in docs/research/data-dictionary.md or state changes",
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Approved minimal set in docs/research/data-dictionary.md"
   },
   "retentionPeriod": {
     "recommendation": "Owner-selected period after local privacy review",
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "A specific period must be documented after local privacy review and before participant data collection"
   },
   "successThresholds": {
     "recommendation": "Approve the thresholds in docs/research/analysis-plan.md or state changes",
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Approved recommended thresholds in docs/research/analysis-plan.md"
   },
   "researchOperator": {
     "options": [
       "owner",
       "named trained researcher"
     ],
-    "decision": "PENDING"
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "Owner or a named trained researcher; identity must be documented before recruitment"
   },
   "recruitmentStart": {
-    "authorization": "NOT_AUTHORIZED",
-    "decision": "PENDING"
+    "authorization": "AUTHORIZED_FOR_PHASE4B_NOT_STARTED",
+    "decision": "APPROVED_AS_RECOMMENDED",
+    "selection": "May begin only when Phase 4B is explicitly invoked and the operator, retention period, environment, consent, and local review requirements are satisfied"
   },
   "fixedSafeguards": {
     "syntheticScenariosOnly": true,
@@ -108,7 +123,10 @@
     "instrumentationEnabledInPhase4a": false
   },
   "nextState": {
-    "phase4a": "WAITING_OWNER",
-    "phase4b": "NOT_READY"
-  }
+    "phase4a": "PASS",
+    "phase4b": "READY"
+  },
+  "approvalReference": "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
+  "ownerResponse": "1",
+  "approvedAt": "2026-08-04T20:30:43.7760787-04:00"
 }

@@ -93,14 +93,14 @@ The four Phase 2A blockers remain open and unchanged. The 216-cell gate was not 
 
 | Evidence | Current Phase 4A identity/result |
 | --- | --- |
-| Starting commit/tag | `32933458e6695b851d3e05a67a4b052047f279f7`; `teoyube-9of10-phase4a-start-3293345` |
+| Starting/design commit/tag | `32933458e6695b851d3e05a67a4b052047f279f7`; `9ab9b8bf999783a87b81a86a07e6553bd7eaa18b`; `teoyube-9of10-phase4a-start-3293345` |
 | Package | 15/15 deliverables; 12 research questions; 15 synthetic tasks |
-| Owner decision | `PENDING`; 15/15 decision fields pending; recruitment unauthorized |
+| Owner decision | `APPROVED`; response choice `1`; no separate approval ID; 15/15 decision fields approved as recommended |
+| Phase state | Phase 4A `PASS`; Phase 4B `READY` and not started; Phase 2A `BLOCKED`; Phase 3 `WAITING_OWNER` |
 | Participant evidence | 0 participants; 0 sessions; 0 records; 0 fabricated results |
 | Privacy/instrumentation/paid calls | PASS / 0 / 0 |
 | Runtime/recovery | PASS / PASS; 72 screenshots and 12 DOM snapshots unchanged |
-| Phase 4A reports | Markdown `bbbb45b293df6dda3c5f3e7c6d1e723924a05ca3558b6ce9359d8a61270f1a34`; JSON `3cd4884ab951288e0606df18b62efed0af5bb185260d942909de97d9740e1390` |
-| Phase state | Phase 4A `WAITING_OWNER`; Phase 4B `NOT_READY`; Phase 2A `BLOCKED`; Phase 3 `WAITING_OWNER` |
+| Phase 4A reports | Markdown `548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2`; JSON `1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21` |
 | Product/protected/baseline/package changes | 0 / 0 / 0 / 0 |
 
 ### Phase 4A artifact hashes
@@ -108,19 +108,19 @@ The four Phase 2A blockers remain open and unchanged. The 216-cell gate was not 
 | Path | SHA-256 |
 | --- | --- |
 | `docs/research/phase-4a-starting-manifest.json` | `9f6abbf8529d1c3968cf34b55708ccbc08e51a56c29fc3665055c18c7bb9a127` |
-| `docs/research/pilot-protocol.md` | `3fe7ac4fd78dda3e71c8f8949cf95c97004bc5d9191cd3599543b3fe70406013` |
-| `docs/research/participant-consent.md` | `741650a1b39ecda09c2539da3020ac2abd6022a48f00db9265436cb7174892fd` |
-| `docs/research/recruitment-screen.md` | `2d17ef1a9ecdbdff34d6a2f6355b50d9df2067b13e701f70519ade77e5764d5f` |
+| `docs/research/pilot-protocol.md` | `8af0ab090a4a6addf81788eaf0a495422f9c4c930ca6b57910c6ffc7013bee9d` |
+| `docs/research/participant-consent.md` | `3db4ecc3debb3b2b13c73b183a2c113e55c6145cf413c0f0ac45b7ec4e09021f` |
+| `docs/research/recruitment-screen.md` | `19c048f882680699f627756dc09dab190f08149512829e499d00b7cb81685c2c` |
 | `docs/research/task-guide.md` | `3d6ff54ddbaf3c18688246c117ef67e248b9a719eeea1e33c493930aa5b7253c` |
 | `docs/research/interview-guide.md` | `1d78952abbdeb9d9d450b5aa57d3e281361bc90e8ac97ccb4e6fac2e9188c165` |
 | `docs/research/accessibility-guide.md` | `26710a748dc9883b74c79bcc6a9f1d9a7a3a8e544806eae104e3ef78f8d17b1d` |
 | `docs/research/adverse-event-protocol.md` | `f48ed7f1391d958301ab0b2a4df7a9b662ae914534358ddd5d59025b3e6d3d93` |
-| `docs/research/anonymization-policy.md` | `c2c6d9b92e4a57ae4904992e6f8cb314298a18696cc764a9365eb73e7100f3e5` |
-| `docs/research/analysis-plan.md` | `65843e2e6e6b205ce40a69bd2e995b70e1efa9ed1c871b64f8a192c0667fc047` |
-| `docs/research/data-dictionary.md` | `8129345ad2aae2e9f2edd325fe644c36403b396add71419c03e9ee651aac5237` |
-| `docs/research/pilot-decision.md` | `9c06429e9b0208330d281ff7d9622ad19dea6a80c8da42d0f3fa755f6615f9d3` |
-| `docs/research/pilot-decision.json` | `d9d85937b015d860749f6f93f2086fcb3a4b00ff856aee422288cf3485d2b2c3` |
-| `docs/recovery/9of10-phase-4a-pilot-design-report.md` | `bbbb45b293df6dda3c5f3e7c6d1e723924a05ca3558b6ce9359d8a61270f1a34` |
-| `docs/recovery/9of10-phase-4a-pilot-design-report.json` | `3cd4884ab951288e0606df18b62efed0af5bb185260d942909de97d9740e1390` |
+| `docs/research/anonymization-policy.md` | `5fe39a56c053e82cebc5389fd1f009f3913bb75d2eb372efe063359c3cb018de` |
+| `docs/research/analysis-plan.md` | `b9cb95d7137c6f9c31a4f377c07b691f9243f91236785cbfa52012488ae05101` |
+| `docs/research/data-dictionary.md` | `6d6cb317b10a7d883c9199ce49daa4061c3c26a53cf9f77ab5eecf5693f28daf` |
+| `docs/research/pilot-decision.md` | `e3599dc2fa4baa9b4071ec37091bcfea059f1ea5b01bb3d13f14faff8bf4feee` |
+| `docs/research/pilot-decision.json` | `997c2d56a460cef81eada422faf76704532b018d78e4e6951e2bb9d17622eefb` |
+| `docs/recovery/9of10-phase-4a-pilot-design-report.md` | `548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2` |
+| `docs/recovery/9of10-phase-4a-pilot-design-report.json` | `1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21` |
 
-No participant, contact, recording, instrumentation, product, visual, package, baseline, or paid-call artifact was created. Silence is not approval; Phase 4B remains locked.
+No participant, contact, recording, instrumentation, product, visual, package, baseline, or paid-call artifact was created. Phase 4B requires a separate explicit task.

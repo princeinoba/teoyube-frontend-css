@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04T19:47:22.4086813-04:00",
+  "updatedAt": "2026-08-04T20:30:43.7760787-04:00",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -66,13 +66,23 @@
         "no paid calls",
         "all pilot decision fields remain pending until explicit owner response"
       ]
+    },
+    {
+      "decisionId": "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
+      "scope": "Approve the complete recommended Phase 4A formative pilot design and make Phase 4B ready without starting it",
+      "status": "APPROVED_BY_EXPLICIT_OWNER_RESPONSE",
+      "source": "Owner reply 1 to the mandatory Phase 4A pilot decision prompt",
+      "approvedAt": "2026-08-04T20:30:43.7760787-04:00",
+      "limitations": [
+        "No Phase 4B execution in the approval-recording turn",
+        "no participant contact or records in Phase 4A",
+        "no instrumentation or product changes",
+        "operator, retention period, environment, consent, and local review prerequisites apply before recruitment",
+        "no paid calls"
+      ]
     }
   ],
   "pendingDecisionGroups": [
-    {
-      "phase": "4A",
-      "decision": "Consolidated pilot decision in docs/research/pilot-decision.*: participants, sample, accessibility representation, expert track, mode, duration, compensation, recording, live-AI task, hybrid retrieval task, minimal data, retention, thresholds, operator, and recruitment start; every field PENDING"
-    },
     {
       "phase": "5B",
       "decision": "path-specific accessibility fixes affecting protected output"

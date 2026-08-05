@@ -10,7 +10,7 @@ This research does not test your faith, spiritual maturity, holiness, or whether
 
 ## Your choice
 
-Participation is voluntary. You may skip any question or task, pause, or withdraw without penalty. Compensation, if the owner approves it, does not depend on completing every task or giving positive feedback.
+Participation is voluntary. You may skip any question or task, pause, or withdraw without penalty. Compensation, if offered under the approved pilot design, is fixed and does not depend on completing every task or giving positive feedback.
 
 ## What you will do
 

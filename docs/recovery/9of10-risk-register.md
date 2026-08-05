@@ -6,7 +6,7 @@
 | 9R-02 | Stale release evidence | Current validation blocked with 1,087 failures | Phase 2B/2C | Current-source lineage and Gate C Preview PASS |
 | 9R-03 | Prompt 24 composite safety-hash input discrepancy | Historical report preserved; authoritative hash locked in Phase 1 | Phase 1 evidence integrity | Phase 1 ledger remains authoritative for later dependency comparisons |
 | 9R-04 | Stabilization evidence incomplete | Phase 3A toolkit PASS; authentic evidence remains 0 days, 0 sessions, and 0 incidents | Phase 3 | Seven distinct days, ten owner-confirmed meaningful sessions, full coverage, no disqualifying incident, and owner closeout |
-| 9R-05 | Real-user evidence absent | Phase 4A pilot package drafted; consolidated owner decision pending; research not run; 0 participants and 0 instrumentation | Phase 4 | Owner-approved design followed by consented research and owner-accepted real participant analysis |
+| 9R-05 | Real-user evidence absent | Phase 4A design owner-approved; Phase 4B READY but not started; 0 participants, sessions, records, or instrumentation | Phase 4 | Execute approved pilot with real consented participants and obtain owner-accepted analysis |
 | 9R-06 | Accessibility conformance unproved | Current 72-cell audit exposes 11 extra Next Canon focus controls at all six viewports; manual/assistive evidence debt remains | Phase 5 and Phase 2A recheck | No critical issue; high issues fixed or accepted with evidence |
 | 9R-07 | Production infrastructure absent | Local/test adapters only | Phase 6 | Managed, isolated, restored, monitored staging evidence |
 | 9R-08 | Production AI/release gates closed | Gate B/C Production closed | Phase 7 | Human, red-team, data-control, load, cost, drill, and owner gates PASS |

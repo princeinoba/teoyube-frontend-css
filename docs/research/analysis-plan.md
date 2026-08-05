@@ -1,6 +1,6 @@
 # Teoyube formative pilot analysis plan
 
-Status: **DRAFT - OWNER DECISION REQUIRED BEFORE USE**
+Status: **OWNER-APPROVED THRESHOLDS - PILOT NOT STARTED**
 
 ## Analysis groups
 

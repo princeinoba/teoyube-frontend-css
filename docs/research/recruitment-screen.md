@@ -1,6 +1,6 @@
 # Teoyube formative pilot recruitment screen
 
-Status: **DRAFT - DO NOT RECRUIT UNTIL OWNER APPROVAL**
+Status: **OWNER-APPROVED DRAFT - DO NOT RECRUIT UNTIL PHASE 4B IS EXPLICITLY INVOKED**
 
 Use a candidate code rather than a name in this form. Store contact details separately.
 

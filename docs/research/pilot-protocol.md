@@ -1,6 +1,6 @@
 # Teoyube formative pilot protocol
 
-Status: **DRAFT - OWNER DECISION REQUIRED BEFORE RECRUITMENT**
+Status: **OWNER-APPROVED DESIGN - PHASE 4B NOT STARTED**
 
 Protocol version: `teoyube-formative-pilot-1.0.0`
 

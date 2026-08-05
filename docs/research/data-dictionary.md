@@ -1,6 +1,6 @@
 # Teoyube formative pilot data dictionary
 
-Status: **DRAFT - MINIMAL DATA SET; RETENTION PENDING OWNER DECISION**
+Status: **OWNER-APPROVED MINIMAL DATA SET - RETENTION PERIOD REQUIRED BEFORE COLLECTION**
 
 | Field | Type | Purpose | Required | Privacy rule |
 | --- | --- | --- | --- | --- |
