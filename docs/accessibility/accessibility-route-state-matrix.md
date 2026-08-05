@@ -42,4 +42,3 @@ All 23 retained public routes were audited in their default state at all six pro
 - Duplicate-ID cells: 0
 
 Excluded from public conformance scope: owner-only `/roadmap`, internal `/graph`, development-only `/dashboard`, and redirect alias `/compass`.
-

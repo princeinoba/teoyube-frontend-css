@@ -18,4 +18,3 @@ The audit also read the complete product-source PDFs under `docs/product-source/
 - APG examples are implementation guidance, not a substitute for normative HTML and ARIA requirements.
 - WCAG 3.0 results are not reported because its current Working Draft is not an approved conformance target.
 - Criteria requiring human judgment, assistive-technology output, media review, cognition review, or physical-device input remain explicitly incomplete until that evidence exists.
-

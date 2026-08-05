@@ -56,4 +56,3 @@
     { "route": "/compass", "reason": "redirect alias to /calling-compass" }
   ]
 }
-

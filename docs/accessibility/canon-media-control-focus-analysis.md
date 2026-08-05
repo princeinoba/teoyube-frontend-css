@@ -7,4 +7,3 @@ The approved static markup contains no `data-canon-video-stage` controls. The Ne
 A second independent finding, A11Y-004, is a `button.canon-recent-merged-row` located within an `aria-hidden` subtree while remaining focusable.
 
 No controller, markup, CSS, ARIA, media mapping, keyboard behavior, or baseline was changed in Phase 5A.
-

@@ -527,6 +527,111 @@
       "realParticipantCollectionAuthorized": false,
       "manualPrerequisitesComplete": false,
       "phase4Overall": "WAITING_OWNER_SESSION_DATA"
+    },
+    {
+      "phase": "5A",
+      "status": "PASS",
+      "executedAt": "2026-08-05T09:58:00-04:00",
+      "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
+      "prePhaseTag": "teoyube-9of10-phase5a-start-aa33ed6",
+      "evidenceCommit": "378f7e8a581df8785784a25adc3db1aad95e3cfa",
+      "matrixCommit": "3f2d4e6f4a40ca4d6a70e706226261010cdced0f",
+      "finalCommit": "FINAL_PHASE5A_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "retainedRoutes": 23,
+      "protectedViewports": 6,
+      "defaultCells": 138,
+      "modeCells": 115,
+      "stateCells": 58,
+      "totalAuditCells": 311,
+      "keyboardCells": 81,
+      "harnessErrors": 0,
+      "issueCount": 11,
+      "confirmedIssues": 8,
+      "manualEvidenceGaps": 3,
+      "severity": {
+        "critical": 1,
+        "high": 8,
+        "medium": 2,
+        "low": 0
+      },
+      "wcagCriteria": 55,
+      "conformanceClaim": false,
+      "assistiveTechnology": {
+        "keyboard": "AUTOMATED_PARTIAL",
+        "chromeAccessibilityEngine": "COMPLETED_AUTOMATED",
+        "narrator": "INSTALLED_NOT_OBSERVABLE_NOT_TESTED",
+        "nvda": "NOT_INSTALLED",
+        "jaws": "NOT_INSTALLED",
+        "voiceOver": "PLATFORM_UNAVAILABLE",
+        "talkBack": "DEVICE_UNAVAILABLE",
+        "brailleSwitchSpeech": "UNAVAILABLE_OR_NOT_CONFIGURED"
+      },
+      "verification": {
+        "cleanInstall": "PASS_408_PACKAGES_LOCK_UNCHANGED",
+        "fullAudit": "PASS_ZERO_VULNERABILITIES",
+        "productionAudit": "PASS_ZERO_VULNERABILITIES",
+        "typecheck": "PASS",
+        "lint": "PASS",
+        "focusedAuditRunnerLint": "PASS",
+        "unit": "PASS_394_ONE_INTENTIONAL_SKIP",
+        "build": "PASS_NEXT_16_3_0_58_PAGES",
+        "browserParallel": "LOAD_FLAKY_43_PASS_11_FAIL_3_SKIP",
+        "browserSerial": "PASS_54_3_STATIC_SKIPS",
+        "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+        "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+        "dualRuntime": "PASS_83_LISTENERS_CLOSED",
+        "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+        "legacyReleaseAccessibilityAggregator": "BLOCKED_ZERO_CURRENT_216_CELL_INPUTS_NOT_WEAKENED"
+      },
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssFilesChanged": 0,
+      "domClassChanges": 0,
+      "assetFilesChanged": 0,
+      "baselineFilesChanged": 0,
+      "packageJsonChanged": false,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0,
+      "phase5Overall": "IN_PROGRESS",
+      "phase5b": "READY_NOT_STARTED",
+      "artifacts": [
+        {
+          "path": "docs/accessibility/phase-5a-starting-manifest.json",
+          "sha256": "326ea8c91e0d964a8e1328817d4ceae72faed154cb85daf8685390a230bdcbfc"
+        },
+        {
+          "path": "docs/accessibility/phase-5a-automated-audit-evidence.json",
+          "sha256": "b36beb5417cb23f88ed292cb55eb56833e479fa5c6ac043374a9e8ce34b961db"
+        },
+        {
+          "path": "docs/accessibility/accessibility-route-state-matrix.json",
+          "sha256": "2d5900e20d8c7cb43ae3a4d5fe1b7e0b74a456e1451d070914c6dd057cc69df4"
+        },
+        {
+          "path": "docs/accessibility/wcag-2.2-aa-conformance-matrix.json",
+          "sha256": "f7f092dc13ada27c61238e737def9575848e3f7f8e03411919f155f0ef9137be"
+        },
+        {
+          "path": "docs/accessibility/accessibility-issue-register.json",
+          "sha256": "4f3de9cd063908ede20b6ca23f66b73c599f7cea04abde9a795846109a5a4732"
+        },
+        {
+          "path": "docs/accessibility/canon-media-control-focus-analysis.json",
+          "sha256": "4f6fd96d81e0304718c1c4fd2535363d88c9d4a288742085232bec04ee1d734d"
+        },
+        {
+          "path": "docs/accessibility/assistive-technology-results.json",
+          "sha256": "2e097083b5eff9ef97cd1ffda35cfa752ee6cef41a45b3e186c9a1ede8ce2d5e"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-5a-accessibility-audit-report.json",
+          "sha256": "596c0ff1241105d370ecc7b29eb87495fef102f3ce680052091456674ef02adf"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-5a-accessibility-audit-report.md",
+          "sha256": "4acd78ad2ac14954ef2c15f76fd1f53a079043fdf51a3d9efb2cb46b5763b379"
+        }
+      ]
     }
   ],
   "workspaceAtStart": {
@@ -564,5 +669,23 @@
     "phase4c": "PASS",
     "phase4Overall": "WAITING_OWNER_SESSION_DATA",
     "phase4d": "NOT_READY"
+  },
+  "workspaceAfterPhase5a": {
+    "recordedAt": "2026-08-05T09:58:00-04:00",
+    "head": "FINAL_PHASE5A_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "productSourceFilesChanged": 0,
+    "protectedVisualFilesChanged": 0,
+    "immutableBaselineFilesChanged": 0,
+    "ownerApprovedBaselineFilesChanged": 0,
+    "packageJsonChanged": false,
+    "packageLockFilesChanged": 0,
+    "paidCalls": 0,
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA",
+    "phase5a": "PASS",
+    "phase5b": "READY_NOT_STARTED",
+    "phase5Overall": "IN_PROGRESS",
+    "program": "IN_PROGRESS"
   }
 }

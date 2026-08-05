@@ -61,4 +61,3 @@
 | 4.1.3 Status Messages | AA | Partial | Live regions inventoried; observable AT test absent. |
 
 `SUPPORTED_BY_AUTOMATION` is deliberately rendered as “Automation support,” not “Pass.” The machine-readable JSON contains the full evidence wording and status vocabulary.
-

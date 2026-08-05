@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE5A_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -260,16 +260,16 @@
     {
       "phaseId": "5",
       "name": "Accessibility remediation",
-      "status": "READY",
+      "status": "IN_PROGRESS",
       "entryGates": [
         "Phase 1 PASS"
       ],
-      "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-      "currentCommit": "NOT_STARTED",
+      "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
+      "currentCommit": "FINAL_PHASE5A_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
-        "current accessibility audit",
-        "path-specific owner packages",
-        "approved fixes"
+        "current accessibility audit: COMPLETE",
+        "path-specific owner packages: READY",
+        "approved fixes: NOT_STARTED"
       ],
       "acceptanceCriteria": [
         "no unresolved critical accessibility issue",
@@ -277,12 +277,17 @@
         "no unapproved visual drift"
       ],
       "currentEvidence": [
-        "visual parity PASS",
-        "accessibility debt documented",
-        "real-user accessibility not proven"
+        "311 current audit cells across 23 routes and six protected viewports; zero harness errors",
+        "11 registered findings: 1 critical, 8 high, 2 medium",
+        "8 confirmed product/accessibility or parity issues and 3 manual evidence gaps",
+        "72 immutable screenshots and 12 desktop DOM snapshots unchanged",
+        "no WCAG conformance claim; real assistive-technology output remains unproved"
       ],
       "currentBlockers": [
-        "protected DOM, attribute, copy, layout, or visible fixes require narrow owner approval"
+        "Eight confirmed issues require separately authorized Phase 5B resolution",
+        "protected DOM, attribute, copy, layout, or visible fixes require narrow owner approval",
+        "manual assistive-technology, contrast, focus-obscuration, physical-device, and external-media evidence remains",
+        "inherited release accessibility aggregator has no current 216-cell controller input"
       ],
       "ownerDecisionIds": [],
       "externalDependencies": [
@@ -290,15 +295,15 @@
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Select Phase 5A for a current audit",
+      "nextReviewTrigger": "Owner separately authorizes a scoped Phase 5B remediation package; Phase 5B has not started",
       "subphases": [
         {
           "subphaseId": "5A",
-          "status": "READY"
+          "status": "PASS"
         },
         {
           "subphaseId": "5B",
-          "status": "NOT_STARTED"
+          "status": "READY"
         },
         {
           "subphaseId": "5C",
@@ -499,9 +504,9 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "5A_OR_6A",
+  "nextReadyPhase": "5B_OR_6A",
   "otherReadyIndependentSubphases": [
-    "5A",
+    "5B",
     "6A"
   ],
   "nextWaitingPhase": "PHASE4_WAITING_OWNER_SESSION_DATA_PHASE3_WAITING_OWNER_PHASE2A_BLOCKED",

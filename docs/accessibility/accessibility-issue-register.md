@@ -21,4 +21,3 @@ Phase 5A registers 11 items: eight confirmed product/accessibility defects or de
 Phase 5B may begin only after owner review of the exact visual/DOM implications. A11Y-001 through A11Y-008 are remediation candidates. A11Y-009 through A11Y-011 require manual evidence first and are not permission to redesign, change copy, alter baselines, or connect external services.
 
 Search and Promise Search remain separate evidence surfaces. `/search` completed 13 cells and `/promise-search` completed 15 cells with no current automated violation; that result is not a conformance claim.
-

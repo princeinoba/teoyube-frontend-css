@@ -197,3 +197,22 @@ No owner recruitment approval was prefilled. No real participant or session arti
 | Research collection | Disabled; real participant collection unauthorized until prerequisites and separate activation verification |
 | Manual prerequisites | Name operator; select separate non-Git contact location; complete local/privacy review |
 | Actual participants/sessions/records/paid calls | 0 / 0 / 0 / 0 |
+
+## Phase 5A update
+
+| Evidence | Current Phase 5A identity/result |
+| --- | --- |
+| Starting commit/tag | `aa33ed65727222d9dd90cdfb875a242d505f22d1`; `teoyube-9of10-phase5a-start-aa33ed6` |
+| Audit/matrix commits | `378f7e8a581df8785784a25adc3db1aad95e3cfa`; `3f2d4e6f4a40ca4d6a70e706226261010cdced0f` |
+| Coverage | 23 routes; 6 viewports; 138 defaults; 115 modes; 58 states; 311 total cells; 81 keyboard cells |
+| Harness | PASS, zero execution errors |
+| Findings | 11: one critical, eight high, two medium; 8 confirmed issues and 3 manual evidence gaps |
+| Standards | 55 WCAG 2.2 A/AA criteria mapped; WAI-ARIA 1.2 and ARIA in HTML applied; no conformance claim |
+| Assistive technology | Chrome accessibility automation completed; real Narrator output not observable; other named desktop/mobile AT unavailable or not configured |
+| Build/type/lint/unit/browser | PASS; serial browser 54 pass and 3 static skips; unchanged parallel run retained as load-flaky |
+| Security/runtime/recovery | PASS; 18 controls; Next canonical/static rollback; 83 dual-runtime checks; 72 screenshots and 12 DOM snapshots unchanged |
+| Legacy aggregator | BLOCKED with zero current 216-cell inputs; not regenerated or weakened |
+| Product/protected/CSS/DOM/assets/baselines/package/lock/paid calls | 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0 |
+| Phase state | Phase 5A PASS; Phase 5B READY and not started; Phase 5 IN_PROGRESS; Program IN_PROGRESS |
+
+Phase 5A is an audit-and-evidence pass only. It neither establishes WCAG conformance nor authorizes remediation. Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAITING_OWNER_SESSION_DATA.

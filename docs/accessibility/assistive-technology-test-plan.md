@@ -24,4 +24,3 @@
 9. Repeat at 200% and 400% zoom where applicable, increased text spacing, forced colors, reduced motion, and mobile font scaling.
 
 Use synthetic content only. Do not enter private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory disclosures. Do not enable live AI or external recording for this audit.
-

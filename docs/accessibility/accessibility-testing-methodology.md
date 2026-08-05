@@ -58,4 +58,3 @@ The final run produced 311 cells, 81 keyboard-traversal cells, and zero harness 
 - `PARTIAL_EVIDENCE`: some relevant evidence exists; human or AT validation remains.
 - `MANUAL_VALIDATION_REQUIRED`: no reliable automated determination is possible.
 - `NOT_APPLICABLE_OBSERVED`: no in-scope content requiring the criterion was observed; later content can change this.
-

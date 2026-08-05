@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "program": "Teoyube 9/10",
+  "phase": "5A",
+  "status": "PASS",
+  "startedFrom": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
+  "prePhaseTag": "teoyube-9of10-phase5a-start-aa33ed6",
+  "evidenceCommit": "378f7e8a581df8785784a25adc3db1aad95e3cfa",
+  "matrixCommit": "3f2d4e6f4a40ca4d6a70e706226261010cdced0f",
+  "finalCommit": "FINAL_PHASE5A_DOCUMENTATION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "executedAt": "2026-08-05T09:58:00-04:00",
+  "scope": {
+    "retainedRoutes": 23,
+    "viewports": 6,
+    "defaultCells": 138,
+    "modeCells": 115,
+    "stateCells": 58,
+    "totalAuditCells": 311,
+    "keyboardCells": 81,
+    "executionErrors": 0
+  },
+  "standards": {
+    "wcag": "2.2 W3C Recommendation",
+    "target": "A and AA evidence matrix",
+    "waiAria": "1.2 W3C Recommendation",
+    "ariaInHtml": "W3C Recommendation 2026-04-15",
+    "apg": "informative guidance only",
+    "wcag3": "informative Working Draft only"
+  },
+  "findings": {
+    "issueCount": 11,
+    "confirmedProductOrParityIssues": 8,
+    "manualEvidenceGaps": 3,
+    "severity": { "critical": 1, "high": 8, "medium": 2, "low": 0 },
+    "axeViolationRules": 5,
+    "positiveTabindexCells": 0,
+    "duplicateIdCells": 0,
+    "horizontalOverflowCells": 0,
+    "conformanceClaim": "NO"
+  },
+  "highRiskResults": {
+    "canonNextOnlyMediaFocusControls": 11,
+    "todayAriaHiddenFocus": "CONFIRMED",
+    "canonHiddenFocus": "CONFIRMED",
+    "lexiconInvalidAria": "CONFIRMED",
+    "missingProgrammaticNames": ["/lexicon", "/embedded-videos", "/tables"],
+    "search": "AUDITED_INDEPENDENTLY_NO_AUTOMATED_VIOLATION",
+    "promiseSearch": "AUDITED_INDEPENDENTLY_NO_AUTOMATED_VIOLATION"
+  },
+  "assistiveTechnology": {
+    "keyboard": "AUTOMATED_PARTIAL",
+    "chromeAccessibilityEngine": "COMPLETED_AUTOMATED",
+    "narrator": "INSTALLED_NOT_OBSERVABLE_NOT_TESTED",
+    "nvda": "NOT_INSTALLED",
+    "jaws": "NOT_INSTALLED",
+    "voiceOver": "PLATFORM_UNAVAILABLE",
+    "talkBack": "DEVICE_UNAVAILABLE",
+    "brailleSwitchSpeech": "UNAVAILABLE_OR_NOT_CONFIGURED"
+  },
+  "verification": {
+    "cleanInstall": "PASS_408_PACKAGES_LOCK_UNCHANGED",
+    "fullAudit": "PASS_ZERO_VULNERABILITIES",
+    "productionAudit": "PASS_ZERO_VULNERABILITIES",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "focusedAuditRunnerLint": "PASS",
+    "unit": "PASS_394_ONE_INTENTIONAL_SKIP",
+    "build": "PASS_NEXT_16_3_0_58_PAGES",
+    "browserParallel": "LOAD_FLAKY_43_PASS_11_FAIL_3_SKIP",
+    "browserSerial": "PASS_54_3_STATIC_SKIPS",
+    "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+    "dualRuntime": "PASS_83_LISTENERS_CLOSED",
+    "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+    "legacyReleaseAccessibilityAggregator": "BLOCKED_ZERO_CURRENT_216_CELL_INPUTS_NOT_WEAKENED"
+  },
+  "changeCounts": {
+    "productSourceFilesChanged": 0,
+    "protectedVisualFilesChanged": 0,
+    "cssFilesChanged": 0,
+    "domClassChanges": 0,
+    "assetFilesChanged": 0,
+    "immutableBaselineFilesChanged": 0,
+    "ownerApprovedBaselineFilesChanged": 0,
+    "packageJsonChanged": 0,
+    "packageLockFilesChanged": 0,
+    "paidCalls": 0
+  },
+  "programState": {
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA",
+    "phase5": "IN_PROGRESS",
+    "phase5a": "PASS",
+    "phase5b": "READY_NOT_STARTED",
+    "phase5c": "NOT_STARTED",
+    "program": "IN_PROGRESS"
+  },
+  "knownBlockers": [
+    "Eight confirmed accessibility/product parity issues require owner-scoped Phase 5B decisions and fixes",
+    "Narrator and other real assistive-technology output is not validated",
+    "Manual contrast, focus obscuration, physical device, and external media review remains",
+    "The inherited release accessibility aggregator has no current 216-cell controller input",
+    "Phase 2A Canon focus, performance, CSS-budget, and 216-cell blockers remain",
+    "Phase 3 and Phase 4 require authentic owner/session evidence"
+  ],
+  "rollback": "git revert <phase-5a-final-commit> 3f2d4e6f4a40ca4d6a70e706226261010cdced0f 378f7e8a581df8785784a25adc3db1aad95e3cfa",
+  "nextGate": "PHASE_5B_READY_NOT_AUTHORIZED"
+}

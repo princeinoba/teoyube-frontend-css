@@ -26,4 +26,3 @@
 - Real-user accessibility pilot with the already approved synthetic-scenario and consent boundaries; do not create participants automatically.
 
 All testing must use synthetic content unless a separately consented research protocol authorizes otherwise. No item in this backlog authorizes a product change or Phase 5B implementation.
-

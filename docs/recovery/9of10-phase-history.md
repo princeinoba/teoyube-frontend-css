@@ -181,3 +181,33 @@ Approved at: `2026-08-05T07:16:04.7290862-04:00`
 Decision reference: `PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID`
 
 The owner authorized recruitment for the exact proposed pilot. Phase 4C is **PASS**, Phase 4 overall is **WAITING_OWNER_SESSION_DATA**, and Phase 4D remains **NOT READY**. The decision creates no participant identity, contact, consent, event, recording, session, or finding. Research mode and real participant collection remain disabled while the operator, separate contact-data location, local/privacy review, and separately verified real-study activation remain outstanding. Actual participants/sessions/records and paid calls remain 0/0/0/0.
+
+## Phase 5A - current accessibility audit
+
+Status: **PASS**
+Started from: `aa33ed65727222d9dd90cdfb875a242d505f22d1`
+Pre-phase tag: `teoyube-9of10-phase5a-start-aa33ed6`
+Audit evidence commit: `378f7e8a581df8785784a25adc3db1aad95e3cfa`
+Matrix/issue commit: `3f2d4e6f4a40ca4d6a70e706226261010cdced0f`
+
+### Actions
+
+1. Revalidated the branch, exact starting commit, clean tracked worktree, canonical Next runtime, static rollback, recovery contracts, open program blockers, authoritative npm, and listener ownership.
+2. Audited 23 retained public routes at all six protected viewports, then exercised text spacing, reduced motion, forced colors, 320-pixel reflow, effective 200%-zoom layout, focused interaction states, and keyboard traversal.
+3. Audited Search and Promise Search separately, inventoried Canon media focus behavior, and mapped all 55 WCAG 2.2 A/AA criteria.
+4. Created a current issue register, assistive-technology plan/results, manual-device backlog, route/state matrix, methodology, standards ledger, and compact raw-evidence digest.
+5. Made no product, CSS, DOM/class/ARIA, asset, baseline, package, lockfile, runtime, external-network, or paid-provider change.
+
+### Evidence
+
+- Current audit: PASS, 311 cells and zero harness errors.
+- Findings: 11 total; one critical, eight high, two medium; 8 confirmed product/accessibility or parity issues and 3 manual evidence gaps.
+- WCAG conformance claim: NO.
+- Real assistive-technology output: not validated; limitations recorded without inference.
+- Typecheck, lint, unit, build, serial browser, security, runtime, dual-runtime, and recovery: PASS.
+- Legacy release accessibility aggregator: BLOCKED with zero current 216-cell inputs; not weakened.
+- Protected visual files, immutable baselines, and owner-approved baselines changed: zero.
+
+### Result
+
+Phase 5A is **PASS** as an audit-and-evidence phase. Phase 5B is **READY but not started or authorized**, and Phase 5 overall is **IN_PROGRESS**. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, Phase 4 remains **WAITING_OWNER_SESSION_DATA**, and the program remains **IN_PROGRESS**.
