@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-002",
+  "title": "Inactive Today carousel slides retain focusable descendants",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PRODUCT_DEFECT",
+    "summary": "axe aria-hidden-focus and custom hidden-focus scan across every viewport/mode; action and featured-story controls remain in aria-hidden slides",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/"
+  ],
+  "affectedStates": [
+    "default",
+    "promise-carousel-next",
+    "featured-story-next",
+    "autoplay-advance"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "keyboard users",
+    "screen-reader users",
+    "switch users"
+  ],
+  "wcagCriteria": [
+    "2.4.3",
+    "4.1.2"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#focus-order",
+    "https://www.w3.org/TR/WCAG22/#name-role-value",
+    "https://www.w3.org/TR/wai-aria-1.2/#aria-hidden",
+    "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute"
+  ],
+  "currentBehavior": "Inactive promise and featured-story slides are aria-hidden while their links and buttons remain sequentially focusable.",
+  "expectedBehavior": "Only the active slide contributes operable descendants to the accessibility tree and sequential focus order; activation restores the active controls without changing layout.",
+  "staticBehavior": "app.js renders inactive .featured-story-slide nodes with aria-hidden=true and focusable descendants; the promise carousel follows the same hidden-focus pattern.",
+  "nextBehavior": "ApprovedTodayView sets aria-hidden on inactive promise and featured-story articles but renders their buttons/links with normal focusability.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "PROTECTED_ATTRIBUTE_CHANGE",
+  "proposedAction": "In Phase 5C, make inactive slide containers inert while aria-hidden and remove inert when activated in both runtimes; preserve every control, label, transition, timing, and visible slide.",
+  "proposedFiles": [
+    "app.js",
+    "src/app/_today/ApprovedTodayView.tsx"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json"
+  ],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "attribute_only",
+  "expectedBehaviorImpact": "Tab navigation skips inactive slide controls and restores them when their slide becomes active; pointer, autoplay, swipe, and arrow controls remain unchanged.",
+  "risks": [
+    "Failing to remove inert on activation would block the visible slide.",
+    "Changing carousel timing or rendering would exceed scope."
+  ],
+  "tests": [
+    "axe aria-hidden-focus passes for both carousels in every state and viewport",
+    "Tab order contains controls from the active slide only",
+    "autoplay, arrows, dots, swipe, hover pause, and keyboard arrows remain functional",
+    "72 screenshots and Today parity states rerun"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-1",
+  "rollback": "Revert only the A11Y-002 Phase 5C commit; restore no baseline and rerun recovery:verify.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b"
+}

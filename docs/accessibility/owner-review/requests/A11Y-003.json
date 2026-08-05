@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-003",
+  "title": "Next Canon adds eleven media stages to the keyboard focus order",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_ACCESSIBILITY_PARITY_DELTA",
+    "summary": "CanonPageController assigns role=button, tabindex=0, aria-pressed, and labels to mappings D02-D12; approved static markup has no data-canon-video-stage controls",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/canon"
+  ],
+  "affectedStates": [
+    "default",
+    "media-stage-focused",
+    "media-stage-playing"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "keyboard users",
+    "screen-reader users",
+    "switch users",
+    "users sensitive to long tab sequences"
+  ],
+  "wcagCriteria": [
+    "2.4.3",
+    "2.4.6",
+    "4.1.2"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#focus-order",
+    "https://www.w3.org/TR/WCAG22/#headings-and-labels",
+    "https://www.w3.org/TR/WCAG22/#name-role-value",
+    "https://www.w3.org/TR/wai-aria-1.2/#button"
+  ],
+  "currentBehavior": "The canonical Next controller makes 11 visible, independently playable media stages keyboard-operable and named. The protected static sequence omits them, creating an exact focus-order parity delta.",
+  "expectedBehavior": "Every visible independent media action remains pointer and keyboard operable with a durable name, and the static rollback exposes equivalent operability without hidden duplicate targets.",
+  "staticBehavior": "The same 11 visible media regions have no data-canon-video-stage, role, tabindex, pressed state, accessible play name, or equivalent Enter/Space playback path.",
+  "nextBehavior": "CanonPageController assigns role=button, tabindex=0, aria-pressed, accessible play labels, click activation, and Enter/Space activation to mappings D02-D12.",
+  "parityRelationship": "next_accessibility_improvement_with_parity_difference",
+  "fixClass": "PROTECTED_ATTRIBUTE_CHANGE",
+  "proposedAction": "In Phase 5C, preserve all 11 Next controls and add equivalent named keyboard-operable semantics and playback behavior to the same visible static media stages. Keep them as 11 separate controls; do not delete them, add hidden duplicates, or use roving tabindex because they are independent actions rather than one composite widget.",
+  "proposedFiles": [
+    "app.js",
+    "src/app/_canon/CanonPageController.tsx",
+    "src/features/scripture/canon-youtube.ts"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json",
+    "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+    "tests/visual/baselines/owner-approved-next-support/manifest.json",
+    "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json"
+  ],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "attribute_only",
+  "expectedBehaviorImpact": "The rollback runtime gains parity with canonical keyboard playback; the canonical Next sequence and visible media remain intact.",
+  "risks": [
+    "Eleven extra stops are verbose but logically ordered because each action is independent.",
+    "A roving composite would introduce undisclosed arrow-key semantics and hide independent actions from Tab.",
+    "Static playback mapping must be exact; labels must not promise unavailable media."
+  ],
+  "tests": [
+    "11 static and 11 Next stages have matching names, order, role/state, and Enter/Space/click behavior",
+    "no hidden or duplicate focus targets",
+    "72-cell protected visual parity rerun",
+    "105 parity tests rerun",
+    "three-run 216-cell performance/accessibility gate rerun without threshold weakening",
+    "NVDA, Narrator, VoiceOver, and TalkBack tasks in the manual plan"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-2",
+  "rollback": "Revert only the A11Y-003 Phase 5C commit and restore the prior exact static handler/attributes; do not remove the existing Next controls or alter baselines.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca"
+}

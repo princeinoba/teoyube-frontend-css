@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "phase": "5B",
+  "status": "STARTING_EVIDENCE_LOCKED",
+  "generatedAt": "2026-08-05T15:42:20.158Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "0a98a0ba498315442823dc5469074cd2d8d3ed10",
+  "prePhaseTag": "teoyube-9of10-phase5b-start-0a98a0b",
+  "phase5aCounts": {
+    "total": 11,
+    "critical": 1,
+    "high": 8,
+    "medium": 2,
+    "confirmed": 8,
+    "manualEvidenceGaps": 3
+  },
+  "runtime": {
+    "canonical": "next",
+    "rollback": "static-node",
+    "runtimeSourceDigest": "ae07aa13d9eae08969840a1160571c9483362a98d3a634ce13da2621fcac5a75",
+    "deterministicBuildId": "teoyube-ae07aa13d9eae08969840a11",
+    "publicRouteCount": 23
+  },
+  "evidenceFiles": [
+    {
+      "path": "docs/recovery/9of10-phase-5a-accessibility-audit-report.md",
+      "bytes": 4299,
+      "sha256": "4acd78ad2ac14954ef2c15f76fd1f53a079043fdf51a3d9efb2cb46b5763b379"
+    },
+    {
+      "path": "docs/recovery/9of10-phase-5a-accessibility-audit-report.json",
+      "bytes": 4154,
+      "sha256": "596c0ff1241105d370ecc7b29eb87495fef102f3ce680052091456674ef02adf"
+    },
+    {
+      "path": "docs/accessibility/accessibility-issue-register.json",
+      "bytes": 5579,
+      "sha256": "4f3de9cd063908ede20b6ca23f66b73c599f7cea04abde9a795846109a5a4732"
+    },
+    {
+      "path": "docs/accessibility/wcag-2.2-aa-conformance-matrix.json",
+      "bytes": 10874,
+      "sha256": "f7f092dc13ada27c61238e737def9575848e3f7f8e03411919f155f0ef9137be"
+    },
+    {
+      "path": "docs/accessibility/canon-media-control-focus-analysis.json",
+      "bytes": 1264,
+      "sha256": "4f6fd96d81e0304718c1c4fd2535363d88c9d4a288742085232bec04ee1d734d"
+    },
+    {
+      "path": "docs/accessibility/accessibility-route-state-matrix.json",
+      "bytes": 3740,
+      "sha256": "2d5900e20d8c7cb43ae3a4d5fe1b7e0b74a456e1451d070914c6dd057cc69df4"
+    },
+    {
+      "path": "docs/accessibility/phase-5a-automated-audit-evidence.json",
+      "bytes": 3907,
+      "sha256": "b36beb5417cb23f88ed292cb55eb56833e479fa5c6ac043374a9e8ce34b961db"
+    },
+    {
+      "path": "config/runtime/canonical-runtime-manifest.json",
+      "bytes": 8366,
+      "sha256": "48c87436db2c53eddb1932c240ab3ae7a24c31c08de189298530a1b66d06a908"
+    }
+  ],
+  "protectedAndBaselineFiles": [
+    {
+      "path": "tests/visual/contracts/protected-visual-source-manifest.json",
+      "bytes": 51073,
+      "sha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117"
+    },
+    {
+      "path": "tests/visual/contracts/static-dom-contract.json",
+      "bytes": 399392,
+      "sha256": "b4f99fc01f28c43d4ff0aea54dfd93532488b1d60dfe2364e90a9b9f8bfef9b4"
+    },
+    {
+      "path": "tests/visual/contracts/original-static-visual-contract.json",
+      "bytes": 136206,
+      "sha256": "b428389059116a3e9ec098b9e118aa2b92e6c6fe7837c04e72e0b83a68a010a7"
+    },
+    {
+      "path": "tests/visual/baselines/static-runtime/manifest.json",
+      "bytes": 25249,
+      "sha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+      "bytes": 110698,
+      "sha256": "922f4229a1868448ff609a17d4ffa94e038f04f80f3ffd2906710f4b56fcf439"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-next-support/manifest.json",
+      "bytes": 99344,
+      "sha256": "9b8492f83366400a2a846e9713f64e2c2bb8e0a8a46c1263449fb01a82937283"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json",
+      "bytes": 240232,
+      "sha256": "404f98be60170502522622ad262d5490d574133fe8505e1b0bde7e6bc1976822"
+    }
+  ],
+  "rawAudit": {
+    "path": ".tmp/accessibility/phase-5a/current-audit.json",
+    "bytes": 3532666,
+    "sha256": "bab3bd9498f6112e410450316eb09590950f2071995187f7d8f7db2db6228ed7"
+  },
+  "currentBlockerIds": [
+    "9R-02",
+    "9R-04",
+    "9R-05",
+    "9R-06",
+    "9R-07",
+    "9R-08",
+    "9R-09",
+    "9R-10",
+    "9R-11",
+    "9R-12",
+    "9R-13",
+    "9R-14",
+    "9R-15"
+  ],
+  "standards": [
+    {
+      "name": "WCAG",
+      "version": "2.2",
+      "status": "W3C Recommendation",
+      "date": "2024-12-12",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "name": "WAI-ARIA",
+      "version": "1.2",
+      "status": "W3C Recommendation",
+      "date": "2023-06-06",
+      "url": "https://www.w3.org/TR/wai-aria-1.2/"
+    },
+    {
+      "name": "ARIA in HTML",
+      "version": "current",
+      "status": "W3C Recommendation",
+      "date": "2026-04-15",
+      "url": "https://www.w3.org/TR/html-aria/"
+    },
+    {
+      "name": "ARIA Authoring Practices Guide",
+      "version": "current",
+      "status": "informative, non-normative",
+      "checkedAt": "2026-08-05T15:42:20.158Z",
+      "url": "https://www.w3.org/WAI/ARIA/apg/about/introduction/"
+    }
+  ],
+  "invariants": {
+    "productFixes": 0,
+    "productSourceChanges": 0,
+    "protectedVisualChanges": 0,
+    "baselineChanges": 0,
+    "packageLockChanges": 0,
+    "paidCalls": 0,
+    "phase5cStarted": false
+  }
+}

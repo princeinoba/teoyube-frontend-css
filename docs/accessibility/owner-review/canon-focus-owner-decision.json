@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "decisionId": "A11Y-003-CANON-FOCUS-PRODUCT-DECISION",
+  "issueId": "A11Y-003",
+  "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+  "status": "PENDING",
+  "answers": {
+    "controlsVisible": true,
+    "controlModel": "Eleven visible, independent media playback actions; not one composite widget.",
+    "pointerOperableNext": true,
+    "keyboardOperableNext": true,
+    "accessibleNamesNext": true,
+    "focusSequenceAssessment": "Verbose but logically correct: each independently playable card is a separate action in document order.",
+    "rovingTabindexAppropriate": false,
+    "rovingReason": "Roving tabindex would falsely impose composite-widget semantics and remove independent actions from normal Tab discovery.",
+    "staticSequenceAccessible": false,
+    "staticReason": "The static rollback omits the visible controls from keyboard access and does not provide equivalent named Enter/Space activation.",
+    "nextMoreAccessibleButParityDifferent": true,
+    "hiddenOrInertViolation": "A11Y-003 itself is not an aria-hidden/inert violation; A11Y-004 separately covers a hidden Canon button.",
+    "requiredOwnerDecision": "Approve preserving all 11 Next controls and adding equivalent static keyboard/playback semantics to the same visible stages, pixel-identically, in Phase 5C batch 2.",
+    "pixelsPreserved": true,
+    "technicalImpact": "DOM attributes and keyboard behavior; no structural or visual change is proposed.",
+    "requiredGates": [
+      "72-cell protected visual/parity evidence",
+      "105 parity tests",
+      "three consecutive 216-cell performance/accessibility runs",
+      "manual NVDA, Narrator, VoiceOver, and TalkBack tasks"
+    ]
+  },
+  "exclusions": [
+    "Do not delete visible controls",
+    "Do not create hidden duplicate controls",
+    "Do not use roving tabindex",
+    "Do not update baselines",
+    "Do not begin Phase 5C automatically"
+  ],
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING"
+}

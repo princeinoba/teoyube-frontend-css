@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-007",
+  "title": "Controls do not meet the minimum target-size or spacing rule",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PRODUCT_DEFECT",
+    "summary": "axe target-size; 289 audited-node occurrences concentrated in carousel dots, memory filters, and Explore tabs",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/",
+    "/book",
+    "/canon",
+    "/explore"
+  ],
+  "affectedStates": [
+    "default",
+    "carousel-pagination",
+    "memory-filtering",
+    "explore-tab-selection"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "touch users",
+    "users with limited dexterity",
+    "users with tremor",
+    "users on small screens"
+  ],
+  "wcagCriteria": [
+    "2.5.8"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#target-size-minimum"
+  ],
+  "currentBehavior": "Audited carousel dots, Book memory filters/chips, and Explore tabs are smaller than 24 by 24 CSS pixels or lack sufficient spacing; Phase 5A recorded 289 repeated node occurrences.",
+  "expectedBehavior": "Each affected target either reaches 24 by 24 CSS pixels or satisfies the WCAG spacing exception without obscuring neighbors or changing control meaning.",
+  "staticBehavior": "Protected Today, Book, and Canon CSS renders the same undersized targets; /explore is a Next-only support route with 23px-high tabs.",
+  "nextBehavior": "The canonical runtime inherits the protected page CSS and renders the same failures; /explore uses src/app/globals.css.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "LAYOUT_OR_COMPONENT_CHANGE",
+  "proposedAction": "In Phase 5C, enlarge only the interactive hit areas for Today carousel dots, Canon Watchman dots, Book memory chips/filters, and Explore tabs to at least 24 by 24 CSS pixels, using transparent padding or pseudo hit areas where pixels can remain stable; any visible geometry change must remain within this exact selector scope.",
+  "proposedFiles": [
+    "styles/pages/today.css",
+    "styles/pages/book.css",
+    "styles/pages/canon.css",
+    "src/app/globals.css",
+    "src/components/teoyube/ExploreTabs.tsx"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json",
+    "tests/visual/baselines/owner-approved-next-support/manifest.json"
+  ],
+  "expectedPixelImpact": "possible",
+  "expectedDomImpact": "none",
+  "expectedBehaviorImpact": "Control activation and selection stay unchanged while pointer/touch hit areas become usable.",
+  "risks": [
+    "Visible spacing may shift at narrow widths.",
+    "Overlapping transparent hit areas could activate the wrong target.",
+    "Broad button rules could alter unrelated pages."
+  ],
+  "tests": [
+    "axe target-size passes for exact registered selectors at all six viewports",
+    "hit areas do not overlap and activate the correct target",
+    "320px reflow and 200% layout remain overflow-free",
+    "72 screenshots plus owner-approved support-route candidates are reviewed without baseline replacement",
+    "physical touch-device task validates activation"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-3",
+  "rollback": "Revert only the selector-scoped A11Y-007 CSS/component commit; leave baselines unchanged.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+}

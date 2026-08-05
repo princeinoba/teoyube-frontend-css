@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-005",
+  "title": "Three retained search inputs lack a durable programmatic name",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PROGRAMMATIC_NAME_DEFECT",
+    "summary": "custom accessible-name contract identifies #lexiconSearchInput, #uiVideoSearch, and #teoyubeTableSearch in 49 audited cells",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/lexicon",
+    "/embedded-videos",
+    "/tables"
+  ],
+  "affectedStates": [
+    "default",
+    "search-focused",
+    "filtered-results"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "screen-reader users",
+    "speech-input users",
+    "users with cognitive disabilities"
+  ],
+  "wcagCriteria": [
+    "2.4.6",
+    "3.3.2",
+    "4.1.2"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#headings-and-labels",
+    "https://www.w3.org/TR/WCAG22/#labels-or-instructions",
+    "https://www.w3.org/TR/WCAG22/#name-role-value",
+    "https://www.w3.org/TR/html-aria/"
+  ],
+  "currentBehavior": "#lexiconSearchInput, #uiVideoSearch, and #teoyubeTableSearch rely on placeholder text and icon-only wrapping labels, producing no durable accessible name.",
+  "expectedBehavior": "Each input has a stable route-specific programmatic name that remains available after entry and filtering.",
+  "staticBehavior": "index.html contains all three unnamed inputs; the static controllers use their IDs but do not name them.",
+  "nextBehavior": "The approved captured markup reproduces the same inputs, and the route controllers do not add names.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "PROTECTED_ATTRIBUTE_CHANGE",
+  "proposedAction": "In Phase 5C, add route-specific aria-label values to the three existing input elements in the approved source and captured Next artifact; preserve placeholders, IDs, wrappers, styling, filter behavior, and copy.",
+  "proposedFiles": [
+    "index.html",
+    "src/app/_approved-source/approved-view-markup.generated.ts"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json"
+  ],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "attribute_only",
+  "expectedBehaviorImpact": "Inputs become discoverable by name without any visual, query, filtering, or focus change.",
+  "risks": [
+    "Generic labels could make speech-input commands ambiguous.",
+    "Changing IDs or visible placeholders would exceed scope."
+  ],
+  "tests": [
+    "custom name contract passes for all three IDs in static and Next",
+    "label strings are unique and route-specific",
+    "search/filter browser tests remain green",
+    "72 screenshots and DOM/class contracts rerun"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-2",
+  "rollback": "Revert only the three A11Y-005 attribute additions and regenerate no baseline.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce"
+}

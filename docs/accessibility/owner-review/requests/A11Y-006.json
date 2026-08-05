@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-006",
+  "title": "Testimony milestone scroll region has no keyboard access",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PRODUCT_DEFECT",
+    "summary": "axe scrollable-region-focusable on .testimony-milestones at default and Drafts-state coverage",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/testimony"
+  ],
+  "affectedStates": [
+    "default",
+    "drafts-tab"
+  ],
+  "affectedViewports": [
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "keyboard users",
+    "switch users",
+    "screen-magnifier users"
+  ],
+  "wcagCriteria": [
+    "2.1.1"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#keyboard"
+  ],
+  "currentBehavior": "The horizontally scrollable .testimony-milestones region has neither a focusable region target nor focusable content in the audited states.",
+  "expectedBehavior": "Keyboard users can focus the existing region and scroll it with standard keys while the visual milestone layout remains unchanged.",
+  "staticBehavior": "index.html provides the scroll region without tabindex or a programmatic region label.",
+  "nextBehavior": "The approved captured Testimony markup reproduces the same non-focusable scroll region.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "PROTECTED_ATTRIBUTE_CHANGE",
+  "proposedAction": "In Phase 5C, add tabindex=0, role=region, and a concise aria-label to the existing .testimony-milestones container in approved source and Next capture; preserve children, order, overflow, and pixels.",
+  "proposedFiles": [
+    "index.html",
+    "src/app/_approved-source/approved-view-markup.generated.ts"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json"
+  ],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "attribute_only",
+  "expectedBehaviorImpact": "The milestone strip becomes keyboard-scrollable; testimony state and user data behavior are unchanged.",
+  "risks": [
+    "A visible default outline must remain within the card and not be clipped.",
+    "Adding extra nested focus targets would make traversal noisy."
+  ],
+  "tests": [
+    "axe scrollable-region-focusable passes in default and Drafts states",
+    "Arrow keys scroll the focused region at mobile widths",
+    "focus indicator is visible and unobscured",
+    "Testimony functional and screenshot parity suites rerun"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-2",
+  "rollback": "Revert only the A11Y-006 attributes and rerun Testimony and recovery checks.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+}

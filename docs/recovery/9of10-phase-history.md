@@ -211,3 +211,20 @@ Matrix/issue commit: `3f2d4e6f4a40ca4d6a70e706226261010cdced0f`
 ### Result
 
 Phase 5A is **PASS** as an audit-and-evidence phase. Phase 5B is **READY but not started or authorized**, and Phase 5 overall is **IN_PROGRESS**. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, Phase 4 remains **WAITING_OWNER_SESSION_DATA**, and the program remains **IN_PROGRESS**.
+
+## Phase 5B - issue-specific accessibility owner review
+
+Status: **WAITING_OWNER**
+Started from: `0a98a0ba498315442823dc5469074cd2d8d3ed10`
+Pre-phase tag: `teoyube-9of10-phase5b-start-0a98a0b`
+
+### Actions
+
+1. Revalidated all 11 Phase 5A findings, their route/state/source mappings, applicable WCAG and ARIA rules, static/Next behavior, protected contracts, tests, and rollback.
+2. Created 11 issue-specific Markdown/JSON owner-review requests with proposal hashes and PENDING decisions.
+3. Created a dedicated Canon focus decision, 9 executable manual-evidence tasks, an owner-friendly package, a pending decision ledger, and 3 proposed Phase 5C batches.
+4. Implemented no product fix and changed no product source, protected visual source, CSS, DOM/class/ARIA/tabindex, copy, asset, baseline, dependency, lockfile, runtime, research record, or paid-call behavior.
+
+### Result
+
+Phase 5B is **WAITING_OWNER**. All 20 issue/task decisions remain **PENDING**. Phase 5C is **NOT READY** and was not started. Phase 5 remains **IN_PROGRESS**; WCAG conformance is not claimed. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, Phase 4 remains **WAITING_OWNER_SESSION_DATA**, and Phase 6A remains independently READY but was not executed.

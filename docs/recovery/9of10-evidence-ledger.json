@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T07:16:04.7290862-04:00",
+  "generatedAt": "2026-08-05T15:52:06.767Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -632,6 +632,70 @@
           "sha256": "4acd78ad2ac14954ef2c15f76fd1f53a079043fdf51a3d9efb2cb46b5763b379"
         }
       ]
+    },
+    {
+      "phase": "5B",
+      "status": "WAITING_OWNER",
+      "executedAt": "2026-08-05T15:52:06.767Z",
+      "startingCommit": "0a98a0ba498315442823dc5469074cd2d8d3ed10",
+      "prePhaseTag": "teoyube-9of10-phase5b-start-0a98a0b",
+      "finalCommit": "FINAL_PHASE5B_REVIEW_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "sourceIssueCount": 11,
+      "confirmedIssues": 8,
+      "manualEvidenceGaps": 3,
+      "severity": {
+        "critical": 1,
+        "high": 8,
+        "medium": 2,
+        "low": 0
+      },
+      "issueReviewRequests": 11,
+      "manualTasks": 9,
+      "proposalHashes": 20,
+      "ownerDecisions": "ALL_PENDING",
+      "canonDecision": "PENDING",
+      "proposedImplementationBatches": 3,
+      "phase5c": "NOT_READY_NOT_STARTED",
+      "conformanceClaim": false,
+      "productFixes": 0,
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssFilesChanged": 0,
+      "domClassAriaTabindexChanges": 0,
+      "assetFilesChanged": 0,
+      "baselineFilesChanged": 0,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0,
+      "artifacts": [
+        {
+          "path": "docs/accessibility/phase-5b-starting-manifest.json",
+          "sha256": "9657b9e3ec3e2fcc3c2483f05fabb32933fe5fd3ef599ff894795da038746391"
+        },
+        {
+          "path": "docs/accessibility/owner-review/phase-5b-owner-review-package.json",
+          "sha256": "75913edc51a961db54f0f9fcf323c3a3f90380c1e31ace7197e018a8597d0364"
+        },
+        {
+          "path": "docs/accessibility/owner-review/phase-5b-owner-decisions.json",
+          "sha256": "d2b43131c94c45aca31d2824537faaa209ed089d00a07a9dfcab37110891e1d9"
+        },
+        {
+          "path": "docs/accessibility/owner-review/canon-focus-owner-decision.json",
+          "sha256": "b4c48056f3a3420e1aa4a337a3ccf72a431e95f4201171ad242e053ea9ecfc26"
+        },
+        {
+          "path": "docs/accessibility/owner-review/manual-evidence-plan.json",
+          "sha256": "1ff4dab41e84f3c9d8ab1185880f3eec28604d83f7afb65067aabd432e43c254"
+        },
+        {
+          "path": "docs/accessibility/phase-5c-proposed-batches.json",
+          "sha256": "f6499ac5a56e9c4812bca39cdcc4b59d4504a96cfc694f7fc50e3d8ae2d6ae44"
+        },
+        {
+          "path": "docs/recovery/9of10-phase-5b-accessibility-owner-review-report.json",
+          "sha256": "6d19e2ec5c4c2eb2b547253d7f7dc1faf94cc4d235fa72d0f45ce24f2c4b699e"
+        }
+      ]
     }
   ],
   "workspaceAtStart": {
@@ -685,6 +749,25 @@
     "phase4": "WAITING_OWNER_SESSION_DATA",
     "phase5a": "PASS",
     "phase5b": "READY_NOT_STARTED",
+    "phase5Overall": "IN_PROGRESS",
+    "program": "IN_PROGRESS"
+  },
+  "workspaceAfterPhase5b": {
+    "recordedAt": "2026-08-05T15:52:06.767Z",
+    "head": "FINAL_PHASE5B_REVIEW_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "productSourceFilesChanged": 0,
+    "protectedVisualFilesChanged": 0,
+    "immutableBaselineFilesChanged": 0,
+    "ownerApprovedBaselineFilesChanged": 0,
+    "packageJsonChanged": false,
+    "packageLockFilesChanged": 0,
+    "paidCalls": 0,
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA",
+    "phase5a": "PASS",
+    "phase5b": "WAITING_OWNER",
+    "phase5c": "NOT_READY",
     "phase5Overall": "IN_PROGRESS",
     "program": "IN_PROGRESS"
   }

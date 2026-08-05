@@ -24,7 +24,7 @@ No new visual, production, paid-provider, archive, delete, or deployment approva
 
 - Phase 3B: owner closeout only after authentic status reaches READY_FOR_CLOSEOUT; not currently ready or authorized.
 
-- Phase 5B: each protected accessibility change by path/issue.
+- Phase 5B: **WAITING_OWNER** for 11 issue decisions and 9 manual-task decisions in `docs/accessibility/owner-review/phase-5b-owner-decisions.json`; each decision is proposal-hash-bound, one line per ID, and a blanket approval is invalid. Phase 5C is not authorized.
 - Phase 6A: hosting, identity, database, KMS, storage, observability, rate limits, vectors, backups, crisis-resource operations, and staging domain.
 - Phase 7: paid evaluation budget, production Gate B/C decisions, and final deployment confirmation.
 - Phase 8: each candidate ID separately; no blanket archive/delete approval.

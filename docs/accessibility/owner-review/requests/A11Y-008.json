@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-008",
+  "title": "Canon in-progress status text fails minimum contrast",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PRODUCT_DEFECT",
+    "summary": "axe color-contrast on D02 and D05 status labels",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/canon"
+  ],
+  "affectedStates": [
+    "default",
+    "D02-in-progress",
+    "D05-in-progress"
+  ],
+  "affectedViewports": [
+    "desktop-wide"
+  ],
+  "affectedUsers": [
+    "users with low vision",
+    "users with color-vision deficiency",
+    "users in glare or low-contrast environments"
+  ],
+  "wcagCriteria": [
+    "1.4.3"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#contrast-minimum"
+  ],
+  "currentBehavior": "The D02 and D05 .canon-status.in-progress labels are computed against a white background at approximately 1.01:1 in the current audited state.",
+  "expectedBehavior": "Status text and its actual background meet at least 4.5:1 for this small text in every rendered state.",
+  "staticBehavior": "The protected Canon stylesheet supplies the same status colors to the static rollback.",
+  "nextBehavior": "The canonical Next Canon page loads the same protected stylesheet and reproduces the failure.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "LAYOUT_OR_COMPONENT_CHANGE",
+  "proposedAction": "In Phase 5C, correct only .canon-status.in-progress foreground/background rendering so the measured pair reaches at least 4.5:1; retain the In Progress text, badge dimensions, status meaning, and all other status colors.",
+  "proposedFiles": [
+    "styles/pages/canon.css"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json",
+    "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json"
+  ],
+  "expectedPixelImpact": "certain",
+  "expectedDomImpact": "none",
+  "expectedBehaviorImpact": "No functional behavior changes; the two status badges become readable.",
+  "risks": [
+    "A color change is visible and requires exact owner approval.",
+    "Changing shared variables could affect other badges, so the selector must remain exact."
+  ],
+  "tests": [
+    "computed contrast is at least 4.5:1 for D02 and D05 across six viewports and forced colors",
+    "completed/planning/review/on-hold badges remain unchanged",
+    "Canon screenshots and protected/owner-approved parity evidence rerun",
+    "manual complex-background contrast task completes"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-3",
+  "rollback": "Revert only the A11Y-008 selector change; never replace the Canon baseline.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
+}

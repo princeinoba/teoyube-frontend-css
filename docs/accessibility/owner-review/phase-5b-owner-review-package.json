@@ -1,0 +1,614 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T15:42:20.158Z",
+  "status": "WAITING_OWNER",
+  "phase5aCounts": {
+    "total": 11,
+    "critical": 1,
+    "high": 8,
+    "medium": 2,
+    "confirmed": 8,
+    "manualEvidenceGaps": 3,
+    "falsePositives": 0
+  },
+  "issues": [
+    {
+      "issueId": "A11Y-001",
+      "severity": "critical",
+      "whatIsWrong": "All 27 alphabet controls are role=option elements carrying aria-selected and the unsupported aria-pressed state; axe reports aria-allowed-attr in every audited Lexicon cell.",
+      "whoIsAffected": [
+        "screen-reader users",
+        "speech-input users",
+        "users who rely on accurate role/state announcements"
+      ],
+      "where": {
+        "routes": [
+          "/lexicon"
+        ],
+        "states": [
+          "default",
+          "alphabet-filter-selected"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, remove aria-pressed from every role=option alphabet control in the static renderer, approved captured markup, and Next state updater; retain listbox/option, aria-selected, labels, order, click behavior, and pixels.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "attribute_only",
+      "riskIfNotFixed": "Hand-editing only one runtime would preserve the defect in the other runtime.",
+      "riskOfFix": "Regenerating approved markup outside the owner-scoped parity workflow could change unrelated source.",
+      "tests": [
+        "axe aria-allowed-attr passes on /lexicon at all six viewports",
+        "27 options retain role=option and exactly one aria-selected=true",
+        "static/Next keyboard and filter behavior remain equivalent",
+        "72 screenshot and protected DOM/class checks rerun"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe"
+    },
+    {
+      "issueId": "A11Y-002",
+      "severity": "high",
+      "whatIsWrong": "Inactive promise and featured-story slides are aria-hidden while their links and buttons remain sequentially focusable.",
+      "whoIsAffected": [
+        "keyboard users",
+        "screen-reader users",
+        "switch users"
+      ],
+      "where": {
+        "routes": [
+          "/"
+        ],
+        "states": [
+          "default",
+          "promise-carousel-next",
+          "featured-story-next",
+          "autoplay-advance"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, make inactive slide containers inert while aria-hidden and remove inert when activated in both runtimes; preserve every control, label, transition, timing, and visible slide.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "attribute_only",
+      "riskIfNotFixed": "Failing to remove inert on activation would block the visible slide.",
+      "riskOfFix": "Changing carousel timing or rendering would exceed scope.",
+      "tests": [
+        "axe aria-hidden-focus passes for both carousels in every state and viewport",
+        "Tab order contains controls from the active slide only",
+        "autoplay, arrows, dots, swipe, hover pause, and keyboard arrows remain functional",
+        "72 screenshots and Today parity states rerun"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b"
+    },
+    {
+      "issueId": "A11Y-003",
+      "severity": "high",
+      "whatIsWrong": "The canonical Next controller makes 11 visible, independently playable media stages keyboard-operable and named. The protected static sequence omits them, creating an exact focus-order parity delta.",
+      "whoIsAffected": [
+        "keyboard users",
+        "screen-reader users",
+        "switch users",
+        "users sensitive to long tab sequences"
+      ],
+      "where": {
+        "routes": [
+          "/canon"
+        ],
+        "states": [
+          "default",
+          "media-stage-focused",
+          "media-stage-playing"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, preserve all 11 Next controls and add equivalent named keyboard-operable semantics and playback behavior to the same visible static media stages. Keep them as 11 separate controls; do not delete them, add hidden duplicates, or use roving tabindex because they are independent actions rather than one composite widget.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "attribute_only",
+      "riskIfNotFixed": "Eleven extra stops are verbose but logically ordered because each action is independent.",
+      "riskOfFix": "A roving composite would introduce undisclosed arrow-key semantics and hide independent actions from Tab. Static playback mapping must be exact; labels must not promise unavailable media.",
+      "tests": [
+        "11 static and 11 Next stages have matching names, order, role/state, and Enter/Space/click behavior",
+        "no hidden or duplicate focus targets",
+        "72-cell protected visual parity rerun",
+        "105 parity tests rerun",
+        "three-run 216-cell performance/accessibility gate rerun without threshold weakening",
+        "NVDA, Narrator, VoiceOver, and TalkBack tasks in the manual plan"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca"
+    },
+    {
+      "issueId": "A11Y-004",
+      "severity": "high",
+      "whatIsWrong": "button.canon-recent-merged-row is inside .canon-watchman-story-copy marked aria-hidden=true but remains a native focus target.",
+      "whoIsAffected": [
+        "keyboard users",
+        "screen-reader users",
+        "switch users"
+      ],
+      "where": {
+        "routes": [
+          "/canon"
+        ],
+        "states": [
+          "default",
+          "recently-updated-watchman-merged-card"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, apply inert to the existing aria-hidden .canon-watchman-story-copy subtree in static generation and the approved Next capture; do not hide or remove the visible carousel controls.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "attribute_only",
+      "riskIfNotFixed": "Applying inert to the outer card would wrongly disable visible controls.",
+      "riskOfFix": "Removing the hidden subtree could create structural parity drift.",
+      "tests": [
+        "custom hidden-focus scan returns no canon-recent-merged-row",
+        "visible Watchman arrows/dots remain operable",
+        "Canon functional and parity suites rerun",
+        "72 screenshots and protected DOM/class checks rerun"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+    },
+    {
+      "issueId": "A11Y-005",
+      "severity": "high",
+      "whatIsWrong": "#lexiconSearchInput, #uiVideoSearch, and #teoyubeTableSearch rely on placeholder text and icon-only wrapping labels, producing no durable accessible name.",
+      "whoIsAffected": [
+        "screen-reader users",
+        "speech-input users",
+        "users with cognitive disabilities"
+      ],
+      "where": {
+        "routes": [
+          "/lexicon",
+          "/embedded-videos",
+          "/tables"
+        ],
+        "states": [
+          "default",
+          "search-focused",
+          "filtered-results"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, add route-specific aria-label values to the three existing input elements in the approved source and captured Next artifact; preserve placeholders, IDs, wrappers, styling, filter behavior, and copy.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "attribute_only",
+      "riskIfNotFixed": "Generic labels could make speech-input commands ambiguous.",
+      "riskOfFix": "Changing IDs or visible placeholders would exceed scope.",
+      "tests": [
+        "custom name contract passes for all three IDs in static and Next",
+        "label strings are unique and route-specific",
+        "search/filter browser tests remain green",
+        "72 screenshots and DOM/class contracts rerun"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce"
+    },
+    {
+      "issueId": "A11Y-006",
+      "severity": "high",
+      "whatIsWrong": "The horizontally scrollable .testimony-milestones region has neither a focusable region target nor focusable content in the audited states.",
+      "whoIsAffected": [
+        "keyboard users",
+        "switch users",
+        "screen-magnifier users"
+      ],
+      "where": {
+        "routes": [
+          "/testimony"
+        ],
+        "states": [
+          "default",
+          "drafts-tab"
+        ],
+        "viewports": [
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, add tabindex=0, role=region, and a concise aria-label to the existing .testimony-milestones container in approved source and Next capture; preserve children, order, overflow, and pixels.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "attribute_only",
+      "riskIfNotFixed": "A visible default outline must remain within the card and not be clipped.",
+      "riskOfFix": "Adding extra nested focus targets would make traversal noisy.",
+      "tests": [
+        "axe scrollable-region-focusable passes in default and Drafts states",
+        "Arrow keys scroll the focused region at mobile widths",
+        "focus indicator is visible and unobscured",
+        "Testimony functional and screenshot parity suites rerun"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+    },
+    {
+      "issueId": "A11Y-007",
+      "severity": "high",
+      "whatIsWrong": "Audited carousel dots, Book memory filters/chips, and Explore tabs are smaller than 24 by 24 CSS pixels or lack sufficient spacing; Phase 5A recorded 289 repeated node occurrences.",
+      "whoIsAffected": [
+        "touch users",
+        "users with limited dexterity",
+        "users with tremor",
+        "users on small screens"
+      ],
+      "where": {
+        "routes": [
+          "/",
+          "/book",
+          "/canon",
+          "/explore"
+        ],
+        "states": [
+          "default",
+          "carousel-pagination",
+          "memory-filtering",
+          "explore-tab-selection"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "In Phase 5C, enlarge only the interactive hit areas for Today carousel dots, Canon Watchman dots, Book memory chips/filters, and Explore tabs to at least 24 by 24 CSS pixels, using transparent padding or pseudo hit areas where pixels can remain stable; any visible geometry change must remain within this exact selector scope.",
+      "pixelsChange": "possible",
+      "domOrAriaChange": "none",
+      "riskIfNotFixed": "Visible spacing may shift at narrow widths.",
+      "riskOfFix": "Overlapping transparent hit areas could activate the wrong target. Broad button rules could alter unrelated pages.",
+      "tests": [
+        "axe target-size passes for exact registered selectors at all six viewports",
+        "hit areas do not overlap and activate the correct target",
+        "320px reflow and 200% layout remain overflow-free",
+        "72 screenshots plus owner-approved support-route candidates are reviewed without baseline replacement",
+        "physical touch-device task validates activation"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+    },
+    {
+      "issueId": "A11Y-008",
+      "severity": "high",
+      "whatIsWrong": "The D02 and D05 .canon-status.in-progress labels are computed against a white background at approximately 1.01:1 in the current audited state.",
+      "whoIsAffected": [
+        "users with low vision",
+        "users with color-vision deficiency",
+        "users in glare or low-contrast environments"
+      ],
+      "where": {
+        "routes": [
+          "/canon"
+        ],
+        "states": [
+          "default",
+          "D02-in-progress",
+          "D05-in-progress"
+        ],
+        "viewports": [
+          "desktop-wide"
+        ]
+      },
+      "recommendation": "In Phase 5C, correct only .canon-status.in-progress foreground/background rendering so the measured pair reaches at least 4.5:1; retain the In Progress text, badge dimensions, status meaning, and all other status colors.",
+      "pixelsChange": "certain",
+      "domOrAriaChange": "none",
+      "riskIfNotFixed": "A color change is visible and requires exact owner approval.",
+      "riskOfFix": "Changing shared variables could affect other badges, so the selector must remain exact.",
+      "tests": [
+        "computed contrast is at least 4.5:1 for D02 and D05 across six viewports and forced colors",
+        "completed/planning/review/on-hold badges remain unchanged",
+        "Canon screenshots and protected/owner-approved parity evidence rerun",
+        "manual complex-background contrast task completes"
+      ],
+      "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
+    },
+    {
+      "issueId": "A11Y-009",
+      "severity": "medium",
+      "whatIsWrong": "axe returned 3,674 incomplete contrast nodes where gradients, imagery, pseudo-elements, or stateful surfaces prevent a conclusive automated measurement.",
+      "whoIsAffected": [
+        "users with low vision",
+        "users with color-vision deficiency",
+        "Windows high-contrast users"
+      ],
+      "where": {
+        "routes": [
+          "/",
+          "/search",
+          "/canon",
+          "/promise-table",
+          "/calling-compass",
+          "/book",
+          "/lexicon",
+          "/testimony",
+          "/teo-guide",
+          "/embedded-videos",
+          "/tables",
+          "/prayer",
+          "/journey",
+          "/journal",
+          "/settings",
+          "/privacy",
+          "/consent",
+          "/terms",
+          "/profile",
+          "/personalization",
+          "/daily-word",
+          "/explore",
+          "/promise-search"
+        ],
+        "states": [
+          "default",
+          "forced-colors",
+          "focused",
+          "hovered",
+          "disabled",
+          "selected",
+          "expanded",
+          "modal-or-drawer-open"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "Approve A11Y-MANUAL-001. Do not infer a pass from axe incomplete nodes; open a new issue-specific proposal for any confirmed contrast defect.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "none",
+      "riskIfNotFixed": "Declaring conformance without measurements would be false.",
+      "riskOfFix": "Testing with private user content is prohibited.",
+      "tests": [
+        "A11Y-MANUAL-001 produces route/state/viewport measurements with tool and OS versions",
+        "all failures become new hash-bound issue records"
+      ],
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "a5335828915affd3741a1af7973b964dc667c0938912e0ffb90e94b780bb211e"
+    },
+    {
+      "issueId": "A11Y-010",
+      "severity": "medium",
+      "whatIsWrong": "Automated computed-style checks found no missing focus indicator, but hit-testing reported candidates whose real visibility/obscuration cannot be determined without human review.",
+      "whoIsAffected": [
+        "keyboard users",
+        "screen-magnifier users",
+        "users with low vision",
+        "switch users"
+      ],
+      "where": {
+        "routes": [
+          "/",
+          "/search",
+          "/canon",
+          "/promise-table",
+          "/calling-compass",
+          "/book",
+          "/lexicon",
+          "/testimony",
+          "/teo-guide",
+          "/embedded-videos",
+          "/tables",
+          "/prayer",
+          "/journey",
+          "/journal",
+          "/settings",
+          "/privacy",
+          "/consent",
+          "/terms",
+          "/profile",
+          "/personalization",
+          "/daily-word",
+          "/explore",
+          "/promise-search"
+        ],
+        "states": [
+          "default",
+          "keyboard-traversal",
+          "sticky-header",
+          "drawer-open",
+          "modal-open",
+          "carousel-advanced",
+          "validation-error"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "Approve A11Y-MANUAL-002. Review every route/state with keyboard-only traversal and record clipped, obscured, or ambiguous focus cases as separate issue proposals.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "none",
+      "riskIfNotFixed": "Automated hit testing can over-report during scroll transitions.",
+      "riskOfFix": "A human pass must not hide confirmed A11Y-002, A11Y-003, or A11Y-004 defects.",
+      "tests": [
+        "A11Y-MANUAL-002 covers every route and required state",
+        "evidence includes focused selector, viewport, scroll position, and outcome only"
+      ],
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "0584a9068607caf728b500981e11e13b70af66c3a88d13d78aa4fda2faf085d9"
+    },
+    {
+      "issueId": "A11Y-011",
+      "severity": "high",
+      "whatIsWrong": "External media requests were intentionally blocked and no observable spoken-output session was available; captions, alternatives, third-party control keyboard behavior, and live announcements remain unverified.",
+      "whoIsAffected": [
+        "blind users",
+        "screen-reader users",
+        "Deaf and hard-of-hearing users",
+        "users who cannot use a pointer",
+        "users with cognitive disabilities"
+      ],
+      "where": {
+        "routes": [
+          "/",
+          "/canon",
+          "/promise-table",
+          "/calling-compass",
+          "/embedded-videos",
+          "/tables"
+        ],
+        "states": [
+          "media-selected",
+          "playback-started",
+          "playback-paused",
+          "media-error",
+          "carousel-next",
+          "status-announced"
+        ],
+        "viewports": [
+          "desktop-wide",
+          "desktop-standard",
+          "tablet-landscape",
+          "tablet-portrait",
+          "mobile",
+          "mobile-small"
+        ]
+      },
+      "recommendation": "Approve A11Y-MANUAL-003 through A11Y-MANUAL-009. Do not alter media sources or claim conformance until browser/AT and alternatives evidence is complete.",
+      "pixelsChange": "none",
+      "domOrAriaChange": "none",
+      "riskIfNotFixed": "Third-party player behavior can vary by platform and account state.",
+      "riskOfFix": "Review must not capture personal account data or private content. Unavailable AT must remain NOT TESTED.",
+      "tests": [
+        "A11Y-MANUAL-003 through A11Y-MANUAL-008 record spoken-output and keyboard results",
+        "A11Y-MANUAL-009 inventories captions/transcripts/audio-description or equivalent alternatives for each exact video mapping"
+      ],
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "6ff3919f7025616e7a50c456136911a4f6b9de5499d208a6a1d5e4fdbb3641e3"
+    }
+  ],
+  "manualTasks": [
+    {
+      "taskId": "A11Y-MANUAL-001",
+      "relatedIssueIds": [
+        "A11Y-009"
+      ],
+      "title": "Complex-background and forced-colors contrast review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "fccac54b66ccb80145cdbbaed860392a218dc860d874c8c5743c17fc9745de02"
+    },
+    {
+      "taskId": "A11Y-MANUAL-002",
+      "relatedIssueIds": [
+        "A11Y-010"
+      ],
+      "title": "Keyboard focus visibility and obscuration review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "186d9c8fd501df3ebf16852e5299f96b4e1d6b1f7148369347d4f2b6d419b369"
+    },
+    {
+      "taskId": "A11Y-MANUAL-003",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "NVDA and Chrome media/control announcement review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "84b99d36942904896986cf7eefb6ad909a715f55c1c89de0d202f0c8a7992c08"
+    },
+    {
+      "taskId": "A11Y-MANUAL-004",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "NVDA and Firefox media/control announcement review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "d954af1031f13887ea94aad68921e447615af9ab2d9aa8cc06b8a511e38fbff6"
+    },
+    {
+      "taskId": "A11Y-MANUAL-005",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "Narrator and Edge media/control announcement review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "6e075829daaa6400a2c35e92838ef5d6658197e4466219709f4c8171beff5fe0"
+    },
+    {
+      "taskId": "A11Y-MANUAL-006",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "VoiceOver and macOS Safari media/control review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "bf703879160f666fdda3addf2baa9216e011ddd828711e193b695d3e8df6dffc"
+    },
+    {
+      "taskId": "A11Y-MANUAL-007",
+      "relatedIssueIds": [
+        "A11Y-011"
+      ],
+      "title": "VoiceOver and iOS Safari touch media review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae"
+    },
+    {
+      "taskId": "A11Y-MANUAL-008",
+      "relatedIssueIds": [
+        "A11Y-011"
+      ],
+      "title": "TalkBack and Android Chrome touch media review",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd"
+    },
+    {
+      "taskId": "A11Y-MANUAL-009",
+      "relatedIssueIds": [
+        "A11Y-011"
+      ],
+      "title": "Exact media-alternatives inventory",
+      "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "proposalHash": "2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533"
+    }
+  ],
+  "noConformanceClaim": true,
+  "phase5cStarted": false
+}

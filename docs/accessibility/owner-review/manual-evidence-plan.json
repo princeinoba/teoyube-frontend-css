@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T15:42:20.158Z",
+  "status": "PENDING_OWNER",
+  "issueIds": [
+    "A11Y-009",
+    "A11Y-010",
+    "A11Y-011"
+  ],
+  "tasks": [
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-001",
+      "relatedIssueIds": [
+        "A11Y-009"
+      ],
+      "title": "Complex-background and forced-colors contrast review",
+      "platform": "Windows 11; exact build recorded at execution",
+      "browser": "Edge and Chrome; exact versions recorded",
+      "assistiveTechnology": "Windows Forced Colors plus a calibrated contrast-measurement tool",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/search",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/book",
+        "/lexicon",
+        "/testimony",
+        "/teo-guide",
+        "/embedded-videos",
+        "/tables",
+        "/prayer",
+        "/journey",
+        "/journal",
+        "/settings",
+        "/privacy",
+        "/consent",
+        "/terms",
+        "/profile",
+        "/personalization",
+        "/daily-word",
+        "/explore",
+        "/promise-search"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "selected",
+        "disabled",
+        "expanded",
+        "forced-colors"
+      ],
+      "taskScript": "Measure representative text, icons, focus indicators, boundaries, and controls over imagery/gradients at all six viewports; record foreground/background samples and ratios.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "fccac54b66ccb80145cdbbaed860392a218dc860d874c8c5743c17fc9745de02"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-002",
+      "relatedIssueIds": [
+        "A11Y-010"
+      ],
+      "title": "Keyboard focus visibility and obscuration review",
+      "platform": "Windows 11 and one physical small-screen device; exact versions recorded",
+      "browser": "Edge, Chrome, and Firefox; exact versions recorded",
+      "assistiveTechnology": "Keyboard only; screen magnifier optional and version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/search",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/book",
+        "/lexicon",
+        "/testimony",
+        "/teo-guide",
+        "/embedded-videos",
+        "/tables",
+        "/prayer",
+        "/journey",
+        "/journal",
+        "/settings",
+        "/privacy",
+        "/consent",
+        "/terms",
+        "/profile",
+        "/personalization",
+        "/daily-word",
+        "/explore",
+        "/promise-search"
+      ],
+      "states": [
+        "default",
+        "carousel-advanced",
+        "drawer-open",
+        "modal-open",
+        "validation-error"
+      ],
+      "taskScript": "Traverse forward and backward without a pointer; record every focused selector, visible indicator, scroll position, and whether sticky/overlay content entirely obscures it.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "186d9c8fd501df3ebf16852e5299f96b4e1d6b1f7148369347d4f2b6d419b369"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-003",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "NVDA and Chrome media/control announcement review",
+      "platform": "Windows 11; exact build recorded",
+      "browser": "Chrome current stable; exact version recorded",
+      "assistiveTechnology": "NVDA installed by tester; exact version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "media-selected",
+        "playback-started",
+        "playback-error",
+        "status-announced"
+      ],
+      "taskScript": "Navigate and activate every representative media control with keyboard commands; record name, role, state, focus order, status announcement, and whether control purpose is distinguishable.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "84b99d36942904896986cf7eefb6ad909a715f55c1c89de0d202f0c8a7992c08"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-004",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "NVDA and Firefox media/control announcement review",
+      "platform": "Windows 11; exact build recorded",
+      "browser": "Firefox current stable; exact version recorded",
+      "assistiveTechnology": "NVDA installed by tester; exact version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "media-selected",
+        "playback-started",
+        "playback-error",
+        "status-announced"
+      ],
+      "taskScript": "Repeat the media/control script in Firefox and record browser-specific differences without inferring equivalence from Chrome.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "d954af1031f13887ea94aad68921e447615af9ab2d9aa8cc06b8a511e38fbff6"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-005",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "Narrator and Edge media/control announcement review",
+      "platform": "Windows 11; exact build recorded",
+      "browser": "Edge current stable; exact version recorded",
+      "assistiveTechnology": "Windows Narrator; exact OS-provided version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "media-selected",
+        "playback-started",
+        "playback-error",
+        "status-announced"
+      ],
+      "taskScript": "Repeat the media/control script with scan and keyboard modes; record spoken names/roles/states and live-status behavior.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "6e075829daaa6400a2c35e92838ef5d6658197e4466219709f4c8171beff5fe0"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-006",
+      "relatedIssueIds": [
+        "A11Y-003",
+        "A11Y-011"
+      ],
+      "title": "VoiceOver and macOS Safari media/control review",
+      "platform": "macOS physical device; exact version recorded",
+      "browser": "Safari current stable for installed macOS; exact version recorded",
+      "assistiveTechnology": "VoiceOver; exact OS-provided version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "media-selected",
+        "playback-started",
+        "playback-error",
+        "status-announced"
+      ],
+      "taskScript": "Use VoiceOver navigation and keyboard activation; record discoverability, names, states, order, player entry/exit, and announcements.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "bf703879160f666fdda3addf2baa9216e011ddd828711e193b695d3e8df6dffc"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-007",
+      "relatedIssueIds": [
+        "A11Y-011"
+      ],
+      "title": "VoiceOver and iOS Safari touch media review",
+      "platform": "Physical iPhone or iPad; exact model and iOS version recorded",
+      "browser": "iOS Safari; exact version recorded",
+      "assistiveTechnology": "VoiceOver; exact OS-provided version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "media-selected",
+        "playback-started",
+        "orientation-change",
+        "player-dismissed"
+      ],
+      "taskScript": "Explore by touch and swipe; activate each representative player, verify focus returns predictably, and record captions/alternative access without account data.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-008",
+      "relatedIssueIds": [
+        "A11Y-011"
+      ],
+      "title": "TalkBack and Android Chrome touch media review",
+      "platform": "Physical Android device; exact model and Android version recorded",
+      "browser": "Android Chrome current stable; exact version recorded",
+      "assistiveTechnology": "TalkBack; exact version recorded",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "media-selected",
+        "playback-started",
+        "orientation-change",
+        "player-dismissed"
+      ],
+      "taskScript": "Explore by touch and swipe; activate each representative player, verify focus return and announcements, and record exact failures.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd"
+    },
+    {
+      "schemaVersion": 1,
+      "taskId": "A11Y-MANUAL-009",
+      "relatedIssueIds": [
+        "A11Y-011"
+      ],
+      "title": "Exact media-alternatives inventory",
+      "platform": "Any owner-approved test workstation; exact OS recorded",
+      "browser": "A supported browser; exact version recorded",
+      "assistiveTechnology": "Human media accessibility reviewer",
+      "version": "No version was available or claimed in Phase 5B; the runner must record exact installed versions before testing.",
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "each exact mapped video",
+        "captions-on",
+        "captions-off",
+        "transcript-or-alternative-open"
+      ],
+      "taskScript": "For every exact video mapping, verify prerecorded captions, transcript/media alternative, audio-description need and provision, keyboard player controls, language, synchronization, and failure fallback.",
+      "expectedResult": "Every tested control/content path satisfies the related WCAG criteria with no fabricated or inferred result; unavailable coverage remains NOT TESTED.",
+      "safeEvidenceFields": [
+        "task ID",
+        "issue IDs",
+        "date/time",
+        "tester role",
+        "OS/device/browser/AT versions",
+        "route",
+        "state",
+        "viewport",
+        "selector or public control label",
+        "expected result",
+        "observed result",
+        "PASS/FAIL/NOT_TESTED",
+        "sanitized note",
+        "evidence hash"
+      ],
+      "prohibitedContent": [
+        "participant identity",
+        "email/account identifiers",
+        "private prayer, journal, testimony, health, trauma, abuse, relationship, crisis, or memory content",
+        "credentials or tokens",
+        "personal filenames",
+        "recordings without separate consent"
+      ],
+      "passFailCriteria": "PASS only when the exact environment was used and every scripted result is observed; FAIL on any criterion violation; NOT_TESTED when the environment or result is unavailable.",
+      "whoMayRun": "The owner or an owner-appointed trained accessibility tester using synthetic scenarios only.",
+      "productSourceMayChangeBeforeComplete": "Issue-specific approved fixes may proceed, but this task must be rerun against the final candidate and remains required before any WCAG conformance claim.",
+      "blocks": "Blocks WCAG conformance and Phase 5 closeout; it does not automatically block unrelated, already approved fixes.",
+      "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+      "ownerDecision": "PENDING",
+      "taskHash": "2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533"
+    }
+  ],
+  "resultRules": {
+    "unavailable": "NOT_TESTED",
+    "syntheticScenariosOnly": true,
+    "privateContentAllowed": false,
+    "conformanceClaimBeforeCompletion": false
+  }
+}

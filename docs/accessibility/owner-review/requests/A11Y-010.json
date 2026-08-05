@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-010",
+  "title": "Focus visibility and obscuration require human viewport review",
+  "severity": "medium",
+  "phase5aStatus": "manual_evidence_gap",
+  "phase5aEvidence": {
+    "classification": "MANUAL_VALIDATION_REQUIRED",
+    "summary": "81 keyboard cells found no computed-style indicator omission; hit-testing produced candidates affected by skip links, scrolling, and sticky UI",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/",
+    "/search",
+    "/canon",
+    "/promise-table",
+    "/calling-compass",
+    "/book",
+    "/lexicon",
+    "/testimony",
+    "/teo-guide",
+    "/embedded-videos",
+    "/tables",
+    "/prayer",
+    "/journey",
+    "/journal",
+    "/settings",
+    "/privacy",
+    "/consent",
+    "/terms",
+    "/profile",
+    "/personalization",
+    "/daily-word",
+    "/explore",
+    "/promise-search"
+  ],
+  "affectedStates": [
+    "default",
+    "keyboard-traversal",
+    "sticky-header",
+    "drawer-open",
+    "modal-open",
+    "carousel-advanced",
+    "validation-error"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "keyboard users",
+    "screen-magnifier users",
+    "users with low vision",
+    "switch users"
+  ],
+  "wcagCriteria": [
+    "2.4.7",
+    "2.4.11"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#focus-visible",
+    "https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum"
+  ],
+  "currentBehavior": "Automated computed-style checks found no missing focus indicator, but hit-testing reported candidates whose real visibility/obscuration cannot be determined without human review.",
+  "expectedBehavior": "Every sequentially focused element has a visible indicator and is not entirely hidden by sticky or overlay content at all required viewports.",
+  "staticBehavior": "The static rollback has protected focus styles and sticky surfaces but no completed human review.",
+  "nextBehavior": "The canonical Next runtime has the same requirement plus documented focus-order deltas; automated candidates are not a pass/fail decision.",
+  "parityRelationship": "not_a_parity_issue",
+  "fixClass": "MANUAL_EVIDENCE_TASK",
+  "proposedAction": "Approve A11Y-MANUAL-002. Review every route/state with keyboard-only traversal and record clipped, obscured, or ambiguous focus cases as separate issue proposals.",
+  "proposedFiles": [],
+  "protectedContractsAffected": [],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "none",
+  "expectedBehaviorImpact": "Evidence only; product behavior does not change.",
+  "risks": [
+    "Automated hit testing can over-report during scroll transitions.",
+    "A human pass must not hide confirmed A11Y-002, A11Y-003, or A11Y-004 defects."
+  ],
+  "tests": [
+    "A11Y-MANUAL-002 covers every route and required state",
+    "evidence includes focused selector, viewport, scroll position, and outcome only"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": false,
+  "rollback": "Remove only inaccurate evidence records; preserve raw audit evidence and product source.",
+  "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+  "ownerDecision": "PENDING",
+  "proposalHash": "0584a9068607caf728b500981e11e13b70af66c3a88d13d78aa4fda2faf085d9"
+}

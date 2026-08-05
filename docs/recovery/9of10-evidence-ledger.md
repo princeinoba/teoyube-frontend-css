@@ -216,3 +216,18 @@ No owner recruitment approval was prefilled. No real participant or session arti
 | Phase state | Phase 5A PASS; Phase 5B READY and not started; Phase 5 IN_PROGRESS; Program IN_PROGRESS |
 
 Phase 5A is an audit-and-evidence pass only. It neither establishes WCAG conformance nor authorizes remediation. Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAITING_OWNER_SESSION_DATA.
+
+## Phase 5B update
+
+| Evidence | Current Phase 5B identity/result |
+| --- | --- |
+| Starting commit/tag | `0a98a0ba498315442823dc5469074cd2d8d3ed10`; `teoyube-9of10-phase5b-start-0a98a0b` |
+| Review requests | 11 issue-specific Markdown/JSON pairs; all owner decisions PENDING |
+| Manual evidence | 9 executable tasks covering all 3 Phase 5A manual gaps; all task decisions PENDING |
+| Proposal hashes | 20 validated hashes binding evidence, scope, files, contracts, tests, and rollback |
+| Canon focus decision | Dedicated decision complete; PENDING owner response |
+| Proposed Phase 5C batches | 3; NOT AUTHORIZED and NOT STARTED |
+| Product/protected/CSS/DOM/ARIA/assets/baselines/package/lock/paid calls | 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0 |
+| Phase state | Phase 5A PASS; Phase 5B WAITING_OWNER; Phase 5C NOT READY; Phase 5 IN_PROGRESS; Program IN_PROGRESS |
+
+Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAITING_OWNER_SESSION_DATA. WCAG conformance is not claimed.

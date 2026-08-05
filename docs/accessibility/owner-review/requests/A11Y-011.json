@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-011",
+  "title": "External media alternatives and observable screen-reader output are unverified",
+  "severity": "high",
+  "phase5aStatus": "manual_evidence_gap",
+  "phase5aEvidence": {
+    "classification": "MANUAL_AT_AND_MEDIA_VALIDATION_REQUIRED",
+    "summary": "external requests were blocked; Narrator is installed but spoken output is not observable in this headless environment; other AT was unavailable",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/",
+    "/canon",
+    "/promise-table",
+    "/calling-compass",
+    "/embedded-videos",
+    "/tables"
+  ],
+  "affectedStates": [
+    "media-selected",
+    "playback-started",
+    "playback-paused",
+    "media-error",
+    "carousel-next",
+    "status-announced"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "blind users",
+    "screen-reader users",
+    "Deaf and hard-of-hearing users",
+    "users who cannot use a pointer",
+    "users with cognitive disabilities"
+  ],
+  "wcagCriteria": [
+    "1.2.1",
+    "1.2.2",
+    "1.2.3",
+    "1.2.5",
+    "2.1.1",
+    "4.1.3"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#captions-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#audio-description-prerecorded",
+    "https://www.w3.org/TR/WCAG22/#keyboard",
+    "https://www.w3.org/TR/WCAG22/#status-messages"
+  ],
+  "currentBehavior": "External media requests were intentionally blocked and no observable spoken-output session was available; captions, alternatives, third-party control keyboard behavior, and live announcements remain unverified.",
+  "expectedBehavior": "Every verified media source supplies the required alternative/captions/audio-description path, is operable without a pointer, and exposes meaningful status changes in supported AT/browser combinations.",
+  "staticBehavior": "The rollback contains the media surfaces but no current real-AT or external-player validation.",
+  "nextBehavior": "Next contains current YouTube integrations and named controls, but headless DOM checks cannot establish spoken output or the availability/quality of media alternatives.",
+  "parityRelationship": "not_a_parity_issue",
+  "fixClass": "MANUAL_EVIDENCE_TASK",
+  "proposedAction": "Approve A11Y-MANUAL-003 through A11Y-MANUAL-009. Do not alter media sources or claim conformance until browser/AT and alternatives evidence is complete.",
+  "proposedFiles": [],
+  "protectedContractsAffected": [],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "none",
+  "expectedBehaviorImpact": "Evidence only; playback and data boundaries do not change.",
+  "risks": [
+    "Third-party player behavior can vary by platform and account state.",
+    "Review must not capture personal account data or private content.",
+    "Unavailable AT must remain NOT TESTED."
+  ],
+  "tests": [
+    "A11Y-MANUAL-003 through A11Y-MANUAL-008 record spoken-output and keyboard results",
+    "A11Y-MANUAL-009 inventories captions/transcripts/audio-description or equivalent alternatives for each exact video mapping"
+  ],
+  "visualEvidenceRequired": false,
+  "manualAtEvidenceRequired": true,
+  "rollback": "Remove only inaccurate evidence records; do not change media mappings, source, or baseline from this evidence task.",
+  "recommendation": "APPROVE_MANUAL_EVIDENCE_TASK",
+  "ownerDecision": "PENDING",
+  "proposalHash": "6ff3919f7025616e7a50c456136911a4f6b9de5499d208a6a1d5e4fdbb3641e3"
+}

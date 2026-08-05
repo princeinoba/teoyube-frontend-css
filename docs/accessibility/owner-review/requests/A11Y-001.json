@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-001",
+  "title": "Lexicon alphabet options use an unsupported ARIA attribute",
+  "severity": "critical",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PRODUCT_DEFECT",
+    "summary": "axe aria-allowed-attr; 156 audited-node occurrences across repeated cells; 27 stable alphabet controls use role=option with aria-pressed",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/lexicon"
+  ],
+  "affectedStates": [
+    "default",
+    "alphabet-filter-selected"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "screen-reader users",
+    "speech-input users",
+    "users who rely on accurate role/state announcements"
+  ],
+  "wcagCriteria": [
+    "1.3.1",
+    "4.1.2"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#info-and-relationships",
+    "https://www.w3.org/TR/WCAG22/#name-role-value",
+    "https://www.w3.org/TR/wai-aria-1.2/#option",
+    "https://www.w3.org/TR/html-aria/"
+  ],
+  "currentBehavior": "All 27 alphabet controls are role=option elements carrying aria-selected and the unsupported aria-pressed state; axe reports aria-allowed-attr in every audited Lexicon cell.",
+  "expectedBehavior": "Each option exposes only states supported by the option role, with selection represented by aria-selected and no conflicting pressed state.",
+  "staticBehavior": "app.js renderLexiconAlphaTabs emits role=option, aria-selected, and aria-pressed; the static click path re-renders the same invalid combination.",
+  "nextBehavior": "The captured approved markup contains the same combination, and LexiconPageController updates both aria-selected and aria-pressed after activation.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "PROTECTED_ATTRIBUTE_CHANGE",
+  "proposedAction": "In Phase 5C, remove aria-pressed from every role=option alphabet control in the static renderer, approved captured markup, and Next state updater; retain listbox/option, aria-selected, labels, order, click behavior, and pixels.",
+  "proposedFiles": [
+    "app.js",
+    "src/app/_lexicon/LexiconPageController.tsx",
+    "src/app/_approved-source/approved-view-markup.generated.ts"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json"
+  ],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "attribute_only",
+  "expectedBehaviorImpact": "Assistive technologies receive one valid selected state instead of conflicting pressed/selected states; filtering behavior is unchanged.",
+  "risks": [
+    "Hand-editing only one runtime would preserve the defect in the other runtime.",
+    "Regenerating approved markup outside the owner-scoped parity workflow could change unrelated source."
+  ],
+  "tests": [
+    "axe aria-allowed-attr passes on /lexicon at all six viewports",
+    "27 options retain role=option and exactly one aria-selected=true",
+    "static/Next keyboard and filter behavior remain equivalent",
+    "72 screenshot and protected DOM/class checks rerun"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-1",
+  "rollback": "Revert only the A11Y-001 Phase 5C commit and rerun recovery:verify; never regenerate baselines.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe"
+}

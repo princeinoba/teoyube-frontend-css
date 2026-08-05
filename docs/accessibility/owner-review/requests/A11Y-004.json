@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-004",
+  "title": "A hidden Canon recent-row control remains focusable",
+  "severity": "high",
+  "phase5aStatus": "confirmed",
+  "phase5aEvidence": {
+    "classification": "CONFIRMED_PRODUCT_DEFECT",
+    "summary": "custom hidden-focus scan consistently returns button.canon-recent-merged-row",
+    "registerPath": "docs/accessibility/accessibility-issue-register.json"
+  },
+  "affectedRoutes": [
+    "/canon"
+  ],
+  "affectedStates": [
+    "default",
+    "recently-updated-watchman-merged-card"
+  ],
+  "affectedViewports": [
+    "desktop-wide",
+    "desktop-standard",
+    "tablet-landscape",
+    "tablet-portrait",
+    "mobile",
+    "mobile-small"
+  ],
+  "affectedUsers": [
+    "keyboard users",
+    "screen-reader users",
+    "switch users"
+  ],
+  "wcagCriteria": [
+    "2.4.3",
+    "4.1.2"
+  ],
+  "normativeSources": [
+    "https://www.w3.org/TR/WCAG22/#focus-order",
+    "https://www.w3.org/TR/WCAG22/#name-role-value",
+    "https://www.w3.org/TR/wai-aria-1.2/#aria-hidden",
+    "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute"
+  ],
+  "currentBehavior": "button.canon-recent-merged-row is inside .canon-watchman-story-copy marked aria-hidden=true but remains a native focus target.",
+  "expectedBehavior": "The hidden copy subtree and its descendants are excluded from focus; the visible Watchman carousel controls remain available.",
+  "staticBehavior": "app.js emits the aria-hidden wrapper with nested native buttons.",
+  "nextBehavior": "The approved captured Canon markup carries the same hidden button subtree; the Next controller does not neutralize it.",
+  "parityRelationship": "shared_defect",
+  "fixClass": "PROTECTED_ATTRIBUTE_CHANGE",
+  "proposedAction": "In Phase 5C, apply inert to the existing aria-hidden .canon-watchman-story-copy subtree in static generation and the approved Next capture; do not hide or remove the visible carousel controls.",
+  "proposedFiles": [
+    "app.js",
+    "src/app/_approved-source/approved-view-markup.generated.ts"
+  ],
+  "protectedContractsAffected": [
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/baselines/static-runtime/manifest.json"
+  ],
+  "expectedPixelImpact": "none",
+  "expectedDomImpact": "attribute_only",
+  "expectedBehaviorImpact": "Hidden duplicate rows leave the Tab order; visible Watchman navigation and selected-card behavior are unchanged.",
+  "risks": [
+    "Applying inert to the outer card would wrongly disable visible controls.",
+    "Removing the hidden subtree could create structural parity drift."
+  ],
+  "tests": [
+    "custom hidden-focus scan returns no canon-recent-merged-row",
+    "visible Watchman arrows/dots remain operable",
+    "Canon functional and parity suites rerun",
+    "72 screenshots and protected DOM/class checks rerun"
+  ],
+  "visualEvidenceRequired": true,
+  "manualAtEvidenceRequired": true,
+  "implementationBatch": "5C-1",
+  "rollback": "Revert only the A11Y-004 Phase 5C commit and rerun the hidden-focus and recovery checks.",
+  "recommendation": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+  "ownerDecision": "PENDING",
+  "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+}

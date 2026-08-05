@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T15:50:01.184Z",
+  "program": {
+    "selectedPhase": "Phase 5B - Issue-specific accessibility owner review",
+    "previousStatus": "READY",
+    "finalStatus": "WAITING_OWNER",
+    "phase5Overall": "IN_PROGRESS",
+    "phase5c": "NOT_READY",
+    "overall": "IN_PROGRESS"
+  },
+  "branchAndCommits": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "0a98a0ba498315442823dc5469074cd2d8d3ed10",
+    "currentHeadBeforeReviewCommit": "0a98a0ba498315442823dc5469074cd2d8d3ed10",
+    "reviewPackageCommit": "FINAL_PHASE5B_REVIEW_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "ownerDecisionCommit": null,
+    "finalCommit": "FINAL_PHASE5B_REVIEW_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "prePhaseTag": "teoyube-9of10-phase5b-start-0a98a0b",
+    "worktree": "DOCUMENTATION_CHANGES_PENDING_COMMIT"
+  },
+  "issues": {
+    "total": 11,
+    "critical": 1,
+    "high": 8,
+    "medium": 2,
+    "confirmed": 8,
+    "manualGaps": 3,
+    "falsePositives": 0,
+    "needsMoreEvidence": 0
+  },
+  "fixClasses": {
+    "pixelIdentical": 0,
+    "protectedAttribute": 6,
+    "visibleCopy": 0,
+    "layoutOrComponent": 2,
+    "manualEvidence": 3,
+    "falsePositive": 0,
+    "needsMoreEvidence": 0
+  },
+  "ownerReview": {
+    "requestsCreated": 11,
+    "proposalHashes": 20,
+    "canonDecision": "PENDING",
+    "manualTasks": 9,
+    "implementationBatches": 3,
+    "ownerDecisions": "ALL_PENDING",
+    "approvedFixes": 0,
+    "approvedManualTasks": 0,
+    "held": 0,
+    "rejected": 0,
+    "needsMoreEvidence": 0,
+    "pending": 20
+  },
+  "changes": {
+    "filesChanged": [
+      "docs/accessibility/owner-review/canon-focus-owner-decision.json",
+      "docs/accessibility/owner-review/canon-focus-owner-decision.md",
+      "docs/accessibility/owner-review/manual-evidence-plan.json",
+      "docs/accessibility/owner-review/manual-evidence-plan.md",
+      "docs/accessibility/owner-review/phase-5b-owner-decisions.json",
+      "docs/accessibility/owner-review/phase-5b-owner-decisions.md",
+      "docs/accessibility/owner-review/phase-5b-owner-review-package.json",
+      "docs/accessibility/owner-review/phase-5b-owner-review-package.md",
+      "docs/accessibility/owner-review/requests/A11Y-001.json",
+      "docs/accessibility/owner-review/requests/A11Y-001.md",
+      "docs/accessibility/owner-review/requests/A11Y-002.json",
+      "docs/accessibility/owner-review/requests/A11Y-002.md",
+      "docs/accessibility/owner-review/requests/A11Y-003.json",
+      "docs/accessibility/owner-review/requests/A11Y-003.md",
+      "docs/accessibility/owner-review/requests/A11Y-004.json",
+      "docs/accessibility/owner-review/requests/A11Y-004.md",
+      "docs/accessibility/owner-review/requests/A11Y-005.json",
+      "docs/accessibility/owner-review/requests/A11Y-005.md",
+      "docs/accessibility/owner-review/requests/A11Y-006.json",
+      "docs/accessibility/owner-review/requests/A11Y-006.md",
+      "docs/accessibility/owner-review/requests/A11Y-007.json",
+      "docs/accessibility/owner-review/requests/A11Y-007.md",
+      "docs/accessibility/owner-review/requests/A11Y-008.json",
+      "docs/accessibility/owner-review/requests/A11Y-008.md",
+      "docs/accessibility/owner-review/requests/A11Y-009.json",
+      "docs/accessibility/owner-review/requests/A11Y-009.md",
+      "docs/accessibility/owner-review/requests/A11Y-010.json",
+      "docs/accessibility/owner-review/requests/A11Y-010.md",
+      "docs/accessibility/owner-review/requests/A11Y-011.json",
+      "docs/accessibility/owner-review/requests/A11Y-011.md",
+      "docs/accessibility/phase-5b-starting-manifest.json",
+      "docs/accessibility/phase-5c-proposed-batches.json",
+      "docs/accessibility/phase-5c-proposed-batches.md",
+      "docs/recovery/9of10-evidence-ledger.json",
+      "docs/recovery/9of10-evidence-ledger.md",
+      "docs/recovery/9of10-owner-decisions.json",
+      "docs/recovery/9of10-owner-decisions.md",
+      "docs/recovery/9of10-phase-5b-accessibility-owner-review-report.json",
+      "docs/recovery/9of10-phase-5b-accessibility-owner-review-report.md",
+      "docs/recovery/9of10-phase-history.md",
+      "docs/recovery/9of10-program-status.json",
+      "docs/recovery/9of10-program-status.md",
+      "docs/recovery/9of10-risk-register.md",
+      "scripts/accessibility/finalize-phase5b-report.cjs",
+      "scripts/accessibility/prepare-phase5b-owner-review.cjs",
+      "scripts/accessibility/update-phase5b-program-ledgers.cjs",
+      "scripts/accessibility/verify-phase5b-owner-review.cjs"
+    ],
+    "fileCount": 47,
+    "productFixes": 0,
+    "productSourceChanges": 0,
+    "protectedVisualChanges": 0,
+    "cssChanges": 0,
+    "domClassChanges": 0,
+    "ariaTabindexChanges": 0,
+    "visibleCopyChanges": 0,
+    "assetChanges": 0,
+    "baselineChanges": 0,
+    "packageLockfileChanges": 0,
+    "runtimeChanges": 0,
+    "paidCalls": 0,
+    "participantOrResearchRecords": 0
+  },
+  "verification": {
+    "npm": "PASS_10.2.4",
+    "issueConsistency": "PASS_11_1_CRITICAL_8_HIGH_2_MEDIUM",
+    "ownerReviewRecordSchema": "PASS_11",
+    "proposalHashes": "PASS_20",
+    "decisionValidation": "PASS_20_PENDING_ALLOWED_VOCABULARY",
+    "routeStateReferences": "PASS_23_REGISTERED_ROUTES_NONEMPTY_STATES_6_VIEWPORTS",
+    "wcagReferences": "PASS_WCAG22_WAI_ARIA12_ARIA_IN_HTML",
+    "sourcePaths": "PASS",
+    "protectedContracts": "PASS",
+    "batchCoverage": "PASS_8_CONFIRMED_3_BATCHES",
+    "manualTaskCoverage": "PASS_9_TASKS_3_GAPS",
+    "markdownJson": "PASS",
+    "programLedger": "PASS_5B_WAITING_OWNER_5C_NOT_READY",
+    "secretScan": "PASS_ZERO_HITS",
+    "gitDiffClassification": "PASS_ZERO_PRODUCT_OR_PROTECTED_PATHS",
+    "participantResearchRecordScan": "PASS_ZERO_CHANGES",
+    "recovery": "PASS_268_PROTECTED_72_SCREENSHOTS_12_DOM_PLUS_OWNER_BASELINES",
+    "runtime": "PASS_NEXT_CANONICAL_23_ROUTES_STATIC_ROLLBACK",
+    "listeners": "PASS_PORT_3000_CLOSED_PORT_4173_PREEXISTING_UNRELATED_WORKSPACE_UNTOUCHED"
+  },
+  "preservedStatus": {
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA",
+    "phase5a": "PASS",
+    "phase5b": "WAITING_OWNER",
+    "phase5c": "NOT_READY",
+    "gateCPreview": "BLOCKED",
+    "gateCProduction": "CLOSED",
+    "wcagConformanceClaim": false,
+    "canonicalRuntime": "next",
+    "rollbackRuntime": "static-node"
+  },
+  "nextReady": "Phase 6A remains independently READY but was not started; Phase 5C is not ready until matching issue decisions are recorded.",
+  "ownerAction": {
+    "instructions": "Reply with one allowed decision per ID. A blanket approval is invalid. Every fix approval must bind the current proposal hash. Approval does not start Phase 5C.",
+    "decisions": [
+      {
+        "id": "A11Y-001",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe"
+      },
+      {
+        "id": "A11Y-002",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b"
+      },
+      {
+        "id": "A11Y-003",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca"
+      },
+      {
+        "id": "A11Y-004",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+      },
+      {
+        "id": "A11Y-005",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce"
+      },
+      {
+        "id": "A11Y-006",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+      },
+      {
+        "id": "A11Y-007",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+      },
+      {
+        "id": "A11Y-008",
+        "recommendedDecision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
+      },
+      {
+        "id": "A11Y-009",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "a5335828915affd3741a1af7973b964dc667c0938912e0ffb90e94b780bb211e"
+      },
+      {
+        "id": "A11Y-010",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "0584a9068607caf728b500981e11e13b70af66c3a88d13d78aa4fda2faf085d9"
+      },
+      {
+        "id": "A11Y-011",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "6ff3919f7025616e7a50c456136911a4f6b9de5499d208a6a1d5e4fdbb3641e3"
+      },
+      {
+        "id": "A11Y-MANUAL-001",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "fccac54b66ccb80145cdbbaed860392a218dc860d874c8c5743c17fc9745de02"
+      },
+      {
+        "id": "A11Y-MANUAL-002",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "186d9c8fd501df3ebf16852e5299f96b4e1d6b1f7148369347d4f2b6d419b369"
+      },
+      {
+        "id": "A11Y-MANUAL-003",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "84b99d36942904896986cf7eefb6ad909a715f55c1c89de0d202f0c8a7992c08"
+      },
+      {
+        "id": "A11Y-MANUAL-004",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "d954af1031f13887ea94aad68921e447615af9ab2d9aa8cc06b8a511e38fbff6"
+      },
+      {
+        "id": "A11Y-MANUAL-005",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "6e075829daaa6400a2c35e92838ef5d6658197e4466219709f4c8171beff5fe0"
+      },
+      {
+        "id": "A11Y-MANUAL-006",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "bf703879160f666fdda3addf2baa9216e011ddd828711e193b695d3e8df6dffc"
+      },
+      {
+        "id": "A11Y-MANUAL-007",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "82e0f445aa551b0f54c6a0a4ec77af8eea053c82d94d396f76cf4ec56ebc09ae"
+      },
+      {
+        "id": "A11Y-MANUAL-008",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "f28f0723e2dfb549ae45d8ba1b1e79ac98b82a70471659d42086dc5714bfd2bd"
+      },
+      {
+        "id": "A11Y-MANUAL-009",
+        "recommendedDecision": "APPROVE_MANUAL_EVIDENCE_TASK",
+        "proposalHash": "2dcafdae7e38febdd9f684933aed20e28ea897f9eb5299e93e4bbc729a1c5533"
+      }
+    ]
+  },
+  "rollback": "git revert <phase-5b-review-package-commit>; delete tag teoyube-9of10-phase5b-start-0a98a0b only if the checkpoint tag itself was inaccurate"
+}
