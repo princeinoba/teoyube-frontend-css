@@ -3,7 +3,7 @@
   "studyId": "teoyube-formative-pilot-2026-01",
   "title": "Teoyube moderated formative usability and trust pilot",
   "version": "teoyube-formative-pilot-2026-01.1",
-  "status": "READY_FOR_OWNER_RECRUITMENT_DECISION",
+  "status": "RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES",
   "approvedPilotDesignReference": "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
   "phase4cExecutionAuthorization": "OWNER_SUPPLIED_PHASE_4C_PROMPT_NO_SEPARATE_ID",
   "participantTargets": {
@@ -73,13 +73,13 @@
     ]
   },
   "recordingPolicy": {
-    "offered": "PENDING_OWNER_DECISION",
+    "offered": "OPTIONAL_OWNER_AUTHORIZED_SEPARATE_CONSENT",
     "optional": true,
     "separateConsentRequired": true,
     "decliningDoesNotExcludeParticipation": true
   },
   "liveAiTaskPolicy": {
-    "included": "PENDING_OWNER_DECISION",
+    "included": "OPTIONAL_OWNER_AUTHORIZED_SEPARATE_RESEARCH_AND_EXTERNAL_AI_CONSENT",
     "optional": true,
     "syntheticInputOnly": true,
     "separateConsentRequired": true,
@@ -88,7 +88,7 @@
     "paidProviderCallsDuringReadiness": false
   },
   "compensationPolicy": {
-    "offered": "PENDING_OWNER_DECISION",
+    "offered": "OPTIONAL_FIXED_NON_COERCIVE_OWNER_AUTHORIZED",
     "fixedWhenOffered": true,
     "notTiedToCompletionOrPositiveFeedback": true
   },
@@ -97,12 +97,15 @@
     "retentionDays": 180,
     "activeLocalStoreOnlyDeletionClaim": true
   },
-  "researchOperator": "PENDING",
-  "recruitmentStatus": "PENDING_OWNER_DECISION",
+  "researchOperator": "PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER",
+  "recruitmentStatus": "AUTHORIZED_AWAITING_OPERATOR_CONTACT_STORAGE_AND_PRIVACY_REVIEW",
   "sessionStatus": "NOT_STARTED",
   "analysisStatus": "NOT_STARTED",
   "realParticipantCollectionAuthorized": false,
   "syntheticScenariosOnly": true,
-  "contactDataStorage": "PENDING_SEPARATE_LOCATION",
-  "normalNavigationExposed": false
+  "contactDataStorage": "PENDING_SEPARATE_NON_GIT_LOCATION",
+  "normalNavigationExposed": false,
+  "ownerRecruitmentDecisionReference": "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID",
+  "recruitmentAuthorizedAt": "2026-08-05T07:16:04.7290862-04:00",
+  "localPrivacyReviewCompleted": false
 }

@@ -185,3 +185,15 @@ Phase 4B created no participant/contact/recording/event export, no UI route, no 
 | Phase state | 4C WAITING_OWNER; recruitment PENDING; Phase 4 IN_PROGRESS; Phase 4D NOT READY |
 
 No owner recruitment approval was prefilled. No real participant or session artifact was created. The full 216-cell gate was not required because Phase 4C changed no product, client, visual, route, or performance code.
+
+### Phase 4C owner recruitment decision
+
+| Evidence | Result |
+| --- | --- |
+| Decision reference/time | `PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID`; `2026-08-05T07:16:04.7290862-04:00` |
+| Recruitment | AUTHORIZED for the exact approved pilot |
+| Phase status | Phase 4C PASS; Phase 4 WAITING_OWNER_SESSION_DATA; Phase 4D NOT READY |
+| Automatic actions | None; no contacts, identities, records, consents, events, recordings, sessions, or analysis |
+| Research collection | Disabled; real participant collection unauthorized until prerequisites and separate activation verification |
+| Manual prerequisites | Name operator; select separate non-Git contact location; complete local/privacy review |
+| Actual participants/sessions/records/paid calls | 0 / 0 / 0 / 0 |

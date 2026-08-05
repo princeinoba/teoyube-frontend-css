@@ -32,14 +32,14 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 1 — Baseline lock and program ledger | **PASS** | Baseline/tag/ledgers verified; no product or protected change. |
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
-| 4 — Real-user pilot | **IN_PROGRESS** | Phase 4A and 4B PASS; Phase 4C operations and synthetic drill complete; recruitment decision WAITING_OWNER; 0 participants, sessions, or actual participant records; Phase 4D NOT READY. |
+| 4 — Real-user pilot | **WAITING_OWNER_SESSION_DATA** | Phase 4A/4B/4C PASS; recruitment authorized; research collection remains disabled; 0 participants, sessions, or participant records; Phase 4D NOT READY. |
 | 5 — Accessibility remediation | **READY** | Select 5A for a current standards-based audit. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
 | 9 — Re-score and closeout | **NOT_STARTED** | Requires material real-user and production evidence. |
 
-Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A and Phase 4B are **PASS**. Phase 4C is **WAITING_OWNER** at the recruitment-start decision and Phase 4D is **NOT READY**. Independent next-ready engineering choices are **5A or 6A**; neither was executed.
+Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A, Phase 4B, and Phase 4C are **PASS**. Phase 4 overall is **WAITING_OWNER_SESSION_DATA** and Phase 4D is **NOT READY**. Independent next-ready engineering choices are **5A or 6A**; neither was executed.
 
 ## Current gates
 
@@ -55,7 +55,7 @@ Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked unti
 | Gate C Preview | BLOCKED — dependency advisory cleared; release evidence remains stale and Phase 2A visual/performance findings remain open |
 | Gate C Production | CLOSED |
 | Stabilization | WAITING_OWNER — toolkit PASS; 0 days, 0 sessions, 0 incidents; Phase 3B NOT READY |
-| Real-user research | PHASE 4B PASS / PHASE 4C WAITING_OWNER — operations and 17-scenario synthetic drill PASS; 66-event registry unchanged; mode disabled; 0 participants, sessions, or actual participant records |
+| Real-user research | PHASE 4C PASS / WAITING_OWNER_SESSION_DATA — recruitment authorized; 17-scenario synthetic drill PASS; 66-event registry unchanged; collection disabled; 0 participants, sessions, consent/event records |
 
 No phase may reinterpret a historical green gate as current. No protected baseline may be replaced to create a pass.
 

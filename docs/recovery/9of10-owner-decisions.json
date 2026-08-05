@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05T05:44:46.6298307-04:00",
+  "updatedAt": "2026-08-05T07:16:04.7290862-04:00",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -105,13 +105,37 @@
         "Research collection remains checked-in disabled",
         "Recruitment decision fields remain PENDING until the owner answers the mandatory pause"
       ]
+    },
+    {
+      "decisionId": "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID",
+      "scope": "Authorize manual recruitment for the exact owner-approved Phase 4 pilot without automatically creating identities, records, events, consent artifacts or sessions",
+      "status": "APPROVED_BY_EXPLICIT_OWNER_RESPONSE",
+      "source": "Owner response authorizing recruitment for the approved pilot exactly as proposed",
+      "approvedAt": "2026-08-05T07:16:04.7290862-04:00",
+      "approvedDesign": {
+        "ordinaryAdults": {
+          "target": 12,
+          "minimum": 8,
+          "maximum": 15
+        },
+        "accessibilityRepresentation": "2-3 participants",
+        "expertReviewers": "optional 1-2 separate cohort",
+        "sessionDurationMinutes": "60-75",
+        "syntheticScenariosOnly": true,
+        "privateSensitiveDisclosuresRequested": false,
+        "recording": "optional separate consent",
+        "liveAi": "optional separate research and external-AI consent"
+      },
+      "limitations": [
+        "No automatic recruitment contact, scheduling, participant identity, participant record, consent record, research event or session",
+        "No Phase 4D",
+        "Research mode remains disabled and real participant collection remains unauthorized until operational prerequisites and a separately verified real-study activation",
+        "Operator, separate contact-data location and local/privacy review must be completed before manual recruitment contact or data collection",
+        "No product, visual, baseline, runtime-ownership or paid-provider change"
+      ]
     }
   ],
   "pendingDecisionGroups": [
-    {
-      "phase": "4C",
-      "decision": "Recruitment start: authorize approved pilot, authorize with safe changes, or hold; operator, mode, compensation, recording, live-AI, accessibility, expert, start-date, contact-storage, and privacy-review fields remain PENDING"
-    },
     {
       "phase": "5B",
       "decision": "path-specific accessibility fixes affecting protected output"

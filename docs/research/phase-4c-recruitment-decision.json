@@ -1,20 +1,55 @@
 {
   "schemaVersion": "1.0.0",
   "phase": "4C",
-  "status": "PENDING_OWNER_DECISION",
-  "recruitmentAuthorized": "PENDING",
-  "researchOperator": "PENDING",
-  "recruitmentMode": "PENDING",
-  "compensation": "PENDING",
-  "recordingOption": "PENDING",
-  "liveAiTaskIncluded": "PENDING",
-  "accessibilityRecruitmentPlan": "PENDING",
-  "expertReviewerRecruitment": "PENDING",
-  "recruitmentStartDate": "PENDING",
-  "contactDataStorageLocation": "PENDING",
-  "localPrivacyReviewCompleted": "PENDING",
+  "status": "APPROVED",
+  "recruitmentAuthorized": "AUTHORIZED",
+  "researchOperator": "PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER",
+  "recruitmentMode": "AUTHORIZED_REMOTE_LOCAL_OR_MIXED_MODERATED_MANUAL",
+  "compensation": "FIXED_NON_COERCIVE_IF_OFFERED_NOT_TIED_TO_FEEDBACK",
+  "recordingOption": "OPTIONAL_SEPARATE_AUDIO_SCREEN_VIDEO_CONSENT",
+  "liveAiTaskIncluded": "OPTIONAL_SYNTHETIC_SEPARATE_RESEARCH_AND_EXTERNAL_AI_CONSENT",
+  "accessibilityRecruitmentPlan": "AUTHORIZED_TARGET_2_TO_3_WITHOUT_DIAGNOSIS_DISCLOSURE",
+  "expertReviewerRecruitment": "OPTIONAL_1_TO_2_SEPARATE_COHORT",
+  "recruitmentStartDate": "AUTHORIZED_NOT_SCHEDULED",
+  "contactDataStorageLocation": "PENDING_SEPARATE_NON_GIT_LOCATION",
+  "localPrivacyReviewCompleted": "PENDING_REQUIRED_BEFORE_CONTACT_OR_DATA_COLLECTION",
+  "approvedPilot": {
+    "ordinaryAdultTarget": 12,
+    "minimumAdults": 8,
+    "maximumAdults": 15,
+    "accessibilityRepresentation": "2-3",
+    "expertReviewers": "optional 1-2 separate cohort",
+    "sessionDurationMinutes": {
+      "minimum": 60,
+      "maximum": 75
+    },
+    "syntheticScenariosOnly": true,
+    "privateSensitiveDisclosureRequested": false
+  },
   "actualParticipants": 0,
   "actualSessions": 0,
+  "actualParticipantRecords": 0,
+  "researchEvents": 0,
+  "consentRecords": 0,
   "phase4dReady": false,
-  "ownerDecisionReference": null
+  "ownerDecisionReference": "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID",
+  "approvedAt": "2026-08-05T07:16:04.7290862-04:00",
+  "decisionSource": "Owner explicitly authorized recruitment for the approved pilot exactly as proposed",
+  "activationPrerequisites": [
+    "Name the owner or a trained moderator as research operator",
+    "Select a separate non-Git contact-data location",
+    "Complete local/privacy review",
+    "Review participant consent and withdrawal materials",
+    "Keep research collection disabled until a separately approved real-study activation"
+  ],
+  "automaticActionsProhibited": [
+    "participant identities",
+    "participant records",
+    "consent records",
+    "research events",
+    "sessions",
+    "recruitment contact",
+    "scheduling",
+    "Phase 4D analysis"
+  ]
 }

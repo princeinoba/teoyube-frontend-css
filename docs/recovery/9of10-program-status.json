@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE4C_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -28,7 +28,8 @@
     "PASS",
     "REJECTED",
     "SUPERSEDED",
-    "NOT_READY"
+    "NOT_READY",
+    "WAITING_OWNER_SESSION_DATA"
   ],
   "phases": [
     {
@@ -187,18 +188,18 @@
     {
       "phaseId": "4",
       "name": "Real-user pilot",
-      "status": "IN_PROGRESS",
+      "status": "WAITING_OWNER_SESSION_DATA",
       "entryGates": [
         "Phase 1 PASS"
       ],
       "startingCommit": "d58fa5c5de4069beff84e3281d49b5e5b6192295",
-      "currentCommit": "FINAL_PHASE4C_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "pilot protocol and owner decision: COMPLETE",
         "research-safe instrumentation: COMPLETE",
         "participant and moderator operations package: COMPLETE_NOT_USED",
         "17-scenario synthetic readiness drill: PASS",
-        "recruitment start decision: WAITING_OWNER",
+        "recruitment start decision: AUTHORIZED",
         "analysis: NOT_STARTED"
       ],
       "acceptanceCriteria": [
@@ -211,30 +212,32 @@
         "Phase 4A owner-approved design complete",
         "Phase 4B privacy-safe instrumentation PASS with 66 fixed events and research mode checked-in disabled",
         "Phase 4C operations package complete with 17 synthetic scenarios and 33 focused readiness tests",
-        "Synthetic drill PASS with consent, rescue, accessibility, fallback, withdrawal, deletion, aggregate regeneration and zero records after cleanup",
-        "Research verification PASS 77/77; build, typecheck, lint, security, runtime, dual-runtime and recovery PASS",
-        "0 participants, 0 sessions, 0 actual participant records, 0 contact rows, and 0 paid calls"
+        "Owner explicitly authorized recruitment for the exact approved pilot at 2026-08-05T07:16:04.7290862-04:00",
+        "Research collection remains disabled; operator, separate contact storage and local/privacy review are required before contact/data collection",
+        "0 participants, 0 sessions, 0 participant/consent/event records, 0 contact rows, and 0 paid calls"
       ],
       "currentBlockers": [
-        "Phase 4C recruitment start requires the explicit owner decision now pending",
-        "Research operator, recruitment mode, contact-data location and local/privacy review remain PENDING",
-        "Real participant collection remains unauthorized and Phase 4D is NOT READY",
+        "Research operator remains to be named as owner or a trained moderator",
+        "Separate non-Git contact-data location and local/privacy review remain required",
+        "Real participant collection is not enabled and authentic session data remains absent",
+        "Phase 4D remains NOT READY",
         "Current Phase 2A visual/performance and Phase 3 owner-session blockers remain open"
       ],
       "ownerDecisionIds": [
         "PHASE_4A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
         "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
         "PHASE_4B_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
-        "PHASE_4C_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID"
+        "PHASE_4C_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
+        "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID"
       ],
       "externalDependencies": [
-        "explicit owner recruitment-start decision",
-        "qualified research operator and local/privacy review",
+        "named owner or trained research operator",
+        "approved separate contact-data location and completed local/privacy review",
         "real consented adult participants",
-        "approved researcher or owner-led sessions"
+        "owner-performed or approved moderator-led sessions"
       ],
-      "rollback": "git revert <final-phase-4c-evidence-commit> 66d9adb06409f73a875a453f54caeba1a3817b81; preserve all real data if later created",
-      "nextReviewTrigger": "Owner chooses authorize recruitment, authorize with safe changes, or hold; no recruitment or record creation is automatic",
+      "rollback": "git revert <phase-4c-decision-commit>; preserve every real participant artifact if later created",
+      "nextReviewTrigger": "Owner completes the named-operator, separate-contact-storage and local/privacy prerequisites, then manually recruits and conducts approved sessions; Phase 4D remains separately locked",
       "subphases": [
         {
           "subphaseId": "4A",
@@ -246,7 +249,7 @@
         },
         {
           "subphaseId": "4C",
-          "status": "WAITING_OWNER"
+          "status": "PASS"
         },
         {
           "subphaseId": "4D",
@@ -496,12 +499,12 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "PHASE4C_OWNER_RECRUITMENT_DECISION",
+  "nextReadyPhase": "5A_OR_6A",
   "otherReadyIndependentSubphases": [
     "5A",
     "6A"
   ],
-  "nextWaitingPhase": "PHASE4C_WAITING_OWNER_PHASE3_WAITING_OWNER_PHASE2A_BLOCKED",
+  "nextWaitingPhase": "PHASE4_WAITING_OWNER_SESSION_DATA_PHASE3_WAITING_OWNER_PHASE2A_BLOCKED",
   "prompt23BUnlocked": false,
   "publicDeploymentAuthorized": false
 }

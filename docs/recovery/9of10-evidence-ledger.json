@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T05:44:46.6298307-04:00",
+  "generatedAt": "2026-08-05T07:16:04.7290862-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -438,21 +438,21 @@
     },
     {
       "phase": "4C",
-      "status": "WAITING_OWNER",
+      "status": "PASS",
       "executedAt": "2026-08-05T05:44:46.6298307-04:00",
       "startingCommit": "d58fa5c5de4069beff84e3281d49b5e5b6192295",
       "prePhaseTag": "teoyube-9of10-phase4c-start-d58fa5c",
       "operationsCommit": "66d9adb06409f73a875a453f54caeba1a3817b81",
-      "decisionCommit": null,
-      "finalCommit": "FINAL_PHASE4C_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "decisionCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "finalCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "studyId": "teoyube-formative-pilot-2026-01",
-      "studyStatus": "READY_FOR_OWNER_RECRUITMENT_DECISION",
+      "studyStatus": "RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES",
       "syntheticScenarioCount": 17,
       "focusedTests": "PASS_33_OF_33",
       "researchTests": "PASS_77_OF_77",
       "syntheticDryRun": "PASS_12_CODED_EVENTS_ONE_RESCUE_ZERO_AFTER_CLEANUP",
-      "recruitment": "PENDING_NOT_AUTHORIZED",
-      "researchOperator": "PENDING",
+      "recruitment": "AUTHORIZED",
+      "researchOperator": "PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER",
       "checkedInResearchMode": false,
       "actualParticipants": 0,
       "actualSessions": 0,
@@ -487,7 +487,7 @@
       "artifacts": [
         {
           "path": "config/research-pilot-study.json",
-          "sha256": "d4c8aef4e136c98212b928945ef69cb68bacf82415953214b2b709d3ef8f0eef"
+          "sha256": "a24fdd8ccfd8fab759c99c9e728d37274dd5f8358d529aad213e3a29da9e04b4"
         },
         {
           "path": "config/research-pilot-scenarios.json",
@@ -507,21 +507,26 @@
         },
         {
           "path": "docs/research/phase-4c-recruitment-decision.md",
-          "sha256": "f572374f12da866eebc385e7562f5f4b7cbd8ab0f27d5eff5ee8da81dd49d47c"
+          "sha256": "b0c8502b39469fddf1a0901b7b5b395bfa55fa3191923b29d0ba72a28ab32580"
         },
         {
           "path": "docs/research/phase-4c-recruitment-decision.json",
-          "sha256": "b8448333c755aea2e29c73202cccfaf9639fcc9a33066258d91aeeeae53e2827"
+          "sha256": "994fae3d0c49ea3c5e104286ec1d78a2e5bee2591d1c02304613389451f9bb27"
         },
         {
           "path": "docs/recovery/9of10-phase-4c-pilot-operations-report.md",
-          "sha256": "fc8a12160965797783478d0f5866ad45c1a77d5e79142412aa0177395e7fa7d2"
+          "sha256": "fbfec92f927495cc99775ec87787c70a4a4829dbba0de98933a281a5fcb5a655"
         },
         {
           "path": "docs/recovery/9of10-phase-4c-pilot-operations-report.json",
-          "sha256": "7f93bf432815bd55a50d62bb5273d3d8c7cd41852c4a1a75822ae9093aa9a0ba"
+          "sha256": "a14872326541c438b53178762bb29263547007904588c6438e232fce1e979bfa"
         }
-      ]
+      ],
+      "decisionReference": "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID",
+      "decisionApprovedAt": "2026-08-05T07:16:04.7290862-04:00",
+      "realParticipantCollectionAuthorized": false,
+      "manualPrerequisitesComplete": false,
+      "phase4Overall": "WAITING_OWNER_SESSION_DATA"
     }
   ],
   "workspaceAtStart": {
@@ -544,14 +549,20 @@
     "workspaceLogicalBytes": 3466005717
   },
   "workspaceAfterPhase4c": {
-    "recordedAt": "2026-08-05T05:44:46.6298307-04:00",
-    "head": "FINAL_PHASE4C_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "recordedAt": "2026-08-05T07:16:04.7290862-04:00",
+    "head": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
     "researchModeDefault": false,
+    "recruitmentAuthorized": true,
+    "realParticipantCollectionAuthorized": false,
+    "manualPrerequisitesComplete": false,
     "actualParticipants": 0,
     "actualSessions": 0,
     "actualParticipantRecords": 0,
+    "consentRecords": 0,
+    "researchEvents": 0,
     "paidCalls": 0,
-    "phase4c": "WAITING_OWNER",
+    "phase4c": "PASS",
+    "phase4Overall": "WAITING_OWNER_SESSION_DATA",
     "phase4d": "NOT_READY"
   }
 }

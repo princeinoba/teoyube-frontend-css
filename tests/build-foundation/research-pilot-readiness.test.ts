@@ -38,7 +38,7 @@ afterEach(() => {
 describe("Phase 4C study configuration", () => {
   it("uses the owner-authorized study identity without activating collection", () => {
     expect(study.studyId).toBe("teoyube-formative-pilot-2026-01");
-    expect(study.status).toBe("READY_FOR_OWNER_RECRUITMENT_DECISION");
+    expect(study.status).toBe("RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES");
     expect(study.realParticipantCollectionAuthorized).toBe(false);
   });
 
@@ -76,10 +76,12 @@ describe("Phase 4C study configuration", () => {
     expect(study.retentionPolicy).toEqual({ retentionClass: "formative_pilot_180_days", retentionDays: 180, activeLocalStoreOnlyDeletionClaim: true });
   });
 
-  it("leaves every recruitment decision field pending", () => {
-    expect(decision.status).toBe("PENDING_OWNER_DECISION");
-    expect(decision.recruitmentAuthorized).toBe("PENDING");
-    expect(decision.researchOperator).toBe("PENDING");
+  it("records owner authorization while preserving manual prerequisites", () => {
+    expect(decision.status).toBe("APPROVED");
+    expect(decision.recruitmentAuthorized).toBe("AUTHORIZED");
+    expect(decision.researchOperator).toBe("PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER");
+    expect(decision.contactDataStorageLocation).toBe("PENDING_SEPARATE_NON_GIT_LOCATION");
+    expect(decision.localPrivacyReviewCompleted).toBe("PENDING_REQUIRED_BEFORE_CONTACT_OR_DATA_COLLECTION");
     expect(decision.actualParticipants).toBe(0);
     expect(decision.actualSessions).toBe(0);
     expect(decision.phase4dReady).toBe(false);
@@ -129,8 +131,8 @@ describe("Phase 4C pilot command", () => {
     expect(run("status")).toMatchObject({ researchModeEnabled: false, realParticipantCollectionAuthorized: false, actualParticipantRecordCount: 0, actualSessionCount: 0, paidProviderCalls: 0, valid: true });
   });
 
-  it("verifies the pending owner gate without creating state", () => {
-    expect(run("verify")).toMatchObject({ valid: true, recruitmentAuthorized: "PENDING", actualParticipantRecordCount: 0 });
+  it("verifies authorization without enabling collection or creating state", () => {
+    expect(run("verify")).toMatchObject({ valid: true, recruitmentAuthorized: "AUTHORIZED", realParticipantCollectionAuthorized: false, actualParticipantRecordCount: 0 });
     expect(existsSync(testRoot)).toBe(false);
   });
 

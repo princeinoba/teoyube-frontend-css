@@ -174,3 +174,10 @@ Operations commit: `66d9adb06409f73a875a453f54caeba1a3817b81`
 ### Result
 
 Phase 4C is **WAITING_OWNER** for the mandatory recruitment-start decision. Phase 4 overall remains **IN_PROGRESS**, Phase 4D is **NOT READY**, Phase 2A remains **BLOCKED**, and Phase 3 remains **WAITING_OWNER**. Independent Phase 5A and Phase 6A remain READY and were not executed.
+
+### Owner recruitment authorization
+
+Approved at: `2026-08-05T07:16:04.7290862-04:00`
+Decision reference: `PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID`
+
+The owner authorized recruitment for the exact proposed pilot. Phase 4C is **PASS**, Phase 4 overall is **WAITING_OWNER_SESSION_DATA**, and Phase 4D remains **NOT READY**. The decision creates no participant identity, contact, consent, event, recording, session, or finding. Research mode and real participant collection remain disabled while the operator, separate contact-data location, local/privacy review, and separately verified real-study activation remain outstanding. Actual participants/sessions/records and paid calls remain 0/0/0/0.

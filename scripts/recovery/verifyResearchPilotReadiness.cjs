@@ -90,12 +90,14 @@ function main() {
   verifyNoResearchAdministrationRoute(failures);
   verifyNoSecretLikeMaterial(failures);
   verifyProhibitedLanguage(failures);
-  if (study.status !== "READY_FOR_OWNER_RECRUITMENT_DECISION") failures.push("study_not_waiting_for_owner");
+  if (study.status !== "RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES") failures.push("study_authorization_state_invalid");
   if (phase4aDecision.status !== "APPROVED" || phase4aDecision.ownerApproved !== true || phase4aDecision.approvalReference !== study.approvedPilotDesignReference) failures.push("phase4a_decision_inconsistent");
   if (phase4aDecision.sampleSize.recommendation !== 12 || phase4aDecision.sampleSize.minimum !== 8 || phase4aDecision.sampleSize.maximum !== 15) failures.push("phase4a_sample_inconsistent");
   if (phase4bReport.status.final !== "PASS" || phase4bReport.researchMode.checkedInDefault !== false || phase4bReport.researchMode.collectionAuthorized !== false) failures.push("phase4b_report_inconsistent");
   if (phase4bStudyRegistry.studies.length !== 1 || phase4bStudyRegistry.studies[0].studyId !== "teoyube-phase4b-synthetic" || phase4bStudyRegistry.studies[0].realParticipantCollectionAuthorized !== false) failures.push("phase4b_synthetic_registry_changed");
-  if (decision.recruitmentAuthorized !== "PENDING" || decision.researchOperator !== "PENDING") failures.push("decision_prefilled");
+  if (decision.status !== "APPROVED" || decision.recruitmentAuthorized !== "AUTHORIZED" || decision.ownerDecisionReference !== "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID") failures.push("recruitment_authorization_invalid");
+  if (decision.researchOperator !== "PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER" || decision.contactDataStorageLocation !== "PENDING_SEPARATE_NON_GIT_LOCATION" || decision.localPrivacyReviewCompleted !== "PENDING_REQUIRED_BEFORE_CONTACT_OR_DATA_COLLECTION") failures.push("manual_prerequisites_not_preserved");
+  if (study.realParticipantCollectionAuthorized !== false || study.localPrivacyReviewCompleted !== false) failures.push("real_collection_enabled_before_prerequisites");
   if (decision.actualParticipants !== 0 || decision.actualSessions !== 0) failures.push("actual_counts_nonzero");
   if (scenarios.scenarios.length !== 17) failures.push("scenario_count_invalid");
   const result = {

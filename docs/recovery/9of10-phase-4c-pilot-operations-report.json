@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T05:44:46.6298307-04:00",
+  "generatedAt": "2026-08-05T07:16:04.7290862-04:00",
   "program": {
     "selectedPhase": "4C",
     "name": "Pilot operations and recruitment launch",
     "previousStatus": "READY",
-    "finalStatus": "WAITING_OWNER",
-    "phase4Overall": "IN_PROGRESS",
+    "finalStatus": "PASS",
+    "phase4Overall": "WAITING_OWNER_SESSION_DATA",
     "phase4d": "NOT_READY",
     "programOverall": "IN_PROGRESS"
   },
@@ -14,20 +14,23 @@
     "branch": "recovery/visual-source-of-truth",
     "startingCommit": "d58fa5c5de4069beff84e3281d49b5e5b6192295",
     "operationsCommit": "66d9adb06409f73a875a453f54caeba1a3817b81",
-    "decisionCommit": null,
-    "decisionCommitStatus": "PENDING_OWNER_DECISION_NOT_CREATED",
-    "finalCommit": "REPORTED_IN_FINAL_HANDOFF",
+    "decisionCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "decisionCommitStatus": "OWNER_DECISION_RECORDED",
+    "finalCommit": "FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
     "prePhaseTag": "teoyube-9of10-phase4c-start-d58fa5c"
   },
   "study": {
     "studyId": "teoyube-formative-pilot-2026-01",
-    "status": "READY_FOR_OWNER_RECRUITMENT_DECISION",
+    "status": "RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES",
     "ordinaryUserTarget": 12,
     "minimumParticipants": 8,
     "maximumParticipants": 15,
     "accessibilityTarget": "2-3 participants representing accessibility needs",
     "expertReviewers": "optional 1-2, separate cohort",
-    "sessionDurationMinutes": { "minimum": 60, "maximum": 75 },
+    "sessionDurationMinutes": {
+      "minimum": 60,
+      "maximum": 75
+    },
     "syntheticScenarioCount": 17,
     "liveAi": "OPTIONAL_SEPARATE_CONSENT_DENIED_BY_DEFAULT",
     "recording": "OPTIONAL_SEPARATE_CONSENT_DENIED_BY_DEFAULT",
@@ -45,12 +48,17 @@
     "adverseEventProcess": "PASS_NO_UNRESOLVED_EVENT"
   },
   "ownerDecision": {
-    "recruitment": "PENDING_NOT_AUTHORIZED",
-    "decisionReference": "PHASE_4C_RECRUITMENT_START_DECISION_PENDING",
-    "researchOperator": "PENDING",
+    "recruitment": "AUTHORIZED",
+    "decisionReference": "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID",
+    "approvedAt": "2026-08-05T07:16:04.7290862-04:00",
+    "researchOperator": "PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER",
     "changes": [],
     "actualParticipants": 0,
     "actualSessions": 0,
+    "actualParticipantRecords": 0,
+    "consentRecords": 0,
+    "researchEvents": 0,
+    "realParticipantCollectionAuthorized": false,
     "phase4dReady": false
   },
   "changes": {
@@ -65,7 +73,8 @@
     "packageLockFilesChanged": 0,
     "runtimeBehaviorChanges": 0,
     "participantRecords": 0,
-    "paidCalls": 0
+    "paidCalls": 0,
+    "decisionRecordFiles": 18
   },
   "verification": {
     "focusedReadinessTests": "PASS_33_OF_33",
@@ -95,8 +104,43 @@
   "currentBlockers": {
     "phase2a": "BLOCKED_VISUAL_PERFORMANCE_RECONCILIATION",
     "phase3": "WAITING_OWNER_AUTHENTIC_SESSIONS",
-    "phase4d": "NOT_READY_OWNER_RECRUITMENT_DECISION_AND_REAL_SESSION_DATA_ABSENT"
+    "phase4d": "NOT_READY_REAL_SESSION_DATA_ABSENT",
+    "manualPrerequisites": [
+      "name operator",
+      "select separate non-Git contact-data location",
+      "complete local/privacy review",
+      "separately verify real-study activation before research writes"
+    ]
   },
-  "nextReadyIndependent": ["5A", "6A"],
-  "rollback": "git revert <final-phase-4c-evidence-commit> 66d9adb06409f73a875a453f54caeba1a3817b81"
+  "nextReadyIndependent": [
+    "5A",
+    "6A"
+  ],
+  "rollback": "git revert <phase-4c-decision-commit>",
+  "manualRecruitmentWorkflow": {
+    "safeCommands": [
+      "npm run research:pilot:status",
+      "npm run research:pilot:verify",
+      "npm run research:pilot:prepare",
+      "npm run research:pilot:dry-run -- --confirm-synthetic",
+      "npm run research:pilot:reset -- --confirm-synthetic-reset",
+      "npm run recovery:verify"
+    ],
+    "manualSteps": [
+      "name operator",
+      "complete local/privacy review",
+      "select access-controlled contact-data location outside Git and event storage",
+      "recruit adults voluntarily with approved message",
+      "screen and schedule without participant data in repository",
+      "obtain distinct participation, product-event, recording, live-AI, external-AI, accessibility and follow-up consent as applicable",
+      "keep ordinary and expert cohorts separate"
+    ],
+    "lockedCommandsUntilRealStudyActivation": [
+      "npm run research:session:prepare",
+      "npm run research:event:record",
+      "npm run research:session:complete",
+      "npm run research:study:export"
+    ],
+    "participantDataBoundary": "No participant identity, contact, consent, recording, event or session data in Git, product telemetry, visual evidence, model context or the synthetic fixture namespace."
+  }
 }

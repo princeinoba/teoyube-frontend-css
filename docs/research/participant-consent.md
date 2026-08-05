@@ -28,11 +28,11 @@ Please do not share private prayers, journal entries, testimony, memories, check
 
 ## Optional recording
 
-Recording is **PENDING OWNER DECISION**. If recording is offered, audio, screen, and video permission must each be explained and consented to separately. Declining recording does not prevent participation. Recording may be stopped at any time.
+The owner authorized recording as an optional study choice. If recording is offered, audio, screen, and video permission must each be explained and consented to separately. Declining recording does not prevent participation. Recording may be stopped at any time.
 
 ## Optional external AI processing
 
-The live-AI task is **PENDING OWNER DECISION**. If included, it uses a synthetic, non-sensitive message. OpenAI may process that message only after a separate consent check. Teoyube requests `store: false` but does not claim verified Zero Data Retention. You may decline or revoke consent and continue with deterministic Teoyube behavior.
+The owner authorized the live-AI task as an optional study choice. If included, it uses a synthetic, non-sensitive message. OpenAI may process that message only after a separate consent check. Teoyube requests `store: false` but does not claim verified Zero Data Retention. You may decline or revoke consent and continue with deterministic Teoyube behavior.
 
 ## Risks and safeguards
 
@@ -42,7 +42,7 @@ Teoyube is not a replacement for Scripture, prayer, pastoral care, church commun
 
 ## Privacy, retention, and deletion
 
-Research results use participant IDs rather than names. Access is limited to the approved research operator and owner. Retention duration is **PENDING OWNER DECISION**. Contact/recruitment records are kept separately and deleted on their own schedule. You may request withdrawal or deletion of identifiable research material using the approved contact below, subject to the final reviewed policy and any already aggregated de-identified findings.
+Research results use participant IDs rather than names. Access is limited to the approved research operator and owner. The active local research-event retention class is 180 days. Optional recordings and contact/recruitment records remain separate, require reviewed locations and schedules, and are not stored in the event store or Git. You may request withdrawal or deletion of identifiable research material using the approved contact below, subject to the final reviewed policy and any already aggregated de-identified findings.
 
 ## Compensation and contacts
 

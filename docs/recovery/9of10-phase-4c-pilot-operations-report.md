@@ -11,12 +11,12 @@ Pre-phase tag: `teoyube-9of10-phase4c-start-d58fa5c`
 | --- | --- |
 | Selected phase | Phase 4C — Pilot operations and recruitment launch |
 | Previous status | READY |
-| Final status | **WAITING_OWNER** |
-| Phase 4 overall | **IN_PROGRESS** |
+| Final status | **PASS** |
+| Phase 4 overall | **WAITING_OWNER_SESSION_DATA** |
 | Phase 4D | **NOT READY** |
 | Program overall | **IN_PROGRESS** |
 
-The operational package and synthetic readiness drill are complete. Recruitment remains unauthorized until the owner answers the mandatory recruitment-start decision. No real participant, contact, consent, session, recording, finding, or participant ID was created.
+The operational package, synthetic readiness drill, and owner recruitment decision are complete. Recruitment is authorized for the exact approved pilot, but research collection remains disabled and no participant, contact, consent, event, session, recording, finding, or participant ID was created.
 
 ## Branch and commits
 
@@ -25,8 +25,8 @@ The operational package and synthetic readiness drill are complete. Recruitment 
 | Branch | `recovery/visual-source-of-truth` |
 | Starting commit | `d58fa5c5de4069beff84e3281d49b5e5b6192295` |
 | Operations commit | `66d9adb06409f73a875a453f54caeba1a3817b81` |
-| Decision commit | `PENDING_OWNER_DECISION_NOT_CREATED` |
-| Final evidence commit | `REPORTED_IN_FINAL_HANDOFF` |
+| Decision commit | `FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF` |
+| Final evidence commit | `FINAL_PHASE4C_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF` |
 | Pre-phase tag | `teoyube-9of10-phase4c-start-d58fa5c` |
 | Worktree | Expected clean after the final evidence commit |
 
@@ -35,7 +35,7 @@ The operational package and synthetic readiness drill are complete. Recruitment 
 | Field | Approved/readiness state |
 | --- | --- |
 | Study ID | `teoyube-formative-pilot-2026-01` |
-| Study status | `READY_FOR_OWNER_RECRUITMENT_DECISION` |
+| Study status | `RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES` |
 | Participant target | 12 adults recommended; minimum 8; maximum 15 |
 | Accessibility target | 2–3 participants representing accessibility needs |
 | Expert reviewers | Optional 1–2 Christian ministry/expert reviewers; separate cohort |
@@ -63,10 +63,10 @@ The operational package and synthetic readiness drill are complete. Recruitment 
 
 | Field | State |
 | --- | --- |
-| Recruitment | `PENDING` / not authorized |
-| Decision reference | `PHASE_4C_RECRUITMENT_START_DECISION_PENDING` |
-| Research operator | `PENDING` |
-| Changes | None; approved Phase 4A design preserved |
+| Recruitment | `AUTHORIZED` for the exact approved pilot |
+| Decision reference | `PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID` |
+| Research operator | `PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER` |
+| Changes | None; exact proposed pilot approved |
 | Actual participants | 0 |
 | Actual sessions | 0 |
 | Phase 4D ready | NO |
@@ -76,6 +76,7 @@ The operational package and synthetic readiness drill are complete. Recruitment 
 | Category | Result |
 | --- | --- |
 | Operations/tooling files | 35 files in the operations commit; final ledgers/reports recorded separately |
+| Decision-record files | 18 decision, verification, and ledger files |
 | Product source changes | 0 |
 | Protected visual changes | 0 |
 | CSS changes | 0 |
@@ -119,14 +120,26 @@ The operational package and synthetic readiness drill are complete. Recruitment 
 - Phase 3: **WAITING_OWNER** for authentic stabilization sessions.
 - Phase 4A: **PASS**.
 - Phase 4B: **PASS**.
-- Phase 4C: **WAITING_OWNER**.
+- Phase 4C: **PASS**.
 - Phase 4D: **NOT READY**.
 - Independent engineering choices Phase 5A or Phase 6A remain **READY** and were not executed.
 
-Rollback before an owner decision:
+## Manual recruitment workflow
+
+1. Verify the authorization and protected state with `npm run research:pilot:status`, `npm run research:pilot:verify`, and `npm run recovery:verify`.
+2. Name the owner or a trained moderator as operator, choose an access-controlled contact store outside Git and the research event store, and complete local/privacy review.
+3. Use the approved recruitment message and screening materials manually. Enroll adults only; keep ordinary and expert cohorts separate; request no private or sensitive disclosure.
+4. Schedule 60-75 minute sessions outside the repository. Store only minimum contact/scheduling data in the separate contact system.
+5. Before any session, present the reviewed participant packet and obtain distinct participation and product-event consent. Recording, accessibility observation, follow-up, optional live AI, and external-AI processing remain independent choices.
+6. Do not run real-session write/export commands until a separately owner-approved real study is allowlisted and verified. The current Phase 4B registry is synthetic-only and collection remains disabled.
+7. Synthetic moderator rehearsal remains available through `npm run research:pilot:prepare`, `npm run research:pilot:dry-run -- --confirm-synthetic`, and `npm run research:pilot:reset -- --confirm-synthetic-reset`.
+
+Participant identity, contact, consent, recording, event, and session data must never enter Git, product telemetry, visual evidence, model context, public assets, or the synthetic fixture namespace.
+
+Rollback for the recorded owner decision:
 
 ```powershell
-git revert <final-phase-4c-evidence-commit> 66d9adb06409f73a875a453f54caeba1a3817b81
+git revert <phase-4c-decision-commit>
 ```
 
-This report does not authorize recruitment. The next action is the explicit owner recruitment-start decision.
+Recruitment is authorized, but participant contact must wait for the named operator, separate contact-data location, and local/privacy review. Phase 4D remains locked.

@@ -75,7 +75,7 @@ function validateStudyAndScenarios() {
     if (!fieldPolicy.prohibitedFields.includes(prohibitedField)) failures.push(`field_policy_missing:${prohibitedField}`);
   }
   if (study.studyId !== "teoyube-formative-pilot-2026-01") failures.push("study_id_invalid");
-  if (study.status !== "READY_FOR_OWNER_RECRUITMENT_DECISION") failures.push("study_status_invalid");
+  if (study.status !== "RECRUITMENT_AUTHORIZED_AWAITING_MANUAL_PREREQUISITES") failures.push("study_status_invalid");
   if (study.realParticipantCollectionAuthorized !== false) failures.push("real_collection_authorized");
   if (study.syntheticScenariosOnly !== true) failures.push("synthetic_only_missing");
   if (study.participantTargets.recommendedOrdinaryAdults !== 12) failures.push("participant_target_invalid");
@@ -110,7 +110,7 @@ function validateStudyAndScenarios() {
 function status() {
   return {
     schemaVersion: "1.0.0",
-    phase: "4C_READINESS_ONLY",
+    phase: "4C_RECRUITMENT_AUTHORIZED_NO_COLLECTION",
     studyId: study.studyId,
     studyStatus: study.status,
     recruitmentAuthorized: decision.recruitmentAuthorized,
@@ -135,7 +135,8 @@ function verifyReadiness() {
   if (current.researchModeEnabled) failures.push("research_mode_enabled_for_readiness");
   if (current.actualParticipantRecordCount !== 0) failures.push("actual_participant_record_present");
   if (trackedResearchDataPaths().length !== 0) failures.push("tracked_research_data_present");
-  if (decision.status !== "PENDING_OWNER_DECISION" || decision.recruitmentAuthorized !== "PENDING") failures.push("owner_recruitment_decision_not_pending");
+  if (decision.status !== "APPROVED" || decision.recruitmentAuthorized !== "AUTHORIZED" || decision.ownerDecisionReference !== "PHASE_4C_OWNER_RESPONSE_AUTHORIZE_EXACT_PROPOSAL_NO_SEPARATE_ID") failures.push("owner_recruitment_authorization_invalid");
+  if (decision.researchOperator !== "PENDING_OWNER_OR_NAMED_TRAINED_RESEARCHER" || decision.contactDataStorageLocation !== "PENDING_SEPARATE_NON_GIT_LOCATION" || decision.localPrivacyReviewCompleted !== "PENDING_REQUIRED_BEFORE_CONTACT_OR_DATA_COLLECTION") failures.push("manual_prerequisites_not_preserved");
   if (decision.actualParticipants !== 0 || decision.actualSessions !== 0 || decision.phase4dReady !== false) failures.push("decision_counts_invalid");
   if (!fs.readFileSync(path.join(root, ".gitignore"), "utf8").includes("/.var/research/synthetic/")) failures.push("synthetic_path_not_ignored");
   const unresolved = path.join(syntheticRoot, "unresolved-adverse-events.json");
