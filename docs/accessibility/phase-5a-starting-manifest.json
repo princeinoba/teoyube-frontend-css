@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "teoyube-9of10-phase5a-starting-manifest-1.0.0",
+  "phase": "5A",
+  "scope": "current-accessibility-audit-only",
+  "createdAt": "2026-08-05T08:18:30.4731763-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
+  "startingTag": "teoyube-9of10-phase5a-start-aa33ed6",
+  "prompt24Baseline": "39e75ee11d765c83c67660cd267315acec124ae9",
+  "trackedWorktreeClean": true,
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "npmExecutable": "C:\\Users\\royce\\AppData\\Roaming\\npm\\npm.cmd"
+  },
+  "identities": {
+    "packageLockSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
+    "runtimeManifestSha256": "48c87436db2c53eddb1932c240ab3ae7a24c31c08de189298530a1b66d06a908",
+    "protectedVisualSourceManifestSha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117",
+    "immutableStaticBaselineManifestSha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b",
+    "programStatusSha256": "f2c0f0738bc5a759c8f78f67facbd630727358193a95bb2aa3a3d7fbd229d522",
+    "programEvidenceLedgerSha256": "955798a0cef1b78937c517b1bfcaa3df264ea43499a4bb3f57cc2d8f94feeb2e"
+  },
+  "entryGates": {
+    "runtimeStatus": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK_RETAINED",
+    "runtimeVerify": "PASS",
+    "recoveryVerify": "PASS",
+    "immutableScreenshots": 72,
+    "desktopDomSnapshots": 12,
+    "stabilization": "WAITING_OWNER",
+    "phase4c": "PASS_RECRUITMENT_AUTHORIZED_NO_COLLECTION",
+    "researchCollectionEnabled": false,
+    "participants": 0,
+    "sessions": 0,
+    "participantRecords": 0,
+    "paidProviderCalls": 0
+  },
+  "listenerState": {
+    "port3000": "CLOSED",
+    "port4173": "UNRELATED_NOMINATE_IT_PID_99208_LEFT_UNTOUCHED"
+  },
+  "changeBoundary": {
+    "productFixesAuthorized": 0,
+    "productSourceChangesAuthorized": 0,
+    "protectedVisualChangesAuthorized": 0,
+    "domAriaChangesAuthorized": 0,
+    "cssChangesAuthorized": 0,
+    "assetChangesAuthorized": 0,
+    "baselineChangesAuthorized": 0,
+    "dependencyChangesAuthorized": 0,
+    "phase5bAuthorized": false
+  }
+}

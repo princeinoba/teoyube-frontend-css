@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "phase": "5A",
+  "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
+  "generatedAt": "2026-08-05T12:30:04.642Z",
+  "runtime": "canonical-next-production-build",
+  "networkPolicy": "Only 127.0.0.1, localhost, and data URLs were allowed; external media was blocked.",
+  "tools": {
+    "node": "24.18.0",
+    "npm": "10.2.4",
+    "browser": "Chrome 150.0.7871.187",
+    "axeCore": "4.12.1"
+  },
+  "rawEvidence": {
+    "path": ".tmp/accessibility/phase-5a/current-audit.json",
+    "sha256": "bab3bd9498f6112e410450316eb09590950f2071995187f7d8f7db2db6228ed7",
+    "bytes": 3532666,
+    "retention": "ignored working evidence; this compact tracked summary is authoritative for Phase 5A"
+  },
+  "coverage": {
+    "retainedPublicRoutes": 23,
+    "requiredViewports": 6,
+    "defaultRouteViewportCells": 138,
+    "modeCells": 115,
+    "interactionStateCells": 58,
+    "totalCells": 311,
+    "keyboardTraversalCells": 81,
+    "executionErrors": 0,
+    "modes": {
+      "wcagTextSpacing": 23,
+      "reducedMotion": 23,
+      "forcedColors": 23,
+      "reflow320CssPixels": 23,
+      "effective200PercentZoomLayout": 23
+    }
+  },
+  "automatedSummary": {
+    "axeViolationRuleCount": 5,
+    "positiveTabindexCells": 0,
+    "duplicateIdCells": 0,
+    "horizontalOverflowCells": 0,
+    "keyboardMissingIndicatorHeuristicCells": 0,
+    "axeIncomplete": {
+      "aria-prohibited-attrNodeOccurrences": 723,
+      "color-contrastNodeOccurrences": 3674,
+      "disposition": "manual validation required; not counted as passes or confirmed failures"
+    }
+  },
+  "confirmedAutomatedFindings": [
+    {
+      "rule": "aria-allowed-attr",
+      "impact": "critical",
+      "routes": ["/lexicon"],
+      "auditedNodeOccurrences": 156,
+      "representativeTarget": "button[data-lexicon-alpha]",
+      "note": "The same 27 alphabet controls recur across route, viewport, mode, and state cells."
+    },
+    {
+      "rule": "aria-hidden-focus",
+      "impact": "serious",
+      "routes": ["/"],
+      "auditedNodeOccurrences": 156,
+      "representativeTarget": ".carousel-slide[aria-hidden=true] and .featured-story-slide[aria-hidden=true]",
+      "note": "Hidden Today carousel slides retain descendant actions in the focus model."
+    },
+    {
+      "rule": "target-size",
+      "impact": "serious",
+      "routes": ["/", "/book", "/canon", "/explore"],
+      "auditedNodeOccurrences": 289,
+      "representativeTarget": "carousel dots, compact memory filters, and Explore tabs"
+    },
+    {
+      "rule": "scrollable-region-focusable",
+      "impact": "serious",
+      "routes": ["/testimony"],
+      "auditedNodeOccurrences": 2,
+      "representativeTarget": ".testimony-milestones"
+    },
+    {
+      "rule": "color-contrast",
+      "impact": "serious",
+      "routes": ["/canon"],
+      "auditedNodeOccurrences": 2,
+      "representativeTarget": ".canon-status.in-progress"
+    }
+  ],
+  "customContractFindings": {
+    "hiddenFocusable": {
+      "/": [
+        "button.primary.action-icon-button",
+        "button.secondary.action-icon-button",
+        "a.primary.featured-story-cta",
+        "button.secondary.featured-story-select"
+      ],
+      "/canon": ["button.canon-recent-merged-row"]
+    },
+    "missingProgrammaticName": {
+      "/lexicon": ["input#lexiconSearchInput"],
+      "/embedded-videos": ["input#uiVideoSearch"],
+      "/tables": ["input#teoyubeTableSearch"]
+    }
+  },
+  "independentSearchResults": {
+    "/search": {
+      "cells": 13,
+      "states": ["default", "query-calling"],
+      "axeViolations": 0,
+      "horizontalOverflowCells": 0
+    },
+    "/promise-search": {
+      "cells": 15,
+      "states": ["default", "query-wisdom", "keyboard-query"],
+      "axeViolations": 0,
+      "horizontalOverflowCells": 0
+    }
+  },
+  "conformanceClaim": "NO",
+  "reason": "Confirmed A/AA failures and uncompleted assistive-technology/manual device validation remain."
+}
