@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "4C",
+  "program": "Teoyube 9/10 Implementation Program",
+  "createdAt": "2026-08-05T00:37:43.0134283-04:00",
+  "repository": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "d58fa5c5de4069beff84e3281d49b5e5b6192295",
+    "startingTag": "teoyube-9of10-phase4c-start-d58fa5c",
+    "trackedWorktreeClean": true
+  },
+  "phase4AInputs": {
+    "pilotDecisionJsonSha256": "997c2d56a460cef81eada422faf76704532b018d78e4e6951e2bb9d17622eefb",
+    "pilotDecisionMarkdownSha256": "e3599dc2fa4baa9b4071ec37091bcfea059f1ea5b01bb3d13f14faff8bf4feee",
+    "phaseReportJsonSha256": "1e31dafb0f1983ad24df1ef2ab814483e2ed2d8befb34b652ce2c8ff2ea19d21",
+    "phaseReportMarkdownSha256": "548a8b576c57982fbbdfaa07b220b84042cd54b5576a055d5d25edfc156ddbf2",
+    "ownerApprovalReference": "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID"
+  },
+  "phase4BInputs": {
+    "instrumentationReportJsonSha256": "7ef6f14e1a4322e742de2ae8a1ad89c4cba86ad7252ed0a21584a7009cf158d9",
+    "instrumentationReportMarkdownSha256": "9301f6b5553f8d55ad96ff159d23042851e7e0fbc619a2fc1e8a780c0bd465aa",
+    "eventRegistrySha256": "efd1c7d9ecb1fef950117951c8fbf6f2ce5f920ebcccae45609d2cc626d091fc",
+    "eventRegistryVersion": "teoyube-research-events-2026-08-04.1",
+    "fieldPolicySha256": "984432da11e8bb4bb407f24602d4941c855aa9963bf1dcda51bee72c2678490f",
+    "fieldPolicyVersion": "teoyube-research-field-policy-2026-08-04.1",
+    "ownerAuthorizationReference": "PHASE_4B_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID"
+  },
+  "consent": {
+    "contractSchemaVersion": "memory-consent-contracts-current-at-starting-commit",
+    "researchInstrumentationSchemaVersion": "1.0.0",
+    "memoryContractsSha256": "38152dcdfa23b41786d03428f2671582da1365130744d854833ec7084e1a1c46",
+    "purposeRegistrySha256": "4d77c61c5b8398734afa54060927a730fa88b716226de6cc533e5d98816f11a3",
+    "researchPurposeIds": [
+      "research_participation",
+      "research_product_events",
+      "research_accessibility_observation",
+      "research_optional_recording",
+      "research_optional_live_ai_task",
+      "research_follow_up_contact"
+    ]
+  },
+  "runtime": {
+    "canonicalRuntime": "next",
+    "rollbackRuntime": "static-node",
+    "runtimeSourceDigest": "c84514e0cdccd7ed13e24f7e9515d0c532bf9c77dfd037ae587e2310f7f2a832",
+    "buildId": "teoyube-c84514e0cdccd7ed13e24f7e",
+    "canonicalRuntimeManifestSha256": "2a4e419c32f618b397484e7e0c014d0e3ece4ca6d165bc8b8ec3ab5401d4c5c4",
+    "runtimeSourceManifestSha256": "04b1dc3476fc2ec6eca4d67bb05b1a83b14506624db6d1f70831f3db3e8bc1d3"
+  },
+  "visualEvidence": {
+    "protectedVisualSourceManifestSha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117",
+    "staticRuntimeManifestSha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b",
+    "ownerReferenceManifestSha256": "72fa9c5bfbf9ad350d276087dd8bb5176b225d71168a3ffb64e8947f1283fab8",
+    "ownerNextSupportManifestSha256": "9b8492f83366400a2a846e9713f64e2c2bb8e0a8a46c1263449fb01a82937283",
+    "protectedScreenshotCount": 72,
+    "desktopDomSnapshotCount": 12
+  },
+  "stabilization": {
+    "status": "WAITING_OWNER",
+    "calendarDaysRecorded": 0,
+    "meaningfulSessionsRecorded": 0,
+    "knownPhase2ABlockers": [
+      "STAB-BLOCKER-CANON-FOCUS",
+      "STAB-BLOCKER-CALLING-PERF",
+      "STAB-BLOCKER-CSS-BUDGET",
+      "STAB-BLOCKER-PERF-EVIDENCE"
+    ],
+    "mechanicallyReady": false
+  },
+  "entryGate": {
+    "runtimeStatus": "PASS",
+    "runtimeVerify": "PASS",
+    "recoveryVerify": "PASS",
+    "phase4A": "PASS",
+    "phase4B": "PASS",
+    "researchModeEnabled": false,
+    "actualParticipants": 0,
+    "actualSessions": 0,
+    "actualParticipantRecords": 0,
+    "paidProviderCalls": 0,
+    "protectedVisualChanges": 0
+  }
+}

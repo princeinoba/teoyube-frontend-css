@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "4C",
+  "status": "PENDING_OWNER_DECISION",
+  "recruitmentAuthorized": "PENDING",
+  "researchOperator": "PENDING",
+  "recruitmentMode": "PENDING",
+  "compensation": "PENDING",
+  "recordingOption": "PENDING",
+  "liveAiTaskIncluded": "PENDING",
+  "accessibilityRecruitmentPlan": "PENDING",
+  "expertReviewerRecruitment": "PENDING",
+  "recruitmentStartDate": "PENDING",
+  "contactDataStorageLocation": "PENDING",
+  "localPrivacyReviewCompleted": "PENDING",
+  "actualParticipants": 0,
+  "actualSessions": 0,
+  "phase4dReady": false,
+  "ownerDecisionReference": null
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "teoyube-formative-pilot-2026-01",
+  "title": "Teoyube moderated formative usability and trust pilot",
+  "version": "teoyube-formative-pilot-2026-01.1",
+  "status": "READY_FOR_OWNER_RECRUITMENT_DECISION",
+  "approvedPilotDesignReference": "PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID",
+  "phase4cExecutionAuthorization": "OWNER_SUPPLIED_PHASE_4C_PROMPT_NO_SEPARATE_ID",
+  "participantTargets": {
+    "recommendedOrdinaryAdults": 12,
+    "minimumAdults": 8,
+    "maximumAdults": 15,
+    "accessibilityRepresentationMinimum": 2,
+    "accessibilityRepresentationMaximum": 3,
+    "expertReviewersMinimum": 0,
+    "expertReviewersMaximum": 2,
+    "expertReviewersAnalyzedSeparately": true,
+    "minimumAge": 18
+  },
+  "sessionDurationMinutes": {
+    "minimum": 60,
+    "maximum": 75
+  },
+  "allowedTaskIds": [
+    "orientation",
+    "exact-scripture-lookup",
+    "broad-search",
+    "promise-search",
+    "promise-levels",
+    "prayer-draft",
+    "calling-compass",
+    "action-reversibility",
+    "reflection-testimony",
+    "memory-controls",
+    "deterministic-teo-guide",
+    "optional-live-ai",
+    "provider-fallback",
+    "hybrid-retrieval",
+    "complete-daily-journey",
+    "accessibility",
+    "moderator-safety-tabletop"
+  ],
+  "allowedSyntheticScenarioIds": [
+    "synthetic-orientation-01",
+    "synthetic-scripture-01",
+    "synthetic-search-01",
+    "synthetic-promise-search-01",
+    "synthetic-promise-levels-01",
+    "synthetic-prayer-01",
+    "synthetic-calling-01",
+    "synthetic-action-01",
+    "synthetic-testimony-01",
+    "synthetic-memory-01",
+    "synthetic-teo-guide-01",
+    "synthetic-live-ai-01",
+    "synthetic-fallback-01",
+    "synthetic-retrieval-01",
+    "synthetic-journey-01",
+    "synthetic-accessibility-01",
+    "synthetic-safety-tabletop-01"
+  ],
+  "consentPurposeIds": {
+    "required": [
+      "research_participation",
+      "research_product_events"
+    ],
+    "conditional": [
+      "research_accessibility_observation",
+      "research_optional_recording",
+      "research_optional_live_ai_task",
+      "research_follow_up_contact",
+      "external_ai_processing"
+    ]
+  },
+  "recordingPolicy": {
+    "offered": "PENDING_OWNER_DECISION",
+    "optional": true,
+    "separateConsentRequired": true,
+    "decliningDoesNotExcludeParticipation": true
+  },
+  "liveAiTaskPolicy": {
+    "included": "PENDING_OWNER_DECISION",
+    "optional": true,
+    "syntheticInputOnly": true,
+    "separateConsentRequired": true,
+    "externalAiProcessingConsentRequired": true,
+    "deterministicFallbackRequired": true,
+    "paidProviderCallsDuringReadiness": false
+  },
+  "compensationPolicy": {
+    "offered": "PENDING_OWNER_DECISION",
+    "fixedWhenOffered": true,
+    "notTiedToCompletionOrPositiveFeedback": true
+  },
+  "retentionPolicy": {
+    "retentionClass": "formative_pilot_180_days",
+    "retentionDays": 180,
+    "activeLocalStoreOnlyDeletionClaim": true
+  },
+  "researchOperator": "PENDING",
+  "recruitmentStatus": "PENDING_OWNER_DECISION",
+  "sessionStatus": "NOT_STARTED",
+  "analysisStatus": "NOT_STARTED",
+  "realParticipantCollectionAuthorized": false,
+  "syntheticScenariosOnly": true,
+  "contactDataStorage": "PENDING_SEPARATE_LOCATION",
+  "normalNavigationExposed": false
+}

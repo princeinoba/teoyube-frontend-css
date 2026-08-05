@@ -44,6 +44,7 @@ __pycache__/
 /.var/research/events/
 /.var/research/exports/
 /.var/research/deletions/
+/.var/research/synthetic/
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
