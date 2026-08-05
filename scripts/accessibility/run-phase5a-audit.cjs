@@ -165,7 +165,7 @@ async function scan(page, { route, viewport, state = "default", mode = "default"
     };
     const elements = [...document.querySelectorAll("*")];
     const focusables = elements.filter((element) => element.matches(focusSelector) && element.tabIndex >= 0 && !element.hasAttribute("disabled") && isVisible(element));
-    const hiddenFocusable = elements.filter((element) => element.matches(focusSelector) && element.tabIndex >= 0 && element.closest('[aria-hidden="true"]')).map(pathFor);
+    const hiddenFocusable = elements.filter((element) => element.matches(focusSelector) && element.tabIndex >= 0 && element.closest('[aria-hidden="true"]') && !element.closest("[inert]")).map(pathFor);
     const missingNames = focusables.filter((element) => !label(element)).map(pathFor);
     const positiveTabindex = focusables.filter((element) => element.tabIndex > 0).map(pathFor);
     const ids = elements.map((element) => element.id).filter(Boolean);
