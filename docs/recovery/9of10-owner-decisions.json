@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04T18:18:16.6464520-04:00",
+  "updatedAt": "2026-08-04T19:47:22.4086813-04:00",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -52,12 +52,26 @@
         "no paid calls",
         "no blocker fix or waiver"
       ]
+    },
+    {
+      "decisionId": "PHASE_4A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID",
+      "scope": "Draft and verify the Phase 4A real-user pilot package and pause for one consolidated owner decision",
+      "status": "AUTHORIZED_BY_OWNER_SUPPLIED_PHASE_PROMPT",
+      "source": "Teoyube 9/10 Program - Phase 4A: Real-User Pilot Design and Owner Decision",
+      "limitations": [
+        "No participant recruitment or contact",
+        "no interviews, sessions, recordings, or fabricated results",
+        "no instrumentation or product changes",
+        "no Phase 4B, 4C, or 4D",
+        "no paid calls",
+        "all pilot decision fields remain pending until explicit owner response"
+      ]
     }
   ],
   "pendingDecisionGroups": [
     {
       "phase": "4A",
-      "decision": "pilot profile, sample, accessibility representation, compensation, session mode, thresholds, and permitted data"
+      "decision": "Consolidated pilot decision in docs/research/pilot-decision.*: participants, sample, accessibility representation, expert track, mode, duration, compensation, recording, live-AI task, hybrid retrieval task, minimal data, retention, thresholds, operator, and recruitment start; every field PENDING"
     },
     {
       "phase": "5B",

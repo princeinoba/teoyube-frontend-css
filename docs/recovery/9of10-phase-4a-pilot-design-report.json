@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "teoyube-9of10-phase-4a-report-1.0.0",
+  "executedAt": "2026-08-04T19:47:22.4086813-04:00",
+  "program": {
+    "selectedPhase": "4A",
+    "name": "Pilot design and owner decision",
+    "previousStatus": "READY",
+    "finalStatus": "WAITING_OWNER",
+    "overall": "IN_PROGRESS",
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4b": "NOT_READY"
+  },
+  "lineage": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "32933458e6695b851d3e05a67a4b052047f279f7",
+    "prompt24Baseline": "39e75ee11d765c83c67660cd267315acec124ae9",
+    "prePhaseTag": "teoyube-9of10-phase4a-start-3293345",
+    "pilotDesignCommit": "FINAL_PHASE4A_PILOT_DESIGN_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "ownerDecisionCommit": null
+  },
+  "entryGate": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "npmPath": "C:\\Users\\royce\\AppData\\Roaming\\npm\\npm.cmd",
+    "canonicalRuntime": "next",
+    "rollbackRuntime": "static-node",
+    "runtime": "PASS",
+    "recovery": "PASS",
+    "immutableScreenshots": 72,
+    "desktopDomSnapshots": 12,
+    "stabilization": "WAITING_OWNER",
+    "port3000": "REPOSITORY_OWNED_LISTENER_STOPPED",
+    "port4173": "UNRELATED_NOMINATE_IT_LEFT_UNTOUCHED"
+  },
+  "pilot": {
+    "type": "moderated formative usability and trust study",
+    "recommendedSample": 12,
+    "minimum": 8,
+    "maximum": 15,
+    "age": "18+",
+    "accessibilityRepresentation": "2-3 participants or equivalent separate track",
+    "expertReviewers": "optional 1-2 analyzed separately",
+    "sessionMode": "PENDING_OWNER_CHOICE_REMOTE_LOCAL_OR_MIXED",
+    "sessionDurationMinutes": {
+      "minimum": 60,
+      "maximum": 75
+    },
+    "compensation": "PENDING_OWNER_CHOICE_FIXED_NON_COERCIVE_IF_OFFERED",
+    "recording": "PENDING_OWNER_CHOICE_SEPARATE_CONSENT_REQUIRED",
+    "liveAiTask": "PENDING_OWNER_CHOICE_SEPARATE_EXTERNAL_PROCESSING_CONSENT_REQUIRED",
+    "hybridRetrievalTask": "PENDING_OWNER_CHOICE_SYNTHETIC_ONLY",
+    "sensitiveContent": "PROHIBITED_SYNTHETIC_SCENARIOS_ONLY"
+  },
+  "research": {
+    "researchQuestions": 12,
+    "tasks": 15,
+    "thresholds": "PENDING_OWNER_DECISION",
+    "consent": "DRAFT_OWNER_LOCAL_PRIVACY_REVIEW_REQUIRED",
+    "adverseEventProtocol": "DRAFT_COMPLETE",
+    "accessibilityProtocol": "DRAFT_COMPLETE_NO_WCAG_CLAIM",
+    "analysisPlan": "DRAFT_COMPLETE_NO_SPIRITUAL_SCORE",
+    "participantRecords": 0,
+    "resultsFabricated": false
+  },
+  "ownerDecision": {
+    "decision": "PENDING",
+    "decisionId": null,
+    "changes": [],
+    "recruitmentAuthorized": false,
+    "phase4bReady": false
+  },
+  "changes": {
+    "productSource": 0,
+    "protectedVisual": 0,
+    "css": 0,
+    "domClass": 0,
+    "assets": 0,
+    "baselines": 0,
+    "packageLockfile": 0,
+    "instrumentation": 0,
+    "participantRecords": 0,
+    "paidCalls": 0
+  },
+  "verification": {
+    "schemas": "PASS_6_JSON_DOCUMENTS",
+    "markdownJsonConsistency": "PASS",
+    "privacy": "PASS_MINIMAL_FIELDS_ONLY",
+    "prohibitedFields": "PASS_ZERO_JSON_KEYS",
+    "programLedger": "PASS_PHASE2_BLOCKED_PHASE3_WAITING_OWNER_PHASE4A_WAITING_OWNER_PHASE4B_NOT_READY",
+    "links": "PASS",
+    "gitDiffClassification": "PASS_DOCUMENTATION_ONLY",
+    "secretScan": "PASS_ZERO",
+    "runtimeRecoveryBaseline": "PASS_RUNTIME_AND_RECOVERY",
+    "listenersClosed": "PASS_PORT3000_CLOSED_PORT4173_UNRELATED_LEFT_UNTOUCHED"
+  },
+  "rollback": "git revert <phase-4a-pilot-design-commit>",
+  "nextReady": [
+    "5A",
+    "6A"
+  ],
+  "ownerActionRequired": "Choose option 1, 2, or 3 in docs/research/pilot-decision.md"
+}

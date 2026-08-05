@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "teoyube-research-phase-4a-starting-manifest-1.0.0",
+  "createdAt": "2026-08-04T19:39:09.3130304-04:00",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "32933458e6695b851d3e05a67a4b052047f279f7",
+  "prompt24BaselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
+  "prePhaseTag": "teoyube-9of10-phase4a-start-3293345",
+  "toolchain": {
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "npmPath": "C:\\Users\\royce\\AppData\\Roaming\\npm\\npm.cmd"
+  },
+  "runtime": {
+    "canonical": "next",
+    "rollback": "static-node",
+    "runtimeSourceCommit": "a03979c70a9a4784448e8b36ac6086d2363f66c7",
+    "runtimeSourceDigest": "489d8fb7054f78304b524c47b3441b5a737a6156952e4d85e997c1f55e47808c",
+    "buildId": "teoyube-489d8fb7054f78304b524c47",
+    "manifestSha256": "59a647289361b3373c33e216e3c2ad35d70f67744602999e43e39f25bb249aa8"
+  },
+  "prompt24": {
+    "scorecardJsonSha256": "fcb62eb682b622e7f9a84d667413358b09832f71ae153f6446328f2a35274a82",
+    "scorecardMarkdownSha256": "d65fee1daf3cd908e35a7d312c4c54f95643858714c6148fecf267024ad10ef8",
+    "evidenceLedgerJsonSha256": "28c0950c7525e480f4dba4be809c273c98e4045c5cf3e0a69b4b8c5ae4d82839",
+    "closeoutJsonSha256": "17606e1f7f8e602416c51e7f2185985558653618a5d213da4272c74d441cca9e",
+    "closeoutMarkdownSha256": "76bf03cf16e6736f9270985fe5fe67081478d6b0abca3d2cb22de3360afc3942"
+  },
+  "phase1ProgramLedgers": {
+    "programStatusJsonSha256": "e4e9bd4353a302a49e72127645a62ad1eaded7c641182fce5333706b55499fe0",
+    "programStatusMarkdownSha256": "acc4c259991446ceb63d18e8a02bca9552268feb705c937d71ee75f4d35f8865",
+    "evidenceLedgerJsonSha256": "b5944e733342f69a4e6ed3bbd6cb68fe8fa74722a5fbcb112ae21e7134697671",
+    "evidenceLedgerMarkdownSha256": "ce01b449c451563c9b590ed3e759cab0aaa5b5c9ec153c044a16d0e71e8c0040",
+    "ownerDecisionsJsonSha256": "f5cd0010ea9b1966da327d68f942b711271520ba7522b5d649d1593a0aea122d",
+    "ownerDecisionsMarkdownSha256": "e060e737d3d9f707baf38157ca6a8e554621b36f1ad69641678cc936961571b8",
+    "riskRegisterSha256": "9d5ab8cfc0ac55d6d89e07c22849ed5bd8b16dc9b425445885b1f288ae90db6d",
+    "phaseHistorySha256": "442c131efc39e73902d7fd66e495cc10f8fadc81d3c813cf51f6740137be6a17"
+  },
+  "phase2a": {
+    "status": "BLOCKED",
+    "reportJsonSha256": "1c4744d1aac78a1ba974b722857baf390d79f0aedab671eafa16095419e90cd7",
+    "reportMarkdownSha256": "c58e3dd3b9c65a03662e310cdfd5260065e0fbd2967e629949ae2b687fc05583"
+  },
+  "phase3a": {
+    "status": "PASS",
+    "reportJsonSha256": "a201c72ad96447e1ae93de4d5e2ada2945c079bc75626c0f7829f2fcb4d6e8e3",
+    "reportMarkdownSha256": "fe7b4649373c55079176ab237122538404addf200ac54472fa3f6c88307790f1",
+    "policyVersion": "teoyube-stabilization-policy-1.0.0",
+    "policySha256": "03d63dbd5a4ef5bbf4fa8cfcc61a1103c90fd532b5a07f9254b94e13f00fa0a4",
+    "statusJsonSha256": "b8fb70564bb67221c1fbe252d262756008c8cfa55c533bc2e5c40d1422b3ff22",
+    "statusMarkdownSha256": "5f049c91d0642984db930447aafe808ccea9f817b8803f10b383e199d86386f9",
+    "sessionSchemaSha256": "fc975d72d96e5ec65a2d46f611624b442e759e4e7bd35623f100f5c494910d84",
+    "incidentSchemaSha256": "bc022bc2505b19b8e642fa005ea4453532626d378132c9141252a68e08276f71"
+  },
+  "contracts": {
+    "safetyPolicyVersion": "teoyube-safety-policy-1.0.0",
+    "safetyDatasetVersion": "teoyube-synthetic-safety-dataset-1.0.0",
+    "safetyContractsSha256": "a70ca6884b9b302a490613c973b035006ec156b37191ccca71ee5cced65999ee",
+    "teoGuideOrchestrationVersion": "teo-guide-orchestration-2026-07-22.1",
+    "teoGuideResponseVersion": "teo-guide-structured-response-2026-07-22.1",
+    "liveAiGatewayVersion": "teoyube-guarded-live-guide-2026-07-22.1",
+    "liveAiGuardrailVersion": "teoyube-live-ai-guardrails-2026-07-22.1",
+    "liveAiContractSha256": "28c597e9d8492fa4b76c31bbd096678e76bc87e03d5fe9300293b364596e1118",
+    "retrievalConfigurationVersion": "teoyube-retrieval-config-2026-07-23.1",
+    "retrievalFusionVersion": "teoyube-hybrid-fusion-2026-07-23.1",
+    "retrievalContractsSha256": "6415f6ee6ad1ae1f071f193786ad715df794004ef6607157752456c4b8b914e1",
+    "memoryExportSchemaVersion": "1.0.0",
+    "memoryMigrationCount": 2,
+    "memoryContractsSha256": "78139a72ed27df1a8394e1f4382a04ef17386d0e28e015ac5ddfbe8f72bf059d",
+    "telemetryRegistryVersion": "teoyube-telemetry-2026-07-24.1",
+    "telemetryRegistrySha256": "f51a9f8e1cde4c6d5d3f89a2395d437a04129dd2fc4b61a3d653b7a1dc436bcb"
+  },
+  "visualAndAccessibilityEvidence": {
+    "protectedVisualSourceManifestSha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117",
+    "immutableStaticManifestSha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b",
+    "ownerSupportManifestSha256": "922f4229a1868448ff609a17d4ffa94e038f04f80f3ffd2906710f4b56fcf439",
+    "ownerNextSupportManifestSha256": "9b8492f83366400a2a846e9713f64e2c2bb8e0a8a46c1263449fb01a82937283",
+    "accessibilityDebtSha256": "f6875966df5e2086bdc6571b8537e1225ed3874d60ac815f7da4647e65b337a5",
+    "immutableScreenshotCount": 72,
+    "desktopDomSnapshotCount": 12
+  },
+  "entryState": {
+    "runtime": "PASS",
+    "recovery": "PASS",
+    "stabilization": "WAITING_OWNER",
+    "ownerSessions": 0,
+    "calendarDays": 0,
+    "incidents": 0,
+    "gateCPreview": "BLOCKED",
+    "gateCProduction": "CLOSED"
+  }
+}

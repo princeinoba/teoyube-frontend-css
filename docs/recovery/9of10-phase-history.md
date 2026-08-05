@@ -95,3 +95,32 @@ Toolkit commit: `a03979c70a9a4784448e8b36ac6086d2363f66c7`
 ### Result
 
 Phase 3A is **PASS**. Phase 3 overall is **WAITING_OWNER** and Phase 3B is **NOT READY**. Phase 2A remains **BLOCKED** even though dependency remediation is complete; its visual/performance reconciliation requires separate owner-reviewed work. Independent next-ready choices are Phase 4A, Phase 5A, or Phase 6A; none was executed.
+## Phase 4A — real-user pilot design and owner decision
+
+Status: **WAITING_OWNER**
+Started from: `32933458e6695b851d3e05a67a4b052047f279f7`
+Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`
+
+### Actions
+
+1. Revalidated the Next canonical runtime, static Node rollback, recovery contracts, stabilization status, branch, lineage, toolchain, and listener ownership.
+2. Read the product, theology, safety, AI, retrieval, memory, privacy, accessibility, stabilization, Prompt 24, and current program evidence.
+3. Created an evidence-bound starting manifest without modifying historical evidence.
+4. Drafted a Teoyube-specific moderated formative pilot protocol with 12 research questions and 15 synthetic tasks.
+5. Drafted consent, recruitment, moderator, accessibility, adverse-event, anonymization, analysis, and minimal-data materials.
+6. Created one consolidated owner-decision record with every decision field `PENDING` and recruitment explicitly unauthorized.
+7. Created no participant, contact, session, recording, instrumentation, product, package, runtime, visual, baseline, or paid-call artifact.
+
+### Evidence
+
+- Pilot recommendation: 12 adults, minimum 8, maximum 15; 60 minutes; 2 accessibility participants or equivalent track; optional 1 expert reviewers analyzed separately.
+- Sensitive/private content: prohibited; synthetic scenarios only.
+- Consent: draft requiring owner/local privacy review before use.
+- Safety: stop-first adverse-event protocol with data minimization, verified human support, kill switches, evidence preservation, and restart criteria.
+- Accessibility: dedicated research guide; no WCAG conformance claim and no protected change authorization.
+- Participants/sessions/results/instrumentation/paid calls: 0/0/0/0/0.
+- Product, CSS, DOM/class, asset, baseline, package, and lockfile changes: zero.
+
+### Result
+
+Phase 4A is **WAITING_OWNER**. The complete pilot package is ready for one consolidated owner decision. Silence is not approval. Recruitment is not authorized and Phase 4B is **NOT READY**. Phase 2A remains **BLOCKED** and Phase 3 remains **WAITING_OWNER**. Independent Phase 5A and Phase 6A readiness is unchanged; neither was executed.

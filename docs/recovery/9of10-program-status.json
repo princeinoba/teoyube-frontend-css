@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE4A_PILOT_DESIGN_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -187,12 +187,12 @@
     {
       "phaseId": "4",
       "name": "Real-user pilot",
-      "status": "READY",
+      "status": "WAITING_OWNER",
       "entryGates": [
         "Phase 1 PASS"
       ],
-      "startingCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-      "currentCommit": "NOT_STARTED",
+      "startingCommit": "32933458e6695b851d3e05a67a4b052047f279f7",
+      "currentCommit": "FINAL_PHASE4A_PILOT_DESIGN_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "pilot protocol and owner decision",
         "research-safe instrumentation",
@@ -206,26 +206,31 @@
         "owner-accepted analysis"
       ],
       "currentEvidence": [
-        "USER_RESEARCH_NOT_YET_RUN"
+        "Phase 4A protocol, consent, screen, task, moderator, accessibility, safety, anonymization, analysis, data, and decision drafts complete",
+        "Every owner decision field remains PENDING",
+        "0 participants, 0 sessions, 0 participant records, 0 instrumentation, and 0 paid calls",
+        "Recruitment is not authorized"
       ],
       "currentBlockers": [
-        "participant profile, sample, representation, compensation, session mode, thresholds, and data collection require owner decision"
+        "Owner decision required for participant profile, sample, accessibility representation, expert track, compensation, session mode, recording, optional AI/retrieval tasks, thresholds, retention, operator, and permitted data"
       ],
-      "ownerDecisionIds": [],
+      "ownerDecisionIds": [
+        "PHASE_4A_OWNER_SUPPLIED_AUTHORIZATION_NO_SEPARATE_ID"
+      ],
       "externalDependencies": [
         "participants",
         "approved researcher or owner-led sessions"
       ],
       "rollback": "Revert preparation/instrumentation commits; preserve authentic anonymized research records",
-      "nextReviewTrigger": "Select Phase 4A to prepare one consolidated owner decision",
+      "nextReviewTrigger": "Owner chooses option 1, 2, or 3 in docs/research/pilot-decision.md; silence is not approval",
       "subphases": [
         {
           "subphaseId": "4A",
-          "status": "READY"
+          "status": "WAITING_OWNER"
         },
         {
           "subphaseId": "4B",
-          "status": "NOT_STARTED"
+          "status": "NOT_READY"
         },
         {
           "subphaseId": "4C",
@@ -479,13 +484,12 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "OWNER_SELECTION_REQUIRED_4A_5A_OR_6A",
-  "otherReadyIndependentSubphases": [
-    "4A",
+  "nextReadyPhase": "OWNER_DECISION_REQUIRED_FOR_PHASE4A_OR_OWNER_SELECTION_OF_5A_OR_6A",
+    "otherReadyIndependentSubphases": [
     "5A",
     "6A"
   ],
-  "nextWaitingPhase": "PHASE3_WAITING_OWNER_AND_PHASE2A_BLOCKED",
+  "nextWaitingPhase": "PHASE4A_AND_PHASE3_WAITING_OWNER;_PHASE2A_BLOCKED",
   "prompt23BUnlocked": false,
   "publicDeploymentAuthorized": false
 }

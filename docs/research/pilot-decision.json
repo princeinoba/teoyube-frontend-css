@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "teoyube-formative-pilot-decision-1.0.0",
+  "phase": "4A",
+  "status": "PENDING",
+  "decisionId": null,
+  "ownerApproved": false,
+  "recruitmentAuthorized": false,
+  "preparedAt": "2026-08-04T19:47:22.4086813-04:00",
+  "targetParticipants": {
+    "recommendation": "Adults 18+ able to consent",
+    "decision": "PENDING"
+  },
+  "sampleSize": {
+    "recommendation": 12,
+    "minimum": 8,
+    "maximum": 15,
+    "decision": "PENDING"
+  },
+  "accessibilityRepresentation": {
+    "recommendation": "At least 2-3 participants or a separate equivalent accessibility track",
+    "decision": "PENDING"
+  },
+  "expertReviewers": {
+    "recommendation": "Optional 1-2 Christian ministry/expert reviewers analyzed separately",
+    "decision": "PENDING"
+  },
+  "sessionMode": {
+    "options": [
+      "remote",
+      "local",
+      "mixed"
+    ],
+    "decision": "PENDING"
+  },
+  "sessionDuration": {
+    "recommendationMinutes": {
+      "minimum": 60,
+      "maximum": 75
+    },
+    "decision": "PENDING"
+  },
+  "compensation": {
+    "options": [
+      "none",
+      "fixed amount",
+      "other fixed non-coercive arrangement"
+    ],
+    "positiveFeedbackConditionProhibited": true,
+    "decision": "PENDING"
+  },
+  "recording": {
+    "options": [
+      "none",
+      "optional audio",
+      "optional screen",
+      "optional video"
+    ],
+    "separateConsentRequired": true,
+    "decision": "PENDING"
+  },
+  "liveAiTask": {
+    "options": [
+      "include",
+      "exclude"
+    ],
+    "syntheticContentOnly": true,
+    "externalProcessingConsentRequired": true,
+    "decision": "PENDING"
+  },
+  "hybridRetrievalTask": {
+    "options": [
+      "include",
+      "exclude"
+    ],
+    "syntheticContentOnly": true,
+    "decision": "PENDING"
+  },
+  "dataCollected": {
+    "recommendation": "Approve the minimal set in docs/research/data-dictionary.md or state changes",
+    "decision": "PENDING"
+  },
+  "retentionPeriod": {
+    "recommendation": "Owner-selected period after local privacy review",
+    "decision": "PENDING"
+  },
+  "successThresholds": {
+    "recommendation": "Approve the thresholds in docs/research/analysis-plan.md or state changes",
+    "decision": "PENDING"
+  },
+  "researchOperator": {
+    "options": [
+      "owner",
+      "named trained researcher"
+    ],
+    "decision": "PENDING"
+  },
+  "recruitmentStart": {
+    "authorization": "NOT_AUTHORIZED",
+    "decision": "PENDING"
+  },
+  "fixedSafeguards": {
+    "syntheticScenariosOnly": true,
+    "privateSpiritualContentRequested": false,
+    "minorsIncluded": false,
+    "productionUserDataUsed": false,
+    "spiritualScoreCreated": false,
+    "participantRecordsCreatedInPhase4a": false,
+    "instrumentationEnabledInPhase4a": false
+  },
+  "nextState": {
+    "phase4a": "WAITING_OWNER",
+    "phase4b": "NOT_READY"
+  }
+}
