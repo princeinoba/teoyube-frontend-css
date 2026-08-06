@@ -303,10 +303,16 @@ body[data-view="today"] .today-premium-shell .carousel-dots {
 body[data-view="today"] .today-premium-shell .carousel-dots button {
   width: 0.5rem;
   height: 0.5rem;
+  min-width: 24px;
+  min-height: 24px;
+  box-sizing: border-box;
+  padding: max(0px, calc((24px - 0.5rem) / 2));
+  background-clip: content-box;
 }
 
 body[data-view="today"] .today-premium-shell .carousel-dots button.active {
   width: 1.8rem;
+  padding-inline: 0;
 }
 
 /* 4. Shared Today panel system */
@@ -627,11 +633,18 @@ body[data-view="today"] .featured-story-arrow {
 }
 
 body[data-view="today"] .featured-story-dots button {
-  width: 1rem;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+  box-sizing: border-box;
+  padding: max(0px, calc((24px - 0.34rem) / 2)) max(0px, calc((24px - 1rem) / 2));
+  background-clip: content-box;
 }
 
 body[data-view="today"] .featured-story-dots button.active {
   width: 1.8rem;
+  padding-inline: 0;
 }
 
 /* 8. Video highlight and independently scrollable TeoyubeWorld Feed */
@@ -961,6 +974,14 @@ body[data-view="today"] .view.page-container :where(button, input, textarea, sel
   body[data-view="today"] .teoyubeworld-featured-panel .promise-search-form input,
   body[data-view="today"] .today-action-grid .assignment-card textarea {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-view="today"] #promiseCarouselDots button[data-slide-index] {
+    position: relative;
+    left: -24px;
+    margin-inline: -2px;
   }
 }
 

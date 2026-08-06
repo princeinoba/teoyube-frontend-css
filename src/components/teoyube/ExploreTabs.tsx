@@ -58,6 +58,7 @@ export default function ExploreTabs({ data }: { data: any }) {
             className={tab === activeTab ? "tab active" : "tab"}
             key={tab}
             onClick={() => setActiveTab(tab)}
+            style={{ minHeight: 24, minWidth: 24 }}
             type="button"
           >
             {tab}

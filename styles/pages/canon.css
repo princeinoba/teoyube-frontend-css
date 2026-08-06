@@ -1569,6 +1569,12 @@ body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots bu
     center / 1.35rem 0.28rem no-repeat;
 }
 
+body[data-view="canon"] .canon-watchman-video-dots button[data-watchman-video-index],
+body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-dots button[data-watchman-video-index] {
+  position: relative;
+  left: -1px;
+}
+
 body[data-view="canon"] .canon-watchman-story-card .canon-watchman-video-controls {
   width: min(18rem, calc(100% - 1rem));
 }

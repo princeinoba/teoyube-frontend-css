@@ -13,12 +13,12 @@
   "postCutoverTag": "teoyube-next-canonical-local-2026-07-24",
   "staticBaselineCommit": "607ec213e84002b1715b1ced9f7925a90a07f26b",
   "runtimeSourceCommit": "66d9adb06409f73a875a453f54caeba1a3817b81",
-  "runtimeSourceDigest": "f092197a8ef278a5411256179aad575d2ce7cb0fd1fac4c30fde27c11148a78e",
+  "runtimeSourceDigest": "22d584c6c4ff4037a7e5021ca222d4e33456458a1b0caca8e10e4190aed9406a",
   "buildIdGeneratorVersion": "teoyube-runtime-source-digest-2026-07-25.1",
   "buildIdDigestAlgorithm": "sha256",
   "packageLockSha256": "ae274247a9e4e65d1f28466eada2f7b0d39d9118f35d204ab5717d8850885b83",
   "runtimeSourceManifest": "config/runtime/runtime-source-manifest.json",
-  "nextBuildId": "teoyube-f092197a8ef278a541125617",
+  "nextBuildId": "teoyube-22d584c6c4ff4037a7e5021c",
   "publicRoutes": [
     {
       "path": "/",
@@ -316,7 +316,7 @@
     "broadRag": false
   },
   "rollbackCommand": "npm run rollback:start",
-  "verifiedAt": "2026-08-06T03:41:42.180Z",
+  "verifiedAt": "2026-08-06T21:15:58.193Z",
   "deployment": "local/release-candidate",
   "gateCPreview": "PENDING_CANDIDATE_GATE",
   "gateCProduction": "CLOSED",
