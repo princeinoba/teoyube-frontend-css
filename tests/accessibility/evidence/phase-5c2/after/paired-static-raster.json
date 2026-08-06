@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-2",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "startingCommit": "621aac4d70858c823e44b1f5df6f43688c68f451",
+  "generatedAt": "2026-08-06T11:20:19.148Z",
+  "cases": [
+    {
+      "key": "canon-desktop-standard",
+      "hash": "canon",
+      "root": "#canon",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      }
+    },
+    {
+      "key": "lexicon-tablet-landscape",
+      "hash": "lexicon",
+      "root": "#lexicon",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      }
+    }
+  ],
+  "captures": [
+    {
+      "runtime": "before",
+      "key": "canon-desktop-standard",
+      "round": 1,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/before-canon-desktop-standard.png",
+      "bytes": 2170535,
+      "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+    },
+    {
+      "runtime": "current",
+      "key": "canon-desktop-standard",
+      "round": 1,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/current-canon-desktop-standard.png",
+      "bytes": 2170535,
+      "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+    },
+    {
+      "runtime": "before",
+      "key": "lexicon-tablet-landscape",
+      "round": 1,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/before-lexicon-tablet-landscape.png",
+      "bytes": 2019851,
+      "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+    },
+    {
+      "runtime": "current",
+      "key": "lexicon-tablet-landscape",
+      "round": 1,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/current-lexicon-tablet-landscape.png",
+      "bytes": 2019851,
+      "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+    },
+    {
+      "runtime": "current",
+      "key": "canon-desktop-standard",
+      "round": 2,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-canon-desktop-standard.png",
+      "bytes": 2170535,
+      "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+    },
+    {
+      "runtime": "before",
+      "key": "canon-desktop-standard",
+      "round": 2,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-canon-desktop-standard.png",
+      "bytes": 2170535,
+      "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+    },
+    {
+      "runtime": "current",
+      "key": "lexicon-tablet-landscape",
+      "round": 2,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-lexicon-tablet-landscape.png",
+      "bytes": 2019851,
+      "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+    },
+    {
+      "runtime": "before",
+      "key": "lexicon-tablet-landscape",
+      "round": 2,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-lexicon-tablet-landscape.png",
+      "bytes": 2019851,
+      "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+    },
+    {
+      "runtime": "current",
+      "key": "canon-desktop-standard",
+      "round": 3,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-3/current-canon-desktop-standard.png",
+      "bytes": 2170535,
+      "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+    },
+    {
+      "runtime": "before",
+      "key": "canon-desktop-standard",
+      "round": 3,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-3/before-canon-desktop-standard.png",
+      "bytes": 2167816,
+      "sha256": "2f739fcc9b3ceef3c79fa83e90bb609cbc23d81944b97b34fc6c4ffb19691498"
+    },
+    {
+      "runtime": "current",
+      "key": "lexicon-tablet-landscape",
+      "round": 3,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-3/current-lexicon-tablet-landscape.png",
+      "bytes": 2021095,
+      "sha256": "8901c325343304a3bf10302954a0992ab4aa5a5966c99129e5f1588aa1e6523e"
+    },
+    {
+      "runtime": "before",
+      "key": "lexicon-tablet-landscape",
+      "round": 3,
+      "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-3/before-lexicon-tablet-landscape.png",
+      "bytes": 2019851,
+      "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+    }
+  ],
+  "comparisons": [
+    {
+      "label": "canon-desktop-standard: cross-version round 1",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/before-canon-desktop-standard.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/current-canon-desktop-standard.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "canon-desktop-standard: cross-version round 2",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-canon-desktop-standard.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-canon-desktop-standard.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "canon-desktop-standard: before repeat",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/before-canon-desktop-standard.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-canon-desktop-standard.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "canon-desktop-standard: current repeat",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/current-canon-desktop-standard.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-canon-desktop-standard.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "lexicon-tablet-landscape: cross-version round 1",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/before-lexicon-tablet-landscape.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/current-lexicon-tablet-landscape.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "lexicon-tablet-landscape: cross-version round 2",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-lexicon-tablet-landscape.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-lexicon-tablet-landscape.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "lexicon-tablet-landscape: before repeat",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/before-lexicon-tablet-landscape.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-lexicon-tablet-landscape.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "lexicon-tablet-landscape: current repeat",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-1/current-lexicon-tablet-landscape.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-lexicon-tablet-landscape.png",
+      "changedPixels": 0
+    }
+  ],
+  "changedPixelCount": 0,
+  "stableCaptures": [
+    {
+      "runtime": "before",
+      "key": "canon-desktop-standard",
+      "rounds": [
+        1,
+        2
+      ],
+      "capture": {
+        "runtime": "before",
+        "key": "canon-desktop-standard",
+        "round": 2,
+        "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-canon-desktop-standard.png",
+        "bytes": 2170535,
+        "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+      }
+    },
+    {
+      "runtime": "current",
+      "key": "canon-desktop-standard",
+      "rounds": [
+        1,
+        2
+      ],
+      "capture": {
+        "runtime": "current",
+        "key": "canon-desktop-standard",
+        "round": 2,
+        "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-canon-desktop-standard.png",
+        "bytes": 2170535,
+        "sha256": "bd331cbf2621ea38eb08cd2806f86463bd2f5f69c78aae5c01080f319b672e8b"
+      }
+    },
+    {
+      "runtime": "before",
+      "key": "lexicon-tablet-landscape",
+      "rounds": [
+        1,
+        2
+      ],
+      "capture": {
+        "runtime": "before",
+        "key": "lexicon-tablet-landscape",
+        "round": 2,
+        "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-lexicon-tablet-landscape.png",
+        "bytes": 2019851,
+        "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+      }
+    },
+    {
+      "runtime": "current",
+      "key": "lexicon-tablet-landscape",
+      "rounds": [
+        1,
+        2
+      ],
+      "capture": {
+        "runtime": "current",
+        "key": "lexicon-tablet-landscape",
+        "round": 2,
+        "path": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-lexicon-tablet-landscape.png",
+        "bytes": 2019851,
+        "sha256": "7696253b9906b860ce6c2869c4437a7d175a376c4920b9547799a2e5540aa703"
+      }
+    }
+  ],
+  "stableComparisons": [
+    {
+      "label": "canon-desktop-standard: stable cross-version",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-canon-desktop-standard.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-canon-desktop-standard.png",
+      "changedPixels": 0
+    },
+    {
+      "label": "lexicon-tablet-landscape: stable cross-version",
+      "left": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/before-lexicon-tablet-landscape.png",
+      "right": ".tmp/accessibility/phase-5c2/paired-static-raster/round-2/current-lexicon-tablet-landscape.png",
+      "changedPixels": 0
+    }
+  ],
+  "stableCrossVersionChangedPixelCount": 0,
+  "status": "PASS_STABLE_ZERO_PIXELS"
+}
