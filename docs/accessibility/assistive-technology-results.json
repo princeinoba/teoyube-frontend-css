@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "phase": "5A",
+  "phase": "5C-1",
   "conformanceClaim": "NO",
   "results": [
     {
       "technology": "Keyboard",
       "availability": "AVAILABLE",
       "status": "AUTOMATED_PARTIAL",
-      "evidence": "81 traversal cells; no observed trap; confirmed focus-order issues A11Y-002, A11Y-003, A11Y-004, and keyboard-scroll issue A11Y-006"
+      "evidence": "311 current audit cells and 81 keyboard traversal cells; zero custom hidden-focus cells after A11Y-002 and A11Y-004 remediation. A11Y-003 Canon focus parity and A11Y-006 Testimony keyboard scrolling remain."
     },
     {
       "technology": "Chrome accessibility engine plus axe-core",
       "availability": "AVAILABLE",
       "status": "COMPLETED_AUTOMATED",
-      "evidence": "311 cells; five violation-rule families; zero harness errors"
+      "evidence": "311 cells; three remaining violation-rule families (target-size, scrollable-region-focusable, and color-contrast); zero harness errors, zero aria-allowed-attr, and zero aria-hidden-focus."
     },
     {
       "technology": "Windows forced colors and reduced motion emulation",
@@ -27,13 +27,46 @@
       "status": "NOT_TESTED",
       "reason": "The executable is installed, but the headless Codex environment cannot reliably capture, inspect, or assert spoken output. Launching it without an observable tester would create false evidence."
     },
-    { "technology": "NVDA", "availability": "NOT_INSTALLED", "status": "NOT_TESTED" },
-    { "technology": "JAWS", "availability": "NOT_INSTALLED", "status": "NOT_TESTED" },
-    { "technology": "ZoomText", "availability": "NOT_INSTALLED", "status": "NOT_TESTED" },
-    { "technology": "VoiceOver", "availability": "PLATFORM_UNAVAILABLE", "status": "NOT_TESTED" },
-    { "technology": "TalkBack", "availability": "DEVICE_UNAVAILABLE", "status": "NOT_TESTED" },
-    { "technology": "Refreshable braille display", "availability": "DEVICE_UNAVAILABLE", "status": "NOT_TESTED" },
-    { "technology": "Switch control", "availability": "DEVICE_UNAVAILABLE", "status": "NOT_TESTED" },
-    { "technology": "Speech input", "availability": "NOT_CONFIGURED", "status": "NOT_TESTED" }
-  ]
+    {
+      "technology": "NVDA",
+      "availability": "NOT_INSTALLED",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "JAWS",
+      "availability": "NOT_INSTALLED",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "ZoomText",
+      "availability": "NOT_INSTALLED",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "VoiceOver",
+      "availability": "PLATFORM_UNAVAILABLE",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "TalkBack",
+      "availability": "DEVICE_UNAVAILABLE",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "Refreshable braille display",
+      "availability": "DEVICE_UNAVAILABLE",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "Switch control",
+      "availability": "DEVICE_UNAVAILABLE",
+      "status": "NOT_TESTED"
+    },
+    {
+      "technology": "Speech input",
+      "availability": "NOT_CONFIGURED",
+      "status": "NOT_TESTED"
+    }
+  ],
+  "updatedAt": "2026-08-06T00:30:08.628Z"
 }

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-05T18:06:59.355Z",
+  "status": "LOCKED_BEFORE_SOURCE_CHANGES",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionTimestamp": "2026-08-05T17:13:18.973Z",
+  "batch": "5C-1",
+  "issues": [
+    {
+      "issueId": "A11Y-001",
+      "title": "Lexicon alphabet options use an unsupported ARIA attribute",
+      "severity": "critical",
+      "proposalHash": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, remove aria-pressed from every role=option alphabet control in the static renderer, approved captured markup, and Next state updater; retain listbox/option, aria-selected, labels, order, click behavior, and pixels.",
+      "files": [
+        "app.js",
+        "src/app/_lexicon/LexiconPageController.tsx",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json"
+      ],
+      "routes": [
+        "/lexicon"
+      ],
+      "states": [
+        "default",
+        "alphabet-filter-selected"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "none",
+      "expectedDomAriaImpact": "attribute_only",
+      "expectedKeyboardFocusImpact": "Assistive technologies receive one valid selected state instead of conflicting pressed/selected states; filtering behavior is unchanged.",
+      "tests": [
+        "axe aria-allowed-attr passes on /lexicon at all six viewports",
+        "27 options retain role=option and exactly one aria-selected=true",
+        "static/Next keyboard and filter behavior remain equivalent",
+        "72 screenshot and protected DOM/class checks rerun"
+      ],
+      "rollback": "Revert only the A11Y-001 Phase 5C commit and rerun recovery:verify; never regenerate baselines."
+    },
+    {
+      "issueId": "A11Y-002",
+      "title": "Inactive Today carousel slides retain focusable descendants",
+      "severity": "high",
+      "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, make inactive slide containers inert while aria-hidden and remove inert when activated in both runtimes; preserve every control, label, transition, timing, and visible slide.",
+      "files": [
+        "app.js",
+        "src/app/_today/ApprovedTodayView.tsx"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json"
+      ],
+      "routes": [
+        "/"
+      ],
+      "states": [
+        "default",
+        "promise-carousel-next",
+        "featured-story-next",
+        "autoplay-advance"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "none",
+      "expectedDomAriaImpact": "attribute_only",
+      "expectedKeyboardFocusImpact": "Tab navigation skips inactive slide controls and restores them when their slide becomes active; pointer, autoplay, swipe, and arrow controls remain unchanged.",
+      "tests": [
+        "axe aria-hidden-focus passes for both carousels in every state and viewport",
+        "Tab order contains controls from the active slide only",
+        "autoplay, arrows, dots, swipe, hover pause, and keyboard arrows remain functional",
+        "72 screenshots and Today parity states rerun"
+      ],
+      "rollback": "Revert only the A11Y-002 Phase 5C commit; restore no baseline and rerun recovery:verify."
+    },
+    {
+      "issueId": "A11Y-004",
+      "title": "A hidden Canon recent-row control remains focusable",
+      "severity": "high",
+      "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, apply inert to the existing aria-hidden .canon-watchman-story-copy subtree in static generation and the approved Next capture; do not hide or remove the visible carousel controls.",
+      "files": [
+        "app.js",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json"
+      ],
+      "routes": [
+        "/canon"
+      ],
+      "states": [
+        "default",
+        "recently-updated-watchman-merged-card"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "none",
+      "expectedDomAriaImpact": "attribute_only",
+      "expectedKeyboardFocusImpact": "Hidden duplicate rows leave the Tab order; visible Watchman navigation and selected-card behavior are unchanged.",
+      "tests": [
+        "custom hidden-focus scan returns no canon-recent-merged-row",
+        "visible Watchman arrows/dots remain operable",
+        "Canon functional and parity suites rerun",
+        "72 screenshots and protected DOM/class checks rerun"
+      ],
+      "rollback": "Revert only the A11Y-004 Phase 5C commit and rerun the hidden-focus and recovery checks."
+    }
+  ],
+  "authorizedFiles": [
+    "app.js",
+    "src/app/_approved-source/approved-view-markup.generated.ts",
+    "src/app/_lexicon/LexiconPageController.tsx",
+    "src/app/_today/ApprovedTodayView.tsx"
+  ],
+  "protectedContracts": [
+    "tests/visual/baselines/static-runtime/manifest.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json"
+  ],
+  "excludedIds": {
+    "batch5c2": [
+      "A11Y-003",
+      "A11Y-005",
+      "A11Y-006"
+    ],
+    "batch5c3": [
+      "A11Y-007",
+      "A11Y-008"
+    ],
+    "manualEvidence": [
+      "A11Y-009",
+      "A11Y-010",
+      "A11Y-011",
+      "A11Y-MANUAL-001",
+      "A11Y-MANUAL-002",
+      "A11Y-MANUAL-003",
+      "A11Y-MANUAL-004",
+      "A11Y-MANUAL-005",
+      "A11Y-MANUAL-006",
+      "A11Y-MANUAL-007",
+      "A11Y-MANUAL-008",
+      "A11Y-MANUAL-009"
+    ]
+  },
+  "invariants": {
+    "controlsRemoved": 0,
+    "visibleCopyChanges": 0,
+    "cssChanges": 0,
+    "classIdChanges": 0,
+    "assetChanges": 0,
+    "structuralChanges": 0,
+    "expectedPixelDifferences": 0,
+    "staticRollbackRuntimeReplacement": false,
+    "baselineWrites": 0
+  }
+}

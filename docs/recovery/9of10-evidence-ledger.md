@@ -244,3 +244,21 @@ Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAI
 | Phase state | Phase 5A PASS; Phase 5B PASS; Phase 5C READY_NOT_STARTED; Phase 5 IN_PROGRESS |
 
 Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAITING_OWNER_SESSION_DATA. WCAG conformance remains unclaimed.
+
+
+## Phase 5C-1 update
+
+| Evidence | Result |
+| --- | --- |
+| Starting commit/tag | `1d74ff7a8b995a0f1461d8dd7a6731541d29eb4f`; `teoyube-9of10-phase5c1-start-1d74ff7` |
+| Commits | implementation `0472b0c`; tests `b074d61`; evidence commit reported in final handoff |
+| Owner scope | `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`; A11Y-001, A11Y-002, A11Y-004; exact proposal hashes |
+| Scoped evidence | 36 cells; all three issues FIXED; 0 partial, blocked, or new scoped issues |
+| Current accessibility audit | 311 cells; zero errors; zero unsupported ARIA and hidden-focus findings |
+| Visual contracts | PASS; 72 immutable screenshots, 12 DOM snapshots, owner baselines unchanged; 0 unapproved pixels |
+| Build/test/security/runtime | PASS; 397 unit pass + 1 skip; 101 integration pass; all 57 non-skipped browser tests pass; 18 security controls; 83 dual-runtime checks |
+| Performance | 72/216 results below 5,000 ms; controller blocked before runs 2-3 only by six pre-existing Canon A11Y-003 focus mismatches; CSS budget still blocked |
+| Product/protected/CSS/class-ID/assets/baselines/package-lock/paid calls | 5 / 0 / 0 / 0 / 0 / 0 / 0 / 0 |
+| Phase state | 5C-1 PASS; 5C IN_PROGRESS; 5C-2 READY; 5C-3 NOT STARTED; manual tasks NOT_TESTED |
+
+Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, Phase 4 remains WAITING_OWNER_SESSION_DATA, Gate C-Preview remains BLOCKED, and WCAG 2.2 AA conformance is not claimed.

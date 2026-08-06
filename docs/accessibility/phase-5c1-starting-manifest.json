@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-1",
+  "status": "STARTING_EVIDENCE_LOCKED_BEFORE_SOURCE_CHANGES",
+  "generatedAt": "2026-08-05T18:06:59.355Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "1d74ff7a8b995a0f1461d8dd7a6731541d29eb4f",
+  "prePhaseTag": "teoyube-9of10-phase5c1-start-1d74ff7",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionTimestamp": "2026-08-05T17:13:18.973Z",
+  "batch": "5C-1",
+  "issueIds": [
+    "A11Y-001",
+    "A11Y-002",
+    "A11Y-004"
+  ],
+  "proposalHashes": {
+    "A11Y-001": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe",
+    "A11Y-002": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b",
+    "A11Y-004": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+  },
+  "runtime": {
+    "canonical": "next",
+    "rollback": "static-node",
+    "runtimeSourceDigest": "ae07aa13d9eae08969840a1160571c9483362a98d3a634ce13da2621fcac5a75",
+    "deterministicBuildId": "teoyube-ae07aa13d9eae08969840a11",
+    "publicRouteCount": 23
+  },
+  "evidenceFiles": [
+    {
+      "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.md",
+      "bytes": 4405,
+      "sha256": "fa652c5ed482d8f38ed3cef3f56a61da9aa1679c543ebd974df6a306303181ea"
+    },
+    {
+      "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json",
+      "bytes": 31517,
+      "sha256": "2806b4b34f12ea49a67416977f7631f0c8e48552084fc381f24f7d6720b3956d"
+    },
+    {
+      "path": "docs/accessibility/owner-review/phase-5b-owner-decisions.md",
+      "bytes": 3830,
+      "sha256": "834d1ccbe4625b1e711d51876f6d4aa4c84154cd616ac7cc7b031856b0dc7a92"
+    },
+    {
+      "path": "docs/accessibility/owner-review/phase-5b-owner-decisions.json",
+      "bytes": 11690,
+      "sha256": "e61509d06fffdfbed4c8025bfa82b365d90b2d88c8d23eec9763332f5762cf3a"
+    },
+    {
+      "path": "docs/accessibility/phase-5c-proposed-batches.md",
+      "bytes": 1587,
+      "sha256": "aab4473090e8de0d7b16c522da167bf61cb7afb44cfc13c929b0416359c55147"
+    },
+    {
+      "path": "docs/accessibility/phase-5c-proposed-batches.json",
+      "bytes": 3278,
+      "sha256": "fbb722e0b9941ec47416fb0020a01ea8980959b3ef8607151703d7c43365f838"
+    },
+    {
+      "path": "docs/accessibility/accessibility-issue-register.json",
+      "bytes": 5579,
+      "sha256": "4f3de9cd063908ede20b6ca23f66b73c599f7cea04abde9a795846109a5a4732"
+    },
+    {
+      "path": "docs/accessibility/phase-5a-automated-audit-evidence.json",
+      "bytes": 3907,
+      "sha256": "b36beb5417cb23f88ed292cb55eb56833e479fa5c6ac043374a9e8ce34b961db"
+    },
+    {
+      "path": "config/runtime/canonical-runtime-manifest.json",
+      "bytes": 8366,
+      "sha256": "48c87436db2c53eddb1932c240ab3ae7a24c31c08de189298530a1b66d06a908"
+    },
+    {
+      "path": "config/runtime/runtime-source-manifest.json",
+      "bytes": 871,
+      "sha256": "04b1dc3476fc2ec6eca4d67bb05b1a83b14506624db6d1f70831f3db3e8bc1d3"
+    },
+    {
+      "path": "docs/stabilization/known-blockers.json",
+      "bytes": 1216,
+      "sha256": "0065ceb03eee8cd415ccab746fb87c05c36c6c27138d89257d048d9a31766edb"
+    },
+    {
+      "path": "config/runtime/route-compatibility-manifest.json",
+      "bytes": 4708,
+      "sha256": "e2613c9ed5d3c99b433c3f43da178a93f542dc29fe1b05685353268a8cdd9f5a"
+    },
+    {
+      "path": "tests/visual/contracts/route-parity-matrix.json",
+      "bytes": 2301,
+      "sha256": "e628c4abe0e8458c924ec34628b72ff7f23773229956c7495c9a0b90093c8453"
+    },
+    {
+      "path": "docs/accessibility/owner-review/requests/A11Y-001.md",
+      "bytes": 4049,
+      "sha256": "a249867d575afaf5cbf011acfee6316dc74ff326733f815edc67ec189dcd904f"
+    },
+    {
+      "path": "docs/accessibility/owner-review/requests/A11Y-001.json",
+      "bytes": 4035,
+      "sha256": "dcc548541fd07e0bd915cf7a694df4d63fdbf42b3b367e004b6022dc1224be79"
+    },
+    {
+      "path": "docs/accessibility/owner-review/requests/A11Y-002.md",
+      "bytes": 3980,
+      "sha256": "c9f5961752730eb06009753c0d31dc7985ffd718e7a780b498a1a911a4ef0930"
+    },
+    {
+      "path": "docs/accessibility/owner-review/requests/A11Y-002.json",
+      "bytes": 3934,
+      "sha256": "c3ce3e2f413705f04a507ef327b7fc342ff0de4e723033d29332c4cc20771384"
+    },
+    {
+      "path": "docs/accessibility/owner-review/requests/A11Y-004.md",
+      "bytes": 3658,
+      "sha256": "539f72d64e1dcac59614647c7803defc736a7f0da8305d98eefc9c7aab50a7c9"
+    },
+    {
+      "path": "docs/accessibility/owner-review/requests/A11Y-004.json",
+      "bytes": 3604,
+      "sha256": "ac5f4b9cd16695edb60fb223a0ab626122c28d9eeb857bc3a779c5ac918ffbcc"
+    }
+  ],
+  "protectedAndBaselineFiles": [
+    {
+      "path": "tests/visual/contracts/protected-visual-source-manifest.json",
+      "bytes": 51073,
+      "sha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117"
+    },
+    {
+      "path": "tests/visual/contracts/static-dom-contract.json",
+      "bytes": 399392,
+      "sha256": "b4f99fc01f28c43d4ff0aea54dfd93532488b1d60dfe2364e90a9b9f8bfef9b4"
+    },
+    {
+      "path": "tests/visual/contracts/original-static-visual-contract.json",
+      "bytes": 136206,
+      "sha256": "b428389059116a3e9ec098b9e118aa2b92e6c6fe7837c04e72e0b83a68a010a7"
+    },
+    {
+      "path": "tests/visual/baselines/static-runtime/manifest.json",
+      "bytes": 25249,
+      "sha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+      "bytes": 110698,
+      "sha256": "922f4229a1868448ff609a17d4ffa94e038f04f80f3ffd2906710f4b56fcf439"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-next-support/manifest.json",
+      "bytes": 99344,
+      "sha256": "9b8492f83366400a2a846e9713f64e2c2bb8e0a8a46c1263449fb01a82937283"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json",
+      "bytes": 240232,
+      "sha256": "404f98be60170502522622ad262d5490d574133fe8505e1b0bde7e6bc1976822"
+    }
+  ],
+  "currentBlockerIds": [
+    "STAB-BLOCKER-CANON-FOCUS",
+    "STAB-BLOCKER-CALLING-PERF",
+    "STAB-BLOCKER-CSS-BUDGET",
+    "STAB-BLOCKER-PERF-EVIDENCE"
+  ],
+  "preflight": {
+    "branch": "PASS",
+    "head": "PASS_EXACT",
+    "cleanTrackedWorktreeBeforeEvidenceTooling": true,
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "runtime": "PASS",
+    "recovery": "PASS",
+    "phase5b": "PASS",
+    "staticRollback": "RETAINED",
+    "paidCalls": 0
+  },
+  "invariants": {
+    "productSourceChangesAtLock": 0,
+    "protectedVisualChangesAtLock": 0,
+    "cssChangesAtLock": 0,
+    "baselineChangesAtLock": 0,
+    "phase5c2Started": false,
+    "phase5c3Started": false,
+    "manualEvidenceExecuted": 0
+  }
+}

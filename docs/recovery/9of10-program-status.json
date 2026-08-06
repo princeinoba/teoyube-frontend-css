@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE5B_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE5C1_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -265,11 +265,13 @@
         "Phase 1 PASS"
       ],
       "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
-      "currentCommit": "FINAL_PHASE5B_OWNER_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE5C1_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "current accessibility audit: COMPLETE",
         "issue-specific owner review and decisions: COMPLETE",
-        "approved fixes: NOT_STARTED",
+        "Phase 5C-1 approved critical/fail-closed fixes: PASS",
+        "Phase 5C-2 approved high-severity fixes: READY_NOT_STARTED",
+        "Phase 5C-3 approved medium/refinement fixes: NOT_STARTED",
         "manual evidence tasks: APPROVED_NOT_TESTED"
       ],
       "acceptanceCriteria": [
@@ -278,21 +280,20 @@
         "no unapproved visual drift"
       ],
       "currentEvidence": [
-        "311 current audit cells across 23 routes and six protected viewports; zero harness errors",
-        "11 registered findings: 1 critical, 8 high, 2 medium",
-        "8 confirmed product/accessibility or parity issues and 3 manual evidence gaps",
-        "dedicated Canon focus decision and three proposed Phase 5C batches; Phase 5C not started",
-        "72 immutable screenshots and 12 desktop DOM snapshots unchanged",
-        "no WCAG conformance claim; real assistive-technology output remains unproved",
-        "Owner decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001: 8 exact Phase 5C fixes and 12 manual-evidence approvals recorded",
-        "All manual environments remain NOT_TESTED; WCAG conformance remains unclaimed",
-        "Phase 5C batches 5C-1, 5C-2, and 5C-3 are READY_NOT_STARTED for exact approved hashes"
+        "A11Y-001, A11Y-002, and A11Y-004 fixed under their exact proposal hashes and owner decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+        "36 scoped runtime/viewport evidence cells: zero unsupported Lexicon aria-pressed states, 216/216 hidden Today slides inert with zero focusable descendants, and 12/12 hidden Canon wrappers inert",
+        "311-cell current audit: zero harness errors, zero aria-allowed-attr, zero aria-hidden-focus, and zero custom hidden-focus cells",
+        "Remaining automated violation families map only to later approved batches: A11Y-006, A11Y-007, and A11Y-008; A11Y-003 and A11Y-005 remain contract findings",
+        "72 immutable screenshots, 12 desktop DOM snapshots, and owner-approved support baselines unchanged",
+        "No WCAG conformance claim; all approved manual/AT tasks remain NOT_TESTED",
+        "Current performance results are within 5,000 ms for 72/72 measured cells, but the three-run 216-cell controller stopped on six pre-existing Canon A11Y-003 focus mismatches; CSS budget remains blocked"
       ],
       "currentBlockers": [
-        "Approved Phase 5C batches have not been implemented",
+        "A11Y-003, A11Y-005, and A11Y-006 are approved for Phase 5C-2 but not started",
+        "A11Y-007 and A11Y-008 are approved for Phase 5C-3 but not started",
         "All approved manual accessibility tasks remain NOT_TESTED",
-        "inherited release accessibility aggregator has no current 216-cell controller input",
-        "WCAG conformance remains unproved"
+        "Complete WCAG 2.2 AA conformance remains unproved",
+        "Gate C-Preview remains blocked by pre-existing Canon focus parity, incomplete 216-cell performance evidence, CSS budget, and stale release evidence"
       ],
       "ownerDecisionIds": [
         "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001"
@@ -302,7 +303,7 @@
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Start exactly one separately tasked Phase 5C batch after revalidating the clean worktree and matching approved proposal hashes",
+      "nextReviewTrigger": "Start only the separately tasked, exact hash-bound Phase 5C-2 scope; do not begin Phase 5C-3 or manual evidence implicitly.",
       "subphases": [
         {
           "subphaseId": "5A",
@@ -314,7 +315,19 @@
         },
         {
           "subphaseId": "5C",
-          "status": "READY_FOR_APPROVED_SCOPE_ONLY"
+          "status": "IN_PROGRESS"
+        },
+        {
+          "subphaseId": "5C-1",
+          "status": "PASS"
+        },
+        {
+          "subphaseId": "5C-2",
+          "status": "READY"
+        },
+        {
+          "subphaseId": "5C-3",
+          "status": "NOT_STARTED"
         }
       ]
     },
@@ -511,9 +524,9 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "5C-1_OR_6A",
+  "nextReadyPhase": "5C-2_OR_6A",
   "otherReadyIndependentSubphases": [
-    "5C-1",
+    "5C-2",
     "6A"
   ],
   "nextWaitingPhase": "PHASE4_WAITING_OWNER_SESSION_DATA_PHASE3_WAITING_OWNER_PHASE2A_BLOCKED",

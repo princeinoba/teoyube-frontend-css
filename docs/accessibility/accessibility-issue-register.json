@@ -1,8 +1,13 @@
 {
   "schemaVersion": 1,
-  "phase": "5A",
+  "phase": "5C-1",
   "issueCount": 11,
-  "severityCounts": { "critical": 1, "high": 8, "medium": 2, "low": 0 },
+  "severityCounts": {
+    "critical": 1,
+    "high": 8,
+    "medium": 2,
+    "low": 0
+  },
   "confirmedProductIssueCount": 8,
   "manualEvidenceGapCount": 3,
   "issues": [
@@ -10,30 +15,52 @@
       "id": "A11Y-001",
       "severity": "critical",
       "classification": "CONFIRMED_PRODUCT_DEFECT",
-      "routes": ["/lexicon"],
-      "wcag": ["1.3.1", "4.1.2"],
+      "routes": [
+        "/lexicon"
+      ],
+      "wcag": [
+        "1.3.1",
+        "4.1.2"
+      ],
       "title": "Lexicon alphabet options use an unsupported ARIA attribute",
       "evidence": "axe aria-allowed-attr; 156 audited-node occurrences across repeated cells; 27 stable alphabet controls use role=option with aria-pressed",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c1Status": "FIXED",
+      "phase5c1Evidence": "Across 12 runtime/viewport cells, all 27 role=option controls retain aria-selected with exactly one selected option and zero aria-pressed attributes; axe aria-allowed-attr is zero in the 311-cell current audit.",
+      "proposalHash": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe"
     },
     {
       "id": "A11Y-002",
       "severity": "high",
       "classification": "CONFIRMED_PRODUCT_DEFECT",
-      "routes": ["/"],
-      "wcag": ["2.4.3", "4.1.2"],
+      "routes": [
+        "/"
+      ],
+      "wcag": [
+        "2.4.3",
+        "4.1.2"
+      ],
       "title": "Inactive Today carousel slides retain focusable descendants",
       "evidence": "axe aria-hidden-focus and custom hidden-focus scan across every viewport/mode; action and featured-story controls remain in aria-hidden slides",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c1Status": "FIXED",
+      "phase5c1Evidence": "Across 12 runtime/viewport cells, 216 hidden Today slides are inert and expose zero focusable descendants; axe aria-hidden-focus and the inert-aware hidden-focus contract are zero in the 311-cell current audit.",
+      "proposalHash": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b"
     },
     {
       "id": "A11Y-003",
       "severity": "high",
       "classification": "CONFIRMED_ACCESSIBILITY_PARITY_DELTA",
-      "routes": ["/canon"],
-      "wcag": ["2.4.3", "2.4.6", "4.1.2"],
+      "routes": [
+        "/canon"
+      ],
+      "wcag": [
+        "2.4.3",
+        "2.4.6",
+        "4.1.2"
+      ],
       "title": "Next Canon adds eleven media stages to the keyboard focus order",
       "evidence": "CanonPageController assigns role=button, tabindex=0, aria-pressed, and labels to mappings D02-D12; approved static markup has no data-canon-video-stage controls",
       "ownerDecisionRequired": true,
@@ -43,19 +70,35 @@
       "id": "A11Y-004",
       "severity": "high",
       "classification": "CONFIRMED_PRODUCT_DEFECT",
-      "routes": ["/canon"],
-      "wcag": ["2.4.3", "4.1.2"],
+      "routes": [
+        "/canon"
+      ],
+      "wcag": [
+        "2.4.3",
+        "4.1.2"
+      ],
       "title": "A hidden Canon recent-row control remains focusable",
       "evidence": "custom hidden-focus scan consistently returns button.canon-recent-merged-row",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c1Status": "FIXED",
+      "phase5c1Evidence": "Across 12 runtime/viewport cells, every hidden Canon Watchman copy wrapper is inert, programmatic focus cannot enter it, and visible Watchman navigation remains operable; the current 311-cell hidden-focus scan is zero.",
+      "proposalHash": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
     },
     {
       "id": "A11Y-005",
       "severity": "high",
       "classification": "CONFIRMED_PROGRAMMATIC_NAME_DEFECT",
-      "routes": ["/lexicon", "/embedded-videos", "/tables"],
-      "wcag": ["2.4.6", "3.3.2", "4.1.2"],
+      "routes": [
+        "/lexicon",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "wcag": [
+        "2.4.6",
+        "3.3.2",
+        "4.1.2"
+      ],
       "title": "Three retained search inputs lack a durable programmatic name",
       "evidence": "custom accessible-name contract identifies #lexiconSearchInput, #uiVideoSearch, and #teoyubeTableSearch in 49 audited cells",
       "ownerDecisionRequired": true,
@@ -65,8 +108,12 @@
       "id": "A11Y-006",
       "severity": "high",
       "classification": "CONFIRMED_PRODUCT_DEFECT",
-      "routes": ["/testimony"],
-      "wcag": ["2.1.1"],
+      "routes": [
+        "/testimony"
+      ],
+      "wcag": [
+        "2.1.1"
+      ],
       "title": "Testimony milestone scroll region has no keyboard access",
       "evidence": "axe scrollable-region-focusable on .testimony-milestones at default and Drafts-state coverage",
       "ownerDecisionRequired": true,
@@ -76,8 +123,15 @@
       "id": "A11Y-007",
       "severity": "high",
       "classification": "CONFIRMED_PRODUCT_DEFECT",
-      "routes": ["/", "/book", "/canon", "/explore"],
-      "wcag": ["2.5.8"],
+      "routes": [
+        "/",
+        "/book",
+        "/canon",
+        "/explore"
+      ],
+      "wcag": [
+        "2.5.8"
+      ],
       "title": "Controls do not meet the minimum target-size or spacing rule",
       "evidence": "axe target-size; 289 audited-node occurrences concentrated in carousel dots, memory filters, and Explore tabs",
       "ownerDecisionRequired": true,
@@ -87,8 +141,12 @@
       "id": "A11Y-008",
       "severity": "high",
       "classification": "CONFIRMED_PRODUCT_DEFECT",
-      "routes": ["/canon"],
-      "wcag": ["1.4.3"],
+      "routes": [
+        "/canon"
+      ],
+      "wcag": [
+        "1.4.3"
+      ],
       "title": "Canon in-progress status text fails minimum contrast",
       "evidence": "axe color-contrast on D02 and D05 status labels",
       "ownerDecisionRequired": true,
@@ -98,8 +156,14 @@
       "id": "A11Y-009",
       "severity": "medium",
       "classification": "MANUAL_VALIDATION_REQUIRED",
-      "routes": ["all retained routes"],
-      "wcag": ["1.4.1", "1.4.3", "1.4.11"],
+      "routes": [
+        "all retained routes"
+      ],
+      "wcag": [
+        "1.4.1",
+        "1.4.3",
+        "1.4.11"
+      ],
       "title": "Automated contrast analysis is incomplete for complex backgrounds and states",
       "evidence": "axe returned 3,674 incomplete color-contrast node occurrences; forced-colors cells were captured without overflow",
       "ownerDecisionRequired": false,
@@ -109,8 +173,13 @@
       "id": "A11Y-010",
       "severity": "medium",
       "classification": "MANUAL_VALIDATION_REQUIRED",
-      "routes": ["all retained routes"],
-      "wcag": ["2.4.7", "2.4.11"],
+      "routes": [
+        "all retained routes"
+      ],
+      "wcag": [
+        "2.4.7",
+        "2.4.11"
+      ],
       "title": "Focus visibility and obscuration require human viewport review",
       "evidence": "81 keyboard cells found no computed-style indicator omission; hit-testing produced candidates affected by skip links, scrolling, and sticky UI",
       "ownerDecisionRequired": false,
@@ -120,12 +189,28 @@
       "id": "A11Y-011",
       "severity": "high",
       "classification": "MANUAL_AT_AND_MEDIA_VALIDATION_REQUIRED",
-      "routes": ["/", "/canon", "/promise-table", "/calling-compass", "/embedded-videos", "/tables"],
-      "wcag": ["1.2.1", "1.2.2", "1.2.3", "1.2.5", "2.1.1", "4.1.3"],
+      "routes": [
+        "/",
+        "/canon",
+        "/promise-table",
+        "/calling-compass",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "wcag": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3",
+        "1.2.5",
+        "2.1.1",
+        "4.1.3"
+      ],
       "title": "External media alternatives and observable screen-reader output are unverified",
       "evidence": "external requests were blocked; Narrator is installed but spoken output is not observable in this headless environment; other AT was unavailable",
       "ownerDecisionRequired": false,
       "phase5bCandidate": false
     }
-  ]
+  ],
+  "fixedIssueCount": 3,
+  "openConfirmedIssueCount": 5
 }

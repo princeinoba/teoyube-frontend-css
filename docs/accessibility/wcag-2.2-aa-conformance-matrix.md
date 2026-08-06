@@ -10,7 +10,7 @@
 | 1.2.3 Audio Description or Media Alternative | A | Manual required | Editorial review remains. |
 | 1.2.4 Captions (Live) | AA | N/A observed | No live synchronized media observed. |
 | 1.2.5 Audio Description | AA | Manual required | Prerecorded description not verified. |
-| 1.3.1 Info and Relationships | A | Partial | Landmark/heading scan; A11Y-001 remains. |
+| 1.3.1 Info and Relationships | A | Partial | A11Y-001 fixed in Phase 5C-1; manual relationship and AT reading-order review remains. |
 | 1.3.2 Meaningful Sequence | A | Partial | DOM/keyboard sequences captured; AT reading order remains. |
 | 1.3.3 Sensory Characteristics | A | Manual required | Human instruction review. |
 | 1.3.4 Orientation | AA | Automation support | Portrait/landscape cells, no horizontal overflow. |
@@ -32,7 +32,7 @@
 | 2.3.1 Three Flashes | A | Manual required | Video/animation flash analysis remains. |
 | 2.4.1 Bypass Blocks | A | Automation support | Skip link first in default keyboard order. |
 | 2.4.2 Page Titled | A | Automation support | Titles captured in all cells. |
-| 2.4.3 Focus Order | A | **Fail** | A11Y-002, A11Y-003, A11Y-004. |
+| 2.4.3 Focus Order | A | **Fail** | A11Y-002 and A11Y-004 fixed in Phase 5C-1; A11Y-003 remains. |
 | 2.4.4 Link Purpose | A | Partial | Names captured; context judgment remains. |
 | 2.4.5 Multiple Ways | AA | Partial | Navigation/search exist; human findability remains. |
 | 2.4.6 Headings and Labels | AA | Partial | Headings captured; A11Y-005 and clarity review remain. |
@@ -57,7 +57,11 @@
 | 3.3.4 Error Prevention | AA | Partial | Reversibility exists; destructive paths need confirmation. |
 | 3.3.7 Redundant Entry | A | Manual required | Cross-module task review remains. |
 | 3.3.8 Accessible Authentication | AA | N/A observed | No authentication challenge exposed. |
-| 4.1.2 Name, Role, Value | A | **Fail** | A11Y-001, A11Y-002, A11Y-004, A11Y-005. |
+| 4.1.2 Name, Role, Value | A | **Fail** | A11Y-001, A11Y-002, and A11Y-004 fixed in Phase 5C-1; A11Y-005 remains. |
 | 4.1.3 Status Messages | AA | Partial | Live regions inventoried; observable AT test absent. |
 
 `SUPPORTED_BY_AUTOMATION` is deliberately rendered as “Automation support,” not “Pass.” The machine-readable JSON contains the full evidence wording and status vocabulary.
+
+## Phase 5C-1 update
+
+The matrix remains a non-conformance evidence matrix. Phase 5C-1 fixes narrow failures under 1.3.1, 2.4.3, and 4.1.2, but A11Y-003, A11Y-005 through A11Y-008, and every manual/AT evidence gap remain. **Complete WCAG 2.2 AA conformance: NO.**

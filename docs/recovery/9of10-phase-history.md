@@ -235,3 +235,24 @@ Status: **PASS**
 Recorded at: `2026-08-05T17:13:18.973Z`
 
 The owner approved all 20 current proposal-hash-bound recommendations: 8 exact Phase 5C fixes, 3 manual-gap decisions, and 9 executable manual tasks. No implementation or manual test was performed. Phase 5C is **READY FOR APPROVED SCOPE ONLY** and **NOT STARTED**. WCAG conformance remains unclaimed. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and Phase 4 remains **WAITING_OWNER_SESSION_DATA**.
+
+
+## Phase 5C-1 - critical and fail-closed accessibility remediation
+
+Status: **PASS**
+Started from: `1d74ff7a8b995a0f1461d8dd7a6731541d29eb4f`
+Pre-phase tag: `teoyube-9of10-phase5c1-start-1d74ff7`
+Implementation commit: `0472b0c`
+Test commit: `b074d61`
+
+### Actions
+
+1. Validated the exact owner decision, proposal hashes, request hashes, Batch 5C-1 membership, files, tests, protected contracts, and rollback for A11Y-001, A11Y-002, and A11Y-004.
+2. Removed unsupported `aria-pressed` from Lexicon options while retaining `aria-selected`; made only inactive Today slides inert; made only the existing hidden Canon Watchman copy subtree inert.
+3. Added a hash-bound five-file accessibility delta verifier plus focused unit and browser tests.
+4. Reran the 311-cell accessibility audit and every applicable build, security, Scripture, TIG, research, retrieval, runtime, recovery, and smoke gate.
+5. Preserved every visible control, copy string, class, ID, CSS rule, asset, baseline, route, canonical runtime, and static rollback behavior.
+
+### Result
+
+All three scoped issues are **FIXED** with no scoped regression. Phase 5C-1 is PASS; Phase 5C is IN_PROGRESS; Phase 5C-2 is READY but not started; Phase 5C-3 is NOT STARTED. Manual tasks completed: 0. WCAG 2.2 AA conformance is not claimed. Phase 2A/Gate C-Preview remain blocked by separate pre-existing Canon focus, incomplete performance-evidence, CSS-budget, and release-evidence blockers.

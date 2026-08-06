@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T00:30:08.628Z",
+  "program": {
+    "selectedPhase": "Phase 5C-1 ? Critical and fail-closed accessibility remediation",
+    "previousStatus": "READY FOR APPROVED SCOPE",
+    "finalStatus": "PASS",
+    "phase5c": "IN_PROGRESS",
+    "phase5c2": "READY",
+    "programOverall": "IN_PROGRESS"
+  },
+  "branchAndCommits": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "1d74ff7a8b995a0f1461d8dd7a6731541d29eb4f",
+    "implementationCommit": "0472b0c",
+    "testCommit": "b074d61",
+    "evidenceFinalCommit": "FINAL_PHASE5C1_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "prePhaseTag": "teoyube-9of10-phase5c1-start-1d74ff7",
+    "worktree": "EXPECTED_CLEAN_AFTER_FINAL_COMMIT"
+  },
+  "approvedScope": {
+    "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+    "batch": "5C-1",
+    "issueIds": [
+      "A11Y-001",
+      "A11Y-002",
+      "A11Y-004"
+    ],
+    "proposalHashes": {
+      "A11Y-001": "11aef30ee50faf3b9c61b744bdb867dfeb1d0a8cafe3569a831f011d9cc52afe",
+      "A11Y-002": "d09fd6540f400937f1b797e122e80455c3d7909a1ac80059c77cbc32b25bb61b",
+      "A11Y-004": "c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1"
+    },
+    "filesAuthorized": [
+      "app.js",
+      "src/app/_lexicon/LexiconPageController.tsx",
+      "src/app/_today/ApprovedTodayView.tsx",
+      "src/app/_approved-source/approved-view-markup.generated.ts",
+      "config/runtime/canonical-runtime-manifest.json (derived identity only)"
+    ],
+    "protectedContracts": [
+      "tests/visual/contracts/protected-visual-source-manifest.json",
+      "tests/visual/contracts/static-dom-contract.json",
+      "tests/visual/contracts/original-static-visual-contract.json",
+      "tests/visual/baselines/static-runtime/manifest.json"
+    ],
+    "expectedPixelImpact": 0,
+    "expectedDomAriaImpact": "attribute-only",
+    "excludedIds": [
+      "A11Y-003",
+      "A11Y-005",
+      "A11Y-006",
+      "A11Y-007",
+      "A11Y-008",
+      "A11Y-009",
+      "A11Y-010",
+      "A11Y-011",
+      "A11Y-MANUAL-001..009"
+    ]
+  },
+  "implementation": {
+    "issueChanges": {
+      "A11Y-001": "Removed unsupported aria-pressed while retaining listbox/option, aria-selected, labels, order, keyboard selection, and pixels.",
+      "A11Y-002": "Applied inert only to inactive aria-hidden Today promise and featured-story slides in both runtimes.",
+      "A11Y-004": "Applied inert only to the existing aria-hidden Canon Watchman copy subtree; visible media controls remain."
+    },
+    "controlsRemoved": 0,
+    "visibleCopyChanged": 0,
+    "cssChanged": 0,
+    "classIdChanges": 0,
+    "staticRollbackChanged": 0
+  },
+  "accessibility": {
+    "issuesBefore": 3,
+    "issuesFixed": 3,
+    "issuesPartiallyFixed": 0,
+    "issuesBlocked": 0,
+    "newIssues": 0,
+    "keyboard": "PASS_SCOPED; A11Y-003 and A11Y-006 remain later-batch issues",
+    "focus": "PASS_SCOPED_ZERO_HIDDEN_FOCUS",
+    "accessibleNames": "UNCHANGED; A11Y-005 remains Phase 5C-2",
+    "rolesStates": "PASS_SCOPED",
+    "hiddenInert": "PASS_216_OF_216_TODAY_SLIDES_AND_12_OF_12_CANON_WRAPPERS",
+    "focusRestoration": "UNCHANGED_SCOPED_FLOWS_PASS",
+    "availableAtEvidence": "Chrome accessibility engine plus axe and automated keyboard evidence only",
+    "manualTasksCompleted": 0
+  },
+  "conformance": {
+    "wcagMatrixUpdated": true,
+    "completeWcag22AaClaimed": false
+  },
+  "visualAndDom": {
+    "protectedVisualVerification": "PASS",
+    "immutableBaselines": "UNCHANGED_72_SCREENSHOTS_12_DOM",
+    "ownerBaselines": "UNCHANGED",
+    "accessibilityDeltaContract": "PASS_HASH_BOUND_EXACT_FIVE_FILES",
+    "unapprovedPixelDifferences": 0,
+    "unapprovedDomClassDifferences": 0,
+    "assetCopyDifferences": 0,
+    "baselineWrites": 0,
+    "diagnosticNote": "Raw nondeterministic dynamic full-root counterfactual counts are preserved but are not the authoritative parity gate."
+  },
+  "performance": {
+    "threeRunGate": "BLOCKED_BY_PREEXISTING_CANON_A11Y_003_AFTER_FIRST_LOGICAL_RUN",
+    "result216": "72_OF_216_RESULTS_AVAILABLE",
+    "runMaximaMs": [
+      4319.6
+    ],
+    "callingTabletPortraitMs": {
+      "static": 1469,
+      "next": 1222.8
+    },
+    "cssBudget": {
+      "status": "BLOCKED_PREEXISTING",
+      "actualBytes": 1414956,
+      "limitBytes": 948538
+    },
+    "newRegressions": 0,
+    "gateCPreview": "BLOCKED"
+  },
+  "regressions": {
+    "npmCi": "PASS_408_PACKAGES",
+    "audit": "PASS_ZERO_FULL_AND_PRODUCTION",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "unit": "PASS_397_ONE_INTENTIONAL_SKIP",
+    "integration": "PASS_101",
+    "browser": "PASS_ALL_57_NON_SKIPPED_AFTER_SERIAL_CONFIRMATION_3_STATIC_SKIPS",
+    "security": "PASS_18_CONTROLS",
+    "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+    "web": "PASS_EXACT_WEB_CORPUS_AND_SCRIPTURE_CONTRACTS",
+    "tig": "PASS",
+    "gateA": "PASS_64_OF_64",
+    "prompt18": "PASS_49_OF_49_13_TOOLS",
+    "prompt20": "PASS_21_OF_21_33563_CHUNKS_ZERO_PROVIDER_CALLS",
+    "research": "PASS_66_EVENTS_17_SCENARIOS_ZERO_PARTICIPANTS_SESSIONS_PAID_CALLS",
+    "stabilization": "WAITING_OWNER_PREEXISTING_BLOCKERS_PRESERVED",
+    "nextSmoke": "PASS",
+    "staticSmoke": "PASS",
+    "listenersClosed": true,
+    "paidCalls": 0
+  },
+  "changes": {
+    "productSourceFilesChanged": 5,
+    "protectedVisualFilesChanged": 0,
+    "packageLockfileChanges": 0,
+    "baselineChanges": 0,
+    "workspaceGrowth": "BOUNDED_TRACKED_SOURCE_AND_COMPACT_EVIDENCE_ONLY; exact final tracked-byte delta reported in handoff"
+  },
+  "status": {
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA",
+    "phase5a": "PASS",
+    "phase5b": "PASS",
+    "phase5c1": "PASS",
+    "nextReady": "Phase 5C-2",
+    "rollback": "git revert <evidence-final-commit> b074d61 0472b0c"
+  }
+}
