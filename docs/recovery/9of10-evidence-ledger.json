@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T00:30:08.628Z",
+  "generatedAt": "2026-08-06T10:35:23.723Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -766,6 +766,67 @@
         "performance": "BLOCKED_72_OF_216_RESULTS_ONLY_PREEXISTING_CANON_FOCUS_MISMATCHES",
         "cssBudget": "BLOCKED_1414956_OF_948538_PREEXISTING"
       }
+    },
+    {
+      "phase": "5C-2",
+      "status": "PASS",
+      "executedAt": "2026-08-06T10:35:23.723Z",
+      "startingCommit": "621aac4d70858c823e44b1f5df6f43688c68f451",
+      "prePhaseTag": "teoyube-9of10-phase5c2-start-621aac4",
+      "implementationCommit": "0716dc6",
+      "testCommit": "dbda6ba",
+      "evidenceCommit": "FINAL_PHASE5C2_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      "issueIds": [
+        "A11Y-003",
+        "A11Y-005",
+        "A11Y-006"
+      ],
+      "proposalHashes": {
+        "A11Y-003": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+        "A11Y-005": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+        "A11Y-006": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+      },
+      "scopedEvidenceCells": 56,
+      "currentAuditCells": 311,
+      "currentAuditErrors": 0,
+      "fixedIssues": 3,
+      "remainingConfirmedIssues": 2,
+      "manualTasksExecuted": 0,
+      "conformanceClaim": false,
+      "productSourceFilesChanged": 3,
+      "protectedVisualFilesChanged": 0,
+      "cssFilesChanged": 0,
+      "classIdChanges": 0,
+      "assetCopyChanges": 0,
+      "immutableBaselineFilesChanged": 0,
+      "ownerApprovedBaselineFilesChanged": 0,
+      "packageJsonChanged": false,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0,
+      "verification": {
+        "npmCi": "PASS_408_PACKAGES",
+        "audit": "PASS_ZERO_FULL_AND_PRODUCTION",
+        "typecheck": "PASS",
+        "lint": "PASS",
+        "unit": "PASS_AFTER_ISOLATED_SERIAL_CONFIRMATION_PARALLEL_HOST_TIMEOUTS_ONLY",
+        "integration": "PASS_101",
+        "browser": "PASS_60_RUNNABLE_3_STATIC_SKIPS_SERIAL",
+        "focusedBrowser": "PASS_3_OF_3",
+        "build": "PASS_NEXT_16_3_0_58_PAGES",
+        "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+        "gateA": "PASS_64_OF_64",
+        "teoGuide": "PASS_49_OF_49_13_TOOLS",
+        "retrieval": "PASS_DETERMINISTIC_21_OF_21_33563_CHUNKS_ZERO_PROVIDER_CALLS",
+        "optionalCandidateModelRetrievalEvaluation": "BLOCKED_LIVE_PROVIDER_DISABLED_ZERO_CALLS",
+        "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+        "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+        "dualRuntime": "PASS_83_LISTENERS_CLOSED",
+        "accessibility": "PASS_311_CELLS_ZERO_ERRORS_TWO_LATER_BATCH_RULE_FAMILIES",
+        "scopedRaster": "PASS_STABLE_ZERO_PIXELS",
+        "performance": "BLOCKED_72_OF_216_AFTER_BROAD_PREEXISTING_PARITY_FAILURES",
+        "cssBudget": "BLOCKED_1414956_OF_948538_PREEXISTING"
+      }
     }
   ],
   "workspaceAtStart": {
@@ -863,5 +924,12 @@
     "manualTasks": "APPROVED_NOT_TESTED",
     "completeWcagConformanceClaimed": false,
     "program": "IN_PROGRESS"
+  },
+  "workspaceAfterPhase5c2": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "621aac4d70858c823e44b1f5df6f43688c68f451",
+    "implementationCommit": "0716dc6",
+    "testCommit": "dbda6ba",
+    "evidenceCommit": "FINAL_PHASE5C2_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF"
   }
 }

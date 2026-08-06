@@ -24,7 +24,7 @@
 | 1.4.11 Non-text Contrast | AA | Manual required | Control/focus contrast review remains. |
 | 1.4.12 Text Spacing | AA | Automation support | 23 routes, no overflow under spacing override. |
 | 1.4.13 Content on Hover or Focus | AA | Manual required | Dismiss/persist/hover review remains. |
-| 2.1.1 Keyboard | A | **Fail** | A11Y-006 Testimony milestones scroll region. |
+| 2.1.1 Keyboard | A | Partial | A11Y-006 fixed; media and observable assistive-technology validation remains. |
 | 2.1.2 No Keyboard Trap | A | Automation support | 81 traversal cells, no observed trap. |
 | 2.1.4 Character Key Shortcuts | A | Partial | None exposed; listener review incomplete. |
 | 2.2.1 Timing Adjustable | A | Manual required | Timeout behavior review remains. |
@@ -32,10 +32,10 @@
 | 2.3.1 Three Flashes | A | Manual required | Video/animation flash analysis remains. |
 | 2.4.1 Bypass Blocks | A | Automation support | Skip link first in default keyboard order. |
 | 2.4.2 Page Titled | A | Automation support | Titles captured in all cells. |
-| 2.4.3 Focus Order | A | **Fail** | A11Y-002 and A11Y-004 fixed in Phase 5C-1; A11Y-003 remains. |
+| 2.4.3 Focus Order | A | Partial | A11Y-002, A11Y-003, and A11Y-004 fixed; manual AT order review remains. |
 | 2.4.4 Link Purpose | A | Partial | Names captured; context judgment remains. |
 | 2.4.5 Multiple Ways | AA | Partial | Navigation/search exist; human findability remains. |
-| 2.4.6 Headings and Labels | AA | Partial | Headings captured; A11Y-005 and clarity review remain. |
+| 2.4.6 Headings and Labels | AA | Partial | A11Y-003 and A11Y-005 fixed; manual clarity review remains. |
 | 2.4.7 Focus Visible | AA | Partial | No heuristic miss; visual confirmation remains. |
 | 2.4.11 Focus Not Obscured | AA | Manual required | Hit-test candidates require human review. |
 | 2.5.1 Pointer Gestures | A | Partial | Alternatives observed; touch inventory remains. |
@@ -52,16 +52,16 @@
 | 3.2.4 Consistent Identification | AA | Partial | Shared controls captured; human semantics remain. |
 | 3.2.6 Consistent Help | A | Partial | Help controls inventoried. |
 | 3.3.1 Error Identification | A | Manual required | Error states not exhausted. |
-| 3.3.2 Labels or Instructions | A | Partial | A11Y-005 custom name findings. |
+| 3.3.2 Labels or Instructions | A | Partial | A11Y-005 fixed; broader human instruction review remains. |
 | 3.3.3 Error Suggestion | AA | Manual required | Validation workflows remain. |
 | 3.3.4 Error Prevention | AA | Partial | Reversibility exists; destructive paths need confirmation. |
 | 3.3.7 Redundant Entry | A | Manual required | Cross-module task review remains. |
 | 3.3.8 Accessible Authentication | AA | N/A observed | No authentication challenge exposed. |
-| 4.1.2 Name, Role, Value | A | **Fail** | A11Y-001, A11Y-002, and A11Y-004 fixed in Phase 5C-1; A11Y-005 remains. |
+| 4.1.2 Name, Role, Value | A | Partial | Applicable A11Y-001 through A11Y-005 findings fixed; observable AT/media validation remains. |
 | 4.1.3 Status Messages | AA | Partial | Live regions inventoried; observable AT test absent. |
 
 `SUPPORTED_BY_AUTOMATION` is deliberately rendered as “Automation support,” not “Pass.” The machine-readable JSON contains the full evidence wording and status vocabulary.
 
-## Phase 5C-1 update
+## Phase 5C-2 update
 
-The matrix remains a non-conformance evidence matrix. Phase 5C-1 fixes narrow failures under 1.3.1, 2.4.3, and 4.1.2, but A11Y-003, A11Y-005 through A11Y-008, and every manual/AT evidence gap remain. **Complete WCAG 2.2 AA conformance: NO.**
+The matrix remains a non-conformance evidence matrix. Phase 5C-2 closes A11Y-003, A11Y-005, and A11Y-006, but A11Y-007, A11Y-008, and every manual/AT evidence gap remain. **Complete WCAG 2.2 AA conformance: NO.**

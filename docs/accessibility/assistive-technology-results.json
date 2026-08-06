@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "phase": "5C-1",
+  "phase": "5C-2",
   "conformanceClaim": "NO",
   "results": [
     {
       "technology": "Keyboard",
       "availability": "AVAILABLE",
       "status": "AUTOMATED_PARTIAL",
-      "evidence": "311 current audit cells and 81 keyboard traversal cells; zero custom hidden-focus cells after A11Y-002 and A11Y-004 remediation. A11Y-003 Canon focus parity and A11Y-006 Testimony keyboard scrolling remain."
+      "evidence": "311 current audit cells and 81 traversal cells; A11Y-003 Canon media semantics now match across runtimes, A11Y-006 Testimony milestone scrolling is keyboard accessible, and hidden-focus findings remain zero. Manual physical keyboard and AT review remains."
     },
     {
       "technology": "Chrome accessibility engine plus axe-core",
       "availability": "AVAILABLE",
       "status": "COMPLETED_AUTOMATED",
-      "evidence": "311 cells; three remaining violation-rule families (target-size, scrollable-region-focusable, and color-contrast); zero harness errors, zero aria-allowed-attr, and zero aria-hidden-focus."
+      "evidence": "311 cells; two remaining automated violation-rule families (target-size and color-contrast); zero harness errors, zero missing names, zero aria-allowed-attr, zero aria-hidden-focus, and zero scrollable-region-focusable."
     },
     {
       "technology": "Windows forced colors and reduced motion emulation",
@@ -68,5 +68,5 @@
       "status": "NOT_TESTED"
     }
   ],
-  "updatedAt": "2026-08-06T00:30:08.628Z"
+  "updatedAt": "2026-08-06T10:35:23.723Z"
 }

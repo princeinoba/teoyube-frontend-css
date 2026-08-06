@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "5C-1",
+  "phase": "5C-2",
   "issueCount": 11,
   "severityCounts": {
     "critical": 1,
@@ -64,7 +64,10 @@
       "title": "Next Canon adds eleven media stages to the keyboard focus order",
       "evidence": "CanonPageController assigns role=button, tabindex=0, aria-pressed, and labels to mappings D02-D12; approved static markup has no data-canon-video-stage controls",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c2Status": "FIXED",
+      "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+      "phase5c2Evidence": "Exactly 11 visible Canon media stages are named and keyboard-operable in both runtimes; click, Enter, and Space preserve the existing playback mapping. The previous static/Next accessibility parity delta is closed without removing a control."
     },
     {
       "id": "A11Y-004",
@@ -102,7 +105,10 @@
       "title": "Three retained search inputs lack a durable programmatic name",
       "evidence": "custom accessible-name contract identifies #lexiconSearchInput, #uiVideoSearch, and #teoyubeTableSearch in 49 audited cells",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c2Status": "FIXED",
+      "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+      "phase5c2Evidence": "All 36 runtime/viewport cells expose the exact route-specific search-input name while retaining the existing query/filter behavior."
     },
     {
       "id": "A11Y-006",
@@ -117,7 +123,10 @@
       "title": "Testimony milestone scroll region has no keyboard access",
       "evidence": "axe scrollable-region-focusable on .testimony-milestones at default and Drafts-state coverage",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c2Status": "FIXED",
+      "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61",
+      "phase5c2Evidence": "The existing Testimony milestones region is named and keyboard-focusable in 8/8 cells; focus remains contained and every horizontally overflowed mobile cell scrolls with ArrowRight; axe reports zero scrollable-region-focusable violations."
     },
     {
       "id": "A11Y-007",
@@ -211,6 +220,6 @@
       "phase5bCandidate": false
     }
   ],
-  "fixedIssueCount": 3,
-  "openConfirmedIssueCount": 5
+  "fixedIssueCount": 6,
+  "openConfirmedIssueCount": 2
 }

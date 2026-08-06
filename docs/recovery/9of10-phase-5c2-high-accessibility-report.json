@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-2",
+  "status": "PASS",
+  "outcome": "B_SCOPED_PASS_WITH_PREEXISTING_UNRELATED_GATES_OPEN",
+  "executedAt": "2026-08-06T10:35:23.723Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "621aac4d70858c823e44b1f5df6f43688c68f451",
+  "implementationCommit": "0716dc6",
+  "testCommit": "dbda6ba",
+  "finalCommit": "FINAL_PHASE5C2_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "issues": [
+    "A11Y-003",
+    "A11Y-005",
+    "A11Y-006"
+  ],
+  "proposalHashes": {
+    "A11Y-003": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+    "A11Y-005": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+    "A11Y-006": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+  },
+  "scopedResult": {
+    "fixed": 3,
+    "partiallyFixed": 0,
+    "blocked": 0,
+    "newIssues": 0,
+    "focusedCells": 56,
+    "currentAuditCells": 311,
+    "currentAuditErrors": 0
+  },
+  "visualResult": {
+    "stableBeforeAfterChangedPixels": 0,
+    "cssFilesChanged": 0,
+    "copyChanges": 0,
+    "classIdChanges": 0,
+    "assetChanges": 0,
+    "immutableBaselineChanges": 0,
+    "ownerApprovedBaselineChanges": 0,
+    "protectedVisualFilesChanged": 0
+  },
+  "verification": {
+    "npmCi": "PASS_408_PACKAGES",
+    "audit": "PASS_ZERO_FULL_AND_PRODUCTION",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "unit": "PASS_AFTER_ISOLATED_SERIAL_CONFIRMATION_PARALLEL_HOST_TIMEOUTS_ONLY",
+    "integration": "PASS_101",
+    "browser": "PASS_60_RUNNABLE_3_STATIC_SKIPS_SERIAL",
+    "focusedBrowser": "PASS_3_OF_3",
+    "build": "PASS_NEXT_16_3_0_58_PAGES",
+    "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "gateA": "PASS_64_OF_64",
+    "teoGuide": "PASS_49_OF_49_13_TOOLS",
+    "retrieval": "PASS_DETERMINISTIC_21_OF_21_33563_CHUNKS_ZERO_PROVIDER_CALLS",
+    "optionalCandidateModelRetrievalEvaluation": "BLOCKED_LIVE_PROVIDER_DISABLED_ZERO_CALLS",
+    "recovery": "PASS_72_SCREENSHOTS_12_DOM",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+    "dualRuntime": "PASS_83_LISTENERS_CLOSED",
+    "accessibility": "PASS_311_CELLS_ZERO_ERRORS_TWO_LATER_BATCH_RULE_FAMILIES",
+    "scopedRaster": "PASS_STABLE_ZERO_PIXELS",
+    "performance": "BLOCKED_72_OF_216_AFTER_BROAD_PREEXISTING_PARITY_FAILURES",
+    "cssBudget": "BLOCKED_1414956_OF_948538_PREEXISTING"
+  },
+  "openIssues": [
+    "A11Y-007",
+    "A11Y-008"
+  ],
+  "manualTasks": "0 completed; all approved tasks remain NOT_TESTED",
+  "conformanceClaim": false,
+  "gateCPreview": "BLOCKED",
+  "phase2A": "BLOCKED",
+  "phase3": "WAITING_OWNER",
+  "phase4": "WAITING_OWNER_SESSION_DATA",
+  "phase5c3": "READY_NOT_STARTED",
+  "phase6A": "READY_NOT_STARTED",
+  "paidCalls": 0,
+  "rollback": "git revert <phase-5c2-evidence-commit> dbda6ba 0716dc6",
+  "artifacts": [
+    {
+      "path": "docs/accessibility/phase-5c2-starting-manifest.json",
+      "bytes": 7484,
+      "sha256": "c9ed26bfdc10a0216b1353b0e6d58ee0e699947bac98aa7fa49258457e3f8702"
+    },
+    {
+      "path": "docs/accessibility/phase-5c2-before-characterization.json",
+      "bytes": 357624,
+      "sha256": "945a0c0eaf1c2c67f3caaf47868439f58cd5fe3120570bf2daf060c108f8cfe5"
+    },
+    {
+      "path": "docs/accessibility/phase-5c2-after-evidence.json",
+      "bytes": 380443,
+      "sha256": "5a2d26fb4196a945af0ef8c7fb5b0e27a11766db34086ab4a7b9bb0e013f9f23"
+    },
+    {
+      "path": "tests/accessibility/evidence/phase-5c2/before/manifest.json",
+      "bytes": 357624,
+      "sha256": "945a0c0eaf1c2c67f3caaf47868439f58cd5fe3120570bf2daf060c108f8cfe5"
+    },
+    {
+      "path": "tests/accessibility/evidence/phase-5c2/after/manifest.json",
+      "bytes": 380443,
+      "sha256": "5a2d26fb4196a945af0ef8c7fb5b0e27a11766db34086ab4a7b9bb0e013f9f23"
+    },
+    {
+      "path": "tests/accessibility/evidence/phase-5c2/after/paired-static-raster.json",
+      "bytes": 9694,
+      "sha256": "621bba8062fa391f68280eaacbeb7362d789d33b47596f8c926dbfb260f0fab3"
+    },
+    {
+      "path": "tests/accessibility/approved-deltas/phase-5c2/manifest.json",
+      "bytes": 4715,
+      "sha256": "3dfd50aac2e0b11ba8b71ec2f8be380e8b5ca1106a0abd44d628ca43b0e370bd"
+    }
+  ]
+}

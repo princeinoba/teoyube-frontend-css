@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T00:30:08.628Z",
+  "updatedAt": "2026-08-06T10:35:23.723Z",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -136,7 +136,7 @@
     },
     {
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
-      "scope": "Only the 20 current issue-specific and manual-task proposal hashes recorded in the Phase 5B decision ledger.",
+      "scope": "Only the 20 current issue-specific and manual-task proposal hashes recorded in the Phase 5B decision ledger; Phase 5C-1 and Phase 5C-2 exact issue subsets executed independently.",
       "status": "APPROVED",
       "approvedAt": "2026-08-05T17:13:18.973Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
@@ -169,6 +169,27 @@
         "expandedScope": false,
         "manualTasksExecuted": 0,
         "phase5c2Started": false,
+        "phase5c3Started": false
+      },
+      "phase5c2ExecutionEvidence": {
+        "phase": "5C-2",
+        "status": "PASS",
+        "executedAt": "2026-08-06T10:35:23.723Z",
+        "exactIssueIds": [
+          "A11Y-003",
+          "A11Y-005",
+          "A11Y-006"
+        ],
+        "exactProposalHashes": {
+          "A11Y-003": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+          "A11Y-005": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+          "A11Y-006": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+        },
+        "implementationCommit": "0716dc6",
+        "testCommit": "dbda6ba",
+        "evidenceCommit": "FINAL_PHASE5C2_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+        "expandedScope": false,
+        "manualTasksExecuted": 0,
         "phase5c3Started": false
       }
     }

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-2",
+  "status": "PASS",
+  "generatedAt": "2026-08-06T10:35:23.723Z",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionAt": "2026-08-05T17:13:18.973Z",
+  "batch": "5C-2",
+  "implementationCommit": "0716dc6",
+  "testCommit": "dbda6ba",
+  "expectedPixelChange": 0,
+  "baselineUpdateAuthorized": false,
+  "baselineFilesChanged": 0,
+  "cssFilesChanged": 0,
+  "classOrIdChanges": 0,
+  "issues": [
+    {
+      "id": "A11Y-003",
+      "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+      "routes": [
+        "/canon"
+      ],
+      "states": [
+        "default",
+        "media-stage-focused",
+        "media-stage-playing"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "selectors": [
+        ".canon-project-media",
+        ".canon-recent-media"
+      ],
+      "files": [
+        "app.js"
+      ],
+      "approvedDelta": "Add role=button, tabindex=0, aria-pressed, stable accessible names, and click/Enter/Space playback to the same 11 visible static Canon stages.",
+      "preserved": [
+        "all 11 media controls",
+        "Next behavior",
+        "visible copy",
+        "classes and IDs",
+        "media mapping",
+        "layout and pixels"
+      ],
+      "evidence": "12/12 runtime/viewport cells expose exactly 11 named keyboard-operable stages; 36/36 click, Enter, and Space activations passed.",
+      "rollback": "Revert only the A11Y-003 app.js adapter delta; do not remove the existing Next controls or alter baselines."
+    },
+    {
+      "id": "A11Y-005",
+      "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+      "routes": [
+        "/lexicon",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "default",
+        "search-focused",
+        "filtered-results"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "selectors": [
+        "#lexiconSearchInput",
+        "#uiVideoSearch",
+        "#teoyubeTableSearch"
+      ],
+      "files": [
+        "index.html",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "approvedDelta": "Add route-specific aria-label values to the three existing search inputs.",
+      "preserved": [
+        "placeholders",
+        "IDs",
+        "wrappers",
+        "styling",
+        "filter behavior",
+        "visible copy",
+        "focus order",
+        "pixels"
+      ],
+      "evidence": "36/36 runtime/viewport input cells have the three exact names and retain focus, input, and filter behavior.",
+      "rollback": "Revert only the three A11Y-005 aria-label additions; regenerate no baseline."
+    },
+    {
+      "id": "A11Y-006",
+      "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61",
+      "routes": [
+        "/testimony"
+      ],
+      "states": [
+        "default",
+        "drafts-tab"
+      ],
+      "viewports": [
+        "mobile",
+        "mobile-small"
+      ],
+      "selectors": [
+        ".testimony-milestones"
+      ],
+      "files": [
+        "index.html",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "approvedDelta": "Add tabindex=0, role=region, and aria-label=Testimony milestones to the existing scroll region.",
+      "preserved": [
+        "children",
+        "order",
+        "overflow",
+        "testimony state",
+        "user data behavior",
+        "layout and pixels"
+      ],
+      "evidence": "8/8 cells expose a named focusable region; focus stays contained during ArrowRight, all four overflow cells scroll, and axe scrollable-region-focusable returns zero.",
+      "rollback": "Revert only the A11Y-006 attributes and rerun Testimony and recovery checks."
+    }
+  ],
+  "scopedCharacterization": {
+    "cells": 56,
+    "runtimes": 2,
+    "viewports": 6,
+    "unexpectedErrors": 0
+  },
+  "visualEvidence": {
+    "strictStableFrameStatus": "PASS_STABLE_ZERO_PIXELS",
+    "strictStableFrameChangedPixels": 0,
+    "sequentialCaptureNote": "54/56 first sequential captures were zero; two static first-frame differences were retested with paired stable-frame capture and both were zero pixels.",
+    "masks": 0,
+    "tolerancesAdded": 0,
+    "baselineReplacements": 0
+  },
+  "exclusions": [
+    "A11Y-007",
+    "A11Y-008",
+    "A11Y-009",
+    "A11Y-010",
+    "A11Y-011",
+    "A11Y-MANUAL-001 through A11Y-MANUAL-009",
+    "Phase 5C-3",
+    "Phase 6A"
+  ]
+}

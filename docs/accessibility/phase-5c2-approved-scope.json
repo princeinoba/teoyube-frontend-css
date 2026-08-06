@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T03:16:47.437Z",
+  "status": "LOCKED_BEFORE_SOURCE_CHANGES",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionTimestamp": "2026-08-05T17:13:18.973Z",
+  "batch": "5C-2",
+  "issues": [
+    {
+      "issueId": "A11Y-003",
+      "title": "Next Canon adds eleven media stages to the keyboard focus order",
+      "severity": "high",
+      "proposalHash": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, preserve all 11 Next controls and add equivalent named keyboard-operable semantics and playback behavior to the same visible static media stages. Keep them as 11 separate controls; do not delete them, add hidden duplicates, or use roving tabindex because they are independent actions rather than one composite widget.",
+      "files": [
+        "app.js",
+        "src/app/_canon/CanonPageController.tsx",
+        "src/features/scripture/canon-youtube.ts"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json",
+        "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+        "tests/visual/baselines/owner-approved-next-support/manifest.json",
+        "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json"
+      ],
+      "routes": [
+        "/canon"
+      ],
+      "states": [
+        "default",
+        "media-stage-focused",
+        "media-stage-playing"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "none",
+      "expectedDomAriaImpact": "attribute_only",
+      "expectedKeyboardFocusImpact": "The rollback runtime gains parity with canonical keyboard playback; the canonical Next sequence and visible media remain intact.",
+      "tests": [
+        "11 static and 11 Next stages have matching names, order, role/state, and Enter/Space/click behavior",
+        "no hidden or duplicate focus targets",
+        "72-cell protected visual parity rerun",
+        "105 parity tests rerun",
+        "three-run 216-cell performance/accessibility gate rerun without threshold weakening",
+        "NVDA, Narrator, VoiceOver, and TalkBack tasks in the manual plan"
+      ],
+      "rollback": "Revert only the A11Y-003 Phase 5C commit and restore the prior exact static handler/attributes; do not remove the existing Next controls or alter baselines."
+    },
+    {
+      "issueId": "A11Y-005",
+      "title": "Three retained search inputs lack a durable programmatic name",
+      "severity": "high",
+      "proposalHash": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, add route-specific aria-label values to the three existing input elements in the approved source and captured Next artifact; preserve placeholders, IDs, wrappers, styling, filter behavior, and copy.",
+      "files": [
+        "index.html",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json"
+      ],
+      "routes": [
+        "/lexicon",
+        "/embedded-videos",
+        "/tables"
+      ],
+      "states": [
+        "default",
+        "search-focused",
+        "filtered-results"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "none",
+      "expectedDomAriaImpact": "attribute_only",
+      "expectedKeyboardFocusImpact": "Inputs become discoverable by name without any visual, query, filtering, or focus change.",
+      "tests": [
+        "custom name contract passes for all three IDs in static and Next",
+        "label strings are unique and route-specific",
+        "search/filter browser tests remain green",
+        "72 screenshots and DOM/class contracts rerun"
+      ],
+      "rollback": "Revert only the three A11Y-005 attribute additions and regenerate no baseline."
+    },
+    {
+      "issueId": "A11Y-006",
+      "title": "Testimony milestone scroll region has no keyboard access",
+      "severity": "high",
+      "proposalHash": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, add tabindex=0, role=region, and a concise aria-label to the existing .testimony-milestones container in approved source and Next capture; preserve children, order, overflow, and pixels.",
+      "files": [
+        "index.html",
+        "src/app/_approved-source/approved-view-markup.generated.ts"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json"
+      ],
+      "routes": [
+        "/testimony"
+      ],
+      "states": [
+        "default",
+        "drafts-tab"
+      ],
+      "viewports": [
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "none",
+      "expectedDomAriaImpact": "attribute_only",
+      "expectedKeyboardFocusImpact": "The milestone strip becomes keyboard-scrollable; testimony state and user data behavior are unchanged.",
+      "tests": [
+        "axe scrollable-region-focusable passes in default and Drafts states",
+        "Arrow keys scroll the focused region at mobile widths",
+        "focus indicator is visible and unobscured",
+        "Testimony functional and screenshot parity suites rerun"
+      ],
+      "rollback": "Revert only the A11Y-006 attributes and rerun Testimony and recovery checks."
+    }
+  ],
+  "authorizedFiles": [
+    "app.js",
+    "index.html",
+    "src/app/_approved-source/approved-view-markup.generated.ts",
+    "src/app/_canon/CanonPageController.tsx",
+    "src/features/scripture/canon-youtube.ts"
+  ],
+  "protectedContracts": [
+    "tests/visual/baselines/owner-approved-next-support/manifest.json",
+    "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json",
+    "tests/visual/baselines/owner-approved-support-routes/manifest.json",
+    "tests/visual/baselines/static-runtime/manifest.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json"
+  ],
+  "excludedIds": {
+    "completed5c1": [
+      "A11Y-001",
+      "A11Y-002",
+      "A11Y-004"
+    ],
+    "batch5c3": [
+      "A11Y-007",
+      "A11Y-008"
+    ],
+    "manualEvidence": [
+      "A11Y-009",
+      "A11Y-010",
+      "A11Y-011",
+      "A11Y-MANUAL-001",
+      "A11Y-MANUAL-002",
+      "A11Y-MANUAL-003",
+      "A11Y-MANUAL-004",
+      "A11Y-MANUAL-005",
+      "A11Y-MANUAL-006",
+      "A11Y-MANUAL-007",
+      "A11Y-MANUAL-008",
+      "A11Y-MANUAL-009"
+    ]
+  },
+  "invariants": {
+    "controlsRemoved": 0,
+    "visibleCopyChanges": 0,
+    "cssChanges": 0,
+    "classIdChanges": 0,
+    "assetChanges": 0,
+    "structuralChanges": 0,
+    "expectedPixelDifferences": 0,
+    "staticRollbackRuntimeReplacement": false,
+    "baselineWrites": 0,
+    "canonIndependentControls": 11
+  }
+}

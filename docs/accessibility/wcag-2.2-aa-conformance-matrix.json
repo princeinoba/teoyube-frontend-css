@@ -155,8 +155,8 @@
       "id": "2.1.1",
       "level": "A",
       "title": "Keyboard",
-      "status": "FAIL_CONFIRMED",
-      "evidence": "A11Y-006: Testimony milestones scroll region is not keyboard accessible"
+      "status": "PARTIAL_EVIDENCE",
+      "evidence": "A11Y-006 fixed: the Testimony milestone region is named, focusable, and keyboard-scrollable. A11Y-011 media and observable assistive-technology validation remains."
     },
     {
       "id": "2.1.2",
@@ -211,8 +211,8 @@
       "id": "2.4.3",
       "level": "A",
       "title": "Focus Order",
-      "status": "FAIL_CONFIRMED",
-      "evidence": "A11Y-002 and A11Y-004 fixed in Phase 5C-1; A11Y-003 remains because 11 Next-only Canon media stages are still in the keyboard focus order."
+      "status": "PARTIAL_EVIDENCE",
+      "evidence": "A11Y-002, A11Y-003, and A11Y-004 fixed. Canon exposes the same 11 named keyboard media controls in both runtimes; manual assistive-technology reading/focus-order review remains."
     },
     {
       "id": "2.4.4",
@@ -233,7 +233,7 @@
       "level": "AA",
       "title": "Headings and Labels",
       "status": "PARTIAL_EVIDENCE",
-      "evidence": "headings captured; A11Y-005 programmatic-name findings and manual clarity review remain"
+      "evidence": "A11Y-003 and A11Y-005 fixed; exact media-control and search-input names are verified. Manual label-clarity review remains."
     },
     {
       "id": "2.4.7",
@@ -352,7 +352,7 @@
       "level": "A",
       "title": "Labels or Instructions",
       "status": "PARTIAL_EVIDENCE",
-      "evidence": "A11Y-005 flags three inputs without a durable programmatic name in the custom contract scan"
+      "evidence": "A11Y-005 fixed: all three retained search inputs expose route-specific programmatic names; broader human instruction review remains."
     },
     {
       "id": "3.3.3",
@@ -386,8 +386,8 @@
       "id": "4.1.2",
       "level": "A",
       "title": "Name, Role, Value",
-      "status": "FAIL_CONFIRMED",
-      "evidence": "A11Y-001, A11Y-002, and A11Y-004 fixed in Phase 5C-1; A11Y-005 remains for three search inputs without durable programmatic names."
+      "status": "PARTIAL_EVIDENCE",
+      "evidence": "A11Y-001 through A11Y-005 applicable name/role/state findings are fixed; observable screen-reader and third-party media-control validation remains."
     },
     {
       "id": "4.1.3",
@@ -397,5 +397,5 @@
       "evidence": "live-region inventory captured; spoken announcement behavior not tested with an observable AT"
     }
   ],
-  "phase": "5C-1"
+  "phase": "5C-2"
 }

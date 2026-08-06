@@ -1,6 +1,8 @@
 # Assistive-technology results
 
-Automated keyboard and Chrome accessibility-engine testing completed for Phase 5C-1. The current 311-cell audit has zero execution errors, zero unsupported `aria-pressed` findings, zero axe `aria-hidden-focus` findings, and zero inert-aware custom hidden-focus cells. Three later-batch axe rule families remain: target size, Testimony scroll-region keyboard access, and Canon status contrast. A11Y-003 and A11Y-005 also remain current contract findings.
+Automated keyboard and Chrome accessibility-engine testing completed for Phase 5C-2. The current 311-cell audit has zero execution errors, zero missing accessible names, zero unsupported ARIA findings, zero hidden-focus findings, and zero scrollable-region-focusable findings. The only remaining automated violation families are A11Y-007 target size and A11Y-008 Canon status contrast, both reserved for Phase 5C-3.
+
+The Phase 5C-2 focused browser evidence confirms exact Canon click/Enter/Space playback for 11 controls, durable names for all three retained search inputs, and keyboard focus/scroll behavior for the Testimony milestone region across the scoped runtimes and viewports.
 
 This automation is not equivalent to a screen-reader, braille, switch, speech-input, magnifier, or physical-device test. Windows Narrator is installed, but spoken output is not reliably observable from this headless environment. It remains **NOT_TESTED**. NVDA, JAWS, ZoomText, VoiceOver, TalkBack, braille, switch control, and speech-input configurations remain unavailable or not configured.
 

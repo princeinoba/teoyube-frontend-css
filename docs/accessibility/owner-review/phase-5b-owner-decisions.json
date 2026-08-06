@@ -54,7 +54,7 @@
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
       "decidedAt": "2026-08-05T17:13:18.973Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
-      "executionStatus": "APPROVED_NOT_STARTED"
+      "executionStatus": "EXECUTED_PHASE5C2_PASS"
     },
     {
       "id": "A11Y-004",
@@ -78,7 +78,7 @@
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
       "decidedAt": "2026-08-05T17:13:18.973Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
-      "executionStatus": "APPROVED_NOT_STARTED"
+      "executionStatus": "EXECUTED_PHASE5C2_PASS"
     },
     {
       "id": "A11Y-006",
@@ -90,7 +90,7 @@
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
       "decidedAt": "2026-08-05T17:13:18.973Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
-      "executionStatus": "APPROVED_NOT_STARTED"
+      "executionStatus": "EXECUTED_PHASE5C2_PASS"
     },
     {
       "id": "A11Y-007",
@@ -286,5 +286,6 @@
   "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
   "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
   "decidedAt": "2026-08-05T17:13:18.973Z",
-  "phase5c": "READY_FOR_APPROVED_SCOPE_ONLY_NOT_STARTED"
+  "phase5c": "IN_PROGRESS_5C1_AND_5C2_PASS_5C3_READY",
+  "updatedAt": "2026-08-06T10:35:23.723Z"
 }

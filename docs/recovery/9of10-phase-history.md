@@ -1,6 +1,6 @@
 # Teoyube 9/10 phase history
 
-## Phase 1 — baseline lock and program ledger
+## Phase 1 â€” baseline lock and program ledger
 
 Status: **PASS**
 Started from: `39e75ee11d765c83c67660cd267315acec124ae9`
@@ -37,7 +37,7 @@ Selected because this is the controller's first execution. The controller explic
 
 Phase 1 acceptance is satisfied. Program remains **IN_PROGRESS**. Next READY phase is **2A**; independent READY alternatives are **3A, 4A, 5A, and 6A**. Phase 2 was not started.
 
-## Phase 2A — current dependency-security diagnosis
+## Phase 2A â€” current dependency-security diagnosis
 
 Status: **BLOCKED**
 Started from: `a7cc36897f32d9eeee8bbadef15bd47c58689161`
@@ -67,7 +67,7 @@ Runtime-binding commit: `7d4906876412304556eab126ca020beaa8cb8c17`
 ### Result
 
 The dependency-security blocker is resolved, but Phase 2A cannot be marked PASS while its required current visual/performance composite is not green. Phase 2B remains locked. Phase 3A is the recommended independent next READY phase. Historical Prompt 24 discrepancy `P24-META-001` remains preserved and unchanged.
-## Phase 3A — formal stabilization toolkit
+## Phase 3A â€” formal stabilization toolkit
 
 Status: **PASS**
 Started from: `07c4d7f5ce3166d699b14eb5096a48da8a4e0115`
@@ -95,7 +95,7 @@ Toolkit commit: `a03979c70a9a4784448e8b36ac6086d2363f66c7`
 ### Result
 
 Phase 3A is **PASS**. Phase 3 overall is **WAITING_OWNER** and Phase 3B is **NOT READY**. Phase 2A remains **BLOCKED** even though dependency remediation is complete; its visual/performance reconciliation requires separate owner-reviewed work. Independent next-ready choices are Phase 4A, Phase 5A, or Phase 6A; none was executed.
-## Phase 4A — real-user pilot design and owner decision
+## Phase 4A â€” real-user pilot design and owner decision
 
 Status: **PASS**
 Started from: `32933458e6695b851d3e05a67a4b052047f279f7`
@@ -126,7 +126,7 @@ Pre-phase tag: `teoyube-9of10-phase4a-start-3293345`
 The owner replied `1`, approving the complete recommended pilot design. No separate approval ID was supplied, so the ledger records `PHASE_4A_OWNER_RESPONSE_CHOICE_1_NO_SEPARATE_ID` as a descriptive reference rather than an invented owner ID.
 
 Phase 4A is **PASS** and Phase 4B is **READY** but was not started. No participant was contacted, no session was run, no instrumentation was enabled, and no product or protected file changed. Phase 2A remains **BLOCKED** and Phase 3 remains **WAITING_OWNER**. Phase 5A and Phase 6A readiness is unchanged.
-## Phase 4B — privacy-safe research instrumentation
+## Phase 4B â€” privacy-safe research instrumentation
 
 Status: **PASS**
 Started from: `24cbea9965daf998c31ba73e52a3948d53701e26`
@@ -146,7 +146,7 @@ Pre-phase tag: `teoyube-9of10-phase4b-start-24cbea9`
 
 Phase 4B is **PASS**. Research collection remains checked-in disabled and Phase 4C is **READY** but not started. A separate explicit owner start and the approved consent/operator prerequisites are required before recruitment or real participant operations. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and independent Phase 5A and Phase 6A readiness is unchanged.
 
-## Phase 4C — pilot operations and recruitment readiness
+## Phase 4C â€” pilot operations and recruitment readiness
 
 Status: **WAITING_OWNER**
 Started from: `d58fa5c5de4069beff84e3281d49b5e5b6192295`
@@ -256,3 +256,24 @@ Test commit: `b074d61`
 ### Result
 
 All three scoped issues are **FIXED** with no scoped regression. Phase 5C-1 is PASS; Phase 5C is IN_PROGRESS; Phase 5C-2 is READY but not started; Phase 5C-3 is NOT STARTED. Manual tasks completed: 0. WCAG 2.2 AA conformance is not claimed. Phase 2A/Gate C-Preview remain blocked by separate pre-existing Canon focus, incomplete performance-evidence, CSS-budget, and release-evidence blockers.
+
+
+## Phase 5C-2 - high-severity accessibility remediation
+
+Status: **PASS**
+Started from: `621aac4d70858c823e44b1f5df6f43688c68f451`
+Pre-phase tag: `teoyube-9of10-phase5c2-start-621aac4`
+Implementation commit: `0716dc6`
+Test commit: `dbda6ba`
+
+### Actions
+
+1. Validated the exact owner decision, proposal hashes, files, routes, states, tests, and rollback for A11Y-003, A11Y-005, and A11Y-006.
+2. Added equivalent static Canon name/role/state and click/Enter/Space behavior for all existing 11 media stages, without removing or duplicating a control.
+3. Added stable names to the three existing search inputs and keyboard focus/region semantics to the existing Testimony milestones strip.
+4. Added hash-bound delta verification, focused unit/browser tests, 56-cell characterization, and strict paired stable-frame raster evidence.
+5. Reran current accessibility, build, security, retrieval, runtime, recovery, browser, and performance gates without a paid call or baseline update.
+
+### Result
+
+All three scoped issues are **FIXED** with zero stable-frame changed pixels. Phase 5C-2 is PASS; Phase 5C is IN_PROGRESS; Phase 5C-3 is READY but not started. Manual tasks completed: 0. WCAG 2.2 AA conformance is not claimed. Phase 2A/Gate C-Preview remain blocked by separate broad parity, incomplete 216-cell performance, CSS-budget, and stale-release-evidence findings.

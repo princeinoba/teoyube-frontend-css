@@ -11,7 +11,7 @@
 | Phase 4B instruction (no separate ID supplied) | Implement privacy-safe research instrumentation only; keep collection disabled and create no real participant record | Authorized by owner-supplied Phase 4B prompt |
 | Phase 4C instruction (no separate ID supplied) | Prepare pilot operations and synthetic readiness only, then pause before recruitment | Authorized by owner-supplied Phase 4C prompt |
 | Phase 4C owner recruitment response (no separate ID supplied) | Authorize recruitment for the exact approved pilot; no automatic identities, records, events, consents, sessions, or Phase 4D | Approved by explicit owner response at 2026-08-05T07:16:04.7290862-04:00 |
-| `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` | Phase 5B exact hash-bound accessibility decisions; Phase 5C-1 executed for A11Y-001, A11Y-002, and A11Y-004; remaining fixes not started; 12 evidence approvals not tested | Approved at `2026-08-05T17:13:18.973Z`; source `docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json` |
+| `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` | Phase 5B exact hash-bound accessibility decisions; Phase 5C-1 and Phase 5C-2 executed for A11Y-001 through A11Y-006; A11Y-007/A11Y-008 and 12 evidence approvals not tested | Approved at `2026-08-05T17:13:18.973Z`; source `docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json` |
 | `TEOYUBE-OWNER-RUNTIME-CUTOVER-LOCAL-2026-07-24` | Next canonical locally; static Node rollback | Existing approved decision |
 | `TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B` | Exact Scripture quotation delta | Existing approved decision |
 | `TEOYUBE-VISUAL-APPROVAL-2026-07-19-R8` | Owner-approved support baselines | Existing approved decision |
@@ -25,7 +25,7 @@ No new visual, production, paid-provider, archive, delete, or deployment approva
 
 - Phase 3B: owner closeout only after authentic status reaches READY_FOR_CLOSEOUT; not currently ready or authorized.
 
-- Phase 5C execution: Phase 5C-1 passed for the exact approved A11Y-001/A11Y-002/A11Y-004 proposal hashes. Phase 5C-2 is READY but requires a separate task; Phase 5C-3 and all manual tasks remain not started.
+- Phase 5C execution: Phase 5C-1 and Phase 5C-2 passed for the exact approved A11Y-001 through A11Y-006 proposal hashes. Phase 5C-3 is READY but requires a separate task; all manual tasks remain not started.
 - Phase 6A: hosting, identity, database, KMS, storage, observability, rate limits, vectors, backups, crisis-resource operations, and staging domain.
 - Phase 7: paid evaluation budget, production Gate B/C decisions, and final deployment confirmation.
 - Phase 8: each candidate ID separately; no blanket archive/delete approval.
@@ -35,3 +35,8 @@ Fabricated approvals: **0**.
 ## Phase 5C-1 execution under the existing owner decision
 
 At 2026-08-06T00:30:08.628Z, the exact hash-bound A11Y-001, A11Y-002, and A11Y-004 remediations completed with status **PASS**. Implementation commit: `0472b0c`; test commit: `b074d61`; final evidence commit is reported in the handoff. Expanded scope: no. Manual tasks executed: 0. Phase 5C-2/5C-3 started: no. No new approval was fabricated.
+
+
+## Phase 5C-2 execution under the existing owner decision
+
+At 2026-08-06T10:35:23.723Z, the exact hash-bound A11Y-003, A11Y-005, and A11Y-006 remediations completed with status **PASS**. Implementation commit: `0716dc6`; test commit: `dbda6ba`; final evidence commit is reported in the handoff. Expanded scope: no. Manual tasks executed: 0. Phase 5C-3 started: no. No new approval was fabricated.

@@ -262,3 +262,22 @@ Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, and Phase 4 remains WAI
 | Phase state | 5C-1 PASS; 5C IN_PROGRESS; 5C-2 READY; 5C-3 NOT STARTED; manual tasks NOT_TESTED |
 
 Phase 2A remains BLOCKED, Phase 3 remains WAITING_OWNER, Phase 4 remains WAITING_OWNER_SESSION_DATA, Gate C-Preview remains BLOCKED, and WCAG 2.2 AA conformance is not claimed.
+
+
+## Phase 5C-2 update
+
+| Evidence | Result |
+| --- | --- |
+| Starting commit/tag | `621aac4d70858c823e44b1f5df6f43688c68f451`; `teoyube-9of10-phase5c2-start-621aac4` |
+| Commits | implementation `0716dc6`; tests `dbda6ba`; evidence commit reported in final handoff |
+| Owner scope | `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`; A11Y-003, A11Y-005, A11Y-006; exact proposal hashes |
+| Scoped evidence | 56 cells; all 3 issues FIXED; 0 partial, blocked, or new scoped issues |
+| Current audit | 311 cells; zero errors; only A11Y-007 target size and A11Y-008 contrast remain automated failures |
+| Stable raster | PASS, zero pixels on paired stable frames; no masks, tolerance changes, or baseline replacement |
+| Build/test/security/runtime | PASS; all 60 runnable browser tests serially; 101 integration tests; 18 security controls; 83 dual-runtime checks |
+| Recovery | PASS; 72 immutable screenshots, 12 DOM snapshots, and all support baselines unchanged |
+| Performance | First 72 cells below 5,000 ms; 216-cell controller stopped on broad pre-existing parity failures; CSS budget still blocked |
+| Product/protected/CSS/class-ID/assets/baselines/package-lock/paid calls | 3 approved semantic source files / 0 / 0 / 0 / 0 / 0 / 0 / 0 |
+| Phase state | 5C-2 PASS; 5C IN_PROGRESS; 5C-3 READY; manual tasks NOT_TESTED |
+
+Phase 2A and Gate C-Preview remain BLOCKED; Phase 3 remains WAITING_OWNER; Phase 4 remains WAITING_OWNER_SESSION_DATA. WCAG 2.2 AA conformance is not claimed.
