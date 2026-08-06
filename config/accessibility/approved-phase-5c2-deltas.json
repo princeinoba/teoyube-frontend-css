@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-2",
+  "batch": "high-severity-keyboard-focus-name-role-state",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionTimestamp": "2026-08-05T17:13:18.973Z",
+  "startingCommit": "621aac4d70858c823e44b1f5df6f43688c68f451",
+  "prePhaseTag": "teoyube-9of10-phase5c2-start-621aac4",
+  "issueIds": [
+    "A11Y-003",
+    "A11Y-005",
+    "A11Y-006"
+  ],
+  "proposalHashes": {
+    "A11Y-003": "512755ac81b5cf4961c9c548a8a7eea12c7677564762635d589d26de1656a1ca",
+    "A11Y-005": "048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce",
+    "A11Y-006": "0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61"
+  },
+  "allowedAriaLabels": [
+    "Search Teoyube tables",
+    "Search embedded videos",
+    "Search the Teoyube Lexicon",
+    "Testimony milestones"
+  ],
+  "constraints": {
+    "behaviorParityOnly": true,
+    "nextCanonControlsPreserved": 11,
+    "staticCanonControlsAdded": 11,
+    "visibleCopyChanged": false,
+    "cssChanged": false,
+    "classOrIdChanged": false,
+    "assetChanged": false,
+    "baselineChanged": false,
+    "manualEvidenceExecuted": 0,
+    "phase5c3Started": false
+  },
+  "sourceFiles": [
+    {
+      "path": "app.js",
+      "issueIds": ["A11Y-003"],
+      "beforeBytes": 585385,
+      "beforeSha256": "06f70a1e45320f6fc80bbfab6d0362324a2a8751ebc03fd65213d31350efa0ee",
+      "afterBytes": 590833,
+      "afterSha256": "c3b3f5d4e20a4a60dfd3bae9c9aa3949cf6fc2fbf6d8f4b352249fca079c778c"
+    },
+    {
+      "path": "index.html",
+      "issueIds": ["A11Y-005", "A11Y-006"],
+      "beforeBytes": 92485,
+      "beforeSha256": "44be7b485457a22e6c39407861c34c57300bc6d25733c342207c77f5edc787d8",
+      "afterBytes": 92657,
+      "afterSha256": "f7a603ffb41fd0beee496861d4ec969900990127e2cc5f0e451d091c2d2b649b"
+    },
+    {
+      "path": "src/app/_approved-source/approved-view-markup.generated.ts",
+      "issueIds": ["A11Y-005", "A11Y-006"],
+      "beforeBytes": 1729529,
+      "beforeSha256": "a3581921ad78179b89dc7c048ba2fba52357ad9eda416d32e47cab25d827738f",
+      "afterBytes": 1729824,
+      "afterSha256": "13abe4ad215849108a0ff31a9551362146cf17bd58a5ef7cc912e8df29653bb7"
+    },
+    {
+      "path": "src/app/_canon/CanonPageController.tsx",
+      "issueIds": ["A11Y-003"],
+      "unchangedAuthorizedSource": true,
+      "beforeBytes": 12429,
+      "beforeSha256": "5071668deea958e12498206ba81bbab9e92a9b9ac2710548e57c51fa85cfc844",
+      "afterBytes": 12429,
+      "afterSha256": "5071668deea958e12498206ba81bbab9e92a9b9ac2710548e57c51fa85cfc844"
+    },
+    {
+      "path": "src/features/scripture/canon-youtube.ts",
+      "issueIds": ["A11Y-003"],
+      "unchangedAuthorizedSource": true,
+      "beforeBytes": 5166,
+      "beforeSha256": "a5c054df3e5f6daa4972ab8f5b4403d690bec346d5a44b143395fc6d5b4b7973",
+      "afterBytes": 5166,
+      "afterSha256": "a5c054df3e5f6daa4972ab8f5b4403d690bec346d5a44b143395fc6d5b4b7973"
+    },
+    {
+      "path": "config/runtime/canonical-runtime-manifest.json",
+      "issueIds": ["A11Y-003", "A11Y-005", "A11Y-006"],
+      "derivedIdentityOnly": true,
+      "beforeBytes": 8366,
+      "beforeSha256": "120645c136037d95f0437ba5c7fc96fcf7da3423cac2c416faca0ee9a3b9d55a",
+      "afterBytes": 8366,
+      "afterSha256": "23adaae0c5f44a7396934e359e09a16012d12a2e0dbc6a778c60aedc3cbd0825"
+    }
+  ]
+}

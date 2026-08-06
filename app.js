@@ -272,6 +272,116 @@ const teoyubeWorldFallbackVideos = [
   sourceStatus: "source_not_connected"
 }));
 
+const staticTeoyubeWorldYoutubeVideoIds = Object.freeze({
+  "local-seed-of-promise": "4zM2olpouIo",
+  "local-power-of-prayer": "yLBb7JCMqJE",
+  "local-walk-in-purpose": "yDu0bD1lukE",
+  "local-rooted-in-truth": "tnjdlvbaBY8",
+  "local-called-for-more": "chLnoAGxyrc",
+  "local-strength-for-today": "jAmIjP7-T5w",
+  "local-promise-language": "I8Y3syhDG64",
+  "local-daily-assignment": "YY9VYdPUVf8"
+});
+
+const canonJourneyMediaIdsByItemId = Object.freeze({
+  "canon-map-D02": "local-rooted-in-truth",
+  "canon-map-D03": "local-called-for-more",
+  "canon-map-D04": "local-seed-of-promise",
+  "canon-map-D05": "local-promise-language",
+  "canon-map-D06": "local-walk-in-purpose",
+  "canon-map-D07": "local-strength-for-today",
+  "canon-map-D08": "local-rooted-in-truth",
+  "canon-map-D09": "local-called-for-more",
+  "canon-map-D10": "local-power-of-prayer",
+  "canon-map-D11": "local-strength-for-today",
+  "canon-map-D12": "local-daily-assignment"
+});
+
+let activeStaticCanonMediaStage = null;
+
+function getStaticCanonJourneyMedia(stage) {
+  const card = stage?.closest?.("[data-canon-item]");
+  const canonItemId = card?.dataset.canonItem || "";
+  const mediaId = canonJourneyMediaIdsByItemId[canonItemId];
+  const media = teoyubeWorldFallbackVideos.find((video) => video.id === mediaId);
+  const youtubeVideoId = staticTeoyubeWorldYoutubeVideoIds[mediaId];
+  if (!card || !media || !/^[A-Za-z0-9_-]{11}$/.test(youtubeVideoId || "")) return null;
+  const journeyTitle = card.querySelector("h4")?.textContent?.trim() || "Canon journey";
+  return { card, canonItemId, journeyTitle, media: { ...media, youtubeVideoId } };
+}
+
+function createStaticCanonJourneyEmbedUrl(media) {
+  if (!media || !/^[A-Za-z0-9_-]{11}$/.test(media.youtubeVideoId || "")) return null;
+  const parameters = new URLSearchParams({ autoplay: "1", playsinline: "1", rel: "0", modestbranding: "1" });
+  return "https://www.youtube-nocookie.com/embed/" + media.youtubeVideoId + "?" + parameters.toString();
+}
+
+function stopStaticCanonJourneyPlayback() {
+  if (!activeStaticCanonMediaStage) return;
+  activeStaticCanonMediaStage.querySelector("iframe")?.remove();
+  const mapping = getStaticCanonJourneyMedia(activeStaticCanonMediaStage);
+  activeStaticCanonMediaStage.dataset.playbackState = "idle";
+  delete activeStaticCanonMediaStage.dataset.activeVideoId;
+  activeStaticCanonMediaStage.setAttribute("aria-pressed", "false");
+  if (mapping) activeStaticCanonMediaStage.setAttribute("aria-label", "Play " + mapping.media.title + " for " + mapping.journeyTitle);
+  activeStaticCanonMediaStage = null;
+}
+
+function playStaticCanonJourneyMedia(stage) {
+  const mapping = getStaticCanonJourneyMedia(stage);
+  const source = createStaticCanonJourneyEmbedUrl(mapping?.media);
+  if (!mapping || !source) return false;
+  stopStaticCanonJourneyPlayback();
+  $("#canon")?.querySelectorAll("[data-canon-item].active").forEach((item) => item.classList.remove("active"));
+  mapping.card.classList.add("active");
+  activeStaticCanonMediaStage = stage;
+  stage.dataset.activeVideoId = mapping.media.id;
+  stage.dataset.playbackState = "loading";
+  stage.setAttribute("aria-pressed", "true");
+  stage.setAttribute("aria-label", "Playing " + mapping.media.title + " for " + mapping.journeyTitle);
+  const frame = document.createElement("iframe");
+  frame.title = "TeoyubeWorld video: " + mapping.media.title + " for " + mapping.journeyTitle;
+  frame.allow = "autoplay; encrypted-media; picture-in-picture; web-share";
+  frame.referrerPolicy = "strict-origin-when-cross-origin";
+  frame.allowFullscreen = true;
+  frame.dataset.youtubeVideoId = mapping.media.youtubeVideoId;
+  Object.assign(frame.style, { position: "absolute", inset: "0", width: "100%", height: "100%", border: "0", zIndex: "4" });
+  frame.addEventListener("load", () => {
+    if (activeStaticCanonMediaStage === stage) stage.dataset.playbackState = "playing";
+  }, { once: true });
+  frame.addEventListener("error", () => {
+    if (activeStaticCanonMediaStage !== stage) return;
+    stopStaticCanonJourneyPlayback();
+    stage.dataset.playbackState = "error";
+  }, { once: true });
+  stage.append(frame);
+  frame.src = source;
+  return true;
+}
+
+function configureStaticCanonJourneyMediaStages() {
+  $("#canon")?.querySelectorAll(".canon-project-media, .canon-recent-media").forEach((stage) => {
+    const mapping = getStaticCanonJourneyMedia(stage);
+    if (!mapping) return;
+    stage.dataset.canonVideoStage = mapping.canonItemId;
+    stage.dataset.canonVideoId = mapping.media.id;
+    stage.dataset.playbackState = "idle";
+    stage.setAttribute("role", "button");
+    stage.setAttribute("tabindex", "0");
+    stage.setAttribute("aria-pressed", "false");
+    stage.setAttribute("aria-label", "Play " + mapping.media.title + " for " + mapping.journeyTitle);
+  });
+}
+
+function handleStaticCanonMediaActivation(event) {
+  const stage = event.target.closest?.("[data-canon-video-stage]");
+  if (!stage || event.type === "keydown" && event.key !== "Enter" && event.key !== " ") return false;
+  event.preventDefault();
+  event.stopPropagation();
+  playStaticCanonJourneyMedia(stage);
+  return true;
+}
+
 const watchmanJourneyCarouselSlides = [
   {
     title: "Personalized Recommendation Logic",
@@ -6695,6 +6805,7 @@ function renderCanonPremium() {
       </div>
     `
     : `<p>Select a Canon journey card to view details.</p>`;
+  configureStaticCanonJourneyMediaStages();
 }
 
 function renderTkos(calling, cluster) {
@@ -12135,6 +12246,7 @@ function wireEvents() {
     renderCanon();
   });
   $("#canonGrid")?.addEventListener("click", (event) => {
+    if (handleStaticCanonMediaActivation(event)) return;
     const featuredNav = event.target.closest("[data-canon-featured-slide-nav]");
     if (featuredNav) {
       event.preventDefault();
@@ -12176,6 +12288,7 @@ function wireEvents() {
     canonFeaturedJourneyPaused = false;
   });
   $("#canonGrid")?.addEventListener("keydown", (event) => {
+    if (handleStaticCanonMediaActivation(event)) return;
     if (!event.target.closest("[data-canon-featured-carousel]")) return;
     if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
     event.preventDefault();
@@ -12259,6 +12372,7 @@ function wireEvents() {
     canonRecommendedDragStart = null;
   });
   $("#canonRecentGrid")?.addEventListener("click", (event) => {
+    if (handleStaticCanonMediaActivation(event)) return;
     const watchmanPlay = event.target.closest("[data-watchman-video-play]");
     if (watchmanPlay) {
       event.preventDefault();
@@ -12296,6 +12410,9 @@ function wireEvents() {
     if (!card) return;
     selectedCanonItemId = card.dataset.canonItem;
     renderCanon();
+  });
+  $("#canonRecentGrid")?.addEventListener("keydown", (event) => {
+    handleStaticCanonMediaActivation(event);
   });
   $("#promiseMovieForm").addEventListener("submit", (event) => {
     event.preventDefault();

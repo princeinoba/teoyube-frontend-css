@@ -6,6 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { execFileSync } = require("node:child_process");
 const { computeRuntimeSourceIdentity } = require("../runtime/runtime-source-identity.cjs");
+const { verifyPhase5c2Delta } = require("./phase5c2DeltaContract.cjs");
 
 const projectRoot = path.resolve(__dirname, "../..");
 const contractPath = path.join(projectRoot, "config/accessibility/approved-phase-5c1-deltas.json");
@@ -44,12 +45,13 @@ function count(value, needle) {
   return value.split(needle).length - 1;
 }
 
-function verifySemantics(failures) {
-  const app = fs.readFileSync(path.join(projectRoot, "app.js"), "utf8");
-  const lexicon = fs.readFileSync(path.join(projectRoot, "src/app/_lexicon/LexiconPageController.tsx"), "utf8");
-  const today = fs.readFileSync(path.join(projectRoot, "src/app/_today/ApprovedTodayView.tsx"), "utf8");
-  const generated = fs.readFileSync(path.join(projectRoot, "src/app/_approved-source/approved-view-markup.generated.ts"), "utf8");
-  const runtime = JSON.parse(fs.readFileSync(path.join(projectRoot, "config/runtime/canonical-runtime-manifest.json"), "utf8"));
+function verifySemantics(failures, currentBytesByPath = new Map()) {
+  const readSource = (relativePath) => (currentBytesByPath.get(relativePath) || fs.readFileSync(path.join(projectRoot, relativePath))).toString("utf8");
+  const app = readSource("app.js");
+  const lexicon = readSource("src/app/_lexicon/LexiconPageController.tsx");
+  const today = readSource("src/app/_today/ApprovedTodayView.tsx");
+  const generated = readSource("src/app/_approved-source/approved-view-markup.generated.ts");
+  const runtime = JSON.parse(readSource("config/runtime/canonical-runtime-manifest.json"));
 
   if (count(app, 'role="option" aria-selected="${isActive}" aria-pressed=') !== 0) failures.push("A11Y-001: static Lexicon options still expose aria-pressed.");
   if (count(app, 'role="option" aria-selected="${isActive}" aria-label=') !== 1) failures.push("A11Y-001: static Lexicon option contract changed outside the approved removal.");
@@ -61,13 +63,22 @@ function verifySemantics(failures) {
   if (/role=\\?"option\\?" aria-selected=\\?"(?:true|false)\\?" aria-pressed=/.test(generated)) failures.push("A11Y-001: approved Lexicon capture still exposes aria-pressed.");
   if (count(generated, 'class=\\"canon-watchman-story-copy\\" aria-hidden=\\"true\\" inert') !== 3) failures.push("A11Y-004: approved Canon capture must inert exactly three captured hidden wrappers.");
 
-  const identity = computeRuntimeSourceIdentity({ root: projectRoot });
-  if (runtime.runtimeSourceDigest !== identity.digest || runtime.nextBuildId !== identity.buildId) failures.push("Derived canonical runtime identity is stale.");
+  if (currentBytesByPath.size === 0) {
+    const identity = computeRuntimeSourceIdentity({ root: projectRoot });
+    if (runtime.runtimeSourceDigest !== identity.digest || runtime.nextBuildId !== identity.buildId) failures.push("Derived canonical runtime identity is stale.");
+  }
   if (runtime.nextBuildId !== "teoyube-9bb3f8b63a7e671b613cbf7f") failures.push("Derived build identity differs from the exact approved Phase 5C-1 value.");
 }
 
-function verifyPhase5c1Delta() {
+function verifyPhase5c1Delta(options = {}) {
   const failures = [];
+  const currentBytesByPath = options.currentBytesByPath || new Map();
+  if (currentBytesByPath.size === 0 && options.includeLaterDelta !== false) {
+    const phase5c2Delta = verifyPhase5c2Delta();
+    if (phase5c2Delta.valid) {
+      for (const [relativePath, approved] of phase5c2Delta.approvedByPath) currentBytesByPath.set(relativePath, approved.beforeBytes);
+    }
+  }
   if (!fs.existsSync(contractPath)) return { valid: false, failures: ["Phase 5C-1 delta contract is missing."], approvedByPath: new Map() };
   const contractBytes = fs.readFileSync(contractPath);
   const contract = JSON.parse(contractBytes.toString("utf8"));
@@ -103,13 +114,13 @@ function verifyPhase5c1Delta() {
       failures.push(`${relativePath}: current source is missing or unsafe.`);
       continue;
     }
-    const after = fs.readFileSync(absolutePath);
+    const after = currentBytesByPath.get(relativePath) || fs.readFileSync(absolutePath);
     if (before.length !== expected[0] || sha256(before) !== expected[1]) failures.push(`${relativePath}: starting bytes differ from the authorized commit.`);
     if (after.length !== expected[2] || sha256(after) !== expected[3]) failures.push(`${relativePath}: current bytes differ from the exact approved remediation.`);
     approvedByPath.set(relativePath, { bytes: after.length, sha256: sha256(after), beforeBytes: before });
   }
   for (const relativePath of expectedFiles.keys()) if (!records.some((record) => normalizePath(record.path) === relativePath)) failures.push(`${relativePath}: approved source binding is missing.`);
-  if (failures.length === 0) verifySemantics(failures);
+  if (failures.length === 0) verifySemantics(failures, currentBytesByPath);
   return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes) };
 }
 

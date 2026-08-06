@@ -635,7 +635,7 @@
                 <div class="embedded-video-stats" id="uiVideoStats"></div>
                 <label class="embedded-search-field" for="uiVideoSearch">
                   <span aria-hidden="true"></span>
-                  <input id="uiVideoSearch" type="search" placeholder="Search videos..." autocomplete="off" />
+                  <input id="uiVideoSearch" type="search" placeholder="Search videos..." autocomplete="off" aria-label="Search embedded videos" />
                 </label>
               </div>
 
@@ -669,7 +669,7 @@
                 </div>
                 <div class="tables-toolbar" aria-label="Table search and filters">
                   <label class="tables-search-field" for="teoyubeTableSearch">
-                    <input id="teoyubeTableSearch" type="search" placeholder="Search tables, scriptures, or keywords..." autocomplete="off" />
+                    <input id="teoyubeTableSearch" type="search" placeholder="Search tables, scriptures, or keywords..." autocomplete="off" aria-label="Search Teoyube tables" />
                     <span aria-hidden="true"></span>
                   </label>
                   <select id="teoyubeTableCategory" aria-label="Filter table category">
@@ -1237,7 +1237,7 @@
               <section class="lexicon-toolbar" aria-label="Lexicon search and filters">
                 <label class="lexicon-search-field">
                   <span aria-hidden="true"></span>
-                  <input id="lexiconSearchInput" type="search" placeholder="Search words, meanings, scriptures, or concepts..." />
+                  <input id="lexiconSearchInput" type="search" placeholder="Search words, meanings, scriptures, or concepts..." aria-label="Search the Teoyube Lexicon" />
                 </label>
                 <select id="lexiconCategoryFilter" aria-label="Filter Lexicon by category">
                   <option value="all">All Categories</option>
@@ -1413,7 +1413,7 @@
 
               <article class="testimony-milestones-card">
                 <h3>Testimony Milestones</h3>
-                <div class="testimony-milestones">
+                <div class="testimony-milestones" tabindex="0" role="region" aria-label="Testimony milestones">
                   <span class="active" data-icon="first-step"><b></b><strong>First Step</strong><small>Write your first testimony</small></span>
                   <span data-icon="light"><b></b><strong>Be a Light</strong><small>Encourage 5 people</small></span>
                   <span data-icon="share"><b></b><strong>Share Hope</strong><small>Share your story publicly</small></span>
