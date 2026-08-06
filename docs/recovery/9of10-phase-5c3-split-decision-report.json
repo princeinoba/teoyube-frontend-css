@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T17:30:24.806Z",
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "7ee14d71ce56a9338dc6f70f75853e90e3928447",
+  "a11y007": {
+    "status": "APPROVED_FOR_PHASE_5C_3A",
+    "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+    "proposalHashCheck": "PASS"
+  },
+  "a11y008": {
+    "status": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+    "productChanges": 0
+  },
+  "phase5c3": "SUPERSEDED_FOR_EXECUTION",
+  "phase5c3a": "READY_NOT_STARTED",
+  "manifest": "docs/accessibility/phase-5c3a-batch-manifest.json",
+  "retestPlan": "docs/accessibility/a11y-008-current-evidence-retest-plan.json",
+  "changes": {
+    "productSource": 0,
+    "protectedVisual": 0,
+    "cssDomAria": 0,
+    "baseline": 0,
+    "packageLockfile": 0
+  }
+}

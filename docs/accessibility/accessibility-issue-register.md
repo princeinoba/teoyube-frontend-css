@@ -25,3 +25,9 @@ Phase 5A registered 11 items: eight confirmed product/accessibility defects or d
 - Stable paired before/after raster: zero changed pixels for the two first-capture outliers; no masks, tolerance changes, or baseline replacement.
 
 All manual and assistive-technology tasks remain **NOT_TESTED**. Complete WCAG 2.2 AA conformance is not claimed.
+
+## Phase 5C-3 split status
+
+- A11Y-007: **APPROVED FOR PHASE 5C-3A; READY, NOT STARTED**; proposal hash unchanged.
+- A11Y-008: **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**; historical issue/proposal/evidence preserved; not FIXED, PASS, or FALSE_POSITIVE.
+- Current A11Y-008 evidence: 42 cells, six viewports, 6.9851:1 versus 4.5:1, zero scoped axe contrast failures.

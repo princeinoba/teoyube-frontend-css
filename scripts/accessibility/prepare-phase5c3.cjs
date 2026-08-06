@@ -108,7 +108,10 @@ function loadAndValidate({ allowBlocked = false } = {}) {
   const decisionById = new Map(decisions.decisions.map((entry) => [entry.id, entry]));
   const approvalById = new Map(approval.decisions.map((entry) => [entry.issueOrTaskId, entry]));
 
-  if (!batch || !["READY_NOT_STARTED", "PASS"].includes(batch.status)) errors.push("Batch 5C-3 is missing or not ready.");
+  const allowedBatchStatuses = allowBlocked
+    ? ["READY_NOT_STARTED", "PASS", "BLOCKED_NEEDS_MORE_EVIDENCE", "SUPERSEDED_FOR_EXECUTION"]
+    : ["READY_NOT_STARTED", "PASS"];
+  if (!batch || !allowedBatchStatuses.includes(batch.status)) errors.push("Batch 5C-3 is missing or not ready.");
   if (JSON.stringify(batch?.issueIds) !== JSON.stringify(issueIds) || JSON.stringify(batch?.approvedIssueIds) !== JSON.stringify(issueIds)) errors.push("Batch 5C-3 scope is empty or ambiguous.");
   if (approval.decision !== "APPROVED" || approval.decisionId !== decisionId) errors.push("Owner approval identity mismatch.");
   if (batches.ownerDecisionId !== decisionId) errors.push("Batch manifest owner-decision mismatch.");
@@ -132,7 +135,7 @@ function loadAndValidate({ allowBlocked = false } = {}) {
 
   const phase5 = program.phases.find((phase) => phase.phaseId === "5");
   const status = (id) => phase5?.subphases?.find((entry) => entry.subphaseId === id)?.status;
-  const allowed5c3 = allowBlocked ? ["READY", "PASS", "BLOCKED_NEEDS_MORE_EVIDENCE"] : ["READY", "PASS"];
+  const allowed5c3 = allowBlocked ? ["READY", "PASS", "BLOCKED_NEEDS_MORE_EVIDENCE", "SUPERSEDED_FOR_EXECUTION"] : ["READY", "PASS"];
   if (phase5?.status !== "IN_PROGRESS" || status("5C-1") !== "PASS" || status("5C-2") !== "PASS" || !allowed5c3.includes(status("5C-3"))) errors.push("Program ledger does not authorize Phase 5C-3.");
   if (errors.length) throw new Error(errors.join("\n"));
   return { approval, batches, batch, requests };

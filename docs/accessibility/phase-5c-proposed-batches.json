@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-08-05T15:42:20.158Z",
-  "status": "READY_FOR_APPROVED_SCOPE_ONLY_NOT_STARTED",
+  "status": "PHASE_5C_3_SUPERSEDED_PHASE_5C_3A_READY_NOT_STARTED",
   "batches": [
     {
       "batchId": "5C-1",
@@ -73,12 +73,49 @@
         "recovery:verify"
       ],
       "stop": "Stop after this batch; do not continue automatically.",
-      "status": "READY_NOT_STARTED",
+      "status": "SUPERSEDED_FOR_EXECUTION",
       "approvedIssueIds": [
         "A11Y-007",
         "A11Y-008"
       ],
-      "executionRule": "A separate Codex task must verify the clean worktree and exact current proposal hashes before implementing only this batch."
+      "executionRule": "A separate Codex task must verify the clean worktree and exact current proposal hashes before implementing only this batch.",
+      "supersededByDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "supersededAt": "2026-08-06T17:30:24.806Z",
+      "executionNote": "Current characterization reproduced A11Y-007 but did not reproduce A11Y-008; neither issue was implemented in the combined batch."
+    },
+    {
+      "batchId": "5C-3A",
+      "title": "A11Y-007 minimum target-size and spacing remediation",
+      "issueIds": [
+        "A11Y-007"
+      ],
+      "approvedIssueIds": [
+        "A11Y-007"
+      ],
+      "excludedIssueIds": [
+        "A11Y-008"
+      ],
+      "proposalHashes": {
+        "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+      },
+      "ownerDecisionIds": [
+        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001"
+      ],
+      "entry": "Run as a separate Codex task after current clean-worktree, exact proposal-hash, before-evidence, runtime, and recovery verification.",
+      "requiredChecks": [
+        "pre-tag",
+        "axe target-size and contrast",
+        "forced colors",
+        "320px/200% reflow",
+        "72 and owner-approved screenshot candidates",
+        "manual contrast/touch checks",
+        "recovery:verify"
+      ],
+      "stop": "Stop after Phase 5C-3A; do not execute A11Y-008 or any manual evidence task.",
+      "status": "READY_NOT_STARTED",
+      "started": false,
+      "executionRule": "Implement only the unchanged A11Y-007 Phase 5B proposal. A changed proposal hash or implementation requires a new owner decision."
     }
   ],
   "manualEvidenceIssueIds": [
@@ -95,5 +132,6 @@
   ],
   "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
   "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
-  "decidedAt": "2026-08-05T17:13:18.973Z"
+  "decidedAt": "2026-08-06T17:30:24.806Z",
+  "phase5c3SplitDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001"
 }

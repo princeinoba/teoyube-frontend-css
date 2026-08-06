@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T17:30:24.806Z",
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "priorDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "branch": "recovery/visual-source-of-truth",
+  "evidenceCommit": "7ee14d71ce56a9338dc6f70f75853e90e3928447",
+  "batchId": "5C-3A",
+  "status": "READY_NOT_STARTED",
+  "started": false,
+  "issueIds": [
+    "A11Y-007"
+  ],
+  "excludedIssueIds": [
+    "A11Y-008"
+  ],
+  "proposalHashes": {
+    "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+  },
+  "request": {
+    "path": "docs/accessibility/owner-review/requests/A11Y-007.json",
+    "affectedFiles": [
+      "styles/pages/today.css",
+      "styles/pages/book.css",
+      "styles/pages/canon.css",
+      "src/app/globals.css",
+      "src/components/teoyube/ExploreTabs.tsx"
+    ],
+    "affectedRoutes": [
+      "/",
+      "/book",
+      "/canon",
+      "/explore"
+    ],
+    "affectedStates": [
+      "default",
+      "carousel-pagination",
+      "memory-filtering",
+      "explore-tab-selection"
+    ],
+    "affectedViewports": [
+      "desktop-wide",
+      "desktop-standard",
+      "tablet-landscape",
+      "tablet-portrait",
+      "mobile",
+      "mobile-small"
+    ],
+    "expectedVisualImpact": "possible",
+    "tests": [
+      "axe target-size passes for exact registered selectors at all six viewports",
+      "hit areas do not overlap and activate the correct target",
+      "320px reflow and 200% layout remain overflow-free",
+      "72 screenshots plus owner-approved support-route candidates are reviewed without baseline replacement",
+      "physical touch-device task validates activation"
+    ],
+    "rollback": "Revert only the selector-scoped A11Y-007 CSS/component commit; leave baselines unchanged."
+  },
+  "invariants": {
+    "proposalChanged": false,
+    "affectedFileScopeChanged": false,
+    "expectedVisualImpactChanged": false,
+    "testsChanged": false,
+    "rollbackChanged": false,
+    "a11y008ImplementationAuthorized": false,
+    "manualEvidenceAuthorizedInBatch": false,
+    "phase6aAuthorized": false
+  }
+}

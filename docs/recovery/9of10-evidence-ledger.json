@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T10:35:23.723Z",
+  "generatedAt": "2026-08-06T17:30:24.806Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -827,6 +827,27 @@
         "performance": "BLOCKED_72_OF_216_AFTER_BROAD_PREEXISTING_PARITY_FAILURES",
         "cssBudget": "BLOCKED_1414956_OF_948538_PREEXISTING"
       }
+    },
+    {
+      "phase": "5C-3-SPLIT-DECISION",
+      "status": "PASS_DECISION_RECORDED_NO_IMPLEMENTATION",
+      "executedAt": "2026-08-06T17:30:24.806Z",
+      "evidenceCommit": "7ee14d71ce56a9338dc6f70f75853e90e3928447",
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "originalPhase5c3": "SUPERSEDED_FOR_EXECUTION",
+      "phase5c3a": "READY_NOT_STARTED",
+      "a11y007ProposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+      "a11y008": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+      "a11y008FocusedCells": 42,
+      "a11y008MeasuredContrast": 6.9851,
+      "a11y008Threshold": 4.5,
+      "a11y008ScopedAxeFailures": 0,
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssDomAriaChanges": 0,
+      "baselineFilesChanged": 0,
+      "packageLockFilesChanged": 0,
+      "phase5c3aStarted": false
     }
   ],
   "workspaceAtStart": {
@@ -954,5 +975,6 @@
     "packageLockFilesChanged": 0,
     "manualTasksExecuted": 0,
     "paidCalls": 0
-  }
+  },
+  "workspaceAfterPhase5c3SplitDecision": "7ee14d71ce56a9338dc6f70f75853e90e3928447"
 }

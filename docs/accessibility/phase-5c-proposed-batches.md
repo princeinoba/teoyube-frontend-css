@@ -1,6 +1,6 @@
 # Proposed Phase 5C implementation batches
 
-Status: **READY FOR APPROVED SCOPE ONLY - NOT STARTED**
+Status: **PHASE 5C-3 SUPERSEDED; PHASE 5C-3A READY, NOT STARTED**
 
 Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` approved the exact current hashes. Each batch still requires a separate Codex task and stop.
 
@@ -20,9 +20,17 @@ Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001` approved the exact
 
 ## Batch 5C-3 - Target size and contrast refinements
 
-- Issues: A11Y-007, A11Y-008
-- Entry: Each issue has an explicit matching-hash owner approval, including the documented possible/certain pixel impact.
-- Checks: pre-tag; axe target-size and contrast; forced colors; 320px/200% reflow; 72 and owner-approved screenshot candidates; manual contrast/touch checks; recovery:verify
+- Status: **SUPERSEDED_FOR_EXECUTION** by `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`
+- Historical issues: A11Y-007, A11Y-008
+- Result: Characterization reproduced A11Y-007 but did not reproduce A11Y-008; no implementation occurred.
+
+## Batch 5C-3A - A11Y-007 target size and spacing
+
+- Status: **READY, NOT STARTED**
+- Issue: A11Y-007 only
+- Proposal hash: `e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717`
+- Excluded: A11Y-008 and all manual evidence tasks
+- Rule: A separate Codex task must preserve the exact proposal, file scope, visual impact, tests, and rollback.
 - Stop rule: Stop after this batch; do not continue automatically.
 
 Manual evidence issues A11Y-009, A11Y-010, and A11Y-011 remain evidence tasks and are not treated as fixes.

@@ -1,3 +1,13 @@
+## Phase 5C-3 split decision evidence
+
+- Decision: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`
+- Evidence commit: `7ee14d71ce56a9338dc6f70f75853e90e3928447`
+- A11Y-007 proposal hash: `e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717` ? **PASS**
+- A11Y-008 characterization: 42 cells (24 Next, 18 static), six viewports, 6.9851:1 measured, 4.5:1 required, zero scoped axe contrast failures.
+- Phase 5C-3A: **READY, NOT STARTED**; A11Y-007 only.
+- Product, protected visual, CSS/DOM/ARIA, baseline, package, and lockfile changes: **0**.
+
+
 # Teoyube 9/10 baseline evidence ledger
 
 Machine-readable identities are in [9of10-evidence-ledger.json](9of10-evidence-ledger.json).

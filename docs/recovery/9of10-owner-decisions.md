@@ -1,3 +1,12 @@
+## Phase 5C-3 split accessibility decision
+
+- Decision ID: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`
+- A11Y-007: **APPROVED FOR PHASE 5C-3A**, exact Phase 5B proposal hash unchanged; Phase 5C-3A is **READY, NOT STARTED**.
+- A11Y-008: **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**; no current implementation authorization.
+- Original Phase 5C-3 combined execution: **SUPERSEDED_FOR_EXECUTION**.
+- No product, protected visual, CSS/DOM/ARIA, baseline, package, or lockfile change.
+
+
 # Teoyube 9/10 owner-decision ledger
 
 ## Effective existing decisions

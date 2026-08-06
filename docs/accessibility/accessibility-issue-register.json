@@ -145,14 +145,17 @@
       "evidence": "axe target-size; 289 audited-node occurrences concentrated in carousel dots, memory filters, and Explore tabs",
       "ownerDecisionRequired": true,
       "phase5bCandidate": true,
-      "phase5c3Status": "APPROVED_NOT_STARTED_BATCH_BLOCKED",
+      "phase5c3Status": "SUPERSEDED_FOR_EXECUTION",
       "phase5c3Evidence": "A11Y-007 reproduced, but implementation did not start because A11Y-008 invalidated combined-batch integrity.",
-      "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+      "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+      "phase5c3aStatus": "APPROVED_READY_NOT_STARTED",
+      "phase5c3aDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "phase5c3aEvidence": "Current characterization reproduced A11Y-007. Its exact Phase 5B proposal hash remains approved for the separate A11Y-007-only Phase 5C-3A batch; implementation has not started."
     },
     {
       "id": "A11Y-008",
       "severity": "high",
-      "classification": "NEEDS_MORE_EVIDENCE",
+      "classification": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
       "routes": [
         "/canon"
       ],
@@ -164,9 +167,12 @@
       "ownerDecisionRequired": true,
       "phase5bCandidate": true,
       "originalClassification": "CONFIRMED_PRODUCT_DEFECT",
-      "phase5c3Status": "NEEDS_MORE_EVIDENCE",
-      "phase5c3Evidence": "Actual /canon D02/D05 pair is rgb(255,253,244) on rgb(133,73,0), 6.9851:1; scoped axe found zero failures in both runtimes at six viewports. No source change.",
-      "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
+      "phase5c3Status": "SUPERSEDED_FOR_EXECUTION",
+      "phase5c3Evidence": "42 focused cells (24 Next, 18 static) across six viewports measured D02/D05 at 6.9851:1 against a 4.5:1 threshold with zero scoped axe contrast failures. Historical issue and proposal are preserved; this is not a FIXED, PASS, or FALSE_POSITIVE classification.",
+      "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+      "phase5c3aStatus": "EXCLUDED",
+      "currentExecutionDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "retestPlan": "docs/accessibility/a11y-008-current-evidence-retest-plan.json"
     },
     {
       "id": "A11Y-009",

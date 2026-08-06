@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE5C2_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE5C3_SPLIT_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -265,14 +265,15 @@
         "Phase 1 PASS"
       ],
       "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
-      "currentCommit": "FINAL_PHASE5C2_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE5C3_SPLIT_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "current accessibility audit: COMPLETE",
         "issue-specific owner review and decisions: COMPLETE",
         "Phase 5C-1 approved critical/fail-closed fixes: PASS",
         "Phase 5C-2 approved high-severity fixes: PASS",
-        "Phase 5C-3 approved target-size/contrast fixes: BLOCKED_NEEDS_MORE_EVIDENCE",
-        "manual evidence tasks: APPROVED_NOT_TESTED"
+        "manual evidence tasks: APPROVED_NOT_TESTED",
+        "Phase 5C-3 original combined execution: SUPERSEDED_FOR_EXECUTION",
+        "Phase 5C-3A A11Y-007-only batch: READY_NOT_STARTED"
       ],
       "acceptanceCriteria": [
         "no unresolved critical accessibility issue",
@@ -287,23 +288,25 @@
         "72 immutable screenshots, 12 desktop DOM snapshots, and owner-approved support baselines unchanged",
         "No WCAG conformance claim; all approved manual/AT tasks remain NOT_TESTED",
         "Current performance audit completed 72/72 first-run cells below 5,000 ms, but broad parity and CSS-budget blockers remain outside Phase 5C-2",
-        "Phase 5C-3: 42 focused cells; A11Y-007 reproduced; A11Y-008 did not reproduce on actual /canon; 6.9851:1; zero production changes"
+        "Phase 5C-3: 42 focused cells; A11Y-007 reproduced; A11Y-008 did not reproduce on actual /canon; 6.9851:1; zero production changes",
+        "Owner split decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001: Phase 5C-3 superseded; Phase 5C-3A A11Y-007-only READY_NOT_STARTED; A11Y-008 not reproduced and no implementation authorized."
       ],
       "currentBlockers": [
-        "Phase 5C-3 batch integrity blocked: A11Y-008 NEEDS_MORE_EVIDENCE; A11Y-007 approved but not started",
+        "A11Y-008 is NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE and excluded from Phase 5C-3A; a future implementation requires reproducible current failure evidence, a new or revalidated proposal hash, and new issue-specific owner approval.",
         "All approved manual accessibility tasks remain NOT_TESTED",
         "Complete WCAG 2.2 AA conformance remains unproved",
         "Gate C-Preview remains blocked by pre-existing broad parity, incomplete 216-cell performance evidence, CSS budget, and stale release evidence"
       ],
       "ownerDecisionIds": [
-        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001"
+        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001"
       ],
       "externalDependencies": [
         "current official accessibility standards",
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Supply reproducible A11Y-008 evidence or a new hash-bound batch decision; do not implement the invalidated combined batch.",
+      "nextReviewTrigger": "Execute Phase 5C-3A as a separate task for exact-hash A11Y-007 only, or complete the A11Y-008 retest plan without implementation.",
       "subphases": [
         {
           "subphaseId": "5A",
@@ -327,7 +330,15 @@
         },
         {
           "subphaseId": "5C-3",
-          "status": "BLOCKED_NEEDS_MORE_EVIDENCE"
+          "status": "SUPERSEDED_FOR_EXECUTION"
+        },
+        {
+          "subphaseId": "5C-3A",
+          "status": "READY_NOT_STARTED",
+          "issueIds": [
+            "A11Y-007"
+          ],
+          "started": false
         }
       ]
     },
@@ -524,7 +535,7 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "6A",
+  "nextReadyPhase": "5C-3A",
   "otherReadyIndependentSubphases": [
     "5C-3",
     "6A"

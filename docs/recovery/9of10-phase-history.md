@@ -283,3 +283,11 @@ All three scoped issues are **FIXED** with zero stable-frame changed pixels. Pha
 Status: **BLOCKED_NEEDS_MORE_EVIDENCE**
 
 The exact owner decision and proposal hashes were validated. A 42-cell scoped characterization reproduced A11Y-007, but A11Y-008 did not reproduce on actual Canon: D02/D05 measure 6.9851:1 and scoped axe is zero. No production remediation was applied.
+
+## 2026-08-06T17:30:24.806Z — Phase 5C-3 split decision
+
+- Decision: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`
+- Original Phase 5C-3: **SUPERSEDED_FOR_EXECUTION**
+- Phase 5C-3A: **READY, NOT STARTED** for A11Y-007 only
+- A11Y-008: **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**
+- Product, protected visual, CSS/DOM/ARIA, baseline, package, and lockfile changes: **0**

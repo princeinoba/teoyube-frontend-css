@@ -102,7 +102,15 @@
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
       "decidedAt": "2026-08-05T17:13:18.973Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
-      "executionStatus": "APPROVED_NOT_STARTED"
+      "executionStatus": "APPROVED_FOR_PHASE_5C_3A_NOT_STARTED",
+      "phase5c3SplitDecision": {
+        "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+        "decidedAt": "2026-08-06T17:30:24.806Z",
+        "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+        "batch": "5C-3A",
+        "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+        "started": false
+      }
     },
     {
       "id": "A11Y-008",
@@ -114,7 +122,16 @@
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
       "decidedAt": "2026-08-05T17:13:18.973Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
-      "executionStatus": "APPROVED_NOT_STARTED"
+      "executionStatus": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+      "phase5c3SplitDecision": {
+        "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+        "decidedAt": "2026-08-06T17:30:24.806Z",
+        "decision": "NEEDS_MORE_EVIDENCE",
+        "currentClassification": "NOT_REPRODUCED_CURRENT",
+        "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+        "implementationAuthorized": false,
+        "formerPhase5bDecisionPreserved": true
+      }
     },
     {
       "id": "A11Y-009",
@@ -287,5 +304,13 @@
   "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
   "decidedAt": "2026-08-05T17:13:18.973Z",
   "phase5c": "IN_PROGRESS_5C1_AND_5C2_PASS_5C3_READY",
-  "updatedAt": "2026-08-06T10:35:23.723Z"
+  "updatedAt": "2026-08-06T17:30:24.806Z",
+  "phase5c3SplitDecision": {
+    "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+    "decidedAt": "2026-08-06T17:30:24.806Z",
+    "originalBatchStatus": "SUPERSEDED_FOR_EXECUTION",
+    "phase5c3aStatus": "READY_NOT_STARTED",
+    "a11y007": "APPROVED_FOR_PHASE_5C_3A",
+    "a11y008": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE"
+  }
 }

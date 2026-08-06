@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T17:30:24.806Z",
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "issueId": "A11Y-008",
+  "status": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+  "implementationAuthorized": false,
+  "historicalProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+  "currentEvidence": {
+    "focusedCells": 42,
+    "nextCells": 24,
+    "staticCells": 18,
+    "viewportCount": 6,
+    "measuredContrastRatio": 6.9851,
+    "requiredContrastRatio": 4.5,
+    "scopedAxeContrastFailures": 0,
+    "conclusion": "Current deterministic characterization does not reproduce the historical failure; no fix/pass/false-positive conclusion is claimed."
+  },
+  "exactElements": [
+    "[data-canon-item=\"canon-map-D02\"] .canon-status.in-progress",
+    "[data-canon-item=\"canon-map-D05\"] .canon-status.in-progress"
+  ],
+  "routesAndStates": [
+    {
+      "runtime": "Next canonical",
+      "route": "/canon",
+      "states": [
+        "D02 visible",
+        "D05 visible",
+        "default",
+        "hover",
+        "focus where focusable",
+        "active where interactive",
+        "disabled where supported",
+        "selected where supported",
+        "overlay open where overlapping",
+        "media playing where overlapping"
+      ]
+    },
+    {
+      "runtime": "static rollback",
+      "route": "/#canon",
+      "states": [
+        "D02 visible",
+        "D05 visible",
+        "default",
+        "hover",
+        "focus where focusable",
+        "active where interactive",
+        "disabled where supported",
+        "selected where supported",
+        "overlay open where overlapping",
+        "media playing where overlapping"
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "measurements": {
+    "foreground": "Record getComputedStyle color and alpha at the exact rendered element.",
+    "background": "Resolve the effective composited background through every ancestor, including alpha, image, gradient, overlay, filter, backdrop-filter, and blend mode.",
+    "pixelSampling": "Sample rendered foreground and background pixels adjacent to each glyph and retain coordinates and screenshots as disposable candidate evidence.",
+    "imageGradientBackdrop": "Test every state in which imagery, gradients, translucent overlays, video/media frames, or backdrop effects intersect the status labels."
+  },
+  "forcedColorsAndHighContrast": [
+    "Windows forced-colors active with system high-contrast themes",
+    "forced-color-adjust computed behavior",
+    "system color substitutions and retained focus/selection visibility"
+  ],
+  "environments": [
+    "Pinned Playwright Chromium used by the recovery harness on Windows",
+    "Current stable Microsoft Edge on Windows",
+    "Current stable Chrome on Windows",
+    "Static rollback and Next canonical runtimes from the same commit and machine",
+    "Browser zoom 100% and 200%; device scale factors used by the existing harness"
+  ],
+  "reopenCriteria": [
+    "A current deterministic run reproduces a contrast ratio below 4.5:1 on D02 or D05.",
+    "The failing route, runtime, state, viewport, browser/version, zoom, device scale factor, and exact element are captured.",
+    "Actual foreground, effective composited background, image/gradient/backdrop interaction, and pixel coordinates are recorded.",
+    "The former proposal is revalidated against current source or a new proposal hash is produced.",
+    "A new issue-specific owner approval authorizes the exact current proposal before implementation."
+  ],
+  "explicitNonConclusions": [
+    "FIXED",
+    "PASS",
+    "FALSE_POSITIVE"
+  ]
+}
