@@ -271,7 +271,7 @@
         "issue-specific owner review and decisions: COMPLETE",
         "Phase 5C-1 approved critical/fail-closed fixes: PASS",
         "Phase 5C-2 approved high-severity fixes: PASS",
-        "Phase 5C-3 approved target-size/contrast fixes: READY_NOT_STARTED",
+        "Phase 5C-3 approved target-size/contrast fixes: BLOCKED_NEEDS_MORE_EVIDENCE",
         "manual evidence tasks: APPROVED_NOT_TESTED"
       ],
       "acceptanceCriteria": [
@@ -286,10 +286,11 @@
         "Strict stable-frame before/after comparison: zero changed pixels; no masks, tolerance change, baseline replacement, CSS, copy, class, ID, or asset change",
         "72 immutable screenshots, 12 desktop DOM snapshots, and owner-approved support baselines unchanged",
         "No WCAG conformance claim; all approved manual/AT tasks remain NOT_TESTED",
-        "Current performance audit completed 72/72 first-run cells below 5,000 ms, but broad parity and CSS-budget blockers remain outside Phase 5C-2"
+        "Current performance audit completed 72/72 first-run cells below 5,000 ms, but broad parity and CSS-budget blockers remain outside Phase 5C-2",
+        "Phase 5C-3: 42 focused cells; A11Y-007 reproduced; A11Y-008 did not reproduce on actual /canon; 6.9851:1; zero production changes"
       ],
       "currentBlockers": [
-        "A11Y-007 and A11Y-008 are approved for Phase 5C-3 but not started",
+        "Phase 5C-3 batch integrity blocked: A11Y-008 NEEDS_MORE_EVIDENCE; A11Y-007 approved but not started",
         "All approved manual accessibility tasks remain NOT_TESTED",
         "Complete WCAG 2.2 AA conformance remains unproved",
         "Gate C-Preview remains blocked by pre-existing broad parity, incomplete 216-cell performance evidence, CSS budget, and stale release evidence"
@@ -302,7 +303,7 @@
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Start only the separately tasked, exact hash-bound Phase 5C-3 scope; do not execute manual evidence or Phase 6A implicitly.",
+      "nextReviewTrigger": "Supply reproducible A11Y-008 evidence or a new hash-bound batch decision; do not implement the invalidated combined batch.",
       "subphases": [
         {
           "subphaseId": "5A",
@@ -326,7 +327,7 @@
         },
         {
           "subphaseId": "5C-3",
-          "status": "READY"
+          "status": "BLOCKED_NEEDS_MORE_EVIDENCE"
         }
       ]
     },
@@ -523,7 +524,7 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "5C-3_OR_6A",
+  "nextReadyPhase": "6A",
   "otherReadyIndependentSubphases": [
     "5C-3",
     "6A"

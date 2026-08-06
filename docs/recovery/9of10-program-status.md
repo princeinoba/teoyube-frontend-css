@@ -33,7 +33,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
 | 4 — Real-user pilot | **WAITING_OWNER_SESSION_DATA** | Phase 4A/4B/4C PASS; recruitment authorized; research collection remains disabled; 0 participants, sessions, or participant records; Phase 4D NOT READY. |
-| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A, Phase 5B, Phase 5C-1, and Phase 5C-2 PASS; Phase 5C is IN_PROGRESS; Phase 5C-3 READY; manual tasks APPROVED and NOT_TESTED. |
+| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A, Phase 5B, Phase 5C-1, and Phase 5C-2 PASS; Phase 5C-3 BLOCKED_NEEDS_MORE_EVIDENCE; manual tasks APPROVED and NOT_TESTED. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
@@ -93,3 +93,7 @@ Phase 5C is **IN_PROGRESS**. Phase 5C-2 is **PASS**; Phase 5C-3 is **READY** but
 Phase 5C-2 is **PASS** for A11Y-003, A11Y-005, and A11Y-006 under their exact proposal hashes. The current 311-cell audit has zero missing-name, unsupported-ARIA, hidden-focus, or scrollable-region-focusable findings. The scoped paired raster comparison is zero pixels, and every immutable and owner-approved baseline remains unchanged.
 
 Phase 5C remains **IN_PROGRESS**. Phase 5C-3 is **READY but not started** for A11Y-007 and A11Y-008. All manual tasks remain **APPROVED, NOT_TESTED**, and complete WCAG conformance remains unclaimed. Phase 2A/Gate C-Preview remain BLOCKED, Phase 3 remains WAITING_OWNER, Phase 4 remains WAITING_OWNER_SESSION_DATA, and Phase 6A remains independently READY but was not executed.
+
+## Phase 5C-3 pre-implementation hard stop
+
+Phase 5C-3 is **BLOCKED_NEEDS_MORE_EVIDENCE**. A11Y-007 reproduced, but A11Y-008 did not reproduce on actual Canon in either runtime at six viewports. D02/D05 measure **6.9851:1** and scoped axe is zero. The prompt requires a hard stop, so neither source change was made. Manual tasks remain **APPROVED, NOT_TESTED**; WCAG conformance is not claimed; Phases 2A, 3, and 4 retain their prior blockers; Phase 6A was not started.

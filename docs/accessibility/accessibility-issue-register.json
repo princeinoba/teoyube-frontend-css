@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "5C-2",
+  "phase": "5C-3_BLOCKED_PRE_IMPLEMENTATION",
   "issueCount": 11,
   "severityCounts": {
     "critical": 1,
@@ -8,7 +8,7 @@
     "medium": 2,
     "low": 0
   },
-  "confirmedProductIssueCount": 8,
+  "confirmedProductIssueCount": 7,
   "manualEvidenceGapCount": 3,
   "issues": [
     {
@@ -144,12 +144,15 @@
       "title": "Controls do not meet the minimum target-size or spacing rule",
       "evidence": "axe target-size; 289 audited-node occurrences concentrated in carousel dots, memory filters, and Explore tabs",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "phase5c3Status": "APPROVED_NOT_STARTED_BATCH_BLOCKED",
+      "phase5c3Evidence": "A11Y-007 reproduced, but implementation did not start because A11Y-008 invalidated combined-batch integrity.",
+      "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
     },
     {
       "id": "A11Y-008",
       "severity": "high",
-      "classification": "CONFIRMED_PRODUCT_DEFECT",
+      "classification": "NEEDS_MORE_EVIDENCE",
       "routes": [
         "/canon"
       ],
@@ -159,7 +162,11 @@
       "title": "Canon in-progress status text fails minimum contrast",
       "evidence": "axe color-contrast on D02 and D05 status labels",
       "ownerDecisionRequired": true,
-      "phase5bCandidate": true
+      "phase5bCandidate": true,
+      "originalClassification": "CONFIRMED_PRODUCT_DEFECT",
+      "phase5c3Status": "NEEDS_MORE_EVIDENCE",
+      "phase5c3Evidence": "Actual /canon D02/D05 pair is rgb(255,253,244) on rgb(133,73,0), 6.9851:1; scoped axe found zero failures in both runtimes at six viewports. No source change.",
+      "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
     },
     {
       "id": "A11Y-009",
@@ -221,5 +228,6 @@
     }
   ],
   "fixedIssueCount": 6,
-  "openConfirmedIssueCount": 2
+  "openConfirmedIssueCount": 1,
+  "needsMoreEvidenceIssueCount": 1
 }

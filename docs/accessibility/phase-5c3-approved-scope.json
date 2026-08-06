@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T16:13:31.983Z",
+  "status": "LOCKED_BEFORE_SOURCE_CHANGES",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "ownerDecisionTimestamp": "2026-08-05T17:13:18.973Z",
+  "batch": "5C-3",
+  "issues": [
+    {
+      "issueId": "A11Y-007",
+      "title": "Controls do not meet the minimum target-size or spacing rule",
+      "severity": "high",
+      "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, enlarge only the interactive hit areas for Today carousel dots, Canon Watchman dots, Book memory chips/filters, and Explore tabs to at least 24 by 24 CSS pixels, using transparent padding or pseudo hit areas where pixels can remain stable; any visible geometry change must remain within this exact selector scope.",
+      "files": [
+        "styles/pages/today.css",
+        "styles/pages/book.css",
+        "styles/pages/canon.css",
+        "src/app/globals.css",
+        "src/components/teoyube/ExploreTabs.tsx"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json",
+        "tests/visual/baselines/owner-approved-next-support/manifest.json"
+      ],
+      "routes": [
+        "/",
+        "/book",
+        "/canon",
+        "/explore"
+      ],
+      "states": [
+        "default",
+        "carousel-pagination",
+        "memory-filtering",
+        "explore-tab-selection"
+      ],
+      "viewports": [
+        "desktop-wide",
+        "desktop-standard",
+        "tablet-landscape",
+        "tablet-portrait",
+        "mobile",
+        "mobile-small"
+      ],
+      "expectedPixelImpact": "possible",
+      "expectedDomAriaImpact": "none",
+      "expectedCopyImpact": "none",
+      "expectedCssLayoutImpact": "exact selector-scoped target geometry only",
+      "expectedPointerTargetImpact": "Control activation and selection stay unchanged while pointer/touch hit areas become usable.",
+      "tests": [
+        "axe target-size passes for exact registered selectors at all six viewports",
+        "hit areas do not overlap and activate the correct target",
+        "320px reflow and 200% layout remain overflow-free",
+        "72 screenshots plus owner-approved support-route candidates are reviewed without baseline replacement",
+        "physical touch-device task validates activation"
+      ],
+      "rollback": "Revert only the selector-scoped A11Y-007 CSS/component commit; leave baselines unchanged."
+    },
+    {
+      "issueId": "A11Y-008",
+      "title": "Canon in-progress status text fails minimum contrast",
+      "severity": "high",
+      "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+      "decision": "APPROVE_RECOMMENDED_PHASE5C_FIX",
+      "proposedAction": "In Phase 5C, correct only .canon-status.in-progress foreground/background rendering so the measured pair reaches at least 4.5:1; retain the In Progress text, badge dimensions, status meaning, and all other status colors.",
+      "files": [
+        "styles/pages/canon.css"
+      ],
+      "protectedContracts": [
+        "tests/visual/contracts/protected-visual-source-manifest.json",
+        "tests/visual/contracts/static-dom-contract.json",
+        "tests/visual/contracts/original-static-visual-contract.json",
+        "tests/visual/baselines/static-runtime/manifest.json",
+        "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json"
+      ],
+      "routes": [
+        "/canon"
+      ],
+      "states": [
+        "default",
+        "D02-in-progress",
+        "D05-in-progress"
+      ],
+      "viewports": [
+        "desktop-wide"
+      ],
+      "expectedPixelImpact": "certain",
+      "expectedDomAriaImpact": "none",
+      "expectedCopyImpact": "none",
+      "expectedCssLayoutImpact": "exact .canon-status.in-progress foreground/background only",
+      "expectedPointerTargetImpact": "No functional behavior changes; the two status badges become readable.",
+      "tests": [
+        "computed contrast is at least 4.5:1 for D02 and D05 across six viewports and forced colors",
+        "completed/planning/review/on-hold badges remain unchanged",
+        "Canon screenshots and protected/owner-approved parity evidence rerun",
+        "manual complex-background contrast task completes"
+      ],
+      "rollback": "Revert only the A11Y-008 selector change; never replace the Canon baseline."
+    }
+  ],
+  "authorizedFiles": [
+    "src/app/globals.css",
+    "src/components/teoyube/ExploreTabs.tsx",
+    "styles/pages/book.css",
+    "styles/pages/canon.css",
+    "styles/pages/today.css"
+  ],
+  "protectedContracts": [
+    "tests/visual/baselines/owner-approved-next-support/manifest.json",
+    "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json",
+    "tests/visual/baselines/static-runtime/manifest.json",
+    "tests/visual/contracts/original-static-visual-contract.json",
+    "tests/visual/contracts/protected-visual-source-manifest.json",
+    "tests/visual/contracts/static-dom-contract.json"
+  ],
+  "excludedIds": {
+    "completed5c1": [
+      "A11Y-001",
+      "A11Y-002",
+      "A11Y-004"
+    ],
+    "completed5c2": [
+      "A11Y-003",
+      "A11Y-005",
+      "A11Y-006"
+    ],
+    "manualEvidence": [
+      "A11Y-009",
+      "A11Y-010",
+      "A11Y-011",
+      "A11Y-MANUAL-001",
+      "A11Y-MANUAL-002",
+      "A11Y-MANUAL-003",
+      "A11Y-MANUAL-004",
+      "A11Y-MANUAL-005",
+      "A11Y-MANUAL-006",
+      "A11Y-MANUAL-007",
+      "A11Y-MANUAL-008",
+      "A11Y-MANUAL-009"
+    ],
+    "laterPhases": [
+      "manual accessibility evidence execution",
+      "Phase 6A",
+      "Phase 4D",
+      "archive work"
+    ]
+  },
+  "invariants": {
+    "controlsRemoved": 0,
+    "visibleCopyChanges": 0,
+    "domClassIdChanges": 0,
+    "assetChanges": 0,
+    "baselineWrites": 0,
+    "staticRollbackRuntimeReplacement": false,
+    "manualEvidenceExecuted": 0
+  }
+}

@@ -106,8 +106,8 @@
       "id": "1.4.3",
       "level": "AA",
       "title": "Contrast (Minimum)",
-      "status": "FAIL_CONFIRMED",
-      "evidence": "A11Y-008: two Canon in-progress status instances; 3,674 incomplete axe contrast occurrences still require review"
+      "status": "NEEDS_MORE_EVIDENCE",
+      "evidence": "A11Y-008 does not reproduce on actual /canon: D02/D05 measure 6.9851:1 and scoped axe is zero across 12 runtime/viewport cells. A11Y-009 manual contrast review remains incomplete."
     },
     {
       "id": "1.4.4",

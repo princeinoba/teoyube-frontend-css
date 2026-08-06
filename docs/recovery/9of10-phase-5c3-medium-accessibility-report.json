@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-3",
+  "status": "BLOCKED_NEEDS_MORE_EVIDENCE",
+  "generatedAt": "2026-08-06T16:55:44.098Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "62c4f591226397bf88e28365761fcc97bf7fa42f",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "proposalHashes": {
+    "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+    "A11Y-008": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
+  },
+  "issueResults": {
+    "A11Y-007": "REPRODUCED_APPROVED_NOT_STARTED_BATCH_BLOCKED",
+    "A11Y-008": "NEEDS_MORE_EVIDENCE_NOT_REPRODUCED"
+  },
+  "beforeEvidence": {
+    "cellCount": 42,
+    "nextCells": 24,
+    "staticCells": 18,
+    "viewportCount": 6,
+    "targetGroupCount": 66,
+    "targetCount": 570,
+    "minimumWidth": 12,
+    "minimumHeight": 5.4,
+    "targetSizePassCount": 84,
+    "centerHitPassCount": 254,
+    "overlappingPairCount": 0,
+    "targetViolationNodes": 286,
+    "contrastViolationNodes": 0,
+    "contrastElementCount": 24,
+    "activationPassCount": 36,
+    "errorCount": 36,
+    "knownErrorCount": 36,
+    "unexpectedErrorCount": 0
+  },
+  "canonContrast": {
+    "foreground": "rgb(255, 253, 244)",
+    "background": "rgb(133, 73, 0)",
+    "ratio": 6.9851,
+    "required": 4.5,
+    "scopedAxeViolations": 0
+  },
+  "changes": {
+    "productionSourceFiles": 0,
+    "productSourceFiles": 0,
+    "protectedVisualFiles": 0,
+    "immutableBaselines": 0,
+    "ownerApprovedBaselines": 0,
+    "packagesOrLockfiles": 0
+  },
+  "manualTasksExecuted": 0,
+  "paidCalls": 0,
+  "nextAction": "Supply reproducible A11Y-008 evidence or a new hash-bound batch decision.",
+  "rollback": "git revert <Phase-5C-3-blocker-evidence-commit>"
+}

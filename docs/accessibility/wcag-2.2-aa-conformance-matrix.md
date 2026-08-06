@@ -17,7 +17,7 @@
 | 1.3.5 Identify Input Purpose | AA | Partial | Input inventory; autocomplete review remains. |
 | 1.4.1 Use of Color | A | Manual required | Forced-colors evidence; meaning review remains. |
 | 1.4.2 Audio Control | A | Partial | No autoplay loaded; third-party player not verified. |
-| 1.4.3 Contrast (Minimum) | AA | **Fail** | A11Y-008 Canon status contrast; incomplete contrast review remains. |
+| 1.4.3 Contrast (Minimum) | AA | **Needs more evidence** | A11Y-008 does not reproduce on actual Canon; A11Y-009 manual contrast review remains incomplete. |
 | 1.4.4 Resize Text | AA | Partial | 200%-layout evidence; true browser zoom/manual readability remains. |
 | 1.4.5 Images of Text | AA | Manual required | Artwork assessment remains. |
 | 1.4.10 Reflow | AA | Automation support | 23 routes at 320 CSS pixels; zero overflow. |

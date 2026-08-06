@@ -10,8 +10,8 @@ Phase 5A registered 11 items: eight confirmed product/accessibility defects or d
 | A11Y-004 | High | Confirmed defect | Canon | Hidden recent-row control remained focusable | 2.4.3, 4.1.2 | **FIXED in 5C-1** |
 | A11Y-005 | High | Confirmed name defect | Lexicon, Embedded Videos, Tables | Three search inputs lacked durable programmatic names | 2.4.6, 3.3.2, 4.1.2 | **FIXED in 5C-2** |
 | A11Y-006 | High | Confirmed defect | Testimony | Milestones scroll region lacked keyboard access | 2.1.1 | **FIXED in 5C-2** |
-| A11Y-007 | High | Confirmed defect | Today, Canon, Book, Explore | Target-size failures | 2.5.8 | Approved for 5C-3; not started |
-| A11Y-008 | High | Confirmed defect | Canon | In-progress status contrast fails | 1.4.3 | Approved for 5C-3; not started |
+| A11Y-007 | High | Confirmed defect | Today, Canon, Book, Explore | Target-size failures | 2.5.8 | Approved; not started because combined batch is blocked |
+| A11Y-008 | High | Needs more evidence | Canon | Approved contrast defect does not reproduce on actual route | 1.4.3 | NEEDS_MORE_EVIDENCE; no source change |
 | A11Y-009 | Medium | Manual validation | All retained routes | Complex-background contrast incomplete | 1.4.1, 1.4.3, 1.4.11 | APPROVED, NOT_TESTED |
 | A11Y-010 | Medium | Manual validation | All retained routes | Focus visibility/obscuration needs human review | 2.4.7, 2.4.11 | APPROVED, NOT_TESTED |
 | A11Y-011 | High | Manual AT/media validation | Media routes | Captions, alternatives, third-party controls, and spoken output unverified | 1.2.x, 2.1.1, 4.1.3 | APPROVED, NOT_TESTED |
