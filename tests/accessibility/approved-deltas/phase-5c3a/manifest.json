@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-3A",
+  "issueId": "A11Y-007",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+  "startingCommit": "8f01138907a9c76439bd725662097bb6106dea52",
+  "deltaContract": {
+    "path": "config/accessibility/approved-phase-5c3a-deltas.json",
+    "bytes": 5200,
+    "sha256": "c268d54e30b44ce30277144d803050b192323df1d6853dff6e11b454fe2c4511"
+  },
+  "beforeEvidence": {
+    "path": "tests/accessibility/evidence/phase-5c3a/before/manifest.json",
+    "bytes": 915904,
+    "sha256": "b6255107891c164da3ad925a4926bc23ba53ba101d25b67f4b7c70ba3e075149"
+  },
+  "afterEvidence": {
+    "path": "tests/accessibility/evidence/phase-5c3a/after/manifest.json",
+    "bytes": 802546,
+    "sha256": "0ace0a1b37158694cfdac7873980c324771db8b387ba34a9155d9bc917022cb6"
+  },
+  "results": {
+    "cells": 42,
+    "targets": 570,
+    "minimumTargetWidthCssPixels": 24,
+    "minimumTargetHeightCssPixels": 24,
+    "targetSizeViolations": 0,
+    "overlappingTargetPairs": 0,
+    "behaviorComparisonsPassed": 42,
+    "targetInteractionGroupsPassed": 66,
+    "unexpectedRuntimeErrors": 0
+  },
+  "a11y008ProductChanges": 0,
+  "baselineWrites": 0,
+  "manualEvidenceExecuted": 0
+}

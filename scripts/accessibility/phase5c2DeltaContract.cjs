@@ -6,6 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { execFileSync } = require("node:child_process");
 const { computeRuntimeSourceIdentity } = require("../runtime/runtime-source-identity.cjs");
+const { revertApprovedPhase5c3aSource, verifyPhase5c3aDelta } = require("./phase5c3aDeltaContract.cjs");
 
 const projectRoot = path.resolve(__dirname, "../..");
 const contractPath = path.join(projectRoot, "config/accessibility/approved-phase-5c2-deltas.json");
@@ -57,11 +58,13 @@ function verifySemantics(failures) {
 
   const identity = computeRuntimeSourceIdentity({ root: projectRoot });
   if (runtime.runtimeSourceDigest !== identity.digest || runtime.nextBuildId !== identity.buildId) failures.push("Derived canonical runtime identity is stale.");
-  if (runtime.nextBuildId !== "teoyube-f092197a8ef278a541125617") failures.push("Derived build identity differs from the exact Phase 5C-2 value.");
+  if (runtime.nextBuildId !== "teoyube-22d584c6c4ff4037a7e5021c") failures.push("Derived build identity differs from the exact approved Phase 5C chain value.");
 }
 
 function verifyPhase5c2Delta() {
   const failures = [];
+  const phase5c3aDelta = verifyPhase5c3aDelta();
+  if (!phase5c3aDelta.valid) phase5c3aDelta.failures.forEach((failure) => failures.push(`Phase 5C-3A accessibility delta: ${failure}`));
   if (!fs.existsSync(contractPath)) return { valid: false, failures: ["Phase 5C-2 delta contract is missing."], approvedByPath: new Map() };
   const contractBytes = fs.readFileSync(contractPath);
   const contract = JSON.parse(contractBytes.toString("utf8"));
@@ -88,12 +91,13 @@ function verifyPhase5c2Delta() {
     const absolutePath = path.resolve(projectRoot, relativePath);
     if (!absolutePath.startsWith(`${projectRoot}${path.sep}`) || !fs.existsSync(absolutePath)) { failures.push(`${relativePath}: current source is missing or unsafe.`); continue; }
     const after = fs.readFileSync(absolutePath);
+    const comparisonAfter = revertApprovedPhase5c3aSource(relativePath, after, phase5c3aDelta);
     if (before.length !== expected[0] || sha256(before) !== expected[1]) failures.push(`${relativePath}: starting bytes differ from the authorized commit.`);
-    if (after.length !== expected[2] || sha256(after) !== expected[3]) failures.push(`${relativePath}: current bytes differ from the exact approved remediation.`);
-    approvedByPath.set(relativePath, { bytes: after.length, sha256: sha256(after), beforeBytes: before });
+    if (comparisonAfter.length !== expected[2] || sha256(comparisonAfter) !== expected[3]) failures.push(`${relativePath}: current bytes differ from the exact approved remediation after the later approved overlay is removed.`);
+    approvedByPath.set(relativePath, { bytes: comparisonAfter.length, sha256: sha256(comparisonAfter), beforeBytes: before });
   }
   if (failures.length === 0) verifySemantics(failures);
-  return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes) };
+  return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes), phase5c3aDelta };
 }
 
 function revertApprovedPhase5c2Source(relativePath, currentBytes, verification) {

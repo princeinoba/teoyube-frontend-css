@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-3A",
+  "batch": "narrow-a11y-007-target-size-remediation",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "priorOwnerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+  "startingCommit": "8f01138907a9c76439bd725662097bb6106dea52",
+  "evidenceBaseCommit": "7ee14d71ce56a9338dc6f70f75853e90e3928447",
+  "issueIds": [
+    "A11Y-007"
+  ],
+  "proposalHashes": {
+    "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717"
+  },
+  "routes": [
+    "/",
+    "/book",
+    "/canon",
+    "/explore"
+  ],
+  "states": [
+    "default",
+    "carousel-pagination",
+    "memory-filtering",
+    "explore-tab-selection"
+  ],
+  "viewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "selectors": [
+    "#promiseCarouselDots button[data-slide-index]",
+    ".featured-story-dots button[data-featured-story-index]",
+    "#book .book-toolbar .phase116-chip-row button.phase116-chip",
+    "#phase115BookMemory .phase115-memory-filters button",
+    ".canon-watchman-story-card .canon-watchman-video-dots button[data-watchman-video-index]",
+    ".tab-list button.tab"
+  ],
+  "sourceFiles": [
+    {
+      "path": "styles/pages/today.css",
+      "beforeBytes": 25805,
+      "beforeSha256": "2aa08aa4459085e929be440ec1e8839e483abec95f94d08725a3bdcca67e59da",
+      "afterBytes": 26363,
+      "afterSha256": "f4006f6c2ee70943b877f2dac54013d80a765b4c4c39f6575436bbca9a3f5b96"
+    },
+    {
+      "path": "styles/pages/book.css",
+      "beforeBytes": 51104,
+      "beforeSha256": "af8554160868a1960428df2118c8dfc0a27555fce52fd2788128765f69b1e2de",
+      "afterBytes": 51426,
+      "afterSha256": "b9a949a8e05ee6118bcc1cabd7e404cdacf5bd1f92ded27dece4c6f83c1ef56c"
+    },
+    {
+      "path": "styles/pages/canon.css",
+      "beforeBytes": 80779,
+      "beforeSha256": "340251e77dd7ee8c4f4afd905be75188a4218987832bd0e301293eae4ba1c116",
+      "afterBytes": 81018,
+      "afterSha256": "8634b45893645849a042f0382b2522557203d53547117c737b34c646fd8e04fa"
+    },
+    {
+      "path": "src/app/globals.css",
+      "beforeBytes": 27354,
+      "beforeSha256": "9c3304ffed2520d57d28d44d5321ac8cf9bb38f69b6c2ad17e86c293c297d1db",
+      "afterBytes": 27354,
+      "afterSha256": "9c3304ffed2520d57d28d44d5321ac8cf9bb38f69b6c2ad17e86c293c297d1db"
+    },
+    {
+      "path": "src/components/teoyube/ExploreTabs.tsx",
+      "beforeBytes": 5757,
+      "beforeSha256": "e2caba8c6d0948a195fba0d1f568a6a3feda4b12f497dd6417a8362a8103668e",
+      "afterBytes": 5809,
+      "afterSha256": "2c2052c2568c179d13a354f3c36bffef2f7f21bd60f1313fdd5195837ae1e64b"
+    },
+    {
+      "path": "config/runtime/canonical-runtime-manifest.json",
+      "beforeBytes": 8366,
+      "beforeSha256": "23adaae0c5f44a7396934e359e09a16012d12a2e0dbc6a778c60aedc3cbd0825",
+      "afterBytes": 8366,
+      "afterSha256": "94b926f8b5efff045d431b1b569af87dbd7e72e84fa04ac65e408347ed443333"
+    }
+  ],
+  "evidence": {
+    "before": "tests/accessibility/evidence/phase-5c3a/before/manifest.json",
+    "after": "tests/accessibility/evidence/phase-5c3a/after/manifest.json"
+  },
+  "constraints": {
+    "minimumTargetWidthCssPixels": 24,
+    "minimumTargetHeightCssPixels": 24,
+    "visibleCopyChanged": false,
+    "domHierarchyChanged": false,
+    "classOrIdChanged": false,
+    "ariaChanged": false,
+    "assetChanged": false,
+    "baselineChanged": false,
+    "a11y008Changed": false,
+    "controlsRemoved": 0,
+    "manualEvidenceExecuted": 0
+  },
+  "geometry": {
+    "before": {
+      "targetCount": 570,
+      "minimumWidth": 12,
+      "minimumHeight": 5.4,
+      "targetSizePassCount": 284,
+      "targetViolationNodes": 286,
+      "centerHitPassCount": 260,
+      "overlappingPairCount": 0
+    },
+    "after": {
+      "targetCount": 570,
+      "minimumWidth": 24,
+      "minimumHeight": 24,
+      "targetSizePassCount": 570,
+      "targetViolationNodes": 0,
+      "centerHitPassCount": 284,
+      "overlappingPairCount": 0
+    }
+  },
+  "allowedDifference": {
+    "elementPath": "the six exact selectors only",
+    "cssByteDelta": 1119,
+    "tsxByteDelta": 52,
+    "domHierarchyDelta": 0,
+    "classIdDelta": 0,
+    "ariaDelta": 0,
+    "visibleCopyDelta": 0,
+    "assetDelta": 0,
+    "controlRemovalDelta": 0,
+    "expectedPixelRegion": "approved target boxes and their direct responsive reflow only",
+    "behavior": "pointer, keyboard, touch-emulation, route state, and static rollback behavior preserved"
+  },
+  "visualContractAdditions": {
+    "cssIds": [
+      "promiseCarouselDots"
+    ],
+    "mediaQueries": [
+      "(min-width: 769px) and (max-width: 1024px)"
+    ]
+  },
+  "rollback": "git revert the three Phase 5C-3A commits; immutable and owner-approved baselines remain unchanged"
+}

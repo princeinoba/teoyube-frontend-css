@@ -10,6 +10,10 @@ const {
   revertApprovedPhase5c2Source,
   verifyPhase5c2Delta
 } = require("../accessibility/phase5c2DeltaContract.cjs");
+const {
+  revertApprovedPhase5c3aSource,
+  verifyPhase5c3aDelta
+} = require("../accessibility/phase5c3aDeltaContract.cjs");
 
 const projectRoot = path.resolve(__dirname, "../..");
 const contractPath = path.join(projectRoot, "tests/visual/contracts/owner-approved-scripture-content-delta.json");
@@ -73,6 +77,10 @@ function generatedStructure(value, keyPath = "root", records = []) {
 
 function verifyScriptureContentDelta() {
   const failures = [];
+  const phase5c3aDelta = verifyPhase5c3aDelta();
+  if (!phase5c3aDelta.valid) {
+    phase5c3aDelta.failures.forEach((failure) => failures.push(`Phase 5C-3A accessibility delta: ${failure}`));
+  }
   const phase5c2Delta = verifyPhase5c2Delta();
   if (!phase5c2Delta.valid) {
     phase5c2Delta.failures.forEach((failure) => failures.push(`Phase 5C-2 accessibility delta: ${failure}`));
@@ -177,7 +185,8 @@ function verifyScriptureContentDelta() {
       continue;
     }
     const currentBytes = fs.readFileSync(currentPath);
-    const phase5c2ComparisonBytes = revertApprovedPhase5c2Source(relativePath, currentBytes, phase5c2Delta);
+    const phase5c3aComparisonBytes = revertApprovedPhase5c3aSource(relativePath, currentBytes, phase5c3aDelta);
+    const phase5c2ComparisonBytes = revertApprovedPhase5c2Source(relativePath, phase5c3aComparisonBytes, phase5c2Delta);
     const comparisonBytes = revertApprovedPhase5c1Source(relativePath, phase5c2ComparisonBytes, phase5c1Delta);
     if (sourceFile.derivedFrom) {
       if (relativePath !== "src/app/_approved-source/approved-view-markup.generated.ts") failures.push(`${relativePath}: unrecognized derived overlay.`);
@@ -208,7 +217,11 @@ function verifyScriptureContentDelta() {
   for (const recordId of inventoryById.keys()) {
     if (!seenRecordIds.has(recordId)) failures.push(`${recordId}: no source overlay operation cites this owner-reviewed record.`);
   }
-  return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes), phase5c1Delta, phase5c2Delta };
+  for (const [relativePath, approved] of phase5c3aDelta.approvedByPath || []) {
+    if (approvedByPath.has(relativePath)) failures.push(`${relativePath}: duplicate Phase 5C-3A source overlay.`);
+    else approvedByPath.set(relativePath, { bytes: approved.bytes, sha256: approved.sha256 });
+  }
+  return { valid: failures.length === 0, failures, approvedByPath, contract, contractSha256: sha256(contractBytes), phase5c1Delta, phase5c2Delta, phase5c3aDelta };
 }
 
 function isApprovedSourceDelta(relativePath, actualHash, actualBytes, verification) {

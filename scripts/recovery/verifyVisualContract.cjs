@@ -61,6 +61,9 @@ const actualMarkup = actual.markupContract;
 const approvedPhase5c2AriaLabels = scriptureDelta.phase5c2Delta?.valid
   ? scriptureDelta.phase5c2Delta.contract.allowedAriaLabels
   : [];
+const approvedPhase5c3aVisualAdditions = scriptureDelta.phase5c3aDelta?.valid
+  ? scriptureDelta.phase5c3aDelta.contract.visualContractAdditions
+  : {};
 for (const key of [
   "classes",
   "ids",
@@ -72,9 +75,10 @@ for (const key of [
   "animationNames",
   "mediaQueries"
 ]) {
-  const expectedValues = key === "ariaLabels"
-    ? [...(expectedMarkup[key] || []), ...approvedPhase5c2AriaLabels]
-    : expectedMarkup[key] || [];
+  const additions = key === "ariaLabels"
+    ? approvedPhase5c2AriaLabels
+    : approvedPhase5c3aVisualAdditions[key] || [];
+  const expectedValues = [...(expectedMarkup[key] || []), ...additions];
   compareArrays(`Markup contract ${key}`, expectedValues, actualMarkup[key] || [], failures);
 }
 if (expectedMarkup.orderedTagSignatureCount !== actualMarkup.orderedTagSignatureCount) {
@@ -102,3 +106,4 @@ console.log(`CSS classes verified: ${actualMarkup.cssClasses.length}`);
 console.log(`Animation names verified: ${actualMarkup.animationNames.length}`);
 console.log(`Exact owner-approved Scripture source overlays replayed: ${scriptureDelta.approvedByPath.size}.`);
 console.log(`Exact owner-approved Phase 5C-2 ARIA labels replayed: ${approvedPhase5c2AriaLabels.length}.`);
+console.log(`Exact owner-approved Phase 5C-3A CSS tokens replayed: ${(approvedPhase5c3aVisualAdditions.cssIds || []).length + (approvedPhase5c3aVisualAdditions.mediaQueries || []).length}.`);

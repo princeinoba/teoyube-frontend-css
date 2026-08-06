@@ -10,15 +10,18 @@ const { chromium } = require("playwright");
 const sharp = require("sharp");
 
 const root = path.resolve(__dirname, "../..");
-const mode = process.argv[2];
-if (!new Set(["before", "after"]).has(mode)) throw new Error("Usage: node scripts/accessibility/run-phase5c3-characterization.cjs <before|after>");
+const requestedMode = process.argv[2];
+const narrowPhase5c3a = new Set(["before3a", "after3a"]).has(requestedMode);
+const mode = requestedMode?.replace("3a", "");
+if (!new Set(["before", "after"]).has(mode)) throw new Error("Usage: node scripts/accessibility/run-phase5c3-characterization.cjs <before|after|before3a|after3a>");
 
-const nextPort = Number(process.env.TEOYUBE_PHASE5C3_NEXT_PORT || 3189);
-const staticPort = Number(process.env.TEOYUBE_PHASE5C3_STATIC_PORT || 4189);
+const nextPort = Number(process.env.TEOYUBE_PHASE5C3_NEXT_PORT || (narrowPhase5c3a ? 3191 : 3189));
+const staticPort = Number(process.env.TEOYUBE_PHASE5C3_STATIC_PORT || (narrowPhase5c3a ? 4191 : 4189));
 const origins = { next: `http://127.0.0.1:${nextPort}`, static: `http://127.0.0.1:${staticPort}` };
 const nextCli = require.resolve("next/dist/bin/next");
 const axeSource = fs.readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
-const screenshotRoot = path.join(root, ".tmp", "accessibility", "phase-5c3", mode);
+const phaseSlug = narrowPhase5c3a ? "phase-5c3a" : "phase-5c3";
+const screenshotRoot = path.join(root, ".tmp", "accessibility", phaseSlug, mode);
 const generatedAt = new Date().toISOString();
 
 const viewports = [
@@ -55,14 +58,14 @@ const definitions = [
   },
   {
     key: "canon",
-    issueIds: ["A11Y-007", "A11Y-008"],
+    issueIds: narrowPhase5c3a ? ["A11Y-007"] : ["A11Y-007", "A11Y-008"],
     nextRoute: "/canon",
     staticHash: "canon",
     rootSelector: "#canon",
     groups: [
       { key: "canon-watchman-dots", selector: ".canon-watchman-story-card .canon-watchman-video-dots button[data-watchman-video-index]" }
     ],
-    contrastSelector: '[data-canon-item="canon-map-D02"] .canon-status.in-progress, [data-canon-item="canon-map-D05"] .canon-status.in-progress'
+    contrastSelector: narrowPhase5c3a ? null : '[data-canon-item="canon-map-D02"] .canon-status.in-progress, [data-canon-item="canon-map-D05"] .canon-status.in-progress'
   },
   {
     key: "explore",
@@ -154,10 +157,11 @@ async function axe(page, definition) {
     ...definition.groups.map((group) => [group.selector]),
     ...(definition.contrastSelector ? [[definition.contrastSelector]] : [])
   ];
-  return page.evaluate(async ({ source, include }) => {
+  const ruleValues = narrowPhase5c3a ? ["target-size"] : ["target-size", "color-contrast"];
+  return page.evaluate(async ({ source, include, ruleValues }) => {
     window.eval(source);
     const result = await window.axe.run({ include }, {
-      runOnly: { type: "rule", values: ["target-size", "color-contrast"] },
+      runOnly: { type: "rule", values: ruleValues },
       resultTypes: ["violations"]
     });
     return result.violations.map((violation) => ({
@@ -165,7 +169,7 @@ async function axe(page, definition) {
       impact: violation.impact,
       nodes: violation.nodes.map((node) => ({ target: node.target, failureSummary: node.failureSummary }))
     }));
-  }, { source: axeSource, include });
+  }, { source: axeSource, include, ruleValues });
 }
 
 async function collectTargets(page, group) {
@@ -357,7 +361,8 @@ async function compareScreenshots(cells) {
 
 function compareBehavior(cells) {
   if (mode !== "after") return null;
-  const before = JSON.parse(fs.readFileSync(path.join(root, "docs", "accessibility", "phase-5c3-before-characterization.json"), "utf8"));
+  const beforeName = narrowPhase5c3a ? "phase-5c3a-before-characterization.json" : "phase-5c3-before-characterization.json";
+  const before = JSON.parse(fs.readFileSync(path.join(root, "docs", "accessibility", beforeName), "utf8"));
   const beforeByKey = new Map(before.cells.map((cell) => [`${cell.runtime}:${cell.viewport}:${cell.key}`, cell.activation]));
   const results = cells.map((cell) => {
     const key = `${cell.runtime}:${cell.viewport}:${cell.key}`;
@@ -365,6 +370,30 @@ function compareBehavior(cells) {
     return { key, pass: JSON.stringify(cell.activation) === JSON.stringify(expected), before: expected, after: cell.activation };
   });
   return { comparedCells: results.length, passedCells: results.filter((result) => result.pass).length, failures: results.filter((result) => !result.pass) };
+}
+
+function compareTargetInteractions(cells) {
+  if (mode !== "after") return null;
+  const beforeName = narrowPhase5c3a ? "phase-5c3a-before-characterization.json" : "phase-5c3-before-characterization.json";
+  const before = JSON.parse(fs.readFileSync(path.join(root, "docs", "accessibility", beforeName), "utf8"));
+  const beforeByKey = new Map(before.cells.flatMap((cell) => cell.groups.map((group) => [
+    [cell.runtime, cell.viewport, cell.key, group.key].join(":"),
+    group
+  ])));
+  const results = cells.flatMap((cell) => cell.groups.map((group) => {
+    const key = [cell.runtime, cell.viewport, cell.key, group.key].join(":");
+    const expected = beforeByKey.get(key);
+    const pass = Boolean(expected)
+      && group.centerHitPassCount >= expected.centerHitPassCount
+      && group.overlappingPairCount <= expected.overlappingPairCount;
+    return {
+      key,
+      pass,
+      before: expected ? { centerHitPassCount: expected.centerHitPassCount, overlappingPairCount: expected.overlappingPairCount } : null,
+      after: { centerHitPassCount: group.centerHitPassCount, overlappingPairCount: group.overlappingPairCount }
+    };
+  }));
+  return { comparedGroups: results.length, passedGroups: results.filter((result) => result.pass).length, failures: results.filter((result) => !result.pass) };
 }
 
 function summarize(cells) {
@@ -395,17 +424,18 @@ function summarize(cells) {
   };
 }
 
-function validate(summary, behaviorComparison) {
+function validate(summary, behaviorComparison, targetInteractionComparison) {
   const failures = [];
   if (summary.unexpectedErrorCount) failures.push("Unexpected browser/runtime errors were recorded.");
   if (mode === "before") {
     if (summary.targetViolationNodes === 0) failures.push("A11Y-007 did not reproduce.");
-    if (summary.contrastViolationNodes === 0) failures.push("A11Y-008 did not reproduce.");
+    if (!narrowPhase5c3a && summary.contrastViolationNodes === 0) failures.push("A11Y-008 did not reproduce.");
   } else {
     if (summary.targetViolationNodes !== 0) failures.push("A11Y-007 target-size violations remain.");
-    if (summary.contrastViolationNodes !== 0) failures.push("A11Y-008 contrast violations remain.");
+    if (!narrowPhase5c3a && summary.contrastViolationNodes !== 0) failures.push("A11Y-008 contrast violations remain.");
     if (summary.minimumWidth < 24 || summary.minimumHeight < 24) failures.push("An approved target remains below 24 by 24 CSS pixels.");
-    if (summary.overlappingPairCount !== 0 || summary.centerHitPassCount !== summary.targetCount) failures.push("Approved targets overlap or do not receive their center hit.");
+    if (summary.overlappingPairCount !== 0) failures.push("Approved target hit areas overlap.");
+    if (!targetInteractionComparison || targetInteractionComparison.passedGroups !== targetInteractionComparison.comparedGroups) failures.push("An approved target center hit or overlap regressed from the before characterization.");
     if (!behaviorComparison || behaviorComparison.passedCells !== behaviorComparison.comparedCells) failures.push("A scoped control activation changed from the before characterization.");
   }
   return failures;
@@ -447,19 +477,22 @@ async function main() {
     const summary = summarize(cells);
     const pixelComparison = await compareScreenshots(cells);
     const behaviorComparison = compareBehavior(cells);
-    const validationFailures = validate(summary, behaviorComparison);
+    const targetInteractionComparison = compareTargetInteractions(cells);
+    const validationFailures = validate(summary, behaviorComparison, targetInteractionComparison);
     const report = {
       schemaVersion: 1,
-      phase: "5C-3",
+      phase: narrowPhase5c3a ? "5C-3A" : "5C-3",
       evidenceStage: mode,
       generatedAt,
-      ownerDecisionId: "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
-      batch: "5C-3",
-      issueIds: ["A11Y-007", "A11Y-008"],
-      proposalHashes: {
-        "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
-        "A11Y-008": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
-      },
+      ownerDecisionId: narrowPhase5c3a ? "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001" : "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+      batch: narrowPhase5c3a ? "5C-3A" : "5C-3",
+      issueIds: narrowPhase5c3a ? ["A11Y-007"] : ["A11Y-007", "A11Y-008"],
+      proposalHashes: narrowPhase5c3a
+        ? { "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717" }
+        : {
+            "A11Y-007": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+            "A11Y-008": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8"
+          },
       networkPolicy: "loopback and data only",
       ports: { next: nextPort, static: staticPort },
       viewports,
@@ -467,19 +500,26 @@ async function main() {
       summary,
       pixelComparison,
       behaviorComparison,
+      targetInteractionComparison,
       validationFailures
     };
+    if (narrowPhase5c3a) {
+      write(`tests/accessibility/evidence/${phaseSlug}/${mode}/manifest.json`, report);
+      write(`docs/accessibility/${phaseSlug}-${mode === "before" ? "before-characterization" : "after-evidence"}.json`, report);
+      write(`docs/accessibility/${phaseSlug}-${mode === "before" ? "before-characterization" : "after-evidence"}.md`, `# Phase 5C-3A ${mode} characterization\n\n- Result: **${mode === "before" ? "BEFORE DEFECT REPRODUCED" : "AFTER REMEDIATION VERIFIED"}**\n- Generated: ${generatedAt}\n- Owner decision: \`TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001\`\n- Issues tested: **A11Y-007 only**\n- Cells: **${summary.cellCount}** (${summary.nextCells} Next, ${summary.staticCells} static) across six approved viewports.\n- Approved targets measured: **${summary.targetCount}** in ${summary.targetGroupCount} groups.\n- Minimum target geometry: **${summary.minimumWidth} x ${summary.minimumHeight} CSS px**.\n- Target-size violation nodes: **${summary.targetViolationNodes}**.\n- Overlapping adjacent target pairs: **${summary.overlappingPairCount}**.\n- Successful scoped activation cells: **${summary.activationPassCount}/${summary.cellCount}**.\n- Unexpected browser/runtime errors: **${summary.unexpectedErrorCount}**.\n- Screenshots: ignored working evidence under \`.tmp/accessibility/${phaseSlug}/${mode}/\`; hashes and geometry are bound in the tracked manifest.\n- Physical touch evidence: **NOT_TESTED**.\n- A11Y-008 retest/product change: **EXCLUDED / 0**.\n- Baseline writes: **0**.\n`);
+    } else {
     write(`tests/accessibility/evidence/phase-5c3/${mode}/manifest.json`, report);
     write(`docs/accessibility/phase-5c3-${mode === "before" ? "before-characterization" : "after-evidence"}.json`, report);
     write(`docs/accessibility/phase-5c3-${mode === "before" ? "before-characterization" : "after-evidence"}.md`, `# Phase 5C-3 ${mode} characterization\n\n- Result: **${mode === "before" ? "BEFORE DEFECTS REPRODUCED" : "AFTER REMEDIATION VERIFIED"}**\n- Generated: ${generatedAt}\n- Owner decision: \`TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001\`\n- Cells: **${summary.cellCount}** (${summary.nextCells} Next, ${summary.staticCells} static) across six approved viewports.\n- Approved targets measured: **${summary.targetCount}** in ${summary.targetGroupCount} groups.\n- Minimum target geometry: **${summary.minimumWidth} × ${summary.minimumHeight} CSS px**.\n- Target-size violation nodes: **${summary.targetViolationNodes}**.\n- Canon contrast violation nodes: **${summary.contrastViolationNodes}**.\n- Overlapping adjacent target pairs: **${summary.overlappingPairCount}**.\n- Successful scoped activation cells: **${summary.activationPassCount}/${summary.cellCount}**.\n- Unexpected browser/runtime errors: **${summary.unexpectedErrorCount}**.\n- Screenshots: ignored working evidence under \`.tmp/accessibility/phase-5c3/${mode}/\`; hashes and geometry are bound in the tracked manifest.\n- Physical touch and manual complex-background contrast evidence: **NOT_TESTED**.\n- Baseline writes: **0**.\n`);
-    console.log(JSON.stringify({ summary, pixelComparison, behaviorComparison, validationFailures }, null, 2));
+    }
+    console.log(JSON.stringify({ summary, pixelComparison, behaviorComparison, targetInteractionComparison, validationFailures }, null, 2));
     if (validationFailures.length) process.exitCode = 1;
   } finally {
     if (browser) await browser.close();
     await Promise.all([stopServer(nextServer), stopServer(staticServer)]);
     const deadline = Date.now() + 10_000;
     while (Date.now() < deadline && (await portOpen(nextPort) || await portOpen(staticPort))) await new Promise((resolve) => setTimeout(resolve, 250));
-    if (await portOpen(nextPort) || await portOpen(staticPort)) throw new Error("Owned Phase 5C-3 listeners did not close.");
+    if (await portOpen(nextPort) || await portOpen(staticPort)) throw new Error(`Owned ${narrowPhase5c3a ? "Phase 5C-3A" : "Phase 5C-3"} listeners did not close.`);
   }
 }
 

@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-3A",
+  "issueId": "A11Y-007",
+  "generatedAt": "2026-08-06T21:33:33.104Z",
+  "selection": "desktop-wide and mobile candidate thumbnails for every affected Next route and available static rollback route",
+  "fullPixelComparison": "tests/accessibility/evidence/phase-5c3a/after/manifest.json",
+  "baselineWrites": 0,
+  "disposableOutputRoot": ".tmp/accessibility/phase-5c3a/visual-diffs",
+  "artifactCount": 28,
+  "artifacts": [
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "today",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-today-side-by-side.png",
+      "bytes": 241977,
+      "sha256": "ec86658ec68a9dc1b50ed73a1a5ab0a6fe0b1727083ef3c4d4ee2c68d38e573a"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "today",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-today-overlay-difference.png",
+      "bytes": 8466,
+      "sha256": "79b200a50fc0b84f30ea9f80dad083fe315082022d399952c89f27b552939c82"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "book",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-book-side-by-side.png",
+      "bytes": 180166,
+      "sha256": "3690e07c1f4db65f243bd94648431f804b4d16640257657b15146adddc716fac"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "book",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-book-overlay-difference.png",
+      "bytes": 62027,
+      "sha256": "89bd9e6e7093372f046986bd19a7ddd198dae5af407f60022020978b43e64327"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "explore",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-explore-side-by-side.png",
+      "bytes": 3132898,
+      "sha256": "099c13c4606de81a8a083cf775602c39e673baa05046c4af72296a035d0a85ff"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "explore",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-explore-overlay-difference.png",
+      "bytes": 1428753,
+      "sha256": "6a4a0ba67a54c32e39d92821c12f5935de289f6db2e6381e99f1c31b8c74b780"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "book",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-book-side-by-side.png",
+      "bytes": 1260237,
+      "sha256": "a8872abb9e6fe87d23c9ec8a4c4cf8696e0851287e4a11f33bd7311375c2feca"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "book",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-book-overlay-difference.png",
+      "bytes": 616162,
+      "sha256": "1266f7e1e228ca5598deccadbca544441b9bf716942bfe9fb1d1e869775583dc"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "explore",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-explore-side-by-side.png",
+      "bytes": 20310660,
+      "sha256": "ea0f65d4b13e1f723a5e379ba1a70669cac1105d27349ae72f742764a054f3ae"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "explore",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-explore-overlay-difference.png",
+      "bytes": 10489683,
+      "sha256": "f92c17e6b21e35f5951668ce0d8fa8aa8308752f9bce06d60bf2e44f3d946d7e"
+    },
+    {
+      "runtime": "static",
+      "viewport": "desktop-wide",
+      "routeKey": "today",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-desktop-wide-today-side-by-side.png",
+      "bytes": 353094,
+      "sha256": "6183e40135f784ee9c532337abdc4ec54c11520825e7d156a0400ed1edf400de"
+    },
+    {
+      "runtime": "static",
+      "viewport": "desktop-wide",
+      "routeKey": "today",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-desktop-wide-today-overlay-difference.png",
+      "bytes": 12972,
+      "sha256": "bec58592e363295d6c489a23953737d95724c0fcfdcebc6e96fcb9f54f1cdb38"
+    },
+    {
+      "runtime": "static",
+      "viewport": "desktop-wide",
+      "routeKey": "book",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-desktop-wide-book-side-by-side.png",
+      "bytes": 180495,
+      "sha256": "6126309c36c213e07ea803e0eacb98b89bc40be93310fba9956798ccb003ba1e"
+    },
+    {
+      "runtime": "static",
+      "viewport": "desktop-wide",
+      "routeKey": "book",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-desktop-wide-book-overlay-difference.png",
+      "bytes": 62220,
+      "sha256": "ca86ca6c64bdc48097b2b174e1538f669b1cc806f6c50ef377551d10d0587c08"
+    },
+    {
+      "runtime": "static",
+      "viewport": "mobile",
+      "routeKey": "book",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-mobile-book-side-by-side.png",
+      "bytes": 1259942,
+      "sha256": "0f085bfdc2867b3fd7f18acabba01db4c348873af6d1d15579eadb1c127a64d0"
+    },
+    {
+      "runtime": "static",
+      "viewport": "mobile",
+      "routeKey": "book",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-mobile-book-overlay-difference.png",
+      "bytes": 614943,
+      "sha256": "6635e5b0ae46b7b7247d8545714c16b03721047e4fe0ca96f3aa9fa326c9c68f"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "canon",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-canon-side-by-side.png",
+      "bytes": 358772,
+      "sha256": "3458c1f2351672e6302fbb0cc7a6316c6550698bed78cb3aa748af53d633690f"
+    },
+    {
+      "runtime": "next",
+      "viewport": "desktop-wide",
+      "routeKey": "canon",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-desktop-wide-canon-overlay-difference.png",
+      "bytes": 6198,
+      "sha256": "c53c5efc5551933d5aed89e26d89ce6006cb04b838c44639de8d6a57f369f268"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "canon",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-canon-side-by-side.png",
+      "bytes": 3221733,
+      "sha256": "f17d4ef174a0f1c06514e3086701d2995b276559d118e46c4fbaffeb9403fa44"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "canon",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-canon-overlay-difference.png",
+      "bytes": 79888,
+      "sha256": "d278c0019084737084a0b6bb06eb4705fad27fb7304aca3272253c903d4dc406"
+    },
+    {
+      "runtime": "static",
+      "viewport": "desktop-wide",
+      "routeKey": "canon",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-desktop-wide-canon-side-by-side.png",
+      "bytes": 358974,
+      "sha256": "3b0f4ed6ea533ced72c2b9ec4debc1080e4203ccab7ef17d08d50d4c0650b7cd"
+    },
+    {
+      "runtime": "static",
+      "viewport": "desktop-wide",
+      "routeKey": "canon",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-desktop-wide-canon-overlay-difference.png",
+      "bytes": 6198,
+      "sha256": "c53c5efc5551933d5aed89e26d89ce6006cb04b838c44639de8d6a57f369f268"
+    },
+    {
+      "runtime": "static",
+      "viewport": "mobile",
+      "routeKey": "canon",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-mobile-canon-side-by-side.png",
+      "bytes": 3221952,
+      "sha256": "77dfdaeaf4b509142f4860cc9eb2d5266c3a801ce3817aad88a805ce2dc9129e"
+    },
+    {
+      "runtime": "static",
+      "viewport": "mobile",
+      "routeKey": "canon",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-mobile-canon-overlay-difference.png",
+      "bytes": 79888,
+      "sha256": "d278c0019084737084a0b6bb06eb4705fad27fb7304aca3272253c903d4dc406"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "today",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-today-side-by-side.png",
+      "bytes": 1021564,
+      "sha256": "e71ac8a56de57382df4c383357d337f4be3104b84c36df7bec261cd1c09427ad"
+    },
+    {
+      "runtime": "next",
+      "viewport": "mobile",
+      "routeKey": "today",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/next-mobile-today-overlay-difference.png",
+      "bytes": 40400,
+      "sha256": "5d340b54c709b1187f3d34c375d706de54a2bac2149e3c45ca332e6a39fcc55c"
+    },
+    {
+      "runtime": "static",
+      "viewport": "mobile",
+      "routeKey": "today",
+      "kind": "side-by-side",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-mobile-today-side-by-side.png",
+      "bytes": 1731474,
+      "sha256": "20e11dc5ad1a4a027af535d7f398256c8bfde44e2e90d1aaff51dafb0d090d8d"
+    },
+    {
+      "runtime": "static",
+      "viewport": "mobile",
+      "routeKey": "today",
+      "kind": "overlay-difference",
+      "path": ".tmp/accessibility/phase-5c3a/visual-diffs/static-mobile-today-overlay-difference.png",
+      "bytes": 72544,
+      "sha256": "92595a76538f652dda8469800aa8235dac013b86d32eeb72846bb40c20fc93e1"
+    }
+  ]
+}
