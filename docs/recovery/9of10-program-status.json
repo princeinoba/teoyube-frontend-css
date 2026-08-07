@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE5C3_SPLIT_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -104,11 +104,13 @@
         "security gate: 18 controls PASS with critical/high 0",
         "recovery and immutable baseline contracts PASS",
         "current 72-cell visual/performance run exposed six Canon focus-order mismatches and one Calling ready-time breach",
-        "current release validation remains stale and is reserved for Phase 2B"
+        "current release validation remains stale and is reserved for Phase 2B",
+        "Phase 5C-3A current audits: full tree reports one high js-yaml advisory (GHSA-5p4m-2wfm-xmqj / CVE-2026-59870); production tree reports zero vulnerabilities. No dependency or lockfile change was authorized in this phase."
       ],
       "currentBlockers": [
         "Phase 2A current visual/performance composite is not green",
-        "release evidence is stale"
+        "release evidence is stale",
+        "Current full dependency tree has one high js-yaml advisory requiring a separate supported Phase 2A remediation decision."
       ],
       "ownerDecisionIds": [],
       "externalDependencies": [
@@ -130,7 +132,7 @@
           "status": "NOT_STARTED"
         }
       ],
-      "dependencyRemediation": "COMPLETE",
+      "dependencyRemediation": "PRIOR_REMEDIATION_COMPLETE_NEW_ADVISORY_REQUIRES_SEPARATE_PHASE2A",
       "visualPerformanceReconciliation": "SEPARATE_OWNER_REVIEWED_WORK_REQUIRED"
     },
     {
@@ -265,7 +267,7 @@
         "Phase 1 PASS"
       ],
       "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
-      "currentCommit": "FINAL_PHASE5C3_SPLIT_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "current accessibility audit: COMPLETE",
         "issue-specific owner review and decisions: COMPLETE",
@@ -273,7 +275,7 @@
         "Phase 5C-2 approved high-severity fixes: PASS",
         "manual evidence tasks: APPROVED_NOT_TESTED",
         "Phase 5C-3 original combined execution: SUPERSEDED_FOR_EXECUTION",
-        "Phase 5C-3A A11Y-007-only batch: READY_NOT_STARTED"
+        "Phase 5C-3A A11Y-007-only batch: PASS"
       ],
       "acceptanceCriteria": [
         "no unresolved critical accessibility issue",
@@ -283,19 +285,24 @@
       "currentEvidence": [
         "A11Y-001 through A11Y-006 exact approved fixes PASS under owner decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
         "Phase 5C-2: 56 focused cells; 11 Canon controls, three search-input names, and Testimony keyboard scrolling verified across both runtimes",
-        "311-cell current audit: zero harness errors, missing names, hidden focus, unsupported ARIA, or scrollable-region-focusable; remaining automated families are A11Y-007 target size and A11Y-008 contrast",
+        "311-cell current audit: zero harness errors, hidden focus, missing names, positive tabindex, duplicate IDs, or horizontal overflow; A11Y-007 scoped target-size family is closed; two Canon contrast occurrences remain under A11Y-008 NEEDS_MORE_EVIDENCE.",
         "Strict stable-frame before/after comparison: zero changed pixels; no masks, tolerance change, baseline replacement, CSS, copy, class, ID, or asset change",
         "72 immutable screenshots, 12 desktop DOM snapshots, and owner-approved support baselines unchanged",
         "No WCAG conformance claim; all approved manual/AT tasks remain NOT_TESTED",
         "Current performance audit completed 72/72 first-run cells below 5,000 ms, but broad parity and CSS-budget blockers remain outside Phase 5C-2",
         "Phase 5C-3: 42 focused cells; A11Y-007 reproduced; A11Y-008 did not reproduce on actual /canon; 6.9851:1; zero production changes",
-        "Owner split decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001: Phase 5C-3 superseded; Phase 5C-3A A11Y-007-only READY_NOT_STARTED; A11Y-008 not reproduced and no implementation authorized."
+        "Owner split decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001: Phase 5C-3 superseded; Phase 5C-3A A11Y-007-only READY_NOT_STARTED; A11Y-008 not reproduced and no implementation authorized.",
+        "Phase 5C-3A: A11Y-007 exact approved proposal hash PASS; 42 focused cells, 66 groups, 570/570 targets pass at minimum 24x24, zero violations, center-hit/overlap/behavior checks pass.",
+        "Phase 5C-3A current 311-cell audit: zero harness errors; the scoped A11Y-007 family is closed. Two broader Canon color-contrast occurrences remain under A11Y-008 NEEDS_MORE_EVIDENCE and were not changed.",
+        "Recovery and immutable/owner-approved baseline verification PASS after the scoped CSS/TSX remediation; no baseline was replaced.",
+        "Performance controller first run at pre-amend evidence commit 9617865: 72/72 cells below 5,000 ms, then nine inherited broad parity failures stopped the controller. Current-commit gate has 0/216 matched cells and remains blocked. CSS 1,416,075 bytes versus 948,538; approved Phase 5C-3A delta 1,119 bytes.",
+        "Approved protected visual delta: styles/pages/today.css, styles/pages/book.css, and styles/pages/canon.css; unapproved protected visual changes zero. ExploreTabs TSX changed only within the approved target contract."
       ],
       "currentBlockers": [
         "A11Y-008 is NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE and excluded from Phase 5C-3A; a future implementation requires reproducible current failure evidence, a new or revalidated proposal hash, and new issue-specific owner approval.",
         "All approved manual accessibility tasks remain NOT_TESTED",
         "Complete WCAG 2.2 AA conformance remains unproved",
-        "Gate C-Preview remains blocked by pre-existing broad parity, incomplete 216-cell performance evidence, CSS budget, and stale release evidence"
+        "Gate C-Preview remains blocked by nine inherited broad parity failures, incomplete current 216-cell evidence, the 1,416,075/948,538 CSS budget, stale release evidence, and a new separate full-tree js-yaml high advisory."
       ],
       "ownerDecisionIds": [
         "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
@@ -306,7 +313,7 @@
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Execute Phase 5C-3A as a separate task for exact-hash A11Y-007 only, or complete the A11Y-008 retest plan without implementation.",
+      "nextReviewTrigger": "Complete approved manual/AT evidence or execute the A11Y-008 retest plan; any A11Y-008 implementation requires reproducible current failure evidence and new owner approval.",
       "subphases": [
         {
           "subphaseId": "5A",
@@ -318,7 +325,7 @@
         },
         {
           "subphaseId": "5C",
-          "status": "IN_PROGRESS"
+          "status": "PARTIAL_WAITING_EVIDENCE"
         },
         {
           "subphaseId": "5C-1",
@@ -334,11 +341,15 @@
         },
         {
           "subphaseId": "5C-3A",
-          "status": "READY_NOT_STARTED",
+          "status": "PASS",
           "issueIds": [
             "A11Y-007"
           ],
-          "started": false
+          "started": true,
+          "completed": true,
+          "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+          "implementationCommit": "95a0816",
+          "testCommit": "689536844a93a0a7a14491bde3c6f2e6bcaecb2d"
         }
       ]
     },
@@ -535,9 +546,8 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "5C-3A",
+  "nextReadyPhase": "5C_MANUAL_EVIDENCE_OR_A11Y008_REEVALUATION",
   "otherReadyIndependentSubphases": [
-    "5C-3",
     "6A"
   ],
   "nextWaitingPhase": "PHASE4_WAITING_OWNER_SESSION_DATA_PHASE3_WAITING_OWNER_PHASE2A_BLOCKED",

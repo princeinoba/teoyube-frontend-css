@@ -288,8 +288,8 @@
       "id": "2.5.8",
       "level": "AA",
       "title": "Target Size (Minimum)",
-      "status": "FAIL_CONFIRMED",
-      "evidence": "A11Y-007: target-size violations on Today, Canon, Book, and Explore"
+      "status": "PARTIAL_EVIDENCE",
+      "evidence": "A11Y-007 fixed in Phase 5C-3A: 42 focused cells, 570/570 scoped targets at least 24x24 CSS pixels, center-hit and behavior checks pass. Manual physical-input and assistive-technology evidence remains incomplete."
     },
     {
       "id": "3.1.1",
@@ -397,5 +397,5 @@
       "evidence": "live-region inventory captured; spoken announcement behavior not tested with an observable AT"
     }
   ],
-  "phase": "5C-2"
+  "phase": "5C-3A"
 }

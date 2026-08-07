@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T17:30:24.806Z",
+  "generatedAt": "2026-08-07T00:44:40.967Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -848,6 +848,44 @@
       "baselineFilesChanged": 0,
       "packageLockFilesChanged": 0,
       "phase5c3aStarted": false
+    },
+    {
+      "phase": "5C-3A",
+      "status": "PASS",
+      "executedAt": "2026-08-07T00:44:40.967Z",
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "startingCommit": "8f01138907a9c76439bd725662097bb6106dea52",
+      "implementationCommit": "95a0816",
+      "testCommit": "689536844a93a0a7a14491bde3c6f2e6bcaecb2d",
+      "issue": "A11Y-007",
+      "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+      "focusedCells": 42,
+      "nextCells": 24,
+      "staticCells": 18,
+      "targetGroups": 66,
+      "auditedTargets": 570,
+      "targetMinimumCssPixels": "24x24",
+      "passingTargets": 570,
+      "violations": 0,
+      "centerHitChecks": "284/284",
+      "unintendedOverlap": 0,
+      "behaviorComparisons": "42/42",
+      "interactionGroups": "66/66",
+      "a11y008ProductChanges": 0,
+      "manualEvidenceTasksCompleted": 0,
+      "currentFullAudit": "311 cells; zero harness errors; two known A11Y-008 contrast occurrences remain",
+      "fullDependencyAudit": "1 high js-yaml advisory; separate Phase 2A scope required",
+      "productionDependencyAudit": "0 vulnerabilities",
+      "protectedVisualFilesChanged": 3,
+      "immutableBaselineFilesChanged": 0,
+      "ownerApprovedBaselineFilesChanged": 0,
+      "paidCalls": 0,
+      "approvedProtectedVisualFilesChanged": [
+        "styles/pages/today.css",
+        "styles/pages/book.css",
+        "styles/pages/canon.css"
+      ],
+      "unapprovedProtectedVisualFilesChanged": 0
     }
   ],
   "workspaceAtStart": {
@@ -976,5 +1014,15 @@
     "manualTasksExecuted": 0,
     "paidCalls": 0
   },
-  "workspaceAfterPhase5c3SplitDecision": "7ee14d71ce56a9338dc6f70f75853e90e3928447"
+  "workspaceAfterPhase5c3SplitDecision": "7ee14d71ce56a9338dc6f70f75853e90e3928447",
+  "workspaceAfterPhase5c3a": {
+    "branch": "recovery/visual-source-of-truth",
+    "commit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "trackedWorktree": "CLEAN_AFTER_COMMIT",
+    "protectedVisualFilesChanged": 3,
+    "immutableBaselineFilesChanged": 0,
+    "ownerApprovedBaselineFilesChanged": 0,
+    "approvedProtectedVisualFilesChanged": 3,
+    "unapprovedProtectedVisualFilesChanged": 0
+  }
 }

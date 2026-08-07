@@ -16,7 +16,7 @@ Status: **PASS - ALL DECISIONS RECORDED**
 | A11Y-004 | issue | high | APPROVE_RECOMMENDED_PHASE5C_FIX | `c001c4a48c70289c2a111c1f57f78dad1fdd4f3b5e98123e7b4b4738b38718e1` | APPROVED_NOT_STARTED |
 | A11Y-005 | issue | high | APPROVE_RECOMMENDED_PHASE5C_FIX | `048ab643249f468aedd9d9db15205a762d2789c40ddd2936ccbd763ede2ac5ce` | EXECUTED_PHASE5C2_PASS |
 | A11Y-006 | issue | high | APPROVE_RECOMMENDED_PHASE5C_FIX | `0ba9a5fb8e12da2e3f26176e168ee3255d64d0033b9467ac6ff35fb48bde0a61` | EXECUTED_PHASE5C2_PASS |
-| A11Y-007 | issue | high | APPROVE_RECOMMENDED_PHASE5C_FIX | `e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717` | APPROVED_FOR_PHASE_5C_3A_NOT_STARTED |
+| A11Y-007 | issue | high | APPROVE_RECOMMENDED_PHASE5C_FIX | `e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717` | FIXED_PHASE_5C_3A_PASS |
 | A11Y-008 | issue | high | APPROVE_RECOMMENDED_PHASE5C_FIX | `86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8` | NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE |
 | A11Y-009 | issue | medium | APPROVE_MANUAL_EVIDENCE_TASK | `a5335828915affd3741a1af7973b964dc667c0938912e0ffb90e94b780bb211e` | EVIDENCE_TASKS_APPROVED_NOT_EXECUTED |
 | A11Y-010 | issue | medium | APPROVE_MANUAL_EVIDENCE_TASK | `0584a9068607caf728b500981e11e13b70af66c3a88d13d78aa4fda2faf085d9` | EVIDENCE_TASKS_APPROVED_NOT_EXECUTED |
@@ -35,4 +35,8 @@ Every decision is bound to the displayed proposal hash. This record authorizes n
 
 ## Phase 5C-3 split execution decision
 
-Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001` preserves A11Y-007's exact approved proposal hash and assigns it alone to Phase 5C-3A (**READY, NOT STARTED**). The original combined Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**. A11Y-008 is **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**, is excluded from Phase 5C-3A, and has no current implementation authorization.
+Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001` preserves A11Y-007's exact approved proposal hash and assigns it alone to Phase 5C-3A (**PASS, exact scope executed**). The original combined Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**. A11Y-008 is **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**, is excluded from Phase 5C-3A, and has no current implementation authorization.
+
+## Phase 5C-3A execution (2026-08-07T00:44:40.967Z)
+
+The exact A11Y-007 proposal hash passed. Implementation commit: `95a0816`; test commit: `6895368`. Evidence: 42 cells, 66 groups, 570/570 targets pass, zero target violations, 284/284 required center-hit checks pass, zero unintended overlap, and all behavior checks pass. A11Y-008 product changes: 0. Manual evidence tasks completed: 0.

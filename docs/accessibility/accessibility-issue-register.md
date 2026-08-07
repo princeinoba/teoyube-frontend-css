@@ -10,7 +10,7 @@ Phase 5A registered 11 items: eight confirmed product/accessibility defects or d
 | A11Y-004 | High | Confirmed defect | Canon | Hidden recent-row control remained focusable | 2.4.3, 4.1.2 | **FIXED in 5C-1** |
 | A11Y-005 | High | Confirmed name defect | Lexicon, Embedded Videos, Tables | Three search inputs lacked durable programmatic names | 2.4.6, 3.3.2, 4.1.2 | **FIXED in 5C-2** |
 | A11Y-006 | High | Confirmed defect | Testimony | Milestones scroll region lacked keyboard access | 2.1.1 | **FIXED in 5C-2** |
-| A11Y-007 | High | Confirmed defect | Today, Canon, Book, Explore | Target-size failures | 2.5.8 | Approved; not started because combined batch is blocked |
+| A11Y-007 | High | **FIXED** | Today, Canon, Book, Explore | Target-size failures | 2.5.8 | Phase 5C-3A PASS: 570/570 scoped targets meet 24×24; behavior preserved |
 | A11Y-008 | High | Needs more evidence | Canon | Approved contrast defect does not reproduce on actual route | 1.4.3 | NEEDS_MORE_EVIDENCE; no source change |
 | A11Y-009 | Medium | Manual validation | All retained routes | Complex-background contrast incomplete | 1.4.1, 1.4.3, 1.4.11 | APPROVED, NOT_TESTED |
 | A11Y-010 | Medium | Manual validation | All retained routes | Focus visibility/obscuration needs human review | 2.4.7, 2.4.11 | APPROVED, NOT_TESTED |
@@ -28,6 +28,10 @@ All manual and assistive-technology tasks remain **NOT_TESTED**. Complete WCAG 2
 
 ## Phase 5C-3 split status
 
-- A11Y-007: **APPROVED FOR PHASE 5C-3A; READY, NOT STARTED**; proposal hash unchanged.
+- A11Y-007: **FIXED / PHASE 5C-3A PASS**; exact approved proposal hash unchanged; 42 cells, 66 groups, and 570/570 targets pass.
 - A11Y-008: **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**; historical issue/proposal/evidence preserved; not FIXED, PASS, or FALSE_POSITIVE.
-- Current A11Y-008 evidence: 42 cells, six viewports, 6.9851:1 versus 4.5:1, zero scoped axe contrast failures.
+- Current A11Y-008 evidence: focused evidence remains 42 cells, six viewports, 6.9851:1 versus 4.5:1, and zero scoped axe contrast failures; the broader current audit still reports two known Canon contrast occurrences. Status remains **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE** and Phase 5C-3A product changes for A11Y-008 are zero.
+
+## Phase 5C-3A execution update (2026-08-07T00:44:40.967Z)
+
+A11Y-007 passed the exact hash-bound remediation: 42 focused cells (24 Next, 18 static), 66 scoped groups, 570 targets, minimum 24×24 CSS pixels, 570/570 pass, zero violations, 284 required center-hit checks pass, zero unintended overlap, and all behavior comparisons pass. A11Y-008 and every manual evidence task were excluded. Seven confirmed product issues are now fixed; A11Y-008 remains the one needs-more-evidence issue. Complete WCAG 2.2 AA conformance is not claimed.

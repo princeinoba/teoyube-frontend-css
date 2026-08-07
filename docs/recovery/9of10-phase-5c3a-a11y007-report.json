@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "phase": "5C-3A",
+  "status": "PASS",
+  "outcome": "A11Y_007_FIXED_EXACT_APPROVED_SCOPE_REMAINING_EVIDENCE_GATES_OPEN",
+  "executedAt": "2026-08-07T00:44:40.967Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "8f01138907a9c76439bd725662097bb6106dea52",
+  "implementationCommit": "95a0816",
+  "testCommit": "689536844a93a0a7a14491bde3c6f2e6bcaecb2d",
+  "finalCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "ownerDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "issue": "A11Y-007",
+  "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+  "scope": {
+    "routes": [
+      "/",
+      "/book",
+      "/canon",
+      "/explore"
+    ],
+    "viewports": [
+      "1440x900",
+      "1280x800",
+      "1024x768",
+      "768x1024",
+      "390x844",
+      "360x800"
+    ],
+    "selectors": [
+      "#promiseCarouselDots button[data-slide-index]",
+      ".featured-story-dots button[data-featured-story-index]",
+      "#book .book-toolbar .phase116-chip-row button.phase116-chip",
+      "#phase115BookMemory .phase115-memory-filters button",
+      ".canon-watchman-story-card .canon-watchman-video-dots button[data-watchman-video-index]",
+      ".tab-list button.tab"
+    ]
+  },
+  "evidence": {
+    "focusedCells": 42,
+    "nextCells": 24,
+    "staticCells": 18,
+    "targetGroups": 66,
+    "auditedTargets": 570,
+    "beforeMinimumCssPixels": "12x5.4",
+    "beforeViolations": 286,
+    "afterMinimumCssPixels": "24x24",
+    "afterPassing": 570,
+    "afterViolations": 0,
+    "centerHitChecks": "284/284",
+    "unintendedOverlap": 0,
+    "behaviorComparisons": "42/42",
+    "interactionGroups": "66/66",
+    "unexpectedErrors": 0
+  },
+  "changes": {
+    "cssDeltaBytes": 1119,
+    "protectedVisualFilesChanged": 3,
+    "immutableStaticBaselinesChanged": 0,
+    "ownerApprovedSupportBaselinesChanged": 0,
+    "domHierarchyChanged": 0,
+    "classIdAriaVisibleCopyAssetChanges": 0,
+    "baselineReplacement": false,
+    "a11y008ProductChanges": 0,
+    "manualEvidenceTasksCompleted": 0,
+    "packageLockfileChanges": 0,
+    "approvedProtectedVisualFilesChanged": [
+      "styles/pages/today.css",
+      "styles/pages/book.css",
+      "styles/pages/canon.css"
+    ],
+    "unapprovedProtectedVisualFilesChanged": 0
+  },
+  "verification": {
+    "npmCi": "PASS_408_PACKAGES",
+    "fullAudit": "BLOCKED_1_HIGH_JS_YAML_SEPARATE_PHASE2A_SCOPE",
+    "productionAudit": "PASS_ZERO_VULNERABILITIES",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "unit": "PASS_404_1_SKIP_SERIAL_PARALLEL_HOST_TIMEOUTS_ONLY",
+    "integration": "PASS_101",
+    "browser": "PASS_61_RUNNABLE_3_STATIC_SKIPS_SERIAL",
+    "build": "PASS_NEXT_16_3_0_58_PAGES",
+    "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "gateA": "PASS_64_OF_64",
+    "teoGuide": "PASS_49_OF_49_13_TOOLS",
+    "retrieval": "PASS_33563_CHUNKS_ZERO_PROVIDER_CALLS",
+    "research": "PASS_77_TESTS_ZERO_PARTICIPANTS_SESSIONS",
+    "recovery": "PASS_72_SCREENSHOTS_12_DOM_SUPPORT_BASELINES_UNCHANGED",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK",
+    "dualRuntime": "PASS_83_LISTENERS_CLOSED",
+    "accessibility": "PASS_SCOPED_A11Y007_FULL_AUDIT_ZERO_HARNESS_ERRORS",
+    "performance": "BLOCKED_0_OF_216_CURRENT_72_FIRST_RUN_AT_PRE_AMEND_COMMIT_ALL_UNDER_5000MS_THEN_9_INHERITED_PARITY_FAILURES",
+    "cssBudget": "BLOCKED_1416075_OF_948538_DELTA_1119",
+    "paidCalls": 0
+  },
+  "a11y008": {
+    "status": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+    "focusedMeasuredContrast": 6.9851,
+    "requiredThreshold": 4.5,
+    "focusedScopedAxeFailures": 0,
+    "broaderCurrentAuditOccurrences": 2,
+    "productChanges": 0
+  },
+  "phase5c": "PARTIAL_WAITING_EVIDENCE",
+  "conformanceClaim": false,
+  "phase2A": "BLOCKED",
+  "phase3": "WAITING_OWNER",
+  "phase4": "WAITING_OWNER_SESSION_DATA",
+  "phase6A": "READY_NOT_STARTED",
+  "rollback": "git revert <phase-5c3a-evidence-commit> 6895368 95a0816",
+  "artifacts": [
+    {
+      "path": "docs/accessibility/phase-5c3a-starting-manifest.json",
+      "bytes": 3134,
+      "sha256": "fd1666ea290e86c602e04cbea8b548ada2392924d375a72c5c78aedd6ebee72b"
+    },
+    {
+      "path": "docs/accessibility/phase-5c3a-approved-batch.json",
+      "bytes": 570,
+      "sha256": "5784f79256132808484eadd92d31f9b0610e1a361ec0c8d5518b7e6a76fb989a"
+    },
+    {
+      "path": "docs/accessibility/phase-5c3a-approved-scope.json",
+      "bytes": 3276,
+      "sha256": "e0d454ef40048d3e0a3a0e9e02ccbfb9c62b9c8eb7a1e3e8ac6b4ae9efab4360"
+    },
+    {
+      "path": "docs/accessibility/phase-5c3a-before-characterization.json",
+      "bytes": 915904,
+      "sha256": "b6255107891c164da3ad925a4926bc23ba53ba101d25b67f4b7c70ba3e075149"
+    },
+    {
+      "path": "docs/accessibility/phase-5c3a-after-evidence.json",
+      "bytes": 802546,
+      "sha256": "0ace0a1b37158694cfdac7873980c324771db8b387ba34a9155d9bc917022cb6"
+    },
+    {
+      "path": "tests/accessibility/approved-deltas/phase-5c3a/manifest.json",
+      "bytes": 1299,
+      "sha256": "503c8b0173cd561c07a1bab32dd46cafe51645c8807e0ee1323cd1561ebbd78b"
+    }
+  ],
+  "performance": {
+    "current216CellGate": "BLOCKED_0_OF_216_CURRENT_COMMIT_MATCHED",
+    "priorFirstRunCommit": "9617865",
+    "priorFirstRunCells": "72/72 below 5000 ms",
+    "overallMaximumMs": 3843.1,
+    "overallMaximumCell": "static Today desktop-wide",
+    "affectedRoutes": {
+      "today": {
+        "staticMaximumMs": 3843.1,
+        "nextMaximumMs": 2347.6
+      },
+      "book": {
+        "staticMaximumMs": 1382.5,
+        "nextMaximumMs": 1113.7
+      },
+      "canon": {
+        "staticMaximumMs": 1768.9,
+        "nextMaximumMs": 1277
+      },
+      "explore": "not represented in the 72-cell matrix; covered by the 42-cell scoped evidence"
+    },
+    "calling": {
+      "overallStaticMaximumMs": 1992.5,
+      "overallNextMaximumMs": 1475.9,
+      "tabletPortraitStaticMs": 1254.1,
+      "tabletPortraitNextMs": 1029.8
+    },
+    "broadParityFailures": 9,
+    "cssTotalBytes": 1416075,
+    "cssBudgetBytes": 948538,
+    "approvedA11y007CssDeltaBytes": 1119,
+    "listenerLeaks": 0,
+    "gateCPreview": "BLOCKED"
+  }
+}

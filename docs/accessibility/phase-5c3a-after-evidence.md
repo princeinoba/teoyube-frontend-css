@@ -1,0 +1,17 @@
+# Phase 5C-3A after characterization
+
+- Result: **AFTER REMEDIATION VERIFIED**
+- Generated: 2026-08-06T19:24:45.952Z
+- Owner decision: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`
+- Issues tested: **A11Y-007 only**
+- Cells: **42** (24 Next, 18 static) across six approved viewports.
+- Approved targets measured: **570** in 66 groups.
+- Minimum target geometry: **24 x 24 CSS px**.
+- Target-size violation nodes: **0**.
+- Overlapping adjacent target pairs: **0**.
+- Successful scoped activation cells: **36/42**.
+- Unexpected browser/runtime errors: **0**.
+- Screenshots: ignored working evidence under `.tmp/accessibility/phase-5c3a/after/`; hashes and geometry are bound in the tracked manifest.
+- Physical touch evidence: **NOT_TESTED**.
+- A11Y-008 retest/product change: **EXCLUDED / 0**.
+- Baseline writes: **0**.

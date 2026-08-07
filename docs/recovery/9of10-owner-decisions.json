@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T17:30:24.806Z",
+  "updatedAt": "2026-08-07T01:11:10.004Z",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -196,12 +196,12 @@
     {
       "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
       "scope": "Split Phase 5C-3 after current evidence reproduced A11Y-007 but not A11Y-008; authorize A11Y-007 only in a future Phase 5C-3A task.",
-      "status": "APPROVED_RECORDED_NOT_IMPLEMENTED",
+      "status": "APPROVED_EXECUTED_PHASE5C3A_PASS",
       "approvedAt": "2026-08-06T17:30:24.806Z",
       "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
       "source": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001.json",
       "issueStatuses": {
-        "A11Y-007": "APPROVED_FOR_PHASE_5C_3A",
+        "A11Y-007": "FIXED_PHASE5C3A_PASS",
         "A11Y-008": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE"
       },
       "limitations": [
@@ -214,7 +214,30 @@
         "control removal",
         "Phase 5C-1 or Phase 5C-2 changes",
         "unlisted issues"
-      ]
+      ],
+      "phase5c3aExecutionEvidence": {
+        "executedAt": "2026-08-07T01:11:10.004Z",
+        "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
+        "implementationCommit": "95a0816",
+        "testCommit": "689536844a93a0a7a14491bde3c6f2e6bcaecb2d",
+        "exactIssueIds": [
+          "A11Y-007"
+        ],
+        "focusedCells": 42,
+        "targetGroups": 66,
+        "targetsPassing": 570,
+        "targetViolations": 0,
+        "approvedProtectedVisualFilesChanged": [
+          "styles/pages/today.css",
+          "styles/pages/book.css",
+          "styles/pages/canon.css"
+        ],
+        "unapprovedProtectedVisualFilesChanged": 0,
+        "a11y008ProductChanges": 0,
+        "manualTasksExecuted": 0,
+        "expandedScope": false,
+        "evidenceCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF"
+      }
     }
   ],
   "pendingDecisionGroups": [

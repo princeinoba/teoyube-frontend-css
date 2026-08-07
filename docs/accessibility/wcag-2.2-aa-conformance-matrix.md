@@ -43,7 +43,7 @@
 | 2.5.3 Label in Name | A | Partial | Name inventory; speech-input comparison remains. |
 | 2.5.4 Motion Actuation | A | N/A observed | No motion controls observed. |
 | 2.5.7 Dragging Movements | AA | Partial | Carousel buttons exist; physical dragging review remains. |
-| 2.5.8 Target Size (Minimum) | AA | **Fail** | A11Y-007 on Today, Canon, Book, Explore. |
+| 2.5.8 Target Size (Minimum) | AA | **Partial evidence** | A11Y-007 scoped targets pass 570/570 at 24×24 with center-hit and behavior checks; manual physical-input/AT evidence remains incomplete. |
 | 3.1.1 Language of Page | A | Automation support | HTML language captured. |
 | 3.1.2 Language of Parts | AA | Manual required | Teoyube words/quotations review remains. |
 | 3.2.1 On Focus | A | Partial | Keyboard traversal; human context-change observation remains. |
@@ -64,4 +64,4 @@
 
 ## Phase 5C-2 update
 
-The matrix remains a non-conformance evidence matrix. Phase 5C-2 closes A11Y-003, A11Y-005, and A11Y-006, but A11Y-007, A11Y-008, and every manual/AT evidence gap remain. **Complete WCAG 2.2 AA conformance: NO.**
+The matrix remains a non-conformance evidence matrix. Phase 5C-3A closes the scoped A11Y-007 defect, but A11Y-008 needs more evidence and every manual/AT evidence gap remains. **Complete WCAG 2.2 AA conformance: NO.**

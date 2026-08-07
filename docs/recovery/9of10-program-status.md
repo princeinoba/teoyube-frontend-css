@@ -33,13 +33,13 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
 | 4 — Real-user pilot | **WAITING_OWNER_SESSION_DATA** | Phase 4A/4B/4C PASS; recruitment authorized; research collection remains disabled; 0 participants, sessions, or participant records; Phase 4D NOT READY. |
-| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A, Phase 5B, Phase 5C-1, and Phase 5C-2 PASS; original Phase 5C-3 SUPERSEDED_FOR_EXECUTION; Phase 5C-3A READY_NOT_STARTED for A11Y-007 only; A11Y-008 NEEDS_MORE_EVIDENCE; manual tasks APPROVED and NOT_TESTED. |
+| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A, Phase 5B, Phase 5C-1, Phase 5C-2, and Phase 5C-3A PASS; A11Y-007 FIXED; A11Y-008 NEEDS_MORE_EVIDENCE; manual tasks APPROVED and NOT_TESTED. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
 | 9 — Re-score and closeout | **NOT_STARTED** | Requires material real-user and production evidence. |
 
-Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A, Phase 4B, and Phase 4C are **PASS**. Phase 4 overall is **WAITING_OWNER_SESSION_DATA** and Phase 4D is **NOT READY**. Phase 5A, Phase 5B, Phase 5C-1, and Phase 5C-2 are **PASS**. Phase 5C is **IN_PROGRESS**; original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**, and Phase 5C-3A is **READY, NOT STARTED** for A11Y-007 only. Phase 6A remains independently **READY** and was not executed.
+Phase 3A is **PASS** and Phase 3B is **NOT READY**. Phase 2B remains locked until Phase 2A composite gates pass. Phase 4A, Phase 4B, and Phase 4C are **PASS**. Phase 4 overall is **WAITING_OWNER_SESSION_DATA** and Phase 4D is **NOT READY**. Phase 5A, Phase 5B, Phase 5C-1, and Phase 5C-2 are **PASS**. Phase 5C is **IN_PROGRESS**; original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**, and Phase 5C-3A is **PASS** for exact-hash A11Y-007 only. Phase 6A remains independently **READY** and was not executed.
 
 ## Current gates
 
@@ -79,20 +79,20 @@ Phase 3, 4, 5 and eligible Phase 6 subphases may proceed independently after Pha
 
 Phase 5A is **PASS** as a current audit-and-evidence phase. It is not a WCAG conformance claim. The audit covered 311 cells across 23 retained routes and six protected viewports with zero harness errors, and registered 11 issues: one critical, eight high, and two medium. Eight are confirmed product/accessibility or parity issues; three are manual evidence gaps.
 
-Phase 5 is **IN_PROGRESS**. Phase 5B is **PASS** under decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`; Phase 5C-1 and Phase 5C-2 are **PASS** for A11Y-001 through A11Y-006. Phase 5C remains **IN_PROGRESS**; original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**, and Phase 5C-3A is **READY, NOT STARTED** for A11Y-007 only. A11Y-008 is **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**. Manual tasks are approved but **NOT TESTED**. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and Phase 4 remains **WAITING_OWNER_SESSION_DATA**. No protected visual source, CSS, DOM/class/ARIA production code, asset, baseline, package, or lockfile changed.
+Phase 5 is **IN_PROGRESS**. Phase 5B is **PASS** under decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001`; Phase 5C-1 and Phase 5C-2 are **PASS** for A11Y-001 through A11Y-006. Phase 5C remains **IN_PROGRESS**; original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**, and Phase 5C-3A is **PASS** for exact-hash A11Y-007 only. A11Y-008 is **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**. Manual tasks are approved but **NOT TESTED**. Phase 2A remains **BLOCKED**, Phase 3 remains **WAITING_OWNER**, and Phase 4 remains **WAITING_OWNER_SESSION_DATA**. No unapproved protected visual source, DOM/class/ARIA, asset, baseline, package, or lockfile changed; Phase 5C-3A changed only the exact owner-approved scoped CSS/TSX targets.
 
 ## Phase 5C-1 critical/fail-closed accessibility batch
 
 Phase 5C-1 is **PASS**. Exact owner-approved proposal hashes for A11Y-001, A11Y-002, and A11Y-004 were implemented with attribute-only deltas. The 311-cell current audit reports zero `aria-allowed-attr`, zero axe `aria-hidden-focus`, zero custom hidden-focus cells, and zero harness errors. Protected source contracts, 72 immutable screenshots, 12 DOM snapshots, and owner-approved baselines remain unchanged.
 
-Phase 5C is **IN_PROGRESS**. Phase 5C-2 is **PASS**; original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**, and Phase 5C-3A is **READY, NOT STARTED** for A11Y-007 only. All manual tasks remain **APPROVED, NOT_TESTED**, and complete WCAG conformance remains unclaimed. Phase 2A and Gate C-Preview remain **BLOCKED** by separate pre-existing Canon focus, incomplete 216-cell performance evidence, CSS budget, and stale-release-evidence blockers.
+Phase 5C is **IN_PROGRESS**. Phase 5C-2 is **PASS**; original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**, and Phase 5C-3A is **PASS** for exact-hash A11Y-007 only. All manual tasks remain **APPROVED, NOT_TESTED**, and complete WCAG conformance remains unclaimed. Phase 2A and Gate C-Preview remain **BLOCKED** by separate pre-existing Canon focus, incomplete 216-cell performance evidence, CSS budget, and stale-release-evidence blockers.
 
 
 ## Phase 5C-2 high-severity accessibility batch
 
 Phase 5C-2 is **PASS** for A11Y-003, A11Y-005, and A11Y-006 under their exact proposal hashes. The current 311-cell audit has zero missing-name, unsupported-ARIA, hidden-focus, or scrollable-region-focusable findings. The scoped paired raster comparison is zero pixels, and every immutable and owner-approved baseline remains unchanged.
 
-Phase 5C remains **IN_PROGRESS**. Original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**. Phase 5C-3A is **READY, NOT STARTED** for unchanged-hash A11Y-007 only; A11Y-008 is excluded and **NEEDS_MORE_EVIDENCE**. All manual tasks remain **APPROVED, NOT_TESTED**, and complete WCAG conformance remains unclaimed. Phase 2A/Gate C-Preview remain BLOCKED, Phase 3 remains WAITING_OWNER, Phase 4 remains WAITING_OWNER_SESSION_DATA, and Phase 6A remains independently READY but was not executed.
+Phase 5C remains **IN_PROGRESS**. Original Phase 5C-3 is **SUPERSEDED_FOR_EXECUTION**. Phase 5C-3A is **PASS** for unchanged-hash A11Y-007 only; A11Y-008 is excluded and **NEEDS_MORE_EVIDENCE**. All manual tasks remain **APPROVED, NOT_TESTED**, and complete WCAG conformance remains unclaimed. Phase 2A/Gate C-Preview remain BLOCKED, Phase 3 remains WAITING_OWNER, Phase 4 remains WAITING_OWNER_SESSION_DATA, and Phase 6A remains independently READY but was not executed.
 
 ## Phase 5C-3 pre-implementation hard stop
 
@@ -100,4 +100,8 @@ The original Phase 5C-3 combined batch stopped **BLOCKED_NEEDS_MORE_EVIDENCE** a
 
 ## Phase 5C-3 split owner decision
 
-Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001` marks the original Phase 5C-3 combined execution **SUPERSEDED_FOR_EXECUTION**. Phase 5C-3A is **READY, NOT STARTED** for unchanged-hash A11Y-007 only. A11Y-008 is **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE** and excluded; no implementation, manual evidence, or Phase 6A work began.
+Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001` marks the original Phase 5C-3 combined execution **SUPERSEDED_FOR_EXECUTION**. Phase 5C-3A is **PASS** for unchanged-hash A11Y-007 only. A11Y-008 is **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE** and excluded; no implementation, manual evidence, or Phase 6A work began.
+
+## Phase 5C-3A execution (2026-08-07T00:44:40.967Z)
+
+Phase 5C-3A is **PASS** for exact-hash A11Y-007. The 42-cell focused matrix covers 66 target groups and 570 controls across both runtimes and all six viewports: minimum 24×24, 570/570 pass, zero violations, center-hit and overlap checks pass, and 42/42 behavior comparisons pass. A11Y-008 received zero product changes and remains **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**. Manual tasks remain **APPROVED, NOT_TESTED**; complete WCAG conformance remains unclaimed. Phase 2A/Gate C-Preview remain blocked by separate dependency, broad parity, current performance-evidence, CSS-budget, and stale-release-evidence findings.

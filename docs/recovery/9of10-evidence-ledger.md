@@ -302,3 +302,15 @@ Phase 2A and Gate C-Preview remain BLOCKED; Phase 3 remains WAITING_OWNER; Phase
 | A11Y-008 | NEEDS_MORE_EVIDENCE; 6.9851:1; zero scoped axe failures |
 | Production / protected / baseline changes | 0 / 0 / 0 |
 | Result | BLOCKED before implementation |
+
+## Phase 5C-3A — A11Y-007 target-size remediation (2026-08-07T00:44:40.967Z)
+
+- Decision: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`
+- Proposal hash: `e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717` — **PASS**
+- Commits: implementation `95a0816`; tests `6895368`
+- Focused evidence: 42 cells (24 Next, 18 static), 66 groups, 570 targets, minimum 24×24, 570/570 pass, zero violations, 284/284 required center-hit checks, zero unintended overlap, 42/42 behavior comparisons, and 66/66 interaction groups.
+- A11Y-008 product changes: 0; status remains **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**.
+- Manual tasks completed: 0; complete WCAG conformance remains unclaimed.
+- Recovery, immutable screenshots/DOM, and owner-approved support baselines: PASS and unchanged. Protected CSS files changed: 3 under the exact approved A11Y-007 delta; unapproved protected changes: 0.
+- Current full dependency audit: one high `js-yaml` advisory; production audit: zero. Separate Phase 2A remediation is required.
+- Performance controller: first run 72/72 cells below 5,000 ms, then stopped on nine inherited broad parity failures; current CSS budget remains blocked.

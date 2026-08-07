@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "5C-3_BLOCKED_PRE_IMPLEMENTATION",
+  "phase": "5C-3A_PASS_PARTIAL_WAITING_EVIDENCE",
   "issueCount": 11,
   "severityCounts": {
     "critical": 1,
@@ -131,7 +131,7 @@
     {
       "id": "A11Y-007",
       "severity": "high",
-      "classification": "CONFIRMED_PRODUCT_DEFECT",
+      "classification": "FIXED",
       "routes": [
         "/",
         "/book",
@@ -148,9 +148,13 @@
       "phase5c3Status": "SUPERSEDED_FOR_EXECUTION",
       "phase5c3Evidence": "A11Y-007 reproduced, but implementation did not start because A11Y-008 invalidated combined-batch integrity.",
       "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
-      "phase5c3aStatus": "APPROVED_READY_NOT_STARTED",
+      "phase5c3aStatus": "FIXED_PHASE5C3A_PASS",
       "phase5c3aDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
-      "phase5c3aEvidence": "Current characterization reproduced A11Y-007. Its exact Phase 5B proposal hash remains approved for the separate A11Y-007-only Phase 5C-3A batch; implementation has not started."
+      "phase5c3aEvidence": "42 focused cells (24 Next, 18 static) across six viewports audited 66 scoped groups and 570 targets: minimum 24x24 CSS pixels, 570/570 pass, zero violations, 284/284 required center-hit checks pass, zero unintended overlap, 42/42 behavior comparisons pass, and 66/66 interaction groups pass.",
+      "fixedByCommits": [
+        "95a0816",
+        "689536844a93a0a7a14491bde3c6f2e6bcaecb2d"
+      ]
     },
     {
       "id": "A11Y-008",
@@ -172,7 +176,9 @@
       "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
       "phase5c3aStatus": "EXCLUDED",
       "currentExecutionDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
-      "retestPlan": "docs/accessibility/a11y-008-current-evidence-retest-plan.json"
+      "retestPlan": "docs/accessibility/a11y-008-current-evidence-retest-plan.json",
+      "phase5c3aProductChanges": 0,
+      "phase5c3aEvidence": "Excluded from Phase 5C-3A. Focused evidence remains 6.9851:1 with zero scoped axe failures; the broader current audit still reports two known Canon contrast occurrences. Status remains NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE pending the approved retest plan."
     },
     {
       "id": "A11Y-009",
@@ -233,7 +239,7 @@
       "phase5bCandidate": false
     }
   ],
-  "fixedIssueCount": 6,
-  "openConfirmedIssueCount": 1,
+  "fixedIssueCount": 7,
+  "openConfirmedIssueCount": 0,
   "needsMoreEvidenceIssueCount": 1
 }
