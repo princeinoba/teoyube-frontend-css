@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "phase": "5D-1",
+  "task": "A11Y-008 evidence-only current-state retest",
+  "generatedAt": "2026-08-07T11:21:16.168Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "4c165eada3a04212d32456c96bef3cf8b69613f5",
+  "prePhaseTag": "teoyube-9of10-phase5d1-a11y008-start-4c165ea",
+  "worktreeAtEntry": "CLEAN",
+  "ownerDecision": {
+    "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+    "implementationAuthorized": false,
+    "files": [
+      {
+        "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001.json",
+        "bytes": 1599,
+        "sha256": "f1f225c17905c39f2b60aa879cccb881482cfdd85e03d7ca365f2b73aa5e1209"
+      },
+      {
+        "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001.md",
+        "bytes": 1418,
+        "sha256": "98d9ba63b3a966ae7607adba55d756d205bce6522f8ed09d6a273931cb6cd6ac"
+      }
+    ]
+  },
+  "issue": {
+    "id": "A11Y-008",
+    "title": "Canon in-progress status text fails minimum contrast",
+    "currentStatus": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+    "requestFiles": [
+      {
+        "path": "docs/accessibility/owner-review/requests/A11Y-008.json",
+        "bytes": 3395,
+        "sha256": "171ce3857e754d0156a5faaae3b2413fa3195f08218dbaf2e8321d437b92557e"
+      },
+      {
+        "path": "docs/accessibility/owner-review/requests/A11Y-008.md",
+        "bytes": 3322,
+        "sha256": "a45479ebe471490d14ee957eeaf828bc81417170c9b5206a70dae051fad589d8"
+      }
+    ],
+    "formerProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+    "exactElements": [
+      "[data-canon-item=\"canon-map-D02\"] .canon-status.in-progress",
+      "[data-canon-item=\"canon-map-D05\"] .canon-status.in-progress"
+    ]
+  },
+  "historicalCharacterization": {
+    "files": [
+      {
+        "path": "docs/accessibility/a11y-008-current-evidence-retest-plan.json",
+        "bytes": 4145,
+        "sha256": "9b9137496003b058be93110ac713515d82981d8bba0fd3f30f8cd46c14f7d250"
+      },
+      {
+        "path": "docs/accessibility/phase-5c3-before-characterization.json",
+        "bytes": 928037,
+        "sha256": "5dcafa5dfe10ae4829cd44f6c562866e5379b9b4c9cc9b60a6b20765645b7e83"
+      },
+      {
+        "path": "tests/accessibility/evidence/phase-5c3/before/manifest.json",
+        "bytes": 928037,
+        "sha256": "5dcafa5dfe10ae4829cd44f6c562866e5379b9b4c9cc9b60a6b20765645b7e83"
+      }
+    ],
+    "focusedCells": 42,
+    "measuredContrast": 6.9851,
+    "requiredContrast": 4.5,
+    "scopedAxeFailures": 0
+  },
+  "deltaContracts": [
+    {
+      "path": "config/accessibility/approved-phase-5c1-deltas.json",
+      "bytes": 2758,
+      "sha256": "ffec09f0d81b28af2ed4897ddb671f009470025a38b0f2d98a3993c07759b5ff"
+    },
+    {
+      "path": "config/accessibility/approved-phase-5c2-deltas.json",
+      "bytes": 3352,
+      "sha256": "b73cc55000f381541986e8b5bdd80894d59e034db9a1d6a0151c4b92ddbecf00"
+    },
+    {
+      "path": "config/accessibility/approved-phase-5c3a-deltas.json",
+      "bytes": 5200,
+      "sha256": "c268d54e30b44ce30277144d803050b192323df1d6853dff6e11b454fe2c4511"
+    }
+  ],
+  "runtime": {
+    "canonical": "next",
+    "rollback": "static-node",
+    "runtimeSourceDigest": "22d584c6c4ff4037a7e5021ca222d4e33456458a1b0caca8e10e4190aed9406a"
+  },
+  "protectedBaselines": [
+    {
+      "path": "tests/visual/contracts/protected-visual-source-manifest.json",
+      "bytes": 51073,
+      "sha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117"
+    },
+    {
+      "path": "tests/visual/contracts/static-dom-contract.json",
+      "bytes": 399392,
+      "sha256": "b4f99fc01f28c43d4ff0aea54dfd93532488b1d60dfe2364e90a9b9f8bfef9b4"
+    },
+    {
+      "path": "tests/visual/contracts/original-static-visual-contract.json",
+      "bytes": 136206,
+      "sha256": "b428389059116a3e9ec098b9e118aa2b92e6c6fe7837c04e72e0b83a68a010a7"
+    },
+    {
+      "path": "tests/visual/baselines/static-runtime/manifest.json",
+      "bytes": 25249,
+      "sha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b"
+    },
+    {
+      "path": "tests/visual/baselines/owner-reference-manifest.json",
+      "bytes": 2735,
+      "sha256": "72fa9c5bfbf9ad350d276087dd8bb5176b225d71168a3ffb64e8947f1283fab8"
+    },
+    {
+      "path": "tests/visual/baselines/owner-approved-scripture-content-delta/manifest.json",
+      "bytes": 240232,
+      "sha256": "404f98be60170502522622ad262d5490d574133fe8505e1b0bde7e6bc1976822"
+    }
+  ],
+  "environment": {
+    "platform": "win32",
+    "osRelease": "10.0.26200",
+    "osVersion": "Windows 11 Home",
+    "architecture": "x64",
+    "node": "v24.18.0",
+    "nodeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+    "browsers": [
+      {
+        "name": "playwright-chromium",
+        "engine": "chromium",
+        "version": "149.0.7827.55",
+        "available": true,
+        "launchOptions": {}
+      },
+      {
+        "name": "google-chrome",
+        "engine": "chromium",
+        "version": "150.0.7871.187",
+        "available": true,
+        "launchOptions": {
+          "channel": "chrome"
+        }
+      },
+      {
+        "name": "microsoft-edge",
+        "engine": "chromium",
+        "version": "150.0.4078.105",
+        "available": true,
+        "launchOptions": {
+          "channel": "msedge"
+        }
+      }
+    ],
+    "tools": [
+      {
+        "name": "playwright",
+        "version": "1.61.1"
+      },
+      {
+        "name": "axe-core",
+        "version": "4.12.1"
+      },
+      {
+        "name": "sharp",
+        "version": "0.35.3"
+      }
+    ]
+  },
+  "protections": {
+    "productImplementationAuthorized": false,
+    "productSourceChangesExpected": 0,
+    "protectedVisualChangesExpected": 0,
+    "cssColorChangesExpected": 0,
+    "domAriaChangesExpected": 0,
+    "baselineWritesExpected": 0,
+    "packageLockfileChangesExpected": 0,
+    "paidCallsExpected": 0
+  }
+}

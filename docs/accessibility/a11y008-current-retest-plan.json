@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "phase": "5D-1",
+  "generatedAt": "2026-08-07T11:21:16.168Z",
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "issue": {
+    "id": "A11Y-008",
+    "title": "Canon in-progress status text fails minimum contrast",
+    "wcagCriteria": [
+      "1.4.3"
+    ],
+    "formerProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+    "implementationAuthorized": false
+  },
+  "elements": [
+    {
+      "id": "D02",
+      "itemId": "canon-map-D02",
+      "selector": "[data-canon-item=\"canon-map-D02\"] .canon-status.in-progress",
+      "expectedText": "In Progress"
+    },
+    {
+      "id": "D05",
+      "itemId": "canon-map-D05",
+      "selector": "[data-canon-item=\"canon-map-D05\"] .canon-status.in-progress",
+      "expectedText": "In Progress"
+    }
+  ],
+  "runtimes": [
+    {
+      "id": "next",
+      "label": "Next canonical",
+      "route": "/canon",
+      "health": "/api/health"
+    },
+    {
+      "id": "static",
+      "label": "Static rollback",
+      "route": "/index.html#canon",
+      "health": "/index.html"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "browsers": [
+    {
+      "name": "playwright-chromium",
+      "engine": "chromium",
+      "version": "149.0.7827.55",
+      "available": true,
+      "launchOptions": {}
+    },
+    {
+      "name": "google-chrome",
+      "engine": "chromium",
+      "version": "150.0.7871.187",
+      "available": true,
+      "launchOptions": {
+        "channel": "chrome"
+      }
+    },
+    {
+      "name": "microsoft-edge",
+      "engine": "chromium",
+      "version": "150.0.4078.105",
+      "available": true,
+      "launchOptions": {
+        "channel": "msedge"
+      }
+    }
+  ],
+  "zooms": [
+    {
+      "percent": 100,
+      "deviceScaleFactor": 1,
+      "cssViewportDivisor": 1
+    },
+    {
+      "percent": 200,
+      "deviceScaleFactor": 2,
+      "cssViewportDivisor": 2,
+      "mechanism": "Chromium device-metrics equivalent of 200% browser zoom: half CSS viewport with doubled device scale factor"
+    }
+  ],
+  "applicableStates": [
+    {
+      "id": "default",
+      "activation": "none"
+    },
+    {
+      "id": "hover",
+      "activation": "hover the exact status label"
+    },
+    {
+      "id": "media-selected",
+      "activation": "activate the corresponding card media stage, then measure the same status label"
+    },
+    {
+      "id": "reduced-motion",
+      "activation": "fresh context with prefers-reduced-motion: reduce"
+    },
+    {
+      "id": "forced-colors",
+      "activation": "fresh context with forced-colors: active"
+    }
+  ],
+  "notApplicableStates": [
+    {
+      "id": "keyboard-focus",
+      "reason": "D02/D05 status labels are non-focusable status text, not controls"
+    },
+    {
+      "id": "pointer-active",
+      "reason": "D02/D05 status labels have no pointer activation behavior"
+    },
+    {
+      "id": "keyboard-active",
+      "reason": "D02/D05 status labels have no keyboard activation behavior"
+    },
+    {
+      "id": "selected-current",
+      "reason": "D02/D05 status labels expose no selected/current state"
+    },
+    {
+      "id": "disabled",
+      "reason": "D02/D05 status labels do not support disabled state"
+    },
+    {
+      "id": "overlay",
+      "reason": "When no overlay intersects, the state is absent; when the unrelated global service-status notice occludes the label at extreme responsive zoom, the label is hidden rather than rendered against a changed contrast background. Geometry and topmost-element evidence are recorded, then the notice is suppressed only in the harness before underlying contrast states are measured."
+    }
+  ],
+  "deterministicConditions": {
+    "time": "1786032000000",
+    "random": 0.5,
+    "network": "loopback and data URLs only; external requests blocked",
+    "animations": "paused in test harness only",
+    "fonts": "document.fonts.ready required",
+    "images": "all document images complete or explicit load/error resolution required",
+    "colorScheme": "light",
+    "locale": "en-US",
+    "browserExtensions": "none",
+    "screenshots": "temporary element crops only; no baseline writes"
+  },
+  "measurement": {
+    "criterion": "WCAG 2.2 1.4.3 text contrast",
+    "textClassification": "normal text unless measured font size/weight establishes large text",
+    "normalTextThreshold": 4.5,
+    "largeTextThreshold": 3,
+    "requiredThreshold": 4.5,
+    "computedPair": "computed foreground composited over the effective ancestor background",
+    "renderedSampling": "dominant rendered background plus foreground pixels closest to the computed foreground; antialias edge pixels excluded",
+    "nonuniformBackground": "record multiple background samples and the lowest reliable foreground/background ratio",
+    "axe": "scoped color-contrast rule on each exact element"
+  },
+  "environmentMatrix": {
+    "browserCount": 3,
+    "runtimeCount": 2,
+    "viewportCount": 6,
+    "zoomCount": 2,
+    "applicableStatesPerElement": 5,
+    "notApplicableStatesPerElement": 6,
+    "elementCount": 2,
+    "maximumApplicableMeasurementCells": 720,
+    "minimumNotApplicableCells": 864,
+    "dynamicApplicabilityRule": "media-selected becomes NOT_APPLICABLE, with recorded visibility evidence, when the approved responsive composition hides the corresponding media stage; overlay records intersection geometry and remains NOT_APPLICABLE to contrast when an unrelated notice occludes rather than restyles the label",
+    "expectedTotalMatrixCells": 1584
+  },
+  "passRules": [
+    "Every applicable measurement cell has computed ratio >= 4.5:1.",
+    "Every applicable non-forced-colors cell has a reliable rendered sample ratio >= 4.5:1.",
+    "Scoped axe color-contrast failures are zero.",
+    "No unknown state, harness error, or contradictory static/Next evidence exists."
+  ],
+  "failRules": [
+    "Any reliable current computed or rendered sample below 4.5:1 is REPRODUCED_CURRENT.",
+    "A missing essential browser/environment, unknown measurement, harness error, or contradictory evidence is BLOCKED_INCONCLUSIVE."
+  ],
+  "reopenCriteria": [
+    "A current deterministic run reproduces a contrast ratio below 4.5:1 on D02 or D05.",
+    "The failing route, runtime, state, viewport, browser/version, zoom, device scale factor, and exact element are captured.",
+    "Actual foreground, effective composited background, image/gradient/backdrop interaction, and pixel coordinates are recorded.",
+    "The former proposal is revalidated against current source or a new proposal hash is produced.",
+    "A new issue-specific owner approval authorizes the exact current proposal before implementation."
+  ],
+  "explicitNonConclusions": [
+    "FIXED",
+    "FALSE_POSITIVE",
+    "complete WCAG 2.2 AA conformance"
+  ],
+  "rollback": "git revert the Phase 5D-1 test/evidence and documentation commits; product source remains untouched"
+}
