@@ -17,7 +17,7 @@
 | 1.3.5 Identify Input Purpose | AA | Partial | Input inventory; autocomplete review remains. |
 | 1.4.1 Use of Color | A | Manual required | Forced-colors evidence; meaning review remains. |
 | 1.4.2 Audio Control | A | Partial | No autoplay loaded; third-party player not verified. |
-| 1.4.3 Contrast (Minimum) | AA | **Needs more evidence** | A11Y-008 does not reproduce on actual Canon; A11Y-009 manual contrast review remains incomplete. |
+| 1.4.3 Contrast (Minimum) | AA | **Needs more evidence** | A11Y-008 exact forced-colors gate is dispositioned as `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE`; product remediation is not required. A11Y-009 manual contrast review remains APPROVED, NOT_TESTED. |
 | 1.4.4 Resize Text | AA | Partial | 200%-layout evidence; true browser zoom/manual readability remains. |
 | 1.4.5 Images of Text | AA | Manual required | Artwork assessment remains. |
 | 1.4.10 Reflow | AA | Automation support | 23 routes at 320 CSS pixels; zero overflow. |
@@ -71,3 +71,7 @@ The matrix remains a non-conformance evidence matrix. Phase 5C-3A closes the sco
 A11Y-008 completed its deterministic 1,584-cell retest with **BLOCKED_INCONCLUSIVE** outcome. Minimum computed and reliable rendered ratios are 6.9851:1 and 5.5411:1, but forced-colors axe evidence conflicts with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains **NEEDS_MORE_EVIDENCE**; product changes, manual task completions, and new owner decisions are zero.
 
 Complete WCAG 2.2 AA conformance remains **NOT CLAIMED**.
+
+## Phase 5D-2 owner disposition (2026-08-07T17:34:28.3389873-04:00)
+
+The exact A11Y-008 computed/rendered forced-colors evidence is accepted under decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001` and status `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE`. This is not a global axe exception: raw axe output remains in the bound evidence, and the issue-specific verifier fails closed outside the exact hashes and scope. Criterion 1.4.3 remains **NEEDS_MORE_EVIDENCE** because the separately approved A11Y-009 manual complex-background review is **NOT_TESTED**. Complete WCAG 2.2 AA conformance remains **NOT CLAIMED**.

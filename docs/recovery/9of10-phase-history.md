@@ -309,3 +309,7 @@ The full 1,584-cell deterministic retest completed without harness errors or pro
 ## Phase 5D-2 — 2026-08-07T18:56:55.689Z
 
 A11Y-008 forced-colors and rendered-contrast evidence reconciled as Outcome C. Six forced-color axe/rendered cells, 30 static repeats, and 20 required D05 reduced-motion repeats completed with zero required unknowns. Product remediation was not authorized or performed. Gate disposition waits for owner decision on proposal `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.
+
+## A11Y-008 owner gate disposition — 2026-08-07T17:34:28.3389873-04:00
+
+Status: **PASS**. Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001` accepts the exact bound computed/rendered forced-colors evidence under `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE`. The proposal, evidence-manifest, and measurement hashes passed. Product remediation is not required; raw axe evidence remains preserved and unsuppressed; product/protected visual/CSS/DOM/ARIA/baseline/package changes and paid calls are zero. Phase 5 is **WAITING_OWNER_MANUAL_EVIDENCE**. Manual tasks remain **APPROVED, NOT_TESTED**; WCAG 2.2 AA is not claimed; Phase 6A and the manual evidence task were not started.

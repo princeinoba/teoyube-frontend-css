@@ -159,7 +159,7 @@
     {
       "id": "A11Y-008",
       "severity": "high",
-      "classification": "EVIDENCE_CLOSED_TOOLING_CONFLICT_CONFIRMED_WAITING_OWNER_GATE_DISPOSITION",
+      "classification": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
       "routes": [
         "/canon"
       ],
@@ -168,14 +168,14 @@
       ],
       "title": "Canon in-progress status text fails minimum contrast",
       "evidence": "axe color-contrast on D02 and D05 status labels",
-      "ownerDecisionRequired": true,
+      "ownerDecisionRequired": false,
       "phase5bCandidate": true,
       "originalClassification": "CONFIRMED_PRODUCT_DEFECT",
       "phase5c3Status": "SUPERSEDED_FOR_EXECUTION",
       "phase5c3Evidence": "42 focused cells (24 Next, 18 static) across six viewports measured D02/D05 at 6.9851:1 against a 4.5:1 threshold with zero scoped axe contrast failures. Historical issue and proposal are preserved; this is not a FIXED, PASS, or FALSE_POSITIVE classification.",
       "proposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
       "phase5c3aStatus": "EXCLUDED",
-      "currentExecutionDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "currentExecutionDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
       "retestPlan": "docs/accessibility/a11y-008-current-evidence-retest-plan.json",
       "phase5c3aProductChanges": 0,
       "phase5c3aEvidence": "Excluded from Phase 5C-3A. Focused evidence remains 6.9851:1 with zero scoped axe failures; the broader current audit still reports two known Canon contrast occurrences. Status remains NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE pending the approved retest plan.",
@@ -184,14 +184,23 @@
       "phase5d1Report": "docs/accessibility/a11y008-current-retest-report.json",
       "phase5d1ProductChanges": 0,
       "implementationRequiredNow": false,
-      "nextGate": "ACCESSIBILITY_GATE_DISPOSITION_OWNER_DECISION",
-      "phase5d2Status": "OUTCOME_C_TOOLING_CONFLICT_CONFIRMED",
+      "nextGate": "MANUAL_ACCESSIBILITY_EVIDENCE_SEPARATE_TASK",
+      "phase5d2Status": "PASS",
       "phase5d2Evidence": "Six forced-colors browser/selector cells reconcile axe 4.12.1 authored #fffdf4/#ffffff output against computed and rendered black/white at 21:1. Thirty static forced-colors captures are 30/30 reliable. Playwright Chromium D05 reduced-motion is 10/10 Next and 10/10 static at 6.9851:1. All seven former unknowns are resolved; harness errors are zero.",
       "phase5d2Report": "docs/recovery/9of10-phase-5d2-a11y008-reconciliation-report.json",
       "phase5d2EvidenceCommit": "50e89e362741aca81661f68dcb26d9cc1709bf82",
       "phase5d2ProductChanges": 0,
       "gateDispositionProposal": "docs/accessibility/a11y008-gate-disposition-proposal.json",
-      "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d"
+      "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
+      "gateDispositionStatus": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+      "gateDispositionDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+      "productRemediation": "NOT_REQUIRED",
+      "productChangesAuthorized": 0,
+      "rawAxeResultPreserved": true,
+      "axeSuppressed": false,
+      "historicalSamplerRatio": 6.7731,
+      "currentSameContextPairedRatio": 6.9851,
+      "gateDispositionReport": "docs/accessibility/a11y008-gate-disposition-report.json"
     },
     {
       "id": "A11Y-009",
@@ -254,5 +263,5 @@
   ],
   "fixedIssueCount": 7,
   "openConfirmedIssueCount": 0,
-  "needsMoreEvidenceIssueCount": 1
+  "needsMoreEvidenceIssueCount": 0
 }

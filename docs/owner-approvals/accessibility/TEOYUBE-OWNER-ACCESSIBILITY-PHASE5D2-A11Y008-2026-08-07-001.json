@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+  "decision": "APPROVED",
+  "approvedBy": "Prince Okiemute Inoba \u2014 Teoyube Project Owner",
+  "approvedAt": "2026-08-07T17:34:28.3389873-04:00",
+  "workspace": "C:\\Users\\royce\\Downloads\\Teoyube-Recovery-Clean-LF",
+  "branch": "recovery/visual-source-of-truth",
+  "evidenceStartingCommit": "212e18bcf91bb582935b70378e3614e1e51bbcae",
+  "evidenceCommit": "50e89e362741aca81661f68dcb26d9cc1709bf82",
+  "decisionStartingCommit": "fe02706181bace6f29a320d0d64510c00a0c3556",
+  "scope": "Approve only the exact A11Y-008 forced-colors accessibility-gate disposition bound to the declared proposal and evidence hashes.",
+  "binding": {
+    "issueId": "A11Y-008",
+    "proposal": {
+      "path": "docs/accessibility/a11y008-gate-disposition-proposal.json",
+      "payloadSha256": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d"
+    },
+    "evidenceManifest": {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/manifest.json",
+      "sha256": "88c0da1ac90bd8a0c0ce80cf321c1ab64baa273401aa5da20566a2c3a9e26247"
+    },
+    "measurement": {
+      "path": "docs/accessibility/a11y008-phase5d2-measurements.json",
+      "sha256": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a"
+    }
+  },
+  "gateDisposition": {
+    "issueId": "A11Y-008",
+    "status": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+    "policy": "A11Y008_EXACT_FORCED_COLORS_RENDERED_EVIDENCE_POLICY",
+    "forcedColorsToolConflict": "CONFIRMED",
+    "computedRenderedEvidence": "ACCEPTED_FOR_THE_EXACT_BOUND_GATE",
+    "productRemediation": "NOT_REQUIRED_ON_THE_CURRENT_BOUND_EVIDENCE",
+    "productChangesAuthorized": 0,
+    "generalAxeSuppression": false,
+    "rawAxeResultPreserved": true
+  },
+  "acceptedEvidence": {
+    "forcedColorsCellsReconciled": 6,
+    "staticForcedColorsReliable": "30/30 at 21:1",
+    "axeAuthoredPair": "#fffdf4/#ffffff (~1.01:1)",
+    "computedRenderedForcedColorsPair": "#000000/#ffffff (21:1)",
+    "nextD05ReducedMotion": "10/10 at 6.9851:1",
+    "staticD05ReducedMotion": "10/10 at 6.9851:1",
+    "historicalSamplerRatioPreserved": 6.7731,
+    "currentSameContextPairedRatio": 6.9851,
+    "historicalUnknownsResolved": 7,
+    "unknownRequiredCells": 0,
+    "harnessErrors": 0
+  },
+  "authorization": {
+    "verifier": "Issue-specific reconciliation only; exact issue, hashes, routes, selectors, states, runtimes, viewports, threshold, zero-error, and zero-unknown bindings are mandatory.",
+    "manualEvidenceTasks": "APPROVED_NOT_TESTED",
+    "manualEvidenceStarted": false,
+    "wcag22AaConformanceClaimed": false,
+    "phase6aStarted": false
+  },
+  "failClosedConditions": [
+    "Any bound hash changes.",
+    "The issue scope expands or another issue attempts to reuse the disposition.",
+    "Forced colors is not active in a forced-colors cell.",
+    "Computed or rendered contrast is below the applicable threshold.",
+    "A required rendered sample is unreliable.",
+    "Evidence is missing, unknown, contradictory, or contains a harness error."
+  ],
+  "prohibitedActions": [
+    "global axe color-contrast suppression",
+    "forced-colors wildcard suppression",
+    "route-wide or site-wide axe exclusion",
+    "lower WCAG contrast threshold",
+    "generalize the issue-specific authored-color classification",
+    "product remediation",
+    "visual or DOM baseline update",
+    "manual accessibility task completion",
+    "WCAG 2.2 AA conformance claim",
+    "Phase 6A or another implementation phase"
+  ],
+  "changeCounts": {
+    "productSource": 0,
+    "protectedVisual": 0,
+    "css": 0,
+    "dom": 0,
+    "aria": 0,
+    "baseline": 0,
+    "packageLockfile": 0,
+    "paidCalls": 0
+  }
+}

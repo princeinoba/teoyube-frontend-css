@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+  "recordedAt": "2026-08-07T17:34:28.3389873-04:00",
+  "issueId": "A11Y-008",
+  "status": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+  "phase5d2": "PASS",
+  "forcedColorsToolConflict": "CONFIRMED",
+  "productRemediation": "NOT_REQUIRED",
+  "computedRenderedEvidence": "ACCEPTED_FOR_THE_EXACT_BOUND_GATE",
+  "generalAxeSuppression": false,
+  "rawAxeResultPreserved": true,
+  "bindings": {
+    "proposalPayloadSha256": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
+    "evidenceManifestSha256": "88c0da1ac90bd8a0c0ce80cf321c1ab64baa273401aa5da20566a2c3a9e26247",
+    "measurementSha256": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a"
+  },
+  "measurements": {
+    "forcedColorsCells": 6,
+    "staticForcedColorsReliability": "30/30",
+    "forcedColorsRatio": 21,
+    "d05ReducedMotionNext": "10/10 at 6.9851:1",
+    "d05ReducedMotionStatic": "10/10 at 6.9851:1",
+    "historicalSamplerRatioPreserved": 6.7731,
+    "currentSameContextPairedRatio": 6.9851,
+    "unknownRequiredCells": 0,
+    "harnessErrors": 0
+  },
+  "program": {
+    "phase5": "WAITING_OWNER_MANUAL_EVIDENCE",
+    "manualAccessibilityEvidence": "APPROVED_NOT_TESTED",
+    "wcag22AaConformance": "NOT_CLAIMED",
+    "phase2a": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA",
+    "nextGate": "MANUAL_ACCESSIBILITY_EVIDENCE_SEPARATE_TASK"
+  },
+  "changes": {
+    "productSource": 0,
+    "protectedVisual": 0,
+    "css": 0,
+    "dom": 0,
+    "aria": 0,
+    "baseline": 0,
+    "packageLockfile": 0,
+    "paidCalls": 0
+  },
+  "verification": {
+    "proposalDecisionHashVerifier": "PASS",
+    "focusedA11y008Tests": "PASS_15_OF_15",
+    "completeUnitCoverage": "PASS_SEGMENTED_422_PASSED_1_SKIPPED",
+    "monolithicUnitQualification": "UNCHANGED_PHASE5C2_CONTRACT_EXCEEDED_ITS_EXPLICIT_20_SECOND_TIMEOUT_UNDER_AGGREGATE_LOAD_AND_PASSED_3_OF_3_IN_ISOLATION",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "releaseSecurityGate": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "fullDependencyAudit": "BLOCKED_1_HIGH_DEVELOPMENT_ONLY_JS_YAML",
+    "productionDependencyAudit": "PASS_0_VULNERABILITIES",
+    "recovery": "PASS",
+    "protectedVisual": "PASS_72_SCREENSHOTS_12_DOM_SNAPSHOTS",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK_RETAINED",
+    "repositoryOwnedProcessesAndListeners": "PASS_0"
+  }
+}

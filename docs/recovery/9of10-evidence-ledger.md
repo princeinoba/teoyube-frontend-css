@@ -328,3 +328,20 @@ Phase 2A and Gate C-Preview remain BLOCKED; Phase 3 remains WAITING_OWNER; Phase
 - Evidence commit: `50e89e362741aca81661f68dcb26d9cc1709bf82`
 
 Outcome C is supported by six reconciled axe/forced-color cells, 30/30 reliable static captures at 21:1, and D05 reduced-motion 10/10 Next plus 10/10 static at 6.9851:1. Seven former unknowns are resolved. Gate proposal hash: `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`. Product, protected visual, CSS/DOM/ARIA, baseline, package/lockfile, paid-call, and participant changes are zero.
+
+## A11Y-008 owner gate disposition
+
+| Evidence | Result |
+| --- | --- |
+| Decision | `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001` |
+| Proposal / manifest / measurement hashes | **PASS / PASS / PASS** |
+| Exact status | `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE` |
+| Forced-colors conflict | **CONFIRMED**; raw axe result preserved; no general suppression |
+| Computed/rendered evidence | **ACCEPTED FOR THE EXACT BOUND GATE** |
+| Product remediation | **NOT REQUIRED** |
+| Historical/current paired evidence | 6.7731:1 preserved historically; current same-context 6.9851:1 |
+| Phase 5D-2 / Phase 5 | **PASS / WAITING_OWNER_MANUAL_EVIDENCE** |
+| Manual evidence / WCAG 2.2 AA | **APPROVED, NOT_TESTED / NOT CLAIMED** |
+| Product/protected/CSS/DOM/ARIA/baseline/package/paid calls | **0 / 0 / 0 / 0 / 0 / 0 / 0 / 0** |
+
+The next accessibility gate is the manual evidence program in a separate task. Phase 2A remains BLOCKED, Phase 3 WAITING_OWNER, and Phase 4 WAITING_OWNER_SESSION_DATA. Phase 6A was not started.

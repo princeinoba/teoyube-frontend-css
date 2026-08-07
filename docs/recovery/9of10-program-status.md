@@ -33,7 +33,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
 | 4 — Real-user pilot | **WAITING_OWNER_SESSION_DATA** | Phase 4A/4B/4C PASS; recruitment authorized; research collection remains disabled; 0 participants, sessions, or participant records; Phase 4D NOT READY. |
-| 5 - Accessibility remediation | **WAITING_EVIDENCE** | Phase 5A, Phase 5B, Phase 5C-1, Phase 5C-2, and Phase 5C-3A PASS; Phase 5D-1 BLOCKED_INCONCLUSIVE; exact A11Y-008 missing evidence required. |
+| 5 - Accessibility remediation | **WAITING_OWNER_MANUAL_EVIDENCE** | Phase 5D-2 PASS; exact A11Y-008 disposition approved with no product remediation; manual accessibility evidence remains APPROVED, NOT_TESTED. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
@@ -122,3 +122,18 @@ Phase 5 is **WAITING_EVIDENCE**. Phase 3 remains **WAITING_OWNER** and Phase 4 r
 - Reduced motion D05: Next 10/10 and static 10/10 at 6.9851:1
 - Product changes: 0
 - Gate proposal hash: `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`
+
+## A11Y-008 owner gate disposition (2026-08-07T17:34:28.3389873-04:00)
+
+- Decision: `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001`
+- Phase 5D-2: **PASS**
+- A11Y-008: `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE`
+- Product remediation: **NOT REQUIRED**
+- General axe suppression: **NO**; raw axe result preserved: **YES**
+- Phase 5: **WAITING_OWNER_MANUAL_EVIDENCE**
+- Manual evidence: **APPROVED, NOT_TESTED**
+- Complete WCAG 2.2 AA conformance: **NOT CLAIMED**
+- Phase 2A: **BLOCKED**; Phase 3: **WAITING_OWNER**; Phase 4: **WAITING_OWNER_SESSION_DATA**
+- Next gate: **MANUAL ACCESSIBILITY EVIDENCE — SEPARATE TASK**
+
+No product, protected visual, CSS, DOM, ARIA, baseline, package/lockfile, or paid-provider change was made. Phase 6A and the manual evidence program were not started.

@@ -1,6 +1,6 @@
 # Accessibility issue register
 
-Phase 5A registered 11 items: eight confirmed product/accessibility defects or deltas and three manual evidence gaps. Phase 5C-1 fixed A11Y-001, A11Y-002, and A11Y-004. Phase 5C-2 fixed A11Y-003, A11Y-005, and A11Y-006. One current needs-more-evidence issue and all three manual evidence gaps remain open.
+Phase 5A registered 11 items: eight confirmed product/accessibility defects or deltas and three manual evidence gaps. Phase 5C-1 fixed A11Y-001, A11Y-002, and A11Y-004. Phase 5C-2 fixed A11Y-003, A11Y-005, and A11Y-006. The exact A11Y-008 gate disposition is approved; all three manual evidence gaps remain open and untested.
 
 | ID | Severity | Classification | Route(s) | Summary | WCAG | Current status |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -11,7 +11,7 @@ Phase 5A registered 11 items: eight confirmed product/accessibility defects or d
 | A11Y-005 | High | Confirmed name defect | Lexicon, Embedded Videos, Tables | Three search inputs lacked durable programmatic names | 2.4.6, 3.3.2, 4.1.2 | **FIXED in 5C-2** |
 | A11Y-006 | High | Confirmed defect | Testimony | Milestones scroll region lacked keyboard access | 2.1.1 | **FIXED in 5C-2** |
 | A11Y-007 | High | **FIXED** | Today, Canon, Book, Explore | Target-size failures | 2.5.8 | Phase 5C-3A PASS: 570/570 scoped targets meet 24×24; behavior preserved |
-| A11Y-008 | High | Needs more evidence | Canon | Current contrast evidence is contradictory in forced-colors rendering | 1.4.3 | BLOCKED_INCONCLUSIVE / NEEDS_MORE_EVIDENCE; no source change |
+| A11Y-008 | High | `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE` | Canon | Exact bound forced-colors tool conflict | 1.4.3 | Phase 5D-2 PASS; product remediation NOT REQUIRED; raw axe preserved |
 | A11Y-009 | Medium | Manual validation | All retained routes | Complex-background contrast incomplete | 1.4.1, 1.4.3, 1.4.11 | APPROVED, NOT_TESTED |
 | A11Y-010 | Medium | Manual validation | All retained routes | Focus visibility/obscuration needs human review | 2.4.7, 2.4.11 | APPROVED, NOT_TESTED |
 | A11Y-011 | High | Manual AT/media validation | Media routes | Captions, alternatives, third-party controls, and spoken output unverified | 1.2.x, 2.1.1, 4.1.3 | APPROVED, NOT_TESTED |
@@ -43,3 +43,7 @@ A11Y-008 completed its deterministic 1,584-cell retest with **BLOCKED_INCONCLUSI
 ## Phase 5D-2 A11Y-008 update
 
 A11Y-008 evidence is closed as **forced-colors tool conflict confirmed**, pending an owner accessibility-gate disposition decision. Six reconciled forced-colors cells render at 21:1, 30/30 static repeats are reliable, and D05 reduced-motion is 10/10 Next plus 10/10 static at 6.9851:1. Product remediation was not performed. Proposal hash: `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.
+
+## A11Y-008 owner gate disposition (2026-08-07T17:34:28.3389873-04:00)
+
+Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001` accepts the computed/rendered evidence for the exact bound forced-colors gate. Status is `C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE`; product remediation is **NOT REQUIRED**. Raw axe evidence remains preserved and unsuppressed. The historical 6.7731:1 sample remains historical evidence; 6.9851:1 is the current same-context paired measurement. The next gate is the separately approved manual accessibility evidence program, which remains **APPROVED, NOT_TESTED**.

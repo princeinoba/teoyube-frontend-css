@@ -107,7 +107,7 @@
       "level": "AA",
       "title": "Contrast (Minimum)",
       "status": "NEEDS_MORE_EVIDENCE",
-      "evidence": "Phase 5D-1 completed 1,584 A11Y-008 cells. Computed and reliable rendered ratios pass (minimum 6.9851:1 and 5.5411:1), but 144 forced-colors axe findings conflict with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next cell contradicts. Outcome BLOCKED_INCONCLUSIVE; A11Y-009 manual contrast review remains incomplete."
+      "evidence": "A11Y-008 is dispositioned as C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE under TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001; exact bound forced-colors computed/rendered evidence is accepted and product remediation is not required. A11Y-009 manual complex-background contrast review remains APPROVED, NOT_TESTED, so conformance is not claimed."
     },
     {
       "id": "1.4.4",
@@ -397,5 +397,5 @@
       "evidence": "live-region inventory captured; spoken announcement behavior not tested with an observable AT"
     }
   ],
-  "phase": "5D-1_BLOCKED_INCONCLUSIVE"
+  "phase": "5D-2_PASS_WAITING_OWNER_MANUAL_EVIDENCE"
 }

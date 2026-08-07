@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-07T18:56:55.689Z",
+  "updatedAt": "2026-08-07T17:34:28.3389873-04:00",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -269,6 +269,33 @@
         "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
         "newOwnerDecisionRequired": true
       }
+    },
+    {
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+      "scope": "Exact A11Y-008 forced-colors gate disposition only, bound to the proposal, manifest, and measurement hashes.",
+      "status": "APPROVED",
+      "approvedAt": "2026-08-07T17:34:28.3389873-04:00",
+      "owner": "Prince Okiemute Inoba — Teoyube Project Owner",
+      "source": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001.json",
+      "binding": {
+        "issueId": "A11Y-008",
+        "proposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
+        "manifestHash": "88c0da1ac90bd8a0c0ce80cf321c1ab64baa273401aa5da20566a2c3a9e26247",
+        "measurementHash": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a"
+      },
+      "issueStatus": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+      "productRemediation": "NOT_REQUIRED",
+      "productChangesAuthorized": 0,
+      "rawAxeResultPreserved": true,
+      "generalAxeSuppression": false,
+      "manualAccessibilityEvidence": "APPROVED_NOT_TESTED",
+      "wcag22AaConformance": "NOT_CLAIMED",
+      "limitations": [
+        "Exact A11Y-008 forced-colors scope only; no reuse by another issue.",
+        "No global axe suppression, wildcard exclusion, threshold reduction, or general authored-color exception.",
+        "No product, protected visual, CSS, DOM, ARIA, baseline, package, or lockfile change.",
+        "No manual task completion, WCAG conformance claim, Phase 6A, or later implementation phase."
+      ]
     }
   ],
   "pendingDecisionGroups": [

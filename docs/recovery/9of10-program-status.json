@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE5D2_A11Y008_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -29,7 +29,8 @@
     "REJECTED",
     "SUPERSEDED",
     "NOT_READY",
-    "WAITING_OWNER_SESSION_DATA"
+    "WAITING_OWNER_SESSION_DATA",
+    "WAITING_OWNER_MANUAL_EVIDENCE"
   ],
   "phases": [
     {
@@ -262,12 +263,12 @@
     {
       "phaseId": "5",
       "name": "Accessibility remediation",
-      "status": "WAITING_OWNER",
+      "status": "WAITING_OWNER_MANUAL_EVIDENCE",
       "entryGates": [
         "Phase 1 PASS"
       ],
       "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
-      "currentCommit": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE5D2_A11Y008_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "current accessibility audit: COMPLETE",
         "issue-specific owner review and decisions: COMPLETE",
@@ -303,24 +304,26 @@
         "Phase 5D-1 product, CSS/color, DOM/ARIA, baseline, package/lockfile, paid-call, participant, and manual-task changes: zero.",
         "Phase 5D-2: six axe/forced-color cells reconcile axe #fffdf4/#ffffff against computed/rendered black/white at 21:1; raw axe nodes preserved; no suppression.",
         "Phase 5D-2 static forced colors: 30/30 reliable captures across Chromium, Chrome, and Edge; all ratios 21:1; zero unknowns.",
-        "Phase 5D-2 reduced motion: D05 10/10 Next and 10/10 static at 6.9851:1; all seven Phase 5D-1 unknowns resolved; Outcome C requires owner gate-disposition decision."
+        "Phase 5D-2 reduced motion: D05 10/10 Next and 10/10 static at 6.9851:1; all seven Phase 5D-1 unknowns resolved; Outcome C requires owner gate-disposition decision.",
+        "Owner decision TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001 accepts the exact bound A11Y-008 computed/rendered forced-colors evidence under C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE; raw axe evidence remains preserved and unsuppressed.",
+        "A11Y-008 product remediation NOT REQUIRED; product/protected visual/CSS/DOM/ARIA/baseline/package changes 0."
       ],
       "currentBlockers": [
         "All approved manual accessibility tasks remain NOT_TESTED",
         "Complete WCAG 2.2 AA conformance remains unproved",
-        "Gate C-Preview remains blocked by nine inherited broad parity failures, incomplete current 216-cell evidence, the 1,416,075/948,538 CSS budget, stale release evidence, and a new separate full-tree js-yaml high advisory.",
-        "A11Y-008 evidence is closed as Outcome C, but the exact accessibility-gate disposition proposal 63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d requires owner decision; axe remains unsuppressed."
+        "Gate C-Preview remains blocked by nine inherited broad parity failures, incomplete current 216-cell evidence, the 1,416,075/948,538 CSS budget, stale release evidence, and a new separate full-tree js-yaml high advisory."
       ],
       "ownerDecisionIds": [
         "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
-        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001"
+        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+        "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001"
       ],
       "externalDependencies": [
         "current official accessibility standards",
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Owner decides the exact A11Y-008 accessibility-gate disposition proposal hash 63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d. No product fix is proposed or authorized.",
+      "nextReviewTrigger": "Execute the separately approved manual accessibility evidence program in a separate task; do not claim WCAG 2.2 AA before genuine manual/AT results.",
       "subphases": [
         {
           "subphaseId": "5A",
@@ -332,7 +335,7 @@
         },
         {
           "subphaseId": "5C",
-          "status": "PARTIAL_WAITING_EVIDENCE"
+          "status": "PARTIAL_WAITING_MANUAL_EVIDENCE"
         },
         {
           "subphaseId": "5C-1",
@@ -373,7 +376,7 @@
         {
           "subphaseId": "5D-2",
           "evidenceCommit": "50e89e362741aca81661f68dcb26d9cc1709bf82",
-          "status": "PASS_EVIDENCE_OUTCOME_C_WAITING_OWNER_GATE_DISPOSITION",
+          "status": "PASS",
           "issueIds": [
             "A11Y-008"
           ],
@@ -382,7 +385,13 @@
           "productImplementation": false,
           "outcome": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
           "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
-          "finalReportCommit": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF"
+          "finalReportCommit": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+          "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+          "disposition": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+          "productRemediation": "NOT_REQUIRED",
+          "productChangesAuthorized": 0,
+          "newOwnerDecisionRequired": false,
+          "manualEvidence": "APPROVED_NOT_TESTED"
         }
       ]
     },
@@ -579,7 +588,7 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "PHASE5D2_A11Y008_GATE_DISPOSITION_OWNER_DECISION",
+  "nextReadyPhase": "MANUAL_ACCESSIBILITY_EVIDENCE_SEPARATE_TASK",
   "otherReadyIndependentSubphases": [
     "6A"
   ],

@@ -23,4 +23,4 @@ Documentation is not risk acceptance. Every material risk remains open until its
 
 ## Phase 5D-2 A11Y-008 residual risk
 
-The rendered contrast evidence passes, but axe 4.12.1 continues to report the authored forced-colors pair. The residual risk is gate interpretation, not a reproduced current rendered failure. Mitigation remains fail-closed: no axe suppression, exact scope only, raw nodes retained, and owner decision required for proposal `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.
+The rendered contrast evidence passes, but axe 4.12.1 continues to report the authored forced-colors pair. Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001` resolves the exact gate interpretation only; it does not erase the raw axe result or generalize beyond A11Y-008. Mitigation is executable and fail-closed: exact issue and hashes, forced colors active, exact scope, reliable samples, ratios at least 4.5:1, zero errors, zero unknowns, no contradiction, and no reuse. Manual/AT evidence and a complete WCAG 2.2 AA claim remain open.

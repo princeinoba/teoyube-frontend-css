@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T18:56:55.689Z",
+  "generatedAt": "2026-08-07T17:34:28.3389873-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -953,6 +953,32 @@
       "paidCalls": 0,
       "participantRecords": 0,
       "axeSuppression": false
+    },
+    {
+      "phase": "5D-2_GATE_DISPOSITION",
+      "status": "PASS",
+      "recordedAt": "2026-08-07T17:34:28.3389873-04:00",
+      "decisionStartingCommit": "fe02706181bace6f29a320d0d64510c00a0c3556",
+      "finalCommit": "FINAL_PHASE5D2_A11Y008_DECISION_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+      "issue": "A11Y-008",
+      "disposition": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+      "proposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
+      "manifestHash": "88c0da1ac90bd8a0c0ce80cf321c1ab64baa273401aa5da20566a2c3a9e26247",
+      "measurementHash": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a",
+      "forcedColorsToolConflict": "CONFIRMED",
+      "computedRenderedEvidence": "ACCEPTED_FOR_THE_EXACT_BOUND_GATE",
+      "productRemediation": "NOT_REQUIRED",
+      "generalAxeSuppression": false,
+      "rawAxeResultPreserved": true,
+      "manualAccessibilityEvidence": "APPROVED_NOT_TESTED",
+      "wcag22AaConformance": "NOT_CLAIMED",
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssDomAriaChanges": 0,
+      "baselineFilesChanged": 0,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0
     }
   ],
   "workspaceAtStart": {
@@ -1111,5 +1137,16 @@
     "ownerApprovedBaselineFilesChanged": 0,
     "productSourceFilesChanged": 0,
     "packageLockFilesChanged": 0
+  },
+  "workspaceAfterA11y008GateDisposition": {
+    "recordedAt": "2026-08-07T17:34:28.3389873-04:00",
+    "branch": "recovery/visual-source-of-truth",
+    "startingCommit": "fe02706181bace6f29a320d0d64510c00a0c3556",
+    "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001",
+    "phase5d2": "PASS",
+    "phase5": "WAITING_OWNER_MANUAL_EVIDENCE",
+    "nextGate": "MANUAL_ACCESSIBILITY_EVIDENCE_SEPARATE_TASK",
+    "manualTasksStarted": 0,
+    "paidCalls": 0
   }
 }
