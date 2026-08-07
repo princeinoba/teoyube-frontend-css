@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T12:30:10.264Z",
+  "generatedAt": "2026-08-07T18:56:55.689Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -921,6 +921,38 @@
       "paidCalls": 0,
       "participantRecords": 0,
       "manualTasksExecuted": 0
+    },
+    {
+      "phase": "5D-2",
+      "status": "PASS_EVIDENCE_OUTCOME_C_WAITING_OWNER_GATE_DISPOSITION",
+      "executedAt": "2026-08-07T18:56:55.689Z",
+      "startingCommit": "212e18bcf91bb582935b70378e3614e1e51bbcae",
+      "evidenceCommit": "50e89e362741aca81661f68dcb26d9cc1709bf82",
+      "finalReportCommit": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "issue": "A11Y-008",
+      "formerProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+      "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
+      "reconciliationCells": 6,
+      "staticForcedColorsCaptures": 30,
+      "staticReliableCaptures": 30,
+      "staticRenderedRatio": 21,
+      "nextD05ReducedMotionCaptures": 10,
+      "staticD05ReducedMotionCaptures": 10,
+      "reducedMotionRenderedRatio": 6.9851,
+      "formerUnknownCellsResolved": 7,
+      "unknownRequiredCells": 0,
+      "harnessErrors": 0,
+      "nativeForcedColors": "NOT_AVAILABLE",
+      "outcome": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssDomAriaChanges": 0,
+      "baselineFilesChanged": 0,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0,
+      "participantRecords": 0,
+      "axeSuppression": false
     }
   ],
   "workspaceAtStart": {
@@ -1063,6 +1095,16 @@
   "workspaceAfterPhase5d1": {
     "branch": "recovery/visual-source-of-truth",
     "commit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "trackedWorktree": "CLEAN_AFTER_COMMIT",
+    "protectedVisualFilesChanged": 0,
+    "immutableBaselineFilesChanged": 0,
+    "ownerApprovedBaselineFilesChanged": 0,
+    "productSourceFilesChanged": 0,
+    "packageLockFilesChanged": 0
+  },
+  "workspaceAfterPhase5d2": {
+    "branch": "recovery/visual-source-of-truth",
+    "commit": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
     "trackedWorktree": "CLEAN_AFTER_COMMIT",
     "protectedVisualFilesChanged": 0,
     "immutableBaselineFilesChanged": 0,

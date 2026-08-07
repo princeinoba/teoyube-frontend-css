@@ -20,3 +20,7 @@
 | 9R-15 | Recruitment begins before operational prerequisites | Owner decision is recorded; operator, separate non-Git contact storage, and local/privacy review remain incomplete | Phase 4C operations | Complete and document all three prerequisites before participant contact; authorization never creates records automatically |
 
 Documentation is not risk acceptance. Every material risk remains open until its exit trigger is evidenced.
+
+## Phase 5D-2 A11Y-008 residual risk
+
+The rendered contrast evidence passes, but axe 4.12.1 continues to report the authored forced-colors pair. The residual risk is gate interpretation, not a reproduced current rendered failure. Mitigation remains fail-closed: no axe suppression, exact scope only, raw nodes retained, and owner decision required for proposal `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.

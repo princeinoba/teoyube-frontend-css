@@ -111,3 +111,14 @@ Phase 5C-3A is **PASS** for exact-hash A11Y-007. The 42-cell focused matrix cove
 A11Y-008 completed its deterministic 1,584-cell retest with **BLOCKED_INCONCLUSIVE** outcome. Minimum computed and reliable rendered ratios are 6.9851:1 and 5.5411:1, but forced-colors axe evidence conflicts with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains **NEEDS_MORE_EVIDENCE**; product changes, manual task completions, and new owner decisions are zero.
 
 Phase 5 is **WAITING_EVIDENCE**. Phase 3 remains **WAITING_OWNER** and Phase 4 remains **WAITING_OWNER_SESSION_DATA**. The next gate is only the exact missing-evidence task.
+
+## Phase 5D-2 update
+
+- Evidence commit: `50e89e362741aca81661f68dcb26d9cc1709bf82`
+
+- Status: **PASS_EVIDENCE_OUTCOME_C / WAITING_OWNER_GATE_DISPOSITION**
+- A11Y-008: evidence closed; forced-colors tool conflict confirmed
+- Static: 30/30 reliable at 21:1
+- Reduced motion D05: Next 10/10 and static 10/10 at 6.9851:1
+- Product changes: 0
+- Gate proposal hash: `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`

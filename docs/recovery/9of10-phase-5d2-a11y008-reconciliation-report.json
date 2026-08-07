@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-07T18:56:55.689Z",
+  "program": {
+    "selectedPhase": "5D-2",
+    "overallStatus": "IN_PROGRESS",
+    "phase5Status": "WAITING_OWNER",
+    "a11y008Disposition": "EVIDENCE_CLOSED_FORCED_COLORS_TOOL_CONFLICT_CONFIRMED_WAITING_OWNER_GATE_DISPOSITION",
+    "productImplementationAuthorized": false,
+    "productRemediationPerformed": false
+  },
+  "repository": {
+    "branch": "recovery/visual-source-of-truth",
+    "startingSha": "212e18bcf91bb582935b70378e3614e1e51bbcae",
+    "evidenceCommit": "50e89e362741aca81661f68dcb26d9cc1709bf82",
+    "finalSha": "FINAL_PHASE5D2_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "tag": "teoyube-9of10-phase5d1-a11y008-start-4c165ea",
+    "worktree": "CLEAN_AFTER_COMMIT",
+    "rollback": "git revert <phase-5d2-evidence-commit>"
+  },
+  "evidence": {
+    "forcedColorsCells": 6,
+    "staticForcedColorsCells": 6,
+    "repeatsPerStaticCell": 5,
+    "staticReliability": "30/30",
+    "axeVersion": "4.12.1",
+    "axeAuthoredPair": "#fffdf4/#ffffff (~1.01:1)",
+    "computedForcedColorPair": "black/white (21:1)",
+    "renderedForcedColorsRatio": 21,
+    "formerUnknownCellsResolved": 7,
+    "nextD05ReducedMotion": "10/10 at 6.9851:1",
+    "staticD05ReducedMotion": "10/10 at 6.9851:1",
+    "nativeForcedColors": "NOT_AVAILABLE",
+    "measurement": {
+      "path": "docs/accessibility/a11y008-phase5d2-measurements.json",
+      "bytes": 3351379,
+      "sha256": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a"
+    },
+    "manifest": {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/manifest.json",
+      "bytes": 97408,
+      "sha256": "88c0da1ac90bd8a0c0ce80cf321c1ab64baa273401aa5da20566a2c3a9e26247"
+    },
+    "gateDispositionProposal": {
+      "path": "docs/accessibility/a11y008-gate-disposition-proposal.json",
+      "bytes": 2656,
+      "sha256": "2836b3f7ffd7ade5265b53f2b992d9d1ae89875093df31d689bddbd591f28c41"
+    },
+    "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d",
+    "retainedScreenshotCount": 350,
+    "retainedScreenshotHashesAggregateSha256": "d6b6c3faf43cb48e295876aa05c8f68f183bb089b96fcb995390f2c1cc554382"
+  },
+  "adjudication": {
+    "outcome": "C",
+    "rationale": "Computed and rendered forced colors are repeatably black/white at 21:1 while axe 4.12.1 reports the non-rendered authored #fffdf4/#ffffff pair; all required static and reduced-motion samples are reliable and all seven former unknowns are resolved.",
+    "newProductFixOwnerApprovalRequired": false,
+    "gateDispositionOwnerDecisionRequired": true
+  },
+  "protection": {
+    "productSourceChanges": 0,
+    "protectedVisualChanges": 0,
+    "cssColorChanges": 0,
+    "domAriaChanges": 0,
+    "baselineWrites": 0,
+    "packageLockfileChanges": 0,
+    "paidCalls": 0,
+    "participantSessions": 0
+  },
+  "verification": {
+    "phase5d2Contracts": "PASS_12_OF_12",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "security": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "recovery": "PASS",
+    "screenshots": "PASS_72_OF_72",
+    "domSnapshots": "PASS_12_OF_12",
+    "tig": "PASS",
+    "scripture": "PASS",
+    "imports": "PASS_1433_FILES_0_MISSING",
+    "architecture": "PASS_180_FILES",
+    "safety": "PASS_64_OF_64",
+    "retrieval": "PASS_33563_CACHE_HITS_0_PROVIDER_CALLS",
+    "listenersAndProcesses": "PASS_0_DEDICATED_LISTENERS_0_OWNED_NODE_PROCESSES",
+    "buildPerformance": "NOT_REQUIRED_EVIDENCE_ONLY"
+  }
+}

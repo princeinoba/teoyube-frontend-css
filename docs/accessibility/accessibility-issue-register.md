@@ -39,3 +39,7 @@ A11Y-007 passed the exact hash-bound remediation: 42 focused cells (24 Next, 18 
 ## Phase 5D-1 A11Y-008 retest (2026-08-07T12:30:10.264Z)
 
 A11Y-008 completed its deterministic 1,584-cell retest with **BLOCKED_INCONCLUSIVE** outcome. Minimum computed and reliable rendered ratios are 6.9851:1 and 5.5411:1, but forced-colors axe evidence conflicts with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains **NEEDS_MORE_EVIDENCE**; product changes, manual task completions, and new owner decisions are zero.
+
+## Phase 5D-2 A11Y-008 update
+
+A11Y-008 evidence is closed as **forced-colors tool conflict confirmed**, pending an owner accessibility-gate disposition decision. Six reconciled forced-colors cells render at 21:1, 30/30 static repeats are reliable, and D05 reduced-motion is 10/10 Next plus 10/10 static at 6.9851:1. Product remediation was not performed. Proposal hash: `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.

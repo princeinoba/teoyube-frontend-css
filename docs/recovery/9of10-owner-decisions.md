@@ -57,3 +57,7 @@ At `2026-08-07T01:11:10.004Z`, exact-hash A11Y-007 completed with status **PASS*
 ## Phase 5D-1 evidence under the split owner decision
 
 At `2026-08-07T12:30:10.264Z`, the authorized A11Y-008 evidence-only retest completed with **BLOCKED_INCONCLUSIVE** outcome. This is execution evidence under `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`, not a new owner decision. Product implementation remains unauthorized; manual tasks executed: 0; no approval was fabricated.
+
+## Pending A11Y-008 gate-disposition decision
+
+Phase 5D-2 closed the missing evidence with Outcome C. No new owner approval has been fabricated. The exact state-aware gate proposal remains **WAITING OWNER DECISION** at hash `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.

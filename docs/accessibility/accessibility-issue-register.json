@@ -159,7 +159,7 @@
     {
       "id": "A11Y-008",
       "severity": "high",
-      "classification": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE",
+      "classification": "EVIDENCE_CLOSED_TOOLING_CONFLICT_CONFIRMED_WAITING_OWNER_GATE_DISPOSITION",
       "routes": [
         "/canon"
       ],
@@ -184,7 +184,14 @@
       "phase5d1Report": "docs/accessibility/a11y008-current-retest-report.json",
       "phase5d1ProductChanges": 0,
       "implementationRequiredNow": false,
-      "nextGate": "EXACT_MISSING_EVIDENCE_TASK"
+      "nextGate": "ACCESSIBILITY_GATE_DISPOSITION_OWNER_DECISION",
+      "phase5d2Status": "OUTCOME_C_TOOLING_CONFLICT_CONFIRMED",
+      "phase5d2Evidence": "Six forced-colors browser/selector cells reconcile axe 4.12.1 authored #fffdf4/#ffffff output against computed and rendered black/white at 21:1. Thirty static forced-colors captures are 30/30 reliable. Playwright Chromium D05 reduced-motion is 10/10 Next and 10/10 static at 6.9851:1. All seven former unknowns are resolved; harness errors are zero.",
+      "phase5d2Report": "docs/recovery/9of10-phase-5d2-a11y008-reconciliation-report.json",
+      "phase5d2EvidenceCommit": "50e89e362741aca81661f68dcb26d9cc1709bf82",
+      "phase5d2ProductChanges": 0,
+      "gateDispositionProposal": "docs/accessibility/a11y008-gate-disposition-proposal.json",
+      "gateDispositionProposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d"
     },
     {
       "id": "A11Y-009",

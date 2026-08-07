@@ -322,3 +322,9 @@ Phase 2A and Gate C-Preview remain BLOCKED; Phase 3 remains WAITING_OWNER; Phase
 - Conflict: 144 forced-colors axe findings disagree with computed and predominantly high-contrast rendered evidence; one static/Next contradiction remains.
 - Protection: 0 product, protected visual, CSS/DOM/ARIA, baseline, package/lock, paid-call, participant, or manual-task changes.
 - Outcome: **BLOCKED_INCONCLUSIVE**; A11Y-008 **NEEDS_MORE_EVIDENCE**.
+
+## Phase 5D-2
+
+- Evidence commit: `50e89e362741aca81661f68dcb26d9cc1709bf82`
+
+Outcome C is supported by six reconciled axe/forced-color cells, 30/30 reliable static captures at 21:1, and D05 reduced-motion 10/10 Next plus 10/10 static at 6.9851:1. Seven former unknowns are resolved. Gate proposal hash: `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`. Product, protected visual, CSS/DOM/ARIA, baseline, package/lockfile, paid-call, and participant changes are zero.

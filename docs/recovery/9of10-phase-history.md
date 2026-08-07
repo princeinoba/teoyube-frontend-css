@@ -305,3 +305,7 @@ Started from: `4c165eada3a04212d32456c96bef3cf8b69613f5`
 Test/evidence commit: `cfc455fcc6bacecf6789d89aaad71606e4a91a27`
 
 The full 1,584-cell deterministic retest completed without harness errors or product changes. Computed and reliable rendered ratios exceed 4.5:1, but forced-colors axe output conflicts with those measurements, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains NEEDS_MORE_EVIDENCE. Phase 5 is WAITING_EVIDENCE; no manual task or later phase began.
+
+## Phase 5D-2 — 2026-08-07T18:56:55.689Z
+
+A11Y-008 forced-colors and rendered-contrast evidence reconciled as Outcome C. Six forced-color axe/rendered cells, 30 static repeats, and 20 required D05 reduced-motion repeats completed with zero required unknowns. Product remediation was not authorized or performed. Gate disposition waits for owner decision on proposal `63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d`.
