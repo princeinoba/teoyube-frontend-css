@@ -5,7 +5,7 @@
   "initializedAt": "2026-08-04T14:24:32.8117021-04:00",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
-  "currentCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "currentCommit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
   "canonicalRuntime": "next",
   "rollbackRuntime": "static-node",
@@ -262,12 +262,12 @@
     {
       "phaseId": "5",
       "name": "Accessibility remediation",
-      "status": "IN_PROGRESS",
+      "status": "WAITING_EVIDENCE",
       "entryGates": [
         "Phase 1 PASS"
       ],
       "startingCommit": "aa33ed65727222d9dd90cdfb875a242d505f22d1",
-      "currentCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "currentCommit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
       "deliverables": [
         "current accessibility audit: COMPLETE",
         "issue-specific owner review and decisions: COMPLETE",
@@ -275,7 +275,8 @@
         "Phase 5C-2 approved high-severity fixes: PASS",
         "manual evidence tasks: APPROVED_NOT_TESTED",
         "Phase 5C-3 original combined execution: SUPERSEDED_FOR_EXECUTION",
-        "Phase 5C-3A A11Y-007-only batch: PASS"
+        "Phase 5C-3A A11Y-007-only batch: PASS",
+        "Phase 5D-1 A11Y-008 deterministic retest: BLOCKED_INCONCLUSIVE"
       ],
       "acceptanceCriteria": [
         "no unresolved critical accessibility issue",
@@ -296,10 +297,12 @@
         "Phase 5C-3A current 311-cell audit: zero harness errors; the scoped A11Y-007 family is closed. Two broader Canon color-contrast occurrences remain under A11Y-008 NEEDS_MORE_EVIDENCE and were not changed.",
         "Recovery and immutable/owner-approved baseline verification PASS after the scoped CSS/TSX remediation; no baseline was replaced.",
         "Performance controller first run at pre-amend evidence commit 9617865: 72/72 cells below 5,000 ms, then nine inherited broad parity failures stopped the controller. Current-commit gate has 0/216 matched cells and remains blocked. CSS 1,416,075 bytes versus 948,538; approved Phase 5C-3A delta 1,119 bytes.",
-        "Approved protected visual delta: styles/pages/today.css, styles/pages/book.css, and styles/pages/canon.css; unapproved protected visual changes zero. ExploreTabs TSX changed only within the approved target contract."
+        "Approved protected visual delta: styles/pages/today.css, styles/pages/book.css, and styles/pages/canon.css; unapproved protected visual changes zero. ExploreTabs TSX changed only within the approved target contract.",
+        "Phase 5D-1: 1,584 cells across Next/static, six viewports, 100/200%, and three browser installations; minimum computed 6.9851:1 and reliable rendered 5.5411:1; 144 forced-colors axe conflicts, seven rendered unknowns, one static/Next contradiction, and zero harness errors.",
+        "Phase 5D-1 product, CSS/color, DOM/ARIA, baseline, package/lockfile, paid-call, participant, and manual-task changes: zero."
       ],
       "currentBlockers": [
-        "A11Y-008 is NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE and excluded from Phase 5C-3A; a future implementation requires reproducible current failure evidence, a new or revalidated proposal hash, and new issue-specific owner approval.",
+        "A11Y-008 Phase 5D-1 is BLOCKED_INCONCLUSIVE: forced-colors axe authored-color evidence conflicts with computed/rendered high-contrast evidence; seven rendered samples and one static/Next comparison remain unresolved.",
         "All approved manual accessibility tasks remain NOT_TESTED",
         "Complete WCAG 2.2 AA conformance remains unproved",
         "Gate C-Preview remains blocked by nine inherited broad parity failures, incomplete current 216-cell evidence, the 1,416,075/948,538 CSS budget, stale release evidence, and a new separate full-tree js-yaml high advisory."
@@ -313,7 +316,7 @@
         "manual and assistive-technology review"
       ],
       "rollback": "Revert each approved accessibility change independently",
-      "nextReviewTrigger": "Complete approved manual/AT evidence or execute the A11Y-008 retest plan; any A11Y-008 implementation requires reproducible current failure evidence and new owner approval.",
+      "nextReviewTrigger": "Execute only the exact Phase 5D-1 missing-evidence task; any A11Y-008 product implementation still requires reproducible current failure evidence, a new or revalidated proposal hash, and issue-specific owner approval.",
       "subphases": [
         {
           "subphaseId": "5A",
@@ -350,6 +353,18 @@
           "proposalHash": "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717",
           "implementationCommit": "95a0816",
           "testCommit": "689536844a93a0a7a14491bde3c6f2e6bcaecb2d"
+        },
+        {
+          "subphaseId": "5D-1",
+          "status": "BLOCKED_INCONCLUSIVE",
+          "issueIds": [
+            "A11Y-008"
+          ],
+          "started": true,
+          "completed": true,
+          "productImplementation": false,
+          "testEvidenceCommit": "cfc455fcc6bacecf6789d89aaad71606e4a91a27",
+          "finalReportCommit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF"
         }
       ]
     },
@@ -546,7 +561,7 @@
       "nextReviewTrigger": "Phases 2-8 complete"
     }
   ],
-  "nextReadyPhase": "5C_MANUAL_EVIDENCE_OR_A11Y008_REEVALUATION",
+  "nextReadyPhase": "PHASE5D1_EXACT_MISSING_EVIDENCE_TASK",
   "otherReadyIndependentSubphases": [
     "6A"
   ],

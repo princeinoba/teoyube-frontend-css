@@ -14,4 +14,4 @@
 
 The complete matrix is inconclusive because forced-colors axe results report the historical authored 1.01:1 pair while computed forced colors are 21:1 and rendered samples are predominantly high contrast; seven rendered samples are unavailable. This conflict is preserved rather than converted into a pass or product failure.
 
-Raw screenshots remain ignored and disposable under .tmp/accessibility/a11y008-retest/screenshots/. Their paths and SHA-256 hashes are recorded in the tracked JSON evidence; no screenshot baseline was written.
+Raw screenshots were generated only under the ignored .tmp/accessibility/a11y008-retest/screenshots/ path and were deleted after their paths and SHA-256 hashes were recorded in the tracked JSON evidence. No screenshot baseline was written.

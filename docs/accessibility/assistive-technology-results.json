@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "5C-2",
+  "phase": "5D-1_BLOCKED_INCONCLUSIVE",
   "conformanceClaim": "NO",
   "results": [
     {
@@ -18,8 +18,8 @@
     {
       "technology": "Windows forced colors and reduced motion emulation",
       "availability": "AVAILABLE",
-      "status": "COMPLETED_AUTOMATED_PARTIAL",
-      "evidence": "23 routes in each mode; manual perception and physical-device review remains"
+      "status": "BLOCKED_INCONCLUSIVE",
+      "evidence": "Phase 5D-1 exercised D02/D05 across 216 environment contexts and 1,584 element/state cells. Forced-colors computed colors are black/white (21:1) and rendered samples are predominantly high contrast, but 144 scoped axe results report the historical authored 1.01:1 pair; six static 200% forced-colors rendered pairs remain unavailable. Manual perception and physical-device review remain NOT_TESTED."
     },
     {
       "technology": "Windows Narrator",
@@ -68,5 +68,5 @@
       "status": "NOT_TESTED"
     }
   ],
-  "updatedAt": "2026-08-06T10:35:23.723Z"
+  "updatedAt": "2026-08-07T12:30:10.264Z"
 }

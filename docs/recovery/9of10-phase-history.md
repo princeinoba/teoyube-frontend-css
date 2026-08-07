@@ -295,3 +295,13 @@ The exact owner decision and proposal hashes were validated. A 42-cell scoped ch
 ## Phase 5C-3A — A11Y-007 exact target-size remediation (2026-08-07T00:44:40.967Z)
 
 Status: **PASS**. Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001` and proposal hash `e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717` were honored without expansion. The scoped matrix passed 42 cells, 66 groups, and 570/570 targets at a minimum 24×24 CSS pixels, with zero target violations, required center-hit checks passing, no unintended overlap, and preserved behavior. A11Y-008 product changes and manual evidence completions were both zero. Recovery and protected/owner-approved baselines passed unchanged. Phase 5C remains partial because A11Y-008 needs more evidence and all manual/AT tasks remain incomplete; complete WCAG conformance is not claimed. Phase 2A/Gate C-Preview retain separate dependency, parity, performance-evidence, CSS-budget, and stale-evidence blockers.
+
+## Phase 5D-1 - A11Y-008 current-state retest
+
+Status: **BLOCKED_INCONCLUSIVE**
+
+Started from: `4c165eada3a04212d32456c96bef3cf8b69613f5`
+
+Test/evidence commit: `cfc455fcc6bacecf6789d89aaad71606e4a91a27`
+
+The full 1,584-cell deterministic retest completed without harness errors or product changes. Computed and reliable rendered ratios exceed 4.5:1, but forced-colors axe output conflicts with those measurements, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains NEEDS_MORE_EVIDENCE. Phase 5 is WAITING_EVIDENCE; no manual task or later phase began.

@@ -65,3 +65,9 @@
 ## Phase 5C-2 update
 
 The matrix remains a non-conformance evidence matrix. Phase 5C-3A closes the scoped A11Y-007 defect, but A11Y-008 needs more evidence and every manual/AT evidence gap remains. **Complete WCAG 2.2 AA conformance: NO.**
+
+## Phase 5D-1 A11Y-008 retest (2026-08-07T12:30:10.264Z)
+
+A11Y-008 completed its deterministic 1,584-cell retest with **BLOCKED_INCONCLUSIVE** outcome. Minimum computed and reliable rendered ratios are 6.9851:1 and 5.5411:1, but forced-colors axe evidence conflicts with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains **NEEDS_MORE_EVIDENCE**; product changes, manual task completions, and new owner decisions are zero.
+
+Complete WCAG 2.2 AA conformance remains **NOT CLAIMED**.

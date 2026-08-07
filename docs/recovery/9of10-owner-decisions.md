@@ -53,3 +53,7 @@ At 2026-08-06T10:35:23.723Z, the exact hash-bound A11Y-003, A11Y-005, and A11Y-0
 ## Phase 5C-3A execution under the split owner decision
 
 At `2026-08-07T01:11:10.004Z`, exact-hash A11Y-007 completed with status **PASS** under `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`. Implementation commit: `95a0816`; test commit: `6895368`; final evidence commit is reported in the handoff. The three protected CSS files changed only within the owner-approved delta contract; unapproved protected changes: 0. A11Y-008 product changes: 0. Manual tasks executed: 0. Expanded scope: no. No new approval was fabricated.
+
+## Phase 5D-1 evidence under the split owner decision
+
+At `2026-08-07T12:30:10.264Z`, the authorized A11Y-008 evidence-only retest completed with **BLOCKED_INCONCLUSIVE** outcome. This is execution evidence under `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001`, not a new owner decision. Product implementation remains unauthorized; manual tasks executed: 0; no approval was fabricated.

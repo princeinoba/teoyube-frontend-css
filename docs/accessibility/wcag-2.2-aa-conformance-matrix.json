@@ -107,7 +107,7 @@
       "level": "AA",
       "title": "Contrast (Minimum)",
       "status": "NEEDS_MORE_EVIDENCE",
-      "evidence": "A11Y-008 does not reproduce on actual /canon: D02/D05 measure 6.9851:1 and scoped axe is zero across 12 runtime/viewport cells. A11Y-009 manual contrast review remains incomplete."
+      "evidence": "Phase 5D-1 completed 1,584 A11Y-008 cells. Computed and reliable rendered ratios pass (minimum 6.9851:1 and 5.5411:1), but 144 forced-colors axe findings conflict with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next cell contradicts. Outcome BLOCKED_INCONCLUSIVE; A11Y-009 manual contrast review remains incomplete."
     },
     {
       "id": "1.4.4",
@@ -397,5 +397,5 @@
       "evidence": "live-region inventory captured; spoken announcement behavior not tested with an observable AT"
     }
   ],
-  "phase": "5C-3A"
+  "phase": "5D-1_BLOCKED_INCONCLUSIVE"
 }

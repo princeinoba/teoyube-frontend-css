@@ -314,3 +314,11 @@ Phase 2A and Gate C-Preview remain BLOCKED; Phase 3 remains WAITING_OWNER; Phase
 - Recovery, immutable screenshots/DOM, and owner-approved support baselines: PASS and unchanged. Protected CSS files changed: 3 under the exact approved A11Y-007 delta; unapproved protected changes: 0.
 - Current full dependency audit: one high `js-yaml` advisory; production audit: zero. Separate Phase 2A remediation is required.
 - Performance controller: first run 72/72 cells below 5,000 ms, then stopped on nine inherited broad parity failures; current CSS budget remains blocked.
+
+## Phase 5D-1 A11Y-008 evidence
+
+- Matrix: 1,584 total; 708 applicable; 876 not applicable; 563 passing; 145 failing; 7 unknown; 0 harness errors.
+- Ratios: 6.9851:1 minimum computed; 5.5411:1 minimum reliable rendered; required 4.5:1.
+- Conflict: 144 forced-colors axe findings disagree with computed and predominantly high-contrast rendered evidence; one static/Next contradiction remains.
+- Protection: 0 product, protected visual, CSS/DOM/ARIA, baseline, package/lock, paid-call, participant, or manual-task changes.
+- Outcome: **BLOCKED_INCONCLUSIVE**; A11Y-008 **NEEDS_MORE_EVIDENCE**.

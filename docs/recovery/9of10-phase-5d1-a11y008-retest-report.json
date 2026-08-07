@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "phase": "5D-1",
+  "selectedPhase": "Phase 5D-1 — A11Y-008 current-state retest",
+  "previousStatus": "NEEDS_MORE_EVIDENCE",
+  "finalOutcome": "BLOCKED_INCONCLUSIVE",
+  "programOverall": "IN_PROGRESS",
+  "executedAt": "2026-08-07T12:30:10.264Z",
+  "branch": "recovery/visual-source-of-truth",
+  "startingCommit": "4c165eada3a04212d32456c96bef3cf8b69613f5",
+  "testEvidenceCommit": "cfc455fcc6bacecf6789d89aaad71606e4a91a27",
+  "finalReportCommit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+  "prePhaseTag": "teoyube-9of10-phase5d1-a11y008-start-4c165ea",
+  "ownerDecision": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "issue": "A11Y-008",
+  "title": "Canon in-progress status text fails minimum contrast",
+  "criterion": "WCAG 2.2 1.4.3 Contrast (Minimum)",
+  "d02Element": "[data-canon-item=\"canon-map-D02\"] .canon-status.in-progress",
+  "d05Element": "[data-canon-item=\"canon-map-D05\"] .canon-status.in-progress",
+  "routes": {
+    "next": "/canon",
+    "static": "/#canon"
+  },
+  "states": {
+    "tested": [
+      "default",
+      "hover",
+      "media-selected",
+      "reduced-motion",
+      "forced-colors"
+    ],
+    "notApplicable": [
+      {
+        "state": "keyboard-focus",
+        "reason": "The status label is not focusable and exposes no control role."
+      },
+      {
+        "state": "pointer-active",
+        "reason": "The status label has no pointer activation behavior."
+      },
+      {
+        "state": "keyboard-active",
+        "reason": "The status label has no keyboard activation behavior."
+      },
+      {
+        "state": "selected-current",
+        "reason": "The status label exposes no selected/current state."
+      },
+      {
+        "state": "disabled",
+        "reason": "The status label does not support disabled state."
+      }
+    ],
+    "overlay": "MEASURED; 60 unrelated global-notice intersections recorded before harness-only isolation of the underlying label",
+    "imageGradientLoaded": "VERIFIED"
+  },
+  "viewports": [
+    {
+      "name": "desktop-wide",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "desktop-standard",
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "name": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "mobile-small",
+      "width": 360,
+      "height": 800
+    }
+  ],
+  "runtimes": [
+    "Next canonical",
+    "Static rollback"
+  ],
+  "browsers": [
+    {
+      "id": "playwright-chromium",
+      "version": "149.0.7827.55"
+    },
+    {
+      "id": "google-chrome",
+      "version": "150.0.7871.187"
+    },
+    {
+      "id": "microsoft-edge",
+      "version": "150.0.4078.105"
+    }
+  ],
+  "zooms": [
+    {
+      "percent": 100,
+      "divisor": 1,
+      "deviceScaleFactor": 1
+    },
+    {
+      "percent": 200,
+      "divisor": 2,
+      "deviceScaleFactor": 2
+    }
+  ],
+  "threshold": 4.5,
+  "formerProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+  "productImplementationAuthorized": false,
+  "measurements": {
+    "totalMatrixCells": 1584,
+    "applicableCells": 708,
+    "notApplicableCells": 876,
+    "contextCells": 216,
+    "expectedContextCells": 216,
+    "passingCells": 563,
+    "failingCells": 145,
+    "unknownCells": 7,
+    "harnessErrors": 0,
+    "scopedAxeFailures": 144,
+    "lowestComputedRatio": 6.9851,
+    "lowestRenderedSampleRatio": 5.5411,
+    "contradictions": [
+      {
+        "key": "playwright-chromium:tablet-landscape:200:reduced-motion:reduced-motion:D05",
+        "next": {
+          "pass": false,
+          "unknown": true,
+          "computedRatio": 6.9851,
+          "renderedRatio": null
+        },
+        "static": {
+          "pass": true,
+          "unknown": false,
+          "computedRatio": 6.9851,
+          "renderedRatio": 6.7731
+        }
+      }
+    ],
+    "staticResult": {
+      "cells": 354,
+      "passing": 282,
+      "failing": 72,
+      "lowestComputedRatio": 6.9851,
+      "lowestRenderedRatio": 5.5692
+    },
+    "nextResult": {
+      "cells": 354,
+      "passing": 281,
+      "failing": 73,
+      "lowestComputedRatio": 6.9851,
+      "lowestRenderedRatio": 5.5411
+    },
+    "outcome": "BLOCKED_INCONCLUSIVE",
+    "failingCellIds": [
+      "playwright-chromium:next:desktop-wide:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:desktop-wide:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:desktop-wide:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:desktop-wide:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:desktop-standard:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:desktop-standard:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:desktop-standard:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:desktop-standard:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:tablet-landscape:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:tablet-landscape:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:tablet-landscape:200:reduced-motion:reduced-motion:D05",
+      "playwright-chromium:next:tablet-landscape:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:tablet-landscape:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:tablet-portrait:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:tablet-portrait:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:tablet-portrait:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:tablet-portrait:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:mobile:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:mobile:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:mobile:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:mobile:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:mobile-small:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:mobile-small:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:next:mobile-small:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:next:mobile-small:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:desktop-wide:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:desktop-wide:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:desktop-wide:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:desktop-wide:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:desktop-standard:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:desktop-standard:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:desktop-standard:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:desktop-standard:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:tablet-landscape:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:tablet-landscape:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:tablet-landscape:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:tablet-landscape:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:tablet-portrait:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:tablet-portrait:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:tablet-portrait:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:tablet-portrait:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:mobile:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:mobile:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:mobile:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:mobile:200:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:mobile-small:100:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:mobile-small:100:forced-colors:forced-colors:D05",
+      "playwright-chromium:static:mobile-small:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:mobile-small:200:forced-colors:forced-colors:D05",
+      "google-chrome:next:desktop-wide:100:forced-colors:forced-colors:D02",
+      "google-chrome:next:desktop-wide:100:forced-colors:forced-colors:D05",
+      "google-chrome:next:desktop-wide:200:forced-colors:forced-colors:D02",
+      "google-chrome:next:desktop-wide:200:forced-colors:forced-colors:D05",
+      "google-chrome:next:desktop-standard:100:forced-colors:forced-colors:D02",
+      "google-chrome:next:desktop-standard:100:forced-colors:forced-colors:D05",
+      "google-chrome:next:desktop-standard:200:forced-colors:forced-colors:D02",
+      "google-chrome:next:desktop-standard:200:forced-colors:forced-colors:D05",
+      "google-chrome:next:tablet-landscape:100:forced-colors:forced-colors:D02",
+      "google-chrome:next:tablet-landscape:100:forced-colors:forced-colors:D05",
+      "google-chrome:next:tablet-landscape:200:forced-colors:forced-colors:D02",
+      "google-chrome:next:tablet-landscape:200:forced-colors:forced-colors:D05",
+      "google-chrome:next:tablet-portrait:100:forced-colors:forced-colors:D02",
+      "google-chrome:next:tablet-portrait:100:forced-colors:forced-colors:D05",
+      "google-chrome:next:tablet-portrait:200:forced-colors:forced-colors:D02",
+      "google-chrome:next:tablet-portrait:200:forced-colors:forced-colors:D05",
+      "google-chrome:next:mobile:100:forced-colors:forced-colors:D02",
+      "google-chrome:next:mobile:100:forced-colors:forced-colors:D05",
+      "google-chrome:next:mobile:200:forced-colors:forced-colors:D02",
+      "google-chrome:next:mobile:200:forced-colors:forced-colors:D05",
+      "google-chrome:next:mobile-small:100:forced-colors:forced-colors:D02",
+      "google-chrome:next:mobile-small:100:forced-colors:forced-colors:D05",
+      "google-chrome:next:mobile-small:200:forced-colors:forced-colors:D02",
+      "google-chrome:next:mobile-small:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:desktop-wide:100:forced-colors:forced-colors:D02",
+      "google-chrome:static:desktop-wide:100:forced-colors:forced-colors:D05",
+      "google-chrome:static:desktop-wide:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:desktop-wide:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:desktop-standard:100:forced-colors:forced-colors:D02",
+      "google-chrome:static:desktop-standard:100:forced-colors:forced-colors:D05",
+      "google-chrome:static:desktop-standard:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:desktop-standard:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:tablet-landscape:100:forced-colors:forced-colors:D02",
+      "google-chrome:static:tablet-landscape:100:forced-colors:forced-colors:D05",
+      "google-chrome:static:tablet-landscape:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:tablet-landscape:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:tablet-portrait:100:forced-colors:forced-colors:D02",
+      "google-chrome:static:tablet-portrait:100:forced-colors:forced-colors:D05",
+      "google-chrome:static:tablet-portrait:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:tablet-portrait:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:mobile:100:forced-colors:forced-colors:D02",
+      "google-chrome:static:mobile:100:forced-colors:forced-colors:D05",
+      "google-chrome:static:mobile:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:mobile:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:mobile-small:100:forced-colors:forced-colors:D02",
+      "google-chrome:static:mobile-small:100:forced-colors:forced-colors:D05",
+      "google-chrome:static:mobile-small:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:mobile-small:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:desktop-wide:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:desktop-wide:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:desktop-wide:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:desktop-wide:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:desktop-standard:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:desktop-standard:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:desktop-standard:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:desktop-standard:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:tablet-landscape:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:tablet-landscape:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:tablet-landscape:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:tablet-landscape:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:tablet-portrait:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:tablet-portrait:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:tablet-portrait:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:tablet-portrait:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:mobile:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:mobile:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:mobile:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:mobile:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:mobile-small:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:mobile-small:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:next:mobile-small:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:next:mobile-small:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:desktop-wide:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:desktop-wide:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:desktop-wide:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:desktop-wide:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:desktop-standard:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:desktop-standard:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:desktop-standard:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:desktop-standard:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:tablet-landscape:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:tablet-landscape:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:tablet-landscape:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:tablet-landscape:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:tablet-portrait:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:tablet-portrait:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:tablet-portrait:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:tablet-portrait:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:mobile:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:mobile:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:mobile:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:mobile:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:mobile-small:100:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:mobile-small:100:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:mobile-small:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:mobile-small:200:forced-colors:forced-colors:D05"
+    ],
+    "unknownCellIds": [
+      "playwright-chromium:next:tablet-landscape:200:reduced-motion:reduced-motion:D05",
+      "playwright-chromium:static:desktop-wide:200:forced-colors:forced-colors:D02",
+      "playwright-chromium:static:desktop-wide:200:forced-colors:forced-colors:D05",
+      "google-chrome:static:desktop-wide:200:forced-colors:forced-colors:D02",
+      "google-chrome:static:desktop-wide:200:forced-colors:forced-colors:D05",
+      "microsoft-edge:static:desktop-wide:200:forced-colors:forced-colors:D02",
+      "microsoft-edge:static:desktop-wide:200:forced-colors:forced-colors:D05"
+    ],
+    "unexpectedErrors": []
+  },
+  "outcome": {
+    "currentStatus": "NEEDS_MORE_EVIDENCE",
+    "implementationRequiredNow": "NO_PRODUCT_IMPLEMENTATION_AUTHORIZED_OR_JUSTIFIED_BY_CONFLICTING_EVIDENCE",
+    "newProposalRequired": false,
+    "ownerDecisionRequired": false,
+    "manualLimitations": "No human/manual or assistive-technology task was completed; platform conformance remains unclaimed.",
+    "exactMissingEvidence": [
+      "Reconcile the 144 forced-colors axe results that report the historical authored #fffdf4/#ffffff pair at 1.01:1 with computed forced colors at 21:1 and predominantly high-contrast rendered samples.",
+      "Obtain repeatable, full-opacity rendered foreground/background samples for the six static desktop-wide 200% forced-colors D02/D05 cells across pinned Chromium, installed Chrome, and installed Edge.",
+      "Reproduce the pinned-Chromium Next tablet-landscape 200% reduced-motion D05 rendered sample and reconcile it with the static 6.7731:1 sample."
+    ]
+  },
+  "protection": {
+    "productSourceChanges": 0,
+    "protectedVisualChanges": 0,
+    "cssColorChanges": 0,
+    "domAriaChanges": 0,
+    "baselineWrites": 0,
+    "packageLockfileChanges": 0,
+    "paidCalls": 0,
+    "participantRecords": 0
+  },
+  "regression": {
+    "recovery": "PASS_268_PROTECTED_SOURCE_72_SCREENSHOTS_12_DOM",
+    "runtime": "PASS_NEXT_CANONICAL_STATIC_ROLLBACK_23_ROUTES_14_MAPPINGS_31_APIS",
+    "protectedSource": "PASS",
+    "immutableBaselines": "PASS_UNCHANGED",
+    "ownerBaselines": "PASS_UNCHANGED",
+    "phase5c1Delta": "PASS",
+    "phase5c2Delta": "PASS",
+    "phase5c3aDelta": "PASS",
+    "issueRegister": "PASS",
+    "wcagMatrix": "PASS",
+    "focusedEvidenceTests": "PASS_3_OF_3",
+    "phase5DeltaTests": "PASS_13_OF_13",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "secretScan": "PASS_RELEASE_SECURITY_GATE_18_CONTROLS_CRITICAL_HIGH_0",
+    "participantResearchRecords": "PASS_ZERO_PARTICIPANTS_ZERO_SESSIONS",
+    "paidCalls": 0,
+    "listenersClosed": "PASS_PORTS_3194_AND_4194"
+  },
+  "independentBlockers": {
+    "jsYamlAdvisory": "OPEN_ONE_HIGH_DEVELOPMENT_ADVISORY_GHSA_5P4M_2WFM_XMQJ_PRODUCTION_ZERO",
+    "cssBudget": "BLOCKED_1416075_OF_948538_BYTES",
+    "broadParity": "BLOCKED_NINE_PRE_EXISTING_STATIC_NEXT_FAILURES",
+    "gateCPreview": "BLOCKED",
+    "phase3": "WAITING_OWNER",
+    "phase4": "WAITING_OWNER_SESSION_DATA"
+  },
+  "next": "EXACT_MISSING_EVIDENCE_TASK",
+  "rollback": "git revert FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF cfc455fcc6bacecf6789d89aaad71606e4a91a27",
+  "evidenceArtifacts": [
+    {
+      "path": "docs/accessibility/a11y008-retest-starting-manifest.json",
+      "bytes": 6005,
+      "sha256": "684e52c2c0459d36376a0f9ea7f2c323b899fd48ee554c58431133483bb26cf0"
+    },
+    {
+      "path": "docs/accessibility/a11y008-current-retest-plan.json",
+      "bytes": 7363,
+      "sha256": "3fcdb01d2cb014049d4972d91576fb3be13043fb5819d6c6ba4700daa4827f54"
+    },
+    {
+      "path": "docs/accessibility/a11y008-contrast-measurements.json",
+      "bytes": 2706931,
+      "sha256": "eff9b450acf61f46e7c26ba7444c846f53d9171f7d72e9b2e9d5ad6c1e5f8482"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-retest/manifest.json",
+      "bytes": 14487,
+      "sha256": "864211d6ae738a9728aeb43bf9aa5f6d9d5e0f32dc4bece079d3d7bc756e412e"
+    }
+  ]
+}

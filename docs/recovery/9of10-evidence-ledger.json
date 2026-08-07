@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T00:44:40.967Z",
+  "generatedAt": "2026-08-07T12:30:10.264Z",
   "branch": "recovery/visual-source-of-truth",
   "baselineCommit": "39e75ee11d765c83c67660cd267315acec124ae9",
   "prePhaseTag": "teoyube-prompt24-baseline-39e75ee",
@@ -886,6 +886,41 @@
         "styles/pages/canon.css"
       ],
       "unapprovedProtectedVisualFilesChanged": 0
+    },
+    {
+      "phase": "5D-1",
+      "status": "BLOCKED_INCONCLUSIVE",
+      "executedAt": "2026-08-07T12:30:10.264Z",
+      "startingCommit": "4c165eada3a04212d32456c96bef3cf8b69613f5",
+      "testEvidenceCommit": "cfc455fcc6bacecf6789d89aaad71606e4a91a27",
+      "finalReportCommit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+      "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+      "issue": "A11Y-008",
+      "formerProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+      "totalCells": 1584,
+      "applicableCells": 708,
+      "notApplicableCells": 876,
+      "passingCells": 563,
+      "failingCells": 145,
+      "unknownCells": 7,
+      "harnessErrors": 0,
+      "scopedAxeFailures": 144,
+      "lowestComputedRatio": 6.9851,
+      "lowestReliableRenderedRatio": 5.5411,
+      "contradictions": 1,
+      "exactMissingEvidence": [
+        "Reconcile the 144 forced-colors axe results that report the historical authored #fffdf4/#ffffff pair at 1.01:1 with computed forced colors at 21:1 and predominantly high-contrast rendered samples.",
+        "Obtain repeatable, full-opacity rendered foreground/background samples for the six static desktop-wide 200% forced-colors D02/D05 cells across pinned Chromium, installed Chrome, and installed Edge.",
+        "Reproduce the pinned-Chromium Next tablet-landscape 200% reduced-motion D05 rendered sample and reconcile it with the static 6.7731:1 sample."
+      ],
+      "productSourceFilesChanged": 0,
+      "protectedVisualFilesChanged": 0,
+      "cssDomAriaChanges": 0,
+      "baselineFilesChanged": 0,
+      "packageLockFilesChanged": 0,
+      "paidCalls": 0,
+      "participantRecords": 0,
+      "manualTasksExecuted": 0
     }
   ],
   "workspaceAtStart": {
@@ -1024,5 +1059,15 @@
     "ownerApprovedBaselineFilesChanged": 0,
     "approvedProtectedVisualFilesChanged": 3,
     "unapprovedProtectedVisualFilesChanged": 0
+  },
+  "workspaceAfterPhase5d1": {
+    "branch": "recovery/visual-source-of-truth",
+    "commit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF",
+    "trackedWorktree": "CLEAN_AFTER_COMMIT",
+    "protectedVisualFilesChanged": 0,
+    "immutableBaselineFilesChanged": 0,
+    "ownerApprovedBaselineFilesChanged": 0,
+    "productSourceFilesChanged": 0,
+    "packageLockFilesChanged": 0
   }
 }

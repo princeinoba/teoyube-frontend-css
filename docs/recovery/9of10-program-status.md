@@ -33,7 +33,7 @@ These values remain fixed until Phase 9. Phase 1 found and preserved one metadat
 | 2 — Security remediation and current release evidence | **BLOCKED** | Dependency security is clean; 2A is blocked by current Canon focus-order parity and performance-budget evidence. |
 | 3 — Formal stabilization | **WAITING_OWNER** | Phase 3A toolkit PASS; begin authentic sessions. Phase 3B is NOT READY. |
 | 4 — Real-user pilot | **WAITING_OWNER_SESSION_DATA** | Phase 4A/4B/4C PASS; recruitment authorized; research collection remains disabled; 0 participants, sessions, or participant records; Phase 4D NOT READY. |
-| 5 - Accessibility remediation | **IN_PROGRESS** | Phase 5A, Phase 5B, Phase 5C-1, Phase 5C-2, and Phase 5C-3A PASS; A11Y-007 FIXED; A11Y-008 NEEDS_MORE_EVIDENCE; manual tasks APPROVED and NOT_TESTED. |
+| 5 - Accessibility remediation | **WAITING_EVIDENCE** | Phase 5A, Phase 5B, Phase 5C-1, Phase 5C-2, and Phase 5C-3A PASS; Phase 5D-1 BLOCKED_INCONCLUSIVE; exact A11Y-008 missing evidence required. |
 | 6 — Production infrastructure | **READY** | Select 6A for a provider-neutral architecture decision. |
 | 7 — Production AI/retrieval/release gates | **NOT_STARTED** | Requires Phases 2–6 PASS. |
 | 8 — Selective archive/cleanup | **NOT_STARTED** | Requires Phases 2, 3, 7 and candidate approvals. |
@@ -105,3 +105,9 @@ Decision `TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001` marks the o
 ## Phase 5C-3A execution (2026-08-07T00:44:40.967Z)
 
 Phase 5C-3A is **PASS** for exact-hash A11Y-007. The 42-cell focused matrix covers 66 target groups and 570 controls across both runtimes and all six viewports: minimum 24×24, 570/570 pass, zero violations, center-hit and overlap checks pass, and 42/42 behavior comparisons pass. A11Y-008 received zero product changes and remains **NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE**. Manual tasks remain **APPROVED, NOT_TESTED**; complete WCAG conformance remains unclaimed. Phase 2A/Gate C-Preview remain blocked by separate dependency, broad parity, current performance-evidence, CSS-budget, and stale-release-evidence findings.
+
+## Phase 5D-1 A11Y-008 retest (2026-08-07T12:30:10.264Z)
+
+A11Y-008 completed its deterministic 1,584-cell retest with **BLOCKED_INCONCLUSIVE** outcome. Minimum computed and reliable rendered ratios are 6.9851:1 and 5.5411:1, but forced-colors axe evidence conflicts with computed/rendered evidence, seven rendered samples remain unknown, and one static/Next comparison contradicts. A11Y-008 remains **NEEDS_MORE_EVIDENCE**; product changes, manual task completions, and new owner decisions are zero.
+
+Phase 5 is **WAITING_EVIDENCE**. Phase 3 remains **WAITING_OWNER** and Phase 4 remains **WAITING_OWNER_SESSION_DATA**. The next gate is only the exact missing-evidence task.

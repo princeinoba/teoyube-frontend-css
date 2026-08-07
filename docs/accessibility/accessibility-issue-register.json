@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "phase": "5C-3A_PASS_PARTIAL_WAITING_EVIDENCE",
+  "phase": "5D-1_BLOCKED_INCONCLUSIVE",
   "issueCount": 11,
   "severityCounts": {
     "critical": 1,
@@ -178,7 +178,13 @@
       "currentExecutionDecisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
       "retestPlan": "docs/accessibility/a11y-008-current-evidence-retest-plan.json",
       "phase5c3aProductChanges": 0,
-      "phase5c3aEvidence": "Excluded from Phase 5C-3A. Focused evidence remains 6.9851:1 with zero scoped axe failures; the broader current audit still reports two known Canon contrast occurrences. Status remains NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE pending the approved retest plan."
+      "phase5c3aEvidence": "Excluded from Phase 5C-3A. Focused evidence remains 6.9851:1 with zero scoped axe failures; the broader current audit still reports two known Canon contrast occurrences. Status remains NOT_REPRODUCED_CURRENT / NEEDS_MORE_EVIDENCE pending the approved retest plan.",
+      "phase5d1Status": "BLOCKED_INCONCLUSIVE",
+      "phase5d1Evidence": "1,584 cells; 708 applicable; 876 not applicable; lowest computed 6.9851:1; lowest reliable rendered 5.5411:1; 144 forced-colors axe conflicts; 7 unknown rendered samples; one static/Next contradiction; zero harness errors.",
+      "phase5d1Report": "docs/accessibility/a11y008-current-retest-report.json",
+      "phase5d1ProductChanges": 0,
+      "implementationRequiredNow": false,
+      "nextGate": "EXACT_MISSING_EVIDENCE_TASK"
     },
     {
       "id": "A11Y-009",

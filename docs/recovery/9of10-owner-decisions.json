@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-07T01:11:10.004Z",
+  "updatedAt": "2026-08-07T12:30:10.264Z",
   "decisions": [
     {
       "decisionId": "CONTROLLER_FIRST_RUN_INSTRUCTION_NO_SEPARATE_APPROVAL_ID",
@@ -202,7 +202,7 @@
       "source": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001.json",
       "issueStatuses": {
         "A11Y-007": "FIXED_PHASE5C3A_PASS",
-        "A11Y-008": "NOT_REPRODUCED_CURRENT_NEEDS_MORE_EVIDENCE"
+        "A11Y-008": "NEEDS_MORE_EVIDENCE_PHASE5D1_BLOCKED_INCONCLUSIVE"
       },
       "limitations": [
         "A11Y-008 implementation",
@@ -237,6 +237,21 @@
         "manualTasksExecuted": 0,
         "expandedScope": false,
         "evidenceCommit": "FINAL_PHASE5C3A_EVIDENCE_COMMIT_REPORTED_IN_FINAL_HANDOFF"
+      },
+      "phase5d1RetestEvidence": {
+        "executedAt": "2026-08-07T12:30:10.264Z",
+        "status": "BLOCKED_INCONCLUSIVE",
+        "totalCells": 1584,
+        "applicableCells": 708,
+        "unknownCells": 7,
+        "scopedAxeFailures": 144,
+        "lowestComputedRatio": 6.9851,
+        "lowestReliableRenderedRatio": 5.5411,
+        "productChanges": 0,
+        "implementationAuthorized": false,
+        "newOwnerDecisionCreated": false,
+        "testEvidenceCommit": "cfc455fcc6bacecf6789d89aaad71606e4a91a27",
+        "finalReportCommit": "FINAL_PHASE5D1_REPORT_COMMIT_REPORTED_IN_FINAL_HANDOFF"
       }
     }
   ],
