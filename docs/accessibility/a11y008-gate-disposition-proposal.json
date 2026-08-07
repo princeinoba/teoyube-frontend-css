@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "issueId": "A11Y-008",
+  "proposalType": "ACCESSIBILITY_GATE_DISPOSITION_ONLY",
+  "status": "WAITING_OWNER_DECISION",
+  "productChange": false,
+  "axeSuppression": false,
+  "wildcardExclusion": false,
+  "exactScope": {
+    "routes": [
+      "/canon",
+      "/#canon"
+    ],
+    "selectors": [
+      "[data-canon-item=\"canon-map-D02\"] .canon-status.in-progress",
+      "[data-canon-item=\"canon-map-D05\"] .canon-status.in-progress"
+    ],
+    "state": "forced-colors active",
+    "viewport": "desktop-wide",
+    "zoomPercent": 200,
+    "browsers": [
+      "playwright-chromium 149.0.7827.55",
+      "google-chrome 150.0.7871.187",
+      "microsoft-edge 150.0.4078.105"
+    ]
+  },
+  "evidencePolicy": {
+    "name": "A11Y008_EXACT_FORCED_COLORS_RENDERED_EVIDENCE_POLICY",
+    "recommendation": "Treat the exact scoped axe authored-color finding as reconciled only when forced-colors is active, raw axe evidence is retained, computed and used system colors meet 4.5:1, at least four of five independent rendered samples per browser/selector are reliable and meet 4.5:1, every required unknown is resolved, and no unexplained Next/static conflict remains.",
+    "failClosedConditions": [
+      "Any rendered ratio is below 4.5:1.",
+      "Fewer than four of five reliable rendered captures exist for a required static cell.",
+      "Any required cell is UNKNOWN.",
+      "The axe-reported pair matches the final rendered pair.",
+      "A Next/static discrepancy remains unexplained.",
+      "The exact selector, forced-colors state, browser family, viewport, or zoom differs from this proposal."
+    ],
+    "prohibitedGeneralization": "No global axe suppression, forced-colors wildcard, selector wildcard, route wildcard, or product-source exception is authorized."
+  },
+  "evidence": {
+    "measurement": {
+      "path": "docs/accessibility/a11y008-phase5d2-measurements.json",
+      "bytes": 3351379,
+      "sha256": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a"
+    },
+    "manifest": {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/manifest.json",
+      "bytes": 97408,
+      "sha256": "88c0da1ac90bd8a0c0ce80cf321c1ab64baa273401aa5da20566a2c3a9e26247"
+    },
+    "staticRenderedRatio": 21,
+    "reducedMotionNextAndStaticRatio": 6.9851,
+    "rawAxePair": "#fffdf4/#ffffff",
+    "computedAndRenderedForcedColorPair": "#000000/#ffffff",
+    "unknownRequiredCells": 0,
+    "outcome": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE"
+  },
+  "ownerDecisionRequired": true,
+  "implementationAuthorized": false,
+  "proposalHash": "63d03d4bc44ef4169b24c2e4d3dfa4236b10a67227ae03108b7fd535db6ce29d"
+}

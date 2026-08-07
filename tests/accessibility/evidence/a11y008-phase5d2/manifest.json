@@ -1,0 +1,1847 @@
+{
+  "schemaVersion": 1,
+  "phase": "5D-2",
+  "generatedAt": "2026-08-07T15:56:07.680Z",
+  "completedAt": "2026-08-07T18:56:55.689Z",
+  "issueId": "A11Y-008",
+  "decisionId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001",
+  "formerProposalHash": "86157f49c8d6e4e897ad3c51a1fa7486c0f8ce7b09ac4bdd8420a0c0277cb2d8",
+  "implementationAuthorized": false,
+  "measurementArtifact": {
+    "path": "docs/accessibility/a11y008-phase5d2-measurements.json",
+    "bytes": 3351379,
+    "sha256": "4d20210b1ea1baf8edf283438588247754b90788bc8cc8278d498af66eacff0a"
+  },
+  "measurementScriptHashes": [
+    {
+      "path": "scripts/accessibility/run-a11y008-phase5d2-reconciliation.mjs",
+      "bytes": 37477,
+      "sha256": "47296d9de2064b1160a2571706f8941d67e8a385bc36be3ce09db6cfd56f8714"
+    },
+    {
+      "path": "scripts/accessibility/complete-a11y008-phase5d2-paired-samples.mjs",
+      "bytes": 24521,
+      "sha256": "4a362dc42f1600303b91bd7964b669a6db692bf6729c77807f3da61c74a6c98f"
+    },
+    {
+      "path": "scripts/accessibility/extend-a11y008-phase5d2-d05-reduced-motion.mjs",
+      "bytes": 20877,
+      "sha256": "43810d001e5ac1e5c992bf081a2c40b8f6d4b128b8e2087b401088b77ac720fe"
+    },
+    {
+      "path": "scripts/accessibility/finalize-phase5d2-evidence.mjs",
+      "bytes": 25609,
+      "sha256": "c99746c0114df527a49cd646f98b5832a2d5c0ca14d181b1a8fff0ada8bba310"
+    }
+  ],
+  "retainedSamples": [
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D02--repeat-1--element.png",
+      "bytes": 1633,
+      "sha256": "00c1414d6f98695a86685ef47d373aa91d8c5e97cc0aea121e878250903b888c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D02--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D02--repeat-1--padded.png",
+      "bytes": 2543,
+      "sha256": "1c4b7e852022527a6d75fe77102268d1d2b3854206f4777b43add31a65d9f2a5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D05--repeat-1--element.png",
+      "bytes": 2079,
+      "sha256": "fe380801348b3e6b22eb55a94947fb170c52d10aebf21fdde0cfbb3a7fd76eda"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D05--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--google-chrome--next--D05--repeat-1--padded.png",
+      "bytes": 4801,
+      "sha256": "19744caf3ba9ab890761af2bebebb47722d3d64c8a6f2cf2209afd040f444cda"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D02--repeat-1--element.png",
+      "bytes": 1633,
+      "sha256": "00c1414d6f98695a86685ef47d373aa91d8c5e97cc0aea121e878250903b888c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D02--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D02--repeat-1--padded.png",
+      "bytes": 2543,
+      "sha256": "1c4b7e852022527a6d75fe77102268d1d2b3854206f4777b43add31a65d9f2a5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D05--repeat-1--element.png",
+      "bytes": 2079,
+      "sha256": "fe380801348b3e6b22eb55a94947fb170c52d10aebf21fdde0cfbb3a7fd76eda"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D05--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--microsoft-edge--next--D05--repeat-1--padded.png",
+      "bytes": 4801,
+      "sha256": "19744caf3ba9ab890761af2bebebb47722d3d64c8a6f2cf2209afd040f444cda"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1143,
+      "sha256": "a6453f6cb4b406c6426cfda08ee1095fdabc8fb2c4b3addb81608b1372a9718c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 1792,
+      "sha256": "6d287f9712523b2e2ad32776661361483ff1bfbb186f11ec3f2cc68987eab473"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D02--repeat-1--element.png",
+      "bytes": 1690,
+      "sha256": "14fa4eb905720435b5844ad28443f6d1eb0a2ab22b87e9de043582467c43f261"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D02--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D02--repeat-1--padded.png",
+      "bytes": 2384,
+      "sha256": "88a57329ac180e88e0268cde922b475d7ee98b524b1fc908a589e93decbae43f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 1615,
+      "sha256": "319160aed5b4df8143d2ce4b10a22481200bac0dc4ec7faba4e72a1572198906"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 1724,
+      "sha256": "974f294f5ba5213858eb36f93ca53f983926493ad2023a1081031a6f349f5c40"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D05--repeat-1--element.png",
+      "bytes": 2124,
+      "sha256": "eca9d5e27f2c92146e7ea2145ebd132784c46b1903b6c699f67aece0ca3c2788"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D05--repeat-1--mask.png",
+      "bytes": 486,
+      "sha256": "28f1ff9c57f473be9ae32622047eddb7655c483c92a779c9de52061f6d4935e7"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-active--playwright-chromium--next--D05--repeat-1--padded.png",
+      "bytes": 4747,
+      "sha256": "bc19dc0dcbcacf736148b1c6cc8d0e6fc58ea5f234020cd1cef1353cfb6d70e1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1402,
+      "sha256": "e9c4c172b16bc16ab03720c801e895581d31002e8378467e141bdfcf6c3ed2e7"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 2369,
+      "sha256": "2d839f7d606af37fe0004559d603c5a2e1859c519152ffc7a95c6da0f14793e2"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D02--repeat-1--element.png",
+      "bytes": 2566,
+      "sha256": "be8a5844d8c99bb97e367374f6a83db50292eaeb67c5e88b4818923c0b26606b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D02--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D02--repeat-1--padded.png",
+      "bytes": 3748,
+      "sha256": "e197d932fc4dd3ca82e0dbe8f873375dfb03f541bfb364ebd42ebb3eda51acc7"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 1910,
+      "sha256": "14b999c7881ccc8ad68625c798971162810b7e3d2a11363f0352a2662c10f470"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2892,
+      "sha256": "1ef0c187b1f02e199bdbeb3e181f5915e1fe4def3fac207c5709393e14367908"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D05--repeat-1--element.png",
+      "bytes": 3007,
+      "sha256": "d9a2cf731cda21a8c649787c741f21474e7c05a7353abb82f042ee2a68ee4998"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D05--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--google-chrome--next--D05--repeat-1--padded.png",
+      "bytes": 6072,
+      "sha256": "d6d19071feef35fbb8c78477ad96f9ce12b4653d79d7a5ddda240406fa8c443f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1402,
+      "sha256": "e9c4c172b16bc16ab03720c801e895581d31002e8378467e141bdfcf6c3ed2e7"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 2369,
+      "sha256": "2d839f7d606af37fe0004559d603c5a2e1859c519152ffc7a95c6da0f14793e2"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D02--repeat-1--element.png",
+      "bytes": 2566,
+      "sha256": "be8a5844d8c99bb97e367374f6a83db50292eaeb67c5e88b4818923c0b26606b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D02--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D02--repeat-1--padded.png",
+      "bytes": 3742,
+      "sha256": "587de42de125b2d0a8de89d1fd1b29fd35aa1aeb808ec1c0b61637c0a00d30f3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 1910,
+      "sha256": "14b999c7881ccc8ad68625c798971162810b7e3d2a11363f0352a2662c10f470"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2892,
+      "sha256": "1ef0c187b1f02e199bdbeb3e181f5915e1fe4def3fac207c5709393e14367908"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D05--repeat-1--element.png",
+      "bytes": 3007,
+      "sha256": "d9a2cf731cda21a8c649787c741f21474e7c05a7353abb82f042ee2a68ee4998"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D05--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--microsoft-edge--next--D05--repeat-1--padded.png",
+      "bytes": 6066,
+      "sha256": "eb56651e5639d987f92377f08ab19a80ebc5d7ce75b011e87a199cfb2de4e9b1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1422,
+      "sha256": "d9b9df4a99e9dbae39f8b7877c04d9e8ebc9670ead8e029c6c1c1df7cb44f7bc"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 2316,
+      "sha256": "597bf5567ad5b7d8137fa480b1d67ddd6a83f494e7590db01106db4b18b59a90"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D02--repeat-1--element.png",
+      "bytes": 2420,
+      "sha256": "a371eb7c1dfabfdac309b683b25af8c5c5bcc3263a057f64b592b7233475f1f7"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D02--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D02--repeat-1--padded.png",
+      "bytes": 3635,
+      "sha256": "497643d8a67e032b20aac0a8250698876a5db13a750184e314562bbb5b35bb3c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 1879,
+      "sha256": "50ab39d65a7464409f4fb305ecd415b88e8983b1964dc1f7de546f61dd43dce9"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2779,
+      "sha256": "787099ed91c939fcada1249c232f61098ba4e7720fa3df9ce821dbf21cd82b76"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D05--repeat-1--element.png",
+      "bytes": 2817,
+      "sha256": "9da98d976d9f71db72f1dda55ed04139f57dfaba177306a57de462a57034f031"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D05--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/axe-reconciliation-inactive--playwright-chromium--next--D05--repeat-1--padded.png",
+      "bytes": 6419,
+      "sha256": "9864d37de676b1b018040dd077d31b6b883574516764f35305f09320d93557dc"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-1--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-1--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-1--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-1--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-2--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-2--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-2--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-2--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-2--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-3--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-3--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-3--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-3--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-3--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-4--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-4--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-4--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-4--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-4--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-5--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-5--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-5--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-5--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D02--repeat-5--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-1--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-1--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-1--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-2--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-2--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-2--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-2--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-2--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-3--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-3--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-3--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-3--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-3--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-4--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-4--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-4--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-4--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-4--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-5--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-5--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-5--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-5--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--google-chrome--static--D05--repeat-5--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-1--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-1--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-1--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-1--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-2--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-2--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-2--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-2--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-2--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-3--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-3--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-3--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-3--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-3--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-4--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-4--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-4--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-4--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-4--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-5--background-only-v3.png",
+      "bytes": 1009,
+      "sha256": "533d220cf35a99f890e89d48ca8b8c370ff65a26ca90b37cd141134be9818c4f"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-5--element-paired-v2.png",
+      "bytes": 1712,
+      "sha256": "b4c2bc374ecb704d4b15880ef4c75790ebbe355652446bade9f7316f5a031382"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-5--element.png",
+      "bytes": 993,
+      "sha256": "e42a7aa1d368e63a1be0c675e698e95c082a779a3567a8dbab8fd9942f5fa10a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-5--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D02--repeat-5--padded.png",
+      "bytes": 2502,
+      "sha256": "be3d2cb55e757775d1bd1b99178c4e95c2b73c5060236b0dc9cc848a90460ae1"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-1--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-1--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-1--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-2--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-2--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-2--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-2--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-2--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-3--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-3--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-3--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-3--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-3--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-4--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-4--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-4--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-4--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-4--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-5--background-only-v3.png",
+      "bytes": 1488,
+      "sha256": "943be3fbe1ad2843a05aa518ca19a6c31370f4c44e6754bab43170e10d6d8279"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-5--element-paired-v2.png",
+      "bytes": 2184,
+      "sha256": "da77d279d72d3fe21562384c805cf08fcaa41ce1ce99b90eb4aa270c7e3f139a"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-5--element.png",
+      "bytes": 1162,
+      "sha256": "3feb9db034622f5d025ad78f690774f23d6c53e4cf372ebc31db38920ea6b43b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-5--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--microsoft-edge--static--D05--repeat-5--padded.png",
+      "bytes": 3361,
+      "sha256": "60b60716dc4f37e4b286c38fd6da511a9a9da395f9ccf27610010eb585c3b655"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-1--background-only-v3.png",
+      "bytes": 1143,
+      "sha256": "a6453f6cb4b406c6426cfda08ee1095fdabc8fb2c4b3addb81608b1372a9718c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-1--element-paired-v2.png",
+      "bytes": 1792,
+      "sha256": "6d287f9712523b2e2ad32776661361483ff1bfbb186f11ec3f2cc68987eab473"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-1--element.png",
+      "bytes": 936,
+      "sha256": "47b0fce89b551d0a8bd58da16ddea7d9e45a82388adb08af69f4ab27aa893188"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-1--padded.png",
+      "bytes": 2308,
+      "sha256": "df0577e87b86e1b93b285c8af2748d631ff552a4e5c118397cf12a4ce5a857d4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-2--background-only-v3.png",
+      "bytes": 1143,
+      "sha256": "a6453f6cb4b406c6426cfda08ee1095fdabc8fb2c4b3addb81608b1372a9718c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-2--element-paired-v2.png",
+      "bytes": 1792,
+      "sha256": "6d287f9712523b2e2ad32776661361483ff1bfbb186f11ec3f2cc68987eab473"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-2--element.png",
+      "bytes": 936,
+      "sha256": "47b0fce89b551d0a8bd58da16ddea7d9e45a82388adb08af69f4ab27aa893188"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-2--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-2--padded.png",
+      "bytes": 2308,
+      "sha256": "df0577e87b86e1b93b285c8af2748d631ff552a4e5c118397cf12a4ce5a857d4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-3--background-only-v3.png",
+      "bytes": 1143,
+      "sha256": "a6453f6cb4b406c6426cfda08ee1095fdabc8fb2c4b3addb81608b1372a9718c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-3--element-paired-v2.png",
+      "bytes": 1792,
+      "sha256": "6d287f9712523b2e2ad32776661361483ff1bfbb186f11ec3f2cc68987eab473"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-3--element.png",
+      "bytes": 936,
+      "sha256": "47b0fce89b551d0a8bd58da16ddea7d9e45a82388adb08af69f4ab27aa893188"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-3--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-3--padded.png",
+      "bytes": 2308,
+      "sha256": "df0577e87b86e1b93b285c8af2748d631ff552a4e5c118397cf12a4ce5a857d4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-4--background-only-v3.png",
+      "bytes": 1143,
+      "sha256": "a6453f6cb4b406c6426cfda08ee1095fdabc8fb2c4b3addb81608b1372a9718c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-4--element-paired-v2.png",
+      "bytes": 1792,
+      "sha256": "6d287f9712523b2e2ad32776661361483ff1bfbb186f11ec3f2cc68987eab473"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-4--element.png",
+      "bytes": 936,
+      "sha256": "47b0fce89b551d0a8bd58da16ddea7d9e45a82388adb08af69f4ab27aa893188"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-4--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-4--padded.png",
+      "bytes": 2308,
+      "sha256": "df0577e87b86e1b93b285c8af2748d631ff552a4e5c118397cf12a4ce5a857d4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-5--background-only-v3.png",
+      "bytes": 1143,
+      "sha256": "a6453f6cb4b406c6426cfda08ee1095fdabc8fb2c4b3addb81608b1372a9718c"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-5--element-paired-v2.png",
+      "bytes": 1792,
+      "sha256": "6d287f9712523b2e2ad32776661361483ff1bfbb186f11ec3f2cc68987eab473"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-5--element.png",
+      "bytes": 936,
+      "sha256": "47b0fce89b551d0a8bd58da16ddea7d9e45a82388adb08af69f4ab27aa893188"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-5--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D02--repeat-5--padded.png",
+      "bytes": 2308,
+      "sha256": "df0577e87b86e1b93b285c8af2748d631ff552a4e5c118397cf12a4ce5a857d4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-1--background-only-v3.png",
+      "bytes": 1615,
+      "sha256": "319160aed5b4df8143d2ce4b10a22481200bac0dc4ec7faba4e72a1572198906"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-1--element-paired-v2.png",
+      "bytes": 2256,
+      "sha256": "1762a9f0721c45040b2f1a5251b095b59744fab6da273b4066a2a8008c92993e"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-1--element.png",
+      "bytes": 1098,
+      "sha256": "b3c4ccc136725150e04441706dac3d2a239c9430a2c242111ddfb314034e55ef"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-1--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-1--padded.png",
+      "bytes": 3244,
+      "sha256": "20f3cc9f02694b07de2464dee16d112027d669e91ecbe3da50aed9693e65f713"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-2--background-only-v3.png",
+      "bytes": 1615,
+      "sha256": "319160aed5b4df8143d2ce4b10a22481200bac0dc4ec7faba4e72a1572198906"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-2--element-paired-v2.png",
+      "bytes": 2256,
+      "sha256": "1762a9f0721c45040b2f1a5251b095b59744fab6da273b4066a2a8008c92993e"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-2--element.png",
+      "bytes": 1098,
+      "sha256": "b3c4ccc136725150e04441706dac3d2a239c9430a2c242111ddfb314034e55ef"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-2--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-2--padded.png",
+      "bytes": 3244,
+      "sha256": "20f3cc9f02694b07de2464dee16d112027d669e91ecbe3da50aed9693e65f713"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-3--background-only-v3.png",
+      "bytes": 1615,
+      "sha256": "319160aed5b4df8143d2ce4b10a22481200bac0dc4ec7faba4e72a1572198906"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-3--element-paired-v2.png",
+      "bytes": 2256,
+      "sha256": "1762a9f0721c45040b2f1a5251b095b59744fab6da273b4066a2a8008c92993e"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-3--element.png",
+      "bytes": 1098,
+      "sha256": "b3c4ccc136725150e04441706dac3d2a239c9430a2c242111ddfb314034e55ef"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-3--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-3--padded.png",
+      "bytes": 3244,
+      "sha256": "20f3cc9f02694b07de2464dee16d112027d669e91ecbe3da50aed9693e65f713"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-4--background-only-v3.png",
+      "bytes": 1615,
+      "sha256": "319160aed5b4df8143d2ce4b10a22481200bac0dc4ec7faba4e72a1572198906"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-4--element-paired-v2.png",
+      "bytes": 2256,
+      "sha256": "1762a9f0721c45040b2f1a5251b095b59744fab6da273b4066a2a8008c92993e"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-4--element.png",
+      "bytes": 1098,
+      "sha256": "b3c4ccc136725150e04441706dac3d2a239c9430a2c242111ddfb314034e55ef"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-4--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-4--padded.png",
+      "bytes": 3244,
+      "sha256": "20f3cc9f02694b07de2464dee16d112027d669e91ecbe3da50aed9693e65f713"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-5--background-only-v3.png",
+      "bytes": 1615,
+      "sha256": "319160aed5b4df8143d2ce4b10a22481200bac0dc4ec7faba4e72a1572198906"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-5--element-paired-v2.png",
+      "bytes": 2256,
+      "sha256": "1762a9f0721c45040b2f1a5251b095b59744fab6da273b4066a2a8008c92993e"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-5--element.png",
+      "bytes": 1098,
+      "sha256": "b3c4ccc136725150e04441706dac3d2a239c9430a2c242111ddfb314034e55ef"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-5--mask.png",
+      "bytes": 382,
+      "sha256": "f95415c31aedef131454d3d0a6c828399c293bad9148886f388805129cc3b3a4"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/static-forced-colors--playwright-chromium--static--D05--repeat-5--padded.png",
+      "bytes": 3244,
+      "sha256": "20f3cc9f02694b07de2464dee16d112027d669e91ecbe3da50aed9693e65f713"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-1--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-1--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-1--element.png",
+      "bytes": 1693,
+      "sha256": "2e4b9ce72b6deacd1c9771d95346ec4518ce82aa37a24f137241df10744d1063"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-1--padded.png",
+      "bytes": 3152,
+      "sha256": "34fdc851852a712faf119a129e97bf0f89426068c7694192a9709df4ebc4282b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-2--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-2--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-2--element.png",
+      "bytes": 1693,
+      "sha256": "2e4b9ce72b6deacd1c9771d95346ec4518ce82aa37a24f137241df10744d1063"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-2--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-2--padded.png",
+      "bytes": 3152,
+      "sha256": "34fdc851852a712faf119a129e97bf0f89426068c7694192a9709df4ebc4282b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-3--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-3--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-3--element.png",
+      "bytes": 1693,
+      "sha256": "2e4b9ce72b6deacd1c9771d95346ec4518ce82aa37a24f137241df10744d1063"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-3--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-3--padded.png",
+      "bytes": 3152,
+      "sha256": "34fdc851852a712faf119a129e97bf0f89426068c7694192a9709df4ebc4282b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-4--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-4--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-4--element.png",
+      "bytes": 1693,
+      "sha256": "2e4b9ce72b6deacd1c9771d95346ec4518ce82aa37a24f137241df10744d1063"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-4--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-4--padded.png",
+      "bytes": 3152,
+      "sha256": "34fdc851852a712faf119a129e97bf0f89426068c7694192a9709df4ebc4282b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-5--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-5--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-5--element.png",
+      "bytes": 1693,
+      "sha256": "2e4b9ce72b6deacd1c9771d95346ec4518ce82aa37a24f137241df10744d1063"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-5--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D02--repeat-5--padded.png",
+      "bytes": 3152,
+      "sha256": "34fdc851852a712faf119a129e97bf0f89426068c7694192a9709df4ebc4282b"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-1--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-1--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-1--element.png",
+      "bytes": 1693,
+      "sha256": "00b00e94fec8db3ca01a1cec2855a0548140bbc50436b0985361cd74ac0d5204"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-1--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-1--padded.png",
+      "bytes": 3587,
+      "sha256": "653d2fa8eaf5d999c04a95599336a6b1d1e8e0ad98fc23f9b52a698979584928"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-2--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-2--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-2--element.png",
+      "bytes": 1693,
+      "sha256": "00b00e94fec8db3ca01a1cec2855a0548140bbc50436b0985361cd74ac0d5204"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-2--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-2--padded.png",
+      "bytes": 3587,
+      "sha256": "653d2fa8eaf5d999c04a95599336a6b1d1e8e0ad98fc23f9b52a698979584928"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-3--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-3--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-3--element.png",
+      "bytes": 1693,
+      "sha256": "00b00e94fec8db3ca01a1cec2855a0548140bbc50436b0985361cd74ac0d5204"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-3--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-3--padded.png",
+      "bytes": 3587,
+      "sha256": "653d2fa8eaf5d999c04a95599336a6b1d1e8e0ad98fc23f9b52a698979584928"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-4--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-4--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-4--element.png",
+      "bytes": 1693,
+      "sha256": "00b00e94fec8db3ca01a1cec2855a0548140bbc50436b0985361cd74ac0d5204"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-4--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-4--padded.png",
+      "bytes": 3587,
+      "sha256": "653d2fa8eaf5d999c04a95599336a6b1d1e8e0ad98fc23f9b52a698979584928"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-5--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-5--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-5--element.png",
+      "bytes": 1693,
+      "sha256": "00b00e94fec8db3ca01a1cec2855a0548140bbc50436b0985361cd74ac0d5204"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-5--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--next--D05--repeat-5--padded.png",
+      "bytes": 3587,
+      "sha256": "653d2fa8eaf5d999c04a95599336a6b1d1e8e0ad98fc23f9b52a698979584928"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-1--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-1--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-1--element.png",
+      "bytes": 2518,
+      "sha256": "81602dd1661e298c7bc389d5cb7b440e5375e9f848d416c81b56771551878c12"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-1--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-1--padded.png",
+      "bytes": 5663,
+      "sha256": "fab93a0980c7f76cfab5b2ff1696f01991bd3336416726acd9ac32f10cce7964"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-2--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-2--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-2--element.png",
+      "bytes": 2518,
+      "sha256": "81602dd1661e298c7bc389d5cb7b440e5375e9f848d416c81b56771551878c12"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-2--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-2--padded.png",
+      "bytes": 5663,
+      "sha256": "fab93a0980c7f76cfab5b2ff1696f01991bd3336416726acd9ac32f10cce7964"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-3--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-3--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-3--element.png",
+      "bytes": 2518,
+      "sha256": "81602dd1661e298c7bc389d5cb7b440e5375e9f848d416c81b56771551878c12"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-3--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-3--padded.png",
+      "bytes": 5663,
+      "sha256": "fab93a0980c7f76cfab5b2ff1696f01991bd3336416726acd9ac32f10cce7964"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-4--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-4--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-4--element.png",
+      "bytes": 2518,
+      "sha256": "81602dd1661e298c7bc389d5cb7b440e5375e9f848d416c81b56771551878c12"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-4--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-4--padded.png",
+      "bytes": 5663,
+      "sha256": "fab93a0980c7f76cfab5b2ff1696f01991bd3336416726acd9ac32f10cce7964"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-5--background-only-v3.png",
+      "bytes": 1664,
+      "sha256": "bc2b7dc2c8b2a96555988410355c19889de850e9b2d92e48349786d70f1982c3"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-5--element-paired-v2.png",
+      "bytes": 2565,
+      "sha256": "3ff6c0c8bfdede8ce32840c5437dada61c47d326342f4bc3e83cd55e7a924ccf"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-5--element.png",
+      "bytes": 2518,
+      "sha256": "81602dd1661e298c7bc389d5cb7b440e5375e9f848d416c81b56771551878c12"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-5--mask.png",
+      "bytes": 367,
+      "sha256": "3752912117aa7306755c9b1f5504d4e971da672c678efba32081e508d4caffc5"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D02--repeat-5--padded.png",
+      "bytes": 5663,
+      "sha256": "fab93a0980c7f76cfab5b2ff1696f01991bd3336416726acd9ac32f10cce7964"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-1--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-1--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-1--element.png",
+      "bytes": 2629,
+      "sha256": "0f1db36a33fa995c2023caca780054ee1dbe08386aeb55ab2279f37fd8cd8b64"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-1--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-1--padded.png",
+      "bytes": 5559,
+      "sha256": "8be526504413c4be97c9500a68862f45d0a9b6ecccdb20d72cfe50c48bf4e7c8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-2--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-2--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-2--element.png",
+      "bytes": 2629,
+      "sha256": "0f1db36a33fa995c2023caca780054ee1dbe08386aeb55ab2279f37fd8cd8b64"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-2--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-2--padded.png",
+      "bytes": 5559,
+      "sha256": "8be526504413c4be97c9500a68862f45d0a9b6ecccdb20d72cfe50c48bf4e7c8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-3--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-3--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-3--element.png",
+      "bytes": 2629,
+      "sha256": "0f1db36a33fa995c2023caca780054ee1dbe08386aeb55ab2279f37fd8cd8b64"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-3--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-3--padded.png",
+      "bytes": 5559,
+      "sha256": "8be526504413c4be97c9500a68862f45d0a9b6ecccdb20d72cfe50c48bf4e7c8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-4--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-4--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-4--element.png",
+      "bytes": 2629,
+      "sha256": "0f1db36a33fa995c2023caca780054ee1dbe08386aeb55ab2279f37fd8cd8b64"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-4--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-4--padded.png",
+      "bytes": 5559,
+      "sha256": "8be526504413c4be97c9500a68862f45d0a9b6ecccdb20d72cfe50c48bf4e7c8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-5--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-5--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-5--element.png",
+      "bytes": 2629,
+      "sha256": "0f1db36a33fa995c2023caca780054ee1dbe08386aeb55ab2279f37fd8cd8b64"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-5--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion--playwright-chromium--static--D05--repeat-5--padded.png",
+      "bytes": 5559,
+      "sha256": "8be526504413c4be97c9500a68862f45d0a9b6ecccdb20d72cfe50c48bf4e7c8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-10--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-10--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-10--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-10--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-6--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-6--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-6--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-6--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-7--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-7--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-7--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-7--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-8--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-8--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-8--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-8--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-9--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-9--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-9--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--next--D05--repeat-9--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-10--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-10--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-10--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-10--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-6--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-6--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-6--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-6--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-7--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-7--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-7--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-7--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-8--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-8--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-8--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-8--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-9--background-only-v3.png",
+      "bytes": 2385,
+      "sha256": "d33a2f18158615a06661dbbb028cca07939a01c19abdbb7cbde6b183cddc4bf8"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-9--element-paired-v2.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-9--mask.png",
+      "bytes": 372,
+      "sha256": "43a1ea1df6dac3ee2b036a944e0224c467da5b03c84a66e9ead14d9a7559bc22"
+    },
+    {
+      "path": "tests/accessibility/evidence/a11y008-phase5d2/samples/tablet-reduced-motion-d05-extension--playwright-chromium--static--D05--repeat-9--padded.png",
+      "bytes": 3293,
+      "sha256": "6cfc460e0993a555ad3ea37c48876ae7c7d12e05b677f916613c8c587f19a4de"
+    }
+  ],
+  "counts": {
+    "reconciliationCells": 6,
+    "staticForcedColorsFreshContexts": 30,
+    "staticForcedColorsReliableContexts": 30,
+    "reducedMotionFreshContexts": 30,
+    "nextD05ReducedMotionCaptures": 10,
+    "staticD05ReducedMotionCaptures": 10,
+    "formerUnknownCellsResolved": 7,
+    "unknownRequiredCells": 0,
+    "retainedSampleFiles": 350
+  },
+  "ratios": {
+    "staticForcedColorsMinimum": 21,
+    "staticForcedColorsMaximum": 21,
+    "nextD05ReducedMotionMinimum": 6.9851,
+    "nextD05ReducedMotionMaximum": 6.9851,
+    "staticD05ReducedMotionMinimum": 6.9851,
+    "staticD05ReducedMotionMaximum": 6.9851,
+    "threshold": 4.5
+  },
+  "axe": {
+    "version": "4.12.1",
+    "reportedPair": {
+      "foreground": "#fffdf4",
+      "background": "#ffffff",
+      "approximateRatio": 1.01
+    },
+    "renderedPair": {
+      "foreground": "#000000",
+      "background": "#ffffff",
+      "ratio": 21
+    },
+    "classification": "AXE_DID_NOT_EVALUATE_RENDERED_PAIR",
+    "rawNodesPreserved": true,
+    "suppressionAdded": false
+  },
+  "nativeForcedColors": "NOT_AVAILABLE_EXISTING_OS_SESSION_NOT_CHANGED",
+  "adjudication": {
+    "outcome": "C_TOOLING_FALSE_POSITIVE_OR_UNSUPPORTED_STATE",
+    "allAxeClassified": true,
+    "allStaticReliable": true,
+    "allStaticReliablePass": true,
+    "reproducibleStaticFailure": false,
+    "reconciledActiveFailure": false,
+    "allReducedReliablePass": true,
+    "harnessErrors": 0,
+    "ownerGateRequired": true
+  },
+  "protections": {
+    "productSourceChanges": 0,
+    "protectedVisualChanges": 0,
+    "cssColorChanges": 0,
+    "domAriaChanges": 0,
+    "baselineWrites": 0,
+    "packageLockfileChanges": 0,
+    "paidCalls": 0,
+    "participantRecords": 0
+  }
+}
