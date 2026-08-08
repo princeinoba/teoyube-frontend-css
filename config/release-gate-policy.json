@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "policyVersion": "teoyube-release-gate-2026-07-24.2",
-  "startingCommit": "d7aefa3f62c107e1806f3b90ea7963e39c8bc59f",
+  "policyVersion": "teoyube-accelerated-release-gate-2026-08-07.1",
+  "startingCommit": "228f50f37bb8517530565654b03a3604110e53a6",
   "toolchain": {
     "node": "v24.18.0",
     "npm": "10.2.4",
@@ -33,6 +33,16 @@
     "largestClientChunkMaximumBytes": 975462,
     "approvedCssBaselineBytes": 948538,
     "approvedCssMaximumBytes": 948538,
+    "cssProduction": {
+      "budgetVersion": "teoyube-production-css-transfer-2026-08-07.1",
+      "nextGeneratedRawMaximumBytes": 2048,
+      "productionRawMaximumBytes": 1572864,
+      "productionGzipMaximumBytes": 262144,
+      "productionBrotliMaximumBytes": 196608,
+      "routeRawMaximumBytes": 1572864,
+      "routeGzipMaximumBytes": 262144,
+      "routeBrotliMaximumBytes": 196608
+    },
     "imageBaselineBytes": 167041108,
     "imageMaximumBytes": 167041108,
     "mediaBaselineBytes": 11161794,

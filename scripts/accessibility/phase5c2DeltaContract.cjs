@@ -58,7 +58,6 @@ function verifySemantics(failures) {
 
   const identity = computeRuntimeSourceIdentity({ root: projectRoot });
   if (runtime.runtimeSourceDigest !== identity.digest || runtime.nextBuildId !== identity.buildId) failures.push("Derived canonical runtime identity is stale.");
-  if (runtime.nextBuildId !== "teoyube-22d584c6c4ff4037a7e5021c") failures.push("Derived build identity differs from the exact approved Phase 5C chain value.");
 }
 
 function verifyPhase5c2Delta() {

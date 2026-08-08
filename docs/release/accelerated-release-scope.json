@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
+  "recordedAt": "2026-08-07T19:55:49.9921370-04:00",
+  "releaseType": "CONTROLLED_PUBLIC_PRODUCTION_BETA",
+  "targetProductionDate": "2026-08-21",
+  "branch": "recovery/visual-source-of-truth",
+  "minimumAuthorizedCommit": "fe02706181bace6f29a320d0d64510c00a0c3556",
+  "startingCommit": "228f50f37bb8517530565654b03a3604110e53a6",
+  "startingTag": "teoyube-accelerated-release-start-2026-08-07-228f50f",
+  "canonicalRuntime": "next",
+  "rollbackRuntime": "static-node",
+  "inRelease": [
+    "approved current frontend",
+    "Today and guided daily loop",
+    "Search",
+    "Promise Search",
+    "Canon",
+    "Promise Table",
+    "Daily Word",
+    "Prayer",
+    "Calling Compass",
+    "Journey",
+    "Journal and Reflection",
+    "Testimony candidate",
+    "Book of the Saint",
+    "Lexicon",
+    "deterministic Teo Guide",
+    "exact WEB Scripture",
+    "deterministic explainable TIG",
+    "safe local user-owned continuity",
+    "owner-approved accessibility fixes",
+    "settings, privacy, consent, terms, profile, and personalization"
+  ],
+  "disabledOrDeferredByDefault": [
+    "public live-AI generation",
+    "external embeddings and vector retrieval",
+    "managed cross-device private memory",
+    "research event collection",
+    "incomplete production-only integrations",
+    "archive cleanup",
+    "final 9/10 scorecard rerun",
+    "unavailable-platform manual assistive-technology tasks"
+  ],
+  "checkedInProductionSafetyDefaults": {
+    "TEOYUBE_LIVE_AI_ENABLED": false,
+    "TEOYUBE_ENABLE_LIVE_AI": false,
+    "TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER": false,
+    "TEOYUBE_ENABLE_EMBEDDINGS": false,
+    "TEOYUBE_ENABLE_VECTOR_RETRIEVAL": false,
+    "TEOYUBE_VECTOR_RETRIEVAL_ENABLED": false,
+    "TEOYUBE_ENABLE_BROAD_RAG": false,
+    "TEOYUBE_ENABLE_DURABLE_MEMORY": false,
+    "TEOYUBE_RESEARCH_MODE_ENABLED": false
+  },
+  "hardStops": [
+    "ambiguous Vercel target",
+    "required human login or secure secret entry",
+    "destructive data operation",
+    "unapproved visible redesign",
+    "material launch safety failure"
+  ],
+  "publicClaims": {
+    "beta": true,
+    "wcag22AaConformance": false,
+    "completedUserStudy": false
+  },
+  "protectedVisualChangesAuthorized": 0,
+  "baselineWritesAuthorized": 0,
+  "newFeaturesAfterFreezeAuthorized": false
+}

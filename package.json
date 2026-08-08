@@ -61,6 +61,7 @@
     "release:build:reproducibility": "node scripts/release/build-evidence.cjs reproducibility",
     "release:coverage:verify": "node scripts/release/coverage-evidence.cjs",
     "release:performance:verify": "node scripts/release/performance-gate.cjs",
+    "release:css:verify": "node scripts/release/css-production-budget.cjs",
     "release:accessibility:verify": "node scripts/release/accessibility-gate.cjs",
     "release:commands:core": "node scripts/release/command-runner.cjs core",
     "release:commands:evidence": "node scripts/release/command-runner.cjs evidence",

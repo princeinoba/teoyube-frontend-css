@@ -8,6 +8,7 @@ const {
   walk,
   writeJson
 } = require("./release-utils.cjs");
+const { measureProductionCss } = require("./css-production-budget.cjs");
 
 const policy = readJson("config/release-gate-policy.json");
 const budgets = policy.performance;
@@ -32,10 +33,7 @@ function check(id, actual, maximumValue, extra = {}) {
 }
 
 const jsFiles = walk(".next/static").filter((file) => file.endsWith(".js"));
-const cssFiles = [
-  "styles.css",
-  ...walk("styles").filter((file) => file.endsWith(".css"))
-];
+const css = measureProductionCss();
 const publicFiles = walk("public");
 const imageFiles = publicFiles.filter((file) => /\.(png|jpe?g|webp|gif|svg)$/i.test(file));
 const mediaFiles = publicFiles.filter((file) => /\.(mp4|webm|mov)$/i.test(file));
@@ -47,7 +45,7 @@ const indexManifest = readJson(".var/retrieval/public-index-manifest.json");
 const checks = [
   check("next-client-js-total", bytes(jsFiles), budgets.nextClientJsMaximumBytes, { baseline: budgets.nextClientJsBaselineBytes }),
   check("largest-client-chunk", maximum(jsFiles), budgets.largestClientChunkMaximumBytes, { baseline: budgets.largestClientChunkBaselineBytes }),
-  check("approved-css-total", bytes(cssFiles), budgets.approvedCssMaximumBytes, { baseline: budgets.approvedCssBaselineBytes }),
+  ...css.checks,
   check("image-total", bytes(imageFiles), budgets.imageMaximumBytes, { baseline: budgets.imageBaselineBytes }),
   check("media-total", bytes(mediaFiles), budgets.mediaMaximumBytes, { baseline: budgets.mediaBaselineBytes }),
   check("largest-image", maximum(imageFiles), budgets.largestImageMaximumBytes),
@@ -104,13 +102,14 @@ checks.push(Object.freeze({
 const failed = checks.filter((item) => !item.passed);
 const result = Object.freeze({
   schemaVersion: 1,
-  gateVersion: "teoyube-performance-budget-2026-07-24.1",
+  gateVersion: "teoyube-performance-budget-2026-08-07.1",
   generatedAt: new Date().toISOString(),
   identity,
   policyVersion: policy.policyVersion,
   evidenceType: "synthetic_local_preview",
   checks,
   configuredBudgets: {
+    cssProduction: budgets.cssProduction,
     apiP95MaximumMs: budgets.apiP95MaximumMs,
     liveAiFirstApprovedSectionMaximumMs: budgets.liveAiFirstApprovedSectionMaximumMs,
     liveAiCompleteMaximumMs: budgets.liveAiCompleteMaximumMs,

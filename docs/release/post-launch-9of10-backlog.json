@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
+  "generatedAt": "2026-08-08T00:38:04.692Z",
+  "items": [
+    {
+      "id": "pilot",
+      "status": "POST_LAUNCH",
+      "scope": "Recruit, run, and analyze the approved 8–15 participant synthetic-scenario pilot."
+    },
+    {
+      "id": "stabilization",
+      "status": "POST_LAUNCH",
+      "scope": "Complete the seven-day owner-local stabilization window."
+    },
+    {
+      "id": "manual-at",
+      "status": "POST_LAUNCH",
+      "scope": "Complete unavailable-platform assistive-technology evidence; do not claim full WCAG conformance beforehand."
+    },
+    {
+      "id": "production-ai",
+      "status": "DISABLED",
+      "scope": "Run a separate controlled activation gate for live model use."
+    },
+    {
+      "id": "production-vectors",
+      "status": "DISABLED",
+      "scope": "Run a separate production vector/embedding activation gate."
+    },
+    {
+      "id": "managed-persistence",
+      "status": "DISABLED",
+      "scope": "Add production identity, isolation, deletion, KMS, backup, and restore proof before server-side private memory."
+    },
+    {
+      "id": "archive",
+      "status": "POST_LAUNCH",
+      "scope": "Perform owner-reviewed archive/evidence cleanup separately."
+    },
+    {
+      "id": "scorecard",
+      "status": "POST_LAUNCH",
+      "scope": "Rerun the final Prompt 24 9/10 scorecard after production evidence and pilot data exist."
+    },
+    {
+      "id": "css",
+      "status": "POST_LAUNCH",
+      "scope": "Reduce residual route transfer size without modifying protected styles or baselines."
+    },
+    {
+      "id": "historical-evidence",
+      "status": "POST_LAUNCH",
+      "scope": "Archive stale historical release evidence without weakening current gates."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
+  "recordedAt": "2026-08-07T19:55:49.9921370-04:00",
+  "advisory": {
+    "id": "GHSA-5p4m-2wfm-xmqj",
+    "severity": "high",
+    "package": "js-yaml",
+    "affectedRange": ">=4.0.0 <4.3.1",
+    "patchedVersion": "4.3.1",
+    "source": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj"
+  },
+  "dependencyPath": [
+    "root devDependency eslint@9.39.5",
+    "@eslint/eslintrc@3.3.6",
+    "js-yaml@4.3.0"
+  ],
+  "remediation": {
+    "type": "supported transitive patch",
+    "before": "4.3.0",
+    "after": "4.3.1",
+    "parentRange": "^4.3.0",
+    "packageJsonChanged": false,
+    "packageLockChanged": true,
+    "forceUsed": false,
+    "overrideUsed": false
+  },
+  "verification": {
+    "fullAuditCritical": 0,
+    "fullAuditHigh": 0,
+    "fullAuditTotal": 0,
+    "productionAuditCritical": 0,
+    "productionAuditHigh": 0,
+    "productionAuditTotal": 0,
+    "supplyChainComponents": 490,
+    "unexpectedLifecycleScripts": 0,
+    "directLicenseDebt": 0,
+    "releaseSecurityControls": 18,
+    "releaseSecurityCriticalHigh": 0,
+    "result": "PASS"
+  },
+  "temporaryExceptionRequired": false
+}

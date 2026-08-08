@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
+  "generatedAt": "2026-08-08T00:38:04.692Z",
+  "commit": "228f50f37bb8517530565654b03a3604110e53a6",
+  "buildId": "teoyube-cbc850690383bff13ed154b9",
+  "classifications": [
+    {
+      "id": "runtime-contract",
+      "classification": "CURRENT_RUNTIME",
+      "evidence": [
+        "config/runtime/canonical-runtime-manifest.json",
+        ".next/BUILD_ID"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "recovery-contract",
+      "classification": "CURRENT_RUNTIME",
+      "evidence": [
+        "npm run recovery:verify"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "dependency-security",
+      "classification": "CURRENT_RUNTIME",
+      "evidence": [
+        "package-lock.json",
+        "docs/release/accelerated-security-disposition.json"
+      ],
+      "result": "PASS_ZERO_FULL_AND_PRODUCTION_VULNERABILITIES"
+    },
+    {
+      "id": "a11y-008-disposition",
+      "classification": "STRICT_DESCENDANT_REUSABLE",
+      "evidence": [
+        "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5D2-A11Y008-2026-08-07-001.json"
+      ],
+      "result": "PASS_NO_PRODUCT_REMEDIATION_REQUIRED"
+    },
+    {
+      "id": "immutable-visual-baselines",
+      "classification": "STRICT_DESCENDANT_REUSABLE",
+      "evidence": [
+        "tests/visual/baselines/static-runtime/manifest.json",
+        "tests/visual/contracts/protected-visual-source-manifest.json"
+      ],
+      "result": "PASS_72_SCREENSHOTS_12_DOM"
+    },
+    {
+      "id": "owner-approved-support-baselines",
+      "classification": "STRICT_DESCENDANT_REUSABLE",
+      "evidence": [
+        "tests/visual/baselines/owner-approved-support",
+        "tests/visual/baselines/owner-approved-next-support"
+      ],
+      "result": "PASS"
+    },
+    {
+      "id": "prompt19-live-ai",
+      "classification": "HISTORICAL",
+      "evidence": [
+        "teoyube-prompt19k-pass-f7d6385"
+      ],
+      "result": "NOT_REQUIRED_FEATURE_DISABLED"
+    },
+    {
+      "id": "prompt20-retrieval",
+      "classification": "HISTORICAL",
+      "evidence": [
+        "teoyube-prompt20-pass-d7aefa3"
+      ],
+      "result": "NOT_REQUIRED_FEATURE_DISABLED"
+    },
+    {
+      "id": "historical-source-css-total",
+      "classification": "OBSOLETE_FOR_CURRENT_GATE",
+      "evidence": [
+        "config/release-gate-policy.json",
+        "docs/release/css-production-budget.json"
+      ],
+      "result": "REPLACED_BY_PRODUCTION_REQUEST_GRAPH"
+    },
+    {
+      "id": "final-216-cell-gate",
+      "classification": "REGENERATE",
+      "evidence": [
+        ".tmp/visual-parity/resumable-gate/controller.json"
+      ],
+      "result": "PENDING_CLEAN_RELEASE_COMMIT"
+    },
+    {
+      "id": "vercel-preview-and-production",
+      "classification": "REGENERATE",
+      "evidence": [
+        "docs/release/vercel-preview-report.json",
+        "docs/release/vercel-production-report.json"
+      ],
+      "result": "PENDING"
+    }
+  ]
+}

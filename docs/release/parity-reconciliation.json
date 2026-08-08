@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
+  "generatedAt": "2026-08-08T00:38:04.692Z",
+  "commit": "228f50f37bb8517530565654b03a3604110e53a6",
+  "classifications": {
+    "OWNER_APPROVED_ACCESSIBILITY_DELTA": [
+      "Phase 5C-1",
+      "Phase 5C-2",
+      "Phase 5C-3A / A11Y-007",
+      "A11Y-008 forced-colors evidence disposition"
+    ],
+    "REAL_VISUAL_REGRESSION": [],
+    "REAL_FUNCTIONAL_REGRESSION": [],
+    "HARNESS_STALENESS": [
+      {
+        "contract": "phase5c2DeltaContract",
+        "resolution": "Current derived build identity is verified; historical approved blobs remain hash-bound."
+      },
+      {
+        "contract": "phase5c3aDeltaContract",
+        "resolution": "Only four derived manifest identity fields are normalized to the exact approved historical blob before SHA validation."
+      }
+    ],
+    "HISTORICAL_STATIC_DIFFERENCE": [
+      "V-01 tablet compositor variance",
+      "V-03 Canon desktop compositor variance"
+    ],
+    "NONDETERMINISM": []
+  },
+  "productChanges": 0,
+  "protectedVisualChanges": 0,
+  "immutableBaselineWrites": 0,
+  "currentRecoveryResult": "PASS",
+  "final216CellResult": "PENDING_CLEAN_RELEASE_COMMIT",
+  "wcagClaim": "NOT_CLAIMED"
+}

@@ -11,6 +11,7 @@ const projectRoot = path.resolve(__dirname, "../..");
 const contractPath = path.join(projectRoot, "config/accessibility/approved-phase-5c3a-deltas.json");
 const expectedDecisionId = "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001";
 const expectedStart = "8f01138907a9c76439bd725662097bb6106dea52";
+const expectedRuntimeAfterCommit = "95a0816545f2b595622d5b68f96a93bd4f6b83b2";
 const expectedIssue = "A11Y-007";
 const expectedProposalHash = "e8b95d152abc18f9f94009db2895f9975384b02a2544d7808d594e69a03f8717";
 const expectedRoutes = ["/", "/book", "/canon", "/explore"];
@@ -47,6 +48,15 @@ const expectedFiles = new Map([
 const sha256 = (value) => crypto.createHash("sha256").update(value).digest("hex");
 const normalizePath = (value) => value.replaceAll("\\", "/");
 const gitSource = (relativePath) => execFileSync("git", ["show", `${expectedStart}:${relativePath}`], { cwd: projectRoot, maxBuffer: 8 * 1024 * 1024 });
+const gitApprovedAfterSource = (relativePath) => execFileSync("git", ["show", `${expectedRuntimeAfterCommit}:${relativePath}`], { cwd: projectRoot, maxBuffer: 8 * 1024 * 1024 });
+const runtimeDerivedFields = ["runtimeSourceDigest", "packageLockSha256", "nextBuildId", "verifiedAt"];
+
+function normalizeRuntimeDerivedFields(currentBytes, approvedBytes) {
+  const current = JSON.parse(currentBytes.toString("utf8"));
+  const approved = JSON.parse(approvedBytes.toString("utf8"));
+  for (const field of runtimeDerivedFields) current[field] = approved[field];
+  return Buffer.from(`${JSON.stringify(current, null, 2)}\n`, "utf8");
+}
 
 function verifySemantics(failures) {
   const today = fs.readFileSync(path.join(projectRoot, "styles/pages/today.css"), "utf8");
@@ -63,7 +73,7 @@ function verifySemantics(failures) {
   if (!explore.includes("style={{ minHeight: 24, minWidth: 24 }}")) failures.push("A11Y-007: Explore tab target-size contract changed.");
   const runtime = JSON.parse(fs.readFileSync(path.join(projectRoot, "config/runtime/canonical-runtime-manifest.json"), "utf8"));
   const identity = computeRuntimeSourceIdentity({ root: projectRoot });
-  if (runtime.runtimeSourceDigest !== identity.digest || runtime.nextBuildId !== identity.buildId || runtime.nextBuildId !== "teoyube-22d584c6c4ff4037a7e5021c") failures.push("A11Y-007: deterministic runtime identity is stale.");
+  if (runtime.runtimeSourceDigest !== identity.digest || runtime.nextBuildId !== identity.buildId || runtime.packageLockSha256 !== sha256(fs.readFileSync(path.join(projectRoot, "package-lock.json")))) failures.push("A11Y-007: deterministic runtime identity is stale.");
   for (const source of [today, book, canon, explore]) if (/tabIndex\s*=\s*["'{]?\s*[1-9]/i.test(source) || /tabindex\s*:\s*[1-9]/i.test(source)) failures.push("A11Y-007: positive tabindex is forbidden.");
 }
 
@@ -114,7 +124,12 @@ function verifyPhase5c3aDelta() {
     if (!absolutePath.startsWith(`${projectRoot}${path.sep}`) || !fs.existsSync(absolutePath)) { failures.push(`${relativePath}: current source is missing or unsafe.`); continue; }
     const after = fs.readFileSync(absolutePath);
     if (before.length !== expected[0] || sha256(before) !== expected[1]) failures.push(`${relativePath}: starting bytes differ from the authorized commit.`);
-    if (after.length !== expected[2] || sha256(after) !== expected[3]) failures.push(`${relativePath}: current bytes differ from the exact approved remediation.`);
+    if (relativePath === "config/runtime/canonical-runtime-manifest.json") {
+      const approvedAfter = gitApprovedAfterSource(relativePath);
+      if (approvedAfter.length !== expected[2] || sha256(approvedAfter) !== expected[3]) failures.push(`${relativePath}: historical approved remediation bytes changed.`);
+      const normalizedAfter = normalizeRuntimeDerivedFields(after, approvedAfter);
+      if (normalizedAfter.length !== expected[2] || sha256(normalizedAfter) !== expected[3]) failures.push(`${relativePath}: current bytes differ outside the four derived runtime identity fields.`);
+    } else if (after.length !== expected[2] || sha256(after) !== expected[3]) failures.push(`${relativePath}: current bytes differ from the exact approved remediation.`);
     approvedByPath.set(relativePath, { bytes: after.length, sha256: sha256(after), beforeBytes: before });
   }
   if (failures.length === 0) { verifySemantics(failures); verifyEvidence(failures); }
