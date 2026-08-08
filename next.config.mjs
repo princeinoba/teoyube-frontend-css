@@ -25,6 +25,9 @@ const globalSecurityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/approved-static/*": ["./styles.css", "./styles/**/*"]
+  },
   generateBuildId: async () => resolveBuildId(runtimeSourceIdentity),
   turbopack: {
     root: process.cwd()
