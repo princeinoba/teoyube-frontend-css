@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
-  "generatedAt": "2026-08-08T00:38:04.692Z",
-  "commit": "228f50f37bb8517530565654b03a3604110e53a6",
-  "buildId": "teoyube-cbc850690383bff13ed154b9",
+  "generatedAt": "2026-08-08T00:11:40.0985624-04:00",
+  "commit": "72644c45d3e7f2c1918bf4ece21705e75ed4d786",
+  "buildId": "teoyube-da329e07a71145eaf7677099",
   "classifications": [
     {
       "id": "runtime-contract",
@@ -84,11 +84,22 @@
     },
     {
       "id": "final-216-cell-gate",
-      "classification": "REGENERATE",
+      "classification": "CURRENT_RUNTIME",
       "evidence": [
-        ".tmp/visual-parity/resumable-gate/controller.json"
+        ".tmp/visual-parity/resumable-gate/controller.json",
+        ".tmp/release-216-run2.performance-accessibility.json",
+        ".tmp/release-216-run4.performance-accessibility.json",
+        "docs/release/parity-reconciliation.json"
       ],
-      "result": "PENDING_CLEAN_RELEASE_COMMIT"
+      "result": "PASS_216_OF_216_OWNER_APPROVED_RELEASE_CLASSIFICATION"
+    },
+    {
+      "id": "vercel-target-binding",
+      "classification": "CURRENT_ACCOUNT_DISCOVERY",
+      "evidence": [
+        "docs/release/vercel-project-binding.md"
+      ],
+      "result": "BLOCKED_TARGET_AMBIGUITY"
     },
     {
       "id": "vercel-preview-and-production",
@@ -97,7 +108,7 @@
         "docs/release/vercel-preview-report.json",
         "docs/release/vercel-production-report.json"
       ],
-      "result": "PENDING"
+      "result": "PENDING_TARGET_SELECTION"
     }
   ]
 }

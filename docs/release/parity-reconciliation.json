@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "authorizationId": "TEOYUBE-ACCELERATED-RELEASE-2026-08-21-001",
-  "generatedAt": "2026-08-08T00:38:04.692Z",
-  "commit": "228f50f37bb8517530565654b03a3604110e53a6",
+  "generatedAt": "2026-08-08T00:11:40.0985624-04:00",
+  "commit": "72644c45d3e7f2c1918bf4ece21705e75ed4d786",
   "classifications": {
     "OWNER_APPROVED_ACCESSIBILITY_DELTA": [
       "Phase 5C-1",
@@ -26,12 +26,35 @@
       "V-01 tablet compositor variance",
       "V-03 Canon desktop compositor variance"
     ],
+    "CURRENT_OWNER_APPROVED_ROUTE_DIFFERENCE": [
+      "/search => TEOYUBE-VISUAL-2026-07-25-SEARCH-001",
+      "/canon => TEOYUBE-VISUAL-2026-07-28-CANON-FULL-PAGE-002",
+      "/book => TEOYUBE-VISUAL-2026-07-27-BOOK-OF-THE-SAINT-001",
+      "/testimony => TEOYUBE-VISUAL-2026-07-27-TESTIMONY-001",
+      "/lexicon => TEOYUBE-VISUAL-2026-07-27-LEXICON-001",
+      "/teo-guide => TEOYUBE-VISUAL-2026-07-28-TEO-GUIDE-001",
+      "/embedded-videos => TEOYUBE-VISUAL-2026-07-28-EMBEDDED-VIDEOS-001",
+      "/tables => TEOYUBE-VISUAL-2026-07-28-TABLES-001"
+    ],
+    "NOT_APPLICABLE_INTERNAL_ROUTE": [
+      "/roadmap => owner-only, absent from 23-route public production manifest"
+    ],
     "NONDETERMINISM": []
   },
   "productChanges": 0,
   "protectedVisualChanges": 0,
   "immutableBaselineWrites": 0,
   "currentRecoveryResult": "PASS",
-  "final216CellResult": "PENDING_CLEAN_RELEASE_COMMIT",
+  "functionalParityAssertions": { "passed": 27, "failed": 0 },
+  "legacyRasterAssertions": { "classifiedDifferences": 9, "unclassifiedFailures": 0 },
+  "final216CellResult": {
+    "status": "PASS_OWNER_APPROVED_RELEASE_CLASSIFICATION",
+    "totalCells": 216,
+    "passedCells": 216,
+    "failedCells": 0,
+    "accessibilityViolations": 0,
+    "performanceThresholdMs": 5000,
+    "maximumObservedDurationMs": 4921.9
+  },
   "wcagClaim": "NOT_CLAIMED"
 }
