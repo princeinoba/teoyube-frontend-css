@@ -32,4 +32,17 @@ describe("Teoyube canonical local health metadata", () => {
     expect(serialized).not.toContain(secret);
     expect(serialized).not.toMatch(/api.?key|database.?url|credential|secret/i);
   });
+
+  it("preserves the production environment identity", () => {
+    const payload = createHealthPayload({
+      NEXT_PUBLIC_TEOYUBE_APP_ENV: "production",
+      NEXT_PUBLIC_TEOYUBE_DEPLOYMENT_TARGET: "vercel-production"
+    });
+
+    expect(payload).toMatchObject({
+      status: "ok",
+      environment: "production",
+      deploymentTarget: "vercel-production"
+    });
+  });
 });

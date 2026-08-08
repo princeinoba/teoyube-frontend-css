@@ -26,7 +26,7 @@ const optionalServerIdentifier = z
 
 const publicEnvironmentSchema = z.object({
   NEXT_PUBLIC_TEOYUBE_APP_ENV: z
-    .enum(["development", "preview", "test"])
+    .enum(["development", "preview", "test", "production"])
     .default("preview")
     .catch("preview"),
   NEXT_PUBLIC_TEOYUBE_DEPLOYMENT_TARGET: safePublicLabel.default("undecided"),
@@ -56,7 +56,7 @@ const serverEnvironmentSchema = z.object({
 });
 
 export type TeoyubePublicEnvironment = {
-  appEnvironment: "development" | "preview" | "test";
+  appEnvironment: "development" | "preview" | "test" | "production";
   deploymentTarget: string;
   enabledFlags: {
     personalizationPreview: boolean;
