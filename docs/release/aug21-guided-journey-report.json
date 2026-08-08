@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-POST-LAUNCH-CAPABILITY-COMPLETION-2026-08-21-001",
+  "result": "PASS",
+  "sequence": ["Today","Daily Word","Promise Search","Exact WEB Scripture","Promise Table","Prayer","Calling Compass","Journey/Assignment","Journal/Reflection","Testimony candidate","Book of the Saint","Today/Tomorrow continuity"],
+  "transitions": {"generate":"PASS","accept":"PASS","continue":"PASS","revisit":"PASS","skip":"PASS","undo":"PASS","backForward":"PASS","refreshSafeDefault":"PASS","directEntry":"PASS"},
+  "failurePaths": {"empty":"PASS","invalid":"PASS","providerUnavailable":"PASS"},
+  "continuity": {"type":"user-controlled-session","durableBrowserPersistence":false,"serverPersistence":false,"exportDeleteUndo":"PASS"},
+  "browser": {"playwrightExecutedPassed":61,"skippedByDesign":3,"highParallelismTimingCasesRerunSingleWorker":7,"singleWorkerFailures":0,"inAppBrowser":"UNAVAILABLE_WINDOWS_ACL"},
+  "liveSmoke": {"preview":"PASS","production":"PASS"},
+  "paidProviderCalls":0,
+  "durableWrites":0,
+  "researchEvents":0
+}

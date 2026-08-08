@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-POST-LAUNCH-CAPABILITY-COMPLETION-2026-08-21-001",
+  "result": {
+    "controlledPublicProductionBeta": "COMPLETE",
+    "safeCore": "COMPLETE",
+    "optionalDisabledCapabilities": "DEFERRED",
+    "hardBlockers": []
+  },
+  "approvedFrontend": {
+    "Today":"PASS","Guided daily loop":"PASS","Search":"PASS","Promise Search":"PASS","Canon":"PASS","Promise Table":"PASS","Daily Word":"PASS","Prayer":"PASS","Calling Compass":"PASS","Journey":"PASS","Journal":"PASS","Reflection":"PASS","Testimony candidate":"PASS","Book of the Saint":"PASS","Lexicon":"PASS","Exact WEB Scripture":"PASS","TIG":"PASS","Deterministic Teo Guide":"PASS","Local continuity":"PASS_SESSION_ONLY","Static rollback":"PASS"
+  },
+  "optional": {
+    "liveAi":{"implementation":"PREPARED","publicDefault":"OFF","activation":"DEFERRED"},
+    "vectorRetrieval":{"implementation":"PREPARED","publicDefault":"OFF","activation":"DEFERRED"},
+    "research":{"implementation":"PREPARED","publicDefault":"OFF","activation":"DEFERRED"},
+    "managedMemory":{"implementation":"LOCAL_DEV_VERIFIED","publicDefault":"OFF","activation":"DEFERRED"}
+  },
+  "quality": {
+    "build":"PASS_58_PAGES","lint":"PASS","typescript":"PASS","unitIntegration":"PASS_423_1_SKIPPED","browser":"PASS_61_3_SKIPPED_BY_DESIGN","accessibility":"FOCUSED_PASS_AGGREGATE_BLOCKED_BY_PARITY_CONTROLLER","responsive":"PASS","security":"PASS_18_CONTROLS","dependencyVulnerabilities":0,"secrets":"PASS","protectedVisualContract":"PASS","secondaryStaticReproducibility":"FAIL_STALE_ARIA_AND_ENVIRONMENT_SNAPSHOTS","baselineWrites":0,"runtimeLogs":"PASS_1000_RECORDS_ZERO_ERRORS_WARNINGS_5XX_CRASHES"
+  },
+  "deployment": {
+    "repository":"https://github.com/princeinoba/teoyube-frontend-css","branch":"recovery/visual-source-of-truth","releaseCommit":"d95b6bc3abcc2e1f3592bbf5ae90970a40010954","previewId":"dpl_Fe9RFtKQxNbEcrAzVyfsCmao9vid","previewStatus":"READY","productionId":"dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM","productionStatus":"READY","productionUrl":"https://teoyube-frontend-css.vercel.app","healthIdentity":"production/vercel-production","deployedAt":"2026-08-08T14:14:29-04:00","rollbackTarget":"dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM","redeploymentRequired":false,"bypassTokenCount":0,"protectedProjectsUnchanged":true
+  },
+  "changes":{"protectedVisualFiles":0,"runtimeSourceChanged":false,"temporaryProbeRemoved":true,"narrowIgnoreRulesAdded":true,"linkedWorktreeSafetyEvaluatorFixed":true},
+  "paidProviderCalls":0,
+  "remainingGaps":["secondary static parity/accessibility controller evidence","Live AI provider approval and paid evaluation","authorized vector index and provider evaluation","research consent operations","managed-memory Production identity/storage/encryption/deletion/backup controls"],
+  "rollbackCommand":"vercel rollback dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM --scope princeinobas-projects"
+}

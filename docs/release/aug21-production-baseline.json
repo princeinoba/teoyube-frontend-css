@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-POST-LAUNCH-CAPABILITY-COMPLETION-2026-08-21-001",
+  "capturedAt": "2026-08-08T17:17:13.2866189-04:00",
+  "repository": "https://github.com/princeinoba/teoyube-frontend-css",
+  "branch": "recovery/visual-source-of-truth",
+  "git": {
+    "localHead": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "remoteHead": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "aligned": true,
+    "initialWorktreeClean": true,
+    "remoteUrl": "https://github.com/princeinoba/teoyube-frontend-css.git",
+    "isolatedWorktree": true,
+    "authorizedWorkspacePreservedBecauseDirty": true
+  },
+  "runtime": {
+    "identityVerification": "PASS",
+    "runtimeSourceDigest": "9f8e05bb7c9d62995411593124a3f83a3f29f1cd867ebedf9d41522ed8355b9b",
+    "approvedSourceDigest": "a6c7c755776a1991892e5dc42991d085276fdf90a589b2c2b6700a884f7ee38b",
+    "nextBuildId": "teoyube-9f8e05bb7c9d629954115931",
+    "recoveryVerification": "PASS"
+  },
+  "production": {
+    "project": "princeinobas-projects/teoyube-frontend-css",
+    "projectId": "prj_0hPdbIadmq39jUS3wQ56tMvXOvCm",
+    "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "status": "READY",
+    "target": "production",
+    "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "url": "https://teoyube-frontend-css.vercel.app",
+    "health": {
+      "status": "ok",
+      "environment": "production",
+      "deploymentTarget": "vercel-production"
+    },
+    "readiness": {
+      "status": "ready",
+      "deterministicFallbackReady": true,
+      "scripture": "ready",
+      "tig": "ready",
+      "safety": "ready",
+      "durableMemory": "disabled",
+      "vectorIndex": "disabled",
+      "liveAiProvider": "disabled"
+    },
+    "rollbackDeploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM"
+  },
+  "environment": {
+    "valuesExposed": false,
+    "names": [
+      "NEXT_PUBLIC_TEOYUBE_APP_ENV",
+      "NEXT_PUBLIC_TEOYUBE_DEPLOYMENT_TARGET",
+      "NEXT_PUBLIC_TEOYUBE_ENABLE_CONSENT_CONTROLS",
+      "NEXT_PUBLIC_TEOYUBE_ENABLE_DEBUG_UI",
+      "NEXT_PUBLIC_TEOYUBE_ENABLE_OFFLINE_FALLBACK",
+      "NEXT_PUBLIC_TEOYUBE_ENABLE_PERSONALIZATION_PREVIEW",
+      "TEOYUBE_ENABLE_BROAD_RAG",
+      "TEOYUBE_ENABLE_DATABASE_PERSISTENCE",
+      "TEOYUBE_ENABLE_DURABLE_MEMORY",
+      "TEOYUBE_ENABLE_EMBEDDINGS",
+      "TEOYUBE_ENABLE_EXTERNAL_ANALYTICS",
+      "TEOYUBE_ENABLE_EXTERNAL_MONITORING",
+      "TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER",
+      "TEOYUBE_ENABLE_LIVE_AI",
+      "TEOYUBE_ENABLE_VECTOR_RETRIEVAL",
+      "TEOYUBE_LIVE_AI_ENABLED",
+      "TEOYUBE_RESEARCH_MODE_ENABLED",
+      "TEOYUBE_VECTOR_RETRIEVAL_ENABLED"
+    ],
+    "verifiedFalse": [
+      "TEOYUBE_ENABLE_LIVE_AI",
+      "TEOYUBE_ENABLE_VECTOR_RETRIEVAL",
+      "TEOYUBE_VECTOR_RETRIEVAL_ENABLED",
+      "TEOYUBE_ENABLE_EMBEDDINGS",
+      "TEOYUBE_ENABLE_BROAD_RAG",
+      "TEOYUBE_ENABLE_DATABASE_PERSISTENCE",
+      "TEOYUBE_RESEARCH_MODE_ENABLED",
+      "TEOYUBE_ENABLE_DURABLE_MEMORY",
+      "TEOYUBE_ENABLE_EXTERNAL_TEO_GUIDE_PROVIDER"
+    ],
+    "serverMemoryAliasConfigured": false
+  },
+  "dependencyAudit": {
+    "status": "PASS",
+    "dependencyTotal": 490,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "security": {
+    "trackedSecretScan": "PASS",
+    "trackedFilesScanned": 5255,
+    "secretFileCount": 0,
+    "gitHistorySecretScan": "PASS",
+    "historyPatternMatches": 0,
+    "localEnvironmentBoundary": "PASS",
+    "clientBundleScan": "PENDING_BUILD",
+    "fullGate": "PENDING_BUILD_AND_PERSISTED_AUDIT_EVIDENCE"
+  },
+  "trackedArtifacts": {
+    "vercelPaths": [],
+    "credentialOrAuthenticationArtifacts": [],
+    "environmentFiles": [".env.example"],
+    "temporaryFiles": [".tmp-apply-patch-probe.txt"],
+    "disposition": "CLEANUP_REQUIRED"
+  },
+  "paidProviderCalls": 0,
+  "productionChanged": false,
+  "redeployed": false
+}

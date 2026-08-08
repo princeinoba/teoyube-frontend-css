@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 import {
   SAFETY_DATASET_VERSION,
   SAFETY_EVALUATOR_VERSION,
@@ -19,13 +20,15 @@ const allowed: readonly Command[] = ["verify", "evaluate", "orchestration", "liv
 if (!allowed.includes(command)) throw new Error(`Unknown safety command: ${command}`);
 
 function currentCommit(): string {
-  const head = fs.readFileSync(path.join(root, ".git", "HEAD"), "utf8").trim();
-  if (!head.startsWith("ref: ")) return head;
-  const ref = head.slice(5);
-  const refPath = path.join(root, ".git", ...ref.split("/"));
-  if (fs.existsSync(refPath)) return fs.readFileSync(refPath, "utf8").trim();
-  const packed = fs.readFileSync(path.join(root, ".git", "packed-refs"), "utf8");
-  return packed.split(/\r?\n/).find((line) => line.endsWith(` ${ref}`))?.split(" ")[0] || "UNKNOWN";
+  try {
+    return execFileSync("git", ["rev-parse", "HEAD"], {
+      cwd: root,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"]
+    }).trim();
+  } catch {
+    return "UNKNOWN";
+  }
 }
 
 function datasetContractErrors(): readonly string[] {

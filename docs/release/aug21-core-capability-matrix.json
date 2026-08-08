@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-POST-LAUNCH-CAPABILITY-COMPLETION-2026-08-21-001",
+  "result": "PASS",
+  "capabilityCount": 20,
+  "capabilities": [
+    {"name":"Today","routes":["/"],"state":"session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Guided daily loop","routes":["/","/journey"],"state":"reversible-session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Search","routes":["/search"],"state":"session-only","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Promise Search","routes":["/promise-search"],"state":"session-only","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Canon","routes":["/canon"],"state":"session-selection","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Promise Table","routes":["/promise-table"],"state":"reversible-session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Daily Word","routes":["/daily-word"],"state":"session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Prayer","routes":["/prayer"],"state":"no-raw-durable-write","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Calling Compass","routes":["/calling-compass"],"state":"session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Journey","routes":["/journey"],"state":"reversible-session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Journal","routes":["/journal"],"state":"sanitized-session","scripture":true,"tig":false,"result":"PASS"},
+    {"name":"Reflection","routes":["/journal"],"state":"sanitized-session","scripture":true,"tig":false,"result":"PASS"},
+    {"name":"Testimony candidate","routes":["/testimony"],"state":"exportable-deletable-session","scripture":true,"tig":false,"result":"PASS"},
+    {"name":"Book of the Saint","routes":["/book"],"state":"reversible-session","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Lexicon","routes":["/lexicon"],"state":"session-selection","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Exact WEB Scripture","routes":["/api/teoyube/scripture"],"state":"stateless","scripture":true,"tig":false,"result":"PASS"},
+    {"name":"TIG","routes":["integrated"],"state":"deterministic-explainability","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Deterministic Teo Guide","routes":["/teo-guide"],"state":"no-durable-write","scripture":true,"tig":true,"result":"PASS"},
+    {"name":"Local continuity","routes":["/journey","/journal","/testimony","/book","/settings"],"state":"session-export-delete-undo","durablePersistenceClaimed":false,"result":"PASS"},
+    {"name":"Static rollback","routes":["operator-command"],"state":"static-runtime","result":"PASS"}
+  ],
+  "routeSmoke":{"canonical":23,"failures":0},
+  "stylesheetSmoke":{"endpoints":9,"failures":0},
+  "browserEvidence":{"executedPassed":61,"skippedByDesign":3,"focusedRetryFailures":0,"inAppBrowser":"UNAVAILABLE_WINDOWS_ACL"},
+  "protectedVisualChanges":0
+}

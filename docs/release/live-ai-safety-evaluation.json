@@ -1,0 +1,1 @@
+{"schemaVersion":1,"deterministic":{"result":"PASS","passed":64,"total":64},"gateA":"PASS","gateB":"CLOSED_LIVE_AI_DISABLED","focusedTests":{"passed":25,"failed":0},"providerBackedEvaluation":"NOT_RUN","liveModelSafetyCertified":false,"paidCalls":0}
