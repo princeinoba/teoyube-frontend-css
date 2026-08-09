@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-VECTOR-HOLDOUT-V2-2026-08-09-001",
+  "v1": {
+    "datasetId": "teoyube-vector-quality-holdout-2026-08-09.1",
+    "sha256": "079327d48457a86eb98887883656b1aa6b29469d3abd54a52cf7c676ffca5d12",
+    "disposition": "INVALID_AS_ACTIVATION_GATE",
+    "commit": "98722ac12c18fdefdc2db1a8b3a57633d51d608c"
+  },
+  "v2": {
+    "datasetId": "teoyube-vector-quality-holdout-2026-08-09.2",
+    "sha256": "3e84e225d5fe4faa84f8ade8bbca2e49c4c6d0bcb914584f5f459707f6c2d4f5",
+    "cleanBaseCommit": "6a2b50e3f16564a2bfc6fdeda17946c12bcc2e1c",
+    "cases": 35
+  },
+  "changes": [
+    {
+      "caseId": "holdout-para-01",
+      "field": "expectedDocumentIds",
+      "from": [
+        "web:1CO.13.4"
+      ],
+      "to": [
+        "web:1-corinthians.13.4"
+      ],
+      "reason": "deterministic canonical ID correction",
+      "queryChanged": false,
+      "difficultyChanged": false
+    },
+    {
+      "caseId": "holdout-para-03",
+      "field": "expectedDocumentIds",
+      "from": [
+        "web:JAS.1.5"
+      ],
+      "to": [
+        "web:james.1.5"
+      ],
+      "reason": "deterministic canonical ID correction",
+      "queryChanged": false,
+      "difficultyChanged": false
+    },
+    {
+      "caseId": "holdout-para-12",
+      "field": "mode",
+      "from": "semantic",
+      "to": "unsupported_by_corpus",
+      "reason": "lexicon:solen is absent from the authorized checkpoint",
+      "queryChanged": false,
+      "expectedDocumentIdChanged": false
+    },
+    {
+      "caseId": "holdout-para-13",
+      "field": "case",
+      "from": null,
+      "to": "indexed Lexicon wisdom-and-direction case expecting lexicon:wisdora",
+      "reason": "comparable indexed replacement prevents reduced difficulty"
+    }
+  ],
+  "unchangedGenuineFailures": [
+    {
+      "caseId": "holdout-para-02",
+      "priorRank": 51,
+      "expectedDocumentId": "web:PSA.119.105",
+      "queryChanged": false,
+      "expectedResultChanged": false
+    },
+    {
+      "caseId": "holdout-para-04",
+      "priorRank": 51,
+      "expectedDocumentId": "web:JHN.15.5",
+      "queryChanged": false,
+      "expectedResultChanged": false
+    },
+    {
+      "caseId": "holdout-para-08",
+      "priorRank": 24,
+      "expectedDocumentId": "canon:SC016",
+      "queryChanged": false,
+      "expectedResultChanged": false
+    }
+  ],
+  "otherQueriesChanged": 0,
+  "otherExpectedResultsChanged": 0,
+  "productionRankingImportsHoldout": false
+}
