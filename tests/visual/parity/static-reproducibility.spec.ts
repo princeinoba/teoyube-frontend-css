@@ -1,7 +1,7 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
-import { expect, test } from "@playwright/test";
+import { chromium, expect, test } from "@playwright/test";
 import {
   assertDisposableCandidatePath,
   candidateRoot,
@@ -88,25 +88,25 @@ function immutableHashes(): Record<string, string> {
   );
 }
 
-test("current static runtime is reproducible while historical evidence remains immutable", async ({
-  browser,
-  context,
-  page,
-}) => {
+test("current static runtime is reproducible while historical evidence remains immutable", async () => {
   test.setTimeout(20 * 60_000);
   assertDisposableCandidatePath(outputRoot);
   fs.rmSync(outputRoot, { recursive: true, force: true });
   const baselineHashesBefore = immutableHashes();
-  await installDeterminism(context, [new URL(staticBaseUrl).origin]);
-  const secondContext = await browser.newContext({
-    colorScheme: "light",
+  const secondaryBrowser = await chromium.launch({ headless: true });
+  const contextOptions = {
+    colorScheme: "light" as const,
     deviceScaleFactor: 1,
-    forcedColors: "none",
+    forcedColors: "none" as const,
     locale: "en-US",
-    reducedMotion: "reduce",
+    reducedMotion: "reduce" as const,
     timezoneId: "UTC",
-  });
+  };
+  const context = await secondaryBrowser.newContext(contextOptions);
+  const secondContext = await secondaryBrowser.newContext(contextOptions);
+  await installDeterminism(context, [new URL(staticBaseUrl).origin]);
   await installDeterminism(secondContext, [new URL(staticBaseUrl).origin]);
+  const page = await context.newPage();
   const secondPage = await secondContext.newPage();
   for (const candidatePage of [page, secondPage]) {
     await candidatePage.goto(staticBaseUrl, {
@@ -300,7 +300,7 @@ test("current static runtime is reproducible while historical evidence remains i
   const result = {
     schemaVersion: 1,
     evidenceBoundary: "historical-immutable-versus-current-reproducibility",
-    browserVersion: browser.version(),
+    browserVersion: secondaryBrowser.version(),
     environment,
     screenshotsCompared,
     domSnapshotsCompared,
@@ -316,7 +316,9 @@ test("current static runtime is reproducible while historical evidence remains i
     `${JSON.stringify(result, null, 2)}\n`,
     "utf8",
   );
+  await context.close();
   await secondContext.close();
+  await secondaryBrowser.close();
 
   expect(
     currentVisualFailures,
