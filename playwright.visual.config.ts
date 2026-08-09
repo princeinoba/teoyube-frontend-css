@@ -19,12 +19,13 @@ export default defineConfig({
   reporter: [["list"], ["html", { open: "never", outputFolder: ".tmp/visual-parity/report" }]],
   use: {
     browserName: "chromium",
-    channel: process.platform === "win32" ? "chrome" : undefined,
     colorScheme: "light",
+    contextOptions: { forcedColors: "none", reducedMotion: "reduce" },
     deviceScaleFactor: 1,
     headless: true,
     locale: "en-US",
     screenshot: "off",
+    timezoneId: "UTC",
     trace: "retain-on-failure"
   },
   projects: [
