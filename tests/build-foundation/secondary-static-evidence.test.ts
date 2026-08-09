@@ -5,6 +5,7 @@ import {
   classifyCurrentVisualDifference,
   classifyHistoricalDomDifference,
   classifyHistoricalVisualDifference,
+  classifyRuntimeStatusDifference,
 } from "../visual/parity/secondary-static-evidence";
 
 const base = {
@@ -73,6 +74,37 @@ describe("secondary static evidence classification", () => {
     ).toBe("ENVIRONMENT_NONDETERMINISM");
   });
 
+  it("classifies only the exact approved runtime-status copy pair", () => {
+    const structure = {
+      id: "phase117OfflineStatus",
+      className: "phase117-offline-status",
+      ariaLive: "polite",
+      pillClassName: "phase117-offline-pill online",
+      pillText: "Local beta online",
+    };
+    const staticStatus = {
+      ...structure,
+      detailText:
+        "YouTube media connects only after you press Play; Teoyube does not use that connection for AI, analytics, uploads, or persistence.",
+    };
+    const nextStatus = {
+      ...structure,
+      detailText:
+        "External services remain disabled; network is not used for AI, analytics, uploads, or persistence.",
+    };
+    expect(
+      classifyRuntimeStatusDifference(staticStatus, nextStatus),
+    ).toMatchObject({
+      classification: "HISTORICAL_STATIC_RUNTIME_DIFFERENCE",
+      approvalId: "TEOYUBE-FUNCTIONAL-2026-07-30-TODAY-YOUTUBE-PLAYBACK-001",
+    });
+    expect(
+      classifyRuntimeStatusDifference(staticStatus, {
+        ...nextStatus,
+        detailText: "Changed without approval",
+      })?.classification,
+    ).toBe("UNRESOLVED");
+  });
   it("treats the immutable July 18 raster only as historical evidence", () => {
     expect(
       classifyHistoricalVisualDifference({

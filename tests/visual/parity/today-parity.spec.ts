@@ -3,6 +3,7 @@ import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 import { captureRichContract, installDeterminism, openStaticView, settlePage } from "./capture";
 import { compareRichContracts, compareScreenshots } from "./compare";
+import { alignApprovedRuntimeStatusForVisualParity } from "./secondary-static-evidence";
 import { assertDisposableCandidatePath, candidateRoot, runtimeManifest, type ViewportName } from "./config";
 
 const staticBaseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4173";
@@ -137,6 +138,7 @@ test("approved Today candidate matches at every required viewport", async ({ bro
       await settlePage(nextPage);
       await alignApprovedTodayScope(staticPage, "static");
       await alignApprovedTodayScope(nextPage, "next");
+      await alignApprovedRuntimeStatusForVisualParity(staticPage, nextPage);
       const staticContract = scopeFrameworkParents(await captureRichContract(staticPage, "#today"));
       const nextContract = scopeFrameworkParents(await captureRichContract(nextPage, "#today"));
       fs.mkdirSync(viewportOutput, { recursive: true });

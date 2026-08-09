@@ -3,6 +3,7 @@ import path from "node:path";
 import { chromium, expect, test, type Page } from "@playwright/test";
 import { captureRichContract, installDeterminism, openStaticView, settlePage } from "./capture";
 import { compareRichContracts, compareScreenshots } from "./compare";
+import { alignApprovedRuntimeStatusForVisualParity } from "./secondary-static-evidence";
 import { assertDisposableCandidatePath, candidateRoot, runtimeManifest, type ViewportName } from "./config";
 
 const staticBaseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4173";
@@ -73,6 +74,7 @@ for (const definition of [
         await settlePage(nextPage);
         await align(staticPage);
         await align(nextPage);
+        await alignApprovedRuntimeStatusForVisualParity(staticPage, nextPage);
         const staticContract = scopeFrameworkParents(await captureRichContract(staticPage, definition.root));
         const nextContract = scopeFrameworkParents(await captureRichContract(nextPage, definition.root));
         fs.mkdirSync(viewportOutput, { recursive: true });

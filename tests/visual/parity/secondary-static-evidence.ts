@@ -1,3 +1,4 @@
+import type { Page } from "@playwright/test";
 import type { LegacyDomSnapshot } from "./capture";
 
 export type SecondaryFailureClassification =
@@ -321,6 +322,107 @@ export function classifyHistoricalDomDifference(
   };
 }
 
+export interface RuntimeStatusSnapshot {
+  id: string;
+  className: string;
+  ariaLive: string;
+  pillClassName: string;
+  pillText: string;
+  detailText: string;
+}
+
+const onlineStatusStructure = Object.freeze({
+  id: "phase117OfflineStatus",
+  className: "phase117-offline-status",
+  ariaLive: "polite",
+  pillClassName: "phase117-offline-pill online",
+  pillText: "Local beta online",
+});
+
+const staticYoutubeNetworkNotice =
+  "YouTube media connects only after you press Play; Teoyube does not use that connection for AI, analytics, uploads, or persistence.";
+const nextDisabledServicesNotice =
+  "External services remain disabled; network is not used for AI, analytics, uploads, or persistence.";
+
+function hasExactOnlineStatusStructure(
+  snapshot: RuntimeStatusSnapshot,
+): boolean {
+  return Object.entries(onlineStatusStructure).every(
+    ([key, value]) => snapshot[key as keyof RuntimeStatusSnapshot] === value,
+  );
+}
+
+export function classifyRuntimeStatusDifference(
+  staticStatus: RuntimeStatusSnapshot,
+  nextStatus: RuntimeStatusSnapshot,
+): DifferenceDisposition | null {
+  if (JSON.stringify(staticStatus) === JSON.stringify(nextStatus)) return null;
+  if (
+    hasExactOnlineStatusStructure(staticStatus) &&
+    hasExactOnlineStatusStructure(nextStatus) &&
+    staticStatus.detailText === staticYoutubeNetworkNotice &&
+    nextStatus.detailText === nextDisabledServicesNotice
+  ) {
+    return historicalFunctional(
+      "TEOYUBE-FUNCTIONAL-2026-07-30-TODAY-YOUTUBE-PLAYBACK-001",
+      "docs/owner-approvals/functional/TODAY_TEOYUBEWORLD_VIDEO_PLAYBACK_CHANGE_REQUEST_2026-07-30.md",
+      "436a84e",
+      "The static rollback has the approved global YouTube network notice while non-media Next routes retain the approved disabled-services notice.",
+    );
+  }
+  return {
+    classification: "UNRESOLVED",
+    reason:
+      "The runtime status surface differs outside the exact approval-bound copy pair.",
+  };
+}
+
+async function readRuntimeStatus(
+  page: Page,
+): Promise<RuntimeStatusSnapshot | null> {
+  return page
+    .locator("#phase117OfflineStatus")
+    .evaluate((element) => {
+      const pill = element.querySelector(".phase117-offline-pill");
+      const detail = element.querySelector("small");
+      return {
+        id: element.id,
+        className: element.className,
+        ariaLive: element.getAttribute("aria-live") || "",
+        pillClassName: pill?.className || "",
+        pillText: pill?.textContent?.replace(/\s+/g, " ").trim() || "",
+        detailText: detail?.textContent?.replace(/\s+/g, " ").trim() || "",
+      };
+    })
+    .catch(() => null);
+}
+
+export async function alignApprovedRuntimeStatusForVisualParity(
+  staticPage: Page,
+  nextPage: Page,
+): Promise<DifferenceDisposition | null> {
+  const [staticStatus, nextStatus] = await Promise.all([
+    readRuntimeStatus(staticPage),
+    readRuntimeStatus(nextPage),
+  ]);
+  if (!staticStatus && !nextStatus) return null;
+  if (!staticStatus || !nextStatus) {
+    throw new Error(
+      "Runtime status surface exists in only one current runtime.",
+    );
+  }
+  const disposition = classifyRuntimeStatusDifference(staticStatus, nextStatus);
+  if (!disposition) return null;
+  if (disposition.classification !== "HISTORICAL_STATIC_RUNTIME_DIFFERENCE") {
+    throw new Error(disposition.reason);
+  }
+  await nextPage
+    .locator("#phase117OfflineStatus small")
+    .evaluate((element, approvedText) => {
+      element.textContent = approvedText;
+    }, staticStatus.detailText);
+  return disposition;
+}
 export function classifyHistoricalVisualDifference(input: {
   passed: boolean;
   baselineSourceTag: string;

@@ -4,6 +4,7 @@ import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 import { captureRichContract, installDeterminism, openStaticView, settlePage } from "./capture";
 import { compareRichContracts, compareScreenshots } from "./compare";
+import { alignApprovedRuntimeStatusForVisualParity } from "./secondary-static-evidence";
 import { assertDisposableCandidatePath, candidateRoot, runtimeManifest, type ViewportName } from "./config";
 
 const staticBaseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4173";
@@ -102,6 +103,7 @@ for (const definition of approvedRoutes) {
         await nextPage.waitForFunction((view) => document.body.dataset.view === view, definition.view);
         await align(staticPage);
         await align(nextPage);
+        await alignApprovedRuntimeStatusForVisualParity(staticPage, nextPage);
         const staticContract = scopeFrameworkParents(await captureRichContract(staticPage, `#${definition.view}`));
         const nextContract = scopeFrameworkParents(await captureRichContract(nextPage, `#${definition.view}`));
         fs.mkdirSync(output, { recursive: true });

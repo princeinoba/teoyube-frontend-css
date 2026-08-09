@@ -4,6 +4,7 @@ import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 import { captureRichContract, installDeterminism, openStaticView, settlePage } from "./capture";
 import { compareRichContracts, compareScreenshots } from "./compare";
+import { alignApprovedRuntimeStatusForVisualParity } from "./secondary-static-evidence";
 import { assertDisposableCandidatePath, candidateRoot, runtimeManifest, type ViewportName } from "./config";
 
 const staticBaseUrl = process.env.TEOYUBE_STATIC_BASE_URL || "http://127.0.0.1:4173";
@@ -86,6 +87,7 @@ test("approved Calling Compass candidate matches at every required viewport", as
       await nextPage.waitForFunction(() => document.body.dataset.view === "calling");
       await align(staticPage);
       await align(nextPage);
+      await alignApprovedRuntimeStatusForVisualParity(staticPage, nextPage);
       const staticContract = scopeFrameworkParents(await captureRichContract(staticPage, "#calling"));
       const nextContract = scopeFrameworkParents(await captureRichContract(nextPage, "#calling"));
       fs.mkdirSync(viewportOutput, { recursive: true });
