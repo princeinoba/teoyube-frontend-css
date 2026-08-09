@@ -1,0 +1,3524 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-VECTOR-V2-EVIDENCE-BINDING-2026-08-09-001",
+  "purpose": "Append-only evidence reconciliation; no protected object or immutable baseline mutation is authorized.",
+  "repository": "https://github.com/princeinoba/teoyube-frontend-css",
+  "branch": "recovery/visual-source-of-truth",
+  "lineage": {
+    "approvedRemoteBaseCommit": "6a2b50e3f16564a2bfc6fdeda17946c12bcc2e1c",
+    "qualitySourceCommit": "a68d5ae167daac01c8981e8cb83caae9d135c828",
+    "relationship": "approvedRemoteBaseCommit_is_ancestor_of_qualitySourceCommit"
+  },
+  "historicalApprovalIds": [
+    "TEOYUBE-OWNER-SCRIPTURE-QUOTATION-2026-07-20-P15B",
+    "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+    "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001"
+  ],
+  "invariants": {
+    "protectedVisualChanges": 0,
+    "immutableBaselineWrites": 0,
+    "snapshotUpdates": 0,
+    "globalSuppressions": 0,
+    "counterpartRule": "Every listed current object must equal both the quality-source and approved-remote-base Git object."
+  },
+  "inventories": {
+    "protectedSources": {
+      "count": 268,
+      "aggregateSha256": "54a0338bd2b6fb0622ded268d199305b59a3f6ae609c2ab1d20321e33a875632",
+      "objects": [
+        {
+          "path": "Asset/ChatGPT Image (Book of Saints).png",
+          "bytes": 1490491,
+          "sha256": "8522caea5ebdead298cab73b50511fb8cb3db9d35374cc4ee311b3b3f45b2e62",
+          "historicalBaseline": {
+            "bytes": 1490491,
+            "sha256": "8522caea5ebdead298cab73b50511fb8cb3db9d35374cc4ee311b3b3f45b2e62"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Calling Compass).png",
+          "bytes": 1868790,
+          "sha256": "545471c6bf3845157dc001367d850983a88fcbbd537d39c4ca1483b1324c70a4",
+          "historicalBaseline": {
+            "bytes": 1868790,
+            "sha256": "545471c6bf3845157dc001367d850983a88fcbbd537d39c4ca1483b1324c70a4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Embed Video Page).png",
+          "bytes": 1652215,
+          "sha256": "cb2de69fa3887ee745bfe026958f70a36eb42dd68d681de2d7bb9e40632e05da",
+          "historicalBaseline": {
+            "bytes": 1652215,
+            "sha256": "cb2de69fa3887ee745bfe026958f70a36eb42dd68d681de2d7bb9e40632e05da"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Teo Guide Page).png",
+          "bytes": 1588189,
+          "sha256": "9302cda72c6bb381d7e1c343b8c8c7d1bbd3245f67bd1d1ef89fc025aea973e8",
+          "historicalBaseline": {
+            "bytes": 1588189,
+            "sha256": "9302cda72c6bb381d7e1c343b8c8c7d1bbd3245f67bd1d1ef89fc025aea973e8"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Teoyube Lexicon Page).png",
+          "bytes": 1692413,
+          "sha256": "c09000fbc3751e66b7b50855fcfc2fc328ccc8f2b3c0bdb7a576c19a768806d4",
+          "historicalBaseline": {
+            "bytes": 1692413,
+            "sha256": "c09000fbc3751e66b7b50855fcfc2fc328ccc8f2b3c0bdb7a576c19a768806d4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Teoyube Tables Page).png",
+          "bytes": 1383166,
+          "sha256": "ea5eae7e26d7b1fbc4c787af4eb72b978e07cc93f3f7fc1dcb68f3b2c0ae0101",
+          "historicalBaseline": {
+            "bytes": 1383166,
+            "sha256": "ea5eae7e26d7b1fbc4c787af4eb72b978e07cc93f3f7fc1dcb68f3b2c0ae0101"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Testimony Page).png",
+          "bytes": 1495616,
+          "sha256": "ed02ad106c294ed5b583221202d108c35d93a24120c05d73e9f7f94118dbd3fb",
+          "historicalBaseline": {
+            "bytes": 1495616,
+            "sha256": "ed02ad106c294ed5b583221202d108c35d93a24120c05d73e9f7f94118dbd3fb"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (Roadmap).png",
+          "bytes": 1653416,
+          "sha256": "762e4c13c6bb591baa057e5d001e6974298dbca70b69385b91521196a8275d21",
+          "historicalBaseline": {
+            "bytes": 1653416,
+            "sha256": "762e4c13c6bb591baa057e5d001e6974298dbca70b69385b91521196a8275d21"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (TeoyubeCanon Page).png",
+          "bytes": 2090559,
+          "sha256": "7403ab4756660a2c6f7a55ab471ed6a3aee24d0d232d0c2f82844e1996c6d9c4",
+          "historicalBaseline": {
+            "bytes": 2090559,
+            "sha256": "7403ab4756660a2c6f7a55ab471ed6a3aee24d0d232d0c2f82844e1996c6d9c4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (TeoyubePromise table Page).png",
+          "bytes": 1690112,
+          "sha256": "83fee4c84b897e1e0235e2659ffc0c85096669f35b8e8da8ca35079afb409126",
+          "historicalBaseline": {
+            "bytes": 1690112,
+            "sha256": "83fee4c84b897e1e0235e2659ffc0c85096669f35b8e8da8ca35079afb409126"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (TeoyubeSearch).png",
+          "bytes": 1581446,
+          "sha256": "a08f51db15997eabf08346df3044bf4805516b1987171428a7d7f5ced828fa52",
+          "historicalBaseline": {
+            "bytes": 1581446,
+            "sha256": "a08f51db15997eabf08346df3044bf4805516b1987171428a7d7f5ced828fa52"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (Today).png",
+          "bytes": 1670003,
+          "sha256": "0fa4d72288fc987e85c6e864a2854cd31ad966b70618a00bfc40612c31ad02c0",
+          "historicalBaseline": {
+            "bytes": 1670003,
+            "sha256": "0fa4d72288fc987e85c6e864a2854cd31ad966b70618a00bfc40612c31ad02c0"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/TEOYUBE App #U2013 AI-Powered Biblical Purpose Discovery Platform.docx",
+          "bytes": 13313,
+          "sha256": "87bd333aeaa0dd5571f9488324dc2a517a9b31d238e793b7c9888767c13c5bf6",
+          "historicalBaseline": {
+            "bytes": 13313,
+            "sha256": "87bd333aeaa0dd5571f9488324dc2a517a9b31d238e793b7c9888767c13c5bf6"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/TEOYUBE App #U2013 AI-Powered Biblical Purpose Discovery Platform.pdf",
+          "bytes": 30551,
+          "sha256": "be2561ccfb80d318ebf32a2ea7607c7741f539009f4d8aeffb700a99ae94f860",
+          "historicalBaseline": {
+            "bytes": 30551,
+            "sha256": "be2561ccfb80d318ebf32a2ea7607c7741f539009f4d8aeffb700a99ae94f860"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/TEOYUBE Founder Blueprint.pdf",
+          "bytes": 50441,
+          "sha256": "9a81375ca1cfff52ae6730fe897b49a528f9436534484243c4a95bc7d2f865f6",
+          "historicalBaseline": {
+            "bytes": 50441,
+            "sha256": "9a81375ca1cfff52ae6730fe897b49a528f9436534484243c4a95bc7d2f865f6"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/TEOYUBE PURPOSE PROGRESSION ENGINE.pdf",
+          "bytes": 38443,
+          "sha256": "10ed76182f3d50bd348124e1bd637b244624b5f7c4246f485abfb28e9855302e",
+          "historicalBaseline": {
+            "bytes": 38443,
+            "sha256": "10ed76182f3d50bd348124e1bd637b244624b5f7c4246f485abfb28e9855302e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/TEOYUBE TECHNICAL ARCHITECTURE V1.pdf",
+          "bytes": 78101,
+          "sha256": "ef47b28371608be9f324319d000f5527c316b24357f5d909b6a8290d3b4589cf",
+          "historicalBaseline": {
+            "bytes": 78101,
+            "sha256": "ef47b28371608be9f324319d000f5527c316b24357f5d909b6a8290d3b4589cf"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/Teoyube Calling Engine - Advanced Architecture.pdf",
+          "bytes": 64656,
+          "sha256": "03a17061311fd8d4b06784c54639354974a96f629d2c3fb535b7ac855540f35f",
+          "historicalBaseline": {
+            "bytes": 64656,
+            "sha256": "03a17061311fd8d4b06784c54639354974a96f629d2c3fb535b7ac855540f35f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/Teoyube Concept.pdf",
+          "bytes": 14563,
+          "sha256": "97e6242f073d19e1ba5d4234096a62da407c8dcd5252690c5a230b26a39592c7",
+          "historicalBaseline": {
+            "bytes": 14563,
+            "sha256": "97e6242f073d19e1ba5d4234096a62da407c8dcd5252690c5a230b26a39592c7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "Asset/Teoyube Promise Language Engine.pdf",
+          "bytes": 33924,
+          "sha256": "2c6bfdfcbb96d7d3a99aa37e61e3a3cd883c0e699310c45f23b17499bc05d423",
+          "historicalBaseline": {
+            "bytes": 33924,
+            "sha256": "2c6bfdfcbb96d7d3a99aa37e61e3a3cd883c0e699310c45f23b17499bc05d423"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "app.js",
+          "bytes": 590833,
+          "sha256": "c3b3f5d4e20a4a60dfd3bae9c9aa3949cf6fc2fbf6d8f4b352249fca079c778c",
+          "historicalBaseline": {
+            "bytes": 585204,
+            "sha256": "86ef586e92abb52dcbd73b2e4c8628266b2c65aa34d0f815fdbc8c58bb852c81"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_APPROVED_CURRENT_LINEAGE_OBJECT"
+        },
+        {
+          "path": "embedded-videos.js",
+          "bytes": 2226,
+          "sha256": "d8e73fc16f9605f27219401d46ba3c7d11ca94e4c0b21ac881546cb36f3a070d",
+          "historicalBaseline": {
+            "bytes": 2226,
+            "sha256": "d8e73fc16f9605f27219401d46ba3c7d11ca94e4c0b21ac881546cb36f3a070d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "index.html",
+          "bytes": 92657,
+          "sha256": "f7a603ffb41fd0beee496861d4ec969900990127e2cc5f0e451d091c2d2b649b",
+          "historicalBaseline": {
+            "bytes": 92151,
+            "sha256": "42a6bcb4848aacdc6aaa9d5fb4848b03e731c8fa7a181b8b423ffa508d0cddce"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_APPROVED_CURRENT_LINEAGE_OBJECT"
+        },
+        {
+          "path": "media-review-derivatives.js",
+          "bytes": 13380,
+          "sha256": "5a43081cf7f39735d6ad9390a75c87f94f3d0a78c8b55f9fc4f1a926458a6898",
+          "historicalBaseline": {
+            "bytes": 13380,
+            "sha256": "5a43081cf7f39735d6ad9390a75c87f94f3d0a78c8b55f9fc4f1a926458a6898"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review-responsive-qa.html",
+          "bytes": 1550,
+          "sha256": "bd884155885b9762fb3c6557b6e461e4b068da0865e93d2419d0febdf910c45d",
+          "historicalBaseline": {
+            "bytes": 1550,
+            "sha256": "bd884155885b9762fb3c6557b6e461e4b068da0865e93d2419d0febdf910c45d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review-runtime-acceptance.css",
+          "bytes": 1915,
+          "sha256": "223798868315df5874dfaed03b9a20baf64094ce425bb1262d7b2059d88cf5c0",
+          "historicalBaseline": {
+            "bytes": 1915,
+            "sha256": "223798868315df5874dfaed03b9a20baf64094ce425bb1262d7b2059d88cf5c0"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review-runtime-acceptance.js",
+          "bytes": 12662,
+          "sha256": "eac53dee7f2d3a927057179058c2c058d0c210f134efa0c2e67f91784b20627a",
+          "historicalBaseline": {
+            "bytes": 12662,
+            "sha256": "eac53dee7f2d3a927057179058c2c058d0c210f134efa0c2e67f91784b20627a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review-wizard.js",
+          "bytes": 38428,
+          "sha256": "53d0539727ea969523e15c2599b74d2786b20f1cbac8006397281d045bcb653a",
+          "historicalBaseline": {
+            "bytes": 38428,
+            "sha256": "53d0539727ea969523e15c2599b74d2786b20f1cbac8006397281d045bcb653a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review.css",
+          "bytes": 24848,
+          "sha256": "4634f4bab28972f709ef60d02db88d8829a2ce7134b220505c88d00c362f42b8",
+          "historicalBaseline": {
+            "bytes": 24848,
+            "sha256": "4634f4bab28972f709ef60d02db88d8829a2ce7134b220505c88d00c362f42b8"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review.html",
+          "bytes": 36867,
+          "sha256": "02f9a7f789e6a70df4d82f18053f6945274b6c83a09f8600f703874fb78cc39c",
+          "historicalBaseline": {
+            "bytes": 36867,
+            "sha256": "02f9a7f789e6a70df4d82f18053f6945274b6c83a09f8600f703874fb78cc39c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "media-review.js",
+          "bytes": 49581,
+          "sha256": "85aa02617cd5fbd69810ac3053f0f7f86e41c0d917154be413bd955e9d8dd315",
+          "historicalBaseline": {
+            "bytes": 49581,
+            "sha256": "85aa02617cd5fbd69810ac3053f0f7f86e41c0d917154be413bd955e9d8dd315"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "phase116b1.js",
+          "bytes": 88196,
+          "sha256": "b9634ec6e27a8e33a3f240b4381e39f1df11fef28dcc9ea5aee48987e3fd1536",
+          "historicalBaseline": {
+            "bytes": 88196,
+            "sha256": "b9634ec6e27a8e33a3f240b4381e39f1df11fef28dcc9ea5aee48987e3fd1536"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/assets/promise-calling-compass-bg.png",
+          "bytes": 1857761,
+          "sha256": "adb95db509bed1a0275c72f29542abc66c9fb1fb6d96d67397dde610c3e2b4ca",
+          "historicalBaseline": {
+            "bytes": 1857761,
+            "sha256": "adb95db509bed1a0275c72f29542abc66c9fb1fb6d96d67397dde610c3e2b4ca"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/abundant-life.png",
+          "bytes": 226930,
+          "sha256": "8f81cd6f350ca1d8cc3fe13c2b77eb0dd6a87b458ec62ecee80bef9abebeb5ed",
+          "historicalBaseline": {
+            "bytes": 226930,
+            "sha256": "8f81cd6f350ca1d8cc3fe13c2b77eb0dd6a87b458ec62ecee80bef9abebeb5ed"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/divine-direction.png",
+          "bytes": 253708,
+          "sha256": "16539c1f8d1c98f2fc87156e1e0928a6fe04b3058ffd9e19ec01391b602cdb72",
+          "historicalBaseline": {
+            "bytes": 253708,
+            "sha256": "16539c1f8d1c98f2fc87156e1e0928a6fe04b3058ffd9e19ec01391b602cdb72"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/faith-in-action.png",
+          "bytes": 218594,
+          "sha256": "2c1c0a51e36885daa47cd62a5736caefdc933780965b21872f10caf5c682b33e",
+          "historicalBaseline": {
+            "bytes": 218594,
+            "sha256": "2c1c0a51e36885daa47cd62a5736caefdc933780965b21872f10caf5c682b33e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/growth-in-grace.png",
+          "bytes": 231092,
+          "sha256": "bad68e4ea7beb3da1a11a6553c77ac4a90361e6e32ae260ea478f11002a216ad",
+          "historicalBaseline": {
+            "bytes": 231092,
+            "sha256": "bad68e4ea7beb3da1a11a6553c77ac4a90361e6e32ae260ea478f11002a216ad"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/kingdom-wisdom.png",
+          "bytes": 222774,
+          "sha256": "3845f6f17450989316849b49a8a5f2da20aa1dc2bb6f764f239eb2a8381153e6",
+          "historicalBaseline": {
+            "bytes": 222774,
+            "sha256": "3845f6f17450989316849b49a8a5f2da20aa1dc2bb6f764f239eb2a8381153e6"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/peace-protection.png",
+          "bytes": 251035,
+          "sha256": "8314be3f04e8ad72b5b77f5afd050643038916ce2816c5a4c85e813f572d340f",
+          "historicalBaseline": {
+            "bytes": 251035,
+            "sha256": "8314be3f04e8ad72b5b77f5afd050643038916ce2816c5a4c85e813f572d340f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/purpose-fulfilled.png",
+          "bytes": 218140,
+          "sha256": "315872276340ece47063038be36d6de462cd2b0db14c42181765e1efa82f2114",
+          "historicalBaseline": {
+            "bytes": 218140,
+            "sha256": "315872276340ece47063038be36d6de462cd2b0db14c42181765e1efa82f2114"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/ads/strength-for-today.png",
+          "bytes": 235483,
+          "sha256": "1105859801ef9aacf298e7caffae73098636d2221778d6fff9a1ba55ab102005",
+          "historicalBaseline": {
+            "bytes": 235483,
+            "sha256": "1105859801ef9aacf298e7caffae73098636d2221778d6fff9a1ba55ab102005"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/book/book-saint-garden-hero-bg.png",
+          "bytes": 2554394,
+          "sha256": "bdb530aeb4f418d14fae2079514455809c78d17bf958b10cb97cc58df60dc3fa",
+          "historicalBaseline": {
+            "bytes": 2554394,
+            "sha256": "bdb530aeb4f418d14fae2079514455809c78d17bf958b10cb97cc58df60dc3fa"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/book/book-saint-hero-bg.png",
+          "bytes": 2256829,
+          "sha256": "77d2dbc6016823e7c708ad5a70e7cf724ce0115f3583a16d2123174fe9f7ce3a",
+          "historicalBaseline": {
+            "bytes": 2256829,
+            "sha256": "77d2dbc6016823e7c708ad5a70e7cf724ce0115f3583a16d2123174fe9f7ce3a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/calling/ai-calling-assistant-icon.png",
+          "bytes": 7547,
+          "sha256": "2719f275455567947b7b490ab2dc6f6d794bcc8f4323056fd7f6a13d8b335322",
+          "historicalBaseline": {
+            "bytes": 7547,
+            "sha256": "2719f275455567947b7b490ab2dc6f6d794bcc8f4323056fd7f6a13d8b335322"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-builder-badge.png",
+          "bytes": 14819,
+          "sha256": "0bc0f88992f8970159ca50c900f30fc8c426cdaa390fb182781df7fea72e5ad2",
+          "historicalBaseline": {
+            "bytes": 14819,
+            "sha256": "0bc0f88992f8970159ca50c900f30fc8c426cdaa390fb182781df7fea72e5ad2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-01.png",
+          "bytes": 526384,
+          "sha256": "cec8bc2afe5def56d1e8052885f47a13e8da465a6b2fa5e2e04d22767c9f00ef",
+          "historicalBaseline": {
+            "bytes": 526384,
+            "sha256": "cec8bc2afe5def56d1e8052885f47a13e8da465a6b2fa5e2e04d22767c9f00ef"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-02.png",
+          "bytes": 534239,
+          "sha256": "e255da9b44ddd34975ab5d39f53ca1952c6228fc8efc847e6b8c7f5507d7d67d",
+          "historicalBaseline": {
+            "bytes": 534239,
+            "sha256": "e255da9b44ddd34975ab5d39f53ca1952c6228fc8efc847e6b8c7f5507d7d67d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-03.png",
+          "bytes": 556671,
+          "sha256": "3d7a0e8dacdefdde5b63c923a4ef3620c3b8b37e2c8dc755be6fbbd3472058ef",
+          "historicalBaseline": {
+            "bytes": 556671,
+            "sha256": "3d7a0e8dacdefdde5b63c923a4ef3620c3b8b37e2c8dc755be6fbbd3472058ef"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-04.png",
+          "bytes": 525381,
+          "sha256": "a6f94a27afec5830937f37a8a54e65e0ad28177238708b04108e46995e25bc70",
+          "historicalBaseline": {
+            "bytes": 525381,
+            "sha256": "a6f94a27afec5830937f37a8a54e65e0ad28177238708b04108e46995e25bc70"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-05.png",
+          "bytes": 509155,
+          "sha256": "7e8e061c52f68f2276d67d743ac715f14b7d86853db0cbc7a8754ccb67cfd37e",
+          "historicalBaseline": {
+            "bytes": 509155,
+            "sha256": "7e8e061c52f68f2276d67d743ac715f14b7d86853db0cbc7a8754ccb67cfd37e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-06.png",
+          "bytes": 520293,
+          "sha256": "aa15103b5be148feaa79703f66361cc1d544b1a9c1f3d77fe8bc726ccf875d69",
+          "historicalBaseline": {
+            "bytes": 520293,
+            "sha256": "aa15103b5be148feaa79703f66361cc1d544b1a9c1f3d77fe8bc726ccf875d69"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-07.png",
+          "bytes": 507498,
+          "sha256": "2c2a80ad9427e40fc6424749974bb77f246e87903fc5f9a23430d9cbdecf2822",
+          "historicalBaseline": {
+            "bytes": 507498,
+            "sha256": "2c2a80ad9427e40fc6424749974bb77f246e87903fc5f9a23430d9cbdecf2822"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-08.png",
+          "bytes": 493917,
+          "sha256": "9e98be418b9ee77806ccaca2eb3c5cf9d29eb5a34f88e0f52fd6fa1bf3b66839",
+          "historicalBaseline": {
+            "bytes": 493917,
+            "sha256": "9e98be418b9ee77806ccaca2eb3c5cf9d29eb5a34f88e0f52fd6fa1bf3b66839"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-09.png",
+          "bytes": 468433,
+          "sha256": "73539d9dec4ccca06ad904cf9d0a2565a828e2130958e68b1f3efdfc2ea767c0",
+          "historicalBaseline": {
+            "bytes": 468433,
+            "sha256": "73539d9dec4ccca06ad904cf9d0a2565a828e2130958e68b1f3efdfc2ea767c0"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-10.png",
+          "bytes": 449673,
+          "sha256": "65ba3eeed82897f0c24ae7c770972059c09009d9c321105eee94c9ea2aef0aa0",
+          "historicalBaseline": {
+            "bytes": 449673,
+            "sha256": "65ba3eeed82897f0c24ae7c770972059c09009d9c321105eee94c9ea2aef0aa0"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-11.png",
+          "bytes": 482078,
+          "sha256": "fa5329501d889bdca5b580dadabf5c40fa881b9538ca54f89e52c6e37a64da3e",
+          "historicalBaseline": {
+            "bytes": 482078,
+            "sha256": "fa5329501d889bdca5b580dadabf5c40fa881b9538ca54f89e52c6e37a64da3e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-12.png",
+          "bytes": 527506,
+          "sha256": "24581727b010b0fc493ee84a648714d6f732b72419d582d5389aee019359b739",
+          "historicalBaseline": {
+            "bytes": 527506,
+            "sha256": "24581727b010b0fc493ee84a648714d6f732b72419d582d5389aee019359b739"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-13.png",
+          "bytes": 469003,
+          "sha256": "ed8c09757071442fc241ea182c96e52c56e9e758e540147f24add9e28ed6dc51",
+          "historicalBaseline": {
+            "bytes": 469003,
+            "sha256": "ed8c09757071442fc241ea182c96e52c56e9e758e540147f24add9e28ed6dc51"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-14.png",
+          "bytes": 453796,
+          "sha256": "8886356614dd6b6afd73b20c9b159c46ff0052d700c50c9ef0e54541344e7f3b",
+          "historicalBaseline": {
+            "bytes": 453796,
+            "sha256": "8886356614dd6b6afd73b20c9b159c46ff0052d700c50c9ef0e54541344e7f3b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-15.png",
+          "bytes": 522030,
+          "sha256": "de5cdb883e206a2a8e2ea7721c25075c4cfa04014c264651ccde0cbd2a755c02",
+          "historicalBaseline": {
+            "bytes": 522030,
+            "sha256": "de5cdb883e206a2a8e2ea7721c25075c4cfa04014c264651ccde0cbd2a755c02"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-16.png",
+          "bytes": 517912,
+          "sha256": "bc36125c896cf4855d833f1987c0c33c695ba50ee07af322709fe43e2ccf90fe",
+          "historicalBaseline": {
+            "bytes": 517912,
+            "sha256": "bc36125c896cf4855d833f1987c0c33c695ba50ee07af322709fe43e2ccf90fe"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-17.png",
+          "bytes": 438452,
+          "sha256": "da332815d71fc71063ccfd7005558ecf23ca383f7d49bd04f1da224528207b44",
+          "historicalBaseline": {
+            "bytes": 438452,
+            "sha256": "da332815d71fc71063ccfd7005558ecf23ca383f7d49bd04f1da224528207b44"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-18.png",
+          "bytes": 517393,
+          "sha256": "8c008f94e28dfac3d6d4ca82f0c7b2fc8470f42b51370d69500715eb04c42169",
+          "historicalBaseline": {
+            "bytes": 517393,
+            "sha256": "8c008f94e28dfac3d6d4ca82f0c7b2fc8470f42b51370d69500715eb04c42169"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-19.png",
+          "bytes": 528555,
+          "sha256": "a6751d14fbf32c927609125c765cd4e731e4c2da10ee5e3eb32bde4c7b7be1ae",
+          "historicalBaseline": {
+            "bytes": 528555,
+            "sha256": "a6751d14fbf32c927609125c765cd4e731e4c2da10ee5e3eb32bde4c7b7be1ae"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-card-20.png",
+          "bytes": 504053,
+          "sha256": "50373adf06caa4e05a28b924ba8dfe6da4b090f4b468d2990ca8cbc30e15512e",
+          "historicalBaseline": {
+            "bytes": 504053,
+            "sha256": "50373adf06caa4e05a28b924ba8dfe6da4b090f4b468d2990ca8cbc30e15512e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-01.png",
+          "bytes": 686227,
+          "sha256": "e2320dbed4ac1375746bebe404594487a092759ad64903fcd6ec0116d4f69bd9",
+          "historicalBaseline": {
+            "bytes": 686227,
+            "sha256": "e2320dbed4ac1375746bebe404594487a092759ad64903fcd6ec0116d4f69bd9"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-02.png",
+          "bytes": 683954,
+          "sha256": "fc3ae010ba99d87755e0f4d010b4801d5f575beb845e657cbe494b759e3424bb",
+          "historicalBaseline": {
+            "bytes": 683954,
+            "sha256": "fc3ae010ba99d87755e0f4d010b4801d5f575beb845e657cbe494b759e3424bb"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-03.png",
+          "bytes": 603559,
+          "sha256": "03fbbf9406b9475a554baa49c018e137915173ecd02bcd42955d11f8ecd0e7bc",
+          "historicalBaseline": {
+            "bytes": 603559,
+            "sha256": "03fbbf9406b9475a554baa49c018e137915173ecd02bcd42955d11f8ecd0e7bc"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-04.png",
+          "bytes": 701142,
+          "sha256": "49fb5c6c703136d626b0566bdfcb05c0fb8cc27e64b54b7bb609a0ac274e390b",
+          "historicalBaseline": {
+            "bytes": 701142,
+            "sha256": "49fb5c6c703136d626b0566bdfcb05c0fb8cc27e64b54b7bb609a0ac274e390b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-05.png",
+          "bytes": 578875,
+          "sha256": "7e05e28c763674d08ee142a0f81d61b6d5cf4900da3b325ede7f822fe5dfc33c",
+          "historicalBaseline": {
+            "bytes": 578875,
+            "sha256": "7e05e28c763674d08ee142a0f81d61b6d5cf4900da3b325ede7f822fe5dfc33c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-06.png",
+          "bytes": 580094,
+          "sha256": "c39636149dae6b566ef779bcea8ef3906be8c4047abc03965cd89a97677bb2b3",
+          "historicalBaseline": {
+            "bytes": 580094,
+            "sha256": "c39636149dae6b566ef779bcea8ef3906be8c4047abc03965cd89a97677bb2b3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-07.png",
+          "bytes": 515889,
+          "sha256": "bc7228c67f04617447e0f9b3e8f3dfddc7c059f6a59cda66864b7f2ebd10205b",
+          "historicalBaseline": {
+            "bytes": 515889,
+            "sha256": "bc7228c67f04617447e0f9b3e8f3dfddc7c059f6a59cda66864b7f2ebd10205b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-08.png",
+          "bytes": 589018,
+          "sha256": "e7764f5893d49c76f1ad13b78643f9cc8e602c89b5dfcd9bf54b326dfb608c8e",
+          "historicalBaseline": {
+            "bytes": 589018,
+            "sha256": "e7764f5893d49c76f1ad13b78643f9cc8e602c89b5dfcd9bf54b326dfb608c8e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-09.png",
+          "bytes": 671338,
+          "sha256": "37d4d21e3ae29c1ee2057c5fe4caa4fc078bd756b56e2833fd4dca74ed11f3a1",
+          "historicalBaseline": {
+            "bytes": 671338,
+            "sha256": "37d4d21e3ae29c1ee2057c5fe4caa4fc078bd756b56e2833fd4dca74ed11f3a1"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-10.png",
+          "bytes": 688374,
+          "sha256": "2d49475797f174c23797793e8596e714a15a379ad453cc58c3b14e812ab6d643",
+          "historicalBaseline": {
+            "bytes": 688374,
+            "sha256": "2d49475797f174c23797793e8596e714a15a379ad453cc58c3b14e812ab6d643"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-11.png",
+          "bytes": 555637,
+          "sha256": "7b243545939bfa38cb107c2c547867318d5178637fee67d3d985fd73fb1584b7",
+          "historicalBaseline": {
+            "bytes": 555637,
+            "sha256": "7b243545939bfa38cb107c2c547867318d5178637fee67d3d985fd73fb1584b7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-12.png",
+          "bytes": 522027,
+          "sha256": "5413df030e676436c19794a9bbc39e3aa77b302dea0d45ba5bb82cd4e2b9a04f",
+          "historicalBaseline": {
+            "bytes": 522027,
+            "sha256": "5413df030e676436c19794a9bbc39e3aa77b302dea0d45ba5bb82cd4e2b9a04f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-13.png",
+          "bytes": 797072,
+          "sha256": "0927e0bf057fdd8c43d56618e7ef4b3d15c6a5fa3eaab7191463c947ceb2c3ea",
+          "historicalBaseline": {
+            "bytes": 797072,
+            "sha256": "0927e0bf057fdd8c43d56618e7ef4b3d15c6a5fa3eaab7191463c947ceb2c3ea"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-14.png",
+          "bytes": 733601,
+          "sha256": "9867244f3a46ed2364ac86ea8ac40a954ddb4badf33062d812abdef5a2de3fb2",
+          "historicalBaseline": {
+            "bytes": 733601,
+            "sha256": "9867244f3a46ed2364ac86ea8ac40a954ddb4badf33062d812abdef5a2de3fb2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-15.png",
+          "bytes": 620035,
+          "sha256": "d56d5de144498202c6ca461c2a018e2acbddfb6215773e6cdf6ec6a35d4aaa90",
+          "historicalBaseline": {
+            "bytes": 620035,
+            "sha256": "d56d5de144498202c6ca461c2a018e2acbddfb6215773e6cdf6ec6a35d4aaa90"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-16.png",
+          "bytes": 764043,
+          "sha256": "b9780fa868f0395684033738434c000ea00acf87fab871596bb084a2f9f60b28",
+          "historicalBaseline": {
+            "bytes": 764043,
+            "sha256": "b9780fa868f0395684033738434c000ea00acf87fab871596bb084a2f9f60b28"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-17.png",
+          "bytes": 614130,
+          "sha256": "4efbff3962f78bf0dee89ee86d8dc344a5bbdd884cc90ca11b5d1b971811742f",
+          "historicalBaseline": {
+            "bytes": 614130,
+            "sha256": "4efbff3962f78bf0dee89ee86d8dc344a5bbdd884cc90ca11b5d1b971811742f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-18.png",
+          "bytes": 615524,
+          "sha256": "a457dd4be0df826d851422d267c21ff584cf93cc7edad779630876206c8a483f",
+          "historicalBaseline": {
+            "bytes": 615524,
+            "sha256": "a457dd4be0df826d851422d267c21ff584cf93cc7edad779630876206c8a483f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-19.png",
+          "bytes": 595493,
+          "sha256": "a40197deb6d4457180c52fb080731a0eda9e6536dfe495ba61fe429571cb2e1e",
+          "historicalBaseline": {
+            "bytes": 595493,
+            "sha256": "a40197deb6d4457180c52fb080731a0eda9e6536dfe495ba61fe429571cb2e1e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-20.png",
+          "bytes": 657023,
+          "sha256": "0d4424d86f9e26fbbbdbbdcfc8d34111b3256dd10473566e3033b359aaf302be",
+          "historicalBaseline": {
+            "bytes": 657023,
+            "sha256": "0d4424d86f9e26fbbbdbbdcfc8d34111b3256dd10473566e3033b359aaf302be"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-21.png",
+          "bytes": 733544,
+          "sha256": "6c2f17be072bf018e56b5ef2f1a1f26578f02801d2ff365c5af6dd8fa22290e1",
+          "historicalBaseline": {
+            "bytes": 733544,
+            "sha256": "6c2f17be072bf018e56b5ef2f1a1f26578f02801d2ff365c5af6dd8fa22290e1"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-22.png",
+          "bytes": 659315,
+          "sha256": "37e4660a4eb4f77c3e1a394d2d1e238c92a28293c5ea08a8cfbd2fba13d8dccc",
+          "historicalBaseline": {
+            "bytes": 659315,
+            "sha256": "37e4660a4eb4f77c3e1a394d2d1e238c92a28293c5ea08a8cfbd2fba13d8dccc"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-23.png",
+          "bytes": 606211,
+          "sha256": "d8742c15d4972e56294a245d9df676b63ff25ca26647df6d178a55c8319237f8",
+          "historicalBaseline": {
+            "bytes": 606211,
+            "sha256": "d8742c15d4972e56294a245d9df676b63ff25ca26647df6d178a55c8319237f8"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-24.png",
+          "bytes": 576527,
+          "sha256": "ba0ba091022006ff476a5af9f7b0cb14a7ec9a9342fdbc9e546956c3d40c2b89",
+          "historicalBaseline": {
+            "bytes": 576527,
+            "sha256": "ba0ba091022006ff476a5af9f7b0cb14a7ec9a9342fdbc9e546956c3d40c2b89"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-25.png",
+          "bytes": 797072,
+          "sha256": "0927e0bf057fdd8c43d56618e7ef4b3d15c6a5fa3eaab7191463c947ceb2c3ea",
+          "historicalBaseline": {
+            "bytes": 797072,
+            "sha256": "0927e0bf057fdd8c43d56618e7ef4b3d15c6a5fa3eaab7191463c947ceb2c3ea"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-26.png",
+          "bytes": 733601,
+          "sha256": "9867244f3a46ed2364ac86ea8ac40a954ddb4badf33062d812abdef5a2de3fb2",
+          "historicalBaseline": {
+            "bytes": 733601,
+            "sha256": "9867244f3a46ed2364ac86ea8ac40a954ddb4badf33062d812abdef5a2de3fb2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-27.png",
+          "bytes": 620035,
+          "sha256": "d56d5de144498202c6ca461c2a018e2acbddfb6215773e6cdf6ec6a35d4aaa90",
+          "historicalBaseline": {
+            "bytes": 620035,
+            "sha256": "d56d5de144498202c6ca461c2a018e2acbddfb6215773e6cdf6ec6a35d4aaa90"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-28.png",
+          "bytes": 764043,
+          "sha256": "b9780fa868f0395684033738434c000ea00acf87fab871596bb084a2f9f60b28",
+          "historicalBaseline": {
+            "bytes": 764043,
+            "sha256": "b9780fa868f0395684033738434c000ea00acf87fab871596bb084a2f9f60b28"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-29.png",
+          "bytes": 614130,
+          "sha256": "4efbff3962f78bf0dee89ee86d8dc344a5bbdd884cc90ca11b5d1b971811742f",
+          "historicalBaseline": {
+            "bytes": 614130,
+            "sha256": "4efbff3962f78bf0dee89ee86d8dc344a5bbdd884cc90ca11b5d1b971811742f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-30.png",
+          "bytes": 615524,
+          "sha256": "a457dd4be0df826d851422d267c21ff584cf93cc7edad779630876206c8a483f",
+          "historicalBaseline": {
+            "bytes": 615524,
+            "sha256": "a457dd4be0df826d851422d267c21ff584cf93cc7edad779630876206c8a483f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-31.png",
+          "bytes": 595493,
+          "sha256": "a40197deb6d4457180c52fb080731a0eda9e6536dfe495ba61fe429571cb2e1e",
+          "historicalBaseline": {
+            "bytes": 595493,
+            "sha256": "a40197deb6d4457180c52fb080731a0eda9e6536dfe495ba61fe429571cb2e1e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-32.png",
+          "bytes": 657023,
+          "sha256": "0d4424d86f9e26fbbbdbbdcfc8d34111b3256dd10473566e3033b359aaf302be",
+          "historicalBaseline": {
+            "bytes": 657023,
+            "sha256": "0d4424d86f9e26fbbbdbbdcfc8d34111b3256dd10473566e3033b359aaf302be"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-33.png",
+          "bytes": 733544,
+          "sha256": "6c2f17be072bf018e56b5ef2f1a1f26578f02801d2ff365c5af6dd8fa22290e1",
+          "historicalBaseline": {
+            "bytes": 733544,
+            "sha256": "6c2f17be072bf018e56b5ef2f1a1f26578f02801d2ff365c5af6dd8fa22290e1"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-34.png",
+          "bytes": 659315,
+          "sha256": "37e4660a4eb4f77c3e1a394d2d1e238c92a28293c5ea08a8cfbd2fba13d8dccc",
+          "historicalBaseline": {
+            "bytes": 659315,
+            "sha256": "37e4660a4eb4f77c3e1a394d2d1e238c92a28293c5ea08a8cfbd2fba13d8dccc"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-35.png",
+          "bytes": 606211,
+          "sha256": "d8742c15d4972e56294a245d9df676b63ff25ca26647df6d178a55c8319237f8",
+          "historicalBaseline": {
+            "bytes": 606211,
+            "sha256": "d8742c15d4972e56294a245d9df676b63ff25ca26647df6d178a55c8319237f8"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-expanded-card-36.png",
+          "bytes": 576527,
+          "sha256": "ba0ba091022006ff476a5af9f7b0cb14a7ec9a9342fdbc9e546956c3d40c2b89",
+          "historicalBaseline": {
+            "bytes": 576527,
+            "sha256": "ba0ba091022006ff476a5af9f7b0cb14a7ec9a9342fdbc9e546956c3d40c2b89"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-hero-bg.png",
+          "bytes": 2456610,
+          "sha256": "25fc9f34085cec894b3773ad92617c9ce57ff2f33867ff4bd797de8752ffc43c",
+          "historicalBaseline": {
+            "bytes": 2456610,
+            "sha256": "25fc9f34085cec894b3773ad92617c9ce57ff2f33867ff4bd797de8752ffc43c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-hero-journey.png",
+          "bytes": 2456610,
+          "sha256": "25fc9f34085cec894b3773ad92617c9ce57ff2f33867ff4bd797de8752ffc43c",
+          "historicalBaseline": {
+            "bytes": 2456610,
+            "sha256": "25fc9f34085cec894b3773ad92617c9ce57ff2f33867ff4bd797de8752ffc43c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-saint-profile.png",
+          "bytes": 16703,
+          "sha256": "b7c73abbc8f98296128bdaecf9f64c00da77a155ddd37d441bd23438253d7005",
+          "historicalBaseline": {
+            "bytes": 16703,
+            "sha256": "b7c73abbc8f98296128bdaecf9f64c00da77a155ddd37d441bd23438253d7005"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-01.png",
+          "bytes": 545153,
+          "sha256": "67bf5f218339c39aa3752a2e97440a694620ae339bef22f3b68250ec29ec3852",
+          "historicalBaseline": {
+            "bytes": 545153,
+            "sha256": "67bf5f218339c39aa3752a2e97440a694620ae339bef22f3b68250ec29ec3852"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-02.png",
+          "bytes": 539338,
+          "sha256": "6ddf4b1ec44ef3a40dd12e2b0d37c6e3444269a0306e9f923188db8b258f82f3",
+          "historicalBaseline": {
+            "bytes": 539338,
+            "sha256": "6ddf4b1ec44ef3a40dd12e2b0d37c6e3444269a0306e9f923188db8b258f82f3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-03.png",
+          "bytes": 477097,
+          "sha256": "989a4cf41ed07bf32474e552d2d90d8b52ef32f4403600c78d59e8ba209deef3",
+          "historicalBaseline": {
+            "bytes": 477097,
+            "sha256": "989a4cf41ed07bf32474e552d2d90d8b52ef32f4403600c78d59e8ba209deef3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-04.png",
+          "bytes": 513574,
+          "sha256": "60135948b19e33e3ef715b6239c4586cf346cf58f3488369d185080effc0f1fd",
+          "historicalBaseline": {
+            "bytes": 513574,
+            "sha256": "60135948b19e33e3ef715b6239c4586cf346cf58f3488369d185080effc0f1fd"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-05.png",
+          "bytes": 502975,
+          "sha256": "d667c27d0b3765b0b5aa3e64191ea83ab326a2b335ce62f1a135b79f2eed5d98",
+          "historicalBaseline": {
+            "bytes": 502975,
+            "sha256": "d667c27d0b3765b0b5aa3e64191ea83ab326a2b335ce62f1a135b79f2eed5d98"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-06.png",
+          "bytes": 488448,
+          "sha256": "9e5b4d493b28c22018afa6bca8367501a659e124dec543f09c6ae4b2d509d4bf",
+          "historicalBaseline": {
+            "bytes": 488448,
+            "sha256": "9e5b4d493b28c22018afa6bca8367501a659e124dec543f09c6ae4b2d509d4bf"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-07.png",
+          "bytes": 492056,
+          "sha256": "1b12356ec01b3a2d6da05fd1bc319784cf0dd7c7ef5267f9e9a7b43cd7a921f5",
+          "historicalBaseline": {
+            "bytes": 492056,
+            "sha256": "1b12356ec01b3a2d6da05fd1bc319784cf0dd7c7ef5267f9e9a7b43cd7a921f5"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-08.png",
+          "bytes": 483366,
+          "sha256": "8ed6d01edfe2b54dcbfef3f5c5a07336b7dfa7964f9d70f8fafc42335d5d0dbe",
+          "historicalBaseline": {
+            "bytes": 483366,
+            "sha256": "8ed6d01edfe2b54dcbfef3f5c5a07336b7dfa7964f9d70f8fafc42335d5d0dbe"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-09.png",
+          "bytes": 443519,
+          "sha256": "20004a15bcdab965ccf9673ff49ab3998abffe36afedb4d90f7049fd388b4702",
+          "historicalBaseline": {
+            "bytes": 443519,
+            "sha256": "20004a15bcdab965ccf9673ff49ab3998abffe36afedb4d90f7049fd388b4702"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/canon-tile-10.png",
+          "bytes": 464963,
+          "sha256": "d7d77a27c7bea1722e511dc90cea1d7eb97549db59c0ec3e3016d2c933b0d9e5",
+          "historicalBaseline": {
+            "bytes": 464963,
+            "sha256": "d7d77a27c7bea1722e511dc90cea1d7eb97549db59c0ec3e3016d2c933b0d9e5"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-calling.png",
+          "bytes": 479094,
+          "sha256": "c528f822db01fc60d8b94000552f3843cd7dac6e3c49369b8ac2378adc8d4ca4",
+          "historicalBaseline": {
+            "bytes": 479094,
+            "sha256": "c528f822db01fc60d8b94000552f3843cd7dac6e3c49369b8ac2378adc8d4ca4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-dominion.png",
+          "bytes": 510944,
+          "sha256": "0dd66e9ac44a834963fc825537bb5d9ea90968491d5c12a52a38c0b138ba0aba",
+          "historicalBaseline": {
+            "bytes": 510944,
+            "sha256": "0dd66e9ac44a834963fc825537bb5d9ea90968491d5c12a52a38c0b138ba0aba"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-healing.png",
+          "bytes": 507175,
+          "sha256": "a744a39b50f18591134ebc32aaa30e58d74eccaa59370f4dacba84df6aca7141",
+          "historicalBaseline": {
+            "bytes": 507175,
+            "sha256": "a744a39b50f18591134ebc32aaa30e58d74eccaa59370f4dacba84df6aca7141"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-promise.png",
+          "bytes": 486307,
+          "sha256": "cd522f5365d8b7ad15a31d2d6ee35baa394ae8d854d744ad905fc61ccf7b4b3d",
+          "historicalBaseline": {
+            "bytes": 486307,
+            "sha256": "cd522f5365d8b7ad15a31d2d6ee35baa394ae8d854d744ad905fc61ccf7b4b3d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-warfare.png",
+          "bytes": 492386,
+          "sha256": "d790e1044891c70bd15849e6b56be052abe96f98878ab67243cd8dcb6f941eb9",
+          "historicalBaseline": {
+            "bytes": 492386,
+            "sha256": "d790e1044891c70bd15849e6b56be052abe96f98878ab67243cd8dcb6f941eb9"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-wisdom.png",
+          "bytes": 497598,
+          "sha256": "5ecc68f0fce51a9211f68f7a9111c9ed65621acdb13d535935fd5b3856c49330",
+          "historicalBaseline": {
+            "bytes": 497598,
+            "sha256": "5ecc68f0fce51a9211f68f7a9111c9ed65621acdb13d535935fd5b3856c49330"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/category-worship.png",
+          "bytes": 157960,
+          "sha256": "c56035d6efff50c2c9c92167b27203473a0a902ac7c010576ab153b684134d9c",
+          "historicalBaseline": {
+            "bytes": 157960,
+            "sha256": "c56035d6efff50c2c9c92167b27203473a0a902ac7c010576ab153b684134d9c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-01.png",
+          "bytes": 1817105,
+          "sha256": "3de8e377809c0cf05b8267dd8bb658eb3020f2f6f006b0581f513f5b7913888f",
+          "historicalBaseline": {
+            "bytes": 1817105,
+            "sha256": "3de8e377809c0cf05b8267dd8bb658eb3020f2f6f006b0581f513f5b7913888f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-02.png",
+          "bytes": 1951257,
+          "sha256": "3e9986ea4a504ab93542159645dd4d3c31c1841b87825522ff52eb932f52fa30",
+          "historicalBaseline": {
+            "bytes": 1951257,
+            "sha256": "3e9986ea4a504ab93542159645dd4d3c31c1841b87825522ff52eb932f52fa30"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-03.png",
+          "bytes": 1680565,
+          "sha256": "c454619d824faa4bd9a6c5a6ad1c821b61c53d8fe83b52da8d8c3f0eace96e78",
+          "historicalBaseline": {
+            "bytes": 1680565,
+            "sha256": "c454619d824faa4bd9a6c5a6ad1c821b61c53d8fe83b52da8d8c3f0eace96e78"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-04.png",
+          "bytes": 1998434,
+          "sha256": "86187264b557db8857821cb8718d1fa4d0321f55277742fbd77a400a1a7d29d4",
+          "historicalBaseline": {
+            "bytes": 1998434,
+            "sha256": "86187264b557db8857821cb8718d1fa4d0321f55277742fbd77a400a1a7d29d4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-05.png",
+          "bytes": 1883724,
+          "sha256": "83ed463787ac36cc1582063d7c7abb46480b5aa290d16eeec8ed9baba412fc4d",
+          "historicalBaseline": {
+            "bytes": 1883724,
+            "sha256": "83ed463787ac36cc1582063d7c7abb46480b5aa290d16eeec8ed9baba412fc4d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-06.png",
+          "bytes": 1831469,
+          "sha256": "a77c5574d46084635f35fe59378b03a27a9d298e7c0f5a36c83ec7e0f3526010",
+          "historicalBaseline": {
+            "bytes": 1831469,
+            "sha256": "a77c5574d46084635f35fe59378b03a27a9d298e7c0f5a36c83ec7e0f3526010"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-07.png",
+          "bytes": 1790663,
+          "sha256": "515e505807f3412d1024ca41affd3bd6d207e0a5849972a1196af113d1001eaa",
+          "historicalBaseline": {
+            "bytes": 1790663,
+            "sha256": "515e505807f3412d1024ca41affd3bd6d207e0a5849972a1196af113d1001eaa"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/featured-carousel/canon-featured-slide-08.png",
+          "bytes": 1934302,
+          "sha256": "a971f755750834c974117a14156ef21beb3bb52ec4c18b2b1a5004e7a1f2ac68",
+          "historicalBaseline": {
+            "bytes": 1934302,
+            "sha256": "a971f755750834c974117a14156ef21beb3bb52ec4c18b2b1a5004e7a1f2ac68"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/journey-calling.png",
+          "bytes": 597316,
+          "sha256": "224bc372a1dbf11867c2ffd489efb4752216b27e03e9be3747a5a1a6f5d823b7",
+          "historicalBaseline": {
+            "bytes": 597316,
+            "sha256": "224bc372a1dbf11867c2ffd489efb4752216b27e03e9be3747a5a1a6f5d823b7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/journey-leadership.png",
+          "bytes": 588483,
+          "sha256": "bda7b7bbe9454ee45a73a569f9837b20fbefdae0b24a7d12288c2840c32d3719",
+          "historicalBaseline": {
+            "bytes": 588483,
+            "sha256": "bda7b7bbe9454ee45a73a569f9837b20fbefdae0b24a7d12288c2840c32d3719"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/journey-legacy.png",
+          "bytes": 598341,
+          "sha256": "67387a8ed75afabe808e3ceb628ca3c16ee4ce8279cdfdad9a6bd81dfb3c126b",
+          "historicalBaseline": {
+            "bytes": 598341,
+            "sha256": "67387a8ed75afabe808e3ceb628ca3c16ee4ce8279cdfdad9a6bd81dfb3c126b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/journey-sonship.png",
+          "bytes": 620054,
+          "sha256": "708b8dc3facf411a2a305ee319b60d08555f430d84d9939b4751c2c6fe1e1d34",
+          "historicalBaseline": {
+            "bytes": 620054,
+            "sha256": "708b8dc3facf411a2a305ee319b60d08555f430d84d9939b4751c2c6fe1e1d34"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/journey-stewardship.png",
+          "bytes": 561852,
+          "sha256": "98b914ee64f64fe540b813effae258d8e4cbeb40c50a9ca67cc8f07ab7b18861",
+          "historicalBaseline": {
+            "bytes": 561852,
+            "sha256": "98b914ee64f64fe540b813effae258d8e4cbeb40c50a9ca67cc8f07ab7b18861"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/recommended-carousel/canon-recommended-slide-01.png",
+          "bytes": 2203648,
+          "sha256": "d6039e8aff2a0bac1a611997d4316dd4995a33cae928e3cc894393d1154d044e",
+          "historicalBaseline": {
+            "bytes": 2203648,
+            "sha256": "d6039e8aff2a0bac1a611997d4316dd4995a33cae928e3cc894393d1154d044e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/recommended-carousel/canon-recommended-slide-02.png",
+          "bytes": 2224205,
+          "sha256": "5bd671ee6139bfa6e16cbe8fa42595a98e60fd53a247611897641de0c72396a3",
+          "historicalBaseline": {
+            "bytes": 2224205,
+            "sha256": "5bd671ee6139bfa6e16cbe8fa42595a98e60fd53a247611897641de0c72396a3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/recommended-carousel/canon-recommended-slide-03.png",
+          "bytes": 2357947,
+          "sha256": "614e2b1b689e496aa139ae6c7e160dae84a7071fde82359855bccdc2f4760d00",
+          "historicalBaseline": {
+            "bytes": 2357947,
+            "sha256": "614e2b1b689e496aa139ae6c7e160dae84a7071fde82359855bccdc2f4760d00"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/recommended-carousel/canon-recommended-slide-04.png",
+          "bytes": 2175925,
+          "sha256": "48a2fd1cccc24e1dc88812ac07839d6bd0e1e7a6aa11aa6473b2edb9d2db33e7",
+          "historicalBaseline": {
+            "bytes": 2175925,
+            "sha256": "48a2fd1cccc24e1dc88812ac07839d6bd0e1e7a6aa11aa6473b2edb9d2db33e7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/recommended-carousel/canon-recommended-slide-05.png",
+          "bytes": 2171154,
+          "sha256": "61a426188bb6455ded90b4a97ec3f495a6e8cdf46141a0c14ef1816f5d5ee204",
+          "historicalBaseline": {
+            "bytes": 2171154,
+            "sha256": "61a426188bb6455ded90b4a97ec3f495a6e8cdf46141a0c14ef1816f5d5ee204"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/recommended-carousel/canon-recommended-slide-06.png",
+          "bytes": 2251802,
+          "sha256": "781b0a4f527e548a08f46aba802c9fc234699f9713af58ae05cbb1735bd01cd7",
+          "historicalBaseline": {
+            "bytes": 2251802,
+            "sha256": "781b0a4f527e548a08f46aba802c9fc234699f9713af58ae05cbb1735bd01cd7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-01.png",
+          "bytes": 1923180,
+          "sha256": "5bb5b7bf404e7a40827831159fc0e9df3f8874cd1ff67afe2cb81de48f50e99d",
+          "historicalBaseline": {
+            "bytes": 1923180,
+            "sha256": "5bb5b7bf404e7a40827831159fc0e9df3f8874cd1ff67afe2cb81de48f50e99d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-02.png",
+          "bytes": 1874578,
+          "sha256": "1eb73d6bdb49de737abd53320c59fbd2882442bd724288ad9e3ab66c4816cc02",
+          "historicalBaseline": {
+            "bytes": 1874578,
+            "sha256": "1eb73d6bdb49de737abd53320c59fbd2882442bd724288ad9e3ab66c4816cc02"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-03.png",
+          "bytes": 1850678,
+          "sha256": "8fd374b92e8bdf735cc822a722cd3b6a41ac791fe75c696fcfd0a02b6e17f9fc",
+          "historicalBaseline": {
+            "bytes": 1850678,
+            "sha256": "8fd374b92e8bdf735cc822a722cd3b6a41ac791fe75c696fcfd0a02b6e17f9fc"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-04.png",
+          "bytes": 1902493,
+          "sha256": "5af684c1a02ebe37adbc0a3c69f3885a18359fedccedb566c61b17005aa637de",
+          "historicalBaseline": {
+            "bytes": 1902493,
+            "sha256": "5af684c1a02ebe37adbc0a3c69f3885a18359fedccedb566c61b17005aa637de"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-05.png",
+          "bytes": 1975516,
+          "sha256": "7b566b6df3712f870f636d9e1c3d6966cf581e11e27fe32eb0ac71b4cdbb0b64",
+          "historicalBaseline": {
+            "bytes": 1975516,
+            "sha256": "7b566b6df3712f870f636d9e1c3d6966cf581e11e27fe32eb0ac71b4cdbb0b64"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-06.png",
+          "bytes": 1783245,
+          "sha256": "d325fd39e9d54546932fb052b4176fa8d7bee677cb6791c39949c9d8dfad7020",
+          "historicalBaseline": {
+            "bytes": 1783245,
+            "sha256": "d325fd39e9d54546932fb052b4176fa8d7bee677cb6791c39949c9d8dfad7020"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/canon/watchman-carousel/canon-watchman-slide-07.png",
+          "bytes": 1602986,
+          "sha256": "e06067df7a8035954d2a7b024b47e721f7e4bd4b25e7a97c8bd31dc5f858c0d4",
+          "historicalBaseline": {
+            "bytes": 1602986,
+            "sha256": "e06067df7a8035954d2a7b024b47e721f7e4bd4b25e7a97c8bd31dc5f858c0d4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/abundant-life.png",
+          "bytes": 1676839,
+          "sha256": "66442e77689a2e6ea102eb3b09a10802217135e1608506e36b8ffaab3f70fe19",
+          "historicalBaseline": {
+            "bytes": 1676839,
+            "sha256": "66442e77689a2e6ea102eb3b09a10802217135e1608506e36b8ffaab3f70fe19"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/divine-direction.png",
+          "bytes": 1794051,
+          "sha256": "950e5094a4c67f2b33b439411fd49dc81d1d5c28502b73df9ce2935b3ca70657",
+          "historicalBaseline": {
+            "bytes": 1794051,
+            "sha256": "950e5094a4c67f2b33b439411fd49dc81d1d5c28502b73df9ce2935b3ca70657"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/eternal-hope.png",
+          "bytes": 1752295,
+          "sha256": "33d88e573575bac0fcffcc8fb4e774dab181c4b5084c593ad3997b1e54a1ac49",
+          "historicalBaseline": {
+            "bytes": 1752295,
+            "sha256": "33d88e573575bac0fcffcc8fb4e774dab181c4b5084c593ad3997b1e54a1ac49"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/faith-in-action.png",
+          "bytes": 1790290,
+          "sha256": "241f5109cae79f07682f199c2c254b68f93024df542b1977edf2e915cb5c5ccb",
+          "historicalBaseline": {
+            "bytes": 1790290,
+            "sha256": "241f5109cae79f07682f199c2c254b68f93024df542b1977edf2e915cb5c5ccb"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/growth-in-grace.png",
+          "bytes": 1550437,
+          "sha256": "30cab1c32190115cebcc6f47266978244b9f3c396de8ce0e0624f23de14d321c",
+          "historicalBaseline": {
+            "bytes": 1550437,
+            "sha256": "30cab1c32190115cebcc6f47266978244b9f3c396de8ce0e0624f23de14d321c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/kingdom-wisdom.png",
+          "bytes": 1718521,
+          "sha256": "1c809e91250148b29e12bfc35a8c11e5805fddfd981d2b23d18c7e47532339ac",
+          "historicalBaseline": {
+            "bytes": 1718521,
+            "sha256": "1c809e91250148b29e12bfc35a8c11e5805fddfd981d2b23d18c7e47532339ac"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/peace-protection.png",
+          "bytes": 1605267,
+          "sha256": "dc2afbda93c44293bba849d7b891fce02ccbc62f14eee7888e66bf14bff1edb7",
+          "historicalBaseline": {
+            "bytes": 1605267,
+            "sha256": "dc2afbda93c44293bba849d7b891fce02ccbc62f14eee7888e66bf14bff1edb7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/purpose-fulfilled-clean.png",
+          "bytes": 1614137,
+          "sha256": "80970be701da2812b12cca4bbb614577de2d24f2245944c52f9781bbadc37ac6",
+          "historicalBaseline": {
+            "bytes": 1614137,
+            "sha256": "80970be701da2812b12cca4bbb614577de2d24f2245944c52f9781bbadc37ac6"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/purpose-fulfilled.png",
+          "bytes": 1794922,
+          "sha256": "cd358179e32bb9392a147420618980d97269f3401625804fd96149074d738424",
+          "historicalBaseline": {
+            "bytes": 1794922,
+            "sha256": "cd358179e32bb9392a147420618980d97269f3401625804fd96149074d738424"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/carousel/strength-for-today.png",
+          "bytes": 1611824,
+          "sha256": "abddb93436deceb01c47ce014c5c0c1e7f1715a07864a6acc723f1389921365c",
+          "historicalBaseline": {
+            "bytes": 1611824,
+            "sha256": "abddb93436deceb01c47ce014c5c0c1e7f1715a07864a6acc723f1389921365c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/embed/embedded-videos-hero-bg.png",
+          "bytes": 2316479,
+          "sha256": "6c62aadd25018b93753b99c466bb491bce5b8fe9fa735897784f7b254a8eeb83",
+          "historicalBaseline": {
+            "bytes": 2316479,
+            "sha256": "6c62aadd25018b93753b99c466bb491bce5b8fe9fa735897784f7b254a8eeb83"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/lexicon/daily-inspiration-bg.png",
+          "bytes": 184935,
+          "sha256": "aadf42e56bee6247c3108b89ab5f4673e4503942d44f56faed39c64d2801e48e",
+          "historicalBaseline": {
+            "bytes": 184935,
+            "sha256": "aadf42e56bee6247c3108b89ab5f4673e4503942d44f56faed39c64d2801e48e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/lexicon/lexicon-hero-bg.png",
+          "bytes": 1632580,
+          "sha256": "71c1512fe4e148b72ddaeb417615eb0844d78049221ad351bb0976e65eb033d7",
+          "historicalBaseline": {
+            "bytes": 1632580,
+            "sha256": "71c1512fe4e148b72ddaeb417615eb0844d78049221ad351bb0976e65eb033d7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/lexicon/promise-language-panel-bg.png",
+          "bytes": 2256829,
+          "sha256": "77d2dbc6016823e7c708ad5a70e7cf724ce0115f3583a16d2123174fe9f7ce3a",
+          "historicalBaseline": {
+            "bytes": 2256829,
+            "sha256": "77d2dbc6016823e7c708ad5a70e7cf724ce0115f3583a16d2123174fe9f7ce3a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/lexicon/word-of-the-day-bg.png",
+          "bytes": 1806650,
+          "sha256": "e9532543563a0cd30df3c279b48eab07811f03fcb2dab53573993cba51e4ef84",
+          "historicalBaseline": {
+            "bytes": 1806650,
+            "sha256": "e9532543563a0cd30df3c279b48eab07811f03fcb2dab53573993cba51e4ef84"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/promise/promise-scrolls-bg.png",
+          "bytes": 1657502,
+          "sha256": "1fecdf8aa6590daa7f1f23cb85553cbf8f7b354de5415b9c431362d6b99f398e",
+          "historicalBaseline": {
+            "bytes": 1657502,
+            "sha256": "1fecdf8aa6590daa7f1f23cb85553cbf8f7b354de5415b9c431362d6b99f398e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/roadmap/roadmap-hero-avatar.png",
+          "bytes": 16703,
+          "sha256": "b7c73abbc8f98296128bdaecf9f64c00da77a155ddd37d441bd23438253d7005",
+          "historicalBaseline": {
+            "bytes": 16703,
+            "sha256": "b7c73abbc8f98296128bdaecf9f64c00da77a155ddd37d441bd23438253d7005"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/search/search-purpose-hero.png",
+          "bytes": 2537665,
+          "sha256": "fffc5de8ce4e404c0281f48b03e29c61a84b3cc9d6bc3240b20b3ec8814a203d",
+          "historicalBaseline": {
+            "bytes": 2537665,
+            "sha256": "fffc5de8ce4e404c0281f48b03e29c61a84b3cc9d6bc3240b20b3ec8814a203d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/search/suggested-journey-01.png",
+          "bytes": 94585,
+          "sha256": "e74e9b1afdbf98b978044930366a9a5223770faaaf163a8b41c534723187caee",
+          "historicalBaseline": {
+            "bytes": 94585,
+            "sha256": "e74e9b1afdbf98b978044930366a9a5223770faaaf163a8b41c534723187caee"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/search/suggested-journey-02.png",
+          "bytes": 79483,
+          "sha256": "eb6c3ff77dad6e4cb3cf3c736de3aacb20bdac56af5c94c7282cc6839a3bed93",
+          "historicalBaseline": {
+            "bytes": 79483,
+            "sha256": "eb6c3ff77dad6e4cb3cf3c736de3aacb20bdac56af5c94c7282cc6839a3bed93"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/search/suggested-journey-03.png",
+          "bytes": 78439,
+          "sha256": "1e926876a384b4fd933dde54ecc15a18c61e7d99d43784ab79b545aa22a8b963",
+          "historicalBaseline": {
+            "bytes": 78439,
+            "sha256": "1e926876a384b4fd933dde54ecc15a18c61e7d99d43784ab79b545aa22a8b963"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/search/teoyube-search-panel-bg.png",
+          "bytes": 2431979,
+          "sha256": "26d81d4038a1bab2674f12c847b9ca6740df6fe61ae6cf86523ebc2ef7ba8ec6",
+          "historicalBaseline": {
+            "bytes": 2431979,
+            "sha256": "26d81d4038a1bab2674f12c847b9ca6740df6fe61ae6cf86523ebc2ef7ba8ec6"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/sidebar/saint-profile-avatar.png",
+          "bytes": 16703,
+          "sha256": "b7c73abbc8f98296128bdaecf9f64c00da77a155ddd37d441bd23438253d7005",
+          "historicalBaseline": {
+            "bytes": 16703,
+            "sha256": "b7c73abbc8f98296128bdaecf9f64c00da77a155ddd37d441bd23438253d7005"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/table/calling-compass-panel-bg.png",
+          "bytes": 1857761,
+          "sha256": "adb95db509bed1a0275c72f29542abc66c9fb1fb6d96d67397dde610c3e2b4ca",
+          "historicalBaseline": {
+            "bytes": 1857761,
+            "sha256": "adb95db509bed1a0275c72f29542abc66c9fb1fb6d96d67397dde610c3e2b4ca"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/teoyube-ads-cards.png",
+          "bytes": 1756654,
+          "sha256": "8957e08464f7ad53e7d19fe53e8cb716969d3d4a12370b189529cb52fcc33acd",
+          "historicalBaseline": {
+            "bytes": 1756654,
+            "sha256": "8957e08464f7ad53e7d19fe53e8cb716969d3d4a12370b189529cb52fcc33acd"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/teoyube-carousel-5-wide.png",
+          "bytes": 1445263,
+          "sha256": "3227646420b518a77802d4b7327e1b33d625394da2a42f33f6062f4e11309286",
+          "historicalBaseline": {
+            "bytes": 1445263,
+            "sha256": "3227646420b518a77802d4b7327e1b33d625394da2a42f33f6062f4e11309286"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/teoyube-carousel-9-wide.png",
+          "bytes": 1450130,
+          "sha256": "11c83fefa5bd348dae0b9c169bc026b1cf95c1b694e50e0582224a6e65f5ef1e",
+          "historicalBaseline": {
+            "bytes": 1450130,
+            "sha256": "11c83fefa5bd348dae0b9c169bc026b1cf95c1b694e50e0582224a6e65f5ef1e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/testimony/draft-empty-icon.png",
+          "bytes": 22845,
+          "sha256": "b4ebbd3c49694123f5d0b9d25ae5ac0372666f6a49ed3073715ad96bfb93dfa4",
+          "historicalBaseline": {
+            "bytes": 22845,
+            "sha256": "b4ebbd3c49694123f5d0b9d25ae5ac0372666f6a49ed3073715ad96bfb93dfa4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/testimony/draft-empty-reference.jpeg",
+          "bytes": 82121,
+          "sha256": "41848cf4afc8c61af5348ac2a015721658cd50bb573cd28bb7fd8cd495ffaf26",
+          "historicalBaseline": {
+            "bytes": 82121,
+            "sha256": "41848cf4afc8c61af5348ac2a015721658cd50bb573cd28bb7fd8cd495ffaf26"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/testimony/testimony-hero-bg.png",
+          "bytes": 1891435,
+          "sha256": "5b90ba6656e03f11652fa09890f858dabb110e682fa9699b9c1f7a12451cbd09",
+          "historicalBaseline": {
+            "bytes": 1891435,
+            "sha256": "5b90ba6656e03f11652fa09890f858dabb110e682fa9699b9c1f7a12451cbd09"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-01-welcome.png",
+          "bytes": 2222716,
+          "sha256": "cf7e5781bf7fe9fcb1687ff3e063fa9782cbd4ccc42ea601f38f410a340f8d55",
+          "historicalBaseline": {
+            "bytes": 2222716,
+            "sha256": "cf7e5781bf7fe9fcb1687ff3e063fa9782cbd4ccc42ea601f38f410a340f8d55"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-02-journey.png",
+          "bytes": 2054636,
+          "sha256": "547bdb988bf382311fd92b46c7a15d1442ab1a66086952694f56fadac660fc23",
+          "historicalBaseline": {
+            "bytes": 2054636,
+            "sha256": "547bdb988bf382311fd92b46c7a15d1442ab1a66086952694f56fadac660fc23"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-03-search.png",
+          "bytes": 1934302,
+          "sha256": "97c7466df89c26c04ac0380bed8c08bbe1befd5787b13cf67493b7eaea7ff9b7",
+          "historicalBaseline": {
+            "bytes": 1934302,
+            "sha256": "97c7466df89c26c04ac0380bed8c08bbe1befd5787b13cf67493b7eaea7ff9b7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-04-canon.png",
+          "bytes": 2161965,
+          "sha256": "513bba14643bc6d476a29b91a503931b256f3ec00937db94367ee02a682fcd50",
+          "historicalBaseline": {
+            "bytes": 2161965,
+            "sha256": "513bba14643bc6d476a29b91a503931b256f3ec00937db94367ee02a682fcd50"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-05-promise-table.png",
+          "bytes": 1981018,
+          "sha256": "92b72572721a36fdc775a024fdff0045e1684c30722a023c778b00d935ef2f9e",
+          "historicalBaseline": {
+            "bytes": 1981018,
+            "sha256": "92b72572721a36fdc775a024fdff0045e1684c30722a023c778b00d935ef2f9e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-06-growth.png",
+          "bytes": 2111779,
+          "sha256": "c5a3b1fed400be5d65bf4ffe88d2e5c492cca8443452d6b04e360451e050e40c",
+          "historicalBaseline": {
+            "bytes": 2111779,
+            "sha256": "c5a3b1fed400be5d65bf4ffe88d2e5c492cca8443452d6b04e360451e050e40c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-07-live-promises.png",
+          "bytes": 1940472,
+          "sha256": "f69faf930f0aaf36395d37533730198bec4d34cd563e2a2e67bb862e14e6e0f8",
+          "historicalBaseline": {
+            "bytes": 1940472,
+            "sha256": "f69faf930f0aaf36395d37533730198bec4d34cd563e2a2e67bb862e14e6e0f8"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-08-impact.png",
+          "bytes": 2023483,
+          "sha256": "187f40408872c93c3e19094c56712e86a3dfca9a518ed541a1420c103cfcbe2f",
+          "historicalBaseline": {
+            "bytes": 2023483,
+            "sha256": "187f40408872c93c3e19094c56712e86a3dfca9a518ed541a1420c103cfcbe2f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-09-deeper.png",
+          "bytes": 2102604,
+          "sha256": "947cf4cb24313a58cfb3589945b3f5cd8095d4807f97d7fdf4b6c549c0e16714",
+          "historicalBaseline": {
+            "bytes": 2102604,
+            "sha256": "947cf4cb24313a58cfb3589945b3f5cd8095d4807f97d7fdf4b6c549c0e16714"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-10-legacy.png",
+          "bytes": 2060409,
+          "sha256": "fb19b19043a909aeab658d56cbb290310d29610b5e506135c2d7304fc598012d",
+          "historicalBaseline": {
+            "bytes": 2060409,
+            "sha256": "fb19b19043a909aeab658d56cbb290310d29610b5e506135c2d7304fc598012d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-11-faith.png",
+          "bytes": 2054817,
+          "sha256": "3bea7e9cb3261d7eb57ff7503f7221e2b72698e63b0e585c48977c874d28e877",
+          "historicalBaseline": {
+            "bytes": 2054817,
+            "sha256": "3bea7e9cb3261d7eb57ff7503f7221e2b72698e63b0e585c48977c874d28e877"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today-carousel/today-carousel-12-overlook.png",
+          "bytes": 2187668,
+          "sha256": "50be2a4efcac881707aa1cfe4fa7456b24a036e4daf333bfb9d65877657d0e70",
+          "historicalBaseline": {
+            "bytes": 2187668,
+            "sha256": "50be2a4efcac881707aa1cfe4fa7456b24a036e4daf333bfb9d65877657d0e70"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/images/today/teoyubeworld-search-bg.png",
+          "bytes": 1726317,
+          "sha256": "5bd4dff979437dc3e89791157558e750826d3ad7e1f97a8d0bdeb03da93e44c2",
+          "historicalBaseline": {
+            "bytes": 1726317,
+            "sha256": "5bd4dff979437dc3e89791157558e750826d3ad7e1f97a8d0bdeb03da93e44c2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/.gitkeep",
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "historicalBaseline": {
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cb26db0174bf3fa9fec/card-preview.mp4",
+          "bytes": 942235,
+          "sha256": "dc5af709d8cea5c0e8df2ed2084bcb1bdf4ae51b3600d11322333a6b9c0ad6b7",
+          "historicalBaseline": {
+            "bytes": 942235,
+            "sha256": "dc5af709d8cea5c0e8df2ed2084bcb1bdf4ae51b3600d11322333a6b9c0ad6b7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cb26db0174bf3fa9fec/mobile-preview.mp4",
+          "bytes": 244117,
+          "sha256": "e82f56ed3215da02d8a17feadd0288cded90f0a7439e576226fea79eca173d40",
+          "historicalBaseline": {
+            "bytes": 244117,
+            "sha256": "e82f56ed3215da02d8a17feadd0288cded90f0a7439e576226fea79eca173d40"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cb26db0174bf3fa9fec/poster.webp",
+          "bytes": 75522,
+          "sha256": "ae9c4e6b13ada3e39887abcc607e8f82e042248ca4be864cacf876c7d127faa2",
+          "historicalBaseline": {
+            "bytes": 75522,
+            "sha256": "ae9c4e6b13ada3e39887abcc607e8f82e042248ca4be864cacf876c7d127faa2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cb26db0174bf3fa9fec/thumbnail.webp",
+          "bytes": 11468,
+          "sha256": "a14c60e2b6c5607ceaa3a883a7586472ddb7acc694a8b59de13816ec66d5a829",
+          "historicalBaseline": {
+            "bytes": 11468,
+            "sha256": "a14c60e2b6c5607ceaa3a883a7586472ddb7acc694a8b59de13816ec66d5a829"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cbd16b4ed8efac2b87d/card-preview.mp4",
+          "bytes": 703819,
+          "sha256": "7884f1f341d55e3c569836e61d7b0004ea251ac4374e1d275e993d5aa70c8908",
+          "historicalBaseline": {
+            "bytes": 703819,
+            "sha256": "7884f1f341d55e3c569836e61d7b0004ea251ac4374e1d275e993d5aa70c8908"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cbd16b4ed8efac2b87d/mobile-preview.mp4",
+          "bytes": 192487,
+          "sha256": "293c50c548dbad3b63b121e1a2f12817e538c1bad9b6fe87503b99aa95d66ebd",
+          "historicalBaseline": {
+            "bytes": 192487,
+            "sha256": "293c50c548dbad3b63b121e1a2f12817e538c1bad9b6fe87503b99aa95d66ebd"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cbd16b4ed8efac2b87d/poster.webp",
+          "bytes": 58164,
+          "sha256": "c9bd24e12495293253941125026985f1057a3e5c45aa2829506ce76afd82a5a6",
+          "historicalBaseline": {
+            "bytes": 58164,
+            "sha256": "c9bd24e12495293253941125026985f1057a3e5c45aa2829506ce76afd82a5a6"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-1cbd16b4ed8efac2b87d/thumbnail.webp",
+          "bytes": 9570,
+          "sha256": "e7669655346d41a6ec070e5e2601ce370f268fb01f6e148a90b78e70aa3e56cd",
+          "historicalBaseline": {
+            "bytes": 9570,
+            "sha256": "e7669655346d41a6ec070e5e2601ce370f268fb01f6e148a90b78e70aa3e56cd"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-273e1ca97e199759bbd3/card-preview.mp4",
+          "bytes": 933822,
+          "sha256": "0573204360e5914f33b8e2b49dff9ef89b23562adefb53a7bb5d68871f223de0",
+          "historicalBaseline": {
+            "bytes": 933822,
+            "sha256": "0573204360e5914f33b8e2b49dff9ef89b23562adefb53a7bb5d68871f223de0"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-273e1ca97e199759bbd3/mobile-preview.mp4",
+          "bytes": 293969,
+          "sha256": "aec48b53fc0209b3a571f48f126b034d9fc91ecbb523446f6625b6097953c85e",
+          "historicalBaseline": {
+            "bytes": 293969,
+            "sha256": "aec48b53fc0209b3a571f48f126b034d9fc91ecbb523446f6625b6097953c85e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-273e1ca97e199759bbd3/poster.webp",
+          "bytes": 61850,
+          "sha256": "0281f20460426bad8b58bac01254ea0620cc0d1dacc0366024fb41bc55cc7a8d",
+          "historicalBaseline": {
+            "bytes": 61850,
+            "sha256": "0281f20460426bad8b58bac01254ea0620cc0d1dacc0366024fb41bc55cc7a8d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-273e1ca97e199759bbd3/thumbnail.webp",
+          "bytes": 9762,
+          "sha256": "fc2f868d079104eee9de68a4b8e8cb5d452d674fbc4186abde83042a5b7989be",
+          "historicalBaseline": {
+            "bytes": 9762,
+            "sha256": "fc2f868d079104eee9de68a4b8e8cb5d452d674fbc4186abde83042a5b7989be"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-6d9d60afe6104fc40e1b/card-preview.mp4",
+          "bytes": 462418,
+          "sha256": "29386a55159c74dab87f8f64c43b04998db1893fa04fe91ce3d6a965479ceb3f",
+          "historicalBaseline": {
+            "bytes": 462418,
+            "sha256": "29386a55159c74dab87f8f64c43b04998db1893fa04fe91ce3d6a965479ceb3f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-6d9d60afe6104fc40e1b/mobile-preview.mp4",
+          "bytes": 90636,
+          "sha256": "a0ef486ad304cdeed41c523541e50259d7c40ee3585c578f92cdae7deeb5f2d3",
+          "historicalBaseline": {
+            "bytes": 90636,
+            "sha256": "a0ef486ad304cdeed41c523541e50259d7c40ee3585c578f92cdae7deeb5f2d3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-6d9d60afe6104fc40e1b/poster.webp",
+          "bytes": 43024,
+          "sha256": "86cc9326b1022fe0a2101b701f8d0cf3c776d3ccaa86a267a670474e5faadcda",
+          "historicalBaseline": {
+            "bytes": 43024,
+            "sha256": "86cc9326b1022fe0a2101b701f8d0cf3c776d3ccaa86a267a670474e5faadcda"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-6d9d60afe6104fc40e1b/thumbnail.webp",
+          "bytes": 5812,
+          "sha256": "55df6bda7bd17c66fbbd6c21f809b2355a2662c1be902c9fdf4c6eed9d4ea9ca",
+          "historicalBaseline": {
+            "bytes": 5812,
+            "sha256": "55df6bda7bd17c66fbbd6c21f809b2355a2662c1be902c9fdf4c6eed9d4ea9ca"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8a0de70ca05a1dd74eb2/card-preview.mp4",
+          "bytes": 647092,
+          "sha256": "419dca5efee6ae1be04d0a9f2b4c6597bad7b3abf19db81cf5c53d1d98a72ee2",
+          "historicalBaseline": {
+            "bytes": 647092,
+            "sha256": "419dca5efee6ae1be04d0a9f2b4c6597bad7b3abf19db81cf5c53d1d98a72ee2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8a0de70ca05a1dd74eb2/mobile-preview.mp4",
+          "bytes": 226202,
+          "sha256": "8528f9d261c7476150150209edb6666e9406066b8e1862ce3868b106c52d085a",
+          "historicalBaseline": {
+            "bytes": 226202,
+            "sha256": "8528f9d261c7476150150209edb6666e9406066b8e1862ce3868b106c52d085a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8a0de70ca05a1dd74eb2/poster.webp",
+          "bytes": 60992,
+          "sha256": "3e709575eaea36d0c79e0acca02460b1cc8c3a0d1055a14cff4ef2ce5e2560ba",
+          "historicalBaseline": {
+            "bytes": 60992,
+            "sha256": "3e709575eaea36d0c79e0acca02460b1cc8c3a0d1055a14cff4ef2ce5e2560ba"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8a0de70ca05a1dd74eb2/thumbnail.webp",
+          "bytes": 9792,
+          "sha256": "1e6f6414f426290cb76a7966ab5c80344ca00cad4ac178bcc721d2e94e22f391",
+          "historicalBaseline": {
+            "bytes": 9792,
+            "sha256": "1e6f6414f426290cb76a7966ab5c80344ca00cad4ac178bcc721d2e94e22f391"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8ebf867a485ce43e3bc7/card-preview.mp4",
+          "bytes": 751932,
+          "sha256": "7e8720d1c8b37144e59ae1b3e7ab7e5ee4314ab7dfacf325a2ec92cda5d2a3e2",
+          "historicalBaseline": {
+            "bytes": 751932,
+            "sha256": "7e8720d1c8b37144e59ae1b3e7ab7e5ee4314ab7dfacf325a2ec92cda5d2a3e2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8ebf867a485ce43e3bc7/mobile-preview.mp4",
+          "bytes": 98269,
+          "sha256": "2bc8c460f7b619212182fada6c58c104cd377cec42f50c02a591dd3a3f12447d",
+          "historicalBaseline": {
+            "bytes": 98269,
+            "sha256": "2bc8c460f7b619212182fada6c58c104cd377cec42f50c02a591dd3a3f12447d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8ebf867a485ce43e3bc7/poster.webp",
+          "bytes": 68540,
+          "sha256": "86a6279bd15d8564c442193953595ce1c6706c62621124fb057a6e6b6f8aa372",
+          "historicalBaseline": {
+            "bytes": 68540,
+            "sha256": "86a6279bd15d8564c442193953595ce1c6706c62621124fb057a6e6b6f8aa372"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-8ebf867a485ce43e3bc7/thumbnail.webp",
+          "bytes": 9920,
+          "sha256": "6edb5753b2398bf6ff6dcf7a42bebd55cafccf1373d8ad974b55a50e2489416a",
+          "historicalBaseline": {
+            "bytes": 9920,
+            "sha256": "6edb5753b2398bf6ff6dcf7a42bebd55cafccf1373d8ad974b55a50e2489416a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-9b667f9e1c0f0ecdf4d4/card-preview.mp4",
+          "bytes": 722750,
+          "sha256": "d5e2b206bcfe13c7f3e425b35169cb8fdbd186cfe7a2b3f6fe46c480a7fb5ebf",
+          "historicalBaseline": {
+            "bytes": 722750,
+            "sha256": "d5e2b206bcfe13c7f3e425b35169cb8fdbd186cfe7a2b3f6fe46c480a7fb5ebf"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-9b667f9e1c0f0ecdf4d4/mobile-preview.mp4",
+          "bytes": 206290,
+          "sha256": "1f11af9e31cf43ef02551d429f6cf0e49617205ea3c2afd3d382afb8e9e1ba35",
+          "historicalBaseline": {
+            "bytes": 206290,
+            "sha256": "1f11af9e31cf43ef02551d429f6cf0e49617205ea3c2afd3d382afb8e9e1ba35"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-9b667f9e1c0f0ecdf4d4/poster.webp",
+          "bytes": 68622,
+          "sha256": "49f15f117b84d06dfdaf55cdd118af48978f4d68aa638d5e911152b44059d7a7",
+          "historicalBaseline": {
+            "bytes": 68622,
+            "sha256": "49f15f117b84d06dfdaf55cdd118af48978f4d68aa638d5e911152b44059d7a7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-9b667f9e1c0f0ecdf4d4/thumbnail.webp",
+          "bytes": 9954,
+          "sha256": "40f20f3d40fedae7bb30f65c876616fba6a3ef5a6e05cc112b81acc133b4fb7e",
+          "historicalBaseline": {
+            "bytes": 9954,
+            "sha256": "40f20f3d40fedae7bb30f65c876616fba6a3ef5a6e05cc112b81acc133b4fb7e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c0e13c1d4ee213df360b/card-preview.mp4",
+          "bytes": 856205,
+          "sha256": "74805c85713ef70570eec1d8595ea29414aa9230d22585c94f6f4a1df59c7502",
+          "historicalBaseline": {
+            "bytes": 856205,
+            "sha256": "74805c85713ef70570eec1d8595ea29414aa9230d22585c94f6f4a1df59c7502"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c0e13c1d4ee213df360b/mobile-preview.mp4",
+          "bytes": 234365,
+          "sha256": "00fe06888c515b880ccc0874c907534bcc78c4bcaaf0571667c77d10dc5bb2f7",
+          "historicalBaseline": {
+            "bytes": 234365,
+            "sha256": "00fe06888c515b880ccc0874c907534bcc78c4bcaaf0571667c77d10dc5bb2f7"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c0e13c1d4ee213df360b/poster.webp",
+          "bytes": 75636,
+          "sha256": "c71cb94c6120990c6509a8ad0cfb1646770d54bfcc2564b274e0452a27d72e42",
+          "historicalBaseline": {
+            "bytes": 75636,
+            "sha256": "c71cb94c6120990c6509a8ad0cfb1646770d54bfcc2564b274e0452a27d72e42"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c0e13c1d4ee213df360b/thumbnail.webp",
+          "bytes": 11448,
+          "sha256": "bceb6b3810304765eb5a6de66a3a2870a9126a355e272aac910a5efea83cec85",
+          "historicalBaseline": {
+            "bytes": 11448,
+            "sha256": "bceb6b3810304765eb5a6de66a3a2870a9126a355e272aac910a5efea83cec85"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c22645befc29502aafa3/card-preview.mp4",
+          "bytes": 554326,
+          "sha256": "0321aca6c6857a991cf291e334695161bb5470c70f90a88dbc9b926f642c476e",
+          "historicalBaseline": {
+            "bytes": 554326,
+            "sha256": "0321aca6c6857a991cf291e334695161bb5470c70f90a88dbc9b926f642c476e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c22645befc29502aafa3/mobile-preview.mp4",
+          "bytes": 52636,
+          "sha256": "1c9de17890d1389ebd1322927a1156415775f05ad36e3a3dd698e6fb3456a81e",
+          "historicalBaseline": {
+            "bytes": 52636,
+            "sha256": "1c9de17890d1389ebd1322927a1156415775f05ad36e3a3dd698e6fb3456a81e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c22645befc29502aafa3/poster.webp",
+          "bytes": 75790,
+          "sha256": "b9030ed7bf6e34c1b77f55839dc9a6a2a2adc477a85e630a5098bc807088fa1f",
+          "historicalBaseline": {
+            "bytes": 75790,
+            "sha256": "b9030ed7bf6e34c1b77f55839dc9a6a2a2adc477a85e630a5098bc807088fa1f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-c22645befc29502aafa3/thumbnail.webp",
+          "bytes": 11712,
+          "sha256": "7604816e759da51404a2e2ca6f2ea34aaae79c4d174b1723ab803c8a524b8370",
+          "historicalBaseline": {
+            "bytes": 11712,
+            "sha256": "7604816e759da51404a2e2ca6f2ea34aaae79c4d174b1723ab803c8a524b8370"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-cb37c48aa37a13ed985d/card-preview.mp4",
+          "bytes": 790976,
+          "sha256": "ee2d85b2c1db80737985e9c10190522536584da8880d9ab9730078365bc659dd",
+          "historicalBaseline": {
+            "bytes": 790976,
+            "sha256": "ee2d85b2c1db80737985e9c10190522536584da8880d9ab9730078365bc659dd"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-cb37c48aa37a13ed985d/mobile-preview.mp4",
+          "bytes": 294887,
+          "sha256": "1e4569ea5765d911e65bbdbd4e23ce19c47b3743e44a19f0d24a77bd60cb9122",
+          "historicalBaseline": {
+            "bytes": 294887,
+            "sha256": "1e4569ea5765d911e65bbdbd4e23ce19c47b3743e44a19f0d24a77bd60cb9122"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-cb37c48aa37a13ed985d/poster.webp",
+          "bytes": 57976,
+          "sha256": "82e9261c30ccf051965f0f716bbcb5f135967f5b0c967c850a0de588b93b7d17",
+          "historicalBaseline": {
+            "bytes": 57976,
+            "sha256": "82e9261c30ccf051965f0f716bbcb5f135967f5b0c967c850a0de588b93b7d17"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-cb37c48aa37a13ed985d/thumbnail.webp",
+          "bytes": 9720,
+          "sha256": "8c2d57cc1aac9a6544327760632d4f83b4a26a46fa0de05f19b6ffb4a87bf87f",
+          "historicalBaseline": {
+            "bytes": 9720,
+            "sha256": "8c2d57cc1aac9a6544327760632d4f83b4a26a46fa0de05f19b6ffb4a87bf87f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-d9ee8953acceb3aabdc6/card-preview.mp4",
+          "bytes": 926691,
+          "sha256": "c61f0c8e1f0093b4b24757e0102393d1bcef1b06685cfacc1beae6ed2398dc6c",
+          "historicalBaseline": {
+            "bytes": 926691,
+            "sha256": "c61f0c8e1f0093b4b24757e0102393d1bcef1b06685cfacc1beae6ed2398dc6c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-d9ee8953acceb3aabdc6/mobile-preview.mp4",
+          "bytes": 304291,
+          "sha256": "78c3d0be77ad7878c5fc6762cebba0d59abe767797d07bf4df307458ac6f3aee",
+          "historicalBaseline": {
+            "bytes": 304291,
+            "sha256": "78c3d0be77ad7878c5fc6762cebba0d59abe767797d07bf4df307458ac6f3aee"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-d9ee8953acceb3aabdc6/poster.webp",
+          "bytes": 61424,
+          "sha256": "ed4d320055ed865e09a0b92404bd6c9c02d4df36692a95add3cdaeafb492371d",
+          "historicalBaseline": {
+            "bytes": 61424,
+            "sha256": "ed4d320055ed865e09a0b92404bd6c9c02d4df36692a95add3cdaeafb492371d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-d9ee8953acceb3aabdc6/thumbnail.webp",
+          "bytes": 9680,
+          "sha256": "8bbf1a4035993aafc85b1d2871db15a44910680c186616fa7dab49b25e4c54b8",
+          "historicalBaseline": {
+            "bytes": 9680,
+            "sha256": "8bbf1a4035993aafc85b1d2871db15a44910680c186616fa7dab49b25e4c54b8"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-e246f032a13c93758c53/card-preview.mp4",
+          "bytes": 546336,
+          "sha256": "9974e4abdeee422f100419a58c41252e7a68faa8c714a751090698a881da8a6c",
+          "historicalBaseline": {
+            "bytes": 546336,
+            "sha256": "9974e4abdeee422f100419a58c41252e7a68faa8c714a751090698a881da8a6c"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-e246f032a13c93758c53/mobile-preview.mp4",
+          "bytes": 85043,
+          "sha256": "97e6dfdb59edaa3d30e7bd2bacf027de79b8a5559e6b90c69128b6cdb9039f90",
+          "historicalBaseline": {
+            "bytes": 85043,
+            "sha256": "97e6dfdb59edaa3d30e7bd2bacf027de79b8a5559e6b90c69128b6cdb9039f90"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-e246f032a13c93758c53/poster.webp",
+          "bytes": 45190,
+          "sha256": "2e6e92bdfe88a19f72e94c9d3456a4df767a7eaa0ba8b51b3999ac3ba2e48a68",
+          "historicalBaseline": {
+            "bytes": 45190,
+            "sha256": "2e6e92bdfe88a19f72e94c9d3456a4df767a7eaa0ba8b51b3999ac3ba2e48a68"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/media-e246f032a13c93758c53/thumbnail.webp",
+          "bytes": 6534,
+          "sha256": "e1ea2cecbf79d4ea728316e85b5567fe4ebc70e6cf425734a062801bf435536b",
+          "historicalBaseline": {
+            "bytes": 6534,
+            "sha256": "e1ea2cecbf79d4ea728316e85b5567fe4ebc70e6cf425734a062801bf435536b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "public/media/teoyubeworld/pilot-v1/runtime-manifest.json",
+          "bytes": 28966,
+          "sha256": "68b497ffdad2686142dc400546bf9f1cc3635e7f4d5b282b0cded3b7a72131f3",
+          "historicalBaseline": {
+            "bytes": 28966,
+            "sha256": "68b497ffdad2686142dc400546bf9f1cc3635e7f4d5b282b0cded3b7a72131f3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles.css",
+          "bytes": 931033,
+          "sha256": "bb88522bcc074bb07f972893686b65c83ac4f2e6f40c1efc267bee81238794c1",
+          "historicalBaseline": {
+            "bytes": 931033,
+            "sha256": "bb88522bcc074bb07f972893686b65c83ac4f2e6f40c1efc267bee81238794c1"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/base.css",
+          "bytes": 291,
+          "sha256": "baeda7f825a8324365a9036f38a7b314775519d34fbb0d68eb14abab2df6126f",
+          "historicalBaseline": {
+            "bytes": 291,
+            "sha256": "baeda7f825a8324365a9036f38a7b314775519d34fbb0d68eb14abab2df6126f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/components.css",
+          "bytes": 556,
+          "sha256": "e87e7a2dfaace7206e0e6270448a96f1f075e99ea573f29823e304f43a2c2e2b",
+          "historicalBaseline": {
+            "bytes": 556,
+            "sha256": "e87e7a2dfaace7206e0e6270448a96f1f075e99ea573f29823e304f43a2c2e2b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/layout.css",
+          "bytes": 925,
+          "sha256": "42ceebf95c99177b356d89e93c0fefa6df0110949bb4b7a07b44105c467977e2",
+          "historicalBaseline": {
+            "bytes": 925,
+            "sha256": "42ceebf95c99177b356d89e93c0fefa6df0110949bb4b7a07b44105c467977e2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/legacy.css",
+          "bytes": 129,
+          "sha256": "005d674811706ab151f03bc462ed6aecd192e19e424426a18cee49129333343e",
+          "historicalBaseline": {
+            "bytes": 129,
+            "sha256": "005d674811706ab151f03bc462ed6aecd192e19e424426a18cee49129333343e"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/owner/media-review.css",
+          "bytes": 177,
+          "sha256": "9588fa15cd03602c238a1b7774d03043c3b7ba880451e14ef69da7448dff4e2a",
+          "historicalBaseline": {
+            "bytes": 177,
+            "sha256": "9588fa15cd03602c238a1b7774d03043c3b7ba880451e14ef69da7448dff4e2a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/book.css",
+          "bytes": 51426,
+          "sha256": "b9a949a8e05ee6118bcc1cabd7e404cdacf5bd1f92ded27dece4c6f83c1ef56c",
+          "historicalBaseline": {
+            "bytes": 51104,
+            "sha256": "af8554160868a1960428df2118c8dfc0a27555fce52fd2788128765f69b1e2de"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_APPROVED_CURRENT_LINEAGE_OBJECT"
+        },
+        {
+          "path": "styles/pages/calling-compass.css",
+          "bytes": 62693,
+          "sha256": "9728a796b50373a5a5e7c82e60b067a26b8096db122fd3e6695cceed1e1b48c5",
+          "historicalBaseline": {
+            "bytes": 62693,
+            "sha256": "9728a796b50373a5a5e7c82e60b067a26b8096db122fd3e6695cceed1e1b48c5"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/canon.css",
+          "bytes": 81018,
+          "sha256": "8634b45893645849a042f0382b2522557203d53547117c737b34c646fd8e04fa",
+          "historicalBaseline": {
+            "bytes": 80779,
+            "sha256": "340251e77dd7ee8c4f4afd905be75188a4218987832bd0e301293eae4ba1c116"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_APPROVED_CURRENT_LINEAGE_OBJECT"
+        },
+        {
+          "path": "styles/pages/embedded-videos.css",
+          "bytes": 33451,
+          "sha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657",
+          "historicalBaseline": {
+            "bytes": 33451,
+            "sha256": "71c61bc1994fffcb2ba15116944b677c8c545802d8dca40072b4a8f4df36d657"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/index.css",
+          "bytes": 353,
+          "sha256": "d60f4ac43e3220e8e679013505d9b5169f58906f1e30fe8048a0570289800544",
+          "historicalBaseline": {
+            "bytes": 353,
+            "sha256": "d60f4ac43e3220e8e679013505d9b5169f58906f1e30fe8048a0570289800544"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/lexicon.css",
+          "bytes": 48395,
+          "sha256": "954c0ecd35fd39b142c546036428bc648f9bd59b608c075371974237b6349fca",
+          "historicalBaseline": {
+            "bytes": 48395,
+            "sha256": "954c0ecd35fd39b142c546036428bc648f9bd59b608c075371974237b6349fca"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/promise-table.css",
+          "bytes": 56000,
+          "sha256": "f7439f6a74229e17a04096108b2bf25cef51c8f1c9e43a5ec29a8dcb049ddf2d",
+          "historicalBaseline": {
+            "bytes": 56000,
+            "sha256": "f7439f6a74229e17a04096108b2bf25cef51c8f1c9e43a5ec29a8dcb049ddf2d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/roadmap.css",
+          "bytes": 86,
+          "sha256": "dde2e132359c9ea9aa3730c686bb8abf7cff23b85734484e733e9af5b9d50634",
+          "historicalBaseline": {
+            "bytes": 86,
+            "sha256": "dde2e132359c9ea9aa3730c686bb8abf7cff23b85734484e733e9af5b9d50634"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/search.css",
+          "bytes": 22327,
+          "sha256": "f9968ffef287d3ba5925f2a24a616998f2abdc976563a0b40df608274b1011b2",
+          "historicalBaseline": {
+            "bytes": 22327,
+            "sha256": "f9968ffef287d3ba5925f2a24a616998f2abdc976563a0b40df608274b1011b2"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/tables.css",
+          "bytes": 46344,
+          "sha256": "8f8392ec1df04e49ffe34927fdc81688bdd2ee3b2e55edbce9fcffecbbf98cf3",
+          "historicalBaseline": {
+            "bytes": 46344,
+            "sha256": "8f8392ec1df04e49ffe34927fdc81688bdd2ee3b2e55edbce9fcffecbbf98cf3"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/teo-guide.css",
+          "bytes": 29397,
+          "sha256": "f9b8ba36687790fa31c75e486f3289325fd340a3ff12aa8aec29e35d79b3dbdd",
+          "historicalBaseline": {
+            "bytes": 29397,
+            "sha256": "f9b8ba36687790fa31c75e486f3289325fd340a3ff12aa8aec29e35d79b3dbdd"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/testimony.css",
+          "bytes": 23042,
+          "sha256": "62a109956b4b06851a2afe1514a8252fb8f7ae82cb7c44a3d2e4fb89d8e2f697",
+          "historicalBaseline": {
+            "bytes": 23042,
+            "sha256": "62a109956b4b06851a2afe1514a8252fb8f7ae82cb7c44a3d2e4fb89d8e2f697"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/pages/today.css",
+          "bytes": 26363,
+          "sha256": "f4006f6c2ee70943b877f2dac54013d80a765b4c4c39f6575436bbca9a3f5b96",
+          "historicalBaseline": {
+            "bytes": 25805,
+            "sha256": "2aa08aa4459085e929be440ec1e8839e483abec95f94d08725a3bdcca67e59da"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_APPROVED_CURRENT_LINEAGE_OBJECT"
+        },
+        {
+          "path": "styles/reset.css",
+          "bytes": 234,
+          "sha256": "04112fcc41f92a9605fe3b093c33e477c853cdf0b1312123a21e8cec40a08913",
+          "historicalBaseline": {
+            "bytes": 234,
+            "sha256": "04112fcc41f92a9605fe3b093c33e477c853cdf0b1312123a21e8cec40a08913"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/responsive.css",
+          "bytes": 1043,
+          "sha256": "77886f5ae6491a5f4b4adaa53cbc79a82fa1424d775be8980e8c3830962da91b",
+          "historicalBaseline": {
+            "bytes": 1043,
+            "sha256": "77886f5ae6491a5f4b4adaa53cbc79a82fa1424d775be8980e8c3830962da91b"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/tokens.css",
+          "bytes": 649,
+          "sha256": "fac766859986182c2c46b7efbb1a924f4e03495a30bfa3c77a8b68145c949656",
+          "historicalBaseline": {
+            "bytes": 649,
+            "sha256": "fac766859986182c2c46b7efbb1a924f4e03495a30bfa3c77a8b68145c949656"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "styles/utilities.css",
+          "bytes": 143,
+          "sha256": "9e9a86f7a86d53b3ee8ab5ef6b3fb61cd5d22aa82f189ad17d21915636e14a16",
+          "historicalBaseline": {
+            "bytes": 143,
+            "sha256": "9e9a86f7a86d53b3ee8ab5ef6b3fb61cd5d22aa82f189ad17d21915636e14a16"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "teoyubeworld-media-experience.js",
+          "bytes": 40764,
+          "sha256": "96f1a97726072236fea286f311c3c24c8d5671f316f858799800bd6065641c3f",
+          "historicalBaseline": {
+            "bytes": 40764,
+            "sha256": "96f1a97726072236fea286f311c3c24c8d5671f316f858799800bd6065641c3f"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "teoyubeworld-media-runtime.js",
+          "bytes": 28980,
+          "sha256": "f7cf935fc13fe2efb9a79e2a9e0c85913765e15a56f8c93f40fa5f4360a0bde4",
+          "historicalBaseline": {
+            "bytes": 28980,
+            "sha256": "f7cf935fc13fe2efb9a79e2a9e0c85913765e15a56f8c93f40fa5f4360a0bde4"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "teoyubeworld-media.css",
+          "bytes": 15477,
+          "sha256": "ef0ef48bc524f826356964d280559b50f523ef5219ca02f506d3061c9e4d3bca",
+          "historicalBaseline": {
+            "bytes": 15477,
+            "sha256": "ef0ef48bc524f826356964d280559b50f523ef5219ca02f506d3061c9e4d3bca"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "teoyubeworld-playback-coordinator.js",
+          "bytes": 3891,
+          "sha256": "f1c265e70e9aaaa1d8720672e9ebbf34b4e1cc15a3c14485592782309c9dd64d",
+          "historicalBaseline": {
+            "bytes": 3891,
+            "sha256": "f1c265e70e9aaaa1d8720672e9ebbf34b4e1cc15a3c14485592782309c9dd64d"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        },
+        {
+          "path": "teoyubeworld-sequence-player.js",
+          "bytes": 18780,
+          "sha256": "d5a25d57abc84c82b9ae45a655ce96de73fc6c9a1323579da7d93fd0e460960a",
+          "historicalBaseline": {
+            "bytes": 18780,
+            "sha256": "d5a25d57abc84c82b9ae45a655ce96de73fc6c9a1323579da7d93fd0e460960a"
+          },
+          "relationship": "BYTE_IDENTICAL_TO_HISTORICAL_BASELINE"
+        }
+      ]
+    },
+    "immutableRuntimeBaselines": {
+      "count": 84,
+      "aggregateSha256": "968efdf13970aeb803b108e9e97042ce8e1ba10d31c511461983250fe8377746",
+      "objects": [
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/today.png",
+          "bytes": 1116063,
+          "sha256": "155c7e3009368b1099a400319b485575382fa0dea84069995abb8d8b629864ed",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/today.dom.json",
+          "bytes": 286961,
+          "sha256": "fb2a1cc2956445e00f1bd6b856ab319733e9068245a4fb7bee65e90fc7ccdc78",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/search.png",
+          "bytes": 1002740,
+          "sha256": "f37c1310f9eff98f17f4d7f9d27d89389f4107ec83942031b1ca8cc87814be4d",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/search.dom.json",
+          "bytes": 91927,
+          "sha256": "9e2a1d85088e71e3c326fc35e16ec50312390cc17c709b87aad2d6f723bc351d",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/canon.png",
+          "bytes": 846375,
+          "sha256": "fcbc33401f3e406537fd954278dc69dbbdd40f55bf6f73aa7f76792c28600162",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/canon.dom.json",
+          "bytes": 295256,
+          "sha256": "a46a67195e3f7344852119ccc43c0705cdf5dad659de25431741615b610acca1",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/table.png",
+          "bytes": 618669,
+          "sha256": "3bf788d83742161b41991f3b26c34a3514ecfddcd53dfc03bfa8cbef50ea5378",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/table.dom.json",
+          "bytes": 435469,
+          "sha256": "ac44f03de83ef7d922e015a29fac72ff0fa5f79bbe681c7227ca2df71617e70f",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/calling.png",
+          "bytes": 988177,
+          "sha256": "d4408436391b44591118bc9ff0a50637d82c7ac5f572b34ee8a37ac8f938935f",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/calling.dom.json",
+          "bytes": 95534,
+          "sha256": "1f5e22c8671aea70044eddde684aa9bc82bed3dbe92a5b3541fa4a079c7df621",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/book.png",
+          "bytes": 752174,
+          "sha256": "60680371eb49de9cb9f8674d89da6acecb23b78df2d00e2578432446e5fd166a",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/book.dom.json",
+          "bytes": 87875,
+          "sha256": "834ef91ff5530e1a0a029b2a436cff6db3ec4a37af1d990c9395c69691b9b287",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/lexicon.png",
+          "bytes": 550026,
+          "sha256": "b76f399465e78d6ab4b8b406673cbe38f582aea04067d5f3f7ca69b8d3006b67",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/lexicon.dom.json",
+          "bytes": 629935,
+          "sha256": "5474832944464495bd969f2306e6f78c1495d1d3096b83462f5a522da8fd2bab",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/testimony.png",
+          "bytes": 632612,
+          "sha256": "3419065551c6efda8c4f6e06d857ec2cca7d53bd3d622b63a7c940e679056980",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/testimony.dom.json",
+          "bytes": 57243,
+          "sha256": "1e89bf322485e3b5205c77dbb6683911d180f5548587df532a254836a9d2e67a",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/guide.png",
+          "bytes": 568855,
+          "sha256": "4a02a84d178ad79ec932f7281bc49eabd1a08c7baa428c2f9b903c056b2cdfac",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/guide.dom.json",
+          "bytes": 50845,
+          "sha256": "9396a3f50d2bb3bd0d2723e4823c50232aa3e4b4ff4213db000f04449df003f3",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/ui-elements.png",
+          "bytes": 760956,
+          "sha256": "0c2e3fd403f2fd822f34704b0b32a70464e981b47e3d38cf43aeafa56a471422",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/ui-elements.dom.json",
+          "bytes": 57142,
+          "sha256": "89e4817d04b2b45096331350611ee29b2f9880d6c8b0cbe40dc13fb5e58155b6",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.png",
+          "bytes": 668228,
+          "sha256": "db2568c91e8ac03d1d37aef3ee8ddf486784f6e5563953780ba4caa50bd41812",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/teoyube-tables.dom.json",
+          "bytes": 177353,
+          "sha256": "94d72d643da27db39c10b296caccce6f3330aee0d6bb3c05ad35cb8faff4cdaf",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/roadmap.png",
+          "bytes": 1035914,
+          "sha256": "3108de03b2e3b961632ac15b1afbdf065440b6d73316eff826c288d41341ec7e",
+          "kind": "screenshot",
+          "viewport": "desktop-wide",
+          "view": "roadmap"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-wide/roadmap.dom.json",
+          "bytes": 376899,
+          "sha256": "a16d61c0da00f8a61e2f834de2eefc2e524df086619e715e5706a27bd6ed3304",
+          "kind": "dom",
+          "viewport": "desktop-wide",
+          "view": "roadmap"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/today.png",
+          "bytes": 912828,
+          "sha256": "3d8983fd2dd56f63c6712d95c2db4bb84c6fea70de3b9ee71e76866cef38c8cb",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/search.png",
+          "bytes": 738941,
+          "sha256": "c7b254cba7aa208d83c66a33d5766778430e20763643ba8b8302acc510c9e639",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/canon.png",
+          "bytes": 691910,
+          "sha256": "014cf83968e1ad95d73a2166501254badc16502b2d8041d447594c6dc6ff3033",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/table.png",
+          "bytes": 545894,
+          "sha256": "4c338f5f95c8349f52b8de13ebb5165d33fa09e8cf7c9e26aa102b0947846625",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/calling.png",
+          "bytes": 798871,
+          "sha256": "93be4a5f5d2dbc1af4b2b189487899d7b7a544b6d94ed5ae97154c2399429032",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/book.png",
+          "bytes": 726550,
+          "sha256": "f5e125fe90b4e51876b88184059e96dc7959decb6632d2a016d516d8bb0e5a10",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/lexicon.png",
+          "bytes": 459949,
+          "sha256": "11e4dcc8a3d07d4e4dad3c757d3ccff33aa0ce02376e33b450fa1811530e54dd",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/testimony.png",
+          "bytes": 530728,
+          "sha256": "f91ba52eaff75642288bca03a66b2beec03bcf5a67b9921ebcce7351e9a39a4c",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/guide.png",
+          "bytes": 475841,
+          "sha256": "3078bde9cd4827af91f867df2148c0ffc62b2436cd8259fe5e0f38d15b1f2a5b",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/ui-elements.png",
+          "bytes": 501128,
+          "sha256": "9e07a6449d2ae5c5fcbfab09a82878512481a804944e8e06a6c5e59da5510cf9",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/teoyube-tables.png",
+          "bytes": 473128,
+          "sha256": "98c89ab2af03a1a2a900312d4fb5462e95df3acc16ea3c8dd1c7c9a093a01666",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/desktop-standard/roadmap.png",
+          "bytes": 881421,
+          "sha256": "dfb25eb0f8cee918444b48e21667d64aeb1ebc0883f12b0164fce0fb8e2735f5",
+          "kind": "screenshot",
+          "viewport": "desktop-standard",
+          "view": "roadmap"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/today.png",
+          "bytes": 656778,
+          "sha256": "d95585fd0b43f3a598c0a718605bb57a941f18904650200241ab8f3fd5495787",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/search.png",
+          "bytes": 530830,
+          "sha256": "f799503f944aeb714fbe94b26d26cf863a4c55dfd245d17c7215bc6ae5dbffb1",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/canon.png",
+          "bytes": 554490,
+          "sha256": "7ca60427265f8dc126a44e7d7bd73fb9cb329744dc2919494b551adae35f7abe",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/table.png",
+          "bytes": 516175,
+          "sha256": "0d89c94eb5c67764483cdbe8c2da55a7ab1079af9186f206a66c7496e6a34fc1",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/calling.png",
+          "bytes": 595545,
+          "sha256": "8095a264ec2c2953d533eb92e7f48ee6b24604439a3eb6c4bf1645f31c1d9431",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/book.png",
+          "bytes": 486435,
+          "sha256": "21bba7083618bee8ef6c9f2873e7cbc9259caea53e82575abadb090f0808804b",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/lexicon.png",
+          "bytes": 322612,
+          "sha256": "bc3574801d828b69ac721b2b01ec274fbe94905fb270794ac8140a74bf1bd756",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/testimony.png",
+          "bytes": 324997,
+          "sha256": "5e971353b02e522a7be929160356f12ac1b1228ca3105f38aee370b13e7c31c5",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/guide.png",
+          "bytes": 391291,
+          "sha256": "46a33a2987ef6cbd8ac0ccc627752cba2f52c2999041e643284d468c5383760b",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/ui-elements.png",
+          "bytes": 371421,
+          "sha256": "af12c96b1e957fb0dc678ebcd0b6c87d8f0be670bda5d4db2c0d0f8e367553e4",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/teoyube-tables.png",
+          "bytes": 424501,
+          "sha256": "29524d30b35e2949d4151eeaa82454a8bc1b05e7167563d9b31f0b6b689b73fd",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-landscape/roadmap.png",
+          "bytes": 643858,
+          "sha256": "5fbed80bcf1868f56845688b668b3413a00fd8df2f4729b94c92bc8f526951d7",
+          "kind": "screenshot",
+          "viewport": "tablet-landscape",
+          "view": "roadmap"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/today.png",
+          "bytes": 588235,
+          "sha256": "e65b564fcf10b17b3158dc3da9695adb8f221c22865c8770897311a1dadacf94",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/search.png",
+          "bytes": 625650,
+          "sha256": "a0665d044d914be29cc7c25a3b731af5f0c3e810d0547f9ce4dd46cce7f532f2",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/canon.png",
+          "bytes": 480227,
+          "sha256": "fe88ff8bb1830757a458595bb0ce59108f1b2df5ad7716b029b02465ebfc589a",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/table.png",
+          "bytes": 625273,
+          "sha256": "9cb75f41edf8678bae08328aa037e5affb19f86725363a28d7d113dfff309b2f",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/calling.png",
+          "bytes": 557523,
+          "sha256": "ccf3bbe157a027c258fbc184ca3e98a518d2db4bd10f129643f43600900cfdae",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/book.png",
+          "bytes": 463952,
+          "sha256": "3e4060785e064f6e600a53bb4b553e4041f9277c4c6f1fe0593dd3c79ecdc913",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/lexicon.png",
+          "bytes": 258510,
+          "sha256": "bd45e5a5be41de8cf0bb2ca058c192dd927d8a9e68f90de93dbf9a8c5fd61f02",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/testimony.png",
+          "bytes": 297695,
+          "sha256": "9e700949d3ad3ad474f383b22a3954773cb1e5e2642badf727cf12b71ff3df6a",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/guide.png",
+          "bytes": 404482,
+          "sha256": "7804fa3a871a9c917b32c0504ce8f8a09ddea7d9ce34fe18a7c7c160d5f7be6f",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/ui-elements.png",
+          "bytes": 336181,
+          "sha256": "0e8be61b352f9de0a3bce6ee994f94c90f877811030d691844b5b68b90835cbb",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/teoyube-tables.png",
+          "bytes": 346616,
+          "sha256": "4a673aca404701f69a9985934625a867c3bd10290107e7d7a08450bd4e36e274",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/tablet-portrait/roadmap.png",
+          "bytes": 384963,
+          "sha256": "a9d7f7827b812a0b7cabe071557c8409d833dc944b836e510e6c049baa65f631",
+          "kind": "screenshot",
+          "viewport": "tablet-portrait",
+          "view": "roadmap"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/today.png",
+          "bytes": 270864,
+          "sha256": "572c05fb223cfadf5d5a267446ece7989893989c7a411d5aac9afa436ac66756",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/search.png",
+          "bytes": 222395,
+          "sha256": "05c138d1b3b7a51d967e835ce46d0c10cfff33df663ef71a67b79175aca0f26b",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/canon.png",
+          "bytes": 253903,
+          "sha256": "c931227f2afd5ba5885e59c2e7556427b5aacec5cce8167eb90dcbb7ca33bb74",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/table.png",
+          "bytes": 266155,
+          "sha256": "65fb79bb0ad12444093838ee6d300a336b7d82dc4b29f14d98b9c197225e7932",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/calling.png",
+          "bytes": 243647,
+          "sha256": "2f6d28c01c58de06578bfb25dc08ce46d5cb4ed1c0b5914efe5122673d3514d1",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/book.png",
+          "bytes": 217334,
+          "sha256": "1b0e61150338ab55f19b08c2f1c63314db0a0beec9d312966f5fe3ea3f77cb3e",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/lexicon.png",
+          "bytes": 144195,
+          "sha256": "a647a5c0192a796a4866cc9dedd25068f1f35fcb761c9682df0946629e0db435",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/testimony.png",
+          "bytes": 184297,
+          "sha256": "a17c8f626ed04483cf5cd601f8fdc506dbce406721a7adf6b37d9cae4f9bef7c",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/guide.png",
+          "bytes": 207934,
+          "sha256": "e187d9f88eba444df5585a9d99fd10e330419648a27cb78b0645986af14bb5be",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/ui-elements.png",
+          "bytes": 208899,
+          "sha256": "dce7d3c06768d32421b2eb7c6543be972fb7e9b97040b2038dcfc12e64947bb2",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/teoyube-tables.png",
+          "bytes": 188834,
+          "sha256": "26c3c8267bd0c2332c1fc5a81730f7f370aa441141b09809598a9a4bafba8fe8",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile/roadmap.png",
+          "bytes": 274386,
+          "sha256": "0608ff90ff62591b47504817da8f1e2b5169ebb85f59ce640d54f63d0e2dbabc",
+          "kind": "screenshot",
+          "viewport": "mobile",
+          "view": "roadmap"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/today.png",
+          "bytes": 231655,
+          "sha256": "20d5e8a2be693fd547754247b3fc5f225ad582569006e786ca7edc3ae06d3239",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "today"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/search.png",
+          "bytes": 216350,
+          "sha256": "8699fdbc6feb79c46b2d47210300c14b8475686927162355234c2044c1a1b8e5",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "search"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/canon.png",
+          "bytes": 214038,
+          "sha256": "645bde4e322fd13726cbeedd4b9c9f990da3b6783e5fdb14e4736e2946da2166",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "canon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/table.png",
+          "bytes": 231780,
+          "sha256": "70115eb61cdb933e885670dcf0aef29b5b20ec3567c7ee06584777c35b40e061",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "table"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/calling.png",
+          "bytes": 218558,
+          "sha256": "e8d1fb12071356b90412c26b65faec136c9924d3d688a42acb5eb0afc470e637",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "calling"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/book.png",
+          "bytes": 191763,
+          "sha256": "324468c4b130b4060bf32dbc119b7ee80d29c4120bc79c3de4f93bdeebf57ea0",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "book"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/lexicon.png",
+          "bytes": 136048,
+          "sha256": "72ab8a3587f1d5c9c35c2ced2c720fcdd31481894a834e8c9df2f2f059cb456e",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "lexicon"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/testimony.png",
+          "bytes": 174589,
+          "sha256": "4106b375a6b0d351b6e1841de1731f5579c9eadb0e4d98d28d71d8f817b3f2a6",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "testimony"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/guide.png",
+          "bytes": 191731,
+          "sha256": "60ca9cdd20176fee44d72f27784f2048c40c53218fcf8b0773d2ff63f28b3f8d",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "guide"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/ui-elements.png",
+          "bytes": 205932,
+          "sha256": "6051fe2ab71fc5745945c22d95cd40ef39e85fa2a42e0877fcd9f8f04776e697",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "ui-elements"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/teoyube-tables.png",
+          "bytes": 179891,
+          "sha256": "24cc2dec6d6d2d041ece006d44962265018c3eefd2f0c48303dcae414d030208",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "teoyube-tables"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/mobile-small/roadmap.png",
+          "bytes": 232696,
+          "sha256": "c220c86575848625b451db46bb53596de3e96497a8f31055b956c01953540b01",
+          "kind": "screenshot",
+          "viewport": "mobile-small",
+          "view": "roadmap"
+        }
+      ]
+    },
+    "ownerReferenceScreenshots": {
+      "count": 12,
+      "aggregateSha256": "48563dfc461b48a166ee8674c114a8d76939432d3f03263e3f890c0fff4dfead",
+      "objects": [
+        {
+          "path": "Asset/ChatGPT Image page (Today).png",
+          "bytes": 1670003,
+          "sha256": "0fa4d72288fc987e85c6e864a2854cd31ad966b70618a00bfc40612c31ad02c0",
+          "view": "today"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (TeoyubeSearch).png",
+          "bytes": 1581446,
+          "sha256": "a08f51db15997eabf08346df3044bf4805516b1987171428a7d7f5ced828fa52",
+          "view": "search"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (TeoyubeCanon Page).png",
+          "bytes": 2090559,
+          "sha256": "7403ab4756660a2c6f7a55ab471ed6a3aee24d0d232d0c2f82844e1996c6d9c4",
+          "view": "canon"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (TeoyubePromise table Page).png",
+          "bytes": 1690112,
+          "sha256": "83fee4c84b897e1e0235e2659ffc0c85096669f35b8e8da8ca35079afb409126",
+          "view": "promise-table"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Calling Compass).png",
+          "bytes": 1868790,
+          "sha256": "545471c6bf3845157dc001367d850983a88fcbbd537d39c4ca1483b1324c70a4",
+          "view": "calling-compass"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Book of Saints).png",
+          "bytes": 1490491,
+          "sha256": "8522caea5ebdead298cab73b50511fb8cb3db9d35374cc4ee311b3b3f45b2e62",
+          "view": "book-of-the-saint"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Teoyube Lexicon Page).png",
+          "bytes": 1692413,
+          "sha256": "c09000fbc3751e66b7b50855fcfc2fc328ccc8f2b3c0bdb7a576c19a768806d4",
+          "view": "lexicon"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Testimony Page).png",
+          "bytes": 1495616,
+          "sha256": "ed02ad106c294ed5b583221202d108c35d93a24120c05d73e9f7f94118dbd3fb",
+          "view": "testimony"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Teo Guide Page).png",
+          "bytes": 1588189,
+          "sha256": "9302cda72c6bb381d7e1c343b8c8c7d1bbd3245f67bd1d1ef89fc025aea973e8",
+          "view": "teo-guide"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Embed Video Page).png",
+          "bytes": 1652215,
+          "sha256": "cb2de69fa3887ee745bfe026958f70a36eb42dd68d681de2d7bb9e40632e05da",
+          "view": "embedded-videos"
+        },
+        {
+          "path": "Asset/ChatGPT Image (Teoyube Tables Page).png",
+          "bytes": 1383166,
+          "sha256": "ea5eae7e26d7b1fbc4c787af4eb72b978e07cc93f3f7fc1dcb68f3b2c0ae0101",
+          "view": "tables"
+        },
+        {
+          "path": "Asset/ChatGPT Image page (Roadmap).png",
+          "bytes": 1653416,
+          "sha256": "762e4c13c6bb591baa057e5d001e6974298dbca70b69385b91521196a8275d21",
+          "view": "roadmap-owner-reference"
+        }
+      ]
+    },
+    "controllerInputs": {
+      "count": 10,
+      "aggregateSha256": "608caba110cd9c1866909a6b0f45e5bf333f00429d626f50749d919de4648b9b",
+      "objects": [
+        {
+          "path": "tests/visual/contracts/protected-visual-source-manifest.json",
+          "bytes": 51073,
+          "sha256": "7e588086fdef89d2074dd36f7af57b64645f31778f1027043e67e0fc14596117"
+        },
+        {
+          "path": "tests/visual/contracts/static-dom-contract.json",
+          "bytes": 399392,
+          "sha256": "b4f99fc01f28c43d4ff0aea54dfd93532488b1d60dfe2364e90a9b9f8bfef9b4"
+        },
+        {
+          "path": "tests/visual/contracts/original-static-visual-contract.json",
+          "bytes": 136206,
+          "sha256": "b428389059116a3e9ec098b9e118aa2b92e6c6fe7837c04e72e0b83a68a010a7"
+        },
+        {
+          "path": "tests/visual/contracts/owner-approved-scripture-content-delta.json",
+          "bytes": 51241,
+          "sha256": "dcc20e9ae265a1e0777daaf4bfbd6e294fc1d6e40a7d49696c861e33e8f0a064"
+        },
+        {
+          "path": "tests/visual/baselines/static-runtime/manifest.json",
+          "bytes": 25249,
+          "sha256": "9fde44ca68f0eb9f9a2b2871f6d10102b53090d5194d6d04c5375c57b75e6e5b"
+        },
+        {
+          "path": "config/accessibility/approved-phase-5c1-deltas.json",
+          "bytes": 2758,
+          "sha256": "ffec09f0d81b28af2ed4897ddb671f009470025a38b0f2d98a3993c07759b5ff"
+        },
+        {
+          "path": "config/accessibility/approved-phase-5c2-deltas.json",
+          "bytes": 3352,
+          "sha256": "b73cc55000f381541986e8b5bdd80894d59e034db9a1d6a0151c4b92ddbecf00"
+        },
+        {
+          "path": "config/accessibility/approved-phase-5c3a-deltas.json",
+          "bytes": 5200,
+          "sha256": "c268d54e30b44ce30277144d803050b192323df1d6853dff6e11b454fe2c4511"
+        },
+        {
+          "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001.json",
+          "bytes": 31517,
+          "sha256": "2806b4b34f12ea49a67416977f7631f0c8e48552084fc381f24f7d6720b3956d"
+        },
+        {
+          "path": "docs/owner-approvals/accessibility/TEOYUBE-OWNER-ACCESSIBILITY-PHASE5C3-SPLIT-2026-08-06-001.json",
+          "bytes": 1599,
+          "sha256": "f1f225c17905c39f2b60aa879cccb881482cfdd85e03d7ca365f2b73aa5e1209"
+        }
+      ]
+    }
+  }
+}

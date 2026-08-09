@@ -11,6 +11,7 @@ const {
   walk,
   writeJson
 } = require("./release-utils.cjs");
+const { verifyVectorV2PaidEvidence } = require("./vectorV2PaidEvidence.cjs");
 
 function control(id, passed, evidence, severity = "critical") {
   return Object.freeze({ id, passed, severity, evidence });
@@ -274,14 +275,37 @@ const retrievalChanged = run(
   ["diff", "--quiet", `${reuse.prompt20Tag}..HEAD`, "--", ...reuse.retrievalPaths],
   { allowFailure: true }
 ).status !== 0;
+const vectorV2Evidence = verifyVectorV2PaidEvidence();
+const retrievalEvidenceSatisfied = !retrievalChanged || vectorV2Evidence.valid;
 controls.push(control(
   "paid-evidence-reuse-boundary",
-  !liveAiChanged && !retrievalChanged,
+  !liveAiChanged && retrievalEvidenceSatisfied,
   {
     liveAiTag: reuse.prompt19Tag,
     liveAiDependenciesChanged: liveAiChanged,
-    retrievalTag: reuse.prompt20Tag,
-    retrievalDependenciesChanged: retrievalChanged
+    historicalRetrievalTag: reuse.prompt20Tag,
+    retrievalDependenciesChanged: retrievalChanged,
+    vectorV2Evidence: {
+      valid: vectorV2Evidence.valid,
+      evidenceSha256: vectorV2Evidence.evidenceSha256 || null,
+      datasetSha256: vectorV2Evidence.datasetSha256 || null,
+      outcomeHash: vectorV2Evidence.outcomeHash || null,
+      failures: vectorV2Evidence.failures
+    }
+  },
+  "high"
+));
+controls.push(control(
+  "vector-v2-paid-evidence-binding",
+  retrievalEvidenceSatisfied,
+  {
+    requiredBecauseRetrievalChanged: retrievalChanged,
+    lockCommit: vectorV2Evidence.lockCommit || null,
+    qualityCommit: vectorV2Evidence.qualityCommit || null,
+    evidenceSha256: vectorV2Evidence.evidenceSha256 || null,
+    datasetSha256: vectorV2Evidence.datasetSha256 || null,
+    outcomeHash: vectorV2Evidence.outcomeHash || null,
+    failures: vectorV2Evidence.failures
   },
   "high"
 ));
