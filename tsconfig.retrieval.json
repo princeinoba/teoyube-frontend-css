@@ -12,6 +12,7 @@
   "include": [
     "scripts/retrieval/retrieval-cli.ts",
     "scripts/retrieval/retrieval-evaluation-cli.ts",
+    "scripts/retrieval/vector-provider-evaluation-cli.ts",
     "src/config/environment.ts",
     "src/domain/memory/**/*.ts",
     "src/domain/retrieval/**/*.ts",

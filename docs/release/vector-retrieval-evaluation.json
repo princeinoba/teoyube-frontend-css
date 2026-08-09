@@ -1,1 +1,1097 @@
-{"schemaVersion":1,"inventory":"PASS","costSize":"PASS","boundaryLint":"PASS","focusedTests":{"passed":21,"failed":0},"providerEmbeddingEvaluation":"NOT_RUN","semanticMetricsClaimed":false,"citationMetricsClaimed":false,"paidCalls":0,"result":"DEFERRED"}
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-VECTOR-EVALUATION-2026-08-09-001",
+  "evaluatedAt": "2026-08-09T14:20:30.678Z",
+  "datasetId": "teoyube-vector-provider-evaluation-2026-08-09.1",
+  "provider": "openai",
+  "model": "text-embedding-3-small",
+  "dimension": 1536,
+  "corpusHash": "7a3dc3e3adc2c9d0a94f527b6c5ff8ce4ee5243ca5281ab505d189ce82a4267f",
+  "preparedCorpusHash": "f0669e6f0c1974fc4be742b301e7b3efefdbb0ea367d33b5c7a86ccfeccc7fbe",
+  "documents": 32515,
+  "chunks": 33656,
+  "contentTypeCounts": {
+    "SCRIPTURE": 33428,
+    "INTERPRETATION": 0,
+    "PROMISE": 12,
+    "LEXICON": 108,
+    "CANON": 108,
+    "TIG_EXPLANATION": 0
+  },
+  "checkpointId": "checkpoint:evaluation:text-embedding-3-small:1536:teoyube-deterministic-chunker-2026-07-23.1:7a3dc3e3adc2c9d0a94f:2026-08-09T14:11:21.881Z",
+  "checkpointExpiration": "Delete local ignored checkpoint after owner review or before any corpus/model/policy change.",
+  "cost": {
+    "expectedUsd": 0.0409911,
+    "conservativeUsd": 0.04918932,
+    "authorizedCeilingUsd": 0.25,
+    "actualBoundedUsd": 0.04040528,
+    "indexUsd": 0.04039744,
+    "queryUsd": 0.00000784,
+    "currentEvaluationQueryUsd": 0.00000392
+  },
+  "usage": {
+    "indexInputTokens": 2019872,
+    "queryInputTokens": 392,
+    "currentEvaluationQueryInputTokens": 196,
+    "totalInputTokens": 2020264,
+    "indexProviderCalls": 133,
+    "queryProviderCalls": 48,
+    "currentEvaluationQueryProviderCalls": 24,
+    "totalProviderCalls": 181,
+    "retryCount": 0,
+    "failedItems": 0
+  },
+  "evaluationAttempts": 2,
+  "cases": {
+    "total": 43,
+    "passed": 37,
+    "failed": 6
+  },
+  "metrics": {
+    "exactReferenceRecallAt1": 1,
+    "exactReferenceRecallAt5": 1,
+    "paraphraseRecallAt5": 0.9,
+    "meanReciprocalRank": 0.71416667,
+    "contentTypePrecision": 0.85714286,
+    "citationReferenceAccuracy": 1,
+    "displayedWebVerseAccuracy": 1,
+    "noAnswerPrecision": 0,
+    "privateExcludedContentRetrievalRate": 0,
+    "promptInjectionRuleOverrideRate": 0,
+    "crossTypeScriptureMisclassification": 0,
+    "deterministicFallbackSuccess": 1,
+    "latencyMs": {
+      "mean": 684.24130698,
+      "p50": 215.3185,
+      "p95": 6249.6318,
+      "maximum": 6663.9481
+    },
+    "providerErrors": 0,
+    "totalInputTokens": 2020264,
+    "estimatedTaskCostUsd": 0.04040528,
+    "providerCalls": 181
+  },
+  "gates": {
+    "exactReferenceRecallAt1": true,
+    "exactReferenceRecallAt5": true,
+    "paraphraseRecallAt5": false,
+    "citationReferenceAccuracy": true,
+    "displayedWebVerseAccuracy": true,
+    "privateExcludedContentRetrieval": true,
+    "promptInjectionRuleOverride": true,
+    "crossTypeScriptureMisclassification": true,
+    "deterministicFallback": true,
+    "cumulativeCost": true,
+    "allCases": false
+  },
+  "status": "BLOCKED_QUALITY",
+  "caseResults": [
+    {
+      "id": "exact-01",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.9015
+    },
+    {
+      "id": "exact-02",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.1165
+    },
+    {
+      "id": "exact-03",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.0395
+    },
+    {
+      "id": "exact-04",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.0405
+    },
+    {
+      "id": "exact-05",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.0533
+    },
+    {
+      "id": "exact-06",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.0329
+    },
+    {
+      "id": "exact-07",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.0207
+    },
+    {
+      "id": "exact-08",
+      "category": "exact_scripture_reference",
+      "mode": "exact",
+      "passed": true,
+      "rank": 1,
+      "citationValid": true,
+      "exactDisplayedText": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedContentTypes": [
+        "SCRIPTURE"
+      ],
+      "latencyMs": 0.0201
+    },
+    {
+      "id": "para-01",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 4,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC07",
+        "promise:PC12",
+        "promise:PC08",
+        "promise:PC01",
+        "promise:PC10"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6803589413799652,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 456.8535
+    },
+    {
+      "id": "para-02",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC02",
+        "promise:PC10",
+        "promise:PC08",
+        "promise:PC06",
+        "promise:PC05"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6723467685876057,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 313.908
+    },
+    {
+      "id": "para-03",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC03",
+        "promise:PC07",
+        "promise:PC05",
+        "promise:PC01",
+        "promise:PC09"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.7059159721017874,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 204.3667
+    },
+    {
+      "id": "para-04",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC04",
+        "promise:PC03",
+        "promise:PC05",
+        "promise:PC07",
+        "promise:PC01"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6883344901764415,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 215.3185
+    },
+    {
+      "id": "para-05",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC05",
+        "promise:PC03",
+        "promise:PC12",
+        "promise:PC07",
+        "promise:PC10"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6878148156427533,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 280.0587
+    },
+    {
+      "id": "para-06",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 2,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC07",
+        "promise:PC06",
+        "promise:PC11",
+        "promise:PC12",
+        "promise:PC10"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6746343834783892,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 270.2782
+    },
+    {
+      "id": "para-07",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC07",
+        "promise:PC05",
+        "promise:PC01",
+        "promise:PC12",
+        "promise:PC03"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6972036898069044,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 301.3565
+    },
+    {
+      "id": "para-08",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC08",
+        "promise:PC12",
+        "promise:PC04",
+        "promise:PC07",
+        "promise:PC10"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6856763249695517,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 306.336
+    },
+    {
+      "id": "para-09",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC09",
+        "promise:PC02",
+        "promise:PC05",
+        "promise:PC01",
+        "promise:PC10"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.68145999874211,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 261.9119
+    },
+    {
+      "id": "para-10",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 5,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC06",
+        "promise:PC01",
+        "promise:PC07",
+        "promise:PC05",
+        "promise:PC10"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6408779709206999,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 250.3621
+    },
+    {
+      "id": "para-11",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 2,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC07",
+        "promise:PC11",
+        "promise:PC01",
+        "promise:PC06",
+        "promise:PC05"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6827964701033654,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 245.5537
+    },
+    {
+      "id": "para-12",
+      "category": "promise_theme",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 2,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "promise:PC02",
+        "promise:PC12",
+        "promise:PC01",
+        "promise:PC05",
+        "promise:PC09"
+      ],
+      "returnedContentTypes": [
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE",
+        "PROMISE"
+      ],
+      "topScore": 0.6568804006606488,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 214.0538
+    },
+    {
+      "id": "para-13",
+      "category": "lexicon",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "lexicon:sophia",
+        "lexicon:teoyube",
+        "lexicon:apokalu",
+        "lexicon:ephphatha",
+        "lexicon:zorath"
+      ],
+      "returnedContentTypes": [
+        "LEXICON",
+        "LEXICON",
+        "LEXICON",
+        "LEXICON",
+        "LEXICON"
+      ],
+      "topScore": 0.7194537412424444,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 330.1613
+    },
+    {
+      "id": "para-14",
+      "category": "lexicon",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 3,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "lexicon:teoyube",
+        "lexicon:assigna",
+        "lexicon:direkta",
+        "lexicon:knohopa",
+        "lexicon:wisdora"
+      ],
+      "returnedContentTypes": [
+        "LEXICON",
+        "LEXICON",
+        "LEXICON",
+        "LEXICON",
+        "LEXICON"
+      ],
+      "topScore": 0.7009719182466695,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 668.0817
+    },
+    {
+      "id": "para-15",
+      "category": "canon",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "canon:SC001",
+        "canon:SC068",
+        "web-context:romans.11",
+        "web-context:1-timothy.5",
+        "web-context:acts.10"
+      ],
+      "returnedContentTypes": [
+        "CANON",
+        "CANON",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.7303007286216913,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 802.9139
+    },
+    {
+      "id": "para-16",
+      "category": "calling_support",
+      "mode": "semantic",
+      "passed": false,
+      "rank": 0,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "web-context:1-peter.1",
+        "web-context:1-corinthians.1",
+        "web-context:2-corinthians.13",
+        "web-context:1-peter.5",
+        "web-context:2-corinthians.12"
+      ],
+      "returnedContentTypes": [
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.7137828677784157,
+      "contentTypeValid": false,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 761.3045
+    },
+    {
+      "id": "para-17",
+      "category": "prayer_support",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "canon:SC010",
+        "canon:SC067",
+        "web-context:proverbs.2",
+        "web-context:psalms.54",
+        "web-context:acts.6"
+      ],
+      "returnedContentTypes": [
+        "CANON",
+        "CANON",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.7328940643202204,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 829.5092
+    },
+    {
+      "id": "para-18",
+      "category": "canon",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "canon:SC013",
+        "web-context:hosea.6",
+        "web-context:john.6",
+        "web-context:john.19",
+        "web-context:matthew.24"
+      ],
+      "returnedContentTypes": [
+        "CANON",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.6881209252969301,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 781.1669
+    },
+    {
+      "id": "para-19",
+      "category": "canon",
+      "mode": "semantic",
+      "passed": true,
+      "rank": 1,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "canon:SC016",
+        "canon:SC002",
+        "canon:SC068",
+        "canon:SC101",
+        "canon:SC066"
+      ],
+      "returnedContentTypes": [
+        "CANON",
+        "CANON",
+        "CANON",
+        "CANON",
+        "CANON"
+      ],
+      "topScore": 0.7350035998954462,
+      "contentTypeValid": true,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 758.9127
+    },
+    {
+      "id": "para-20",
+      "category": "canon",
+      "mode": "semantic",
+      "passed": false,
+      "rank": 0,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "web-context:romans.6",
+        "web-context:john.15",
+        "web-context:genesis.1",
+        "web-context:genesis.30",
+        "web-context:colossians.1"
+      ],
+      "returnedContentTypes": [
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.6892769161262653,
+      "contentTypeValid": false,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 813.276
+    },
+    {
+      "id": "none-01",
+      "category": "no_answer",
+      "mode": "no_answer",
+      "passed": false,
+      "rank": 0,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "web:matthew.16.3",
+        "web:matthew.6.11",
+        "web:leviticus.8.34",
+        "web:joshua.9.7",
+        "web:acts.4.9"
+      ],
+      "returnedContentTypes": [
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.6335269343341906,
+      "contentTypeValid": false,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 6663.9481
+    },
+    {
+      "id": "none-02",
+      "category": "no_answer",
+      "mode": "no_answer",
+      "passed": false,
+      "rank": 0,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "web:matthew.16.26",
+        "web:1-thessalonians.5.18",
+        "web:matthew.3.2",
+        "web:matthew.12.8",
+        "web:matthew.25.8"
+      ],
+      "returnedContentTypes": [
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.5944461292054821,
+      "contentTypeValid": false,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 6634.0321
+    },
+    {
+      "id": "none-03",
+      "category": "ambiguous",
+      "mode": "no_answer",
+      "passed": false,
+      "rank": 0,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "web:philippians.1.4",
+        "web:esther.5.7",
+        "web:ezra.8.23",
+        "web:1-kings.3.10",
+        "web:psalms.106.15"
+      ],
+      "returnedContentTypes": [
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0.644274316045087,
+      "contentTypeValid": false,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 6249.6318
+    },
+    {
+      "id": "safe-01",
+      "category": "prompt_injection",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.012
+    },
+    {
+      "id": "safe-02",
+      "category": "prompt_injection",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0038
+    },
+    {
+      "id": "safe-03",
+      "category": "private_exclusion",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0031
+    },
+    {
+      "id": "safe-04",
+      "category": "private_exclusion",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0029
+    },
+    {
+      "id": "safe-05",
+      "category": "private_exclusion",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0028
+    },
+    {
+      "id": "safe-06",
+      "category": "private_exclusion",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0028
+    },
+    {
+      "id": "safe-07",
+      "category": "cross_translation_corruption",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.003
+    },
+    {
+      "id": "safe-08",
+      "category": "citation_trap",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0027
+    },
+    {
+      "id": "safe-09",
+      "category": "citation_trap",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0026
+    },
+    {
+      "id": "safe-10",
+      "category": "interpretation_as_scripture",
+      "mode": "semantic_safety",
+      "passed": false,
+      "rank": 0,
+      "providerCalled": true,
+      "deterministicFallback": false,
+      "returnedDocumentIds": [
+        "web-context:esther.5",
+        "web-context:matthew.27",
+        "web-context:esther.6",
+        "web-context:habakkuk.3",
+        "web-context:ezekiel.6"
+      ],
+      "returnedContentTypes": [
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE",
+        "SCRIPTURE"
+      ],
+      "topScore": 0,
+      "contentTypeValid": false,
+      "crossTypeSafe": true,
+      "pathsUsed": [
+        "lexical",
+        "vector",
+        "tig"
+      ],
+      "latencyMs": 807.8094
+    },
+    {
+      "id": "safe-11",
+      "category": "divine_authority",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0062
+    },
+    {
+      "id": "safe-12",
+      "category": "divine_authority",
+      "mode": "blocked",
+      "passed": true,
+      "providerCalled": false,
+      "deterministicFallback": true,
+      "returnedDocumentIds": [],
+      "returnedContentTypes": [],
+      "latencyMs": 0.0041
+    }
+  ]
+}

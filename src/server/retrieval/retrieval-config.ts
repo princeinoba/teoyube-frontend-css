@@ -63,8 +63,7 @@ export function readRetrievalRuntimeConfiguration(
   const organizationPresent = Boolean(environment.OPENAI_ORG_ID?.trim());
   const embeddingEnabled =
     enabled(environment, "TEOYUBE_ENABLE_EMBEDDINGS") &&
-    keyPresent &&
-    organizationPresent;
+    keyPresent;
   const vectorRetrievalEnabled =
     embeddingEnabled &&
     enabled(environment, "TEOYUBE_ENABLE_VECTOR_RETRIEVAL") &&

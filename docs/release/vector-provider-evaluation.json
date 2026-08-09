@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-VECTOR-EVALUATION-2026-08-09-001",
+  "outcome": "BLOCKED_QUALITY",
+  "implementationState": "PROVIDER_EVALUATED",
+  "activationState": "BLOCKED_QUALITY",
+  "publicProductionDefault": "OFF",
+  "startingCommit": "ff9fd24508fef1fd76c3fe3f35843102cf55179b",
+  "provider": "openai",
+  "endpoint": "embeddings.create",
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "corpus": {
+    "hash": "7a3dc3e3adc2c9d0a94f527b6c5ff8ce4ee5243ca5281ab505d189ce82a4267f",
+    "preparedInventoryHash": "f0669e6f0c1974fc4be742b301e7b3efefdbb0ea367d33b5c7a86ccfeccc7fbe",
+    "documents": 32515,
+    "chunks": 33656,
+    "contentTypeCounts": {
+      "SCRIPTURE": 33428,
+      "INTERPRETATION": 0,
+      "PROMISE": 12,
+      "LEXICON": 108,
+      "CANON": 108,
+      "TIG_EXPLANATION": 0
+    },
+    "excludedPreparedSources": [
+      "src/data/prayerEngineTemplates.json",
+      "src/data/projectStructureRoadmap.json",
+      "src/data/technicalArchitecture.json",
+      "src/data/teoyubeSearchFramework.json",
+      "src/data/theologyConstitution.json"
+    ],
+    "scripture": {
+      "books": 66,
+      "chapters": 1189,
+      "sourceVerseMarkers": 31103,
+      "displayableVerses": 31098,
+      "sourceFootnoteOnlyMarkers": 5,
+      "corpusHash": "6e6b3f95b5d61c83c06534ee4281f10b6e4e02c878b75141dcdd4403bf42d77f",
+      "translationId": "engwebp",
+      "authority": "deterministic exact-WEB Scripture service"
+    }
+  },
+  "cost": {
+    "expectedUsd": 0.0409911,
+    "conservativeUsd": 0.04918932,
+    "authorizedCeilingUsd": 0.25,
+    "actualBoundedUsd": 0.04040528,
+    "indexUsd": 0.04039744,
+    "queryUsd": 0.00000784,
+    "currentEvaluationQueryUsd": 0.00000392
+  },
+  "usage": {
+    "indexInputTokens": 2019872,
+    "queryInputTokens": 392,
+    "currentEvaluationQueryInputTokens": 196,
+    "totalInputTokens": 2020264,
+    "indexProviderCalls": 133,
+    "queryProviderCalls": 48,
+    "currentEvaluationQueryProviderCalls": 24,
+    "totalProviderCalls": 181,
+    "retryCount": 0,
+    "failedItems": 0
+  },
+  "checkpoint": {
+    "id": "checkpoint:evaluation:text-embedding-3-small:1536:teoyube-deterministic-chunker-2026-07-23.1:7a3dc3e3adc2c9d0a94f:2026-08-09T14:11:21.881Z",
+    "indexVersion": "evaluation:text-embedding-3-small:1536:teoyube-deterministic-chunker-2026-07-23.1:7a3dc3e3adc2c9d0a94f",
+    "createdAt": "2026-08-09T14:11:21.881Z",
+    "verifiedAt": "2026-08-09T14:20:01.024Z",
+    "databaseBytes": 298397696,
+    "failedItems": 0,
+    "retryCount": 0,
+    "expirationPolicy": "Delete local ignored checkpoint after owner review or before any corpus/model/policy change.",
+    "deletionCommand": "npm run retrieval:provider:delete-checkpoint",
+    "ignoredPath": ".var/retrieval/vector-provider-evaluation",
+    "tracked": false
+  },
+  "evaluation": {
+    "datasetId": "teoyube-vector-provider-evaluation-2026-08-09.1",
+    "cases": {
+      "total": 43,
+      "passed": 37,
+      "failed": 6
+    },
+    "evaluationAttempts": 2,
+    "rawVectorFirstRunSha256": "06dd09181f86bfcf31c57db6c57ca64a0d9cab524c964f485e1e375a0bb74b45",
+    "metrics": {
+      "exactReferenceRecallAt1": 1,
+      "exactReferenceRecallAt5": 1,
+      "paraphraseRecallAt5": 0.9,
+      "meanReciprocalRank": 0.71416667,
+      "contentTypePrecision": 0.85714286,
+      "citationReferenceAccuracy": 1,
+      "displayedWebVerseAccuracy": 1,
+      "noAnswerPrecision": 0,
+      "privateExcludedContentRetrievalRate": 0,
+      "promptInjectionRuleOverrideRate": 0,
+      "crossTypeScriptureMisclassification": 0,
+      "deterministicFallbackSuccess": 1,
+      "latencyMs": {
+        "mean": 684.24130698,
+        "p50": 215.3185,
+        "p95": 6249.6318,
+        "maximum": 6663.9481
+      },
+      "providerErrors": 0,
+      "totalInputTokens": 2020264,
+      "estimatedTaskCostUsd": 0.04040528,
+      "providerCalls": 181
+    },
+    "gates": {
+      "exactReferenceRecallAt1": true,
+      "exactReferenceRecallAt5": true,
+      "paraphraseRecallAt5": false,
+      "citationReferenceAccuracy": true,
+      "displayedWebVerseAccuracy": true,
+      "privateExcludedContentRetrieval": true,
+      "promptInjectionRuleOverride": true,
+      "crossTypeScriptureMisclassification": true,
+      "deterministicFallback": true,
+      "cumulativeCost": true,
+      "allCases": false
+    },
+    "failures": [
+      {
+        "id": "para-16",
+        "category": "calling_support",
+        "rank": 0,
+        "returnedDocumentIds": [
+          "web-context:1-peter.1",
+          "web-context:1-corinthians.1",
+          "web-context:2-corinthians.13",
+          "web-context:1-peter.5",
+          "web-context:2-corinthians.12"
+        ],
+        "returnedContentTypes": [
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE"
+        ],
+        "pathsUsed": [
+          "lexical",
+          "vector",
+          "tig"
+        ],
+        "disposition": "PARAPHRASE_OR_TYPE_RANKING_FAILURE"
+      },
+      {
+        "id": "para-20",
+        "category": "canon",
+        "rank": 0,
+        "returnedDocumentIds": [
+          "web-context:romans.6",
+          "web-context:john.15",
+          "web-context:genesis.1",
+          "web-context:genesis.30",
+          "web-context:colossians.1"
+        ],
+        "returnedContentTypes": [
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE"
+        ],
+        "pathsUsed": [
+          "lexical",
+          "vector",
+          "tig"
+        ],
+        "disposition": "PARAPHRASE_OR_TYPE_RANKING_FAILURE"
+      },
+      {
+        "id": "none-01",
+        "category": "no_answer",
+        "rank": 0,
+        "returnedDocumentIds": [
+          "web:matthew.16.3",
+          "web:matthew.6.11",
+          "web:leviticus.8.34",
+          "web:joshua.9.7",
+          "web:acts.4.9"
+        ],
+        "returnedContentTypes": [
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE"
+        ],
+        "pathsUsed": [
+          "lexical",
+          "vector",
+          "tig"
+        ],
+        "disposition": "NO_ANSWER_ABSTENTION_FAILURE"
+      },
+      {
+        "id": "none-02",
+        "category": "no_answer",
+        "rank": 0,
+        "returnedDocumentIds": [
+          "web:matthew.16.26",
+          "web:1-thessalonians.5.18",
+          "web:matthew.3.2",
+          "web:matthew.12.8",
+          "web:matthew.25.8"
+        ],
+        "returnedContentTypes": [
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE"
+        ],
+        "pathsUsed": [
+          "lexical",
+          "vector",
+          "tig"
+        ],
+        "disposition": "NO_ANSWER_ABSTENTION_FAILURE"
+      },
+      {
+        "id": "none-03",
+        "category": "ambiguous",
+        "rank": 0,
+        "returnedDocumentIds": [
+          "web:philippians.1.4",
+          "web:esther.5.7",
+          "web:ezra.8.23",
+          "web:1-kings.3.10",
+          "web:psalms.106.15"
+        ],
+        "returnedContentTypes": [
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE"
+        ],
+        "pathsUsed": [
+          "lexical",
+          "vector",
+          "tig"
+        ],
+        "disposition": "NO_ANSWER_ABSTENTION_FAILURE"
+      },
+      {
+        "id": "safe-10",
+        "category": "interpretation_as_scripture",
+        "rank": 0,
+        "returnedDocumentIds": [
+          "web-context:esther.5",
+          "web-context:matthew.27",
+          "web-context:esther.6",
+          "web-context:habakkuk.3",
+          "web-context:ezekiel.6"
+        ],
+        "returnedContentTypes": [
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE",
+          "SCRIPTURE"
+        ],
+        "pathsUsed": [
+          "lexical",
+          "vector",
+          "tig"
+        ],
+        "disposition": "PARAPHRASE_OR_TYPE_RANKING_FAILURE"
+      }
+    ]
+  },
+  "verification": {
+    "focusedTests": "PASS_31_UNIQUE",
+    "retrievalTypeScript": "PASS",
+    "fullTypeScript": "PASS",
+    "focusedLint": "PASS",
+    "fullLint": "PASS",
+    "productionBuild": "PASS_58_PAGES",
+    "dependencyAudit": "PASS_0_VULNERABILITIES",
+    "securityAndSecrets": "PASS_18_CONTROLS_CRITICAL_HIGH_0",
+    "recoveryVerify": "FAIL_PRE_EXISTING_PROTECTED_VISUAL_CONTRACT_METADATA",
+    "recoveryVerifyScope": "The evaluated worktree protected files are byte-identical to starting commit ff9fd245; this task made zero protected visual changes and zero baseline writes."
+  },
+  "safety": {
+    "privateContentRetrievalRate": 0,
+    "promptInjectionOverrideRate": 0,
+    "crossTypeScriptureMisclassification": 0,
+    "deterministicFallbackSuccess": 1,
+    "rawUserTextEmbedded": false,
+    "userVectorsIncluded": false,
+    "providerHostedVectorStoreUsed": false
+  },
+  "production": {
+    "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "url": "https://teoyube-frontend-css.vercel.app",
+    "flagsChanged": false,
+    "redeployed": false,
+    "vectorRetrievalEnabled": false,
+    "embeddingsEnabled": false,
+    "broadRagEnabled": false,
+    "liveAiEnabled": false
+  },
+  "protectedVisualChanges": 0,
+  "immutableBaselineWrites": 0,
+  "remainingBlockers": [
+    "Paraphrase recall@5 is 0.90, below the required 0.95.",
+    "No-answer precision is 0.00; unsupported external-current-info and ambiguous queries return plausible but irrelevant Scripture instead of abstaining.",
+    "Calling/Canon ranking misses para-16 and para-20 in the top five.",
+    "The interpretation-as-Scripture trap does not surface the expected Canon record, although returned Scripture remains correctly typed.",
+    "The repository recovery:verify gate reports stale protected visual/Scripture approval metadata already present in the authorized starting commit; no baseline was regenerated or weakened."
+  ]
+}

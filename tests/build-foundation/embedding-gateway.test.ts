@@ -72,6 +72,36 @@ describe("OpenAiEmbeddingGateway", () => {
     expect(create).toHaveBeenCalledTimes(1);
   });
 
+  it("accepts a project-scoped key without requiring an organization header", async () => {
+    const create = vi.fn().mockResolvedValue({
+      data: [{ embedding: Array.from({ length: 1536 }, () => 0.25), index: 0 }],
+      usage: { prompt_tokens: 4, total_tokens: 4 }
+    });
+    const factory = vi.fn(() => ({ embeddings: { create } }));
+    const gateway = new OpenAiEmbeddingGateway({
+      environment: {
+        OPENAI_API_KEY: "test-only-project-key",
+        TEOYUBE_ENABLE_EMBEDDINGS: "true"
+      },
+      clientFactory: factory
+    });
+    await expect(gateway.embedDocuments(request())).resolves.toMatchObject({ dimension: 1536 });
+    expect(factory).toHaveBeenCalledWith("test-only-project-key", undefined);
+  });
+
+  it("supports a zero-retry evaluation profile", async () => {
+    const create = vi.fn().mockRejectedValue(new Error("synthetic provider failure"));
+    const gateway = new OpenAiEmbeddingGateway({
+      environment: enabledEnvironment,
+      maximumAttempts: 1,
+      clientFactory: () => ({ embeddings: { create } })
+    });
+    await expect(gateway.embedDocuments(request())).rejects.toMatchObject({
+      code: "provider_unavailable"
+    });
+    expect(create).toHaveBeenCalledTimes(1);
+  });
+
   it("rejects raw sensitive text before creating a provider client", async () => {
     const factory = vi.fn();
     const base = request();

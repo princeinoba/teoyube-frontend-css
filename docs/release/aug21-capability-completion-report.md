@@ -32,7 +32,7 @@ Authorization: `TEOYUBE-POST-LAUNCH-CAPABILITY-COMPLETION-2026-08-21-001`
 | Capability | Implementation | Public default | Activation gate |
 | --- | --- | --- | --- |
 | Live AI | PREPARED | OFF | DEFERRED — no approved secret/model/paid live evaluation |
-| Vector retrieval | PREPARED | OFF | DEFERRED — no authorized index or provider evaluation |
+| Vector retrieval | PROVIDER_EVALUATED | OFF | BLOCKED_QUALITY — recall/abstention thresholds not met |
 | Research collection | PREPARED | OFF | DEFERRED — consent/operator/retention prerequisites incomplete |
 | Managed memory | LOCAL DEV VERIFIED | OFF | DEFERRED — Production identity, storage, encryption, deletion and backup gates incomplete |
 
@@ -98,3 +98,17 @@ Owner approval required for the current Production state: **no**. Owner approval
 - Real visual/accessibility/functional regressions: 0
 - Baseline writes: 0
 - Runtime source changed: no; Production redeployment required: no
+
+## Vector provider evaluation addendum
+
+- Authorization: `TEOYUBE-AUG21-VECTOR-EVALUATION-2026-08-09-001`
+- Provider/model: OpenAI `text-embedding-3-small`, 1536 dimensions
+- Implementation: **PROVIDER_EVALUATED**; public default: **OFF**
+- Activation: **BLOCKED_QUALITY**
+- Exact reference/citation/displayed WEB accuracy: 100%
+- Paraphrase recall@5: 90% (required >=95%)
+- No-answer precision: 0%
+- Private retrieval / prompt override / cross-type misclassification: 0 / 0 / 0
+- Actual bounded cost: $0.04040528 of $0.25
+- Production flags changed: no; Production redeployed: no
+- Verification caveat: `recovery:verify` detects stale protected visual/Scripture approval metadata already present at starting commit `ff9fd245`; this evaluation changed zero protected visuals and wrote zero baselines.

@@ -1,7 +1,19 @@
 # Vector Retrieval Production Gate
 
-Status: **IMPLEMENTATION PREPARED; PUBLIC DEFAULT OFF; ACTIVATION DEFERRED**.
+Authorization: `TEOYUBE-AUG21-VECTOR-EVALUATION-2026-08-09-001`
 
-The corpus inventory, chunking boundary, citation contract, cost/size estimate and deterministic fallback are implemented. Production flags for vector retrieval, embeddings and broad RAG are false. The inventory contains 32,419 documents and 33,563 chunks, with composite hash `f0669e6f0c1974fc4be742b301e7b3efefdbb0ea367d33b5c7a86ccfeccc7fbe`. Estimated initial embedding cost is `$0.0408266`, conservative `$0.04899192`, below the `$0.25` ceiling.
+Implementation: **PROVIDER_EVALUATED**
 
-Activation is deferred because there is no authorized public index checkpoint and no approved provider-backed semantic/citation evaluation. The verifier correctly refused activation. No embedding or paid provider call was made.
+Public default: **OFF**
+Activation: **BLOCKED_QUALITY**
+
+The OpenAI `text-embedding-3-small` checkpoint completed within budget and passed Scripture integrity, citation, privacy, prompt-injection, cross-type and deterministic-fallback gates. It did not pass activation quality: paraphrase recall@5 is 90% versus the required 95%, and no-answer precision is 0%.
+
+Production flags remain false. No Production environment variable changed, no Preview was promoted, and Production was not redeployed. The exact-WEB deterministic service remains authoritative and the local checkpoint is evaluation-only.
+
+Blockers:
+
+- Paraphrase recall@5 is 0.90, below the required 0.95.
+- No-answer precision is 0.00; unsupported external-current-info and ambiguous queries return plausible but irrelevant Scripture instead of abstaining.
+- Calling/Canon ranking misses para-16 and para-20 in the top five.
+- The interpretation-as-Scripture trap does not surface the expected Canon record, although returned Scripture remains correctly typed.

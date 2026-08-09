@@ -52,7 +52,8 @@ export class EmbeddingGatewayError extends Error {
 
 export type OpenAiEmbeddingGatewayOptions = Readonly<{
   environment?: NodeJS.ProcessEnv;
-  clientFactory?: (apiKey: string, organization: string) => EmbeddingTransport;
+  clientFactory?: (apiKey: string, organization?: string) => EmbeddingTransport;
+  maximumAttempts?: 1 | 2;
 }>;
 
 function emptyUsage(providerCalls = 0): EmbeddingUsage {
@@ -106,7 +107,8 @@ function validateModel(model: string, dimension: number): void {
 
 export class OpenAiEmbeddingGateway implements EmbeddingGateway {
   readonly #environment: NodeJS.ProcessEnv;
-  readonly #clientFactory: (apiKey: string, organization: string) => EmbeddingTransport;
+  readonly #clientFactory: (apiKey: string, organization?: string) => EmbeddingTransport;
+  readonly #maximumAttempts: 1 | 2;
   #client?: EmbeddingTransport;
 
   constructor(options: OpenAiEmbeddingGatewayOptions = {}) {
@@ -116,16 +118,17 @@ export class OpenAiEmbeddingGateway implements EmbeddingGateway {
       ((apiKey, organization) =>
         new OpenAI({
           apiKey,
-          organization,
+          ...(organization ? { organization } : {}),
           maxRetries: 0,
           timeout: RETRIEVAL_LIMITS.providerTimeoutMs
         }));
+    this.#maximumAttempts = options.maximumAttempts || 2;
   }
 
   #transport(): EmbeddingTransport {
     const configuration = readRetrievalRuntimeConfiguration(this.#environment);
     const credentials = openAiEmbeddingCredentials(this.#environment);
-    if (!configuration.embeddingEnabled || !credentials.apiKey || !credentials.organization) {
+    if (!configuration.embeddingEnabled || !credentials.apiKey) {
       throw new EmbeddingGatewayError("disabled", "The embedding provider is disabled.");
     }
     if (!this.#client) this.#client = this.#clientFactory(credentials.apiKey, credentials.organization);
@@ -147,7 +150,7 @@ export class OpenAiEmbeddingGateway implements EmbeddingGateway {
     const transport = this.#transport();
     let response: EmbeddingTransportResponse | undefined;
     let providerCalls = 0;
-    for (let attempt = 0; attempt < 2; attempt += 1) {
+    for (let attempt = 0; attempt < this.#maximumAttempts; attempt += 1) {
       providerCalls += 1;
       try {
         response = await transport.embeddings.create({
@@ -162,7 +165,7 @@ export class OpenAiEmbeddingGateway implements EmbeddingGateway {
           error instanceof OpenAI.RateLimitError ||
           error instanceof OpenAI.InternalServerError ||
           error instanceof OpenAI.APIConnectionError;
-        if (!retryable || attempt === 1) {
+        if (!retryable || attempt === this.#maximumAttempts - 1) {
           throw new EmbeddingGatewayError("provider_unavailable", "The embedding provider request failed safely.");
         }
       }

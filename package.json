@@ -179,7 +179,9 @@
     "recovery:verify": "npm run recovery:visual:verify && npm run recovery:support-routes:contract:verify && npm run recovery:next-support:contract:verify && npm run recovery:tig:verify && npm run recovery:scripture:verify && npm run check:imports && npm run architecture:verify && npm run safety:boundaries:verify && npm run retrieval:boundaries:verify",
     "recovery:visual-contract:verify": "npm run recovery:visual:verify",
     "recovery:tig-contract:verify": "npm run recovery:tig:verify",
-    "recovery:runtime-baselines:verify": "node scripts/recovery/verifyRuntimeBaselines.cjs"
+    "recovery:runtime-baselines:verify": "node scripts/recovery/verifyRuntimeBaselines.cjs",
+    "retrieval:provider:evaluate": "node scripts/retrieval/runVectorProviderEvaluation.cjs",
+    "retrieval:provider:delete-checkpoint": "node scripts/retrieval/deleteVectorProviderCheckpoint.cjs"
   },
   "dependencies": {
     "next": "16.3.0",
