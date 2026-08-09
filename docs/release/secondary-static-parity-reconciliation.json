@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-SECONDARY-PARITY-RECONCILIATION-2026-08-08-001",
+  "result": "PASS_WITH_HISTORICAL_LIMITATION",
+  "startingCommit": "2db1889c2b27fb9a9eff35c9922f0fbdf7c29f9e",
+  "evidenceCommit": "32621a418780d100cf7a877bc351993fed35e52b",
+  "production": {
+    "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "deployment": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "url": "https://teoyube-frontend-css.vercel.app",
+    "status": "READY",
+    "healthIdentity": "production/vercel-production",
+    "runtimeSourceDigest": "9f8e05bb7c9d62995411593124a3f83a3f29f1cd867ebedf9d41522ed8355b9b",
+    "runtimeSourceChanged": false,
+    "redeployed": false
+  },
+  "secondaryStatic": {
+    "currentScreenshotCells": 72,
+    "currentDomSnapshots": 12,
+    "currentVisualFailures": 0,
+    "currentFunctionalFailures": 0,
+    "historicalVisualClassifications": {
+      "HISTORICAL_STATIC_RUNTIME_DIFFERENCE": 66,
+      "OBSOLETE_FOR_CURRENT_GATE": 6
+    },
+    "historicalDomClassifications": {
+      "HISTORICAL_STATIC_RUNTIME_DIFFERENCE": 36,
+      "OWNER_APPROVED_ACCESSIBILITY_DELTA": 15
+    },
+    "unresolved": 0,
+    "realAccessibilityRegressions": 0,
+    "realVisualRegressions": 0,
+    "baselineWrites": 0
+  },
+  "approvedAccessibility": {
+    "count": 15,
+    "approvalId": "TEOYUBE-OWNER-ACCESSIBILITY-PHASE5B-2026-08-05-001",
+    "introducingCommit": "0716dc6",
+    "groups": {
+      "canon": 11,
+      "search": 3,
+      "testimony": 1
+    }
+  },
+  "historicalRuntime": {
+    "semanticDifferences": 36,
+    "today": {
+      "count": 11,
+      "approvalId": "TEOYUBE-FUNCTIONAL-2026-07-30-TODAY-YOUTUBE-PLAYBACK-001",
+      "introducingCommit": "436a84e"
+    },
+    "promiseTable": {
+      "count": 25,
+      "approvalId": "TEOYUBE-FUNCTIONAL-2026-07-30-PROMISE-TABLE-YOUTUBE-PLAYBACK-001",
+      "introducingCommit": "d7c55a5"
+    }
+  },
+  "aggregateController": {
+    "status": "passed",
+    "logicalRuns": 3,
+    "completedCells": 216,
+    "measurements": 216,
+    "thresholdMs": 5000,
+    "runs": [
+      {
+        "runId": "prompt17s-32621a418780-20260809024705263-attempt-1-run-1",
+        "runOrdinal": 1,
+        "maximumReadyMs": 3625.4,
+        "resumed": false,
+        "segmentCount": 1,
+        "performanceResultSha256": "d155148bf5682558f7a43e08eb6ae8f745294a61bfa259f8ea5075d50133f933",
+        "parityEvidenceSha256": "0e0a392a022a2a334158aadb81a46bd2343fe3c390d474714b7e0143d1c1c583",
+        "retainedBytes": 2355996
+      },
+      {
+        "runId": "prompt17s-32621a418780-20260809024705263-attempt-2-run-2",
+        "runOrdinal": 2,
+        "maximumReadyMs": 3848.6,
+        "resumed": false,
+        "segmentCount": 1,
+        "performanceResultSha256": "6c2fa0ed5d9fd793f75955e63e0b753e51f1b62d65b4313dec2eeacfbf6f1247",
+        "parityEvidenceSha256": "4d13cb4760faf0e824f519c1f415cdbe5c41dd894ce1f23596408db261721a66",
+        "retainedBytes": 2356116
+      },
+      {
+        "runId": "prompt17s-32621a418780-20260809024705263-attempt-3-run-3",
+        "runOrdinal": 3,
+        "maximumReadyMs": 3089.3,
+        "resumed": false,
+        "segmentCount": 1,
+        "performanceResultSha256": "2f27f60092744b30189cd2479a280cbc62b0a6bfdd892f71ee52d29d770f73d9",
+        "parityEvidenceSha256": "0547ed3aeeb5f06e0f4564e586ad9374d059973d0e5e44653cacfc38ca97f032",
+        "retainedBytes": 2356046
+      }
+    ]
+  },
+  "accessibilityController": {
+    "status": "PASS",
+    "cells": 216,
+    "parityFailures": 0,
+    "inheritedMissingNames": 0,
+    "baselineWrites": 0
+  },
+  "focusedVerification": {
+    "vitestFiles": 7,
+    "vitestTests": 31,
+    "typescript": "PASS",
+    "lint": "PASS",
+    "recoveryVerify": "PASS",
+    "focusedParityGroups": {
+      "search": "4/4 PASS",
+      "canonPromise": "4/4 PASS",
+      "journalTestimonyBook": "7/7 PASS",
+      "remainingRetained": "11/11 PASS"
+    }
+  },
+  "protectedChanges": {
+    "productSource": 0,
+    "css": 0,
+    "dom": 0,
+    "assets": 0,
+    "baselines": 0
+  },
+  "disabledFeatures": {
+    "liveAi": false,
+    "vectorRetrieval": false,
+    "embeddings": false,
+    "broadRag": false,
+    "databasePersistence": false,
+    "researchCollection": false,
+    "durablePrivateMemory": false,
+    "paidProviderCalls": 0
+  },
+  "historicalLimitation": [
+    "exact historical operating-system build",
+    "exact historical browser build",
+    "exact historical Playwright build",
+    "exact historical font installation and rasterization stack",
+    "exact historical GPU/rendering backend"
+  ],
+  "genuineBlockers": []
+}

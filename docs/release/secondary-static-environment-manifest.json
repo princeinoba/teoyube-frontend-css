@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-SECONDARY-PARITY-RECONCILIATION-2026-08-08-001",
+  "capturedAt": "2026-08-09T04:35:59.284Z",
+  "execution": {
+    "os": "Windows 11 Home",
+    "osBuild": "26200",
+    "architecture": "x64",
+    "node": "v24.18.0",
+    "npm": "10.2.4",
+    "playwright": "1.61.1",
+    "sharp": "0.35.3",
+    "systemChrome": "151.0.7922.108",
+    "bundledPlaywrightChromium": "149.0.7827.55"
+  },
+  "currentSecondaryStaticCapture": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "platform": "Win32",
+    "locale": "en-US",
+    "timezone": "UTC",
+    "deviceScaleFactor": 1,
+    "colorScheme": "light",
+    "forcedColors": "none",
+    "reducedMotion": "reduce",
+    "fontStatus": "loaded",
+    "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+  },
+  "currentSecondaryStaticReportedBrowserVersion": "151.0.7922.108",
+  "aggregateGate": {
+    "gitCommit": "32621a418780d100cf7a877bc351993fed35e52b",
+    "thresholdMs": 5000,
+    "requiredLogicalRuns": 3,
+    "baselineHashes": {
+      "visualBaselines": {
+        "sha256": "a9e3e8f8e746a179048fef14c987ef3b87a7676711fa227074958066b5234429",
+        "files": 779,
+        "bytes": 220551441
+      },
+      "visualContracts": {
+        "sha256": "1ff285997888adb76b6cf5e395a879925045bd4a6548b5604d76189de18e0808",
+        "files": 5,
+        "bytes": 640213
+      }
+    },
+    "buildHashes": {
+      "static": {
+        "sha256": "54b1e2069d624e4fc821942331b8f609268a7ee31a03c546f2f610e5ff99189c",
+        "files": 233,
+        "bytes": 179476678
+      },
+      "next": {
+        "sha256": "85281f2dbb875307008825a3bfda08c3f3cfaa05f22e79147ca0e2bd9c220e84",
+        "files": 1392,
+        "bytes": 143772376
+      }
+    }
+  },
+  "immutableHistoricalCapture": {
+    "sourceTag": "teoyube-original-upload-2026-07-18",
+    "screenshots": 72,
+    "domSnapshots": 12,
+    "knownConfiguration": {
+      "browserEngine": "Chromium via Playwright",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "locale": "en-US"
+    },
+    "unavailableOrUnspecified": [
+      "exact historical operating-system build",
+      "exact historical browser build",
+      "exact historical Playwright build",
+      "exact historical font installation and rasterization stack",
+      "exact historical GPU/rendering backend"
+    ],
+    "reproducibilityDisposition": "PASS_WITH_HISTORICAL_LIMITATION"
+  },
+  "controls": {
+    "timezone": "UTC",
+    "deviceScaleFactor": 1,
+    "colorScheme": "light",
+    "forcedColors": "none",
+    "reducedMotion": "reduce",
+    "locale": "en-US",
+    "fontsReadyRequired": true,
+    "fixedClockAndRandomness": true,
+    "externalNetworkRestricted": true,
+    "twoIsolatedBrowserContexts": true
+  }
+}
