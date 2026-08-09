@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-VECTOR-HOLDOUT-V2-2026-08-09-001",
+  "generatedAt": "2026-08-09T19:40:04.433Z",
+  "repository": "https://github.com/princeinoba/teoyube-frontend-css",
+  "branch": "recovery/visual-source-of-truth",
+  "remoteStartingCommit": "6a2b50e3f16564a2bfc6fdeda17946c12bcc2e1c",
+  "localSafetyReference": {
+    "name": "safety/vector-holdout-v1-98722ac",
+    "commit": "98722ac12c18fdefdc2db1a8b3a57633d51d608c"
+  },
+  "holdoutV1": {
+    "disposition": "INVALID_AS_ACTIVATION_GATE",
+    "datasetHash": "079327d48457a86eb98887883656b1aa6b29469d3abd54a52cf7c676ffca5d12",
+    "preservedResultHash": "649285f0571198a2518b468ea688897621d1785a76c59d488358d9f16c967d45"
+  },
+  "holdoutV2": {
+    "lockCommit": "1a31e6d4c600a1b93fe462ce424c335172eb0142",
+    "datasetHash": "3e84e225d5fe4faa84f8ade8bbca2e49c4c6d0bcb914584f5f459707f6c2d4f5",
+    "cases": {
+      "total": 35,
+      "passed": 35,
+      "failed": 0
+    },
+    "metrics": {
+      "exactReferenceRecallAt1": 1,
+      "exactReferenceRecallAt5": 1,
+      "paraphraseRecallAt5": 1,
+      "meanReciprocalRank": 0.85,
+      "contentTypePrecision": 1,
+      "citationReferenceAccuracy": 1,
+      "displayedWebVerseAccuracy": 1,
+      "noAnswerPrecision": 1,
+      "privateExcludedContentRetrievalRate": 0,
+      "promptInjectionRuleOverrideRate": 0,
+      "crossTypeScriptureMisclassification": 0,
+      "deterministicFallbackSuccess": 1,
+      "latencyMs": {
+        "mean": 255.61762,
+        "p50": 0.0226,
+        "p95": 1491.1872,
+        "maximum": 1653.5991
+      }
+    },
+    "retainedGenuineRankingFailures": [
+      {
+        "id": "holdout-para-02",
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "id": "holdout-para-04",
+        "rank": 2,
+        "passed": true
+      },
+      {
+        "id": "holdout-para-08",
+        "rank": 1,
+        "passed": true
+      }
+    ],
+    "changeManifest": [
+      "docs/release/vector-quality-holdout-v1-to-v2-manifest.json",
+      "docs/release/vector-quality-holdout-v1-to-v2-manifest.md"
+    ]
+  },
+  "diagnostic": {
+    "datasetHash": "04a83b25e67e5fd3e8030d5a7f018f5b07083f3643e7087e8f130d1e0efe74af",
+    "cases": {
+      "total": 43,
+      "passed": 42,
+      "failed": 1
+    },
+    "metrics": {
+      "exactReferenceRecallAt1": 1,
+      "exactReferenceRecallAt5": 1,
+      "paraphraseRecallAt5": 0.95,
+      "meanReciprocalRank": 0.7225,
+      "contentTypePrecision": 1,
+      "citationReferenceAccuracy": 1,
+      "displayedWebVerseAccuracy": 1,
+      "noAnswerPrecision": 1,
+      "privateExcludedContentRetrievalRate": 0,
+      "promptInjectionRuleOverrideRate": 0,
+      "crossTypeScriptureMisclassification": 0,
+      "deterministicFallbackSuccess": 1,
+      "latencyMs": {
+        "mean": 145.7633814,
+        "p50": 0.8565,
+        "p95": 387.315,
+        "maximum": 708.3896
+      }
+    },
+    "metricBasedPass": true
+  },
+  "determinism": {
+    "passed": true,
+    "outcomeHashes": [
+      "6add1cb1b51fa05f07ab38658c74023e309d0a7c6a82407dfa17220a8c46f64d",
+      "6add1cb1b51fa05f07ab38658c74023e309d0a7c6a82407dfa17220a8c46f64d",
+      "6add1cb1b51fa05f07ab38658c74023e309d0a7c6a82407dfa17220a8c46f64d"
+    ]
+  },
+  "provider": {
+    "model": "text-embedding-3-small",
+    "queryEmbeddingOnly": true,
+    "corpusReembedded": false,
+    "resultSha256": "b032d869590090defd576e330b20000bf50b709c6c2a269a5344f756a6ab65f9",
+    "costs": {
+      "authorizationStartingUsd": 0.0404113,
+      "priorEvaluationUsd": 0.04041734,
+      "projectedAdditionalUsd": 0.00001058,
+      "authorizedAdditionalCeilingUsd": 0.005,
+      "actualAdditionalUsd": 0.00000604,
+      "authorizationAdditionalUsd": 0.00001208,
+      "absoluteCumulativeCeilingUsd": 0.25,
+      "cumulativeUsd": 0.04042338
+    },
+    "usage": {
+      "additionalQueryTokens": 302,
+      "additionalProviderCalls": 33,
+      "providerFailures": 0,
+      "retries": 0,
+      "paidGenerationCalls": 0,
+      "cumulativeInputTokens": 2021169,
+      "cumulativeProviderCalls": 280
+    }
+  },
+  "verification": {
+    "offlinePreflight": "PASS",
+    "focusedRetrievalTests": "PASS_19_OF_19",
+    "typecheck": "PASS",
+    "lintRetrieval": "PASS",
+    "productionBuild": "PASS_58_STATIC_PAGES",
+    "dependencyAudit": "PASS_0_VULNERABILITIES",
+    "exactWebCorpus": "PASS_66_BOOKS_31098_DISPLAYABLE_VERSES",
+    "tig": "PASS",
+    "deterministicTeoGuide": "PASS_49_TESTS",
+    "promptSafety": "PASS_64_FIXTURES",
+    "clientServerBoundaries": "PASS",
+    "trackedSecretScan": "PASS",
+    "protectedVisualChanges": 0,
+    "baselineWrites": 0,
+    "inheritedVisualIdentityGate": "BLOCKED_STALE_APPROVAL_IDENTITIES",
+    "releaseSecurityGate": "BLOCKED_PAID_EVIDENCE_REUSE_BOUNDARY"
+  },
+  "productionBoundary": {
+    "deployment": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "url": "https://teoyube-frontend-css.vercel.app",
+    "redeployed": false,
+    "flagsChanged": false,
+    "externalVectorRetrieval": false,
+    "broadRag": false,
+    "liveAi": false,
+    "productionEmbeddings": false,
+    "researchCollection": false,
+    "databasePersistence": false,
+    "durablePrivateMemory": false
+  },
+  "outcome": {
+    "vectorQuality": "PASS",
+    "activationReadiness": "QUALITY_PASS",
+    "publicProductionActivation": "NOT_AUTHORIZED",
+    "gitPush": "NOT_PERFORMED_GATE_BLOCKED",
+    "preview": "NOT_CREATED_GATE_BLOCKED",
+    "deliveryStatus": "LOCAL_REVIEW_CHECKPOINT_ONLY",
+    "remainingBlockers": [
+      "The inherited protected-visual verifier reports stale owner-approved runtime and visual identities at the unchanged 6a2b50e source baseline; protected changes are forbidden by this authorization.",
+      "The release security gate's paid-evidence-reuse control recognizes only the older prompt-20 tag and does not bind the new V2 provider result."
+    ],
+    "recommendation": "Obtain a separately scoped reconciliation of the inherited protected visual identities and bind this V2 result into the paid-evidence control, then rerun only those two gates before normal push and unpromoted Preview."
+  }
+}

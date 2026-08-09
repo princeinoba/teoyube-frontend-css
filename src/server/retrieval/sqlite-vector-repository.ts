@@ -68,22 +68,27 @@ function vectorBlob(vector: readonly number[]): Uint8Array {
   return new Uint8Array(values.buffer, values.byteOffset, values.byteLength);
 }
 
-function vectorFromBlob(value: SqlValue, dimension: number): readonly number[] {
+function vectorFromBlob(value: SqlValue, dimension: number): Float32Array {
   if (!(value instanceof Uint8Array) || value.byteLength !== dimension * 4) {
     throw new Error("Stored vector bytes do not match the recorded dimension.");
   }
+  if (value.byteOffset % 4 === 0) return new Float32Array(value.buffer, value.byteOffset, dimension);
   const copied = Uint8Array.from(value);
-  return Object.freeze([...new Float32Array(copied.buffer)]);
+  return new Float32Array(copied.buffer);
 }
 
-function cosine(left: readonly number[], right: readonly number[]): number {
+function squaredNorm(values: ArrayLike<number>): number {
+  let total = 0;
+  for (let index = 0; index < values.length; index += 1) total += values[index] * values[index];
+  return total;
+}
+
+function cosine(left: ArrayLike<number>, right: ArrayLike<number>, leftNorm = squaredNorm(left)): number {
   if (left.length !== right.length || left.length === 0) return -1;
   let dot = 0;
-  let leftNorm = 0;
   let rightNorm = 0;
   for (let index = 0; index < left.length; index += 1) {
     dot += left[index] * right[index];
-    leftNorm += left[index] * left[index];
     rightNorm += right[index] * right[index];
   }
   if (leftNorm === 0 || rightNorm === 0) return -1;
@@ -411,7 +416,15 @@ export class SqliteVectorRepository implements VectorRepository {
         RETRIEVAL_LIMITS.maximumCandidateRows
       );
     const scored: VectorSearchResult[] = [];
+    const queryNorm = squaredNorm(request.queryVector);
     for (const row of rows) {
+      const metadata = parseMetadata(text(row, "metadata_json"));
+      if (
+        request.documentIdPrefixes?.length &&
+        !request.documentIdPrefixes.some((prefix) => metadata.documentId.startsWith(prefix))
+      ) {
+        continue;
+      }
       const userId = optionalText(row, "user_id");
       const consentIds = parseStringArray(text(row, "consent_record_ids_json"));
       const purposeIds = parseStringArray(text(row, "purpose_ids_json"));
@@ -425,7 +438,7 @@ export class SqliteVectorRepository implements VectorRepository {
         }
       }
       const dimension = integer(row, "dimension");
-      let vector: readonly number[];
+      let vector: ArrayLike<number>;
       let content: string;
       if (userId) {
         if (!this.#keyRing) continue;
@@ -448,13 +461,13 @@ export class SqliteVectorRepository implements VectorRepository {
         vector = vectorFromBlob(row.vector_blob, dimension);
         content = text(row, "content_text");
       }
-      const score = cosine(request.queryVector, vector);
+      const score = cosine(request.queryVector, vector, queryNorm);
       if (score < -0.5) continue;
       scored.push(
         Object.freeze({
           recordId: text(row, "id"),
           score,
-          metadata: parseMetadata(text(row, "metadata_json")),
+          metadata,
           title: text(row, "title"),
           chunkRole: text(row, "chunk_role"),
           ordinal: integer(row, "ordinal"),
@@ -496,7 +509,7 @@ export class SqliteVectorRepository implements VectorRepository {
             Object.freeze({
               id,
               normalizedContentHash: text(row, "normalized_content_hash"),
-              vector: vectorFromBlob(row.vector_blob, integer(row, "dimension"))
+              vector: Object.freeze(Array.from(vectorFromBlob(row.vector_blob, integer(row, "dimension"))))
             })
           );
         }

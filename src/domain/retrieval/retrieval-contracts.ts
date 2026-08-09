@@ -170,6 +170,7 @@ export type VectorSearchRequest = Readonly<{
   queryVector: readonly number[];
   partitions: readonly RetrievalPartition[];
   trustLevels: readonly RetrievalTrustLevel[];
+  documentIdPrefixes?: readonly string[];
   limit: number;
   language: string;
   activeIndexVersion: string;
@@ -304,6 +305,8 @@ export type HybridSourceResult = Readonly<{
   sourceVersion: string;
   sourceChecksum: string;
   lexicalScore?: number;
+  rawVectorScore?: number;
+  normalizedVectorScore?: number;
   vectorScore?: number;
   graphScore?: number;
   fusedScore: number;
@@ -320,12 +323,29 @@ export type HybridSourceResult = Readonly<{
   content: string;
 }>;
 
+export type RetrievalCandidateDiagnostic = Readonly<{
+  documentId: string;
+  contentType: "SCRIPTURE" | "CANON" | "PROMISE" | "LEXICON" | "OTHER";
+  partition: RetrievalPartition;
+  rawCosineSimilarity?: number;
+  normalizedVectorScore: number;
+  lexicalScore: number;
+  graphScore: number;
+  trustScore: number;
+  fusedScore: number;
+  rank: number;
+  accepted: boolean;
+  decisionReason: string;
+}>;
+
 export type HybridRetrievalResult = Readonly<{
   requestId: string;
   queryHash: string;
   intent: string;
   exactReferenceResolved: boolean;
   pathsUsed: readonly ("exact" | "lexical" | "vector" | "tig")[];
+  queryDisposition: Readonly<{ acceptedForRetrieval: boolean; reason: string }>;
+  candidateDiagnostics: readonly RetrievalCandidateDiagnostic[];
   sources: readonly HybridSourceResult[];
   fallback: Readonly<{
     used: boolean;

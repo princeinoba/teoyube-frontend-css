@@ -181,7 +181,8 @@
     "recovery:tig-contract:verify": "npm run recovery:tig:verify",
     "recovery:runtime-baselines:verify": "node scripts/recovery/verifyRuntimeBaselines.cjs",
     "retrieval:provider:evaluate": "node scripts/retrieval/runVectorProviderEvaluation.cjs",
-    "retrieval:provider:delete-checkpoint": "node scripts/retrieval/deleteVectorProviderCheckpoint.cjs"
+    "retrieval:provider:delete-checkpoint": "node scripts/retrieval/deleteVectorProviderCheckpoint.cjs",
+    "retrieval:quality:reevaluate": "node scripts/retrieval/runVectorQualityRemediation.cjs"
   },
   "dependencies": {
     "next": "16.3.0",

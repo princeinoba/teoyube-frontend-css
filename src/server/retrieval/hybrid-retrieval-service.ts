@@ -17,6 +17,14 @@ import type { TigService } from "../../domain/tig/tig-service";
 import { estimateTokens, hashNormalizedContent, sha256 } from "./content-hashing";
 import type { PublicRetrievalInventory } from "./public-source-inventory";
 import {
+  candidateAcceptance,
+  deterministicQueryDisposition,
+  documentContentType,
+  documentPrefixesForIntent,
+  partitionsForContentIntent,
+  resolveRetrievalContentIntent
+} from "./retrieval-query-policy";
+import {
   EMBEDDING_MODELS,
   PROMPT_20_BUDGETS,
   readRetrievalRuntimeConfiguration,
@@ -30,16 +38,42 @@ type LexicalCandidate = Readonly<{
   matchedTerms: readonly string[];
 }>;
 
+function stem(term: string): string {
+  if (term.endsWith("fulness") && term.length > 9) return term.slice(0, -7);
+  if (term.endsWith("ful") && term.length > 6) return term.slice(0, -3);
+  if (term.endsWith("ing") && term.length > 6) return term.slice(0, -3).replace(/(.)\1$/, "$1");
+  if (term.endsWith("ed") && term.length > 5) return term.slice(0, -2).replace(/(.)\1$/, "$1");
+  return term;
+}
+
 function terms(value: string): readonly string[] {
   return Object.freeze([
     ...new Set(
-      value
+      (value
         .toLowerCase()
         .normalize("NFKD")
         .replace(/[\u0300-\u036f]/g, "")
-        .match(/[a-z0-9]+/g) || []
+        .match(/[a-z0-9]+/g) || [])
+        .filter((term) => term.length >= 3)
+        .map(stem)
     )
-  ].filter((term) => term.length >= 3));
+  ]);
+}
+
+function lexicalValues(content: string): string {
+  try {
+    const parsed: unknown = JSON.parse(content);
+    const values: string[] = [];
+    const visit = (value: unknown): void => {
+      if (typeof value === "string" || typeof value === "number") values.push(String(value));
+      else if (Array.isArray(value)) value.forEach(visit);
+      else if (value && typeof value === "object") Object.values(value).forEach(visit);
+    };
+    visit(parsed);
+    return values.join(" ");
+  } catch {
+    return content;
+  }
 }
 
 function trustScore(trust: RetrievalTrustLevel): number {
@@ -157,19 +191,21 @@ export class HybridRetrievalService implements HybridRetriever {
     this.#tokens = new Map(
       this.#inventory.chunks.map((chunk) => [
         chunk.chunkId,
-        terms(`${chunk.title} ${chunk.content}`)
+        terms(`${chunk.title} ${lexicalValues(chunk.content)}`)
       ])
     );
   }
 
   #lexical(request: HybridRetrievalRequest): readonly LexicalCandidate[] {
     const queryTerms = terms(request.query);
+    const contentIntent = resolveRetrievalContentIntent(request.intent, request.query);
     if (!queryTerms.length) return Object.freeze([]);
     const candidates = this.#inventory.chunks
       .filter(
         (chunk) =>
           request.allowedPartitions.includes(chunk.partition) &&
-          chunk.language === request.language
+          chunk.language === request.language &&
+          (contentIntent === "GENERAL" || documentContentType(chunk.documentId) === contentIntent)
       )
       .map((chunk) => {
         const chunkTerms = this.#tokens.get(chunk.chunkId) || [];
@@ -255,7 +291,35 @@ export class HybridRetrievalService implements HybridRetriever {
     }
     const runtime = readRetrievalRuntimeConfiguration(this.#environment);
     const exact = await this.#exact(request);
-    const lexical = this.#lexical(request);
+    const contentIntent = resolveRetrievalContentIntent(request.intent, request.query);
+    const queryDisposition = exact
+      ? Object.freeze({ acceptedForRetrieval: true, reason: "accepted" })
+      : deterministicQueryDisposition(request.query, request.intent);
+    if (!exact && !queryDisposition.acceptedForRetrieval) {
+      return Object.freeze({
+        requestId: `retrieval:${sha256(`${request.query}:${request.intent}:${request.activeIndexVersion}`).slice(0, 24)}`,
+        queryHash: sha256(request.query),
+        intent: request.intent,
+        exactReferenceResolved: false,
+        pathsUsed: Object.freeze([]),
+        queryDisposition,
+        candidateDiagnostics: Object.freeze([]),
+        sources: Object.freeze([]),
+        fallback: Object.freeze({ used: true, reason: "not_useful" as const }),
+        limitations: Object.freeze([
+          "The query was deterministically rejected before provider embedding.",
+          "Scripture is primary; interpretation and user-approved records remain distinct."
+        ]),
+        contextTokenCount: 0,
+        latencyMs: Math.max(0, this.#monotonicNow() - started),
+        indexVersion: request.activeIndexVersion
+      });
+    }
+    const effectiveRequest = Object.freeze({
+      ...request,
+      allowedPartitions: partitionsForContentIntent(request.allowedPartitions, contentIntent)
+    });
+    const lexical = this.#lexical(effectiveRequest);
     const tig = await this.#tigService.recommend({
       query: request.query,
       intent: request.intent as never,
@@ -287,7 +351,7 @@ export class HybridRetrievalService implements HybridRetriever {
             EMBEDDING_MODELS.default.dimension,
             RETRIEVAL_FUSION_VERSION,
             request.safetyMode,
-            request.allowedPartitions.join(",")
+            effectiveRequest.allowedPartitions.join(",")
           ].join(":")
         );
         let queryEmbedding =
@@ -323,11 +387,14 @@ export class HybridRetrievalService implements HybridRetriever {
             this.#publicEvaluationQueryCache.set(cacheKey, queryEmbedding);
           }
         }
-        const partitions = allowedVectorPartitions(request);
+        const partitions = allowedVectorPartitions(effectiveRequest);
         vectorResults = await this.#vectorRepository.search({
           queryVector: queryEmbedding.vector,
           partitions,
-          trustLevels: trustLevelsFor(request),
+          trustLevels: trustLevelsFor(effectiveRequest),
+          ...(documentPrefixesForIntent(contentIntent)
+            ? { documentIdPrefixes: documentPrefixesForIntent(contentIntent) }
+            : {}),
           limit: Math.max(request.topK * 5, 25),
           language: request.language,
           activeIndexVersion: request.activeIndexVersion,
@@ -350,6 +417,7 @@ export class HybridRetrievalService implements HybridRetriever {
       Readonly<{
         chunk: RetrievalChunk;
         lexical: number;
+        rawVector?: number;
         vector: number;
         graph: number;
         matchedTerms: readonly string[];
@@ -381,12 +449,14 @@ export class HybridRetrievalService implements HybridRetriever {
         (candidate) => candidate.chunkId === result.recordId
       );
       if (!chunk) continue;
+      if (contentIntent !== "GENERAL" && documentContentType(chunk.documentId) !== contentIntent) continue;
       const current = merged.get(result.recordId);
       merged.set(
         result.recordId,
         Object.freeze({
           chunk,
           lexical: current?.lexical || 0,
+          rawVector: result.score,
           vector: Math.max(0, Math.min(1, (result.score + 1) / 2)),
           graph: current?.graph || 0,
           matchedTerms: current?.matchedTerms || Object.freeze([]),
@@ -408,10 +478,12 @@ export class HybridRetrievalService implements HybridRetriever {
           trust,
           journey
         });
+        const rawVector = Math.max(0, candidate.rawVector || 0);
         const fusedScore =
-          candidate.lexical * 0.35 +
-          candidate.vector * 0.35 +
-          candidate.graph * 0.12 +
+          candidate.lexical * 0.08 +
+          candidate.vector * 0.22 +
+          rawVector * 0.45 +
+          candidate.graph * 0.07 +
           trust * 0.15 +
           journey * 0.03;
         return Object.freeze({ candidate, breakdown, fusedScore });
@@ -427,7 +499,42 @@ export class HybridRetrievalService implements HybridRetriever {
       seenDocuments.add(item.candidate.chunk.documentId);
       return true;
     });
-    const selected = diverseRanked
+    const candidateDiagnostics = Object.freeze(
+      diverseRanked.map((item, index) => {
+        const decision = candidateAcceptance({
+          ...(typeof item.candidate.rawVector === "number"
+            ? { rawCosineSimilarity: item.candidate.rawVector }
+            : {}),
+          normalizedVectorScore: item.candidate.vector,
+          lexicalScore: item.candidate.lexical,
+          fusedScore: item.fusedScore
+        });
+        return Object.freeze({
+          documentId: item.candidate.chunk.documentId,
+          contentType: documentContentType(item.candidate.chunk.documentId),
+          partition: item.candidate.chunk.partition,
+          ...(typeof item.candidate.rawVector === "number"
+            ? { rawCosineSimilarity: item.candidate.rawVector }
+            : {}),
+          normalizedVectorScore: item.candidate.vector,
+          lexicalScore: item.candidate.lexical,
+          graphScore: item.candidate.graph,
+          trustScore: item.breakdown.trust,
+          fusedScore: item.fusedScore,
+          rank: index + 1,
+          accepted: decision.accepted,
+          decisionReason: decision.reason
+        });
+      })
+    );
+    const acceptedDocumentIds = new Set(
+      candidateDiagnostics.filter((item) => item.accepted).map((item) => item.documentId)
+    );
+    const acceptedRanked = diverseRanked.filter((item) =>
+      acceptedDocumentIds.has(item.candidate.chunk.documentId)
+    );
+    if (!acceptedRanked.length && !exact) vectorReason = "not_useful";
+    const selected = acceptedRanked
       .slice(0, Math.max(0, request.topK - (exact ? 1 : 0)))
       .map((item, index): HybridSourceResult => {
         const chunk = item.candidate.chunk;
@@ -445,6 +552,10 @@ export class HybridRetrievalService implements HybridRetriever {
           sourceVersion: chunk.sourceVersion,
           sourceChecksum: chunk.sourceChecksum,
           lexicalScore: item.candidate.lexical,
+          ...(typeof item.candidate.rawVector === "number"
+            ? { rawVectorScore: item.candidate.rawVector }
+            : {}),
+          normalizedVectorScore: item.candidate.vector,
           vectorScore: item.candidate.vector,
           graphScore: item.candidate.graph,
           fusedScore: item.fusedScore,
@@ -499,9 +610,11 @@ export class HybridRetrievalService implements HybridRetriever {
       intent: request.intent,
       exactReferenceResolved: Boolean(exact),
       pathsUsed,
+      queryDisposition,
+      candidateDiagnostics,
       sources,
       fallback: Object.freeze({
-        used: !vectorResults.length,
+        used: !sources.length || !vectorResults.length,
         ...(vectorReason ? { reason: vectorReason } : {})
       }),
       limitations: Object.freeze([
