@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "evidenceCommit": "e93606129da5a0e96025be0ce1e2a625421028c5",
+  "authorizedParent": "9226605ede0a2fd7196bc68fcfebf8d5f747b284",
+  "recoveryVerify": "PASS",
+  "lint": "PASS",
+  "build": "PASS",
+  "dependencyAudit": {"status": "PASS", "vulnerabilities": 0},
+  "supplyChain": {"status": "PASS", "components": 492, "unexpectedLifecycleScripts": 0, "directLicenseDebt": 0},
+  "fullTests": {"passed": 471, "failed": 4, "skipped": 1, "failedTestsReproducedAtParent": 4, "disposition": "HISTORICAL_NO_REGRESSION"},
+  "securityGate": {
+    "controls": 19,
+    "passingControls": 18,
+    "remainingFinding": "paid-evidence-reuse-boundary",
+    "severity": "high",
+    "reproducedAtParent": true,
+    "cause": "historical_live_ai_dependency_comparison_to_prompt19_tag",
+    "vectorV2EvidenceValid": true,
+    "canaryLiveAiSourceChanges": 0,
+    "generationCalls": 0,
+    "controlWeakened": false,
+    "disposition": "HISTORICAL_NO_SECURITY_REGRESSION"
+  },
+  "secretControls": {
+    "trackedSecretScan": "PASS",
+    "gitHistorySecretScan": "PASS",
+    "clientBundleSecretServerDataScan": "PASS",
+    "localEnvironmentSecretBoundary": "PASS"
+  }
+}
