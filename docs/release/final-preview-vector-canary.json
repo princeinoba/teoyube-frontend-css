@@ -1,0 +1,85 @@
+{
+  "authorizationId": "TEOYUBE-AUG21-VECTOR-FINAL-VERIFIER-2026-08-11-001",
+  "executedAt": "2026-08-11T23:06:34.0485998Z",
+  "verifier": {
+    "apiAdapter": "PASS",
+    "secretLifecyclePreflight": "PASS",
+    "tests": { "passed": 11, "failed": 0 },
+    "toolingCommits": [
+      "6fc28ad049bb1ca1b69e68ddeaad66d2ac2aea25",
+      "4a9e053"
+    ],
+    "credentialInCommandArguments": false,
+    "credentialPersisted": false,
+    "responseBodiesPersisted": false
+  },
+  "preview": {
+    "deploymentId": "dpl_8qUECFJgVbPeXMiZAasneS7ztKdf",
+    "url": "https://teoyube-frontend-5qzx8e9xo-princeinobas-projects.vercel.app",
+    "state": "READY",
+    "classification": "preview",
+    "repository": "princeinoba/teoyube-frontend-css",
+    "branch": "recovery/visual-source-of-truth",
+    "commit": "3b91f4c62d7855d2ba2c4e60949f5a9f25c985a4",
+    "health": { "status": "PASS", "identity": "preview/vercel-preview" },
+    "routes": { "passed": 23, "expected": 23 },
+    "stylesheets": { "passed": 9, "expected": 9 }
+  },
+  "privateQuery": {
+    "result": "PASS",
+    "httpStatus": 422,
+    "openAiCalls": 0,
+    "upstashQueries": 0,
+    "logged": false,
+    "persisted": false
+  },
+  "publicVector": {
+    "result": "PASS",
+    "runtime": "managed-vector-preview-canary",
+    "provider": "upstash/openai-embeddings",
+    "openAiEmbeddingCalls": 1,
+    "upstashQueries": 1,
+    "sourceCount": 5,
+    "webScriptureCitationContract": "PASS",
+    "generationUsed": false,
+    "broadRagUsed": false,
+    "researchCollectionUsed": false,
+    "persisted": false,
+    "latencyMs": 1486.8200219999999,
+    "maximumAdditionalCostUsd": 0.01,
+    "authorizationCeilingUsd": 0.05
+  },
+  "runtimeLogs": {
+    "http200": 34,
+    "http422Expected": 1,
+    "errors": 0,
+    "warnings": 0,
+    "fatal": 0,
+    "http5xx": 0
+  },
+  "credentialSafety": {
+    "bypassCreated": 1,
+    "bypassRevoked": 1,
+    "revocationAttempts": 1,
+    "finalActiveBypassCount": 0,
+    "trackedCredentialArtifacts": 0,
+    "localCredentialFiles": 0,
+    "realSecretScanHits": 0,
+    "preExistingSyntheticFixtureHits": 1
+  },
+  "production": {
+    "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "url": "https://teoyube-frontend-css.vercel.app",
+    "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "state": "READY",
+    "credentialsAbsent": true,
+    "checkedFlagsOff": true,
+    "mutationCount": 0
+  },
+  "protectedProjects": {
+    "teoyube-cooperation": "present_unchanged",
+    "teoyube-scripture-intelligence": "present_unchanged",
+    "teoyube-phase-1-sntz": "present_unchanged"
+  },
+  "publicProductionActivation": "NOT_AUTHORIZED"
+}
