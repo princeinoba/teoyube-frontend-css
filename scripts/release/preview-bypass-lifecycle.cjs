@@ -102,10 +102,11 @@ async function runSecretLifecycle(adapter, verify) {
 }
 
 function runVercelApi({ endpoint, method = "GET", body, scope, spawn = spawnSync, platform = process.platform }) {
-  const executable = platform === "win32" ? "vercel.cmd" : "vercel";
-  const args = ["api", endpoint, "--scope", scope, "--raw"];
-  if (method !== "GET") args.push("--method", method);
-  if (body !== undefined) args.push("--input", "-");
+  const vercelArgs = ["api", endpoint, "--scope", scope, "--raw"];
+  if (method !== "GET") vercelArgs.push("--method", method);
+  if (body !== undefined) vercelArgs.push("--input", "-");
+  const executable = platform === "win32" ? (process.env.ComSpec || "cmd.exe") : "vercel";
+  const args = platform === "win32" ? ["/d", "/s", "/c", "vercel.cmd", ...vercelArgs] : vercelArgs;
   const result = spawn(executable, args, {
     encoding: "utf8",
     input: body === undefined ? undefined : JSON.stringify(body),
@@ -115,7 +116,7 @@ function runVercelApi({ endpoint, method = "GET", body, scope, spawn = spawnSync
   });
   if (result.status !== 0) throw new Error("Authenticated Vercel API operation failed.");
   try {
-    return JSON.parse(result.stdout);
+    return result.stdout.trim() ? JSON.parse(result.stdout) : {};
   } catch {
     throw new Error("Authenticated Vercel API returned invalid JSON.");
   }
