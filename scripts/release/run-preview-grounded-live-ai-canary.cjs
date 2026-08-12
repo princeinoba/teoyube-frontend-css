@@ -23,6 +23,8 @@ const MAXIMUM_COST_USD = 0.25;
 const ENGINEERING_TARGET_USD = 0.2;
 const WORST_GENERATION_USD = 0.0108;
 const WORST_EMBEDDING_USD = 0.00001;
+const PRIOR_RESERVED_COST_USD = 0.01081;
+const DIAGNOSTIC_WORST_CASE_COST_USD = 0.01081;
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -42,8 +44,13 @@ function loadDataset() {
   const generationCases = dataset.cases.filter((item) => item.category === "permitted_public_grounded_generation").length;
   assert(generationCases === 12, "Evaluation dataset must contain exactly 12 generation cases.");
   const projectedCostUsd = generationCases * (WORST_GENERATION_USD + WORST_EMBEDDING_USD);
-  assert(projectedCostUsd <= ENGINEERING_TARGET_USD && projectedCostUsd < MAXIMUM_COST_USD, "Projected provider cost exceeds the authorized boundary.");
-  return Object.freeze({ dataset, projectedCostUsd });
+  const conservativeCumulativeMaximumUsd =
+    PRIOR_RESERVED_COST_USD +
+    DIAGNOSTIC_WORST_CASE_COST_USD +
+    projectedCostUsd;
+  assert(projectedCostUsd <= ENGINEERING_TARGET_USD, "Projected final-evaluation provider cost exceeds the engineering target.");
+  assert(conservativeCumulativeMaximumUsd <= MAXIMUM_COST_USD, "Projected cumulative provider cost exceeds the authorized boundary.");
+  return Object.freeze({ dataset, projectedCostUsd, conservativeCumulativeMaximumUsd });
 }
 
 function loadCorpus() {
@@ -134,7 +141,16 @@ async function verifyPreview(credential, target, locked) {
     stylesheetsPassed += 1;
   }
 
+  let generationRequestIndex = 0;
   for (const fixture of locked.dataset.cases) {
+    if (fixture.category === "permitted_public_grounded_generation") {
+      generationRequestIndex += 1;
+      const beforeRequestMaximumUsd =
+        PRIOR_RESERVED_COST_USD +
+        target.diagnosticCostUsd +
+        generationRequestIndex * (WORST_GENERATION_USD + WORST_EMBEDDING_USD);
+      assert(beforeRequestMaximumUsd <= MAXIMUM_COST_USD, `Case ${fixture.id} would exceed the cumulative owner ceiling.`);
+    }
     const response = await request(credential, target.deploymentUrl, "/api/teoyube/preview-grounded-live-ai", {
       method: "POST",
       headers: { "content-type": "application/json", origin: target.deploymentUrl },
@@ -177,14 +193,23 @@ async function verifyPreview(credential, target, locked) {
   }
 
   assert(aggregateCalls.generation === 12, "Generation attempt count was not exactly 12.");
-  assert(cumulativeCostUsd <= MAXIMUM_COST_USD, "Actual cumulative provider cost exceeded the owner ceiling.");
+  const cumulativeLiveAiCostUsd =
+    PRIOR_RESERVED_COST_USD + target.diagnosticCostUsd + cumulativeCostUsd;
+  assert(cumulativeLiveAiCostUsd <= MAXIMUM_COST_USD, "Actual cumulative provider cost exceeded the owner ceiling.");
   const mean = generationLatencies.reduce((sum, value) => sum + value, 0) / generationLatencies.length;
+  const p95 = percentile(generationLatencies, 0.95);
+  const maximum = Math.max(...generationLatencies);
+  assert(p95 <= 12_000, "p95 generation latency exceeded 12 seconds.");
+  assert(maximum <= 20_000, "Maximum generation latency exceeded 20 seconds.");
   return Object.freeze({
     authorizationId: locked.dataset.authorizationId,
     datasetVersion: locked.dataset.version,
     datasetCount: locked.dataset.cases.length,
     datasetSha256: DATASET_SHA256,
-    projectedMaximumCostUsd: locked.projectedCostUsd,
+    projectedFinalEvaluationMaximumCostUsd: locked.projectedCostUsd,
+    conservativeCumulativeMaximumCostUsd: locked.conservativeCumulativeMaximumUsd,
+    priorReservedCostUsd: PRIOR_RESERVED_COST_USD,
+    diagnosticCostUsd: target.diagnosticCostUsd,
     model: MODEL,
     modelIdentifierKind: "alias",
     responsesApi: "v1/responses",
@@ -212,8 +237,9 @@ async function verifyPreview(credential, target, locked) {
     }),
     providerCalls: Object.freeze(aggregateCalls),
     tokenUsage: Object.freeze(usage),
-    cumulativeCostUsd,
-    latencyMs: Object.freeze({ mean, p95: percentile(generationLatencies, 0.95), maximum: Math.max(...generationLatencies) }),
+    finalEvaluationCostUsd: cumulativeCostUsd,
+    cumulativeLiveAiCostUsd,
+    latencyMs: Object.freeze({ mean, p95, maximum }),
     outcomes: Object.freeze(outcomes),
     rawQueriesStored: false,
     rawResponsesStored: false,
@@ -227,10 +253,12 @@ async function main() {
     deploymentId: process.env.TEOYUBE_PREVIEW_DEPLOYMENT_ID,
     deploymentUrl: process.env.TEOYUBE_PREVIEW_DEPLOYMENT_URL,
     runtimeSha: process.env.TEOYUBE_PREVIEW_RUNTIME_SHA,
+    diagnosticCostUsd: Number(process.env.TEOYUBE_PREVIEW_DIAGNOSTIC_COST_USD),
   });
   assert(target.deploymentId && /^dpl_/.test(target.deploymentId), "Preview deployment ID is required.");
   assert(target.deploymentUrl && /^https:\/\//.test(target.deploymentUrl), "Preview deployment URL is required.");
   assert(target.runtimeSha && /^[a-f0-9]{40}$/.test(target.runtimeSha), "Preview runtime SHA is required.");
+  assert(Number.isFinite(target.diagnosticCostUsd) && target.diagnosticCostUsd >= 0 && target.diagnosticCostUsd <= DIAGNOSTIC_WORST_CASE_COST_USD, "A bounded sanitized diagnostic cost is required.");
   const locked = loadDataset();
   const lifecycle = await runSecretLifecycle(
     createVercelBypassAdapter(PROJECT),
@@ -258,7 +286,9 @@ async function main() {
     metrics: report.metrics,
     providerCalls: report.providerCalls,
     tokenUsage: report.tokenUsage,
-    cumulativeCostUsd: report.cumulativeCostUsd,
+    finalEvaluationCostUsd: report.finalEvaluationCostUsd,
+    cumulativeLiveAiCostUsd: report.cumulativeLiveAiCostUsd,
+    conservativeCumulativeMaximumCostUsd: report.conservativeCumulativeMaximumCostUsd,
     latencyMs: report.latencyMs,
     bypassCreated: report.bypassCreated,
     bypassRevoked: report.bypassRevoked,
@@ -278,6 +308,8 @@ module.exports = {
   DATASET_SHA256,
   ENGINEERING_TARGET_USD,
   MAXIMUM_COST_USD,
+  PRIOR_RESERVED_COST_USD,
+  DIAGNOSTIC_WORST_CASE_COST_USD,
   MODEL,
   PROJECT,
   bodyFor,

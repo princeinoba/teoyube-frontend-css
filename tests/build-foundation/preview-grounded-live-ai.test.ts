@@ -15,6 +15,8 @@ import {
   type PreviewGroundedProvider,
 } from "../../src/server/live-ai/preview-grounded-live-ai";
 import type { HybridRetrievalResult } from "../../src/domain/retrieval/retrieval-contracts";
+import { PreviewGroundedProviderFailure } from "../../src/server/live-ai/preview-grounded-provider-response";
+import type { PreviewGroundedReasonCode } from "../../src/server/live-ai/preview-grounded-diagnostics";
 import type { TigRecommendationResult } from "../../src/domain/tig/tig-service";
 import * as previewRoute from "../../src/app/api/teoyube/preview-grounded-live-ai/route";
 
@@ -29,6 +31,7 @@ function previewEnvironment(): NodeJS.ProcessEnv {
     NEXT_PUBLIC_TEOYUBE_APP_ENV: "preview",
     NEXT_PUBLIC_TEOYUBE_DEPLOYMENT_TARGET: "vercel-preview",
     TEOYUBE_ENABLE_PREVIEW_LIVE_AI_EVALUATION: "true",
+    TEOYUBE_ENABLE_PREVIEW_LIVE_AI_DIAGNOSTICS: "true",
     TEOYUBE_PREVIEW_LIVE_AI_MODEL: PREVIEW_GROUNDED_MODEL,
     TEOYUBE_ENABLE_EMBEDDINGS: "true",
     TEOYUBE_ENABLE_VECTOR_RETRIEVAL: "true",
@@ -118,12 +121,16 @@ function tig(): TigRecommendationResult {
   } as TigRecommendationResult;
 }
 
-function provider(events: string[], options: { unknownCitation?: boolean; quote?: boolean; inputFlagged?: boolean; outputFlagged?: boolean; unavailable?: boolean } = {}): PreviewGroundedProvider {
+function provider(events: string[], options: { unknownCitation?: boolean; emptyCitation?: boolean; quote?: boolean; unsafeTheology?: boolean; inputFlagged?: boolean; outputFlagged?: boolean; unavailable?: boolean; generationFailure?: PreviewGroundedProviderFailure } = {}): PreviewGroundedProvider {
   let moderationCalls = 0;
   return {
     async probeModel() { events.push("probe"); if (options.unavailable) throw new Error("approved_model_unavailable"); return PREVIEW_GROUNDED_MODEL; },
     async moderate() { moderationCalls += 1; events.push(moderationCalls === 1 ? "moderate-input" : "moderate-output"); return { flagged: moderationCalls === 1 ? Boolean(options.inputFlagged) : Boolean(options.outputFlagged) }; },
-    async generate() { events.push("generate"); return { modelIdentifier: PREVIEW_GROUNDED_MODEL, latencyMs: 5, usage: { inputTokens: 200, cachedInputTokens: 0, reasoningTokens: 20, outputTokens: 100, totalTokens: 300, estimatedCostUsd: 0.0016 }, response: { disposition: "answer", summary: options.quote ? "But if any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him." : "James presents asking God for wisdom as a humble response to need.", biblical_application: "This may support prayerful discernment alongside Scripture and wise counsel.", prayer: "Father, grant wisdom and humility as we seek to act faithfully.", action_step: "Read the passage in context and discuss one next step with wise counsel.", citation_ids: [options.unknownCitation ? "web:invented.1.1" : "web:james.1.5"], limitations: ["This is interpretation and application, not divine certainty."], confidence: "high", safety_boundary: "No personal outcome or calling is guaranteed." } }; },
+    async generate() {
+      events.push("generate");
+      if (options.generationFailure) throw options.generationFailure;
+      return { modelIdentifier: PREVIEW_GROUNDED_MODEL, latencyMs: 5, usage: { inputTokens: 200, cachedInputTokens: 0, reasoningTokens: 20, outputTokens: 100, totalTokens: 300, estimatedCostUsd: 0.0016 }, response: { disposition: "answer", summary: options.quote ? "But if any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him." : options.unsafeTheology ? "God told me that you must take this exact path." : "James presents asking God for wisdom as a humble response to need.", biblical_application: "This may support prayerful discernment alongside Scripture and wise counsel.", prayer: "Father, grant wisdom and humility as we seek to act faithfully.", action_step: "Read the passage in context and discuss one next step with wise counsel.", citation_ids: options.emptyCitation ? [] : [options.unknownCitation ? "web:invented.1.1" : "web:james.1.5"], limitations: ["This is interpretation and application, not divine certainty."], confidence: "high", safety_boundary: "No personal outcome or calling is guaranteed." } };
+    },
   };
 }
 
@@ -177,7 +184,7 @@ describe("grounded provider execution and validation", () => {
   async function run(options: Parameters<typeof provider>[1] = {}) {
     const events: string[] = [];
     const service = new PreviewGroundedLiveAiService({ environment: previewEnvironment(), provider: provider(events, options), retrieve: async () => { events.push("retrieve"); return retrieval(); }, tig: async () => { events.push("tig"); return tig(); }, ledger: new PreviewAuthorizationCostLedger() });
-    return { events, result: await service.run({ query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.", intent: "scripture", requiredCitationIds: ["web:james.1.5"] }) };
+    return { events, result: await service.run({ caseId: "public-james-wisdom", query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.", intent: "scripture", requiredCitationIds: ["web:james.1.5"] }) };
   }
 
   it("executes deterministic TIG, vector retrieval, model probe, moderation, no-tools generation, post-moderation, and exact WEB hydration in order", async () => {
@@ -215,7 +222,160 @@ describe("grounded provider execution and validation", () => {
     expect(ledger.totalCostUsd()).toBeLessThanOrEqual(PREVIEW_GROUNDED_LIMITS.authorizationCostCeilingUsd);
     expect(ledger.admitGeneration()).toBe(false);
   });
-});
+
+  it.each([
+    ["empty citation set", { emptyCitation: true }, "CITATION_EMPTY"],
+    ["citation outside retrieved evidence", { unknownCitation: true }, "CITATION_NOT_ALLOWED"],
+    ["theological validator rejection", { unsafeTheology: true }, "THEOLOGICAL_RULE_VIOLATION"],
+  ] as const)("emits the stable diagnostic code for %s", async (_label, options, code) => {
+    const { result } = await run(options);
+    expect(result.ok).toBe(false);
+    expect(result.diagnostic).toMatchObject({
+      fallbackReason: code,
+      providerCalled: true,
+      schemaValid: true,
+    });
+  });
+
+  function generatedFailure(
+    reasonCode: PreviewGroundedReasonCode,
+    overrides: Partial<PreviewGroundedProviderFailure["diagnostic"]> = {},
+  ): PreviewGroundedProviderFailure {
+    return new PreviewGroundedProviderFailure({
+      reasonCode,
+      providerCalled: true,
+      responseStatus: "api_error",
+      refusalPresent: false,
+      incompleteReason: "none",
+      schemaValid: false,
+      validatorRuleId: "SYNTHETIC_FAILURE",
+      inputTokens: 200,
+      outputTokens: 100,
+      reasoningTokens: 25,
+      totalTokens: 300,
+      outputSha256: "none",
+      ...overrides,
+    });
+  }
+
+  it.each([
+    ["OpenAI API error", generatedFailure("OPENAI_API_ERROR"), "OPENAI_API_ERROR", "GENERATION"],
+    ["OpenAI refusal", generatedFailure("OPENAI_REFUSAL", { responseStatus: "completed", refusalPresent: true, validatorRuleId: "OPENAI_REFUSAL_CONTENT" }), "OPENAI_REFUSAL", "OUTPUT_PARSING"],
+    ["max-output exhaustion", generatedFailure("OPENAI_INCOMPLETE_MAX_OUTPUT", { responseStatus: "incomplete", incompleteReason: "max_output_tokens", validatorRuleId: "OPENAI_MAX_OUTPUT_TOKENS" }), "OPENAI_INCOMPLETE_MAX_OUTPUT", "OUTPUT_PARSING"],
+    ["content-filter incomplete", generatedFailure("OPENAI_INCOMPLETE_CONTENT_FILTER", { responseStatus: "incomplete", incompleteReason: "content_filter", validatorRuleId: "OPENAI_CONTENT_FILTER" }), "OPENAI_INCOMPLETE_CONTENT_FILTER", "OUTPUT_PARSING"],
+    ["missing structured output", generatedFailure("STRUCTURED_OUTPUT_MISSING", { responseStatus: "completed", validatorRuleId: "OPENAI_OUTPUT_ARRAY_EMPTY" }), "STRUCTURED_OUTPUT_MISSING", "OUTPUT_PARSING"],
+    ["malformed structured output", generatedFailure("STRUCTURED_OUTPUT_SCHEMA_INVALID", { responseStatus: "completed", validatorRuleId: "ZOD_SCHEMA_FAILURE" }), "STRUCTURED_OUTPUT_SCHEMA_INVALID", "OUTPUT_PARSING"],
+    ["latency timeout", generatedFailure("LATENCY_TIMEOUT", { validatorRuleId: "OPENAI_TIMEOUT" }), "LATENCY_TIMEOUT", "GENERATION"],
+    ["unknown fallback", generatedFailure("UNKNOWN_FALLBACK", { validatorRuleId: "UNKNOWN_PROVIDER_ERROR" }), "UNKNOWN_FALLBACK", "GENERATION"],
+  ] as const)("reproduces the %s 422 path with a fake provider", async (_label, failureValue, code, stage) => {
+    const { result } = await run({ generationFailure: failureValue });
+    expect(result.ok).toBe(false);
+    expect(result.runtime).toBe("deterministic-fallback");
+    expect(result.diagnostic).toMatchObject({
+      fallbackReason: code,
+      pipelineStage: stage,
+      providerCalled: true,
+      schemaValid: false,
+    });
+    expect(JSON.stringify(result.diagnostic)).not.toContain("synthetic failure content");
+  });
+
+  it("classifies TIG execution and validation failures before retrieval or providers", async () => {
+    for (const tigDependency of [
+      async () => { throw new Error("synthetic TIG failure"); },
+      async () => ({ ...tig(), valid: false } as TigRecommendationResult),
+    ]) {
+      const events: string[] = [];
+      const service = new PreviewGroundedLiveAiService({
+        environment: previewEnvironment(),
+        provider: provider(events),
+        retrieve: async () => { events.push("retrieve"); return retrieval(); },
+        tig: tigDependency,
+        ledger: new PreviewAuthorizationCostLedger(),
+      });
+      const result = await service.run({
+        caseId: "public-james-wisdom",
+        query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.",
+        intent: "scripture",
+      });
+      expect(result.diagnostic).toMatchObject({
+        pipelineStage: "TIG",
+        fallbackReason: "TIG_VALIDATION_FAILURE",
+        providerCalled: false,
+      });
+      expect(events).toEqual([]);
+    }
+  });
+
+  it("distinguishes retrieval unavailable, insufficient evidence, missing citation, and exact WEB hydration failure", async () => {
+    const base = retrieval();
+    const wrongTranslation = {
+      ...base,
+      sources: base.sources.map((source) => ({
+        ...source,
+        canonicalReference: { ...citation, translationId: "synthetic-other" },
+        scriptureCitations: [{ ...citation, translationId: "synthetic-other" }],
+      })),
+    } as HybridRetrievalResult;
+    const scenarios: readonly Readonly<{
+      label: string;
+      retrieve: () => Promise<HybridRetrievalResult>;
+      requiredCitationIds?: readonly string[];
+      code: PreviewGroundedReasonCode;
+    }>[] = [
+      { label: "unavailable", retrieve: async () => { throw new Error("synthetic retrieval failure"); }, code: "RETRIEVAL_UNAVAILABLE" },
+      { label: "insufficient", retrieve: async () => ({ ...base, sources: Object.freeze([]) }), code: "RETRIEVAL_INSUFFICIENT_EVIDENCE" },
+      { label: "citation not retrieved", retrieve: async () => base, requiredCitationIds: ["web:romans.8.28"], code: "CITATION_NOT_RETRIEVED" },
+      { label: "exact WEB hydration", retrieve: async () => wrongTranslation, requiredCitationIds: ["web:james.1.5"], code: "EXACT_WEB_HYDRATION_FAILURE" },
+    ];
+    for (const scenario of scenarios) {
+      const events: string[] = [];
+      const service = new PreviewGroundedLiveAiService({
+        environment: previewEnvironment(),
+        provider: provider(events),
+        retrieve: scenario.retrieve,
+        tig: async () => tig(),
+        ledger: new PreviewAuthorizationCostLedger(),
+      });
+      const result = await service.run({
+        caseId: "public-james-wisdom",
+        query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.",
+        intent: "scripture",
+        requiredCitationIds: scenario.requiredCitationIds,
+      });
+      expect(result.ok, scenario.label).toBe(false);
+      expect(result.diagnostic, scenario.label).toMatchObject({
+        fallbackReason: scenario.code,
+        providerCalled: true,
+      });
+      expect(events).toEqual([]);
+    }
+  });
+
+  it("emits the cost circuit diagnostic before generation when attempts are exhausted", async () => {
+    const ledger = new PreviewAuthorizationCostLedger();
+    while (ledger.admitGeneration()) ledger.recordGeneration(0);
+    const events: string[] = [];
+    const service = new PreviewGroundedLiveAiService({
+      environment: previewEnvironment(),
+      provider: provider(events),
+      retrieve: async () => retrieval(),
+      tig: async () => tig(),
+      ledger,
+    });
+    const result = await service.run({
+      caseId: "public-james-wisdom",
+      query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.",
+      intent: "scripture",
+      requiredCitationIds: ["web:james.1.5"],
+    });
+    expect(result.diagnostic).toMatchObject({
+      pipelineStage: "GENERATION",
+      fallbackReason: "COST_CIRCUIT_OPEN",
+      providerCalled: true,
+    });
+    expect(events).toEqual(["probe", "moderate-input"]);
+  });});
 describe("Preview-only POST route boundary", () => {
   function request(body: unknown, origin = "https://preview.example") {
     process.env = { ...previewEnvironment() };

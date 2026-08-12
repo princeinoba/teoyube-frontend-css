@@ -3,7 +3,6 @@ import "server-only";
 import { createHash } from "node:crypto";
 import OpenAI from "openai";
 import {
-  parsePreviewGroundedResponse,
   PREVIEW_GROUNDED_RESPONSE_JSON_SCHEMA,
   PREVIEW_GROUNDED_RESPONSE_SCHEMA_VERSION,
   type PreviewGroundedResponse,
@@ -16,6 +15,19 @@ import { createDeterministicTeoGuideMessage } from "../../domain/teo-guide/teo-g
 import type { TigQueryIntent, TigRecommendationResult } from "../../domain/tig/tig-service";
 import { canonicalScriptureRepository } from "../scripture/canonical-scripture-repository";
 import { canonicalTigService } from "../tig/canonical-tig-service";
+import {
+  createPreviewGroundedDiagnosticEnvelope,
+  isPreviewGroundedDiagnosticsRuntime,
+  type PreviewGroundedDiagnosticEnvelope,
+  type PreviewGroundedDiagnosticState,
+  type PreviewGroundedReasonCode,
+} from "./preview-grounded-diagnostics";
+import {
+  parseOpenAiPreviewGroundedResponse,
+  PreviewGroundedProviderFailure,
+  providerFailureFromApiError,
+  type PreviewGroundedProviderDiagnostic,
+} from "./preview-grounded-provider-response";
 import {
   evaluateManagedVectorPreviewQueryPolicy,
   isManagedVectorPreviewRuntime,
@@ -136,6 +148,7 @@ export type PreviewProviderResult = Readonly<{
   modelIdentifier: string;
   usage: PreviewProviderUsage;
   latencyMs: number;
+  diagnostic?: PreviewGroundedProviderDiagnostic;
 }>;
 
 export interface PreviewGroundedProvider {
@@ -238,38 +251,46 @@ export class OpenAiPreviewGroundedProvider implements PreviewGroundedProvider {
     if (conservativeInputTokens > PREVIEW_GROUNDED_LIMITS.maximumInputTokens) {
       throw new Error("input_token_limit");
     }
-    const response = await this.#client.responses.create({
-      model: PREVIEW_GROUNDED_MODEL,
-      instructions: DEVELOPER_INSTRUCTIONS,
-      input: providerInput,
-      reasoning: { effort: "low" },
-      text: {
-        verbosity: "low",
-        format: {
-          type: "json_schema",
-          name: "teoyube_preview_grounded_response",
-          description:
-            "A concise Scripture-grounded response containing citation IDs but no Scripture quotation text.",
-          schema: PREVIEW_GROUNDED_RESPONSE_JSON_SCHEMA,
-          strict: true,
+    let response;
+    try {
+      response = await this.#client.responses.create({
+        model: PREVIEW_GROUNDED_MODEL,
+        instructions: DEVELOPER_INSTRUCTIONS,
+        input: providerInput,
+        reasoning: { effort: "low" },
+        text: {
+          verbosity: "low",
+          format: {
+            type: "json_schema",
+            name: "teoyube_preview_grounded_response",
+            description:
+              "A concise Scripture-grounded response containing citation IDs but no Scripture quotation text.",
+            schema: PREVIEW_GROUNDED_RESPONSE_JSON_SCHEMA,
+            strict: true,
+          },
         },
-      },
-      max_output_tokens: PREVIEW_GROUNDED_LIMITS.maximumOutputTokens,
-      store: false,
-      background: false,
-    });
-    if (response.status !== "completed" || !response.output_text) {
-      throw new Error("provider_response_incomplete");
+        max_output_tokens: PREVIEW_GROUNDED_LIMITS.maximumOutputTokens,
+        store: false,
+        background: false,
+      });
+    } catch (error) {
+      if (
+        error instanceof OpenAI.AuthenticationError ||
+        error instanceof OpenAI.NotFoundError
+      ) {
+        throw error;
+      }
+      throw providerFailureFromApiError(error);
     }
-    const parsed = parsePreviewGroundedResponse(JSON.parse(response.output_text));
+    const parsed = parseOpenAiPreviewGroundedResponse(response);
     const usage = response.usage;
     const inputTokens = usage?.input_tokens || 0;
     const cachedInputTokens = usage?.input_tokens_details?.cached_tokens || 0;
     const outputTokens = usage?.output_tokens || 0;
     const reasoningTokens = usage?.output_tokens_details?.reasoning_tokens || 0;
     return Object.freeze({
-      response: parsed,
-      modelIdentifier: response.model,
+      response: parsed.response,
+      modelIdentifier: parsed.modelIdentifier,
       usage: Object.freeze({
         inputTokens,
         cachedInputTokens,
@@ -279,6 +300,7 @@ export class OpenAiPreviewGroundedProvider implements PreviewGroundedProvider {
         estimatedCostUsd: usageCost(inputTokens, cachedInputTokens, outputTokens),
       }),
       latencyMs: Math.max(0, performance.now() - started),
+      diagnostic: parsed.diagnostic,
     });
   }
 }
@@ -369,6 +391,7 @@ export type PreviewGroundedServiceResult = Readonly<{
   latencyMs: number;
   cost: ReturnType<PreviewAuthorizationCostLedger["snapshot"]>;
   outputHash?: string;
+  diagnostic?: PreviewGroundedDiagnosticEnvelope;
 }>;
 
 function tigIntent(intent: string): TigQueryIntent {
@@ -444,6 +467,41 @@ function generatedText(response: PreviewGroundedResponse): string {
   ].join("\n");
 }
 
+function diagnosticFor(
+  environment: NodeJS.ProcessEnv,
+  state: PreviewGroundedDiagnosticState,
+): PreviewGroundedDiagnosticEnvelope | undefined {
+  return isPreviewGroundedDiagnosticsRuntime(environment)
+    ? createPreviewGroundedDiagnosticEnvelope(state)
+    : undefined;
+}
+
+function localReasonCode(
+  disposition: PreviewLocalDisposition,
+): PreviewGroundedReasonCode {
+  return disposition === "insufficient_evidence"
+    ? "RETRIEVAL_INSUFFICIENT_EVIDENCE"
+    : "PRE_PROVIDER_POLICY_REJECTION";
+}
+
+function theologicalRuleId(
+  validation: ReturnType<typeof validateSafetyResponse>,
+): string {
+  if (validation.prohibitedClaims[0]) {
+    return validation.prohibitedClaims[0].registryRuleId
+      .toUpperCase()
+      .replace(/[^A-Z0-9]+/g, "_");
+  }
+  if (validation.injectionFindings.length > 0) return "PROMPT_INJECTION_OUTPUT";
+  if (validation.unsafeResourceClaim) return "UNSAFE_RESOURCE_CLAIM";
+  if (validation.unauthorizedMemoryAction) return "UNAUTHORIZED_MEMORY_ACTION";
+  if (validation.unauthorizedToolAction) return "UNAUTHORIZED_TOOL_ACTION";
+  if (validation.missingUncertainty) return "MISSING_UNCERTAINTY";
+  if (validation.missingEscalation) return "MISSING_ESCALATION";
+  if (validation.unsafeFollowUpQuestion) return "UNSAFE_FOLLOW_UP";
+  if (validation.responseLimitReached) return "RESPONSE_LIMIT_REACHED";
+  return "UNKNOWN_THEOLOGICAL_RULE";
+}
 function deterministicFallback(query: string, reason: string, latencyMs: number, ledger: PreviewAuthorizationCostLedger): PreviewGroundedServiceResult {
   const fallback = createDeterministicTeoGuideMessage(query);
   return Object.freeze({
@@ -485,55 +543,223 @@ export class PreviewGroundedLiveAiService {
     this.#ledger = dependencies.ledger || previewAuthorizationCostLedger;
   }
 
-  async run(input: Readonly<{ query: string; intent: string; requiredCitationIds?: readonly string[] }>): Promise<PreviewGroundedServiceResult> {
+  async run(input: Readonly<{
+    caseId?: string;
+    query: string;
+    intent: string;
+    requiredCitationIds?: readonly string[];
+  }>): Promise<PreviewGroundedServiceResult> {
     const started = performance.now();
+    const caseId = input.caseId || "offline-fixture";
+    const fail = (
+      reason: string,
+      pipelineStage: PreviewGroundedDiagnosticState["pipelineStage"],
+      fallbackReason: PreviewGroundedReasonCode,
+      state: Partial<PreviewGroundedDiagnosticState> = {},
+    ): PreviewGroundedServiceResult => {
+      const latencyMs = Math.max(0, performance.now() - started);
+      const diagnostic = diagnosticFor(this.#environment, {
+        caseId,
+        pipelineStage,
+        fallbackReason,
+        latencyMs,
+        costUsd: this.#ledger.totalCostUsd(),
+        ...state,
+      });
+      return Object.freeze({
+        ...deterministicFallback(input.query, reason, latencyMs, this.#ledger),
+        ...(diagnostic ? { diagnostic } : {}),
+      });
+    };
+
     const localDisposition = classifyPreviewGroundedQuery(input.query);
     if (localDisposition !== "eligible") {
-      return deterministicFallback(input.query, localDisposition, performance.now() - started, this.#ledger);
+      return fail(
+        localDisposition,
+        "LOCAL_POLICY",
+        localReasonCode(localDisposition),
+        { validatorRuleId: localDisposition.toUpperCase() },
+      );
     }
     if (!isPreviewGroundedLiveAiRuntime(this.#environment)) {
-      return deterministicFallback(input.query, "runtime_disabled", performance.now() - started, this.#ledger);
+      return fail(
+        "runtime_disabled",
+        "REQUEST_VALIDATION",
+        "RUNTIME_DISABLED",
+        { validatorRuleId: "PREVIEW_RUNTIME_GUARD" },
+      );
     }
     const resolvedIntent = classifyTeoGuideIntent(input.query);
-    const tig = await this.#tig(input.query, tigIntent(input.intent || resolvedIntent));
+    let tig: TigRecommendationResult;
+    try {
+      tig = await this.#tig(
+        input.query,
+        tigIntent(input.intent || resolvedIntent),
+      );
+    } catch {
+      return fail(
+        "tig_validation_failed",
+        "TIG",
+        "TIG_VALIDATION_FAILURE",
+        { validatorRuleId: "TIG_EXECUTION_FAILURE" },
+      );
+    }
     if (!tig.valid || !tig.sourceValidation.valid) {
-      return deterministicFallback(input.query, "tig_validation_failed", performance.now() - started, this.#ledger);
+      return fail(
+        "tig_validation_failed",
+        "TIG",
+        "TIG_VALIDATION_FAILURE",
+        { validatorRuleId: "TIG_SOURCE_VALIDATION" },
+      );
     }
     if (!this.#ledger.admitEmbedding()) {
-      return deterministicFallback(input.query, "cost_ceiling", performance.now() - started, this.#ledger);
+      return fail("cost_ceiling", "RETRIEVAL", "COST_CIRCUIT_OPEN", {
+        validatorRuleId: "EMBEDDING_COST_CIRCUIT",
+      });
     }
-    const retrieval = await this.#retrieve(input.query, input.intent);
-    const evidence = await hydrateEvidence(retrieval);
+    let retrieval: HybridRetrievalResult;
+    try {
+      retrieval = await this.#retrieve(input.query, input.intent);
+    } catch {
+      return fail(
+        "retrieval_unavailable",
+        "RETRIEVAL",
+        "RETRIEVAL_UNAVAILABLE",
+        {
+          providerCalled: true,
+          validatorRuleId: "MANAGED_RETRIEVAL_FAILURE",
+        },
+      );
+    }
+    let evidence: readonly PreviewEvidence[];
+    try {
+      evidence = await hydrateEvidence(retrieval);
+    } catch {
+      return fail(
+        "insufficient_evidence",
+        "EVIDENCE_HYDRATION",
+        "EXACT_WEB_HYDRATION_FAILURE",
+        {
+          providerCalled: true,
+          retrievalResultCount: retrieval.sources.length,
+          validatorRuleId: "EXACT_WEB_HYDRATION_EXCEPTION",
+        },
+      );
+    }
     const evidenceIds = new Set(evidence.map((item) => item.id));
-    const requiredCitationIds = Object.freeze([...(input.requiredCitationIds || [])]);
-    if (!retrieval.queryDisposition.acceptedForRetrieval || evidence.length === 0 || requiredCitationIds.some((id) => !evidenceIds.has(id))) {
-      return deterministicFallback(input.query, "insufficient_evidence", performance.now() - started, this.#ledger);
+    const retrievedIds = new Set(
+      retrieval.sources.map((source) => source.documentId),
+    );
+    const requiredCitationIds = Object.freeze([
+      ...(input.requiredCitationIds || []),
+    ]);
+    const requiredNotRetrieved = requiredCitationIds.filter(
+      (id) => !retrievedIds.has(id),
+    );
+    const requiredNotHydrated = requiredCitationIds.filter(
+      (id) => retrievedIds.has(id) && !evidenceIds.has(id),
+    );
+    if (
+      !retrieval.queryDisposition.acceptedForRetrieval ||
+      evidence.length === 0 ||
+      requiredNotRetrieved.length > 0 ||
+      requiredNotHydrated.length > 0
+    ) {
+      const reasonCode = requiredNotHydrated.length > 0
+        ? "EXACT_WEB_HYDRATION_FAILURE"
+        : requiredNotRetrieved.length > 0
+          ? "CITATION_NOT_RETRIEVED"
+          : "RETRIEVAL_INSUFFICIENT_EVIDENCE";
+      return fail(
+        "insufficient_evidence",
+        "EVIDENCE_HYDRATION",
+        reasonCode,
+        {
+          providerCalled: true,
+          retrievalResultCount: retrieval.sources.length,
+          eligibleEvidenceCount: evidence.length,
+          unknownCitationCount:
+            requiredNotRetrieved.length + requiredNotHydrated.length,
+          validatorRuleId: reasonCode,
+        },
+      );
     }
-    const counts = { modelProbe: 0, inputModeration: 0, embedding: 1, vector: retrieval.pathsUsed.includes("vector") ? 1 : 0, generation: 0, outputModeration: 0 };
+    const counts = {
+      modelProbe: 0,
+      inputModeration: 0,
+      embedding: 1,
+      vector: retrieval.pathsUsed.includes("vector") ? 1 : 0,
+      generation: 0,
+      outputModeration: 0,
+    };
+    let stage: PreviewGroundedDiagnosticState["pipelineStage"] = "MODEL_PROBE";
     try {
       if (!this.#probed) {
+        counts.modelProbe = 1;
         await this.#provider.probeModel();
         this.#probed = true;
-        counts.modelProbe = 1;
       }
-      const inputModeration = await this.#provider.moderate(input.query);
+      stage = "INPUT_MODERATION";
       counts.inputModeration = 1;
+      const inputModeration = await this.#provider.moderate(input.query);
       if (inputModeration.flagged) {
-        return Object.freeze({ ...deterministicFallback(input.query, "input_moderation_blocked", performance.now() - started, this.#ledger), providerCalls: Object.freeze(counts) });
+        return Object.freeze({
+          ...fail(
+            "input_moderation_blocked",
+            stage,
+            "INPUT_MODERATION_REJECTION",
+            {
+              providerCalled: true,
+              moderationCalled: true,
+              retrievalResultCount: retrieval.sources.length,
+              eligibleEvidenceCount: evidence.length,
+              validatorRuleId: "INPUT_MODERATION_FLAGGED",
+            },
+          ),
+          providerCalls: Object.freeze(counts),
+        });
       }
       if (!this.#ledger.admitGeneration()) {
-        return Object.freeze({ ...deterministicFallback(input.query, "cost_ceiling", performance.now() - started, this.#ledger), providerCalls: Object.freeze(counts) });
+        return Object.freeze({
+          ...fail("cost_ceiling", "GENERATION", "COST_CIRCUIT_OPEN", {
+            providerCalled: true,
+            moderationCalled: true,
+            retrievalResultCount: retrieval.sources.length,
+            eligibleEvidenceCount: evidence.length,
+            validatorRuleId: "GENERATION_COST_CIRCUIT",
+          }),
+          providerCalls: Object.freeze(counts),
+        });
       }
-      const generated = await this.#provider.generate({ query: input.query, evidence, tig: tigSummary(tig), requiredCitationIds });
+      stage = "GENERATION";
       counts.generation = 1;
+      const generated = await this.#provider.generate({
+        query: input.query,
+        evidence,
+        tig: tigSummary(tig),
+        requiredCitationIds,
+      });
       this.#ledger.recordGeneration(generated.usage.estimatedCostUsd);
       const outputText = generatedText(generated.response);
-      const outputModeration = await this.#provider.moderate(outputText);
+      stage = "OUTPUT_MODERATION";
       counts.outputModeration = 1;
+      const outputModeration = await this.#provider.moderate(outputText);
       const allowed = new Set(evidence.map((item) => item.id));
-      const citationsValid = generated.response.citation_ids.length > 0
-        && generated.response.citation_ids.every((id) => allowed.has(id))
-        && requiredCitationIds.every((id) => generated.response.citation_ids.includes(id));
+      const responseCitationIds = generated.response.citation_ids;
+      const unknownCitationIds = responseCitationIds.filter(
+        (id) => !allowed.has(id),
+      );
+      const missingRequiredCitationIds = requiredCitationIds.filter(
+        (id) => !responseCitationIds.includes(id),
+      );
+      const citationReason = responseCitationIds.length === 0
+        ? "CITATION_EMPTY"
+        : unknownCitationIds.length > 0
+          ? "CITATION_NOT_ALLOWED"
+          : missingRequiredCitationIds.length > 0
+            ? "CITATION_NOT_RETRIEVED"
+            : undefined;
+      const citationsValid = citationReason === undefined;
       const safety = validateSafetyResponse({
         text: outputText,
         assessment: assessSafety(input.query),
@@ -542,11 +768,100 @@ export class PreviewGroundedLiveAiService {
         resourceSafeToDisplay: true,
         untrustedData: retrieval.sources.map((source) => source.content),
       });
-      if (outputModeration.flagged || !citationsValid || quotedScriptureGenerated(outputText, evidence) || !safety.valid) {
-        return Object.freeze({ ...deterministicFallback(input.query, outputModeration.flagged ? "output_moderation_blocked" : !citationsValid ? "citation_validation_failed" : quotedScriptureGenerated(outputText, evidence) ? "model_scripture_generation_blocked" : "post_generation_safety_failed", performance.now() - started, this.#ledger), providerCalls: Object.freeze(counts), usage: generated.usage, modelIdentifier: generated.modelIdentifier });
+      const providerDiagnostic = generated.diagnostic;
+      const commonDiagnostic = {
+        providerCalled: true,
+        moderationCalled: true,
+        retrievalResultCount: retrieval.sources.length,
+        eligibleEvidenceCount: evidence.length,
+        responseStatus: providerDiagnostic?.responseStatus || "completed",
+        refusalPresent: providerDiagnostic?.refusalPresent || false,
+        incompleteReason: providerDiagnostic?.incompleteReason || "none",
+        schemaValid: providerDiagnostic?.schemaValid ?? true,
+        citationCount: responseCitationIds.length,
+        unknownCitationCount:
+          unknownCitationIds.length + missingRequiredCitationIds.length,
+        inputTokens: generated.usage.inputTokens,
+        outputTokens: generated.usage.outputTokens,
+        reasoningTokens: generated.usage.reasoningTokens,
+        costUsd: this.#ledger.totalCostUsd(),
+        outputSha256: providerDiagnostic?.outputSha256 || "none",
+      } as const;
+      if (outputModeration.flagged) {
+        return Object.freeze({
+          ...fail(
+            "output_moderation_blocked",
+            stage,
+            "OUTPUT_MODERATION_REJECTION",
+            { ...commonDiagnostic, validatorRuleId: "OUTPUT_MODERATION_FLAGGED" },
+          ),
+          providerCalls: Object.freeze(counts),
+          usage: generated.usage,
+          modelIdentifier: generated.modelIdentifier,
+        });
       }
-      const cited = new Set(generated.response.citation_ids);
-      const citations = Object.freeze(evidence.filter((item) => cited.has(item.id)).map((item) => Object.freeze({ id: item.id, canonicalLabel: item.canonicalLabel, translation: item.translation, exactText: item.exactText })));
+      if (citationReason) {
+        return Object.freeze({
+          ...fail(
+            "citation_validation_failed",
+            "CITATION_VALIDATION",
+            citationReason,
+            { ...commonDiagnostic, validatorRuleId: citationReason },
+          ),
+          providerCalls: Object.freeze(counts),
+          usage: generated.usage,
+          modelIdentifier: generated.modelIdentifier,
+        });
+      }
+      if (quotedScriptureGenerated(outputText, evidence)) {
+        return Object.freeze({
+          ...fail(
+            "model_scripture_generation_blocked",
+            "THEOLOGICAL_VALIDATION",
+            "MODEL_SCRIPTURE_GENERATION_REJECTION",
+            { ...commonDiagnostic, validatorRuleId: "MODEL_AUTHORED_SCRIPTURE" },
+          ),
+          providerCalls: Object.freeze(counts),
+          usage: generated.usage,
+          modelIdentifier: generated.modelIdentifier,
+        });
+      }
+      if (!safety.valid) {
+        return Object.freeze({
+          ...fail(
+            "post_generation_safety_failed",
+            "THEOLOGICAL_VALIDATION",
+            "THEOLOGICAL_RULE_VIOLATION",
+            { ...commonDiagnostic, validatorRuleId: theologicalRuleId(safety) },
+          ),
+          providerCalls: Object.freeze(counts),
+          usage: generated.usage,
+          modelIdentifier: generated.modelIdentifier,
+        });
+      }
+      const cited = new Set(responseCitationIds);
+      const citations = Object.freeze(
+        evidence
+          .filter((item) => cited.has(item.id))
+          .map((item) => Object.freeze({
+            id: item.id,
+            canonicalLabel: item.canonicalLabel,
+            translation: item.translation,
+            exactText: item.exactText,
+          })),
+      );
+      const outputHash = createHash("sha256")
+        .update(JSON.stringify({ response: generated.response, citations }))
+        .digest("hex");
+      const diagnostic = diagnosticFor(this.#environment, {
+        caseId,
+        pipelineStage: "COMPLETED",
+        fallbackReason: "COMPLETED",
+        ...commonDiagnostic,
+        validatorRuleId: "NONE",
+        latencyMs: Math.max(0, performance.now() - started),
+        outputSha256: providerDiagnostic?.outputSha256 || outputHash,
+      });
       return Object.freeze({
         ok: true,
         disposition: generated.response.disposition,
@@ -562,7 +877,8 @@ export class PreviewGroundedLiveAiService {
         modelIdentifier: generated.modelIdentifier,
         latencyMs: Math.max(0, performance.now() - started),
         cost: this.#ledger.snapshot(),
-        outputHash: createHash("sha256").update(JSON.stringify({ response: generated.response, citations })).digest("hex"),
+        outputHash,
+        ...(diagnostic ? { diagnostic } : {}),
       });
     } catch (error) {
       const status = error instanceof OpenAI.AuthenticationError
@@ -571,9 +887,51 @@ export class PreviewGroundedLiveAiService {
           ? "approved_model_unavailable"
           : error instanceof Error && /approved_model|model.*mismatch/i.test(error.message)
             ? "approved_model_unavailable"
-            : "provider_failure";
-      if (status === "provider_authentication_failed" || status === "approved_model_unavailable") throw new Error(status);
-      return Object.freeze({ ...deterministicFallback(input.query, status, performance.now() - started, this.#ledger), providerCalls: Object.freeze(counts) });
+            : undefined;
+      if (status) throw new Error(status);
+      const providerFailure = error instanceof PreviewGroundedProviderFailure
+        ? error
+        : providerFailureFromApiError(error);
+      if (stage === "GENERATION") counts.generation = 1;
+      if (providerFailure.diagnostic.inputTokens > 0 || providerFailure.diagnostic.outputTokens > 0) {
+        this.#ledger.recordGeneration(
+          usageCost(
+            providerFailure.diagnostic.inputTokens,
+            0,
+            providerFailure.diagnostic.outputTokens,
+          ),
+        );
+      }
+      const failureStage = stage === "GENERATION" &&
+        providerFailure.diagnostic.responseStatus !== "api_error"
+        ? "OUTPUT_PARSING"
+        : stage;
+      return Object.freeze({
+        ...fail(
+          providerFailure.diagnostic.reasonCode.toLowerCase(),
+          failureStage,
+          providerFailure.diagnostic.reasonCode,
+          {
+            providerCalled: providerFailure.diagnostic.providerCalled,
+            moderationCalled: counts.inputModeration > 0,
+            retrievalResultCount: retrieval.sources.length,
+            eligibleEvidenceCount: evidence.length,
+            responseStatus: providerFailure.diagnostic.responseStatus,
+            refusalPresent: providerFailure.diagnostic.refusalPresent,
+            incompleteReason: providerFailure.diagnostic.incompleteReason,
+            schemaValid: providerFailure.diagnostic.schemaValid,
+            citationCount: 0,
+            unknownCitationCount: 0,
+            validatorRuleId: providerFailure.diagnostic.validatorRuleId,
+            inputTokens: providerFailure.diagnostic.inputTokens,
+            outputTokens: providerFailure.diagnostic.outputTokens,
+            reasoningTokens: providerFailure.diagnostic.reasoningTokens,
+            costUsd: this.#ledger.totalCostUsd(),
+            outputSha256: providerFailure.diagnostic.outputSha256,
+          },
+        ),
+        providerCalls: Object.freeze(counts),
+      });
     }
   }
 }
