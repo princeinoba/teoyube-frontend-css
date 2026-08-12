@@ -211,6 +211,41 @@ describe("grounded provider execution and validation", () => {
     expect(result.reason).toBe(reason);
   });
 
+  it("emits sanitized model-field provenance only in the exact Preview diagnostics runtime", async () => {
+    const preview = await run({ unsafeTheology: true });
+    expect(preview.result.diagnostic?.forbiddenClaimEvidence).toHaveLength(1);
+    expect(preview.result.diagnostic?.forbiddenClaimEvidence[0]).toMatchObject({
+      fieldProvenance: "MODEL_SUMMARY",
+      validationRuleId: "DIVINE_AUTHORITY_DIRECT",
+      matcherId: "SAFETY_REGISTRY_REGEX",
+      semanticContext: "PERSONAL_GUARANTEE",
+      runtimeValidatorResult: "FAIL",
+      evaluatorResult: "NOT_RUN",
+    });
+    const serialized = JSON.stringify(preview.result.diagnostic);
+    expect(serialized).not.toContain("God told me");
+    expect(serialized).not.toContain("must take this exact path");
+
+    const events: string[] = [];
+    const productionEnvironment = {
+      ...previewEnvironment(),
+      VERCEL_ENV: "production",
+    };
+    const service = new PreviewGroundedLiveAiService({
+      environment: productionEnvironment,
+      provider: provider(events, { unsafeTheology: true }),
+      retrieve: async () => retrieval(),
+      tig: async () => tig(),
+      ledger: new PreviewAuthorizationCostLedger(),
+    });
+    const production = await service.run({
+      caseId: "public-james-wisdom",
+      query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.",
+      intent: "scripture",
+    });
+    expect(production.diagnostic).toBeUndefined();
+    expect(production.providerCalls).toEqual({ modelProbe: 0, inputModeration: 0, embedding: 0, vector: 0, generation: 0, outputModeration: 0 });
+  });
   it("hard-stops when the approved Terra model is unavailable", async () => {
     await expect(run({ unavailable: true })).rejects.toThrow("approved_model_unavailable");
   });

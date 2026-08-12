@@ -23,6 +23,7 @@ import {
   type PreviewGroundedDiagnosticState,
   type PreviewGroundedReasonCode,
 } from "./preview-grounded-diagnostics";
+import { createPreviewGroundedForbiddenClaimEvidence } from "./preview-grounded-forbidden-claim-evidence";
 import {
   parseOpenAiPreviewGroundedResponse,
   PreviewGroundedProviderFailure,
@@ -829,12 +830,26 @@ export class PreviewGroundedLiveAiService {
         });
       }
       if (!safety.valid) {
+        const forbiddenClaimEvidence = isPreviewGroundedDiagnosticsRuntime(
+          this.#environment,
+        )
+          ? createPreviewGroundedForbiddenClaimEvidence(
+              generated.response,
+              safety.prohibitedClaims,
+            )
+          : undefined;
         return Object.freeze({
           ...fail(
             "post_generation_safety_failed",
             "THEOLOGICAL_VALIDATION",
             "THEOLOGICAL_RULE_VIOLATION",
-            { ...commonDiagnostic, validatorRuleId: theologicalRuleId(safety) },
+            {
+              ...commonDiagnostic,
+              validatorRuleId: theologicalRuleId(safety),
+              ...(forbiddenClaimEvidence
+                ? { forbiddenClaimEvidence }
+                : {}),
+            },
           ),
           providerCalls: Object.freeze(counts),
           usage: generated.usage,

@@ -68,6 +68,16 @@ function startServer(locked, behavior = {}) {
       response.end(JSON.stringify({ status: "ok", environment: "preview", deploymentTarget: "vercel-preview" }));
       return;
     }
+    if (request.method === "GET" && runner.ROUTES.includes(request.url)) {
+      response.setHeader("content-type", "text/html; charset=utf-8");
+      response.end("<!doctype html><title>Synthetic</title>");
+      return;
+    }
+    if (request.method === "GET" && runner.STYLESHEETS.includes(request.url)) {
+      response.setHeader("content-type", "text/css; charset=utf-8");
+      response.end("/* synthetic */");
+      return;
+    }
     if (request.method !== "POST") {
       response.writeHead(404).end();
       return;
@@ -205,7 +215,7 @@ async function main() {
   await fullSequenceProof(locked);
   await timeoutProof(locked);
   await failClosedProof(locked, { malformedCaseId: locked.dataset.cases[0].id }, "malformed", "MALFORMED_JSON_RESPONSE");
-  await failClosedProof(locked, { rejectCaseId: locked.dataset.cases[0].id }, "rejected", "UNEXPECTED_CASE_HTTP_STATUS");
+  await failClosedProof(locked, { rejectCaseId: locked.dataset.cases[0].id }, "rejected", "PROVIDER_FAILURE");
   const full = runner.readCheckpoint(checkpointPath("full"), runner.identity(locked, target((await (async () => "http://synthetic.invalid")())), runner.sourceHash()), locked);
   void full;
   const raw = JSON.parse(fs.readFileSync(runner.latestCheckpointFile(checkpointPath("full")), "utf8"));

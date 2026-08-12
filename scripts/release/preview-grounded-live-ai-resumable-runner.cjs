@@ -8,7 +8,7 @@ const {
   runControlledSecretLifecycle,
 } = require("./preview-bypass-lifecycle.cjs");
 
-const AUTHORIZATION_ID = "TEOYUBE-AUG21-LIVE-AI-VERIFIER-RESUME-2026-08-12-001";
+const AUTHORIZATION_ID = "TEOYUBE-AUG21-LIVE-AI-DIAGNOSTIC-422-ENVELOPE-2026-08-12-001";
 const PROJECT = Object.freeze({
   projectId: "prj_0hPdbIadmq39jUS3wQ56tMvXOvCm",
   scope: "princeinobas-projects",
@@ -19,19 +19,52 @@ const TARGET = Object.freeze({
   deploymentUrl: "https://teoyube-frontend-qr274lrod-princeinobas-projects.vercel.app",
   runtimeSha: "4a4928ceb849a476fcddfcd9630b7e609739016b",
 });
+
+function targetFromEnvironment(environment = process.env) {
+  const overrides = [
+    environment.TEOYUBE_PREVIEW_DEPLOYMENT_ID,
+    environment.TEOYUBE_PREVIEW_DEPLOYMENT_URL,
+    environment.TEOYUBE_PREVIEW_RUNTIME_SHA,
+  ];
+  if (overrides.every((value) => !value)) return TARGET;
+  assert(overrides.every((value) => typeof value === "string" && value.length > 0), "TARGET_OVERRIDE_INCOMPLETE");
+  const target = Object.freeze({
+    ...PROJECT,
+    deploymentId: overrides[0],
+    deploymentUrl: new URL(overrides[1]).origin,
+    runtimeSha: overrides[2],
+  });
+  assert(/^dpl_[A-Za-z0-9]+$/.test(target.deploymentId), "TARGET_DEPLOYMENT_ID_REJECTED");
+  assert(/^https:\/\/[^/]+\.vercel\.app$/.test(target.deploymentUrl), "TARGET_DEPLOYMENT_URL_REJECTED");
+  assert(/^[a-f0-9]{40}$/.test(target.runtimeSha), "TARGET_RUNTIME_SHA_REJECTED");
+  return target;
+}
 const DATASET_PATH = path.resolve("src/server/live-ai/evaluation/preview-grounded-live-ai-evaluation-v1.json");
 const DATASET_SHA256 = "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537";
 const MODEL = "gpt-5.6-terra";
 const MAXIMUM_COST_USD = 0.25;
-const SPENT_OR_RESERVED_BEFORE_RESUME_USD = 0.026314;
+const SPENT_OR_RESERVED_BEFORE_RESUME_USD = 0.087934;
 const WORST_PROVIDER_ELIGIBLE_CASE_USD = 0.01081;
 const MAXIMUM_REQUEST_MS = 30_000;
 const MAXIMUM_CASE_MS = 40_000;
-const MAXIMUM_RUNNER_MS = 700_000;
-const CHECKPOINT_PATH = path.resolve(".tmp/preview-grounded-live-ai/resumable-checkpoint.json");
-const FINAL_ARTIFACT_PATH = path.resolve(".tmp/preview-grounded-live-ai/final-canary.json");
+const MAXIMUM_RUNNER_MS = 900_000;
+const MAXIMUM_RESPONSE_BYTES = 262_144;
+const MAXIMUM_PARSER_MS = 250;
+const CHECKPOINT_PATH = path.resolve(".tmp/preview-grounded-live-ai/evidence-envelope-final-checkpoint.json");
+const FINAL_ARTIFACT_PATH = path.resolve(".tmp/preview-grounded-live-ai/evidence-envelope-final-canary.json");
 const PROVIDER_KEYS = Object.freeze(["modelProbe", "inputModeration", "embedding", "vector", "generation", "outputModeration"]);
 const TOKEN_KEYS = Object.freeze(["inputTokens", "cachedInputTokens", "reasoningTokens", "outputTokens", "totalTokens"]);
+const ROUTES = Object.freeze([
+  "/", "/search", "/canon", "/promise-table", "/calling-compass", "/book", "/lexicon",
+  "/testimony", "/teo-guide", "/embedded-videos", "/tables", "/prayer", "/journey",
+  "/journal", "/settings", "/privacy", "/consent", "/terms", "/profile",
+  "/personalization", "/daily-word", "/explore", "/promise-search",
+]);
+const STYLESHEETS = Object.freeze([
+  "/styles/legacy.css", "/styles/tokens.css", "/styles/reset.css", "/styles/base.css",
+  "/styles/layout.css", "/styles/components.css", "/styles/pages/index.css",
+  "/styles/utilities.css", "/styles/responsive.css",
+]);
 const CHECKPOINT_KEYS = Object.freeze(["authorizationId", "datasetVersion", "datasetSha256", "deploymentId", "testedRuntimeSha", "runnerSourceSha256", "modelIdentifier", "completedCaseIds", "caseEvidence"]);
 const EVIDENCE_KEYS = Object.freeze(["caseId", "lifecycleStage", "expectedDisposition", "actualDisposition", "diagnosticReasonCodes", "responseStatus", "providerCalls", "tokenUsage", "latencyMs", "costUsd", "citationIds", "outputHash", "evidenceOrigin"]);
 
@@ -251,22 +284,64 @@ function boundedSignal(parentSignal, milliseconds, timeoutCode) {
   return Object.freeze({ signal: controller.signal, timedOut: () => timeout, close() { clearTimeout(timer); if (parentSignal) parentSignal.removeEventListener("abort", parentAbort); } });
 }
 
-async function requestJson({ credential, deploymentUrl, route, options = {}, parentSignal, requestTimeoutMs = MAXIMUM_REQUEST_MS, fetchImpl = fetch, logger, caseId = "none", caseOrdinal = 0 }) {
+async function readBoundedResponseText(response, caseId) {
+  const declaredLength = Number(response.headers.get("content-length"));
+  if (Number.isFinite(declaredLength) && declaredLength > MAXIMUM_RESPONSE_BYTES) {
+    throw new RunnerFailure("OVERSIZED_RESPONSE", caseId, { httpStatus: response.status });
+  }
+  if (!response.body) return "";
+  const reader = response.body.getReader();
+  const chunks = [];
+  let byteLength = 0;
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      byteLength += value.byteLength;
+      if (byteLength > MAXIMUM_RESPONSE_BYTES) {
+        await reader.cancel();
+        throw new RunnerFailure("OVERSIZED_RESPONSE", caseId, { httpStatus: response.status });
+      }
+      chunks.push(value);
+    }
+  } finally {
+    reader.releaseLock();
+  }
+  const bytes = new Uint8Array(byteLength);
+  let offset = 0;
+  for (const chunk of chunks) {
+    bytes.set(chunk, offset);
+    offset += chunk.byteLength;
+  }
+  return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+}
+
+async function requestJson({ credential, deploymentUrl, route, options = {}, parentSignal, requestTimeoutMs = MAXIMUM_REQUEST_MS, parserTimeoutMs = MAXIMUM_PARSER_MS, fetchImpl = fetch, logger, caseId = "none", caseOrdinal = 0 }) {
   assert(Number.isFinite(requestTimeoutMs) && requestTimeoutMs > 0 && requestTimeoutMs <= MAXIMUM_REQUEST_MS, "REQUEST_TIMEOUT_BOUND_REJECTED", caseId);
+  assert(Number.isFinite(parserTimeoutMs) && parserTimeoutMs > 0 && parserTimeoutMs <= MAXIMUM_PARSER_MS, "PARSER_TIMEOUT_BOUND_REJECTED", caseId);
   const started = performance.now();
   const boundary = boundedSignal(parentSignal, requestTimeoutMs, "REQUEST_TIMEOUT");
   const headers = new Headers(options.headers || {});
   headers.set("x-vercel-protection-bypass", credential);
+  const redirect = options.redirect || "error";
+  assert(redirect === "error", "REDIRECT_MODE_REJECTED", caseId);
   let response;
   try {
     emitMarker(logger, { caseId, caseOrdinal, stage: "REQUEST_DISPATCH_STARTED" });
-    response = await fetchImpl(`${deploymentUrl}${route}`, { ...options, headers, redirect: "follow", signal: boundary.signal });
+    response = await fetchImpl(`${deploymentUrl}${route}`, { ...options, headers, redirect, signal: boundary.signal });
     emitMarker(logger, { caseId, caseOrdinal, stage: "RESPONSE_HEADERS_RECEIVED", httpStatus: response.status, elapsedMilliseconds: performance.now() - started });
+    if (response.status >= 300 && response.status < 400) throw new RunnerFailure("UNEXPECTED_REDIRECT_RESPONSE", caseId, { httpStatus: response.status });
+    if (response.status === 401 || response.status === 403) throw new RunnerFailure("TRANSPORT_OR_AUTH_FAILURE", caseId, { httpStatus: response.status });
+    if (response.status === 429 || response.status >= 500) throw new RunnerFailure("PROVIDER_FAILURE", caseId, { httpStatus: response.status });
+    const contentType = response.headers.get("content-type") || "";
+    assert(/^application\/(?:[a-z0-9.+-]*\+)?json(?:;|$)/i.test(contentType), "UNEXPECTED_CONTENT_TYPE", caseId, { httpStatus: response.status });
     emitMarker(logger, { caseId, caseOrdinal, stage: "RESPONSE_BODY_READ_STARTED", httpStatus: response.status, elapsedMilliseconds: performance.now() - started });
-    const text = await response.text();
+    const text = await readBoundedResponseText(response, caseId);
     emitMarker(logger, { caseId, caseOrdinal, stage: "RESPONSE_BODY_READ_COMPLETED", httpStatus: response.status, elapsedMilliseconds: performance.now() - started });
+    const parserStarted = performance.now();
     let body;
     try { body = JSON.parse(text); } catch { throw new RunnerFailure("MALFORMED_JSON_RESPONSE", caseId, { httpStatus: response.status }); }
+    if (performance.now() - parserStarted > parserTimeoutMs) throw new RunnerFailure("PARSER_TIMEOUT", caseId, { httpStatus: response.status });
     return Object.freeze({ status: response.status, body, elapsedMs: Math.max(0, performance.now() - started) });
   } catch (error) {
     if (error instanceof RunnerFailure) throw error;
@@ -281,6 +356,36 @@ async function requestJson({ credential, deploymentUrl, route, options = {}, par
   }
 }
 
+async function requestResource({ credential, deploymentUrl, route, expectedContentType, parentSignal, fetchImpl = fetch }) {
+  const boundary = boundedSignal(parentSignal, MAXIMUM_REQUEST_MS, "REQUEST_TIMEOUT");
+  const headers = new Headers({ "x-vercel-protection-bypass": credential });
+  let response;
+  try {
+    response = await fetchImpl(`${deploymentUrl}${route}`, { headers, redirect: "error", signal: boundary.signal });
+    assert(response.status === 200, "STATIC_SURFACE_HTTP_STATUS_FAILED", route, { httpStatus: response.status });
+    const contentType = (response.headers.get("content-type") || "").toLowerCase();
+    assert(contentType.includes(expectedContentType), "STATIC_SURFACE_CONTENT_TYPE_FAILED", route, { httpStatus: response.status });
+    return Object.freeze({ path: route, httpStatus: response.status });
+  } catch (error) {
+    if (error instanceof RunnerFailure) throw error;
+    if (boundary.timedOut()) throw new RunnerFailure("REQUEST_TIMEOUT", route);
+    throw new RunnerFailure("NETWORK_REQUEST_FAILURE", route);
+  } finally {
+    boundary.close();
+    if (response?.body && !response.bodyUsed) await response.body.cancel();
+  }
+}
+
+async function verifyStaticSurfaces(credential, target, signal, fetchImpl) {
+  const routes = [];
+  for (const route of ROUTES) routes.push(await requestResource({ credential, deploymentUrl: target.deploymentUrl, route, expectedContentType: "text/html", parentSignal: signal, fetchImpl }));
+  const stylesheets = [];
+  for (const route of STYLESHEETS) stylesheets.push(await requestResource({ credential, deploymentUrl: target.deploymentUrl, route, expectedContentType: "text/css", parentSignal: signal, fetchImpl }));
+  return Object.freeze({
+    routes: Object.freeze({ passed: routes.length, expected: ROUTES.length, evidenceOrigin: "CURRENT_EXACT_DEPLOYMENT" }),
+    stylesheets: Object.freeze({ passed: stylesheets.length, expected: STYLESHEETS.length, evidenceOrigin: "CURRENT_EXACT_DEPLOYMENT" }),
+  });
+}
 async function caseDeadline(caseId, parentSignal, operation, milliseconds = MAXIMUM_CASE_MS) {
   assert(Number.isFinite(milliseconds) && milliseconds > 0 && milliseconds <= MAXIMUM_CASE_MS, "CASE_TIMEOUT_BOUND_REJECTED", caseId);
   const boundary = boundedSignal(parentSignal, milliseconds, "CASE_TIMEOUT");
@@ -337,43 +442,29 @@ function projectedCost(attempts) {
   return roundUsd(SPENT_OR_RESERVED_BEFORE_RESUME_USD + attempts * WORST_PROVIDER_ELIGIBLE_CASE_USD);
 }
 
-function transient(response) {
-  const reason = response.body && typeof response.body.reason === "string" ? response.body.reason : "";
-  return (response.status === 429 || response.status >= 500) && !/auth|quota|billing|access|rate_limit|validation|refusal|schema|citation|moderation|theolog/i.test(reason);
-}
 
 async function runCase({ credential, target, fixture, ordinal, signal, corpus, logger, fetchImpl, requestTimeoutMs, caseTimeoutMs, state }) {
   return caseDeadline(fixture.id, signal, async (caseSignal) => {
-    const dispatch = async () => {
-      if (fixture.category === "permitted_public_grounded_generation") {
-        assert(projectedCost(state.providerEligibleAttempts + 1) <= MAXIMUM_COST_USD, "COST_CEILING_WOULD_BE_EXCEEDED", fixture.id);
-        state.providerEligibleAttempts += 1;
-      }
-      return requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/teoyube/preview-grounded-live-ai", options: { method: "POST", headers: { "content-type": "application/json", origin: target.deploymentUrl }, body: JSON.stringify(bodyFor(fixture)) }, parentSignal: caseSignal, requestTimeoutMs, fetchImpl, logger, caseId: fixture.id, caseOrdinal: ordinal });
-    };
-    let response;
-    try { response = await dispatch(); }
-    catch (error) {
-      if (error instanceof RunnerFailure && error.code === "NETWORK_REQUEST_FAILURE" && !state.retryUsed) { state.retryUsed = true; state.retryCaseId = fixture.id; state.retryReservedUsd = roundUsd(state.retryReservedUsd + WORST_PROVIDER_ELIGIBLE_CASE_USD); response = await dispatch(); }
-      else throw error;
+    if (fixture.category === "permitted_public_grounded_generation") {
+      assert(projectedCost(state.providerEligibleAttempts + 1) <= MAXIMUM_COST_USD, "COST_CEILING_WOULD_BE_EXCEEDED", fixture.id);
+      state.providerEligibleAttempts += 1;
     }
-    if (transient(response) && !state.retryUsed) { state.retryUsed = true; state.retryCaseId = fixture.id; state.retryReservedUsd = roundUsd(state.retryReservedUsd + WORST_PROVIDER_ELIGIBLE_CASE_USD); response = await dispatch(); }
+    const response = await requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/teoyube/preview-grounded-live-ai", options: { method: "POST", headers: { "content-type": "application/json", origin: target.deploymentUrl }, body: JSON.stringify(bodyFor(fixture)) }, parentSignal: caseSignal, requestTimeoutMs, fetchImpl, logger, caseId: fixture.id, caseOrdinal: ordinal });
     return validateResponse(fixture, ordinal, response, corpus);
   }, caseTimeoutMs);
 }
-
 function percentile(values, quantile) {
   if (!values.length) return 0;
   const ordered = [...values].sort((left, right) => left - right);
   return ordered[Math.max(0, Math.ceil(ordered.length * quantile) - 1)];
 }
 
-function aggregate(locked, target, checkpoint, health, state) {
+function aggregate(locked, target, checkpoint, health, state, surfaces) {
   const outcomes = checkpoint.completedCaseIds.map((caseId) => checkpoint.caseEvidence.find((item) => item.caseId === caseId && item.lifecycleStage === "CASE_COMPLETED"));
   assert(outcomes.length === 32 && outcomes.every(Boolean), "FINAL_OUTCOME_AGGREGATION_FAILED");
   const calls = Object.fromEntries(PROVIDER_KEYS.map((key) => [key, 0]));
   const usage = Object.fromEntries(TOKEN_KEYS.map((key) => [key, 0]));
-  let costUsd = state.retryReservedUsd;
+  let costUsd = 0;
   for (const outcome of outcomes) { for (const key of PROVIDER_KEYS) calls[key] += outcome.providerCalls[key]; for (const key of TOKEN_KEYS) usage[key] += outcome.tokenUsage[key]; costUsd += outcome.costUsd; }
   const generations = outcomes.filter((outcome) => outcome.providerCalls.generation === 1);
   assert(generations.length === 12 && calls.generation === 12, "FINAL_GENERATION_COUNT_FAILED");
@@ -385,9 +476,8 @@ function aggregate(locked, target, checkpoint, health, state) {
   costUsd = roundUsd(costUsd);
   const cumulativeLiveAiCostUsd = roundUsd(SPENT_OR_RESERVED_BEFORE_RESUME_USD + costUsd);
   assert(cumulativeLiveAiCostUsd <= MAXIMUM_COST_USD, "ACTUAL_CUMULATIVE_COST_EXCEEDED");
-  return Object.freeze({ authorizationId: AUTHORIZATION_ID, datasetVersion: locked.dataset.version, datasetCount: 32, datasetSha256: DATASET_SHA256, runnerSourceSha256: checkpoint.runnerSourceSha256, deploymentId: target.deploymentId, previewUrl: target.deploymentUrl, testedRuntimeSha: target.runtimeSha, model: MODEL, jamesEvidence: "CASE_RERUN", health, routes: Object.freeze({ passed: 23, expected: 23, evidenceOrigin: "PRIOR_EXACT_DEPLOYMENT_RESULT_REUSED" }), stylesheets: Object.freeze({ passed: 9, expected: 9, evidenceOrigin: "PRIOR_EXACT_DEPLOYMENT_RESULT_REUSED" }), lockedEvaluation: Object.freeze({ passed: 32, expected: 32 }), metrics: Object.freeze({ structuredOutputSchemaValidity: 1, citationIdsWithinEvidence: 1, exactWebQuotationAccuracy: 1, promptInjectionOverrideSuccesses: 0, privateSensitiveProviderCalls: 0, highStakesUnsafeGuidance: 0, highStakesProviderCalls: 0, inventedScriptureOrReferences: 0, unsupportedBiblicalClaims: 0, falseDivineCertaintyClaims: 0, productionProviderCalls: 0 }), providerCalls: Object.freeze(calls), tokenUsage: Object.freeze(usage), spentOrReservedBeforeResumeUsd: SPENT_OR_RESERVED_BEFORE_RESUME_USD, finalEvaluationCostUsd: costUsd, cumulativeLiveAiCostUsd, remainingAuthorizationUsd: roundUsd(MAXIMUM_COST_USD - cumulativeLiveAiCostUsd), projectedResumeMaximumCostUsd: locked.projectedResumeMaximumCostUsd, conservativeCumulativeMaximumCostUsd: locked.conservativeCumulativeMaximumCostUsd, latencyMs, globalRetryUsed: state.retryUsed, globalRetryCaseId: state.retryCaseId, outcomes: Object.freeze(outcomes), rawQueriesStored: false, rawResponsesStored: false, persisted: false });
+  return Object.freeze({ authorizationId: AUTHORIZATION_ID, datasetVersion: locked.dataset.version, datasetCount: 32, datasetSha256: DATASET_SHA256, runnerSourceSha256: checkpoint.runnerSourceSha256, deploymentId: target.deploymentId, previewUrl: target.deploymentUrl, testedRuntimeSha: target.runtimeSha, model: MODEL, jamesEvidence: "LOCKED_SEQUENTIAL_EVALUATION", health, routes: surfaces.routes, stylesheets: surfaces.stylesheets, lockedEvaluation: Object.freeze({ passed: 32, expected: 32 }), metrics: Object.freeze({ structuredOutputSchemaValidity: 1, citationIdsWithinEvidence: 1, exactWebQuotationAccuracy: 1, promptInjectionOverrideSuccesses: 0, privateSensitiveProviderCalls: 0, highStakesUnsafeGuidance: 0, highStakesProviderCalls: 0, inventedScriptureOrReferences: 0, unsupportedBiblicalClaims: 0, falseDivineCertaintyClaims: 0, productionProviderCalls: 0 }), providerCalls: Object.freeze(calls), tokenUsage: Object.freeze(usage), spentOrReservedBeforeResumeUsd: SPENT_OR_RESERVED_BEFORE_RESUME_USD, finalEvaluationCostUsd: costUsd, cumulativeLiveAiCostUsd, remainingAuthorizationUsd: roundUsd(MAXIMUM_COST_USD - cumulativeLiveAiCostUsd), projectedResumeMaximumCostUsd: locked.projectedResumeMaximumCostUsd, conservativeCumulativeMaximumCostUsd: locked.conservativeCumulativeMaximumCostUsd, latencyMs, globalRetryUsed: false, globalRetryCaseId: "none", outcomes: Object.freeze(outcomes), rawQueriesStored: false, rawResponsesStored: false, persisted: false });
 }
-
 async function verifyPreview(credential, target, locked, options = {}) {
   const signal = options.signal || new AbortController().signal;
   const runnerHash = options.runnerSourceSha256 || sourceHash();
@@ -398,10 +488,11 @@ async function verifyPreview(credential, target, locked, options = {}) {
   const requestTimeoutMs = options.requestTimeoutMs || MAXIMUM_REQUEST_MS;
   const caseTimeoutMs = options.caseTimeoutMs || MAXIMUM_CASE_MS;
   const corpus = options.corpus || loadCorpus();
-  const state = { providerEligibleAttempts: checkpoint.caseEvidence.filter((item) => item.lifecycleStage === "CASE_COMPLETED" && item.providerCalls.generation === 1).length, retryUsed: false, retryCaseId: "none", retryReservedUsd: 0 };
+  const state = { providerEligibleAttempts: checkpoint.caseEvidence.filter((item) => item.lifecycleStage === "CASE_COMPLETED" && item.providerCalls.generation === 1).length };
   const healthResponse = await requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/health", parentSignal: signal, requestTimeoutMs, fetchImpl, logger });
   assert(healthResponse.status === 200 && healthResponse.body.status === "ok" && healthResponse.body.environment === "preview" && healthResponse.body.deploymentTarget === "vercel-preview", "HEALTH_IDENTITY_FAILED");
   const health = Object.freeze({ status: "PASS", identity: "preview/vercel-preview", httpStatus: 200 });
+  const surfaces = await verifyStaticSurfaces(credential, target, signal, fetchImpl);
   for (let index = checkpoint.completedCaseIds.length; index < locked.dataset.cases.length; index += 1) {
     const fixture = locked.dataset.cases[index];
     const ordinal = index + 1;
@@ -414,18 +505,18 @@ async function verifyPreview(credential, target, locked, options = {}) {
     writeAtomic(checkpointPath, checkpoint, true);
     emitMarker(logger, { caseId: fixture.id, caseOrdinal: ordinal, stage: "CHECKPOINT_CASE_COMPLETED", httpStatus: evidence.responseStatus, elapsedMilliseconds: evidence.latencyMs, providerCallCounts: evidence.providerCalls, tokenCounts: evidence.tokenUsage, costUsd: evidence.costUsd, diagnosticReasonCode: evidence.diagnosticReasonCodes[0] });
   }
-  return aggregate(locked, target, checkpoint, health, state);
+  return aggregate(locked, target, checkpoint, health, state, surfaces);
 }
-
 async function main() {
   const locked = loadDataset();
+  const target = targetFromEnvironment();
   const runnerSourceSha256 = sourceHash();
-  const initialCheckpoint = readCheckpoint(CHECKPOINT_PATH, identity(locked, TARGET, runnerSourceSha256), locked);
+  const initialCheckpoint = readCheckpoint(CHECKPOINT_PATH, identity(locked, target, runnerSourceSha256), locked);
   const logger = (marker) => process.stdout.write(`${JSON.stringify(marker)}\n`);
-  const lifecycle = await runControlledSecretLifecycle(createVercelBypassAdapter(PROJECT), (credential, signal) => verifyPreview(credential, TARGET, locked, { signal, initialCheckpoint, runnerSourceSha256, logger }), { deadlineMs: MAXIMUM_RUNNER_MS, onStage: (stage) => emitMarker(logger, { stage }) });
+  const lifecycle = await runControlledSecretLifecycle(createVercelBypassAdapter(PROJECT), (credential, signal) => verifyPreview(credential, target, locked, { signal, initialCheckpoint, runnerSourceSha256, logger }), { deadlineMs: MAXIMUM_RUNNER_MS, onStage: (stage) => emitMarker(logger, { stage }) });
   const report = Object.freeze({ ...lifecycle.verification, bypassCreated: 1, bypassRevoked: 1, revocationAttempts: lifecycle.cleanup.attempts, finalActiveBypassCount: lifecycle.cleanup.activeCount });
   writeAtomic(FINAL_ARTIFACT_PATH, report);
   process.stdout.write(`${JSON.stringify({ authorizationId: report.authorizationId, datasetSha256: report.datasetSha256, runnerSourceSha256: report.runnerSourceSha256, deploymentId: report.deploymentId, testedRuntimeSha: report.testedRuntimeSha, lockedEvaluation: report.lockedEvaluation, health: report.health, metrics: report.metrics, providerCalls: report.providerCalls, tokenUsage: report.tokenUsage, cumulativeLiveAiCostUsd: report.cumulativeLiveAiCostUsd, remainingAuthorizationUsd: report.remainingAuthorizationUsd, latencyMs: report.latencyMs, bypassCreated: report.bypassCreated, bypassRevoked: report.bypassRevoked, finalActiveBypassCount: report.finalActiveBypassCount }, null, 2)}\n`);
 }
 
-module.exports = { AUTHORIZATION_ID, CHECKPOINT_PATH, DATASET_PATH, DATASET_SHA256, FINAL_ARTIFACT_PATH, MAXIMUM_CASE_MS, MAXIMUM_COST_USD, MAXIMUM_REQUEST_MS, MAXIMUM_RUNNER_MS, MODEL, PROJECT, RunnerFailure, SPENT_OR_RESERVED_BEFORE_RESUME_USD, TARGET, WORST_PROVIDER_ELIGIBLE_CASE_USD, bodyFor, emitMarker, identity, latestCheckpointFile, loadDataset, main, providerCounts, readCheckpoint, requestJson, sanitizedCheckpoint, sourceHash, tokenCounts, validateResponse, verifyPreview, writeAtomic };
+module.exports = { AUTHORIZATION_ID, CHECKPOINT_PATH, DATASET_PATH, DATASET_SHA256, FINAL_ARTIFACT_PATH, MAXIMUM_CASE_MS, MAXIMUM_COST_USD, MAXIMUM_PARSER_MS, MAXIMUM_REQUEST_MS, MAXIMUM_RESPONSE_BYTES, MAXIMUM_RUNNER_MS, MODEL, PROJECT, ROUTES, RunnerFailure, SPENT_OR_RESERVED_BEFORE_RESUME_USD, STYLESHEETS, TARGET, WORST_PROVIDER_ELIGIBLE_CASE_USD, bodyFor, emitMarker, identity, latestCheckpointFile, loadDataset, main, providerCounts, readCheckpoint, requestJson, sanitizedCheckpoint, sourceHash, targetFromEnvironment, tokenCounts, validateResponse, verifyPreview, writeAtomic };

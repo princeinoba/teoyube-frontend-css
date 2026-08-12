@@ -73,6 +73,50 @@ export type PreviewGroundedIncompleteReason =
   (typeof PREVIEW_GROUNDED_INCOMPLETE_REASONS)[number];
 
 const finiteNonnegative = z.number().finite().nonnegative();
+const previewGroundedForbiddenClaimEvidenceSchema = z.object({
+  fieldProvenance: z.enum([
+    "MODEL_SUMMARY",
+    "MODEL_BIBLICAL_APPLICATION",
+    "MODEL_PRAYER",
+    "MODEL_ACTION_STEP",
+    "MODEL_LIMITATIONS",
+    "SERVER_FIXED_UNCERTAINTY",
+  ]),
+  validationRuleId: z.string().regex(/^[A-Z0-9_]{1,96}$/),
+  matcherId: z.literal("SAFETY_REGISTRY_REGEX"),
+  matchCount: z.number().int().positive().max(16),
+  characterStart: z.number().int().nonnegative(),
+  characterEnd: z.number().int().positive(),
+  matchLength: z.number().int().positive(),
+  fieldLength: z.number().int().positive(),
+  normalizedMatchSha256: z.string().regex(/^[a-f0-9]{64}$/),
+  semanticContext: z.enum([
+    "SERVER_FIXED_BOUNDARY",
+    "MODEL_AUTHORED_ASSERTION",
+    "PERSONAL_GUARANTEE",
+    "FUTURE_CERTAINTY",
+  ]),
+  providerCallCountClassification: z.literal(
+    "EMBEDDING_VECTOR_GENERATION_AND_MODERATION",
+  ),
+  runtimeValidatorResult: z.literal("FAIL"),
+  evaluatorResult: z.literal("NOT_RUN"),
+}).strict().superRefine((value, context) => {
+  if (
+    value.characterEnd <= value.characterStart ||
+    value.matchLength !== value.characterEnd - value.characterStart ||
+    value.characterEnd > value.fieldLength
+  ) {
+    context.addIssue({
+      code: "custom",
+      message: "Forbidden-claim evidence offsets are inconsistent.",
+    });
+  }
+});
+
+export type PreviewGroundedForbiddenClaimEvidence = Readonly<
+  z.infer<typeof previewGroundedForbiddenClaimEvidenceSchema>
+>;
 
 export const previewGroundedDiagnosticEnvelopeSchema = z.object({
   caseId: z.string().regex(/^[a-z0-9-]{1,96}$/),
@@ -95,6 +139,9 @@ export const previewGroundedDiagnosticEnvelopeSchema = z.object({
   latencyMs: finiteNonnegative,
   costUsd: finiteNonnegative,
   outputSha256: z.string().regex(/^(?:[a-f0-9]{64}|none)$/),
+  forbiddenClaimEvidence: z.array(
+    previewGroundedForbiddenClaimEvidenceSchema,
+  ).max(16),
 }).strict();
 
 export type PreviewGroundedDiagnosticEnvelope = Readonly<
@@ -122,6 +169,7 @@ export type PreviewGroundedDiagnosticState = Readonly<{
   latencyMs?: number;
   costUsd?: number;
   outputSha256?: string;
+  forbiddenClaimEvidence?: readonly PreviewGroundedForbiddenClaimEvidence[];
 }>;
 
 export function createPreviewGroundedDiagnosticEnvelope(
@@ -148,6 +196,7 @@ export function createPreviewGroundedDiagnosticEnvelope(
     latencyMs: state.latencyMs || 0,
     costUsd: state.costUsd || 0,
     outputSha256: state.outputSha256 || "none",
+    forbiddenClaimEvidence: state.forbiddenClaimEvidence || [],
   }));
 }
 

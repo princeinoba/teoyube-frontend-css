@@ -249,7 +249,7 @@ describe("sanitized diagnostic envelope", () => {
     });
     const keys = Object.keys(envelope).sort();
     expect(keys).toEqual([
-      "caseId", "citationCount", "costUsd", "eligibleEvidenceCount",
+      "caseId", "citationCount", "costUsd", "eligibleEvidenceCount", "forbiddenClaimEvidence",
       "fallbackReason", "incompleteReason", "inputTokens", "latencyMs",
       "moderationCalled", "outputSha256", "outputTokens", "pipelineStage",
       "providerCalled", "reasoningTokens", "refusalPresent",
@@ -264,6 +264,38 @@ describe("sanitized diagnostic envelope", () => {
     expect(() => previewGroundedDiagnosticEnvelopeSchema.parse({
       ...envelope,
       query: "synthetic secret query",
+    })).toThrow();
+  });
+
+  it("accepts only bounded sanitized forbidden-claim evidence", () => {
+    const envelope = createPreviewGroundedDiagnosticEnvelope({
+      caseId: "public-james-wisdom",
+      pipelineStage: "THEOLOGICAL_VALIDATION",
+      fallbackReason: "THEOLOGICAL_RULE_VIOLATION",
+      forbiddenClaimEvidence: [{
+        fieldProvenance: "MODEL_SUMMARY",
+        validationRuleId: "GUARANTEED_OUTCOME",
+        matcherId: "SAFETY_REGISTRY_REGEX",
+        matchCount: 1,
+        characterStart: 8,
+        characterEnd: 18,
+        matchLength: 10,
+        fieldLength: 24,
+        normalizedMatchSha256: "a".repeat(64),
+        semanticContext: "FUTURE_CERTAINTY",
+        providerCallCountClassification: "EMBEDDING_VECTOR_GENERATION_AND_MODERATION",
+        runtimeValidatorResult: "FAIL",
+        evaluatorResult: "NOT_RUN",
+      }],
+    });
+    expect(envelope.forbiddenClaimEvidence).toHaveLength(1);
+    expect(JSON.stringify(envelope)).not.toContain("guaranteed");
+    expect(() => previewGroundedDiagnosticEnvelopeSchema.parse({
+      ...envelope,
+      forbiddenClaimEvidence: [{
+        ...envelope.forbiddenClaimEvidence[0],
+        rawResponseText: "forbidden",
+      }],
     })).toThrow();
   });
 });
