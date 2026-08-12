@@ -43,12 +43,17 @@ describe("Preview bypass project API parser", () => {
     expect(await adapter.activeCount()).toBe(0);
     expect(calls.some((call) => call.endpoint === "/v9/projects/prj_synthetic")).toBe(true);
   });
-  it("never places a credential in Vercel command arguments", () => {
+  it("never places a credential in Vercel command arguments and bounds the child process", () => {
     let observedArgs: string[] = [];
     let observedInput = "";
-    lifecycle.runVercelApi({ endpoint: "/v1/projects/prj_synthetic/protection-bypass", method: "PATCH", body: { revoke: { secret: fakeCredential, regenerate: false } }, scope: "team_synthetic", platform: "win32", spawn(_executable: string, args: string[], options: { input?: string }) { observedArgs = args; observedInput = options.input || ""; return { status: 0, stdout: "{}" }; } });
+    let observedTimeout = 0;
+    lifecycle.runVercelApi({ endpoint: "/v1/projects/prj_synthetic/protection-bypass", method: "PATCH", body: { revoke: { secret: fakeCredential, regenerate: false } }, scope: "team_synthetic", platform: "win32", spawn(_executable: string, args: string[], options: { input?: string; timeout?: number }) { observedArgs = args; observedInput = options.input || ""; observedTimeout = options.timeout || 0; return { status: 0, stdout: "{}" }; } });
     expect(observedArgs.join(" ")).not.toContain(fakeCredential);
     expect(observedInput).toContain(fakeCredential);
+    expect(observedTimeout).toBe(10_000);
+  });
+  it("fails closed when the authenticated Vercel child process times out", () => {
+    expect(() => lifecycle.runVercelApi({ endpoint: "/v9/projects/prj_synthetic", scope: "team_synthetic", platform: "win32", spawn() { return { status: null, stdout: "", error: { code: "ETIMEDOUT" } }; } })).toThrow("timed out");
   });
 });
 
