@@ -4,7 +4,7 @@ const { spawnSync } = require("node:child_process");
 
 const AUTOMATION_SCOPE = "automation-bypass";
 const REDACTED = "[REDACTED]";
-const VERCEL_API_TIMEOUT_MS = 10_000;
+const VERCEL_API_TIMEOUT_MS = 20_000;
 
 function emitStage(onStage, stage) {
   if (typeof onStage === "function") onStage(stage);
