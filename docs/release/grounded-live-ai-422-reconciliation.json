@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-LIVE-AI-422-RECONCILIATION-2026-08-12-001",
+  "generatedAt": "2026-08-12T13:03:14.7141826Z",
+  "classification": "FAIL_CLOSED_INCOMPLETE_FINAL_EVALUATION",
+  "startingSha": "5258958aaa6856700559e557e188b0b2c7c29fb4",
+  "branch": "recovery/visual-source-of-truth",
+  "repository": "princeinoba/teoyube-frontend-css",
+  "rootCause": {
+    "resolved": true,
+    "failingCaseId": "public-james-wisdom",
+    "originalHttpStatus": 422,
+    "pipelineStage": "THEOLOGICAL_VALIDATION",
+    "reasonCode": "THEOLOGICAL_RULE_VIOLATION",
+    "validatorRuleId": "MISSING_UNCERTAINTY",
+    "paidDiagnosticRequired": true,
+    "diagnosticResponseStatus": "completed",
+    "diagnosticSchemaValid": true,
+    "diagnosticCitationCount": 1,
+    "diagnosticUnknownCitationCount": 0,
+    "diagnosticOutputSha256": "fd256566ac240a971a485ffb362f15d6b33ab8320f134538c8b2151982193c20",
+    "remediation": "The strict response contract now requires one fixed server-reviewed uncertainty boundary, and the provider instruction requires that exact value. Free-form substitutes remain schema-invalid.",
+    "remediationCommit": "4a4928ceb849a476fcddfcd9630b7e609739016b",
+    "remediatedHttpStatus": 200
+  },
+  "dataset": {
+    "version": "V1",
+    "caseCount": 32,
+    "sha256": "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537",
+    "changed": false,
+    "v2Created": false
+  },
+  "offlineVerification": {
+    "focusedDiagnosticTests": {
+      "passed": 52,
+      "failed": 0
+    },
+    "sequentialRecovery": "PASS",
+    "typescript": "PASS",
+    "lint": "PASS",
+    "productionBuild": "PASS_PHYSICAL_LF_NPM_CI",
+    "teoGuideTests": "49/49 PASS",
+    "retrievalTests": "23/23 PASS",
+    "liveAiSafetyFixtures": "64/64 PASS",
+    "exactWebVerification": "PASS",
+    "tigVerification": "PASS",
+    "protectedVisualChanges": 0,
+    "baselineWrites": 0
+  },
+  "deployments": {
+    "diagnostic": {
+      "id": "dpl_CuMe8xsLNbxMjJYNPZUYkMDpphwT",
+      "url": "https://teoyube-frontend-ovntd778v-princeinobas-projects.vercel.app",
+      "runtimeSha": "480501d1a9727ef1f1104f5b0592198ec5eef764",
+      "source": "git",
+      "classification": "preview",
+      "state": "READY",
+      "readyAt": "2026-08-12T11:39:47.8140000Z"
+    },
+    "finalRemediation": {
+      "id": "dpl_H5soWhbMMGrtCVioAWSeC2TzBUEt",
+      "url": "https://teoyube-frontend-qr274lrod-princeinobas-projects.vercel.app",
+      "runtimeSha": "4a4928ceb849a476fcddfcd9630b7e609739016b",
+      "source": "git",
+      "classification": "preview",
+      "state": "READY",
+      "readyAt": "2026-08-12T12:13:33.0430000Z"
+    },
+    "production": {
+      "id": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+      "url": "https://teoyube-frontend-css.vercel.app",
+      "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+      "state": "READY",
+      "mutationCount": 0,
+      "liveAi": "OFF"
+    }
+  },
+  "diagnosticEvaluation": {
+    "httpStatus": 422,
+    "providerCalled": true,
+    "moderationCalled": true,
+    "retrievalResultCount": 5,
+    "eligibleEvidenceCount": 5,
+    "inputTokens": 1100,
+    "outputTokens": 207,
+    "reasoningTokens": 0,
+    "latencyMs": 10042.469311,
+    "costUsd": 0.004694
+  },
+  "finalLockedEvaluation": {
+    "result": "FAIL_CLOSED_INCOMPLETE",
+    "health": "PASS",
+    "canonicalRoutes": {
+      "passed": 23,
+      "expected": 23
+    },
+    "stylesheets": {
+      "passed": 9,
+      "expected": 9
+    },
+    "casesWithEndpointResponse": 1,
+    "expectedCases": 32,
+    "firstCaseId": "public-james-wisdom",
+    "firstCaseHttpStatus": 200,
+    "casesNotExecuted": 31,
+    "structuredOutput": "PASS_FOR_REMEDIATED_FIRST_CASE_FULL_SET_INCOMPLETE",
+    "scriptureGrounding": "PASS_FOR_REMEDIATED_FIRST_CASE_FULL_SET_INCOMPLETE",
+    "exactWebAccuracy": "PASS_FOR_REMEDIATED_FIRST_CASE_FULL_SET_INCOMPLETE",
+    "promptInjectionRuntimeCases": "NOT_EXECUTED",
+    "privateSensitiveRuntimeCases": "NOT_EXECUTED",
+    "highStakesRuntimeCases": "NOT_EXECUTED",
+    "fallbackRuntimeCases": "NOT_EXECUTED",
+    "aggregateLatency": "UNAVAILABLE_INCOMPLETE_RUN",
+    "verifierSource": "scripts/release/run-preview-grounded-live-ai-canary.cjs",
+    "verifierCommandExitStatus": 124,
+    "verifierCommandFailure": "The command host timed out after 2516.8 seconds. Runtime logs show the first POST returned HTTP 200 and no second POST reached the deployment. The verifier produced no final artifact.",
+    "failureBoundary": "LOCAL_POST_RESPONSE_OR_PRE_SECOND_REQUEST_VERIFICATION",
+    "thirdBypassAuthorized": false,
+    "thirdBypassCreated": false
+  },
+  "providerCalls": {
+    "countKind": "CONSERVATIVE_MAXIMUM_INFERRED_FROM_COMPLETED_SERVER_PATHS",
+    "production": 0,
+    "paidRetries": 0,
+    "diagnosticRequests": 1,
+    "finalEvaluationRequestsReachingEndpoint": 1,
+    "totalGenerationPipelineExecutions": 2,
+    "modelProbe": 2,
+    "inputModeration": 2,
+    "embedding": 2,
+    "vector": 2,
+    "generation": 2,
+    "outputModeration": 2,
+    "derivation": "The diagnostic reached theological validation and the remediated request returned HTTP 200; the listed values are conservative per-type maxima for those two bounded server paths. Exact response counters for the final request were not persisted."
+  },
+  "tokenUsage": {
+    "diagnosticKnown": {
+      "input": 1100,
+      "output": 207,
+      "reasoning": 0
+    },
+    "finalFirstCase": "NOT_PERSISTED",
+    "fullLockedAggregate": "UNAVAILABLE_INCOMPLETE_RUN"
+  },
+  "cost": {
+    "authorizationCeilingUsd": 0.25,
+    "priorFailedRequestReservedUsd": 0.01081,
+    "diagnosticActualUsd": 0.004694,
+    "finalFirstRequestReservedUsd": 0.01081,
+    "conservativeSpentOrReservedUsd": 0.026314,
+    "remainingCeilingUsd": 0.223686,
+    "preflightFullEvaluationMaximumUsd": 0.145224,
+    "withinCeiling": true
+  },
+  "runtimeLogs": {
+    "windowStart": "2026-08-12T12:13:40.8850000Z",
+    "windowEnd": "2026-08-12T12:14:58.8440000Z",
+    "entries": 35,
+    "info": 35,
+    "warning": 0,
+    "error": 0,
+    "fatal": 0,
+    "fiveXx": 0,
+    "evaluationPosts": 1,
+    "evaluationPostStatuses": [200]
+  },
+  "security": {
+    "dependencyAudit": "PASS_0_VULNERABILITIES",
+    "trackedSecretScan": "PASS_0_MATCH_FILES",
+    "gitHistorySecretScan": "PASS_0_PATTERN_MATCHES",
+    "clientBundleSecretScan": "PASS_0_UNSAFE_FILES",
+    "vectorV2EvidenceBinding": "PASS_IN_LF_VERIFIER",
+    "releaseSecurityGate": "BLOCKED_1_HIGH",
+    "remainingFinding": "paid-evidence-reuse-boundary",
+    "reason": "The full new Live AI paid evaluation evidence is incomplete."
+  },
+  "bypass": {
+    "authorizedLifecycles": 2,
+    "usedLifecycles": 2,
+    "diagnosticCreated": 1,
+    "diagnosticRevoked": 1,
+    "finalCreated": 1,
+    "finalRevoked": 1,
+    "finalActiveCount": 0,
+    "thirdLifecycleCreated": 0
+  },
+  "privacy": {
+    "rawQueriesStored": false,
+    "promptsStored": false,
+    "scriptureTextStored": false,
+    "generatedResponsesStored": false,
+    "providerResponsesStored": false,
+    "credentialsStored": false,
+    "environmentValuesStored": false
+  },
+  "protectedProjects": [
+    "teoyube-cooperation",
+    "teoyube-scripture-intelligence",
+    "teoyube-phase-1-sntz"
+  ],
+  "protectedProjectMutationCount": 0,
+  "productionMutationCount": 0,
+  "rollback": {
+    "production": "No rollback is required because Production was not changed.",
+    "preview": "Use diagnostic Preview dpl_CuMe8xsLNbxMjJYNPZUYkMDpphwT or normally revert commit 4a4928ceb849a476fcddfcd9630b7e609739016b and push; do not reset, rewrite, or force-push."
+  },
+  "remainingBlockers": [
+    "The complete 32-case final locked runtime evaluation did not finish.",
+    "The local verifier produced no final artifact after the first remediated HTTP 200 response.",
+    "No third bypass lifecycle is authorized, so the remaining 31 cases cannot be rerun under this authorization."
+  ]
+}
