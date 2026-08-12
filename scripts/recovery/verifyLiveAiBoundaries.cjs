@@ -6,9 +6,11 @@ const root = path.resolve(__dirname, "../..");
 const errors = [];
 const adapters = Object.freeze([
   "src/server/live-ai/openai-responses-adapter.ts",
+  "src/server/live-ai/preview-grounded-live-ai.ts",
   "src/server/retrieval/openai-embedding-gateway.ts"
 ]);
 const adapter = adapters[0];
+const previewGroundedAdapter = adapters[1];
 
 function read(relative) {
   const absolute = path.join(root, relative);
@@ -55,6 +57,34 @@ if (!adapterSource.includes("openAiOrganizationId") || !adapterSource.includes("
   errors.push("The official OpenAI client is not bound through the validated server-only organization setting.");
 }
 if (/baseURL\s*:|previous_response_id|background\s*:\s*true|web_search|file_search|code_interpreter|computer_use|mcp\b|shell\b/.test(adapterSource)) errors.push("The OpenAI adapter enables a prohibited provider-state or built-in-tool capability.");
+const previewGroundedSource = read(previewGroundedAdapter);
+for (const invariant of [
+  "isPreviewGroundedLiveAiRuntime",
+  "environment.VERCEL_ENV === \"preview\"",
+  "NEXT_PUBLIC_TEOYUBE_DEPLOYMENT_TARGET",
+  "TEOYUBE_ENABLE_PREVIEW_LIVE_AI_EVALUATION",
+  "TEOYUBE_PREVIEW_LIVE_AI_MODEL",
+  "gpt-5.6-terra",
+  "responses.create",
+  "store: false",
+  "strict: true",
+  "max_output_tokens: PREVIEW_GROUNDED_LIMITS.maximumOutputTokens",
+  "reasoning: { effort: \"low\" }",
+  "moderations.create",
+  "validateSafetyResponse",
+  "isManagedVectorPreviewRuntime"
+]) if (!previewGroundedSource.includes(invariant)) errors.push(`Preview grounded Live AI invariant is missing: ${invariant}`);
+for (const disabledFlag of [
+  "TEOYUBE_ENABLE_LIVE_AI",
+  "TEOYUBE_LIVE_AI_ENABLED",
+  "TEOYUBE_ENABLE_BROAD_RAG",
+  "TEOYUBE_ENABLE_RESEARCH_COLLECTION",
+  "TEOYUBE_ENABLE_DATABASE_PERSISTENCE",
+  "TEOYUBE_ENABLE_DURABLE_MEMORY",
+  "TEOYUBE_ENABLE_MANAGED_MEMORY",
+  "TEOYUBE_ENABLE_SERVER_MEMORY"
+]) if (!previewGroundedSource.includes(disabledFlag)) errors.push(`Preview grounded Live AI does not enforce the disabled boundary: ${disabledFlag}`);
+if (/baseURL\s*:|previous_response_id|background\s*:\s*true|web_search|file_search|code_interpreter|computer_use|mcp\b|shell\b/.test(previewGroundedSource)) errors.push("The Preview grounded Live AI module enables a prohibited provider-state or built-in-tool capability.");
 
 const statusRoute = read("src/app/api/teoyube/live-ai-status/route.ts");
 const teoGuideRoute = read("src/app/api/teoyube/teo-guide/route.ts");

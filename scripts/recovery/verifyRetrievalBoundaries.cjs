@@ -73,6 +73,7 @@ const sdkImports = production.filter((file) =>
 );
 const expectedSdkImports = Object.freeze([
   "src/server/live-ai/openai-responses-adapter.ts",
+  "src/server/live-ai/preview-grounded-live-ai.ts",
   "src/server/retrieval/openai-embedding-gateway.ts"
 ]);
 if (
