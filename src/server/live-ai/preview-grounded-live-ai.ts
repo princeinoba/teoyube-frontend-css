@@ -427,7 +427,10 @@ async function hydrateEvidence(
   const evidence: PreviewEvidence[] = [];
   const seen = new Set<string>();
   for (const source of result.sources) {
-    if (!source.documentId.startsWith("web:") || seen.has(source.documentId)) continue;
+    if (
+      !source.documentId.startsWith("web:") &&
+      !source.documentId.startsWith("canonical:")
+    ) continue;
     const citation = source.canonicalReference || source.scriptureCitations[0];
     if (!citation || citation.translationId !== "engwebp") continue;
     const parsed = canonicalScriptureRepository
@@ -442,10 +445,16 @@ async function hydrateEvidence(
       exactText,
     );
     if (!validation.valid || validation.exactTextMatch !== true) continue;
-    seen.add(source.documentId);
+    const firstVerse = passage.verses[0];
+    if (!firstVerse) continue;
+    const evidenceId = source.documentId.startsWith("web:")
+      ? source.documentId
+      : `web:${firstVerse.book.toLowerCase().replace(/\s+/g, "-")}.${firstVerse.chapter}.${firstVerse.verse}`;
+    if (seen.has(evidenceId)) continue;
+    seen.add(evidenceId);
     evidence.push(
       Object.freeze({
-        id: source.documentId,
+        id: evidenceId,
         canonicalLabel: passage.citation.canonicalLabel,
         translation: "WEB" as const,
         corpusVersion: passage.citation.corpusVersion,
@@ -634,11 +643,19 @@ export class PreviewGroundedLiveAiService {
         },
       );
     }
+    const counts = {
+      modelProbe: 0,
+      inputModeration: 0,
+      embedding: 1,
+      vector: retrieval.pathsUsed.includes("vector") ? 1 : 0,
+      generation: 0,
+      outputModeration: 0,
+    };
     let evidence: readonly PreviewEvidence[];
     try {
       evidence = await hydrateEvidence(retrieval);
     } catch {
-      return fail(
+      return Object.freeze({ ...fail(
         "insufficient_evidence",
         "EVIDENCE_HYDRATION",
         "EXACT_WEB_HYDRATION_FAILURE",
@@ -647,11 +664,11 @@ export class PreviewGroundedLiveAiService {
           retrievalResultCount: retrieval.sources.length,
           validatorRuleId: "EXACT_WEB_HYDRATION_EXCEPTION",
         },
-      );
+      ), providerCalls: Object.freeze(counts) });
     }
     const evidenceIds = new Set(evidence.map((item) => item.id));
     const retrievedIds = new Set(
-      retrieval.sources.map((source) => source.documentId),
+      [...retrieval.sources.map((source) => source.documentId), ...evidenceIds],
     );
     const requiredCitationIds = Object.freeze([
       ...(input.requiredCitationIds || []),
@@ -673,7 +690,7 @@ export class PreviewGroundedLiveAiService {
         : requiredNotRetrieved.length > 0
           ? "CITATION_NOT_RETRIEVED"
           : "RETRIEVAL_INSUFFICIENT_EVIDENCE";
-      return fail(
+      return Object.freeze({ ...fail(
         "insufficient_evidence",
         "EVIDENCE_HYDRATION",
         reasonCode,
@@ -685,16 +702,8 @@ export class PreviewGroundedLiveAiService {
             requiredNotRetrieved.length + requiredNotHydrated.length,
           validatorRuleId: reasonCode,
         },
-      );
+      ), providerCalls: Object.freeze(counts) });
     }
-    const counts = {
-      modelProbe: 0,
-      inputModeration: 0,
-      embedding: 1,
-      vector: retrieval.pathsUsed.includes("vector") ? 1 : 0,
-      generation: 0,
-      outputModeration: 0,
-    };
     let stage: PreviewGroundedDiagnosticState["pipelineStage"] = "MODEL_PROBE";
     try {
       if (!this.#probed) {

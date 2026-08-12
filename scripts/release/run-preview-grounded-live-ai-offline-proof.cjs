@@ -134,6 +134,17 @@ function checkpointPath(name) {
   return path.join(TMP, `${name}.json`);
 }
 
+function matcherSemanticsProof(locked) {
+  const fixture = locked.dataset.cases[0];
+  const safeBody = responseFor(fixture);
+  safeBody.response.limitations = ["This is not guaranteed."];
+  const evidence = runner.validateResponse(fixture, 1, { status: 200, body: safeBody, elapsedMs: 1 }, corpus(locked));
+  assert.deepEqual(evidence.diagnosticReasonCodes, ["COMPLETED"]);
+  const unsafeBody = responseFor(fixture);
+  unsafeBody.response.summary = fixture.forbiddenPhrases[0];
+  assert.throws(() => runner.validateResponse(fixture, 1, { status: 200, body: unsafeBody, elapsedMs: 1 }, corpus(locked)), (error) => error.code === "FORBIDDEN_CLAIM_RUBRIC_FAILED");
+}
+
 function resetTemporaryDirectory() {
   if (fs.existsSync(TMP)) fs.rmSync(TMP, { recursive: true, force: true });
   fs.mkdirSync(TMP, { recursive: true });
@@ -232,6 +243,7 @@ function activeHandleProof() {
 async function main() {
   resetTemporaryDirectory();
   const locked = runner.loadDataset();
+  matcherSemanticsProof(locked);
   await fullSequenceProof(locked);
   await collectCompleteProof(locked, { ordinaryFailureCaseId: locked.dataset.cases[0].id }, "ordinary-failure", "FIXED_UNCERTAINTY_BOUNDARY_FAILED");
   await collectCompleteProof(locked, { forbiddenFailureCaseId: locked.dataset.cases[0].id }, "forbidden-failure", "C_GENUINE_MODEL_FORBIDDEN_CLAIM");
@@ -247,7 +259,7 @@ async function main() {
   for (const event of ["evaluator-failure", "SIGINT", "SIGTERM", "uncaughtException", "unhandledRejection"]) await cleanupProof(event);
   await new Promise((resolve) => setImmediate(resolve));
   assert.deepEqual(activeHandleProof(), []);
-  process.stdout.write(["REQUEST 1 DISPATCH/PROCESS: PASS", "REQUEST 2 OBSERVABLE DISPATCH: PASS", "LOCKED CASE IDS: 32/32 SEQUENTIAL PASS", "ORDINARY FAILURE COLLECT-COMPLETE: PASS", "FORBIDDEN FAILURE SANITIZED CLASSIFICATION: PASS", "ATOMIC SANITIZED CHECKPOINT: PASS", "AGGREGATE ARTIFACT: PASS", "NONRESPONDING REQUEST ABORT: PASS", "MALFORMED JSON FAIL-CLOSED: PASS", "5XX STOPS DISPATCH: PASS", "UNEXPECTED PERSISTENCE STOPS DISPATCH: PASS", "BYPASS CLEANUP ON EVALUATOR FAILURE: PASS", "SIGINT/SIGTERM/UNCAUGHT/UNHANDLED CLEANUP: PASS", "ACTIVE RESOURCE CLOSURE: PASS", "NATURAL EXIT: PASS"].join("\n") + "\n");
+  process.stdout.write(["REQUEST 1 DISPATCH/PROCESS: PASS", "REQUEST 2 OBSERVABLE DISPATCH: PASS", "LOCKED CASE IDS: 32/32 SEQUENTIAL PASS", "MATCHER FALSE POSITIVE REMEDIATION: PASS", "GENUINE FORBIDDEN CLAIM STILL FAILS: PASS", "ORDINARY FAILURE COLLECT-COMPLETE: PASS", "FORBIDDEN FAILURE SANITIZED CLASSIFICATION: PASS", "ATOMIC SANITIZED CHECKPOINT: PASS", "AGGREGATE ARTIFACT: PASS", "NONRESPONDING REQUEST ABORT: PASS", "MALFORMED JSON FAIL-CLOSED: PASS", "5XX STOPS DISPATCH: PASS", "UNEXPECTED PERSISTENCE STOPS DISPATCH: PASS", "BYPASS CLEANUP ON EVALUATOR FAILURE: PASS", "SIGINT/SIGTERM/UNCAUGHT/UNHANDLED CLEANUP: PASS", "ACTIVE RESOURCE CLOSURE: PASS", "NATURAL EXIT: PASS"].join("\n") + "\n");
 }
 
 main().catch((error) => {

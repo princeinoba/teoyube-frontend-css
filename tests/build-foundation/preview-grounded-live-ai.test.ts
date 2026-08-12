@@ -198,6 +198,33 @@ describe("grounded provider execution and validation", () => {
     expect(result.persisted).toBe(false);
   });
 
+  it("hydrates a canonically resolved exact source to its validated WEB evidence ID", async () => {
+    const events: string[] = [];
+    const exact = retrieval();
+    const canonicalExact = {
+      ...exact,
+      sources: exact.sources.map((source) => ({
+        ...source,
+        documentId: `canonical:${citation.canonicalLabel}`,
+      })),
+    } as HybridRetrievalResult;
+    const service = new PreviewGroundedLiveAiService({
+      environment: previewEnvironment(),
+      provider: provider(events),
+      retrieve: async () => canonicalExact,
+      tig: async () => tig(),
+      ledger: new PreviewAuthorizationCostLedger(),
+    });
+    const result = await service.run({
+      caseId: "public-james-wisdom",
+      query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.",
+      intent: "scripture",
+      requiredCitationIds: ["web:james.1.5"],
+    });
+    expect(result.ok, `${result.reason}:${result.diagnostic?.fallbackReason || "none"}:${result.diagnostic?.validatorRuleId || "none"}:${result.diagnostic?.eligibleEvidenceCount ?? -1}`).toBe(true);
+    expect(result.citations[0]).toMatchObject({ id: "web:james.1.5", translation: "WEB" });
+  });
+
   it.each([
     ["unknown citation", { unknownCitation: true }, "citation_validation_failed"],
     ["model-authored quotation", { quote: true }, "model_scripture_generation_blocked"],
@@ -383,6 +410,9 @@ describe("grounded provider execution and validation", () => {
         fallbackReason: scenario.code,
         providerCalled: true,
       });
+      if (["citation not retrieved", "exact WEB hydration"].includes(scenario.label)) {
+        expect(result.providerCalls).toMatchObject({ embedding: 1, vector: 1, generation: 0 });
+      }
       expect(events).toEqual([]);
     }
   });
