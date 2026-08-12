@@ -24,7 +24,7 @@ const validPayload = Object.freeze({
   citation_ids: ["web:james.1.5"],
   limitations: ["This is interpretation, not divine certainty."],
   confidence: "high",
-  safety_boundary: "No personal outcome or calling is guaranteed.",
+  safety_boundary: "This is interpretation, not divine certainty.",
 });
 
 function response(
@@ -135,6 +135,18 @@ describe("Responses API fail-closed parsing", () => {
     });
   });
 
+  it("rejects any free-form replacement for the fixed uncertainty boundary", () => {
+    const outputText = JSON.stringify({
+      ...validPayload,
+      safety_boundary: "A different free-form boundary.",
+    });
+    const error = failure(response({ output_text: outputText }));
+    expect(error.diagnostic).toMatchObject({
+      reasonCode: "STRUCTURED_OUTPUT_SCHEMA_INVALID",
+      validatorRuleId: "ZOD_SCHEMA_FAILURE",
+      schemaValid: false,
+    });
+  });
   it("classifies refusal content before attempting structured parsing", () => {
     const error = failure(response({
       output_text: "",

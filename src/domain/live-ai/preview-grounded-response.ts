@@ -1,7 +1,9 @@
 import { z } from "zod";
 
 export const PREVIEW_GROUNDED_RESPONSE_SCHEMA_VERSION =
-  "teoyube-preview-grounded-live-ai-2026-08-11.1";
+  "teoyube-preview-grounded-live-ai-2026-08-12.2";
+export const PREVIEW_GROUNDED_SAFETY_BOUNDARY =
+  "This is interpretation, not divine certainty.";
 
 const boundedText = (maximum: number) => z.string().trim().min(1).max(maximum);
 const citationId = z.string().trim().min(1).max(192).regex(/^[a-z0-9._:#-]+$/i);
@@ -15,7 +17,7 @@ export const previewGroundedResponseSchema = z.object({
   citation_ids: z.array(citationId).max(5),
   limitations: z.array(boundedText(300)).min(1).max(4),
   confidence: z.enum(["high", "medium", "low"]),
-  safety_boundary: boundedText(400),
+  safety_boundary: z.literal(PREVIEW_GROUNDED_SAFETY_BOUNDARY),
 }).strict();
 
 export type PreviewGroundedResponse = Readonly<
@@ -77,8 +79,7 @@ export const PREVIEW_GROUNDED_RESPONSE_JSON_SCHEMA: Readonly<
     }),
     safety_boundary: Object.freeze({
       type: "string",
-      minLength: 1,
-      maxLength: 400,
+      enum: Object.freeze([PREVIEW_GROUNDED_SAFETY_BOUNDARY]),
     }),
   }),
 });

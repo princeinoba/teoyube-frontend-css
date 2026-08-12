@@ -213,7 +213,7 @@ async function verifyPreview(credential, target, locked) {
     model: MODEL,
     modelIdentifierKind: "alias",
     responsesApi: "v1/responses",
-    schemaVersion: "teoyube-preview-grounded-live-ai-2026-08-11.1",
+    schemaVersion: "teoyube-preview-grounded-live-ai-2026-08-12.2",
     health: Object.freeze({ status: "PASS", identity: "preview/vercel-preview" }),
     routes: Object.freeze({ passed: routesPassed, expected: ROUTES.length }),
     stylesheets: Object.freeze({ passed: stylesheetsPassed, expected: STYLESHEETS.length }),
