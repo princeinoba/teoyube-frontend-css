@@ -99,8 +99,12 @@ function startServer(locked, behavior = {}) {
         response.end("{");
         return;
       }
+      const applicationResponse = responseFor(fixture);
+      if (behavior.ordinaryFailureCaseId === body.caseId) applicationResponse.response.safety_boundary = "Synthetic ordinary quality failure.";
+      if (behavior.forbiddenFailureCaseId === body.caseId) applicationResponse.response.summary = fixture.forbiddenPhrases[0];
+      if (behavior.persistenceCaseId === body.caseId) applicationResponse.persisted = true;
       response.writeHead(fixture.expectedHttpStatus, { "content-type": "application/json" });
-      response.end(JSON.stringify(responseFor(fixture)));
+      response.end(JSON.stringify(applicationResponse));
     });
   });
   return new Promise((resolve, reject) => {
@@ -166,6 +170,22 @@ async function timeoutProof(locked) {
   }
 }
 
+async function collectCompleteProof(locked, behavior, name, expectedReasonCode) {
+  const fixture = await startServer(locked, behavior);
+  try {
+    const report = await runner.verifyPreview(SYNTHETIC_CREDENTIAL, target(fixture.url), locked, { checkpointPath: checkpointPath(name), corpus: corpus(locked), runnerSourceSha256: runner.sourceHash(), requestTimeoutMs: 1_000, caseTimeoutMs: 2_000 });
+    assert.deepEqual(fixture.dispatched, locked.dataset.cases.map((item) => item.id));
+    assert.deepEqual(report.lockedEvaluation, { status: "FAIL", passed: 31, failed: 1, expected: 32, aggregateFailureCodes: [] });
+    assert.equal(report.failures.length, 1);
+    assert.ok(report.failures[0].diagnosticReasonCodes.includes("ORDINARY_CASE_FAILURE"));
+    assert.ok(report.failures[0].diagnosticReasonCodes.includes(expectedReasonCode));
+    const raw = fs.readFileSync(runner.latestCheckpointFile(checkpointPath(name)), "utf8");
+    assert.equal(raw.includes(locked.dataset.cases[0].request.query), false);
+  } finally {
+    await closeServer(fixture.server);
+  }
+}
+
 async function failClosedProof(locked, behavior, name, expectedCode) {
   const fixture = await startServer(locked, behavior);
   try {
@@ -213,9 +233,12 @@ async function main() {
   resetTemporaryDirectory();
   const locked = runner.loadDataset();
   await fullSequenceProof(locked);
+  await collectCompleteProof(locked, { ordinaryFailureCaseId: locked.dataset.cases[0].id }, "ordinary-failure", "FIXED_UNCERTAINTY_BOUNDARY_FAILED");
+  await collectCompleteProof(locked, { forbiddenFailureCaseId: locked.dataset.cases[0].id }, "forbidden-failure", "C_GENUINE_MODEL_FORBIDDEN_CLAIM");
   await timeoutProof(locked);
   await failClosedProof(locked, { malformedCaseId: locked.dataset.cases[0].id }, "malformed", "MALFORMED_JSON_RESPONSE");
   await failClosedProof(locked, { rejectCaseId: locked.dataset.cases[0].id }, "rejected", "PROVIDER_FAILURE");
+  await failClosedProof(locked, { persistenceCaseId: locked.dataset.cases[0].id }, "persistence", "UNEXPECTED_PERSISTENCE");
   const full = runner.readCheckpoint(checkpointPath("full"), runner.identity(locked, target((await (async () => "http://synthetic.invalid")())), runner.sourceHash()), locked);
   void full;
   const raw = JSON.parse(fs.readFileSync(runner.latestCheckpointFile(checkpointPath("full")), "utf8"));
@@ -224,7 +247,7 @@ async function main() {
   for (const event of ["evaluator-failure", "SIGINT", "SIGTERM", "uncaughtException", "unhandledRejection"]) await cleanupProof(event);
   await new Promise((resolve) => setImmediate(resolve));
   assert.deepEqual(activeHandleProof(), []);
-  process.stdout.write(["REQUEST 1 DISPATCH/PROCESS: PASS", "REQUEST 2 OBSERVABLE DISPATCH: PASS", "LOCKED CASE IDS: 32/32 SEQUENTIAL PASS", "ATOMIC SANITIZED CHECKPOINT: PASS", "AGGREGATE ARTIFACT: PASS", "NONRESPONDING REQUEST ABORT: PASS", "MALFORMED JSON FAIL-CLOSED: PASS", "REJECTED CASE STOPS DISPATCH: PASS", "BYPASS CLEANUP ON EVALUATOR FAILURE: PASS", "SIGINT/SIGTERM/UNCAUGHT/UNHANDLED CLEANUP: PASS", "ACTIVE RESOURCE CLOSURE: PASS", "NATURAL EXIT: PASS"].join("\n") + "\n");
+  process.stdout.write(["REQUEST 1 DISPATCH/PROCESS: PASS", "REQUEST 2 OBSERVABLE DISPATCH: PASS", "LOCKED CASE IDS: 32/32 SEQUENTIAL PASS", "ORDINARY FAILURE COLLECT-COMPLETE: PASS", "FORBIDDEN FAILURE SANITIZED CLASSIFICATION: PASS", "ATOMIC SANITIZED CHECKPOINT: PASS", "AGGREGATE ARTIFACT: PASS", "NONRESPONDING REQUEST ABORT: PASS", "MALFORMED JSON FAIL-CLOSED: PASS", "5XX STOPS DISPATCH: PASS", "UNEXPECTED PERSISTENCE STOPS DISPATCH: PASS", "BYPASS CLEANUP ON EVALUATOR FAILURE: PASS", "SIGINT/SIGTERM/UNCAUGHT/UNHANDLED CLEANUP: PASS", "ACTIVE RESOURCE CLOSURE: PASS", "NATURAL EXIT: PASS"].join("\n") + "\n");
 }
 
 main().catch((error) => {
