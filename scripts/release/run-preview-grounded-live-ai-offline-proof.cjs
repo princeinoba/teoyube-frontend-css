@@ -62,7 +62,12 @@ function responseFor(fixture) {
 
 function startServer(locked, behavior = {}) {
   const dispatched = [];
+  const authenticatedRequests = [];
   const server = http.createServer((request, response) => {
+    authenticatedRequests.push(Object.freeze({
+      originMatchesHost: request.headers.origin === `http://${request.headers.host}`,
+      bypassPresent: request.headers["x-vercel-protection-bypass"] === SYNTHETIC_CREDENTIAL,
+    }));
     if (request.url === "/api/health") {
       response.setHeader("content-type", "application/json");
       response.end(JSON.stringify({ status: "ok", environment: "preview", deploymentTarget: "vercel-preview" }));
@@ -111,7 +116,7 @@ function startServer(locked, behavior = {}) {
     server.once("error", reject);
     server.listen(0, "127.0.0.1", () => {
       const address = server.address();
-      resolve({ server, url: `http://127.0.0.1:${address.port}`, dispatched });
+      resolve({ server, url: `http://127.0.0.1:${address.port}`, dispatched, authenticatedRequests });
     });
   });
 }
@@ -156,6 +161,8 @@ async function fullSequenceProof(locked) {
   const file = checkpointPath("full");
   try {
     const report = await runner.verifyPreview(SYNTHETIC_CREDENTIAL, target(fixture.url), locked, { checkpointPath: file, corpus: corpus(locked), logger: (marker) => markers.push(marker), runnerSourceSha256: runner.sourceHash(), requestTimeoutMs: 2_000, caseTimeoutMs: 3_000 });
+    assert.equal(fixture.authenticatedRequests.length, runner.ROUTES.length + runner.STYLESHEETS.length + 1 + locked.dataset.cases.length);
+    assert.ok(fixture.authenticatedRequests.every((request) => request.originMatchesHost && request.bypassPresent));
     assert.deepEqual(fixture.dispatched, locked.dataset.cases.map((item) => item.id));
     assert.equal(report.lockedEvaluation.passed, 32);
     const aggregateArtifact = checkpointPath("aggregate");

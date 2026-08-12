@@ -344,7 +344,9 @@ async function requestJson({ credential, deploymentUrl, route, options = {}, par
   const started = performance.now();
   const boundary = boundedSignal(parentSignal, requestTimeoutMs, "REQUEST_TIMEOUT");
   const headers = new Headers(options.headers || {});
+  assert(!headers.has("host"), "HOST_OVERRIDE_REJECTED", caseId);
   headers.set("x-vercel-protection-bypass", credential);
+  headers.set("origin", new URL(deploymentUrl).origin);
   const redirect = options.redirect || "error";
   assert(redirect === "error", "REDIRECT_MODE_REJECTED", caseId);
   let response;
@@ -380,7 +382,10 @@ async function requestJson({ credential, deploymentUrl, route, options = {}, par
 
 async function requestResource({ credential, deploymentUrl, route, expectedContentType, parentSignal, fetchImpl = fetch }) {
   const boundary = boundedSignal(parentSignal, MAXIMUM_REQUEST_MS, "REQUEST_TIMEOUT");
-  const headers = new Headers({ "x-vercel-protection-bypass": credential });
+  const headers = new Headers();
+  assert(!headers.has("host"), "HOST_OVERRIDE_REJECTED", route);
+  headers.set("x-vercel-protection-bypass", credential);
+  headers.set("origin", new URL(deploymentUrl).origin);
   let response;
   try {
     response = await fetchImpl(`${deploymentUrl}${route}`, { headers, redirect: "error", signal: boundary.signal });
