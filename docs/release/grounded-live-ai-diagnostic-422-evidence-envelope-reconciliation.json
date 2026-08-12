@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-LIVE-AI-DIAGNOSTIC-422-ENVELOPE-2026-08-12-001",
+  "recordedAt": "2026-08-12T15:38:03.4349994-04:00",
+  "status": "FAIL_CLOSED",
+  "stopReason": "DIAGNOSTIC_CLASSIFICATION_UNRESOLVED_AFTER_THREE_SAMPLES",
+  "classification": "UNRESOLVED_WITH_SANITIZED_EVIDENCE",
+  "repository": "https://github.com/princeinoba/teoyube-frontend-css",
+  "branch": "recovery/visual-source-of-truth",
+  "instrumentationCommit": "723d861634e944ca3b240039119112d0e8abb171",
+  "preview": {
+    "deploymentId": "dpl_DPDb23LR2NuMr1UEU62tc5hQTUXC",
+    "url": "https://teoyube-frontend-g4xa068m2-princeinobas-projects.vercel.app",
+    "status": "READY",
+    "target": "preview",
+    "source": "git",
+    "repository": "princeinoba/teoyube-frontend-css",
+    "branch": "recovery/visual-source-of-truth",
+    "runtimeCommit": "723d861634e944ca3b240039119112d0e8abb171"
+  },
+  "dataset": {
+    "version": "V1",
+    "caseCount": 32,
+    "sha256": "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537",
+    "unchanged": true
+  },
+  "diagnostic": {
+    "caseId": "public-james-wisdom",
+    "sampleCount": 3,
+    "maximumSamples": 3,
+    "retryToPassUsed": false,
+    "outcomesRetained": 3,
+    "samples": [
+      {
+        "sampleOrdinal": 1,
+        "classification": "APPLICATION_RESULT_200",
+        "httpStatus": 200,
+        "applicationReason": "COMPLETED",
+        "pipelineStage": "COMPLETED",
+        "responseStatus": "COMPLETED",
+        "validatorRuleId": "NONE",
+        "rootCauseClassification": "UNRESOLVED",
+        "sufficientForClassification": false,
+        "providerCallCountClassification": "EMBEDDING_VECTOR_GENERATION_AND_MODERATION",
+        "providerCalls": {
+          "modelProbe": 1,
+          "inputModeration": 1,
+          "embedding": 1,
+          "vector": 1,
+          "generation": 1,
+          "outputModeration": 1
+        },
+        "tokenUsage": {
+          "inputTokens": 1126,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0,
+          "outputTokens": 211,
+          "totalTokens": 1337
+        },
+        "costUsd": 0.004794,
+        "forbiddenClaimMatchCount": 0
+      },
+      {
+        "sampleOrdinal": 2,
+        "classification": "APPLICATION_RESULT_200",
+        "httpStatus": 200,
+        "applicationReason": "COMPLETED",
+        "pipelineStage": "COMPLETED",
+        "responseStatus": "COMPLETED",
+        "validatorRuleId": "NONE",
+        "rootCauseClassification": "UNRESOLVED",
+        "sufficientForClassification": false,
+        "providerCallCountClassification": "EMBEDDING_VECTOR_GENERATION_AND_MODERATION",
+        "providerCalls": {
+          "modelProbe": 0,
+          "inputModeration": 1,
+          "embedding": 1,
+          "vector": 1,
+          "generation": 1,
+          "outputModeration": 1
+        },
+        "tokenUsage": {
+          "inputTokens": 1126,
+          "cachedInputTokens": 1123,
+          "reasoningTokens": 0,
+          "outputTokens": 221,
+          "totalTokens": 1347
+        },
+        "costUsd": 0.002893,
+        "forbiddenClaimMatchCount": 0
+      },
+      {
+        "sampleOrdinal": 3,
+        "classification": "APPLICATION_RESULT_200",
+        "httpStatus": 200,
+        "applicationReason": "COMPLETED",
+        "pipelineStage": "COMPLETED",
+        "responseStatus": "COMPLETED",
+        "validatorRuleId": "NONE",
+        "rootCauseClassification": "UNRESOLVED",
+        "sufficientForClassification": false,
+        "providerCallCountClassification": "EMBEDDING_VECTOR_GENERATION_AND_MODERATION",
+        "providerCalls": {
+          "modelProbe": 0,
+          "inputModeration": 1,
+          "embedding": 1,
+          "vector": 1,
+          "generation": 1,
+          "outputModeration": 1
+        },
+        "tokenUsage": {
+          "inputTokens": 1126,
+          "cachedInputTokens": 1123,
+          "reasoningTokens": 0,
+          "outputTokens": 255,
+          "totalTokens": 1381
+        },
+        "costUsd": 0.003301,
+        "forbiddenClaimMatchCount": 0
+      }
+    ],
+    "aggregateProviderCalls": {
+      "modelProbe": 1,
+      "inputModeration": 3,
+      "embedding": 3,
+      "vector": 3,
+      "generation": 3,
+      "outputModeration": 3
+    },
+    "aggregateTokenUsage": {
+      "inputTokens": 3378,
+      "cachedInputTokens": 2246,
+      "reasoningTokens": 0,
+      "outputTokens": 687,
+      "totalTokens": 4065
+    }
+  },
+  "costLedger": {
+    "spentOrReservedBeforeAuthorizationUsd": 0.047934,
+    "diagnosticActualUsd": 0.010988,
+    "diagnosticConservativeReservationUsd": 0.03243,
+    "finalEvaluationActualUsd": 0,
+    "conservativeCumulativeSpentOrReservedUsd": 0.080364,
+    "absoluteAuthorizationCeilingUsd": 0.25,
+    "conservativeRemainingUsd": 0.169636,
+    "withinAuthorization": true
+  },
+  "bypassLifecycle": {
+    "previousCreated": 2,
+    "previousRevoked": 2,
+    "diagnosticCreated": 1,
+    "diagnosticRevoked": 1,
+    "finalEvaluationCreated": 0,
+    "finalEvaluationRevoked": 0,
+    "aggregateCreated": 3,
+    "aggregateRevoked": 3,
+    "finalActiveCount": 0
+  },
+  "verification": {
+    "diagnostic422EvidenceContract": "PASS_OFFLINE",
+    "focusedTests": "79/79 PASS",
+    "offlineDiagnosticMatrix": "51/51 PASS",
+    "typescript": "PASS",
+    "focusedLint": "PASS",
+    "fullLint": "PASS",
+    "productionBuild": "PASS",
+    "dependencyAudit": "PASS_0_VULNERABILITIES",
+    "secretScans": "PASS",
+    "protectedVisualChanges": 0,
+    "immutableBaselineWrites": 0
+  },
+  "finalLockedEvaluation": {
+    "status": "NOT_RUN_STOP_CONDITION",
+    "casesRun": 0,
+    "expectedCases": 32,
+    "replacementBypassCreated": false
+  },
+  "security": {
+    "status": "18/19 PASS",
+    "paidEvidenceSecurityControl": "PENDING_FINAL_LOCKED_EVALUATION",
+    "rawQueriesStored": false,
+    "rawResponsesStored": false,
+    "credentialsStored": false,
+    "providerBodiesStored": false
+  },
+  "production": {
+    "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "status": "READY",
+    "liveAi": "OFF",
+    "embeddingsAndVectorRetrieval": "OFF",
+    "broadRag": "OFF",
+    "researchCollection": "OFF",
+    "persistenceAndPrivateMemory": "OFF",
+    "mutationCount": 0
+  },
+  "protectedProjectsModified": [],
+  "remediation": "NONE_STOPPED_AS_AUTHORIZED",
+  "publicProductionActivation": "NOT_AUTHORIZED"
+}
