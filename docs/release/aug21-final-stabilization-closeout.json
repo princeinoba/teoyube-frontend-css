@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-FINAL-STABILIZATION-CLOSEOUT-2026-08-13-001",
+  "generatedAt": "2026-08-13T13:18:12.6715904Z",
+  "release": {
+    "classification": "CONTROLLED_PUBLIC_PRODUCTION_BETA",
+    "productionReleaseComplete": true,
+    "august21Target": "ACHIEVED_AHEAD_OF_SCHEDULE",
+    "productionDeploymentDate": "2026-08-08",
+    "remainingProductionBetaBlockers": []
+  },
+  "repository": {
+    "url": "https://github.com/princeinoba/teoyube-frontend-css",
+    "origin": "https://github.com/princeinoba/teoyube-frontend-css.git",
+    "branch": "recovery/visual-source-of-truth",
+    "verifiedBranchCommit": "948da5698af4202d7914c82f9fc45f0505d87836",
+    "verifiedRemoteCommit": "948da5698af4202d7914c82f9fc45f0505d87836",
+    "startingWorktree": "CLEAN",
+    "productionCommitReachable": true,
+    "mergeCommitsAfterProduction": 0,
+    "forcePushPerformedByCloseout": false,
+    "historyRewritePerformedByCloseout": false,
+    "mainModifiedByCloseout": false,
+    "observedMainCommit": "6206fa03cad1c874a28b86c839baa32cfa9a93c5",
+    "trackedArtifactScan": {
+      "vercelMetadata": 0,
+      "temporaryFiles": 0,
+      "credentialFiles": 0,
+      "cacheFiles": 0,
+      "providerArtifactsExcludedByPolicy": 0,
+      "expectedExampleFiles": [".env.example"],
+      "temporaryPreviewCredentialFile": "ABSENT"
+    }
+  },
+  "identity": {
+    "production": {
+      "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+      "commit": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+      "url": "https://teoyube-frontend-css.vercel.app",
+      "state": "READY",
+      "target": "production",
+      "source": "cli",
+      "health": "production/vercel-production"
+    },
+    "finalLiveAiPreview": {
+      "deploymentId": "dpl_E25pTVmg39eeCPnmEN1JXfLMcBKJ",
+      "commit": "ec8909faa3c1ae8a919f40b13f534c6f34f774c2",
+      "url": "https://teoyube-frontend-qi8kj5rzi-princeinobas-projects.vercel.app",
+      "state": "READY",
+      "classification": "preview",
+      "source": "git"
+    },
+    "lockedLiveAiV1Sha256": "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537",
+    "finalLiveAiEvidenceSha256": "db32a57af11ef02b7c2d47167c2ab6c4372d49a880bd11128a2e5cc3e2e7a06e"
+  },
+  "safeCoreCapabilityMatrix": {
+    "result": "COMPLETE",
+    "productionEnabled": true,
+    "capabilityCount": 20,
+    "capabilities": [
+      { "name": "Today", "status": "PASS" },
+      { "name": "Guided daily loop", "status": "PASS" },
+      { "name": "Search", "status": "PASS" },
+      { "name": "Promise Search", "status": "PASS" },
+      { "name": "Canon", "status": "PASS" },
+      { "name": "Promise Table", "status": "PASS" },
+      { "name": "Daily Word", "status": "PASS" },
+      { "name": "Prayer", "status": "PASS" },
+      { "name": "Calling Compass", "status": "PASS" },
+      { "name": "Journey", "status": "PASS" },
+      { "name": "Journal", "status": "PASS" },
+      { "name": "Reflection", "status": "PASS" },
+      { "name": "Testimony candidate", "status": "PASS" },
+      { "name": "Book of the Saint", "status": "PASS" },
+      { "name": "Lexicon", "status": "PASS" },
+      { "name": "Exact WEB Scripture", "status": "PASS" },
+      { "name": "TIG", "status": "PASS" },
+      { "name": "Deterministic Teo Guide", "status": "PASS" },
+      { "name": "User-controlled local continuity", "status": "ENABLED" },
+      { "name": "Static rollback", "status": "RETAINED" }
+    ],
+    "focusedContractVerification": {
+      "testFilesPassed": 9,
+      "testsPassed": 90,
+      "failed": 0
+    }
+  },
+  "productionSmoke": {
+    "checkedAt": "2026-08-13T12:19:01.076Z",
+    "providerCapableRequests": 0,
+    "providerCalls": 0,
+    "routes": {
+      "result": "PASS",
+      "passed": 23,
+      "expected": 23,
+      "items": [
+        "/", "/search", "/canon", "/promise-table", "/calling-compass", "/book",
+        "/lexicon", "/testimony", "/teo-guide", "/embedded-videos", "/tables",
+        "/prayer", "/journey", "/journal", "/settings", "/privacy", "/consent",
+        "/terms", "/profile", "/personalization", "/daily-word", "/explore",
+        "/promise-search"
+      ],
+      "expectedStatus": 200,
+      "expectedContentType": "text/html"
+    },
+    "stylesheets": {
+      "result": "PASS",
+      "passed": 9,
+      "expected": 9,
+      "items": [
+        "/styles/legacy.css", "/styles/tokens.css", "/styles/reset.css",
+        "/styles/base.css", "/styles/layout.css", "/styles/components.css",
+        "/styles/pages/index.css", "/styles/utilities.css", "/styles/responsive.css"
+      ],
+      "expectedStatus": 200,
+      "expectedContentType": "text/css"
+    },
+    "health": {
+      "result": "PASS",
+      "statusCode": 200,
+      "status": "ok",
+      "runtime": "next-canonical-local",
+      "rollbackRuntime": "static-node",
+      "environment": "production",
+      "deploymentTarget": "vercel-production"
+    },
+    "readiness": {
+      "result": "PASS",
+      "status": "ready",
+      "deterministicFallbackReady": true,
+      "scripture": "ready",
+      "tig": "ready",
+      "safety": "ready",
+      "durableMemory": "disabled",
+      "vectorIndex": "disabled",
+      "liveAiProvider": "disabled"
+    },
+    "exactWebScripture": {
+      "result": "PASS",
+      "reference": "James 1:5",
+      "translationId": "engwebp",
+      "verseCount": 1
+    },
+    "tig": {
+      "result": "PASS",
+      "statusCode": 200,
+      "noExternalServicesRequired": true
+    },
+    "deterministicTeoGuide": {
+      "result": "PASS",
+      "statusCode": 200,
+      "runtime": "deterministic-orchestration",
+      "generationMode": "deterministic",
+      "providerCalls": 0,
+      "store": false,
+      "durableWritePerformed": false
+    },
+    "unexpected5xx": 0
+  },
+  "previewOnlyOptionalCapabilityMatrix": [
+    {
+      "capability": "Grounded Live AI",
+      "previewReadiness": "PASS_32_OF_32",
+      "previewDeploymentId": "dpl_E25pTVmg39eeCPnmEN1JXfLMcBKJ",
+      "previewCommit": "ec8909faa3c1ae8a919f40b13f534c6f34f774c2",
+      "production": "OFF",
+      "productionActivationRequiredForCloseout": false
+    },
+    {
+      "capability": "Managed vector retrieval",
+      "previewReadiness": "PASS",
+      "previewDeploymentId": "dpl_8qUECFJgVbPeXMiZAasneS7ztKdf",
+      "previewCommit": "3b91f4c62d7855d2ba2c4e60949f5a9f25c985a4",
+      "privateQueryLocalRejection": "PASS",
+      "publicVectorCanary": "PASS",
+      "citationContract": "PASS",
+      "production": "OFF",
+      "productionActivationRequiredForCloseout": false
+    },
+    {
+      "capability": "Embeddings",
+      "previewReadiness": "PASS",
+      "production": "OFF",
+      "productionActivationRequiredForCloseout": false
+    }
+  ],
+  "deferredCapabilityMatrix": [
+    { "capability": "Broad RAG", "production": "OFF", "disposition": "DEFERRED" },
+    { "capability": "Research collection", "production": "OFF", "disposition": "DEFERRED" },
+    { "capability": "Database persistence", "production": "OFF", "disposition": "DEFERRED" },
+    {
+      "capability": "Managed server-side private memory",
+      "production": "OFF",
+      "disposition": "DEFERRED",
+      "readinessNotClaimed": ["identity", "isolation", "deletion", "KMS", "backup activation"]
+    }
+  ],
+  "productionCapabilityBoundary": {
+    "source": "read-only Vercel metadata plus non-secret Production health/readiness/status endpoints",
+    "environmentValuesRetrieved": false,
+    "environmentFilesWritten": false,
+    "configurationMutations": 0,
+    "productionProviderCredentials": {
+      "OPENAI_API_KEY": "ABSENT",
+      "UPSTASH_VECTOR_REST_URL": "ABSENT",
+      "UPSTASH_VECTOR_REST_TOKEN": "ABSENT",
+      "UPSTASH_VECTOR_REST_READONLY_TOKEN": "ABSENT"
+    },
+    "previewProviderCredentials": {
+      "OPENAI_API_KEY": { "status": "PRESENT", "classification": "SENSITIVE", "scope": "PREVIEW" },
+      "UPSTASH_VECTOR_REST_URL": { "status": "PRESENT", "classification": "SENSITIVE", "scope": "PREVIEW" },
+      "UPSTASH_VECTOR_REST_TOKEN": { "status": "PRESENT", "classification": "SENSITIVE", "scope": "PREVIEW" },
+      "UPSTASH_VECTOR_REST_READONLY_TOKEN": { "status": "PRESENT", "classification": "SENSITIVE", "scope": "PREVIEW" }
+    },
+    "publicNonSecretRuntimeFlags": {
+      "personalizationPreview": true,
+      "consentControls": true,
+      "offlineFallback": true,
+      "debugUi": false,
+      "externalAnalytics": false,
+      "databasePersistence": false,
+      "liveAi": false,
+      "externalMonitoring": false,
+      "durableMemory": false,
+      "embeddings": false,
+      "vectorRetrieval": false,
+      "broadRag": false,
+      "externalTeoGuideProvider": false
+    },
+    "sensitiveFlagMetadata": {
+      "status": "PRESENT_VALUES_NOT_RETRIEVED",
+      "scope": ["production", "preview"],
+      "classification": "SENSITIVE_ENCRYPTED",
+      "productionEntriesUnchangedSinceCreation": true,
+      "keys": [
+        "TEOYUBE_ENABLE_LIVE_AI", "TEOYUBE_LIVE_AI_ENABLED",
+        "TEOYUBE_ENABLE_EMBEDDINGS", "TEOYUBE_ENABLE_VECTOR_RETRIEVAL",
+        "TEOYUBE_VECTOR_RETRIEVAL_ENABLED", "TEOYUBE_ENABLE_BROAD_RAG",
+        "TEOYUBE_RESEARCH_MODE_ENABLED", "TEOYUBE_ENABLE_DATABASE_PERSISTENCE",
+        "TEOYUBE_ENABLE_DURABLE_MEMORY"
+      ]
+    },
+    "liveAiStatus": {
+      "configured": false,
+      "deterministicAvailable": true,
+      "store": false,
+      "zeroDataRetentionClaimed": false,
+      "secretValuesExposed": false
+    },
+    "productionDispositions": {
+      "openAiGeneration": "OFF",
+      "embeddings": "OFF",
+      "managedVectorRetrieval": "OFF",
+      "broadRag": "OFF",
+      "researchCollection": "OFF",
+      "databasePersistence": "OFF",
+      "durableOrManagedPrivateMemory": "OFF"
+    }
+  },
+  "securityAccessibilityObservability": {
+    "releaseSecurityGate": {
+      "result": "PASS",
+      "controlsPassed": 19,
+      "controlsExpected": 19,
+      "criticalVulnerabilities": 0,
+      "highVulnerabilities": 0,
+      "trackedSecretScan": "PASS",
+      "newHistorySecretScan": "PASS",
+      "clientBundleCredentialScan": "PASS"
+    },
+    "dependencyAudit": {
+      "result": "PASS",
+      "totalVulnerabilities": 0,
+      "critical": 0,
+      "high": 0
+    },
+    "deterministicSafety": {
+      "result": "PASS",
+      "fixturesPassed": 64,
+      "fixturesExpected": 64,
+      "gateA": "PASS",
+      "gateB": "CLOSED_LIVE_AI_DISABLED",
+      "artifactSha256": "65943d102556d1af6e009621c99189fbccda0f881ceb2b67c62865a68f2f03dd"
+    },
+    "accessibility": {
+      "disposition": "NO_UNRESOLVED_LAUNCH_BLOCKING_CRITICAL_OR_HIGH_DEFECT",
+      "existingAutomatedEvidence": "PASS_216_OF_216_CELLS",
+      "realAccessibilityRegressions": 0,
+      "freshCloseoutControllerRun": "BLOCKED_CONTROLLER_NOT_PRESENT_IN_VERIFICATION_CLONE",
+      "freshPassClaimed": false,
+      "wcagConformanceClaimed": false,
+      "remainingManualWork": ["contrast measurement", "responsive text zoom", "unavailable-platform assistive-technology evidence"]
+    },
+    "activeAutomationBypassCount": 0,
+    "runtimeLogs": {
+      "classification": "RECORDS_RETURNED_CLEAN",
+      "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+      "recentWindow": "1h",
+      "statusCounts": { "200": 40 },
+      "errorWarningFatalCount": 0,
+      "fiveXxCount": 0,
+      "sevenDayExactDeploymentCoverage": "NO_RECORDS_RETURNED_RETENTION_LIMIT",
+      "historicalProjectWideFindingExcluded": {
+        "deploymentId": "dpl_8kSKXHaLkDJXKbsiopsY5gwCqPZ5",
+        "reason": "superseded deployment; not the authoritative Production deployment"
+      }
+    }
+  },
+  "protectedSourceBoundary": {
+    "protectedVisualChangesByCloseout": 0,
+    "immutableBaselineWritesByCloseout": 0,
+    "authoritativeExactCommitRecoveryVerification": "PASS_PHYSICAL_LF_CHECKOUT",
+    "verifiedCommit": "948da5698af4202d7914c82f9fc45f0505d87836",
+    "linkedWorktreeLimitation": "The linked recovery workspace produced protected-evidence byte/layout mismatches; the same exact commit passed the complete recovery verifier in a clean physical LF checkout. No source or baseline was altered to accommodate the linked layout."
+  },
+  "rollback": {
+    "static": {
+      "status": "RETAINED",
+      "command": "npm run rollback:start",
+      "script": "node --preserve-symlinks-main server.js",
+      "serverSyntax": "PASS"
+    },
+    "vercel": {
+      "status": "VERIFIED_NON_DISRUPTIVELY",
+      "targetDeploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+      "targetState": "READY",
+      "command": "vercel rollback dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM --scope princeinobas-projects --yes",
+      "executed": false
+    }
+  },
+  "evidenceHashManifest": [
+    {
+      "path": "src/server/live-ai/evaluation/preview-grounded-live-ai-evaluation-v1.json",
+      "sha256": "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537",
+      "purpose": "locked Live AI V1 dataset"
+    },
+    {
+      "path": "docs/release/grounded-live-ai-probe-taxonomy-final.json",
+      "sha256": "db32a57af11ef02b7c2d47167c2ab6c4372d49a880bd11128a2e5cc3e2e7a06e",
+      "purpose": "final grounded Live AI evidence"
+    },
+    {
+      "path": "docs/release/final-preview-vector-canary.json",
+      "sha256": "54942d8af3d1246a783974782becbd392c69e8be41f9cfb130944a7dacee173e",
+      "purpose": "final Preview managed-vector canary"
+    },
+    {
+      "path": "docs/release/vector-holdout-v2-quality-completion.json",
+      "sha256": "816d3d5dfb8d8130214a8736ab0093bea299b106abad48a8454fd5aed1e13e0d",
+      "purpose": "locked Vector V2 quality evidence"
+    },
+    {
+      "path": "docs/release/aug21-core-capability-matrix.json",
+      "sha256": "7d8c0fa0424709ea32b2ccd73dc15feb2dbb85798c5582d52eeb055943046ec4",
+      "purpose": "safe-core capability matrix"
+    },
+    {
+      "path": "docs/release/aug21-guided-journey-report.json",
+      "sha256": "8cffbc0df22119d823cb754247c312fd303ac49fd34bc39298260742186eef0c",
+      "purpose": "guided journey and local continuity evidence"
+    },
+    {
+      "path": "docs/release/aug21-production-baseline.json",
+      "sha256": "dd7b1796c1adad3e18216af799abb6735304230d662425c637c8a6d7adca21de",
+      "purpose": "Production baseline"
+    },
+    {
+      "path": "docs/release/parity-reconciliation.json",
+      "sha256": "0cc4bb198f1030d7ae68941666094acf62a93f5d39943d0210f3ad4c45fdfa2c",
+      "purpose": "216-cell parity/accessibility reconciliation"
+    },
+    {
+      "path": "docs/release/secondary-static-parity-reconciliation.json",
+      "sha256": "41d378d9c3029a2bf12e09b0c10cd06247a6ee381b5d17152adca667ad61f369",
+      "purpose": "secondary static evidence reconciliation"
+    }
+  ],
+  "closeoutAccounting": {
+    "providerCalls": 0,
+    "additionalProviderCostUsd": 0,
+    "newBypassCredentials": 0,
+    "productionDeployments": 0,
+    "previewDeploymentCommands": 0,
+    "productionEnvironmentMutations": 0,
+    "databaseMutations": 0,
+    "upstashMutations": 0,
+    "supabaseMutations": 0,
+    "protectedVisualChanges": 0,
+    "runtimeSourceChanges": 0,
+    "immutableBaselineWrites": 0,
+    "publicProductionOptionalAiActivation": "NOT_AUTHORIZED"
+  },
+  "finalClassification": {
+    "teoyubeProductionBeta": "COMPLETE",
+    "august21DeliveryCommitment": "ACHIEVED_AHEAD_OF_SCHEDULE",
+    "safeCore": "COMPLETE",
+    "previewVectorReadiness": "PASS",
+    "previewGroundedLiveAiReadiness": "PASS",
+    "optionalProductionAi": "OFF_BY_OWNER_DECISION",
+    "postLaunchManagedMemory": "DEFERRED",
+    "postLaunchResearchCollection": "DEFERRED",
+    "productionMutation": 0
+  }
+}
