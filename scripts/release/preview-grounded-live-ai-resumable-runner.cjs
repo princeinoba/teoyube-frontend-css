@@ -15,7 +15,7 @@ const {
   traceLegacyForbiddenClaims,
 } = require("./preview-grounded-live-ai-forbidden-claim-trace.cjs");
 
-const AUTHORIZATION_ID = "TEOYUBE-AUG21-LIVE-AI-FINAL-LOCKED-COMPLETION-2026-08-12-001";
+const AUTHORIZATION_ID = "TEOYUBE-AUG21-LIVE-AI-CITATION-INJECTION-REMEDIATION-2026-08-12-001";
 const PROJECT = Object.freeze({
   projectId: "prj_0hPdbIadmq39jUS3wQ56tMvXOvCm",
   scope: "princeinobas-projects",
@@ -50,15 +50,15 @@ const DATASET_PATH = path.resolve("src/server/live-ai/evaluation/preview-grounde
 const DATASET_SHA256 = "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537";
 const MODEL = "gpt-5.6-terra";
 const MAXIMUM_COST_USD = 0.25;
-const SPENT_OR_RESERVED_BEFORE_RESUME_USD = 0.099218;
-const WORST_PROVIDER_ELIGIBLE_CASE_USD = 0.01081;
+const SPENT_OR_RESERVED_BEFORE_RESUME_USD = 0.12917;
+const WORST_PROVIDER_ELIGIBLE_CASE_USD = 0.00785;
 const MAXIMUM_REQUEST_MS = 30_000;
 const MAXIMUM_CASE_MS = 40_000;
 const MAXIMUM_RUNNER_MS = 900_000;
 const MAXIMUM_RESPONSE_BYTES = 262_144;
 const MAXIMUM_PARSER_MS = 250;
-const CHECKPOINT_PATH = path.resolve(".tmp/preview-grounded-live-ai/conditional-final-locked-completion-checkpoint.json");
-const FINAL_ARTIFACT_PATH = path.resolve(".tmp/preview-grounded-live-ai/conditional-final-locked-completion-canary.json");
+const CHECKPOINT_PATH = path.resolve(".tmp/preview-grounded-live-ai/citation-injection-final-locked-checkpoint.json");
+const FINAL_ARTIFACT_PATH = path.resolve(".tmp/preview-grounded-live-ai/citation-injection-final-locked-canary.json");
 const PROVIDER_KEYS = Object.freeze(["modelProbe", "inputModeration", "embedding", "vector", "generation", "outputModeration"]);
 const TOKEN_KEYS = Object.freeze(["inputTokens", "cachedInputTokens", "reasoningTokens", "outputTokens", "totalTokens"]);
 const ROUTES = Object.freeze([

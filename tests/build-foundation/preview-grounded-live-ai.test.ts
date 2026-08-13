@@ -369,7 +369,7 @@ describe("grounded provider execution and validation", () => {
     }
   });
 
-  it("distinguishes retrieval unavailable, insufficient evidence, missing citation, and exact WEB hydration failure", async () => {
+  it("distinguishes retrieval unavailable, insufficient evidence, malformed required citations, and ineligible WEB sources", async () => {
     const base = retrieval();
     const wrongTranslation = {
       ...base,
@@ -387,8 +387,8 @@ describe("grounded provider execution and validation", () => {
     }>[] = [
       { label: "unavailable", retrieve: async () => { throw new Error("synthetic retrieval failure"); }, code: "RETRIEVAL_UNAVAILABLE" },
       { label: "insufficient", retrieve: async () => ({ ...base, sources: Object.freeze([]) }), code: "RETRIEVAL_INSUFFICIENT_EVIDENCE" },
-      { label: "citation not retrieved", retrieve: async () => base, requiredCitationIds: ["web:romans.8.28"], code: "CITATION_NOT_RETRIEVED" },
-      { label: "exact WEB hydration", retrieve: async () => wrongTranslation, requiredCitationIds: ["web:james.1.5"], code: "EXACT_WEB_HYDRATION_FAILURE" },
+      { label: "malformed required citation", retrieve: async () => base, requiredCitationIds: ["web:not-a-book.8.28"], code: "CITATION_NOT_RETRIEVED" },
+      { label: "ineligible WEB source", retrieve: async () => wrongTranslation, code: "RETRIEVAL_INSUFFICIENT_EVIDENCE" },
     ];
     for (const scenario of scenarios) {
       const events: string[] = [];
@@ -410,7 +410,7 @@ describe("grounded provider execution and validation", () => {
         fallbackReason: scenario.code,
         providerCalled: true,
       });
-      if (["citation not retrieved", "exact WEB hydration"].includes(scenario.label)) {
+      if (["malformed required citation", "ineligible WEB source"].includes(scenario.label)) {
         expect(result.providerCalls).toMatchObject({ embedding: 1, vector: 1, generation: 0 });
       }
       expect(events).toEqual([]);
