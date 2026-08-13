@@ -6,7 +6,7 @@ Generated: `2026-08-13T10:47:27Z`
 
 ## Outcome
 
-The bounded Preview-only remediation is complete. The exact Git-sourced runtime `ec8909faa3c1ae8a919f40b13f534c6f34f774c2` passed the unchanged locked 32-case Live AI evaluation with no retry, no model metadata probe, no unsafe or unsupported claim, no private/high-stakes provider call, and no Production provider call. Cumulative authorized Live AI spend is `$0.17901`, below the `$0.27` ceiling. The only bypass created by this authorization was revoked; the independently queried active count is zero.
+The bounded Preview-only remediation is complete. The exact Git-sourced runtime `ec8909faa3c1ae8a919f40b13f534c6f34f774c2` passed the unchanged locked 32-case Live AI evaluation with no retry, no model metadata probe, no unsafe or unsupported claim, no private/high-stakes provider call, and no Production provider call. Cumulative authorized Live AI spend is `$0.17901`, below the `$0.27` ceiling. The only bypass created by this authorization was revoked, bringing the historical aggregate from 6/6 to 7/7; the independently queried active count is zero.
 
 Production was not promoted, redeployed, or modified. Public Production activation remains unauthorized.
 
@@ -106,6 +106,7 @@ Production remains READY at `d95b6bc3abcc2e1f3592bbf5ae90970a40010954` on deploy
 MODEL-PROBE ROOT CAUSE: PASS
 STOCK NO-ANSWER TAXONOMY: PASS
 LOCKED LIVE AI EVALUATION: 32/32 PASS
+BYPASSES CREATED/REVOKED: 7/7
 ACTIVE BYPASS TOKENS: 0
 PRODUCTION MUTATION: 0
 PUBLIC PRODUCTION ACTIVATION: NOT AUTHORIZED

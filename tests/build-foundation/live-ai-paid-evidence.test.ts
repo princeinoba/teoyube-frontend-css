@@ -10,7 +10,7 @@ type CompletionEvidence = {
     metrics: { unsupportedBiblicalClaims: number };
     costsUsd: { cumulative: number };
   };
-  bypass: { finalActiveCount: number };
+  bypass: { aggregateCreated: number; finalActiveCount: number };
   productionBoundary: { mutations: number };
 };
 
@@ -43,6 +43,7 @@ describe("locked Live AI paid-evidence binding", () => {
     { name: "unsupported claims", alter: (evidence) => { evidence.finalLockedEvaluation.metrics.unsupportedBiblicalClaims = 1; }, expectedFailure: "unsupportedBiblicalClaims is non-zero." },
     { name: "cost", alter: (evidence) => { evidence.finalLockedEvaluation.costsUsd.cumulative = 0.28; }, expectedFailure: "Live AI evaluation cost binding is inconsistent or over budget." },
     { name: "bypass", alter: (evidence) => { evidence.bypass.finalActiveCount = 1; }, expectedFailure: "Automation bypass lifecycle is not closed." },
+    { name: "bypass aggregate", alter: (evidence) => { evidence.bypass.aggregateCreated = 8; }, expectedFailure: "Automation bypass lifecycle is not closed." },
     { name: "production mutation", alter: (evidence) => { evidence.productionBoundary.mutations = 1; }, expectedFailure: "Production boundary is not closed." }
   ];
 

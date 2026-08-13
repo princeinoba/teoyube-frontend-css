@@ -198,9 +198,11 @@
     "rawProviderContentCopied": false
   },
   "bypass": {
-    "historicalCreatedAndRevokedBeforeAuthorization": 7,
+    "historicalCreatedAndRevokedBeforeAuthorization": 6,
     "createdByAuthorization": 1,
     "revokedByAuthorization": 1,
+    "aggregateCreated": 7,
+    "aggregateRevoked": 7,
     "revocationAttempts": 1,
     "finalActiveCount": 0,
     "credentialPrintedPersistedOrCommitted": false

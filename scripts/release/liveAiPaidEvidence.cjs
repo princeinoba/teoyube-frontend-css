@@ -8,7 +8,7 @@ const { execFileSync } = require("node:child_process");
 const root = path.resolve(__dirname, "../..");
 const evidencePath = path.join(root, "docs/release/grounded-live-ai-probe-taxonomy-final.json");
 const datasetPath = path.join(root, "src/server/live-ai/evaluation/preview-grounded-live-ai-evaluation-v1.json");
-const expectedEvidenceSha256 = "7c5dab9d32d99b88b28432ff5e2cde925703ca87e8d2dc9068bedc5de5a7cbdc";
+const expectedEvidenceSha256 = "db32a57af11ef02b7c2d47167c2ab6c4372d49a880bd11128a2e5cc3e2e7a06e";
 const expectedDatasetSha256 = "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537";
 const expectedRunnerSha256 = "3457b2ca0ceebdc6922ba425878286140b18b280475636482827fb9f8476367d";
 const expectedArtifactSha256 = "7330b41c6c710313f060e273c2b52d81cb789638dfa9f37cd033bf999a2fc693";
@@ -94,7 +94,7 @@ function verifyLiveAiPaidEvidence(options = {}) {
   const binding = evidence.evidenceBinding || {};
   if (binding.runnerSourceSha256 !== expectedRunnerSha256 || binding.sanitizedCanarySha256 !== expectedArtifactSha256 || binding.finalCheckpointSha256 !== expectedCheckpointSha256 || binding.atomicCheckpointSnapshots !== 64 || binding.rawProviderContentCopied !== false) failures.push("Live AI evidence-envelope hashes or privacy boundary changed.");
   const bypass = evidence.bypass || {};
-  if (bypass.createdByAuthorization !== 1 || bypass.revokedByAuthorization !== 1 || bypass.finalActiveCount !== 0 || bypass.credentialPrintedPersistedOrCommitted !== false) failures.push("Automation bypass lifecycle is not closed.");
+  if (bypass.historicalCreatedAndRevokedBeforeAuthorization !== 6 || bypass.createdByAuthorization !== 1 || bypass.revokedByAuthorization !== 1 || bypass.aggregateCreated !== 7 || bypass.aggregateRevoked !== 7 || bypass.finalActiveCount !== 0 || bypass.credentialPrintedPersistedOrCommitted !== false) failures.push("Automation bypass lifecycle is not closed.");
   const production = evidence.productionBoundary || {};
   if (production.mutations !== 0 || production.redeployed !== false || production.promoted !== false || production.providerSecretsPresent !== false || !production.liveAiOff || !production.vectorRetrievalOff || !production.embeddingsOff || !production.broadRagOff || !production.researchCollectionOff || !production.databasePersistenceOff || !production.durablePrivateMemoryOff) failures.push("Production boundary is not closed.");
   if (evidence.remediation?.modelProbeResolution?.separateMetadataProbeRemoved !== true || evidence.remediation?.stockNoAnswerResolution?.safetyWeakened !== false || evidence.remediation?.stockNoAnswerResolution?.providerCalls !== 0) failures.push("Probe or stock-taxonomy remediation binding changed.");
