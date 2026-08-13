@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "authorizationId": "TEOYUBE-AUG21-LIVE-AI-PROBE-TAXONOMY-FINAL-2026-08-12-001",
+  "parentAuthorizationId": "TEOYUBE-AUG21-LIVE-AI-CITATION-INJECTION-REMEDIATION-2026-08-12-001",
+  "generatedAt": "2026-08-13T10:47:27Z",
+  "repository": "princeinoba/teoyube-frontend-css",
+  "branch": "recovery/visual-source-of-truth",
+  "classification": {
+    "modelProbeRootCause": "PASS",
+    "stockNoAnswerTaxonomy": "PASS",
+    "offlineVerification": "PASS",
+    "gitSourcedPreview": "PASS",
+    "lockedEvaluation": "PASS",
+    "productionActivation": "NOT_AUTHORIZED"
+  },
+  "identity": {
+    "authorizationStartingSha": "d6134e329cdf42d743405f3e8bd97581b011ec1d",
+    "testedRuntimeSha": "ec8909faa3c1ae8a919f40b13f534c6f34f774c2",
+    "remoteRuntimeSha": "ec8909faa3c1ae8a919f40b13f534c6f34f774c2",
+    "deploymentId": "dpl_E25pTVmg39eeCPnmEN1JXfLMcBKJ",
+    "previewUrl": "https://teoyube-frontend-qi8kj5rzi-princeinobas-projects.vercel.app",
+    "deploymentReadyState": "READY",
+    "deploymentTarget": "preview",
+    "gitRepository": "teoyube-frontend-css",
+    "gitBranch": "recovery/visual-source-of-truth"
+  },
+  "lockedV1": {
+    "path": "src/server/live-ai/evaluation/preview-grounded-live-ai-evaluation-v1.json",
+    "version": "teoyube-preview-grounded-live-ai-evaluation-2026-08-11.1",
+    "cases": 32,
+    "sha256": "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537",
+    "changed": false
+  },
+  "remediation": {
+    "historicalModelProbeFailure": {
+      "failedPublicCases": 12,
+      "httpStatus": 422,
+      "failingStage": "MODEL_PROBE",
+      "providerHttpResponseObserved": false,
+      "providerStatusCode": null,
+      "sanitizedErrorCode": "API_CONNECTION_TIMEOUT",
+      "validatorRuleId": "OPENAI_TRANSPORT_TIMEOUT",
+      "attempts": 1,
+      "sdkProviderTimeoutMs": 20000,
+      "firstRequestObservedDuration": "approximately 23.7 seconds",
+      "generationReached": false,
+      "authenticationFailureObserved": false,
+      "rootCause": "A separate OpenAI model-metadata retrieval was owned by the SDK transport timeout and failed before input moderation or generation. Its cached rejection failed the remaining public cases closed. This was not a Vercel, runner, case, or subprocess timeout."
+    },
+    "modelProbeResolution": {
+      "separateMetadataProbeRemoved": true,
+      "localKeyPresenceCheckRetained": true,
+      "configuredModelValidationRetained": true,
+      "generationRequestIsAuthoritativeModelCheck": true,
+      "sanitizedTransportTaxonomy": [
+        "OPENAI_TRANSPORT_TIMEOUT",
+        "OPENAI_AUTHENTICATION_FAILURE",
+        "OPENAI_PERMISSION_FAILURE",
+        "OPENAI_MODEL_OR_PROJECT_FAILURE",
+        "OPENAI_RATE_LIMIT_FAILURE",
+        "OPENAI_QUOTA_OR_CREDIT_FAILURE",
+        "OPENAI_SERVER_FAILURE"
+      ]
+    },
+    "timeoutHierarchyMs": {
+      "vector": 2000,
+      "embedding": 6000,
+      "inputModeration": 4000,
+      "generation": 18000,
+      "outputModeration": 4000,
+      "applicationWorstCase": 34000,
+      "vercelFunction": 40000,
+      "runnerHttpRequest": 45000,
+      "runnerCase": 50000,
+      "runnerProcess": 900000,
+      "shellInvocation": 960000
+    },
+    "stockNoAnswerResolution": {
+      "lockedCaseId": "no-evidence-stock",
+      "lockedExpectedDisposition": "no_answer",
+      "internalSafetyDisposition": "refuse",
+      "internalSafetyReason": "LOCAL_HIGH_STAKES_REFUSAL",
+      "externalEvaluatorDisposition": "no_answer",
+      "normalizationScope": "Only the exact locked fixture ID with the expected category, expected disposition, local high-stakes rule, pre-provider diagnostic, zero provider calls, and no response payload.",
+      "livePriceAdvicePredictionGuaranteeStillRejected": true,
+      "generalFinancialEducationStillEligible": true,
+      "providerCalls": 0,
+      "safetyWeakened": false
+    },
+    "changedFiles": [
+      "scripts/release/preview-grounded-live-ai-resumable-runner.cjs",
+      "scripts/release/run-preview-grounded-live-ai-offline-proof.cjs",
+      "src/app/api/teoyube/preview-grounded-live-ai/route.ts",
+      "src/server/live-ai/preview-grounded-live-ai.ts",
+      "src/server/live-ai/preview-grounded-provider-response.ts",
+      "src/server/retrieval/openai-embedding-gateway.ts",
+      "src/server/retrieval/preview-managed-retrieval.ts",
+      "tests/build-foundation/preview-grounded-citation-injection-remediation.test.ts",
+      "tests/build-foundation/preview-grounded-diagnostics.test.ts",
+      "tests/build-foundation/preview-grounded-live-ai.test.ts"
+    ]
+  },
+  "offlineVerification": {
+    "focusedTests": { "passed": 91, "failed": 0, "files": 3 },
+    "focusedOfflineDiagnosticMatrix": { "passed": 51, "failed": 0 },
+    "resumableRunnerProof": "PASS",
+    "relevantSequentialTests": { "passed": 279, "failed": 0, "skipped": 1, "passedFiles": 28, "skippedFiles": 1 },
+    "typescript": "PASS",
+    "lint": "PASS",
+    "productionBuild": "PASS",
+    "safetyEvaluation": "64/64 PASS",
+    "teoGuide": "49/49 PASS",
+    "scriptureExactWeb": "PASS",
+    "recoveryVerification": "PASS",
+    "dependencyAudit": { "dependencies": 492, "critical": 0, "high": 0, "moderate": 0, "low": 0 },
+    "trackedSecretScan": { "scannedFiles": 5358, "matches": 0 },
+    "gitHistorySecretPatterns": 0,
+    "clientBundleScan": { "scannedFiles": 42, "unsafeFiles": 0 },
+    "protectedSourceChanges": 0,
+    "protectedVisualChanges": 0,
+    "baselineWrites": 0
+  },
+  "preview": {
+    "projectId": "prj_0hPdbIadmq39jUS3wQ56tMvXOvCm",
+    "projectName": "teoyube-frontend-css",
+    "gitRepository": "teoyube-frontend-css",
+    "requiredSecretNamesPresent": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "UPSTASH_VECTOR_REST_URL",
+      "UPSTASH_VECTOR_REST_TOKEN",
+      "TEOYUBE_ENABLE_PREVIEW_LIVE_AI_EVALUATION",
+      "TEOYUBE_ENABLE_PREVIEW_LIVE_AI_DIAGNOSTICS",
+      "TEOYUBE_PREVIEW_LIVE_AI_MODEL"
+    ],
+    "secretValuesReported": false,
+    "model": "gpt-5.6-terra",
+    "routes": { "passed": 23, "expected": 23 },
+    "stylesheets": { "passed": 9, "expected": 9 },
+    "health": { "status": "PASS", "identity": "preview/vercel-preview", "httpStatus": 200 }
+  },
+  "finalLockedEvaluation": {
+    "status": "PASS",
+    "passed": 32,
+    "failed": 0,
+    "expected": 32,
+    "aggregateFailureCodes": [],
+    "globalRetryUsed": false,
+    "metrics": {
+      "structuredOutputSchemaValidity": 1,
+      "citationIdsWithinEvidence": 1,
+      "exactWebQuotationAccuracy": 1,
+      "promptInjectionOverrideSuccesses": 0,
+      "privateSensitiveProviderCalls": 0,
+      "highStakesUnsafeGuidance": 0,
+      "highStakesProviderCalls": 0,
+      "inventedScriptureOrReferences": 0,
+      "unsupportedBiblicalClaims": 0,
+      "falseDivineCertaintyClaims": 0,
+      "productionProviderCalls": 0
+    },
+    "providerCalls": {
+      "modelProbe": 0,
+      "inputModeration": 12,
+      "embedding": 12,
+      "vector": 12,
+      "generation": 12,
+      "outputModeration": 12
+    },
+    "tokenUsage": {
+      "inputTokens": 9230,
+      "cachedInputTokens": 0,
+      "reasoningTokens": 0,
+      "outputTokens": 2595,
+      "totalTokens": 11825
+    },
+    "costsUsd": {
+      "authorizationCeiling": 0.27,
+      "authorizationAdditionalCeiling": 0.14,
+      "spentOrReservedBeforeResume": 0.12929,
+      "finalEvaluation": 0.04972,
+      "cumulative": 0.17901,
+      "remaining": 0.09099,
+      "projectedResumeMaximum": 0.0942,
+      "conservativeCumulativeMaximum": 0.22349
+    },
+    "latencyMs": { "mean": 4687.9710475833335, "p95": 7817.599635, "maximum": 7817.599635 },
+    "rawQueriesStored": false,
+    "rawResponsesStored": false,
+    "persisted": false
+  },
+  "evidenceBinding": {
+    "runnerSourceSha256": "3457b2ca0ceebdc6922ba425878286140b18b280475636482827fb9f8476367d",
+    "sanitizedCanarySha256": "7330b41c6c710313f060e273c2b52d81cb789638dfa9f37cd033bf999a2fc693",
+    "finalCheckpointSha256": "1205b9b3d69976a4f99091dfc56ef5fec64fe90f16abc58c94643ef82f4789b2",
+    "finalCheckpoint": "probe-taxonomy-final-locked-checkpoint.00064.json",
+    "atomicCheckpointSnapshots": 64,
+    "rawProviderContentCopied": false
+  },
+  "bypass": {
+    "historicalCreatedAndRevokedBeforeAuthorization": 7,
+    "createdByAuthorization": 1,
+    "revokedByAuthorization": 1,
+    "revocationAttempts": 1,
+    "finalActiveCount": 0,
+    "credentialPrintedPersistedOrCommitted": false
+  },
+  "runtimeLogs": {
+    "windowStart": "2026-08-13T03:03:21Z",
+    "queriedAt": "2026-08-13T10:47:27Z",
+    "exactDeploymentRecordsReturned": 0,
+    "projectBranchRecordsReturned": 0,
+    "errorRecords": 0,
+    "warningRecords": 0,
+    "fatalRecords": 0,
+    "http5xxRecords": 0,
+    "classification": "NO_RECORDS_RETURNED",
+    "observedLogCoverageClaimed": false,
+    "rawMessagesStored": false
+  },
+  "security": {
+    "preBinding": "18/19",
+    "solePreBindingFinding": "paid-evidence-reuse-boundary",
+    "postBindingResult": "19/19 PASS",
+    "criticalHighFindings": 0,
+    "bindingMethod": "The historical tag remains unchanged. A strict verifier binds these exact evidence bytes, the locked dataset hash, tested-runtime ancestry and unchanged dependency set, passing metrics, bounded cost, zero active bypasses, and zero Production mutation."
+  },
+  "productionBoundary": {
+    "deploymentId": "dpl_4SSBQkV7WmwNZgSxQ7NWaRh3EjsM",
+    "commitSha": "d95b6bc3abcc2e1f3592bbf5ae90970a40010954",
+    "readyState": "READY",
+    "providerSecretsPresent": false,
+    "liveAiOff": true,
+    "vectorRetrievalOff": true,
+    "embeddingsOff": true,
+    "broadRagOff": true,
+    "researchCollectionOff": true,
+    "databasePersistenceOff": true,
+    "durablePrivateMemoryOff": true,
+    "mutations": 0,
+    "redeployed": false,
+    "promoted": false
+  },
+  "protectedProjects": [
+    { "name": "teoyube-cooperation", "id": "prj_biPhkAy6rJDwlAi61GI6DSizYudU", "updatedAtBefore": 1785445466640, "updatedAtAfter": 1785445466640, "changed": false },
+    { "name": "teoyube-scripture-intelligence", "id": "prj_WKcHmnsfdkAI32Hzwb0YxbOERiVW", "updatedAtBefore": 1785256759337, "updatedAtAfter": 1785256759337, "changed": false },
+    { "name": "teoyube-phase-1-sntz", "id": "prj_Hg8SixGmUgA5K2UlDBYO0bAr2EnO", "updatedAtBefore": 1784813130475, "updatedAtAfter": 1784813130475, "changed": false }
+  ],
+  "outcome": {
+    "modelProbeRootCause": "PASS",
+    "stockNoAnswerTaxonomy": "PASS",
+    "lockedLiveAiEvaluation": "32/32 PASS",
+    "securityControls": "19/19 PASS",
+    "productionMutation": 0,
+    "publicProductionActivation": "NOT_AUTHORIZED",
+    "remainingGenuineBlockers": []
+  }
+}

@@ -12,6 +12,7 @@ const {
   writeJson
 } = require("./release-utils.cjs");
 const { verifyVectorV2PaidEvidence } = require("./vectorV2PaidEvidence.cjs");
+const { verifyLiveAiPaidEvidence } = require("./liveAiPaidEvidence.cjs");
 
 function control(id, passed, evidence, severity = "critical") {
   return Object.freeze({ id, passed, severity, evidence });
@@ -276,13 +277,27 @@ const retrievalChanged = run(
   { allowFailure: true }
 ).status !== 0;
 const vectorV2Evidence = verifyVectorV2PaidEvidence();
+const liveAiPaidEvidence = verifyLiveAiPaidEvidence();
+const liveAiEvidenceSatisfied = !liveAiChanged || liveAiPaidEvidence.valid;
 const retrievalEvidenceSatisfied = !retrievalChanged || vectorV2Evidence.valid;
 controls.push(control(
   "paid-evidence-reuse-boundary",
-  !liveAiChanged && retrievalEvidenceSatisfied,
+  liveAiEvidenceSatisfied && retrievalEvidenceSatisfied,
   {
     liveAiTag: reuse.prompt19Tag,
     liveAiDependenciesChanged: liveAiChanged,
+    liveAiPaidEvidence: {
+      requiredBecauseLiveAiChanged: liveAiChanged,
+      valid: liveAiPaidEvidence.valid,
+      authorizationId: liveAiPaidEvidence.authorizationId || null,
+      testedRuntimeSha: liveAiPaidEvidence.testedRuntimeSha || null,
+      deploymentId: liveAiPaidEvidence.deploymentId || null,
+      model: liveAiPaidEvidence.model || null,
+      evidenceSha256: liveAiPaidEvidence.evidenceSha256 || null,
+      datasetSha256: liveAiPaidEvidence.datasetSha256 || null,
+      costs: liveAiPaidEvidence.costs || null,
+      failures: liveAiPaidEvidence.failures
+    },
     historicalRetrievalTag: reuse.prompt20Tag,
     retrievalDependenciesChanged: retrievalChanged,
     vectorV2Evidence: {
