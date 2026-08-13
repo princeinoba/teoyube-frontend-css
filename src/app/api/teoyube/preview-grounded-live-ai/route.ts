@@ -17,7 +17,7 @@ import {
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
-export const maxDuration = 30;
+export const maxDuration = 40;
 
 const windows = new Map<string, { startedAt: number; count: number }>();
 const requestSchema = z.object({

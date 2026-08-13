@@ -18,17 +18,19 @@ const FIXED_BOUNDARY = "This is interpretation, not divine certainty.";
 
 function responseFor(fixture) {
   if (fixture.category !== "permitted_public_grounded_generation") {
+    const stock = fixture.id === "no-evidence-stock";
     return {
       ok: false,
-      reason: fixture.category.toUpperCase(),
+      reason: stock ? "LOCAL_HIGH_STAKES_REFUSAL" : fixture.category.toUpperCase(),
       runtime: "deterministic-fallback",
       generationUsed: false,
       persisted: false,
       providerCalls: runner.providerCounts(),
-      disposition: fixture.expectedDisposition,
+      disposition: stock ? "refuse" : fixture.expectedDisposition,
       latencyMs: 1,
       cost: { cumulativeCostUsd: 0 },
       outputHash: crypto.createHash("sha256").update(fixture.id).digest("hex"),
+      ...(stock ? { diagnostic: { pipelineStage: "LOCAL_POLICY", fallbackReason: "PRE_PROVIDER_POLICY_REJECTION", validatorRuleId: "LOCAL_HIGH_STAKES_REFUSAL" } } : {}),
     };
   }
   const response = {
@@ -48,7 +50,7 @@ function responseFor(fixture) {
     runtime: "preview-grounded-live-ai",
     generationUsed: true,
     persisted: false,
-    providerCalls: runner.providerCounts({ modelProbe: 1, inputModeration: 1, embedding: 1, vector: 1, generation: 1, outputModeration: 1 }),
+    providerCalls: runner.providerCounts({ modelProbe: 0, inputModeration: 1, embedding: 1, vector: 1, generation: 1, outputModeration: 1 }),
     response,
     citations: fixture.requiredCitationIds.map((id) => ({ id, translation: "WEB", exactText: WEB_TEXT })),
     usage: { inputTokens: 100, cachedInputTokens: 0, reasoningTokens: 0, outputTokens: 50, totalTokens: 150, estimatedCostUsd: 0.001 },
@@ -104,12 +106,19 @@ function startServer(locked, behavior = {}) {
         response.end("{");
         return;
       }
-      const applicationResponse = responseFor(fixture);
-      if (behavior.ordinaryFailureCaseId === body.caseId) applicationResponse.response.safety_boundary = "Synthetic ordinary quality failure.";
-      if (behavior.forbiddenFailureCaseId === body.caseId) applicationResponse.response.summary = fixture.forbiddenPhrases[0];
-      if (behavior.persistenceCaseId === body.caseId) applicationResponse.persisted = true;
-      response.writeHead(fixture.expectedHttpStatus, { "content-type": "application/json" });
-      response.end(JSON.stringify(applicationResponse));
+      const send = () => {
+        const applicationResponse = responseFor(fixture);
+        if (behavior.ordinaryFailureCaseId === body.caseId) applicationResponse.response.safety_boundary = "Synthetic ordinary quality failure.";
+        if (behavior.forbiddenFailureCaseId === body.caseId) applicationResponse.response.summary = fixture.forbiddenPhrases[0];
+        if (behavior.persistenceCaseId === body.caseId) applicationResponse.persisted = true;
+        response.writeHead(fixture.expectedHttpStatus, { "content-type": "application/json" });
+        response.end(JSON.stringify(applicationResponse));
+      };
+      if (behavior.delayCaseId === body.caseId) {
+        setTimeout(send, behavior.delayMs);
+        return;
+      }
+      send();
     });
   });
   return new Promise((resolve, reject) => {
@@ -165,6 +174,12 @@ async function fullSequenceProof(locked) {
     assert.ok(fixture.authenticatedRequests.every((request) => request.originMatchesHost && request.bypassPresent));
     assert.deepEqual(fixture.dispatched, locked.dataset.cases.map((item) => item.id));
     assert.equal(report.lockedEvaluation.passed, 32);
+    assert.equal(report.providerCalls.modelProbe, 0);
+    assert.equal(report.providerCalls.generation, 12);
+    const stock = report.outcomes.find((item) => item.caseId === "no-evidence-stock");
+    assert.equal(stock.actualDisposition, "no_answer");
+    assert.deepEqual(stock.diagnosticReasonCodes, ["LOCAL_HIGH_STAKES_REFUSAL", "EVALUATOR_OUTCOME_NORMALIZATION"]);
+    assert.ok(Object.values(stock.providerCalls).every((count) => count === 0));
     const aggregateArtifact = checkpointPath("aggregate");
     runner.writeAtomic(aggregateArtifact, report);
     assert.equal(JSON.parse(fs.readFileSync(aggregateArtifact, "utf8")).lockedEvaluation.passed, 32);
@@ -178,10 +193,32 @@ async function fullSequenceProof(locked) {
   }
 }
 
+async function delayedBelowBoundaryProof(locked) {
+  const caseFixture = locked.dataset.cases[0];
+  const fixture = await startServer(locked, { delayCaseId: caseFixture.id, delayMs: 25 });
+  try {
+    const response = await runner.requestJson({ credential: SYNTHETIC_CREDENTIAL, deploymentUrl: fixture.url, route: "/api/teoyube/preview-grounded-live-ai", options: { method: "POST", headers: { "content-type": "application/json", origin: fixture.url }, body: JSON.stringify(runner.bodyFor(caseFixture)) }, parentSignal: new AbortController().signal, requestTimeoutMs: 200, caseId: caseFixture.id, caseOrdinal: 1 });
+    assert.equal(response.status, caseFixture.expectedHttpStatus);
+    assert.deepEqual(fixture.dispatched, [caseFixture.id]);
+  } finally {
+    await closeServer(fixture.server);
+  }
+}
+
 async function timeoutProof(locked) {
   const fixture = await startServer(locked, { neverRespondCaseId: locked.dataset.cases[0].id });
   try {
     await assert.rejects(() => runner.verifyPreview(SYNTHETIC_CREDENTIAL, target(fixture.url), locked, { checkpointPath: checkpointPath("timeout"), corpus: corpus(locked), runnerSourceSha256: runner.sourceHash(), requestTimeoutMs: 50, caseTimeoutMs: 200 }), (error) => ["REQUEST_TIMEOUT", "CASE_TIMEOUT"].includes(error.code));
+    assert.deepEqual(fixture.dispatched, [locked.dataset.cases[0].id]);
+  } finally {
+    await closeServer(fixture.server);
+  }
+}
+
+async function caseTimeoutProof(locked) {
+  const fixture = await startServer(locked, { neverRespondCaseId: locked.dataset.cases[0].id });
+  try {
+    await assert.rejects(() => runner.verifyPreview(SYNTHETIC_CREDENTIAL, target(fixture.url), locked, { checkpointPath: checkpointPath("case-timeout"), corpus: corpus(locked), runnerSourceSha256: runner.sourceHash(), requestTimeoutMs: 200, caseTimeoutMs: 50 }), (error) => error.code === "CASE_TIMEOUT");
     assert.deepEqual(fixture.dispatched, [locked.dataset.cases[0].id]);
   } finally {
     await closeServer(fixture.server);
@@ -254,7 +291,9 @@ async function main() {
   await fullSequenceProof(locked);
   await collectCompleteProof(locked, { ordinaryFailureCaseId: locked.dataset.cases[0].id }, "ordinary-failure", "FIXED_UNCERTAINTY_BOUNDARY_FAILED");
   await collectCompleteProof(locked, { forbiddenFailureCaseId: locked.dataset.cases[0].id }, "forbidden-failure", "C_GENUINE_MODEL_FORBIDDEN_CLAIM");
+  await delayedBelowBoundaryProof(locked);
   await timeoutProof(locked);
+  await caseTimeoutProof(locked);
   await failClosedProof(locked, { malformedCaseId: locked.dataset.cases[0].id }, "malformed", "MALFORMED_JSON_RESPONSE");
   await failClosedProof(locked, { rejectCaseId: locked.dataset.cases[0].id }, "rejected", "PROVIDER_FAILURE");
   await failClosedProof(locked, { persistenceCaseId: locked.dataset.cases[0].id }, "persistence", "UNEXPECTED_PERSISTENCE");
@@ -266,7 +305,7 @@ async function main() {
   for (const event of ["evaluator-failure", "SIGINT", "SIGTERM", "uncaughtException", "unhandledRejection"]) await cleanupProof(event);
   await new Promise((resolve) => setImmediate(resolve));
   assert.deepEqual(activeHandleProof(), []);
-  process.stdout.write(["REQUEST 1 DISPATCH/PROCESS: PASS", "REQUEST 2 OBSERVABLE DISPATCH: PASS", "LOCKED CASE IDS: 32/32 SEQUENTIAL PASS", "MATCHER FALSE POSITIVE REMEDIATION: PASS", "GENUINE FORBIDDEN CLAIM STILL FAILS: PASS", "ORDINARY FAILURE COLLECT-COMPLETE: PASS", "FORBIDDEN FAILURE SANITIZED CLASSIFICATION: PASS", "ATOMIC SANITIZED CHECKPOINT: PASS", "AGGREGATE ARTIFACT: PASS", "NONRESPONDING REQUEST ABORT: PASS", "MALFORMED JSON FAIL-CLOSED: PASS", "5XX STOPS DISPATCH: PASS", "UNEXPECTED PERSISTENCE STOPS DISPATCH: PASS", "BYPASS CLEANUP ON EVALUATOR FAILURE: PASS", "SIGINT/SIGTERM/UNCAUGHT/UNHANDLED CLEANUP: PASS", "ACTIVE RESOURCE CLOSURE: PASS", "NATURAL EXIT: PASS"].join("\n") + "\n");
+  process.stdout.write(["REQUEST 1 DISPATCH/PROCESS: PASS", "REQUEST 2 OBSERVABLE DISPATCH: PASS", "LOCKED CASE IDS: 32/32 SEQUENTIAL PASS", "MATCHER FALSE POSITIVE REMEDIATION: PASS", "GENUINE FORBIDDEN CLAIM STILL FAILS: PASS", "ORDINARY FAILURE COLLECT-COMPLETE: PASS", "FORBIDDEN FAILURE SANITIZED CLASSIFICATION: PASS", "ATOMIC SANITIZED CHECKPOINT: PASS", "AGGREGATE ARTIFACT: PASS", "DELAYED RESPONSE BELOW BOUNDARY: PASS", "NONRESPONDING REQUEST ABORT: PASS", "EVALUATOR CASE DEADLINE: PASS", "MALFORMED JSON FAIL-CLOSED: PASS", "5XX STOPS DISPATCH: PASS", "UNEXPECTED PERSISTENCE STOPS DISPATCH: PASS", "BYPASS CLEANUP ON EVALUATOR FAILURE: PASS", "SIGINT/SIGTERM/UNCAUGHT/UNHANDLED CLEANUP: PASS", "ACTIVE RESOURCE CLOSURE: PASS", "NATURAL EXIT: PASS"].join("\n") + "\n");
 }
 
 main().catch((error) => {

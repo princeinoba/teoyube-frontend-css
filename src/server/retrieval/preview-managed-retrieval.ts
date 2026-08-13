@@ -34,6 +34,8 @@ export const MANAGED_VECTOR_PREVIEW_LIMITS = Object.freeze({
   maximumProviderCallsPerRuntime: 1_000,
   maximumEmbeddingCostUsdPerRuntime: 0.01,
   providerAttempts: 1,
+  embeddingProviderTimeoutMs: 6_000,
+  vectorProviderTimeoutMs: 2_000,
 });
 
 const OFF_FLAGS = Object.freeze([
@@ -214,11 +216,13 @@ function createRuntime(environment: NodeJS.ProcessEnv): Runtime {
   const vectors = new UpstashContentVectorRepository({
     inventory: inventory.chunks,
     environment,
+    timeoutMs: MANAGED_VECTOR_PREVIEW_LIMITS.vectorProviderTimeoutMs,
   });
   const embeddings = new CostBoundEmbeddingGateway(
     new OpenAiEmbeddingGateway({
       environment,
       maximumAttempts: MANAGED_VECTOR_PREVIEW_LIMITS.providerAttempts,
+      providerTimeoutMs: MANAGED_VECTOR_PREVIEW_LIMITS.embeddingProviderTimeoutMs,
     }),
   );
   const service = new HybridRetrievalService({

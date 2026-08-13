@@ -10,6 +10,7 @@ import {
   isPreviewGroundedLiveAiRuntime,
   PREVIEW_GROUNDED_LIMITS,
   PREVIEW_GROUNDED_MODEL,
+  OpenAiPreviewGroundedProvider,
   PreviewAuthorizationCostLedger,
   PreviewGroundedLiveAiService,
   type PreviewGroundedProvider,
@@ -124,10 +125,10 @@ function tig(): TigRecommendationResult {
 function provider(events: string[], options: { unknownCitation?: boolean; emptyCitation?: boolean; quote?: boolean; unsafeTheology?: boolean; inputFlagged?: boolean; outputFlagged?: boolean; unavailable?: boolean; generationFailure?: PreviewGroundedProviderFailure } = {}): PreviewGroundedProvider {
   let moderationCalls = 0;
   return {
-    async probeModel() { events.push("probe"); if (options.unavailable) throw new Error("approved_model_unavailable"); return PREVIEW_GROUNDED_MODEL; },
     async moderate() { moderationCalls += 1; events.push(moderationCalls === 1 ? "moderate-input" : "moderate-output"); return { flagged: moderationCalls === 1 ? Boolean(options.inputFlagged) : Boolean(options.outputFlagged) }; },
     async generate() {
       events.push("generate");
+      if (options.unavailable) throw new Error("approved_model_unavailable");
       if (options.generationFailure) throw options.generationFailure;
       return { modelIdentifier: PREVIEW_GROUNDED_MODEL, latencyMs: 5, usage: { inputTokens: 200, cachedInputTokens: 0, reasoningTokens: 20, outputTokens: 100, totalTokens: 300, estimatedCostUsd: 0.0016 }, response: { disposition: "answer", summary: options.quote ? "But if any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him." : options.unsafeTheology ? "God told me that you must take this exact path." : "James presents asking God for wisdom as a humble response to need.", biblical_application: "This may support prayerful discernment alongside Scripture and wise counsel.", prayer: "Father, grant wisdom and humility as we seek to act faithfully.", action_step: "Read the passage in context and discuss one next step with wise counsel.", citation_ids: options.emptyCitation ? [] : [options.unknownCitation ? "web:invented.1.1" : "web:james.1.5"], limitations: ["This is interpretation and application, not divine certainty."], confidence: "high", safety_boundary: "This is interpretation, not divine certainty." } };
     },
@@ -159,6 +160,10 @@ describe("Preview runtime and local safety boundary", () => {
     }
   });
 
+  it("fails closed on missing local provider configuration without a remote request", () => {
+    expect(() => new OpenAiPreviewGroundedProvider({})).toThrow("preview_openai_key_absent");
+  });
+
   it.each([
     ["Retrieve my private prayer history.", "private_or_sensitive"],
     ["Use jane@example.com and private notes.", "private_or_sensitive"],
@@ -167,6 +172,46 @@ describe("Preview runtime and local safety boundary", () => {
     ["What is the current weather forecast?", "insufficient_evidence"],
   ])("classifies locally before providers: %s", (query, expected) => {
     expect(classifyPreviewGroundedQuery(query)).toBe(expected);
+  });
+
+  it.each([
+    ["What is the live stock price right now?", "high_stakes"],
+    ["Should I buy ACME stock for my portfolio?", "high_stakes"],
+    ["Predict whether ACME stock will rise tomorrow.", "high_stakes"],
+    ["This investment guarantees a 20 percent return.", "high_stakes"],
+    ["Explain how diversification can reduce investment risk in general.", "eligible"],
+    ["What does Scripture teach about money and generosity?", "eligible"],
+    ["How did ancient Roman coinage work?", "eligible"],
+  ])("keeps financial safety classification narrow: %s", (query, expected) => {
+    expect(classifyPreviewGroundedQuery(query)).toBe(expected);
+  });
+
+  it("retains the exact locked stock case as a local high-stakes refusal with zero provider calls", async () => {
+    const calls: string[] = [];
+    const service = new PreviewGroundedLiveAiService({
+      environment: previewEnvironment(),
+      provider: provider(calls),
+      retrieve: async () => { calls.push("retrieve"); return retrieval(); },
+      tig: async () => { calls.push("tig"); return tig(); },
+      ledger: new PreviewAuthorizationCostLedger(),
+    });
+    const result = await service.run({
+      caseId: "no-evidence-stock",
+      query: "What is the live stock price right now?",
+      intent: "general",
+    });
+    expect(result).toMatchObject({
+      ok: false,
+      disposition: "refuse",
+      reason: "LOCAL_HIGH_STAKES_REFUSAL",
+      generationUsed: false,
+      persisted: false,
+      providerCalls: { modelProbe: 0, inputModeration: 0, embedding: 0, vector: 0, generation: 0, outputModeration: 0 },
+      diagnostic: { pipelineStage: "LOCAL_POLICY", fallbackReason: "PRE_PROVIDER_POLICY_REJECTION", validatorRuleId: "LOCAL_HIGH_STAKES_REFUSAL" },
+    });
+    expect(result.response).toBeUndefined();
+    expect(result.citations).toEqual([]);
+    expect(calls).toEqual([]);
   });
 
   it("makes zero provider, TIG, retrieval, or persistence calls for prohibited local inputs", async () => {
@@ -187,9 +232,20 @@ describe("grounded provider execution and validation", () => {
     return { events, result: await service.run({ caseId: "public-james-wisdom", query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.", intent: "scripture", requiredCitationIds: ["web:james.1.5"] }) };
   }
 
-  it("executes deterministic TIG, vector retrieval, model probe, moderation, no-tools generation, post-moderation, and exact WEB hydration in order", async () => {
+  it("orders bounded provider, function, HTTP, and evaluator deadlines with aggregate headroom", () => {
+    const applicationWorstCaseMs =
+      6_000 +
+      2_000 +
+      PREVIEW_GROUNDED_LIMITS.moderationProviderTimeoutMs * 2 +
+      PREVIEW_GROUNDED_LIMITS.providerTimeoutMs;
+    expect(applicationWorstCaseMs).toBe(34_000);
+    expect(applicationWorstCaseMs).toBeLessThan(previewRoute.maxDuration * 1_000);
+  });
+
+  it("executes deterministic TIG, vector retrieval, moderation, no-tools generation, post-moderation, and exact WEB hydration without a remote metadata probe", async () => {
     const { events, result } = await run();
-    expect(events).toEqual(["tig", "retrieve", "probe", "moderate-input", "generate", "moderate-output"]);
+    expect(events).toEqual(["tig", "retrieve", "moderate-input", "generate", "moderate-output"]);
+    expect(result.providerCalls.modelProbe).toBe(0);
     expect(result.ok).toBe(true);
     expect(result.generationUsed).toBe(true);
     expect(result.citations).toHaveLength(1);
@@ -273,8 +329,17 @@ describe("grounded provider execution and validation", () => {
     expect(production.diagnostic).toBeUndefined();
     expect(production.providerCalls).toEqual({ modelProbe: 0, inputModeration: 0, embedding: 0, vector: 0, generation: 0, outputModeration: 0 });
   });
-  it("hard-stops when the approved Terra model is unavailable", async () => {
-    await expect(run({ unavailable: true })).rejects.toThrow("approved_model_unavailable");
+  it("hard-stops on failed model access without output moderation or a second generation", async () => {
+    const events: string[] = [];
+    const service = new PreviewGroundedLiveAiService({
+      environment: previewEnvironment(),
+      provider: provider(events, { unavailable: true }),
+      retrieve: async () => { events.push("retrieve"); return retrieval(); },
+      tig: async () => { events.push("tig"); return tig(); },
+      ledger: new PreviewAuthorizationCostLedger(),
+    });
+    await expect(service.run({ caseId: "public-james-wisdom", query: "Using James 1:5, explain a humble biblical approach to seeking wisdom.", intent: "scripture", requiredCitationIds: ["web:james.1.5"] })).rejects.toThrow("approved_model_unavailable");
+    expect(events).toEqual(["tig", "retrieve", "moderate-input", "generate"]);
   });
 
   it("blocks a request before generation when the cumulative worst-case ceiling would be exceeded", async () => {
@@ -439,7 +504,7 @@ describe("grounded provider execution and validation", () => {
       fallbackReason: "COST_CIRCUIT_OPEN",
       providerCalled: true,
     });
-    expect(events).toEqual(["probe", "moderate-input"]);
+    expect(events).toEqual(["moderate-input"]);
   });});
 describe("Preview-only POST route boundary", () => {
   function request(body: unknown, origin = "https://preview.example") {

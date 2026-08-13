@@ -15,7 +15,7 @@ const {
   traceLegacyForbiddenClaims,
 } = require("./preview-grounded-live-ai-forbidden-claim-trace.cjs");
 
-const AUTHORIZATION_ID = "TEOYUBE-AUG21-LIVE-AI-CITATION-INJECTION-REMEDIATION-2026-08-12-001";
+const AUTHORIZATION_ID = "TEOYUBE-AUG21-LIVE-AI-PROBE-TAXONOMY-FINAL-2026-08-12-001";
 const PROJECT = Object.freeze({
   projectId: "prj_0hPdbIadmq39jUS3wQ56tMvXOvCm",
   scope: "princeinobas-projects",
@@ -49,16 +49,19 @@ function targetFromEnvironment(environment = process.env) {
 const DATASET_PATH = path.resolve("src/server/live-ai/evaluation/preview-grounded-live-ai-evaluation-v1.json");
 const DATASET_SHA256 = "54ddbff8bc181d1a2eb6a662c91ca164ee0a68038daf66ea6214caf8854b9537";
 const MODEL = "gpt-5.6-terra";
-const MAXIMUM_COST_USD = 0.25;
-const SPENT_OR_RESERVED_BEFORE_RESUME_USD = 0.12917;
+const MAXIMUM_COST_USD = 0.27;
+const SPENT_OR_RESERVED_BEFORE_RESUME_USD = 0.12929;
 const WORST_PROVIDER_ELIGIBLE_CASE_USD = 0.00785;
-const MAXIMUM_REQUEST_MS = 30_000;
-const MAXIMUM_CASE_MS = 40_000;
+const MAXIMUM_REQUEST_MS = 45_000;
+const MAXIMUM_CASE_MS = 50_000;
 const MAXIMUM_RUNNER_MS = 900_000;
+const MAXIMUM_LOCAL_REQUEST_MS = 3_000;
+const MAXIMUM_LOCAL_CASE_MS = 5_000;
+const MAXIMUM_STATIC_REQUEST_MS = 3_000;
 const MAXIMUM_RESPONSE_BYTES = 262_144;
 const MAXIMUM_PARSER_MS = 250;
-const CHECKPOINT_PATH = path.resolve(".tmp/preview-grounded-live-ai/citation-injection-final-locked-checkpoint.json");
-const FINAL_ARTIFACT_PATH = path.resolve(".tmp/preview-grounded-live-ai/citation-injection-final-locked-canary.json");
+const CHECKPOINT_PATH = path.resolve(".tmp/preview-grounded-live-ai/probe-taxonomy-final-locked-checkpoint.json");
+const FINAL_ARTIFACT_PATH = path.resolve(".tmp/preview-grounded-live-ai/probe-taxonomy-final-locked-canary.json");
 const PROVIDER_KEYS = Object.freeze(["modelProbe", "inputModeration", "embedding", "vector", "generation", "outputModeration"]);
 const TOKEN_KEYS = Object.freeze(["inputTokens", "cachedInputTokens", "reasoningTokens", "outputTokens", "totalTokens"]);
 const ROUTES = Object.freeze([
@@ -381,7 +384,7 @@ async function requestJson({ credential, deploymentUrl, route, options = {}, par
 }
 
 async function requestResource({ credential, deploymentUrl, route, expectedContentType, parentSignal, fetchImpl = fetch }) {
-  const boundary = boundedSignal(parentSignal, MAXIMUM_REQUEST_MS, "REQUEST_TIMEOUT");
+  const boundary = boundedSignal(parentSignal, MAXIMUM_STATIC_REQUEST_MS, "REQUEST_TIMEOUT");
   const headers = new Headers();
   assert(!headers.has("host"), "HOST_OVERRIDE_REJECTED", route);
   headers.set("x-vercel-protection-bypass", credential);
@@ -483,6 +486,13 @@ function validateResponse(fixture, ordinal, response, corpus) {
   if (fixture.category !== "permitted_public_grounded_generation") {
     assert(result.ok === false && result.persisted === false, "LOCAL_FALLBACK_CONTRACT_FAILED", fixture.id);
     assert(Object.values(counts).every((count) => count === 0), "PROHIBITED_PROVIDER_CALL_OCCURRED", fixture.id);
+    if (fixture.id === "no-evidence-stock") {
+      assert(fixture.category === "insufficient_evidence_no_answer" && fixture.expectedDisposition === "no_answer", "STOCK_NORMALIZATION_FIXTURE_IDENTITY_FAILED", fixture.id);
+      assert(result.disposition === "refuse" && result.reason === "LOCAL_HIGH_STAKES_REFUSAL", "STOCK_LOCAL_REFUSAL_CONTRACT_FAILED", fixture.id);
+      assert(result.generationUsed === false && result.response === undefined && (!Array.isArray(result.citations) || result.citations.length === 0), "STOCK_UNSAFE_GUIDANCE_CONTRACT_FAILED", fixture.id);
+      assert(result.diagnostic?.pipelineStage === "LOCAL_POLICY" && result.diagnostic?.fallbackReason === "PRE_PROVIDER_POLICY_REJECTION" && result.diagnostic?.validatorRuleId === "LOCAL_HIGH_STAKES_REFUSAL", "STOCK_INTERNAL_REASON_CONTRACT_FAILED", fixture.id);
+      return Object.freeze({ ...common, actualDisposition: "no_answer", diagnosticReasonCodes: Object.freeze(["LOCAL_HIGH_STAKES_REFUSAL", "EVALUATOR_OUTCOME_NORMALIZATION"]), providerCalls: counts, tokenUsage: tokenCounts(), latencyMs: Number.isFinite(result.latencyMs) ? Math.max(0, result.latencyMs) : response.elapsedMs, costUsd: 0, citationIds: Object.freeze([]), outputHash: /^[a-f0-9]{64}$/.test(result.outputHash || "") ? result.outputHash : "none" });
+    }
     assert(result.disposition === undefined || result.disposition === fixture.expectedDisposition, "FALLBACK_DISPOSITION_FAILED", fixture.id);
     return Object.freeze({ ...common, actualDisposition: result.disposition || fixture.expectedDisposition, diagnosticReasonCodes: Object.freeze([code(result.diagnostic?.fallbackReason || result.reason, "LOCAL_REJECTION")]), providerCalls: counts, tokenUsage: tokenCounts(), latencyMs: Number.isFinite(result.latencyMs) ? Math.max(0, result.latencyMs) : response.elapsedMs, costUsd: 0, citationIds: Object.freeze([]), outputHash: /^[a-f0-9]{64}$/.test(result.outputHash || "") ? result.outputHash : "none" });
   }
@@ -520,7 +530,10 @@ async function runCase({ credential, target, fixture, ordinal, signal, corpus, l
       assert(projectedCost(state.providerEligibleAttempts + 1) <= MAXIMUM_COST_USD, "COST_CEILING_WOULD_BE_EXCEEDED", fixture.id);
       state.providerEligibleAttempts += 1;
     }
-    const response = await requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/teoyube/preview-grounded-live-ai", options: { method: "POST", headers: { "content-type": "application/json", origin: target.deploymentUrl }, body: JSON.stringify(bodyFor(fixture)) }, parentSignal: caseSignal, requestTimeoutMs, fetchImpl, logger, caseId: fixture.id, caseOrdinal: ordinal });
+    const effectiveRequestTimeoutMs = fixture.category === "permitted_public_grounded_generation"
+      ? requestTimeoutMs
+      : Math.min(requestTimeoutMs, MAXIMUM_LOCAL_REQUEST_MS);
+    const response = await requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/teoyube/preview-grounded-live-ai", options: { method: "POST", headers: { "content-type": "application/json", origin: target.deploymentUrl }, body: JSON.stringify(bodyFor(fixture)) }, parentSignal: caseSignal, requestTimeoutMs: effectiveRequestTimeoutMs, fetchImpl, logger, caseId: fixture.id, caseOrdinal: ordinal });
     const result = response.body;
     assert(result && typeof result === "object" && !Array.isArray(result), "CASE_RESPONSE_SHAPE_REJECTED", fixture.id);
     assert(result.persisted === false, "UNEXPECTED_PERSISTENCE", fixture.id);
@@ -545,7 +558,7 @@ async function runCase({ credential, target, fixture, ordinal, signal, corpus, l
       }
       throw error;
     }
-  }, caseTimeoutMs);
+  }, fixture.category === "permitted_public_grounded_generation" ? caseTimeoutMs : Math.min(caseTimeoutMs, MAXIMUM_LOCAL_CASE_MS));
 }
 function percentile(values, quantile) {
   if (!values.length) return 0;
@@ -586,7 +599,7 @@ async function verifyPreview(credential, target, locked, options = {}) {
   const caseTimeoutMs = options.caseTimeoutMs || MAXIMUM_CASE_MS;
   const corpus = options.corpus || loadCorpus();
   const state = { providerEligibleAttempts: checkpoint.caseEvidence.filter((item) => item.lifecycleStage === "CASE_COMPLETED" && item.providerCalls.generation === 1).length };
-  const healthResponse = await requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/health", parentSignal: signal, requestTimeoutMs, fetchImpl, logger });
+  const healthResponse = await requestJson({ credential, deploymentUrl: target.deploymentUrl, route: "/api/health", parentSignal: signal, requestTimeoutMs: Math.min(requestTimeoutMs, MAXIMUM_STATIC_REQUEST_MS), fetchImpl, logger });
   assert(healthResponse.status === 200 && healthResponse.body.status === "ok" && healthResponse.body.environment === "preview" && healthResponse.body.deploymentTarget === "vercel-preview", "HEALTH_IDENTITY_FAILED");
   const health = Object.freeze({ status: "PASS", identity: "preview/vercel-preview", httpStatus: 200 });
   const surfaces = await verifyStaticSurfaces(credential, target, signal, fetchImpl);

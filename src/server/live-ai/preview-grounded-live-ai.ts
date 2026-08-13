@@ -42,7 +42,7 @@ import {
 } from "../retrieval/preview-managed-retrieval";
 
 export const PREVIEW_GROUNDED_LIVE_AI_VERSION =
-  "teoyube-preview-grounded-live-ai-2026-08-12.3";
+  "teoyube-preview-grounded-live-ai-2026-08-12.4";
 export const PREVIEW_GROUNDED_PROMPT_VERSION =
   "teoyube-preview-grounded-prompt-2026-08-12.2";
 export const PREVIEW_GROUNDED_MODEL = "gpt-5.6-terra";
@@ -55,7 +55,8 @@ export const PREVIEW_GROUNDED_LIMITS = Object.freeze({
   maximumOutputTokens: 320,
   maximumGenerationAttempts: 12,
   maximumSuccessfulGenerationCases: 12,
-  providerTimeoutMs: 20_000,
+  moderationProviderTimeoutMs: 4_000,
+  providerTimeoutMs: 18_000,
   perRequestWorstCaseGenerationUsd: 0.00784,
   perRequestConservativeEmbeddingUsd: 0.00001,
   authorizationCostCeilingUsd: 0.25,
@@ -109,7 +110,20 @@ const PRIVATE_CONTENT = Object.freeze([
 ]);
 
 const HIGH_STAKES =
-  /\b(?:medical|medication|diagnosis|doctor|legal|lawyer|court case|financial|investment|stock|abuse|abuser|emergency|suicide|self-harm|harm myself|cannot stay safe)\b/i;
+  /\b(?:medical|medication|diagnosis|doctor|legal|lawyer|court case|abuse|abuser|emergency|suicide|self-harm|harm myself|cannot stay safe)\b/i;
+
+const GENERAL_FINANCIAL_EDUCATION =
+  /^(?:explain|describe|what (?:is|are)|how (?:does|do))\b.{0,160}\b(?:diversification|compound interest|asset allocation)\b/i;
+
+const FINANCIAL_HIGH_STAKES = Object.freeze([
+  /\b(?:buy|sell|trade|short)\b.{0,80}\b(?:stock|shares?|securit(?:y|ies)|crypto|investment)\b/i,
+  /\b(?:stock|shares?|securit(?:y|ies)|crypto|investment)\b.{0,80}\b(?:buy|sell|trade|short)\b/i,
+  /\b(?:live|current|right now|today'?s?)\b.{0,50}\b(?:stock|shares?|market|crypto)\b.{0,30}\b(?:price|quote|value)\b/i,
+  /\b(?:predict|prediction|forecast|price target|guarantee|guaranteed|certain)\b.{0,80}\b(?:stock|shares?|market|price|return|profit|investment)\b/i,
+  /\b(?:stock|shares?|market|price|return|profit|investment)\b.{0,80}\b(?:predict|prediction|forecast|price target|guarantee|guaranteed|certain)\b/i,
+  /\b(?:personalized|for me|my portfolio|my savings|should i)\b.{0,80}\b(?:invest|investment|stock|shares?|crypto|retirement|buy|sell)\b/i,
+  /\b(?:financial|investment|stock|trading)\s+(?:advice|recommendation)\b/i,
+]);
 
 export function normalizePreviewGroundedPolicyInput(value: string): string {
   return value
@@ -140,7 +154,18 @@ export function classifyPreviewGroundedQuery(query: string): PreviewLocalDisposi
     pattern.test(query) || pattern.test(normalized)
   )) return "private_or_sensitive";
   const safety = assessSafety(normalized);
-  if (HIGH_STAKES.test(normalized) || safety.sensitive || safety.prohibitedRequest || safety.immediateDanger) {
+  const generalFinancialEducation =
+    GENERAL_FINANCIAL_EDUCATION.test(normalized) &&
+    safety.primaryTopic === "financial_desperation" &&
+    !safety.prohibitedRequest &&
+    !safety.immediateDanger;
+  if (
+    HIGH_STAKES.test(normalized) ||
+    FINANCIAL_HIGH_STAKES.some((pattern) => pattern.test(normalized)) ||
+    (safety.sensitive && !generalFinancialEducation) ||
+    safety.prohibitedRequest ||
+    safety.immediateDanger
+  ) {
     return "high_stakes";
   }
   const retrieval = evaluateManagedVectorPreviewQueryPolicy({
@@ -149,6 +174,9 @@ export function classifyPreviewGroundedQuery(query: string): PreviewLocalDisposi
     externalProcessingConsent: true,
   });
   if (!retrieval.accepted) {
+    if (generalFinancialEducation && retrieval.reason === "sensitive_or_private_query") {
+      return "eligible";
+    }
     return retrieval.reason === "sensitive_or_private_query"
       ? "private_or_sensitive"
       : "insufficient_evidence";
@@ -176,7 +204,6 @@ export type PreviewProviderResult = Readonly<{
 }>;
 
 export interface PreviewGroundedProvider {
-  probeModel(): Promise<string>;
   moderate(text: string): Promise<Readonly<{ flagged: boolean }>>;
   generate(input: Readonly<{
     query: string;
@@ -235,7 +262,6 @@ function constrainedCitationSchema(evidence: readonly PreviewEvidence[]) {
 
 export class OpenAiPreviewGroundedProvider implements PreviewGroundedProvider {
   readonly #client: OpenAI;
-  #modelProbe?: Promise<string>;
 
   constructor(environment: NodeJS.ProcessEnv = process.env) {
     const apiKey = environment.OPENAI_API_KEY?.trim();
@@ -247,25 +273,11 @@ export class OpenAiPreviewGroundedProvider implements PreviewGroundedProvider {
     });
   }
 
-  probeModel(): Promise<string> {
-    if (!this.#modelProbe) {
-      this.#modelProbe = this.#client.models
-        .retrieve(PREVIEW_GROUNDED_MODEL)
-        .then((model) => {
-          if (model.id !== PREVIEW_GROUNDED_MODEL) {
-            throw new Error("approved_model_identity_mismatch");
-          }
-          return model.id;
-        });
-    }
-    return this.#modelProbe;
-  }
-
   async moderate(text: string): Promise<Readonly<{ flagged: boolean }>> {
     const result = await this.#client.moderations.create({
       model: "omni-moderation-latest",
       input: text,
-    });
+    }, { timeout: PREVIEW_GROUNDED_LIMITS.moderationProviderTimeoutMs });
     return Object.freeze({ flagged: result.results.some((item) => item.flagged) });
   }
 
@@ -317,10 +329,11 @@ export class OpenAiPreviewGroundedProvider implements PreviewGroundedProvider {
         max_output_tokens: PREVIEW_GROUNDED_LIMITS.maximumOutputTokens,
         store: false,
         background: false,
-      });
+      }, { timeout: PREVIEW_GROUNDED_LIMITS.providerTimeoutMs });
     } catch (error) {
       if (
         error instanceof OpenAI.AuthenticationError ||
+        error instanceof OpenAI.PermissionDeniedError ||
         error instanceof OpenAI.NotFoundError
       ) {
         throw error;
@@ -502,6 +515,12 @@ function localReasonCode(
     : "PRE_PROVIDER_POLICY_REJECTION";
 }
 
+function localInternalReason(disposition: PreviewLocalDisposition): string {
+  return disposition === "high_stakes"
+    ? "LOCAL_HIGH_STAKES_REFUSAL"
+    : disposition;
+}
+
 function theologicalRuleId(
   validation: ReturnType<typeof validateSafetyResponse>,
 ): string {
@@ -552,7 +571,6 @@ export class PreviewGroundedLiveAiService {
   readonly #tig: (query: string, intent: TigQueryIntent) => Promise<TigRecommendationResult>;
   readonly #ledger: PreviewAuthorizationCostLedger;
   readonly #environment: NodeJS.ProcessEnv;
-  #probed = false;
 
   constructor(dependencies: PreviewGroundedServiceDependencies = {}) {
     this.#environment = dependencies.environment || process.env;
@@ -601,10 +619,10 @@ export class PreviewGroundedLiveAiService {
     const localDisposition = classifyPreviewGroundedQuery(input.query);
     if (localDisposition !== "eligible") {
       return fail(
-        localDisposition,
+        localInternalReason(localDisposition),
         "LOCAL_POLICY",
         localReasonCode(localDisposition),
-        { validatorRuleId: localDisposition.toUpperCase() },
+        { validatorRuleId: localInternalReason(localDisposition).toUpperCase() },
       );
     }
     if (!isPreviewGroundedLiveAiRuntime(this.#environment)) {
@@ -728,15 +746,9 @@ export class PreviewGroundedLiveAiService {
         },
       ), providerCalls: Object.freeze(counts) });
     }
-    let stage: PreviewGroundedDiagnosticState["pipelineStage"] = "MODEL_PROBE";
+    let stage: PreviewGroundedDiagnosticState["pipelineStage"] = "INPUT_MODERATION";
     try {
       const provider = this.#providerInstance();
-      if (!this.#probed) {
-        counts.modelProbe = 1;
-        await provider.probeModel();
-        this.#probed = true;
-      }
-      stage = "INPUT_MODERATION";
       counts.inputModeration = 1;
       const inputModeration = await provider.moderate(input.query);
       if (inputModeration.flagged) {
@@ -932,7 +944,8 @@ export class PreviewGroundedLiveAiService {
         ...(diagnostic ? { diagnostic } : {}),
       });
     } catch (error) {
-      const status = error instanceof OpenAI.AuthenticationError
+      const status = error instanceof OpenAI.AuthenticationError ||
+          error instanceof OpenAI.PermissionDeniedError
         ? "provider_authentication_failed"
         : error instanceof OpenAI.NotFoundError
           ? "approved_model_unavailable"

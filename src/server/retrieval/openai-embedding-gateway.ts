@@ -54,6 +54,7 @@ export type OpenAiEmbeddingGatewayOptions = Readonly<{
   environment?: NodeJS.ProcessEnv;
   clientFactory?: (apiKey: string, organization?: string) => EmbeddingTransport;
   maximumAttempts?: 1 | 2;
+  providerTimeoutMs?: number;
 }>;
 
 function emptyUsage(providerCalls = 0): EmbeddingUsage {
@@ -109,10 +110,15 @@ export class OpenAiEmbeddingGateway implements EmbeddingGateway {
   readonly #environment: NodeJS.ProcessEnv;
   readonly #clientFactory: (apiKey: string, organization?: string) => EmbeddingTransport;
   readonly #maximumAttempts: 1 | 2;
+  readonly #providerTimeoutMs: number;
   #client?: EmbeddingTransport;
 
   constructor(options: OpenAiEmbeddingGatewayOptions = {}) {
     this.#environment = options.environment || process.env;
+    this.#providerTimeoutMs = Math.min(
+      Math.max(options.providerTimeoutMs || RETRIEVAL_LIMITS.providerTimeoutMs, 250),
+      RETRIEVAL_LIMITS.providerTimeoutMs,
+    );
     this.#clientFactory =
       options.clientFactory ||
       ((apiKey, organization) =>
@@ -120,7 +126,7 @@ export class OpenAiEmbeddingGateway implements EmbeddingGateway {
           apiKey,
           ...(organization ? { organization } : {}),
           maxRetries: 0,
-          timeout: RETRIEVAL_LIMITS.providerTimeoutMs
+          timeout: this.#providerTimeoutMs
         }));
     this.#maximumAttempts = options.maximumAttempts || 2;
   }

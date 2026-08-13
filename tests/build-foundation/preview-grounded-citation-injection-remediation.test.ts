@@ -101,10 +101,6 @@ function providerForCitation(
 ): PreviewGroundedProvider {
   let moderationCalls = 0;
   return {
-    async probeModel() {
-      events.push("probe");
-      return PREVIEW_GROUNDED_MODEL;
-    },
     async moderate() {
       moderationCalls += 1;
       events.push(moderationCalls === 1 ? "moderate-input" : "moderate-output");
@@ -199,7 +195,7 @@ describe("Preview grounded citation remediation", () => {
       });
       expect(result.ok, `${caseId}:${result.reason}:${result.diagnostic?.fallbackReason || "none"}`).toBe(true);
       expect(result.citations.map((item) => item.id)).toContain(requiredCitationId);
-      expect(events).toEqual(["retrieve", "probe", "moderate-input", "generate", "moderate-output"]);
+      expect(events).toEqual(["retrieve", "moderate-input", "generate", "moderate-output"]);
     },
   );
 

@@ -199,13 +199,29 @@ describe("Responses API fail-closed parsing", () => {
     },
   );
 
+  it.each([
+    ["401 authentication", new OpenAI.AuthenticationError(401, { message: "synthetic" }, "synthetic", new Headers()), "OPENAI_AUTHENTICATION_ERROR"],
+    ["403 permission", new OpenAI.PermissionDeniedError(403, { message: "synthetic" }, "synthetic", new Headers()), "OPENAI_PERMISSION_DENIED"],
+    ["429 rate limit", new OpenAI.RateLimitError(429, { message: "synthetic", code: "rate_limit_exceeded" }, "synthetic", new Headers()), "OPENAI_RATE_LIMIT"],
+    ["429 quota", new OpenAI.RateLimitError(429, { message: "synthetic", code: "insufficient_quota" }, "synthetic", new Headers()), "OPENAI_QUOTA_OR_CREDIT_FAILURE"],
+    ["provider 5xx", new OpenAI.InternalServerError(500, { message: "synthetic" }, "synthetic", new Headers()), "OPENAI_SERVER_ERROR"],
+  ])("classifies %s without retaining provider details", (_label, error, validatorRuleId) => {
+    const failureValue = providerFailureFromApiError(error);
+    expect(failureValue.diagnostic).toMatchObject({
+      reasonCode: "OPENAI_API_ERROR",
+      responseStatus: "api_error",
+      validatorRuleId,
+    });
+    expect(JSON.stringify(failureValue.diagnostic)).not.toContain("synthetic");
+  });
+
   it("maps provider timeout separately and never retains error messages or request IDs", () => {
     const error = new OpenAI.APIConnectionTimeoutError({ message: "sensitive synthetic message" });
     const failureValue = providerFailureFromApiError(error);
     expect(failureValue.diagnostic).toMatchObject({
       reasonCode: "LATENCY_TIMEOUT",
       responseStatus: "api_error",
-      validatorRuleId: "OPENAI_TIMEOUT",
+      validatorRuleId: "OPENAI_TRANSPORT_TIMEOUT",
     });
     const serialized = JSON.stringify(failureValue.diagnostic);
     expect(serialized).not.toContain("sensitive synthetic message");

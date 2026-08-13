@@ -185,8 +185,17 @@ export function parseOpenAiPreviewGroundedResponse(
 }
 
 function apiRuleId(error: unknown): string {
-  if (error instanceof OpenAI.APIConnectionTimeoutError) return "OPENAI_TIMEOUT";
-  if (error instanceof OpenAI.RateLimitError) return "OPENAI_RATE_LIMIT";
+  if (error instanceof OpenAI.APIConnectionTimeoutError) return "OPENAI_TRANSPORT_TIMEOUT";
+  if (error instanceof OpenAI.AuthenticationError) return "OPENAI_AUTHENTICATION_ERROR";
+  if (error instanceof OpenAI.PermissionDeniedError) return "OPENAI_PERMISSION_DENIED";
+  if (error instanceof OpenAI.NotFoundError) return "OPENAI_MODEL_OR_PROJECT_ACCESS_FAILURE";
+  if (error instanceof OpenAI.RateLimitError) {
+    return ["insufficient_quota", "billing_hard_limit_reached"].includes(
+      String(error.code || "").toLowerCase(),
+    )
+      ? "OPENAI_QUOTA_OR_CREDIT_FAILURE"
+      : "OPENAI_RATE_LIMIT";
+  }
   if (error instanceof OpenAI.InternalServerError) return "OPENAI_SERVER_ERROR";
   if (error instanceof OpenAI.BadRequestError) {
     if (error.code === "invalid_json_schema") return "OPENAI_INVALID_JSON_SCHEMA";
